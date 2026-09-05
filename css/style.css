@@ -1,0 +1,2546 @@
+/* ==========================================================================
+   Role Makers — Companion App
+   Palette, tipografia e componenti derivati da style_guide_aggiornata.md
+   (direzione "Interfaccia da Gioco"). Le regole di impaginazione A4 non si
+   applicano qui: questa è un'interfaccia app, non una pagina stampata —
+   restano fissi però palette, font, accento fisico/magico e stile dei box.
+   ========================================================================== */
+
+:root{
+  --antracite-1:#14161A;
+  --antracite-2:#1E2126;
+  --bordo-scuro:#4A4F58;
+  --bianco-artico:#F7F9FA;
+  --testo-primario-dark:#F2F1ED;
+  --testo-secondario-dark:#9CA0A8;
+  --testo-secondario-dark-2:#C7CAD1;
+  --testo-primario-light:#14161A;
+  --testo-secondario-light:#6B7178;
+
+  --fisico:#E8621F;
+  --fisico-forte:#FF7A33;
+  --magico:#1BB5C7;
+  --magico-forte:#33D6E8;
+  --incremento:#C9A227;
+  --incremento-forte:#FFD873;
+  --equip-momentaneo:#3DDC84;
+  --equip-momentaneo-forte:#6BFFAF;
+  /* Testo su sfondo a colore acceso (.btn-primary/.btn-magic): valore
+     fisso, MAI legato a --antracite-1 (checkpoint accessibilità — nella
+     ripalettatura chiara di #view-combat, --antracite-1 diventa bianco per
+     via del suo altro ruolo di sfondo superficie, e un bottone che leggesse
+     il testo da lì si ritroverebbe bianco su arancione/ciano: 3,39:1,
+     illeggibile). Non ridichiarato nell'override di #view-combat: resta
+     sempre questo stesso scuro, in ogni tema. */
+  --testo-su-brand:#14161A;
+
+  --font-title:'Rajdhani',sans-serif;
+  --font-body:'Inter',sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+
+  --radius:9px;
+  --radius-sm:6px;
+  --gap-min:16px;
+
+  /* Hotfix "toast persistente e safe area di sistema": fonte unica per i 4
+     lati, con fallback a env() (corretto su web/iOS e sulla maggior parte
+     dei WebView Android) sostituito, quando disponibile, dal valore nativo
+     reale iniettato da MainActivity via WindowInsetsCompat (vedi lo shim
+     window.__setNativeSafeAreaInsets in index.html e
+     .github/scripts/patch_android_safe_area.py) — MAI sommati fra loro:
+     --native-safe-* non è mai dichiarata qui, quindi finché lo shim non la
+     imposta il var() ricade sempre e solo su env(), senza doppio conteggio. */
+  --safe-top:var(--native-safe-top, env(safe-area-inset-top,0));
+  --safe-right:var(--native-safe-right, env(safe-area-inset-right,0));
+  --safe-bottom:var(--native-safe-bottom, env(safe-area-inset-bottom,0));
+  --safe-left:var(--native-safe-left, env(safe-area-inset-left,0));
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--antracite-1);
+  color:var(--testo-primario-dark);
+  font-family:var(--font-body);
+  -webkit-tap-highlight-color:transparent;
+  overscroll-behavior-y:none;
+}
+h1,h2,h3,h4{font-family:var(--font-title);margin:0;}
+p{margin:0 0 .8em;line-height:1.6;}
+button{font-family:var(--font-body);}
+input,select,textarea{font-family:var(--font-body);}
+::selection{background:var(--fisico);color:var(--antracite-1);}
+
+.hidden{display:none !important;}
+
+/* ---------- App shell ---------- */
+/* Tre livelli in cascata, dal meno al più preciso: 100vh (sempre valido),
+   100dvh (più preciso dove supportato), --real-vh calcolato da JS in
+   index.html sull'altezza DAVVERO visibile (window.innerHeight/
+   visualViewport) — necessario perché su alcuni Android 100dvh non
+   corrisponde all'area realmente visibile, lasciando lo sfondo scuro
+   della pagina scoperto sotto il contenuto dell'app. */
+#app{
+  min-height:100vh;
+  min-height:100dvh;
+  min-height:calc(var(--real-vh, 1vh) * 100);
+  display:flex;
+  flex-direction:column;
+}
+.view{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  min-height:100dvh;
+  min-height:calc(var(--real-vh, 1vh) * 100);
+}
+
+/* ---------- Introduzione animata ----------
+   Livello indipendente da #app/.view (mai gestito da showView): copre
+   l'intero viewport, sfondo nero pieno (non lo stesso #050608 quasi-nero
+   della copertina, deliberatamente #000 come richiesto), safe area
+   incluse, nessuno scroll. object-fit:contain garantisce che gatto, dadi,
+   wordmark e payoff del video non vengano mai ritagliati né deformati, in
+   verticale come in orizzontale.
+   Il layer NON cambia mai opacità e non ha alcuna transizione: resta
+   nero/opaco/bloccante fino alla rimozione sincrona dal DOM decisa da
+   js/intro.js sull'evento 'ended' — nessuna dissolvenza, nessun
+   passaggio nero intermedio fra ultimo fotogramma e copertina
+   (revisione checkpoint "8 punti", seconda revisione, punto 1). */
+.intro-layer{
+  position:fixed;
+  inset:0;
+  z-index:99999;
+  background:#000;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:var(--safe-top) var(--safe-right) var(--safe-bottom) var(--safe-left);
+}
+.intro-video{
+  max-width:100%;
+  max-height:100%;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  background:#000;
+  opacity:1;
+}
+.intro-gate-btn{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  padding:16px 28px;
+  font-family:var(--font-title);
+  font-weight:700;
+  font-size:16px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:#fff;
+  background:var(--fisico-forte);
+  border:2px solid var(--fisico-forte);
+  border-radius:var(--radius);
+  cursor:pointer;
+}
+.intro-gate-btn:focus-visible{
+  outline:3px solid var(--magico-forte);
+  outline-offset:3px;
+}
+
+/* ---------- Copertina ---------- */
+#view-cover{
+  position:relative;
+  background:#050608; /* colore unico visibile attraverso il fondo trasparente degli asset di copertina */
+  /* niente più justify-content:flex-end + immagine flex:1 che si schiacciava
+     con l'altezza della finestra: titolo e logo hanno una dimensione fissa
+     (vedi sotto), quindi se lo spazio verticale non basta è la pagina a
+     scorrere (esattamente come già succede con motto e bottoni sotto),
+     non un rimpicciolimento dell'immagine. */
+}
+.cover-header{
+  flex:none;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:calc(28px + var(--safe-top)) calc(24px + var(--safe-right)) 0 calc(24px + var(--safe-left));
+}
+/* Checkpoint marchio/copertina: wordmark+emblema (qui) e payoff+segni
+   laterali (.cover-payoff-image, sul fondo) sono DUE crop dello stesso
+   PNG a risoluzione nativa (1122×1402) estratto dal master — mai
+   ridisegnati/ricomposti, un taglio orizzontale netto nella sola banda
+   nera già presente fra il cerchio del vortice e il payoff (nessun
+   dettaglio del disegno tagliato). Separati per poter tenere il payoff
+   davvero in fondo allo schermo con account/login nel mezzo, invece che
+   incollato subito sotto l'emblema in un'unica immagine — mai deformati
+   (height:auto su entrambi), mai riscalati in modo diverso l'uno
+   dall'altro (stesso max-width, così restano proporzionalmente allineati
+   come nel PDF originale). */
+.cover-top-image{
+  flex:none;
+  width:100%;
+  max-width:320px;
+  height:auto;
+  display:block;
+}
+.cover-content{
+  position:relative;
+  z-index:2;
+  flex:1;
+  padding:24px calc(24px + var(--safe-right)) max(68px, calc(36px + var(--safe-bottom))) calc(24px + var(--safe-left));
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  gap:18px;
+}
+/* Sul fondo del viewport quando l'altezza disponibile lo consente
+   (margin-top:auto consuma lo spazio residuo lasciato da .cover-content,
+   che resta flex:1 sopra) — mai un overlay fisso: è un elemento in flusso
+   normale, se lo spazio non basta viene semplicemente spinto sotto al
+   contenuto e la pagina scorre, esattamente come già l'header sopra. */
+.cover-payoff{
+  flex:none;
+  width:100%;
+  margin-top:auto;
+  display:flex;
+  justify-content:center;
+  padding:8px calc(24px + var(--safe-right)) max(20px, var(--safe-bottom)) calc(24px + var(--safe-left));
+}
+.cover-payoff-image{
+  width:100%;
+  max-width:320px;
+  height:auto;
+  display:block;
+}
+.cover-actions{
+  width:100%;
+  max-width:360px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-top:6px;
+  text-align:left;
+}
+/* ---------- Avviso aggiornamento (solo app nativa) ---------- */
+.update-banner{
+  width:100%;
+  max-width:360px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:12px;
+  background:var(--antracite-2);
+  border:1px solid var(--fisico);
+  border-radius:var(--radius);
+  padding:10px 14px;
+}
+.update-banner .ub-text{
+  flex:1;
+  text-align:left;
+  font-size:12.5px;
+  color:var(--testo-secondario-dark-2);
+  line-height:1.4;
+}
+.update-banner .btn{flex:none;}
+
+/* ---------- Menù copertina (hamburger + indice) ---------- */
+.cover-menu-btn{
+  position:absolute;
+  top:calc(16px + var(--safe-top));
+  right:calc(16px + var(--safe-right));
+  z-index:10;
+  width:44px;height:44px;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(30,33,38,.75);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius-sm);
+  cursor:pointer;
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+  transition:transform .12s ease, border-color .12s ease;
+}
+.cover-menu-btn:active{transform:scale(.94);}
+.cover-menu-btn .menu-lines{
+  display:flex;flex-direction:column;gap:5px;width:20px;
+}
+.cover-menu-btn .menu-lines span{
+  display:block;height:2px;width:100%;
+  background:var(--testo-primario-dark);
+  border-radius:1px;
+  transition:transform .18s ease, opacity .18s ease;
+}
+.cover-menu-btn[aria-expanded="true"]{border-color:var(--fisico-forte);}
+.cover-menu-btn[aria-expanded="true"] .menu-lines span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.cover-menu-btn[aria-expanded="true"] .menu-lines span:nth-child(2){opacity:0;}
+.cover-menu-btn[aria-expanded="true"] .menu-lines span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+.cover-menu{
+  position:absolute;
+  top:calc(66px + var(--safe-top));
+  right:calc(16px + var(--safe-right));
+  z-index:9;
+  min-width:230px;
+  max-height:calc(100vh - 90px - var(--safe-top) - var(--safe-bottom));
+  overflow-y:auto;
+  background:var(--antracite-2);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius);
+  padding:8px;
+  display:flex;flex-direction:column;gap:2px;
+  box-shadow:0 12px 32px rgba(0,0,0,.55);
+  /* Opaco dal primo fotogramma (revisione checkpoint "8 punti", punto 4):
+     un'animazione dell'opacità qui lascerebbe intravedere per qualche
+     istante la copertina sottostante attraverso il pannello. Solo uno
+     scorrimento verticale, mai una dissolvenza. */
+  animation:cover-menu-in .16s ease;
+}
+@keyframes cover-menu-in{
+  from{transform:translateY(-6px);}
+  to{transform:translateY(0);}
+}
+.cover-menu .cm-label{
+  font-family:var(--font-title);font-weight:600;font-size:10px;
+  text-transform:uppercase;letter-spacing:.14em;
+  color:var(--testo-secondario-dark);
+  padding:8px 12px 4px;
+}
+.cover-menu .cm-sep{
+  height:1px;background:var(--bordo-scuro);
+  margin:6px 4px;
+}
+.cover-menu .cm-item{
+  display:block;width:100%;text-align:left;
+  background:transparent;border:none;cursor:pointer;
+  font-family:var(--font-title);font-weight:600;font-size:13.5px;
+  text-transform:uppercase;letter-spacing:.06em;
+  color:var(--testo-primario-dark);
+  padding:10px 12px;
+  border-radius:var(--radius-sm);
+  transition:background .12s ease, color .12s ease;
+}
+.cover-menu .cm-item:hover,.cover-menu .cm-item:focus-visible{
+  background:rgba(255,255,255,.06);
+  color:var(--fisico-forte);
+  outline:none;
+}
+.cover-menu .cm-item:active{background:rgba(255,255,255,.1);}
+
+/* ---------- Buttons ---------- */
+.btn{
+  font-family:var(--font-title);
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:13px;
+  border-radius:var(--radius);
+  border:1px solid var(--bordo-scuro);
+  background:var(--antracite-2);
+  color:var(--testo-primario-dark);
+  padding:14px 18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  cursor:pointer;
+  transition:transform .12s ease, border-color .12s ease, background .12s ease;
+}
+.btn:active{transform:scale(.97);}
+.btn-primary{
+  background:var(--fisico);
+  border-color:var(--fisico);
+  color:var(--testo-su-brand);
+}
+.btn-magic{
+  background:var(--magico);
+  border-color:var(--magico);
+  color:var(--testo-su-brand);
+}
+.btn-ghost{
+  background:transparent;
+  border-color:var(--bordo-scuro);
+  color:var(--testo-secondario-dark-2);
+}
+.btn-sm{padding:8px 12px;font-size:11px;}
+.btn-icon{
+  /* 44px: soglia minima di accessibilità per le aree interattive (non i
+     40px precedenti) — i due usi in toolbar dense di combattimento restano
+     più piccoli di proposito (regole dedicate più sotto), qui è la
+     dimensione di default per ogni altro pulsante icona dell'app. */
+  width:44px;height:44px;padding:0;border-radius:var(--radius-sm);
+  flex:none;
+}
+.btn:disabled{opacity:.35;cursor:not-allowed;transform:none;}
+
+/* ---------- Lista personaggi ---------- */
+#view-list{background:var(--antracite-1);}
+.topbar{
+  display:flex;align-items:center;gap:12px;
+  padding:calc(18px + var(--safe-top)) calc(20px + var(--safe-right)) 14px calc(20px + var(--safe-left));
+  border-bottom:1px solid var(--bordo-scuro);
+}
+.topbar h1{
+  font-size:15px;text-transform:uppercase;letter-spacing:.12em;
+  color:var(--testo-secondario-dark-2);flex:1;
+}
+.list-scroll{flex:1;overflow-y:auto;padding:16px calc(16px + var(--safe-right)) var(--safe-bottom) calc(16px + var(--safe-left));}
+.char-card{
+  display:flex;align-items:center;gap:14px;
+  background:var(--antracite-2);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius);
+  padding:14px 14px;
+  margin-bottom:12px;
+}
+.char-card .avatar{
+  width:44px;height:44px;border-radius:var(--radius-sm);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-title);font-weight:700;font-size:16px;
+  flex:none;
+}
+.avatar.physical{background:rgba(232,98,31,.16);color:var(--fisico-forte);border:1px solid var(--fisico);}
+.avatar.magic{background:rgba(27,181,199,.16);color:var(--magico-forte);border:1px solid var(--magico);}
+.avatar.bicolor{background:linear-gradient(135deg, rgba(232,98,31,.2), rgba(27,181,199,.2));color:var(--bianco-artico);border:1px solid var(--bordo-scuro);}
+.char-card .info{flex:1;min-width:0;}
+.char-card .name{font-family:var(--font-title);font-weight:600;font-size:16px;}
+.char-card .meta{font-size:12px;color:var(--testo-secondario-dark);margin-top:2px;}
+.empty-state{
+  text-align:center;color:var(--testo-secondario-dark);
+  padding:60px 20px;font-size:13px;line-height:1.7;
+}
+
+/* ---------- Scheda: layout ---------- */
+#view-sheet{background:var(--antracite-1);}
+.sheet-header{
+  padding:calc(14px + var(--safe-top)) calc(16px + var(--safe-right)) 10px calc(16px + var(--safe-left));
+  border-bottom:1px solid var(--bordo-scuro);
+  display:flex;align-items:center;gap:10px;
+}
+.sheet-header .who{flex:1;min-width:0;}
+.sheet-header .name-input{
+  background:transparent;border:none;color:var(--testo-primario-dark);
+  font-family:var(--font-title);font-weight:700;font-size:18px;
+  width:100%;padding:2px 0;
+}
+.sheet-header .sub{font-size:11px;color:var(--testo-secondario-dark);text-transform:uppercase;letter-spacing:.08em;}
+
+.tabs{
+  display:flex;overflow-x:auto;gap:4px;
+  padding:8px 12px;
+  border-bottom:1px solid var(--bordo-scuro);
+  -webkit-overflow-scrolling:touch;
+}
+.tabs::-webkit-scrollbar{display:none;}
+.tab-btn{
+  flex:none;
+  font-family:var(--font-title);font-weight:600;font-size:11.5px;
+  text-transform:uppercase;letter-spacing:.06em;
+  color:var(--testo-secondario-dark);
+  background:transparent;border:1px solid transparent;
+  border-radius:999px;padding:8px 14px;cursor:pointer;
+}
+.tab-btn.active{
+  color:var(--antracite-1);
+  background:var(--bianco-artico);
+  border-color:var(--bianco-artico);
+}
+
+.sheet-body{flex:1;overflow-y:auto;padding:18px calc(16px + var(--safe-right)) var(--safe-bottom) calc(16px + var(--safe-left));}
+.tab-panel{display:none;flex-direction:column;gap:18px;}
+.tab-panel.active{display:flex;}
+
+/* ---------- Section / Box ---------- */
+.section-title{
+  font-family:var(--font-title);font-weight:600;font-size:12.5px;
+  text-transform:uppercase;letter-spacing:.1em;
+  color:var(--testo-secondario-dark-2);
+  display:flex;align-items:center;gap:8px;
+}
+.section-title .dot{width:6px;height:6px;border-radius:50%;background:var(--fisico-forte);}
+.section-title .dot.magic{background:var(--magico-forte);}
+.section-title .dot.neutral{background:var(--testo-secondario-dark);}
+
+.box{
+  background:var(--antracite-2);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+.box-bar{height:3px;width:100%;background:var(--testo-secondario-dark);}
+.box-bar.physical{background:linear-gradient(90deg,var(--fisico),var(--fisico-forte));}
+.box-bar.magic{background:linear-gradient(90deg,var(--magico),var(--magico-forte));}
+.box-bar.bicolor{background:linear-gradient(90deg,var(--fisico-forte),var(--magico-forte));}
+.box-pad{padding:14px 14px 16px;}
+
+.box-lore{
+  background:rgba(255,255,255,0.03);
+  border-radius:var(--radius);
+  padding:12px 14px;
+  font-style:italic;
+  color:var(--testo-secondario-dark-2);
+  font-size:12.5px;
+  line-height:1.6;
+}
+
+/* ---------- Build cards ---------- */
+.build-grid{display:flex;flex-direction:column;gap:10px;}
+.build-card{
+  background:var(--antracite-2);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius);
+  padding:14px;
+  display:flex;flex-direction:column;gap:8px;
+  cursor:pointer;
+  position:relative;
+}
+.build-card.selected{border-color:var(--fisico-forte);box-shadow:0 0 0 1px var(--fisico-forte) inset;}
+.build-card.selected.magic-sel{border-color:var(--magico-forte);box-shadow:0 0 0 1px var(--magico-forte) inset;}
+.build-card.selected.bicolor-sel{border-color:var(--bianco-artico);box-shadow:0 0 0 1px var(--bianco-artico) inset;}
+.build-card.selected.bicolor-sel .bc-radio{border-color:var(--bianco-artico);}
+.build-card.selected.bicolor-sel .bc-radio::after{background:var(--bianco-artico);}
+.build-card .bc-top{display:flex;align-items:center;justify-content:space-between;}
+.build-card .bc-name{font-family:var(--font-title);font-weight:700;font-size:16px;text-transform:uppercase;}
+.build-card .bc-radio{width:18px;height:18px;border-radius:50%;border:2px solid var(--bordo-scuro);flex:none;position:relative;}
+.build-card.selected .bc-radio{border-color:var(--fisico-forte);}
+.build-card.selected .bc-radio::after{content:'';position:absolute;inset:3px;border-radius:50%;background:var(--fisico-forte);}
+.build-card.selected.magic-sel .bc-radio{border-color:var(--magico-forte);}
+.build-card.selected.magic-sel .bc-radio::after{background:var(--magico-forte);}
+.build-card.locked{opacity:.35;pointer-events:none;}
+.bc-stats{display:flex;gap:16px;font-family:var(--font-mono);font-size:12px;color:var(--testo-secondario-dark-2);}
+
+/* Dialogo di conferma (classe, statistiche primarie...) */
+.confirm-modal{
+  position:fixed;inset:0;z-index:90;
+  background:rgba(8,9,11,0.8);
+  display:flex;align-items:center;justify-content:center;
+  padding:calc(24px + var(--safe-top)) calc(24px + var(--safe-right)) calc(24px + var(--safe-bottom)) calc(24px + var(--safe-left));
+}
+.confirm-modal .cc-box{
+  background:var(--antracite-2);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius);
+  padding:20px 18px;
+  max-width:340px;width:100%;
+  box-shadow:0 18px 50px rgba(0,0,0,.6);
+}
+.confirm-modal .cc-title{
+  font-family:var(--font-title);font-weight:700;font-size:15px;
+  text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;
+}
+.confirm-modal p{font-size:13px;color:var(--testo-secondario-dark-2);line-height:1.55;margin:0 0 16px;}
+.confirm-modal .cc-actions{display:flex;gap:10px;}
+/* Schermata "Incremento Tecnica/Abilità" (checkpoint "separare le 3
+   progressioni"): più contenuto della piccola .cc-box generica, quindi un
+   proprio box scrollabile invece di riusarla — stessa posizione/overlay di
+   .confirm-modal. */
+.tecab-adv-box{
+  background:var(--antracite-2);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius);
+  padding:20px 18px;
+  max-width:480px;width:100%;
+  max-height:min(640px,86vh);overflow-y:auto;
+  box-shadow:0 18px 50px rgba(0,0,0,.6);
+}
+.tecab-adv-section{padding:10px 0;border-top:1px solid var(--bordo-scuro);}
+.tecab-adv-section:first-of-type{border-top:none;padding-top:0;}
+.tecab-adv-section-title{
+  font-family:var(--font-title);font-weight:600;font-size:11px;
+  text-transform:uppercase;letter-spacing:.06em;color:var(--testo-secondario-dark-2);
+  margin-bottom:4px;
+}
+.tecab-adv-newlabel{font-size:11px;color:var(--incremento-forte);margin:4px 0 2px;}
+.tecab-adv-staged-list{margin:0 0 8px;padding-left:18px;font-size:13px;}
+.tecab-adv-staged-list li{display:flex;align-items:center;gap:6px;}
+.tecab-adv-add-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:4px;}
+.tecab-adv-add-row select,
+.tecab-adv-add-row input[type=text]{
+  background:var(--antracite-1);border:1px solid var(--bordo-scuro);border-radius:var(--radius-sm);
+  padding:7px 8px;color:var(--testo-primario-dark);font-size:13px;
+}
+.tecab-adv-add-row input[type=number]{
+  background:var(--antracite-1);border:1px solid var(--bordo-scuro);border-radius:var(--radius-sm);
+  padding:7px 8px;color:var(--testo-primario-dark);font-size:13px;
+}
+/* Bonus %/Raggio dell'Incremento Abilità (revisione checkpoint "8 punti",
+   terza revisione, punto 1): un flex-wrap su 4 elementi (etichetta, input,
+   etichetta, input) spezzava la coppia a 360px, lasciando un input sotto la
+   propria etichetta invece che accanto. Grid a 2 colonne fisse (etichetta,
+   input): entrambe le etichette allineate a sinistra nella colonna 1,
+   entrambi gli input nella stessa colonna 2, "Raggio" sempre sotto "Bonus %"
+   (ordine del markup, riga per riga) — mai un wrap che li scompagini. */
+.tecab-adv-bonusraggio-grid{
+  display:grid;
+  grid-template-columns:max-content max-content;
+  column-gap:8px;
+  row-gap:6px;
+  align-items:center;
+  margin-top:4px;
+}
+.tecab-adv-bonusraggio-grid label{text-align:left;}
+.tecab-adv-bonusraggio-grid input[type=number]{
+  background:var(--antracite-1);border:1px solid var(--bordo-scuro);border-radius:var(--radius-sm);
+  padding:7px 8px;color:var(--testo-primario-dark);font-size:13px;
+}
+/* Blocco "Assegnazioni disponibili" (Level Up/Narratore, vedi
+   tecabPendingAssignmentsHtml): scelta esplicita Nuova voce/Aumenta una
+   esistente, mai una freccia nell'editor. */
+.tecab-pending-block{display:flex;flex-direction:column;gap:8px;margin-bottom:10px;}
+.tecab-pending-item{
+  background:var(--antracite-2);border:1px solid var(--bordo-scuro);border-radius:var(--radius-sm);
+  padding:8px 10px;display:flex;flex-direction:column;gap:6px;
+}
+.tecab-pending-label{font-size:12px;color:var(--testo-secondario-dark-2);}
+.tecab-pending-actions{display:flex;gap:6px;flex-wrap:wrap;align-items:center;}
+.tecab-pending-increase{display:flex;gap:6px;align-items:center;flex-wrap:wrap;}
+.tecab-pending-increase select{
+  background:var(--antracite-1);border:1px solid var(--bordo-scuro);border-radius:var(--radius-sm);
+  padding:7px 8px;color:var(--testo-primario-dark);font-size:13px;
+}
+/* "Annulla e riassegna" (vedi tecabAnnullaRiassegnaHtml): un piccolo
+   bottone secondario subito sotto l'intestazione, mai al posto della
+   freccia rimossa — solo su una riga in bozza non ancora confermata. */
+.tecab-cancel-draft-btn{align-self:flex-start;margin-top:-4px;}
+/* Bottone della chiamata in combattimento (combat-call-popup): il testo
+   stesso è l'avviso ("Il tuo personaggio è stato richiamato in
+   combattimento"), non solo l'azione — sfondo acceso e pulsante perché
+   resti visibile anche solo con la coda dell'occhio, qualunque schermata
+   si stia guardando. */
+.combat-call-cta{
+  width:100%;
+  padding:18px 16px;
+  font-size:15px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+  line-height:1.3;
+  white-space:normal;
+  background:var(--fisico-forte);
+  border-color:var(--fisico-forte);
+  /* Checkpoint accessibilità: #fff su --fisico-forte dava 2,60:1 (15px/700,
+     sotto anche la soglia 3:1 del testo grande) — --testo-su-brand è lo
+     stesso scuro fisso già in uso per .btn-primary/.btn-magic, 6,97:1 qui. */
+  color:var(--testo-su-brand);
+  animation:combat-call-cta-pulse 1.2s ease-in-out infinite;
+}
+@keyframes combat-call-cta-pulse{
+  0%,100%{ box-shadow:0 0 0 0 rgba(255,122,51,.55); }
+  50%{ box-shadow:0 0 0 14px rgba(255,122,51,0); }
+}
+/* Voce del menu Tecniche/Abilità in combattimento (#combat-source-list),
+   PRIMA di scegliere il bersaglio: nome a sinistra, dettaglio abbreviato
+   (danno+statistica, effetto→tratto di salvezza) a destra — invece
+   dell'unica etichetta centrata usata da armi/boost/oggetti. */
+.cmb-source-btn{display:flex;justify-content:space-between;align-items:center;gap:10px;text-align:left;}
+.cmb-source-label{flex:1;min-width:0;}
+.cmb-source-desc{
+  flex:none;font-family:var(--font-mono);font-size:11px;
+  color:var(--testo-secondario-dark-2);white-space:nowrap;
+}
+.confirm-modal .cc-actions .btn{flex:1;}
+
+/* Conflitto di sincronizzazione (vedi promptSyncConflict in app.js): due
+   "carte" affiancate, una per versione, con volto + un riepilogo statistico
+   invece di un'etichetta generica "questo dispositivo/cloud" — la scelta si
+   fa guardando quale scheda è davvero più sviluppata, non a chi appartiene. */
+.sync-conflict-versions{display:flex;gap:10px;}
+.sync-conflict-version{
+  flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;
+  padding:14px 8px;border:1px solid var(--bordo-scuro);border-radius:var(--radius);
+  background:var(--antracite-1);cursor:pointer;text-align:center;
+  font-family:var(--font-body);color:var(--testo-primario-dark);
+  transition:border-color .15s;
+}
+.sync-conflict-version:hover,.sync-conflict-version:active{border-color:var(--fisico-forte);}
+.scv-avatar{
+  width:64px;height:64px;flex:none;border-radius:50%;
+  background-color:var(--antracite-2);background-size:cover;background-position:center;
+  border:1px solid var(--bordo-scuro);
+}
+.scv-label{font-size:11.5px;line-height:1.5;color:var(--testo-secondario-dark-2);}
+.scv-label b{display:block;color:var(--testo-primario-dark);font-family:var(--font-title);font-size:13px;margin-bottom:2px;}
+.bc-stats b{color:var(--testo-primario-dark);}
+.bc-meta{font-size:11.5px;color:var(--testo-secondario-dark);}
+.swap-row{display:flex;align-items:center;gap:10px;margin-top:4px;}
+.swap-row .btn-sm{flex:none;}
+
+/* ---------- Wizard di creazione personaggio (view-create) ---------- */
+#view-create{background:var(--antracite-1);}
+.wiz-header{
+  padding:calc(14px + var(--safe-top)) calc(16px + var(--safe-right)) 10px calc(16px + var(--safe-left));
+  border-bottom:1px solid var(--bordo-scuro);
+  display:flex;align-items:center;gap:10px;
+}
+.wiz-header-info{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:0;}
+.wiz-step-title{font-size:14px;font-weight:600;color:var(--testo-secondario-dark-2);text-align:center;}
+.wiz-step-count{font-size:11px;font-weight:400;color:var(--testo-secondario-dark);text-align:center;}
+.wiz-progress{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin-top:4px;}
+.wiz-dot{width:7px;height:7px;border-radius:50%;background:var(--bordo-scuro);flex:none;}
+.wiz-dot.active{background:var(--fisico-forte);}
+.wiz-dot.done{background:var(--testo-secondario-dark-2);}
+
+.wiz-body{flex:1;overflow:hidden;display:flex;flex-direction:column;}
+.wiz-step{display:none;flex:1;flex-direction:column;gap:18px;padding:18px 16px;overflow-y:auto;}
+.wiz-step.active{display:flex;}
+
+/* Il passo "narrative" (Identità/Ritratto + Background + Relazioni) non
+   scorre verticalmente come gli altri step: è un carosello orizzontale a
+   schede, ogni scheda occupa tutta la larghezza disponibile. */
+.wiz-step[data-wizstep="narrative"]{overflow:hidden;padding:0;}
+.wiz-narrative-track{
+  /* flex-basis "auto" (non lo 0% implicito di "flex:1"): senza, l'altezza
+     esplicita impostata via JS (syncWizardNarrativeHeight, js/app.js) viene
+     ignorata e il contenitore torna comunque a riempire tutto lo spazio
+     disponibile in .wiz-step. */
+  flex:1 1 auto;display:flex;
+  /* senza questo, lo stretch di default della riga flex forza OGNI scheda
+     (tutte presenti nel DOM insieme, una sola visibile via translateX) ad
+     assumere l'altezza della più alta fra le sei — una scheda breve come
+     "Volto e anagrafica" restava alta quanto "Vita", con un enorme spazio
+     vuoto sotto e il piè di pagina spinto lontano dal contenuto reale.
+     L'altezza reale del contenitore viene poi fissata via JS su quella
+     della sola scheda attiva (syncWizardNarrativeHeight). */
+  align-items:flex-start;
+  transition:transform .25s ease;
+  will-change:transform;
+}
+.wiz-narrative-card{
+  flex:0 0 100%;
+  min-width:0;
+  overflow-y:auto;
+  padding:18px 16px;
+  display:flex;flex-direction:column;gap:18px;
+}
+/* Il toggle rapida/approfondita riusa .tabs/.tab-btn (striscia scorrevole
+   a scelta libera), ma qui sono solo 2 opzioni mutuamente esclusive: sui
+   telefoni più stretti (360px) il testo "Creazione approfondita" veniva
+   tagliato invece di scorrere, dentro un antenato con overflow:hidden.
+   Larghezza divisa a metà e testo libero di andare a capo invece che
+   uscire dal bottone. */
+#wiz-mode-toggle{display:grid;grid-template-columns:1fr 1fr;overflow:visible;}
+#wiz-mode-toggle .tab-btn{white-space:normal;text-align:center;line-height:1.3;}
+/* Punti residui sempre visibili durante lo scroll dello step (statistiche
+   primarie/tratti): un duplicato compatto di #primary-remaining/
+   #traits-remaining-rows, ancorato in cima allo step invece che dentro il
+   .box che lo contiene (quel .box ha overflow:hidden, che spezzerebbe
+   position:sticky) — vuoto e senza effetto finché updatePrimaryRemaining/
+   updateTraitsRemaining (js/app.js) non lo popolano durante il wizard. */
+/* Contatore punti residui: UNA sola volta per sezione (statistiche
+   primarie, tratti), ancorato in cima mentre si scorre la lista sotto —
+   niente doppioni fra scheda e wizard: stesso nodo, stesso ID, spostato
+   fisicamente dentro il wizard da moveIntoWizard() come tutto il resto del
+   blocco. Non "borda" a filo (nessuna dipendenza dal padding del
+   contenitore che lo ospita, diverso fra scheda normale e wizard): resta
+   semplicemente ancorato con un proprio sfondo, senza inseguire i bordi. */
+.pointbuy-header-sticky{position:sticky;top:0;z-index:2;background:var(--antracite-1);padding:8px 0;}
+
+.wiz-nav-wrap{
+  flex:none;
+  position:sticky;bottom:0;
+  background:var(--antracite-1);
+  border-top:1px solid var(--bordo-scuro);
+}
+.wiz-next-hint{margin:0;padding:8px 16px 0;text-align:center;color:var(--testo-secondario-dark-2);}
+.wiz-nav{
+  display:flex;gap:10px;
+  padding:12px calc(16px + var(--safe-right)) calc(12px + var(--safe-bottom)) calc(16px + var(--safe-left));
+}
+.wiz-nav .btn{flex:1;}
+.wiz-nav .btn:disabled{opacity:.35;pointer-events:none;}
+
+/* ---------- Le regole: indice per capitoli + pagina di capitolo ---------- */
+/* Voce dell'indice (un "raccoglitore"/capitolo): stesso stile scuro dei
+   bottoni di navigazione già in uso altrove nell'app, la freccia indica che
+   si entra in una pagina, non che si espande sul posto. */
+.rule-title{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;
+  background:var(--antracite-2);border:1px solid var(--bordo-scuro);border-radius:var(--radius);
+  color:var(--testo-primario-dark);
+  font-family:var(--font-title);font-weight:700;font-size:14px;
+  text-transform:uppercase;letter-spacing:.06em;
+  padding:13px 14px;cursor:pointer;text-align:left;
+}
+.rules-index-item{margin-bottom:10px;}
+.rule-title .arrow{color:var(--testo-secondario-dark);}
+/* Capitolo aperto: pop-up a schermo intero sopra l'indice, stessa
+   struttura del lettore PDF della premessa (head fisso + corpo scorrevole). */
+#rules-popup{
+  position:fixed;inset:0;z-index:95;
+  background:#0b0c10;
+  display:flex;flex-direction:column;
+}
+/* Libreria "Ambientazioni" della campagna (Gestisci > Ambientazioni):
+   stesso guscio a schermo intero di #rules-popup/#pdf-viewer, ma il corpo
+   è una griglia in stile galleria foto invece di testo scorrevole. */
+#campaign-assets-popup{
+  position:fixed;inset:0;z-index:95;
+  background:#0b0c10;
+  display:flex;flex-direction:column;
+}
+.asset-gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(96px,1fr));
+  gap:20px 12px;
+  padding:14px calc(16px + var(--safe-right)) calc(14px + var(--safe-bottom)) calc(16px + var(--safe-left));
+}
+.asset-gallery-tile{display:flex;flex-direction:column;gap:6px;}
+.asset-gallery-name{
+  font-size:10.5px;font-weight:600;text-align:center;line-height:1.3;
+  color:var(--testo-secondario-dark-2);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+  overflow:hidden;text-overflow:ellipsis;
+  min-height:2.6em;
+}
+.asset-gallery-thumb{
+  position:relative;aspect-ratio:1;
+  border-radius:var(--radius-sm);border:1px solid var(--bordo-scuro);
+  background:var(--antracite-1) center/cover no-repeat;
+  overflow:hidden;cursor:pointer;
+}
+.asset-gallery-thumb .ag-del{
+  position:absolute;top:4px;right:4px;z-index:1;
+  width:22px;height:22px;border-radius:50%;border:none;
+  background:rgba(8,9,11,.65);color:#fff;font-size:12px;
+  display:flex;align-items:center;justify-content:center;
+}
+.asset-gallery-add{
+  aspect-ratio:1;border-radius:var(--radius-sm);
+  border:1px dashed var(--bordo-scuro);background:transparent;
+  display:flex;align-items:center;justify-content:center;
+  font-size:26px;color:var(--testo-secondario-dark);
+}
+.asset-gallery-add:active{background:rgba(255,255,255,.05);}
+/* Copertina illustrata di una sezione (quando esiste in
+   RULES_SECTION_COVERS): a piena larghezza, prima del titolo. */
+.rule-cover{
+  width:100%;height:auto;display:block;
+  border-radius:var(--radius);
+  margin:14px 0;
+}
+.rule-cover:first-child{margin-top:0;}
+/* Corpo testuale di una sezione dentro la pagina di un capitolo: stesso
+   .box usato in tutta l'app, sempre leggibile per intero (niente accordion
+   da espandere: sei già entrato nel capitolo apposta per leggerlo). */
+.rule-text{
+  font-size:13px;line-height:1.65;color:var(--testo-secondario-dark-2);
+  white-space:pre-wrap;
+  overflow-wrap:break-word;
+  text-align:justify;text-align-last:left;
+  hyphens:auto;word-spacing:normal;
+}
+.rule-text strong{color:var(--testo-primario-dark);font-weight:700;}
+/* Introduzione dell'intero capitolo (RULES_CHAPTER_INTROS): fuori dai box
+   delle sotto-sezioni, corsivo per distinguerla dal resto del testo. */
+.rule-intro{
+  margin:14px 0 4px;
+  font-style:italic;
+  color:var(--testo-primario-dark);
+}
+
+/* ---------- Premesse di gioco ---------- */
+.prem-row{
+  display:flex;align-items:flex-start;gap:10px;
+  padding:9px 10px;background:var(--antracite-1);
+  border:1px solid var(--bordo-scuro);border-radius:var(--radius-sm);
+  margin-bottom:8px;
+}
+.prem-row input[type=checkbox]{width:18px;height:18px;margin-top:1px;accent-color:var(--fisico-forte);flex:none;}
+.prem-row .pr-main{flex:1;min-width:0;}
+.prem-row .pr-title{font-family:var(--font-title);font-weight:600;font-size:13.5px;}
+.prem-row .pr-text{font-size:12.5px;color:var(--testo-secondario-dark-2);line-height:1.55;margin-top:4px;white-space:pre-wrap;}
+.prem-row .btn-del{flex:none;opacity:.6;}
+#prem-popup{
+  position:fixed;inset:0;z-index:85;
+  background:rgba(8,9,11,0.85);
+  display:flex;align-items:center;justify-content:center;
+  padding:calc(20px + var(--safe-top)) calc(14px + var(--safe-right)) calc(20px + var(--safe-bottom)) calc(14px + var(--safe-left));
+}
+#prem-popup .pp-box{
+  background:var(--antracite-2);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius);
+  padding:16px;
+  width:100%;max-width:420px;
+  max-height:86vh;overflow-y:auto;
+  display:flex;flex-direction:column;gap:10px;
+}
+#prem-popup .pp-head{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+#prem-popup .pp-list{display:flex;flex-direction:column;}
+
+/* ---------- Volto del personaggio ---------- */
+.portrait-pad{display:flex;align-items:flex-start;gap:14px;}
+.portrait-frame{
+  width:150px;height:150px;flex:none;
+  border-radius:var(--radius);
+  border:1px solid var(--bordo-scuro);
+  background:var(--antracite-1) center/cover no-repeat;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+  cursor:pointer;
+}
+.portrait-placeholder{font-size:10px;color:var(--testo-secondario-dark);text-align:center;padding:4px;line-height:1.5;}
+.portrait-actions{display:flex;flex-direction:column;gap:10px;align-items:stretch;flex:1;min-width:0;}
+/* Nota d'aiuto sotto l'intera riga (riquadro + nome + Carica immagine),
+   non più incolonnata nella sola parte destra: testo compatto per stare
+   su una riga anche a 360px, senza scendere sotto i 12px. */
+/* selettore a doppia classe (non solo .portrait-hint): .helper-text da solo
+   ha una regola più avanti nel foglio di stile che altrimenti vincerebbe a
+   parità di specificità e riporterebbe il testo sotto i 12px richiesti. */
+.portrait-hint.helper-text{margin:10px 0 0;text-align:left;font-size:12px;white-space:normal;}
+
+/* Lightbox di ingrandimento del volto */
+#portrait-lightbox{
+  position:fixed;inset:0;z-index:80;
+  background:rgba(8,9,11,0.92);
+  display:flex;align-items:center;justify-content:center;
+  padding:56px 16px 24px;
+}
+/* ---------- Visualizzatore PDF (premesse di gioco) ---------- */
+body.pdf-lock-scroll{overflow:hidden;}
+#pdf-viewer{
+  position:fixed;inset:0;z-index:95;
+  background:#0b0c10;
+  display:flex;flex-direction:column;
+}
+.pdfv-head{
+  display:flex;align-items:center;gap:10px;flex:none;
+  padding:calc(10px + var(--safe-top)) calc(12px + var(--safe-right)) 10px calc(12px + var(--safe-left));
+  border-bottom:1px solid var(--bordo-scuro);
+  background:var(--antracite-2);
+}
+.pdfv-title{
+  font-family:var(--font-title);font-weight:700;font-size:14px;
+  flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  color:var(--testo-primario-dark);
+}
+.pdfv-status{font-size:11px;color:var(--testo-secondario-dark);flex:none;}
+.pdfv-body{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;position:relative;}
+.pdfv-pages{
+  position:relative;z-index:1;
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+  padding:12px calc(12px + var(--safe-right)) max(56px, calc(12px + var(--safe-bottom))) calc(12px + var(--safe-left));
+  user-select:none;-webkit-user-select:none;
+}
+.pdf-page-canvas{max-width:100%;border-radius:2px;box-shadow:0 2px 12px rgba(0,0,0,.45);}
+.pdfv-watermark{
+  position:absolute;top:0;left:0;right:0;
+  pointer-events:none;z-index:2;
+  background-repeat:repeat;
+}
+
+/* ---------- Premesse di gioco (info file) ---------- */
+#premises-file-info .pr-title,
+#acc-new-campaign-premise-info .pr-title,
+.cm-campaign-detail .pr-title{font-family:var(--font-title);font-weight:600;font-size:13.5px;}
+#premises-file-info .pr-text,
+#acc-new-campaign-premise-info .pr-text,
+.cm-campaign-detail .pr-text{font-size:12.5px;color:var(--testo-secondario-dark-2);margin-top:2px;}
+
+#portrait-lightbox img{
+  max-width:94vw;
+  max-height:80vh;
+  border-radius:var(--radius);
+  border:1px solid var(--bordo-scuro);
+  box-shadow:0 18px 50px rgba(0,0,0,.6);
+}
+#pl-close{
+  position:absolute;
+  top:calc(12px + var(--safe-top));
+  right:calc(14px + var(--safe-right));
+  width:44px;height:44px;
+  border-radius:50%;
+  border:1px solid var(--bordo-scuro);
+  background:var(--antracite-2);
+  color:var(--testo-primario-dark);
+  font-size:18px;
+  cursor:pointer;
+}
+.header-avatar{
+  width:38px;height:38px;flex:none;border-radius:var(--radius-sm);
+  border:1px solid var(--bordo-scuro);
+  background:var(--antracite-1) center/cover no-repeat;
+}
+.char-card .avatar.has-portrait{background-size:cover;background-position:center;color:transparent;}
+
+/* ---------- Diagramma scheda (fronte) ---------- */
+.diagram-wrap{
+  position:relative;
+  width:100%;
+  max-width:400px;
+  margin:0 auto;
+}
+.diagram-wrap svg{width:100%;height:auto;display:block;}
+.dg-rect{fill:var(--antracite-1);stroke:var(--bordo-scuro);stroke-width:2;}
+.dg-c{fill:var(--antracite-1);stroke:var(--bianco-artico);stroke-width:2;}
+.dg-c-t{stroke:var(--testo-secondario-dark);}
+.dg-c-hp{stroke:var(--fisico);stroke-width:2.6;}
+.dg-c-mp{stroke:var(--magico);stroke-width:2.6;}
+.dg-c-sm{stroke:var(--bordo-scuro);}
+.dg-lab{
+  font-family:var(--font-title);
+  font-size:8px;
+  font-weight:600;
+  letter-spacing:.5px;
+  text-transform:uppercase;
+  fill:var(--testo-secondario-dark);
+  text-anchor:middle;
+}
+.dg-inputs{position:absolute;inset:0;}
+.dg-input{
+  position:absolute;
+  transform:translate(-50%,-50%);
+  background:transparent;
+  border:none;
+  color:var(--testo-primario-dark);
+  font-family:var(--font-mono);
+  font-size:14px;
+  text-align:center;
+  padding:0;
+  -moz-appearance:textfield;
+}
+.dg-input::-webkit-outer-spin-button,.dg-input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;}
+.dg-input:focus{outline:none;color:var(--fisico-forte);}
+.dg-input.dg-ro{color:var(--testo-secondario-dark-2);pointer-events:none;}
+.dg-input.dg-buffed{color:var(--incremento-forte) !important;}
+@media (max-width:379px){.dg-input{font-size:12px;}}
+
+.dg-pm-overlay{position:absolute;inset:0;pointer-events:none;}
+.dg-pm-btn{
+  position:absolute;
+  transform:translate(-50%,-50%);
+  width:14px;height:14px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-title);font-weight:700;font-size:10px;line-height:1;
+  border:1.2px solid var(--bianco-artico);
+  background:var(--antracite-2);color:var(--bianco-artico);
+  pointer-events:auto;cursor:pointer;padding:0;
+  box-shadow:0 0 0 1.5px var(--antracite-1);
+}
+.dg-pm-btn:active{transform:translate(-50%,-50%) scale(.9);}
+.dg-pm-plus{background:var(--fisico);border-color:var(--fisico);color:var(--antracite-1);}
+.dg-pm-minus{background:var(--antracite-2);border-color:var(--testo-secondario-dark);}
+@media (max-width:379px){.dg-pm-btn{width:13px;height:13px;font-size:9px;}}
+
+/* Contatore degli esiti + / - accumulati verso il traguardo (3, o 4 in
+   compresenza) di Carisma/Stile/Fortuna: compare accanto alla cifra
+   dell'anello (sinistra per i "-", destra per i "+"), non più sui bottoni
+   (rovinava la leggibilità) — sparisce da solo quando il traguardo scatta e
+   la statistica cambia (vedi renderTertiaryPlusMinus). */
+.dg-pm-num{
+  position:absolute;transform:translate(-50%,-50%);
+  font-family:var(--font-title);font-weight:700;font-size:9px;line-height:1;
+  pointer-events:none;white-space:nowrap;
+  text-shadow:0 0 2px var(--antracite-1),0 0 2px var(--antracite-1);
+}
+.dg-pm-num-plus{color:var(--incremento-forte);}
+.dg-pm-num-minus{color:var(--fisico-forte);}
+@media (max-width:379px){.dg-pm-num{font-size:8px;}}
+
+/* ---------- Point buy ---------- */
+.pointbuy-header{
+  display:flex;align-items:baseline;justify-content:space-between;
+  padding:2px 2px 10px;
+}
+.pointbuy-header .remaining{
+  font-family:var(--font-mono);font-size:20px;color:var(--fisico-forte);
+}
+.pointbuy-header .remaining.zero{color:var(--testo-secondario-dark-2);}
+.pointbuy-header .remaining.neg{color:#FF5C5C;}
+.pointbuy-header .label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--testo-secondario-dark);}
+
+/* Riga statistica: SEMPRE due colonne — .stat-info (nome esteso +
+   eventuale valore derivato, subito sotto il nome, MAI a destra dei
+   pulsanti) a larghezza flessibile (minmax(0,1fr): può restringersi,
+   non trascina mai lo stepper fuori dalla card), .stepper a larghezza
+   intrinseca (max-content) sempre ancorato a destra alla STESSA
+   posizione, qualunque sia la lunghezza del valore derivato. Grid
+   invece di flex: con flex lo stepper, pur "flex:none", riceveva
+   comunque lo spazio residuo del gap fra le due colonne e restava
+   percepibile come due controlli separati invece che un unico blocco
+   compatto — con grid la colonna dello stepper è size esattamente al
+   suo contenuto. */
+.stat-row{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) max-content;
+  align-items:center;gap:10px;
+  padding:9px 2px;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.stat-row:last-child{border-bottom:none;}
+.stat-info{min-width:0;}
+.stat-row .stat-label .abbr{font-family:var(--font-title);font-weight:700;font-size:13px;}
+.stat-row .stat-label .full{
+  display:block;font-size:9px;color:var(--testo-secondario-dark);
+  text-transform:uppercase;letter-spacing:.02em;
+}
+.stat-label.physical .abbr{color:var(--fisico-forte);}
+.stat-label.magic .abbr{color:var(--magico-forte);}
+.stat-label.neutral .abbr{color:var(--bianco-artico);}
+.stat-label.buffed .abbr{color:var(--incremento-forte) !important;}
+.buff-chip{
+  border-color:var(--incremento);color:var(--incremento-forte);
+  font-family:var(--font-mono);flex:none;
+}
+/* Bonus da arma/scudo equipaggiati: verde, a indicare che statistica o
+   tratto sono momentanei (durano finché il pezzo resta equipaggiato),
+   a differenza del giallo/ambra usato per gli incrementi da consumabile. */
+.buff-chip-equip{
+  border-color:var(--equip-momentaneo);color:var(--equip-momentaneo-forte);
+  font-family:var(--font-mono);flex:none;
+}
+/* Grid a larghezza intrinseca (width:max-content), non un flex che si
+   distribuisce nello spazio disponibile: le tre colonne [bottone, valore,
+   bottone] restano incollate le une alle altre come UN controllo solo,
+   ancorate a destra nella colonna "max-content" di .stat-row tramite
+   justify-self:end (qui ridondante perché la colonna è già sized sul
+   contenuto, ma esplicito per chiarezza e robustezza). column-gap 8px:
+   con lo pseudo-elemento ::after che estende l'area sensibile di ogni
+   bottone di 6px per lato (32px visibili -> ~44px toccabili), un gap di
+   almeno 6px fra bottone e input evita che le due aree si tocchino. */
+.stepper{
+  display:inline-grid;
+  grid-template-columns:32px 30px 32px;
+  column-gap:8px;
+  align-items:center;
+  width:max-content;
+  justify-self:end;
+}
+.stepper button{
+  /* Bottone visibile piccolo e discreto (32x32, niente lo stesso peso
+     visivo dei CTA): l'area sensibile al tocco resta comunque ~44x44
+     tramite ::after (vedi sotto), senza ingrandire il riquadro e senza
+     toccare i listener esistenti — il click su ::after ha comunque come
+     target il <button> stesso (i pseudo-elementi non sono nodi a sé),
+     quindi closest('[data-pstat]')/closest('[data-tstat]') funzionano
+     invariati. */
+  position:relative;
+  width:32px;height:32px;border-radius:7px;padding:0;
+  border:1px solid var(--bordo-scuro);background:var(--antracite-1);
+  color:var(--testo-primario-dark);font-size:16px;line-height:1;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;
+}
+.stepper button::after{
+  content:"";
+  position:absolute;top:50%;left:50%;
+  width:44px;height:44px;
+  transform:translate(-50%,-50%);
+}
+.stepper button:disabled{opacity:.35;cursor:not-allowed;}
+.stepper input{
+  /* niente più larghezza fissa propria (era 42px): la colonna grid da
+     30px la sostituisce, così l'input non può più allargare lo stepper
+     oltre le tre colonne dichiarate. */
+  width:100%;text-align:center;background:transparent;border:none;
+  font-family:var(--font-mono);font-size:14px;color:var(--testo-primario-dark);
+  -moz-appearance:textfield;
+}
+.stepper input:disabled{opacity:.5;}
+.stepper input::-webkit-outer-spin-button,.stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;}
+/* Riga secondaria sotto il nome esteso della statistica: bonus da
+   consumabile/equip (.stat-row-secondary) e valore derivato — HP/MP max,
+   Iniziativa, danno puro (.stat-danno-preview, renderStatDannoPreview in
+   js/app.js) — SEMPRE dentro .stat-info, quindi mai a destra dei pulsanti.
+   Testo semplice, non un'altra pillola: un badge in più per ogni riga
+   sarebbe rumore, qui basta una riga secondaria compatta e leggibile. */
+.stat-row-secondary{
+  font-size:11px;color:var(--testo-secondario-dark);
+  font-family:var(--font-mono);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.stat-row-secondary[hidden],.stat-row-secondary:empty{display:none;}
+
+/* ---------- Stat readouts (derived values, HUD-style) ---------- */
+.hud-grid{display:flex;flex-wrap:wrap;gap:10px;}
+.hud-tile{
+  flex:1 1 calc(50% - 10px);
+  min-width:120px;
+  background:var(--antracite-2);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius);
+  padding:12px 14px;
+}
+.hud-tile .ht-label{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--testo-secondario-dark);}
+.hud-tile .ht-value{font-family:var(--font-mono);font-size:22px;color:var(--testo-primario-dark);margin-top:2px;}
+.hud-tile.physical .ht-value{color:var(--fisico-forte);}
+.hud-tile.magic .ht-value{color:var(--magico-forte);}
+.hud-tile .ht-sub{font-size:10.5px;color:var(--testo-secondario-dark);margin-top:2px;}
+
+/* Barre HP/MP/PP in gioco */
+.bar-row{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+.bar-row:last-child{margin-bottom:0;}
+.bar-row .bar-top{display:flex;justify-content:space-between;align-items:baseline;}
+.bar-row .bar-name{font-family:var(--font-title);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.08em;}
+.bar-row .bar-name.buffed{color:var(--incremento-forte) !important;}
+.bar-row .bar-val{font-family:var(--font-mono);font-size:14px;color:var(--testo-secondario-dark-2);}
+.bar-track{height:14px;border-radius:7px;background:var(--antracite-1);border:1px solid var(--bordo-scuro);overflow:hidden;}
+.bar-fill{height:100%;border-radius:7px;transition:width .2s ease;}
+.bar-fill.physical{background:linear-gradient(90deg,var(--fisico),var(--fisico-forte));}
+.bar-fill.magic{background:linear-gradient(90deg,var(--magico),var(--magico-forte));}
+.bar-fill.neutral{background:linear-gradient(90deg,#7C828C,var(--testo-secondario-dark-2));}
+.bar-controls{display:flex;justify-content:flex-end;align-items:center;gap:6px;margin-top:2px;flex-wrap:wrap;}
+.bar-controls input[type=number]{
+  width:64px;background:var(--antracite-1);border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius-sm);color:var(--testo-primario-dark);
+  font-family:var(--font-mono);font-size:12px;text-align:center;padding:7px 4px;
+}
+.bar-controls select{
+  flex:1 1 auto;min-width:0;max-width:220px;
+  background:var(--antracite-1);border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius-sm);color:var(--testo-primario-dark);
+  font-size:12px;padding:7px 8px;
+}
+
+.inline-max-input{
+  width:52px;background:transparent;border:none;border-bottom:1px dashed var(--bordo-scuro);
+  color:var(--testo-secondario-dark-2);font-family:var(--font-mono);font-size:14px;
+  text-align:center;padding:0 2px;
+  -moz-appearance:textfield;
+}
+.inline-max-input-sm{width:38px;font-size:12px;}
+.inline-max-input::-webkit-outer-spin-button,.inline-max-input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;}
+.inline-max-input:focus{outline:none;border-bottom-color:var(--fisico-forte);}
+
+/* ---------- Roll widget ---------- */
+.roll-row{display:flex;align-items:center;gap:12px;}
+.roll-result{
+  font-family:var(--font-mono);font-size:24px;color:var(--bianco-artico);
+  min-width:52px;text-align:center;
+}
+.roll-result.success{color:var(--magico-forte);}
+.roll-result.fail{color:#FF5C5C;}
+.roll-detail{font-size:10.5px;color:var(--testo-secondario-dark);white-space:pre-wrap;}
+.roll-detail .success-note{color:var(--magico-forte);font-weight:600;}
+.roll-detail .fail-note{color:#FF5C5C;font-weight:600;}
+
+/* ---------- Form fields generic ---------- */
+.field{display:flex;flex-direction:column;gap:6px;min-width:0;}
+.field label{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--testo-secondario-dark);}
+.field input[type=text],.field input[type=number],.field input[type=password],.field textarea,.field select{
+  background:var(--antracite-1);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius-sm);
+  padding:10px 12px;
+  color:var(--testo-primario-dark);
+  font-size:14px;
+  width:100%;
+  min-width:0;
+}
+.field textarea{resize:vertical;min-height:70px;line-height:1.5;font-family:var(--font-body);}
+.field-row{display:flex;gap:10px;flex-wrap:wrap;}
+.field-row .field{flex:1 1 120px;min-width:0;}
+
+/* ---------- Background: contenitori (uno alla volta, scelti dal menu #bg-nav-select) + sola lettura/modifica ---------- */
+.bg-section{
+  background:var(--antracite-2);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+.bg-section-head{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  padding:12px 12px;
+}
+.bg-section-head .bg-section-title{
+  font-family:var(--font-title);font-weight:600;font-size:12.5px;
+  text-transform:uppercase;letter-spacing:.1em;
+  color:var(--testo-secondario-dark-2);
+  margin-right:auto;
+}
+.bg-section-body{padding:0 12px 14px;}
+/* campo di sola lettura: niente bordo/sfondo a rilievo, testo comunque
+   interamente leggibile (auto-altezza via JS, mai troncato o a scorrimento) */
+.field textarea[data-bg][readonly],.field input[data-bg][readonly]{
+  background:transparent;border-color:transparent;padding-left:0;padding-right:0;
+  color:var(--testo-primario-dark);cursor:default;
+}
+.field textarea[data-bg]{resize:none;overflow:hidden;}
+/* campi "corti" (data di nascita, altezza...): niente min-height da 70px,
+   l'altezza reale la decide comunque l'auto-resize via JS */
+.field textarea[data-bg][rows="1"]{min-height:0;}
+
+/* ---------- Tratti ---------- */
+.trait-group{display:flex;flex-direction:column;gap:6px;}
+.trait-row{
+  display:flex;align-items:center;gap:10px;
+  padding:8px 10px;
+  background:var(--antracite-2);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius-sm);
+}
+.trait-row .t-name{flex:1;font-size:13px;min-width:0;}
+.trait-row .t-name input{
+  width:100%;background:transparent;border:none;color:var(--testo-primario-dark);font-size:13px;
+}
+.trait-row .t-dice{
+  font-family:var(--font-mono);font-size:11px;color:var(--testo-secondario-dark-2);
+  background:var(--antracite-1);border:1px solid var(--bordo-scuro);
+  border-radius:5px;padding:3px 7px;min-width:44px;text-align:center;flex:none;
+}
+.trait-row input[type=number]{
+  width:46px;background:var(--antracite-1);border:1px solid var(--bordo-scuro);
+  border-radius:5px;color:var(--testo-primario-dark);font-family:var(--font-mono);
+  text-align:center;padding:6px 2px;flex:none;
+}
+.trait-row input[type=number]:disabled{opacity:.5;}
+.trait-stepper{grid-template-columns:28px 40px 28px;column-gap:4px;flex:none;}
+.trait-stepper button{width:28px;height:32px;font-size:12px;}
+.trait-stepper input[type=number]{width:40px;}
+.trait-row .btn-roll{flex:none;}
+.trait-row .btn-del{flex:none;opacity:.5;}
+.trait-add-select:disabled{opacity:.4;cursor:not-allowed;}
+.trait-add-select{
+  appearance:none;
+  -webkit-appearance:none;
+  align-self:flex-start;
+  margin-bottom:4px;
+  background:transparent;
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius);
+  color:var(--testo-secondario-dark-2);
+  font-family:var(--font-title);
+  font-weight:600;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  padding:8px 12px;
+  cursor:pointer;
+  max-width:100%;
+}
+
+/* ---------- Tabelle ---------- */
+table.data-table{width:100%;border-collapse:collapse;font-size:12px;}
+table.data-table thead th{
+  background:var(--bianco-artico);color:var(--antracite-1);
+  font-family:var(--font-title);font-weight:600;text-transform:uppercase;
+  font-size:10.5px;letter-spacing:.04em;
+  padding:8px 8px;text-align:left;
+}
+table.data-table tbody td{
+  padding:8px 8px;border-bottom:1px solid rgba(255,255,255,0.06);
+  color:var(--testo-secondario-dark-2);
+}
+table.data-table tbody tr:nth-child(even){background:rgba(255,255,255,0.02);}
+table.data-table tbody tr.current-row{outline:1px solid var(--fisico-forte);outline-offset:-1px;}
+table.data-table td.num,table.data-table th.num{font-family:var(--font-mono);}
+.table-scroll{overflow-x:auto;border:1px solid var(--bordo-scuro);border-radius:var(--radius);}
+.table-scroll table{border:none;}
+
+/* Tabella editabile (Tecniche/Abilità/Boost) */
+table.edit-table input{
+  width:100%;background:transparent;border:none;color:var(--testo-primario-dark);
+  font-size:12px;padding:2px;
+}
+table.edit-table textarea{
+  width:100%;min-width:150px;background:transparent;border:none;color:var(--testo-primario-dark);
+  font-size:12px;padding:2px;resize:vertical;font-family:inherit;line-height:1.4;
+}
+table.edit-table td{padding:4px 6px;}
+table.edit-table td.col-wide{min-width:120px;}
+table.edit-table td.col-narrow{min-width:64px;}
+table.edit-table thead th{white-space:nowrap;}
+/* Cella Bonus/Malus (traitBonusCellHtml): ospita un piccolo form per riga
+   (select tratto + eventuale nome personalizzato + valore + rimuovi), non un
+   singolo campo — .col-wide (120px, pensato per un input di solo testo) è
+   troppo stretto e tronca l'etichetta del select ("Nuovo tratto (Capacità
+   Combattive)…" diventava "Nuovo tratto (C"), costringendo ogni controllo
+   sulla propria riga. */
+table.edit-table td.col-bonus{min-width:240px;}
+table.edit-table .equip-bonus-row select{min-width:150px;flex:1 1 150px;}
+/* Colonne "Bonus"/"Malus" (tecAbBonusCellHtml/tecAbMalusCellHtml): a
+   differenza di "Effetto" sopra, qui ogni riga è solo un select di tratto +
+   un numero + un bottone rimuovi — 240px con select a 150px lascia molto
+   spazio vuoto attorno a un contenuto corto ("Resistenza", "-2", ✕). Più
+   specifica della regola generale qui sopra, quindi la sovrascrive solo
+   dentro questa colonna. */
+table.edit-table td.col-bonusmalus{min-width:150px;}
+table.edit-table td.col-bonusmalus .equip-bonus-row select{min-width:100px;flex:1 1 100px;}
+
+/* Bonus/malus: uno o più per riga, ciascuno un pallino "acceso" */
+.bm-list{list-style:none;padding:0;margin:4px 0 0;display:flex;flex-direction:column;gap:3px;}
+.bm-item{display:flex;align-items:flex-start;gap:6px;font-size:11.5px;line-height:1.4;color:var(--testo-secondario-dark-2);}
+.bm-dot{width:6px;height:6px;border-radius:50%;margin-top:4px;flex-shrink:0;background:var(--fisico-forte);box-shadow:0 0 4px 1px var(--fisico-forte);}
+.bm-item.malus .bm-dot{background:#FF5C5C;box-shadow:0 0 4px 1px #FF5C5C;}
+
+/* ---------- Retro scheda: locazioni ---------- */
+.slot-grid{display:flex;flex-direction:column;gap:10px;}
+/* Griglia Zaino 5x4 (20 slot): una cella per oggetto non equipaggiato
+   (consumabile, arma/scudo, oggetto chiave), vuota/tratteggiata se libera. */
+.zaino-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:10px;}
+.zaino-slot{
+  aspect-ratio:1;border:1px dashed var(--bordo-scuro);border-radius:var(--radius-sm);
+  display:flex;align-items:center;justify-content:center;font-size:22px;
+  background:var(--antracite-2);
+  padding:0;font-family:inherit;
+}
+.zaino-slot.filled{border-style:solid;cursor:pointer;}
+.zaino-icon-hp{color:var(--fisico-forte);}
+.zaino-icon-mp{color:var(--magico-forte);}
+.zaino-icon-buff{color:var(--incremento-forte);}
+/* Popup di dettaglio equip (tap su un'icona dello Zaino): sola lettura,
+   stessa struttura .confirm-modal/.cc-box già in uso (chiuso anche dal
+   tasto indietro Android via closeTopOverlay). */
+.equip-detail-stats .row-between{margin-bottom:6px;}
+.equip-detail-bonuses{margin-top:8px;display:flex;flex-direction:column;gap:4px;}
+.slot-card{
+  background:var(--antracite-2);border:1px solid var(--bordo-scuro);border-radius:var(--radius);
+  padding:10px 12px;
+}
+.slot-card .slot-name{
+  width:100%;background:transparent;border:none;border-bottom:1px dashed var(--bordo-scuro);
+  color:var(--testo-primario-dark);font-family:var(--font-title);font-weight:600;
+  font-size:13px;padding:2px 0 6px;margin-bottom:8px;text-transform:uppercase;letter-spacing:.04em;
+}
+.slot-picker{margin-bottom:8px;}
+.slot-picker .sp-label{
+  display:block;font-size:8.5px;text-transform:uppercase;color:var(--testo-secondario-dark);
+  letter-spacing:.04em;margin-bottom:4px;
+}
+.slot-picker .sp-row{display:flex;flex-wrap:wrap;gap:6px;}
+.slot-picker .sp-row .btn-sm{flex:1;min-width:64px;padding:7px 8px;}
+.slot-fields{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+.slot-fields .sf{display:flex;flex-direction:column;gap:3px;min-width:0;}
+.slot-fields label{font-size:8.5px;text-transform:uppercase;color:var(--testo-secondario-dark);letter-spacing:.04em;}
+.slot-fields label .sf-range{text-transform:none;letter-spacing:0;font-family:var(--font-mono);}
+.slot-card .slot-bonus{margin-top:10px;}
+.equip-bonuses{margin-top:10px;}
+.equip-bonus-row{
+  display:flex;flex-wrap:wrap;align-items:center;gap:6px;
+  padding:6px 0;border-top:1px solid var(--bordo-scuro);
+}
+.equip-bonus-row select{
+  background:var(--antracite-1);border:1px solid var(--bordo-scuro);border-radius:5px;
+  color:var(--testo-primario-dark);font-size:12px;padding:5px 6px;min-width:0;
+}
+.equip-bonus-row input[type="number"]{
+  background:var(--antracite-1);border:1px solid var(--bordo-scuro);border-radius:5px;
+  color:var(--testo-primario-dark);font-family:var(--font-mono);text-align:center;padding:5px 2px;font-size:13px;
+}
+.equip-bonus-row input[type="text"]{
+  background:var(--antracite-1);border:1px solid var(--bordo-scuro);border-radius:5px;
+  color:var(--testo-primario-dark);font-size:12px;padding:5px 6px;min-width:0;flex:1 1 100px;
+}
+.equip-bonus-trait{display:flex;flex-wrap:wrap;gap:6px;flex:1 1 auto;}
+
+/* ---------- Tecniche/Abilità: schede responsive (editTecAbCardRows,
+   js/app.js) — sostituiscono la tabella a 9 colonne (1038px), non
+   utilizzabile su mobile senza scorrimento orizzontale. Una colonna su
+   smartphone, due da tablet in su, tre su schermi larghi: nessuna
+   duplicazione, la stessa scheda scorre a colonna piena o si affianca a
+   seconda dello spazio disponibile via CSS grid, mai due DOM diversi. */
+.tecab-cards{display:grid;grid-template-columns:1fr;gap:12px;}
+@media (min-width:700px){.tecab-cards{grid-template-columns:1fr 1fr;}}
+@media (min-width:1100px){.tecab-cards{grid-template-columns:1fr 1fr 1fr;}}
+.tecab-card{
+  background:var(--antracite-2);border:1px solid var(--bordo-scuro);border-radius:var(--radius);
+  padding:12px;display:flex;flex-direction:column;gap:10px;min-width:0;
+}
+.tecab-field{display:flex;flex-direction:column;gap:4px;min-width:0;}
+.tecab-field-label{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--testo-secondario-dark);}
+.tecab-field-nome .tecab-field-control input{font-size:15px;font-weight:600;}
+.tecab-field-control{min-width:0;}
+.tecab-field-control select,
+.tecab-field-control > input,
+.tecab-field-control > textarea{width:100%;}
+/* Tema scuro per gli input/select dentro le schede Tecniche/Abilità: senza
+   questa regola restano allo stile nativo del browser (sfondo bianco) —
+   .tecab-field-control non è mai stato dentro un .field, che è l'unico
+   selettore da cui il resto dell'app eredita lo sfondo scuro dei campi
+   (vedi .field input/.field select più sotto in questo foglio). */
+.tecab-field-control input[type=text],
+.tecab-field-control input[type=number],
+.tecab-field-control select,
+.tecab-field-control textarea{
+  background:var(--antracite-1);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius-sm);
+  padding:9px 10px;
+  color:var(--testo-primario-dark);
+  font-size:14px;
+}
+.tecab-card-main{display:flex;flex-direction:column;gap:10px;}
+/* Intestazione "Titolo … LV n [▲]" di ogni scheda/sezione di Tecnica o
+   Abilità (vedi tecabSectionHeaderHtml, js/app.js): SOSTITUISCE la vecchia
+   riga "Livello" a sé stante nella griglia dei campi (valore centrato,
+   freccia sempre presente anche disabilitata). Flex, mai posizionamento
+   assoluto: titolo a sinistra, LV a destra, allineati verticalmente al
+   centro. Nessun margine proprio: da figlio diretto di .tecab-card (stesso
+   padding di .tecab-card-main) il bordo destro del gruppo LV coincide da
+   solo con quello degli input sottostanti. */
+.tecab-section-header{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.tecab-section-title{
+  font-family:var(--font-title);font-weight:600;font-size:11px;
+  text-transform:uppercase;letter-spacing:.06em;color:var(--testo-secondario-dark-2);
+}
+.tecab-lv-badge{display:flex;align-items:center;gap:4px;flex-shrink:0;}
+.tecab-lv-badge-value{
+  font-family:var(--font-title);font-weight:700;font-size:13px;
+  color:var(--testo-primario-dark);white-space:nowrap;
+}
+.tecab-card-details{border-top:1px solid var(--bordo-scuro);padding-top:8px;}
+.tecab-card-details summary{cursor:pointer;font-size:12px;color:var(--testo-secondario-dark-2);padding:4px 0;list-style:none;}
+.tecab-card-details summary::-webkit-details-marker{display:none;}
+.tecab-card-details summary::before{content:'▸ ';}
+.tecab-card-details[open] summary::before{content:'▾ ';}
+.tecab-card-details .tecab-card-main{margin-top:8px;}
+
+/* ---------- Boost (checkpoint "Boost e pedina di combattimento"): card
+   coerenti con Tecniche/Abilità (.tecab-cards/.tecab-card riusati identici
+   per il contenitore/la card, mai duplicati), con un riepilogo compatto in
+   sola lettura per i dati derivati (costo/mantenimento/durata/range/
+   avanzamento) invece di grandi input — consultazione e modifica restano
+   visivamente distinte: solo nome e bonus sono editabili. */
+.boost-card-summary{
+  display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;
+  border-top:1px solid var(--bordo-scuro);padding-top:10px;
+}
+.boost-card-stat{display:flex;flex-direction:column;gap:2px;min-width:0;}
+.boost-card-stat span{font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--testo-secondario-dark);}
+.boost-card-stat b{font-size:13px;font-weight:600;color:var(--testo-primario-dark);}
+.boost-card-stat-wide{grid-column:1/-1;}
+.boost-card-confirm{display:flex;justify-content:flex-end;}
+/* Riferimento ufficiale dei 5 livelli: stessa card, senza campi editabili
+   né riepilogo a griglia (solo 4 righe informative, un filo più compatte). */
+.boost-ref-card .boost-card-summary{grid-template-columns:1fr 1fr;}
+
+/* ---------- Tecniche/Abilità nel wizard: panoramica ed editor di una sola
+   riga (STATO 1/STATO 2 del checkpoint "separare consultazione e modifica"),
+   sostituiscono le schede complete simultanee SOLO durante la creazione —
+   la scheda normale (fuori dal wizard) continua a mostrarle tutte insieme
+   con editTecAbCardRows, invariato. Span sull'intera larghezza di
+   .tecab-cards (grid a 1-3 colonne): il riepilogo/l'editor non devono mai
+   spezzarsi in una singola colonna stretta quando il contenitore condiviso
+   passa a 2-3 colonne su tablet/desktop. */
+.tecab-progress-text{grid-column:1/-1;margin:0 0 4px;}
+.tecab-overview-list{grid-column:1/-1;display:grid;grid-template-columns:1fr;gap:10px;}
+@media (min-width:700px){.tecab-overview-list{grid-template-columns:1fr 1fr;}}
+@media (min-width:1100px){.tecab-overview-list{grid-template-columns:1fr 1fr 1fr;}}
+.tecab-overview-card{
+  background:var(--antracite-2);border:1px solid var(--bordo-scuro);border-radius:var(--radius);
+  padding:12px;display:flex;flex-direction:column;gap:4px;min-width:0;
+}
+.tecab-overview-slot{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--testo-secondario-dark);}
+.tecab-overview-name{font-family:var(--font-title);font-weight:700;font-size:15px;}
+.tecab-overview-meta{font-size:12px;color:var(--testo-secondario-dark-2);}
+.tecab-overview-mod{font-size:12px;color:var(--testo-secondario-dark);font-family:var(--font-mono);}
+.tecab-overview-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:6px;}
+.chip-complete{border-color:var(--incremento);color:var(--incremento-forte);}
+.chip-incomplete{border-color:var(--bordo-scuro);color:var(--testo-secondario-dark);}
+.tecab-editor-card{grid-column:1/-1;}
+.tecab-editor-section{display:flex;flex-direction:column;gap:10px;}
+.tecab-editor-section + .tecab-editor-section{border-top:1px solid var(--bordo-scuro);padding-top:12px;margin-top:2px;}
+.tecab-editor-section-title{
+  font-family:var(--font-title);font-weight:600;font-size:11px;
+  text-transform:uppercase;letter-spacing:.06em;color:var(--testo-secondario-dark-2);
+}
+/* Barra "Modifica Tecnica/Modifica Abilità" + "Fatto" (STATO 2): sostituisce
+   temporaneamente intestazione e piè di pagina generali del wizard (nascosti
+   da updateWizardTecabChrome, js/app.js) mentre è aperto l'editor di una
+   sola riga — un contesto chiaro su cosa si sta modificando e come uscirne,
+   senza il resto del chrome del wizard che distrae/occupa spazio. */
+.wiz-tecab-editor-bar{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:calc(14px + var(--safe-top)) calc(16px + var(--safe-right)) 12px calc(16px + var(--safe-left));
+  border-bottom:1px solid var(--bordo-scuro);
+  font-family:var(--font-title);font-weight:600;font-size:14px;
+}
+/* Effetto opzionale (Rompere/Tramortire/nome libero) di una riga Tecnica/
+   Abilità a Danno: <details> collassato di default, così il controllo resta
+   "non sempre visibile" senza nascondere un effetto già configurato (si
+   apre da solo se la riga ne ha già uno, vedi dannoConfigHtml). */
+.tec-effetto-details{margin-top:6px;}
+.tec-effetto-summary{
+  font-size:11px;color:var(--testo-secondario-dark-2);cursor:pointer;
+  list-style:none;user-select:none;
+}
+.tec-effetto-summary::-webkit-details-marker{display:none;}
+.tec-effetto-summary::before{content:'▸ ';}
+.tec-effetto-details[open] .tec-effetto-summary::before{content:'▾ ';}
+.slot-fields input{
+  background:var(--antracite-1);border:1px solid var(--bordo-scuro);border-radius:5px;
+  color:var(--testo-primario-dark);font-family:var(--font-mono);text-align:center;padding:6px 2px;font-size:13px;
+  width:100%;min-width:0;
+}
+.slot-fields input[readonly]{opacity:.6;cursor:default;}
+.slot-fields .sf-dur-readout{
+  font-family:var(--font-mono);text-align:center;padding:6px 2px;font-size:13px;
+  color:var(--testo-primario-dark);background:var(--antracite-1);border:1px solid var(--bordo-scuro);border-radius:5px;
+}
+.slot-fields .badge-broken{display:inline-block;margin-top:3px;font-size:10px;color:#FF5C5C;font-weight:600;}
+.slot-confirm-row{display:flex;justify-content:flex-end;}
+
+/* ---------- Scudo/armi: equipaggiato vs inventario, tipo, caratteristiche ---------- */
+.slot-equip-toggle{display:flex;gap:8px;margin-bottom:8px;}
+.slot-equip-toggle .btn{flex:1;}
+.slot-card-inventory{opacity:.6;}
+.slot-card-inventory .slot-name{color:var(--testo-secondario-dark);}
+.chk-inline{
+  display:flex;align-items:center;gap:5px;font-size:12px;color:var(--testo-secondario-dark-2);
+  background:var(--antracite-1);border:1px solid var(--bordo-scuro);border-radius:var(--radius-sm);
+  padding:6px 9px;cursor:pointer;flex:1;min-width:64px;justify-content:center;
+}
+.chk-inline input{accent-color:var(--fisico-forte);}
+/* Righe di checkbox della cella "Effetto" (Multi-bersaglio, Bonus fisso,
+   Contrattacco, vedi effettoCellHtml): affiancate invece che una per riga
+   piena, per recuperare altezza — ognuna (.chk-item) si restringe quanto
+   basta e va a capo solo se non c'entra più, il "?" collassato resta
+   agganciato alla propria checkbox invece di finire su una riga a parte. */
+.chk-row{display:flex;flex-wrap:wrap;gap:6px;align-items:flex-start;}
+/* .col-bonus (la colonna "Effetto") è larga ~224px sullo schermo stretto di
+   un telefono: flex-basis abbastanza piccolo da farci stare DUE .chk-item
+   affiancati (Multi-bersaglio + Bonus fisso, o Multi-bersaglio +
+   Contrattacco — mai tutti e tre insieme, Bonus fisso e Contrattacco sono
+   mutuamente esclusivi per dataAttr) invece che uno sotto l'altro. */
+.chk-item{flex:1 1 92px;min-width:88px;}
+.chk-item .chk-inline{width:100%;padding:6px 4px;font-size:11px;}
+/* Colonna "Effetto" delle sole Abilità (col-effetto-ab, vedi
+   effettoCellHtml): mai due .chk-item affiancati (Contrattacco è solo
+   Tecniche, vedi sopra) — più stretta di .col-bonus, e l'unico chk-item
+   presente (Multi-bersaglio) occupa l'intera riga invece di restare
+   compresso a ~92px, così l'etichetta sta su una sola riga. */
+table.edit-table td.col-effetto-ab{min-width:140px;}
+table.edit-table td.col-effetto-ab .chk-item{flex-basis:100%;}
+table.edit-table td.col-effetto-ab .chk-inline{white-space:nowrap;}
+/* Anche i select dentro questa colonna (Tiro doppio, Caratteristica di
+   Cura max/Extra) erano forzati a 150px dalla regola generale più sopra —
+   inutile qui, le etichette che mostrano ("Forza (FOR)", ecc.) sono corte. */
+table.edit-table td.col-effetto-ab .equip-bonus-row select{min-width:100px;flex:1 1 100px;}
+.weapon-stat-flags{flex-wrap:wrap;}
+.attack-weapon-list{display:flex;flex-direction:column;gap:8px;}
+.attack-weapon-row{justify-content:flex-start;gap:8px;}
+.attack-results{display:flex;flex-direction:column;gap:6px;}
+.attack-result-row{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+
+/* Ritaglio fisso sul fondo, sempre visibile fin da subito: copre esattamente
+   l'altezza reale riportata dal sistema (--safe-bottom, nessun valore
+   calcolato/indovinato) così il testo che scorre sotto "emerge" da questo
+   bordo invece di poter mai toccare davvero i tasti del telefono. */
+#bottom-safe-mask{
+  position:fixed;left:0;right:0;bottom:0;
+  height:var(--safe-bottom);
+  background:var(--antracite-1);
+  z-index:40;
+  pointer-events:none;
+}
+
+/* ---------- Note toast ----------
+   Hotfix "toast persistente e safe area di sistema": lo stato nascosto
+   NON dipendeva che da translateY(120%), percentuale riferita alla sola
+   altezza del box, scollegata dall'offset "bottom" (20px + safe-bottom)
+   con cui è ancorato. Causa reale confermata algebricamente (non solo
+   ipotizzata): con bottom:B e altezza H, il bordo superiore del box dopo
+   la transform resta a (viewportHeight - B + 0,2·H) — visibile ogni volta
+   che B > 0,2·H, il che è già vero con la sola base di 20px su un toast a
+   riga singola (H tipico ~36-44px, 0,2·H ~7-9px), e peggiora con
+   safe-bottom reale (gesture/cutout Android): il popup restava sempre
+   visibile per una striscia, più ampia quanto più cresce la safe area —
+   esattamente la sovrapposizione col payoff osservata nello screenshot.
+   Corretta su due livelli indipendenti, non uno solo:
+   1. la transform ora compensa l'INTERO offset (100% + l'offset stesso +
+      un margine), non solo l'altezza propria;
+   2. lo stato nascosto è comunque garantito da opacity/visibility/
+      pointer-events, quindi resta davvero invisibile e non cliccabile
+      anche se il punto 1 fosse mai insufficiente su qualche WebView.
+   visibility passa a "hidden" solo a transizione conclusa in chiusura
+   (transition-delay sulla sola apertura è 0s), mai a scatto in apertura,
+   per non tagliare l'animazione di comparsa. prefers-reduced-motion
+   rimuove lo scorrimento ma mantiene una dissolvenza breve, mai un salto
+   secco che comprometterebbe la leggibilità di role="status". */
+#toast{
+  position:fixed;left:50%;
+  /* --toast-reserved: altezza reale (misurata da JS, mai un valore
+     inventato) di un eventuale elemento persistente sul fondo della vista
+     attiva — payoff in copertina, barra di navigazione del wizard, pannello
+     comandi in combattimento (vedi [data-toast-clear] e toast() in
+     js/app.js) — così il toast compare sempre SOPRA quei controlli invece
+     di sovrapporsi, senza conoscere in anticipo quale vista sia attiva. 0
+     quando la vista corrente non ne ha uno. */
+  bottom:calc(20px + var(--safe-bottom) + var(--toast-reserved, 0px));
+  max-width:calc(100vw - 32px - var(--safe-left) - var(--safe-right));
+  width:max-content;
+  text-align:center;
+  transform:translateX(-50%) translateY(calc(100% + 20px + var(--safe-bottom) + var(--toast-reserved, 0px) + 24px));
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  background:var(--bianco-artico);color:var(--antracite-1);
+  font-family:var(--font-title);font-weight:600;font-size:12.5px;
+  padding:10px 18px;border-radius:999px;
+  z-index:50;
+  transition:transform .25s ease, opacity .25s ease, visibility 0s linear .25s;
+  box-shadow:0 6px 20px rgba(0,0,0,.4);
+}
+/* pointer-events resta none anche qui: il toast non contiene alcun
+   controllo interattivo e non deve mai intercettare tocchi/click destinati
+   a ciò che sta sotto, nemmeno mentre è visibile (hotfix "toast intercetta
+   ancora i tocchi"). */
+#toast.show{
+  transform:translateX(-50%) translateY(0);
+  opacity:1;
+  visibility:visible;
+  transition:transform .25s ease, opacity .25s ease, visibility 0s linear 0s;
+}
+@media (prefers-reduced-motion:reduce){
+  #toast{transition:opacity .15s linear, visibility 0s linear .15s;}
+  #toast.show{transition:opacity .15s linear, visibility 0s linear 0s;}
+}
+
+/* ---------- Misc ---------- */
+.helper-text{font-size:11px;color:var(--testo-secondario-dark);line-height:1.5;}
+.row-between{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.chip{
+  font-size:10px;text-transform:uppercase;letter-spacing:.05em;
+  padding:4px 9px;border-radius:999px;border:1px solid var(--bordo-scuro);
+  color:var(--testo-secondario-dark-2);
+}
+.chip.physical{border-color:var(--fisico);color:var(--fisico-forte);}
+.chip.magic{border-color:var(--magico);color:var(--magico-forte);}
+
+/* ---------- Consumo oggetti / incrementi attivi ---------- */
+table.edit-table select{
+  width:100%;background:var(--antracite-1);border:1px solid var(--bordo-scuro);
+  border-radius:5px;color:var(--testo-primario-dark);font-size:11.5px;padding:5px 2px;
+}
+.buff-row{padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+.buff-row:last-child{border-bottom:none;}
+.buff-amt{color:var(--incremento-forte);}
+
+/* ---------- Tabellone di combattimento (view-combat) ---------- */
+/* Unica parte dell'app in tema chiaro: schermata bianca con la mappa in
+   stile "carta invecchiata" ben visibile, invece della palette antracite
+   usata ovunque nel resto dell'app. Sovrascrivendo qui le stesse variabili
+   che ogni componente condiviso già usa (box, bottoni, chip, campi, modali)
+   si ottiene il re-theme automatico di tutto ciò che vive nel tabellone e
+   nelle sue finestre modali — dichiarate a parte perché nel markup sono
+   fuori da #view-combat (append diretto al body). */
+#view-combat,
+#combat-scene-modal,
+#combat-environmental-modal,
+#combat-own-actions-menu,
+#combat-target-picker,
+#combat-source-picker,
+#combat-flags-modal,
+#combat-reveal-picker{
+  --antracite-1:#FFFFFF;
+  --antracite-2:#F4EEDD;
+  --bordo-scuro:#CBB994;
+  --testo-primario-dark:#2B2417;
+  /* Checkpoint accessibilità: #7A6F52 dava 4,29:1 su #F4EEDD (.helper-text
+     e altro testo normale a 11px, sotto la soglia AA 4,5:1) — #756A4F è la
+     stessa tinta scurita al minimo indispensabile (L 40%→~35% in HSL,
+     hue/saturazione invariati) per arrivare a 4,6:1, variazione non
+     percepibile a occhio nudo. */
+  --testo-secondario-dark:#756A4F;
+  /* "color" va ridichiarato qui (non solo la custom property): altrimenti
+     un testo semplice senza regola propria (es. .cc-title, un <p> senza
+     classe) continua a ereditare il colore già calcolato su <body> — chiaro,
+     pensato per la palette scura dell'app — invece di ricalcolarsi con la
+     variabile appena sovrascritta in questo sotto-albero. */
+  color:#2B2417;
+  --testo-secondario-dark-2:#4A4330;
+}
+/* Layout a 3 righe (topbar / mappa / barra personaggi) su CSS Grid invece
+   che sul flex:1 + min-height:100vh condiviso da .view: quel meccanismo
+   lascia che l'altezza della riga centrale dipenda dal contenuto quando la
+   mappa è "corta" (poche righe di griglia), facendo slittare la barra dei
+   personaggi verso l'alto invece di restare ancorata al fondo reale dello
+   schermo. minmax(0,1fr) sulla riga della mappa la forza sempre a occupare
+   esattamente lo spazio residuo (mai di più, mai di meno), qualunque sia
+   l'altezza reale della griglia esagonale al suo interno. */
+#view-combat{
+  background:var(--antracite-1);
+  display:grid;
+  /* Riga in più rispetto a prima: il pannello comandi (#combat-command-panel)
+     è ora sempre presente sotto la barra ritratti, non più un popup a
+     comparsa legato al tocco su una faccia — vedi renderCombatCommandPanel. */
+  grid-template-rows:auto auto minmax(0,1fr) auto auto;
+  height:100vh;height:100dvh;height:calc(var(--real-vh, 1vh) * 100);
+}
+
+/* Banner "di chi è il turno": una sola riga fissa fra la topbar e la mappa,
+   sempre visibile mentre l'iniziativa è rivelata — mostra il personaggio
+   attivo (chiunque lo stia guardando, la sequenza è condivisa) e, solo per
+   chi può agire ora (il suo proprietario o il Narratore), il bottone per
+   passare. */
+.combat-turn-banner{
+  flex:none;
+  display:flex;align-items:center;gap:8px;
+  padding:8px 14px;
+  background:var(--antracite-2);
+  border-bottom:1px solid var(--bordo-scuro);
+  font-size:13px;
+}
+.combat-turn-banner .ctb-label{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.combat-turn-banner .ctb-name{font-weight:700;}
+.combat-turn-banner .ctb-budget{color:var(--testo-secondario-dark);font-size:11.5px;}
+
+/* Board: area RETTANGOLARE (segue il rapporto d'aspetto dell'immagine
+   caricata, o il riquadro del fallback) — sono le singole caselle della
+   griglia dentro a tassellarsi in esagoni, non il contorno della board. */
+.combat-map-wrap{
+  min-height:220px;position:relative;
+  overflow:auto;
+  border-bottom:1px solid var(--bordo-scuro);
+  /* Stesso bianco del resto della vista (--antracite-1 qui sopra) invece di
+     un beige diverso: la board (immagine o riquadro carta invecchiata) ha
+     quasi sempre un rapporto d'aspetto diverso dallo spazio disponibile,
+     quindi resta sempre un margine sopra/sotto o ai lati — deve leggersi
+     come lo sfondo dell'app, non come una terza campitura di colore a sé. */
+  background:var(--antracite-1);
+  display:flex;align-items:center;justify-content:center;
+}
+.combat-map{
+  /* content-box, non il border-box globale (vedi *{box-sizing:border-box}):
+     map.style.width/height (js/app.js, renderCombatMap) e il viewBox
+     dell'SVG della griglia sono entrambi calcolati come CONTENUTO puro, in
+     "unità cella" (cellW/cellH) — con border-box i 3px di bordo per lato
+     mangerebbero spazio dal contenuto, l'SVG (width/height:100%) si
+     ritroverebbe leggermente più piccolo della griglia "vera" in pixel
+     usata per posizionare le pedine (che non passano da questo scalamento,
+     essendo posizionate in px assoluti), disallineando i due sempre di più
+     man mano che ci si allontana dall'angolo in alto a sinistra. */
+  box-sizing:content-box;
+  position:relative;
+  margin:auto;
+  background-size:cover;background-position:center;background-repeat:no-repeat;
+  /* Cornice come sulla plancia stampata di riferimento */
+  border:3px solid #8B4A2E;
+  border-radius:4px;
+  box-shadow:inset 0 0 0 1px rgba(255,246,224,.5);
+}
+/* Preset "carta invecchiata + logo": nessun asset caricato dal Narratore
+   ancora scelto per questo encounter (map_asset_id null) — un unico colore
+   piatto più il logo al centro, niente altro (niente macchie/vignette a
+   gradiente radiale: si confondevano con il bagliore delle celle attorno
+   al personaggio selezionato). */
+.combat-map.combat-map-fallback{
+  background-color:#E9D9A8;
+}
+.combat-map-fallback-logo{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:35%;max-width:220px;opacity:.28;pointer-events:none;
+}
+/* Frecce ▲/▼ per cambiare il livello mostrato (Combattimenti multi-livello):
+   nell'angolo in alto dello spazio vuoto attorno alla mappa (.combat-map-wrap
+   è più grande della mappa centrata quando i rapporti d'aspetto non
+   combaciano, vedi sopra) — mai sopra la griglia stessa, mai un ostacolo al
+   tocco delle celle. */
+.combat-level-arrows{
+  position:absolute;top:8px;right:8px;z-index:5;
+  display:flex;align-items:center;gap:6px;
+  background:rgba(20,22,26,.75);
+  border-radius:999px;
+  padding:2px 8px;
+}
+.combat-level-arrows .btn-icon{width:26px;height:26px;min-height:0;font-size:13px;color:#fff;}
+.combat-level-arrows-label{
+  font-size:10.5px;color:#fff;font-weight:600;
+  max-width:90px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+/* Banner temporaneo di piazzamento passaggi/ostacoli (Gestisci scena >
+   Aggiungi passaggio / Modifica ostacoli), solo per il Narratore (unico
+   che può entrare in questa modalità, vedi renderCombatMapManager): riga
+   fissa del layout appena sopra la mappa, stesso spirito del turno banner
+   — MAI sovrapposta alla griglia (un overlay assoluto finiva per coprire
+   le prime file di celle proprio mentre si deve toccarle per piazzare). */
+.combat-placement-banner{
+  flex:none;
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:8px 14px;
+  background:var(--antracite-2);
+  border-bottom:1px solid var(--bordo-scuro);
+  color:#fff;
+  font-size:13px;
+}
+.combat-placement-banner #combat-placement-banner-done{color:#fff;border-color:rgba(255,255,255,.4);}
+/* Strumenti del Narratore (passaggio/ostacoli/danno ambientale/effetto
+   libero) sempre visibili fra mappa e barra personaggi, non più solo
+   raggiungibili aprendo "⚙ Gestisci scena": riga fissa come il resto dei
+   banner qui sopra, mai ai giocatori (toggle su callerIsMaster in
+   renderCombatBoard). */
+.combat-narrator-toolbar{
+  flex:none;
+  display:flex;align-items:center;gap:6px;
+  padding:3px 14px;
+  /* Colore scuro esplicito (non var(--antracite-2)): dentro #view-combat
+     quella variabile è sovrascritta al crema del tema chiaro del tabellone
+     (vedi sopra), ma questa barra resta l'unico pannello di controllo che
+     deve leggersi come una toolbar scura — stesso valore antracite di
+     default della palette globale, indipendente dal re-theme locale. */
+  background:#1E2126;
+  border-bottom:1px solid #4A4F58;
+}
+.combat-narrator-toolbar .btn{color:#fff;border-color:rgba(255,255,255,.25);}
+.combat-narrator-toolbar-tools{
+  flex:1;min-width:0;
+  display:flex;flex-wrap:nowrap;gap:6px;
+  overflow-x:auto;
+}
+/* Padding verticale dimezzato rispetto a .btn-sm (8px, il valore che vince
+   in cascata su questi bottoni — non i 14px di .btn base): dimezza
+   l'altezza della barra insieme al padding del contenitore qui sopra, resta
+   invariato solo l'orizzontale. I bottoni restano centrati verticalmente
+   grazie ad align-items:center sul contenitore padre, invariato. */
+.combat-narrator-toolbar-tools .btn{flex:none;white-space:nowrap;padding:3px 12px;}
+/* Il tasto "▲" (comprimi barra) è un .btn-icon fisso a 40×40px: senza
+   dimezzarlo anche lui resta lui il vincolo che tiene alta l'intera barra,
+   vanificando il dimezzamento sopra sui bottoni degli strumenti. */
+.combat-narrator-toolbar .btn-icon{width:20px;height:20px;min-height:0;font-size:11px;}
+/* Barra ripiegata (tasto "Nascondi barra"): resta solo la freccetta per
+   riaprirla, mai completamente sparita — così il Narratore la ritrova
+   sempre nello stesso punto invece di doverla "ricordare". */
+.combat-narrator-toolbar.collapsed .combat-narrator-toolbar-tools{display:none;}
+.combat-narrator-toolbar.collapsed{padding:4px 14px;}
+/* Griglia esagonale come SVG (vedi renderCombatMap in app.js): un
+   <polygon> con stroke disegna il contorno su tutti e sei i lati, cosa
+   che un <div> con clip-path non può fare (il bordo di un box rettangolare
+   resta visibile solo dove il ritaglio combacia con un lato originale del
+   rettangolo — qui i due lati piatti orizzontali, da cui le sole
+   "trattine" della versione precedente). */
+.combat-hex-grid{
+  position:absolute;top:0;left:0;
+  pointer-events:none; /* i singoli poligoni sotto riabilitano gli eventi */
+}
+/* Campitura bianca piena: unico <rect> a piena dimensione "bucato" da una
+   <mask> con un poligono nero per ogni esagono (vedi renderCombatMap) —
+   copre sia i vuoti fra le celle (nati dal rimpicciolimento) sia il bordo
+   esterno alla griglia, sempre sopra l'immagine della mappa. Gli esagoni
+   stessi restano fori trasparenti: solo il loro contorno (.combat-hex-cell
+   sotto) resta visibile, mai una fill piena sopra l'immagine del singolo
+   esagono. */
+.combat-hex-void-frame{
+  fill:#FFFFFF;
+  opacity:1;
+  pointer-events:none;
+}
+.combat-hex-cell{
+  /* Solo il contorno è disegnato: l'interno dell'esagono è un vuoto che
+     lascia vedere l'immagine sotto per intero, mai una fill visibile. Il
+     gradiente di opacità per distanza (inline, vedi renderCombatMap) si
+     accende sul contorno stesso solo mentre una pedina è selezionata per
+     lo spostamento — a riposo il contorno resta comunque visibile a bassa
+     opacità (definita qui).
+     ATTENZIONE hit-test: fill deve restare "transparent" (mai "none"). Con
+     fill:none l'interno del <polygon> non riceve eventi pointer/tap anche
+     con pointer-events:auto (solo lo stroke sottile risponde) — il tocco
+     reale su una cella quasi mai cade esattamente sul bordo, quindi
+     "Ostacoli"/"Passaggio" risultavano silenziosamente senza effetto.
+     fill:transparent è visivamente identico (nessun colore disegnato) ma
+     conta come "painted" per l'hit-test SVG, rendendo tappabile l'intero
+     esagono. */
+  fill:transparent;
+  stroke:#FFFFFF;
+  stroke-width:.3125;
+  vector-effect:non-scaling-stroke;
+  pointer-events:auto;
+  opacity:.55;
+  transition:opacity .2s;
+}
+.combat-hex-cell.combat-hex-selectable{cursor:pointer;}
+.combat-hex-cell.combat-hex-selectable:active,
+.combat-hex-cell.combat-hex-hover{fill:rgba(255,122,51,0.32);}
+.combat-hex-cell.combat-hex-occupied{fill:rgba(255,255,255,0.18);}
+/* Ostacolo invalicabile piazzato dal Narratore (Gestisci scena > Modifica
+   ostacoli): overlay scuro sotto il contorno interattivo della cella
+   (disegnato prima nel markup, vedi renderCombatMap) — mai un segreto,
+   visibile a tutti allo stesso modo. */
+.combat-hex-obstacle{
+  fill:#000000;
+  fill-opacity:.8;
+  pointer-events:none;
+}
+/* Icona 🪜 sulla casella adibita a passaggio/scala fra livelli (piazzata
+   dal Narratore, vedi setCombatLevelStaircase/setCombatLevelTransition):
+   senza, la cella era invisibile in mappa e nessuno poteva sapere dove
+   fosse il passaggio. paint-order+stroke danno un alone scuro che la
+   rende leggibile sopra qualunque immagine di sfondo. */
+.combat-hex-transition-icon{
+  text-anchor:middle;
+  dominant-baseline:central;
+  paint-order:stroke;
+  stroke:#000000;
+  stroke-width:2px;
+  stroke-opacity:.55;
+  pointer-events:none;
+}
+/* La pedina riempie per intero l'esagono della cella (stesso poligono
+   "flat-top" dei contorni disegnati in renderCombatMap: lato piatto sopra/
+   sotto, punta a sinistra/destra — vedi rawPts/HEX_GAP_SCALE), non più un
+   cerchio più piccolo centrato sopra di esso. clip-path taglia sfondo,
+   bordo e ombre "verso l'interno": un box-shadow verso l'esterno (usato
+   prima per l'anello di selezione) sparirebbe perché ricade fuori dal
+   poligono di ritaglio, per questo qui sotto si passa a filter:drop-shadow,
+   che invece segue la sagoma esagonale già tagliata.
+   Anello colorato del proprietario (checkpoint "Boost e pedina di
+   combattimento", correzione degli artefatti arancioni confermati): MAI un
+   CSS `border` qui, stessa insidia già diagnosticata sopra per i contorni
+   delle celle — un `border` tagliato da clip-path resta visibile solo sui
+   due lati piatti orizzontali del box originale, non su tutto l'esagono.
+   La versione precedente usava DUE poligoni clip-path indipendenti (questo
+   elemento + .combat-token-face con inset:2px) per ottenere l'anello dal
+   "vuoto" fra i due — confermato visivamente che un inset assoluto in px su
+   un box NON quadrato (l'esagono è più alto che largo, rapporto √3/2) e due
+   ritagli calcolati separatamente potevano disallinearsi ai vertici,
+   lasciando intravedere sottili segmenti del colore esterno sull'icona
+   interna. Un solo clip-path (su questo elemento, che clip-a anche i
+   discendenti — comportamento standard, non serve ripeterlo su
+   .combat-token-face) + un box-shadow INSET per l'anello risolve alla
+   radice: l'ombra interna non può mai uscire dal contorno già tagliato né
+   generare un secondo poligono da disallineare, un solo livello di verità
+   geometrica invece di due. */
+.combat-token{
+  position:absolute;
+  /* left/top sono il CENTRO della cella (vedi hexCellCenter/renderCombatMap
+     in js/app.js), non più l'angolo in alto a sinistra: transform centra la
+     pedina via compositing GPU, un solo punto di verità condiviso col
+     poligono SVG della cella invece di ricalcolare qui un secondo offset
+     "a mano" che poteva disallinearsi di una frazione di pixel (checkpoint
+     "Boost e pedina di combattimento", punto 9.2 — pedina non centrata). */
+  transform:translate(-50%, -50%);
+  clip-path:polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background:var(--antracite-2);
+  cursor:pointer;
+  transition:filter .15s, box-shadow .15s;
+}
+.combat-token-face{
+  position:absolute;inset:0;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--antracite-2);
+  background-size:cover;background-position:center;
+  font-family:var(--font-title);font-weight:700;
+  color:var(--testo-primario-dark);
+  pointer-events:none;
+}
+.combat-token.combat-token-mine{box-shadow:inset 0 0 0 3px var(--fisico-forte);}
+.combat-token.combat-token-master-owned{box-shadow:inset 0 0 0 3px var(--magico-forte);}
+.combat-token.combat-token-selected{filter:drop-shadow(0 0 4px rgba(255,122,51,.85));}
+/* Bagliore del Boost attivo (checkpoint "Boost e pedina di combattimento",
+   punto 8): layer dedicato, non interattivo, SEMPRE presente nel markup
+   (mai creato/distrutto ad ogni render — combatParticipantHasActiveBoost
+   decide solo la classe che lo accende) così non serve mai rimuovere/
+   ricreare un overlay o temere listener duplicati. Eredita lo stesso
+   clip-path esagonale di .combat-token (un ancestor con clip-path taglia
+   anche i discendenti, stesso principio già usato per .combat-token-face):
+   nessuna sagoma/maschera separata da disallineare. Sovrapposto
+   ALL'IMMAGINE (viene dopo .combat-token-face nel DOM) ma prima di
+   etichetta/barra turno, che restano sempre leggibili sopra di lui.
+   Solo opacity animata (compositing GPU, mai un ridisegno del DOM/JS a
+   ogni frame): acceso/spento dipende esclusivamente dalla classe
+   .combat-token-boost-glow, che a sua volta dipende solo dallo stato
+   autorevole (vedi combatParticipantHasActiveBoost) — mai un booleano
+   grafico locale. */
+.combat-token-glow{
+  position:absolute;inset:0;
+  pointer-events:none;
+  opacity:0;
+  background:radial-gradient(circle at 50% 45%, rgba(122,196,255,.8) 0%, rgba(122,196,255,.4) 45%, rgba(122,196,255,0) 75%);
+}
+.combat-token.combat-token-boost-glow .combat-token-glow{
+  animation:combat-token-boost-glow-pulse 2.4s ease-in-out infinite;
+}
+@keyframes combat-token-boost-glow-pulse{
+  0%,100%{opacity:.32;}
+  50%{opacity:.88;}
+}
+/* prefers-reduced-motion: bagliore statico ma riconoscibile, mai spento
+   del tutto (l'informazione "Boost attivo" deve restare leggibile), solo
+   senza la pulsazione. */
+@media (prefers-reduced-motion: reduce){
+  .combat-token.combat-token-boost-glow .combat-token-glow{animation:none;opacity:.6;}
+}
+/* Bersaglio valido per l'attacco/effetto in dichiarazione (vedi
+   combatPendingAttack/combatPendingEffect, click diretto sul token invece
+   della vecchia tendina): glow-in/glow-out pulsante, distinto dal
+   drop-shadow statico di combat-token-selected (quello resta per la
+   selezione-movimento, mai insieme allo stato "targetable"). */
+@keyframes combat-token-glow-pulse{
+  0%,100%{ filter:drop-shadow(0 0 2px rgba(255,122,51,.55)); }
+  50%{ filter:drop-shadow(0 0 11px rgba(255,122,51,.95)); }
+}
+.combat-token.combat-token-targetable{
+  cursor:pointer;
+  animation:combat-token-glow-pulse 1.1s ease-in-out infinite;
+}
+/* Bersaglio già scelto in una selezione multi-bersaglio (vedi
+   combatSelectedMultiTargets/combatToggleMultiTarget): bordo pieno verde,
+   non pulsante — distinto dal glow arancione dei candidati non ancora
+   scelti, così lo stato "selezionato" resta leggibile anche mentre altri
+   token vicini continuano a pulsare. */
+.combat-token.combat-token-multipicked{
+  cursor:pointer;
+  filter:drop-shadow(0 0 6px var(--equip-momentaneo-forte));
+}
+/* Trascinamento diretto (vedi setupCombatTokenDrag): pointer-events:none
+   così elementFromPoint al rilascio raggiunge la cella esagonale sotto la
+   pedina invece di ritrovare la pedina stessa. */
+.combat-token.combat-token-dragging{
+  z-index:20;opacity:.85;cursor:grabbing;
+  pointer-events:none;
+  filter:drop-shadow(0 3px 6px rgba(0,0,0,.5));
+  transition:none;
+}
+/* Trascinata fuori dai bordi della board (solo Narratore): rilasciandola
+   qui la pedina viene espulsa dalla scena, vedi isOutsideMap in
+   setupCombatTokenDrag — bordo rosso d'avviso invece del solito arancione. */
+.combat-token.combat-token-eject-armed{
+  border-color:#E24A4A;
+  opacity:.6;
+  filter:drop-shadow(0 3px 6px rgba(226,74,74,.7));
+}
+.combat-token-label{
+  position:absolute;left:50%;bottom:100%;transform:translateX(-50%);
+  margin-bottom:3px;
+  white-space:nowrap;
+  font-size:10px;font-weight:600;
+  /* Etichetta sempre scura con testo chiaro, indipendente dal tema: deve
+     restare leggibile sopra qualunque mappa (foto caricata o parchment),
+     non solo sulla card chiara del resto del tabellone. */
+  background:rgba(8,9,11,.82);
+  color:#F2F1ED;
+  padding:1px 6px;border-radius:999px;
+  pointer-events:none;
+}
+/* Barra di movimento (caselle percorse/budget da Velocità, vedi
+   combatMovementBudget): sotto il token, speculare all'etichetta nome
+   sopra — sempre scura per restare leggibile su qualunque mappa. */
+.combat-token-move-bar{
+  position:absolute;left:15%;top:100%;transform:translateY(3px);
+  width:70%;height:3px;border-radius:999px;
+  background:rgba(8,9,11,.55);
+  overflow:hidden;
+  pointer-events:none;
+}
+.combat-token-move-fill{height:100%;background:#F2D34D;}
+
+/* Overlay di risoluzione attacco: appare solo quando c'è un attacco in
+   corso, sopra la mappa invece di occupare spazio fisso in pagina. */
+.combat-attack-overlay{
+  position:absolute;left:8px;right:8px;bottom:8px;
+  max-height:60%;overflow-y:auto;
+  z-index:5;
+}
+
+/* Barra "Personaggi in gioco": card compatte, scroll orizzontale, sempre
+   ancorata in fondo. */
+.combat-roster-bar{
+  flex:none;
+  display:flex;gap:10px;overflow-x:auto;
+  padding:10px 14px;
+  -webkit-overflow-scrolling:touch;
+}
+.combat-roster-bar::-webkit-scrollbar{display:none;}
+/* Pannello comandi (Attacca/Tecniche/Abilità/Boost/Oggetti): sempre
+   presente sotto la barra ritratti (non più un popup a comparsa legato al
+   tocco su una faccia, vedi renderCombatCommandPanel), quindi è lui ora ad
+   avere il padding di sicurezza in fondo (prima toccava alla barra
+   ritratti, che era l'ultimo elemento). Testo/bottoni allineati a sinistra
+   ("a bandiera"), non centrati come i pulsanti a pillola del resto
+   dell'app. */
+.combat-command-panel{
+  flex:none;
+  display:flex;flex-direction:column;gap:6px;
+  padding:10px calc(14px + var(--safe-right)) calc(10px + var(--safe-bottom)) calc(14px + var(--safe-left));
+  border-top:1px solid var(--bordo-scuro);
+  background:var(--antracite-2);
+}
+.combat-command-panel .cmdpanel-title{
+  font-family:var(--font-title);font-weight:700;font-size:13px;
+  color:var(--testo-secondario-dark-2);
+  margin:0 0 2px;
+}
+.combat-command-panel .cmdpanel-btn{
+  display:block;width:100%;text-align:left;
+  padding:9px 12px;
+  border-radius:6px;
+  border:1px solid var(--bordo-scuro);
+  background:transparent;
+  color:var(--testo-primario-dark);
+  font-family:var(--font-body);font-size:14px;
+  cursor:pointer;
+}
+.combat-command-panel .cmdpanel-btn:active{background:rgba(255,255,255,.08);}
+.combat-roster-card{
+  flex:none;width:88px;
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+  background:var(--antracite-2);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius);
+  padding:8px 6px;
+  cursor:pointer;
+}
+.combat-roster-card.combat-roster-card-mine{border-color:var(--fisico-forte);}
+/* Personaggio "di turno" ora (vedi combatIsCurrentTurn): un alone visibile
+   a tutti, indipendente dal colore del bordo di proprietà sopra. */
+.combat-roster-card.combat-roster-card-turn{box-shadow:0 0 0 2px #F2D34D, 0 4px 12px rgba(242,211,77,.35);}
+/* Card "sollevata" mentre la si trascina verso la board (vedi
+   setupCombatRosterDrag): resta al suo posto nella barra ma si vede che
+   qualcosa si sta spostando, la vera pedina trascinata è il ghost qui sotto. */
+.combat-roster-card.combat-roster-card-lifted{opacity:.4;}
+/* Ghost trascinato: position:fixed così segue il puntatore ovunque sullo
+   schermo, fuori dai confini scrollabili della barra roster e sopra la
+   mappa. Stesso aspetto circolare di un token, senza le interazioni. */
+.combat-roster-drag-ghost{
+  position:fixed;top:0;left:0;
+  width:44px;height:44px;margin:-22px 0 0 -22px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--antracite-2);
+  background-size:cover;background-position:center;
+  border:2px solid var(--fisico-forte);
+  font-family:var(--font-title);font-weight:700;font-size:17px;
+  color:var(--testo-primario-dark);
+  box-shadow:0 6px 18px rgba(0,0,0,.4);
+  pointer-events:none;
+  z-index:1000;
+}
+.combat-roster-drag-ghost.combat-roster-drag-ghost-armed{
+  border-color:#3DDC84;
+  box-shadow:0 0 0 4px rgba(61,220,132,.35),0 6px 18px rgba(0,0,0,.4);
+}
+/* Ordine di iniziativa: impostato qui sulla card, nella barra in basso —
+   non più in una fascia separata sopra la mappa. */
+.combat-roster-card .cr-initiative{
+  font-family:var(--font-mono);font-size:9.5px;font-weight:600;
+  color:var(--testo-secondario-dark);
+}
+.combat-roster-card .avatar{
+  width:40px;height:40px;border-radius:50%;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-title);font-weight:700;font-size:15px;
+  /* Il ritratto (background-image inline) va ridimensionato per riempire
+     il cerchio, non mostrato alla sua risoluzione naturale: senza questa
+     regola l'immagine appariva "non scalata", un ritaglio casuale invece
+     del volto intero rimpicciolito. */
+  background-size:cover;background-position:center;
+}
+.combat-roster-card .avatar.has-portrait{color:transparent;}
+.combat-roster-card .cr-name{font-size:11px;font-weight:600;text-align:center;line-height:1.2;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%;}
+.combat-roster-card .cr-hp{width:100%;height:4px;border-radius:999px;background:rgba(80,60,25,.12);overflow:hidden;}
+.combat-roster-card .cr-hp-fill{height:100%;background:var(--fisico-forte);}
+/* Effetti attivi (buff/regen/danno nel tempo, vedi combat_active_effects):
+   un'etichetta compatta per riga di card, il countdown scende solo con
+   "Avanza turno" (mai qui, solo lettura del valore corrente). */
+.combat-roster-card .cr-effects{display:flex;flex-wrap:wrap;gap:3px;justify-content:center;margin-top:2px;}
+.combat-roster-card .cr-effect-badge{
+  display:inline-flex;align-items:center;gap:2px;
+  font-size:8.5px;line-height:1;font-family:var(--font-mono);
+  padding:2px 4px;border-radius:999px;
+  background:rgba(80,60,25,.14);color:var(--testo-secondario-dark);
+  white-space:nowrap;
+}
+.combat-roster-card .cr-effect-buff{background:rgba(90,140,255,.18);}
+.combat-roster-card .cr-effect-regen{background:rgba(70,180,110,.2);}
+.combat-roster-card .cr-effect-danno{background:rgba(200,60,60,.2);}
+.combat-roster-card .cr-effect-remove{
+  border:none;background:none;padding:0;margin-left:1px;
+  font-size:8.5px;line-height:1;color:inherit;cursor:pointer;opacity:.7;
+}
+.combat-roster-card .cr-effect-remove:hover{opacity:1;}
+/* Tentativo di liberazione da Tramortire (🎲): stesso trattamento minimale
+   di "Sospendi" (✕) qui accanto, distinto solo dall'icona. */
+.combat-roster-card .cr-effect-escape{
+  border:none;background:none;padding:0;margin-left:1px;
+  font-size:8.5px;line-height:1;color:inherit;cursor:pointer;opacity:.85;
+}
+.combat-roster-card .cr-effect-escape:hover{opacity:1;}
+
+/* Card di dettaglio (usata nel pannello attacco per nominare attaccante/
+   bersaglio, e come stile condiviso per eventuali elenchi di dettaglio) */
+.combat-card{
+  background:var(--antracite-2);
+  border:1px solid var(--bordo-scuro);
+  border-radius:var(--radius);
+  padding:12px 14px;
+  display:flex;gap:12px;align-items:flex-start;
+  position:relative;
+}
+.combat-card .avatar{width:52px;height:52px;border-radius:var(--radius-sm);flex:none;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-title);font-weight:700;font-size:18px;}
+.combat-card .cc-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px;}
+.combat-card .cc-name-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.combat-card .cc-name{font-family:var(--font-title);font-weight:600;font-size:15px;}
+.combat-card .cc-init{
+  font-family:var(--font-mono);font-size:11px;color:var(--testo-secondario-dark);
+  border:1px solid var(--bordo-scuro);border-radius:999px;padding:2px 8px;flex:none;
+}
+.combat-card .cc-stats{display:flex;flex-wrap:wrap;gap:6px 10px;font-size:11.5px;color:var(--testo-secondario-dark-2);}
+.combat-card .cc-stat-hidden{color:var(--testo-secondario-dark);font-style:italic;}
+.combat-card .cc-reveal-btn{align-self:flex-start;}
+
+/* Libreria mappe nel pannello "Gestisci scena" */
+.combat-asset-row{
+  display:flex;align-items:center;gap:10px;
+  padding:6px 0;border-bottom:1px solid rgba(80,60,25,0.12);
+}
+.combat-asset-row:last-child{border-bottom:none;}
+.combat-asset-thumb{width:44px;height:32px;border-radius:4px;background-size:cover;background-position:center;
+  background-color:var(--antracite-1);flex:none;border:1px solid var(--bordo-scuro);}
+.combat-asset-label{flex:1;min-width:0;font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+/* Anteprima trascinabile dell'inquadratura mappa (vedi setupMapFocusDrag):
+   stessa proporzione della griglia vera (aspect-ratio impostato inline),
+   background-size:cover così il ritaglio che si vede qui è lo stesso che
+   comparirà sulla board reale. */
+.combat-map-focus-preview{
+  width:100%;max-width:260px;margin:0 auto;
+  background-size:cover;background-repeat:no-repeat;
+  background-color:var(--antracite-1);
+  border:1px solid var(--bordo-scuro);border-radius:var(--radius);
+  cursor:grab;touch-action:none;
+  overflow:hidden;
+}
+.combat-map-focus-preview:active{cursor:grabbing;}
+
+@media (min-width:600px){
+  .sheet-body{padding-left:32px;padding-right:32px;}
+}
+
+/* ==========================================================================
+   Checkpoint 2A — contenitore dell'app oltre i 600px (tablet E desktop:
+   qui NON si distingue ancora tra i due, vedi sotto). Fino a qui c'era una
+   "cornice telefono" (.ms-desktop-frame, attiva solo su desktop reale non
+   touch) che simulava un telefono 430×860 scalato con transform per stare
+   nella finestra. Sei responsabilità erano mischiate in quel'unico
+   meccanismo; qui sono separate esplicitamente, ciascuna con l'esito
+   deciso per questo checkpoint:
+
+   1. SIMULAZIONE CORNICE TELEFONICA — RIMOSSA. Il box fisso 430×860 e il
+      relativo transform:scale (calcolato in JS da --app-scale, vedi lo
+      script inline in cima a index.html) non esistono più: sotto non c'è
+      alcuna larghezza massima, griglia o colonna imposta. Ogni vista
+      deciderà la propria larghezza/il proprio layout interno nel prossimo
+      checkpoint (2B) — imporlo già qui, uguale per ogni vista, sarebbe
+      esattamente il trattamento indistinto da evitare.
+   2. CONTENIMENTO GENERALE DELL'APP — RICOSTRUITA in forma più semplice:
+      #app resta l'ancora posizionata (position:relative) a piena
+      larghezza e altezza REALE (--real-vh, la stessa tecnica già in uso
+      sul resto dell'app), invece che dentro un box dalle proporzioni
+      fisse. body/html prendono lo stesso sfondo scuro dell'app: su
+      schermi larghi un contenuto più corto della finestra non deve
+      lasciare uno sfondo bianco scoperto sotto.
+   3-4. POSIZIONAMENTO DI POPUP/MODALI E DEL TOAST — INVARIATA: restano
+      ancorati dentro #app (position:absolute) invece che alla finestra
+      del browser, esattamente come già facevano.
+   5. GESTIONE DELLO SCALING — RIMOSSA e non sostituita: serviva solo a far
+      stare un box a proporzioni fisse in una finestra di dimensioni
+      arbitrarie. Un contenitore fluido non ha proporzioni fisse da
+      scalare: --app-scale e il calcolo in JS sono stati tolti da
+      index.html, non servono più a nulla.
+   6. DIPENDENZE DI MAPPA E VISUALIZZATORE PDF — verificate, NESSUNA
+      dipendenza reale dalla cornice: renderCombatMap (js/app.js,
+      variabile "wrap.clientWidth") e pdfviewer.js (variabile
+      "containerWidth", da pagesEl.clientWidth) misurano entrambi la
+      larghezza del proprio contenitore a runtime — mai un valore fisso
+      legato a 430/860/--app-scale. Restano dentro #app solo grazie al
+      punto 3 (position:absolute su #pdf-viewer): nessun'altra modifica
+      necessaria.
+
+   Il rilevamento touch (navigator.maxTouchPoints, stesso script inline)
+   NON decide più questo layout: prima un dispositivo dichiarato "non
+   touch" era l'UNICA condizione per uscire dalla resa mobile, quindi un
+   tablet con tastiera o un monitor touch (entrambi touch, ma con uno
+   schermo tutt'altro che stretto) restavano forzati nella resa a piena
+   larghezza pensata per un telefono. Da qui in poi decide solo la
+   larghezza reale dello schermo (min-width, un segnale sempre affidabile
+   — a differenza di hover:hover/pointer:fine, che alcuni WebView Android
+   dichiarano in modo scorretto anche su schermi puramente touch, per cui
+   restano scartati). navigator.maxTouchPoints resta letto in JS e
+   disponibile come classe .ms-touch su <html> SOLO per eventuali
+   adattamenti della modalità di interazione (dimensione delle aree tap,
+   assenza di stati hover) in un checkpoint successivo — mai per decidere
+   il layout. */
+@media (min-width:600px){
+  html{height:100%;}
+  body{
+    min-height:100vh;
+    background:#0a0b0d;
+  }
+  #app{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    min-height:100dvh;
+    min-height:calc(var(--real-vh, 1vh) * 100);
+  }
+  #app .view{
+    min-height:0;
+  }
+  .confirm-modal,
+  #prem-popup,
+  #portrait-lightbox,
+  #pdf-viewer,
+  #rules-popup,
+  #campaign-assets-popup,
+  #toast{
+    position:absolute;
+  }
+}
+
+/* ==========================================================================
+   Checkpoint 2B.1 — adattamento mirato di copertina/account, elenco
+   personaggi, storie e area Narratore oltre i 600px. Il 2A aveva reso il
+   contenitore #app fluido ma non ancora toccato NESSUNA vista al suo
+   interno: il contenuto restava largo quanto il telefono (copertina) o si
+   stirava a piena larghezza senza limiti (elenchi) — qui ogni vista prende
+   una larghezza massima proporzionata alla propria funzione, ferma sotto
+   ai 600px (mobile invariato, nessun valore qui sotto si applica).
+
+   .list-scroll è condiviso da più viste (elenco personaggi, storie, area
+   Narratore, account, regole): la larghezza di lettura più stretta per le
+   regole è un'eccezione dichiarata sotto, non un'incoerenza. */
+@media (min-width:600px){
+  /* ---- Copertina + Account: "un contenitore proporzionato, indicativamente
+     tra 480 e 680px" (richiesta esplicita) — bastano i max-width già
+     esistenti su ciascun elemento (erano pensati per il solo mobile,
+     ~300-360px), portati dentro quel range: restano centrati da sempre
+     (align-items:center sul genitore), qui semplicemente meno stretti. */
+  .cover-top-image,
+  .cover-payoff-image{max-width:420px;}
+  .cover-actions,
+  .update-banner{max-width:560px;}
+
+  /* ---- Intestazione + corpo di elenco personaggi/storie/area Narratore/
+     account/regole: stessa larghezza massima per entrambe così l'intera
+     vista legge come un'unica colonna coerente, non un'intestazione a
+     piena larghezza sopra un corpo più stretto. */
+  .topbar,
+  .list-scroll{
+    max-width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+  }
+  /* Regolamento: righe di testo lunghe restano scomode da leggere anche
+     con molto spazio disponibile — colonna di lettura più stretta di
+     quella (già larga, adatta a liste/card) usata dalle altre viste. */
+  #rules-body,
+  #rules-popup-body{
+    max-width:720px;
+  }
+
+  /* ---- Elenco personaggi: griglia di card SOLO da 900px in su (sotto,
+     tablet compreso, resta l'elenco verticale di sempre) — evita righe
+     lunghissime su monitor ampi senza inventare una nuova disposizione
+     per le altre liste (storie/area Narratore restano verticali: non
+     condividono la stessa forma di card, una griglia lì non sarebbe
+     "coerente con la struttura esistente"). */
+  @media (min-width:900px){
+    #char-list{
+      display:grid;
+      grid-template-columns:repeat(auto-fill, minmax(340px, 1fr));
+      gap:12px;
+      align-items:start;
+    }
+    #char-list .char-card{margin-bottom:0;}
+  }
+}
+
+/* ==========================================================================
+   Checkpoint 2B.2 — scheda personaggio e diagramma. La vista più delicata:
+   nessuna formula, statistica, tratto, tecnica o livello viene toccato,
+   solo CSS (più due div "gruppo" senza contenuto proprio in index.html,
+   vedi .gioco-col). Sotto i 600px tutto resta l'identica scheda mobile. */
+@media (min-width:600px){
+  /* "Larghezza generale indicativa tra 1000 e 1400px, regolata in base
+     allo schermo": max-width da solo basta, non serve un'altra fascia —
+     sotto i 1000px non ha comunque effetto (il contenitore è già più
+     stretto della viewport). */
+  .sheet-header,
+  #tabs,
+  .sheet-body{
+    max-width:1300px;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+  }
+  /* Le barre HP/MP/PP (.bar-track) sono width:100% del loro box: su
+     mobile va benissimo (il box stesso non supera mai ~400px), qui senza
+     un limite diventerebbero righe lunghissime e sottili — non più una
+     "barra" leggibile. */
+  .bar-track{max-width:480px;}
+}
+/* Diagramma + dati operativi affiancati SOLO quando la larghezza è
+   davvero sufficiente per due colonne leggibili (non un generico
+   "da tablet in su": a 768-1024px il diagramma affiancato ai controlli
+   lascerebbe entrambe le colonne troppo strette). Sotto questa soglia
+   .gioco-col è invisibile al layout (display:contents): i suoi contenuti
+   restano figli diretti di .tab-panel, impilati esattamente come prima
+   del Checkpoint 2B — utile solo da qui in su. */
+.gioco-col{display:contents;}
+@media (min-width:1100px){
+  .tab-panel[data-panel="gioco"].active{
+    display:grid;
+    /* minmax (non "auto"): l'SVG del diagramma è width:100% del proprio
+       contenitore (vedi .diagram-wrap sotto) — una colonna "auto" (dimensione
+       decisa dal contenuto) e un contenuto al 100% della colonna sono
+       circolari, il browser risolve l'ambiguità collassando l'SVG alla sua
+       dimensione intrinseca minima invece di ingrandirlo. Una traccia con
+       un intervallo esplicito dà invece una base di calcolo concreta. */
+    grid-template-columns:minmax(360px, 680px) 1fr;
+    align-items:start;
+    gap:24px;
+  }
+  .gioco-col{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+  /* Il diagramma si ridimensiona in proporzione (la sua SVG è già
+     width:100%/height:auto, vedi .diagram-wrap sopra): qui gli si dà solo
+     più spazio di quanto ne avesse sul telefono (~400px utili), non uno
+     smisurato — "valorizzato", non snaturato. */
+  .gioco-col-diagram .box{max-width:680px;}
+  .gioco-col-actions .box{max-width:620px;}
+}
+
+/* ==========================================================================
+   Checkpoint 2B.3 — wizard di creazione e combattimento. Stesso principio
+   sempre: solo CSS, nessuna formula/regola/meccanica toccata, sotto i
+   600px zero effetto. */
+@media (min-width:600px){
+  /* Wizard: contenitore piu' stretto delle altre viste (900px, non
+     1000-1400 come la scheda) — resta un modulo di compilazione a passi,
+     non una scheda con dati da consultare in parallelo; campi/etichette
+     restano leggibili senza diventare una parete di form sparsi. Nessun
+     affiancamento di campi (richiedeva scegliere QUALI coppie affiancare
+     passo per passo, con markup diverso per ciascuno step — intervento
+     mirato per un checkpoint successivo se richiesto, qui il contenitore
+     piu' ampio da solo rende gia' i campi meno compressi). */
+  .wiz-header,
+  .wiz-body,
+  .wiz-nav-wrap .wiz-nav,
+  .wiz-nav-wrap .wiz-next-hint{
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+  }
+
+  /* Combattimento: la mappa deve poter usare TUTTA la larghezza disponibile
+     (piu' spazio reale, non uno "stretto e leggibile" come le altre viste
+     — vedi commento su #view-combat/.combat-map-wrap: il suo
+     ridimensionamento e' gia' dinamico sul proprio contenitore, nessuna
+     modifica qui sotto). Il pannello comandi sotto la barra ritratti è
+     invece testo/pulsanti in colonna (stesso pattern delle barre HP/MP
+     della scheda): senza limite diventerebbe una fila di pulsanti a piena
+     larghezza lunga quanto lo schermo. */
+  .combat-command-panel{
+    max-width:640px;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+  }
+}
+/* La griglia a 5 righe di #view-combat (topbar/banner/mappa/barra
+   ritratti/pannello comandi, vedi il commento sopra la sua regola) risolve
+   già un problema sottile — ancorare la barra ritratti al fondo reale dello
+   schermo qualunque sia l'altezza della mappa — con un ordine di righe
+   preciso: un affiancamento mappa+controlli richiederebbe trasformarla in
+   una griglia 2D (righe E colonne) senza romperlo, e verificarne il
+   funzionamento richiede un incontro reale (bersagli, turni, drag dei
+   token) che qui non è disponibile per un test end-to-end affidabile.
+   Rimandato: non "già coerente col codice esistente" da poter cambiare con
+   sicurezza in un checkpoint dove i pattern usati altrove (participanti in
+   testata) non si applicano identici a un layout a griglia su misura. */

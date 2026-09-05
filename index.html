@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14161A">
+<meta name="description" content="Role Makers — scheda personaggio interattiva per il GDR Role Makers System.">
+<meta name="application-name" content="Role Makers System">
+<title>Role Makers System</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="icons/favicon-16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Role Makers">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script>
+// Hotfix "toast persistente e safe area di sistema": fonte unica dei 4 lati
+// (vedi --safe-top/right/bottom/left in css/style.css). Su alcuni WebView
+// Android env(safe-area-inset-*) riporta valori sbagliati (spesso 0 anche
+// con gesture-nav/cutout reali, soprattutto con l'edge-to-edge forzato da
+// Android 15/targetSdk 35) — MainActivity (vedi
+// .github/scripts/patch_android_safe_area.py, eseguito su ogni
+// "cap add android" perché android/ non è versionato) legge gli inset
+// nativi VERI con WindowInsetsCompat, li converte da pixel nativi a pixel
+// CSS (divisione per la densità dello schermo, fatta lato Java) e li passa
+// qui. Definita ESPLICITAMENTE fuori da qualunque IIFE e prima di ogni
+// altro script, così esiste già anche se la chiamata nativa arriva prima
+// che il resto della pagina abbia finito di caricarsi. Su web/iOS questa
+// funzione non viene mai chiamata: --native-safe-* resta non definita e le
+// variabili CSS ricadono sempre su env(), invariato.
+window.__setNativeSafeAreaInsets = function (top, right, bottom, left) {
+  var s = document.documentElement.style;
+  s.setProperty('--native-safe-top', top + 'px');
+  s.setProperty('--native-safe-right', right + 'px');
+  s.setProperty('--native-safe-bottom', bottom + 'px');
+  s.setProperty('--native-safe-left', left + 'px');
+};
+// Handshake deterministico (hotfix "consegna iniziale degli inset
+// nativi"): il canale sopra è un PUSH (Android chiama evaluateJavascript
+// quando gli inset cambiano) — se quella chiamata arriva prima che questo
+// script sia stato eseguito, l'evento va semplicemente perso, senza che
+// nulla lo riconsegni. Qui si aggiunge un PULL sincrono, che copre
+// esattamente il momento iniziale in cui il push può arrivare troppo
+// presto: se l'interfaccia nativa (AndroidSafeAreaBridge, registrata una
+// sola volta in MainActivity.onCreate — vedi
+// .github/scripts/patch_android_safe_area.py — e valida per l'intera vita
+// della WebView, quindi ANCHE dopo location.reload()/l'applicazione di
+// un aggiornamento OTA/il ritorno da background, senza bisogno che
+// Android la registri di nuovo) è già disponibile in questo esatto
+// momento, la si interroga SUBITO, in modo sincrono: nessun polling,
+// nessuna attesa arbitraria, nessuna finestra in cui il valore può
+// mancare. Copre cold start, primo caricamento, reload, OTA e
+// ricreazione della WebView allo stesso modo, perché ciascuno di questi
+// eventi fa ripartire da capo il parse di questo stesso script. La
+// rotazione e gli altri cambi a pagina già viva restano coperti dal solo
+// canale push qui sopra, che nel frattempo la pagina ha già definito.
+if (window.AndroidSafeAreaBridge && typeof window.AndroidSafeAreaBridge.getInsets === 'function') {
+  try {
+    var parts = window.AndroidSafeAreaBridge.getInsets().split(',').map(Number);
+    if (parts.length === 4 && parts.every(function (n) { return Number.isFinite(n); })) {
+      window.__setNativeSafeAreaInsets(parts[0], parts[1], parts[2], parts[3]);
+    }
+  } catch (e) { /* web/iOS: l'interfaccia non esiste, resta il fallback env() */ }
+}
+</script>
+<script>
+// Checkpoint 2A: il layout oltre i 600px (tablet e desktop, vedi
+// css .ms-desktop-frame → ora un semplice @media(min-width:600px), senza
+// più bisogno di una classe JS) NON dipende più dalla capacità touch del
+// dispositivo — solo dalla larghezza reale dello schermo, un segnale
+// sempre affidabile. Un tablet con tastiera o un monitor touch (touch, ma
+// tutt'altro che stretti) non restano più forzati nella resa a piena
+// larghezza pensata per un telefono solo perché dichiarano un touchscreen.
+//
+// navigator.maxTouchPoints resta letto qui e disponibile come classe
+// .ms-touch SOLO per eventuali adattamenti della modalità di interazione
+// (dimensione delle aree tap, assenza di stati hover) in un checkpoint
+// successivo — mai per decidere il layout: a differenza di hover:hover/
+// pointer:fine (che alcuni WebView Android dichiarano in modo scorretto
+// anche su schermi puramente touch, per cui restano scartati per QUALSIASI
+// decisione), il segnale touch in sé resta comunque valido per la sua
+// unica responsabilità residua, l'interazione.
+(function () {
+  var isTouch = (navigator.maxTouchPoints > 0) || ('ontouchstart' in window);
+  document.documentElement.classList.toggle('ms-touch', isTouch);
+
+  // 100vh/100dvh su alcuni Android non corrispondono all'altezza
+  // davvero visibile (barra di stato/gesture invadenti, tastiera...):
+  // su quei dispositivi restava una fascia scoperta in fondo alla
+  // pagina, con lo sfondo scuro sotto invece del contenuto dell'app.
+  // --real-vh (1% dell'altezza MISURATA da JS, sempre corretta) va
+  // usato al posto di vh/dvh ovunque serva l'altezza reale dello
+  // schermo — vedi #app/.view/#view-combat in css/style.css. Inline e
+  // prima di #app per evitare un flash di altezza sbagliata al primo
+  // caricamento.
+  function updateRealVh() {
+    var h = (window.visualViewport && window.visualViewport.height) || window.innerHeight;
+    document.documentElement.style.setProperty('--real-vh', (h * 0.01) + 'px');
+  }
+  updateRealVh();
+  window.addEventListener('resize', updateRealVh);
+  window.addEventListener('orientationchange', updateRealVh);
+  if (window.visualViewport) window.visualViewport.addEventListener('resize', updateRealVh);
+})();
+</script>
+
+<!-- ============ INTRODUZIONE ANIMATA ============
+     Livello indipendente dalla copertina/#app sottostante (mai dentro il
+     sistema di viste .view/showView): copre l'intero viewport, sfondo nero,
+     gira una sola volta per vera sessione di avvio (js/intro.js, stato in
+     sessionStorage — mai localStorage, mai legato a visibilitychange/
+     resume). Il markup esiste già qui, prima di qualunque script, così lo
+     sfondo nero è garantito dal solo CSS fin dal primissimo paint, anche
+     prima che js/intro.js abbia potuto eseguire. -->
+<div id="intro-layer" class="intro-layer">
+  <video id="intro-video" class="intro-video" playsinline webkit-playsinline
+    poster="media/intro-role-makers-poster.webp" preload="auto">
+    <source src="media/intro-role-makers.mp4" type="video/mp4">
+  </video>
+  <button type="button" id="intro-gate-btn" class="intro-gate-btn hidden">ENTRA IN ROLE MAKERS</button>
+</div>
+
+<!-- inert+aria-hidden già nel markup (revisione checkpoint "8 punti", terza
+     revisione, punto 6): #app è il contenuto BLOCCATO durante l'intro, mai
+     raggiungibile/annunciato prima che js/intro.js abbia anche solo potuto
+     eseguire — hardRemoveLayerAndActivateApp() li rimuove soltanto a
+     introduzione conclusa (o subito, se la sessione l'ha già vista). -->
+<div id="app" inert aria-hidden="true">
+
+  <!-- ============ COPERTINA ============ -->
+  <section id="view-cover" class="view">
+    <button class="cover-menu-btn" id="btn-cover-menu" aria-label="Apri indice" aria-expanded="false" aria-controls="cover-menu">
+      <span class="menu-lines"><span></span><span></span><span></span></span>
+    </button>
+    <nav class="cover-menu hidden" id="cover-menu" aria-label="Indice">
+      <div class="cm-label">Indice</div>
+      <button class="cm-item" data-menu-nav="account">Account</button>
+      <button class="cm-item" data-menu-nav="previously">Recap</button>
+      <button class="cm-item" data-menu-nav="rules">Le regole</button>
+      <div class="cm-sep"></div>
+      <div class="cm-label">Sezione di gioco</div>
+      <button class="cm-item hidden" id="cm-item-campaigns" data-menu-nav="campaigns">Le tue storie</button>
+      <button class="cm-item" data-menu-nav="charlist">I tuoi personaggi</button>
+      <button class="cm-item" data-menu-nav="newchar">Crea un personaggio</button>
+    </nav>
+
+    <!-- Copertina in tre fasce (checkpoint "migrazione marchio e
+         copertina"): wordmark+emblema in alto (fissi), account/login nel
+         mezzo, payoff+segni laterali sul fondo — due crop dello stesso
+         PNG a risoluzione nativa (1122×1402) estratto dal master, mai
+         ridisegnati né deformati (height:auto su entrambi). Dimensione
+         fissa (non scala mai con l'altezza della finestra): se lo spazio
+         non basta la sezione scorre, non le rimpicciolisce. -->
+    <div class="cover-header">
+      <img class="cover-top-image" src="img/role-makers-cover-top.png" alt="Role Makers — Role Makers System">
+    </div>
+
+    <div class="cover-content">
+      <div class="update-banner hidden" id="update-banner">
+        <span class="ub-text" id="update-banner-text">Nuova versione disponibile</span>
+        <button class="btn btn-sm btn-primary" id="update-banner-btn">Aggiorna</button>
+        <p class="helper-text ub-chrome-help hidden" id="update-banner-chrome-help" style="margin:6px 0 0;width:100%;">
+          Se Chrome segna il file come "non sicuro" o il download resta fermo: tocca la notifica di download, poi
+          <strong>"⋮" → "Scarica comunque"</strong> (Chrome lo fa solo perché l'app è poco diffusa, non è un problema reale).
+        </p>
+      </div>
+      <div class="cover-actions" id="home-status-box" style="display:flex;flex-direction:column;gap:10px;">
+        <p class="helper-text" style="margin:0;">Verifica in corso…</p>
+      </div>
+    </div>
+
+    <div class="cover-payoff" data-toast-clear>
+      <img class="cover-payoff-image" src="img/role-makers-cover-payoff.png" alt="da una semplice idea a infinite possibilità">
+    </div>
+  </section>
+
+  <!-- ============ LE TUE CAMPAGNE (Narratore/admin) ============ -->
+  <section id="view-campaigns" class="view hidden">
+    <div class="topbar">
+      <button class="btn btn-icon btn-ghost" data-nav="cover" aria-label="Indietro">←</button>
+      <h1>Le tue storie</h1>
+    </div>
+    <div class="list-scroll" id="account-campaigns-box">
+      <p class="helper-text" style="margin:0;">—</p>
+    </div>
+  </section>
+
+  <!-- ============ SCHEDA DI UNA STORIA (Narratore/admin) ============ -->
+  <section id="view-campaignsheet" class="view hidden">
+    <div class="topbar">
+      <button class="btn btn-icon btn-ghost" data-nav="campaigns" aria-label="Indietro">←</button>
+      <h1 id="campaign-sheet-title">—</h1>
+    </div>
+    <nav class="tabs" id="campaign-sheet-tabs">
+      <button class="tab-btn active" data-campshtab="personaggi">Personaggi</button>
+      <button class="tab-btn" data-campshtab="png">PNG</button>
+      <button class="tab-btn" data-campshtab="combattimento">Combattimento</button>
+      <button class="tab-btn" data-campshtab="riassunto">Riassunto</button>
+      <button class="tab-btn" data-campshtab="premessa">Premessa</button>
+      <button class="tab-btn" data-campshtab="gestisci">Gestisci</button>
+    </nav>
+    <div class="sheet-body">
+      <div class="tab-panel active" data-camppanel="personaggi"></div>
+      <div class="tab-panel" data-camppanel="png"></div>
+      <div class="tab-panel" data-camppanel="combattimento"></div>
+      <div class="tab-panel" data-camppanel="riassunto"></div>
+      <div class="tab-panel" data-camppanel="premessa"></div>
+      <div class="tab-panel" data-camppanel="gestisci"></div>
+    </div>
+  </section>
+
+  <!-- ============ RANDOMIZE NPC (modale, aperta da Scheda storia > PNG) ============ -->
+  <div id="npc-randomizer-modal" class="hidden confirm-modal">
+    <div class="cc-box">
+      <div class="cc-title">🎲 Genera PNG</div>
+      <div class="field"><label>Archetipo</label><select id="npc-rand-archetype"></select></div>
+      <div class="field"><label>Nome</label><input type="text" id="npc-rand-name" maxlength="40" placeholder="Nome del PNG"></div>
+      <div class="field-row">
+        <div class="field"><label>Classe</label><span style="display:flex;gap:4px;">
+          <select id="npc-rand-build" style="flex:1;">
+            <option value="guerriero">Guerriero</option>
+            <option value="eclettico">Eclettico</option>
+            <option value="mago">Mago</option>
+          </select>
+          <button type="button" class="btn btn-icon btn-ghost btn-sm" id="npc-rand-build-dice" title="Randomizza classe">🎲</button>
+        </span></div>
+        <div class="field"><label>Livello</label><input type="number" id="npc-rand-level" min="1" max="30" value="1"></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label>Qualità equip</label><span style="display:flex;gap:4px;">
+          <select id="npc-rand-quality" style="flex:1;">
+            <option value="bassa">Bassa</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+          </select>
+          <button type="button" class="btn btn-icon btn-ghost btn-sm" id="npc-rand-quality-dice" title="Randomizza qualità">🎲</button>
+        </span></div>
+        <div class="field"><label>Pesantezza equip</label><span style="display:flex;gap:4px;">
+          <select id="npc-rand-weight" style="flex:1;">
+            <option value="leggero">Leggero</option>
+            <option value="medio">Medio</option>
+            <option value="pesante">Pesante</option>
+          </select>
+          <button type="button" class="btn btn-icon btn-ghost btn-sm" id="npc-rand-weight-dice" title="Randomizza pesantezza">🎲</button>
+        </span></div>
+      </div>
+      <div class="field">
+        <label>Numero Tecniche/Abilità <button type="button" class="btn btn-icon btn-ghost btn-sm" id="npc-rand-tecab-dice" title="Randomizza">🎲</button></label>
+        <input type="number" id="npc-rand-tecab-count" min="0" value="0">
+        <p class="helper-text" id="npc-rand-tecab-max" style="margin:4px 0 0;"></p>
+      </div>
+      <p class="helper-text" style="margin:0;">L'archetipo suggerisce classe/qualità/pesantezza/tecniche coerenti col tipo di PNG (i dadini li ri-randomizzano singolarmente); il dado grande genera subito la scheda completa coi valori qui sopra.</p>
+      <div class="cc-actions">
+        <button class="btn btn-primary" id="npc-rand-roll">🎲 Genera scheda</button>
+        <button class="btn btn-ghost" id="npc-rand-cancel">Annulla</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ AGGIUNGI OGGETTO ALLA BORSA (modale, Scheda storia > PNG) ============ -->
+  <div id="npc-bag-add-modal" class="hidden confirm-modal">
+    <div class="cc-box">
+      <div class="cc-title">🎒 Aggiungi oggetto alla Borsa</div>
+      <div class="field"><label>Provenienza (facoltativo)</label><input type="text" id="npc-bag-add-source" maxlength="60" placeholder="es. Bottino di Ture Malik"></div>
+      <div id="npc-bag-add-fields"></div>
+      <div class="cc-actions">
+        <button class="btn btn-primary" id="npc-bag-add-submit">+ Aggiungi alla borsa</button>
+        <button class="btn btn-ghost" id="npc-bag-add-cancel">Annulla</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ LISTA PERSONAGGI ============ -->
+  <section id="view-list" class="view hidden">
+    <div class="topbar">
+      <button class="btn btn-icon btn-ghost" data-nav="cover" aria-label="Indietro">←</button>
+      <h1>I tuoi personaggi</h1>
+      <button class="btn btn-icon btn-primary" id="btn-new-char" aria-label="Nuovo personaggio">+</button>
+    </div>
+    <p class="helper-text" id="list-account-badge" style="margin:8px 16px 0;"></p>
+    <div class="list-scroll" id="char-list"></div>
+  </section>
+
+  <!-- ============ SCHEDA PERSONAGGIO ============ -->
+  <section id="view-sheet" class="view hidden">
+    <div class="sheet-header">
+      <button class="btn btn-icon btn-ghost" data-nav="list" aria-label="Torna alla lista">←</button>
+      <div class="header-avatar hidden" id="header-avatar"></div>
+      <div class="who">
+        <input type="text" id="f-nome" class="name-input" placeholder="Nome personaggio" maxlength="40" aria-label="Nome del personaggio">
+        <div class="sub" id="sheet-sub">—</div>
+      </div>
+      <button class="btn btn-icon btn-ghost" id="btn-char-menu" aria-label="Altre azioni">⋯</button>
+    </div>
+
+    <div class="hidden" id="narrator-edit-banner" style="background:var(--fisico-forte);color:#fff;padding:8px 12px;font-size:.85rem;line-height:1.3;">
+      <div>Gestione Narratore della scheda di <strong id="narrator-edit-banner-name">—</strong></div>
+      <div id="narrator-edit-status" role="status">Scheda confermata · sola lettura</div>
+      <div class="row" style="gap:8px;margin-top:8px;flex-wrap:wrap;">
+        <button type="button" class="btn btn-small" id="btn-narrator-edit">✎ Modifica</button>
+        <button type="button" class="btn btn-small hidden" id="btn-narrator-confirm">✓ Conferma e salva</button>
+        <button type="button" class="btn btn-small btn-ghost hidden" id="btn-narrator-cancel">Annulla</button>
+      </div>
+    </div>
+
+    <nav class="tabs" id="tabs">
+      <button class="tab-btn" data-tab="identita">Identità</button>
+      <button class="tab-btn" data-tab="note">Background</button>
+      <button class="tab-btn active" data-tab="gioco">Fronte Scheda</button>
+      <button class="tab-btn" data-tab="tratti">Tratti</button>
+      <button class="tab-btn" data-tab="retro">Retro Scheda</button>
+      <button class="tab-btn" data-tab="equip">Equipaggiamento</button>
+      <button class="tab-btn" data-tab="statistiche">Statistiche</button>
+      <button class="tab-btn" data-tab="livelli">Livelli</button>
+    </nav>
+
+    <div class="sheet-body">
+
+      <!-- ---- IDENTITÀ ---- -->
+      <div class="tab-panel" data-panel="identita">
+        <!-- creation-portrait-block e creation-anagrafica-block sono spostati
+             (appendChild, non clonati) dentro il wizard di creazione mentre
+             è aperto — vedi moveIntoWizard/wizardTeardown in app.js — e
+             tornano qui una volta completata la creazione -->
+        <div id="creation-portrait-block">
+        <div class="section-title"><span class="dot neutral"></span>Volto del personaggio</div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad">
+          <div class="portrait-pad">
+            <div class="portrait-frame" id="portrait-frame" role="button" aria-label="Volto del personaggio"><span class="portrait-placeholder" id="portrait-placeholder">Nessuna immagine<br>tocca per caricare</span></div>
+            <div class="portrait-actions">
+              <div class="field"><label>Nome del personaggio</label><input type="text" id="f-nome2" placeholder="Nome e Cognome" maxlength="40"></div>
+              <input type="file" id="portrait-file" accept="image/*" class="hidden">
+              <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <button class="btn btn-ghost btn-sm" id="portrait-load">Carica immagine</button>
+                <button class="btn btn-ghost btn-sm hidden" id="portrait-remove">✕ Rimuovi</button>
+              </div>
+            </div>
+          </div>
+          <p class="helper-text portrait-hint">Trascina per inquadrare · Tocca per ingrandire</p>
+        </div></div>
+        </div>
+
+        <div id="creation-anagrafica-block">
+        <div class="section-title"><span class="dot neutral"></span>Anagrafica</div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad" style="display:flex;flex-direction:column;gap:12px;">
+          <div class="field-row">
+            <div class="field"><label>Razza</label><input type="text" id="f-razza" placeholder="es. Umano"></div>
+            <div class="field" style="max-width:110px;"><label>Età</label><input type="text" id="f-eta" placeholder="es. 27"></div>
+          </div>
+          <div class="field"><label>Ruolo / occupazione</label><input type="text" id="f-ruolo" placeholder="es. Barista, mercenaria..."></div>
+        </div></div>
+        </div>
+
+        <div id="storia-legacy-section">
+          <div class="section-title"><span class="dot neutral"></span>Storia</div>
+          <div class="box"><div class="box-bar"></div><div class="box-pad" style="display:flex;flex-direction:column;gap:12px;">
+            <div class="field">
+              <div class="row-between" style="margin-bottom:2px;">
+                <label style="margin:0;" for="f-storia-select">Storie pubblicate dal Narratore</label>
+                <button class="btn btn-icon btn-ghost btn-sm" id="btn-refresh-stories" title="Aggiorna elenco" style="width:24px;height:24px;">🔄</button>
+              </div>
+              <select id="f-storia-select"><option value="">— scegli dall'elenco, oppure scrivi il nome sotto —</option></select>
+            </div>
+            <div class="field"><label>Storia a cui partecipa</label><input type="text" id="f-storia" placeholder="Il nome della storia concordato col Narratore"></div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+              <button class="btn btn-ghost btn-sm" id="btn-share-master">📋 Copia per il Narratore</button>
+              <button class="btn btn-ghost btn-sm" id="btn-premesse">📜 Premesse della storia</button>
+            </div>
+            <p class="helper-text" style="margin:0;">Copia la scheda negli appunti (senza l'immagine del volto): incollala nella chat col Narratore, che la importerà nella sua Area. Ricopiala dopo ogni aggiornamento importante.</p>
+          </div></div>
+        </div>
+
+        <div id="identita-cloudstory-block">
+        <div class="section-title"><span class="dot neutral"></span>Storia in cloud</div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad" id="cloud-story-box" style="display:flex;flex-direction:column;gap:12px;">
+          <p class="helper-text" style="margin:0;">Verifica in corso…</p>
+        </div></div>
+        </div>
+
+        <div id="creation-build-block">
+        <div class="section-title"><span class="dot"></span>Classe</div>
+        <p class="helper-text" id="build-helper">La classe determina i moltiplicatori di HP/MP, la dotazione iniziale e i P.R. di partenza.</p>
+        <div class="build-grid" id="build-grid"></div>
+        </div>
+
+        <div id="identita-bellezza-block">
+        <div class="section-title"><span class="dot neutral"></span>Bellezza</div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad">
+          <p class="helper-text">Se non definita nel background: 1d20.</p>
+          <div class="roll-row">
+            <button class="btn btn-magic" id="roll-bellezza-btn">Tira Bellezza</button>
+            <div class="roll-result" id="bellezza-result">—</div>
+          </div>
+          <div class="field" style="margin-top:10px;"><label>Oppure imposta manualmente</label><input type="number" id="f-bellezza-manuale" placeholder="valore da background"></div>
+        </div></div>
+        </div>
+      </div>
+
+      <!-- ---- BACKGROUND ---- -->
+      <div class="tab-panel" data-panel="note">
+        <p class="helper-text">Il testo grigio in ogni campo è un consiglio di compilazione: sparisce appena scrivi qualcosa di tuo. Ogni argomento è un contenitore a sé: scegli quale aprire dal menu qui sotto, invece di scorrere un'unica pagina lunghissima. I campi si leggono per intero così come sono — per modificarli tocca "Modifica", poi "Conferma e blocca" quando hai finito (evita ritocchi involontari).</p>
+
+        <div class="field"><label>Contenitore da aprire</label>
+          <select id="bg-nav-select">
+            <option value="datiAspetto">Dati generali e Aspetto</option>
+            <option value="vita">Vita</option>
+            <option value="atteggiamento">Atteggiamento</option>
+            <option value="passato">Passato</option>
+            <option value="relazioni">Relazioni</option>
+          </select>
+        </div>
+
+        <div class="bg-section" data-bgsection="datiAspetto">
+          <div class="bg-section-head">
+            <span class="dot neutral"></span><span class="bg-section-title">Dati generali e Aspetto</span>
+            <button type="button" class="btn btn-ghost btn-sm bg-edit-btn" data-bgedit="datiAspetto">✎ Modifica</button>
+            <button type="button" class="btn btn-primary btn-sm bg-lock-btn hidden" data-bglock="datiAspetto">🔒 Conferma e blocca</button>
+          </div>
+          <div class="bg-section-body" data-bgbody="datiAspetto">
+            <div class="box"><div class="box-bar"></div><div class="box-pad" style="display:flex;flex-direction:column;gap:12px;">
+              <div class="field-row">
+                <div class="field"><label>Data di nascita</label><textarea rows="1" data-bg="nascitaData" placeholder="Quando è nato/a"></textarea></div>
+                <div class="field"><label>Luogo di nascita</label><textarea rows="1" data-bg="nascitaLuogo" placeholder="Dove è nato/a e com'è quel luogo"></textarea></div>
+              </div>
+              <div class="field"><label>Età</label><textarea rows="1" data-bg="eta" placeholder="Quanti anni ha"></textarea></div>
+              <div class="field"><label>Origini</label><textarea rows="1" data-bg="origini" placeholder="Radici familiari, culturali o etniche"></textarea></div>
+              <div class="field"><label>Descrizione in una frase</label><textarea rows="1" data-bg="frase" placeholder="Una frase che lo/la riassume, es. «Meglio sporcarsi le mani che restare a guardare!»"></textarea></div>
+              <div class="field-row">
+                <div class="field"><label>Altezza</label><textarea rows="1" data-bg="altezza" placeholder="es. 1,70"></textarea></div>
+                <div class="field"><label>Peso</label><textarea rows="1" data-bg="peso" placeholder="es. 68 kg"></textarea></div>
+              </div>
+              <div class="field-row">
+                <div class="field"><label>Colore della pelle</label><textarea rows="1" data-bg="pelle" placeholder="es. carnagione olivastra"></textarea></div>
+                <div class="field"><label>Acconciatura</label><textarea rows="1" data-bg="acconciatura" placeholder="Taglio, colore, come porta i capelli"></textarea></div>
+              </div>
+              <div class="field"><label>Colore degli occhi</label><textarea data-bg="occhi" placeholder="Colore o particolarità degli occhi (anche impianti e innesti)"></textarea></div>
+              <div class="field"><label>Segni particolari</label><textarea data-bg="segni" placeholder="Cicatrici, tatuaggi, innesti, marchi..."></textarea></div>
+              <div class="field"><label>Tipo di corporatura</label><textarea data-bg="corporatura" placeholder="Fisico e costituzione, es. muscoloso e asciutto per l'addestramento"></textarea></div>
+              <div class="field"><label>Postura</label><textarea data-bg="postura" placeholder="Come si tiene e si muove: cosa comunica il suo corpo"></textarea></div>
+              <div class="field"><label>Vestiario</label><textarea data-bg="vestiario" placeholder="Come si veste di solito: colori, capi e dettagli ricorrenti"></textarea></div>
+              <div class="field"><label>Qualcosa che porta sempre con sé</label><textarea data-bg="oggetto" placeholder="Un oggetto da cui non si separa mai, e perché conta per lui/lei"></textarea></div>
+            </div></div>
+          </div>
+        </div>
+
+        <div class="bg-section hidden" data-bgsection="vita">
+          <div class="bg-section-head">
+            <span class="dot neutral"></span><span class="bg-section-title">Vita</span>
+            <button type="button" class="btn btn-ghost btn-sm bg-edit-btn" data-bgedit="vita">✎ Modifica</button>
+            <button type="button" class="btn btn-primary btn-sm bg-lock-btn hidden" data-bglock="vita">🔒 Conferma e blocca</button>
+          </div>
+          <div class="bg-section-body" data-bgbody="vita">
+            <div class="box"><div class="box-bar"></div><div class="box-pad" style="display:flex;flex-direction:column;gap:12px;">
+              <div class="field"><label>Abilità</label><textarea data-bg="abilita" placeholder="Cosa sa fare bene nella vita di tutti i giorni: talenti e competenze pratiche (non le Abilità magiche della scheda)"></textarea></div>
+              <div class="field"><label>Incompetenze</label><textarea data-bg="incompetenze" placeholder="Cosa non sa fare: lacune e limiti"></textarea></div>
+              <div class="field"><label>Debolezze</label><textarea data-bg="debolezze" placeholder="Punti deboli fisici o mentali, dipendenze e il loro prezzo"></textarea></div>
+              <div class="field"><label>Hobby</label><textarea data-bg="hobby" placeholder="Passatempi e attività fuori dall'avventura"></textarea></div>
+              <div class="field"><label>Abitudini</label><textarea data-bg="abitudini" placeholder="Routine e piccoli rituali quotidiani"></textarea></div>
+            </div></div>
+          </div>
+        </div>
+
+        <div class="bg-section hidden" data-bgsection="atteggiamento">
+          <div class="bg-section-head">
+            <span class="dot neutral"></span><span class="bg-section-title">Atteggiamento</span>
+            <button type="button" class="btn btn-ghost btn-sm bg-edit-btn" data-bgedit="atteggiamento">✎ Modifica</button>
+            <button type="button" class="btn btn-primary btn-sm bg-lock-btn hidden" data-bglock="atteggiamento">🔒 Conferma e blocca</button>
+          </div>
+          <div class="bg-section-body" data-bgbody="atteggiamento">
+            <div class="box"><div class="box-bar"></div><div class="box-pad" style="display:flex;flex-direction:column;gap:12px;">
+              <div class="field"><label>Personalità</label><textarea data-bg="personalita" placeholder="Com'è di carattere e come si comporta con gli altri"></textarea></div>
+              <div class="field"><label>Morale</label><textarea data-bg="morale" placeholder="La sua bussola morale: cosa è giusto per lui/lei, che codice segue"></textarea></div>
+              <div class="field"><label>Autocontrollo</label><textarea data-bg="autocontrollo" placeholder="Come reagisce sotto pressione e nel pericolo"></textarea></div>
+              <div class="field"><label>Motivazione</label><textarea data-bg="motivazione" placeholder="Cosa lo/la spinge ad agire"></textarea></div>
+              <div class="field"><label>Scoraggiamento</label><textarea data-bg="scoraggiamento" placeholder="Cosa lo/la abbatte e come reagisce allo sconforto"></textarea></div>
+              <div class="field"><label>Livello di sicurezza</label><textarea data-bg="sicurezza" placeholder="Quanta fiducia ha in sé: quella che mostra e quella vera"></textarea></div>
+              <div class="field"><label>Filosofia</label><textarea data-bg="filosofia" placeholder="La sua visione del mondo in poche righe"></textarea></div>
+              <div class="field"><label>Paura più grande / Fobia</label><textarea data-bg="paura" placeholder="Cosa teme più di ogni altra cosa"></textarea></div>
+              <div class="field"><label>Obiettivo a breve termine</label><textarea data-bg="obiettivoBreve" placeholder="Cosa vuole ottenere adesso"></textarea></div>
+              <div class="field"><label>Obiettivo a lungo termine</label><textarea data-bg="obiettivoLungo" placeholder="Il traguardo della sua vita"></textarea></div>
+            </div></div>
+          </div>
+        </div>
+
+        <div class="bg-section hidden" data-bgsection="passato">
+          <div class="bg-section-head">
+            <span class="dot neutral"></span><span class="bg-section-title">Passato</span>
+            <button type="button" class="btn btn-ghost btn-sm bg-edit-btn" data-bgedit="passato">✎ Modifica</button>
+            <button type="button" class="btn btn-primary btn-sm bg-lock-btn hidden" data-bglock="passato">🔒 Conferma e blocca</button>
+          </div>
+          <div class="bg-section-body" data-bgbody="passato">
+            <div class="box"><div class="box-bar"></div><div class="box-pad" style="display:flex;flex-direction:column;gap:12px;">
+              <div class="field"><label>Infanzia</label><textarea data-bg="infanzia" placeholder="Dove e come è cresciuto/a: famiglia, ambiente, primi valori"></textarea></div>
+              <div class="field"><label>Evento passato importante</label><textarea data-bg="eventoImportante" placeholder="Uno o più eventi che l'hanno segnato/a profondamente"></textarea></div>
+              <div class="field"><label>Segreto</label><textarea data-bg="segreto" placeholder="Cosa nasconde a tutti, e perché"></textarea></div>
+              <div class="field"><label>Peggior momento</label><textarea data-bg="peggiorMomento" placeholder="Il giorno più difficile della sua vita"></textarea></div>
+              <div class="field"><label>Miglior momento</label><textarea data-bg="migliorMomento" placeholder="Il ricordo più felice"></textarea></div>
+            </div></div>
+          </div>
+        </div>
+
+        <div class="bg-section hidden" data-bgsection="relazioni">
+          <div class="bg-section-head">
+            <span class="dot neutral"></span><span class="bg-section-title">Relazioni</span>
+            <button type="button" class="btn btn-ghost btn-sm bg-edit-btn" data-bgedit="relazioni">✎ Modifica</button>
+            <button type="button" class="btn btn-primary btn-sm bg-lock-btn hidden" data-bglock="relazioni">🔒 Conferma e blocca</button>
+          </div>
+          <div class="bg-section-body" data-bgbody="relazioni">
+            <p class="helper-text">Familiari, amici, colleghi o chiunque abbia un legame col personaggio: aggiungi una scheda per ogni NPC.</p>
+            <div id="relazioni-list" style="display:flex;flex-direction:column;gap:10px;"></div>
+            <button class="btn btn-ghost btn-sm" id="relazioni-add" style="align-self:flex-start;">+ Aggiungi relazione</button>
+          </div>
+        </div>
+
+        <div class="section-title"><span class="dot neutral"></span>Note libere</div>
+        <div class="field"><textarea id="n-libere" placeholder="Qualsiasi altra annotazione di gioco..." aria-label="Note libere"></textarea></div>
+      </div>
+
+      <!-- ---- FRONTE SCHEDA ---- -->
+      <div class="tab-panel active" data-panel="gioco">
+        <!-- Checkpoint 2B.2: due gruppi (diagramma+risorse / azioni) senza
+             toccare nessun box esistente — servono solo ad affiancarli su
+             desktop ampio (vedi .gioco-col in css/style.css), su mobile e
+             tablet restano impilati esattamente come prima (nessun
+             riferimento nel codice dipende dalla loro posizione, solo da
+             id/data-* sugli elementi interni). -->
+        <div class="gioco-col gioco-col-diagram">
+        <div class="section-title"><span class="dot"></span>Diagramma della scheda</div>
+        <div class="box"><div class="box-bar bicolor"></div><div class="box-pad">
+          <div class="diagram-wrap" id="stat-diagram">
+            <svg viewBox="0 0 320 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="14" y="14" width="46" height="26" rx="4" class="dg-rect"/>
+              <text x="37" y="10" class="dg-lab">LV</text>
+              <rect x="260" y="14" width="46" height="26" rx="4" class="dg-rect"/>
+              <text x="283" y="10" class="dg-lab">Q.I.</text>
+
+              <g stroke="#4A4F58" stroke-width="1.3">
+                <line x1="160" y1="55" x2="120" y2="95"/>
+                <line x1="160" y1="55" x2="200" y2="95"/>
+                <line x1="120" y1="95" x2="200" y2="95"/>
+                <line x1="120" y1="95" x2="160" y2="135"/>
+                <line x1="200" y1="95" x2="160" y2="135"/>
+                <line x1="120" y1="95" x2="120" y2="175"/>
+                <line x1="200" y1="95" x2="200" y2="175"/>
+                <line x1="160" y1="135" x2="120" y2="175"/>
+                <line x1="160" y1="135" x2="200" y2="175"/>
+                <line x1="120" y1="175" x2="200" y2="175"/>
+                <line x1="120" y1="175" x2="160" y2="215"/>
+                <line x1="200" y1="175" x2="160" y2="215"/>
+                <line x1="160" y1="215" x2="120" y2="255"/>
+                <line x1="160" y1="215" x2="200" y2="255"/>
+                <line x1="120" y1="255" x2="160" y2="295"/>
+                <line x1="200" y1="255" x2="160" y2="295"/>
+              </g>
+              <g stroke="#4A4F58" stroke-width="1">
+                <line x1="160" y1="295" x2="109.5" y2="331"/>
+                <line x1="160" y1="295" x2="210.5" y2="331"/>
+              </g>
+
+              <circle cx="160" cy="55" r="19" class="dg-c"/><text x="160" y="32" class="dg-lab">Mira</text>
+              <circle cx="120" cy="95" r="19" class="dg-c"/><text x="88" y="92" class="dg-lab">Dex</text>
+              <circle cx="200" cy="95" r="19" class="dg-c"/><text x="231" y="92" class="dg-lab">Dif</text>
+              <circle cx="160" cy="135" r="19" class="dg-c"/><text x="160" y="112" class="dg-lab">Forza</text>
+              <circle cx="120" cy="175" r="19" class="dg-c"/><text x="88" y="172" class="dg-lab">Vel</text>
+              <circle cx="200" cy="175" r="19" class="dg-c"/><text x="238" y="172" class="dg-lab">D.Men</text>
+              <circle cx="160" cy="215" r="19" class="dg-c"/><text x="160" y="192" class="dg-lab">F.Men</text>
+              <circle cx="120" cy="255" r="19" class="dg-c dg-c-t"/><text x="87" y="252" class="dg-lab">Car</text>
+              <circle cx="200" cy="255" r="19" class="dg-c dg-c-t"/><text x="234" y="252" class="dg-lab">Stile</text>
+              <circle cx="160" cy="295" r="19" class="dg-c dg-c-t"/><text x="160" y="272" class="dg-lab">For</text>
+
+              <circle cx="90" cy="345" r="24" class="dg-c dg-c-hp"/><text x="90" y="315" class="dg-lab">HP</text>
+              <circle cx="70" cy="368" r="15" class="dg-c dg-c-sm"/><text x="70" y="392" class="dg-lab">K.O.</text>
+              <circle cx="112" cy="368" r="15" class="dg-c dg-c-sm"/><text x="112" y="392" class="dg-lab">Uso</text>
+
+              <circle cx="230" cy="345" r="24" class="dg-c dg-c-mp"/><text x="230" y="315" class="dg-lab">MP</text>
+              <circle cx="250" cy="368" r="15" class="dg-c dg-c-sm"/><text x="250" y="392" class="dg-lab">K.O.</text>
+              <circle cx="208" cy="368" r="15" class="dg-c dg-c-sm"/><text x="208" y="392" class="dg-lab">Uso</text>
+
+              <circle cx="160" cy="385" r="18" class="dg-c"/><text x="160" y="412" class="dg-lab">P.R.</text>
+            </svg>
+            <div class="dg-inputs" id="dg-inputs"></div>
+            <div class="dg-pm-overlay tertiary-pm-wrap" id="tertiary-plusminus-gioco" data-pm-style="diagram"></div>
+          </div>
+        </div></div>
+
+        <div class="box"><div class="box-bar bicolor"></div><div class="box-pad">
+          <div class="bar-row">
+            <div class="bar-top"><span class="bar-name" id="hp-bar-name" style="color:var(--fisico-forte)">HP</span><span class="bar-val"><span id="hp-cur">0</span> / <input type="number" id="hp-max" class="inline-max-input" value="0" aria-label="HP massimi"> <span class="chip hidden" id="hp-buffer-badge" title="Sovracura: cuscinetto HP persistente, assorbe danno prima degli HP veri">🔷 +0</span></span></div>
+            <div class="bar-track"><div class="bar-fill physical" id="hp-bar" style="width:0%"></div></div>
+            <div class="bar-controls">
+              <input type="number" id="hp-dmg-input" min="0" placeholder="Danno" aria-label="Danno da applicare agli HP">
+              <button class="btn btn-sm btn-ghost" id="hp-dmg-apply">Applica a Uso</button>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-top"><span class="bar-name" id="mp-bar-name" style="color:var(--magico-forte)">MP</span><span class="bar-val"><span id="mp-cur">0</span> / <input type="number" id="mp-max" class="inline-max-input" value="0" aria-label="MP massimi"></span></div>
+            <div class="bar-track"><div class="bar-fill magic" id="mp-bar" style="width:0%"></div></div>
+            <div class="bar-controls">
+              <select id="mp-cost-select" aria-label="Tecnica o Abilità da usare"><option value="">Nessuna Tecnica/Abilità attivabile</option></select>
+              <button class="btn btn-sm btn-ghost" id="mp-cost-apply">Applica a Uso</button>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-top"><span class="bar-name" style="color:var(--testo-secondario-dark-2)">PP · Boost</span><span class="bar-val"><span id="pp-cur">0</span> / <span id="pp-max">0</span></span></div>
+            <div class="bar-track"><div class="bar-fill neutral" id="pp-bar" style="width:0%"></div></div>
+            <div class="bar-controls">
+              <select id="boost-activate-select" aria-label="Boost da attivare"><option value="">Nessun boost appreso</option></select>
+              <button class="btn btn-sm btn-ghost" id="boost-activate-btn">Attiva</button>
+            </div>
+          </div>
+          <p class="helper-text hidden" id="entry-lock-note" style="margin:2px 0 0;color:var(--fisico-forte);">In attesa che il Narratore accetti la tua richiesta di ingresso: PP, danni HP e uso MP si potranno segnare solo dopo la conferma.</p>
+        </div></div>
+        </div>
+
+        <div class="gioco-col gioco-col-actions">
+        <div class="section-title"><span class="dot physical"></span>Subisci un colpo</div>
+        <div class="box"><div class="box-bar physical"></div><div class="box-pad">
+          <p class="helper-text hidden" id="hit-no-target-note" style="margin:0 0 8px;">Nessuna locazione ha ancora la scheda confermata (tab "Equipaggiamento", bottone "Conferma scheda"): conferma almeno un pezzo di armatura per poterlo bersagliare.</p>
+          <div class="field-row">
+            <div class="field"><label>Danno subito (HP)</label><input type="number" id="hit-dmg-input" min="0" placeholder="0"></div>
+            <div class="field"><label>Bersaglio</label><select id="hit-target-select"></select></div>
+          </div>
+          <div class="roll-row"><button class="btn btn-primary" id="hit-resolve-btn" disabled>Tira Resistenza e applica</button></div>
+          <div class="roll-detail" id="hit-result-detail"></div>
+        </div></div>
+
+        <div class="section-title"><span class="dot physical"></span>Tira danno (Tecnica/Abilità)</div>
+        <div class="box"><div class="box-bar physical"></div><div class="box-pad">
+          <p class="helper-text hidden" id="dmg-tecab-no-target-note" style="margin:0 0 8px;">Nessuna Tecnica o Abilità ha ancora un danno base impostato (retro scheda, colonna "Danno").</p>
+          <div class="field"><label>Tecnica/Abilità</label><select id="dmg-tecab-select"></select></div>
+          <div class="roll-row"><button class="btn btn-primary" id="dmg-tecab-resolve-btn" disabled>Tira danno</button></div>
+          <div class="roll-detail" id="dmg-tecab-result-detail"></div>
+        </div></div>
+
+        <div class="section-title"><span class="dot physical"></span>Combattimento</div>
+        <div class="box"><div class="box-bar physical"></div><div class="box-pad">
+          <p class="helper-text" style="margin:0 0 8px;">Chiama il Narratore per iniziare un combattimento: non appena strutturato, il tuo personaggio agirà per primo.</p>
+          <div class="field"><label>Nota per il Narratore (facoltativa)</label><input type="text" id="combat-attack-note" maxlength="140" placeholder="es. Attacco i banditi all'angolo"></div>
+          <div class="roll-row"><button class="btn btn-primary" id="btn-request-combat">⚔ Attacco!</button></div>
+          <p class="helper-text hidden" id="combat-attack-pending-note" style="margin:8px 0 0;">Richiesta inviata: in attesa che il Narratore strutturi il combattimento.</p>
+        </div></div>
+
+        <div class="section-title"><span class="dot neutral"></span>Riposo</div>
+        <p class="helper-text">Il riposo o la meditazione recuperano HP/MP spendendo i P.R.: imposta il moltiplicatore (a scaglioni di un quarto, es. 0.25, 0.5, 0.75, 1, 1.25…) e scegli come dividere il recupero ottenuto tra HP e MP in Uso.</p>
+        <div class="box"><div class="box-bar"></div><div class="box-pad">
+          <button class="btn btn-ghost btn-sm" id="btn-riposo-toggle" style="align-self:flex-start;">💤 Riposo / Meditazione</button>
+          <p class="helper-text hidden" id="session-lock-note" style="margin:8px 0 0;color:var(--fisico-forte);">In attesa che il Narratore avvii la sessione di gioco: Riposo, Tecniche, Abilità e gli esiti di Stile/Carisma/Fortuna sono disponibili solo durante la giocata.</p>
+          <div id="riposo-panel" class="hidden" style="display:flex;flex-direction:column;gap:10px;margin-top:12px;">
+            <div class="field"><label>Moltiplicatore (0 – 24, a scaglioni di 0,25)</label>
+              <input type="number" id="riposo-moltiplicatore" min="0" max="24" step="0.25" value="0">
+            </div>
+            <p class="helper-text" style="margin:0;">Recupero disponibile: <strong id="riposo-totale">0</strong> punti (P.R. <span id="riposo-pr-eff">0</span> × moltiplicatore)</p>
+            <div class="field-row">
+              <div class="field"><label>Recupera HP</label><input type="number" id="riposo-hp" min="0" value="0"></div>
+              <div class="field"><label>Recupera MP</label><input type="number" id="riposo-mp" min="0" value="0"></div>
+              <div class="field"><label>Recupera PP</label><input type="number" id="riposo-pp" min="0" value="0"></div>
+            </div>
+            <p class="helper-text" style="margin:0;">Residuo non speso: <span id="riposo-residuo">0</span></p>
+            <button class="btn btn-primary btn-sm" id="btn-riposo-applica" style="align-self:flex-start;">Applica riposo</button>
+          </div>
+        </div></div>
+
+        <div class="section-title ko-title hidden" id="ko-section-title"><span class="dot" style="background:#FF5C5C;"></span>Soglia K.O.</div>
+        <div class="box hidden" id="ko-box"><div class="box-bar" style="background:#FF5C5C;"></div><div class="box-pad">
+          <p class="helper-text" style="margin:0 0 12px;color:#FF5C5C;" id="ko-status-text">—</p>
+          <div class="roll-row">
+            <button class="btn btn-primary" id="ko-roll-btn">Tiro percentuale</button>
+            <div class="roll-result" id="ko-roll-result">—</div>
+            <div class="roll-detail" id="ko-roll-detail"></div>
+          </div>
+          <p class="helper-text" style="margin:14px 0 6px;">Oppure consuma subito una risorsa di recupero HP:</p>
+          <div id="ko-heal-options"></div>
+        </div></div>
+
+        <div class="section-title"><span class="dot neutral"></span>Consumo oggetti</div>
+        <p class="helper-text">Oggetti consumabili come bende, pozioni o elisir: scrivi il nome a mano, scegli l'effetto e il valore, imposta le scorte. "Usa" applica l'effetto e scala di 1 le scorte, che non scendono mai sotto zero. Il recupero HP/MP non supera mai il massimo. Un "Incremento statistica" può puntare anche a un Tratto (Capacità Combattive/Normali, Conoscenze) — pescato fra i tuoi tratti, quelli già noti e approvati dal Narratore in questa storia, o uno nuovo da proporre — e resta attivo finché non lo sospendi tra gli "Incrementi attivi" qui sotto: avvisane il Narratore, che deciderà quando togliere il bonus. "Potenziamento a tempo" applica invece un bonus a un Tratto per un numero di turni (solo in combattimento), poi scompare da sé.</p>
+        <div class="table-scroll"><table class="data-table edit-table">
+          <thead><tr><th>Nome</th><th>Effetto</th><th>Bersaglio</th><th>Valore</th><th>Scorte</th><th></th><th></th></tr></thead>
+          <tbody id="consum-table"></tbody>
+        </table></div>
+        <button class="btn btn-ghost btn-sm" id="cons-add" style="align-self:flex-start;">+ Aggiungi oggetto consumabile</button>
+
+        <div class="section-title"><span class="dot neutral"></span>Incrementi attivi</div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad" id="active-buffs">
+          <p class="helper-text" style="margin:0;">Nessun incremento attivo.</p>
+        </div></div>
+
+        <div class="hud-grid">
+          <div class="hud-tile"><div class="ht-label">Livello</div><div class="ht-value" id="hud-lv">1</div></div>
+          <div class="hud-tile"><div class="ht-label">P.R. correnti</div><div class="ht-value" id="hud-pr">0</div><div class="ht-sub">su <input type="number" id="hud-pr-max" class="inline-max-input inline-max-input-sm" value="0" aria-label="Punti Recupero massimi"> max</div></div>
+          <div class="hud-tile"><div class="ht-label">Iniziativa</div><div class="ht-value">d8</div><div class="ht-sub">tiro puro + bonus abilità</div></div>
+          <div class="hud-tile"><div class="ht-label">Build</div><div class="ht-value" id="hud-build" style="font-family:var(--font-title);font-size:16px;">—</div></div>
+        </div>
+
+        <div class="section-title"><span class="dot physical"></span>Bloccare</div>
+        <p class="helper-text">Tiro di Bloccare con lo/gli scudo/i equipaggiato/i: Dif scudo + Dif del personaggio (bonus attivi inclusi) + tiro puro di Dif (dado in base al valore base, senza bonus).</p>
+        <div class="box"><div class="box-bar physical"></div><div class="box-pad">
+          <p class="helper-text hidden" id="block-no-shield-note" style="margin:0 0 8px;">Nessuno scudo equipaggiato.</p>
+          <div class="roll-row">
+            <button class="btn btn-primary" id="block-roll-btn">Tira Bloccare</button>
+            <div class="roll-result" id="block-roll-result">—</div>
+          </div>
+          <div class="roll-detail" id="block-roll-detail"></div>
+        </div></div>
+
+        <div class="section-title"><span class="dot physical"></span>Attacca</div>
+        <p class="helper-text">Scegli quali armi equipaggiate entrano nell'attacco (massimo due, stessa Tipologia — bianca o a distanza non insieme): con due armi la seconda vale metà danno. Il Danno Fisico somma FOR e/o DEX puri (senza bonus di scheda) se l'arma li usa; il Danno Magico (F.MEN, a parte) è calcolato separatamente.</p>
+        <div class="box"><div class="box-bar physical"></div><div class="box-pad">
+          <div class="attack-weapon-list" id="attack-weapon-list"></div>
+          <p class="helper-text hidden" id="attack-no-weapon-note" style="margin:0;">Nessuna arma equipaggiata.</p>
+          <div class="roll-row" style="margin-top:10px;">
+            <button class="btn btn-primary" id="attack-roll-btn">Attacca</button>
+          </div>
+          <div class="attack-results" style="margin-top:10px;">
+            <div class="attack-result-row"><span>Danno Fisico</span><span class="roll-result" id="attack-phys-result">—</span></div>
+            <div class="attack-result-row"><span style="color:var(--magico-forte);">Danno Magico</span><span class="roll-result" id="attack-magic-result" style="color:var(--magico-forte);">—</span></div>
+          </div>
+          <div class="roll-detail" id="attack-roll-detail"></div>
+        </div></div>
+
+        <div class="section-title"><span class="dot neutral"></span>Tiro tratto</div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad">
+          <div class="field"><label>Tratto</label>
+            <select id="trait-roll-select"></select>
+          </div>
+          <div class="roll-row" style="margin-top:10px;">
+            <button class="btn btn-primary" id="trait-roll-btn">Tira</button>
+            <div class="roll-result" id="trait-roll-result">—</div>
+            <div class="roll-detail" id="trait-roll-detail"></div>
+          </div>
+        </div></div>
+
+        <div class="section-title"><span class="dot neutral"></span>Tiro statistica</div>
+        <p class="helper-text">Prova di un attributo primario: il dado dipende dal suo valore (d4 fino a 10, d6 fino a 20, d8 fino a 30, d12 fino a 40, d12+d8 oltre) e il risultato si somma al valore stesso della statistica.</p>
+        <div class="box"><div class="box-bar"></div><div class="box-pad">
+          <div class="field"><label>Statistica</label>
+            <select id="stat-roll-select"></select>
+          </div>
+          <div class="roll-row" style="margin-top:10px;">
+            <button class="btn btn-primary" id="stat-roll-btn">Tira</button>
+            <div class="roll-result" id="stat-roll-result">—</div>
+            <div class="roll-detail" id="stat-roll-detail"></div>
+          </div>
+        </div></div>
+        </div>
+      </div>
+
+      <!-- ---- TRATTI ---- -->
+      <div class="tab-panel" data-panel="tratti">
+        <div id="creation-traits-block">
+        <div class="section-title"><span class="dot neutral"></span>Capacità e Conoscenze</div>
+        <div id="traits-remaining-rows" class="pointbuy-header-sticky"></div>
+        <div class="box" id="traits-lock-status-box"><div class="box-bar"></div><div class="box-pad">
+          <div id="traits-lock-status"></div>
+        </div></div>
+        <div id="trait-lists"></div>
+        </div>
+      </div>
+
+      <!-- ---- RETRO SCHEDA ---- -->
+      <div class="tab-panel" data-panel="retro">
+        <div id="creation-tecab-block">
+        <p class="helper-text" id="retro-build-note">—</p>
+        <div id="tecab-choice-box" style="display:flex;flex-direction:column;gap:8px;"></div>
+
+        <div id="tecniche-section">
+        <div class="section-title"><span class="dot physical"></span>Tecniche <span class="chip" style="margin-left:auto;" id="tecniche-count">—</span></div>
+        <div id="tecniche-table" class="tecab-cards"></div>
+        </div>
+
+        <div id="abilita-section">
+        <div class="section-title"><span class="dot magic"></span>Abilità <span class="chip" style="margin-left:auto;" id="abilita-count">—</span></div>
+        <div id="abilita-table" class="tecab-cards"></div>
+        </div>
+        </div>
+
+        <div class="section-title"><span class="dot neutral"></span>Boost <span class="chip" style="margin-left:auto;">max 2</span></div>
+        <div id="boost-legacy-banner" class="helper-text hidden" role="status"></div>
+        <div id="boostrows-table" class="tecab-cards"></div>
+        <div style="display:flex;gap:8px;">
+          <button class="btn btn-ghost btn-sm" id="boost-add">+ Aggiungi boost</button>
+          <button class="btn btn-ghost btn-sm hidden" id="boost-remove">✕ Rimuovi il 2° boost</button>
+        </div>
+
+        <div class="section-title"><span class="dot neutral"></span>Boost — riferimento ufficiale <span class="chip" style="margin-left:auto;">5 livelli</span></div>
+        <div id="boost-table" class="tecab-cards"></div>
+        <div class="box-lore" id="boost-top-note" style="margin-top:8px;">Oltre il livello 5 (Lv Top): -10% sui costi di attivazione di tutti i livelli appresi.</div>
+      </div>
+
+      <!-- ---- EQUIPAGGIAMENTO (armatura + scudi/armi + zaino) ---- -->
+      <div class="tab-panel" data-panel="equip">
+        <div class="section-title"><span class="dot neutral"></span>Locazioni armatura</div>
+        <div class="slot-grid" id="slot-grid"></div>
+
+        <div class="section-title"><span class="dot neutral"></span>Scudo e armi</div>
+        <div class="slot-grid" id="weapon-grid"></div>
+        <div class="field-row" style="margin-top:4px;">
+          <button class="btn btn-ghost btn-sm" id="btn-add-weapon" style="align-self:flex-start;">+ Aggiungi arma</button>
+          <button class="btn btn-ghost btn-sm" id="btn-add-shield" style="align-self:flex-start;">+ Aggiungi scudo</button>
+        </div>
+
+        <div class="section-title"><span class="dot neutral"></span>Zaino</div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad">
+          <div class="pointbuy-header">
+            <span class="label">Peso occupato</span>
+            <span class="remaining" id="zaino-peso-summary">0 / 0 Kg</span>
+          </div>
+        </div></div>
+        <div class="zaino-grid" id="zaino-grid"></div>
+        <p class="helper-text" id="zaino-grid-note" style="margin:6px 0 0;"></p>
+        <div class="table-scroll"><table class="data-table edit-table">
+          <thead><tr><th>Oggetto</th><th>Peso (Kg)</th><th>Note</th></tr></thead>
+          <tbody id="inventario-table"></tbody>
+        </table></div>
+        <button class="btn btn-ghost btn-sm" id="inv-add" style="align-self:flex-start;">+ Aggiungi oggetto</button>
+
+        <div class="section-title" style="margin-top:14px;"><span class="dot neutral"></span>Armi e scudi in Inventario</div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad" id="zaino-armi-list"></div></div>
+      </div>
+
+      <!-- ---- STATISTICHE (Primarie + Terziarie) ---- -->
+      <div class="tab-panel" data-panel="statistiche">
+        <div id="creation-primary-block">
+        <div class="section-title"><span class="dot neutral"></span>Caratteristiche primarie · 40 punti</div>
+        <div class="pointbuy-header pointbuy-header-sticky">
+          <span class="label" id="primary-remaining-label">Punti rimanenti</span>
+          <span class="remaining" id="primary-remaining">40</span>
+        </div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad">
+          <div id="primary-stats"></div>
+          <div id="primary-lock-status" style="margin-top:10px;"></div>
+        </div></div>
+        </div>
+
+        <div class="section-title"><span class="dot neutral"></span>Statistica secondaria</div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad" id="secondary-stats"></div></div>
+
+        <div class="section-title"><span class="dot neutral"></span>Statistiche terziarie · 5 punti</div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad">
+          <div class="pointbuy-header">
+            <span class="label" id="tertiary-remaining-label">Punti rimanenti</span>
+            <span class="remaining" id="tertiary-remaining">5</span>
+          </div>
+          <div id="tertiary-stats"></div>
+        </div></div>
+
+        <div class="section-title"><span class="dot neutral"></span>Tabella esiti (riferimento)</div>
+        <div class="table-scroll"><table class="data-table">
+          <thead><tr><th>Tiro</th><th>Carisma</th><th>Stile / Fortuna</th></tr></thead>
+          <tbody id="tertiary-ref-table"></tbody>
+        </table></div>
+
+        <div class="section-title"><span class="dot"></span>Valori derivati alla creazione</div>
+        <div class="hud-grid">
+          <div class="hud-tile physical"><div class="ht-label">HP max (base×mult)</div><div class="ht-value" id="derived-hpmax">0</div><div class="ht-sub" id="derived-hpmax-sub"></div></div>
+          <div class="hud-tile magic"><div class="ht-label">MP max (base×mult)</div><div class="ht-value" id="derived-mpmax">0</div><div class="ht-sub" id="derived-mpmax-sub"></div></div>
+          <div class="hud-tile"><div class="ht-label">PP</div><div class="ht-value" id="derived-pp">0</div><div class="ht-sub">(HPmax÷2)+(MPmax÷2)</div></div>
+          <div class="hud-tile"><div class="ht-label">P.R. iniziali</div><div class="ht-value" id="derived-pr">0</div><div class="ht-sub">da build</div></div>
+          <div class="hud-tile"><div class="ht-label">AP disponibili</div><div class="ht-value" id="derived-ap">0</div><div class="ht-sub">dai level-up · si spendono sugli attributi</div></div>
+        </div>
+        <button class="btn btn-ghost btn-sm" id="btn-sync-derived" style="align-self:flex-start;">Sincronizza in "Fronte Scheda"</button>
+
+        <div class="section-title"><span class="dot neutral"></span>Q.I.</div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad">
+          <div class="roll-row">
+            <button class="btn btn-magic" id="roll-qi-btn">Tira Q.I.</button>
+            <div class="roll-result" id="qi-result">—</div>
+          </div>
+          <div class="row-between" style="margin-top:12px;">
+            <span class="helper-text">Limite apprendimento</span>
+            <span class="chip magic" id="qi-limite-chip">—</span>
+          </div>
+          <div class="field-row" style="margin-top:8px;">
+            <div class="field"><label>Progresso apprendimento</label><input type="number" id="f-qi-progresso" value="0" min="0"></div>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- ---- LIVELLI ---- -->
+      <div class="tab-panel" data-panel="livelli">
+        <div class="section-title"><span class="dot neutral"></span>Livello attuale</div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad">
+          <div class="field-row">
+            <div class="field"><label>Livello</label><input type="number" id="f-livello" value="1" min="1" max="30"></div>
+            <div class="field"><label>AP disponibili</label><input type="number" id="f-ap-disponibili" value="0" disabled></div>
+          </div>
+          <p class="helper-text hidden" id="f-livello-lock-note" style="margin:8px 0 0;">Sei in una storia: il livello lo assegna il Narratore dal suo Account.</p>
+        </div></div>
+
+        <div class="section-title"><span class="dot neutral"></span>Calcolatore costi crescita</div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad">
+          <div class="field"><label>Tipo</label>
+            <select id="growth-type">
+              <option value="hp">HP</option>
+              <option value="mp">MP</option>
+              <optgroup label="Attributi primari">
+                <option value="for">Forza</option>
+                <option value="mira">Mira</option>
+                <option value="vel">Velocità</option>
+                <option value="fmen">Forza Magica/Mentale</option>
+                <option value="dex">Destrezza</option>
+                <option value="dif">Difesa</option>
+                <option value="dmen">Difesa Magica/Mentale</option>
+              </optgroup>
+              <optgroup label="Statistica secondaria">
+                <option value="pr">P.R. (Punti Recupero)</option>
+              </optgroup>
+              <optgroup label="Statistiche terziarie">
+                <option value="stile">Stile</option>
+                <option value="carisma">Carisma</option>
+                <option value="fortuna">Fortuna</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="field-row" style="margin-top:8px;">
+            <div class="field"><label>Valore attuale</label><input type="number" id="growth-current" value="0"></div>
+            <div class="field"><label>Valore obiettivo</label><input type="number" id="growth-target" value="0"></div>
+          </div>
+          <div class="row-between" style="margin-top:12px;">
+            <span class="helper-text">Costo totale</span>
+            <span class="chip" id="growth-cost-chip">0 AP</span>
+          </div>
+        </div></div>
+
+        <div class="section-title"><span class="dot neutral"></span>Attributi terziari — tabella costi</div>
+        <div class="table-scroll"><table class="data-table"><thead><tr><th>Valore</th><th class="num">AP</th></tr></thead><tbody id="tertiary-cost-table"></tbody></table></div>
+
+        <div class="section-title"><span class="dot neutral"></span>Tabella limiti di livello</div>
+        <div class="table-scroll"><table class="data-table">
+          <thead><tr><th>Lv</th><th class="num">AP</th><th>Perk (Capacità/Combattive/Conoscenze)</th><th>Nota</th></tr></thead>
+          <tbody id="level-table-body"></tbody>
+        </table></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ CREAZIONE PERSONAGGIO GUIDATA ============
+       Contenitori vuoti: al momento dell'apertura del wizard (vedi
+       openCreationWizard in app.js) vengono popolati spostando (appendChild,
+       mai clonati) i blocchi di markup già esistenti in #view-sheet
+       (creation-portrait-block, creation-anagrafica-block, le 5
+       .bg-section, creation-build-block, creation-primary-block,
+       creation-traits-block, creation-tecab-block) — stessi nodi, stessi
+       listener già collegati, nessuna duplicazione di funzioni di render.
+       wizardTeardown() li riporta al loro tab-panel d'origine in uscita. -->
+  <section id="view-create" class="view hidden">
+    <div class="wiz-header">
+      <button class="btn btn-icon btn-ghost" id="wiz-close" data-nav="list" aria-label="Salva ed esci dalla creazione">←</button>
+      <div class="wiz-header-info">
+        <div class="wiz-step-title" id="wiz-step-title"></div>
+        <div class="wiz-step-count" id="wiz-step-count"></div>
+        <div class="wiz-progress" id="wiz-progress"></div>
+      </div>
+    </div>
+
+    <div class="wiz-body" id="wiz-body">
+      <div class="wiz-step active" data-wizstep="narrative" id="wiz-step-narrative">
+        <div class="tabs" id="wiz-mode-toggle">
+          <button type="button" class="tab-btn" data-wizmode="rapida">Creazione rapida</button>
+          <button type="button" class="tab-btn active" data-wizmode="approfondita">Creazione approfondita</button>
+        </div>
+        <div class="wiz-narrative-track" id="wiz-narrative-track">
+          <div class="wiz-narrative-card" id="wiz-card-identity"><p class="helper-text wiz-narrative-hint">Nessun campo qui è obbligatorio per continuare: puoi completarli anche più tardi dalla scheda del personaggio.</p></div>
+          <div class="wiz-narrative-card" id="wiz-card-datiAspetto" data-wiznarrative="datiAspetto"><p class="helper-text wiz-narrative-hint">Nessun campo qui è obbligatorio per continuare: puoi completarli anche più tardi dalla scheda del personaggio.</p></div>
+          <div class="wiz-narrative-card" id="wiz-card-vita" data-wiznarrative="vita"><p class="helper-text wiz-narrative-hint">Nessun campo qui è obbligatorio per continuare: puoi completarli anche più tardi dalla scheda del personaggio.</p></div>
+          <div class="wiz-narrative-card" id="wiz-card-atteggiamento" data-wiznarrative="atteggiamento"><p class="helper-text wiz-narrative-hint">Nessun campo qui è obbligatorio per continuare: puoi completarli anche più tardi dalla scheda del personaggio.</p></div>
+          <div class="wiz-narrative-card" id="wiz-card-passato" data-wiznarrative="passato"><p class="helper-text wiz-narrative-hint">Nessun campo qui è obbligatorio per continuare: puoi completarli anche più tardi dalla scheda del personaggio.</p></div>
+          <div class="wiz-narrative-card" id="wiz-card-relazioni" data-wiznarrative="relazioni"><p class="helper-text wiz-narrative-hint">Nessun campo qui è obbligatorio per continuare: puoi completarli anche più tardi dalla scheda del personaggio.</p></div>
+        </div>
+      </div>
+
+      <div class="wiz-step" data-wizstep="build" id="wiz-step-build"></div>
+      <div class="wiz-step" data-wizstep="primary" id="wiz-step-primary"></div>
+      <div class="wiz-step" data-wizstep="traits" id="wiz-step-traits"></div>
+      <div class="wiz-step" data-wizstep="tecab" id="wiz-step-tecab">
+        <div class="wiz-tecab-editor-bar hidden" id="wiz-tecab-editor-bar">
+          <span id="wiz-tecab-editor-title">Modifica</span>
+          <button type="button" class="btn btn-primary btn-sm" id="wiz-tecab-editor-done">✔ Fatto</button>
+        </div>
+      </div>
+
+      <div class="wiz-step" data-wizstep="summary" id="wiz-step-summary">
+        <div class="section-title"><span class="dot"></span>Riepilogo</div>
+        <div id="wiz-summary-body"></div>
+      </div>
+    </div>
+
+    <div class="wiz-nav-wrap" data-toast-clear>
+      <p class="helper-text wiz-next-hint hidden" id="wiz-next-hint"></p>
+      <div class="wiz-nav">
+        <button class="btn btn-ghost" id="wiz-prev">← Indietro</button>
+        <button class="btn btn-primary" id="wiz-next">Avanti →</button>
+        <button class="btn btn-primary hidden" id="wiz-finish">Sei sicuro delle tue scelte? ✔</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LE REGOLE ============ -->
+  <section id="view-rules" class="view hidden">
+    <div class="topbar">
+      <button class="btn btn-icon btn-ghost" data-nav="cover" aria-label="Indietro">←</button>
+      <h1>Le regole</h1>
+      <span style="width:40px;"></span>
+    </div>
+    <div class="list-scroll" id="rules-body"></div>
+  </section>
+
+  <!-- ============ AREA MASTER ============ -->
+  <section id="view-master" class="view hidden">
+    <div class="topbar">
+      <button class="btn btn-icon btn-ghost" data-nav="cover" aria-label="Indietro">←</button>
+      <h1>Area del Narratore</h1>
+      <span style="width:40px;"></span>
+    </div>
+    <div class="list-scroll">
+      <p class="helper-text">Ogni storia raccoglie i personaggi che i giocatori ti inviano ed è protetta dalla sua password. I giocatori vedono solo i propri personaggi sul loro dispositivo. La premessa in PDF si carica da "Premesse di gioco" nell'indice.</p>
+      <div class="section-title" style="margin-top:10px;"><span class="dot neutral"></span>Le tue storie</div>
+      <div id="story-list"></div>
+      <div class="section-title" style="margin-top:14px;"><span class="dot"></span>Nuova storia</div>
+      <div class="box"><div class="box-bar"></div><div class="box-pad" style="display:flex;flex-direction:column;gap:12px;">
+        <div class="field"><label>Nome della storia</label><input type="text" id="new-story-name" placeholder="es. Le ombre di C2"></div>
+        <div class="field"><label>Password di accesso</label><input type="password" id="new-story-pass" placeholder="La chiederò per aprire la storia"></div>
+        <button class="btn btn-primary btn-sm" id="btn-create-story" style="align-self:flex-start;">Crea storia</button>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ============ STORIA (MASTER) ============ -->
+  <section id="view-story" class="view hidden">
+    <div class="topbar">
+      <button class="btn btn-icon btn-ghost" data-nav="master" aria-label="Indietro">←</button>
+      <h1 id="story-title">Storia</h1>
+      <button class="btn btn-icon btn-ghost" id="btn-del-story" aria-label="Elimina storia">🗑</button>
+    </div>
+    <div class="list-scroll">
+      <div class="section-title"><span class="dot"></span>Importa personaggio</div>
+      <div class="box"><div class="box-bar"></div><div class="box-pad" style="display:flex;flex-direction:column;gap:10px;">
+        <div class="field"><textarea id="import-json" style="min-height:90px;font-family:var(--font-mono);font-size:11px;" placeholder="Incolla qui il testo che il giocatore ha copiato con «Copia per il Narratore»..."></textarea></div>
+        <button class="btn btn-primary btn-sm" id="btn-import-char" style="align-self:flex-start;">Importa</button>
+        <p class="helper-text" style="margin:0;">Se il personaggio è già presente viene aggiornato alla versione incollata.</p>
+      </div></div>
+      <p class="helper-text" style="margin-top:14px;">La premessa in PDF di questa storia si carica e si condivide da "Premesse di gioco" nell'indice (☰ in copertina).</p>
+      <div class="section-title" style="margin-top:14px;"><span class="dot neutral"></span>Personaggi <span class="chip" style="margin-left:auto;" id="story-count">0</span></div>
+      <div id="story-chars"></div>
+    </div>
+  </section>
+
+  <!-- ============ ACCOUNT ============ -->
+  <section id="view-account" class="view hidden">
+    <div class="topbar">
+      <button class="btn btn-icon btn-ghost" data-nav="cover" aria-label="Indietro">←</button>
+      <h1>Account</h1>
+      <span style="width:40px;"></span>
+    </div>
+    <div class="list-scroll">
+      <p class="helper-text">Scegli con quale ruolo vuoi usare l'app: Narratore per gestire le tue storie, Giocatore per i tuoi personaggi. Accesso e registrazione si trovano in copertina.</p>
+      <div class="box" id="account-identity-box"><div class="box-bar"></div><div class="box-pad" id="account-identity-controls" style="display:flex;flex-direction:column;gap:10px;">
+        <p class="helper-text" style="margin:0;">—</p>
+      </div></div>
+      <div class="tabs" id="account-mode-toggle" style="padding:0;border-bottom:none;margin:16px 0 0;">
+        <button class="tab-btn active" data-accmode="narratore">Narratore</button>
+        <button class="tab-btn" data-accmode="giocatore">Giocatore</button>
+      </div>
+
+      <div class="tab-panel active" id="account-mode-narratore" style="margin-top:14px;">
+        <div class="hidden" id="account-narrator-requests-wrap">
+          <div class="section-title" style="margin-top:0;"><span class="dot neutral"></span>Richieste ruolo Narratore</div>
+          <div class="box"><div class="box-bar"></div><div class="box-pad" id="account-narrator-requests-box" style="display:flex;flex-direction:column;gap:10px;">
+            <p class="helper-text" style="margin:0;">—</p>
+          </div></div>
+        </div>
+
+        <div class="hidden" id="account-narrator-cta-wrap">
+          <div class="section-title" style="margin-top:0;"><span class="dot neutral"></span>Diventa Narratore</div>
+          <div class="box"><div class="box-bar"></div><div class="box-pad" id="account-narrator-cta-box" style="display:flex;flex-direction:column;gap:10px;">
+            <p class="helper-text" style="margin:0;">—</p>
+          </div></div>
+        </div>
+
+        <div class="section-title"><span class="dot neutral"></span>Cestino storie</div>
+        <p class="helper-text">Una campagna eliminata resta qui per 3 giorni, recuperabile in ogni momento. Allo scadere, i dati condivisi vengono eliminati definitivamente (la scheda dei giocatori resta nel loro archivio).</p>
+        <div class="box"><div class="box-bar"></div><div class="box-pad" id="account-trash-box" style="display:flex;flex-direction:column;gap:10px;">
+          <p class="helper-text" style="margin:0;">—</p>
+        </div></div>
+      </div>
+
+      <div class="tab-panel" id="account-mode-giocatore" style="margin-top:14px;">
+        <div class="section-title"><span class="dot neutral"></span>I tuoi personaggi</div>
+        <div class="box"><div class="box-bar"></div><div class="box-pad" style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button class="btn btn-primary btn-sm" id="acc-goto-new-char">Crea nuovo personaggio</button>
+          <button class="btn btn-ghost btn-sm" id="acc-goto-char-list">Apri i tuoi personaggi</button>
+        </div></div>
+
+        <div class="section-title" style="margin-top:14px;"><span class="dot neutral"></span>Le tue storie</div>
+        <p class="helper-text">Storie a cui i tuoi personaggi hanno già chiesto di entrare, o di cui già fanno parte.</p>
+        <div class="box"><div class="box-bar"></div><div class="box-pad" id="account-giocatore-stories" style="display:flex;flex-direction:column;gap:8px;">
+          <p class="helper-text" style="margin:0;">—</p>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PREVIOUSLY ON ============ -->
+  <section id="view-previously" class="view hidden">
+    <div class="topbar">
+      <button class="btn btn-icon btn-ghost" data-nav="cover" aria-label="Indietro">←</button>
+      <h1>Recap</h1>
+      <span style="width:40px;"></span>
+    </div>
+    <div class="list-scroll" id="previously-body">
+      <p class="helper-text" style="margin:0;">Verifica in corso…</p>
+    </div>
+  </section>
+
+  <!-- ============ PREMESSE DI GIOCO — elenco storie ============ -->
+  <section id="view-premises" class="view hidden">
+    <div class="topbar">
+      <button class="btn btn-icon btn-ghost" data-nav="cover" aria-label="Indietro">←</button>
+      <h1>Premesse di gioco</h1>
+      <span style="width:40px;"></span>
+    </div>
+    <div class="list-scroll">
+      <p class="helper-text">Ogni storia ha una premessa in PDF, leggibile dentro l'app da te e dai giocatori. Apri una storia (serve la sua password) per caricarla o sostituirla. Le storie si creano da "Area del Narratore".</p>
+      <div class="section-title" style="margin-top:10px;"><span class="dot neutral"></span>Le tue storie</div>
+      <div id="premises-story-list"></div>
+    </div>
+  </section>
+
+  <!-- ============ PREMESSE DI GIOCO — storia ============ -->
+  <section id="view-premises-story" class="view hidden">
+    <div class="topbar">
+      <button class="btn btn-icon btn-ghost" data-nav="premises" aria-label="Indietro">←</button>
+      <h1 id="premises-story-title">Storia</h1>
+      <span style="width:40px;"></span>
+    </div>
+    <div class="list-scroll">
+      <div class="section-title"><span class="dot neutral"></span>Premessa in PDF <span class="chip" style="margin-left:auto;">max 30 MB</span></div>
+      <div class="box"><div class="box-bar"></div><div class="box-pad" style="display:flex;flex-direction:column;gap:10px;">
+        <p class="helper-text" style="margin:0;">Carica il PDF della premessa (fino a 30 MB), dagli un nome, poi copia l'invito da condividere con i giocatori qui sotto. Mentre lo si legge nell'app, gli screenshot sono bloccati su Android; sul link web viene mostrata solo una filigrana come deterrente.</p>
+        <div class="field"><label>Nome della giocata</label><input type="text" id="premises-title" placeholder="es. Sessione 3 — L'assedio"></div>
+        <div id="premises-file-info"><div class="helper-text" style="margin:0;">Nessun PDF caricato.</div></div>
+        <input type="file" id="premises-pdf-input" accept="application/pdf" class="hidden">
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button class="btn btn-ghost btn-sm" id="premises-upload-btn">📄 Carica PDF</button>
+          <button class="btn btn-ghost btn-sm hidden" id="premises-open-btn">👁 Anteprima</button>
+          <button class="btn btn-ghost btn-sm hidden" id="premises-remove-btn">✕ Rimuovi</button>
+        </div>
+      </div></div>
+
+      <div class="section-title" style="margin-top:14px;"><span class="dot neutral"></span>Condividi con i giocatori</div>
+      <div class="box"><div class="box-bar"></div><div class="box-pad" style="display:flex;flex-direction:column;gap:10px;">
+        <p class="helper-text" style="margin:0;">Condividi la premessa incollando questo invito nella chat coi giocatori (loro lo incollano dal popup "Premesse della storia").</p>
+        <button class="btn btn-ghost btn-sm" id="btn-share-premesse-pdf" style="align-self:flex-start;">📋 Copia invito premessa</button>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ============ SCHEDA IN SOLA LETTURA (MASTER) ============ -->
+  <section id="view-charview" class="view hidden">
+    <div class="topbar">
+      <button class="btn btn-icon btn-ghost" id="btn-back-story" aria-label="Indietro">←</button>
+      <h1 id="charview-title">Personaggio</h1>
+      <button class="btn btn-icon btn-ghost" id="btn-del-charview" aria-label="Rimuovi dalla storia">🗑</button>
+    </div>
+    <div class="list-scroll">
+      <div id="charview-narratore-actions" class="hidden"></div>
+      <div id="charview-body"></div>
+    </div>
+  </section>
+
+  <!-- ============ TABELLONE DI COMBATTIMENTO ============
+       Mappa in alto (board rettangolare tassellata in caselle esagonali,
+       pedine posizionabili), barra "Personaggi in gioco" in basso.
+       Contenuto interamente generato da renderCombatBoard() e affini
+       (app.js), a partire dalla risposta di get_combat_board — nessun
+       markup statico per le card dei personaggi: la redazione fog-of-war
+       decide cosa mostrare, mai il client. -->
+  <section id="view-combat" class="view hidden">
+    <!-- "Termina combattimento" vive dentro "Gestisci scena" (sotto), non
+         qui: con round/iniziativa/gestione scena aggiunti nel tempo, altri
+         bottoni icona in questa topbar la facevano traboccare sugli
+         schermi stretti (l'ultimo, proprio "Termina", finiva tagliato
+         fuori dalla vista senza alcun avviso). -->
+    <div class="topbar">
+      <button class="btn btn-icon btn-ghost" id="btn-back-combat" aria-label="Indietro">←</button>
+      <h1 id="combat-title">Combattimento</h1>
+      <span class="chip hidden" id="combat-round-chip" title="Round/Turno corrente"></span>
+      <button class="btn btn-icon btn-ghost hidden" id="btn-advance-round" title="Avanza turno (fa scendere gli effetti attivi)" aria-label="Avanza turno">⏭</button>
+      <button class="btn btn-icon btn-ghost hidden" id="btn-combat-scene" title="Gestisci scena" aria-label="Gestisci scena">⚙</button>
+    </div>
+    <div class="combat-turn-banner hidden" id="combat-turn-banner"></div>
+    <!-- Fuori da .combat-map-wrap (non più un overlay assoluto sopra la
+         griglia): barra propria appena sopra la mappa, mai a coprire le
+         caselle esagonali sotto — solo il Narratore arriva mai a vederla
+         (combatLevelPlacementMode è stato solo locale, mai impostabile da
+         "Gestisci scena" se non si è callerIsMaster, vedi renderCombatMapManager). -->
+    <div class="combat-placement-banner hidden" id="combat-placement-banner">
+      <span id="combat-placement-banner-text"></span>
+      <button type="button" class="btn btn-ghost btn-sm" id="combat-placement-banner-done">Fine</button>
+    </div>
+    <!-- Scelta del bersaglio di un attacco/effetto: non più una tendina a
+         schermo intero (copriva la mappa proprio mentre serve toccare un
+         token) — barra non bloccante, stesso spirito di combat-placement-
+         banner qui sopra. Il bersaglio si sceglie toccando direttamente il
+         token pulsante (glow-in/glow-out) sulla mappa sotto; questa barra
+         resta solo per il selettore opzionale "parte del corpo" e per
+         l'eventuale bersaglio non ancora posizionato sulla mappa (nessun
+         token da toccare in quel caso). -->
+    <div class="combat-placement-banner hidden" id="combat-target-hint">
+      <div style="display:flex;flex-direction:column;gap:6px;flex:1;min-width:0;">
+        <span id="combat-target-hint-text">Tocca il bersaglio sulla mappa</span>
+        <div id="combat-target-bodypart-wrap" class="hidden">
+          <label class="helper-text" for="combat-target-bodypart" style="color:inherit;">Parte del corpo mirata (opzionale — Congelare)</label>
+          <select id="combat-target-bodypart"><option value="">Nessuna (generico)</option></select>
+        </div>
+        <div id="combat-target-unplaced-wrap" class="hidden">
+          <span class="helper-text" style="color:inherit;">Non ancora in mappa:</span>
+          <div id="combat-target-unplaced-list" style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;"></div>
+        </div>
+      </div>
+      <!-- Solo per Tecniche/Abilità con "Multi-bersaglio" attivo (vedi
+           effettoCellHtml/r.multiTarget): il click su un token non risolve
+           più subito, accumula la scelta — questo bottone la conferma. -->
+      <button type="button" class="btn btn-primary btn-sm hidden" id="combat-target-multi-confirm">Conferma bersagli</button>
+      <button type="button" class="btn btn-ghost btn-sm" id="combat-target-cancel">Annulla</button>
+    </div>
+    <div class="combat-map-wrap" id="combat-map-wrap">
+      <div class="combat-map" id="combat-map"></div>
+      <div class="combat-level-arrows hidden" id="combat-level-arrows"></div>
+      <div id="combat-attack-panel" class="combat-attack-overlay hidden"></div>
+    </div>
+    <!-- Strumenti del Narratore sempre a portata di mano fra mappa e
+         personaggi (non più solo dentro "⚙ Gestisci scena"): passaggio,
+         ostacoli, danno ambientale, effetto libero. Visibile solo al
+         Narratore (renderCombatBoard toggle su callerIsMaster), mai ai
+         giocatori. -->
+    <div class="combat-narrator-toolbar hidden" id="combat-narrator-toolbar">
+      <div class="combat-narrator-toolbar-tools" id="combat-narrator-toolbar-tools">
+        <button type="button" class="btn btn-ghost btn-sm" id="combat-toolbar-transition" title="Aggiungi passaggio">🪜 Passaggio</button>
+        <button type="button" class="btn btn-ghost btn-sm" id="combat-toolbar-obstacles" title="Modifica ostacoli">🚧 Ostacoli</button>
+        <button type="button" class="btn btn-ghost btn-sm" id="combat-toolbar-environmental" title="Danno ambientale">💥 Danno amb.</button>
+        <button type="button" class="btn btn-ghost btn-sm" id="combat-toolbar-freeeffect" title="Effetto libero">🕒 Effetto</button>
+      </div>
+      <button type="button" class="btn btn-icon btn-ghost btn-sm" id="combat-toolbar-collapse" title="Nascondi barra">▲</button>
+    </div>
+    <div class="combat-roster-bar" id="combat-roster-bar"></div>
+    <div class="combat-command-panel" id="combat-command-panel" data-toast-clear></div>
+  </section>
+
+<div id="combat-scene-modal" class="hidden confirm-modal">
+  <div class="cc-box" style="max-width:420px;max-height:85vh;overflow-y:auto;">
+    <div class="cc-title">Gestisci scena</div>
+    <div id="combat-staging-panel"></div>
+    <div class="section-title" style="margin-top:14px;"><span class="dot neutral"></span>Mappa</div>
+    <div id="combat-map-manager"></div>
+    <button class="btn btn-ghost btn-sm" id="btn-open-environmental" style="align-self:flex-start;margin-top:10px;">💥 Danno ambientale</button>
+    <button class="btn btn-ghost btn-sm" id="btn-open-freeeffect" style="align-self:flex-start;margin-top:6px;">🕒 Effetto libero</button>
+    <div class="section-title" style="margin-top:14px;"><span class="dot physical"></span>Fine combattimento</div>
+    <button class="btn btn-ghost btn-sm" id="btn-end-combat" style="align-self:flex-start;margin-top:6px;">🏳 Termina combattimento</button>
+    <div class="cc-actions">
+      <button class="btn btn-ghost" id="combat-scene-close">Chiudi</button>
+    </div>
+  </div>
+</div>
+
+<div id="combat-freeeffect-modal" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Effetto libero</div>
+    <p class="helper-text" style="margin:0 0 10px;">Buff, rigenerazione o danno nel tempo senza una Tecnica/Abilità specifica (es. veleno ambientale, condizione narrativa). Il countdown scende solo quando premi "Avanza turno".</p>
+    <div class="field"><label>Bersaglio</label><select id="combat-freeeffect-target"></select></div>
+    <div class="field"><label>Etichetta</label><input type="text" id="combat-freeeffect-label" placeholder="es. Avvelenato" maxlength="60"></div>
+    <div class="field"><label>Tipo effetto</label>
+      <select id="combat-freeeffect-kind">
+        <option value="danno">Danno nel tempo</option>
+        <option value="regen">Rigenerazione</option>
+        <option value="buff">Buff</option>
+      </select>
+    </div>
+    <div id="combat-freeeffect-tick-fields" class="field-row">
+      <div class="field"><label>Statistica</label><select id="combat-freeeffect-tick-stat"><option value="hp">HP</option><option value="mp">MP</option></select></div>
+      <div class="field"><label>Per turno</label><input type="number" id="combat-freeeffect-tick-amount" min="0" value="2"></div>
+    </div>
+    <div id="combat-freeeffect-buff-fields" class="field-row hidden">
+      <div class="field"><label>Tratto/Statistica</label><input type="text" id="combat-freeeffect-buff-target" placeholder="es. Elusione" maxlength="40"></div>
+      <div class="field"><label>Valore</label><input type="number" id="combat-freeeffect-buff-amount" value="1"></div>
+    </div>
+    <div class="field"><label>Durata</label><select id="combat-freeeffect-duration"></select></div>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="combat-freeeffect-confirm">Applica</button>
+      <button class="btn btn-ghost" id="combat-freeeffect-cancel">Annulla</button>
+    </div>
+  </div>
+</div>
+
+<div id="combat-environmental-modal" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Danno ambientale</div>
+    <p class="helper-text" style="margin:0 0 10px;">Crollo, esplosione, danno d'area: nessun personaggio attaccante, solo un bersaglio, un danno fisso e una Difficoltà da battere per schivare/bloccare.</p>
+    <div class="field"><label>Bersaglio</label><select id="combat-env-target"></select></div>
+    <div class="field"><label>Descrizione</label><input type="text" id="combat-env-label" placeholder="es. Crollo del soffitto"></div>
+    <div class="field-row">
+      <div class="field"><label>Danno</label><input type="number" id="combat-env-damage" min="0" value="10"></div>
+      <div class="field"><label>Difficoltà</label><input type="number" id="combat-env-difficulty" min="0" value="12"></div>
+    </div>
+    <label class="chk-inline" style="margin:8px 0;"><input type="checkbox" id="combat-env-surprise"> Attacco a sorpresa</label>
+    <label class="chk-inline" style="margin-bottom:12px;"><input type="checkbox" id="combat-env-dodgeblock" checked> Schivata/blocco consentiti</label>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="combat-env-confirm">Dichiara</button>
+      <button class="btn btn-ghost" id="combat-env-cancel">Annulla</button>
+    </div>
+  </div>
+</div>
+
+<div id="combat-transition-modal" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Nuovo passaggio</div>
+    <div class="field"><label>Etichetta</label><input type="text" id="combat-transition-label" placeholder="es. Scala, Scalata, Salto..." maxlength="40"></div>
+    <div class="field"><label>Livello di destinazione</label><select id="combat-transition-target-level"></select></div>
+    <div class="field"><label>Tratto richiesto</label><select id="combat-transition-trait">
+      <option value="">Nessuno (passaggio automatico)</option>
+    </select></div>
+    <div class="field-row">
+      <div class="field" id="combat-transition-difficulty-field"><label>Difficoltà</label><input type="number" id="combat-transition-difficulty" min="0" value="12"></div>
+      <div class="field"><label>Costo azione (quarti)</label><input type="number" id="combat-transition-cost" min="1" value="4"></div>
+    </div>
+    <p class="helper-text" style="margin:0;">Anche senza tratto (o in alternativa al tiro), il personaggio potrà sempre superare il passaggio spendendo una propria Tecnica o Abilità — riesce sempre, al costo suo.</p>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="combat-transition-confirm">Continua: tocca le caselle</button>
+      <button class="btn btn-ghost" id="combat-transition-cancel">Annulla</button>
+    </div>
+  </div>
+</div>
+
+<div id="combat-own-actions-menu" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title" id="combat-own-actions-title">Azioni</div>
+    <div class="cc-actions" id="combat-own-actions-body" style="flex-direction:column;gap:8px;"></div>
+    <div class="cc-actions" style="margin-top:10px;">
+      <button class="btn btn-ghost" id="combat-own-actions-cancel">Chiudi</button>
+    </div>
+  </div>
+</div>
+
+<div id="combat-source-picker" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Scegli l'attacco</div>
+    <div id="combat-source-list" style="display:flex;flex-direction:column;gap:8px;"></div>
+    <div class="cc-actions">
+      <button class="btn btn-ghost" id="combat-source-cancel">Annulla</button>
+    </div>
+  </div>
+</div>
+
+<div id="combat-flags-modal" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Regole di questo attacco</div>
+    <p style="margin:0 0 12px;">Il Narratore decide se questo attacco è a sorpresa (niente schivata/blocco, solo la salvezza di Resistenza) e se schivata/blocco sono comunque concessi.</p>
+    <label class="chk-inline" style="margin-bottom:8px;"><input type="checkbox" id="combat-flag-surprise"> Attacco a sorpresa</label>
+    <label class="chk-inline" style="margin-bottom:12px;"><input type="checkbox" id="combat-flag-dodgeblock" checked> Schivata/blocco consentiti</label>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="combat-flags-confirm">Conferma</button>
+      <button class="btn btn-ghost" id="combat-flags-cancel">Annulla</button>
+    </div>
+  </div>
+</div>
+
+<div id="combat-manual-roll-modal" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Tiro dal tavolo (Narratore)</div>
+    <p class="helper-text" style="margin:0 0 12px;">Inserisci il valore uscito su ciascun dado tirato realmente al tavolo dal giocatore — l'app applica comunque tutta la matematica (bonus, tiri doppi, droghe, ecc.) su questi valori invece di tirarli da sé.</p>
+    <div id="combat-manual-roll-fields" style="display:flex;flex-direction:column;gap:8px;max-height:50vh;overflow-y:auto;"></div>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="combat-manual-roll-confirm">Conferma</button>
+      <button class="btn btn-ghost" id="combat-manual-roll-cancel">Annulla</button>
+    </div>
+  </div>
+</div>
+
+<div id="combat-reveal-picker" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Rivela una statistica</div>
+    <p class="helper-text" id="combat-reveal-hint" style="margin:0 0 12px;">Scegli quale campo mostrare ai giocatori (es. dopo un tiro di Percezione/Investigazione/Osservare riuscito).</p>
+    <div id="combat-reveal-list" style="display:flex;flex-direction:column;gap:6px;max-height:50vh;overflow-y:auto;"></div>
+    <div class="cc-actions">
+      <button class="btn btn-ghost" id="combat-reveal-cancel">Chiudi</button>
+    </div>
+  </div>
+</div>
+
+<div id="class-confirm" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Conferma classe</div>
+    <p id="class-confirm-text">Sei sicuro di voler scegliere questa classe?</p>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="class-yes">Sì</button>
+      <button class="btn btn-ghost" id="class-no">No</button>
+    </div>
+  </div>
+</div>
+
+<div id="primary-confirm" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Conferma statistiche</div>
+    <p id="primary-confirm-text">Vuoi confermare le tue statistiche primarie? Una volta confermate resteranno bloccate: potrai modificarle di nuovo solo effettuando un level-up.</p>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="primary-confirm-yes">Sì</button>
+      <button class="btn btn-ghost" id="primary-confirm-no">No</button>
+    </div>
+  </div>
+</div>
+
+<div id="traits-confirm" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Conferma tratti</div>
+    <p id="traits-confirm-text">Vuoi confermare i tuoi tratti (Conoscenze, Capacità Normali, Capacità Combattive)? Una volta confermati resteranno bloccati: potrai modificarli di nuovo solo effettuando un level-up.</p>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="traits-confirm-yes">Sì</button>
+      <button class="btn btn-ghost" id="traits-confirm-no">No</button>
+    </div>
+  </div>
+</div>
+
+<div id="bg-lock-confirm" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Blocca sezione</div>
+    <p id="bg-lock-confirm-text">Vuoi confermare e bloccare questa sezione? I campi torneranno di sola lettura: per modificarli di nuovo dovrai toccare "Modifica".</p>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="bg-lock-confirm-yes">Sì</button>
+      <button class="btn btn-ghost" id="bg-lock-confirm-no">No</button>
+    </div>
+  </div>
+</div>
+
+<div id="exit-app-confirm" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Uscire dal gioco?</div>
+    <p>Vuoi uscire dal gioco?</p>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="exit-app-confirm-yes">Sì</button>
+      <button class="btn btn-ghost" id="exit-app-confirm-no">No</button>
+    </div>
+  </div>
+</div>
+
+<div id="share-character-modal" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Condividi scheda</div>
+    <p class="helper-text" style="margin:0;">Regala una copia di questo personaggio a un giocatore già iscritto a una tua campagna: resta anche a te, come modello riutilizzabile per altri.</p>
+    <div class="field"><label>Quale storia</label><select id="share-character-campaign-select"><option value="">Caricamento…</option></select></div>
+    <div class="field"><label>A quale giocatore</label><select id="share-character-player-select"><option value="">—</option></select></div>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="share-character-confirm">Condividi copia</button>
+      <button class="btn btn-ghost" id="share-character-cancel">Annulla</button>
+    </div>
+  </div>
+</div>
+
+<div id="build-change-confirm" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Cambiare classe?</div>
+    <p id="build-change-confirm-text">Hai già compilato Tecniche/Abilità legate alla classe attuale: cambiando classe verranno svuotate (il numero di Tecniche/Abilità dipende dalla classe). Vuoi continuare?</p>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="build-change-confirm-yes">Sì, cambia</button>
+      <button class="btn btn-ghost" id="build-change-confirm-no">No, annulla</button>
+    </div>
+  </div>
+</div>
+
+<div id="tecab-advancement-modal" class="hidden confirm-modal">
+  <div class="tecab-adv-box" id="tecab-advancement-body"></div>
+</div>
+
+<div id="wiz-final-confirm" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Sei sicuro delle tue scelte?</div>
+    <p>Classe, statistiche primarie, tratti e Tecniche/Abilità iniziali verranno bloccati: potrai modificarli di nuovo solo con un level-up. Il personaggio sarà considerato creato.</p>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="wiz-final-confirm-yes">Sì, crea il personaggio</button>
+      <button class="btn btn-ghost" id="wiz-final-confirm-no">No, torna indietro</button>
+    </div>
+  </div>
+</div>
+
+<!-- Pop-up realtime: nuova richiesta di ingresso in una campagna (Narratore) -->
+<div id="join-request-popup" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Nuova richiesta di ingresso</div>
+    <p id="join-request-popup-text">—</p>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="join-request-confirm">Conferma</button>
+      <button class="btn btn-ghost" id="join-request-reject">Rifiuta</button>
+    </div>
+  </div>
+</div>
+
+<!-- Pop-up realtime: un giocatore chiede di iniziare un combattimento (Narratore) -->
+<div id="combat-request-popup" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">⚔ Richiesta di combattimento</div>
+    <p id="combat-request-popup-text">—</p>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="combat-request-accept">Struttura il combattimento</button>
+      <button class="btn btn-ghost" id="combat-request-decline">Ignora</button>
+    </div>
+  </div>
+</div>
+
+<!-- Pop-up realtime: il Narratore ha messo in scena un mio personaggio (giocatore).
+     Il bottone principale (combat-call-cta) è il messaggio stesso, non solo
+     l'azione: grande, centrato, su sfondo acceso e pulsante, per non poter
+     passare inosservato qualunque vista si stia guardando in quel momento. -->
+<div id="combat-call-popup" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">⚔ Chiamata in combattimento</div>
+    <p id="combat-call-popup-text">—</p>
+    <div class="cc-actions" style="flex-direction:column;">
+      <button class="btn combat-call-cta" id="combat-call-go">Il tuo personaggio è stato richiamato in combattimento</button>
+      <button class="btn btn-ghost btn-sm" id="combat-call-dismiss" style="align-self:center;">Non ora</button>
+    </div>
+  </div>
+</div>
+
+<div id="sync-conflict-modal" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title" id="sync-conflict-title">Personaggio modificato anche altrove</div>
+    <p class="helper-text" style="margin:0 0 10px;">Questo personaggio ha modifiche non ancora sincronizzate sia su questo dispositivo sia nel cloud. Tocca una carta per aprire la scheda completa di quella versione prima di scegliere — poi conferma quale tenere qui sotto.</p>
+    <div class="sync-conflict-versions">
+      <button type="button" class="sync-conflict-version" id="sync-conflict-view-local">
+        <div class="scv-avatar" id="sync-conflict-local-avatar"></div>
+        <div class="scv-label" id="sync-conflict-local-label">—</div>
+        <span class="helper-text" style="margin:0;">👁 Visualizza scheda completa</span>
+      </button>
+      <button type="button" class="sync-conflict-version" id="sync-conflict-view-cloud">
+        <div class="scv-avatar" id="sync-conflict-cloud-avatar"></div>
+        <div class="scv-label" id="sync-conflict-cloud-label">—</div>
+        <span class="helper-text" style="margin:0;">👁 Visualizza scheda completa</span>
+      </button>
+    </div>
+    <div class="cc-actions">
+      <button type="button" class="btn btn-primary" id="sync-conflict-keep-local">✔ Mantieni questa versione</button>
+      <button type="button" class="btn btn-primary" id="sync-conflict-use-cloud">✔ Usa la versione nel cloud</button>
+    </div>
+  </div>
+</div>
+
+<div id="loot-received-modal" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title" id="loot-received-title">Loot ricevuto</div>
+    <div id="loot-received-body"></div>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="loot-received-accept">Accetta</button>
+      <button class="btn btn-ghost" id="loot-received-reject">Rifiuta</button>
+    </div>
+  </div>
+</div>
+
+<div id="consumable-status-choice-modal" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title">Quale stato rimuovere?</div>
+    <div id="consumable-status-choice-list" style="display:flex;flex-direction:column;gap:8px;"></div>
+    <div class="cc-actions">
+      <button class="btn btn-ghost" id="consumable-status-choice-cancel">Annulla</button>
+    </div>
+  </div>
+</div>
+
+<div id="equip-detail-modal" class="hidden confirm-modal">
+  <div class="cc-box">
+    <div class="cc-title" id="equip-detail-title">Nome</div>
+    <div id="equip-detail-body"></div>
+    <div class="cc-actions">
+      <button class="btn btn-primary" id="equip-detail-close">Chiudi</button>
+    </div>
+  </div>
+</div>
+
+<div id="prem-popup" class="hidden">
+  <div class="pp-box">
+    <div class="pp-head">
+      <div class="cc-title">Premesse di gioco</div>
+      <button class="btn btn-icon btn-ghost" id="prem-popup-close" aria-label="Chiudi">✕</button>
+    </div>
+    <p class="helper-text" id="prem-popup-story">—</p>
+    <div class="pp-list" id="prem-popup-list"></div>
+    <div class="field"><label>Invito del Narratore</label><textarea id="prem-import" style="min-height:60px;font-family:var(--font-mono);font-size:11px;" placeholder="Incolla qui l'invito ricevuto dal Narratore..."></textarea></div>
+    <button class="btn btn-ghost btn-sm" id="prem-import-btn" style="align-self:flex-start;">Importa invito</button>
+  </div>
+</div>
+
+<div id="portrait-lightbox" class="hidden">
+  <button id="pl-close" aria-label="Chiudi">✕</button>
+  <img id="pl-img" alt="Volto del personaggio">
+</div>
+
+<div id="pdf-viewer" class="hidden">
+  <div class="pdfv-head">
+    <div class="pdfv-title" id="pdf-viewer-title">Premessa</div>
+    <span class="pdfv-status" id="pdf-viewer-status"></span>
+    <button class="btn btn-icon btn-ghost" id="pdf-viewer-close" aria-label="Chiudi">✕</button>
+  </div>
+  <div class="pdfv-body" id="pdf-viewer-body">
+    <div class="pdfv-pages" id="pdf-viewer-pages"></div>
+    <div class="pdfv-watermark" id="pdf-viewer-watermark"></div>
+  </div>
+</div>
+
+<!-- Capitolo de "Le regole": pagina leggibile a pop-up sopra l'indice -->
+<div id="rules-popup" class="hidden">
+  <div class="pdfv-head">
+    <div class="pdfv-title" id="rules-popup-title">Capitolo</div>
+    <button class="btn btn-icon btn-ghost" id="rules-popup-close" aria-label="Chiudi">✕</button>
+  </div>
+  <div class="list-scroll" id="rules-popup-body"></div>
+</div>
+
+<div id="campaign-assets-popup" class="hidden">
+  <div class="pdfv-head">
+    <div class="pdfv-title">Ambientazioni</div>
+    <button class="btn btn-icon btn-ghost" id="campaign-assets-popup-close" aria-label="Chiudi">✕</button>
+  </div>
+  <div class="list-scroll" id="campaign-assets-popup-body"></div>
+  <input type="file" id="campaign-assets-file" accept="image/*" class="hidden">
+</div>
+
+<div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<div id="bottom-safe-mask"></div>
+
+</div>
+
+<script src="js/intro.js"></script>
+<script src="js/brand.js"></script>
+<script src="js/version.js"></script>
+<script src="js/rules.js"></script>
+<script src="js/vendor/supabase.js"></script>
+<script src="js/supabase-client.js"></script>
+<!-- data.js e app.js DEVONO precedere i moduli cloud (cloud-account,
+     cloud-character, cloud-combat): quei tre chiamano funzioni globali definite lì
+     (isEquipmentUsable, durabilityCalcolaPerdita, getTraitValue, ensureShape,
+     TRAIT_LISTS, clamp, ecc.) solo dentro gestori di eventi/risposte async —
+     mai a livello top-level — quindi funzionavano comunque anche col vecchio
+     ordine, ma da un ordine implicito e fragile (bastava spostare uno script
+     tag, o rendere uno di questi moduli differito/dinamico, per rompere tutto
+     con un ReferenceError silenzioso). Quest'ordine rende la dipendenza
+     esplicita e garantita, non più affidata al caso. -->
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/cloud-account.js"></script>
+<script src="js/cloud-character.js"></script>
+<script src="js/cloud-combat.js"></script>
+  <script src="js/tecab-effects-contract.js"></script>
+<script src="js/npc-randomizer.js"></script>
+<script type="module" src="js/pdfviewer.js"></script>
+</body>
+</html>
