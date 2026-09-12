@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elimina il tuo account — Role Makers System</title>
+<meta name="description" content="Come richiedere l'eliminazione del tuo account Role Makers System e dei tuoi dati.">
+<!--
+  Piano Unificato di Completamento (U3, audit 8 settembre 2026): pagina
+  web pubblica di richiesta cancellazione account, raggiungibile senza
+  aver installato l'app (requisito Google Play / App Store per app con
+  autenticazione). Pagina statica, non parte della SPA: nessun JS, nessuna
+  dipendenza da Supabase — deve restare leggibile anche se l'app o il
+  backend hanno problemi. Copiata in www/ da "npm run build:www" insieme
+  agli altri file statici (vedi package.json).
+
+  Nessun modulo automatico di richiesta SENZA autenticazione: l'unica via
+  che elimina davvero l'account (RPC delete_my_account + Edge Function
+  delete-account, vedi supabase/functions/delete-account/index.ts) deve
+  verificare l'identità di chi chiama — costruire qui un form pubblico
+  che "sembra" fare qualcosa senza poterlo fare davvero violerebbe la
+  regola del progetto di non promettere mai un'azione che non esiste
+  realmente. Chi non riesce ad accedere all'app scrive all'assistenza,
+  stesso indirizzo reale già usato altrove nell'app (assistenzaHtml() in
+  js/cloud-account.js), mai un contatto diverso o inventato per questa
+  pagina.
+-->
+<style>
+  :root{
+    color-scheme: dark;
+    --antracite-1:#14161A;
+    --antracite-2:#1E2126;
+    --bordo-scuro:#4A4F58;
+    --testo-primario:#F2F1ED;
+    --testo-secondario:#C7CAD1;
+    --accento:#33D6E8;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--antracite-1);
+    color:var(--testo-primario);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    line-height:1.55;
+  }
+  main{
+    max-width:640px;
+    margin:0 auto;
+    padding:40px 20px 64px;
+  }
+  h1{
+    font-family:'Rajdhani',sans-serif;
+    font-size:1.6rem;
+    letter-spacing:.02em;
+    margin:0 0 4px;
+  }
+  .sottotitolo{
+    color:var(--testo-secondario);
+    margin:0 0 32px;
+    font-size:.95rem;
+  }
+  h2{
+    font-size:1.05rem;
+    margin:32px 0 8px;
+    color:var(--testo-primario);
+  }
+  p, li{ color:var(--testo-secondario); font-size:.95rem; }
+  .box{
+    background:var(--antracite-2);
+    border:1px solid var(--bordo-scuro);
+    border-radius:9px;
+    padding:18px 20px;
+    margin:16px 0;
+  }
+  a{ color:var(--accento); }
+  .email{
+    display:inline-block;
+    font-weight:600;
+    color:var(--accento);
+  }
+  footer{
+    margin-top:40px;
+    color:var(--bordo-scuro);
+    font-size:.8rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Elimina il tuo account</h1>
+  <p class="sottotitolo">Role Makers System — scheda personaggio interattiva per il GDR Role Makers System</p>
+
+  <div class="box">
+    <h2>Dall'app (consigliato)</h2>
+    <p>
+      Apri Role Makers System, accedi con il tuo account, vai in
+      <strong>Account</strong> e usa il pulsante <strong>«Elimina account»</strong>
+      nella sezione «Gestione account». Ti verrà chiesta una conferma esplicita
+      prima di procedere: l'eliminazione è immediata e comprende anche la
+      credenziale di accesso, non solo i dati.
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>Senza accesso all'app</h2>
+    <p>
+      Se non riesci più ad aprire l'app o ad accedere al tuo account, scrivi a
+      <a class="email" href="mailto:rolemakers.it@gmail.com">rolemakers.it@gmail.com</a>
+      dall'indirizzo email associato al tuo account, indicando che vuoi
+      eliminare il tuo account Role Makers System. La richiesta verrà
+      elaborata manualmente non appena possibile.
+    </p>
+  </div>
+
+  <h2>Cosa succede quando elimini l'account</h2>
+  <ul>
+    <li>I tuoi personaggi e contenuti personalizzati non legati a una storia di altri vengono eliminati.</li>
+    <li>Se possiedi personaggi o contenuti condivisi in storie di altri utenti, la proprietà passa al Narratore di quella storia (può concederli ad altri giocatori o eliminarli).</li>
+    <li>Segnalibri, consensi, notifiche e richieste in sospeso a tuo nome vengono eliminati.</li>
+    <li>Il tuo profilo viene reso anonimo (nome, avatar, Paese e data di nascita rimossi).</li>
+    <li>La credenziale di accesso (email/password, provider collegati) viene eliminata: non potrai più accedere con questo account.</li>
+    <li>
+      Se possiedi tu stesso una storia con altri membri ancora attivi,
+      l'eliminazione viene bloccata finché non trasferisci la proprietà
+      della storia o non rimangono solo tuoi personaggi/contenuti al suo
+      interno — evita di lasciare gli altri giocatori senza Narratore.
+    </li>
+  </ul>
+
+  <footer>Role Makers System — rolemakers.it</footer>
+</main>
+</body>
+</html>
