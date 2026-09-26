@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Role Makers — Palette colori personaggio per la mappa narrativa 2D
+   (story_map_2d_v1, fase "schema mappa"/M1/M2)
+
+   Dieci colori fissi, accessibili (contrasto sufficiente su sfondo scuro,
+   tonalità separate per non confondersi fra loro) fra cui ogni giocatore
+   sceglie il bordo/nucleo del proprio indicatore sulla mappa — STESSI
+   identici valori esadecimali del vincolo CHECK lato database
+   (character_map_preferences_color_check,
+   supabase/migrations/20260930130000_story_map_2d_schema.sql): un colore
+   scelto qui è sempre valido lato server, mai una lista client scollegata
+   da quella reale. I primi quattro riusano gli stessi valori già in uso
+   per il brand/le icone del Tomo (--fisico-forte/--magico-forte/
+   --incremento-forte/--equip-momentaneo-forte, css/style.css, e
+   --rm-stat-mental, css/stat-icon-tokens.css) invece di inventarne di
+   nuovi dove un colore coerente esisteva già.
+   ========================================================================== */
+:root{
+  --rm-map-color-1:#FF7A33; /* arancio */
+  --rm-map-color-2:#33D6E8; /* ciano */
+  --rm-map-color-3:#FFD873; /* oro */
+  --rm-map-color-4:#6BFFAF; /* smeraldo */
+  --rm-map-color-5:#B38CFF; /* viola */
+  --rm-map-color-6:#FF6B9D; /* rosa */
+  --rm-map-color-7:#5B8DEF; /* blu */
+  --rm-map-color-8:#FF5C5C; /* corallo */
+  --rm-map-color-9:#4FD1C5; /* teal */
+  --rm-map-color-10:#E0E0E0; /* argento */
+}

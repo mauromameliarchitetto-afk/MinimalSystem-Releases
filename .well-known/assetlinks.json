@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "it.rolemakers.app",
+      "sha256_cert_fingerprints": [
+        "35:2C:D5:C4:6A:8A:50:5C:4C:C7:12:5C:89:06:D8:26:54:03:9A:BA:2D:02:55:D8:66:AB:30:EC:32:6F:CF:94"
+      ]
+    }
+  }
+]
