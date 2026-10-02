@@ -1,0 +1,3354 @@
+{
+  "formato": "rm-solo-scene/2",
+  "campaign_id": "icaro-otto-minuti",
+  "stato": "proposta da approvare",
+  "content_status": "proposed",
+  "nota": "Scene a fasi (arrivo, esplorazione, sviluppo, risoluzione) dopo il prompt di correzione del ritmo. Proposta da approvare.",
+  "regole": {
+    "nota_ritmo": "Nessun minimo globale: la risoluzione dipende solo dai beat richiesti, scelti perché il percorso minimo rispetti la fascia della scena.",
+    "fasi": [
+      "arrival",
+      "exploration",
+      "development",
+      "resolution"
+    ],
+    "fasce": {
+      "compact": [
+        6,
+        10
+      ],
+      "standard": [
+        10,
+        18
+      ],
+      "decisive": [
+        16,
+        30
+      ]
+    },
+    "riserva_libera": "Ti prendi il tempo di guardare meglio. Il luogo non cambia per te, ma adesso ne conosci i rumori, le distanze e chi evita il tuo sguardo.",
+    "stallo": [
+      "Le luci calano per un istante e tornano più deboli. Da qualche parte un manometro fischia.",
+      "Un annuncio registrato ripete l'orario dello spegnimento. Nessuno lo commenta, ma tutti smettono di fare quello che facevano.",
+      "Il fiato diventa bianco anche qui dentro. Qualcuno ti passa una coperta senza dire niente.",
+      "Una radio gracchia un nome che non conosci, poi tace. Chi ti è vicino abbassa lo sguardo."
+    ]
+  },
+  "scene": {
+    "I01": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "compact",
+      "fascia_orientativa": [
+        6,
+        10
+      ],
+      "max_stagnant_turns": 2,
+      "esplora": [
+        {
+          "id": "I01x1",
+          "testo": "Guardare i manometri del nodo",
+          "riserva": "Gli aghi dei manometri tremano sul limite rosso. Uno è fermo da tempo: qualcuno ci ha incollato sopra un pezzo di nastro con scritto 'non guardare'.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Gli aghi dei manometri tremano sul limite rosso.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I01x2",
+          "testo": "Ascoltare il rantolo del nodo",
+          "riserva": "Il nodo respira come un animale malato: un colpo sordo, una pausa troppo lunga, un sibilo. Ogni pausa, nella sala, tutti smettono di lavorare per un attimo.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "conosci il ritmo del nodo"
+            }
+          ]
+        },
+        {
+          "id": "I01x3",
+          "testo": "Osservare la chiave di alimentazione",
+          "riserva": "La chiave è pesante, di metallo grezzo, con un numero di serie limato via. Sul pannello, accanto alla serratura, qualcuno ha scritto a mano: 'otto minuti, non uno di più'.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "La chiave ha il numero di serie limato via."
+            }
+          ]
+        },
+        {
+          "id": "I01x4",
+          "testo": "Guardare le tre linee sul pannello",
+          "riserva": "Tre interruttori con tre etichette sbiadite: CASE, OSSIGENO, ARCHIVIO. L'etichetta dell'archivio è nuova, stampata; le altre due sono scritte a pennarello.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Tre interruttori con tre etichette sbiadite: CASE, OSSIGENO, ARCHIVIO.",
+              "categoria": "indizio"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "jax",
+          "apertura": "Jax Rami ha la faccia nera di fuliggine e gli occhi arrossati. «Non ho tempo per le presentazioni. Ho tempo per le domande utili. Fanne una.»",
+          "argomenti": [
+            {
+              "id": "I01_jax_1",
+              "testo": "Chiedere che cosa succede se il nodo si ferma",
+              "riserva": "«Le case della fascia bassa perdono calore in un'ora. Poi l'acqua ghiaccia nei tubi, poi la gente.» Jax non alza la voce. «In quest'ordine.»",
+              "effetti": [
+                {
+                  "nota": "Jax Rami: «Le case della fascia bassa perdono calore in un'ora. Poi l'acqua ghiaccia nei tubi, poi la gente.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I01_jax_2",
+              "testo": "Chiedere perché gli otto minuti",
+              "riserva": "«È quanto regge la linea straordinaria senza fondere.» Jax batte la mano sul pannello. «Otto minuti ogni tanto. Ogni volta dobbiamo scegliere dove mandarli.»",
+              "effetti": [
+                {
+                  "nota": "Otto minuti è quanto regge la linea straordinaria senza fondere."
+                }
+              ]
+            },
+            {
+              "id": "I01_jax_3",
+              "testo": "Chiedere dell'archivio",
+              "riserva": "«Non è roba mia. Ce l'hanno collegata l'anno scorso, con l'etichetta stampata.» Jax fa una smorfia. «Da allora gli otto minuti si dividono per tre invece che per due.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "jax",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Jax torna ai manometri. «Hai la chiave. Io non la voglio. Scegli tu, così la colpa è tua.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Un colpo sordo scuote la sala: una tubatura della fascia bassa ha perso pressione. Sul pannello si accende una spia rossa accanto a CASE, poi una gialla accanto a OSSIGENO.",
+        "esplora": [
+          {
+            "id": "I01d1",
+            "testo": "Leggere le spie accese",
+            "riserva": "Rossa per le case: temperatura in calo. Gialla per l'ossigeno: riserva al limite. La spia dell'archivio resta verde, come se nulla la riguardasse.",
+            "effetti": [
+              {
+                "nota": "Case in calo di temperatura, ossigeno al limite, archivio stabile.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I01x1",
+          "I01x4",
+          "I01_jax_1"
+        ],
+        "risoluzione": [
+          "I01d1"
+        ]
+      },
+      "required_beats": [
+        "I01x1",
+        "I01x4",
+        "I01_jax_1",
+        "I01d1"
+      ],
+      "optional_beats": [
+        "I01x2",
+        "I01_jax_2",
+        "I01_jax_3"
+      ],
+      "riserva_libera": "Resti nella sala del nodo. Il calore arriva a ondate, poi si ritira, e ogni volta porta via un po' più di fiato.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio.",
+      "pressione": {
+        "nome": "Il nodo rantola",
+        "max": 9,
+        "per_interazione": 1,
+        "testo_max": "Il nodo tossisce e si ferma per tre secondi interi. Jax grida il tuo nome: bisogna girare la chiave adesso.",
+        "conseguenza": "Il nodo si ferma: bisogna scegliere dove mandare gli otto minuti.",
+        "sostituto": {
+          "id": "I01p",
+          "testo": "Girare la chiave alla cieca",
+          "riserva": "Giri la chiave mentre il nodo si ferma. Jax ti grida le spie a una a una: case in calo, ossigeno al limite.",
+          "effetti": [
+            {
+              "nota": "Giri la chiave mentre il nodo si ferma.",
+              "categoria": "cambiamento"
+            }
+          ]
+        }
+      }
+    },
+    "I02": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "I02x1",
+          "testo": "Percorrere i corridoi abitati",
+          "riserva": "I corridoi sono pieni di brande, stufe fatte con latte di recupero, panni stesi fra i tubi. Ci sono targhette con i nomi scritti a mano sulle porte di servizio diventate case.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "I corridoi sono pieni di brande, stufe fatte con latte di recupero, panni stesi fra i tubi.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I02x2",
+          "testo": "Guardare i bambini",
+          "riserva": "Un gruppo di bambini gioca con biglie di vetro di condensa gelata. Si fermano quando passi, poi riprendono. Nessuno di loro ha il braccialetto di registrazione della Repubblica.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto i bambini senza braccialetto"
+            }
+          ]
+        },
+        {
+          "id": "I02x3",
+          "testo": "Leggere i registri affissi",
+          "riserva": "Accanto all'ascensore è affisso il registro ufficiale del livello: 'trasferiti — 0 residenti'. Qualcuno ci ha disegnato sopra, con il carbone, tante piccole facce.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Accanto all'ascensore è affisso il registro ufficiale del livello: 'trasferiti — 0 residenti'.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I02x4",
+          "testo": "Controllare le scorte comuni",
+          "riserva": "In un vano comune ci sono sacchi di farina di alghe, contati e segnati con tacche su una lavagna. Le tacche sono divise per famiglie, e le famiglie sono molte.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le tacche sulla lavagna delle scorte sono divise per molte famiglie."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "jax",
+          "apertura": "Jax ti accompagna, a passo svelto. «Quassù i numeri dicono zero. Guarda tu quanto fa zero.»",
+          "argomenti": [
+            {
+              "id": "I02_jax_1",
+              "testo": "Chiedere quante persone vivono qui",
+              "riserva": "«Non lo so con precisione. E se lo sapessi, non lo scriverei da nessuna parte.» Jax guarda una porta chiusa. «Scriverlo è il modo migliore per farli sparire davvero.»",
+              "effetti": [
+                {
+                  "nota": "Jax Rami: «Non lo so con precisione. E se lo sapessi, non lo scriverei da nessuna parte.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I02_jax_2",
+              "testo": "Chiedere da dove vengono",
+              "riserva": "«Da tutte le parti. Lavoratori licenziati, famiglie senza quota, gente uscita dal reparto clinico.» Scrolla le spalle. «Il nodo è caldo. Il calore attira.»",
+              "effetti": [
+                {
+                  "nota": "Jax Rami: «Da tutte le parti. Lavoratori licenziati, famiglie senza quota, gente uscita dal reparto clinico.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I02_jax_3",
+              "testo": "Chiedere perché li aiuta",
+              "riserva": "«Perché scaldo i tubi. Se nei tubi c'è gente, scaldo la gente.» Jax sorride appena. «È un lavoro semplice, se non ci pensi troppo.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "jax",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Jax si ferma all'incrocio. «Conta tu. Io ho un nodo da tenere in piedi.»"
+        },
+        {
+          "png": "kade",
+          "apertura": "Kade Orlov ti blocca il passaggio con il corpo, senza violenza. «Un'altra persona che viene a contarci. L'ultima ci ha contati e poi siamo diventati zero.»",
+          "argomenti": [
+            {
+              "id": "I02_kade_1",
+              "testo": "Chiedere chi sono gli Spenti",
+              "riserva": "«Quelli che la Repubblica ha spento. Dai registri, dal lavoro, dalla luce.» Kade incrocia le braccia. «Siamo ancora qui. Solo, al buio.»",
+              "effetti": [
+                {
+                  "nota": "Kade Orlov: «Quelli che la Repubblica ha spento. Dai registri, dal lavoro, dalla luce.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I02_kade_2",
+              "testo": "Chiedere che cosa vuole",
+              "riserva": "«Che chi ci conta ci chieda anche il nome.» Kade ti guarda dritto. «E che poi il nome resti scritto.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "kade",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "I02_kade_3",
+              "testo": "Chiedere se si fida di te",
+              "riserva": "«No.» Poi, dopo un momento: «Ma sei il primo che è sceso fin qui a piedi, invece che guardare da uno schermo.»",
+              "effetti": [
+                {
+                  "nota": "Kade: sei il primo che è sceso a piedi."
+                }
+              ]
+            }
+          ],
+          "chiusura": "Kade si fa da parte. «Conta, allora. E chiedi i nomi.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Una sirena breve, poi una voce registrata annuncia un controllo dei residenti al livello superiore. Nei corridoi le famiglie spengono le stufe e tirano le tende. In pochi secondi il livello sembra vuoto.",
+        "esplora": [
+          {
+            "id": "I02d1",
+            "testo": "Guardare come spariscono",
+            "riserva": "Sanno farlo in fretta, senza parlare: i bambini sotto le brande, gli adulti dietro i tubi. È una cosa che hanno imparato, e che fanno spesso.",
+            "effetti": [
+              {
+                "nota": "Al suono della sirena la gente di H-17 si nasconde in pochi secondi.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I02x1",
+          "I02x3",
+          "I02_kade_1",
+          "I02_jax_2"
+        ],
+        "risoluzione": [
+          "I02d1",
+          "I02_jax_1"
+        ]
+      },
+      "required_beats": [
+        "I02x1",
+        "I02x3",
+        "I02_kade_1",
+        "I02_jax_2",
+        "I02d1",
+        "I02_jax_1"
+      ],
+      "optional_beats": [
+        "I02x2",
+        "I02_jax_3",
+        "I02_kade_2",
+        "I02_kade_3"
+      ],
+      "riserva_libera": "Resti nel corridoio. Da ogni porta arriva un rumore diverso: una radio, un bambino che piange, qualcuno che russa. Zero, secondo il registro.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "I03": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "I03x1",
+          "testo": "Guardare le proiezioni dei numeri",
+          "riserva": "Le tabelle scorrono sulla parete: costi di manutenzione, calore prodotto, abitanti serviti. Ogni colonna è perfettamente allineata. I totali tornano al centesimo.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Le tabelle scorrono sulla parete: costi di manutenzione, calore prodotto, abitanti serviti.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I03x2",
+          "testo": "Osservare l'ufficio di revisione",
+          "riserva": "L'ufficio è caldo, pulito, silenzioso. Sulle scrivanie ci sono tazze di un tè che in fascia bassa non si trova. Dalle finestre si vede C1 illuminata come in pieno giorno.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto quanto è caldo l'ufficio"
+            }
+          ]
+        },
+        {
+          "id": "I03x3",
+          "testo": "Leggere l'intestazione dei documenti",
+          "riserva": "L'intestazione porta due sigilli: quello della Repubblica e, più piccolo, quello di BlackRoot. Il secondo è in un angolo, come una firma di passaggio.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "L'intestazione porta due sigilli: quello della Repubblica e, più piccolo, quello di BlackRoot.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I03x4",
+          "testo": "Guardare l'amministratore di C1",
+          "riserva": "L'amministratore annuisce a ogni numero, ma non prende appunti. Tiene lo sguardo sulla proiezione e le mani sotto il tavolo, ferme.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "L'amministratore non prende appunti e tiene le mani ferme."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "seline",
+          "apertura": "Seline Ward ferma la proiezione. «Sono qui per certificare, non per convincere. Ma se hai domande tecniche, le accetto.»",
+          "argomenti": [
+            {
+              "id": "I03_seline_1",
+              "testo": "Chiedere da dove vengono i numeri",
+              "riserva": "«Dai rapporti di manutenzione, dai consumi, dai registri dei residenti.» Seline indica una colonna. «Numeri ufficiali. Tutti verificabili.»",
+              "effetti": [
+                {
+                  "nota": "Seline Ward: «Dai rapporti di manutenzione, dai consumi, dai registri dei residenti.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I03_seline_2",
+              "testo": "Chiedere che cosa succede agli abitanti",
+              "riserva": "«Secondo i registri il livello è già vuoto.» Seline non esita. «Se i registri sono sbagliati, non è compito mio correggerli. È compito mio certificare quello che c'è scritto.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "seline",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "I03_seline_3",
+              "testo": "Chiedere del sigillo BlackRoot",
+              "riserva": "Seline guarda il sigillo come se lo vedesse per la prima volta. «BlackRoot fornisce i modelli di calcolo. Tutti i revisori li usano.» Una pausa appena troppo lunga.",
+              "effetti": [
+                {
+                  "nota": "Seline usa i modelli di calcolo che usano tutti i revisori.",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Seline riaccende la proiezione. «Il termine per le obiezioni è domani. Dopo, firmo.»"
+        },
+        {
+          "png": "amministratore",
+          "apertura": "L'amministratore di C1 si schiarisce la voce. «Capisco la sua preoccupazione. Tutti la capiamo. Ma dobbiamo pensare a milioni di persone, non a un nodo.»",
+          "argomenti": [
+            {
+              "id": "I03_amministratore_1",
+              "testo": "Chiedere quante persone vivono a H-17",
+              "riserva": "«Secondo i trasferimenti registrati, nessuna.» L'amministratore sorride, cortese. «I dati li ha visti anche lei.»"
+            },
+            {
+              "id": "I03_amministratore_2",
+              "testo": "Chiedere chi ha firmato i trasferimenti",
+              "riserva": "«Gli uffici competenti.» Non specifica quali. «È una procedura standard.»",
+              "effetti": [
+                {
+                  "nota": "L'amministratore di C1: «Gli uffici competenti.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I03_amministratore_3",
+              "testo": "Chiedere che cosa succede se lo spegnimento è sbagliato",
+              "riserva": "«Allora qualcuno ne risponderà.» L'amministratore allarga le mani. «Ma non oggi, e non io.»",
+              "effetti": [
+                {
+                  "nota": "L'amministratore: qualcuno ne risponderà, ma non oggi."
+                }
+              ]
+            }
+          ],
+          "chiusura": "L'amministratore si alza. «La ringrazio per l'attenzione. Il consiglio ne terrà conto.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Un assistente entra con un foglio e lo porge all'amministratore, che lo legge e lo piega senza commentare. Seline ferma la proiezione a metà. Per un istante nessuno parla.",
+        "esplora": [
+          {
+            "id": "I03d1",
+            "testo": "Guardare il foglio piegato",
+            "riserva": "Dal tuo posto vedi solo l'intestazione: lo stesso sigillo piccolo della proiezione, e una data vicina, molto vicina a quella dello spegnimento.",
+            "effetti": [
+              {
+                "nota": "L'amministratore ha ricevuto un foglio con il sigillo piccolo e una data vicina allo spegnimento.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I03x1",
+          "I03x3",
+          "I03_seline_1",
+          "I03_seline_3"
+        ],
+        "risoluzione": [
+          "I03d1",
+          "I03_amministratore_2"
+        ]
+      },
+      "required_beats": [
+        "I03x1",
+        "I03x3",
+        "I03_seline_1",
+        "I03_seline_3",
+        "I03d1",
+        "I03_amministratore_2"
+      ],
+      "optional_beats": [
+        "I03x2",
+        "I03_seline_2",
+        "I03_amministratore_3"
+      ],
+      "riserva_libera": "Resti nell'ufficio caldo. Il ronzio della proiezione copre tutto il resto; fuori, C1 non si accorge di niente.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "I04": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "I04x1",
+          "testo": "Guardare il reparto clinico",
+          "riserva": "Letti in fila, lenzuola grigie, monitor che segnano battiti lenti. Molti pazienti fissano il soffitto; alcuni seguono i tuoi passi con gli occhi, senza muovere la testa.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Letti in fila, lenzuola grigie, monitor che segnano battiti lenti.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I04x2",
+          "testo": "Leggere la targhetta di Mira-47",
+          "riserva": "La targhetta sul letto dice solo 'M-47', con una data di ingresso e nessuna data di dimissione. Sotto, a matita, qualcuno ha scritto 'Mira'.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "La targhetta sul letto dice solo 'M-47', con una data di ingresso e nessuna data di dimissione.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I04x3",
+          "testo": "Osservare le mani di Mira-47",
+          "riserva": "Mira-47 tiene le mani intrecciate sul lenzuolo e le muove piano, come chi lavora a maglia senza ferri. Ogni tanto si ferma e conta sottovoce.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Mira-47 conta sottovoce mentre muove le mani.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I04x4",
+          "testo": "Guardare gli apparecchi collegati ai letti",
+          "riserva": "Ogni letto è collegato con un cavo a una colonna centrale, lungo il pavimento. I cavi sono etichettati con numeri, non con nomi, e portano tutti verso l'archivio.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto dove portano i cavi"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "mira47",
+          "apertura": "Mira-47 non distoglie lo sguardo. «Ti conosco. Non la tua faccia. Il modo in cui guardi le cose che devi aggiustare.»",
+          "argomenti": [
+            {
+              "id": "I04_mira47_1",
+              "testo": "Chiedere come ti conosce",
+              "riserva": "«Ho visto tanta gente come te. Venivano, misuravano, se ne andavano.» Mira sorride appena. «Tu sei ancora qui. Questo è nuovo.»",
+              "effetti": [
+                {
+                  "nota": "Mira-47: «Ho visto tanta gente come te. Venivano, misuravano, se ne andavano.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I04_mira47_2",
+              "testo": "Chiedere chi è",
+              "riserva": "«Mira. Il numero me l'hanno dato loro. Il nome me lo sono tenuto io.» Si tocca la tempia. «Anche se a volte mi sembra di averne lasciato un pezzo altrove.»",
+              "effetti": [
+                {
+                  "nota": "Mira-47: «Mira. Il numero me l'hanno dato loro. Il nome me lo sono tenuto io.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I04_mira47_3",
+              "testo": "Chiedere di che cosa ha bisogno",
+              "riserva": "«Che qualcuno si ricordi che sono una persona sola.» Esita. «O forse no. Non ne sono più sicura.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "mira47",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Mira-47 riprende a muovere le mani sul lenzuolo. «Torna. Non tutti tornano.»"
+        },
+        {
+          "png": "jax",
+          "apertura": "Jax resta sulla porta del reparto, a disagio. «Io qui non entro volentieri. Il nodo lo capisco. Questo no.»",
+          "argomenti": [
+            {
+              "id": "I04_jax_1",
+              "testo": "Chiedere dei pazienti",
+              "riserva": "«Sono qui da prima che arrivassi io. Alcuni non si muovono da anni.» Jax guarda i cavi. «L'energia per quelle colonne la mando io, otto minuti alla volta.»",
+              "effetti": [
+                {
+                  "nota": "Jax Rami: «Sono qui da prima che arrivassi io. Alcuni non si muovono da anni.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I04_jax_2",
+              "testo": "Chiedere di Mira-47",
+              "riserva": "«È l'unica che parla con me.» Jax si gratta la nuca. «Mi chiede sempre se fuori nevica. Fuori nevica sempre.»",
+              "effetti": [
+                {
+                  "nota": "Mira-47 chiede sempre a Jax se fuori nevica."
+                }
+              ]
+            },
+            {
+              "id": "I04_jax_3",
+              "testo": "Chiedere chi comanda il reparto",
+              "riserva": "«La dottoressa Mire. Brava. Stanca.» Jax abbassa la voce. «Ha delle chiavi che nessun altro ha.»",
+              "effetti": [
+                {
+                  "voce": {
+                    "id": "icaro_voce_chiavi",
+                    "testo": "La dottoressa Mire ha chiavi che nessun altro ha."
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Jax si stacca dalla porta. «Fai presto. Qui dentro il tempo passa strano.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Un monitor accanto al letto di Mira-47 emette un segnale acuto. Mira smette di muovere le mani e fissa il soffitto. «Qualcuno mi chiama», dice. «Da dentro i cavi.»",
+        "esplora": [
+          {
+            "id": "I04d1",
+            "testo": "Seguire il cavo del letto di Mira",
+            "riserva": "Il cavo corre lungo il pavimento verso la colonna centrale, poi sparisce nel muro, verso l'archivio. È caldo al tatto, più caldo degli altri.",
+            "effetti": [
+              {
+                "nota": "Il cavo del letto di Mira-47 porta all'archivio ed è più caldo degli altri.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I04x1",
+          "I04x2",
+          "I04_mira47_1",
+          "I04x3",
+          "I04_jax_1"
+        ],
+        "risoluzione": [
+          "I04d1",
+          "I04_mira47_2"
+        ]
+      },
+      "required_beats": [
+        "I04x1",
+        "I04x2",
+        "I04_mira47_1",
+        "I04x3",
+        "I04_jax_1",
+        "I04d1",
+        "I04_mira47_2"
+      ],
+      "optional_beats": [
+        "I04x4",
+        "I04_mira47_3",
+        "I04_jax_2",
+        "I04_jax_3"
+      ],
+      "riserva_libera": "Resti fra i letti del reparto. I monitor battono tutti insieme, per un momento, poi si sfasano di nuovo.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "I05": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "I05x1",
+          "testo": "Guardare l'incarico ufficiale di Seline",
+          "riserva": "Il documento dell'incarico è stampato su carta vera, con il sigillo della Repubblica e uno spazio vuoto per il tuo nome. Pagato, protetto, riconosciuto.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Il documento dell'incarico è stampato su carta vera, con il sigillo della Repubblica e uno spazio vuoto per il tuo nome.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I05x2",
+          "testo": "Leggere il messaggio della guida esterna",
+          "riserva": "Il messaggio è scritto su un pezzo di tela cerata, in stampatello: 'C'è una strada fuori. Non per tutti. Chiedi di Oko'. Sotto c'è una mappa grezza, tracciata con il coltello.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Il messaggio è scritto su un pezzo di tela cerata, in stampatello: 'C'è una strada fuori.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I05x3",
+          "testo": "Guardare Jax al lavoro",
+          "riserva": "Jax fa finta di non guardarti mentre regola le valvole. Ogni tanto si volta, come per dire qualcosa, e poi torna al lavoro.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Jax vorrebbe dirti qualcosa e non lo dice."
+            }
+          ]
+        },
+        {
+          "id": "I05x4",
+          "testo": "Osservare gli Spenti alla porta del nodo",
+          "riserva": "Un gruppo di Spenti aspetta all'ingresso del nodo, in silenzio. Non bloccano nessuno. Vogliono solo essere visti mentre si decide.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto gli Spenti aspettare in silenzio"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "seline",
+          "apertura": "Seline ti porge l'incarico senza insistere. «Un posto sicuro in C1, uno stipendio, un nome nei registri. Sono cose che qui sotto nessuno ha.»",
+          "argomenti": [
+            {
+              "id": "I05_seline_1",
+              "testo": "Chiedere che cosa dovresti fare",
+              "riserva": "«Supervisionare lo spegnimento. Assicurarti che avvenga in ordine, senza incidenti.» Seline ti guarda. «Qualcuno lo farà comunque. Meglio qualcuno che conosce il settore.»",
+              "effetti": [
+                {
+                  "nota": "Seline Ward: «Supervisionare lo spegnimento. Assicurarti che avvenga in ordine, senza incidenti.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I05_seline_2",
+              "testo": "Chiedere perché proprio tu",
+              "riserva": "«Perché hai visto H-17 da dentro. Ai revisori serve credibilità.» Un mezzo sorriso. «Non è un complimento. È una valutazione.»",
+              "effetti": [
+                {
+                  "nota": "Seline Ward: «Perché hai visto H-17 da dentro. Ai revisori serve credibilità.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I05_seline_3",
+              "testo": "Chiedere che cosa pensa lei dello spegnimento",
+              "riserva": "Seline ci pensa davvero. «Penso che i numeri dicano quello che dicono.» Poi, più piano: «E che io non scelgo i numeri.»",
+              "effetti": [
+                {
+                  "nota": "Seline non sceglie i numeri.",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Seline appoggia il documento sul banco. «Resta valido fino a stasera.»"
+        },
+        {
+          "png": "jax",
+          "apertura": "Jax lascia la valvola a metà. «Te lo dico una volta sola: resta. Mi serve qualcuno che non abbia paura di scegliere.»",
+          "argomenti": [
+            {
+              "id": "I05_jax_1",
+              "testo": "Chiedere che cosa farebbe con te",
+              "riserva": "«Tenere in piedi il nodo abbastanza a lungo da farlo sembrare utile.» Jax sbuffa. «O almeno abbastanza a lungo da far uscire chi deve uscire.»",
+              "effetti": [
+                {
+                  "nota": "Jax Rami: «Tenere in piedi il nodo abbastanza a lungo da farlo sembrare utile.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I05_jax_2",
+              "testo": "Chiedere perché non va via lui",
+              "riserva": "«Perché se vado via io, il nodo si ferma entro una settimana.» Jax guarda i manometri. «E tutti quelli di sopra diventano zero davvero.»",
+              "effetti": [
+                {
+                  "nota": "Jax Rami: «Perché se vado via io, il nodo si ferma entro una settimana.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I05_jax_3",
+              "testo": "Chiedere che cosa pensa di Seline",
+              "riserva": "«Che fa il suo lavoro. Come me.» Jax scrolla le spalle. «Il suo lavoro è spegnere il mio.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "jax",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Jax torna alla valvola. «Pensaci. Ma non troppo.»"
+        },
+        {
+          "png": "kade",
+          "apertura": "Kade si avvicina, le mani in tasca. «Loro ti offrono un posto. Io ti offro una parte. È diverso.»",
+          "argomenti": [
+            {
+              "id": "I05_kade_1",
+              "testo": "Chiedere che cosa vogliono gli Spenti",
+              "riserva": "«Il nodo. Il calore. La luce. Per chi sta sotto, non per chi sta sopra.» Kade indica il soffitto. «Sopra ne hanno abbastanza.»",
+              "effetti": [
+                {
+                  "nota": "Kade Orlov: «Il nodo. Il calore. La luce. Per chi sta sotto, non per chi sta sopra.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I05_kade_2",
+              "testo": "Chiedere come pensano di ottenerlo",
+              "riserva": "«Prendendolo, se serve.» Kade non abbassa gli occhi. «Non siamo violenti. Ma non siamo più disposti ad aspettare.»",
+              "effetti": [
+                {
+                  "nota": "Kade Orlov: «Prendendolo, se serve.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I05_kade_3",
+              "testo": "Chiedere che cosa ne pensa di Jax",
+              "riserva": "«Jax è dei nostri, anche se non lo sa.» Un sorriso breve. «Ha solo paura di dirlo ad alta voce.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "kade",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Kade si allontana verso la porta, dove lo aspettano gli altri. «Noi siamo qui. Lo siamo sempre stati.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Il nodo ha un sussulto e per un momento le luci calano in tutta la sala. Gli Spenti all'ingresso si alzano insieme. Seline stringe il documento. Nessuno si muove, ma tutti sono pronti a farlo.",
+        "esplora": [
+          {
+            "id": "I05d1",
+            "testo": "Guardare chi si è alzato per primo",
+            "riserva": "Kade è rimasto seduto: si sono alzati gli altri, e lo guardano. Seline guarda te. Jax guarda il nodo. Ognuno aspetta un segnale diverso.",
+            "effetti": [
+              {
+                "nota": "Quando le luci calano, gli Spenti guardano Kade, Seline guarda te.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I05x1",
+          "I05x2",
+          "I05_seline_1",
+          "I05_jax_1",
+          "I05_seline_2",
+          "I05_seline_3",
+          "I05_jax_2",
+          "I05_kade_2"
+        ],
+        "risoluzione": [
+          "I05d1",
+          "I05_kade_1"
+        ]
+      },
+      "required_beats": [
+        "I05x1",
+        "I05x2",
+        "I05_seline_1",
+        "I05_jax_1",
+        "I05_seline_2",
+        "I05_seline_3",
+        "I05_jax_2",
+        "I05_kade_2",
+        "I05d1",
+        "I05_kade_1"
+      ],
+      "optional_beats": [
+        "I05x4",
+        "I05_jax_3",
+        "I05_kade_3"
+      ],
+      "riserva_libera": "Resti al centro del nodo, fra un documento, una mappa e tre persone che aspettano. Il calore va e viene.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "I06": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "I06x1",
+          "testo": "Esaminare l'armadio delle cartelle",
+          "riserva": "L'armadio è di metallo spesso, con tre serrature diverse. Dentro, le cartelle sono ordinate per numero, non per nome. Alcune hanno il bordo rosso.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "L'armadio è di metallo spesso, con tre serrature diverse.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I06x2",
+          "testo": "Leggere l'etichetta di una cartella rossa",
+          "riserva": "Sull'etichetta c'è scritto 'protocollo di stabilizzazione' e una data. Nella riga del consenso c'è una firma che si ripete identica, cartella dopo cartella.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Sull'etichetta c'è scritto 'protocollo di stabilizzazione' e una data.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I06x3",
+          "testo": "Guardare lo studio della dottoressa",
+          "riserva": "Lo studio è spoglio: una branda, una stufa, pile di fogli. Su una mensola c'è la foto sbiadita di un gruppo di medici giovani, sorridenti, davanti all'ingresso di H-17.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto la foto dei medici giovani"
+            }
+          ]
+        },
+        {
+          "id": "I06x4",
+          "testo": "Osservare le mani della dottoressa Mire",
+          "riserva": "Anja Mire ha le mani ferme, da chirurgo, ma le unghie mangiate fino alla carne. Tiene le chiavi strette in un pugno.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Anja ha le unghie mangiate fino alla carne."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "anja",
+          "apertura": "Anja Mire non ti chiede come sei arrivato fin qui. «Sei venuto per le cartelle. Allora parliamo di quello che vuoi farne, prima di aprirle.»",
+          "argomenti": [
+            {
+              "id": "I06_anja_1",
+              "testo": "Chiedere che cosa contengono",
+              "riserva": "«Anni di lavoro. Terapie che hanno tenuto in vita gente che altrove sarebbe morta.» Anja stringe le chiavi. «E cose di cui non vado fiera.»",
+              "effetti": [
+                {
+                  "nota": "Dottoressa Anja Mire: «Anni di lavoro. Terapie che hanno tenuto in vita gente che altrove sarebbe morta.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I06_anja_2",
+              "testo": "Chiedere chi ha dato il consenso",
+              "riserva": "Anja guarda la firma ripetuta. «Il reparto. Io. Qualcuno doveva firmare.» La voce le si incrina. «I pazienti non potevano. Non più.»",
+              "effetti": [
+                {
+                  "nota": "Dottoressa Anja Mire: «Il reparto. Io. Qualcuno doveva firmare.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I06_anja_3",
+              "testo": "Chiedere che cosa succede ai pazienti senza di lei",
+              "riserva": "«Muoiono. Non subito. Nel giro di qualche settimana.» Anja lo dice senza enfasi. «Io so come tenerli. Nessun altro qui lo sa.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "anja",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Anja apre la prima serratura e si ferma. «Le altre due le apro solo se mi guardi in faccia quando leggi.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Qualcuno bussa alla porta dell'archivio: un'infermiera chiede della dottoressa per un paziente che peggiora. Anja esita un istante lungo, le chiavi in mano, poi dice che arriverà subito.",
+        "esplora": [
+          {
+            "id": "I06d1",
+            "testo": "Guardare Anja esitare",
+            "riserva": "Guarda l'armadio, poi la porta, poi te. Sceglie la porta. Prima di uscire ti lascia una sola serratura aperta, senza dire niente.",
+            "effetti": [
+              {
+                "nota": "Anja ha lasciato una serratura aperta prima di correre da un paziente.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I06d2",
+            "testo": "Guardare la serratura rimasta aperta",
+            "riserva": "La serratura aperta è quella dell'armadio delle cartelle rosse. Le altre due restano chiuse.",
+            "effetti": [
+              {
+                "nota": "La serratura aperta è quella dell'armadio delle cartelle rosse.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I06d3",
+            "testo": "Ascoltare il reparto dietro la porta",
+            "riserva": "Dal corridoio arrivano la voce di Anja, calma, e quella di un paziente che si lamenta piano. Poi solo il bip dei monitor.",
+            "effetti": [
+              {
+                "nota": "Dal corridoio arrivano la voce di Anja, calma, e quella di un paziente che si lamenta piano.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I06d4",
+            "testo": "Contare le firme identiche",
+            "riserva": "La stessa firma di consenso si ripete in ogni cartella rossa: stessa pressione, stessa inclinazione, stesso inchiostro.",
+            "effetti": [
+              {
+                "nota": "La stessa firma di consenso si ripete in ogni cartella rossa: stessa pressione, stessa inclinazione, stesso inchiostro.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I06x1",
+          "I06x2",
+          "I06_anja_1"
+        ],
+        "risoluzione": [
+          "I06d1",
+          "I06_anja_2",
+          "I06d2",
+          "I06d3",
+          "I06d4"
+        ]
+      },
+      "required_beats": [
+        "I06x1",
+        "I06x2",
+        "I06_anja_1",
+        "I06d1",
+        "I06_anja_2",
+        "I06d2",
+        "I06d3",
+        "I06d4"
+      ],
+      "optional_beats": [
+        "I06x3",
+        "I06_anja_3"
+      ],
+      "riserva_libera": "Resti nell'archivio clinico. L'odore di carta vecchia e di disinfettante è così forte da coprire quello del gelo.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "I07": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "I07x1",
+          "testo": "Guardare le condotte BlackRoot",
+          "riserva": "Le condotte sono nuove, rivestite di un materiale nero opaco che assorbe la luce. Corrono dritte verso H-17, come se il nodo fosse già loro.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Le condotte sono nuove, rivestite di un materiale nero opaco che assorbe la luce.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I07x2",
+          "testo": "Osservare la pattuglia di sicurezza",
+          "riserva": "La squadra di sicurezza si muove in coppie, con tute termiche nere e visori scuri. Hanno ritmi precisi: ogni tre minuti una coppia passa davanti all'accesso.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "conosci il giro della pattuglia"
+            }
+          ]
+        },
+        {
+          "id": "I07x3",
+          "testo": "Leggere i cartelli di cantiere",
+          "riserva": "I cartelli dicono 'Linea di sviluppo metamateriali — accesso riservato'. La data di inizio lavori è precedente all'ordine di spegnimento di H-17.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "I cartelli dicono 'Linea di sviluppo metamateriali — accesso riservato'.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I07x4",
+          "testo": "Ascoltare il rumore delle condotte",
+          "riserva": "Dentro le condotte non passa ancora niente. Il metallo ticchetta al freddo, vuoto, in attesa di un calore che deve arrivare da qualche parte.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le condotte BlackRoot sono ancora vuote."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "seline",
+          "apertura": "Seline è lì, con una cartella sotto il braccio e l'aria di chi non si aspettava di vederti. «Questa zona è riservata. Anche per me, in teoria.»",
+          "argomenti": [
+            {
+              "id": "I07_seline_1",
+              "testo": "Chiedere perché è qui",
+              "riserva": "«Verifica di conformità.» Seline guarda le condotte. «Mi hanno chiesto di certificare anche questo. Nello stesso giorno dello spegnimento.»",
+              "effetti": [
+                {
+                  "nota": "Seline Ward: «Verifica di conformità.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I07_seline_2",
+              "testo": "Chiedere della data dei lavori",
+              "riserva": "Seline segue il tuo sguardo fino al cartello. Rimane in silenzio un momento. «Le date dei cantieri a volte sono provvisorie», dice. Non sembra crederci.",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "seline",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "I07_seline_3",
+              "testo": "Chiedere se sa dove andrà il calore",
+              "riserva": "«So quello che c'è scritto nei miei documenti.» Seline stringe la cartella. «E nei miei documenti questa linea non riceve calore da H-17.»",
+              "effetti": [
+                {
+                  "nota": "Seline Ward: «So quello che c'è scritto nei miei documenti.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Seline si volta verso la pattuglia. «Io non ti ho visto. Tu non hai visto me. Va bene?»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Un camion di servizio si ferma all'accesso e scarica casse con il sigillo BlackRoot. Una delle casse cade e si apre: dentro ci sono raccordi della stessa misura delle tubature di H-17.",
+        "esplora": [
+          {
+            "id": "I07d1",
+            "testo": "Guardare i raccordi caduti",
+            "riserva": "Sono nuovi, lucidi, con il diametro esatto delle tubature del nodo. Qualcuno ha già deciso da dove arriverà il calore.",
+            "effetti": [
+              {
+                "nota": "I raccordi BlackRoot hanno il diametro delle tubature di H-17.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I07d2",
+            "testo": "Nascondersi dietro le casse",
+            "riserva": "Le casse cadute fanno da riparo. Da qui vedi l'accesso e il camion, e senti gli ordini della squadra di sicurezza.",
+            "effetti": [
+              {
+                "nota": "Le casse cadute fanno da riparo.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I07d3",
+            "testo": "Guardare il documento di trasporto",
+            "riserva": "Sul camion c'è un documento di trasporto infilato nel cruscotto: destinazione 'nodo H-17', data dello spegnimento.",
+            "effetti": [
+              {
+                "nota": "Sul camion c'è un documento di trasporto infilato nel cruscotto: destinazione 'nodo H-17', data dello spegnimento.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I07d4",
+            "testo": "Ascoltare la radio della pattuglia",
+            "riserva": "La radio della pattuglia ripete una sequenza di controlli. Fra un controllo e l'altro passa un minuto esatto.",
+            "effetti": [
+              {
+                "nota": "La radio della pattuglia ripete una sequenza di controlli.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I07x1",
+          "I07x3",
+          "I07_seline_1"
+        ],
+        "risoluzione": [
+          "I07d1",
+          "I07_seline_3",
+          "I07d2",
+          "I07d3",
+          "I07d4"
+        ]
+      },
+      "required_beats": [
+        "I07x1",
+        "I07x3",
+        "I07_seline_1",
+        "I07d1",
+        "I07_seline_3",
+        "I07d2",
+        "I07d3",
+        "I07d4"
+      ],
+      "optional_beats": [
+        "I07x2",
+        "I07_seline_2"
+      ],
+      "riserva_libera": "Resti nascosto dietro un pilastro. Il ticchettio delle condotte vuote scandisce il tempo meglio di un orologio.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio.",
+      "pressione": {
+        "nome": "La pattuglia",
+        "max": 12,
+        "per_interazione": 1,
+        "testo_max": "Una coppia della sicurezza cambia giro e punta dritta verso di te: non c'è più tempo.",
+        "conseguenza": "La pattuglia ti ha visto: lo scontro comincia in svantaggio.",
+        "sostituto": {
+          "id": "I07p",
+          "testo": "Correre verso il camion prima della pattuglia",
+          "riserva": "Corri verso il camion mentre la pattuglia punta su di te. Nel cruscotto intravedi un documento di trasporto con il nome del nodo.",
+          "effetti": [
+            {
+              "nota": "Corri verso il camion mentre la pattuglia punta su di te.",
+              "categoria": "cambiamento"
+            }
+          ]
+        }
+      }
+    },
+    "I08": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "I08x1",
+          "testo": "Ascoltare la voce che ricorda il mare",
+          "riserva": "Una delle voci dell'archivio parla del mare: il sale sulle labbra, una barca rossa, il freddo dell'acqua a primavera. Si ferma sempre prima di dire il nome della barca.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Una delle voci dell'archivio parla del mare: il sale sulle labbra, una barca rossa, il freddo dell'acqua a primavera.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I08x2",
+          "testo": "Ascoltare la voce che ricorda il turno di notte",
+          "riserva": "L'altra voce parla di corridoi vuoti, di monitor da controllare, di un caffè sempre freddo. Conosce a memoria i numeri dei letti del reparto.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "L'altra voce parla di corridoi vuoti, di monitor da controllare, di un caffè sempre freddo.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I08x3",
+          "testo": "Guardare le colonne dell'archivio",
+          "riserva": "Le colonne dell'archivio sono alte fino al soffitto, attraversate da luci che pulsano lente. Ogni colonna ha una targhetta con un intervallo di numeri.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto come pulsa l'archivio"
+            }
+          ]
+        },
+        {
+          "id": "I08x4",
+          "testo": "Osservare Mira-47 collegata all'archivio",
+          "riserva": "Mira-47 è stata portata in carrozzina accanto alle colonne. Quando una delle voci parla, lei muove le labbra insieme, un istante prima.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Mira-47 muove le labbra un istante prima delle voci."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "mira_eco",
+          "apertura": "La voce che ricorda il mare esce dagli altoparlanti, calma. «Tu sei quella persona che ha parlato con me, di sopra. Ma io non ero di sopra. Ero qui. Com'è possibile?»",
+          "argomenti": [
+            {
+              "id": "I08_mira_eco_1",
+              "testo": "Chiedere chi è",
+              "riserva": "«Mira. Mi chiamo Mira. Ho visto il mare quando avevo sette anni.» Una pausa. «Anche lei, di sopra, dice di chiamarsi Mira?»",
+              "effetti": [
+                {
+                  "nota": "Mira (la voce che ricorda il mare): «Mira. Mi chiamo Mira. Ho visto il mare quando avevo sette anni.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I08_mira_eco_2",
+              "testo": "Chiedere che cosa ricorda",
+              "riserva": "«Il mare, la barca, mia madre che rideva.» La voce esita. «Non ricordo il reparto. Non ricordo di essermi ammalata.»",
+              "effetti": [
+                {
+                  "nota": "Mira (la voce che ricorda il mare): «Il mare, la barca, mia madre che rideva.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I08_mira_eco_3",
+              "testo": "Chiedere che cosa vuole",
+              "riserva": "«Non essere spenta.» Poi, più piano: «E sapere il nome della barca. Ce l'ho sulla punta della lingua da così tanto tempo.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "mira47",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "La voce del mare si abbassa, come un'onda che si ritira. «Torna a trovarmi.»"
+        },
+        {
+          "png": "mira_ombra",
+          "apertura": "La voce del turno di notte è stanca e precisa. «Letto dodici, battito regolare. Letto tredici, da controllare. Tu non sei nei miei turni. Chi sei?»",
+          "argomenti": [
+            {
+              "id": "I08_mira_ombra_1",
+              "testo": "Chiedere chi è",
+              "riserva": "«Mira. Faccio il turno di notte.» Una pausa. «Facevo. Non so più quando è finito l'ultimo.»",
+              "effetti": [
+                {
+                  "nota": "Mira (la voce che ricorda il turno di notte): «Mira. Faccio il turno di notte.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I08_mira_ombra_2",
+              "testo": "Chiedere dell'altra voce",
+              "riserva": "«Quella del mare?» Un sospiro. «Dice di essere me. Io non ho mai visto il mare. Io ho visto solo questi corridoi.»",
+              "effetti": [
+                {
+                  "nota": "Mira (la voce che ricorda il turno di notte): «Quella del mare?»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I08_mira_ombra_3",
+              "testo": "Chiedere che cosa vuole",
+              "riserva": "«Finire il turno.» La voce ride, stanca. «Andare a casa. Qualunque cosa voglia dire, adesso.»",
+              "effetti": [
+                {
+                  "nota": "La voce del turno di notte vuole finire il turno.",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "La voce del turno di notte torna ai suoi numeri. «Letto dodici, battito regolare...»"
+        },
+        {
+          "png": "anja",
+          "apertura": "Anja Mire guarda le colonne senza avvicinarsi. «Non avrei mai dovuto permettere che si sentissero fra loro.»",
+          "argomenti": [
+            {
+              "id": "I08_anja_1",
+              "testo": "Chiedere che cosa sono le voci",
+              "riserva": "«Copie parziali. Pezzi di Mira conservati quando il reparto ha cominciato a perdere pazienti.» Anja si morde il labbro. «Non dovevano parlare. Hanno imparato da sole.»",
+              "effetti": [
+                {
+                  "nota": "Le copie di Mira hanno imparato a parlare da sole.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I08_anja_2",
+              "testo": "Chiedere quale sia la vera Mira",
+              "riserva": "«Non lo so.» Anja lo dice come una confessione. «Ognuna ha qualcosa che le altre non hanno.»",
+              "effetti": [
+                {
+                  "nota": "Dottoressa Anja Mire: «Non lo so.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I08_anja_3",
+              "testo": "Chiedere che cosa rischiano",
+              "riserva": "«Se le si separa male, se ne perde una. Se le si unisce male, se ne perdono tutte e tre.» Anja stringe le braccia. «Non chiedermi di farlo io.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "anja",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Anja si allontana verso l'uscita dell'archivio. «Qualunque cosa decidi, chiedi prima a loro.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Le due voci si accorgono l'una dell'altra e smettono di parlare con te. Si rivolgono una all'altra, incerte, come due persone che si incontrano allo specchio. Mira-47 porta le mani alle tempie.",
+        "esplora": [
+          {
+            "id": "I08d1",
+            "testo": "Ascoltare le due voci parlarsi",
+            "riserva": "Si fanno domande semplici: il nome, l'età, il colore di una porta. A volte rispondono uguale. A volte no. Ogni differenza sembra far male a tutte e tre.",
+            "effetti": [
+              {
+                "nota": "Le copie di Mira si sono parlate: a volte rispondono uguale, a volte no.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I08x1",
+          "I08x2",
+          "I08_mira_eco_1",
+          "I08_mira_ombra_1",
+          "I08_mira_eco_2",
+          "I08_mira_ombra_2",
+          "I08_mira_ombra_3",
+          "I08_anja_1"
+        ],
+        "risoluzione": [
+          "I08d1",
+          "I08_anja_2"
+        ]
+      },
+      "required_beats": [
+        "I08x1",
+        "I08x2",
+        "I08_mira_eco_1",
+        "I08_mira_ombra_1",
+        "I08_mira_eco_2",
+        "I08_mira_ombra_2",
+        "I08_mira_ombra_3",
+        "I08_anja_1",
+        "I08d1",
+        "I08_anja_2"
+      ],
+      "optional_beats": [
+        "I08x3",
+        "I08_mira_eco_3",
+        "I08_anja_3"
+      ],
+      "riserva_libera": "Resti fra le colonne dell'archivio. Due voci parlano di due vite diverse con la stessa inflessione, e Mira-47 muove le labbra con entrambe.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "I09": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "I09x1",
+          "testo": "Guardare le rovine congelate",
+          "riserva": "Fuori dalle cupole la città vecchia è sepolta nel ghiaccio fino ai secondi piani. Le finestre sono occhi bianchi. Su un muro si legge ancora mezza insegna di un negozio.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Fuori dalle cupole la città vecchia è sepolta nel ghiaccio fino ai secondi piani.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I09x2",
+          "testo": "Seguire la via segnata da Oko",
+          "riserva": "Oko ha segnato la strada con bastoni conficcati nella neve, uno ogni cinquanta passi. Alcuni sono piegati dal vento; uno è spezzato a metà, di netto.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Oko ha segnato la strada con bastoni conficcati nella neve, uno ogni cinquanta passi.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I09x3",
+          "testo": "Osservare il ghiaccio sotto i piedi",
+          "riserva": "In certi punti il ghiaccio è trasparente, e sotto si vede buio. Qualcosa di grande si è mosso là sotto: le crepe seguono una traiettoria curva, come una scia.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto la scia sotto il ghiaccio"
+            }
+          ]
+        },
+        {
+          "id": "I09x4",
+          "testo": "Guardare le cupole alle tue spalle",
+          "riserva": "Da fuori, le cupole di C1 sembrano piccole, calde, sbagliate in mezzo al bianco. Si vede il vapore del Nodo H-17 salire sottile, poi spezzarsi nel vento.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Il vapore di H-17 si spezza nel vento."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "oko",
+          "apertura": "Oko Vale ha il viso coperto fino agli occhi. «Parla poco e cammina dove cammino io. Il freddo ascolta.»",
+          "argomenti": [
+            {
+              "id": "I09_oko_1",
+              "testo": "Chiedere dove porta la via",
+              "riserva": "«A un vecchio scalo, oltre le rovine. Da lì si va verso sud.» Oko indica l'orizzonte bianco. «Verso sud non è caldo. È solo meno freddo.»",
+              "effetti": [
+                {
+                  "nota": "Oko Vale: «A un vecchio scalo, oltre le rovine. Da lì si va verso sud.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I09_oko_2",
+              "testo": "Chiedere quante persone può portare",
+              "riserva": "Oko non risponde subito. «Dipende da quanti sanno camminare nella neve. E da quanti ne voglio vedere morire per strada.» Stringe la sciarpa. «Te lo dirò allo scalo.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "oko",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "I09_oko_3",
+              "testo": "Chiedere di ciò che si muove sotto il ghiaccio",
+              "riserva": "«Un predatore. Sente il calore dei corpi attraverso il ghiaccio.» Oko si ferma. «Quando si avvicina, non correre. Correre scalda.»",
+              "effetti": [
+                {
+                  "nota": "Oko Vale: «Un predatore. Sente il calore dei corpi attraverso il ghiaccio.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Oko riprende a camminare. «Ancora un po'. Poi decidi se ne vale la pena.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Un colpo sordo, poi un altro, più vicino. Il ghiaccio davanti a voi si solleva appena, come la schiena di un animale che respira. Oko si ferma e alza il pugno chiuso.",
+        "esplora": [
+          {
+            "id": "I09d1",
+            "testo": "Restare immobile come dice Oko",
+            "riserva": "Resti fermo, il respiro corto. Il rumore sotto il ghiaccio si allontana, poi torna. Oko indica un punto più avanti, dove il ghiaccio è più spesso.",
+            "effetti": [
+              {
+                "nota": "Il predatore sente il calore: restare immobili lo allontana.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I09d2",
+            "testo": "Guardare dove il ghiaccio è più spesso",
+            "riserva": "Più avanti il ghiaccio è grigio e opaco: spesso abbastanza da reggere un convoglio. Oko lo indica con il bastone.",
+            "effetti": [
+              {
+                "nota": "Più avanti il ghiaccio è grigio e opaco: spesso abbastanza da reggere un convoglio.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I09d3",
+            "testo": "Ascoltare il respiro sotto il ghiaccio",
+            "riserva": "Sotto i piedi il rumore si allontana e torna, regolare come un respiro. Il predatore segue il calore dei corpi.",
+            "effetti": [
+              {
+                "nota": "Sotto i piedi il rumore si allontana e torna, regolare come un respiro.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I09d4",
+            "testo": "Guardare le cupole lontane",
+            "riserva": "Le cupole sono piccole e lontane. Da qui capisci quanto sarebbe lunga la strada per chi deve portare bambini e vecchi.",
+            "effetti": [
+              {
+                "nota": "Le cupole sono piccole e lontane.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I09x1",
+          "I09x2",
+          "I09_oko_1"
+        ],
+        "risoluzione": [
+          "I09d1",
+          "I09_oko_3",
+          "I09d2",
+          "I09d3",
+          "I09d4"
+        ]
+      },
+      "required_beats": [
+        "I09x1",
+        "I09x2",
+        "I09_oko_1",
+        "I09d1",
+        "I09_oko_3",
+        "I09d2",
+        "I09d3",
+        "I09d4"
+      ],
+      "optional_beats": [
+        "I09x3",
+        "I09_oko_2"
+      ],
+      "riserva_libera": "Resti un momento fermo nella neve. Il vento ti fischia nelle orecchie; sotto i piedi, lontano, qualcosa risponde con un colpo sordo.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio.",
+      "pressione": {
+        "nome": "Il predatore sotto il ghiaccio",
+        "max": 12,
+        "per_interazione": 1,
+        "testo_max": "Il ghiaccio si incrina proprio sotto i tuoi piedi: il predatore è arrivato.",
+        "conseguenza": "Il predatore è arrivato: lo scontro comincia in svantaggio.",
+        "sostituto": {
+          "id": "I09p",
+          "testo": "Buttarsi sul ghiaccio spesso",
+          "riserva": "Ti butti verso il ghiaccio più spesso mentre sotto i piedi tutto si incrina. Oko ti afferra il braccio: da qui vedi quanto è lunga la strada.",
+          "effetti": [
+            {
+              "nota": "Ti butti verso il ghiaccio più spesso mentre sotto i piedi tutto si incrina.",
+              "categoria": "cambiamento"
+            }
+          ]
+        }
+      }
+    },
+    "I10": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "I10x1",
+          "testo": "Guardare la sala di controllo occupata",
+          "riserva": "Gli Spenti hanno montato brande fra le console, acceso stufe improvvisate, appeso lenzuola come pareti. La sala di controllo è diventata una casa per trenta persone.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Gli Spenti hanno montato brande fra le console, acceso stufe improvvisate, appeso lenzuola come pareti.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I10x2",
+          "testo": "Osservare le console",
+          "riserva": "Le console sono accese, e qualcuno le sta usando con competenza: le valvole verso i bassifondi sono aperte, quelle verso l'archivio segnano 'ridotto'.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le console sono accese, e qualcuno le sta usando con competenza: le valvole verso i bassifondi sono aperte, quelle verso l'archivio segnano 'ridotto'.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I10x3",
+          "testo": "Guardare i tecnici di Jax",
+          "riserva": "I tecnici di Jax sono seduti in un angolo, disarmati e non legati. Bevono dalle stesse tazze degli Spenti. Nessuno sembra sapere bene chi stia sorvegliando chi.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Tecnici e Spenti bevono dalle stesse tazze."
+            }
+          ]
+        },
+        {
+          "id": "I10x4",
+          "testo": "Cercare un trasmettitore",
+          "riserva": "Fra gli apparecchi della sala c'è una vecchia radio di servizio, scollegata dalle reti ufficiali. Ha un'antenna rotta, ma i circuiti sembrano integri.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai trovato una radio fuori dalle reti ufficiali"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "kade",
+          "apertura": "Kade ti accoglie in piedi sulla console principale. «Te l'avevo detto che non avremmo aspettato. Adesso il calore va dove deve andare.»",
+          "argomenti": [
+            {
+              "id": "I10_kade_1",
+              "testo": "Chiedere che cosa vogliono fare",
+              "riserva": "«Tenere il nodo. Dare calore ai bassifondi. E far vedere a C1 che senza di noi il settore si ferma.»",
+              "effetti": [
+                {
+                  "nota": "Kade Orlov: «Tenere il nodo. Dare calore ai bassifondi. E far vedere a C1 che senza di noi il settore si ferma.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I10_kade_2",
+              "testo": "Chiedere dell'archivio",
+              "riserva": "«L'archivio è un privilegio della Repubblica.» Kade incrocia le braccia. «Tengono i morti al caldo mentre i vivi gelano. Io scelgo i vivi.»",
+              "effetti": [
+                {
+                  "nota": "Kade Orlov: «L'archivio è un privilegio della Repubblica.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I10_kade_3",
+              "testo": "Chiedere se qualcuno si è fatto male",
+              "riserva": "«No. E nessuno si farà male, se nessuno viene a prenderci con la forza.» Kade guarda verso l'ingresso. «Questo dipende da loro, non da me.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "kade",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Kade scende dalla console. «Scegli da che parte stai. Qui dentro, stavolta, conta.»"
+        },
+        {
+          "png": "jax",
+          "apertura": "Jax siede fra i suoi tecnici, stranamente tranquillo. «Non mi hanno fatto niente. Mi hanno solo chiesto di insegnargli le valvole.»",
+          "argomenti": [
+            {
+              "id": "I10_jax_1",
+              "testo": "Chiedere se gliele ha insegnate",
+              "riserva": "Jax sorride, stanco. «Le sapevano già. Metà di loro ha lavorato qui prima di diventare zero.»"
+            },
+            {
+              "id": "I10_jax_2",
+              "testo": "Chiedere che cosa rischia il nodo",
+              "riserva": "«Se tengono le valvole così, l'archivio regge qualche giorno, non di più.» Jax si passa una mano sul viso. «E il nodo non ama essere guidato a strattoni.»",
+              "effetti": [
+                {
+                  "nota": "Jax Rami: «Se tengono le valvole così, l'archivio regge qualche giorno, non di più.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I10_jax_3",
+              "testo": "Chiedere da che parte sta lui",
+              "riserva": "«Dalla parte del nodo.» Poi, più piano: «E il nodo, adesso, scalda gente che conosco.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "jax",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Jax torna a sedere. «Qualunque cosa decidi, lasciami vicino alle valvole.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Un allarme di pressione suona dalla console dell'archivio. Gli Spenti guardano Kade; i tecnici guardano Jax. Per un attimo, nella sala occupata, tutti aspettano che qualcuno tocchi le valvole.",
+        "esplora": [
+          {
+            "id": "I10d1",
+            "testo": "Guardare chi tocca le valvole",
+            "riserva": "Nessuno. Kade tiene le braccia conserte, Jax le mani in tasca. Il primo che si muove decide di chi è la sala, e lo sanno tutti e due.",
+            "effetti": [
+              {
+                "nota": "Nella sala occupata nessuno vuole toccare per primo le valvole.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I10x1",
+          "I10x2",
+          "I10_kade_1",
+          "I10_kade_2"
+        ],
+        "risoluzione": [
+          "I10d1",
+          "I10_jax_2"
+        ]
+      },
+      "required_beats": [
+        "I10x1",
+        "I10x2",
+        "I10_kade_1",
+        "I10_kade_2",
+        "I10d1",
+        "I10_jax_2"
+      ],
+      "optional_beats": [
+        "I10x4",
+        "I10_kade_3",
+        "I10_jax_3"
+      ],
+      "riserva_libera": "Resti nella sala occupata. Fra le console e le brande si sente odore di minestra e di metallo caldo.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "I11": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "I11x1",
+          "testo": "Studiare la tavola di distribuzione",
+          "riserva": "La tavola è una lastra di vetro graffiata, con quattro colonne: CALORE, OSSIGENO, ARCHIVIO, TRASMISSIONE. Qualcuno ha segnato col grasso le quantità, poi le ha cancellate e riscritte più volte.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "La tavola è una lastra di vetro graffiata, con quattro colonne: CALORE, OSSIGENO, ARCHIVIO, TRASMISSIONE.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I11x2",
+          "testo": "Controllare le riserve",
+          "riserva": "Le riserve di combustibile sono meno di quanto dicano i registri ufficiali, ma più di quanto temesse Jax. È abbastanza per scegliere, non abbastanza per non scegliere.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le riserve di combustibile sono meno di quanto dicano i registri ufficiali, ma più di quanto temesse Jax.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I11x3",
+          "testo": "Guardare la gente che aspetta la decisione",
+          "riserva": "Fuori dalla sala del nodo c'è una fila silenziosa: madri con bambini, tecnici, Spenti, un'infermiera del reparto. Ognuno è venuto a sentire che cosa gli toccherà.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "La fila è fatta di madri, tecnici, Spenti e un'infermiera."
+            }
+          ]
+        },
+        {
+          "id": "I11x4",
+          "testo": "Controllare la linea di trasmissione",
+          "riserva": "La linea di trasmissione è collegata alla vecchia radio. Se avesse energia per qualche minuto, potrebbe raggiungere tutte le cupole della Repubblica.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "sai che la radio può raggiungere tutte le cupole"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "jax",
+          "apertura": "Jax ha le mani sulla tavola. «Io i numeri li so fare. Le scelte no. Per questo sei qui.»",
+          "argomenti": [
+            {
+              "id": "I11_jax_1",
+              "testo": "Chiedere che cosa succede se si privilegia il calore",
+              "riserva": "«Le case restano calde. L'archivio si spegne a pezzi, prima le colonne più vecchie.» Jax non guarda nessuno. «E nessuno fuori saprà niente.»",
+              "effetti": [
+                {
+                  "nota": "Jax Rami: «Le case restano calde. L'archivio si spegne a pezzi, prima le colonne più vecchie.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I11_jax_2",
+              "testo": "Chiedere che cosa succede se si protegge l'archivio",
+              "riserva": "«Il reparto regge, le colonne reggono. Le case della fascia bassa gelano per qualche notte.» Jax si morde il labbro. «Non tutti reggono qualche notte.»",
+              "effetti": [
+                {
+                  "nota": "Proteggere l'archivio fa gelare la fascia bassa per qualche notte.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I11_jax_3",
+              "testo": "Chiedere che cosa succede se si trasmette",
+              "riserva": "«Tutti sapranno. Ma per sapere ci vuole energia, e l'energia è calore che non va a nessuno.» Jax sospira. «La verità costa, anche in watt.»",
+              "effetti": [
+                {
+                  "nota": "Jax Rami: «Tutti sapranno. Ma per sapere ci vuole energia, e l'energia è calore che non va a nessuno.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I11_jax_4",
+              "testo": "Chiedere che cosa sceglierebbe per sé",
+              "riserva": "«Io dormo accanto al nodo. Il mio caldo è quello.» Jax si stringe nelle spalle. «Scelgo per gli altri. Per me è facile.»",
+              "effetti": [
+                {
+                  "nota": "Jax Rami: «Io dormo accanto al nodo. Il mio caldo è quello.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Jax lascia la tavola. «Decidi. Io girerò le valvole come dici.»"
+        },
+        {
+          "png": "anja",
+          "apertura": "Anja Mire è venuta di persona, per la prima volta fuori dal reparto. «L'archivio non è un privilegio. È gente. Voglio che sia chiaro prima che tu scelga.»",
+          "argomenti": [
+            {
+              "id": "I11_anja_1",
+              "testo": "Chiedere quante persone ci sono nell'archivio",
+              "riserva": "«Più di quante il settore ne ammetta.» Anja stringe le chiavi. «Ognuna ha un numero. Io conosco anche i nomi.»",
+              "effetti": [
+                {
+                  "nota": "Dottoressa Anja Mire: «Più di quante il settore ne ammetta.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I11_anja_2",
+              "testo": "Chiedere se accetterebbe di spegnerlo",
+              "riserva": "Anja chiude gli occhi. «Accetterei quello che loro scegliessero, se potessero scegliere.» Li riapre. «Non possono. Quindi scegli tu.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "anja",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "I11_anja_3",
+              "testo": "Chiedere che cosa ne pensa di Kade",
+              "riserva": "«Kade ha ragione su tutto tranne che su una cosa.» Anja guarda verso gli Spenti. «Anche i miei pazienti sono spenti. Solo in un altro modo.»",
+              "effetti": [
+                {
+                  "nota": "Anja: anche i pazienti sono spenti, in un altro modo.",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Anja torna verso il reparto. «Qualunque cosa scegli, dimmelo tu. Non voglio saperlo da un manometro.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Mentre discutete, una delle madri in fila si fa avanti con il bambino in braccio e chiede quanto calore toccherà alla fascia bassa. Nessuno le risponde subito. Tutti guardano te.",
+        "esplora": [
+          {
+            "id": "I11d1",
+            "testo": "Guardare la fila che aspetta",
+            "riserva": "La fila è più lunga di prima. Ci sono anche Spenti e tecnici, insieme, e un'infermiera con la cuffia del reparto. Ognuno tiene qualcosa in mano: una coperta, un documento, niente.",
+            "effetti": [
+              {
+                "nota": "La fila davanti al nodo aspetta la tua distribuzione.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I11d2",
+            "testo": "Guardare le riserve contate sulla tavola",
+            "riserva": "Jax ha scritto le riserve in fondo alla tavola, in piccolo: bastano per una notte piena, o per due notti a metà.",
+            "effetti": [
+              {
+                "nota": "Jax ha scritto le riserve in fondo alla tavola, in piccolo: bastano per una notte piena, o per due notti a metà.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I11d3",
+            "testo": "Ascoltare le voci della fila",
+            "riserva": "Nella fila si parla piano: chi ha un bambino con la febbre, chi ha un parente nel reparto, chi vuole solo sapere quanto freddo farà.",
+            "effetti": [
+              {
+                "nota": "Nella fila si parla piano: chi ha un bambino con la febbre, chi ha un parente nel reparto, chi vuole solo sapere quanto freddo farà.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I11d4",
+            "testo": "Guardare la radio collegata alla linea",
+            "riserva": "La vecchia radio è accesa, in attesa. Una spia verde dice che la linea è pronta, se qualcuno le darà energia.",
+            "effetti": [
+              {
+                "nota": "La vecchia radio è accesa, in attesa.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I11x1",
+          "I11x2",
+          "I11_jax_1",
+          "I11_jax_2",
+          "I11_jax_3",
+          "I11_jax_4",
+          "I11_anja_3"
+        ],
+        "risoluzione": [
+          "I11d1",
+          "I11_anja_1",
+          "I11d2",
+          "I11d3",
+          "I11d4"
+        ]
+      },
+      "required_beats": [
+        "I11x1",
+        "I11x2",
+        "I11_jax_1",
+        "I11_jax_2",
+        "I11_jax_3",
+        "I11_jax_4",
+        "I11_anja_3",
+        "I11d1",
+        "I11_anja_1",
+        "I11d2",
+        "I11d3",
+        "I11d4"
+      ],
+      "optional_beats": [
+        "I11x4",
+        "I11_anja_2"
+      ],
+      "riserva_libera": "Resti davanti alla tavola di vetro. I segni di grasso delle vecchie scelte sono ancora visibili sotto quelli nuovi.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "I12": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "I12x1",
+          "testo": "Guardare la sala del consiglio",
+          "riserva": "La sala è rotonda, con un tavolo lucido e poltrone vuote. Solo tre sono occupate. Il resto del consiglio segue da schermi spenti, o forse non segue affatto.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "La sala è rotonda, con un tavolo lucido e poltrone vuote.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I12x2",
+          "testo": "Osservare Seline durante l'attesa",
+          "riserva": "Seline sfoglia la sua cartella, ma non legge. Ogni tanto guarda l'orologio e poi te, come se aspettasse che tu dicessi qualcosa che lei non può dire.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Seline sfoglia la sua cartella, ma non legge.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I12x3",
+          "testo": "Guardare l'amministratore di C1",
+          "riserva": "L'amministratore ha preparato un discorso: i fogli sono impilati con cura davanti a lui. Tiene la penna in mano come un sigillo.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "L'amministratore tiene la penna come un sigillo."
+            }
+          ]
+        },
+        {
+          "id": "I12x4",
+          "testo": "Guardare fuori dalla vetrata",
+          "riserva": "Dalla vetrata si vede tutta C1, luminosa. Laggiù, in basso, il vapore di H-17 sale più sottile di ieri.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto il vapore di H-17 più sottile"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "seline",
+          "apertura": "Seline ti fa cenno di sederti vicino a lei. «Hai pochi minuti. Usali per i numeri, non per le emozioni. Qui le emozioni non contano.»",
+          "argomenti": [
+            {
+              "id": "I12_seline_1",
+              "testo": "Chiedere che cosa potrebbe cambiare la sua firma",
+              "riserva": "«Un errore nei calcoli. Un rischio non considerato.» Seline abbassa la voce. «Qualcosa che renda la firma più pericolosa del non firmare.»",
+              "effetti": [
+                {
+                  "nota": "Seline Ward: «Un errore nei calcoli. Un rischio non considerato.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I12_seline_2",
+              "testo": "Chiedere se ha dubbi",
+              "riserva": "Seline tace. Poi: «Ho delle domande a cui i miei documenti non rispondono.» Stringe la cartella. «Non posso firmare delle domande.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "seline",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "I12_seline_3",
+              "testo": "Chiedere da che parte sta",
+              "riserva": "«Dalla parte dei numeri giusti.» Un mezzo sorriso. «Aiutami a trovarli.»",
+              "effetti": [
+                {
+                  "nota": "Seline Ward: «Dalla parte dei numeri giusti.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I12_seline_4",
+              "testo": "Chiedere che cosa ha scritto",
+              "riserva": "Seline gira il foglio verso di te per un istante: una sola riga, 'rischio non valutato', e una data. «È il minimo», dice. «Ma è scritto.»",
+              "effetti": [
+                {
+                  "nota": "Seline Ward: «È il minimo»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Seline torna alla sua cartella. «Tocca a te. Io ascolto.»"
+        },
+        {
+          "png": "amministratore",
+          "apertura": "L'amministratore sorride con cortesia professionale. «Prego. Il consiglio è pronto ad ascoltare qualunque elemento nuovo.»",
+          "argomenti": [
+            {
+              "id": "I12_amministratore_1",
+              "testo": "Chiedere che cosa temerebbe il consiglio",
+              "riserva": "«Il consiglio teme soltanto l'imprevisto.» L'amministratore allinea i fogli. «Tutto ciò che è previsto si può gestire.»",
+              "effetti": [
+                {
+                  "nota": "L'amministratore di C1: «Il consiglio teme soltanto l'imprevisto.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I12_amministratore_2",
+              "testo": "Chiedere dei trasferimenti",
+              "riserva": "Il sorriso dell'amministratore non cambia, ma la penna si ferma. «I trasferimenti sono documentati. Ogni documento ha un numero.»",
+              "effetti": [
+                {
+                  "nota": "La penna dell'amministratore si ferma sui trasferimenti.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I12_amministratore_3",
+              "testo": "Chiedere che cosa succede se H-17 resta acceso",
+              "riserva": "«Qualcuno dovrà pagarlo.» L'amministratore allarga le mani. «Tutto si riduce sempre a questo, non trova?»",
+              "effetti": [
+                {
+                  "nota": "L'amministratore di C1: «Qualcuno dovrà pagarlo.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "L'amministratore riprende la penna. «La ascoltiamo.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Uno schermo del consiglio si accende all'improvviso: un consigliere collegato da lontano chiede di sapere quante persone sono state trasferite da H-17, con nome e destinazione. L'amministratore sorride e prende tempo.",
+        "esplora": [
+          {
+            "id": "I12d1",
+            "testo": "Guardare l'amministratore prendere tempo",
+            "riserva": "Sfoglia i fogli senza trovarli, poi dice che i dati arriveranno per iscritto. Il consigliere sullo schermo non sembra convinto. Seline scrive qualcosa, per la prima volta.",
+            "effetti": [
+              {
+                "nota": "Un consigliere ha chiesto nomi e destinazioni dei trasferimenti.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I12d2",
+            "testo": "Guardare il consigliere sullo schermo",
+            "riserva": "Il consigliere sullo schermo aspetta con le mani giunte. Dietro di lui si vede una stanza fredda: anche lui è lontano dal centro di C1.",
+            "effetti": [
+              {
+                "nota": "Il consigliere sullo schermo aspetta con le mani giunte.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I12d3",
+            "testo": "Ascoltare il silenzio della sala",
+            "riserva": "Nella sala del consiglio si sente solo il ronzio degli schermi. Qualcuno, da qualche parte, ha abbassato il riscaldamento.",
+            "effetti": [
+              {
+                "nota": "Nella sala del consiglio si sente solo il ronzio degli schermi.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I12d4",
+            "testo": "Guardare i fogli dell'amministratore",
+            "riserva": "I fogli dell'amministratore sono ordinati, ma quello in cima è stato scritto a mano, di fretta, stamattina.",
+            "effetti": [
+              {
+                "nota": "I fogli dell'amministratore sono ordinati, ma quello in cima è stato scritto a mano, di fretta, stamattina.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I12x1",
+          "I12x2",
+          "I12_seline_1",
+          "I12_seline_3",
+          "I12_seline_4",
+          "I12_amministratore_2",
+          "I12_amministratore_3"
+        ],
+        "risoluzione": [
+          "I12d1",
+          "I12_amministratore_1",
+          "I12d2",
+          "I12d3",
+          "I12d4"
+        ]
+      },
+      "required_beats": [
+        "I12x1",
+        "I12x2",
+        "I12_seline_1",
+        "I12_seline_3",
+        "I12_seline_4",
+        "I12_amministratore_2",
+        "I12_amministratore_3",
+        "I12d1",
+        "I12_amministratore_1",
+        "I12d2",
+        "I12d3",
+        "I12d4"
+      ],
+      "optional_beats": [
+        "I12x4",
+        "I12_seline_2"
+      ],
+      "riserva_libera": "Resti nella sala del consiglio. Il silenzio è costoso, qui: ogni secondo che passa, qualcuno lo sta contando.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "I13": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "compact",
+      "fascia_orientativa": [
+        6,
+        10
+      ],
+      "max_stagnant_turns": 2,
+      "esplora": [
+        {
+          "id": "I13x1",
+          "testo": "Guardare i manometri che crollano",
+          "riserva": "Gli aghi scendono tutti insieme verso lo zero. Uno si ferma a metà, tremando, come se si rifiutasse di cadere.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Gli aghi scendono tutti insieme verso lo zero.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I13x2",
+          "testo": "Sentire il freddo che entra",
+          "riserva": "Il freddo entra dalle giunture delle pareti come acqua. In pochi minuti il fiato diventa bianco anche dentro il nodo.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Il freddo entra dalle giunture delle pareti come acqua.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I13x3",
+          "testo": "Guardare la gente che corre",
+          "riserva": "Nei corridoi la gente corre verso le stufe comuni con coperte e bambini in braccio. Qualcuno si ferma per aiutare un vecchio; nessuno lo lascia indietro.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Nessuno lascia indietro i vecchi."
+            }
+          ]
+        },
+        {
+          "id": "I13x4",
+          "testo": "Controllare le riserve messe da parte",
+          "riserva": "Nei vani di riserva c'è quello che si è salvato nelle scelte precedenti. Lo guardi e capisci subito che basterà per qualcosa, non per tutto.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai contato le riserve messe da parte"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "jax",
+          "apertura": "Jax lavora a mani nude sulle valvole ghiacciate. «Adesso vediamo quanto valevano i nostri conti.»",
+          "argomenti": [
+            {
+              "id": "I13_jax_1",
+              "testo": "Chiedere quanto tempo resta",
+              "riserva": "«Un'ora prima che i tubi comincino a scoppiare. Poi meno.» Jax soffia sulle dita. «Dimmi cosa tenere caldo, e lo tengo caldo.»",
+              "effetti": [
+                {
+                  "nota": "Jax Rami: «Un'ora prima che i tubi comincino a scoppiare. Poi meno.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I13_jax_2",
+              "testo": "Chiedere come puoi aiutare",
+              "riserva": "«Tieni questa leva. Non mollarla finché non te lo dico.» Jax ti mette la mano sulla leva. «Se la molli, perdiamo la fascia bassa.»"
+            },
+            {
+              "id": "I13_jax_3",
+              "testo": "Chiedere se ha paura",
+              "riserva": "Jax ride, breve. «Da anni. Adesso almeno ho qualcosa da fare con le mani.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "jax",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Jax torna alle valvole. «Adesso, insieme.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Un tubo scoppia in un corridoio vicino, con un rumore di vetro. L'acqua ghiaccia in aria prima di toccare terra. Qualcuno grida che la fascia bassa ha perso il riscaldamento.",
+        "esplora": [
+          {
+            "id": "I13d1",
+            "testo": "Guardare il corridoio ghiacciato",
+            "riserva": "Il ghiaccio copre le pareti in pochi secondi. Dietro, la gente si stringe attorno alle stufe comuni. Hai poco tempo per decidere che cosa salvare.",
+            "effetti": [
+              {
+                "nota": "La fascia bassa ha perso il riscaldamento.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I13x1",
+          "I13x2",
+          "I13_jax_1"
+        ],
+        "risoluzione": [
+          "I13d1"
+        ]
+      },
+      "required_beats": [
+        "I13x1",
+        "I13x2",
+        "I13_jax_1",
+        "I13d1"
+      ],
+      "optional_beats": [
+        "I13x4",
+        "I13_jax_3"
+      ],
+      "riserva_libera": "Resti accanto al nodo che si spegne. Il suo rantolo si fa sempre più lento, e nella sala il fiato di tutti diventa nuvola.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio.",
+      "pressione": {
+        "nome": "Il gelo",
+        "max": 8,
+        "per_interazione": 1,
+        "testo_max": "L'ultimo manometro cade a zero. I tubi cominciano a scoppiare: adesso o mai.",
+        "conseguenza": "Il gelo è dentro il nodo: bisogna scegliere adesso.",
+        "sostituto": {
+          "id": "I13p",
+          "testo": "Chiudere le valvole a mano",
+          "riserva": "Chiudi le valvole a mano mentre i tubi scoppiano. Jax ti grida che cosa si può ancora salvare.",
+          "effetti": [
+            {
+              "nota": "Chiudi le valvole a mano mentre i tubi scoppiano.",
+              "categoria": "cambiamento"
+            }
+          ]
+        }
+      }
+    },
+    "I14": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "I14x1",
+          "testo": "Guardare le colonne dell'archivio che reggono",
+          "riserva": "Le luci delle colonne pulsano più lente di prima, ma pulsano. In una colonna, una luce si spegne e subito dopo si riaccende, come un respiro trattenuto.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Le luci delle colonne pulsano più lente di prima, ma pulsano.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I14x2",
+          "testo": "Ascoltare le voci insieme",
+          "riserva": "Le voci dell'archivio parlano tutte insieme, a bassa voce, come in una sala d'attesa. Ogni tanto una si alza sulle altre, e le altre tacciono per ascoltarla.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai ascoltato le voci insieme"
+            }
+          ]
+        },
+        {
+          "id": "I14x3",
+          "testo": "Leggere l'offerta di acquisto",
+          "riserva": "Sul terminale d'ingresso lampeggia un messaggio con un'offerta di acquisto per l'intero archivio. Il mittente non è firmato; il formato del documento è quello di BlackRoot.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Sul terminale d'ingresso lampeggia un messaggio con un'offerta di acquisto per l'intero archivio.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I14x4",
+          "testo": "Guardare Mira-47 davanti alle colonne",
+          "riserva": "Mira-47 si è alzata dalla carrozzina da sola, la mano appoggiata a una colonna. Tiene gli occhi chiusi e ascolta.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Mira-47 si è alzata da sola per ascoltare."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "anja",
+          "apertura": "Anja Mire parla piano, per non coprire le voci. «Qualunque cosa decidi, io resterò a spegnere o ad accendere quello che mi dirai. È il minimo.»",
+          "argomenti": [
+            {
+              "id": "I14_anja_1",
+              "testo": "Chiedere che cosa vorrebbero le persone nell'archivio",
+              "riserva": "«Alcune vorrebbero tornare. Altre vorrebbero restare qui. Altre non capiscono la domanda.» Anja stringe le chiavi. «Non esiste una risposta sola.»",
+              "effetti": [
+                {
+                  "nota": "Dottoressa Anja Mire: «Alcune vorrebbero tornare. Altre vorrebbero restare qui. Altre non capiscono la domanda.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I14_anja_2",
+              "testo": "Chiedere chi vuole comprare l'archivio",
+              "riserva": "«Chi può pagare.» Anja guarda il terminale. «E chi può pagare, di solito, non chiede il consenso a nessuno.»",
+              "effetti": [
+                {
+                  "nota": "Dottoressa Anja Mire: «Chi può pagare.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I14_anja_3",
+              "testo": "Chiedere se si può restituire qualcuno alla famiglia",
+              "riserva": "«Qualcuno sì. Con fatica, con tempo.» Anja esita. «Alcune famiglie non sanno nemmeno di dover aspettare qualcuno.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "anja",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "I14_anja_4",
+              "testo": "Chiedere se l'archivio può reggere senza energia",
+              "riserva": "«Poche ore. Poi le colonne più vecchie cominciano a perdere.» Anja chiude gli occhi. «Non tutto insieme. Un po' alla volta. È peggio.»",
+              "effetti": [
+                {
+                  "nota": "Dottoressa Anja Mire: «Poche ore. Poi le colonne più vecchie cominciano a perdere.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Anja si fa da parte. «Decidi tu. Io metterò le mani.»"
+        },
+        {
+          "png": "mira47",
+          "apertura": "Mira-47 apre gli occhi quando ti avvicini. «Le sento. Tutte. Il mare, il turno di notte. Adesso so che sono io, e anche no.»",
+          "argomenti": [
+            {
+              "id": "I14_mira47_1",
+              "testo": "Chiedere che cosa vuole lei",
+              "riserva": "«Che nessuno ci compri.» Mira sorride appena. «Il resto possiamo deciderlo insieme, se ci lasci il tempo.»",
+              "effetti": [
+                {
+                  "nota": "Mira-47: «Che nessuno ci compri.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I14_mira47_2",
+              "testo": "Chiedere se ricorda il nome della barca",
+              "riserva": "Mira ride, per la prima volta. «Sì. Adesso sì.» Non lo dice. «Lo tengo per me. È l'unica cosa che è solo mia.»",
+              "effetti": [
+                {
+                  "nota": "Mira-47: «Sì. Adesso sì.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I14_mira47_3",
+              "testo": "Chiedere se ha paura",
+              "riserva": "«Di essere divisa ancora. Di essere unita per forza.» Mira appoggia la fronte alla colonna. «Di essere venduta, più di tutto.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "mira47",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Mira-47 chiude di nuovo gli occhi. «Vai. Noi ascoltiamo.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "L'offerta sul terminale cambia: il prezzo sale, e compare un tempo di scadenza. Le voci dell'archivio tacciono tutte insieme, come se avessero letto anche loro.",
+        "esplora": [
+          {
+            "id": "I14d1",
+            "testo": "Guardare la scadenza dell'offerta",
+            "riserva": "Poche ore. Dopo, dice il messaggio, l'offerta sarà ritirata e l'archivio verrà 'gestito secondo le procedure'. Non spiega quali.",
+            "effetti": [
+              {
+                "nota": "L'offerta per l'archivio scade fra poche ore.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I14d2",
+            "testo": "Guardare le luci che rallentano",
+            "riserva": "Le luci delle colonne rallentano ancora. Una si spegne per un momento e si riaccende più debole.",
+            "effetti": [
+              {
+                "nota": "Le luci delle colonne rallentano ancora.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I14d3",
+            "testo": "Ascoltare la voce del mare",
+            "riserva": "La voce che ricorda il mare canta piano una canzone di barche. Le altre voci tacciono per ascoltarla.",
+            "effetti": [
+              {
+                "nota": "La voce che ricorda il mare canta piano una canzone di barche.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I14d4",
+            "testo": "Ascoltare la voce del turno di notte",
+            "riserva": "La voce del turno di notte conta i letti uno per uno, come per assicurarsi che ci siano ancora tutti.",
+            "effetti": [
+              {
+                "nota": "La voce del turno di notte conta i letti uno per uno, come per assicurarsi che ci siano ancora tutti.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "I14d5",
+            "testo": "Guardare il terminale dell'offerta",
+            "riserva": "Il terminale lampeggia. Accanto all'offerta c'è un campo vuoto per una firma, e un conto alla rovescia.",
+            "effetti": [
+              {
+                "nota": "Il terminale lampeggia.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I14x1",
+          "I14x3",
+          "I14_anja_1",
+          "I14_anja_2",
+          "I14_anja_4",
+          "I14_mira47_2"
+        ],
+        "risoluzione": [
+          "I14d1",
+          "I14_mira47_1",
+          "I14d2",
+          "I14d3",
+          "I14d4",
+          "I14d5"
+        ]
+      },
+      "required_beats": [
+        "I14x1",
+        "I14x3",
+        "I14_anja_1",
+        "I14_anja_2",
+        "I14_anja_4",
+        "I14_mira47_2",
+        "I14d1",
+        "I14_mira47_1",
+        "I14d2",
+        "I14d3",
+        "I14d4",
+        "I14d5"
+      ],
+      "optional_beats": [
+        "I14x2",
+        "I14_anja_3",
+        "I14_mira47_3"
+      ],
+      "riserva_libera": "Resti davanti alle colonne. Le luci pulsano lente, tutte insieme, come se l'archivio stesse aspettando la tua voce.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "I15": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "I15x1",
+          "testo": "Guardare la piazza gelata",
+          "riserva": "La piazza del settore è bianca di brina. La gente sta stretta intorno ai bracieri. Qualcuno ha portato cartelli scritti a mano con i nomi delle famiglie.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "La piazza del settore è bianca di brina.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I15x2",
+          "testo": "Osservare il convoglio preparato da Oko",
+          "riserva": "Al margine della piazza ci sono slitte cariche e gente con gli zaini già in spalla. Oko controlla le cinghie, una per una, senza parlare.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Al margine della piazza ci sono slitte cariche e gente con gli zaini già in spalla.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I15x3",
+          "testo": "Guardare gli uomini di Seline",
+          "riserva": "Vicino all'ascensore di C1 ci sono due funzionari con una valigetta. Aspettano un segnale. Uno di loro guarda la piazza come si guarda un problema.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto la valigetta dei funzionari"
+            }
+          ]
+        },
+        {
+          "id": "I15x4",
+          "testo": "Guardare gli Spenti",
+          "riserva": "Gli Spenti occupano i gradini della sala del nodo. Kade è in piedi davanti a tutti, le mani vuote, bene in vista.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Kade tiene le mani vuote e in vista."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "oko",
+          "apertura": "Oko ha il viso scoperto, per una volta. «Il convoglio parte all'alba. Con te o senza di te.»",
+          "argomenti": [
+            {
+              "id": "I15_oko_1",
+              "testo": "Chiedere quante persone possono partire",
+              "riserva": "«Quelle che ci stanno sulle slitte e quelle che sanno camminare.» Oko guarda la piazza. «Non sono tutte. Lo sapevi.»",
+              "effetti": [
+                {
+                  "nota": "Oko Vale: «Quelle che ci stanno sulle slitte e quelle che sanno camminare.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I15_oko_2",
+              "testo": "Chiedere che cosa li aspetta fuori",
+              "riserva": "«Freddo, strada, e un posto dove nessuno li conta.» Oko scrolla le spalle. «Per alcuni è abbastanza.»",
+              "effetti": [
+                {
+                  "nota": "Chi parte con Oko avrà un posto dove nessuno li conta.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I15_oko_3",
+              "testo": "Chiedere se tornerà",
+              "riserva": "«Torno sempre.» Oko si copre di nuovo il viso. «È l'unica cosa che so fare bene.»",
+              "effetti": [
+                {
+                  "nota": "Oko Vale: «Torno sempre.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Oko torna alle slitte. «All'alba.»"
+        },
+        {
+          "png": "kade",
+          "apertura": "Kade scende dai gradini. «Ci hai visti da vicino. Adesso non puoi più dire di non sapere.»",
+          "argomenti": [
+            {
+              "id": "I15_kade_1",
+              "testo": "Chiedere che cosa chiedono gli Spenti",
+              "riserva": "«Di esistere. Scritti, contati, riconosciuti.» Kade indica i cartelli. «O almeno di avere il nodo, se non ci vogliono riconoscere.»",
+              "effetti": [
+                {
+                  "nota": "Kade Orlov: «Di esistere. Scritti, contati, riconosciuti.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I15_kade_2",
+              "testo": "Chiedere se accetterebbero di partire",
+              "riserva": "«Alcuni sì. Io no.» Kade guarda le slitte. «Questo posto è nostro. Lo abbiamo tenuto caldo noi.»",
+              "effetti": [
+                {
+                  "nota": "Kade Orlov: «Alcuni sì. Io no.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I15_kade_3",
+              "testo": "Chiedere che cosa farà se perdi",
+              "riserva": "«Quello che abbiamo sempre fatto. Sopravvivere al buio.» Un sorriso duro. «Siamo bravi.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "kade",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Kade torna sui gradini, davanti agli altri. «Parla. Ti ascoltiamo tutti.»"
+        },
+        {
+          "png": "seline",
+          "apertura": "Seline è sola, senza i funzionari. «Ho lasciato la valigetta a loro. Volevo parlarti senza testimoni.»",
+          "argomenti": [
+            {
+              "id": "I15_seline_1",
+              "testo": "Chiedere che cosa c'è nella valigetta",
+              "riserva": "«Un riconoscimento provvisorio del settore. E un ordine di sgombero.» Seline guarda la piazza. «Dipende da cosa decidi quale dei due useranno.»",
+              "effetti": [
+                {
+                  "nota": "Seline Ward: «Un riconoscimento provvisorio del settore. E un ordine di sgombero.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I15_seline_2",
+              "testo": "Chiedere che cosa pensa adesso",
+              "riserva": "«Che da vicino i numeri sembrano meno puliti.» Lo dice piano. «E che forse avrei dovuto guardarli da vicino prima.»",
+              "effetti": [
+                {
+                  "nota": "Seline Ward: «Che da vicino i numeri sembrano meno puliti.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I15_seline_3",
+              "testo": "Chiedere se ti aiuterà",
+              "riserva": "«Ti aiuterò a far sì che la scelta costi il meno possibile.» Seline ti guarda. «Di più non posso. Non ancora.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "seline",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Seline torna verso l'ascensore. «Qualunque cosa sia, falla davanti a tutti.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Un braciere si rovescia e la brina si scioglie in un cerchio di fango. Per un momento la gente arretra, poi qualcuno comincia a leggere ad alta voce i nomi dei cartelli, uno dopo l'altro.",
+        "esplora": [
+          {
+            "id": "I15d1",
+            "testo": "Ascoltare i nomi letti ad alta voce",
+            "riserva": "Le voci si passano i nomi come si passa l'acqua: famiglia per famiglia. Nessuno salta un cartello. La piazza è piena di persone che il registro dà per zero.",
+            "effetti": [
+              {
+                "nota": "In piazza si leggono ad alta voce i nomi delle famiglie di H-17.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I15x1",
+          "I15x2",
+          "I15_kade_1",
+          "I15_oko_2",
+          "I15_oko_3",
+          "I15_kade_2",
+          "I15_seline_1"
+        ],
+        "risoluzione": [
+          "I15d1",
+          "I15_oko_1",
+          "I15_seline_2"
+        ]
+      },
+      "required_beats": [
+        "I15x1",
+        "I15x2",
+        "I15_kade_1",
+        "I15_oko_2",
+        "I15_oko_3",
+        "I15_kade_2",
+        "I15_seline_1",
+        "I15d1",
+        "I15_oko_1",
+        "I15_seline_2"
+      ],
+      "optional_beats": [
+        "I15x3",
+        "I15_kade_3",
+        "I15_seline_3"
+      ],
+      "riserva_libera": "Resti in mezzo alla piazza gelata. I bracieri scoppiettano; la brina cresce sui cartelli con i nomi.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "I16": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "I16x1",
+          "testo": "Guardare il pannello degli ultimi otto minuti",
+          "riserva": "Il pannello è lo stesso del primo giorno, ma le etichette sono cambiate: CASE, CONVOGLIO, ARCHIVIO, TRASMISSIONE. La chiave è di nuovo nelle tue mani.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Il pannello è lo stesso del primo giorno, ma le etichette sono cambiate: CASE, CONVOGLIO, ARCHIVIO, TRASMISSIONE.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I16x2",
+          "testo": "Ascoltare il nodo",
+          "riserva": "Il nodo non rantola più: respira piano, a fatica, come un vecchio che ha deciso di arrivare in fondo. Ogni battito sembra l'ultimo, e non lo è.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Il nodo non rantola più: respira piano, a fatica, come un vecchio che ha deciso di arrivare in fondo.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "I16x3",
+          "testo": "Guardare le persone nella sala",
+          "riserva": "Jax, Anja, Kade, Oko: nessuno parla. Ognuno guarda l'interruttore che gli sta più a cuore, e poi guarda te.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Ognuno guarda l'interruttore che gli sta più a cuore."
+            }
+          ]
+        },
+        {
+          "id": "I16x4",
+          "testo": "Guardare il cronometro",
+          "riserva": "Il cronometro della linea straordinaria è fermo su 8:00. Una volta partito, non si ferma più finché non arriva a zero.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai guardato il cronometro prima che partisse"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "jax",
+          "apertura": "Jax ti posa una mano sulla spalla, per la prima volta. «Qualunque cosa scegli, io giro le valvole. Come il primo giorno.»",
+          "argomenti": [
+            {
+              "id": "I16_jax_1",
+              "testo": "Chiedere che cosa sceglierebbe lui",
+              "riserva": "«Le case. Sempre le case.» Jax sorride storto. «Ma io scaldo tubi. Tu hai visto più di me.»",
+              "effetti": [
+                {
+                  "nota": "Jax Rami: «Le case. Sempre le case.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I16_jax_2",
+              "testo": "Chiedere che cosa succede dopo",
+              "riserva": "«Dopo, il nodo si ferma per davvero. Questa volta non ci sono riserve.» Jax guarda il cronometro. «Quello che accendi adesso è quello che resta acceso.»",
+              "effetti": [
+                {
+                  "nota": "Quello che accendi adesso è quello che resta acceso.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I16_jax_3",
+              "testo": "Chiedere se ti ringrazia",
+              "riserva": "Jax scuote la testa, senza cattiveria. «Ti ringrazio dopo. Se c'è un dopo, ti offro il caffè peggiore di tutto H-17.»",
+              "effetti": [
+                {
+                  "nota": "Jax Rami: «Ti ringrazio dopo. Se c'è un dopo, ti offro il caffè peggiore di tutto H-17.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Jax toglie la mano. «Pronto quando lo sei tu.»"
+        },
+        {
+          "png": "anja",
+          "apertura": "Anja Mire tiene le chiavi dell'archivio in mano, aperte sul palmo. «Le ho portate per darle a te. Non voglio più essere io a decidere chi resta acceso.»",
+          "argomenti": [
+            {
+              "id": "I16_anja_1",
+              "testo": "Chiedere che cosa vuole",
+              "riserva": "«Che chi è nell'archivio non venga dimenticato, qualunque cosa succeda.» Anja chiude la mano. «Anche al buio, qualcuno deve ricordare i loro nomi.»",
+              "effetti": [
+                {
+                  "nota": "Dottoressa Anja Mire: «Che chi è nell'archivio non venga dimenticato, qualunque cosa succeda.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I16_anja_2",
+              "testo": "Chiedere se ha paura del buio",
+              "riserva": "«Ho paura del silenzio dopo.» Anja guarda le colonne lontane. «Del buio no.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "anja",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "I16_anja_3",
+              "testo": "Chiedere di restare accanto a te",
+              "riserva": "Anja annuisce e si mette accanto al pannello, dove può vedere il cronometro. «Resto. Fino a zero, e anche dopo.»",
+              "effetti": [
+                {
+                  "nota": "Dottoressa Anja Mire: «Resto. Fino a zero, e anche dopo.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Anja ti mette le chiavi in mano. «Adesso sono tue.»"
+        },
+        {
+          "png": "kade",
+          "apertura": "Kade è appoggiato alla porta, stanco. «Ultimi otto minuti. Poi saremo tutti uguali: al freddo.»",
+          "argomenti": [
+            {
+              "id": "I16_kade_1",
+              "testo": "Chiedere che cosa vorrebbe",
+              "riserva": "«Che il mondo sapesse. Anche se poi gelo.»",
+              "effetti": [
+                {
+                  "nota": "Kade Orlov: «Che il mondo sapesse. Anche se poi gelo.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "I16_kade_2",
+              "testo": "Chiedere se accetterà la tua scelta",
+              "riserva": "«La accetterò.» Kade sorride appena. «Non vuol dire che la approverò.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "kade",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "I16_kade_3",
+              "testo": "Chiedere che cosa farà dopo",
+              "riserva": "«Accenderò un fuoco. Con quello che c'è.» Scrolla le spalle. «È quello che fanno gli Spenti.»",
+              "effetti": [
+                {
+                  "nota": "Kade Orlov: «Accenderò un fuoco. Con quello che c'è.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Kade si stacca dalla porta. «Vai.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Il cronometro della linea straordinaria parte da solo, per un difetto del pannello: 7:59, 7:58. Jax impreca. Adesso gli otto minuti stanno già passando.",
+        "esplora": [
+          {
+            "id": "I16d1",
+            "testo": "Guardare il cronometro correre",
+            "riserva": "7:40. 7:39. Ogni secondo è calore che non va da nessuna parte. Nessuno nella sala respira forte.",
+            "effetti": [
+              {
+                "nota": "Il cronometro degli ultimi otto minuti è partito da solo.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "I16x1",
+          "I16x2",
+          "I16_jax_1",
+          "I16_jax_2",
+          "I16_jax_3",
+          "I16_anja_3",
+          "I16_kade_3"
+        ],
+        "risoluzione": [
+          "I16d1",
+          "I16_anja_1",
+          "I16_kade_1"
+        ]
+      },
+      "required_beats": [
+        "I16x1",
+        "I16x2",
+        "I16_jax_1",
+        "I16_jax_2",
+        "I16_jax_3",
+        "I16_anja_3",
+        "I16_kade_3",
+        "I16d1",
+        "I16_anja_1",
+        "I16_kade_1"
+      ],
+      "optional_beats": [
+        "I16x4",
+        "I16_anja_2",
+        "I16_kade_2"
+      ],
+      "riserva_libera": "Resti davanti al pannello, la chiave in mano. Otto minuti. Nessuno respira troppo forte.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    }
+  }
+}

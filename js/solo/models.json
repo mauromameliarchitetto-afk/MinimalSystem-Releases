@@ -1,0 +1,42 @@
+{
+  "formato": "rm-solo-modelli/1",
+  "versione": 1,
+  "avviso": "Candidati per il prototipo, nessuno approvato come scelta definitiva. Nell'APK il modello si scarica in automatico, una volta sola, dall'URL pubblico di Hugging Face bloccato sulla revisione (nessun costo di hosting per l'app) e si verifica con SHA-256 prima dell'uso; il giocatore non sceglie il modello.",
+  "selezione_automatica": { "ram_minima_per_4b_gib": 7.0, "nota": "Scelta per RAM totale del telefono: da 7 GiB in su il 4B (qualità), sotto il 1.7B (leggero). Soglia provvisoria, da confermare con le misure sul dispositivo." },
+  "runtime": { "nome": "llama.cpp in WebAssembly (wllama)", "versione": "3.6.1", "licenza": "MIT", "limite_file": "2 GB per file: i modelli più grandi vanno divisi con llama-gguf-split" },
+  "modelli": [
+    {
+      "id": "qwen3-4b-instruct-2507-q4km",
+      "nome": "Qwen3-4B-Instruct-2507 (Q4_K_M)",
+      "versione": "2507-q4km-split2",
+      "formato": "gguf",
+      "runtime": "llama.cpp",
+      "licenza": "Apache-2.0",
+      "fonte": "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF (Qwen3-4B-Instruct-2507-Q4_K_M.gguf, sha256 3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597), diviso con llama-gguf-split --split-max-size 1500M",
+      "stato": "candidato_preferito",
+      "url": null,
+      "parti": [
+        { "file": "Qwen3-4B-Instruct-2507-Q4_K_M-00001-of-00002.gguf", "dimensione": 1496703808, "sha256": "ee767a24cab3dc2880cc3b98df5bac6ec3bf14163ba12378cc79bbc4c8c30473" },
+        { "file": "Qwen3-4B-Instruct-2507-Q4_K_M-00002-of-00002.gguf", "dimensione": 1000577504, "sha256": "da1889bf2e5078116d5e72cb6668df2af57d84cbf70a392acebf46470bd4e89d" }
+      ],
+      "parti_native": [
+        { "file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf", "dimensione": 2497281120, "sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597", "url": "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF/resolve/a06e946bb6b655725eafa393f4a9745d460374c9/Qwen3-4B-Instruct-2507-Q4_K_M.gguf" }
+      ],
+      "nota_parti_native": "Nell'APK (plugin nativo, nessun limite di 2 GB) si importa il file originale di Hugging Face, senza dividerlo."
+    },
+    {
+      "id": "qwen3-1.7b-q4km",
+      "nome": "Qwen3-1.7B (Q4_K_M)",
+      "versione": "q4km",
+      "formato": "gguf",
+      "runtime": "llama.cpp",
+      "licenza": "Apache-2.0",
+      "fonte": "https://huggingface.co/unsloth/Qwen3-1.7B-GGUF",
+      "stato": "candidato_leggero",
+      "url": null,
+      "parti": [
+        { "file": "Qwen3-1.7B-Q4_K_M.gguf", "dimensione": 1107409472, "sha256": "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897", "url": "https://huggingface.co/unsloth/Qwen3-1.7B-GGUF/resolve/d7f544eead698dbd1f15126ef60b45a1e1933222/Qwen3-1.7B-Q4_K_M.gguf" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2712 @@
+{
+ "formato": "rm-solo-contesto/1",
+ "storia": "icaro",
+ "campaign_id": "icaro-otto-minuti",
+ "versione": "1.0.0",
+ "descrizione": "Contesto narrativo di Icaro: che cosa si può raccontare in questa campagna. Il corpus originale è INCOMPLETO (stagione 2 ferma all'Ep. 04): ciò che manca resta incompleto. La campagna di gioco «Otto minuti» è una proposta ambientata nella Repubblica.",
+ "copertura": {
+  "corpora": [
+   "ICA-PRE",
+   "ICA-CP"
+  ],
+  "stato": {
+   "v": "Stagione 1 completa (Ep. 0-10, con la giocata dell'Ep. 9); stagione 2 fino all'Ep. 04.",
+   "fonte": [
+    {
+     "id": "ICA-CP-023",
+     "cita": "Dietro di lui, altre celle frigorifere iniziano a lampeggiare"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": "Nessun finale di stagione 2 né di campagna."
+  },
+  "lacune": [
+   {
+    "v": null,
+    "fonte": [],
+    "classe": "incompleto",
+    "limite": "Seconda metà della campagna, Atto III e finale: assenti."
+   },
+   {
+    "v": null,
+    "fonte": [
+     {
+      "id": "ICA-CP-021",
+      "cita": "nozze rosse"
+     }
+    ],
+    "classe": "incompleto",
+    "limite": "S2 Ep. 02: la scena di Dahlia si interrompe a metà frase."
+   },
+   {
+    "v": null,
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "EPILOGO"
+     }
+    ],
+    "classe": "incompleto",
+    "limite": "Identità dello Spettro Bianco e di Sol: non rivelate."
+   },
+   {
+    "v": null,
+    "fonte": [
+     {
+      "id": "ICA-CP-023",
+      "cita": "Dietro di lui, altre celle frigorifere iniziano a lampeggiare"
+     }
+    ],
+    "classe": "incompleto",
+    "limite": "Causa della contaminazione delle colture a C5: non spiegata."
+   }
+  ]
+ },
+ "timbro": {
+  "nome": "La voce del costo umano",
+  "tono": {
+   "v": "Cinematografico, fisico e morale senza moralismo: città verticali, corpi riparati e vite con un prezzo.",
+   "fonte": [
+    {
+     "id": "ICA-CP-003",
+     "cita": "mettono un prezzo alla vita"
+    },
+    {
+     "id": "ICA-CP-021",
+     "cita": "RIPARAZIONI ORGANICHE"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "distanza": {
+   "v": "Apri dall'ambiente o dal corpo, poi stringi sul protagonista; le informazioni arrivano da schermi, dati e voci.",
+   "fonte": [
+    {
+     "id": "ICA-CP-015",
+     "cita": "La struttura carceraria si sviluppa in verticale"
+    },
+    {
+     "id": "ICA-CP-022",
+     "cita": "PROTOTIPO N. 32"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "immagini": {
+   "v": "Materiali sterili contro corpi vulnerabili; la tecnologia produce sensazioni e costi.",
+   "fonte": [
+    {
+     "id": "ICA-CP-021",
+     "cita": "Quello migliore richiede altri sette anni"
+    },
+    {
+     "id": "ICA-CP-015",
+     "cita": "forse è proprio quello che rende vivi"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "sensoriale": {
+   "v": "Freddo, luce bianca uniforme, ronzio delle macchine, odore di disinfettante e metallo; fuori, solo ghiaccio visto da schermi o da un casco.",
+   "fonte": [
+    {
+     "id": "ICA-CP-014",
+     "cita": "schermi opachi del veicolo mostrano immagini filtrate"
+    },
+    {
+     "id": "ICA-CP-003",
+     "cita": "tuta pressurizzata"
+    },
+    {
+     "id": "ICA-CP-003",
+     "cita": "filtrata dal casco"
+    },
+    {
+     "id": "AUT-004"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "dialoghi": {
+   "v": "Secchi, personali, spesso ironici; il sottotesto nasce da debiti, colpa e controllo.",
+   "fonte": [
+    {
+     "id": "ICA-CP-014",
+     "cita": "Le traiettorie si allineano"
+    },
+    {
+     "id": "ICA-CP-023",
+     "cita": "uccidi o vieni ucciso"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "regole": [
+   {
+    "v": "L'esterno è gelo senza aria respirabile: chi esce indossa tuta, casco sigillato e respiratore; mai il volto scoperto.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "tuta pressurizzata"
+     },
+     {
+      "id": "ICA-CP-003",
+      "cita": "filtrata dal casco"
+     },
+     {
+      "id": "AUT-004"
+     },
+     {
+      "id": "ICA-CP-003",
+      "cita": "generatori di ossigeno da elettrolisi"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Ogni tecnologia ha un proprietario e un costo (anni di vita, debiti, dolore).",
+    "fonte": [
+     {
+      "id": "ICA-PRE-002",
+      "cita": "anni di luce"
+     },
+     {
+      "id": "ICA-CP-021",
+      "cita": "Quello migliore richiede altri sette anni"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Il potere parla attraverso comunicati pubblici; ogni comunicato ha una contro-narrazione.",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "Cittadini della Repubblica Pannazionale"
+     },
+     {
+      "id": "ICA-CP-022",
+      "cita": "Ci hanno detto chi dobbiamo temere"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Dopo uno scontro: chi è ferito, che cosa si è rotto, chi paga.",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "Rhett è ferita"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Le scelte passate pesano sulle presenti.",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "Quella scelta è costata migliaia di vite"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  ],
+  "evitare": [
+   {
+    "v": "tecnologia gratuita o onnipotente",
+    "fonte": [
+     {
+      "id": "ICA-CP-021",
+      "cita": "Quello migliore richiede altri sette anni"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "personaggi all'esterno senza protezione",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "tuta pressurizzata"
+     },
+     {
+      "id": "ICA-CP-003",
+      "cita": "filtrata dal casco"
+     },
+     {
+      "id": "AUT-004"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "inventare la seconda metà, l'Atto III o il finale della campagna originale",
+    "fonte": [
+     {
+      "id": "AUT-004"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  ]
+ },
+ "tema": {
+  "domanda": {
+   "v": "Questa persona sta vivendo o viene solo mantenuta operativa?",
+   "fonte": [
+    {
+     "id": "ICA-CP-015",
+     "cita": "forse è proprio quello che rende vivi"
+    },
+    {
+     "id": "ICA-CP-003",
+     "cita": "mettono un prezzo alla vita"
+    }
+   ],
+   "classe": "deducibile",
+   "limite": null
+  },
+  "tesi": {
+   "v": "Il valore di una vita non coincide con il suo prezzo; desiderare, ricordare e legarsi rende vivi.",
+   "fonte": [
+    {
+     "id": "ICA-CP-015",
+     "cita": "forse è proprio quello che rende vivi"
+    },
+    {
+     "id": "ICA-CP-021",
+     "cita": "sotto le divise siete tutti persone"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "antitesi": {
+   "v": "Il sistema e chi lo combatte fanno la stessa cosa: mettono un prezzo alla vita; il progresso nasconde superbia.",
+   "fonte": [
+    {
+     "id": "ICA-CP-003",
+     "cita": "mettono un prezzo alla vita"
+    },
+    {
+     "id": "ICA-CP-014",
+     "cita": "chiama progresso ciò che è solo superbia"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "nota": {
+   "v": "Il Cromo come identità: che cosa resta di una persona nei suoi dati.",
+   "fonte": [
+    {
+     "id": "ICA-CP-022",
+     "cita": "il Cromo è questo, è ciò che siamo"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  }
+ },
+ "atti": {
+  "1": {
+   "funzione": {
+    "v": "Sopravvivenza e mercato: il sistema dà un prezzo alla vita del protagonista.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "mettono un prezzo alla vita"
+     },
+     {
+      "id": "ICA-CP-003",
+      "cita": "Scilla ha solo 20 giorni di vita"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "domanda": {
+    "v": "Quanto vale la tua vita per chi la misura?",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "mettono un prezzo alla vita"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  },
+  "2": {
+   "funzione": {
+    "v": "Responsabilità e replicazione: chi paga le scelte; identità, corpo e autorità in crisi.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Tema: responsabilità, colpa, peso delle scelte"
+     },
+     {
+      "id": "ICA-CP-022",
+      "cita": "PROTOTIPO N. 32"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "domanda": {
+    "v": "Chi paga le tue scelte?",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Tema: responsabilità, colpa, peso delle scelte"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  },
+  "3": {
+   "funzione": {
+    "v": "Vivere oltre la funzione: quale vita proteggere e quale struttura lasciare esistere.",
+    "fonte": [
+     {
+      "id": "IMP-ICARO-VOCE"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Le fonti non hanno un Atto III: funzione proposta per la campagna di gioco."
+   },
+   "domanda": {
+    "v": null,
+    "fonte": [],
+    "classe": "incompleto",
+    "limite": "L'Atto III delle fonti non esiste."
+   }
+  }
+ },
+ "metodo": {
+  "costruzioneAtti": {
+   "v": "Episodi in tre atti; la prima stagione chiude il primo atto della campagna.",
+   "fonte": [
+    {
+     "id": "ICA-CP-014",
+     "cita": "Atto 3"
+    },
+    {
+     "id": "ICA-CP-018"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": "Struttura oltre la stagione 2: incompleta."
+  },
+  "aperturaCapitoli": {
+   "v": "Il capitolo riparte dalla battuta o dall'immagine con cui si era chiuso il precedente.",
+   "fonte": [
+    {
+     "id": "ICA-CP-014",
+     "cita": "sei incazzato con me"
+    },
+    {
+     "id": "ICA-CP-018",
+     "cita": "Sei incazzato con me"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "chiusuraCapitoli": {
+   "v": "Chiusura su una battuta sospesa o su un'immagine di sistema; epiloghi con gli antagonisti.",
+   "fonte": [
+    {
+     "id": "ICA-CP-014",
+     "cita": "La scena si chiude con scilla"
+    },
+    {
+     "id": "ICA-CP-023",
+     "cita": "Dietro di lui, altre celle frigorifere iniziano a lampeggiare"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "ritmo": {
+   "v": "Scene di azione alternate a silenzi pesanti; spazio lasciato alla giocatrice nei momenti chiave.",
+   "fonte": [
+    {
+     "id": "ICA-CP-015",
+     "cita": "E ora il silenzio pesa più di prima"
+    },
+    {
+     "id": "ICA-CP-014",
+     "cita": "Lascia la scena a lei"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "alternanza": {
+   "v": "Montaggio di quattro POV, con brevi collegamenti in cui le protagoniste tornano a vedersi.",
+   "fonte": [
+    {
+     "id": "ICA-CP-022",
+     "cita": "Per qualche secondo le tre protagoniste tornano a vedersi"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "scene": {
+   "v": "Scene numerate per PG e atto, aperte da un ambiente sensoriale e da un PNG con una battuta-gancio.",
+   "fonte": [
+    {
+     "id": "ICA-CP-015",
+     "cita": "La struttura carceraria si sviluppa in verticale"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "spostamenti": {
+   "v": "I viaggi fra città passano per convogli e schermi filtrati; l'esterno non si attraversa a viso scoperto.",
+   "fonte": [
+    {
+     "id": "ICA-CP-014",
+     "cita": "Il convoglio attraversa i ghiacci da tre giorni"
+    },
+    {
+     "id": "ICA-CP-003",
+     "cita": "tuta pressurizzata"
+    },
+    {
+     "id": "ICA-CP-003",
+     "cita": "filtrata dal casco"
+    },
+    {
+     "id": "AUT-004"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "introduzionePng": {
+   "v": "Il PNG ha un gesto o un oggetto ricorrente (i dadi fra le dita).",
+   "fonte": [
+    {
+     "id": "ICA-CP-014",
+     "cita": "Le traiettorie si allineano"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "rapporti": {
+   "v": "Il gruppo si forma per bisogno e si lega nel lutto.",
+   "fonte": [
+    {
+     "id": "ICA-CP-021",
+     "cita": "sotto le divise siete tutti persone"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "sottotesto": {
+   "v": "Al PNG è dichiarato ciò che non sa: la sua versione dei fatti non è una prova.",
+   "fonte": [
+    {
+     "id": "ICA-CP-023",
+     "cita": "Marek non possiede la prova"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "presagi": {
+   "v": "Sintomi del mondo (colture che marciscono, celle che lampeggiano) che non si spiegano subito.",
+   "fonte": [
+    {
+     "id": "ICA-CP-023",
+     "cita": "Dietro di lui, altre celle frigorifere iniziano a lampeggiare"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "informazioni": {
+   "v": "Dati, fascicoli e intercettazioni condizionati da tiri con esiti alternativi.",
+   "fonte": [
+    {
+     "id": "ICA-CP-022",
+     "cita": "Tiro contrapposto di Furtività"
+    },
+    {
+     "id": "ICA-CP-022",
+     "cita": "Se fallisce"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "rivelazioni": {
+   "v": "Le trasformazioni del corpo e i dati sono la rivelazione: un ricordo non proprio, un fascicolo senza foto.",
+   "fonte": [
+    {
+     "id": "ICA-CP-022",
+     "cita": "Non è un suo ricordo"
+    },
+    {
+     "id": "ICA-CP-022",
+     "cita": "PROTOTIPO N. 32"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "conflitti": {
+   "v": "Legge contro giustizia, sicurezza contro vita; anche chi rappresenta il sistema cambia.",
+   "fonte": [
+    {
+     "id": "ICA-CP-014",
+     "cita": "La legge è uguale per tutti"
+    },
+    {
+     "id": "ICA-CP-022",
+     "cita": "sto imparando a fare quel che è giusto"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "combattimenti": {
+   "v": "Scontri brevi con un climax e una sorpresa di potere; poi l'elenco dei feriti.",
+   "fonte": [
+    {
+     "id": "ICA-CP-022",
+     "cita": "Rhett è ferita"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "aftermath": {
+   "v": "Lutto con un rito (bere insieme, un nome ricordato) e conseguenze fisiche che durano.",
+   "fonte": [
+    {
+     "id": "ICA-CP-021",
+     "cita": "sotto le divise siete tutti persone"
+    },
+    {
+     "id": "ICA-CP-022",
+     "cita": "Nyx avrebbe apprezzato"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "trasformazioni": {
+   "v": "Il corpo cambia con il Telonio e il Cromo; i cambiamenti rivelano l'arco.",
+   "fonte": [
+    {
+     "id": "ICA-CP-022",
+     "cita": "Non è un suo ricordo"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "archi": {
+   "v": "Per ogni PG: POV, Tema ed Effetti sul personaggio; un evento corale produce ferite diverse.",
+   "fonte": [
+    {
+     "id": "ICA-CP-003",
+     "cita": "Effetti sul personaggio"
+    },
+    {
+     "id": "ICA-CP-004",
+     "cita": "Archi di crescita in questo atto"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "temi": {
+   "v": "Il prezzo della vita, il corpo come merce, la superbia del progresso.",
+   "fonte": [
+    {
+     "id": "ICA-CP-003",
+     "cita": "mettono un prezzo alla vita"
+    },
+    {
+     "id": "ICA-CP-014",
+     "cita": "chiama progresso ciò che è solo superbia"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "secondari": {
+   "v": "Mercati, cliniche grigie, tornei e sponsor come contenuti persistenti dei luoghi.",
+   "fonte": [
+    {
+     "id": "ICA-CP-021",
+     "cita": "RIPARAZIONI ORGANICHE"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "deviazioni": {
+   "v": "La giocata può sostituire la soluzione prevista: lo script resta un'ancora.",
+   "fonte": [
+    {
+     "id": "ICA-CP-014",
+     "cita": "Lascia la scena a lei"
+    },
+    {
+     "id": "ICA-CP-015",
+     "cita": "Lascia la scena a lei"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "ricongiungimenti": {
+   "v": "Le protagoniste si dividono per scelta e si ritrovano in un collegamento o in un luogo.",
+   "fonte": [
+    {
+     "id": "ICA-CP-023",
+     "cita": "La squadra si divide"
+    },
+    {
+     "id": "ICA-CP-022",
+     "cita": "Per qualche secondo le tre protagoniste tornano a vedersi"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "decisioniConseguenze": {
+   "v": "Scelte con opzioni enumerate; la risposta della giocatrice resta libera.",
+   "fonte": [
+    {
+     "id": "ICA-CP-022",
+     "cita": "Scelta"
+    },
+    {
+     "id": "ICA-CP-023",
+     "cita": "Lascia libertà alla giocatrice nel rispondere a Marek"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "vocePng": {
+   "v": "Ogni PNG ha una cifra: frasi brevi e aforistiche, burocratese pubblico e minaccia privata, parlantina accelerata.",
+   "fonte": [
+    {
+     "id": "ICA-CP-014",
+     "cita": "Le traiettorie si allineano"
+    },
+    {
+     "id": "ICA-CP-022",
+     "cita": "E mi occuperò personalmente di sbatterli dentro ad un congelatore"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "variazioni": {
+   "v": "Script e giocata dello stesso episodio divergono nelle soluzioni ma conservano le ancore.",
+   "fonte": [
+    {
+     "id": "ICA-CP-015",
+     "cita": "Lascia la scena a lei"
+    },
+    {
+     "id": "ICA-CP-014",
+     "cita": "Lascia la scena a lei"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  }
+ },
+ "canone": {
+  "leggi": [
+   {
+    "v": "Fuori dalle cupole c'è solo gelo, senza ossigeno respirabile; uscire richiede tuta, casco sigillato e respiratore.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "tuta pressurizzata"
+     },
+     {
+      "id": "ICA-CP-003",
+      "cita": "filtrata dal casco"
+     },
+     {
+      "id": "AUT-004"
+     },
+     {
+      "id": "ICA-CP-021",
+      "cita": "rischi di perdere un arto"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Gli anni di vita sono una scadenza individuale e una moneta di scambio.",
+    "fonte": [
+     {
+      "id": "ICA-PRE-002",
+      "cita": "anni di luce"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Il Cromo è il sistema che misura e calcola le probabilità della vita delle persone.",
+    "fonte": [
+     {
+      "id": "ICA-PRE-002",
+      "cita": "sistema Cromo"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Il brainfreeze (raggelamento) è una malattia di natura ignota che colpisce senza distinzione.",
+    "fonte": [
+     {
+      "id": "ICA-PRE-002",
+      "cita": "brainfreeze"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Le città sorgono sopra le rovine del mondo antico sepolte nel ghiaccio.",
+    "fonte": [
+     {
+      "id": "ICA-CP-021",
+      "cita": "C8 cresce sopra il cadavere del Cairo"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Tecnologia, metropoli, corporazioni e conflitti appartengono solo a Icaro.",
+    "fonte": [
+     {
+      "id": "AUT-004"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  ],
+  "pubblico": [
+   {
+    "v": "La Repubblica Pannazionale governa le città; i comunicati pubblici costruiscono la paura.",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "Cittadini della Repubblica Pannazionale"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  ],
+  "riservato": [
+   {
+    "v": "L'identità dello Spettro Bianco non è determinata dalle fonti.",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "EPILOGO"
+     }
+    ],
+    "classe": "canonico_riservato",
+    "limite": "Incompleto: non va inventata."
+   },
+   {
+    "v": "Il programma Ich esiste nelle fonti come prodotto pubblico di questo mondo; la sua natura interna appartiene a un'altra campagna e non entra qui.",
+    "fonte": [
+     {
+      "id": "ICA-CP-014"
+     }
+    ],
+    "classe": "canonico_riservato",
+    "limite": "Collegamento fra campagne: mai trasferito."
+   }
+  ]
+ },
+ "profiliPng": {
+  "anja": {
+   "nome": "Dottoressa Anja Mire",
+   "voce": {
+    "registro": {
+     "v": "clinico e protettivo; parla di pazienti per nome",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Sei venuto per le cartelle. Allora parliamo di quello che vuoi farne, prima di aprirle."
+      },
+      {
+       "id": "ICA-CP-021",
+       "cita": "sotto le divise siete tutti persone"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "chiede che cosa si vuole fare prima di mostrare",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Sei venuto per le cartelle. Allora parliamo di quello che vuoi farne, prima di aprirle."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Sei venuto per le cartelle. Allora parliamo di quello che vuoi farne, prima di aprirle.",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Sei venuto per le cartelle. Allora parliamo di quello che vuoi farne, prima di aprirle."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "difende i pazienti prima di sé",
+     "fonte": [
+      {
+       "id": "ICA-CP-021",
+       "cita": "sotto le divise siete tutti persone"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [
+      "icaro_truth_archive",
+      "icaro_truth_brainfreeze"
+     ],
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "tace come tiene in vita i pazienti cancellati",
+     "fonte": [
+      {
+       "id": "ICA-CP-023",
+       "cita": "Marek non possiede la prova"
+      },
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "rimanda le domande sui protocolli",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "dal nascondere al rendere pubblico (proposta)",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "sto imparando a fare quel che è giusto"
+     },
+     {
+      "id": "IMP-ICARO-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "jax": {
+   "nome": "Jax Rami",
+   "voce": {
+    "registro": {
+     "v": "spiccio, tecnico; il nodo è un organismo",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Non ho tempo per le presentazioni. Ho tempo per le domande utili. Fanne una."
+      },
+      {
+       "id": "ICA-CP-015",
+       "cita": "forse è proprio quello che rende vivi"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "taglia le presentazioni: «domande utili»",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Non ho tempo per le presentazioni. Ho tempo per le domande utili. Fanne una."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Non ho tempo per le presentazioni. Ho tempo per le domande utili. Fanne una.",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Non ho tempo per le presentazioni. Ho tempo per le domande utili. Fanne una."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "lavora più forte",
+     "fonte": [
+      {
+       "id": "ICA-CP-015",
+       "cita": "forse è proprio quello che rende vivi"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [
+      "icaro_truth_population"
+     ],
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "non mente; minimizza quante persone vivono nel nodo",
+     "fonte": [
+      {
+       "id": "ICA-CP-023",
+       "cita": "Marek non possiede la prova"
+      },
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "parla di macchine quando gli chiedono di persone",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "dal nodo alle persone (proposta)",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "sto imparando a fare quel che è giusto"
+     },
+     {
+      "id": "IMP-ICARO-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "seline": {
+   "nome": "Seline Ward",
+   "voce": {
+    "registro": {
+     "v": "procedurale e cortese; certifica, non convince",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Sono qui per certificare, non per convincere. Ma se hai domande tecniche, le accetto."
+      },
+      {
+       "id": "ICA-CP-014",
+       "cita": "La legge è uguale per tutti"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "accetta solo domande tecniche",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Sono qui per certificare, non per convincere. Ma se hai domande tecniche, le accetto."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Sono qui per certificare, non per convincere. Ma se hai domande tecniche, le accetto.",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Sono qui per certificare, non per convincere. Ma se hai domande tecniche, le accetto."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "si attacca ai numeri",
+     "fonte": [
+      {
+       "id": "ICA-CP-014",
+       "cita": "La legge è uguale per tutti"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [
+      "icaro_truth_choice"
+     ],
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "presenta la scelta della dirigenza come tecnica",
+     "fonte": [
+      {
+       "id": "ICA-CP-023",
+       "cita": "Marek non possiede la prova"
+      },
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "rinvia ai criteri di continuità",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "dalla certificazione alla responsabilità (proposta)",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "sto imparando a fare quel che è giusto"
+     },
+     {
+      "id": "IMP-ICARO-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "oko": {
+   "nome": "Oko Vale",
+   "voce": {
+    "registro": {
+     "v": "laconico; ordini brevi da guida",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Parla poco e cammina dove cammino io. Il freddo ascolta."
+      },
+      {
+       "id": "ICA-CP-015",
+       "cita": "E ora il silenzio pesa più di prima"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "personifica il freddo",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Parla poco e cammina dove cammino io. Il freddo ascolta."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Parla poco e cammina dove cammino io. Il freddo ascolta.",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Parla poco e cammina dove cammino io. Il freddo ascolta."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "diventa più silenzioso",
+     "fonte": [
+      {
+       "id": "ICA-CP-015",
+       "cita": "E ora il silenzio pesa più di prima"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [
+      "icaro_truth_outside_route"
+     ],
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "non dice che non tutti possono partire",
+     "fonte": [
+      {
+       "id": "ICA-CP-023",
+       "cita": "Marek non possiede la prova"
+      },
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "non promette posti",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "dalla selezione alla scelta condivisa (proposta)",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "sto imparando a fare quel che è giusto"
+     },
+     {
+      "id": "IMP-ICARO-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "mira47": {
+   "nome": "Mira-47",
+   "voce": {
+    "registro": {
+     "v": "precisa e inquieta; riconosce i gesti, non i volti",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Ti conosco. Non la tua faccia. Il modo in cui guardi le cose che devi aggiustare."
+      },
+      {
+       "id": "ICA-CP-022",
+       "cita": "Non è un suo ricordo"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "nota come si guardano le cose da aggiustare",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Ti conosco. Non la tua faccia. Il modo in cui guardi le cose che devi aggiustare."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Ti conosco. Non la tua faccia. Il modo in cui guardi le cose che devi aggiustare.",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Ti conosco. Non la tua faccia. Il modo in cui guardi le cose che devi aggiustare."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "chiede di essere chiamata per nome",
+     "fonte": [
+      {
+       "id": "ICA-CP-022",
+       "cita": "Non è un suo ricordo"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [],
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "non mente",
+     "fonte": [
+      {
+       "id": "ICA-CP-023",
+       "cita": "Marek non possiede la prova"
+      },
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "non parla delle sue copie",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "da fascicolo a persona (proposta)",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "sto imparando a fare quel che è giusto"
+     },
+     {
+      "id": "IMP-ICARO-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "mira_eco": {
+   "nome": "Mira (la voce che ricorda il mare)",
+   "voce": {
+    "registro": {
+     "v": "confusa e affettuosa; ricorda il mare",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Tu sei quella persona che ha parlato con me, di sopra. Ma io non ero di sopra. Ero qui. Com'è possibile?"
+      },
+      {
+       "id": "ICA-CP-022",
+       "cita": "il Cromo è questo, è ciò che siamo"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "confronta i propri ricordi con quelli altrui",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Tu sei quella persona che ha parlato con me, di sopra. Ma io non ero di sopra. Ero qui. Com'è possibile?"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Tu sei quella persona che ha parlato con me, di sopra. Ma io non ero di sopra. Ero qui. Com'è possibile?",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Tu sei quella persona che ha parlato con me, di sopra. Ma io non ero di sopra. Ero qui. Com'è possibile?"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "si aggrappa ai ricordi",
+     "fonte": [
+      {
+       "id": "ICA-CP-022",
+       "cita": "il Cromo è questo, è ciò che siamo"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [],
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "crede di essere la vera Mira",
+     "fonte": [
+      {
+       "id": "ICA-CP-023",
+       "cita": "Marek non possiede la prova"
+      },
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "non accetta di essere una copia",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "dalla rivendicazione al riconoscimento (proposta)",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "sto imparando a fare quel che è giusto"
+     },
+     {
+      "id": "IMP-ICARO-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "mira_ombra": {
+   "nome": "Mira (la voce che ricorda il turno di notte)",
+   "voce": {
+    "registro": {
+     "v": "elenca turni e letti come una litania",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Letto dodici, battito regolare. Letto tredici, da controllare. Tu non sei nei miei turni. Chi sei?"
+      },
+      {
+       "id": "ICA-CP-015",
+       "cita": "forse è proprio quello che rende vivi"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "conta i pazienti",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Letto dodici, battito regolare. Letto tredici, da controllare. Tu non sei nei miei turni. Chi sei?"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Letto dodici, battito regolare. Letto tredici, da controllare. Tu non sei nei miei turni. Chi sei?",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Letto dodici, battito regolare. Letto tredici, da controllare. Tu non sei nei miei turni. Chi sei?"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "ripete la routine",
+     "fonte": [
+      {
+       "id": "ICA-CP-015",
+       "cita": "forse è proprio quello che rende vivi"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [],
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "non mente",
+     "fonte": [
+      {
+       "id": "ICA-CP-023",
+       "cita": "Marek non possiede la prova"
+      },
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "non esce dal suo turno",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "dalla funzione alla persona (proposta)",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "sto imparando a fare quel che è giusto"
+     },
+     {
+      "id": "IMP-ICARO-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "kade": {
+   "nome": "Kade Orlov",
+   "voce": {
+    "registro": {
+     "v": "amaro e collettivo; parla per tutti gli Spenti",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Un'altra persona che viene a contarci. L'ultima ci ha contati e poi siamo diventati zero."
+      },
+      {
+       "id": "ICA-CP-023",
+       "cita": "uccidi o vieni ucciso"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "ricorda che contarli li ha resi zero",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Un'altra persona che viene a contarci. L'ultima ci ha contati e poi siamo diventati zero."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Un'altra persona che viene a contarci. L'ultima ci ha contati e poi siamo diventati zero.",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Un'altra persona che viene a contarci. L'ultima ci ha contati e poi siamo diventati zero."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "minaccia l'occupazione",
+     "fonte": [
+      {
+       "id": "ICA-CP-023",
+       "cita": "uccidi o vieni ucciso"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [
+      "icaro_truth_population"
+     ],
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "non dice che l'energia non basta per tutti",
+     "fonte": [
+      {
+       "id": "ICA-CP-023",
+       "cita": "Marek non possiede la prova"
+      },
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "non tratta da solo",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "dalla rabbia alla trattativa (proposta)",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "sto imparando a fare quel che è giusto"
+     },
+     {
+      "id": "IMP-ICARO-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "amministratore": {
+   "nome": "L'amministratore di C1",
+   "voce": {
+    "registro": {
+     "v": "burocratico ed empatico in superficie",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Capisco la sua preoccupazione. Tutti la capiamo. Ma dobbiamo pensare a milioni di persone, non a un nodo."
+      },
+      {
+       "id": "ICA-CP-022",
+       "cita": "Cittadini della Repubblica Pannazionale"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "parla di milioni, mai di nomi",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Capisco la sua preoccupazione. Tutti la capiamo. Ma dobbiamo pensare a milioni di persone, non a un nodo."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Capisco la sua preoccupazione. Tutti la capiamo. Ma dobbiamo pensare a milioni di persone, non a un nodo.",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-INTERAZIONI",
+       "cita": "Capisco la sua preoccupazione. Tutti la capiamo. Ma dobbiamo pensare a milioni di persone, non a un nodo."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "minaccia con procedure",
+     "fonte": [
+      {
+       "id": "ICA-CP-022",
+       "cita": "Cittadini della Repubblica Pannazionale"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [
+      "icaro_truth_transfer"
+     ],
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "i trasferimenti sono solo transazioni contabili",
+     "fonte": [
+      {
+       "id": "ICA-CP-023",
+       "cita": "Marek non possiede la prova"
+      },
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "rimanda alla Repubblica",
+     "fonte": [
+      {
+       "id": "IMP-ICARO-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "nessuna prevista (proposta)",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "sto imparando a fare quel che è giusto"
+     },
+     {
+      "id": "IMP-ICARO-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  }
+ },
+ "antagonisti": [
+  {
+   "id": "sicurezza_caposquadra",
+   "metodo": {
+    "v": "L'antagonista offre una soluzione efficiente che sacrifica qualcosa di umano; comunicato pubblico e minaccia privata.",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "E mi occuperò personalmente di sbatterli dentro ad un congelatore"
+     },
+     {
+      "id": "ICA-CP-003",
+      "cita": "mettono un prezzo alla vita"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "agenda": {
+    "v": "Certificare lo spegnimento e contenere i testimoni.",
+    "fonte": [
+     {
+      "id": "IMP-ICARO-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  {
+   "id": "predatore_ghiaccio",
+   "metodo": {
+    "v": "Il pericolo dell'esterno è il gelo stesso; chi è fuori è protetto o muore.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "tuta pressurizzata"
+     },
+     {
+      "id": "ICA-CP-003",
+      "cita": "filtrata dal casco"
+     },
+     {
+      "id": "AUT-004"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "agenda": {
+    "v": null,
+    "fonte": [],
+    "classe": "incompleto",
+    "limite": "Una creatura non ha agenda."
+   }
+  }
+ ],
+ "archiArchetipo": {
+  "elian": {
+   "modello": {
+    "v": "POV, Tema ed Effetti sul personaggio: lo stesso evento corale produce una ferita diversa per ciascuno.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Effetti sul personaggio"
+     },
+     {
+      "id": "ICA-CP-004",
+      "cita": "Archi di crescita in questo atto"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "tema": {
+    "v": "il prezzo del successo pagato da altri",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Tema: responsabilità, colpa, peso delle scelte"
+     },
+     {
+      "id": "IMP-ICARO-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Tema proposto dal background dell'archetipo; da approvare."
+   },
+   "effetto": {
+    "v": "Una ferita morale dell'Atto I che accompagna il personaggio fin quasi al finale.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Effetti sul personaggio"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   },
+   "domanda": {
+    "v": "Questa persona sta vivendo o viene solo mantenuta operativa?",
+    "fonte": [
+     {
+      "id": "ICA-CP-015",
+      "cita": "forse è proprio quello che rende vivi"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  },
+  "mara": {
+   "modello": {
+    "v": "POV, Tema ed Effetti sul personaggio: lo stesso evento corale produce una ferita diversa per ciascuno.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Effetti sul personaggio"
+     },
+     {
+      "id": "ICA-CP-004",
+      "cita": "Archi di crescita in questo atto"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "tema": {
+    "v": "il valore di una vita ridotto a un fascicolo",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Tema: responsabilità, colpa, peso delle scelte"
+     },
+     {
+      "id": "IMP-ICARO-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Tema proposto dal background dell'archetipo; da approvare."
+   },
+   "effetto": {
+    "v": "Una ferita morale dell'Atto I che accompagna il personaggio fin quasi al finale.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Effetti sul personaggio"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   },
+   "domanda": {
+    "v": "Questa persona sta vivendo o viene solo mantenuta operativa?",
+    "fonte": [
+     {
+      "id": "ICA-CP-015",
+      "cita": "forse è proprio quello che rende vivi"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  },
+  "rho": {
+   "modello": {
+    "v": "POV, Tema ed Effetti sul personaggio: lo stesso evento corale produce una ferita diversa per ciascuno.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Effetti sul personaggio"
+     },
+     {
+      "id": "ICA-CP-004",
+      "cita": "Archi di crescita in questo atto"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "tema": {
+    "v": "le parti di sé considerate sacrificabili",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Tema: responsabilità, colpa, peso delle scelte"
+     },
+     {
+      "id": "IMP-ICARO-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Tema proposto dal background dell'archetipo; da approvare."
+   },
+   "effetto": {
+    "v": "Una ferita morale dell'Atto I che accompagna il personaggio fin quasi al finale.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Effetti sul personaggio"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   },
+   "domanda": {
+    "v": "Questa persona sta vivendo o viene solo mantenuta operativa?",
+    "fonte": [
+     {
+      "id": "ICA-CP-015",
+      "cita": "forse è proprio quello che rende vivi"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  },
+  "nia": {
+   "modello": {
+    "v": "POV, Tema ed Effetti sul personaggio: lo stesso evento corale produce una ferita diversa per ciascuno.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Effetti sul personaggio"
+     },
+     {
+      "id": "ICA-CP-004",
+      "cita": "Archi di crescita in questo atto"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "tema": {
+    "v": "la memoria di chi è stato cancellato",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Tema: responsabilità, colpa, peso delle scelte"
+     },
+     {
+      "id": "IMP-ICARO-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Tema proposto dal background dell'archetipo; da approvare."
+   },
+   "effetto": {
+    "v": "Una ferita morale dell'Atto I che accompagna il personaggio fin quasi al finale.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Effetti sul personaggio"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   },
+   "domanda": {
+    "v": "Questa persona sta vivendo o viene solo mantenuta operativa?",
+    "fonte": [
+     {
+      "id": "ICA-CP-015",
+      "cita": "forse è proprio quello che rende vivi"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  },
+  "tomas": {
+   "modello": {
+    "v": "POV, Tema ed Effetti sul personaggio: lo stesso evento corale produce una ferita diversa per ciascuno.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Effetti sul personaggio"
+     },
+     {
+      "id": "ICA-CP-004",
+      "cita": "Archi di crescita in questo atto"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "tema": {
+    "v": "chi ha diritto di essere salvato fuori dalle cupole",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Tema: responsabilità, colpa, peso delle scelte"
+     },
+     {
+      "id": "IMP-ICARO-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Tema proposto dal background dell'archetipo; da approvare."
+   },
+   "effetto": {
+    "v": "Una ferita morale dell'Atto I che accompagna il personaggio fin quasi al finale.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "Effetti sul personaggio"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   },
+   "domanda": {
+    "v": "Questa persona sta vivendo o viene solo mantenuta operativa?",
+    "fonte": [
+     {
+      "id": "ICA-CP-015",
+      "cita": "forse è proprio quello che rende vivi"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  }
+ },
+ "rivelazioni": {
+  "scala": {
+   "v": [
+    {
+     "fatto": "icaro_truth_population",
+     "atto": 1,
+     "dopo": [],
+     "chiSa": [
+      "jax",
+      "kade"
+     ]
+    },
+    {
+     "fatto": "icaro_truth_transfer",
+     "atto": 1,
+     "dopo": [],
+     "chiSa": [
+      "amministratore"
+     ]
+    },
+    {
+     "fatto": "icaro_truth_archive",
+     "atto": 2,
+     "dopo": [],
+     "chiSa": [
+      "anja"
+     ]
+    },
+    {
+     "fatto": "icaro_truth_brainfreeze",
+     "atto": 2,
+     "dopo": [],
+     "chiSa": [
+      "anja"
+     ]
+    },
+    {
+     "fatto": "icaro_truth_outside_route",
+     "atto": 2,
+     "dopo": [],
+     "chiSa": [
+      "oko"
+     ]
+    },
+    {
+     "fatto": "icaro_truth_heat",
+     "atto": 2,
+     "dopo": [
+      "icaro_truth_population"
+     ],
+     "chiSa": []
+    },
+    {
+     "fatto": "icaro_truth_choice",
+     "atto": 3,
+     "dopo": [
+      "icaro_truth_heat",
+      "icaro_truth_archive"
+     ],
+     "chiSa": [
+      "seline"
+     ]
+    }
+   ],
+   "fonte": [
+    {
+     "id": "IMP-ICARO-STRUTTURA"
+    },
+    {
+     "id": "IMP-ICARO-CAMPAGNA"
+    }
+   ],
+   "classe": "proposta",
+   "limite": null
+  },
+  "regola": {
+   "v": "La verità arriva da dati, fascicoli e corpi trasformati, condizionata dai tiri.",
+   "fonte": [
+    {
+     "id": "ICA-CP-022",
+     "cita": "PROTOTIPO N. 32"
+    },
+    {
+     "id": "ICA-CP-022",
+     "cita": "Non è un suo ricordo"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  }
+ },
+ "limitiSpoiler": [
+  {
+   "v": "Nessun segreto della scala entra nel prompt prima dello sblocco del motore.",
+   "fonte": [
+    {
+     "id": "ICA-CP-022",
+     "cita": "EPILOGO"
+    },
+    {
+     "id": "AUT-005"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  {
+   "v": "Le scene degli antagonisti delle fonti mostrano al giocatore più del PG: nell'app restano riservate.",
+   "fonte": [
+    {
+     "id": "ICA-CP-022",
+     "cita": "EPILOGO"
+    },
+    {
+     "id": "AUT-005"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  {
+   "v": "Le parti mancanti delle fonti restano incomplete.",
+   "fonte": [
+    {
+     "id": "AUT-004"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  }
+ ],
+ "fili": {
+  "tipiConseguenza": [
+   {
+    "v": "debito o anni di vita persi",
+    "fonte": [
+     {
+      "id": "ICA-PRE-002",
+      "cita": "anni di luce"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "ferita o modifica del corpo che dura",
+    "fonte": [
+     {
+      "id": "ICA-CP-021",
+      "cita": "non può recuperare tutti i punti vita"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "comunicato pubblico che cambia la reputazione",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "Ci hanno detto chi dobbiamo temere"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "lutto per un membro del gruppo",
+    "fonte": [
+     {
+      "id": "ICA-CP-022",
+      "cita": "Nyx avrebbe apprezzato"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  ]
+ },
+ "riserva": {
+  "spostamento": {
+   "v": [
+    "Attraversi corridoi illuminati a intermittenza.",
+    "Il convoglio scivola sul ghiaccio; fuori, la distesa bianca passa solo sugli schermi filtrati.",
+    "Ti muovi tra livelli e passerelle, lontano dagli sguardi."
+   ],
+   "fonte": [
+    {
+     "id": "IMP-FEEDBACK",
+     "cita": "Attraversi corridoi illuminati a intermittenza."
+    },
+    {
+     "id": "ICA-CP-014",
+     "cita": "schermi opachi del veicolo mostrano immagini filtrate"
+    }
+   ],
+   "classe": "proposta",
+   "limite": "Sostituisce la frase precedente sul vento all'esterno, incompatibile con AUT-004."
+  },
+  "esterno": {
+   "v": [
+    "La tuta trattiene il calore a fatica; il visore del casco si appanna a ogni respiro.",
+    "Il respiratore scandisce il tempo: fuori dalla cupola ogni minuto ha un costo."
+   ],
+   "fonte": [
+    {
+     "id": "ICA-CP-003",
+     "cita": "tuta pressurizzata"
+    },
+    {
+     "id": "ICA-CP-003",
+     "cita": "filtrata dal casco"
+    },
+    {
+     "id": "AUT-004"
+    }
+   ],
+   "classe": "proposta",
+   "limite": "Testi di riserva per le scene all'esterno: sempre con tuta, casco e respiratore."
+  }
+ },
+ "interpreteParole": {
+  "v": {
+   "Politica": [
+    "repubblic",
+    "collegial",
+    "corporaz",
+    "sponsor"
+   ],
+   "Orientamento": [
+    "condott",
+    "livell",
+    "passerell",
+    "mappa"
+   ],
+   "Sopravvivenza": [
+    "ossigen",
+    "tuta",
+    "casco",
+    "respirat",
+    "freddo"
+   ]
+  },
+  "fonte": [
+   {
+    "id": "IMP-NARRATORE",
+    "cita": "concilio"
+   },
+   {
+    "id": "IMP-ICARO-CAMPAGNA"
+   }
+  ],
+  "classe": "proposta",
+  "limite": "Radici per l'interprete di riserva, solo con Icaro attiva."
+ },
+ "improvvisazione": {
+  "ammesso": [
+   {
+    "v": "Dettagli di città, cliniche, mercati, schermi e annunci coerenti con il luogo.",
+    "fonte": [
+     {
+      "id": "ICA-CP-021",
+      "cita": "RIPARAZIONI ORGANICHE"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   {
+    "v": "PNG di passaggio con un mestiere e un debito.",
+    "fonte": [
+     {
+      "id": "ICA-CP-021",
+      "cita": "Quello migliore richiede altri sette anni"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  ],
+  "vietato": [
+   {
+    "v": "Mostrare qualcuno all'esterno senza tuta, casco sigillato e respiratore.",
+    "fonte": [
+     {
+      "id": "ICA-CP-003",
+      "cita": "tuta pressurizzata"
+     },
+     {
+      "id": "ICA-CP-003",
+      "cita": "filtrata dal casco"
+     },
+     {
+      "id": "AUT-004"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Inventare la seconda metà, l'Atto III o il finale delle fonti, o l'identità dello Spettro Bianco.",
+    "fonte": [
+     {
+      "id": "AUT-004"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Introdurre magia, mostri o lessico di altre ambientazioni.",
+    "fonte": [
+     {
+      "id": "AUT-005"
+     },
+     {
+      "id": "AUT-004"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Tecnologia senza proprietario né costo.",
+    "fonte": [
+     {
+      "id": "ICA-CP-021",
+      "cita": "Quello migliore richiede altri sette anni"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  ]
+ },
+ "strutturaLunga": {
+  "macroCapitoli": {
+   "v": [
+    "I01",
+    "I02",
+    "I03",
+    "I04",
+    "I05",
+    "I06",
+    "I07",
+    "I08",
+    "I09",
+    "I10",
+    "I11",
+    "I12",
+    "I13",
+    "I14",
+    "I15",
+    "I16",
+    "I17"
+   ],
+   "fonte": [
+    {
+     "id": "IMP-ICARO-STRUTTURA"
+    }
+   ],
+   "classe": "proposta",
+   "limite": null
+  },
+  "modelloBlocchi": {
+   "v": "Primo atto = una stagione di episodi a tre atti con montaggio di POV; il seguito delle fonti è incompleto.",
+   "fonte": [
+    {
+     "id": "ICA-CP-018"
+    },
+    {
+     "id": "ICA-CP-014",
+     "cita": "Lascia la scena a lei"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": "Oltre la S2 Ep. 04 la struttura è proposta."
+  },
+  "persistenzaSecondari": {
+   "v": "I luoghi conservano mercati, tornei e sponsor che tornano negli episodi.",
+   "fonte": [
+    {
+     "id": "ICA-CP-021",
+     "cita": "RIPARAZIONI ORGANICHE"
+    },
+    {
+     "id": "ICA-CP-022",
+     "cita": "Tiro contrapposto di Furtività"
+    }
+   ],
+   "classe": "deducibile",
+   "limite": null
+  },
+  "snodiMetodo": {
+   "v": {
+    "I_otto": {
+     "atto": 1,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "I_censimento": {
+     "atto": 1,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "I_ordine": {
+     "atto": 1,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "I_mira": {
+     "atto": 1,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "I_firma": {
+     "atto": 1,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "II_cartelle": {
+     "atto": 2,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi",
+      "rivelazioni"
+     ]
+    },
+    "II_blackroot": {
+     "atto": 2,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi",
+      "rivelazioni"
+     ]
+    },
+    "II_mira": {
+     "atto": 2,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi",
+      "rivelazioni"
+     ]
+    },
+    "II_esterno": {
+     "atto": 2,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi",
+      "rivelazioni"
+     ]
+    },
+    "II_spenti": {
+     "atto": 2,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi",
+      "rivelazioni"
+     ]
+    },
+    "II_distribuzione": {
+     "atto": 2,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi",
+      "rivelazioni"
+     ]
+    },
+    "III_revisione": {
+     "atto": 3,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi",
+      "rivelazioni"
+     ]
+    },
+    "III_collasso": {
+     "atto": 3,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi",
+      "rivelazioni"
+     ]
+    },
+    "III_archivio": {
+     "atto": 3,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi",
+      "rivelazioni"
+     ]
+    },
+    "III_politica": {
+     "atto": 3,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi",
+      "rivelazioni"
+     ]
+    },
+    "III_climax": {
+     "atto": 3,
+     "aspetti": [
+      "decisioniConseguenze",
+      "archi",
+      "rivelazioni"
+     ]
+    }
+   },
+   "fonte": [
+    {
+     "id": "IMP-ICARO-STRUTTURA"
+    }
+   ],
+   "classe": "proposta",
+   "limite": null
+  },
+  "funzioniScena": {
+   "v": [
+    "ambiente e sistema",
+    "PNG con una battuta-gancio",
+    "dati o tiro che decide che cosa emerge",
+    "scelta con costo"
+   ],
+   "fonte": [
+    {
+     "id": "ICA-CP-015",
+     "cita": "La struttura carceraria si sviluppa in verticale"
+    },
+    {
+     "id": "ICA-CP-022",
+     "cita": "Scelta"
+    }
+   ],
+   "classe": "deducibile",
+   "limite": null
+  }
+ },
+ "collegamentiRiservati": [
+  {
+   "v": "Le fonti di Icaro nominano il programma Ich, Gaia Epos e i dati di Thomas Epos: livello meta fra campagne.",
+   "fonte": [
+    {
+     "id": "ICA-CP-014"
+    },
+    {
+     "id": "ICA-CP-022"
+    }
+   ],
+   "classe": "canonico_riservato",
+   "limite": "Mai trasferiti, mai spiegati."
+  }
+ ],
+ "incompleti": [
+  {
+   "v": null,
+   "fonte": [],
+   "classe": "incompleto",
+   "limite": "Finale della campagna originale."
+  },
+  {
+   "v": null,
+   "fonte": [
+    {
+     "id": "ICA-CP-023",
+     "cita": "Lascia libertà alla giocatrice nel rispondere a Marek"
+    }
+   ],
+   "classe": "incompleto",
+   "limite": "Esito della fuga dal pianeta ipotizzata da un PNG."
+  }
+ ]
+}

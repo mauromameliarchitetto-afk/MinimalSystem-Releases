@@ -1,0 +1,110 @@
+{
+  "formato": "rm-solo-voce/1",
+  "id": "icaro_voice_v1",
+  "storia": "icaro",
+  "campaign_id": "icaro-otto-minuti",
+  "versione": "0.5.0",
+  "content_status": "proposed",
+  "source_note": "Role_Makers_Voci_Narratore_Analisi_Giocate_V1.md (pacchetto V5): proposta da approvare",
+  "narrative_voice": {
+    "id": "icaro_voice_v1",
+    "tone": [
+      "cinematic_cyberpunk",
+      "physical",
+      "moral_without_moralism"
+    ],
+    "lexicon": [
+      "ghiaccio",
+      "neon",
+      "condensa",
+      "cromo",
+      "sangue",
+      "circuito",
+      "respiro",
+      "credito",
+      "contratto",
+      "peso",
+      "rumore",
+      "luce"
+    ],
+    "dialogue_mode": "dry_personal_ironic_debt_subtext",
+    "act_modifiers": {
+      "1": "survival_and_market",
+      "2": "responsibility_and_replication",
+      "3": "living_beyond_function"
+    },
+    "forbidden": [
+      "omniscient_spoiler",
+      "npc_unknown_fact",
+      "protagonist_thoughts",
+      "theme_lecture",
+      "historical_hero_solution",
+      "free_or_omnipotent_tech",
+      "painless_violence"
+    ],
+    "eroi_storici": [
+      "Lexa",
+      "Scilla",
+      "Dahlia",
+      "Chroma",
+      "Rabbit"
+    ],
+    "tecnologia_con_costo": {
+      "tecnologia": [
+        "protesi",
+        "impianto",
+        "interfaccia",
+        "emettitore",
+        "nodo",
+        "relè",
+        "rele",
+        "deviatore",
+        "trasmettitore",
+        "tuta",
+        "cella",
+        "capsula",
+        "neurale"
+      ],
+      "costo": [
+        "cost",
+        "prezzo",
+        "credit",
+        "debito",
+        "consum",
+        "bruci",
+        "surriscald",
+        "sovraccaric",
+        "dolore",
+        "trem",
+        "latenz",
+        "peso",
+        "riserva",
+        "minuti",
+        "secondi",
+        "scarica",
+        "dipend",
+        "contratto",
+        "paga",
+        "ferit",
+        "al freddo"
+      ]
+    },
+    "pov": "second_perceptive",
+    "pov_ammessi": [
+      "second_perceptive",
+      "third_limited"
+    ],
+    "nota_pov": "La scheda ammette terza persona limitata o seconda persona percettiva \"secondo l'impostazione dell'interfaccia\": oggi l'interfaccia e i testi di riserva usano la seconda persona.",
+    "scene_pattern": [
+      "consequence",
+      "world_detail",
+      "npc_reaction",
+      "action_opening"
+    ]
+  },
+  "guida": {
+    "esempio": "Il riscaldatore H-17 riparte per otto secondi. La condensa si scioglie sul tubo sopra la testa di Mara e cade sulla fasciatura del bambino. Il monitor segna ancora trentadue gradi corporei. Troppo pochi. [...] Dal corridoio arrivano passi regolari. La pattuglia ha già trovato la derivazione."
+  },
+  "voce_autore": "voce_autore_v1",
+  "timbro": "icaro-contesto.json#timbro"
+}

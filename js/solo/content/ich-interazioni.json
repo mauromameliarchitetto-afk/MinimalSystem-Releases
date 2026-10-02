@@ -1,0 +1,3447 @@
+{
+  "formato": "rm-solo-scene/2",
+  "campaign_id": "ich-filo-senza-padrone",
+  "stato": "proposta da approvare",
+  "content_status": "proposed",
+  "nota": "Scene a fasi (arrivo, esplorazione, sviluppo, risoluzione) dopo il prompt di correzione del ritmo. Solo linguaggio del mondo: nessuna parola del lessico riservato. Proposta da approvare.",
+  "regole": {
+    "nota_ritmo": "Nessun minimo globale: la risoluzione dipende solo dai beat richiesti, scelti perché il percorso minimo rispetti la fascia della scena.",
+    "fasi": [
+      "arrival",
+      "exploration",
+      "development",
+      "resolution"
+    ],
+    "fasce": {
+      "compact": [
+        6,
+        10
+      ],
+      "standard": [
+        10,
+        18
+      ],
+      "decisive": [
+        16,
+        30
+      ]
+    },
+    "riserva_libera": "Ti prendi il tempo di guardare meglio. Il luogo non cambia per te, ma adesso ne conosci i rumori, le distanze e chi evita il tuo sguardo.",
+    "stallo": [
+      "Un corvo si posa vicino e ti fissa. Quando si alza in volo, qualcuno dice che è un presagio, e nessuno ride.",
+      "Il vento cambia, e con lui l'odore del bosco. Qualcuno smette di parlare a metà frase, come se avesse sentito il proprio nome.",
+      "Una candela si spegne da sola. Nella stanza fa più freddo di un momento fa.",
+      "Da lontano arriva un canto interrotto. Chi è con te si volta, poi torna a guardarti, in attesa."
+    ]
+  },
+  "scene": {
+    "H01": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "H01x1",
+          "testo": "Guardare le tavolate della sala",
+          "riserva": "Le panche sono lunghe e consumate, i piatti di legno passano di mano in mano. Si mangia in fretta e si parla piano. Il pane lo spezza sempre la persona più anziana del tavolo.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Le panche sono lunghe e consumate, i piatti di legno passano di mano in mano."
+            }
+          ]
+        },
+        {
+          "id": "H01x2",
+          "testo": "Osservare il posto vuoto",
+          "riserva": "A un tavolo vicino al fuoco c'è una scodella pulita davanti a una panca libera. Nessuno ci si siede. Chi passa accanto rallenta appena, come si fa davanti a una tomba.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "A un tavolo vicino al fuoco c'è una scodella pulita davanti a una panca libera.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H01x3",
+          "testo": "Ascoltare il canto della sera",
+          "riserva": "Qualcuno comincia un canto e gli altri lo seguono, senza bisogno di accordarsi. È un canto sul bosco e sulla strada di casa. A metà una voce si interrompe, e il canto va avanti senza di lei.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "A metà del canto una voce si interrompe e il canto continua senza di lei."
+            }
+          ]
+        },
+        {
+          "id": "H01x4",
+          "testo": "Esaminare le travi incise",
+          "riserva": "Sulle travi della sala sono incisi nomi e segni di famiglia. Alcuni solchi sono stati riempiti di cera, come per nasconderli senza cancellarli.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto i nomi coperti di cera"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "halvek",
+          "apertura": "Halvek, l'Hersir, ti fa cenno di sedere al suo tavolo. «A Hrafnvik si mangia prima di parlare. Poi si parla, se c'è qualcosa da dire.»",
+          "argomenti": [
+            {
+              "id": "H01_halvek_1",
+              "testo": "Chiedere che cosa serve alla Stad",
+              "riserva": "«Braccia, legna, e gente che non abbia paura del bosco.» Halvek spezza il pane. «Soprattutto l'ultima cosa. Quella non si trova facilmente.»"
+            },
+            {
+              "id": "H01_halvek_2",
+              "testo": "Chiedere del posto vuoto",
+              "riserva": "Halvek segue il tuo sguardo e poi torna al pane. «Un'abitudine di qualcuno. Qui rispettiamo le abitudini.» Non dice di chi.",
+              "effetti": [
+                {
+                  "nota": "Halvek: «Un'abitudine di qualcuno. Qui rispettiamo le abitudini.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H01_halvek_3",
+              "testo": "Chiedere del Sentiero Bianco",
+              "riserva": "«È un sentiero dove non si va.» La voce dell'Hersir si fa dura. «Presto non ci andrà più nessuno, te lo prometto.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "halvek",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Halvek si alza e batte la mano sul tavolo, due volte: è il segnale che il pasto è finito."
+        },
+        {
+          "png": "ragn",
+          "apertura": "Ragn, la Vǫluspá, non mangia. Ti guarda come si guarda qualcuno che si è già visto in sogno. «Sei arrivato. Bene. Siediti vicino, se non hai paura dei sogni degli altri.»",
+          "argomenti": [
+            {
+              "id": "H01_ragn_1",
+              "testo": "Chiedere che cosa sogna",
+              "riserva": "«Strade che non ho mai percorso. Volti che non conosco.» Ragn sorride appena. «A volte mi sveglio con il nome di qualcuno in bocca, e non so di chi sia.»"
+            },
+            {
+              "id": "H01_ragn_2",
+              "testo": "Chiedere dei presagi di questi giorni",
+              "riserva": "«Il cielo è stanco. Gli uccelli volano bassi.» Si stringe nel mantello. «Qualcosa sta per cambiare, e non so ancora se in meglio.»",
+              "effetti": [
+                {
+                  "nota": "Ragn Varhena: «Il cielo è stanco. Gli uccelli volano bassi.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H01_ragn_3",
+              "testo": "Chiedere perché ti guarda così",
+              "riserva": "«Perché ti ho sognato, forse. O forse ho sognato qualcuno che ti somiglia.» Ride piano. «I sogni non danno ricevute.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "ragn",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Ragn torna a fissare il fuoco. «Se ti servono i presagi, sai dove trovarmi.»"
+        },
+        {
+          "png": "elska",
+          "apertura": "Elska Aesk siede in disparte, con una matassa di fili fra le dita. «Tu non hai paura dei posti freddi. Si vede da come stai seduto.»",
+          "argomenti": [
+            {
+              "id": "H01_elska_1",
+              "testo": "Chiedere dei suoi fili",
+              "riserva": "«Servono a tenere fermo ciò che si scioglie.» Elska annoda un filo senza guardarlo. «Non chiedermi che cosa. Lo vedrai, se resti.»"
+            },
+            {
+              "id": "H01_elska_2",
+              "testo": "Chiedere che cosa fa una Bannsith",
+              "riserva": "«Accompagno quello che resta quando qualcuno se ne va.» Alza gli occhi. «Non tutti i morti restano. Quelli che restano hanno bisogno di qualcuno.»",
+              "effetti": [
+                {
+                  "nota": "Elska Aesk: «Accompagno quello che resta quando qualcuno se ne va.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H01_elska_3",
+              "testo": "Chiedere se la Stad la teme",
+              "riserva": "«Mi rispettano quando serve e mi evitano il resto del tempo.» Scrolla le spalle. «È giusto così.»",
+              "effetti": [
+                {
+                  "voce": {
+                    "id": "ich_voce_elska",
+                    "testo": "La Stad evita Elska, tranne quando serve."
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Elska torna ai suoi fili. «Ci rivedremo in qualche casa fredda.»"
+        },
+        {
+          "png": "eiran",
+          "apertura": "Eiran Tred ha ancora foglie fra i capelli. «Tu vieni da fuori. Io vengo da dentro il bosco. Siamo due stranieri, qui.»",
+          "argomenti": [
+            {
+              "id": "H01_eiran_1",
+              "testo": "Chiedere del Kynwird",
+              "riserva": "«È un bosco vecchio. Più vecchio della Stad, più vecchio di tutti.» Eiran sorride. «Se lo rispetti, ti porta dove devi andare. Non sempre dove vuoi.»"
+            },
+            {
+              "id": "H01_eiran_2",
+              "testo": "Chiedere che cosa fa una guida",
+              "riserva": "«Porto la gente fra i sentieri e la riporto indietro.» Una pausa. «Quasi sempre.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "eiran",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "H01_eiran_3",
+              "testo": "Chiedere del Sentiero Bianco",
+              "riserva": "Eiran smette di sorridere. «Lì non porto nessuno. Lì il bosco non risponde.»"
+            }
+          ],
+          "chiusura": "Eiran si alza. «Se vuoi vedere il bosco, cercami all'alba.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "A metà del canto una donna si alza e apparecchia il posto vuoto: una scodella, un cucchiaio, un pezzo di pane. Nessuno la ferma. Quando torna a sedere, il canto riprende più basso.",
+        "esplora": [
+          {
+            "id": "H01d1",
+            "testo": "Guardare la donna che ha apparecchiato",
+            "riserva": "È Mjol, dice qualcuno a bassa voce: lo fa ogni sera. Nessuno sa per chi. Lui lo sa, e non lo dice a nessuno che non glielo chieda.",
+            "effetti": [
+              {
+                "nota": "Mjol apparecchia ogni sera il posto vuoto.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H01x2",
+          "H01_halvek_2",
+          "H01_ragn_2"
+        ],
+        "risoluzione": [
+          "H01d1",
+          "H01_elska_2"
+        ]
+      },
+      "required_beats": [
+        "H01x2",
+        "H01_halvek_2",
+        "H01_ragn_2",
+        "H01d1",
+        "H01_elska_2"
+      ],
+      "optional_beats": [
+        "H01x4",
+        "H01_halvek_3",
+        "H01_ragn_3",
+        "H01_elska_3",
+        "H01_eiran_2"
+      ],
+      "riserva_libera": "Resti a guardare la sala. Il fuoco scoppietta, le voci si abbassano e si rialzano, e tu cominci a riconoscere i volti.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "H02": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "H02x1",
+          "testo": "Guardare la tavola apparecchiata per due",
+          "riserva": "Due scodelle, due cucchiai, due tazze. Una è consumata dall'uso; l'altra è pulita, lucida, come se venisse lavata ogni giorno senza essere mai usata.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Due scodelle, due cucchiai, due tazze.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H02x2",
+          "testo": "Esaminare gli oggetti del fratello",
+          "riserva": "Sopra la cassapanca ci sono un coltello da intaglio, un paio di guanti rammendati, una collana di denti di lupo. Nessuno di questi oggetti è impolverato.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto gli oggetti del fratello"
+            }
+          ]
+        },
+        {
+          "id": "H02x3",
+          "testo": "Guardare le misure incise sullo stipite",
+          "riserva": "Sullo stipite della porta ci sono tacche di altezza, due serie diverse, con nomi incisi accanto. Uno dei due nomi è stato raschiato, ma il segno della lama è rimasto.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Sullo stipite della porta ci sono tacche di altezza, due serie diverse, con nomi incisi accanto.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H02x4",
+          "testo": "Ascoltare i rumori della casa",
+          "riserva": "La casa scricchiola come tutte le case di legno. Ogni tanto Mjol volta la testa verso la porta, come se aspettasse qualcuno che bussa.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Mjol si volta verso la porta come se aspettasse qualcuno.",
+              "categoria": "indizio"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "mjol",
+          "apertura": "Mjol ti versa qualcosa di caldo e siede di fronte a te. «Tu mi credi? Dimmelo subito, così non perdo tempo.»",
+          "argomenti": [
+            {
+              "id": "H02_mjol_1",
+              "testo": "Chiedere del fratello",
+              "riserva": "«Si chiama Arn. È più alto di me, ride forte, intaglia il legno meglio di chiunque.» Mjol stringe la tazza. «Parlo al presente. Perché è così.»",
+              "effetti": [
+                {
+                  "nota": "Mjol: «Si chiama Arn. È più alto di me, ride forte, intaglia il legno meglio di chiunque.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H02_mjol_2",
+              "testo": "Chiedere che cosa è successo",
+              "riserva": "«È andato nel bosco. È tornato. Ha dormito qui, quella notte.» La voce gli si spezza. «La mattina dopo nessuno sapeva più chi fosse. Solo io.»",
+              "effetti": [
+                {
+                  "nota": "Mjol: «È andato nel bosco. È tornato. Ha dormito qui, quella notte.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H02_mjol_3",
+              "testo": "Chiedere dove è andato nel bosco",
+              "riserva": "«Verso il Sentiero Bianco. Diceva che aveva visto qualcosa laggiù.» Mjol guarda la porta. «Io non l'ho fermato.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "mjol",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Mjol ripone la tazza del fratello al suo posto, con cura. «Se scopri qualcosa, dimmelo. Anche se è brutto.»"
+        },
+        {
+          "png": "halvek",
+          "apertura": "Halvek è sulla soglia, a braccia conserte. «Sono venuto a vedere come sta Mjol. Ogni settimana, come ho promesso.»",
+          "argomenti": [
+            {
+              "id": "H02_halvek_1",
+              "testo": "Chiedere se ricorda il fratello di Mjol",
+              "riserva": "Halvek tace a lungo. «No», dice alla fine. «Ma Mjol non è un bugiardo. È questo che mi tiene sveglio.»",
+              "effetti": [
+                {
+                  "nota": "Halvek non ricorda il fratello di Mjol, ma non lo crede un bugiardo.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H02_halvek_2",
+              "testo": "Chiedere perché visita Mjol",
+              "riserva": "«Perché è uno dei miei. E perché qualcuno deve assicurarsi che non vada nel bosco da solo a cercare.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "halvek",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "H02_halvek_3",
+              "testo": "Chiedere del rito",
+              "riserva": "«Chiuderemo il Sentiero. Presto.» Halvek abbassa la voce. «Così nessuno tornerà più come Mjol dice che è tornato suo fratello.»"
+            }
+          ],
+          "chiusura": "Halvek si stacca dallo stipite. «Mangia qualcosa, Mjol. Te lo chiedo come Hersir.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Mjol si alza di scatto: dalla finestra si vede un'ombra passare lungo il sentiero verso il bosco. Quando esci a guardare, non c'è nessuno. Ma nella neve ci sono impronte della stessa misura degli stivali appesi alla porta.",
+        "esplora": [
+          {
+            "id": "H02d1",
+            "testo": "Seguire le impronte fino al limite dell'orto",
+            "riserva": "Le impronte si fermano al limite dell'orto, dove comincia il sentiero per il bosco. Poi niente, come se chi camminava avesse smesso di esistere a metà passo.",
+            "effetti": [
+              {
+                "nota": "Impronte della misura del fratello di Mjol finiscono al limite del bosco.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H02x1",
+          "H02x3",
+          "H02_mjol_1",
+          "H02x4",
+          "H02_halvek_1"
+        ],
+        "risoluzione": [
+          "H02d1",
+          "H02_mjol_2"
+        ]
+      },
+      "required_beats": [
+        "H02x1",
+        "H02x3",
+        "H02_mjol_1",
+        "H02x4",
+        "H02_halvek_1",
+        "H02d1",
+        "H02_mjol_2"
+      ],
+      "optional_beats": [
+        "H02x2",
+        "H02_mjol_3",
+        "H02_halvek_2"
+      ],
+      "riserva_libera": "Resti un momento nella casa di Mjol. Tutto è in ordine, tutto è pronto, come per un ritorno.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "H03": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "H03x1",
+          "testo": "Guardare la ragazza senza ombra",
+          "riserva": "Liva sta in piedi nell'angolo, le mani intrecciate. La luce della finestra la attraversa senza fermarsi. Quando ti muovi, i suoi occhi ti seguono un momento dopo.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Liva sta in piedi nell'angolo, le mani intrecciate.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H03x2",
+          "testo": "Toccare le pareti fredde",
+          "riserva": "Le pareti sono fredde come pietra d'inverno, anche dove batte il sole. Sotto le dita senti una leggera vibrazione, come di qualcuno che canta dall'altra parte.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le pareti sono fredde come pietra d'inverno, anche dove batte il sole.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H03x3",
+          "testo": "Esaminare gli oggetti lasciati nella casa",
+          "riserva": "Una culla vuota, un telaio con un lavoro a metà, una lettera piegata senza destinatario. Sono oggetti di vite diverse, messi insieme come in un ripostiglio.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Nella casa fredda ci sono oggetti di vite diverse, messi insieme.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H03x4",
+          "testo": "Ascoltare il silenzio della casa",
+          "riserva": "Il silenzio non è completo. Ogni tanto si sente un respiro che non è il tuo, e un passo leggero che non lascia impronte nella polvere.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai ascoltato il silenzio della casa"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "liva",
+          "apertura": "Liva inclina la testa. «Tu mi vedi. E non scappi. Sei il primo da tanto tempo.»",
+          "argomenti": [
+            {
+              "id": "H03_liva_1",
+              "testo": "Chiedere chi è",
+              "riserva": "«Liva. Credo.» Sorride, incerta. «A volte ricordo un altro nome, ma poi mi scivola via come acqua.»",
+              "effetti": [
+                {
+                  "nota": "Liva: «Liva. Credo.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H03_liva_2",
+              "testo": "Chiedere come conosce il tuo nome",
+              "riserva": "«L'ho sentito. Da qualche parte. Forse in un sogno che non era mio.» Si stringe nelle spalle. «Qui le cose arrivano così.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "liva",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "H03_liva_3",
+              "testo": "Chiedere che cosa ricorda",
+              "riserva": "«Un fiume. Una casa con il tetto rosso. Una mano che mi tiene.» Si guarda le dita trasparenti. «Non so se sono ricordi miei.»",
+              "effetti": [
+                {
+                  "nota": "Liva: «Un fiume. Una casa con il tetto rosso. Una mano che mi tiene.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Liva torna nel suo angolo. «Resta ancora un po'. Quando c'è qualcuno, ricordo meglio.»"
+        },
+        {
+          "png": "elska",
+          "apertura": "Elska entra dietro di te, i fili già in mano. «Non avvicinarti troppo. Non perché è pericolosa. Perché è fragile.»",
+          "argomenti": [
+            {
+              "id": "H03_elska_1",
+              "testo": "Chiedere che cosa è Liva",
+              "riserva": "«Uno spettro. Ma non come gli altri.» Elska la osserva a lungo. «Gli altri ripetono. Lei ricorda. Non dovrebbe.»",
+              "effetti": [
+                {
+                  "nota": "Elska: gli spettri ripetono, Liva ricorda.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H03_elska_2",
+              "testo": "Chiedere che cosa farà con i fili",
+              "riserva": "«Se si sfalda, la tengo insieme. Se diventa pericolosa, la congedo.» Elska stringe i fili. «Spero di non dover scegliere.»"
+            },
+            {
+              "id": "H03_elska_3",
+              "testo": "Chiedere perché la casa va demolita",
+              "riserva": "«Halvek dice che è per il freddo.» Elska guarda Liva. «Io penso che sia per non doverla vedere.»",
+              "effetti": [
+                {
+                  "voce": {
+                    "id": "ich_voce_demolizione",
+                    "testo": "La casa di Liva sarà demolita per non doverla vedere."
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Elska resta sulla soglia. «Parlale con gentilezza. È l'unica cosa che la tiene qui.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Liva comincia a sbiadire ai bordi, come un disegno bagnato. Elska tende subito un filo. «Si sta sciogliendo», dice. «Parla con lei adesso, o non ci sarà più niente con cui parlare.»",
+        "esplora": [
+          {
+            "id": "H03d1",
+            "testo": "Chiamare Liva per nome",
+            "riserva": "Pronunci il suo nome, piano. I bordi di Liva tornano nitidi, per un momento. Ti guarda come si guarda qualcuno che ti ha tirato fuori dall'acqua.",
+            "effetti": [
+              {
+                "nota": "Chiamare Liva per nome la rende più nitida.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H03x1",
+          "H03x2",
+          "H03_liva_1",
+          "H03x3",
+          "H03_elska_1"
+        ],
+        "risoluzione": [
+          "H03d1",
+          "H03_liva_3"
+        ]
+      },
+      "required_beats": [
+        "H03x1",
+        "H03x2",
+        "H03_liva_1",
+        "H03x3",
+        "H03_elska_1",
+        "H03d1",
+        "H03_liva_3"
+      ],
+      "optional_beats": [
+        "H03x4",
+        "H03_liva_2",
+        "H03_elska_3"
+      ],
+      "riserva_libera": "Resti nella casa fredda. Il tuo respiro fa nuvole piccole; quello di Liva no.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "H04": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "H04x1",
+          "testo": "Guardare gli alberi bianchi",
+          "riserva": "Gli alberi del Sentiero sono pallidi dalla corteccia alle foglie, come se il colore fosse stato lavato via. Non hanno nodi, né cicatrici di rami caduti: sembrano appena cresciuti, e insieme vecchissimi.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Gli alberi del Sentiero sono pallidi dalla corteccia alle foglie, come se il colore fosse stato lavato via.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H04x2",
+          "testo": "Ascoltare il silenzio del Sentiero",
+          "riserva": "Al margine i suoni si spengono uno alla volta: prima gli uccelli, poi il vento, poi i tuoi passi. Quando parli, la voce ti arriva un po' più tardi, come da lontano.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Nel fango ci sono impronte che entrano nel bianco e non escono."
+            }
+          ]
+        },
+        {
+          "id": "H04x3",
+          "testo": "Seguire le tracce sul margine",
+          "riserva": "Nel fango ci sono impronte di stivali che entrano nel bianco. Nessuna impronta ne esce, eppure qualcuno che è entrato è tornato: Mjol lo dice, e Mjol ne è sicuro.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Nel fango ci sono impronte di stivali che entrano nel bianco.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H04x4",
+          "testo": "Osservare ciò che si muove fra i tronchi",
+          "riserva": "Una forma bianca scivola fra gli alberi, bassa, a quattro zampe. Non fa rumore. Quando si ferma, i tronchi dietro di lei sembrano più nitidi.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto come si muove la forma bianca"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "eiran",
+          "apertura": "Eiran si ferma al limite, dove gli alberi cambiano colore. «Da qui in avanti il bosco non mi parla. È la prima volta che ci porto qualcuno.»",
+          "argomenti": [
+            {
+              "id": "H04_eiran_1",
+              "testo": "Chiedere che cosa sente Eiran",
+              "riserva": "«Niente. È questo che mi spaventa.» Eiran appoggia la mano sulla corteccia di un albero normale. «Qui, il bosco è vivo. Là, è solo una forma di bosco.»",
+              "effetti": [
+                {
+                  "nota": "Eiran Tred: «Niente. È questo che mi spaventa.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H04_eiran_2",
+              "testo": "Chiedere della forma bianca",
+              "riserva": "«Un lupo. O qualcosa che ha preso quella forma.» Eiran stringe il bastone. «Protegge il Sentiero, o forse lo pulisce.»",
+              "effetti": [
+                {
+                  "nota": "Eiran: il lupo protegge il Sentiero, o lo pulisce.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H04_eiran_3",
+              "testo": "Chiedere come si torna",
+              "riserva": "«Non lo so. Chi torna non ricorda la strada.» Una pausa. «Legati a qualcosa, prima di entrare. Un nome, un volto. Tienilo stretto.»",
+              "effetti": [
+                {
+                  "vantaggio": 1,
+                  "motivo": "Eiran ti ha detto di legarti a un nome"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Eiran ti tende la mano e poi la ritira. «Io ti aspetto qui. Non entrare troppo.»"
+        },
+        {
+          "png": "mjol",
+          "apertura": "Mjol ha portato il coltello da intaglio del fratello. «Se lo trovo, gli restituisco questo. Così si ricorda.»",
+          "argomenti": [
+            {
+              "id": "H04_mjol_1",
+              "testo": "Chiedere perché è venuto",
+              "riserva": "«Perché nessun altro sarebbe venuto a cercarlo.» Mjol guarda il bianco. «Se non vengo io, Arn non esiste più per nessuno.»",
+              "effetti": [
+                {
+                  "nota": "Mjol: «Perché nessun altro sarebbe venuto a cercarlo.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H04_mjol_2",
+              "testo": "Chiedere se ha paura",
+              "riserva": "«Sì.» Mjol ride, nervoso. «Ma ho più paura di tornare a casa e trovare due scodelle e un solo nome.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "mjol",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "H04_mjol_3",
+              "testo": "Chiedere di non entrare",
+              "riserva": "Mjol ci pensa. «Va bene. Ma solo se entri tu. E solo se torni.»"
+            }
+          ],
+          "chiusura": "Mjol stringe il coltello. «Io resto qui con Eiran. Torna.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Il silenzio si allarga oltre il margine: per un momento non senti più nemmeno il tuo respiro. Poi, fra gli alberi bianchi, la forma a quattro zampe si ferma e alza la testa verso di voi.",
+        "esplora": [
+          {
+            "id": "H04d1",
+            "testo": "Fissare il lupo bianco",
+            "riserva": "Ha occhi senza colore e un pelo che non si muove col vento. Non attacca. Guarda Mjol, poi te, come se contasse chi è di troppo.",
+            "effetti": [
+              {
+                "nota": "Il lupo bianco guarda chi è di troppo.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H04x1",
+          "H04x3",
+          "H04_eiran_1",
+          "H04_eiran_2"
+        ],
+        "risoluzione": [
+          "H04d1",
+          "H04_mjol_1"
+        ]
+      },
+      "required_beats": [
+        "H04x1",
+        "H04x3",
+        "H04_eiran_1",
+        "H04_eiran_2",
+        "H04d1",
+        "H04_mjol_1"
+      ],
+      "optional_beats": [
+        "H04x4",
+        "H04_eiran_3",
+        "H04_mjol_2"
+      ],
+      "riserva_libera": "Resti al limite del bianco. Il silenzio ti arriva addosso come neve, lento, senza peso.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio.",
+      "pressione": {
+        "nome": "Il lupo bianco si avvicina",
+        "max": 12,
+        "per_interazione": 1,
+        "testo_max": "La forma bianca esce dagli alberi e si ferma in mezzo al sentiero. Non ringhia. Ti sta aspettando.",
+        "conseguenza": "Il lupo bianco sbarra il sentiero: lo scontro comincia in svantaggio.",
+        "sostituto": {
+          "id": "H04p",
+          "testo": "Stringere il nome e andare avanti",
+          "riserva": "Il lupo bianco ti viene incontro. Stringi il nome di Mjol come ti ha detto Eiran e ti butti nel bianco, senza guardare indietro.",
+          "effetti": [
+            {
+              "nota": "Il lupo bianco ti viene incontro.",
+              "categoria": "cambiamento"
+            }
+          ]
+        }
+      }
+    },
+    "H05": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "H05x1",
+          "testo": "Guardare il cerchio del rito",
+          "riserva": "Pietre bianche disposte in cerchio, con rami di frassino intrecciati fra l'una e l'altra. Al centro c'è una ciotola di sale e cenere. Le famiglie stanno fuori dal cerchio, i bambini dietro le gambe dei genitori.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Pietre bianche disposte in cerchio, con rami di frassino intrecciati fra l'una e l'altra.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H05x2",
+          "testo": "Osservare Ragn che fissa il cielo",
+          "riserva": "Ragn tiene gli occhi al cielo, le labbra che si muovono senza suono. Quando una nuvola si sposta, lei trattiene il respiro.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Ragn tiene gli occhi al cielo, le labbra che si muovono senza suono.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H05x3",
+          "testo": "Guardare le mani di Elska sui fili",
+          "riserva": "Elska ha teso i suoi fili fra due alberi ai margini della radura. Vibrano appena, anche senza vento, come corde toccate da mani invisibili.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto i fili di Elska vibrare"
+            }
+          ]
+        },
+        {
+          "id": "H05x4",
+          "testo": "Guardare verso il bosco",
+          "riserva": "Oltre la radura il Kynwird è scuro e verde. Più lontano, fra i tronchi, c'è una linea pallida: il Sentiero Bianco, più vicino di quanto ricordassi.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Il Sentiero Bianco è più vicino alla radura di quanto ricordassi.",
+              "categoria": "indizio"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "halvek",
+          "apertura": "Halvek ha la voce rauca di chi ha parlato a lungo. «Il rito è pronto. Mi serve qualcuno che lo compia con me. Qualcuno di cui la Stad si fidi.»",
+          "argomenti": [
+            {
+              "id": "H05_halvek_1",
+              "testo": "Chiedere che cosa fa il rito",
+              "riserva": "«Chiude. Sigilla il Sentiero come si sigilla una porta.» Halvek guarda la ciotola. «Nessuno entrerà più. Nessuno tornerà senza ricordi.»",
+              "effetti": [
+                {
+                  "nota": "Halvek: «Chiude. Sigilla il Sentiero come si sigilla una porta.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H05_halvek_2",
+              "testo": "Chiedere che cosa succede a chi è già dentro",
+              "riserva": "Halvek non risponde subito. «Quello che è perso è perso.» Lo dice come una cosa che si è ripetuto molte volte.",
+              "effetti": [
+                {
+                  "nota": "Halvek: «Quello che è perso è perso.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H05_halvek_3",
+              "testo": "Chiedere chi ha deciso il rito",
+              "riserva": "«Le autorità della Stad. Io.» Halvek raddrizza le spalle. «Qualcuno deve decidere, e a Hrafnvik tocca all'Hersir.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "halvek",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Halvek ti posa una mano sulla spalla. «Pensaci. Ma pensa in fretta.»"
+        },
+        {
+          "png": "ragn",
+          "apertura": "Ragn non stacca gli occhi dal cielo. «Il rito chiuderà una porta. Ma io vedo la porta aprirsi da un'altra parte.»",
+          "argomenti": [
+            {
+              "id": "H05_ragn_1",
+              "testo": "Chiedere che cosa vede",
+              "riserva": "«Il cielo si piega. Non oggi. Presto.» Ragn chiude gli occhi. «Chiudere il Sentiero non fermerà quello che lo muove.»",
+              "effetti": [
+                {
+                  "nota": "Ragn Varhena: «Il cielo si piega. Non oggi. Presto.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H05_ragn_2",
+              "testo": "Chiedere se il rito è sbagliato",
+              "riserva": "«Non è sbagliato. È piccolo.» Ragn apre gli occhi. «Come mettere una mano davanti a una frana.»",
+              "effetti": [
+                {
+                  "nota": "Ragn: il rito è come una mano davanti a una frana.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H05_ragn_3",
+              "testo": "Chiedere che cosa farebbe lei",
+              "riserva": "«Seguirei i presagi fino in fondo. Anche se non mi piace dove portano.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "ragn",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Ragn torna al cielo. «Scegli. Io vedrò comunque quello che viene.»"
+        },
+        {
+          "png": "mjol",
+          "apertura": "Mjol ti tira per la manica, lontano dal cerchio. «Se chiudono il Sentiero, Arn resta dall'altra parte. Per sempre.»",
+          "argomenti": [
+            {
+              "id": "H05_mjol_1",
+              "testo": "Chiedere che cosa vuole fare",
+              "riserva": "«Entrare. Adesso, prima del rito.» Mjol ha gli occhi lucidi. «Con te, se vieni.»",
+              "effetti": [
+                {
+                  "nota": "Mjol: «Entrare. Adesso, prima del rito.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H05_mjol_2",
+              "testo": "Chiedere se è sicuro",
+              "riserva": "«No. Ma sono sicuro che se non ci provo non me lo perdonerò.»",
+              "effetti": [
+                {
+                  "nota": "Mjol: «No. Ma sono sicuro che se non ci provo non me lo perdonerò.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H05_mjol_3",
+              "testo": "Chiedere che cosa direbbe Halvek",
+              "riserva": "«Direbbe di no. Lo dice sempre.» Mjol guarda l'Hersir. «Ma Halvek non si ricorda di Arn. Io sì.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "mjol",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Mjol ti lascia la manica. «Decidi tu. Ma decidi.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Il cielo sopra la radura si oscura per un istante, come se una nuvola fosse passata troppo veloce. Ragn grida. Le pietre bianche del cerchio sembrano spostate di un palmo, tutte nella stessa direzione.",
+        "esplora": [
+          {
+            "id": "H05d1",
+            "testo": "Toccare le pietre spostate",
+            "riserva": "Sono fredde e sembrano più pesanti di prima. Sotto, l'erba è schiacciata in un modo che non ha niente a che fare con le mani di chi le ha posate.",
+            "effetti": [
+              {
+                "nota": "Le pietre del rito si sono spostate da sole.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H05x1",
+          "H05x2",
+          "H05_halvek_1",
+          "H05_ragn_1",
+          "H05_ragn_2",
+          "H05_mjol_2",
+          "H05x4"
+        ],
+        "risoluzione": [
+          "H05d1",
+          "H05_mjol_1",
+          "H05_halvek_2"
+        ]
+      },
+      "required_beats": [
+        "H05x1",
+        "H05x2",
+        "H05_halvek_1",
+        "H05_ragn_1",
+        "H05_ragn_2",
+        "H05_mjol_2",
+        "H05x4",
+        "H05d1",
+        "H05_mjol_1",
+        "H05_halvek_2"
+      ],
+      "optional_beats": [
+        "H05x3",
+        "H05_halvek_3",
+        "H05_ragn_3",
+        "H05_mjol_3"
+      ],
+      "riserva_libera": "Resti ai margini della radura. Le pietre bianche sembrano più chiare man mano che il sole cala.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "H06": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "H06x1",
+          "testo": "Leggere il foglio di Ragn",
+          "riserva": "La calligrafia di Ragn è fitta e inclinata. Il sogno è datato tre notti prima dell'evento: un pozzo che crolla, una donna che grida un nome, un bambino tirato su con una corda.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "La calligrafia di Ragn è fitta e inclinata.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H06x2",
+          "testo": "Guardare le pareti della torre",
+          "riserva": "Le pareti sono coperte di fogli appuntati: sogni scritti in fretta, con date e nomi. Alcuni sono cerchiati di rosso; accanto, Ragn ha scritto 'accaduto'.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le pareti sono coperte di fogli appuntati: sogni scritti in fretta, con date e nomi.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H06x3",
+          "testo": "Osservare gli strumenti dei presagi",
+          "riserva": "Ossa di uccello, una ciotola d'acqua scura, un disco di rame con segni incisi. Sono consumati dall'uso, e tenuti con cura.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Gli strumenti dei presagi sono consumati dall'uso e tenuti con cura."
+            }
+          ]
+        },
+        {
+          "id": "H06x4",
+          "testo": "Guardare fuori dalla finestra della torre",
+          "riserva": "Dalla torre si vede tutta Hrafnvik e il bosco intorno. Più lontano, verso nord, c'è una Stad di cui si vede solo il fumo: è lì che il pozzo è crollato.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto il fumo della Stad del pozzo"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "ragn",
+          "apertura": "Ragn tiene il foglio con due mani. «Guarda la data. E poi dimmi che è un caso.»",
+          "argomenti": [
+            {
+              "id": "H06_ragn_1",
+              "testo": "Chiedere come ha fatto a sognarlo",
+              "riserva": "«Non l'ho sognato io. L'ho vissuto, per una notte, dentro un'altra persona.» Ragn si tocca la tempia. «Sentivo la corda nelle mani. Sentivo il freddo del pozzo.»",
+              "effetti": [
+                {
+                  "nota": "Ragn Varhena: «Non l'ho sognato io. L'ho vissuto, per una notte, dentro un'altra persona.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H06_ragn_2",
+              "testo": "Chiedere se succede spesso",
+              "riserva": "«Sempre, da quando ero bambina.» Ragn indica le pareti. «Ma solo adesso ho cominciato a controllare. Ed è tutto vero. Tutto.»",
+              "effetti": [
+                {
+                  "nota": "Ragn Varhena: «Sempre, da quando ero bambina.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H06_ragn_3",
+              "testo": "Chiedere che cosa la spaventa",
+              "riserva": "«Che se i miei sogni sono vite di altri, forse anche la mia è il sogno di qualcuno.» Ride, piano. «Non dirlo a Halvek.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "ragn",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Ragn appunta il foglio al muro, accanto agli altri. «Aiutami a dimostrarlo. Così almeno non sarò pazza da sola.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Un corvo si posa sul davanzale con un pezzo di corda annodata nel becco: lo stesso nodo descritto nel sogno di Ragn. Lo lascia cadere sul tavolo e vola via verso nord.",
+        "esplora": [
+          {
+            "id": "H06d1",
+            "testo": "Esaminare la corda annodata",
+            "riserva": "È corda da pozzo, bagnata e consumata. Il nodo è quello dei pozzai di un'altra Stad. Qualcuno, lontano, l'ha tagliata in fretta.",
+            "effetti": [
+              {
+                "nota": "Una corda da pozzo di un'altra Stad è arrivata alla torre di Ragn.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H06d2",
+            "testo": "Confrontare il foglio con la corda",
+            "riserva": "Il nodo è quello descritto nel sogno, con la stessa torsione a sinistra. Ragn lo tocca e ritira la mano come se scottasse.",
+            "effetti": [
+              {
+                "nota": "Il nodo è quello descritto nel sogno, con la stessa torsione a sinistra.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H06d3",
+            "testo": "Chiedere a un corvo di tornare",
+            "riserva": "Il corvo torna sul davanzale e ti guarda con un occhio solo. Poi vola via di nuovo, verso nord, e questa volta lo segui con lo sguardo fino al fumo.",
+            "effetti": [
+              {
+                "nota": "Il corvo torna sul davanzale e ti guarda con un occhio solo.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H06d4",
+            "testo": "Guardare Ragn scrivere",
+            "riserva": "Ragn prende un foglio nuovo e scrive la data, poi si ferma. Per la prima volta ha paura di sognare ancora.",
+            "effetti": [
+              {
+                "nota": "Ragn prende un foglio nuovo e scrive la data, poi si ferma.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H06x1",
+          "H06x2",
+          "H06_ragn_1"
+        ],
+        "risoluzione": [
+          "H06d1",
+          "H06_ragn_2",
+          "H06d2",
+          "H06d3",
+          "H06d4"
+        ]
+      },
+      "required_beats": [
+        "H06x1",
+        "H06x2",
+        "H06_ragn_1",
+        "H06d1",
+        "H06_ragn_2",
+        "H06d2",
+        "H06d3",
+        "H06d4"
+      ],
+      "optional_beats": [
+        "H06x4",
+        "H06_ragn_3"
+      ],
+      "riserva_libera": "Resti nella torre, circondato da sogni scritti. Il vento fa frusciare i fogli, tutti insieme, come un respiro.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "H07": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "H07x1",
+          "testo": "Guardare la Liva che ricorda un marito",
+          "riserva": "Una delle Live ha le mani giunte come chi aspetta qualcuno al tramonto. Parla di un uomo con la barba rossa che torna dalla caccia. Sorride quando lo nomina.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Una delle Live ha le mani giunte come chi aspetta qualcuno al tramonto.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H07x2",
+          "testo": "Guardare la Liva che ricorda un figlio",
+          "riserva": "Un'altra Liva culla qualcosa che non c'è. Canta una ninnananna a bassa voce, sempre la stessa strofa, e si interrompe sempre allo stesso punto.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Un'altra Liva culla qualcosa che non c'è.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H07x3",
+          "testo": "Guardare la Liva che non ricorda nessuno",
+          "riserva": "La terza Liva sta in piedi, dritta, e ti guarda con attenzione. Non ha niente da raccontare, e sembra la più sveglia delle tre.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "La terza Liva sta in piedi, dritta, e ti guarda con attenzione.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H07x4",
+          "testo": "Osservare come si muovono insieme",
+          "riserva": "Quando una delle tre si muove, le altre due esitano un istante, come se sentissero lo stesso richiamo. Nessuna vuole stare vicina alle altre.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai capito come si muovono le tre Live"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "liva",
+          "apertura": "Le tre Live parlano insieme, poi si interrompono. Alla fine è la terza, quella senza ricordi, a farsi avanti. «Ti diranno tutte di essere me. Io non ti dico niente. Chiedi.»",
+          "argomenti": [
+            {
+              "id": "H07_liva_1",
+              "testo": "Chiedere quale sia la vera Liva",
+              "riserva": "«Forse tutte. Forse nessuna.» La terza Liva guarda le altre due. «Io so solo che quando loro ricordano, io sento il vuoto dove dovrebbero esserci i miei ricordi.»",
+              "effetti": [
+                {
+                  "nota": "Liva: «Forse tutte. Forse nessuna.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H07_liva_2",
+              "testo": "Chiedere che cosa vuole",
+              "riserva": "«Che qualcuno decida per noi. Oppure che nessuno lo faccia.» Esita. «Non so quale delle due mi fa più paura.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "liva",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "H07_liva_3",
+              "testo": "Chiedere del marito e del figlio",
+              "riserva": "«Non sono miei.» Poi, più piano: «O forse lo erano, prima che me li dimenticassi.»",
+              "effetti": [
+                {
+                  "nota": "La terza Liva: il marito e il figlio non sono suoi, forse."
+                }
+              ]
+            }
+          ],
+          "chiusura": "La terza Liva torna al suo posto. Le altre due riprendono a parlare, come se non si fossero mai fermate."
+        },
+        {
+          "png": "elska",
+          "apertura": "Elska ha i fili tesi tra le dita, pronti. «Tre. Non avevo mai visto uno spettro dividersi.»",
+          "argomenti": [
+            {
+              "id": "H07_elska_1",
+              "testo": "Chiedere che cosa significa",
+              "riserva": "«Che Liva sta ricordando troppo, e troppe cose diverse.» Elska stringe un nodo. «Come se attingesse a più pozzi.»"
+            },
+            {
+              "id": "H07_elska_2",
+              "testo": "Chiedere che cosa può fare",
+              "riserva": "«Posso tenerle ferme. Posso congedarne due. Posso provare a unirle.» Ti guarda. «Ognuna di queste cose è una scelta su chi sia Liva.»",
+              "effetti": [
+                {
+                  "nota": "Elska Aesk: «Posso tenerle ferme. Posso congedarne due. Posso provare a unirle.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H07_elska_3",
+              "testo": "Chiedere che cosa pensa lei",
+              "riserva": "«Penso che non sia compito mio decidere chi è una persona.» Elska abbassa gli occhi. «Ma è sempre stato il mio compito.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "elska",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Elska tende i fili fra le tre Live. «Quando sei pronto, parla. Le tengo ferme io.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Le tre Live cominciano a parlare insieme, sempre più forte, e il freddo della stanza si fa pungente. I fili di Elska si tendono fino a vibrare. «Non reggono a lungo, così», dice lei.",
+        "esplora": [
+          {
+            "id": "H07d1",
+            "testo": "Chiedere alle tre Live di parlare una alla volta",
+            "riserva": "Alzi la mano. Per un momento le tre voci tacciono; poi, una alla volta, cominciano a raccontare. Il freddo cala di poco.",
+            "effetti": [
+              {
+                "nota": "Le tre Live accettano di parlare una alla volta.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H07x1",
+          "H07x2",
+          "H07x3",
+          "H07_liva_1"
+        ],
+        "risoluzione": [
+          "H07d1",
+          "H07_elska_2"
+        ]
+      },
+      "required_beats": [
+        "H07x1",
+        "H07x2",
+        "H07x3",
+        "H07_liva_1",
+        "H07d1",
+        "H07_elska_2"
+      ],
+      "optional_beats": [
+        "H07x4",
+        "H07_liva_2",
+        "H07_liva_3",
+        "H07_elska_3"
+      ],
+      "riserva_libera": "Resti al centro della stanza fredda. Tre voci uguali raccontano tre vite diverse, e nessuna aspetta che le altre finiscano.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "H08": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "H08x1",
+          "testo": "Esaminare le tavolette",
+          "riserva": "Tavolette di un materiale liscio che non è pietra né legno. I simboli sono incisi in righe regolari, troppo regolari per una mano. Alcuni si ripetono spesso, come parole comuni.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Tavolette di un materiale liscio che non è pietra né legno.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H08x2",
+          "testo": "Guardare la bottega",
+          "riserva": "La bottega di Soren è ordinata: attrezzi appesi per misura, trucioli spazzati, un lavoro a metà sul banco. È la bottega di qualcuno che ha deciso di vivere qui, e ci è riuscito.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "La bottega di Soren è quella di qualcuno che ha deciso di vivere qui."
+            }
+          ]
+        },
+        {
+          "id": "H08x3",
+          "testo": "Osservare le mani di Soren",
+          "riserva": "Soren ha mani da artigiano, callose, con cicatrici di scalpello. Quando tocca le tavolette le tiene per i bordi, come se scottassero.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Soren ha mani da artigiano, callose, con cicatrici di scalpello.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H08x4",
+          "testo": "Guardare gli oggetti nascosti sotto il banco",
+          "riserva": "Sotto il banco, dentro una cassetta, ci sono altri frammenti dello stesso materiale e un pezzo di stoffa di un tessuto che a Hrafnvik non si tesse.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai trovato i frammenti sotto il banco"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "soren",
+          "apertura": "Soren chiude la porta della bottega prima di parlare. «Non le ho mostrate a nessuno. Tu sei il primo. Non so perché mi fido.»",
+          "argomenti": [
+            {
+              "id": "H08_soren_1",
+              "testo": "Chiedere dove le ha trovate",
+              "riserva": "«Nel bosco. Vicino al posto dove mi hanno trovato, tanti anni fa.» Soren guarda le tavolette. «Io non ricordo niente di prima. Solo di essermi svegliato fra le foglie.»",
+              "effetti": [
+                {
+                  "nota": "Soren Vahl: «Nel bosco. Vicino al posto dove mi hanno trovato, tanti anni fa.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H08_soren_2",
+              "testo": "Chiedere che cosa teme",
+              "riserva": "«Che dicano chi ero.» Soren si passa una mano sul viso. «E che chi ero non mi piaccia. Qui ho una vita. Una bottega. Degli amici.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "soren",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "H08_soren_3",
+              "testo": "Chiedere se ne ha capito qualcosa",
+              "riserva": "«Solo un segno. Questo.» Indica un simbolo che si ripete. «Lo sogno, a volte. Quando lo sogno, mi sveglio piangendo, e non so perché.»",
+              "effetti": [
+                {
+                  "nota": "Soren Vahl: «Solo un segno. Questo.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Soren rimette le tavolette nella cassetta, ma non la chiude. «Leggile, se puoi. Poi decidiamo insieme che cosa farne.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Qualcuno bussa alla porta della bottega: un cliente, per un lavoro. Soren copre le tavolette con un telo e va ad aprire, e per un momento lo vedi com'è per tutti gli altri: un artigiano gentile, con le mani sporche di segatura.",
+        "esplora": [
+          {
+            "id": "H08d1",
+            "testo": "Guardare Soren con il cliente",
+            "riserva": "Soren scherza, promette il lavoro per la settimana dopo, accompagna il cliente alla porta. Poi si appoggia allo stipite e resta fermo a lungo, prima di tornare.",
+            "effetti": [
+              {
+                "nota": "Per la Stad Soren è un artigiano gentile, e basta.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H08d2",
+            "testo": "Leggere il simbolo che si ripete",
+            "riserva": "Il simbolo che si ripete è una spirale spezzata. Compare in ogni tavoletta, sempre nello stesso punto, come una firma.",
+            "effetti": [
+              {
+                "nota": "Il simbolo che si ripete è una spirale spezzata.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H08d3",
+            "testo": "Guardare Soren tornare al banco",
+            "riserva": "Soren torna al banco lentamente, come chi rientra in una stanza dove qualcuno piange. Si siede e non tocca le tavolette.",
+            "effetti": [
+              {
+                "nota": "Soren torna al banco lentamente, come chi rientra in una stanza dove qualcuno piange.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H08d4",
+            "testo": "Ascoltare la bottega",
+            "riserva": "Il fuoco della stufa, un chiodo che cade, il vento contro le imposte. Una bottega come tante. È questo che Soren ha paura di perdere.",
+            "effetti": [
+              {
+                "nota": "Il fuoco della stufa, un chiodo che cade, il vento contro le imposte.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H08x1",
+          "H08x3",
+          "H08_soren_1"
+        ],
+        "risoluzione": [
+          "H08d1",
+          "H08_soren_3",
+          "H08d2",
+          "H08d3",
+          "H08d4"
+        ]
+      },
+      "required_beats": [
+        "H08x1",
+        "H08x3",
+        "H08_soren_1",
+        "H08d1",
+        "H08_soren_3",
+        "H08d2",
+        "H08d3",
+        "H08d4"
+      ],
+      "optional_beats": [
+        "H08x4",
+        "H08_soren_2"
+      ],
+      "riserva_libera": "Resti nella bottega. Odore di resina e di legno tagliato; e, sotto, un odore diverso, freddo, che viene dalle tavolette.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "H09": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "H09x1",
+          "testo": "Toccare il suolo caldo",
+          "riserva": "Il terreno sotto il primo albero è tiepido, come la pelle di un animale addormentato. Se tieni la mano ferma, senti un battito lento, molto più lento del tuo.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Il terreno sotto il primo albero è tiepido, come la pelle di un animale addormentato.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H09x2",
+          "testo": "Guardare il primo albero",
+          "riserva": "Il primo albero è enorme, con radici che affiorano come dorsi di balena. La corteccia è coperta di segni lasciati dalle mani di chi è venuto prima di te.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Il primo albero è enorme, con radici che affiorano come dorsi di balena.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H09x3",
+          "testo": "Ascoltare il bosco",
+          "riserva": "Qui il bosco non è silenzioso come sul Sentiero. È pieno di fruscii, di richiami, di passi di piccoli animali. Quando parli, per un attimo, tutto tace per ascoltare.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "il bosco ha ascoltato la tua voce"
+            }
+          ]
+        },
+        {
+          "id": "H09x4",
+          "testo": "Osservare le offerte fra le radici",
+          "riserva": "Fra le radici ci sono offerte: nastri, perline, ciocche di capelli legate. Alcune sono vecchissime; una è fresca, legata con un nodo che riconosci come quello di Mjol.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Fra le radici c'è un'offerta legata con il nodo di Mjol."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "eiran",
+          "apertura": "Eiran si inginocchia fra le radici. «Qui il bosco ascolta davvero. Parla, se vuoi. Ma parla sincero, o non risponde.»",
+          "argomenti": [
+            {
+              "id": "H09_eiran_1",
+              "testo": "Chiedere che cosa è il Kyn",
+              "riserva": "«Il cuore del bosco. Dorme sotto il primo albero.» Eiran appoggia la fronte alla corteccia. «Non è un dio. È più vecchio degli dèi che conosciamo.»",
+              "effetti": [
+                {
+                  "nota": "Eiran Tred: «Il cuore del bosco. Dorme sotto il primo albero.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H09_eiran_2",
+              "testo": "Chiedere come risponde ai legami",
+              "riserva": "«Quando due persone si vogliono bene davvero, qui crescono fiori fuori stagione.» Indica un punto fiorito fra le radici. «Quelli sono di Mjol e di suo fratello.»",
+              "effetti": [
+                {
+                  "nota": "Eiran Tred: «Quando due persone si vogliono bene davvero, qui crescono fiori fuori stagione.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H09_eiran_3",
+              "testo": "Chiedere che cosa chiede il bosco",
+              "riserva": "«Niente. Il bosco non chiede. Il bosco nota.» Eiran sorride. «È diverso.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "eiran",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Eiran resta in ginocchio. «Tocca l'albero, se vuoi. Lui saprà chi sei.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Mentre parlate, fra le radici spunta un germoglio nuovo, verde chiaro, dove prima non c'era niente. Eiran si ferma con la bocca aperta. «Non è mai successo così in fretta», sussurra.",
+        "esplora": [
+          {
+            "id": "H09d1",
+            "testo": "Guardare il germoglio",
+            "riserva": "È piccolo, fragile, e cresce proprio accanto al punto dove hai appoggiato la mano. Il battito sotto il suolo sembra più vicino.",
+            "effetti": [
+              {
+                "nota": "Un germoglio è spuntato dove hai toccato il primo albero.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H09d2",
+            "testo": "Toccare il germoglio",
+            "riserva": "Il germoglio è tiepido e si piega verso le tue dita. Quando le ritrai, torna dritto, un poco più alto di prima.",
+            "effetti": [
+              {
+                "nota": "Il germoglio è tiepido e si piega verso le tue dita.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H09d3",
+            "testo": "Ascoltare il battito sotto il suolo",
+            "riserva": "Il battito si fa più vicino, poi più lento. Per un momento sembra che il bosco trattenga il fiato, come te.",
+            "effetti": [
+              {
+                "nota": "Il battito si fa più vicino, poi più lento.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H09d4",
+            "testo": "Guardare Eiran davanti al germoglio",
+            "riserva": "Eiran piange senza accorgersene. Dice che da bambino gli avevano raccontato che il bosco rispondeva, e che non ci aveva mai creduto del tutto.",
+            "effetti": [
+              {
+                "nota": "Eiran piange senza accorgersene.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H09x1",
+          "H09x2",
+          "H09_eiran_1"
+        ],
+        "risoluzione": [
+          "H09d1",
+          "H09_eiran_2",
+          "H09d2",
+          "H09d3",
+          "H09d4"
+        ]
+      },
+      "required_beats": [
+        "H09x1",
+        "H09x2",
+        "H09_eiran_1",
+        "H09d1",
+        "H09_eiran_2",
+        "H09d2",
+        "H09d3",
+        "H09d4"
+      ],
+      "optional_beats": [
+        "H09x3",
+        "H09_eiran_3"
+      ],
+      "riserva_libera": "Resti sotto il primo albero. Il battito sotto i piedi continua, lento, paziente.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "H10": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "H10x1",
+          "testo": "Guardare il residuo legato",
+          "riserva": "Nel mezzo del magazzino c'è una forma grigia, trattenuta da decine di fili. Pulsa piano, e ogni volta che pulsa l'aria si fa più fredda di un grado.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Nel mezzo del magazzino c'è una forma grigia, trattenuta da decine di fili.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H10x2",
+          "testo": "Esaminare i fili di Elska",
+          "riserva": "I fili sono tesi fino al limite. Alcuni si sono già sfilacciati. Elska li ha rinforzati con nodi nuovi, messi in fretta.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "I fili sono tesi fino al limite.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H10x3",
+          "testo": "Guardare le pareti del magazzino",
+          "riserva": "Sulle pareti il ghiaccio disegna forme strane: volti, mani, lettere. Si sciolgono e si riformano, sempre diversi.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Sulle pareti il ghiaccio disegna volti e lettere."
+            }
+          ]
+        },
+        {
+          "id": "H10x4",
+          "testo": "Osservare Liva vicino al residuo",
+          "riserva": "Liva sta vicino alla forma grigia, e sembra più nitida del solito. Quando il residuo pulsa, lei sussurra frammenti di parole che non sono sue.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto come Liva reagisce al residuo"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "elska",
+          "apertura": "Elska non ti guarda. Guarda il residuo. «Se si diffonde, nasceranno altri spettri. Tanti. E non tutti saranno come Liva.»",
+          "argomenti": [
+            {
+              "id": "H10_elska_1",
+              "testo": "Chiedere che cosa è il residuo",
+              "riserva": "«Qualcuno che non se n'è andato del tutto.» Elska stringe i fili. «Né spettro né morto. Una cosa a metà, che cerca un posto dove stare.»",
+              "effetti": [
+                {
+                  "nota": "Elska Aesk: «Qualcuno che non se n'è andato del tutto.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H10_elska_2",
+              "testo": "Chiedere perché è indecisa",
+              "riserva": "«Perché per la prima volta non so se sto salvando qualcuno o fermando qualcosa.» Elska ti guarda finalmente. «Prima era sempre chiaro.»",
+              "effetti": [
+                {
+                  "nota": "Elska non sa più se sta salvando o fermando.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H10_elska_3",
+              "testo": "Chiedere di condividere il peso",
+              "riserva": "Elska esita. «Nessuno ha mai chiesto di farlo.» Ti porge un capo del filo. «Tienilo. Solo per un momento. Senti quanto pesa.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "elska",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Elska riprende tutti i fili nelle sue mani. «Grazie. Adesso sai che cosa porto.»"
+        },
+        {
+          "png": "liva",
+          "apertura": "Liva si volta verso di te, gli occhi pieni di immagini che non sono sue. «Lo sento. Mi parla. Dice cose che non ho mai vissuto.»",
+          "argomenti": [
+            {
+              "id": "H10_liva_1",
+              "testo": "Chiedere che cosa dice",
+              "riserva": "«Un nome. Un viaggio. Una porta.» Liva scuote la testa. «Poi le parole si mescolano con le mie.»",
+              "effetti": [
+                {
+                  "nota": "Liva: «Un nome. Un viaggio. Una porta.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H10_liva_2",
+              "testo": "Chiedere se ha paura",
+              "riserva": "«Ho paura che se lo cancellano, cancellano anche un pezzo di me.» Liva si stringe le braccia. «Ho paura che se lo lasciano, diventi me.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "liva",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "H10_liva_3",
+              "testo": "Chiedere che cosa farebbe lei",
+              "riserva": "«Lo terrei. Anche se fa male.» Sorride appena. «Ma io sono uno spettro. Non chiedere consigli agli spettri.»"
+            }
+          ],
+          "chiusura": "Liva torna vicino al residuo, come si torna vicino al fuoco d'inverno."
+        }
+      ],
+      "sviluppo": {
+        "testo": "Un filo si sfilaccia e il residuo pulsa più forte. Sulle pareti il ghiaccio disegna per un istante un volto preciso, con gli occhi aperti. Liva lo riconosce e trattiene il fiato.",
+        "esplora": [
+          {
+            "id": "H10d1",
+            "testo": "Guardare il volto disegnato dal ghiaccio",
+            "riserva": "È il volto di un uomo giovane, con una cicatrice sul mento. Si scioglie prima che tu possa guardarlo bene. Liva dice che era qualcuno che conosceva, o che qualcuno conosceva attraverso di lei.",
+            "effetti": [
+              {
+                "nota": "Il residuo ha la forma di un uomo giovane che Liva riconosce.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H10x1",
+          "H10x2",
+          "H10_elska_1",
+          "H10_elska_2"
+        ],
+        "risoluzione": [
+          "H10d1",
+          "H10_liva_1"
+        ]
+      },
+      "required_beats": [
+        "H10x1",
+        "H10x2",
+        "H10_elska_1",
+        "H10_elska_2",
+        "H10d1",
+        "H10_liva_1"
+      ],
+      "optional_beats": [
+        "H10x4",
+        "H10_elska_3",
+        "H10_liva_2"
+      ],
+      "riserva_libera": "Resti nel magazzino gelato. I fili vibrano, il residuo pulsa, e il freddo ti arriva fino alle ossa.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio.",
+      "pressione": {
+        "nome": "Il residuo si allarga",
+        "max": 12,
+        "per_interazione": 1,
+        "testo_max": "Un filo si spezza con un suono secco. Il residuo si gonfia e il ghiaccio corre sulle pareti: bisogna decidere adesso.",
+        "conseguenza": "Il residuo si allarga: bisogna decidere adesso.",
+        "sostituto": {
+          "id": "H10p",
+          "testo": "Tenere il filo che si spezza",
+          "riserva": "Afferri il filo che si spezza mentre il residuo si gonfia. Elska ti guarda e, per un istante, senti anche tu il peso di quello che porta.",
+          "effetti": [
+            {
+              "nota": "Afferri il filo che si spezza mentre il residuo si gonfia.",
+              "categoria": "cambiamento"
+            }
+          ]
+        }
+      }
+    },
+    "H11": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "H11x1",
+          "testo": "Guardare la piega nel cielo",
+          "riserva": "Sopra la Stad il cielo si interrompe: una linea dritta, sottile, oltre la quale il blu è di un'altra sfumatura. Le nuvole la attraversano e ne escono un po' diverse.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Sopra la Stad il cielo si interrompe: una linea dritta, sottile, oltre la quale il blu è di un'altra sfumatura.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H11x2",
+          "testo": "Guardare la gente di Hrafnvik",
+          "riserva": "La gente guarda in alto, poi abbassa gli occhi e torna al lavoro. Nessuno ne parla. I bambini indicano la piega, e le madri abbassano loro le mani.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "La gente guarda in alto, poi abbassa gli occhi e torna al lavoro.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H11x3",
+          "testo": "Osservare gli uccelli",
+          "riserva": "Gli uccelli volano in cerchio sotto la piega, senza attraversarla. Quando uno ci si avvicina troppo, gli altri gridano tutti insieme.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Gli uccelli non attraversano la piega.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H11x4",
+          "testo": "Guardare le ombre sul colle",
+          "riserva": "Sul colle le ombre non sono dove dovrebbero: puntano tutte verso la piega, come se lì ci fosse un secondo sole.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto dove puntano le ombre"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "ragn",
+          "apertura": "Ragn è salita sul colle prima dell'alba. «L'ho vista in sogno cento volte. Vederla sveglia è peggio.»",
+          "argomenti": [
+            {
+              "id": "H11_ragn_1",
+              "testo": "Chiedere che cosa è la piega",
+              "riserva": "«Una cucitura.» Ragn socchiude gli occhi. «Come quando si rammenda una tela strappata. Solo che qui la tela siamo noi.»",
+              "effetti": [
+                {
+                  "nota": "Ragn Varhena: «Una cucitura.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H11_ragn_2",
+              "testo": "Chiedere dove porta",
+              "riserva": "«A un nodo. Un posto dove tutti i fili si incontrano.» Indica verso nord. «Lì, oltre il bosco.»",
+              "effetti": [
+                {
+                  "nota": "Ragn: la piega porta a un nodo oltre il bosco.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H11_ragn_3",
+              "testo": "Chiedere se verrà",
+              "riserva": "«Se mi porti con te, vengo.» Ragn ti guarda. «Ma sappi che io vedrò cose che non vorrò raccontare.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "ragn",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Ragn torna a guardare il cielo. «Scegli chi portare. Il nodo non aspetta.»"
+        },
+        {
+          "png": "soren",
+          "apertura": "Soren fissa la piega con un'espressione strana, quasi di riconoscimento. «Io l'ho già vista. Non so dove. Non so quando.»",
+          "argomenti": [
+            {
+              "id": "H11_soren_1",
+              "testo": "Chiedere che cosa ricorda",
+              "riserva": "«Una luce simile. Un posto freddo. E una voce che mi chiedeva di sbrigarmi.»",
+              "effetti": [
+                {
+                  "nota": "Soren Vahl: «Una luce simile. Un posto freddo. E una voce che mi chiedeva di sbrigarmi.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H11_soren_2",
+              "testo": "Chiedere se il simbolo delle tavolette c'entra",
+              "riserva": "Soren impallidisce. «Il simbolo è lo stesso che vedo sulla piega. Adesso lo vedo. Prima non lo vedevo.»",
+              "effetti": [
+                {
+                  "nota": "Soren Vahl: «Il simbolo è lo stesso che vedo sulla piega. Adesso lo vedo. Prima non lo vedevo.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H11_soren_3",
+              "testo": "Chiedere se verrà",
+              "riserva": "«Devo venire.» Soren stringe i pugni. «Qualunque cosa ci sia là, credo che mi stia aspettando.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "soren",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Soren resta a fissare il cielo, le labbra che si muovono piano."
+        },
+        {
+          "png": "eiran",
+          "apertura": "Eiran ha le mani sporche di terra. «Il bosco trema. Da ieri notte. Non l'avevo mai sentito tremare.»",
+          "argomenti": [
+            {
+              "id": "H11_eiran_1",
+              "testo": "Chiedere che cosa sente il bosco",
+              "riserva": "«Paura.» Eiran lo dice piano. «Il bosco non ha mai avuto paura. Adesso ne ha.»",
+              "effetti": [
+                {
+                  "nota": "Eiran Tred: «Paura.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H11_eiran_2",
+              "testo": "Chiedere del Kyn",
+              "riserva": "«Si agita nel sonno.» Eiran guarda verso il primo albero. «Credo che stia per svegliarsi. O che qualcuno lo stia svegliando.»",
+              "effetti": [
+                {
+                  "nota": "Eiran: il Kyn si agita nel sonno.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H11_eiran_3",
+              "testo": "Chiedere se verrà",
+              "riserva": "«Se mi porti via dal bosco adesso, non so se il bosco mi riconoscerà quando torno.» Esita. «Ma verrò, se serve.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "eiran",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Eiran si pulisce le mani. «Chiunque tu scelga, scegli qualcuno che sappia ascoltare.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Un tuono senza nuvole scuote il colle. Dalla piega scende, lentissima, una pioggia di luce che non bagna. Dove tocca terra, l'erba torna alta e verde come a inizio estate.",
+        "esplora": [
+          {
+            "id": "H11d1",
+            "testo": "Toccare l'erba tornata verde",
+            "riserva": "È fresca, nuova, perfetta. Anche troppo: nessuno stelo è piegato, nessuno è stato calpestato. Sembra l'erba di un altro anno.",
+            "effetti": [
+              {
+                "nota": "La luce dalla piega fa tornare l'erba com'era a inizio estate.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H11x1",
+          "H11x2",
+          "H11_ragn_1",
+          "H11_soren_2",
+          "H11_ragn_2",
+          "H11_soren_1",
+          "H11_eiran_2",
+          "H11x3"
+        ],
+        "risoluzione": [
+          "H11d1",
+          "H11_eiran_1"
+        ]
+      },
+      "required_beats": [
+        "H11x1",
+        "H11x2",
+        "H11_ragn_1",
+        "H11_soren_2",
+        "H11_ragn_2",
+        "H11_soren_1",
+        "H11_eiran_2",
+        "H11x3",
+        "H11d1",
+        "H11_eiran_1"
+      ],
+      "optional_beats": [
+        "H11x4",
+        "H11_ragn_3",
+        "H11_soren_3",
+        "H11_eiran_3"
+      ],
+      "riserva_libera": "Resti sul colle, con il vento che soffia verso la piega come acqua verso uno scarico.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "H12": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "H12x1",
+          "testo": "Guardare il nodo",
+          "riserva": "Il nodo è un luogo dove il bosco finisce senza finire: gli alberi si fanno trasparenti, il terreno diventa una superficie liscia e pallida. Fili di luce corrono in tutte le direzioni.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Il nodo è un luogo dove il bosco finisce senza finire: gli alberi si fanno trasparenti, il terreno diventa una superficie liscia e pallida.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H12x2",
+          "testo": "Ascoltare la voce senza corpo",
+          "riserva": "La voce piange piano, senza parole. Non è una voce di donna né di uomo. È una voce stanca, di qualcuno che non ha più la forza di chiedere aiuto.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "La voce piange piano, senza parole.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H12x3",
+          "testo": "Guardare Soren nel nodo",
+          "riserva": "Soren è immobile, gli occhi pieni di lacrime. Le sue mani si muovono da sole, disegnando nell'aria il simbolo delle tavolette.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto il simbolo delle tavolette nell'aria"
+            }
+          ]
+        },
+        {
+          "id": "H12x4",
+          "testo": "Toccare i fili di luce",
+          "riserva": "I fili sono tiepidi e vibrano sotto le dita. Ognuno porta un suono diverso: un canto, un pianto, una risata, il rumore della pioggia su un tetto di Hrafnvik.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Ogni filo di luce porta un suono di Hrafnvik.",
+              "categoria": "indizio"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "soren",
+          "apertura": "Soren si volta verso di te lentamente. «Io la conosco, questa voce. L'ho sempre conosciuta.»",
+          "argomenti": [
+            {
+              "id": "H12_soren_1",
+              "testo": "Chiedere chi sta piangendo",
+              "riserva": "«Qualcuno che ho promesso di aiutare.» Soren si stringe il petto. «L'ho dimenticato. Come ho potuto dimenticarlo?»",
+              "effetti": [
+                {
+                  "nota": "Soren Vahl: «Qualcuno che ho promesso di aiutare.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H12_soren_2",
+              "testo": "Chiedere che cosa ricorda ora",
+              "riserva": "«Una promessa. Un viaggio lungo. E poi la bottega, gli amici, il pane caldo.» Soren ride fra le lacrime. «Mi sono fatto una vita, e intanto qualcuno aspettava.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "soren",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "H12_soren_3",
+              "testo": "Chiedere che cosa vuole fare",
+              "riserva": "«Restare. Ascoltare. È tutto quello che posso fare adesso.» Ti guarda. «Ma la scelta non è solo mia.»",
+              "effetti": [
+                {
+                  "nota": "Soren Vahl: «Restare. Ascoltare. È tutto quello che posso fare adesso.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H12_soren_4",
+              "testo": "Chiedere che cosa ha promesso",
+              "riserva": "«Di trovarla. Di non lasciarla sola.» Soren stringe i pugni. «Ho trovato una bottega e degli amici, invece.»",
+              "effetti": [
+                {
+                  "nota": "Soren Vahl: «Di trovarla. Di non lasciarla sola.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H12_soren_5",
+              "testo": "Chiedere se la voce lo riconosce",
+              "riserva": "«Sì. Mi chiama come mi chiamavano prima.» Soren abbassa la testa. «Non so se voglio rispondere a quel nome.»",
+              "effetti": [
+                {
+                  "nota": "Soren Vahl: «Sì. Mi chiama come mi chiamavano prima.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H12_soren_6",
+              "testo": "Chiedere che cosa teme adesso",
+              "riserva": "«Di dover scegliere fra chi ero e chi sono diventato.» Soren ti guarda. «E di sbagliare, in tutti e due i casi.»",
+              "effetti": [
+                {
+                  "nota": "Soren Vahl: «Di dover scegliere fra chi ero e chi sono diventato.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H12_soren_7",
+              "testo": "Chiedere che cosa vuole dire alla voce",
+              "riserva": "«Che mi dispiace.» Soren ride fra le lacrime. «È l'unica cosa di cui sono sicuro.»",
+              "effetti": [
+                {
+                  "nota": "Soren Vahl: «Che mi dispiace.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Soren si inginocchia accanto ai fili, le mani aperte, come per accogliere qualcuno."
+        }
+      ],
+      "sviluppo": {
+        "testo": "La voce senza corpo smette di piangere e, per la prima volta, dice una parola: il nome di Soren. Lui cade in ginocchio. I fili di luce si piegano tutti verso di lui.",
+        "esplora": [
+          {
+            "id": "H12d1",
+            "testo": "Guardare i fili piegarsi verso Soren",
+            "riserva": "I fili lo cercano come radici cercano l'acqua. Dove lo toccano, Soren sussulta, e ogni volta ricorda qualcosa: lo vedi nei suoi occhi.",
+            "effetti": [
+              {
+                "nota": "La voce senza corpo conosce il nome di Soren.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H12d2",
+            "testo": "Seguire un filo di luce fino al suo capo",
+            "riserva": "Il filo porta a una stanza che non c'è: una finestra, una tazza fredda, un respiro corto. Poi il filo torna luce e la stanza svanisce.",
+            "effetti": [
+              {
+                "nota": "Il filo porta a una stanza che non c'è: una finestra, una tazza fredda, un respiro corto.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H12d3",
+            "testo": "Ascoltare quello che la voce ripete",
+            "riserva": "La voce ripete sempre la stessa parola, stanca, come chi chiama qualcuno da molto tempo. È il nome di Soren, e poi un altro che non capisci.",
+            "effetti": [
+              {
+                "nota": "La voce ripete sempre la stessa parola, stanca, come chi chiama qualcuno da molto tempo.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H12d4",
+            "testo": "Guardare dove finiscono i fili",
+            "riserva": "Tutti i fili convergono in un punto al centro del nodo, dove la luce è più fitta e il silenzio più pesante.",
+            "effetti": [
+              {
+                "nota": "Tutti i fili convergono in un punto al centro del nodo, dove la luce è più fitta e il silenzio più pesante.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H12d5",
+            "testo": "Sentire il freddo del nodo",
+            "riserva": "Il freddo del nodo non è quello dell'inverno. È il freddo di una casa rimasta vuota troppo a lungo.",
+            "effetti": [
+              {
+                "nota": "Il freddo del nodo non è quello dell'inverno.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H12x1",
+          "H12x2",
+          "H12_soren_1",
+          "H12_soren_4",
+          "H12_soren_5",
+          "H12_soren_6",
+          "H12_soren_7",
+          "H12x4"
+        ],
+        "risoluzione": [
+          "H12d1",
+          "H12_soren_3",
+          "H12d2",
+          "H12d3",
+          "H12d4",
+          "H12d5"
+        ]
+      },
+      "required_beats": [
+        "H12x1",
+        "H12x2",
+        "H12_soren_1",
+        "H12_soren_4",
+        "H12_soren_5",
+        "H12_soren_6",
+        "H12_soren_7",
+        "H12x4",
+        "H12d1",
+        "H12_soren_3",
+        "H12d2",
+        "H12d3",
+        "H12d4",
+        "H12d5"
+      ],
+      "optional_beats": [
+        "H12x3",
+        "H12_soren_2"
+      ],
+      "riserva_libera": "Resti nel nodo. La voce senza corpo continua a piangere, e ogni filo di luce vibra con lei.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "H13": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "H13x1",
+          "testo": "Guardare il primo albero aperto",
+          "riserva": "Il tronco si è aperto come un libro, senza rompersi. Dentro c'è luce verde, e qualcosa che respira: grande, antico, sveglio.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Il tronco si è aperto come un libro, senza rompersi.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H13x2",
+          "testo": "Ascoltare il Kyn",
+          "riserva": "Il Kyn non parla con la voce. Parla con il vento fra le foglie, con il fruscio dell'erba. Il suo messaggio arriva lento, come una stagione che cambia.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Il Kyn non parla con la voce.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H13x3",
+          "testo": "Guardare il bosco intorno",
+          "riserva": "Tutto il bosco si è voltato verso il primo albero. I rami si piegano, gli animali si fermano. Anche i sentieri sembrano più corti, come se il bosco si stesse avvicinando.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Tutto il bosco si è voltato verso il primo albero.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H13x4",
+          "testo": "Toccare le radici",
+          "riserva": "Le radici sono calde e vive sotto le mani. Senti passare attraverso di esse tutto il bosco: ogni albero, ogni passo, ogni legame che lo ha attraversato.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai sentito il bosco attraverso le radici"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "eiran",
+          "apertura": "Eiran piange senza vergogna. «Si è svegliato. Tutta la vita ho aspettato questo momento, e adesso ho paura di quello che faremo.»",
+          "argomenti": [
+            {
+              "id": "H13_eiran_1",
+              "testo": "Chiedere che cosa può fare il Kyn",
+              "riserva": "«Tutto quello che il bosco può fare. E il bosco, qui, è tutto.» Eiran si asciuga gli occhi. «Può cambiare i sentieri. Può cambiare noi.»",
+              "effetti": [
+                {
+                  "nota": "Eiran Tred: «Tutto quello che il bosco può fare. E il bosco, qui, è tutto.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H13_eiran_2",
+              "testo": "Chiedere che cosa vuole il Kyn",
+              "riserva": "«Non vuole. Aspetta.» Eiran guarda la luce verde. «Aspetta che qualcuno gli dica chi essere.»",
+              "effetti": [
+                {
+                  "nota": "Eiran Tred: «Non vuole. Aspetta.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H13_eiran_3",
+              "testo": "Chiedere che cosa sceglierebbe lui",
+              "riserva": "«Io lo lascerei dormire di nuovo, se potessi.» Poi scuote la testa. «Ma è sveglio. E non si torna indietro.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "eiran",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "H13_eiran_4",
+              "testo": "Chiedere che cosa ha visto nel bosco da bambino",
+              "riserva": "«Un fiore che si apriva quando mia madre cantava.» Eiran sorride. «Pensavo fosse un caso. Adesso so che non lo era.»",
+              "effetti": [
+                {
+                  "nota": "Eiran Tred: «Un fiore che si apriva quando mia madre cantava.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H13_eiran_5",
+              "testo": "Chiedere se il Kyn ha paura",
+              "riserva": "«Ha paura di diventare come quello che c'è oltre il Sentiero.» Eiran abbassa la voce. «Tutto ordine, niente vita.»",
+              "effetti": [
+                {
+                  "nota": "Eiran Tred: «Ha paura di diventare come quello che c'è oltre il Sentiero.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H13_eiran_6",
+              "testo": "Chiedere che cosa direbbe la Stad",
+              "riserva": "«Halvek vorrebbe usarlo per proteggere. Ragn vorrebbe ascoltarlo. Elska vorrebbe che nessuno lo toccasse.» Eiran sospira. «Avrebbero tutti un po' ragione.»",
+              "effetti": [
+                {
+                  "nota": "Eiran Tred: «Halvek vorrebbe usarlo per proteggere. Ragn vorrebbe ascoltarlo. Elska vorrebbe che nessuno lo toccasse.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H13_eiran_7",
+              "testo": "Chiedere se resterà la sua guida",
+              "riserva": "«Se me lo lascia fare.» Eiran appoggia la mano alla corteccia. «Sono nato per camminare qui. Non so fare altro.»",
+              "effetti": [
+                {
+                  "nota": "Eiran Tred: «Se me lo lascia fare.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Eiran ti lascia davanti al primo albero. «Parla con lui. Io resto qui a guardare.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "La luce verde si allarga e raggiunge i tuoi piedi. Per un momento senti tutto il bosco come se fosse il tuo corpo: ogni radice, ogni sentiero, e anche il bianco del Sentiero, come una ferita che brucia.",
+        "esplora": [
+          {
+            "id": "H13d1",
+            "testo": "Restare dentro la luce",
+            "riserva": "Resti. Il bosco ti mostra le sue ferite e i suoi fiori, senza giudicare. Quando la luce si ritira, sai che il Kyn ha ascoltato anche te.",
+            "effetti": [
+              {
+                "nota": "Il Kyn ti ha mostrato il bosco, compresa la ferita del Sentiero.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H13d2",
+            "testo": "Guardare il bosco che si avvicina",
+            "riserva": "I sentieri si accorciano sotto i tuoi occhi: il bosco si stringe intorno al primo albero come una famiglia intorno a un fuoco.",
+            "effetti": [
+              {
+                "nota": "I sentieri si accorciano sotto i tuoi occhi: il bosco si stringe intorno al primo albero come una famiglia intorno a un fuoco.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H13d3",
+            "testo": "Ascoltare le voci dei sentieri",
+            "riserva": "Dai sentieri arrivano voci di chi è passato di lì: una canzone, un litigio, una promessa. Il Kyn le ricorda tutte.",
+            "effetti": [
+              {
+                "nota": "Dai sentieri arrivano voci di chi è passato di lì: una canzone, un litigio, una promessa.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H13d4",
+            "testo": "Toccare la corteccia aperta",
+            "riserva": "La corteccia aperta è morbida come pelle. Sotto le dita senti qualcosa che si sposta, attento, come per non spaventarti.",
+            "effetti": [
+              {
+                "nota": "La corteccia aperta è morbida come pelle.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H13d5",
+            "testo": "Guardare la ferita del Sentiero",
+            "riserva": "Dal primo albero si vede, lontana, la striscia bianca del Sentiero. Il Kyn la guarda anche lui, e per un momento il bosco intero trema.",
+            "effetti": [
+              {
+                "nota": "Dal primo albero si vede, lontana, la striscia bianca del Sentiero.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H13x1",
+          "H13x2",
+          "H13_eiran_1",
+          "H13_eiran_4",
+          "H13_eiran_5",
+          "H13_eiran_6",
+          "H13_eiran_7",
+          "H13x3"
+        ],
+        "risoluzione": [
+          "H13d1",
+          "H13_eiran_2",
+          "H13d2",
+          "H13d3",
+          "H13d4",
+          "H13d5"
+        ]
+      },
+      "required_beats": [
+        "H13x1",
+        "H13x2",
+        "H13_eiran_1",
+        "H13_eiran_4",
+        "H13_eiran_5",
+        "H13_eiran_6",
+        "H13_eiran_7",
+        "H13x3",
+        "H13d1",
+        "H13_eiran_2",
+        "H13d2",
+        "H13d3",
+        "H13d4",
+        "H13d5"
+      ],
+      "optional_beats": [
+        "H13x4",
+        "H13_eiran_3"
+      ],
+      "riserva_libera": "Resti davanti al Kyn sveglio. La luce verde ti illumina il viso, e il bosco intero trattiene il respiro.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "H14": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "H14x1",
+          "testo": "Guardare le figure senza volto",
+          "riserva": "Le figure avanzano in fila, lente, alte più di un uomo. Non hanno volto, solo una superficie liscia dove dovrebbe esserci. Dove passano, l'erba si raddrizza e torna identica.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Le figure avanzano in fila, lente, alte più di un uomo.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H14x2",
+          "testo": "Guardare cosa resta dietro di loro",
+          "riserva": "Dietro le figure il bosco è perfetto: ogni albero al suo posto, ogni sasso pulito, nessuna traccia di passi. È bello, e nessuno potrebbe viverci.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Dietro le figure il bosco è perfetto: ogni albero al suo posto, ogni sasso pulito, nessuna traccia di passi.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H14x3",
+          "testo": "Ascoltare il loro avanzare",
+          "riserva": "Non fanno rumore. È il mondo intorno a loro che si zittisce, un suono alla volta: i fili di Elska smettono di vibrare, gli uccelli smettono di cantare.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai capito che il silenzio li precede"
+            }
+          ]
+        },
+        {
+          "id": "H14x4",
+          "testo": "Guardare Hrafnvik alle tue spalle",
+          "riserva": "Alle tue spalle, lontano, si vede il fumo dei camini di Hrafnvik. Da qui sembra piccola, e fragile come un nido.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Da qui Hrafnvik sembra fragile come un nido.",
+              "categoria": "indizio"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "elska",
+          "apertura": "Elska ha tutti i suoi fili in mano, tesi come corde d'arco. «Non li ho mai visti. Ma so che cosa fanno. Fanno quello che faccio io, senza chiedere a nessuno.»",
+          "argomenti": [
+            {
+              "id": "H14_elska_1",
+              "testo": "Chiedere che cosa sono",
+              "riserva": "«Custodi di un ordine vecchio.» Elska stringe i fili. «Rimettono le cose com'erano. Anche le persone.»",
+              "effetti": [
+                {
+                  "nota": "Elska Aesk: «Custodi di un ordine vecchio.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H14_elska_2",
+              "testo": "Chiedere se si può parlare con loro",
+              "riserva": "«Non parlano. Ma ascoltano, forse.» Elska esita. «Qualcosa che fa così tanta attenzione all'ordine deve anche ascoltare.»",
+              "effetti": [
+                {
+                  "nota": "Elska Aesk: «Non parlano. Ma ascoltano, forse.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H14_elska_3",
+              "testo": "Chiedere che cosa rischia Hrafnvik",
+              "riserva": "Elska guarda la Stad lontana. «Tutto quello che è nato da quando è viva.» La voce le trema. «Liva. Il fratello di Mjol. Forse anche noi.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "elska",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "H14_elska_4",
+              "testo": "Chiedere quanto reggono i fili",
+              "riserva": "«Finché reggono le mie mani.» Elska mostra i palmi segnati. «Non tanto. Abbastanza, spero.»",
+              "effetti": [
+                {
+                  "nota": "Elska Aesk: «Finché reggono le mie mani.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H14_elska_5",
+              "testo": "Chiedere che cosa proteggono i fili",
+              "riserva": "«Tutto quello che è nato storto e vivo.» Elska guarda la Stad lontana. «Le cose che non sono come dovevano essere, e per questo sono vere.»",
+              "effetti": [
+                {
+                  "nota": "Elska Aesk: «Tutto quello che è nato storto e vivo.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H14_elska_6",
+              "testo": "Chiedere se ha mai avuto paura così",
+              "riserva": "«Mai.» Elska ride, breve. «Ho congedato spettri per tutta la vita. Non avevo mai visto qualcosa che congeda il mondo.»",
+              "effetti": [
+                {
+                  "nota": "Elska Aesk: «Mai.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H14_elska_7",
+              "testo": "Chiedere che cosa farebbe da sola",
+              "riserva": "«Starei qui finché si spezzano.» Elska ti guarda. «Ma non sono sola. Questo cambia le cose.»",
+              "effetti": [
+                {
+                  "nota": "Elska Aesk: «Starei qui finché si spezzano.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Elska si mette al tuo fianco. «Qualunque cosa decidi, io tengo i fili.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Una delle figure senza volto si ferma e si volta verso di voi. La superficie liscia del viso si increspa, come acqua toccata da un dito. Aspetta. Non sai che cosa.",
+        "esplora": [
+          {
+            "id": "H14d1",
+            "testo": "Restare fermo davanti alla figura",
+            "riserva": "Resti fermo. La figura inclina il capo, lenta, e per un attimo sembra ascoltare il rumore del tuo cuore. Poi torna dritta, ma non riprende ad avanzare subito.",
+            "effetti": [
+              {
+                "nota": "Una figura senza volto si è fermata ad ascoltarti.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H14d2",
+            "testo": "Guardare le orme che si cancellano",
+            "riserva": "Dove passano le figure, le orme di chi è venuto prima scompaiono. Anche le tue, dietro di te, stanno sbiadendo.",
+            "effetti": [
+              {
+                "nota": "Dove passano le figure, le orme di chi è venuto prima scompaiono.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H14d3",
+            "testo": "Ascoltare il silenzio che avanza",
+            "riserva": "Il silenzio avanza come una marea: prima tace il vento, poi il fruscio dell'erba, poi il battito dei fili di Elska.",
+            "effetti": [
+              {
+                "nota": "Il silenzio avanza come una marea: prima tace il vento, poi il fruscio dell'erba, poi il battito dei fili di Elska.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H14d4",
+            "testo": "Cercare un punto in cui il mondo resiste",
+            "riserva": "Accanto a una pietra muschiosa l'erba resta storta, disordinata, viva. Qui il silenzio arriva più piano.",
+            "effetti": [
+              {
+                "nota": "Accanto a una pietra muschiosa l'erba resta storta, disordinata, viva.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "H14d5",
+            "testo": "Guardare Elska stringere i fili",
+            "riserva": "Elska ha le mani ferite dai fili tesi. Non li lascia. Dice che finché vibrano, qualcosa qui è ancora come vuole essere.",
+            "effetti": [
+              {
+                "nota": "Elska ha le mani ferite dai fili tesi.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H14x1",
+          "H14x2",
+          "H14_elska_1",
+          "H14_elska_4",
+          "H14_elska_5",
+          "H14_elska_6",
+          "H14_elska_7",
+          "H14x4"
+        ],
+        "risoluzione": [
+          "H14d1",
+          "H14_elska_2",
+          "H14d2",
+          "H14d3",
+          "H14d4",
+          "H14d5"
+        ]
+      },
+      "required_beats": [
+        "H14x1",
+        "H14x2",
+        "H14_elska_1",
+        "H14_elska_4",
+        "H14_elska_5",
+        "H14_elska_6",
+        "H14_elska_7",
+        "H14x4",
+        "H14d1",
+        "H14_elska_2",
+        "H14d2",
+        "H14d3",
+        "H14d4",
+        "H14d5"
+      ],
+      "optional_beats": [
+        "H14x3",
+        "H14_elska_3"
+      ],
+      "riserva_libera": "Resti al margine del nodo. Il silenzio avanza verso di te, passo dopo passo, senza fretta.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio.",
+      "pressione": {
+        "nome": "I custodi avanzano",
+        "max": 18,
+        "per_interazione": 1,
+        "testo_max": "Le figure senza volto arrivano a pochi passi. L'erba intorno a te si raddrizza: devi agire adesso.",
+        "conseguenza": "I custodi sono arrivati: lo scontro comincia in svantaggio.",
+        "sostituto": {
+          "id": "H14p",
+          "testo": "Mettersi davanti alla figura senza volto",
+          "riserva": "Ti metti davanti alla figura più vicina. Elska tende i fili ai tuoi fianchi. Non c'è più tempo per guardare: c'è solo da scegliere come fermarli.",
+          "effetti": [
+            {
+              "nota": "Ti metti davanti alla figura più vicina.",
+              "categoria": "cambiamento"
+            }
+          ]
+        }
+      }
+    },
+    "H15": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "H15x1",
+          "testo": "Camminare per le strade di Hrafnvik",
+          "riserva": "Le case sono le stesse, i volti anche. Ma ora noti cose che prima non vedevi: un gesto che si ripete uguale, una risata che arriva sempre nello stesso momento.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Le case sono le stesse, i volti anche.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H15x2",
+          "testo": "Guardare la casa di Mjol",
+          "riserva": "Sulla tavola di Mjol ci sono ancora due scodelle. Una è pulita. Dall'altra qualcuno ha mangiato, questa mattina.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Sulla tavola di Mjol ci sono ancora due scodelle.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H15x3",
+          "testo": "Tornare alla sala dell'Hersir",
+          "riserva": "Nella sala il fuoco è acceso. Il posto vuoto al tavolo vicino al fuoco è ancora lì, ma adesso qualcuno ha messo un fiore nella scodella.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto il fiore nella scodella"
+            }
+          ]
+        },
+        {
+          "id": "H15x4",
+          "testo": "Guardare le travi incise",
+          "riserva": "Le incisioni sulle travi sono le stesse. I solchi riempiti di cera, però, sono stati ripuliti: qualcuno ha voluto rileggere i nomi nascosti.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "I solchi di cera sono stati ripuliti."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "halvek",
+          "apertura": "Halvek ti accoglie sulla porta della sala. «Sei tornato. Tutti parlano di te, anche quelli che non sanno perché.»",
+          "argomenti": [
+            {
+              "id": "H15_halvek_1",
+              "testo": "Chiedere che cosa è cambiato",
+              "riserva": "«Niente, e tutto.» Halvek guarda la Stad. «Mi alzo la mattina e so chi sono. Solo che adesso so anche che avrei potuto non saperlo.»",
+              "effetti": [
+                {
+                  "nota": "Halvek: «Niente, e tutto.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H15_halvek_2",
+              "testo": "Chiedere che cosa terrà lui",
+              "riserva": "«La Stad. La mia gente.» Halvek sorride, stanco. «Non so da dove vengono, adesso. Ma so che sono miei.»",
+              "effetti": [
+                {
+                  "nota": "Halvek: «La Stad. La mia gente.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H15_halvek_3",
+              "testo": "Chiedere del rito",
+              "riserva": "«Il rito era una mano davanti a una frana. Ragn aveva ragione.» Halvek alza le spalle. «Un Hersir deve anche saper dire che si è sbagliato.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "halvek",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Halvek ti stringe l'avambraccio, alla maniera della Stad. «Qualunque cosa tieni, qui avrai sempre un posto.»"
+        },
+        {
+          "png": "mjol",
+          "apertura": "Mjol ha lo sguardo diverso, più leggero o più pesante: non si capisce. «Ho una cosa da dirti. Non so ancora se è bella.»",
+          "argomenti": [
+            {
+              "id": "H15_mjol_1",
+              "testo": "Chiedere del fratello",
+              "riserva": "«Stamattina ho apparecchiato per due. Come sempre.» Mjol esita. «E per la prima volta non mi è sembrato strano.»",
+              "effetti": [
+                {
+                  "nota": "Mjol: «Stamattina ho apparecchiato per due. Come sempre.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H15_mjol_2",
+              "testo": "Chiedere che cosa terrà lui",
+              "riserva": "«Il ricordo di Arn. Anche se è l'unico che ce l'ha.» Mjol stringe il coltello da intaglio. «Soprattutto per questo.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "mjol",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "H15_mjol_3",
+              "testo": "Chiedere se ti ringrazia o ti accusa",
+              "riserva": "Mjol ride, breve. «Tutte e due, credo. Come si fa con gli amici.»"
+            }
+          ],
+          "chiusura": "Mjol ti lascia sulla soglia. «Scegli bene. Poi vieni a mangiare.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Nella sala dell'Hersir qualcuno ha cominciato a raschiare la cera dalle travi. Si è formato un piccolo gruppo intorno a lui: leggono i nomi a bassa voce, uno alla volta.",
+        "esplora": [
+          {
+            "id": "H15d1",
+            "testo": "Ascoltare i nomi letti sotto la cera",
+            "riserva": "Sono nomi di Hrafnvik che nessuno ricorda. Qualcuno piange senza sapere perché. Qualcun altro se ne va, per non sentire.",
+            "effetti": [
+              {
+                "nota": "Sotto la cera delle travi ci sono nomi che nessuno ricorda.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H15x1",
+          "H15x2",
+          "H15_halvek_1",
+          "H15_halvek_2"
+        ],
+        "risoluzione": [
+          "H15d1",
+          "H15_mjol_1"
+        ]
+      },
+      "required_beats": [
+        "H15x1",
+        "H15x2",
+        "H15_halvek_1",
+        "H15_halvek_2",
+        "H15d1",
+        "H15_mjol_1"
+      ],
+      "optional_beats": [
+        "H15x3",
+        "H15_halvek_3",
+        "H15_mjol_2"
+      ],
+      "riserva_libera": "Resti nelle strade di Hrafnvik. Tutto è come prima; tu no.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "H16": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "H16x1",
+          "testo": "Guardare la radura piena",
+          "riserva": "Tutta Hrafnvik è nella radura: famiglie, bambini, gli anziani seduti sulle pietre del rito. Anche Liva è lì, al margine, e nessuno si allontana da lei.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Tutta Hrafnvik è nella radura: famiglie, bambini, gli anziani seduti sulle pietre del rito.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H16x2",
+          "testo": "Guardare il cielo strappato",
+          "riserva": "La piega è ancora lì, sopra di voi, più larga di prima. Dall'altra parte il cielo ha un colore che non ha nome nella lingua della Stad.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "La piega è ancora lì, sopra di voi, più larga di prima.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H16x3",
+          "testo": "Osservare le pietre del rito",
+          "riserva": "Le pietre bianche del cerchio sono ancora al loro posto, ma qualcuno ha tolto la ciotola di sale e cenere. Al suo posto ci sono fiori del primo albero.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Al posto della ciotola del rito ci sono fiori del primo albero.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "H16x4",
+          "testo": "Guardare i volti di chi aspetta",
+          "riserva": "Ci sono volti spaventati, volti curiosi, volti stanchi. Nessuno ti chiede niente ad alta voce; aspettano tutti che sia tu a cominciare.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai guardato i volti di chi aspetta"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "ragn",
+          "apertura": "Ragn ti prende la mano, un momento soltanto. «Stanotte non ho sognato niente. È la prima volta. Credo che il sogno, adesso, sia questo.»",
+          "argomenti": [
+            {
+              "id": "H16_ragn_1",
+              "testo": "Chiedere che cosa vede adesso",
+              "riserva": "«Strade che si aprono. Strade che si chiudono.» Ragn scuote la testa. «Dipende tutto da quello che dirai.»",
+              "effetti": [
+                {
+                  "nota": "Ragn Varhena: «Strade che si aprono. Strade che si chiudono.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H16_ragn_2",
+              "testo": "Chiedere che cosa temono",
+              "riserva": "«Di sapere troppo. O di non sapere mai.» Ragn guarda la folla. «Alcuni vorrebbero dimenticare questi giorni. Altri non vogliono dimenticare mai più niente.»",
+              "effetti": [
+                {
+                  "nota": "Alcuni vogliono dimenticare, altri non vogliono dimenticare più niente.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H16_ragn_3",
+              "testo": "Chiedere un presagio",
+              "riserva": "Ragn sorride. «Niente presagi, oggi. Oggi si decide senza.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "ragn",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Ragn ti lascia la mano. «Parla. Io ascolto per tutti quelli che ho sognato.»"
+        },
+        {
+          "png": "soren",
+          "apertura": "Soren ha l'aria di chi ha pianto a lungo e ha finito. «Qualunque cosa decidi, io so finalmente chi sono. È già tanto.»",
+          "argomenti": [
+            {
+              "id": "H16_soren_1",
+              "testo": "Chiedere che cosa farà",
+              "riserva": "«Resterò vicino a quella voce, finché ne avrà bisogno.» Soren guarda il cielo. «E la sera tornerò in bottega, se potrò.»",
+              "effetti": [
+                {
+                  "nota": "Soren Vahl: «Resterò vicino a quella voce, finché ne avrà bisogno.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H16_soren_2",
+              "testo": "Chiedere se ha paura di uscire dal settore",
+              "riserva": "Soren esita sulla parola. «Settore.» La ripete piano, come una parola straniera. «Ho paura di tutto. Ma ho imparato qui a non scappare.»",
+              "effetti": [
+                {
+                  "nota": "Soren Vahl: «Settore.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H16_soren_3",
+              "testo": "Chiedere un consiglio",
+              "riserva": "«Pensa a chi non è qui a sentirti.» Soren abbassa la voce. «Anche loro vivranno la tua scelta.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "soren",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Soren si mette accanto a Liva, al margine. «Vai.»"
+        },
+        {
+          "png": "liva",
+          "apertura": "Liva è una sola, adesso, o sembra esserlo. «Mi hanno detto che parlerai per tutti. Parlerai anche per me?»",
+          "argomenti": [
+            {
+              "id": "H16_liva_1",
+              "testo": "Chiedere chi è, adesso",
+              "riserva": "«Liva. Con tutti i ricordi che mi sono rimasti addosso.» Sorride. «Alcuni non sono miei. Li tengo lo stesso.»",
+              "effetti": [
+                {
+                  "nota": "Liva: «Liva. Con tutti i ricordi che mi sono rimasti addosso.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "H16_liva_2",
+              "testo": "Chiedere che cosa vorrebbe",
+              "riserva": "«Restare. Non so in che modo. Ma restare.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "liva",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "H16_liva_3",
+              "testo": "Chiedere se ha paura",
+              "riserva": "«Ho sempre avuto paura. Adesso almeno ho qualcuno vicino.» Guarda la folla, che non si allontana da lei.",
+              "effetti": [
+                {
+                  "nota": "Liva: «Ho sempre avuto paura. Adesso almeno ho qualcuno vicino.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Liva torna al margine della radura, dove c'è posto per lei."
+        }
+      ],
+      "sviluppo": {
+        "testo": "Mentre aspettano, la piega nel cielo si allarga di colpo, con un suono simile a stoffa che si strappa. I bambini gridano. Poi, lentamente, torna ferma. Nessuno sa per quanto.",
+        "esplora": [
+          {
+            "id": "H16d1",
+            "testo": "Calmare chi è più vicino",
+            "riserva": "Posi una mano sulla spalla di un bambino e poi di sua madre. Intorno a te qualcuno ti imita. La radura torna in silenzio, un respiro alla volta.",
+            "effetti": [
+              {
+                "nota": "La piega si è allargata; la Stad ha trattenuto il fiato insieme.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "H16x1",
+          "H16x2",
+          "H16_ragn_1",
+          "H16_ragn_2",
+          "H16_soren_2",
+          "H16_liva_3",
+          "H16x3"
+        ],
+        "risoluzione": [
+          "H16d1",
+          "H16_soren_1",
+          "H16_liva_1"
+        ]
+      },
+      "required_beats": [
+        "H16x1",
+        "H16x2",
+        "H16_ragn_1",
+        "H16_ragn_2",
+        "H16_soren_2",
+        "H16_liva_3",
+        "H16x3",
+        "H16d1",
+        "H16_soren_1",
+        "H16_liva_1"
+      ],
+      "optional_beats": [
+        "H16x4",
+        "H16_ragn_3",
+        "H16_soren_3",
+        "H16_liva_2"
+      ],
+      "riserva_libera": "Resti al centro della radura. Il cielo strappato sopra, la Stad intorno, e un silenzio che aspetta solo te.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    }
+  }
+}

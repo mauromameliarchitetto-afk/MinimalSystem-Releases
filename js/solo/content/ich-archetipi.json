@@ -1,0 +1,1557 @@
+{
+  "formato": "rm-solo-archetipi/1",
+  "storia": "ich",
+  "versione": "0.4.1",
+  "avviso": "Valori meccanici proposti dei 15 preset approvati dall’autore il 2026-10-01 per il gioco in modalità normale; restano revisionabili dopo la prova.",
+  "archetipi": [
+    {
+      "id": "alva",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Alva Ruun",
+      "popolazione": "Stad",
+      "citta": "Kynhjarta",
+      "mansione": "Traghettatrice ai margini di Kynhjarta",
+      "ritratto": "img/solo/ritratti/ich-alva.webp",
+      "ritratto_alt": "Ritratto di Alva Ruun, Traghettatrice ai margini di Kynhjarta",
+      "build": "guerriero",
+      "background": "Da settimane Alva trova sulla riva oggetti di persone che ricorda vive. Nessuno, a Hrafnvik, sembra ricordarle quanto lei.",
+      "obiettivo": "Scoprire chi altera la rotta del fiume e riportare a casa un viaggiatore scomparso.",
+      "missione_iniziale": "Seguire gli oggetti portati dalla corrente fino a Hrafnvik.",
+      "capitolo": "ich-filo-senza-padrone",
+      "primary": {
+        "hp": 7,
+        "mp": 2,
+        "for": 6,
+        "mira": 3,
+        "vel": 5,
+        "fmen": 2,
+        "dex": 5,
+        "dif": 6,
+        "dmen": 4
+      },
+      "tertiary": {
+        "stile": 1,
+        "fortuna": 2,
+        "carisma": 2
+      },
+      "traits": {
+        "conoscenze": {
+          "Navigare": 2,
+          "Tradizioni locali": 2,
+          "Geografia": 1
+        },
+        "capacitaNormali": {
+          "Nuotare": 2,
+          "Percezione": 2,
+          "Persuasione": 1
+        },
+        "capacitaCombattive": {
+          "Arte Combattiva": 2,
+          "Guardia": 2,
+          "Resistenza": 1
+        }
+      },
+      "tecniche": [
+        {
+          "id": "colpo_remo",
+          "nome": "Colpo di remo",
+          "categoria": "tecnica",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 6,
+          "effetto": "Attacco fisico: danno base 6 + Forza",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "for",
+          "descrizione": "Attacco fisico con il remo rinforzato.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        },
+        {
+          "id": "piede_ponte",
+          "nome": "Piede sul ponte",
+          "categoria": "tecnica",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Difesa, −1 Velocità per 1 turno",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 1,
+          "condizioniUso": [],
+          "bonus": [
+            {
+              "stat": "dif",
+              "valore": 2,
+              "testo": "+2 Difesa"
+            }
+          ],
+          "malus": [
+            {
+              "stat": "vel",
+              "valore": -1,
+              "testo": "−1 Velocità"
+            }
+          ],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "supporto",
+          "lv": 1,
+          "bonusStat": {
+            "dif": 2,
+            "vel": -1
+          },
+          "descrizione": "+2 Difesa e −1 Velocità per 1 turno.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "R",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "D",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "sé",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "abilita": [],
+      "equip": [
+        {
+          "id": "remo",
+          "nome": "Remo rinforzato",
+          "tipo": "arma",
+          "taglia": "medie",
+          "qualita": "bassa",
+          "atk": 10,
+          "dif": 8,
+          "durabilita": 100,
+          "resistenza": null,
+          "base": "ich_arma_media_bassa",
+          "descrizione": "Il remo del traghetto, cerchiato di ferro: spinge la barca e, se serve, tiene lontani gli altri.",
+          "fonteCanone": "dotazione editoriale di Alva"
+        },
+        {
+          "id": "coltello",
+          "nome": "Coltello da lavoro",
+          "tipo": "arma",
+          "taglia": "corte",
+          "qualita": "bassa",
+          "atk": 8,
+          "dif": 4,
+          "durabilita": 80,
+          "resistenza": null,
+          "base": "ich_arma_corta_bassa",
+          "descrizione": "Per corde, reti e pesce.",
+          "fonteCanone": "dotazione editoriale di Alva"
+        },
+        {
+          "id": "scudo",
+          "nome": "Scudo rotondo di tiglio",
+          "tipo": "scudo",
+          "taglia": "piccoli",
+          "qualita": "bassa",
+          "atk": 4,
+          "dif": 10,
+          "durabilita": 90,
+          "resistenza": null,
+          "base": "ich_scudo_piccolo_basso",
+          "descrizione": "Uno scudo da imbarcazione, appeso alla murata del traghetto: legno leggero che trattiene le lame.",
+          "fonteCanone": "premessa Ich, Ulf Vanar: «Scudo: ricavato da legno di tiglio, ontano o pioppo… le fibre del legno si legano attorno alle lame»"
+        },
+        {
+          "id": "protezione",
+          "nome": "Protezione da viaggio in cuoio intrecciato",
+          "tipo": "armatura",
+          "taglia": "leggere",
+          "qualita": "bassa",
+          "atk": 0,
+          "dif": 5,
+          "durabilita": 80,
+          "resistenza": null,
+          "base": "ich_protezione_leggera_bassa",
+          "descrizione": "Intrecci di cuoio borchiato e legato con fibbie ai lati.",
+          "fonteCanone": "premessa Ich: «Armatura intrecciata di cuoio: armatura leggera fatta di intrecci di pelle borchiate»"
+        },
+        {
+          "id": "cordame",
+          "nome": "Cordame",
+          "tipo": "descrittivo",
+          "descrizione": "Corde di canapa per ormeggi e traversate."
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "halvek",
+          "natura": "Hersir della Stad a cui la sua comunità risponde (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "Reverie ordinaria, mai controllata da un fruitore. La coscienza emerge dalle relazioni quotidiane e dall'influenza indiretta del Kyn del settore."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Difendere la vita che conosce."
+        },
+        {
+          "atto": 2,
+          "possibilita": "Affrontare i vuoti nei ricordi di tutti."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Decidere se l'origine dei propri legami ne cambia il valore."
+        }
+      ],
+      "natura_riservata": "reverie ordinaria",
+      "dotazione_editoriale": "remo rinforzato, coltello da lavoro, protezione da viaggio e cordame",
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": "reverie",
+        "factionId": null,
+        "cultureId": null,
+        "regionId": "kynhjarta",
+        "roleId": "traghettatrice",
+        "creatureFamilyId": null,
+        "socialClassId": null,
+        "corporationId": null,
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [
+          "natura"
+        ],
+        "societyId": "stad",
+        "figureId": null,
+        "riservato": {
+          "natura": "reverie ordinaria, mai controllata da un fruitore",
+          "rivelazione": "ich_fact_natura_alva"
+        },
+        "statoAffiliazione": "coerente_da_confermare",
+        "fonti": {
+          "peopleId": "premessa Ich: gli abitanti di Erdegis si definiscono reveries",
+          "societyId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4) («Stad»); copione: Hrafnvik è una Stad",
+          "regionId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4) (Kynhjarta)"
+        },
+        "dubbi": [
+          "Stad dal documento derivato; «ai margini di Kynhjarta», regione del clan Kynwird (Stam): residenza a Hrafnvik da confermare."
+        ]
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "inventarioIniziale": [
+        {
+          "id": "ich_razione_viaggio",
+          "qty": 2
+        },
+        {
+          "id": "ich_impacco_achillea",
+          "qty": 1
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    },
+    {
+      "id": "tovar",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Tovar Skeld",
+      "popolazione": "Skéra",
+      "citta": "Kynhjarta",
+      "mansione": "Cartografo",
+      "ritratto": "img/solo/ritratti/ich-tovar.webp",
+      "ritratto_alt": "Ritratto di Tovar Skeld, Cartografo",
+      "build": "eclettico",
+      "background": "Tovar ha l'aspetto più vicino a un androide rituale che a un comune abitante. Disegna percorsi che non ricorda di aver attraversato e riconosce simboli assenti da tutte le mappe.",
+      "obiettivo": "Raggiungere il luogo rappresentato nella sua mappa più antica.",
+      "missione_iniziale": "Seguire la mappa più antica fino al Kynwird.",
+      "capitolo": "ich-filo-senza-padrone",
+      "primary": {
+        "hp": 5,
+        "mp": 6,
+        "for": 3,
+        "mira": 4,
+        "vel": 5,
+        "fmen": 6,
+        "dex": 6,
+        "dif": 3,
+        "dmen": 2
+      },
+      "tertiary": {
+        "stile": 2,
+        "fortuna": 2,
+        "carisma": 1
+      },
+      "traits": {
+        "conoscenze": {
+          "Cartografia": 2,
+          "Simbologia": 2,
+          "Alchimia": 1
+        },
+        "capacitaNormali": {
+          "Percezione": 2,
+          "Decifrare": 2,
+          "Furtività": 1
+        },
+        "capacitaCombattive": {
+          "Arte Combattiva": 2,
+          "Elusione": 2,
+          "Spirito": 1
+        }
+      },
+      "tecniche": [
+        {
+          "id": "taglio_giuntura",
+          "nome": "Taglio di giuntura",
+          "categoria": "tecnica",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 6,
+          "effetto": "Attacco fisico: danno base 6 + Forza",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "for",
+          "descrizione": "Attacco fisico con la lama corta.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "abilita": [
+        {
+          "id": "segno_discontinuita",
+          "nome": "Segno di discontinuità",
+          "categoria": "magia",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 7,
+          "effetto": "Attacco magico: danno base 7 + Forza Magica",
+          "costoMP": 6,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "fmen",
+          "descrizione": "Attacco che appare come una rottura runica. Costo 6 MP.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "D",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "equip": [
+        {
+          "id": "lama",
+          "nome": "Lama corta",
+          "tipo": "arma",
+          "taglia": "corte",
+          "qualita": "bassa",
+          "atk": 8,
+          "dif": 4,
+          "durabilita": 80,
+          "resistenza": null,
+          "base": "ich_arma_corta_bassa",
+          "descrizione": "Una lama corta di fattura straniera.",
+          "fonteCanone": "dotazione editoriale di Tovar"
+        },
+        {
+          "id": "protezione",
+          "nome": "Giacca monocolore imbottita",
+          "tipo": "armatura",
+          "taglia": "leggere",
+          "qualita": "bassa",
+          "atk": 0,
+          "dif": 4,
+          "durabilita": 70,
+          "resistenza": null,
+          "base": "ich_protezione_leggera_bassa",
+          "descrizione": "Giacca e pantaloni di un solo colore, come li portano gli Skéra: imbottiti quanto basta per un colpo di striscio.",
+          "fonteCanone": "premessa Ich: Skera «riconoscibili per… giacche e pantaloni tendenzialmente monocolore»"
+        },
+        {
+          "id": "compasso",
+          "nome": "Compasso rituale",
+          "tipo": "descrittivo",
+          "descrizione": "Uno strumento di misura che nessun artigiano della Stad saprebbe rifare."
+        },
+        {
+          "id": "tavolette",
+          "nome": "Tavolette cartografiche",
+          "tipo": "descrittivo",
+          "descrizione": "Tavolette incise con segni e distanze."
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "soren",
+          "natura": "altro Skéra senza origine che riconosce i suoi simboli (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "Hacker entrato nel programma e privato di parte dei ricordi. I percorsi sono frammenti dell'architettura del sistema interpretati nel linguaggio di Erdegis."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Cercare un passato che non ricorda."
+        },
+        {
+          "atto": 2,
+          "possibilita": "Capire che la vita vissuta come Tovar ha valore in sé."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Scegliere fra uscita, permanenza o doppia appartenenza."
+        }
+      ],
+      "natura_riservata": "hacker senza memoria completa",
+      "dotazione_editoriale": "lama corta, compasso rituale, tavolette cartografiche e protezione leggera",
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": null,
+        "factionId": null,
+        "cultureId": null,
+        "regionId": "kynhjarta",
+        "roleId": "cartografo",
+        "creatureFamilyId": null,
+        "socialClassId": null,
+        "corporationId": null,
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [
+          "natura"
+        ],
+        "societyId": null,
+        "figureId": "skera",
+        "riservato": {
+          "natura": "hacker entrato nel programma, privato di parte dei ricordi",
+          "rivelazione": "ich_fact_natura_tovar"
+        },
+        "statoAffiliazione": "da_approvare",
+        "proposte": {},
+        "fonti": {
+          "figureId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4) («Skéra»); premessa: Skéra figura del mondo",
+          "regionId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4)"
+        },
+        "dubbi": [
+          "Società (Stad o Stam) non indicata da alcuna fonte.",
+          "Nessuna fonte dice se uno Skéra sia pubblicamente una reverie: peopleId lasciato vuoto."
+        ]
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "inventarioIniziale": [
+        {
+          "id": "ich_razione_viaggio",
+          "qty": 1
+        },
+        {
+          "id": "ich_impacco_achillea",
+          "qty": 1
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    },
+    {
+      "id": "eydis",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Eydis Varhena",
+      "popolazione": "Vǫluspá",
+      "citta": "Hrafnvik",
+      "mansione": "Interprete di lingue e presagi",
+      "ritratto": "img/solo/ritratti/ich-eydis.webp",
+      "ritratto_alt": "Ritratto di Eydis Varhena, Interprete di lingue e presagi",
+      "build": "mago",
+      "background": "Eydis è ricercata per lingue e presagi. Nei sogni vive ferite, amori e delitti di persone che non ha mai incontrato.",
+      "obiettivo": "Trovare la donna che continua a morire nei suoi sogni prima che la visione si realizzi.",
+      "missione_iniziale": "Arrivare a Hrafnvik, dove la donna dei sogni dovrebbe vivere.",
+      "capitolo": "ich-filo-senza-padrone",
+      "primary": {
+        "hp": 5,
+        "mp": 7,
+        "for": 1,
+        "mira": 4,
+        "vel": 4,
+        "fmen": 7,
+        "dex": 3,
+        "dif": 3,
+        "dmen": 6
+      },
+      "tertiary": {
+        "stile": 2,
+        "fortuna": 2,
+        "carisma": 1
+      },
+      "traits": {
+        "conoscenze": {
+          "Lingue": 2,
+          "Simbologia": 2,
+          "Tradizioni": 1
+        },
+        "capacitaNormali": {
+          "Interpretare": 2,
+          "Percezione": 2,
+          "Empatia": 1
+        },
+        "capacitaCombattive": {
+          "Spirito": 3,
+          "Difesa Mentale": 2
+        }
+      },
+      "tecniche": [],
+      "abilita": [
+        {
+          "id": "eco_probabile",
+          "nome": "Eco probabile",
+          "categoria": "magia",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 6,
+          "effetto": "Attacco magico: danno base 6 + Forza Magica",
+          "costoMP": 6,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "fmen",
+          "descrizione": "Attacco magico. Nessuna previsione garantisce un esito.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "D",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        },
+        {
+          "id": "velo",
+          "nome": "Velo delle possibilità",
+          "categoria": "magia",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Difesa Magica per 1 turno",
+          "costoMP": 6,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 1,
+          "condizioniUso": [],
+          "bonus": [
+            {
+              "stat": "dmen",
+              "valore": 2,
+              "testo": "+2 Difesa Magica"
+            }
+          ],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "supporto",
+          "lv": 1,
+          "bonusStat": {
+            "dmen": 2
+          },
+          "descrizione": "+2 Difesa Magica personale per 1 turno.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "R",
+            "bersaglio": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "D",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "D",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "equip": [
+        {
+          "id": "bastone",
+          "nome": "Bastone da viaggio",
+          "tipo": "arma",
+          "taglia": "medie",
+          "qualita": "bassa",
+          "atk": 10,
+          "dif": 8,
+          "durabilita": 100,
+          "resistenza": null,
+          "base": "ich_arma_media_bassa",
+          "descrizione": "Frassino lucidato dalle mani: appoggio nel cammino, difesa all'occorrenza.",
+          "fonteCanone": "dotazione editoriale di Eydis"
+        },
+        {
+          "id": "vesti",
+          "nome": "Vesti rituali dei Vǫluspá",
+          "tipo": "armatura",
+          "taglia": "leggere",
+          "qualita": "bassa",
+          "atk": 0,
+          "dif": 2,
+          "durabilita": 50,
+          "resistenza": null,
+          "base": "ich_protezione_leggera_bassa",
+          "descrizione": "Stoffe pesanti tinte di nero, con i segni di Ansuz cuciti ai bordi.",
+          "fonteCanone": "premessa Ich: simboli dei voluspà; tinture nere della Spjasvart"
+        },
+        {
+          "id": "scrittura",
+          "nome": "Strumenti di scrittura",
+          "tipo": "descrittivo",
+          "descrizione": "Carbone, inchiostro runico e strisce di pergamena."
+        },
+        {
+          "id": "amuleti",
+          "nome": "Amuleti",
+          "tipo": "descrittivo",
+          "descrizione": "Rune appese al collo, per incamerare l'energia del segno inciso.",
+          "fonteCanone": "premessa Ich, Ulf Vanar: «ciondoli propiziatori; rune appese al collo»"
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "ragn",
+          "natura": "Vǫluspá della sua stessa famiglia (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "Bot di controllo con motore probabilistico: i sogni sono dati di altri reveries e la sua coscienza trasforma il sistema di allerta in una crepa."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Usare le previsioni come dovere."
+        },
+        {
+          "atto": 2,
+          "possibilita": "Scoprire che alcune vite sono considerate sacrificabili."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Avvertire, ingannare o liberare chi osserva nei sogni."
+        }
+      ],
+      "natura_riservata": "bot di controllo",
+      "dotazione_editoriale": "bastone da viaggio, strumenti di scrittura, vesti e amuleti",
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": "reverie",
+        "factionId": null,
+        "cultureId": null,
+        "regionId": "kynhjarta",
+        "roleId": "interprete_lingue_presagi",
+        "creatureFamilyId": null,
+        "socialClassId": null,
+        "corporationId": null,
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [
+          "natura"
+        ],
+        "societyId": null,
+        "figureId": "voluspa",
+        "riservato": {
+          "natura": "bot di controllo con motore probabilistico",
+          "rivelazione": "ich_fact_natura_eydis"
+        },
+        "statoAffiliazione": "da_approvare",
+        "proposte": {},
+        "fonti": {
+          "figureId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4) («Vǫluspá»); premessa: Vǫluspá figura del mondo",
+          "peopleId": "premessa Ich",
+          "regionId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4) (Hrafnvik, nel settore di Kynhjarta)"
+        },
+        "dubbi": [
+          "Società (Stad o Stam) non indicata: la missione dice «arrivare a Hrafnvik», quindi non vi risiede necessariamente."
+        ]
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "inventarioIniziale": [
+        {
+          "id": "ich_impacco_achillea",
+          "qty": 1
+        },
+        {
+          "id": "ich_razione_viaggio",
+          "qty": 1
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    },
+    {
+      "id": "orm",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Orm Kynwird",
+      "popolazione": "Stam",
+      "citta": "Kynwird",
+      "mansione": "Guida del bosco del primo albero",
+      "ritratto": "img/solo/ritratti/ich-orm.webp",
+      "ritratto_alt": "Ritratto di Orm Kynwird, Guida del bosco del primo albero",
+      "build": "mago",
+      "background": "Orm sente la sofferenza del bosco come una pressione fisica. Dopo averlo incontrato, alcune persone ricordano fatti mai vissuti.",
+      "obiettivo": "Fermare la malattia che modifica sentieri, animali e memoria degli abitanti.",
+      "missione_iniziale": "Seguire la malattia del bosco fino al Sentiero Bianco.",
+      "capitolo": "ich-filo-senza-padrone",
+      "primary": {
+        "hp": 6,
+        "mp": 7,
+        "for": 2,
+        "mira": 3,
+        "vel": 3,
+        "fmen": 7,
+        "dex": 2,
+        "dif": 4,
+        "dmen": 6
+      },
+      "tertiary": {
+        "stile": 1,
+        "fortuna": 2,
+        "carisma": 2
+      },
+      "traits": {
+        "conoscenze": {
+          "Natura": 2,
+          "Tradizioni": 2,
+          "Simbologia": 1
+        },
+        "capacitaNormali": {
+          "Percezione": 2,
+          "Empatia": 2,
+          "Orientamento": 1
+        },
+        "capacitaCombattive": {
+          "Spirito": 3,
+          "Difesa Mentale": 1,
+          "Resistenza": 1
+        }
+      },
+      "tecniche": [],
+      "abilita": [
+        {
+          "id": "radice_riflessa",
+          "nome": "Radice riflessa",
+          "categoria": "magia",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 7,
+          "effetto": "Attacco magico: danno base 7 + Forza Magica",
+          "costoMP": 6,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "fmen",
+          "descrizione": "Attacco magico del bosco.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "D",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        },
+        {
+          "id": "corteccia",
+          "nome": "Corteccia del ricordo",
+          "categoria": "magia",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Difesa per 1 turno",
+          "costoMP": 6,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 1,
+          "condizioniUso": [],
+          "bonus": [
+            {
+              "stat": "dif",
+              "valore": 2,
+              "testo": "+2 Difesa"
+            }
+          ],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "supporto",
+          "lv": 1,
+          "bonusStat": {
+            "dif": 2
+          },
+          "descrizione": "+2 Difesa personale per 1 turno. Al Lv 1 non cambia liberamente il bosco.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "R",
+            "bersaglio": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "D",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "D",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "equip": [
+        {
+          "id": "falcetto",
+          "nome": "Falcetto rituale",
+          "tipo": "descrittivo",
+          "descrizione": "Un falcetto per tagliare erbe e radici: non è un'arma, e nessun Kynwird lo userebbe come tale.",
+          "fonteCanone": "premessa Ich: «i Kynwird non portano mai né armi né armature con sé, né le fabbricano»"
+        },
+        {
+          "id": "mantello",
+          "nome": "Mantello vegetale",
+          "tipo": "descrittivo",
+          "descrizione": "Liane e stoffa intrecciate, dal verde al blu: veste, non protegge dai colpi.",
+          "fonteCanone": "premessa Ich: «abiti… ricavati da liane e intrecci di stoffa e radici»"
+        },
+        {
+          "id": "semi",
+          "nome": "Semi catalogati",
+          "tipo": "descrittivo",
+          "descrizione": "Semi raccolti nel Kynhjarta, divisi in sacchetti con un nodo diverso per ciascuno."
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "eiran",
+          "natura": "guida del Kynwird con cui divide i sentieri (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "Kyn, creazione primordiale del settore: se raggiunge coscienza può padroneggiare il codice locale. Al Lv 1 nessun controllo libero del settore e nessun risveglio automatico."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Proteggere un luogo sacro."
+        },
+        {
+          "atto": 2,
+          "possibilita": "Scoprire di poterlo cambiare."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Esercitare il controllo, distribuire la libertà o limitare il proprio potere."
+        }
+      ],
+      "natura_riservata": "creazione primordiale del settore",
+      "dotazione_editoriale": "falcetto rituale, mantello vegetale, semi catalogati e protezione leggera",
+      "note_revisione": "\"Orientamento\" è fra le Conoscenze nelle liste dell'app; qui è nelle Capacità Normali come nella scheda: categoria da confermare.",
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": "reverie",
+        "factionId": null,
+        "cultureId": "kynwird",
+        "regionId": "kynhjarta",
+        "roleId": "guida_del_bosco",
+        "creatureFamilyId": null,
+        "socialClassId": null,
+        "corporationId": null,
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [
+          "natura",
+          "figureId"
+        ],
+        "societyId": "stam",
+        "figureId": null,
+        "riservato": {
+          "natura": "Kyn, creazione primordiale del settore",
+          "figureId": "kyn",
+          "rivelazione": "ich_fact_natura_orm"
+        },
+        "statoAffiliazione": "corretta_da_premessa",
+        "precedente": {
+          "popolazione": "Stad"
+        },
+        "fonti": {
+          "societyId": "premessa Ich: il Kynwird è il clan delle radici; le Stam sono clan",
+          "cultureId": "premessa Ich («Kynhjarta — le radici dei Kynwird»); cognome e città «Kynwird» nel documento derivato",
+          "peopleId": "premessa Ich (i Kyn sono reveries del Ciclo Argenteo)"
+        },
+        "dubbi": [
+          "La premessa dice che i Kynwird non fabbricano né portano armi e armature: la dotazione (falcetto rituale, protezione leggera) resta invariata e va confermata."
+        ]
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "inventarioIniziale": [
+        {
+          "id": "ich_impacco_achillea",
+          "qty": 3
+        },
+        {
+          "id": "ich_razione_viaggio",
+          "qty": 1
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    },
+    {
+      "id": "sigrid",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Sigrid Aesk",
+      "popolazione": "Bannsith",
+      "citta": "Hrafnvik",
+      "mansione": "Raccoglitrice di spettri",
+      "ritratto": "img/solo/ritratti/ich-sigrid.webp",
+      "ritratto_alt": "Ritratto di Sigrid Aesk, Raccoglitrice di spettri",
+      "build": "eclettico",
+      "background": "Sigrid ha capelli biondo cenere e occhi bianchi, e veste secondo la cultura Stad. Vede spettri legati a corpi, oggetti e luoghi che gli altri avvertono solo come freddo o paura.",
+      "obiettivo": "Liberare lo spettro di un bambino che rifiuta di lasciare una casa destinata alla demolizione.",
+      "missione_iniziale": "Raggiungere Hrafnvik, dove la casa sta per essere abbattuta.",
+      "capitolo": "ich-filo-senza-padrone",
+      "primary": {
+        "hp": 5,
+        "mp": 6,
+        "for": 4,
+        "mira": 3,
+        "vel": 5,
+        "fmen": 6,
+        "dex": 5,
+        "dif": 3,
+        "dmen": 3
+      },
+      "tertiary": {
+        "stile": 2,
+        "fortuna": 1,
+        "carisma": 2
+      },
+      "traits": {
+        "conoscenze": {
+          "Folklore": 2,
+          "Riti funebri": 2,
+          "Storia Stad": 1
+        },
+        "capacitaNormali": {
+          "Percezione": 2,
+          "Ascoltare": 2,
+          "Persuasione": 1
+        },
+        "capacitaCombattive": {
+          "Falce": 2,
+          "Spirito": 2,
+          "Elusione": 1
+        }
+      },
+      "tecniche": [
+        {
+          "id": "falce_congedo",
+          "nome": "Falce di congedo",
+          "categoria": "tecnica",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 6,
+          "effetto": "Attacco fisico: danno base 6 + Forza",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "for",
+          "descrizione": "Attacco fisico con la falce corta.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "abilita": [
+        {
+          "id": "richiamo_residuo",
+          "nome": "Richiamo del residuo",
+          "categoria": "magia",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 6,
+          "effetto": "Attacco magico: danno base 6 + Forza Magica",
+          "costoMP": 6,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "fmen",
+          "descrizione": "Attacco magico. Non cancella da solo uno spettro che ricorda. Costo 6 MP.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "D",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "equip": [
+        {
+          "id": "falce",
+          "nome": "Falce corta rituale",
+          "tipo": "arma",
+          "taglia": "corte",
+          "qualita": "bassa",
+          "atk": 8,
+          "dif": 4,
+          "durabilita": 80,
+          "resistenza": null,
+          "base": "ich_arma_corta_bassa",
+          "descrizione": "La falce con cui i Bannsith «tagliano» il legame di uno spettro.",
+          "fonteCanone": "dotazione editoriale di Sigrid"
+        },
+        {
+          "id": "protezione",
+          "nome": "Protezione Stad leggera",
+          "tipo": "armatura",
+          "taglia": "leggere",
+          "qualita": "bassa",
+          "atk": 1,
+          "dif": 5,
+          "durabilita": 80,
+          "resistenza": null,
+          "base": "ich_protezione_leggera_bassa",
+          "descrizione": "Cuoio indurito delle botteghe della Stad.",
+          "fonteCanone": "premessa Ich, Bhorkyn: «armature… finemente lavorate, dal cuoio indurito al metallo»"
+        },
+        {
+          "id": "lanterna",
+          "nome": "Lanterna schermata",
+          "tipo": "descrittivo",
+          "descrizione": "Una lanterna con lo schermo di corno: la luce cade solo dove serve."
+        },
+        {
+          "id": "fili",
+          "nome": "Fili di riconoscimento",
+          "tipo": "descrittivo",
+          "descrizione": "Fili colorati legati ai polsi dei defunti, per riconoscerne l'eco."
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "elska",
+          "natura": "Bannsith della sua stessa famiglia (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "Bot di manutenzione programmato per eliminare residui di coscienza impressi nei reveries: gli spettri sono frammenti persistenti di memoria e identità."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Considerare il congedo degli spettri un rito necessario."
+        },
+        {
+          "atto": 2,
+          "possibilita": "Parlare con uno spettro che ricorda una lei diversa."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Scegliere chi proteggere, integrare o congedare."
+        }
+      ],
+      "natura_riservata": "bot di manutenzione",
+      "dotazione_editoriale": "falce corta rituale, lanterna schermata, fili di riconoscimento e protezione Stad leggera",
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": "reverie",
+        "factionId": null,
+        "cultureId": null,
+        "regionId": "kynhjarta",
+        "roleId": "raccoglitrice_di_spettri",
+        "creatureFamilyId": null,
+        "socialClassId": null,
+        "corporationId": null,
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [
+          "natura"
+        ],
+        "societyId": "stad",
+        "figureId": "bannsith",
+        "riservato": {
+          "natura": "progettata per eliminare i residui di coscienza, che percepisce come spettri",
+          "rivelazione": "ich_fact_natura_sigrid"
+        },
+        "statoAffiliazione": "coerente_da_confermare",
+        "fonti": {
+          "societyId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4) (background: «veste secondo la cultura Stad»); copione: Hrafnvik è una Stad",
+          "figureId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4); premessa: Bannsith figura del mondo",
+          "peopleId": "premessa Ich"
+        },
+        "dubbi": []
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "inventarioIniziale": [
+        {
+          "id": "ich_razione_viaggio",
+          "qty": 1
+        },
+        {
+          "id": "ich_impacco_achillea",
+          "qty": 1
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    }
+  ],
+  "formato_capacita": "rm-solo-capacita/1",
+  "legenda_fonti": {
+    "R": "regolamento dell'app",
+    "D": "documento Campagne e 15 archetipi V1",
+    "A": "regola approvata dall'autore (revisione gemme)",
+    "P": "proposta da approvare"
+  }
+}

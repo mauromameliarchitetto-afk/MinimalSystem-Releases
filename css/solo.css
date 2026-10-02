@@ -1,0 +1,233 @@
+/* Role Makers — Gioca in solitaria (prototipo, js/solo/solo-ui.js).
+   Usa i token cromatici e tipografici di css/style.css; nessun colore
+   nuovo oltre a quelli già in palette. */
+#view-solo{min-height:100vh;background:var(--antracite-1);color:var(--testo-primario-dark);}
+.solo-wrap{max-width:760px;width:100%;box-sizing:border-box;margin:0 auto;padding:calc(var(--safe-top) + 12px) max(16px, var(--safe-right)) calc(var(--safe-bottom) + var(--sig-bar-reserved, 24px) + 72px) max(16px, var(--safe-left));display:flex;flex-direction:column;gap:12px;}
+.solo-head{display:flex;align-items:center;gap:12px;}
+.solo-head h1{font-family:var(--font-title);font-size:24px;margin:0;line-height:1.1;}
+.solo-sub,.solo-note{color:var(--testo-secondario-dark);font-size:13px;line-height:1.5;margin:0;}
+.solo-small{font-size:12px;}
+.solo-h2{font-family:var(--font-title);font-size:17px;margin:8px 0 4px;color:var(--incremento-forte);}
+.solo-panel,.solo-slot{min-width:0;overflow-wrap:anywhere;background:var(--antracite-2);border:1px solid var(--bordo-superficie);border-radius:var(--radius-lg);padding:14px;}
+.solo-slot{display:flex;flex-direction:column;gap:6px;}
+.solo-slot-head{display:flex;justify-content:space-between;align-items:center;gap:8px;}
+.solo-slot-title{font-family:var(--font-title);font-size:20px;}
+.solo-slot-sub{color:var(--testo-secondario-dark);font-size:13px;}
+.solo-slot-actions,.solo-btns,.solo-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+.solo-chip{font-size:12px;border:1px solid var(--bordo-scuro);border-radius:999px;padding:2px 10px;color:var(--testo-secondario-dark);}
+.solo-row select{min-height:var(--touch-min);width:100%;min-width:0;max-width:100%;flex:1 1 100%;text-overflow:ellipsis;}
+.solo-file{position:relative;cursor:pointer;}
+.solo-progress{display:flex;align-items:center;gap:8px;margin-top:8px;}
+.solo-progress>div{height:6px;background:var(--magico);border-radius:3px;width:0;transition:width .2s;flex:0 0 auto;max-width:50%;}
+.solo-choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;}
+.solo-choice{display:flex;flex-direction:column;gap:4px;text-align:left;padding:12px;min-height:var(--touch-min);border-radius:var(--radius);border:1px solid var(--bordo-scuro);background:var(--antracite-2);color:inherit;font:inherit;cursor:pointer;}
+.solo-choice span{font-size:13px;color:var(--testo-secondario-dark);}
+.solo-choice.selected{border-color:var(--incremento);box-shadow:0 0 0 1px var(--incremento) inset;}
+.solo-choice[disabled]{opacity:.55;cursor:not-allowed;}
+.solo-warn{color:var(--fisico-forte);font-style:normal;font-size:12px;}
+.solo-status{display:flex;flex-wrap:wrap;gap:12px;font-family:var(--font-mono);font-size:13px;color:var(--testo-secondario-dark);}
+.solo-llm-state{margin-left:auto;}
+.solo-tabs{display:flex;gap:4px;border-bottom:1px solid var(--bordo-superficie);}
+.solo-tabs button{background:none;border:0;color:var(--testo-secondario-dark);font:inherit;padding:10px 14px;min-height:var(--touch-min);cursor:pointer;border-bottom:2px solid transparent;}
+.solo-tabs button.active{color:var(--testo-primario-dark);border-bottom-color:var(--incremento);}
+.solo-log{display:flex;flex-direction:column;gap:10px;}
+.solo-ev{background:var(--antracite-2);border-radius:var(--radius);padding:10px 12px;border:1px solid var(--bordo-superficie);}
+.solo-line{padding-left:10px;border-left:2px solid var(--bordo-scuro);}
+.solo-muted{color:var(--testo-secondario-dark);}
+.solo-roll{font-family:var(--font-mono);font-size:12px;color:var(--testo-secondario-dark);margin:0 0 6px;}
+.solo-effects{font-size:13px;color:var(--equip-momentaneo);margin-top:4px;}
+.solo-ev-meta{margin-top:6px;}
+.solo-badge{font-size:11px;border-radius:999px;padding:2px 8px;border:1px solid var(--bordo-scuro);color:var(--testo-secondario-dark);}
+.solo-badge.ia{border-color:var(--magico);color:var(--magico-forte);}
+.solo-badge.riserva{border-color:var(--fisico);color:var(--fisico-forte);}
+.solo-actions{display:flex;flex-direction:column;gap:10px;padding-top:8px;border-top:1px solid var(--bordo-superficie);}
+.solo-combat-head{font-family:var(--font-title);font-size:16px;}
+.solo-free{display:flex;flex-direction:column;gap:6px;}
+.solo-free textarea{width:100%;box-sizing:border-box;min-height:64px;resize:vertical;font:inherit;padding:10px;border-radius:var(--radius);background:var(--antracite-2);color:inherit;border:1px solid var(--bordo-scuro);}
+.solo-dl{display:grid;grid-template-columns:minmax(120px,40%) 1fr;gap:4px 12px;margin:0;}
+.solo-dl dt{color:var(--testo-secondario-dark);}
+.solo-dl dd{margin:0;overflow-wrap:anywhere;}
+.solo-dl .solo-full{grid-column:1 / -1;}
+.solo-modal-actions{flex-wrap:wrap;}
+.solo-end p{line-height:1.55;}
+/* Scheda del personaggio (js/solo/solo-sheet.js): riusa .box, .section-title,
+   .bar-row, .diagram-wrap e .tabs della scheda di "I miei personaggi". */
+.solo-sheet{display:flex;flex-direction:column;gap:10px;min-width:0;}
+.solo-sheet-head{display:flex;align-items:center;gap:12px;}
+.solo-sheet-head .header-avatar{width:56px;height:56px;display:flex;align-items:center;justify-content:center;}
+.solo-sheet-name{font-family:var(--font-title);font-size:20px;line-height:1.1;}
+.solo-sheet-head .sub{color:var(--testo-secondario-dark);font-size:13px;}
+.solo-sheet-tabs{overflow-x:auto;scrollbar-width:none;}
+.solo-sheet-body{gap:10px;}
+.solo-sheet .section-title{margin-top:6px;}
+.solo-dg{pointer-events:none;}
+.solo-portrait-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
+.solo-portrait{width:180px;height:180px;border-radius:var(--radius-lg);border:1px solid var(--bordo-scuro);background:var(--antracite-1) center/cover no-repeat;display:flex;align-items:center;justify-content:center;font-family:var(--font-title);font-size:48px;color:var(--testo-secondario-dark);}
+.solo-portrait-actions{display:flex;flex-direction:column;gap:8px;}
+.solo-cap{padding:10px 0;border-bottom:1px solid var(--bordo-superficie);}
+.solo-cap:last-child{border-bottom:0;}
+.solo-cap-head{display:flex;justify-content:space-between;align-items:center;gap:8px;}
+.solo-cap-meta{font-family:var(--font-mono);font-size:12px;color:var(--testo-secondario-dark);margin-top:4px;}
+.solo-cap-desc,.solo-bg{margin:6px 0 0;line-height:1.5;font-size:14px;}
+/* Scene ampliate: avanzamento verso lo svolgimento (interazioni contate) */
+.solo-scene-progress{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:13px;color:var(--testo-secondario-dark);}
+.solo-scene-progress span{width:10px;height:10px;border-radius:50%;border:1px solid var(--bordo-scuro);}
+.solo-scene-progress span.on{background:var(--incremento);border-color:var(--incremento);}
+.solo-scene-progress em{font-style:normal;margin-left:6px;}
+/* Ritratti predefiniti nella scelta del personaggio (quadrati, volto al centro) */
+.solo-choice-pg{display:grid;grid-template-columns:72px 1fr;column-gap:12px;align-items:center;}
+.solo-choice-pg .solo-choice-img{grid-row:1 / span 3;width:72px;height:72px;border-radius:var(--radius);object-fit:cover;border:1px solid var(--bordo-scuro);}
+.solo-choice-pg b,.solo-choice-pg span,.solo-choice-pg em{grid-column:2;}
+
+/* ---------- Schermata di gioco leggibile (prompt correzione ritmo e
+   leggibilità): gerarchia intestazione > narrazione > dialogo > Esito >
+   azioni > testo libero. Un solo accento per la narrazione. ---------- */
+.solo-head{align-items:flex-start;}
+.solo-head-txt{flex:1;min-width:0;}
+.solo-head h1{font-size:22px;}
+.solo-phase{display:flex;gap:4px;list-style:none;margin:4px 0 0;padding:0;flex-wrap:wrap;justify-content:flex-end;}
+.solo-phase li{font-size:12px;padding:3px 8px;border-radius:999px;border:1px solid var(--bordo-scuro);color:var(--testo-secondario-dark);}
+.solo-phase li.done{border-color:transparent;opacity:.6;}
+.solo-phase li.on{border-color:var(--incremento);color:var(--testo-primario-dark);}
+.solo-ev{padding:14px 16px;}
+.solo-scene-title{font-family:var(--font-title);font-size:20px;margin:0 0 8px;color:var(--incremento-forte);}
+.solo-narr{max-width:38em;}
+.solo-narr p{margin:0 0 .8em;font-size:17px;line-height:1.5;}
+.solo-narr p:last-child{margin-bottom:0;}
+.solo-player{display:flex;gap:8px;margin:0 0 8px;font-size:14px;line-height:1.4;color:var(--testo-secondario-dark);}
+.solo-player span{flex:none;font-family:var(--font-title);font-size:11px;text-transform:uppercase;letter-spacing:.08em;padding-top:2px;color:var(--testo-secondario-dark);}
+.solo-outcome{margin:0 0 8px;font-size:15px;line-height:1.4;}
+.solo-outcome b{color:var(--incremento-forte);}
+.solo-outcome.fallimento b,.solo-outcome.fallimento_critico b{color:var(--fisico-forte);}
+.solo-speaker-head{margin:0 0 4px;font-family:var(--font-title);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--incremento-forte);}
+.solo-line{margin:.6em 0 0;font-size:17px;line-height:1.5;padding-left:0;border:0;}
+.solo-speaker{display:block;font-family:var(--font-title);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--incremento-forte);}
+.solo-esito{margin-top:10px;border-top:1px solid var(--bordo-superficie);padding-top:6px;font-size:13px;color:var(--testo-secondario-dark);}
+.solo-esito summary{cursor:pointer;min-height:32px;display:flex;align-items:center;font-family:var(--font-title);font-size:12px;letter-spacing:.06em;text-transform:uppercase;}
+.solo-esito-body{display:flex;flex-direction:column;gap:4px;padding:4px 0 2px;line-height:1.45;}
+.solo-esito .solo-roll{margin:0;}
+.solo-notes{list-style:none;margin:-4px 0 0;padding:0 4px;display:flex;flex-direction:column;gap:4px;}
+.solo-notes li{font-size:13px;line-height:1.4;color:var(--equip-momentaneo);padding:6px 10px;border-left:2px solid var(--equip-momentaneo);background:var(--antracite-2);border-radius:0 var(--radius) var(--radius) 0;}
+.solo-levelup{margin:2px 0;padding:10px 14px;border:1px solid var(--incremento);border-radius:var(--radius);font-family:var(--font-title);font-size:15px;color:var(--incremento-forte);display:flex;justify-content:space-between;gap:8px;}
+.solo-levelup span{color:var(--testo-secondario-dark);font-size:13px;}
+.solo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;}
+.solo-act{text-transform:none;letter-spacing:0;font-family:inherit;font-weight:500;font-size:14px;line-height:1.3;white-space:normal;text-align:left;justify-content:flex-start;min-height:44px;height:auto;padding:8px 12px;overflow-wrap:anywhere;}
+.solo-act{flex-direction:column;align-items:flex-start;}
+.solo-act small{display:block;font-size:12px;opacity:.8;font-weight:400;}
+.solo-talk{border-color:var(--incremento);}
+.solo-secondary .solo-act{opacity:.9;}
+.solo-dialog-head{font-size:15px;color:var(--testo-secondario-dark);}
+.solo-dialog-head b{color:var(--testo-primario-dark);}
+.solo-pressure{margin:0;font-size:13px;color:var(--fisico-forte);}
+.solo-combat{display:flex;flex-direction:column;gap:8px;padding:10px 12px;border:1px solid var(--bordo-superficie);border-radius:var(--radius);background:var(--antracite-2);}
+.solo-combat-head{font-family:var(--font-title);font-size:16px;display:flex;justify-content:space-between;gap:8px;}
+.solo-combat-head span{font-size:12px;color:var(--testo-secondario-dark);}
+.solo-combat-bars{display:flex;flex-direction:column;gap:6px;}
+.solo-combat-bars>div{display:grid;grid-template-columns:56px 1fr auto;gap:8px;align-items:center;font-size:13px;}
+.solo-combat-bars .bar-track{height:10px;}
+.solo-free label{font-size:14px;color:var(--testo-secondario-dark);}
+.solo-free textarea{font-size:16px;}
+.solo-regen{justify-self:start;}
+.solo-actions{padding-top:12px;}
+/* ---------- Scelta del personaggio: la scheda al centro, il volto è una
+   miniatura secondaria. ---------- */
+.solo-pgcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;}
+.solo-pgcard{display:flex;flex-direction:column;gap:6px;padding:12px 14px;border:1px solid var(--bordo-superficie);border-radius:var(--radius-lg);background:var(--antracite-2);min-width:0;}
+.solo-pgcard-head{display:flex;align-items:center;gap:10px;}
+.solo-pgcard-head>div{flex:1;min-width:0;}
+.solo-pgcard-head h3{margin:0;font-family:var(--font-title);font-size:18px;line-height:1.15;}
+.solo-pgcard-img{width:44px;height:44px;border-radius:var(--radius);object-fit:cover;border:1px solid var(--bordo-scuro);flex:none;}
+.solo-pgcard-sub,.solo-pgcard-role{margin:0;font-size:13px;color:var(--testo-secondario-dark);}
+.solo-pgcard-role{color:var(--testo-primario-dark);}
+.solo-pgcard-desc,.solo-pgcard-goal{margin:0;font-size:14px;line-height:1.45;}
+.solo-pgcard-stats{list-style:none;margin:2px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;font-size:12px;color:var(--testo-secondario-dark);text-align:center;}
+.solo-pgcard-stats li{padding:6px 2px;border:1px solid var(--bordo-superficie);border-radius:var(--radius);}
+.solo-pgcard-stats b{display:block;font-family:var(--font-mono);font-size:15px;color:var(--testo-primario-dark);}
+.solo-pgcard-actions{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;}
+.solo-compare-check{display:flex;align-items:center;gap:6px;font-size:14px;min-height:44px;cursor:pointer;}
+.solo-compare-check input{width:20px;height:20px;}
+.solo-choose-bar{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;}
+.solo-choose-bar .solo-act{flex:1 1 150px;justify-content:center;align-items:center;text-align:center;}
+.solo-kv{display:grid;grid-template-columns:minmax(110px,38%) 1fr;gap:3px 10px;margin:8px 0 0;font-size:14px;line-height:1.4;}
+.solo-kv dt{color:var(--testo-secondario-dark);}
+.solo-kv dd{margin:0;overflow-wrap:anywhere;}
+.solo-list{margin:0;padding-left:18px;font-size:14px;line-height:1.5;}
+.solo-slots{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:6px;}
+.solo-slot-cell{padding:8px 10px;border-radius:var(--radius);font-size:13px;display:flex;flex-direction:column;gap:2px;}
+.solo-slot-cell small{font-size:12px;color:var(--testo-secondario-dark);}
+.solo-slot-cell.pieno{border:1px solid var(--incremento);}
+.solo-slot-cell.vuoto{border:1px dashed var(--bordo-scuro);opacity:.6;}
+.solo-cmp{display:flex;flex-direction:column;gap:10px;}
+.solo-cmp-row h4{margin:0 0 4px;font-family:var(--font-title);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--incremento-forte);}
+.solo-cmp-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.solo-cmp-cell{min-width:0;padding:8px 10px;border:1px solid var(--bordo-superficie);border-radius:var(--radius);background:var(--antracite-2);font-size:14px;}
+.solo-cmp-cell p{margin:0;line-height:1.45;}
+.solo-cmp-who{display:block;font-size:12px;color:var(--testo-secondario-dark);margin-bottom:2px;}
+.solo-cmp .solo-kv{grid-template-columns:1fr auto;margin:0;}
+@media (max-width:520px){.solo-cmp-pair{grid-template-columns:1fr;}}
+.solo-ready{color:var(--incremento-forte);}
+/* Riepilogo tecnico: separato dal racconto, un effetto per riga */
+.solo-tech{list-style:none;margin:8px 0 0;padding:8px 10px;border-radius:var(--radius);background:var(--antracite-1);border:1px solid var(--bordo-superficie);font-family:var(--font-mono);font-size:13px;line-height:1.5;display:flex;flex-direction:column;gap:4px;overflow-wrap:anywhere;}
+.solo-tech-danno{color:var(--fisico-forte);}
+.solo-tech-cura{color:var(--incremento-forte);}
+.solo-tech-mp{color:var(--magico-forte);}
+.solo-tech-nessun_danno{color:var(--testo-secondario-dark);}
+.solo-tech-stato{border-left:2px solid var(--magico);padding-left:8px;}
+.solo-tech-stato small{color:var(--testo-secondario-dark);}
+/* Transizione tra luoghi */
+.solo-transition{border-left:3px solid var(--incremento);padding:6px 12px;margin:0;font-style:italic;font-size:15px;line-height:1.5;overflow-wrap:anywhere;}
+.solo-transition p{margin:0 0 4px;}
+.solo-transition .solo-small{font-style:normal;font-size:12px;color:var(--testo-secondario-dark);}
+.solo-transition .solo-aftermath{margin-top:8px;font-style:normal;}
+/* Capacità: valori da approvare e proposte */
+.solo-tbd{color:var(--testo-secondario-dark);}
+.solo-tbd small{font-size:11px;border:1px dashed var(--bordo-scuro);border-radius:999px;padding:0 6px;}
+mark.solo-proposta{background:none;color:var(--equip-momentaneo);border-bottom:1px dashed var(--equip-momentaneo);}
+.solo-cap-off{opacity:.75;}
+.solo-gem.scarica{opacity:.7;}
+.solo-gem.scarica .solo-gem-state{border-color:var(--fisico);color:var(--fisico-forte);}
+.solo-gem [data-scarica]{margin-top:8px;width:100%;}
+/* Diario a sezioni richiudibili */
+.solo-diary{display:flex;flex-direction:column;gap:6px;}
+.solo-diary-sec{border:1px solid var(--bordo-superficie);border-radius:var(--radius);padding:0 12px;}
+.solo-diary-sec>summary{cursor:pointer;min-height:var(--touch-min);display:flex;align-items:center;gap:8px;font-family:var(--font-title);font-size:16px;color:var(--incremento-forte);}
+.solo-diary-sec ul{margin:0 0 10px;padding-left:18px;font-size:15px;line-height:1.5;overflow-wrap:anywhere;}
+.solo-diary-old>summary{cursor:pointer;font-size:13px;color:var(--testo-secondario-dark);min-height:36px;display:flex;align-items:center;}
+/* Telefono: titolo della scena a tutta larghezza, fasi su una seconda riga;
+   la fascia della firma è opaca nella sezione (il testo non la attraversa)
+   e il fondo della pagina lascia spazio a fascia, navigazione e safe area. */
+.solo-head{flex-wrap:wrap;}
+.solo-head .solo-phase{order:3;flex:1 0 100%;justify-content:flex-start;margin:2px 0 0;}
+.solo-head-txt h1{overflow-wrap:anywhere;hyphens:auto;}
+body:has(#view-solo:not(.hidden)) .app-signature{background:var(--antracite-1);}
+#view-solo .solo-wrap{padding-bottom:calc(var(--safe-bottom) + var(--sig-bar-reserved, 24px) + var(--nav-bar-reserved, 0px) + 72px);}
+@media (max-width:340px){.solo-head h1{font-size:19px;}.solo-phase li{font-size:11px;padding:2px 6px;}}
+/* scontri con più avversari: bersaglio selezionabile */
+.solo-units{display:flex;flex-direction:column;gap:6px;margin:6px 0 10px;}
+.solo-unit{display:grid;grid-template-columns:minmax(0,1.4fr) 1fr auto;gap:8px;align-items:center;font-size:13px;}
+.solo-unit small{grid-column:1/-1;color:var(--text-muted,#888);}
+.solo-unit .solo-target-btn{justify-self:start;text-align:left;white-space:normal;}
+.solo-unit.solo-target .solo-target-btn{outline:2px solid var(--accent,#c9a45c);}
+.solo-unit-out{opacity:.55;}
+.solo-unit .bar-track{height:8px;}
+
+/* Mappa della storia (single player): elenco dei luoghi noti, scheda del luogo, itinerario */
+.solo-map{display:flex;flex-direction:column;gap:12px;padding:12px 0;}
+.solo-map-canvas{width:100%;height:auto;max-height:70vh;min-height:220px;border-radius:10px;overflow:hidden;background:#0d1b2a;}
+.solo-map-list{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px;}
+.solo-map-legend{margin:-4px 0 0;font-size:.85rem;}
+.solo-map-elenco summary{cursor:pointer;min-height:var(--touch-min);display:flex;align-items:center;font-weight:600;}
+.solo-map-place{width:100%;min-height:var(--touch-min);display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:8px 12px;border:1px solid var(--bordo-superficie);border-radius:10px;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer;overflow-wrap:anywhere;}
+.solo-map-place small{color:var(--testo-secondario-dark);}
+.solo-map-place.sel{border-color:var(--incremento);}
+.solo-map-place.qui b::after{content:' •';}
+.solo-map-info,.solo-map-route{border:1px solid var(--bordo-superficie);border-radius:10px;padding:10px 12px;overflow-wrap:anywhere;}
+.solo-map-info h3,.solo-map-route h3{margin:0 0 6px;font-size:1rem;}
+.solo-map-route ol{margin:0 0 6px;padding-left:1.2em;}
+.solo-map-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+.solo-map-free label{display:block;margin-bottom:4px;}
+.solo-map-free div{display:flex;gap:8px;}
+.solo-map-free input{flex:1;min-width:0;min-height:var(--touch-min);}
+/* quattro schede (Gioco, Diario, Scheda, Mappa) anche a 320 px */
+.solo-tabs{max-width:100%;}
+.solo-tabs button{flex:1 1 0;min-width:0;padding:10px 6px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}

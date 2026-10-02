@@ -1,0 +1,1583 @@
+{
+  "formato": "rm-solo-archetipi/1",
+  "storia": "icaro",
+  "versione": "0.4.1",
+  "avviso": "Valori meccanici proposti dei 15 preset approvati dall’autore il 2026-10-01 per il gioco in modalità normale; restano revisionabili dopo la prova.",
+  "archetipi": [
+    {
+      "id": "elian",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Elian Voss",
+      "popolazione": "Cittadino di C5",
+      "citta": "C5",
+      "mansione": "Ricercatore candidato al riconoscimento come Icaro",
+      "ritratto": "img/solo/ritratti/icaro-elian.webp",
+      "ritratto_alt": "Ritratto di Elian Voss, Ricercatore candidato al riconoscimento come Icaro",
+      "build": "mago",
+      "background": "Elian è nel percorso preliminare per diventare Icaro. Un protocollo che porta il suo nome viene usato su pazienti esclusi dalla documentazione ufficiale.",
+      "obiettivo": "Rintracciare i pazienti e stabilire chi abbia modificato il progetto.",
+      "missione_iniziale": "Seguire i pazienti del protocollo fino al Nodo H-17.",
+      "capitolo": "icaro-otto-minuti",
+      "primary": {
+        "hp": 5,
+        "mp": 7,
+        "for": 1,
+        "mira": 4,
+        "vel": 3,
+        "fmen": 7,
+        "dex": 5,
+        "dif": 3,
+        "dmen": 5
+      },
+      "tertiary": {
+        "stile": 2,
+        "fortuna": 1,
+        "carisma": 2
+      },
+      "traits": {
+        "conoscenze": {
+          "Medicina": 2,
+          "Genetica": 2,
+          "Politica corporativa": 1
+        },
+        "capacitaNormali": {
+          "Analizzare": 2,
+          "Riparare": 1,
+          "Persuasione": 2
+        },
+        "capacitaCombattive": {
+          "Spirito": 2,
+          "Difesa Mentale": 2,
+          "Armi da tiro": 1
+        }
+      },
+      "tecniche": [],
+      "abilita": [
+        {
+          "id": "impulso_sinaptico",
+          "nome": "Impulso sinaptico",
+          "categoria": "magia",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 7,
+          "effetto": "Attacco magico: danno base 7 + Forza Magica",
+          "costoMP": 6,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "fmen",
+          "descrizione": "Attacco attraverso l'emettitore sinaptico.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "R",
+            "costoMP": "D",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        },
+        {
+          "id": "campo_omeostatico",
+          "nome": "Campo omeostatico",
+          "categoria": "magia",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Difesa Magica per 1 turno",
+          "costoMP": 6,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 1,
+          "condizioniUso": [],
+          "bonus": [
+            {
+              "stat": "dmen",
+              "valore": 2,
+              "testo": "+2 Difesa Magica"
+            }
+          ],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "supporto",
+          "lv": 1,
+          "bonusStat": {
+            "dmen": 2
+          },
+          "descrizione": "+2 Difesa Magica personale per 1 turno.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "R",
+            "bersaglio": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "D",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "D",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "equip": [
+        {
+          "id": "emettitore",
+          "nome": "Emettitore sinaptico",
+          "tipo": "arma",
+          "taglia": "corte",
+          "qualita": "bassa",
+          "atk": 8,
+          "dif": 4,
+          "durabilita": 80,
+          "resistenza": null,
+          "base": "icaro_arma_corta_bassa",
+          "descrizione": "Un emettitore clinico tarato per stordire: legale perché non letale.",
+          "fonteCanone": "premessa Icaro: divieto delle armi da fuoco, armi non mortali",
+          "classe": "tiro"
+        },
+        {
+          "id": "abito",
+          "nome": "Abito protettivo bianco",
+          "tipo": "armatura",
+          "taglia": "leggere",
+          "qualita": "bassa",
+          "atk": 0,
+          "dif": 3,
+          "durabilita": 60,
+          "resistenza": null,
+          "base": "icaro_protezione_leggera_bassa",
+          "descrizione": "Fibre composite riciclate, bianche come quelle che sogna di indossare per sempre.",
+          "fonteCanone": "premessa Icaro: vestiario in fibre composite; il bianco degli Icaro"
+        },
+        {
+          "id": "interfaccia",
+          "nome": "Interfaccia clinica",
+          "tipo": "descrittivo",
+          "descrizione": "Un'interfaccia diagnostica collegata ai registri di C5."
+        },
+        {
+          "id": "credenziale",
+          "nome": "Credenziale limitata C5",
+          "tipo": "descrittivo",
+          "descrizione": "Apre i laboratori del suo livello, e nessun altro."
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "anja",
+          "natura": "responsabile clinica che ha applicato il suo protocollo (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "Il protocollo di Elian è stato usato sui pazienti di H-17: titolo di Icaro contro responsabilità clinica."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Meritare l'immortalità."
+        },
+        {
+          "atto": 2,
+          "possibilita": "Scoprire il costo umano del proprio successo."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Proteggere il titolo, le persone o appropriarsi della tecnologia."
+        }
+      ],
+      "note_revisione": "Nella scheda il tratto si chiamava \"Mira\", come la statistica primaria: rinominato \"Armi da tiro\" (proposta da approvare).",
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": "umano",
+        "factionId": null,
+        "cultureId": null,
+        "regionId": "c5",
+        "roleId": "ricercatore",
+        "creatureFamilyId": null,
+        "socialClassId": null,
+        "corporationId": null,
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [],
+        "cityId": "c5",
+        "politicalGroupId": null,
+        "relazioneSistema": "candidato al riconoscimento come Icaro",
+        "statoAffiliazione": "parziale",
+        "proposte": {},
+        "fonti": {
+          "cityId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4)",
+          "relazioneSistema": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4) (mansione)"
+        },
+        "dubbi": [
+          "Colore del Cromo attuale non indicato (candidato al bianco).",
+          "Corporazione non indicata (a C5 operano Eden Bioforge e Next Tech: nessuna fonte lega Elian a una delle due)."
+        ]
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "inventarioIniziale": [
+        {
+          "id": "icaro_dose_medica",
+          "qty": 2
+        },
+        {
+          "id": "icaro_pasto_multinutrizionale",
+          "qty": 1
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    },
+    {
+      "id": "mara",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Mara Kess",
+      "popolazione": "Dipendente corporativa di C1",
+      "citta": "C1",
+      "mansione": "Revisora dei debiti",
+      "ritratto": "img/solo/ritratti/icaro-mara.webp",
+      "ritratto_alt": "Ritratto di Mara Kess, Revisora dei debiti",
+      "build": "eclettico",
+      "background": "Mara converte incidenti, assenze e cure in valori economici. Un lavoratore dichiarato morto continua a produrre dati biometrici.",
+      "obiettivo": "Trovare l'origine del segnale prima che la compagnia chiuda il fascicolo e le attribuisca la perdita.",
+      "missione_iniziale": "Seguire il segnale biometrico fino ai livelli inferiori di C1.",
+      "capitolo": "icaro-otto-minuti",
+      "primary": {
+        "hp": 5,
+        "mp": 6,
+        "for": 3,
+        "mira": 5,
+        "vel": 4,
+        "fmen": 5,
+        "dex": 6,
+        "dif": 3,
+        "dmen": 3
+      },
+      "tertiary": {
+        "stile": 1,
+        "fortuna": 1,
+        "carisma": 3
+      },
+      "traits": {
+        "conoscenze": {
+          "Economia": 2,
+          "Diritto corporativo": 2,
+          "Tecnologia": 1
+        },
+        "capacitaNormali": {
+          "Analizzare": 2,
+          "Persuasione": 2,
+          "Furtività": 1
+        },
+        "capacitaCombattive": {
+          "Armi da tiro": 2,
+          "Elusione": 2,
+          "Difesa Mentale": 1
+        }
+      },
+      "tecniche": [
+        {
+          "id": "scarica",
+          "nome": "Scarica di contenimento",
+          "categoria": "tecnica",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 6,
+          "effetto": "Attacco fisico: danno base 6 + Forza",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "for",
+          "descrizione": "Attacco fisico con l'arma non letale.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "abilita": [
+        {
+          "id": "latenza",
+          "nome": "Iniezione di latenza",
+          "categoria": "magia",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 7,
+          "effetto": "Attacco tecnologico: danno base 7 + Forza Magica",
+          "costoMP": 6,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "fmen",
+          "descrizione": "Attacco tecnologico. Costo 6 MP.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "D",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "equip": [
+        {
+          "id": "storditore",
+          "nome": "Storditore corporativo",
+          "tipo": "arma",
+          "taglia": "corte",
+          "qualita": "bassa",
+          "atk": 8,
+          "dif": 4,
+          "durabilita": 80,
+          "resistenza": null,
+          "base": "icaro_arma_corta_bassa",
+          "descrizione": "L'arma non letale concessa ai revisori della BlackRoot: scarica, non uccide.",
+          "fonteCanone": "premessa Icaro: C2 produce «attrezzature per l'abbattimento di obbiettivi pericolosi con metodi non mortali»",
+          "classe": "tiro"
+        },
+        {
+          "id": "abito",
+          "nome": "Abito schermato",
+          "tipo": "armatura",
+          "taglia": "leggere",
+          "qualita": "bassa",
+          "atk": 1,
+          "dif": 5,
+          "durabilita": 70,
+          "resistenza": null,
+          "base": "icaro_protezione_leggera_bassa",
+          "descrizione": "Un abito da ufficio con fibre conduttive: scherma i segnali e attutisce un colpo.",
+          "fonteCanone": "premessa Icaro: «alcuni indumenti invece sono volutamente conduttivi»"
+        },
+        {
+          "id": "terminale",
+          "nome": "Terminale contabile",
+          "tipo": "descrittivo",
+          "descrizione": "Il registro portatile dei debiti di C1."
+        },
+        {
+          "id": "accessi",
+          "nome": "Accessi amministrativi limitati",
+          "tipo": "descrittivo",
+          "descrizione": "Codici validi negli uffici di revisione di C1."
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "seline",
+          "natura": "revisora BlackRoot con cui lavora (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "Deve certificare trasferimenti inesistenti: carriera, prova e vite trasformate in debito."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Misurare ogni decisione."
+        },
+        {
+          "atto": 2,
+          "possibilita": "Incontrare persone cancellate come costi."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Avanzare, denunciare o prendere il controllo del sistema contabile."
+        }
+      ],
+      "note_revisione": "Nella scheda il tratto si chiamava \"Mira\", come la statistica primaria: rinominato \"Armi da tiro\" (proposta da approvare).",
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": "umano",
+        "factionId": null,
+        "cultureId": null,
+        "regionId": "c1",
+        "roleId": "revisora_dei_debiti",
+        "creatureFamilyId": null,
+        "socialClassId": null,
+        "corporationId": null,
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [],
+        "cityId": "c1",
+        "politicalGroupId": null,
+        "relazioneSistema": "dipendente corporativa",
+        "statoAffiliazione": "parziale",
+        "precedente": {
+          "popolazione": "Dipendente corporativa di C1"
+        },
+        "fonti": {
+          "cityId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4)",
+          "relazioneSistema": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4)"
+        },
+        "dubbi": [
+          "Corporazione non indicata («dipendente corporativa»): BlackRoot opera a C1 ma nessuna fonte vi lega Mara.",
+          "Colore non indicato (i banchieri sono Arancio, ma «revisora dei debiti» non è citata dalla premessa)."
+        ]
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "inventarioIniziale": [
+        {
+          "id": "icaro_dose_medica",
+          "qty": 1
+        },
+        {
+          "id": "icaro_pasto_multinutrizionale",
+          "qty": 1
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    },
+    {
+      "id": "rho",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Rho Calder",
+      "popolazione": "Recluta Patriot",
+      "citta": "C1",
+      "mansione": "Recluta di un programma Patriot",
+      "ritratto": "img/solo/ritratti/icaro-rho.webp",
+      "ritratto_alt": "Ritratto di Rho Calder, Recluta di un programma Patriot",
+      "build": "guerriero",
+      "background": "Il corpo di Rho risponde ai test meglio del previsto, ma dopo ogni sessione alcuni ricordi familiari scompaiono.",
+      "obiettivo": "Recuperare una registrazione precedente al trattamento e capire quali parti di sé siano state considerate sacrificabili.",
+      "missione_iniziale": "Seguire la traccia dei suoi ricordi mancanti fino all'archivio di H-17.",
+      "capitolo": "icaro-otto-minuti",
+      "primary": {
+        "hp": 8,
+        "mp": 2,
+        "for": 7,
+        "mira": 4,
+        "vel": 5,
+        "fmen": 1,
+        "dex": 4,
+        "dif": 6,
+        "dmen": 3
+      },
+      "tertiary": {
+        "stile": 2,
+        "fortuna": 2,
+        "carisma": 1
+      },
+      "traits": {
+        "conoscenze": {
+          "Tattica": 2,
+          "Tecnologia militare": 2,
+          "Repubblica": 1
+        },
+        "capacitaNormali": {
+          "Percezione": 2,
+          "Intimidire": 2,
+          "Resistenza fisica": 1
+        },
+        "capacitaCombattive": {
+          "Arte Combattiva": 2,
+          "Guardia": 2,
+          "Resistenza": 1
+        }
+      },
+      "tecniche": [
+        {
+          "id": "impatto",
+          "nome": "Impatto servoassistito",
+          "categoria": "tecnica",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 8,
+          "effetto": "Attacco fisico: danno base 8 + Forza",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "for",
+          "descrizione": "Attacco fisico servoassistito.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        },
+        {
+          "id": "blocco_reattivo",
+          "nome": "Blocco reattivo",
+          "categoria": "tecnica",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Difesa, −1 Velocità per 1 turno",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 1,
+          "condizioniUso": [],
+          "bonus": [
+            {
+              "stat": "dif",
+              "valore": 2,
+              "testo": "+2 Difesa"
+            }
+          ],
+          "malus": [
+            {
+              "stat": "vel",
+              "valore": -1,
+              "testo": "−1 Velocità"
+            }
+          ],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "supporto",
+          "lv": 1,
+          "bonusStat": {
+            "dif": 2,
+            "vel": -1
+          },
+          "descrizione": "+2 Difesa e −1 Velocità per 1 turno.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "R",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "D",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "sé",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "abilita": [],
+      "equip": [
+        {
+          "id": "arma_integrata",
+          "nome": "Lama integrata da addestramento",
+          "tipo": "arma",
+          "taglia": "corte",
+          "qualita": "media",
+          "atk": 12,
+          "dif": 14,
+          "durabilita": 120,
+          "resistenza": null,
+          "base": "icaro_arma_corta_media",
+          "descrizione": "Una lama che esce dall'avambraccio dell'armatura: ai Patrioti è concesso essere armati.",
+          "fonteCanone": "premessa Icaro: i Patrioti, unici autorizzati alle armi"
+        },
+        {
+          "id": "armatura",
+          "nome": "Armatura Patriot incompleta",
+          "tipo": "armatura",
+          "taglia": "medie",
+          "qualita": "bassa",
+          "atk": 6,
+          "dif": 10,
+          "durabilita": 100,
+          "resistenza": null,
+          "base": "icaro_armatura_media_bassa",
+          "descrizione": "Placche servoassistite montate a metà: la parte che manca è quella che fa di un uomo un Patriota.",
+          "fonteCanone": "premessa Icaro: progetto Patrioti, Lloyd Defence"
+        },
+        {
+          "id": "scudo",
+          "nome": "Scudo da braccio servoassistito",
+          "tipo": "scudo",
+          "taglia": "piccoli",
+          "qualita": "bassa",
+          "atk": 5,
+          "dif": 10,
+          "durabilita": 90,
+          "resistenza": null,
+          "base": "icaro_scudo_piccolo_basso",
+          "descrizione": "Una lastra che si apre sull'avambraccio con il «Blocco reattivo».",
+          "fonteCanone": "tecnica Blocco reattivo di Rho"
+        },
+        {
+          "id": "registratore",
+          "nome": "Registratore biometrico",
+          "tipo": "descrittivo",
+          "descrizione": "Registra ogni battito: qualcuno, alla Lloyd, li legge."
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "jax",
+          "natura": "capotecnico che conosce chi lavora ai nodi (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "Parti dei ricordi di Rho sono nell'archivio di H-17."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Diventare indispensabile."
+        },
+        {
+          "atto": 2,
+          "possibilita": "La differenza fra potenziamento e sostituzione."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Decidere a chi appartengono corpo, memoria e forza."
+        }
+      ],
+      "note_revisione": "\"Resistenza fisica\" (Capacità Normali) e \"Resistenza\" (Capacità Combattive) hanno nomi vicini: distinzione da confermare.",
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": "umano",
+        "factionId": null,
+        "cultureId": null,
+        "regionId": "c1",
+        "roleId": "recluta_patriot",
+        "creatureFamilyId": null,
+        "socialClassId": null,
+        "corporationId": "lloyd_defence",
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [],
+        "cityId": "c1",
+        "politicalGroupId": null,
+        "relazioneSistema": "recluta di un programma Patriot",
+        "statoAffiliazione": "parziale",
+        "precedente": {
+          "popolazione": "Recluta Patriot"
+        },
+        "fonti": {
+          "corporationId": "premessa Icaro: i Patrioti sono il corpo armato della Lloyd Defence; documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4) (recluta di un programma Patriot)",
+          "cityId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4)"
+        },
+        "dubbi": [
+          "I Patrioti sono «senza colore», ma Rho è una recluta: colore attuale non indicato.",
+          "peopleId «umano» da confermare: i Patrioti sono androidi, Rho ha ricordi familiari."
+        ]
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "inventarioIniziale": [
+        {
+          "id": "icaro_dose_medica",
+          "qty": 1
+        },
+        {
+          "id": "icaro_pasto_multinutrizionale",
+          "qty": 1
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    },
+    {
+      "id": "nia",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Nia Sorn",
+      "popolazione": "Spenta",
+      "citta": "C7",
+      "mansione": "Corriere di pacchetti di memoria",
+      "ritratto": "img/solo/ritratti/icaro-nia.webp",
+      "ritratto_alt": "Ritratto di Nia Sorn, Corriere di pacchetti di memoria",
+      "build": "mago",
+      "background": "Nia è una corriere dei bassifondi di C7, classificata come Spenta. Trasporta pacchetti di memoria per chi non può permettersi un archivio ufficiale.",
+      "obiettivo": "Restituire l'ultimo ricordo di una cliente eliminata dai registri pubblici.",
+      "missione_iniziale": "Consegnare un pacchetto a un indirizzo di H-17 che risulta evacuato.",
+      "capitolo": "icaro-otto-minuti",
+      "primary": {
+        "hp": 5,
+        "mp": 7,
+        "for": 1,
+        "mira": 4,
+        "vel": 6,
+        "fmen": 7,
+        "dex": 5,
+        "dif": 2,
+        "dmen": 3
+      },
+      "tertiary": {
+        "stile": 2,
+        "fortuna": 2,
+        "carisma": 1
+      },
+      "traits": {
+        "conoscenze": {
+          "Reti": 2,
+          "Bassifondi C7": 2,
+          "Mercato nero": 1
+        },
+        "capacitaNormali": {
+          "Furtività": 2,
+          "Percezione": 2,
+          "Decifrare": 1
+        },
+        "capacitaCombattive": {
+          "Elusione": 2,
+          "Difesa Mentale": 2,
+          "Armi da tiro": 1
+        }
+      },
+      "tecniche": [],
+      "abilita": [
+        {
+          "id": "frattura_segnale",
+          "nome": "Frattura di segnale",
+          "categoria": "magia",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 7,
+          "effetto": "Attacco tecnologico: danno base 7 + Forza Magica",
+          "costoMP": 6,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "fmen",
+          "descrizione": "Attacco tecnologico.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "D",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        },
+        {
+          "id": "maschera_rumore",
+          "nome": "Maschera di rumore",
+          "categoria": "magia",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Difesa Magica per 1 turno",
+          "costoMP": 6,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 1,
+          "condizioniUso": [],
+          "bonus": [
+            {
+              "stat": "dmen",
+              "valore": 2,
+              "testo": "+2 Difesa Magica"
+            }
+          ],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "supporto",
+          "lv": 1,
+          "bonusStat": {
+            "dmen": 2
+          },
+          "descrizione": "+2 Difesa Magica personale per 1 turno.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "R",
+            "bersaglio": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "D",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "D",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "equip": [
+        {
+          "id": "lama_palmo",
+          "nome": "Lama nascosta nel palmo",
+          "tipo": "arma",
+          "taglia": "corte",
+          "qualita": "bassa",
+          "atk": 8,
+          "dif": 4,
+          "durabilita": 80,
+          "resistenza": null,
+          "base": "icaro_arma_corta_bassa",
+          "descrizione": "Una lama sottile che esce dal palmo: le armi vietate si nascondono nel corpo.",
+          "fonteCanone": "premessa Icaro: «il totale divieto nell'utilizzo di armi… crea un ampio campo di creatività nella realizzazione di armi nascoste»"
+        },
+        {
+          "id": "abiti",
+          "nome": "Abiti termici leggeri",
+          "tipo": "armatura",
+          "taglia": "leggere",
+          "qualita": "bassa",
+          "atk": 0,
+          "dif": 3,
+          "durabilita": 60,
+          "resistenza": null,
+          "base": "icaro_protezione_leggera_bassa",
+          "descrizione": "Strati termici da bassifondi, grigi come il suo colore.",
+          "fonteCanone": "premessa Icaro: gli Spenti, il grigio"
+        },
+        {
+          "id": "interfaccia",
+          "nome": "Interfaccia portatile",
+          "tipo": "descrittivo",
+          "descrizione": "Legge e scrive pacchetti di memoria."
+        },
+        {
+          "id": "emettitore",
+          "nome": "Emettitore clandestino",
+          "tipo": "descrittivo",
+          "descrizione": "Disturba i segnali per pochi secondi."
+        },
+        {
+          "id": "custodia",
+          "nome": "Custodia schermata",
+          "tipo": "descrittivo",
+          "descrizione": "Tiene i pacchetti di memoria lontani dai lettori."
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "kade",
+          "natura": "portavoce degli Spenti per cui a volte lavora (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "Trasporta copie clandestine dei pazienti di H-17."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Vendere frammenti senza legarsi ai proprietari."
+        },
+        {
+          "atto": 2,
+          "possibilita": "Scoprire che un pacchetto contiene parte della propria storia."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Restituire, diffondere o sfruttare le identità."
+        }
+      ],
+      "note_revisione": "Nella scheda il tratto si chiamava \"Mira\", come la statistica primaria: rinominato \"Armi da tiro\" (proposta da approvare).",
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": "umano",
+        "factionId": null,
+        "cultureId": null,
+        "regionId": "c7",
+        "roleId": "corriere_pacchetti_memoria",
+        "creatureFamilyId": null,
+        "socialClassId": "grigio",
+        "corporationId": null,
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [],
+        "cityId": "c7",
+        "politicalGroupId": null,
+        "relazioneSistema": "esclusa dalla competizione (Spenta)",
+        "statoAffiliazione": "confermata_da_fonti",
+        "precedente": {
+          "popolazione": "Spenta"
+        },
+        "fonti": {
+          "socialClassId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4) («classificata come Spenta»); premessa: Grigio — spenti",
+          "cityId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4)"
+        },
+        "dubbi": [
+          "Il colore non implica un gruppo politico: nessuna fonte la lega a Kade o all'occupazione degli Spenti."
+        ]
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "inventarioIniziale": [
+        {
+          "id": "icaro_dose_medica",
+          "qty": 1
+        },
+        {
+          "id": "icaro_pasto_multinutrizionale",
+          "qty": 1
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    },
+    {
+      "id": "tomas",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Tomas Vale",
+      "popolazione": "Nato fuori dalle cupole",
+      "citta": "Esterno",
+      "mansione": "Recuperatore e conduttore di convogli",
+      "ritratto": "img/solo/ritratti/icaro-tomas.webp",
+      "ritratto_alt": "Ritratto di Tomas Vale, Recuperatore e conduttore di convogli",
+      "build": "guerriero",
+      "background": "Tomas conduce convogli fra rovine congelate e vende materiali alle metropoli. Una richiesta di soccorso arriva da un settore che la Repubblica dichiara disabitato.",
+      "obiettivo": "Raggiungere il settore e decidere se consegnarne gli occupanti, nasconderli o prenderne le risorse.",
+      "missione_iniziale": "Rispondere alla richiesta di soccorso che arriva da H-17.",
+      "capitolo": "icaro-otto-minuti",
+      "primary": {
+        "hp": 7,
+        "mp": 2,
+        "for": 6,
+        "mira": 5,
+        "vel": 5,
+        "fmen": 1,
+        "dex": 4,
+        "dif": 7,
+        "dmen": 3
+      },
+      "tertiary": {
+        "stile": 1,
+        "fortuna": 3,
+        "carisma": 1
+      },
+      "traits": {
+        "conoscenze": {
+          "Sopravvivenza": 2,
+          "Rovine": 2,
+          "Meccanica": 1
+        },
+        "capacitaNormali": {
+          "Orientamento": 2,
+          "Riparare": 2,
+          "Percezione": 1
+        },
+        "capacitaCombattive": {
+          "Armi pesanti": 2,
+          "Resistenza": 2,
+          "Guardia": 1
+        }
+      },
+      "tecniche": [
+        {
+          "id": "breccia",
+          "nome": "Colpo da breccia",
+          "categoria": "tecnica",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 8,
+          "effetto": "Attacco fisico: danno base 8 + Forza",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "for",
+          "descrizione": "Attacco fisico con l'utensile da breccia.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        },
+        {
+          "id": "assetto_termico",
+          "nome": "Assetto termico",
+          "categoria": "tecnica",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Difesa, −1 Mira per 1 turno",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 1,
+          "condizioniUso": [],
+          "bonus": [
+            {
+              "stat": "dif",
+              "valore": 2,
+              "testo": "+2 Difesa"
+            }
+          ],
+          "malus": [
+            {
+              "stat": "mira",
+              "valore": -1,
+              "testo": "−1 Mira"
+            }
+          ],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "supporto",
+          "lv": 1,
+          "bonusStat": {
+            "dif": 2,
+            "mira": -1
+          },
+          "descrizione": "+2 Difesa e −1 Mira per 1 turno.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "R",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "D",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "sé",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "abilita": [],
+      "equip": [
+        {
+          "id": "utensile",
+          "nome": "Utensile da breccia",
+          "tipo": "arma",
+          "taglia": "medie",
+          "qualita": "bassa",
+          "atk": 10,
+          "dif": 8,
+          "durabilita": 100,
+          "resistenza": null,
+          "base": "icaro_arma_media_bassa",
+          "descrizione": "Una leva d'acciaio per aprire portelli congelati, e teste dure.",
+          "fonteCanone": "dotazione editoriale di Tomas"
+        },
+        {
+          "id": "tuta",
+          "nome": "Tuta termica esterna con casco sigillato",
+          "tipo": "armatura",
+          "taglia": "medie",
+          "qualita": "bassa",
+          "atk": 5,
+          "dif": 8,
+          "durabilita": 100,
+          "resistenza": null,
+          "base": "icaro_armatura_media_bassa",
+          "descrizione": "La tuta da esterno con strati di aerogel e casco sigillato: senza, fuori dalle cupole si muore.",
+          "fonteCanone": "premessa Icaro: «Gli indumenti per lo spazio esterno sono obbligatori»; aerogel nelle tute di esplorazione"
+        },
+        {
+          "id": "scudo",
+          "nome": "Scudo di lamiera da convoglio",
+          "tipo": "scudo",
+          "taglia": "medi",
+          "qualita": "bassa",
+          "atk": 10,
+          "dif": 10,
+          "durabilita": 100,
+          "resistenza": null,
+          "base": "icaro_scudo_medio_basso",
+          "descrizione": "Un pannello di lamiera staccato da un convoglio, con due maniglie saldate dietro.",
+          "fonteCanone": "mansione di Tomas: recuperatore e conduttore di convogli"
+        },
+        {
+          "id": "ossigeno",
+          "nome": "Riserva d'ossigeno",
+          "tipo": "descrittivo",
+          "descrizione": "Una bombola da cintura, per una tratta esterna."
+        },
+        {
+          "id": "radio",
+          "nome": "Radio a corto raggio",
+          "tipo": "descrittivo",
+          "descrizione": "Per parlare con il convoglio quando le reti tacciono."
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "oko",
+          "natura": "guida dell'esterno della sua stessa famiglia (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "Conosce la via esterna e i suoi limiti: sceglie chi riceve calore, ossigeno e un posto nel convoglio."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Considerare la vita un calcolo termico."
+        },
+        {
+          "atto": 2,
+          "possibilita": "Dividere ossigeno e calore con sconosciuti."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Scegliere quale comunità chiamare casa."
+        }
+      ],
+      "note_revisione": "\"Orientamento\" è fra le Conoscenze nelle liste dell'app; qui è nelle Capacità Normali come nella scheda: categoria da confermare.",
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": "umano",
+        "factionId": null,
+        "cultureId": null,
+        "regionId": "esterno",
+        "roleId": "recuperatore_conduttore_convogli",
+        "creatureFamilyId": null,
+        "socialClassId": null,
+        "corporationId": null,
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [],
+        "cityId": null,
+        "politicalGroupId": null,
+        "relazioneSistema": "nato fuori dalle cupole",
+        "statoAffiliazione": "da_approvare",
+        "proposte": {
+          "socialClassId": "senza_colore"
+        },
+        "precedente": {
+          "popolazione": "Nato fuori dalle cupole",
+          "citta": "Esterno"
+        },
+        "fonti": {
+          "proposta": "premessa Icaro: «Senza colore: nati naturali non registrati, comunità esterne»",
+          "relazioneSistema": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4)"
+        },
+        "dubbi": [
+          "«Nato fuori dalle cupole» e città «Esterno» contrastano con l'esterno inabitabile della premessa: serve un insediamento protetto non nominato dalle fonti.",
+          "Colore «senza colore» solo dedotto: da approvare."
+        ]
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "inventarioIniziale": [
+        {
+          "id": "icaro_dose_medica",
+          "qty": 1
+        },
+        {
+          "id": "icaro_pasto_multinutrizionale",
+          "qty": 1
+        },
+        {
+          "id": "icaro_cella_termica_dotazione",
+          "qty": 1
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    }
+  ],
+  "formato_capacita": "rm-solo-capacita/1",
+  "legenda_fonti": {
+    "R": "regolamento dell'app",
+    "D": "documento Campagne e 15 archetipi V1",
+    "A": "regola approvata dall'autore (revisione gemme)",
+    "P": "proposta da approvare"
+  }
+}

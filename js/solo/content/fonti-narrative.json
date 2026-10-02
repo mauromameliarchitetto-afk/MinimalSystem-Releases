@@ -1,0 +1,4225 @@
+{
+ "formato": "rm-solo-fonti/1",
+ "versione": "1.0.0",
+ "descrizione": "Manifesto delle fonti narrative: ogni dato dei pacchetti di contesto cita uno di questi ID. I file sorgente non sono nel repository: sono identificati da percorso nel pacchetto integrale, dimensione e impronta SHA-1 (12 caratteri).",
+ "pacchetto": "PACCHETTO_INTEGRALE_TRE_AVVENTURE (231 file: 210 Drive + 21 supplementari/derivati/inventario)",
+ "gerarchia": {
+  "1": "decisione esplicita dell'autore",
+  "2": "premessa, regolamento o progettazione dell'autore",
+  "3": "script o trascrizione di gioco",
+  "4": "racconto o prosa",
+  "5": "mappa, scheda o immagine",
+  "6": "decisione di prompt",
+  "7": "documento derivato",
+  "8": "implementazione"
+ },
+ "notaGerarchia": "Numero più basso = autorità più alta. In caso di conflitto prevale la fonte di autorità più alta; a parità, il testo più recente della stessa campagna. Un documento derivato (7) non può mai essere l'unica fonte di un dato canonico.",
+ "classi": {
+  "canonico_pubblico": "Nelle fonti originali e noto ai personaggi del mondo.",
+  "canonico_riservato": "Nelle fonti originali ma nascosto ai PG: entra in scena solo con lo sblocco previsto.",
+  "conoscibile": "Nelle fonti; il PG può scoprirlo con un'azione o un tiro nella scena giusta.",
+  "deducibile": "Indizio presente nelle fonti; la conclusione non è confermata dall'autore.",
+  "specifico_partita": "Nato in questa partita (stato di gioco): non è canone.",
+  "proposta": "Contenuto progettato per l'app o derivato dal metodo: va approvato prima di diventare canone.",
+  "incompleto": "Assente o interrotto nelle fonti: non si inventa."
+ },
+ "corpora": [
+  {
+   "id": "EID-RW",
+   "campagna": "eidos",
+   "nome": "Eidos — Roots of War",
+   "copertura": "parziale",
+   "lacune": [
+    "episodi 5, 6 e 10 assenti dall'archivio"
+   ],
+   "stato": "letto integralmente (testi presenti)"
+  },
+  {
+   "id": "EID-SP",
+   "campagna": "eidos",
+   "nome": "Eidos — storia parallela (tre ragazze)",
+   "copertura": "parziale",
+   "lacune": [
+    "atti I-II solo come sinossi (A Hiberic Story)",
+    "Capitolo VIII \"Red is come\" vuoto (0 byte)",
+    "capitoli intermedi assenti"
+   ],
+   "stato": "letto integralmente (testi presenti)"
+  },
+  {
+   "id": "EID-EM",
+   "campagna": "eidos",
+   "nome": "Eidos — campagna principale",
+   "copertura": "completa",
+   "lacune": [
+    "\"My Vengeance\" (Cap. 26) vuoto",
+    "\"2_Istros\" vuoto",
+    "finale aperto per scelta dell'autore"
+   ],
+   "stato": "letto integralmente (capitoli 1-47 e trascrizioni)"
+  },
+  {
+   "id": "EID-PRE",
+   "campagna": "eidos",
+   "nome": "Eidos — premessa e materiali sparsi",
+   "copertura": "completa",
+   "lacune": [
+    "schede retro: solo immagine"
+   ],
+   "stato": "letto"
+  },
+  {
+   "id": "ICH-CP",
+   "campagna": "ich",
+   "nome": "Ich — campagna principale",
+   "copertura": "completa con appunti incompleti",
+   "lacune": [
+    "\"Appunti per il futuro\": arco di Leita solo abbozzato"
+   ],
+   "stato": "letto integralmente (capitoli 0-40)"
+  },
+  {
+   "id": "ICH-PRE",
+   "campagna": "ich",
+   "nome": "Ich — premessa",
+   "copertura": "completa",
+   "lacune": [],
+   "stato": "letto"
+  },
+  {
+   "id": "ICA-CP",
+   "campagna": "icaro",
+   "nome": "Icaro — campagna principale",
+   "copertura": "incompleta",
+   "lacune": [
+    "Stagione 2 ferma all'Ep. 04: nessun finale di stagione né di campagna",
+    "S2 Ep02: scena di Dahlia interrotta a metà frase",
+    "identità dello Spettro Bianco e di Sol non rivelate",
+    "causa della contaminazione delle colture a C5 non spiegata"
+   ],
+   "stato": "letto integralmente (S1 Ep0-10, S2 Ep01-04)"
+  },
+  {
+   "id": "ICA-PRE",
+   "campagna": "icaro",
+   "nome": "Icaro — premessa e schede",
+   "copertura": "completa",
+   "lacune": [],
+   "stato": "letto"
+  }
+ ],
+ "decisioni": [
+  {
+   "id": "AUT-001",
+   "campagna": "eidos",
+   "testo": "I Tèras sono creature (mostri), mai un popolo, una fazione o una provenienza; gli oggetti in osso di Tèras sono lavorati da persone.",
+   "tipo": "decisione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 1,
+   "autoritaEtichetta": "decisione esplicita dell'autore",
+   "utilizzo": "vincolo",
+   "file": "(istruzioni dell'autore in sessione, riportate in docs/single-player/FONTI_E_RIALLINEAMENTO.md)"
+  },
+  {
+   "id": "AUT-002",
+   "campagna": "eidos",
+   "testo": "Chorisfos, Epizi ed Eporiani sono popoli distinti; «Antarsi» è un termine dispregiativo e politico, non una razza.",
+   "tipo": "decisione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 1,
+   "autoritaEtichetta": "decisione esplicita dell'autore",
+   "utilizzo": "vincolo",
+   "file": "(istruzioni dell'autore in sessione, riportate in docs/single-player/FONTI_E_RIALLINEAMENTO.md)"
+  },
+  {
+   "id": "AUT-003",
+   "campagna": "ich",
+   "testo": "«Reverie» è pubblico; la natura artificiale del mondo, il controllo esterno, gli utenti silenziosi e la funzione terapeutica sono riservati: prima dell'Atto III solo percezioni.",
+   "tipo": "decisione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 1,
+   "autoritaEtichetta": "decisione esplicita dell'autore",
+   "utilizzo": "vincolo",
+   "file": "(istruzioni dell'autore in sessione, riportate in docs/single-player/FONTI_E_RIALLINEAMENTO.md)"
+  },
+  {
+   "id": "AUT-004",
+   "campagna": "icaro",
+   "testo": "L'esterno è ghiacciato e senza aria respirabile: per uscire servono tuta, casco sigillato e respiratore, mai il volto scoperto. La tecnologia appartiene solo a Icaro. Le parti mancanti vanno marcate come incomplete.",
+   "tipo": "decisione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 1,
+   "autoritaEtichetta": "decisione esplicita dell'autore",
+   "utilizzo": "vincolo",
+   "file": "(istruzioni dell'autore in sessione, riportate in docs/single-player/FONTI_E_RIALLINEAMENTO.md)"
+  },
+  {
+   "id": "AUT-005",
+   "campagna": "trasversale",
+   "testo": "Un motore, una voce autoriale condivisa, tre pacchetti isolati; a ogni turno si carica solo il contesto pertinente. Nessuna proposta diventa canone senza approvazione.",
+   "tipo": "decisione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 1,
+   "autoritaEtichetta": "decisione esplicita dell'autore",
+   "utilizzo": "vincolo",
+   "file": "(istruzioni dell'autore in sessione, riportate in docs/single-player/FONTI_E_RIALLINEAMENTO.md)"
+  }
+ ],
+ "fonti": [
+  {
+   "id": "INV-001",
+   "file": "00_INVENTARIO_INTEGRALE.md",
+   "byte": 10118,
+   "sha1": "ac227e4a6a57",
+   "campagna": "trasversale",
+   "tipo": "inventario",
+   "origine": "derivato",
+   "copertura": "integrale",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "verifica di completezza"
+  },
+  {
+   "id": "EID-PRE-001",
+   "file": "01_EIDOS/00_PREMESSA_E_MATERIALI_SPARSI/Cap 1 e 2 MM - La materia delle idee.docx",
+   "byte": 40015,
+   "sha1": "7d39af8eaf2b",
+   "campagna": "eidos",
+   "tipo": "racconto",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 4,
+   "autoritaEtichetta": "racconto o prosa",
+   "utilizzo": "densità e lessico; non forma del turno"
+  },
+  {
+   "id": "EID-PRE-002",
+   "file": "01_EIDOS/00_PREMESSA_E_MATERIALI_SPARSI/Diffetti dei pg.docx",
+   "byte": 7256,
+   "sha1": "4d914ebeb75b",
+   "campagna": "eidos",
+   "tipo": "progettazione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "metodo e canone (riservato se lo dice il testo)"
+  },
+  {
+   "id": "EID-PRE-003",
+   "file": "01_EIDOS/00_PREMESSA_E_MATERIALI_SPARSI/Eidos.pdf",
+   "byte": 2667533,
+   "sha1": "5db421b170c8",
+   "campagna": "eidos",
+   "tipo": "premessa",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "canone pubblico e regole di mondo"
+  },
+  {
+   "id": "EID-PRE-004",
+   "file": "01_EIDOS/00_PREMESSA_E_MATERIALI_SPARSI/Glossario Eidos pt. 1.pdf",
+   "byte": 461291,
+   "sha1": "fd7e8927155e",
+   "campagna": "eidos",
+   "tipo": "glossario",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "canone pubblico e lessico"
+  },
+  {
+   "id": "EID-PRE-005",
+   "file": "01_EIDOS/00_PREMESSA_E_MATERIALI_SPARSI/Jenny.docx",
+   "byte": 7001,
+   "sha1": "c1da24c3a159",
+   "campagna": "eidos",
+   "tipo": "testo_personale",
+   "origine": "supplementare",
+   "copertura": "integrale",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno: testo personale estraneo alle campagne"
+  },
+  {
+   "id": "EID-PRE-006",
+   "file": "01_EIDOS/00_PREMESSA_E_MATERIALI_SPARSI/La materia delle idee - le torri di antarsia.pdf",
+   "byte": 431774,
+   "sha1": "d46b39465186",
+   "campagna": "eidos",
+   "tipo": "racconto",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 4,
+   "autoritaEtichetta": "racconto o prosa",
+   "utilizzo": "densità e lessico; non forma del turno"
+  },
+  {
+   "id": "EID-PRE-007",
+   "file": "01_EIDOS/00_PREMESSA_E_MATERIALI_SPARSI/Progetto capitoli.docx",
+   "byte": 7134,
+   "sha1": "e91bbf295695",
+   "campagna": "eidos",
+   "tipo": "progettazione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "metodo e canone (riservato se lo dice il testo)"
+  },
+  {
+   "id": "EID-PRE-008",
+   "file": "01_EIDOS/00_PREMESSA_E_MATERIALI_SPARSI/Sinossi.docx",
+   "byte": 7367,
+   "sha1": "a602ca1715fc",
+   "campagna": "eidos",
+   "tipo": "progettazione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "metodo e canone (riservato se lo dice il testo)"
+  },
+  {
+   "id": "EID-PRE-009",
+   "file": "01_EIDOS/00_PREMESSA_E_MATERIALI_SPARSI/Struttura Eidos.docx",
+   "byte": 7743,
+   "sha1": "842069234be7",
+   "campagna": "eidos",
+   "tipo": "progettazione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "metodo e canone (riservato se lo dice il testo)"
+  },
+  {
+   "id": "EID-PRE-010",
+   "file": "01_EIDOS/00_PREMESSA_E_MATERIALI_SPARSI/scheda retro chorisf.jpg",
+   "byte": 1084180,
+   "sha1": "fb342c4d0500",
+   "campagna": "eidos",
+   "tipo": "scheda_regole",
+   "origine": "originale",
+   "copertura": "immagine o PDF senza testo estraibile: letta visivamente",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "regole di mondo (Archetype System)"
+  },
+  {
+   "id": "EID-PRE-011",
+   "file": "01_EIDOS/00_PREMESSA_E_MATERIALI_SPARSI/scheda retro epizi.pdf",
+   "byte": 2693740,
+   "sha1": "c51a6aff0f88",
+   "campagna": "eidos",
+   "tipo": "scheda_regole",
+   "origine": "originale",
+   "copertura": "immagine o PDF senza testo estraibile: letta visivamente",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "regole di mondo (Archetype System)"
+  },
+  {
+   "id": "EID-RW-001",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/1bc979da5efa55b84c4c60ae753db477.jpg",
+   "byte": 42244,
+   "sha1": "542c965681a0",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-RW-002",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/21997.jpg",
+   "byte": 127114,
+   "sha1": "0dc123e50dcc",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-RW-003",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Athres.jpg",
+   "byte": 19214,
+   "sha1": "426ebe4d5d08",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-RW-004",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Ep. 0.1 - Intro.docx",
+   "byte": 19573,
+   "sha1": "66b39de07905",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-RW-005",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Ep. 0.2 - Intro.docx",
+   "byte": 19168,
+   "sha1": "2faa808fddd3",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-RW-006",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Ep. 1 - Fragments of destiny.docx",
+   "byte": 12109,
+   "sha1": "4245e5836bab",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-RW-007",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Ep. 11 - Senza ritorno.docx",
+   "byte": 17839,
+   "sha1": "094804bb01bd",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-RW-008",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Ep. 12 Verso la speranza.docx",
+   "byte": 22766,
+   "sha1": "64f7eb6669df",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-RW-009",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Ep. 2 - Roots.docx",
+   "byte": 21784,
+   "sha1": "340d0abf5fb2",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-RW-010",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Ep. 3 - Simboli.docx",
+   "byte": 18000,
+   "sha1": "385f1c971bb5",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-RW-011",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Ep. 4 - Simboli pt.2.docx",
+   "byte": 16029,
+   "sha1": "b9c232becd56",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-RW-012",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Ep. 7 - La propria voce, le proprie idee.docx",
+   "byte": 17644,
+   "sha1": "9a880d1cf1ca",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-RW-013",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Ep. 8 - Borns of blood.docx",
+   "byte": 16647,
+   "sha1": "c866f0b00ee5",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-RW-014",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Ep. 9 - The weight of choices.docx",
+   "byte": 11069,
+   "sha1": "33e4ff90de7e",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-RW-015",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Keyras.jpg",
+   "byte": 78370,
+   "sha1": "95c4e681d96e",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-RW-016",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Korkas.jpg",
+   "byte": 98277,
+   "sha1": "a00f62beed43",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-RW-017",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Logo Eidos-Spinnoff.jpg",
+   "byte": 619254,
+   "sha1": "58edec7105e5",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-RW-018",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Petra(2).jpg",
+   "byte": 58087,
+   "sha1": "8d2de3aa91c7",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-RW-019",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/Petra.jpg",
+   "byte": 92175,
+   "sha1": "2f2892c74d8d",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-RW-020",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/gm-matagentes-arre.jpg",
+   "byte": 88636,
+   "sha1": "716dc5b150e2",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-RW-021",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/images.jpg",
+   "byte": 6012,
+   "sha1": "5ee3de2a463c",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-RW-022",
+   "file": "01_EIDOS/01_ROOTS_OF_WAR/trasferimento.jpg",
+   "byte": 7105,
+   "sha1": "1b85aad3b4c7",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-SP-001",
+   "file": "01_EIDOS/02_STORIA_PARALLELA/A Hiberic Story.docx",
+   "byte": 19855,
+   "sha1": "dba689982659",
+   "campagna": "eidos",
+   "tipo": "sinossi_narrativa",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 4,
+   "autoritaEtichetta": "racconto o prosa",
+   "utilizzo": "canone degli atti I-II della storia parallela"
+  },
+  {
+   "id": "EID-SP-002",
+   "file": "01_EIDOS/02_STORIA_PARALLELA/Capitolo VII/Capitolo VII - Nightmare of Nightmares.docx",
+   "byte": 13791,
+   "sha1": "759d012651f7",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-SP-003",
+   "file": "01_EIDOS/02_STORIA_PARALLELA/Capitolo VIII/Capitolo VII - Nightmare of Nightmares.docx",
+   "byte": 13791,
+   "sha1": "759d012651f7",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "duplicato identico di EID-SP-002",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-SP-004",
+   "file": "01_EIDOS/02_STORIA_PARALLELA/Capitolo VIII/Capitolo VIII - Red is come.docx",
+   "byte": 0,
+   "sha1": "da39a3ee5e6b",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "vuoto (0 byte): illeggibile",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-SP-005",
+   "file": "01_EIDOS/02_STORIA_PARALLELA/Fin.docx",
+   "byte": 37568,
+   "sha1": "c136ed449016",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-SP-006",
+   "file": "01_EIDOS/02_STORIA_PARALLELA/Fine Secondo Atto.docx",
+   "byte": 22070,
+   "sha1": "d005eaa50789",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-SP-007",
+   "file": "01_EIDOS/02_STORIA_PARALLELA/Nomi pg.txt",
+   "byte": 118,
+   "sha1": "a4ec84ba0d1c",
+   "campagna": "eidos",
+   "tipo": "elenco_nomi",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "solo nomi"
+  },
+  {
+   "id": "EID-SP-008",
+   "file": "01_EIDOS/02_STORIA_PARALLELA/Pre finale terzo atto.docx",
+   "byte": 13095,
+   "sha1": "06f2eccb57ff",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-001",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/0_Misia e Mhor/1_Through the path of the lies and ashes.docx",
+   "byte": 49084,
+   "sha1": "1a7e09bfb6c2",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-002",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/0_Misia e Mhor/2_Istros.docx",
+   "byte": 0,
+   "sha1": "da39a3ee5e6b",
+   "campagna": "eidos",
+   "tipo": "trascrizione_giocata",
+   "origine": "originale",
+   "copertura": "vuoto (0 byte): illeggibile",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone giocato"
+  },
+  {
+   "id": "EID-EM-003",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/0_Misia e Mhor/2_Misia&Mohr.docx",
+   "byte": 69749,
+   "sha1": "54058c141c68",
+   "campagna": "eidos",
+   "tipo": "trascrizione_giocata",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone giocato"
+  },
+  {
+   "id": "EID-EM-004",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/0_Misia e Mhor/3_Misia&Mohr.docx",
+   "byte": 87008,
+   "sha1": "b38675d3b3b1",
+   "campagna": "eidos",
+   "tipo": "trascrizione_giocata",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone giocato"
+  },
+  {
+   "id": "EID-EM-005",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/1_Mostri/Azzannatore.jpg",
+   "byte": 50883,
+   "sha1": "dceac8138134",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-006",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/1_Mostri/e2abc633283383.56a6cccb4f510.jpg",
+   "byte": 168494,
+   "sha1": "c711c3ac50b4",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-007",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/1_Mostri/ruktis.jpg",
+   "byte": 737540,
+   "sha1": "2b9837281e12",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-008",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/1_Mostri/titanothere.jpg",
+   "byte": 292962,
+   "sha1": "6702f737db51",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-009",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 1 - Awekening - Script.docx",
+   "byte": 783113,
+   "sha1": "41dcde2c2b4f",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-010",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 1/Capitolo 1 - Awekening - Script.docx",
+   "byte": 782481,
+   "sha1": "0eac1273f798",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-011",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 10/Capitolo 10_The chant of the last ones.docx",
+   "byte": 7446,
+   "sha1": "672201544861",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-012",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 11/Domino.docx",
+   "byte": 47134,
+   "sha1": "3dde48f899a1",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-013",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 12 - fine primo atto/Glass Cannon.docx",
+   "byte": 249134,
+   "sha1": "8746b30060ce",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-014",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 12 - fine primo atto/~$ass Cannon.docx",
+   "byte": 162,
+   "sha1": "281e5a0a35df",
+   "campagna": "eidos",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "EID-EM-015",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 13/Capitolo 13 - Robert_s ashes.docx",
+   "byte": 35595,
+   "sha1": "b99abdc9957e",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-016",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 13/Sottocapitolo 1-13_Crash.docx",
+   "byte": 18327,
+   "sha1": "f2809adb0503",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-017",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 14/14 - Coming home.docx",
+   "byte": 34188,
+   "sha1": "a9df63cbbad6",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-018",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 14/Evrae/resoconto Evrae 1 Crash + Idee script 2.docx",
+   "byte": 76382,
+   "sha1": "aedb5bd68740",
+   "campagna": "eidos",
+   "tipo": "trascrizione_giocata",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone giocato"
+  },
+  {
+   "id": "EID-EM-019",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 15/15 - Leave yourself to grow up.docx",
+   "byte": 35742,
+   "sha1": "81f4db60e046",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-020",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 16/A change of season.docx",
+   "byte": 29646,
+   "sha1": "1eafbf06f276",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-021",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 16/First step towards the future me/First step towards the future me.docx",
+   "byte": 19279,
+   "sha1": "b7d977945e4a",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-022",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 17/Capitolo 17 - The meeting.docx",
+   "byte": 35996,
+   "sha1": "a9c114363d3a",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-023",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 17/~$pitolo 17 - The meeting.docx",
+   "byte": 162,
+   "sha1": "7f5e6ec534bc",
+   "campagna": "eidos",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "EID-EM-024",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 18/18_Your Chance to the future.docx",
+   "byte": 33751,
+   "sha1": "20bee00fc66a",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-025",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 19/19_Your Chance to the future pt2.docx",
+   "byte": 29634,
+   "sha1": "5e095d21b10a",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-026",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 2/Capitolo 2 - A Cruel World - Script.docx",
+   "byte": 1895911,
+   "sha1": "d9d868fbd712",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-027",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 2/Deserto/9665274f9d111a2a77c0f3316b8ba5b6.jpg",
+   "byte": 49470,
+   "sha1": "8afef89a17fe",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-028",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 2/Deserto/Azzannatore.jpg",
+   "byte": 50883,
+   "sha1": "dceac8138134",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-029",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 2/Palude/Mostro del sangue.jpg",
+   "byte": 62952,
+   "sha1": "f9a8d65aac47",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-030",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 2/Palude/Rigonfio2.jpg",
+   "byte": 70446,
+   "sha1": "655a5d299a2d",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-031",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 2/Rovine/910f0d2d44d5e08ddf93f8f1b3813c7b--cyberpunk-character-nova.jpg",
+   "byte": 63253,
+   "sha1": "34b3f531ce4a",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-032",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 2/Rovine/Azzannatore.jpg",
+   "byte": 50883,
+   "sha1": "dceac8138134",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-033",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 2/Rovine/bug2_by_fightpunch-d61vgih.jpg",
+   "byte": 69274,
+   "sha1": "5491295f18c3",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-034",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 2/Rovine/d72d752c702b006e6ce1e8f74cd5fef7.jpg",
+   "byte": 60075,
+   "sha1": "28b59926936c",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-035",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 2/Rovine/e2abc633283383.56a6cccb4f510.jpg",
+   "byte": 441571,
+   "sha1": "2114cbdf9be8",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-036",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 2/mappa scontro Chorisfos.jpg",
+   "byte": 674570,
+   "sha1": "8719acf8c5b0",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-037",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 2/~$pitolo 2 - A Cruel World - Script.docx",
+   "byte": 162,
+   "sha1": "a432a083f63f",
+   "campagna": "eidos",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "EID-EM-038",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 20/Capitolo 20 - The black, wolf.docx",
+   "byte": 24486,
+   "sha1": "811a2c5984c7",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-039",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 21/capitolo 21 - To mi Novia.docx",
+   "byte": 24918,
+   "sha1": "655416c03a2a",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-040",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 22/Capitolo 22 - Faith in God.docx",
+   "byte": 22920,
+   "sha1": "07f8a95da198",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-041",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 22/Fenice nera.jpg",
+   "byte": 167140,
+   "sha1": "ab423adffdb5",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-042",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 22/Herys & Dimitri/Herys&Dimitri.docx",
+   "byte": 43155,
+   "sha1": "0f3088cf4f57",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-043",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 22/Stella inastata.jpg",
+   "byte": 170774,
+   "sha1": "54925cdc012a",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-044",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 23/Paint it black, Ones wedding.docx",
+   "byte": 26746,
+   "sha1": "fb2f782b6829",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-045",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 24/I want live in this world, but....docx",
+   "byte": 26159,
+   "sha1": "a18cb479d3c1",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-046",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 25/Capitolo 25 - Exodus.docx",
+   "byte": 24749,
+   "sha1": "67d132295c47",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-047",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 26/Capitolo 26 - Vengeance.docx",
+   "byte": 31281,
+   "sha1": "e97a1044a648",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-048",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 26/My Vengeance.docx",
+   "byte": 0,
+   "sha1": "da39a3ee5e6b",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "vuoto (0 byte): illeggibile",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-049",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 27/Capitolo 27 - People, not soldiers.docx",
+   "byte": 24592,
+   "sha1": "98cda6059d04",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-050",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 28/28_Eidos.docx",
+   "byte": 53187,
+   "sha1": "eb78cac7bb65",
+   "campagna": "eidos",
+   "tipo": "trascrizione_giocata",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone giocato"
+  },
+  {
+   "id": "EID-EM-051",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 28/Capitolo 28 - War_s Neighbores.docx",
+   "byte": 35597,
+   "sha1": "aded8e1b1ab2",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-052",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 29/Capitolo 29 - Red Winter.docx",
+   "byte": 34074,
+   "sha1": "2e55cc285f3f",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-053",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 3/Capitolo 3 - A Cruel World pt.2 - Script.docx",
+   "byte": 1182758,
+   "sha1": "021e0b1c4975",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-054",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 3/Rovine/910f0d2d44d5e08ddf93f8f1b3813c7b--cyberpunk-character-nova.jpg",
+   "byte": 63253,
+   "sha1": "34b3f531ce4a",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-055",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 3/Rovine/Azzannatore.jpg",
+   "byte": 50883,
+   "sha1": "dceac8138134",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-056",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 3/Rovine/bug2_by_fightpunch-d61vgih.jpg",
+   "byte": 69274,
+   "sha1": "5491295f18c3",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-057",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 3/Rovine/d72d752c702b006e6ce1e8f74cd5fef7.jpg",
+   "byte": 60075,
+   "sha1": "28b59926936c",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-058",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 3/Rovine/e2abc633283383.56a6cccb4f510.jpg",
+   "byte": 441571,
+   "sha1": "2114cbdf9be8",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-059",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 3/mappa scontro Chorisfos.jpg",
+   "byte": 674570,
+   "sha1": "8719acf8c5b0",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-060",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 30/Capitolo 30 - A Land of all pt.1.docx",
+   "byte": 27574,
+   "sha1": "5d1d653a9838",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-061",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 31/Capitolo 31 - A land of all.docx",
+   "byte": 18350,
+   "sha1": "ba3aefed0c5d",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-062",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 32/Capitolo 32.docx",
+   "byte": 22808,
+   "sha1": "90f69d35c880",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-063",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 33/Capitolo 33.docx",
+   "byte": 19068,
+   "sha1": "63dcb94d11d2",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-064",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 33/Lettera a Chloe.docx",
+   "byte": 14974,
+   "sha1": "109f53d5715e",
+   "campagna": "eidos",
+   "tipo": "lettera_in_gioco",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 4,
+   "autoritaEtichetta": "racconto o prosa",
+   "utilizzo": "voce dei personaggi e aftermath"
+  },
+  {
+   "id": "EID-EM-065",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 33/Nomi lavoratori di Newport.docx",
+   "byte": 7268,
+   "sha1": "16ae0f18444f",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-066",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 34/Capitolo 34.docx",
+   "byte": 16925,
+   "sha1": "a0a4f8dbde1a",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-067",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 34/Documento senza titolo.docx",
+   "byte": 6590,
+   "sha1": "f05471e58953",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-068",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 35/Capitolo 35.docx",
+   "byte": 18358,
+   "sha1": "ec5dcefe9c48",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-069",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 36/Appunti1.txt",
+   "byte": 627,
+   "sha1": "f40e7606b8ec",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-070",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 36/Capitolo 36.docx",
+   "byte": 18320,
+   "sha1": "c864998644ed",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-071",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 36/recita.docx",
+   "byte": 15993,
+   "sha1": "e9ca62d6152b",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-072",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 37/Capitolo 37.docx",
+   "byte": 21437,
+   "sha1": "83e3b54534fa",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-073",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 38/Capitolo 38.docx",
+   "byte": 13129,
+   "sha1": "f5b9342537b1",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-074",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 39/39_Eidos.docx",
+   "byte": 52363,
+   "sha1": "dfbf89d7ef69",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-075",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 39/Capitolo 39.docx",
+   "byte": 14089,
+   "sha1": "282dc511a63f",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-076",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 39/recita.docx",
+   "byte": 16969,
+   "sha1": "482abadb5797",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-077",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 4/Capitolo 4 - Ghosts - Script.docx",
+   "byte": 289216,
+   "sha1": "502c673ef12b",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-078",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 4/Mostri/Azzannatore.jpg",
+   "byte": 50883,
+   "sha1": "dceac8138134",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-079",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 4/Mostri/Chimera umana1.jpg",
+   "byte": 73747,
+   "sha1": "497d166fa475",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-080",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 4/Mostri/Mostro del sangue.jpg",
+   "byte": 62952,
+   "sha1": "f9a8d65aac47",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-081",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 4/Mostri/Resident_Evil_2_mostro.jpg",
+   "byte": 50632,
+   "sha1": "fac649ed4dee",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-082",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 4/Mostri/Rigonfio.jpg",
+   "byte": 24841,
+   "sha1": "102881fd014f",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-083",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 4/Mostri/Rigonfio2.jpg",
+   "byte": 70446,
+   "sha1": "655a5d299a2d",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-084",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 4/Mostri/Vd#U00e8lla.jpg",
+   "byte": 218331,
+   "sha1": "bf206d2d2456",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-085",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 4/Mostri/d72d752c702b006e6ce1e8f74cd5fef7.jpg",
+   "byte": 88298,
+   "sha1": "0d4afda46b49",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-086",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 4/Mostri/e2abc633283383.56a6cccb4f510.jpg",
+   "byte": 168494,
+   "sha1": "c711c3ac50b4",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-087",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 40/Capitolo 40.docx",
+   "byte": 17284,
+   "sha1": "a9084a7cf771",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-088",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 41/Capitolo 41.docx",
+   "byte": 18258,
+   "sha1": "cd2db1ef49b5",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-089",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 42/A voice for the people.docx",
+   "byte": 13806,
+   "sha1": "1366f1fba68e",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-090",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 42/Capitolo 42.docx",
+   "byte": 15066,
+   "sha1": "d04f93ae62c3",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-091",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 43/Capitolo 43.docx",
+   "byte": 20198,
+   "sha1": "e1cd66acbd70",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-092",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 44/Capitolo 44.docx",
+   "byte": 17766,
+   "sha1": "0df9cf5cd538",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-093",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 45/Capitolo 45.docx",
+   "byte": 19941,
+   "sha1": "e6c4f0377244",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-094",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 46/Capitolo 46 - The world that we can design.docx",
+   "byte": 20305,
+   "sha1": "a5f624ea69b6",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-095",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 47 - End/Capitolo 47 - End - The world that we can make.docx",
+   "byte": 42000,
+   "sha1": "c6d083af8e9b",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-096",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 5/5_The heroes Circus.docx",
+   "byte": 35511,
+   "sha1": "7284250628b7",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-097",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 5/Arena Chorisfos.jpg",
+   "byte": 1294017,
+   "sha1": "7930ae5e29ae",
+   "campagna": "eidos",
+   "tipo": "immagine",
+   "origine": "originale",
+   "copertura": "immagine: non letta come testo",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "nessuno: immagine non analizzata come testo"
+  },
+  {
+   "id": "EID-EM-098",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 6/Capitolo 6 - The sons of liberty.doc",
+   "byte": 155958,
+   "sha1": "2bdeae3e408f",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-099",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 7/Capitolo 7 - Minds in progress.docx",
+   "byte": 312624,
+   "sha1": "4ebc828c71e1",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-100",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 7/~$pitolo 7 - Minds in progress.docx",
+   "byte": 162,
+   "sha1": "281e5a0a35df",
+   "campagna": "eidos",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "EID-EM-101",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 8/Capitolo 8 - Echoes.docx",
+   "byte": 45027,
+   "sha1": "434a0dfb7794",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-102",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Capitolo 9/Capitolo 9 - Adran#U00e8s.docx",
+   "byte": 50348,
+   "sha1": "e6c3e2d445c7",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-103",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Cicli dell_anno.docx",
+   "byte": 13281,
+   "sha1": "4917858dc7bf",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-104",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Justice.docx",
+   "byte": 13477,
+   "sha1": "e6e28a54f9ba",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-105",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/Piani di Hope.docx",
+   "byte": 13154,
+   "sha1": "311c0fa66dc5",
+   "campagna": "eidos",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "EID-EM-106",
+   "file": "01_EIDOS/03_CAMPAGNA_PRINCIPALE/idee script.txt",
+   "byte": 4631,
+   "sha1": "af163c245702",
+   "campagna": "eidos",
+   "tipo": "progettazione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "metodo e canone (riservato se lo dice il testo)"
+  },
+  {
+   "id": "ICH-PRE-001",
+   "file": "02_ICH/00_PREMESSA_E_MATERIALI_SPARSI/Ich - Premessa.pdf",
+   "byte": 24629814,
+   "sha1": "e10e791a8f00",
+   "campagna": "ich",
+   "tipo": "premessa",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "canone pubblico e regole di mondo"
+  },
+  {
+   "id": "ICH-CP-001",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/0 - Eventi Plot.docx",
+   "byte": 19958,
+   "sha1": "86d566c6c430",
+   "campagna": "ich",
+   "tipo": "progettazione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "metodo e canone (riservato se lo dice il testo)"
+  },
+  {
+   "id": "ICH-CP-002",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/01 - Evoluzione delle figure di Ich.docx",
+   "byte": 15682,
+   "sha1": "23de30c4a3cf",
+   "campagna": "ich",
+   "tipo": "progettazione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "metodo e canone (riservato se lo dice il testo)"
+  },
+  {
+   "id": "ICH-CP-003",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/1 - When the lights go out.docx",
+   "byte": 31682,
+   "sha1": "9c3ce564db25",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-004",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/10 - Fog connections.docx",
+   "byte": 23842,
+   "sha1": "52c001489153",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-005",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/11 - Ghosts.docx",
+   "byte": 18905,
+   "sha1": "ec9c5fe97d1e",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-006",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/12 - Where is my mind.docx",
+   "byte": 26892,
+   "sha1": "7b81dfd54e94",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-007",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/13 - Unravel the skein.docx",
+   "byte": 15768,
+   "sha1": "e8ec0bb5617f",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-008",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/14 - Data mining.docx",
+   "byte": 16656,
+   "sha1": "07fb70c67aa5",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-009",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/15 - Crossroads.docx",
+   "byte": 17075,
+   "sha1": "60877c909ecf",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-010",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/16 - Crossroads - pt2.docx",
+   "byte": 19847,
+   "sha1": "55f8910620e2",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-011",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/17 - Wyrd of Erdegis.docx",
+   "byte": 17670,
+   "sha1": "3df8fa961f6e",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-012",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/18 - The heart of the world.docx",
+   "byte": 21973,
+   "sha1": "5085736b82a8",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-013",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/19 - First day of reality.docx",
+   "byte": 19315,
+   "sha1": "d88e90c4b528",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-014",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/2 - Raven.docx",
+   "byte": 26827,
+   "sha1": "e62cfffb92e9",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-015",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/20 - How to, who to be.docx",
+   "byte": 20298,
+   "sha1": "d1c2e41a8d7d",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-016",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/21 - Two years later.docx",
+   "byte": 21145,
+   "sha1": "87ac68499c86",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-017",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/22 - Hellheim.docx",
+   "byte": 31527,
+   "sha1": "ebcebbc8f1f5",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-018",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/23 - Lies and truth, violence and justice.docx",
+   "byte": 21467,
+   "sha1": "23a1905a6018",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-019",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/24 - Welcome to home.docx",
+   "byte": 21188,
+   "sha1": "a6b5ded1f8b2",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-020",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/25 - Time travel.docx",
+   "byte": 20674,
+   "sha1": "cecceb94590c",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-021",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/26 - A new world order.docx",
+   "byte": 21193,
+   "sha1": "76c2180fce60",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-022",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/27 - Blood and flowers.docx",
+   "byte": 18873,
+   "sha1": "3f5d9d93f3aa",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-023",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/28 - Figth for your sky.docx",
+   "byte": 20877,
+   "sha1": "7357b50f9e20",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-024",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/29 - Fight for your sky pt2.docx",
+   "byte": 25918,
+   "sha1": "6177b8a9af6a",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-025",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/3 - Identity .docx",
+   "byte": 20997,
+   "sha1": "d0f18aaa91ff",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-026",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/30 - Seeds for the future.docx",
+   "byte": 13854,
+   "sha1": "3439fddd44fa",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-027",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/31 - Betrayal.docx",
+   "byte": 17739,
+   "sha1": "3a655b1abf05",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-028",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/32 - Time to Reborn.docx",
+   "byte": 16488,
+   "sha1": "c006ec91b08d",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-029",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/33 - Psychological tests.docx",
+   "byte": 23010,
+   "sha1": "e565afa304ab",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-030",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/34 - Creativity.docx",
+   "byte": 14125,
+   "sha1": "cbcc8ff6316a",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-031",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/35 - The weight of decisions.docx",
+   "byte": 17884,
+   "sha1": "42977ecd7bde",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-032",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/36 - Script or choices.docx",
+   "byte": 17692,
+   "sha1": "d54cea9b4408",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-033",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/37 - The voice of freedom.docx",
+   "byte": 23174,
+   "sha1": "24f44a4b8fc5",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-034",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/38 - Plan b.docx",
+   "byte": 21087,
+   "sha1": "cbd2642e005f",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-035",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/39 - Crash.docx",
+   "byte": 26117,
+   "sha1": "f020ce4080f5",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-036",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/4 - Timeless world.docx",
+   "byte": 23868,
+   "sha1": "e07b182d2781",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-037",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/40 - Existence.docx",
+   "byte": 36429,
+   "sha1": "f2a06ee165a7",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-038",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/5 - Aesir.docx",
+   "byte": 21999,
+   "sha1": "014e329987c8",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-039",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/6 - Memories.docx",
+   "byte": 22255,
+   "sha1": "318a743b0af0",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-040",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/7 - Script.docx",
+   "byte": 23242,
+   "sha1": "eb13e3c19145",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-041",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/8 - Sun-rise.docx",
+   "byte": 23086,
+   "sha1": "c814e06e4923",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-042",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/9 - Cutting edge.docx",
+   "byte": 26825,
+   "sha1": "c2f677251769",
+   "campagna": "ich",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICH-CP-043",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/Appunti per il futuro.docx",
+   "byte": 612407,
+   "sha1": "aee870f9cd56",
+   "campagna": "ich",
+   "tipo": "progettazione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "metodo e canone (riservato se lo dice il testo)"
+  },
+  {
+   "id": "ICH-CP-044",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/Lettera di Saoirse.docx",
+   "byte": 12840,
+   "sha1": "b62cb636cb43",
+   "campagna": "ich",
+   "tipo": "lettera_in_gioco",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 4,
+   "autoritaEtichetta": "racconto o prosa",
+   "utilizzo": "voce dei personaggi e aftermath"
+  },
+  {
+   "id": "ICH-CP-045",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/Riferimenti all_armenia.docx",
+   "byte": 14316,
+   "sha1": "05309201e42a",
+   "campagna": "ich",
+   "tipo": "ricerca_autore",
+   "origine": "supplementare",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "solo ricerca di sfondo: nessun contenuto di gioco"
+  },
+  {
+   "id": "ICH-CP-046",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/Verit#U00e0 su Cirilla.docx",
+   "byte": 12019,
+   "sha1": "40fccaff16b4",
+   "campagna": "ich",
+   "tipo": "progettazione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "metodo e canone (riservato se lo dice il testo)"
+  },
+  {
+   "id": "ICH-CP-047",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/idee script.docx",
+   "byte": 12507,
+   "sha1": "39deca7958db",
+   "campagna": "ich",
+   "tipo": "progettazione_autore",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "metodo e canone (riservato se lo dice il testo)"
+  },
+  {
+   "id": "ICH-CP-048",
+   "file": "02_ICH/01_CAMPAGNA_PRINCIPALE/~$ - Where is my mind.docx",
+   "byte": 162,
+   "sha1": "1543809b58d9",
+   "campagna": "ich",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "ICA-PRE-001",
+   "file": "03_ICARO/00_PREMESSA_E_MATERIALI_SPARSI/Campi scheda.docx",
+   "byte": 202234,
+   "sha1": "c1d108eafaca",
+   "campagna": "icaro",
+   "tipo": "scheda_personaggio",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 5,
+   "autoritaEtichetta": "mappa, scheda o immagine",
+   "utilizzo": "profili dei personaggi originali"
+  },
+  {
+   "id": "ICA-PRE-002",
+   "file": "03_ICARO/00_PREMESSA_E_MATERIALI_SPARSI/Icaro - Premessa_2.0-compresso.pdf",
+   "byte": 3580019,
+   "sha1": "b95bbd7363f0",
+   "campagna": "icaro",
+   "tipo": "premessa",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 2,
+   "autoritaEtichetta": "premessa, regolamento o progettazione dell'autore",
+   "utilizzo": "canone pubblico e regole di mondo"
+  },
+  {
+   "id": "ICA-CP-001",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 0/One Shot - Icaro EP. 0.docx",
+   "byte": 18464,
+   "sha1": "450801dcfe2b",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-002",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 1/Ep 1.docx",
+   "byte": 17722,
+   "sha1": "66481f81cff4",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-003",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 2/Ep 2.docx",
+   "byte": 28216,
+   "sha1": "02ddf617b07b",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-004",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 3/Ep 3.docx",
+   "byte": 1580561,
+   "sha1": "11b2263ec050",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-005",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 4/Ep 4.docx",
+   "byte": 25806,
+   "sha1": "b7b2c02edcb5",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-006",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 5/Ep 5.docx",
+   "byte": 30098,
+   "sha1": "fbaddec6fde4",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-007",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 5/~$Ep 5.docx",
+   "byte": 162,
+   "sha1": "90af8cf2682e",
+   "campagna": "icaro",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "ICA-CP-008",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 6/Ep 6.docx",
+   "byte": 27738,
+   "sha1": "b512a9cdaa96",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-009",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 6/~$Ep 5.docx",
+   "byte": 162,
+   "sha1": "90af8cf2682e",
+   "campagna": "icaro",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "ICA-CP-010",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 7/Ep 7.docx",
+   "byte": 40759,
+   "sha1": "744c1183db7c",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-011",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 7/~$Ep 5.docx",
+   "byte": 162,
+   "sha1": "90af8cf2682e",
+   "campagna": "icaro",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "ICA-CP-012",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 8/Ep 8.docx",
+   "byte": 34825,
+   "sha1": "a20713c9d506",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-013",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 8/~$Ep 5.docx",
+   "byte": 162,
+   "sha1": "90af8cf2682e",
+   "campagna": "icaro",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "ICA-CP-014",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 9/Ep 9 - giocata.docx",
+   "byte": 43427,
+   "sha1": "7e29cf128f02",
+   "campagna": "icaro",
+   "tipo": "trascrizione_giocata",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone giocato"
+  },
+  {
+   "id": "ICA-CP-015",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 9/Ep 9.docx",
+   "byte": 48402,
+   "sha1": "35fe0bf1686d",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-016",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 9/~$Ep 5.docx",
+   "byte": 162,
+   "sha1": "90af8cf2682e",
+   "campagna": "icaro",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "ICA-CP-017",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep - 9/~$Ep 9.docx",
+   "byte": 162,
+   "sha1": "6cf4e2b81898",
+   "campagna": "icaro",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "ICA-CP-018",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep. 10 - Finale 1#U00b0 Atto/Ep 10 - Finale 1#U00b0 Atto.docx",
+   "byte": 2131230,
+   "sha1": "e7aeccbd4911",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-019",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 1/Ep. 10 - Finale 1#U00b0 Atto/~$ 10 - Finale 1#U00b0 Atto.docx",
+   "byte": 162,
+   "sha1": "77f283ee8e30",
+   "campagna": "icaro",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "ICA-CP-020",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 2/Ep 01.docx",
+   "byte": 1683926,
+   "sha1": "2ed3d50fe68c",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-021",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 2/Ep 02.docx",
+   "byte": 1683553,
+   "sha1": "9ff98e2fad96",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-022",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 2/Ep. 03 #U2014 Falsa luce.docx",
+   "byte": 40996,
+   "sha1": "787d2c02c4ad",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-023",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 2/Ep. 04.docx",
+   "byte": 1681929,
+   "sha1": "8df674c70bf3",
+   "campagna": "icaro",
+   "tipo": "script",
+   "origine": "originale",
+   "copertura": "integrale",
+   "autorita": 3,
+   "autoritaEtichetta": "script o trascrizione di gioco",
+   "utilizzo": "metodo e canone"
+  },
+  {
+   "id": "ICA-CP-024",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/Stagione 2/~$. 03 #U2014 Falsa luce.docx",
+   "byte": 162,
+   "sha1": "6a5fb91183ab",
+   "campagna": "icaro",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "ICA-CP-025",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/~$Ep 2.docx",
+   "byte": 162,
+   "sha1": "784b88a922f7",
+   "campagna": "icaro",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "ICA-CP-026",
+   "file": "03_ICARO/01_CAMPAGNA_PRINCIPALE/~$Ep 3.docx",
+   "byte": 162,
+   "sha1": "03f11af5b60d",
+   "campagna": "icaro",
+   "tipo": "file_di_blocco",
+   "origine": "originale",
+   "copertura": "file di blocco di Word (162 byte): nessun contenuto",
+   "autorita": null,
+   "autoritaEtichetta": "non applicabile",
+   "utilizzo": "nessuno"
+  },
+  {
+   "id": "DER-001",
+   "file": "04_MATERIALI_SECONDARI/Role_Makers_Campagne_e_15_Archetipi_V1.md",
+   "byte": 25811,
+   "sha1": "7de0e8668dd8",
+   "campagna": "trasversale",
+   "tipo": "documento_derivato",
+   "origine": "derivato",
+   "copertura": "integrale",
+   "autorita": 7,
+   "autoritaEtichetta": "documento derivato",
+   "utilizzo": "supporto da verificare sugli originali"
+  },
+  {
+   "id": "DER-002",
+   "file": "04_MATERIALI_SECONDARI/Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md",
+   "byte": 25646,
+   "sha1": "79f401859b7d",
+   "campagna": "trasversale",
+   "tipo": "documento_derivato",
+   "origine": "derivato",
+   "copertura": "integrale",
+   "autorita": 7,
+   "autoritaEtichetta": "documento derivato",
+   "utilizzo": "supporto da verificare sugli originali"
+  },
+  {
+   "id": "DER-003",
+   "file": "04_MATERIALI_SECONDARI/Role_Makers_Icaro_Scheda_Contenuti_V1.md",
+   "byte": 13723,
+   "sha1": "5f1726338171",
+   "campagna": "trasversale",
+   "tipo": "documento_derivato",
+   "origine": "derivato",
+   "copertura": "integrale",
+   "autorita": 7,
+   "autoritaEtichetta": "documento derivato",
+   "utilizzo": "supporto da verificare sugli originali"
+  },
+  {
+   "id": "DER-004",
+   "file": "04_MATERIALI_SECONDARI/Role_Makers_Ich_Scheda_Contenuti_V1.md",
+   "byte": 14728,
+   "sha1": "d261e6d0664c",
+   "campagna": "trasversale",
+   "tipo": "documento_derivato",
+   "origine": "derivato",
+   "copertura": "integrale",
+   "autorita": 7,
+   "autoritaEtichetta": "documento derivato",
+   "utilizzo": "supporto da verificare sugli originali"
+  },
+  {
+   "id": "DER-005",
+   "file": "04_MATERIALI_SECONDARI/Role_Makers_Voci_Narratore_Analisi_Giocate_V1.md",
+   "byte": 17402,
+   "sha1": "7150dba8a047",
+   "campagna": "trasversale",
+   "tipo": "documento_derivato",
+   "origine": "derivato",
+   "copertura": "integrale",
+   "autorita": 7,
+   "autoritaEtichetta": "documento derivato",
+   "utilizzo": "supporto da verificare sugli originali"
+  },
+  {
+   "id": "PRM-001",
+   "file": "05_PROMPT_RIALLINEAMENTO_NARRATIVO.md",
+   "byte": 7338,
+   "sha1": "4190df92a309",
+   "campagna": "trasversale",
+   "tipo": "prompt_operativo",
+   "origine": "derivato",
+   "copertura": "integrale",
+   "autorita": 6,
+   "autoritaEtichetta": "decisione di prompt",
+   "utilizzo": "regole operative di riallineamento (non canone)"
+  }
+ ],
+ "implementazione": [
+  {
+   "id": "IMP-EIDOS-CAMPAGNA",
+   "file": "js/solo/content/eidos-campagna.json",
+   "campagna": "eidos",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-EIDOS-INTERAZIONI",
+   "file": "js/solo/content/eidos-interazioni.json",
+   "campagna": "eidos",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-EIDOS-NARRATIVA",
+   "file": "js/solo/content/eidos-narrativa.json",
+   "campagna": "eidos",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-EIDOS-SEMI",
+   "file": "js/solo/content/eidos-semi.json",
+   "campagna": "eidos",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-EIDOS-STRUTTURA",
+   "file": "js/solo/content/eidos-struttura.json",
+   "campagna": "eidos",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-EIDOS-MAPPA",
+   "file": "js/solo/content/eidos-mappa.json",
+   "campagna": "eidos",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-EIDOS-ARCHETIPI",
+   "file": "js/solo/content/eidos-archetipi.json",
+   "campagna": "eidos",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-EIDOS-VOCE",
+   "file": "js/solo/content/eidos-voce.json",
+   "campagna": "eidos",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICH-CAMPAGNA",
+   "file": "js/solo/content/ich-campagna.json",
+   "campagna": "ich",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICH-INTERAZIONI",
+   "file": "js/solo/content/ich-interazioni.json",
+   "campagna": "ich",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICH-NARRATIVA",
+   "file": "js/solo/content/ich-narrativa.json",
+   "campagna": "ich",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICH-SEMI",
+   "file": "js/solo/content/ich-semi.json",
+   "campagna": "ich",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICH-STRUTTURA",
+   "file": "js/solo/content/ich-struttura.json",
+   "campagna": "ich",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICH-MAPPA",
+   "file": "js/solo/content/ich-mappa.json",
+   "campagna": "ich",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICH-ARCHETIPI",
+   "file": "js/solo/content/ich-archetipi.json",
+   "campagna": "ich",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICH-VOCE",
+   "file": "js/solo/content/ich-voce.json",
+   "campagna": "ich",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICARO-CAMPAGNA",
+   "file": "js/solo/content/icaro-campagna.json",
+   "campagna": "icaro",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICARO-INTERAZIONI",
+   "file": "js/solo/content/icaro-interazioni.json",
+   "campagna": "icaro",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICARO-NARRATIVA",
+   "file": "js/solo/content/icaro-narrativa.json",
+   "campagna": "icaro",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICARO-SEMI",
+   "file": "js/solo/content/icaro-semi.json",
+   "campagna": "icaro",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICARO-STRUTTURA",
+   "file": "js/solo/content/icaro-struttura.json",
+   "campagna": "icaro",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICARO-MAPPA",
+   "file": "js/solo/content/icaro-mappa.json",
+   "campagna": "icaro",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICARO-ARCHETIPI",
+   "file": "js/solo/content/icaro-archetipi.json",
+   "campagna": "icaro",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ICARO-VOCE",
+   "file": "js/solo/content/icaro-voce.json",
+   "campagna": "icaro",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "campagna di gioco proposta (content_status: proposed)",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "stato e contenuti della partita; non è canone delle fonti"
+  },
+  {
+   "id": "IMP-ONTOLOGIA",
+   "file": "js/solo/solo-ontologia.js",
+   "campagna": "trasversale",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "registro ontologico delle tre storie",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "vincoli ontologici già approvati"
+  },
+  {
+   "id": "IMP-MOTORE",
+   "file": "js/solo/solo-voice.js",
+   "campagna": "trasversale",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "contratto del narratore: lunghezze e controlli bloccanti",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "regole di sistema del motore; non è materiale narrativo"
+  },
+  {
+   "id": "IMP-FEEDBACK",
+   "file": "js/solo/solo-feedback.js",
+   "campagna": "trasversale",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "testi di riserva e transizioni",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "codice comune: nessun contenuto di campagna dopo il riallineamento"
+  },
+  {
+   "id": "IMP-NARRATORE",
+   "file": "js/solo/solo-narrator.js",
+   "campagna": "trasversale",
+   "tipo": "implementazione",
+   "origine": "derivato",
+   "copertura": "interprete di riserva e prompt del narratore",
+   "autorita": 8,
+   "autoritaEtichetta": "implementazione",
+   "utilizzo": "codice comune: nessun contenuto di campagna dopo il riallineamento"
+  }
+ ],
+ "lessico": {
+  "nota": "Termini calcolati sui testi originali (esclusi i derivati): un termine «esclusivo» compare solo nelle fonti della sua campagna; uno «condiviso» compare in più campagne con significati distinti.",
+  "esclusivi": {
+   "eidos": [
+    {
+     "termine": "Chorisfos",
+     "radice": "chorisfos",
+     "fonte": [
+      "EID-PRE-001",
+      "EID-PRE-003",
+      "EID-PRE-004"
+     ],
+     "occorrenzeInFile": 72
+    },
+    {
+     "termine": "Epizi",
+     "radice": "epizi",
+     "fonte": [
+      "EID-PRE-001",
+      "EID-PRE-003",
+      "EID-PRE-004"
+     ],
+     "occorrenzeInFile": 53
+    },
+    {
+     "termine": "Eporiani",
+     "radice": "eporian",
+     "fonte": [
+      "EID-PRE-003",
+      "EID-PRE-004",
+      "EID-RW-006"
+     ],
+     "occorrenzeInFile": 18
+    },
+    {
+     "termine": "Antarsi",
+     "radice": "antarsi",
+     "fonte": [
+      "EID-PRE-001",
+      "EID-PRE-003",
+      "EID-PRE-004"
+     ],
+     "occorrenzeInFile": 41
+    },
+    {
+     "termine": "Tèras",
+     "radice": "teras",
+     "fonte": [
+      "EID-PRE-003"
+     ],
+     "occorrenzeInFile": 1
+    },
+    {
+     "termine": "arkè",
+     "radice": "arke",
+     "fonte": [
+      "EID-PRE-001",
+      "EID-PRE-004",
+      "EID-PRE-006"
+     ],
+     "occorrenzeInFile": 23
+    },
+    {
+     "termine": "Lechta",
+     "radice": "lechta",
+     "fonte": [
+      "EID-PRE-001",
+      "EID-PRE-003",
+      "EID-PRE-004"
+     ],
+     "occorrenzeInFile": 43
+    },
+    {
+     "termine": "Kaledos",
+     "radice": "kaledos",
+     "fonte": [
+      "EID-PRE-004",
+      "EID-PRE-008",
+      "EID-SP-008"
+     ],
+     "occorrenzeInFile": 13
+    },
+    {
+     "termine": "Protopilis",
+     "radice": "protopilis",
+     "fonte": [
+      "EID-PRE-007"
+     ],
+     "occorrenzeInFile": 1
+    },
+    {
+     "termine": "Icenia",
+     "radice": "icenia",
+     "fonte": [
+      "EID-RW-006",
+      "EID-RW-007",
+      "EID-SP-001"
+     ],
+     "occorrenzeInFile": 8
+    },
+    {
+     "termine": "adranès",
+     "radice": "adranes",
+     "fonte": [
+      "EID-PRE-004",
+      "EID-SP-005",
+      "EID-SP-006"
+     ],
+     "occorrenzeInFile": 32
+    },
+    {
+     "termine": "Dexià",
+     "radice": "dexia",
+     "fonte": [
+      "EID-PRE-004",
+      "EID-SP-001",
+      "EID-SP-005"
+     ],
+     "occorrenzeInFile": 24
+    },
+    {
+     "termine": "Aidelon",
+     "radice": "aidelon",
+     "fonte": [
+      "EID-PRE-004",
+      "EID-EM-072",
+      "EID-EM-096"
+     ],
+     "occorrenzeInFile": 3
+    },
+    {
+     "termine": "Phosphoros",
+     "radice": "phosphoros",
+     "fonte": [
+      "EID-EM-022",
+      "EID-EM-096"
+     ],
+     "occorrenzeInFile": 2
+    },
+    {
+     "termine": "fothià",
+     "radice": "fothia",
+     "fonte": [
+      "EID-PRE-004",
+      "EID-RW-008",
+      "EID-SP-001"
+     ],
+     "occorrenzeInFile": 11
+    },
+    {
+     "termine": "Mors Tritos",
+     "radice": "mors tritos",
+     "fonte": [
+      "EID-PRE-001",
+      "EID-PRE-004",
+      "EID-PRE-008"
+     ],
+     "occorrenzeInFile": 6
+    },
+    {
+     "termine": "Mhor",
+     "radice": "mhor",
+     "fonte": [
+      "EID-PRE-002",
+      "EID-PRE-004",
+      "EID-PRE-006"
+     ],
+     "occorrenzeInFile": 52
+    },
+    {
+     "termine": "Misia",
+     "radice": "misia",
+     "fonte": [
+      "EID-PRE-004",
+      "EID-PRE-007",
+      "EID-PRE-008"
+     ],
+     "occorrenzeInFile": 52
+    },
+    {
+     "termine": "Evrae",
+     "radice": "evrae",
+     "fonte": [
+      "EID-PRE-001",
+      "EID-PRE-002",
+      "EID-PRE-004"
+     ],
+     "occorrenzeInFile": 28
+    },
+    {
+     "termine": "Herys",
+     "radice": "herys",
+     "fonte": [
+      "EID-PRE-001",
+      "EID-PRE-002",
+      "EID-PRE-004"
+     ],
+     "occorrenzeInFile": 60
+    },
+    {
+     "termine": "Sombra",
+     "radice": "sombra",
+     "fonte": [
+      "EID-PRE-002",
+      "EID-SP-001",
+      "EID-SP-005"
+     ],
+     "occorrenzeInFile": 10
+    },
+    {
+     "termine": "Aletheia",
+     "radice": "aletheia",
+     "fonte": [
+      "EID-EM-018",
+      "EID-EM-019",
+      "EID-EM-050"
+     ],
+     "occorrenzeInFile": 3
+    }
+   ],
+   "ich": [
+    {
+     "termine": "Erdegis",
+     "radice": "erdegis",
+     "fonte": [
+      "ICH-PRE-001",
+      "ICH-CP-001",
+      "ICH-CP-002"
+     ],
+     "occorrenzeInFile": 14
+    },
+    {
+     "termine": "Vǫluspá",
+     "radice": "voluspa",
+     "fonte": [
+      "ICH-PRE-001",
+      "ICH-CP-001",
+      "ICH-CP-002"
+     ],
+     "occorrenzeInFile": 19
+    },
+    {
+     "termine": "Bannsith",
+     "radice": "bannsith",
+     "fonte": [
+      "ICH-PRE-001",
+      "ICH-CP-002",
+      "ICH-CP-004"
+     ],
+     "occorrenzeInFile": 5
+    },
+    {
+     "termine": "Fearsith",
+     "radice": "fearsith",
+     "fonte": [
+      "ICH-PRE-001",
+      "ICH-CP-002",
+      "ICH-CP-005"
+     ],
+     "occorrenzeInFile": 5
+    },
+    {
+     "termine": "Skéra",
+     "radice": "skera",
+     "fonte": [
+      "ICH-PRE-001",
+      "ICH-CP-001",
+      "ICH-CP-002"
+     ],
+     "occorrenzeInFile": 29
+    },
+    {
+     "termine": "Kyn",
+     "radice": "kyn",
+     "fonte": [
+      "ICH-PRE-001",
+      "ICH-CP-001",
+      "ICH-CP-002"
+     ],
+     "occorrenzeInFile": 25
+    },
+    {
+     "termine": "Hellheim",
+     "radice": "hellheim",
+     "fonte": [
+      "ICH-CP-016",
+      "ICH-CP-017",
+      "ICH-CP-018"
+     ],
+     "occorrenzeInFile": 3
+    },
+    {
+     "termine": "Elfrida",
+     "radice": "elfrida",
+     "fonte": [
+      "ICH-CP-003",
+      "ICH-CP-004",
+      "ICH-CP-005"
+     ],
+     "occorrenzeInFile": 41
+    },
+    {
+     "termine": "Ashling",
+     "radice": "ashling",
+     "fonte": [
+      "ICH-CP-003",
+      "ICH-CP-004",
+      "ICH-CP-005"
+     ],
+     "occorrenzeInFile": 39
+    },
+    {
+     "termine": "Naran",
+     "radice": "naran",
+     "fonte": [
+      "ICH-CP-003",
+      "ICH-CP-005",
+      "ICH-CP-006"
+     ],
+     "occorrenzeInFile": 36
+    },
+    {
+     "termine": "Kynwird",
+     "radice": "kynwird",
+     "fonte": [
+      "ICH-PRE-001",
+      "ICH-CP-001",
+      "ICH-CP-005"
+     ],
+     "occorrenzeInFile": 10
+    }
+   ],
+   "icaro": [
+    {
+     "termine": "brainfreeze",
+     "radice": "brainfreeze",
+     "fonte": [
+      "ICA-PRE-002",
+      "ICA-CP-002",
+      "ICA-CP-010"
+     ],
+     "occorrenzeInFile": 7
+    },
+    {
+     "termine": "Reionizzati",
+     "radice": "reionizzat",
+     "fonte": [
+      "ICA-PRE-002",
+      "ICA-CP-006",
+      "ICA-CP-021"
+     ],
+     "occorrenzeInFile": 5
+    },
+    {
+     "termine": "Bunny-Hoppers",
+     "radice": "bunny-hopper",
+     "fonte": [
+      "ICA-CP-021",
+      "ICA-CP-022",
+      "ICA-CP-023"
+     ],
+     "occorrenzeInFile": 3
+    },
+    {
+     "termine": "Spettro Bianco",
+     "radice": "spettro bianco",
+     "fonte": [
+      "ICA-CP-022"
+     ],
+     "occorrenzeInFile": 1
+    },
+    {
+     "termine": "White Hell Cup",
+     "radice": "white hell cup",
+     "fonte": [
+      "ICA-PRE-002",
+      "ICA-CP-006",
+      "ICA-CP-008"
+     ],
+     "occorrenzeInFile": 4
+    },
+    {
+     "termine": "collegiali",
+     "radice": "collegiali",
+     "fonte": [
+      "ICA-PRE-002",
+      "ICA-CP-006",
+      "ICA-CP-022"
+     ],
+     "occorrenzeInFile": 3
+    },
+    {
+     "termine": "patrioti",
+     "radice": "patrioti",
+     "fonte": [
+      "ICA-PRE-002",
+      "ICA-CP-001",
+      "ICA-CP-005"
+     ],
+     "occorrenzeInFile": 10
+    },
+    {
+     "termine": "cromo",
+     "radice": "cromo",
+     "fonte": [
+      "ICA-PRE-002",
+      "ICA-CP-003",
+      "ICA-CP-004"
+     ],
+     "occorrenzeInFile": 12
+    }
+   ]
+  },
+  "condivisi": [
+   {
+    "termine": "Telonio",
+    "radice": "telonio",
+    "significati": {
+     "eidos": {
+      "significato": "minerale della cava di Lechta, usato in armature e mezzi",
+      "fonte": [
+       "EID-PRE-001",
+       "EID-PRE-004",
+       "EID-RW-008"
+      ]
+     },
+     "icaro": {
+      "significato": "materiale che si radica in strutture e corpi e conduce il Cromo",
+      "fonte": [
+       "ICA-PRE-002",
+       "ICA-CP-001",
+       "ICA-CP-004"
+      ]
+     }
+    },
+    "regola": "Ogni campagna usa il termine solo nel significato attestato dalle proprie fonti; il collegamento fra campagne è riservato e non si trasferisce."
+   },
+   {
+    "termine": "Akila",
+    "radice": "akila",
+    "significati": {
+     "eidos": {
+      "significato": "personaggio di Roots of War",
+      "fonte": [
+       "EID-RW-008",
+       "EID-RW-010",
+       "EID-RW-011"
+      ]
+     },
+     "ich": {
+      "significato": "protagonista (PG) della campagna",
+      "fonte": [
+       "ICH-CP-003",
+       "ICH-CP-004",
+       "ICH-CP-005"
+      ]
+     },
+     "icaro": {
+      "significato": "gruppo dei trasporti e dei rompighiaccio",
+      "fonte": [
+       "ICA-PRE-002",
+       "ICA-CP-001",
+       "ICA-CP-002"
+      ]
+     }
+    },
+    "regola": "Ogni campagna usa il termine solo nel significato attestato dalle proprie fonti; il collegamento fra campagne è riservato e non si trasferisce."
+   },
+   {
+    "termine": "Raven",
+    "radice": "raven",
+    "significati": {
+     "ich": {
+      "significato": "figura del mondo di Ich (riservata)",
+      "fonte": [
+       "ICH-CP-001",
+       "ICH-CP-002",
+       "ICH-CP-004"
+      ]
+     },
+     "icaro": {
+      "significato": "intelligenza di sicurezza al servizio di Alikea Rodano",
+      "fonte": [
+       "ICA-CP-004",
+       "ICA-CP-018",
+       "ICA-CP-022"
+      ]
+     }
+    },
+    "regola": "Ogni campagna usa il termine solo nel significato attestato dalle proprie fonti; il collegamento fra campagne è riservato e non si trasferisce."
+   },
+   {
+    "termine": "Gaia",
+    "radice": "gaia",
+    "significati": {
+     "eidos": {
+      "significato": "voce e figura legata alla rivelazione finale (riservata)",
+      "fonte": [
+       "EID-RW-014",
+       "EID-SP-005",
+       "EID-EM-003"
+      ]
+     },
+     "ich": {
+      "significato": "figura legata ai creatori del programma (riservata)",
+      "fonte": [
+       "ICH-CP-001",
+       "ICH-CP-002",
+       "ICH-CP-004"
+      ]
+     },
+     "icaro": {
+      "significato": "Gaia Epos, a capo dei nuovi Akila",
+      "fonte": [
+       "ICA-CP-004",
+       "ICA-CP-006",
+       "ICA-CP-008"
+      ]
+     }
+    },
+    "regola": "Ogni campagna usa il termine solo nel significato attestato dalle proprie fonti; il collegamento fra campagne è riservato e non si trasferisce."
+   },
+   {
+    "termine": "Epos",
+    "radice": "epos",
+    "significati": {
+     "eidos": {
+      "significato": "Robert Epos, scienziato fondatore (pubblico)",
+      "fonte": [
+       "EID-PRE-003",
+       "EID-PRE-004",
+       "EID-RW-008"
+      ]
+     },
+     "ich": {
+      "significato": "squadra di Thomas Epos (riservata)",
+      "fonte": [
+       "ICH-CP-001",
+       "ICH-CP-036",
+       "ICH-CP-038"
+      ]
+     },
+     "icaro": {
+      "significato": "famiglia Epos: Thomas (dati originali) e Gaia",
+      "fonte": [
+       "ICA-PRE-002",
+       "ICA-CP-001",
+       "ICA-CP-003"
+      ]
+     }
+    },
+    "regola": "Ogni campagna usa il termine solo nel significato attestato dalle proprie fonti; il collegamento fra campagne è riservato e non si trasferisce."
+   },
+   {
+    "termine": "Thomas",
+    "radice": "thomas",
+    "significati": {
+     "eidos": {
+      "significato": "personaggio della storia parallela",
+      "fonte": [
+       "EID-PRE-001",
+       "EID-PRE-004",
+       "EID-RW-005"
+      ]
+     },
+     "ich": {
+      "significato": "Thomas Epos (riservato)",
+      "fonte": [
+       "ICH-CP-001",
+       "ICH-CP-005",
+       "ICH-CP-006"
+      ]
+     },
+     "icaro": {
+      "significato": "Thomas Epos, dati originali (riservato)",
+      "fonte": [
+       "ICA-PRE-002",
+       "ICA-CP-003",
+       "ICA-CP-008"
+      ]
+     }
+    },
+    "regola": "Ogni campagna usa il termine solo nel significato attestato dalle proprie fonti; il collegamento fra campagne è riservato e non si trasferisce."
+   },
+   {
+    "termine": "Ich",
+    "radice": "ich",
+    "significati": {
+     "eidos": {
+      "significato": "pubblicità del programma nel Cap. 36 (riservata: rivelazione meta)",
+      "fonte": [
+       "EID-EM-070"
+      ]
+     },
+     "ich": {
+      "significato": "nome della campagna e del programma (natura riservata)",
+      "fonte": [
+       "ICH-PRE-001",
+       "ICH-CP-001",
+       "ICH-CP-016"
+      ]
+     },
+     "icaro": {
+      "significato": "programma pubblico di connessione",
+      "fonte": [
+       "ICA-PRE-002",
+       "ICA-CP-003",
+       "ICA-CP-004"
+      ]
+     }
+    },
+    "regola": "Ogni campagna usa il termine solo nel significato attestato dalle proprie fonti; il collegamento fra campagne è riservato e non si trasferisce."
+   },
+   {
+    "termine": "Icaro",
+    "radice": "icaro",
+    "significati": {
+     "eidos": {
+      "significato": "battuta del Cap. 36 «essere stati come Icaro» (riservata)",
+      "fonte": [
+       "EID-EM-070"
+      ]
+     },
+     "ich": {
+      "significato": "riferimenti a Icaro nelle fonti di Ich (riservati)",
+      "fonte": [
+       "ICH-CP-004",
+       "ICH-CP-012",
+       "ICH-CP-035"
+      ]
+     },
+     "icaro": {
+      "significato": "titolo dei benefattori e nome della campagna",
+      "fonte": [
+       "ICA-PRE-002",
+       "ICA-CP-002",
+       "ICA-CP-006"
+      ]
+     }
+    },
+    "regola": "Ogni campagna usa il termine solo nel significato attestato dalle proprie fonti; il collegamento fra campagne è riservato e non si trasferisce."
+   },
+   {
+    "termine": "Reverie",
+    "radice": "reverie",
+    "significati": {
+     "ich": {
+      "significato": "nome pubblico del mondo di gioco",
+      "fonte": [
+       "ICH-PRE-001",
+       "ICH-CP-004",
+       "ICH-CP-005"
+      ]
+     },
+     "icaro": {
+      "significato": "una sola menzione (collegamento riservato)",
+      "fonte": [
+       "ICA-CP-010"
+      ]
+     }
+    },
+    "regola": "Ogni campagna usa il termine solo nel significato attestato dalle proprie fonti; il collegamento fra campagne è riservato e non si trasferisce."
+   },
+   {
+    "termine": "Pannazionale",
+    "radice": "pannazionale",
+    "significati": {
+     "ich": {
+      "significato": "una sola menzione (collegamento riservato)",
+      "fonte": [
+       "ICH-CP-004"
+      ]
+     },
+     "icaro": {
+      "significato": "Repubblica Pannazionale, lo Stato delle città",
+      "fonte": [
+       "ICA-PRE-002",
+       "ICA-CP-005",
+       "ICA-CP-006"
+      ]
+     }
+    },
+    "regola": "Ogni campagna usa il termine solo nel significato attestato dalle proprie fonti; il collegamento fra campagne è riservato e non si trasferisce."
+   },
+   {
+    "termine": "Brain Freeze",
+    "radice": "brain freeze",
+    "significati": {
+     "ich": {
+      "significato": "una sola menzione (collegamento riservato)",
+      "fonte": [
+       "ICH-CP-021"
+      ]
+     },
+     "icaro": {
+      "significato": "malattia della mente («cervello ghiacciato»)",
+      "fonte": [
+       "ICA-CP-022"
+      ]
+     }
+    },
+    "regola": "Ogni campagna usa il termine solo nel significato attestato dalle proprie fonti; il collegamento fra campagne è riservato e non si trasferisce."
+   }
+  ],
+  "collegamentiOriginali": [
+   {
+    "id": "COLL-01",
+    "campagne": [
+     "eidos",
+     "ich",
+     "icaro"
+    ],
+    "testo": "Le fonti originali delle tre campagne condividono un livello meta (Gaia, la famiglia Epos, il programma Ich, Icaro).",
+    "fonte": [
+     "EID-EM-070",
+     "ICH-CP-001",
+     "ICA-CP-022"
+    ],
+    "classe": "canonico_riservato",
+    "regola": "Mai trasferito da una campagna all'altra; in ciascuna resta riservato secondo le sue regole di sblocco."
+   },
+   {
+    "id": "COLL-02",
+    "campagne": [
+     "eidos",
+     "ich"
+    ],
+    "testo": "Battute condivise: «saranno le donne a cambiare il mondo» e «salva una vita… salva il mondo».",
+    "fonte": [
+     "EID-SP-006",
+     "ICH-CP-041"
+    ],
+    "classe": "canonico_pubblico",
+    "regola": "Usabile solo come battuta di un PNG della campagna la cui fonte la contiene."
+   }
+  ]
+ }
+}

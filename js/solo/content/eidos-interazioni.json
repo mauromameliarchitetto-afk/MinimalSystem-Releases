@@ -1,0 +1,3058 @@
+{
+  "formato": "rm-solo-scene/2",
+  "campaign_id": "eidos-casa-delle-voci",
+  "stato": "proposta da approvare",
+  "content_status": "proposed",
+  "nota": "Scene a fasi (arrivo, esplorazione, sviluppo, risoluzione) dopo il prompt di correzione del ritmo: il passaggio avviene per condizioni narrative, non per un contatore. Proposta da approvare.",
+  "regole": {
+    "nota_ritmo": "Nessun minimo globale: la risoluzione dipende solo dai beat richiesti, scelti perché il percorso minimo rispetti la fascia della scena.",
+    "fasi": [
+      "arrival",
+      "exploration",
+      "development",
+      "resolution"
+    ],
+    "fasce": {
+      "compact": [
+        6,
+        10
+      ],
+      "standard": [
+        10,
+        18
+      ],
+      "decisive": [
+        16,
+        30
+      ]
+    },
+    "riserva_libera": "Ti prendi il tempo di guardare meglio. Il luogo non cambia per te, ma adesso ne conosci i rumori, le distanze e chi evita il tuo sguardo.",
+    "stallo": [
+      "Le pompe tossiscono più forte, e qualcuno alza la voce da un'altra sala: Soglia non aspetta chi resta fermo.",
+      "Una lampada si spegne. Nel buio improvviso qualcuno si sposta, e quando la luce torna le persone non sono più dove erano.",
+      "Arriva un ragazzo di corsa con un messaggio a metà: qualcuno cerca proprio te, dall'altra parte della stazione.",
+      "L'aria cambia odore, metallo e muffa. Chi ti è vicino si copre la bocca e ti guarda, aspettando che tu faccia qualcosa."
+    ]
+  },
+  "scene": {
+    "E01": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "compact",
+      "fascia_orientativa": [
+        6,
+        10
+      ],
+      "max_stagnant_turns": 2,
+      "esplora": [
+        {
+          "id": "E01x1",
+          "testo": "Osservare le pompe della sala",
+          "riserva": "Le pompe sono state riparate così tante volte che nessun pezzo somiglia all'altro: una guarnizione epizia, un pistone chorisfos, fascette di corda eporiana. Tossiscono a ritmo irregolare, e ogni volta che rallentano qualcuno alza la testa dal proprio lavoro.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Le pompe sono state riparate così tante volte che nessun pezzo somiglia all'altro: una guarnizione epizia, un pistone chorisfos, fascette di corda eporiana."
+            }
+          ]
+        },
+        {
+          "id": "E01x2",
+          "testo": "Guardare chi lavora e che cosa manca",
+          "riserva": "Una ventina di persone si passa attrezzi senza parlare molto. Nessuno porta insegne né colori di popolazione. Sui banchi mancano soprattutto i pezzi di ricambio: i cassoni con la scritta dei filtri sono vuoti.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Una ventina di persone si passa attrezzi senza parlare molto.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E01x3",
+          "testo": "Leggere i segni incisi sulle colonne",
+          "riserva": "Sulle colonne della sala qualcuno ha inciso tacche e nomi, in quattro alfabeti diversi. Alcuni nomi sono stati raschiati e riscritti con un'altra grafia, come se la stessa persona avesse cambiato lingua.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Sulle colonne della sala qualcuno ha inciso tacche e nomi, in quattro alfabeti diversi."
+            }
+          ]
+        },
+        {
+          "id": "E01x4",
+          "testo": "Seguire l'odore dell'aria",
+          "riserva": "Vicino alle bocchette l'aria sa di ferro e di muffa. Più ti allontani dalle pompe, più il respiro si fa pesante. Un bambino ti indica un cartello: oltre la linea gialla si va solo con il panno sulla bocca.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "conosci l'aria di Soglia"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "ada",
+          "apertura": "Ada Soren ti squadra senza fretta. «Sei arrivato dalla galleria. Pochi la trovano, e ancora meno restano. Chiedi pure: qui le domande costano meno delle bugie.»",
+          "argomenti": [
+            {
+              "id": "E01_ada_1",
+              "testo": "Chiedere che cos'è Soglia",
+              "riserva": "«Un posto dove si vive senza dire da che parte si viene», risponde Ada. «Non è una regola scritta. È una cosa che si impara guardando gli altri non chiedertelo.»"
+            },
+            {
+              "id": "E01_ada_2",
+              "testo": "Chiedere del suo ruolo",
+              "riserva": "«Custodisco una cosa che qui sotto vale più dell'acqua», dice, e non aggiunge altro. «Quando saprò chi sei, forse te la mostrerò.»",
+              "effetti": [
+                {
+                  "voce": {
+                    "id": "eidos_voce_custode",
+                    "testo": "Ada custodisce qualcosa sotto la stazione."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "E01_ada_3",
+              "testo": "Chiedere come si resta a Soglia",
+              "riserva": "«Lavorando. Riparando. Non portando la guerra dentro.» Ada indica le pompe. «E trovando un motivo. Chi resta senza un motivo se ne va alla prima tosse delle pompe.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Lavorando. Riparando. Non portando la guerra dentro.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Ada torna al suo giro fra i banchi. «Ci vedremo ancora», dice, come se lo sapesse già."
+        },
+        {
+          "png": "mirea",
+          "apertura": "Mirea Krun non smette di contare le casse mentre ti parla. «Un forestiero è una bocca in più. Se sai riparare qualcosa, dillo subito.»",
+          "argomenti": [
+            {
+              "id": "E01_mirea_1",
+              "testo": "Chiedere dei magazzini",
+              "riserva": "«I magazzini sono miei nel senso che ne rispondo io», dice Mirea. «Ogni bullone ha un nome sul registro. Quando manca qualcosa, la colpa ha il mio nome.»"
+            },
+            {
+              "id": "E01_mirea_2",
+              "testo": "Chiedere che cosa manca di più",
+              "riserva": "«Ricambi per i filtri.» Stringe le labbra. «Aspettavamo un convoglio. Non è arrivato. Tutto qui.»"
+            },
+            {
+              "id": "E01_mirea_3",
+              "testo": "Offrire il proprio aiuto",
+              "riserva": "Mirea ti guarda le mani prima della faccia. «Aiuto ne serve. Ma qui chi aiuta poi pretende. Vediamo prima se resti.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "mirea",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Mirea riprende a contare, da capo. «Tre volte», mormora. «Conto sempre tre volte.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Mentre parli, le pompe si fermano di colpo. Nel silenzio tutti guardano Mirea, che corre ai registri. Dopo un lungo momento le pompe riprendono a tossire; nessuno torna al lavoro come prima.",
+        "esplora": [
+          {
+            "id": "E01d1",
+            "testo": "Osservare chi guarda Mirea",
+            "riserva": "Alcuni la guardano con fiducia, altri con un sospetto che non dicono ad alta voce. Ada la guarda come si guarda qualcuno che porta un peso troppo grande.",
+            "effetti": [
+              {
+                "nota": "Quando le pompe si fermano, a Soglia tutti guardano Mirea.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E01x2",
+          "E01_ada_3"
+        ],
+        "risoluzione": [
+          "E01d1"
+        ]
+      },
+      "required_beats": [
+        "E01x2",
+        "E01_ada_3",
+        "E01d1"
+      ],
+      "optional_beats": [
+        "E01x4",
+        "E01_ada_2",
+        "E01_mirea_3"
+      ],
+      "riserva_libera": "Ti prendi il tempo di guardare Soglia da vicino. Nessuno ti ferma, nessuno ti accoglie: qui si osserva chi arriva prima di decidere se fidarsi.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "E02": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "E02x1",
+          "testo": "Esaminare i carri rovesciati",
+          "riserva": "Tre carri, rovesciati su un fianco, le ruote ancora sporche del fango della strada costiera. Le sponde sono intatte: chi li ha assaliti non ha dovuto sfondare nulla per arrivare al carico.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Tre carri, rovesciati su un fianco, le ruote ancora sporche del fango della strada costiera.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E02x2",
+          "testo": "Guardare le tracce sul pavimento della galleria",
+          "riserva": "Nella polvere ci sono impronte di stivali, molte, e segni di trascinamento più vecchi, coperti da un velo di detriti. Le tracce recenti vanno e vengono dall'uscita; quelle vecchie spariscono verso Soglia.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le tracce vecchie nella galleria spariscono verso Soglia."
+            }
+          ]
+        },
+        {
+          "id": "E02x3",
+          "testo": "Ascoltare il Tèras fra le ruote",
+          "riserva": "Fra le ruote qualcosa raschia contro il metallo, lento e paziente. Il calore dei mozzi lo attira. Ogni tanto il raschio si ferma, come se ascoltasse anche lui.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "sai che il Tèras segue il calore"
+            }
+          ]
+        },
+        {
+          "id": "E02x4",
+          "testo": "Controllare le casse del carico",
+          "riserva": "Le casse sono aperte e vuote, ma i sigilli di Lechta sono stati tolti con cura, non spezzati. Dentro, la paglia di imballaggio è ancora ordinata, schiacciata dalla forma di pezzi che non ci sono più.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le casse sono aperte e vuote, ma i sigilli di Lechta sono stati tolti con cura, non spezzati.",
+              "categoria": "indizio"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "mirea",
+          "apertura": "Mirea ti ha seguito fino all'imbocco e resta al riparo di una trave. «Non avvicinarti troppo ai mozzi. Quella cosa sente il caldo, non il rumore.»",
+          "argomenti": [
+            {
+              "id": "E02_mirea_1",
+              "testo": "Chiedere quando doveva arrivare il convoglio",
+              "riserva": "«Dieci giorni fa», risponde. «Lo abbiamo aspettato quattro notti prima di mandare qualcuno a vedere.»",
+              "effetti": [
+                {
+                  "nota": "Mirea Krun: «Dieci giorni fa»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E02_mirea_2",
+              "testo": "Chiedere chi sapeva della rotta",
+              "riserva": "«Chi doveva saperlo. Io, i conducenti, due o tre ai magazzini.» Mirea guarda i carri, non te. «A Soglia non ci sono tanti segreti. Solo tanti silenzi.»",
+              "effetti": [
+                {
+                  "nota": "Mirea Krun: «Chi doveva saperlo. Io, i conducenti, due o tre ai magazzini.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E02_mirea_3",
+              "testo": "Chiedere del Tèras",
+              "riserva": "«Si nutrono di calore e di metallo. Questo si è fatto il nido nei carri.» Una pausa. «Se lo lasciamo lì, la galleria è persa.»",
+              "effetti": [
+                {
+                  "nota": "Mirea teme di perdere la galleria.",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "«Fai quello che devi», dice Mirea, tirandosi indietro nell'ombra. «Io sto qui a contare.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Un mozzo cade con un tonfo: il Tèras si scuote e striscia fuori dal carro più vicino, attirato dal calore delle lampade. Adesso lo vedi tutto, e lui vede te.",
+        "esplora": [
+          {
+            "id": "E02d1",
+            "testo": "Studiare come si muove il Tèras",
+            "riserva": "Si muove verso il calore, non verso il rumore: segue i mozzi ancora tiepidi e le lampade. Se lo si attira lontano dai carri, si apre un varco verso le casse.",
+            "effetti": [
+              {
+                "nota": "Il Tèras segue il calore: attirarlo lontano apre un varco verso le casse.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E02d2",
+            "testo": "Ascoltare il metallo dei carri",
+            "riserva": "I mozzi ticchettano mentre si raffreddano, uno dopo l'altro. Il Tèras gira la testa verso ciascun suono, come se contasse quanto calore resta.",
+            "effetti": [
+              {
+                "nota": "I mozzi ticchettano mentre si raffreddano, uno dopo l'altro.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E02d3",
+            "testo": "Cercare un riparo fra i carri",
+            "riserva": "Il carro di mezzo ha una sponda ancora dritta: dietro, lo spazio basta per una persona accucciata. Da lì si vedono le casse e l'uscita.",
+            "effetti": [
+              {
+                "nota": "Il carro di mezzo ha una sponda ancora dritta: dietro, lo spazio basta per una persona accucciata.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E02x1",
+          "E02x4",
+          "E02_mirea_2",
+          "E02_mirea_1",
+          "E02_mirea_3"
+        ],
+        "risoluzione": [
+          "E02d1",
+          "E02d2",
+          "E02d3"
+        ]
+      },
+      "required_beats": [
+        "E02x1",
+        "E02x4",
+        "E02_mirea_2",
+        "E02_mirea_1",
+        "E02_mirea_3",
+        "E02d1",
+        "E02d2",
+        "E02d3"
+      ],
+      "optional_beats": [
+        "E02x3"
+      ],
+      "riserva_libera": "Resti un momento immobile nella galleria. Il raschio del Tèras si ferma e riprende; il metallo dei carri ticchetta raffreddandosi.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio.",
+      "pressione": {
+        "nome": "Il Tèras si avvicina",
+        "max": 12,
+        "per_interazione": 1,
+        "testo_max": "Il raschio cessa. Il Tèras esce dalle ruote e ti viene incontro: non c'è più tempo per guardare.",
+        "conseguenza": "Il Tèras è uscito dai carri: lo scontro comincia in svantaggio.",
+        "sostituto": {
+          "id": "E02p",
+          "testo": "Farsi strada fino alle casse, sotto l'attacco",
+          "riserva": "Mentre il Tèras si scaglia contro i carri, corri alle casse. In un lampo vedi quello che serve: sigilli tolti con cura, impronte vecchie verso Soglia. Poi il mostro è addosso.",
+          "effetti": [
+            {
+              "nota": "Mentre il Tèras si scaglia contro i carri, corri alle casse.",
+              "categoria": "cambiamento"
+            }
+          ]
+        }
+      }
+    },
+    "E03": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "E03x1",
+          "testo": "Ascoltare le voci registrate",
+          "riserva": "Le registrazioni partono e si interrompono da sole, sovrapposte: una donna racconta di un inverno, un uomo recita dei numeri, qualcuno canta a bassa voce. Nessuna lingua prevale sulle altre.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Le registrazioni partono e si interrompono da sole, sovrapposte: una donna racconta di un inverno, un uomo recita dei numeri, qualcuno canta a bassa voce.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E03x2",
+          "testo": "Guardare i disegni alle pareti",
+          "riserva": "Carboncino su carta di recupero: facce, mappe di gallerie, una stazione di filtraggio disegnata com'era prima di diventare Soglia. In un angolo, mani di persone diverse hanno disegnato la stessa porta.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Nella Casa, mani diverse hanno disegnato la stessa porta.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E03x3",
+          "testo": "Esaminare gli scaffali delle testimonianze",
+          "riserva": "Cartelle legate con spago, ognuna con un nome e una data. Alcune sono spesse come un libro, altre contengono un solo foglio. Nessuna ha un'insegna di popolazione sul dorso.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Cartelle legate con spago, ognuna con un nome e una data.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E03x4",
+          "testo": "Osservare il sigillo della camera",
+          "riserva": "Il portello è stato saldato e riaperto più volte, sempre dall'interno. Il meccanismo è semplice e ben tenuto: chi lo ha costruito voleva poterlo chiudere in fretta, non tenerlo chiuso per sempre.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Il portello della Casa si chiude dall'interno."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "ada",
+          "apertura": "Ada si ferma accanto a te, la mano sul primo scaffale. «Questa è la Casa delle Voci. Adesso sai perché non la mostro a chiunque.»",
+          "argomenti": [
+            {
+              "id": "E03_ada_1",
+              "testo": "Chiedere chi ha raccolto queste voci",
+              "riserva": "«Chi è venuto prima di noi», dice Ada. «Persone che avevano bisogno di ricordare chi erano, prima di smettere di esserlo.» Non dice di più.",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Chi è venuto prima di noi»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E03_ada_2",
+              "testo": "Chiedere perché la custodisce lei",
+              "riserva": "«Perché qualcuno deve farlo e io ci so stare, qui sotto, con tutte queste voci.» Sorride appena. «Non tutti ci riescono. Alcuni ne escono diversi.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "ada",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "E03_ada_3",
+              "testo": "Chiedere che cosa rischia la Casa",
+              "riserva": "«Chiunque la trovi vorrà usarla. Una voce, tolta dalle altre, diventa un'arma.» Ada accarezza lo spago di una cartella. «Insieme sono solo la verità.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Chiunque la trovi vorrà usarla. Una voce, tolta dalle altre, diventa un'arma.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "«Guarda con calma», dice Ada, ritirandosi verso il portello. «Qui dentro nessuno ha fretta, nemmeno i morti.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Una registrazione si interrompe a metà e riparte da sola, più forte: una voce pronuncia un nome che conosci. Ada si irrigidisce. «Questa non dovrebbe partire da sola», mormora.",
+        "esplora": [
+          {
+            "id": "E03d1",
+            "testo": "Cercare da dove viene la voce",
+            "riserva": "La voce viene da uno scaffale in fondo, dove le cartelle sono legate con uno spago di colore diverso. Qualcuno le ha consultate di recente: la polvere è stata spostata.",
+            "effetti": [
+              {
+                "nota": "Le cartelle con lo spago diverso sono state consultate di recente.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E03d2",
+            "testo": "Ascoltare la voce che ha detto il nome",
+            "riserva": "La registrazione riparte, più piano. La voce racconta di un viaggio lungo e di un nome dato a un bambino perché non si perdesse. Poi si interrompe di nuovo.",
+            "effetti": [
+              {
+                "nota": "La registrazione riparte, più piano.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E03d3",
+            "testo": "Guardare Ada mentre ascolta",
+            "riserva": "Ada tiene le labbra strette. Conosce quella voce, lo capisci da come smette di respirare quando riparte.",
+            "effetti": [
+              {
+                "nota": "Ada tiene le labbra strette.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E03x1",
+          "E03x3",
+          "E03_ada_1",
+          "E03x2"
+        ],
+        "risoluzione": [
+          "E03d1",
+          "E03_ada_3",
+          "E03d2",
+          "E03d3"
+        ]
+      },
+      "required_beats": [
+        "E03x1",
+        "E03x3",
+        "E03_ada_1",
+        "E03x2",
+        "E03d1",
+        "E03_ada_3",
+        "E03d2",
+        "E03d3"
+      ],
+      "optional_beats": [
+        "E03_ada_2"
+      ],
+      "riserva_libera": "Resti ad ascoltare la Casa. Le voci non parlano a te, ma a un certo punto ti accorgi di aver trattenuto il respiro per non coprirle.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "E04": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "E04x1",
+          "testo": "Osservare l'ufficiale epizio",
+          "riserva": "Cassian Vey tiene l'armatura allacciata anche seduto. Guarda le pareti come si guarda un terreno da conquistare, ma parla piano, e ringrazia chi gli porta l'acqua.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Cassian Vey tiene l'armatura allacciata anche seduto.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E04x2",
+          "testo": "Osservare il caporale Chorisfos",
+          "riserva": "Reik Damos è giovane per il grado che porta. Ha l'ordine piegato nel taschino e lo tocca spesso, come per assicurarsi che sia ancora lì.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Reik Damos è giovane per il grado che porta.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E04x3",
+          "testo": "Osservare il mercante di Lechta",
+          "riserva": "Tal Emek ha steso un panno pulito sul tavolo comune e ci ha appoggiato sopra il sigillo della sua casa. Sorride a tutti, e conta con gli occhi le persone nella sala.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Tal conta le persone nella sala."
+            }
+          ]
+        },
+        {
+          "id": "E04x4",
+          "testo": "Osservare l'esploratrice Antarsi",
+          "riserva": "Yara Tèren resta vicino all'uscita, la schiena al muro. Ha le mani sporche di grasso di condotti e non tocca il cibo che le offrono.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Yara ha le mani sporche di grasso dei condotti."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "cassian",
+          "apertura": "Cassian si alza per salutarti, cosa che nessun altro ha fatto. «Tu non sei di qui. Bene: forse mi dirai le cose come stanno.»",
+          "argomenti": [
+            {
+              "id": "E04_cassian_1",
+              "testo": "Chiedere che cosa offre",
+              "riserva": "«Protezione. Una guarnigione piccola, disciplinata. Soglia resterebbe com'è, sotto la nostra bandiera.» Fa una pausa. «La bandiera è la parte che non piace a nessuno.»",
+              "effetti": [
+                {
+                  "nota": "Cassian Vey: «Protezione. Una guarnigione piccola, disciplinata. Soglia resterebbe com'è, sotto la nostra bandiera.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E04_cassian_2",
+              "testo": "Chiedere perché gli Epizi sono qui",
+              "riserva": "«Abbiamo intercettato segnali da questa stazione. Io ho l'ordine di recuperare ciò che trovo.» Cassian abbassa la voce. «Non mi hanno detto che cosa aspettarmi.»",
+              "effetti": [
+                {
+                  "nota": "Cassian Vey: «Abbiamo intercettato segnali da questa stazione. Io ho l'ordine di recuperare ciò che trovo.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E04_cassian_3",
+              "testo": "Chiedere che cosa pensa degli altri",
+              "riserva": "«Reik esegue gli ordini, come me. Tal vende, Yara brucia.» Sorride storto. «Non è un giudizio. È il loro mestiere.»",
+              "effetti": [
+                {
+                  "nota": "Cassian: Tal vende, Yara brucia."
+                }
+              ]
+            }
+          ],
+          "chiusura": "Cassian torna a sedere e riallaccia la cinghia dell'avambraccio. «Pensaci. Poi ne riparliamo.»"
+        },
+        {
+          "png": "reik",
+          "apertura": "Reik ti fa un cenno rigido. «Caporale Damos. Ho un ordine, e non è una trattativa. Ma posso ascoltare.»",
+          "argomenti": [
+            {
+              "id": "E04_reik_1",
+              "testo": "Chiedere del suo ordine",
+              "riserva": "«Sigillare il sito finché arriva il comando.» Tocca il taschino. «Nell'ordine non c'è scritto che cosa fare della gente che ci vive. Me lo sto chiedendo da ieri.»",
+              "effetti": [
+                {
+                  "nota": "Reik Damos: «Sigillare il sito finché arriva il comando.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E04_reik_2",
+              "testo": "Chiedere che cosa offre",
+              "riserva": "«I Chorisfos difendono. Mura, turni di guardia, armi.» Esita. «E poi il comando decide. Non io.»"
+            },
+            {
+              "id": "E04_reik_3",
+              "testo": "Chiedere di lui",
+              "riserva": "«Mi hanno promosso perché gli altri sono morti.» Lo dice senza enfasi. «Non ho ancora imparato a dare ordini a qualcuno più vecchio di me.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "reik",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Reik raddrizza la schiena. «Se hai domande sull'ordine, rivolgiti al comando. Io posso solo eseguirlo.»"
+        },
+        {
+          "png": "tal",
+          "apertura": "Tal ti versa da bere senza chiedere. «I forestieri sono i migliori clienti: non hanno ancora imparato a fidarsi di nessuno.»",
+          "argomenti": [
+            {
+              "id": "E04_tal_1",
+              "testo": "Chiedere che cosa offre Lechta",
+              "riserva": "«Navi, filtri nuovi, un nome riconosciuto nei porti. Tutto con una firma.» Tal picchietta il sigillo. «Il resto sono dettagli.»",
+              "effetti": [
+                {
+                  "nota": "Tal Emek: «Navi, filtri nuovi, un nome riconosciuto nei porti. Tutto con una firma.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E04_tal_2",
+              "testo": "Chiedere quali dettagli",
+              "riserva": "«Quelli che si leggono con calma, quando c'è calma.» Ride. «Oggi non c'è. Oggi ci sono solo offerte.»"
+            },
+            {
+              "id": "E04_tal_3",
+              "testo": "Chiedere dei filtri",
+              "riserva": "«Lechta sa riparare filtri. Noi sappiamo riparare quasi tutto, se il prezzo è giusto.» Lo sguardo gli scivola verso Mirea, dall'altra parte della sala.",
+              "effetti": [
+                {
+                  "voce": {
+                    "id": "eidos_voce_tal_mirea",
+                    "testo": "Tal guarda spesso Mirea."
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Tal ripiega il panno con cura. «La mia offerta resta sul tavolo. Io sono paziente.»"
+        },
+        {
+          "png": "yara",
+          "apertura": "Yara non si stacca dal muro. «Tu parli con tutti. Allora parla anche con me, ma in fretta.»",
+          "argomenti": [
+            {
+              "id": "E04_yara_1",
+              "testo": "Chiedere che cosa offrono gli Antarsi",
+              "riserva": "«Una strada per uscire. Barche, rifugi, gente che non fa domande.» Guarda le pompe. «Questo posto non reggerà a lungo, lo sai anche tu.»",
+              "effetti": [
+                {
+                  "nota": "Yara Tèren: «Una strada per uscire. Barche, rifugi, gente che non fa domande.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E04_yara_2",
+              "testo": "Chiedere perché ha le mani sporche di grasso",
+              "riserva": "Yara si pulisce le dita sui pantaloni, lentamente. «Ho girato i condotti. Mi piace sapere da dove si esce.»",
+              "effetti": [
+                {
+                  "nota": "Yara ha girato i condotti."
+                }
+              ]
+            },
+            {
+              "id": "E04_yara_3",
+              "testo": "Chiedere di cosa ha paura",
+              "riserva": "«Di quello che succede quando un posto come questo finisce nelle mani sbagliate.» Non dice quali mani siano quelle giuste."
+            }
+          ],
+          "chiusura": "«Pensaci in fretta», dice Yara, e torna a guardare l'uscita."
+        }
+      ],
+      "sviluppo": {
+        "testo": "A metà pomeriggio la tensione si rompe: Reik e Cassian si trovano faccia a faccia vicino al tavolo comune, le mani vicino alle armi. La sala tace. Tal sorride, Yara si sposta verso l'uscita.",
+        "esplora": [
+          {
+            "id": "E04d1",
+            "testo": "Mettersi in mezzo fra Reik e Cassian",
+            "riserva": "Ti metti fra i due. Nessuno dei due vuole essere il primo a cedere, ma nessuno vuole sparare in una sala piena di civili. Dopo un lungo momento, abbassano le mani.",
+            "effetti": [
+              {
+                "nota": "Reik e Cassian hanno abbassato le mani, per ora.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E04x1",
+          "E04x2",
+          "E04_cassian_1",
+          "E04_reik_1",
+          "E04_cassian_2"
+        ],
+        "risoluzione": [
+          "E04d1",
+          "E04_tal_1",
+          "E04_yara_1"
+        ]
+      },
+      "required_beats": [
+        "E04x1",
+        "E04x2",
+        "E04_cassian_1",
+        "E04_reik_1",
+        "E04_cassian_2",
+        "E04d1",
+        "E04_tal_1",
+        "E04_yara_1"
+      ],
+      "optional_beats": [
+        "E04_cassian_3",
+        "E04_reik_3",
+        "E04_tal_3",
+        "E04_yara_2"
+      ],
+      "riserva_libera": "Ti muovi fra i quattro inviati. Ognuno finge di non ascoltare gli altri, e ognuno ascolta.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "E05": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "E05x1",
+          "testo": "Ascoltare la trasmissione letta in piazza",
+          "riserva": "La voce che legge la trasmissione trema appena sulle ultime parole: Linea Muta arriverà. Qualcuno la fa ripetere due volte, come se il testo potesse cambiare.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "La voce che legge la trasmissione trema appena sulle ultime parole: Linea Muta arriverà.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E05x2",
+          "testo": "Guardare la gente di Soglia",
+          "riserva": "Le famiglie si sono raccolte vicino alle pompe, i bambini in mezzo. Nessuno grida. Molti guardano gli inviati delle fazioni, e poi guardano te.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le famiglie si sono raccolte vicino alle pompe, i bambini in mezzo.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E05x3",
+          "testo": "Osservare gli inviati durante la lettura",
+          "riserva": "Cassian ascolta a occhi chiusi. Reik si irrigidisce. Tal prende nota su un taccuino. Yara è già con lo sguardo verso l'uscita.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Cassian ascolta a occhi chiusi, Tal prende appunti."
+            }
+          ]
+        },
+        {
+          "id": "E05x4",
+          "testo": "Guardare Ada",
+          "riserva": "Ada resta in disparte, le mani giunte davanti a sé. Quando la lettura finisce, è l'unica che non guarda nessuno degli inviati: guarda il pavimento, verso la Casa.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Ada guarda verso la Casa."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "ada",
+          "apertura": "Ada ti raggiunge senza farsi notare. «Hanno scelto te per parlare. Non perché ti conoscano: perché non sei di nessuno.»",
+          "argomenti": [
+            {
+              "id": "E05_ada_1",
+              "testo": "Chiedere che cosa farebbe lei",
+              "riserva": "«Io custodisco. Non decido.» Ada scuote la testa. «Ma qualunque cosa sceglierai, ricordati che dopo toccherà vivere con chi hai scelto.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Io custodisco. Non decido.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E05_ada_2",
+              "testo": "Chiedere di Linea Muta",
+              "riserva": "«Un nome, una scadenza e nessun volto.» Ada abbassa la voce. «Quando i soldati danno un nome a un'operazione, di solito è perché non vogliono dire che cosa fa.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Un nome, una scadenza e nessun volto.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E05_ada_3",
+              "testo": "Chiedere della gente di Soglia",
+              "riserva": "«Hanno paura, ma non sono stupidi. Seguiranno chi sembra sapere dove va.» Ti guarda. «Anche se non lo sa.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "ada",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Ada torna fra la gente. «Quando sei pronto, parla.»"
+        },
+        {
+          "png": "cassian",
+          "apertura": "Cassian si avvicina con passo misurato. «Adesso le offerte non bastano più. Serve una scelta.»",
+          "argomenti": [
+            {
+              "id": "E05_cassian_1",
+              "testo": "Chiedere che cosa sa di Linea Muta",
+              "riserva": "«Meno di quanto vorrei.» Cassian stringe la mascella. «I miei ordini non la nominano. Questo mi preoccupa più della scadenza.»",
+              "effetti": [
+                {
+                  "nota": "Cassian Vey: «Meno di quanto vorrei.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E05_cassian_2",
+              "testo": "Chiedere che cosa succede se non si sceglie lui",
+              "riserva": "«Io me ne vado con i miei uomini. Non sono venuto a prendere Soglia con la forza.» Una pausa. «Non io, almeno.»",
+              "effetti": [
+                {
+                  "nota": "Cassian Vey: «Io me ne vado con i miei uomini. Non sono venuto a prendere Soglia con la forza.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E05_cassian_3",
+              "testo": "Chiedere se si fida di Reik",
+              "riserva": "«Mi fido del fatto che eseguirà gli ordini. È proprio questo il problema.»",
+              "effetti": [
+                {
+                  "nota": "Cassian: Reik eseguirà gli ordini.",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "«Scegli bene», dice Cassian, e torna al suo posto."
+        },
+        {
+          "png": "yara",
+          "apertura": "Yara ti afferra il braccio, piano. «Non farti convincere dalle bandiere. Le bandiere se ne vanno quando finisce l'aria.»",
+          "argomenti": [
+            {
+              "id": "E05_yara_1",
+              "testo": "Chiedere quanto tempo serve per un'evacuazione",
+              "riserva": "«Due notti per i primi. Una settimana per tutti, se nessuno ci insegue.» Yara conta sulle dita. «Se ci inseguono, di più. E meno gente.»",
+              "effetti": [
+                {
+                  "nota": "Yara Tèren: «Due notti per i primi. Una settimana per tutti, se nessuno ci insegue.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E05_yara_2",
+              "testo": "Chiedere che cosa ne sarebbe della Casa",
+              "riserva": "Yara distoglie lo sguardo. «La gente prima. Le cose dopo.» Non risponde alla domanda.",
+              "effetti": [
+                {
+                  "nota": "Yara Tèren: «La gente prima. Le cose dopo.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E05_yara_3",
+              "testo": "Chiedere perché si fida di te",
+              "riserva": "«Non mi fido. Ma tu sei l'unico che ha parlato con me come se contassi.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "yara",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Yara ti lascia il braccio. «Decidi. Io sarò all'uscita.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "La trasmissione riprende da sola, con una seconda parte che nessuno aveva sentito: coordinate, un orario, poi silenzio. La gente comincia a parlare tutta insieme; qualcuno grida il tuo nome perché tu dica qualcosa.",
+        "esplora": [
+          {
+            "id": "E05d1",
+            "testo": "Chiedere silenzio alla piazza",
+            "riserva": "Alzi la mano. Per un momento sembra che nessuno ti ascolti, poi la piazza tace, un gruppo alla volta. Adesso tutti aspettano.",
+            "effetti": [
+              {
+                "nota": "La piazza di Soglia aspetta la tua parola.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E05x1",
+          "E05x2",
+          "E05_ada_2",
+          "E05_ada_1",
+          "E05_cassian_2",
+          "E05_cassian_3",
+          "E05_yara_2"
+        ],
+        "risoluzione": [
+          "E05d1",
+          "E05_cassian_1",
+          "E05_yara_1"
+        ]
+      },
+      "required_beats": [
+        "E05x1",
+        "E05x2",
+        "E05_ada_2",
+        "E05_ada_1",
+        "E05_cassian_2",
+        "E05_cassian_3",
+        "E05_yara_2",
+        "E05d1",
+        "E05_cassian_1",
+        "E05_yara_1"
+      ],
+      "optional_beats": [
+        "E05_ada_3",
+        "E05_yara_3"
+      ],
+      "riserva_libera": "Resti in piazza mentre la trasmissione si spegne. Il silenzio dura più del dovuto: tutti aspettano che qualcuno parli per primo.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "E06": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "E06x1",
+          "testo": "Contare i materiali insieme a Mirea",
+          "riserva": "Guarnizioni, cavo, due valvole buone e una incrinata, lamiera. Messi in fila sul banco sembrano tanti; divisi per tre lavori sono niente.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Guarnizioni, cavo, due valvole buone e una incrinata, lamiera.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E06x2",
+          "testo": "Esaminare i filtri",
+          "riserva": "Le cartucce sono intasate di una polvere grigia e grassa. Qualcuno le ha pulite a mano più volte: i segni delle spazzole hanno consumato la rete.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le cartucce sono intasate di una polvere grigia e grassa.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E06x3",
+          "testo": "Percorrere le vie di fuga",
+          "riserva": "Le gallerie di uscita sono strette, con tratti allagati fino al ginocchio. Servirebbero corde, lampade, puntelli. Nessuno le ha percorse di notte da mesi.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le vie di fuga sono allagate in più punti."
+            }
+          ]
+        },
+        {
+          "id": "E06x4",
+          "testo": "Guardare il ripetitore costiero dalla finestra alta",
+          "riserva": "Il ripetitore è una torre storta sulla scogliera, con metà delle antenne piegate dal vento. Se funzionasse, la voce di Soglia arriverebbe molto lontano.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai visto il ripetitore da vicino"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "mirea",
+          "apertura": "Mirea non alza gli occhi dal banco. «Lo vedi da solo. Basta per una cosa. Una.»",
+          "argomenti": [
+            {
+              "id": "E06_mirea_1",
+              "testo": "Chiedere quale sceglierebbe lei",
+              "riserva": "«I filtri. Sempre i filtri. Senza aria non c'è niente da evacuare né da trasmettere.» Lo dice troppo in fretta.",
+              "effetti": [
+                {
+                  "nota": "Mirea Krun: «I filtri. Sempre i filtri. Senza aria non c'è niente da evacuare né da trasmettere.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E06_mirea_2",
+              "testo": "Chiedere come mai mancano così tanti pezzi",
+              "riserva": "Mirea smette di contare per un istante. «Perché il convoglio non è arrivato. Te l'ho già detto.» Riprende dal primo pezzo.",
+              "effetti": [
+                {
+                  "nota": "Mirea Krun: «Perché il convoglio non è arrivato. Te l'ho già detto.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E06_mirea_3",
+              "testo": "Chiedere da quanto tiene i registri",
+              "riserva": "«Da quando c'era qualcosa da registrare.» Tocca il quaderno. «Qui dentro c'è tutta Soglia. Anche quello che la gente preferisce dimenticare.»",
+              "effetti": [
+                {
+                  "nota": "I registri di Mirea contengono tutta Soglia."
+                }
+              ]
+            }
+          ],
+          "chiusura": "«Decidi», dice Mirea. «Poi io conto.»"
+        },
+        {
+          "png": "ada",
+          "apertura": "Ada osserva i materiali da lontano. «Ogni scelta salva qualcosa e ne lascia andare un'altra. È sempre stato così, qui.»",
+          "argomenti": [
+            {
+              "id": "E06_ada_1",
+              "testo": "Chiedere del ripetitore",
+              "riserva": "«Serviva per chiamare aiuto, all'inizio. Poi abbiamo smesso di chiamare.» Ada guarda la torre. «Forse oggi avremmo di nuovo qualcosa da dire.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Serviva per chiamare aiuto, all'inizio. Poi abbiamo smesso di chiamare.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E06_ada_2",
+              "testo": "Chiedere delle vie di fuga",
+              "riserva": "«Le abbiamo scavate per non restare in trappola. Speravamo di non usarle mai.»"
+            },
+            {
+              "id": "E06_ada_3",
+              "testo": "Chiedere che cosa pensa di Mirea",
+              "riserva": "«Mirea tiene Soglia in piedi con le sue liste.» Ada esita. «Da qualche giorno conta più del solito.»",
+              "effetti": [
+                {
+                  "nota": "Da qualche giorno Mirea conta più del solito."
+                }
+              ]
+            }
+          ],
+          "chiusura": "Ada si allontana verso la Casa. «Scegli quello che potrai difendere.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Mentre contate, una delle due valvole buone si crepa sul banco con uno schiocco secco. Mirea impallidisce. Adesso i materiali bastano ancora meno di prima.",
+        "esplora": [
+          {
+            "id": "E06d1",
+            "testo": "Esaminare la valvola crepata",
+            "riserva": "La crepa segue una linea vecchia, rattoppata male. Non si è rotta adesso: aveva ceduto da tempo, ed era stata rimessa nel mucchio dei pezzi buoni.",
+            "effetti": [
+              {
+                "nota": "Una valvola rattoppata era finita fra i pezzi buoni.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E06x1",
+          "E06x2",
+          "E06_mirea_2",
+          "E06_mirea_1"
+        ],
+        "risoluzione": [
+          "E06d1",
+          "E06_ada_1"
+        ]
+      },
+      "required_beats": [
+        "E06x1",
+        "E06x2",
+        "E06_mirea_2",
+        "E06_mirea_1",
+        "E06d1",
+        "E06_ada_1"
+      ],
+      "optional_beats": [
+        "E06x4",
+        "E06_mirea_3",
+        "E06_ada_3"
+      ],
+      "riserva_libera": "Giri fra i banchi e i cassoni. Ogni pezzo che tocchi è già stato promesso a qualcuno.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "E07": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "E07x1",
+          "testo": "Ascoltare la trasmissione epizia",
+          "riserva": "Una sequenza di numeri e parole brevi, ripetuta a intervalli regolari. La cifratura è quella dei presidi epizi: senza la chiave arrivano solo frammenti, un nome di luogo, un orario.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Una sequenza di numeri e parole brevi, ripetuta a intervalli regolari.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E07x2",
+          "testo": "Ascoltare la trasmissione Chorisfos",
+          "riserva": "Le frequenze Chorisfos sono più sporche, piene di scariche. Una voce stanca legge coordinate e ripete una parola che suona come un ordine di attesa.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le frequenze Chorisfos sono più sporche, piene di scariche.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E07x3",
+          "testo": "Esaminare gli apparecchi dei posti di ascolto",
+          "riserva": "Radio di tre epoche diverse, collegate con fili di recupero. Qualcuno ha segnato sulle manopole, a matita, le frequenze da non toccare.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Qualcuno ha segnato a matita le frequenze da non toccare."
+            }
+          ]
+        },
+        {
+          "id": "E07x4",
+          "testo": "Guardare fuori dalle feritoie",
+          "riserva": "Dalle feritoie si vede la costa e, lontano, un fumo sottile. Non è un incendio: sono fuochi da campo, ordinati in fila.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Fuochi da campo ordinati in fila sulla costa."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "cassian",
+          "apertura": "Cassian ti trova vicino alle radio e non finge sorpresa. «Ascolti le nostre trasmissioni. Almeno sei onesto nel farlo davanti a me.»",
+          "argomenti": [
+            {
+              "id": "E07_cassian_1",
+              "testo": "Chiedere che cosa dice il suo comando",
+              "riserva": "«Che devo restare in posizione.» Cassian stringe le labbra. «Non mi dicono perché, e non è da loro.»",
+              "effetti": [
+                {
+                  "nota": "Cassian Vey: «Che devo restare in posizione.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E07_cassian_2",
+              "testo": "Chiedere dei fuochi sulla costa",
+              "riserva": "Cassian guarda dalla feritoia a lungo. «Non sono nostri», dice infine. «E non so di chi siano. Questo mi piace ancora meno.»",
+              "effetti": [
+                {
+                  "nota": "Cassian Vey: «Non sono nostri»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E07_cassian_3",
+              "testo": "Chiedere se il suo ordine è completo",
+              "riserva": "«Un ordine è sempre completo, per chi lo scrive.» Una pausa. «Per chi lo esegue, a volte manca la metà.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "cassian",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Cassian si allontana. «Se trovi l'altra metà, mostramela. Prima degli altri.»"
+        },
+        {
+          "png": "reik",
+          "apertura": "Reik sta seduto accanto alla radio Chorisfos con la cuffia su un orecchio solo. «Non dovresti essere qui. Ma tanto nessuno mi dice niente comunque.»",
+          "argomenti": [
+            {
+              "id": "E07_reik_1",
+              "testo": "Chiedere che cosa ha sentito",
+              "riserva": "«Coordinate. Tempi di attesa. Un nome che non conosco.» Reik si toglie la cuffia. «Nessuno dei miei superiori mi ha mai parlato di questo posto.»",
+              "effetti": [
+                {
+                  "nota": "Reik Damos: «Coordinate. Tempi di attesa. Un nome che non conosco.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E07_reik_2",
+              "testo": "Chiedere se si fida del suo comando",
+              "riserva": "Reik ci pensa troppo. «Mi fido del fatto che sanno più di me. È il loro compito.»"
+            },
+            {
+              "id": "E07_reik_3",
+              "testo": "Chiedere che cosa farebbe senza ordini",
+              "riserva": "«Proteggerei questa gente.» Lo dice e subito sembra pentirsene. «Ma ho degli ordini.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "reik",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Reik rimette la cuffia. «Io non ti ho visto.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Le due trasmissioni si interrompono nello stesso istante. Quando riprendono, ripetono la stessa sequenza di numeri, una in cifra epizia e l'altra sulle frequenze Chorisfos, come se qualcuno le avesse coordinate.",
+        "esplora": [
+          {
+            "id": "E07d1",
+            "testo": "Confrontare le due sequenze",
+            "riserva": "Sulla carta le due sequenze combaciano: stesso luogo, stesso giorno, due comandi diversi. Nessuno dei due sembra sapere dell'altro.",
+            "effetti": [
+              {
+                "nota": "Epizi e Chorisfos hanno ordini sullo stesso luogo e lo stesso giorno.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E07x1",
+          "E07x2",
+          "E07_cassian_1",
+          "E07_cassian_2"
+        ],
+        "risoluzione": [
+          "E07d1",
+          "E07_reik_1"
+        ]
+      },
+      "required_beats": [
+        "E07x1",
+        "E07x2",
+        "E07_cassian_1",
+        "E07_cassian_2",
+        "E07d1",
+        "E07_reik_1"
+      ],
+      "optional_beats": [
+        "E07_cassian_3",
+        "E07_reik_3"
+      ],
+      "riserva_libera": "Resti ad ascoltare le scariche fra le due trasmissioni. Due voci lontane parlano dello stesso posto senza mai nominarsi.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "E08": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "E08x1",
+          "testo": "Esaminare il contratto disteso",
+          "riserva": "Il contratto è scritto fitto, su carta buona, con margini decorati. Le clausole principali sono chiare; le note a margine sono in un corpo così piccolo che serve avvicinarsi.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Il contratto è scritto fitto, su carta buona, con margini decorati.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E08x2",
+          "testo": "Osservare il sigillo di Lechta",
+          "riserva": "Il sigillo è di cera verde, spesso, con lo stemma di una casa mercantile. Sotto la cera la carta ha una consistenza diversa: è un foglio incollato sopra un altro.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Il sigillo è di cera verde, spesso, con lo stemma di una casa mercantile.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E08x3",
+          "testo": "Guardare le navi alla banchina",
+          "riserva": "Due scafi leggeri, ben tenuti, con equipaggi che non scendono a terra. Sulle vele non c'è lo stemma di Lechta, ma i nodi delle cime sono quelli dei porti eporiani.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le navi di Tal hanno nodi dei porti eporiani."
+            }
+          ]
+        },
+        {
+          "id": "E08x4",
+          "testo": "Ascoltare gli uomini di Tal",
+          "riserva": "Gli uomini di Tal parlano fra loro di rotte e di scadenze. Una parola torna spesso: 'deposito'. Quando ti avvicini, cambiano argomento.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "voce": {
+                "id": "eidos_voce_deposito",
+                "testo": "Gli uomini di Tal parlano di un 'deposito'."
+              }
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "tal",
+          "apertura": "Tal ti accoglie a braccia aperte. «Sei venuto a firmare o a leggere? Le due cose si possono fare nello stesso giorno, sai.»",
+          "argomenti": [
+            {
+              "id": "E08_tal_1",
+              "testo": "Chiedere che cosa garantisce il contratto",
+              "riserva": "«Navi per i malati, filtri nuovi entro la stagione, e il nome di Soglia scritto nei registri dei porti.» Tal sorride. «Tutto quello che avete chiesto e anche qualcosa che non sapevate di volere.»",
+              "effetti": [
+                {
+                  "nota": "Tal Emek: «Navi per i malati, filtri nuovi entro la stagione, e il nome di Soglia scritto nei registri dei porti.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E08_tal_2",
+              "testo": "Chiedere delle note a margine",
+              "riserva": "«Formule d'uso. Ogni contratto di Lechta le ha.» Tal picchietta il margine senza leggerlo. «Chi le legge tutte non firma mai niente.»",
+              "effetti": [
+                {
+                  "nota": "Tal Emek: «Formule d'uso. Ogni contratto di Lechta le ha.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E08_tal_3",
+              "testo": "Chiedere che cosa guadagna Lechta",
+              "riserva": "«Amicizia», dice, e ride da solo. Poi, più serio: «Un porto in più su questa costa. A voi un protettore, a noi un approdo.»",
+              "effetti": [
+                {
+                  "nota": "Lechta vuole un approdo su questa costa.",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Tal arrotola il contratto a metà, lasciando il sigillo in vista. «Quando vuoi. Io ho tempo. Voi un po' meno.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Il vento solleva un angolo del sigillo di cera. Sotto si intravede un secondo foglio, con un'intestazione diversa. Tal se ne accorge un istante dopo di te, e il suo sorriso resta dov'è.",
+        "esplora": [
+          {
+            "id": "E08d1",
+            "testo": "Guardare il foglio sotto il sigillo",
+            "riserva": "Vedi solo un margine: una tabella di scadenze, e la parola 'deposito' ripetuta più volte. Per leggere il resto bisognerebbe togliere il sigillo davanti a Tal.",
+            "effetti": [
+              {
+                "nota": "Sotto il sigillo di Tal c'è un secondo foglio con scadenze e un deposito.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E08d2",
+            "testo": "Chiedere un momento per leggere",
+            "riserva": "Tal allarga le braccia: «Leggi pure». Ma resta vicino, e ogni volta che ti avvicini al sigillo tossisce, sorride, ti versa da bere.",
+            "effetti": [
+              {
+                "nota": "Tal allarga le braccia: .",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E08d3",
+            "testo": "Osservare gli uomini di Tal mentre leggi",
+            "riserva": "Due uomini di Tal smettono di parlare e guardano la banchina. Uno appoggia la mano alla cima dell'ormeggio, pronto a sciogliere.",
+            "effetti": [
+              {
+                "nota": "Due uomini di Tal smettono di parlare e guardano la banchina.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E08x1",
+          "E08x2",
+          "E08_tal_1",
+          "E08_tal_3"
+        ],
+        "risoluzione": [
+          "E08d1",
+          "E08_tal_2",
+          "E08d2",
+          "E08d3"
+        ]
+      },
+      "required_beats": [
+        "E08x1",
+        "E08x2",
+        "E08_tal_1",
+        "E08_tal_3",
+        "E08d1",
+        "E08_tal_2",
+        "E08d2",
+        "E08d3"
+      ],
+      "optional_beats": [
+        "E08x4"
+      ],
+      "riserva_libera": "Cammini lungo la banchina. Le navi dondolano piano, pronte a partire con o senza firma.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "E09": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "E09x1",
+          "testo": "Esaminare le cariche",
+          "riserva": "Cariche piccole, confezionate con cura, collegate da un filo unico che corre lungo il condotto. Chi le ha messe sapeva esattamente dove il fuoco avrebbe tirato meglio.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Cariche piccole, confezionate con cura, collegate da un filo unico che corre lungo il condotto.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E09x2",
+          "testo": "Seguire il filo delle cariche",
+          "riserva": "Il filo passa sotto le travi, gira intorno a una colonna e sale verso la Casa. Alla fine c'è un innesco a tempo, non ancora armato.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Il filo passa sotto le travi, gira intorno a una colonna e sale verso la Casa.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E09x3",
+          "testo": "Guardare i condotti",
+          "riserva": "I condotti sono vecchi, larghi abbastanza da passarci chinati. Portano aria alla Casa e, se servisse, porterebbero fuoco allo stesso modo.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "I condotti portano aria alla Casa, e potrebbero portare fuoco."
+            }
+          ]
+        },
+        {
+          "id": "E09x4",
+          "testo": "Controllare le vie d'uscita dei condotti",
+          "riserva": "Ogni ramo del condotto finisce in una grata già allentata. Qualcuno ha preparato le uscite prima di preparare le cariche.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "conosci le uscite dei condotti"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "yara",
+          "apertura": "Yara non si alza da dove è accovacciata. «Sapevo che saresti arrivato qui. Chi parla con tutti prima o poi trova anche le cose che non si dicono.»",
+          "argomenti": [
+            {
+              "id": "E09_yara_1",
+              "testo": "Chiedere perché ha messo le cariche",
+              "riserva": "«Perché ci sono cose che non devono finire in mano a chi le userebbe per fare la guerra.» Yara guarda il filo. «Io penso prima alle persone. Sempre.»",
+              "effetti": [
+                {
+                  "nota": "Yara Tèren: «Perché ci sono cose che non devono finire in mano a chi le userebbe per fare la guerra.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E09_yara_2",
+              "testo": "Chiedere se ha intenzione di usarle",
+              "riserva": "«Spero di no.» Lo dice senza abbassare lo sguardo. «Ma se serve, le userò.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "yara",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "E09_yara_3",
+              "testo": "Chiedere che cosa vogliono gli Antarsi",
+              "riserva": "«Che nessuno venga lasciato indietro. Né la gente, né i suoi ricordi nelle mani sbagliate.» Si ferma lì, come se avesse già detto troppo.",
+              "effetti": [
+                {
+                  "nota": "Yara Tèren: «Che nessuno venga lasciato indietro. Né la gente, né i suoi ricordi nelle mani sbagliate.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Yara si rialza e si pulisce le mani. «Ora sai. Fai quello che credi giusto, e io farò lo stesso.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Un rumore di passi lontano nei condotti: qualcuno della cellula Antarsi sta arrivando. Yara guarda l'innesco, poi te. «Hanno meno pazienza di me», dice.",
+        "esplora": [
+          {
+            "id": "E09d1",
+            "testo": "Ascoltare chi arriva nei condotti",
+            "riserva": "Due, forse tre persone. Si muovono veloci e sanno dove andare. Avete poco tempo prima che arrivino all'innesco.",
+            "effetti": [
+              {
+                "nota": "Altri Antarsi stanno arrivando all'innesco.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E09d2",
+            "testo": "Controllare l'innesco a tempo",
+            "riserva": "L'innesco è semplice e ben fatto: una molla, un orologio, due fili. Si può armare in un gesto. Si può anche staccare, se si sa quale filo tirare.",
+            "effetti": [
+              {
+                "nota": "L'innesco è semplice e ben fatto: una molla, un orologio, due fili.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E09d3",
+            "testo": "Guardare i passaggi verso la Casa",
+            "riserva": "Il condotto principale sale verso la Casa con una pendenza leggera. Il fuoco ci correrebbe veloce, come l'aria ci corre adesso.",
+            "effetti": [
+              {
+                "nota": "Il condotto principale sale verso la Casa con una pendenza leggera.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E09d4",
+            "testo": "Ascoltare quanto sono vicini gli Antarsi",
+            "riserva": "I passi si fermano, poi riprendono, più vicini. Una voce chiama Yara per nome, piano. Lei non risponde.",
+            "effetti": [
+              {
+                "nota": "I passi si fermano, poi riprendono, più vicini.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E09x1",
+          "E09x2",
+          "E09_yara_1"
+        ],
+        "risoluzione": [
+          "E09d1",
+          "E09_yara_3",
+          "E09d2",
+          "E09d3",
+          "E09d4"
+        ]
+      },
+      "required_beats": [
+        "E09x1",
+        "E09x2",
+        "E09_yara_1",
+        "E09d1",
+        "E09_yara_3",
+        "E09d2",
+        "E09d3",
+        "E09d4"
+      ],
+      "optional_beats": [
+        "E09x4",
+        "E09_yara_2"
+      ],
+      "riserva_libera": "Resti nel condotto, al buio, con il filo delle cariche che luccica appena alla luce della lampada.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio.",
+      "pressione": {
+        "nome": "L'innesco",
+        "max": 12,
+        "per_interazione": 1,
+        "testo_max": "Un clic secco lungo il filo: Yara ha armato l'innesco. Adesso bisogna decidere.",
+        "conseguenza": "L'innesco è armato: bisogna decidere subito.",
+        "sostituto": {
+          "id": "E09p",
+          "testo": "Afferrare il filo prima che sia troppo tardi",
+          "riserva": "Ti butti sul filo mentre i passi arrivano. Yara ti guarda, e in quello sguardo capisci che cosa vuole la cellula e che cosa è disposta a bruciare.",
+          "effetti": [
+            {
+              "nota": "Ti butti sul filo mentre i passi arrivano.",
+              "categoria": "cambiamento"
+            }
+          ]
+        }
+      }
+    },
+    "E10": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "E10x1",
+          "testo": "Esaminare gli scaffali del magazzino",
+          "riserva": "Scaffali ordinati, etichette nuove sopra etichette vecchie. In fondo, uno scaffale vuoto ha la polvere disturbata di recente, a forma di cassa.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Scaffali ordinati, etichette nuove sopra etichette vecchie.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E10x2",
+          "testo": "Guardare i registri sul tavolo",
+          "riserva": "I registri sono tenuti con una grafia minuta e precisa. Alcune righe sono state riscritte, con lo stesso inchiostro ma con una pressione diversa sulla carta.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "I registri sono tenuti con una grafia minuta e precisa.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E10x3",
+          "testo": "Controllare le etichette dei lotti",
+          "riserva": "Le etichette dei lotti portano numeri e sigle di provenienza. Alcune sigle sono quelle del convoglio scomparso, e non dovrebbero trovarsi in un magazzino di Soglia.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le etichette dei lotti portano numeri e sigle di provenienza.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E10x4",
+          "testo": "Osservare Mirea mentre ti muovi",
+          "riserva": "Mirea non ti segue con lo sguardo. Segue le tue mani. Quando ti avvicini allo scaffale vuoto, smette di scrivere.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai notato come Mirea ti segue con lo sguardo"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "mirea",
+          "apertura": "Mirea incrocia le braccia. «Sei venuto a guardare o ad accusare? Nel primo caso ti mostro tutto. Nel secondo, parla chiaro.»",
+          "argomenti": [
+            {
+              "id": "E10_mirea_1",
+              "testo": "Chiedere dello scaffale vuoto",
+              "riserva": "«Era pieno. Adesso è vuoto. A Soglia le cose si consumano.» Mirea non guarda lo scaffale."
+            },
+            {
+              "id": "E10_mirea_2",
+              "testo": "Chiedere delle righe riscritte",
+              "riserva": "«Correggo gli errori. Tutti fanno errori.» Si morde il labbro. «Io li correggo più degli altri, tutto qui.»",
+              "effetti": [
+                {
+                  "nota": "Mirea Krun: «Correggo gli errori. Tutti fanno errori.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E10_mirea_3",
+              "testo": "Chiedere che cosa teme per Soglia",
+              "riserva": "Mirea resta in silenzio a lungo. «Che resti sola. Che nessuno venga quando le pompe si fermano.» La voce le si incrina appena. «A volte, per non restare soli, bisogna costringere qualcuno a scegliere.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "mirea",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Mirea torna ai suoi registri e li chiude, uno alla volta. «Fai quello che devi. Io ho fatto quello che dovevo.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Mirea smette di scrivere e appoggia la penna. Per la prima volta non conta niente. «Hai visto le etichette», dice. Non è una domanda.",
+        "esplora": [
+          {
+            "id": "E10d1",
+            "testo": "Osservare il silenzio di Mirea",
+            "riserva": "Mirea non si difende e non confessa. Aspetta, le mani ferme sui registri chiusi, come chi ha deciso di lasciare la parola agli altri.",
+            "effetti": [
+              {
+                "nota": "Mirea sa che hai visto le etichette del convoglio.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E10d2",
+            "testo": "Guardare le mani di Mirea",
+            "riserva": "Le mani di Mirea sono ferme sui registri, ma le nocche sono bianche. Ha l'inchiostro fino ai polsi, come chi ha scritto tutta la notte.",
+            "effetti": [
+              {
+                "nota": "Le mani di Mirea sono ferme sui registri, ma le nocche sono bianche.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E10d3",
+            "testo": "Contare le casse che mancano",
+            "riserva": "Tre casse, secondo le etichette del convoglio. Tre casse che a Soglia non sono mai state registrate, né arrivate, né consumate.",
+            "effetti": [
+              {
+                "nota": "Tre casse, secondo le etichette del convoglio.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E10d4",
+            "testo": "Ascoltare i rumori fuori dal magazzino",
+            "riserva": "Fuori qualcuno aspetta: si sentono passi che vanno e vengono davanti alla porta. Chiunque sia, non entra.",
+            "effetti": [
+              {
+                "nota": "Fuori qualcuno aspetta: si sentono passi che vanno e vengono davanti alla porta.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E10x1",
+          "E10x2",
+          "E10x3"
+        ],
+        "risoluzione": [
+          "E10d1",
+          "E10_mirea_2",
+          "E10d2",
+          "E10d3",
+          "E10d4"
+        ]
+      },
+      "required_beats": [
+        "E10x1",
+        "E10x2",
+        "E10x3",
+        "E10d1",
+        "E10_mirea_2",
+        "E10d2",
+        "E10d3",
+        "E10d4"
+      ],
+      "optional_beats": [
+        "E10x4",
+        "E10_mirea_3"
+      ],
+      "riserva_libera": "Giri piano fra gli scaffali. Il magazzino è silenzioso; si sente solo la penna di Mirea che si ferma e riparte.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "E11": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "E11x1",
+          "testo": "Guardare le spie del ripetitore",
+          "riserva": "Le spie si accendono una alla volta, verdi, poi gialle. Ogni spia è un blocco di voci che parte. Fra una spia e l'altra passa troppo tempo.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Le spie si accendono una alla volta, verdi, poi gialle.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E11x2",
+          "testo": "Scorrere l'indice della Casa",
+          "riserva": "L'indice è un quaderno di Ada: popolazioni, nomi, anni, luoghi. Alcune voci sono sottolineate due volte, senza spiegazione.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "L'indice è un quaderno di Ada: popolazioni, nomi, anni, luoghi.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E11x3",
+          "testo": "Ascoltare le voci che partono",
+          "riserva": "Mentre partono, le voci si sentono ancora nella stanza, un'ultima volta. Una donna ride; un vecchio si interrompe a metà di una frase e non la finisce.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le voci si sentono un'ultima volta mentre partono."
+            }
+          ]
+        },
+        {
+          "id": "E11x4",
+          "testo": "Controllare i cavi fino al ripetitore",
+          "riserva": "I cavi corrono su per la scala di servizio, legati con fascette nuove. In un punto il rivestimento è consumato fino al rame: regge, ma scalda.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "vantaggio": 1,
+              "motivo": "hai rinforzato il cavo consumato"
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "ada",
+          "apertura": "Ada ha le mani sul pannello e la voce stanca. «Ogni spia che si accende è qualcuno che si salva. Ogni spia che resta spenta è qualcuno che dimenticheremo.»",
+          "argomenti": [
+            {
+              "id": "E11_ada_1",
+              "testo": "Chiedere quanto manca alla scadenza",
+              "riserva": "«Meno di quanto serve.» Ada non stacca gli occhi dalle spie. «Ho fatto il conto tre volte, come Mirea. Viene sempre lo stesso numero.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Meno di quanto serve.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E11_ada_2",
+              "testo": "Chiedere che cosa salverebbe lei",
+              "riserva": "«Tutto.» Ride piano, senza allegria. «È per questo che non dovrei essere io a decidere.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "ada",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "E11_ada_3",
+              "testo": "Chiedere delle voci sottolineate",
+              "riserva": "«Sono quelle che nessun altro ha. Se si perdono, si perdono per sempre.» Ada tocca il quaderno. «Le altre, forse, qualcuno le ricorda ancora.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Sono quelle che nessun altro ha. Se si perdono, si perdono per sempre.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Ada torna al pannello. «Quando sei pronto, dimmi. Io premerò.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Una spia diventa rossa. Il ripetitore rallenta, poi riprende. Ada controlla il pannello e scuote la testa: «Abbiamo perso un blocco. Non so quale».",
+        "esplora": [
+          {
+            "id": "E11d1",
+            "testo": "Controllare quale blocco si è perso",
+            "riserva": "Il blocco perso era piccolo: canti di lavoro, registrati anni fa. Nessuno li aveva sottolineati. Nessuno se ne accorgerà, tranne te e Ada.",
+            "effetti": [
+              {
+                "nota": "Un blocco di canti di lavoro è andato perso nella trasmissione.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E11d2",
+            "testo": "Guardare le spie rimaste spente",
+            "riserva": "Metà delle spie non si è ancora accesa. Ognuna porta scritto a matita il nome di un blocco: canti, lettere, testimonianze, mappe.",
+            "effetti": [
+              {
+                "nota": "Metà delle spie non si è ancora accesa.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E11d3",
+            "testo": "Ascoltare il ronzio del ripetitore",
+            "riserva": "Il ronzio cambia tono ogni volta che parte un blocco grande. Poi torna uguale. Ada lo ascolta come si ascolta il respiro di un malato.",
+            "effetti": [
+              {
+                "nota": "Il ronzio cambia tono ogni volta che parte un blocco grande.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E11d4",
+            "testo": "Toccare il cavo che scalda",
+            "riserva": "Il cavo scotta. Se si tiene così, reggerà ancora un poco; se lo si sposta, forse di più, forse di meno.",
+            "effetti": [
+              {
+                "nota": "Il cavo scotta.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E11x1",
+          "E11x2",
+          "E11_ada_1"
+        ],
+        "risoluzione": [
+          "E11d1",
+          "E11_ada_3",
+          "E11d2",
+          "E11d3",
+          "E11d4"
+        ]
+      },
+      "required_beats": [
+        "E11x1",
+        "E11x2",
+        "E11_ada_1",
+        "E11d1",
+        "E11_ada_3",
+        "E11d2",
+        "E11d3",
+        "E11d4"
+      ],
+      "optional_beats": [
+        "E11x4",
+        "E11_ada_2"
+      ],
+      "riserva_libera": "Resti accanto al pannello a guardare le spie. Il ronzio del ripetitore riempie la stanza, costante come un respiro.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio.",
+      "pressione": {
+        "nome": "Il cavo scalda",
+        "max": 12,
+        "per_interazione": 1,
+        "testo_max": "Il rivestimento del cavo fonde con un odore acre: il ripetitore regge ancora per poco. Bisogna scegliere adesso.",
+        "conseguenza": "Il ripetitore è al limite: la scelta si fa in fretta.",
+        "sostituto": {
+          "id": "E11p",
+          "testo": "Staccare il cavo che fonde",
+          "riserva": "Strappi il cavo prima che prenda fuoco. Le spie tremano: capisci quanto della Casa è già partito e quanto resterà indietro.",
+          "effetti": [
+            {
+              "nota": "Strappi il cavo prima che prenda fuoco.",
+              "categoria": "cambiamento"
+            }
+          ]
+        }
+      }
+    },
+    "E12": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "E12x1",
+          "testo": "Guardare l'avanguardia di Linea Muta",
+          "riserva": "Una trentina di soldati, divise senza insegne, armi pulite. Si sono fermati a distanza di tiro, in formazione. Nessuno di loro guarda la gente di Soglia: guardano la stazione.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Una trentina di soldati, divise senza insegne, armi pulite.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E12x2",
+          "testo": "Osservare le difese di Soglia",
+          "riserva": "Barricate improvvisate con casse e lamiere, pochi fucili, molte mani. Qualcuno ha scritto il proprio nome col gesso sulla barricata, come per dire a chi appartiene.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Barricate improvvisate con casse e lamiere, pochi fucili, molte mani.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E12x3",
+          "testo": "Ascoltare gli ordini che arrivano ai soldati",
+          "riserva": "Un ufficiale dell'avanguardia parla in una radio, poi alza la mano. I soldati abbassano appena le armi. Stanno aspettando qualcosa, o qualcuno.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "L'avanguardia aspetta un ordine via radio."
+            }
+          ]
+        },
+        {
+          "id": "E12x4",
+          "testo": "Guardare Cassian e Reik",
+          "riserva": "Cassian e Reik stanno ai due lati dell'ingresso, ciascuno con i propri uomini. Si guardano più di quanto guardino il nemico.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Cassian e Reik si guardano più del nemico."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "cassian",
+          "apertura": "Cassian ha già l'arma in mano. «Non sono i miei. Voglio che tu lo sappia, prima di tutto.»",
+          "argomenti": [
+            {
+              "id": "E12_cassian_1",
+              "testo": "Chiedere chi sono quei soldati",
+              "riserva": "«Divise senza insegne, armi del nostro arsenale e di quello Chorisfos.» Cassian stringe la presa. «Chi li ha mandati non vuole che si sappia chi è.»",
+              "effetti": [
+                {
+                  "nota": "Cassian Vey: «Divise senza insegne, armi del nostro arsenale e di quello Chorisfos.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E12_cassian_2",
+              "testo": "Chiedere se si può trattare",
+              "riserva": "«Si può sempre trattare, se dall'altra parte c'è qualcuno che ascolta.» Cassian guarda l'ufficiale con la radio. «Quello ascolta solo la radio.»",
+              "effetti": [
+                {
+                  "nota": "Cassian Vey: «Si può sempre trattare, se dall'altra parte c'è qualcuno che ascolta.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E12_cassian_3",
+              "testo": "Chiedere da che parte starà",
+              "riserva": "Cassian ci mette un momento di troppo. «Dalla parte di chi è qui dentro.» Poi, più piano: «Spero che sia anche la parte giusta.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "cassian",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Cassian si volta verso i suoi uomini. «In posizione.»"
+        },
+        {
+          "png": "reik",
+          "apertura": "Reik è pallido. «Quelle armi. Sono le nostre. Alcune sono le nostre.»",
+          "argomenti": [
+            {
+              "id": "E12_reik_1",
+              "testo": "Chiedere che cosa sa di questa operazione",
+              "riserva": "«Niente. Mi avevano detto di sigillare e aspettare. Di aspettare loro, forse.»",
+              "effetti": [
+                {
+                  "nota": "Reik Damos: «Niente. Mi avevano detto di sigillare e aspettare. Di aspettare loro, forse.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E12_reik_2",
+              "testo": "Chiedere che cosa farà",
+              "riserva": "Reik guarda la gente dietro le barricate, poi l'ordine nel taschino. «Non lo so ancora. Chiedimelo fra un minuto.»",
+              "effetti": [
+                {
+                  "nota": "Reik Damos: «Non lo so ancora. Chiedimelo fra un minuto.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E12_reik_3",
+              "testo": "Chiedere se può parlare con l'ufficiale",
+              "riserva": "«Posso provare. Mi riconosceranno dalla divisa.» Esita. «O forse è proprio per questo che non mi ascolteranno.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "reik",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Reik si passa una mano sul viso. «Va bene. Qualunque cosa succeda, io sto qui.»"
+        },
+        {
+          "png": "ada",
+          "apertura": "Ada è dietro le barricate, con un gruppo di anziani. «Non per me. Per loro. Qualunque cosa tu faccia, fa' in modo che vedano domani.»",
+          "argomenti": [
+            {
+              "id": "E12_ada_1",
+              "testo": "Chiedere della Casa",
+              "riserva": "«È chiusa. Il portello regge.» Ada non guarda verso la Casa. «Oggi conta la gente.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «È chiusa. Il portello regge.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E12_ada_2",
+              "testo": "Chiedere se Soglia può resistere",
+              "riserva": "«Soglia ha resistito a peggio. Non con le armi.» Ada guarda le barricate. «Con la testardaggine.»",
+              "effetti": [
+                {
+                  "nota": "Soglia ha resistito con la testardaggine.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E12_ada_3",
+              "testo": "Chiedere che cosa farebbe lei",
+              "riserva": "«Parlerei. Parlo sempre, io.» Sorride appena. «A volte funziona.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Parlerei. Parlo sempre, io.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Ada torna fra gli anziani. «Vai. Noi siamo qui.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "La radio dell'ufficiale gracchia. L'avanguardia si divide: metà resta in formazione, metà si sposta verso l'ingresso laterale, dove le barricate sono più basse.",
+        "esplora": [
+          {
+            "id": "E12d1",
+            "testo": "Guardare verso l'ingresso laterale",
+            "riserva": "L'ingresso laterale è difeso da ragazzi e anziani. Se i soldati arrivano lì, la difesa si spezza in due.",
+            "effetti": [
+              {
+                "nota": "L'ingresso laterale è il punto debole delle barricate.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E12x1",
+          "E12x2",
+          "E12_cassian_1",
+          "E12_reik_1",
+          "E12_cassian_2",
+          "E12_reik_2",
+          "E12_ada_1",
+          "E12_ada_2"
+        ],
+        "risoluzione": [
+          "E12d1",
+          "E12_ada_3"
+        ]
+      },
+      "required_beats": [
+        "E12x1",
+        "E12x2",
+        "E12_cassian_1",
+        "E12_reik_1",
+        "E12_cassian_2",
+        "E12_reik_2",
+        "E12_ada_1",
+        "E12_ada_2",
+        "E12d1",
+        "E12_ada_3"
+      ],
+      "optional_beats": [
+        "E12_cassian_3",
+        "E12_reik_3"
+      ],
+      "riserva_libera": "Resti un momento dietro la barricata. L'aria è ferma; qualcuno respira troppo forte, qualcun altro prega a bassa voce.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio.",
+      "pressione": {
+        "nome": "L'avanguardia avanza",
+        "max": 18,
+        "per_interazione": 1,
+        "testo_max": "L'ufficiale abbassa la mano. L'avanguardia avanza: non c'è più tempo per parlare.",
+        "conseguenza": "L'avanguardia è alle barricate: lo scontro comincia in svantaggio.",
+        "sostituto": {
+          "id": "E12p",
+          "testo": "Correre alla barricata laterale",
+          "riserva": "Corri verso l'ingresso laterale mentre l'avanguardia avanza. Vedi Cassian e Reik muoversi insieme, per la prima volta, e capisci da che parte stanno.",
+          "effetti": [
+            {
+              "nota": "Corri verso l'ingresso laterale mentre l'avanguardia avanza.",
+              "categoria": "cambiamento"
+            }
+          ]
+        }
+      }
+    },
+    "E13": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "standard",
+      "fascia_orientativa": [
+        10,
+        18
+      ],
+      "max_stagnant_turns": 3,
+      "esplora": [
+        {
+          "id": "E13x1",
+          "testo": "Esaminare i filtri spenti",
+          "riserva": "Le cartucce sono crepate lungo la stessa linea, come se avessero ceduto tutte insieme. Nel silenzio delle pompe si sente l'aria che non si muove.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Le cartucce sono crepate lungo la stessa linea, come se avessero ceduto tutte insieme.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E13x2",
+          "testo": "Controllare il condotto principale",
+          "riserva": "Il condotto principale regge, ma vibra. Se cedesse anche questo, l'aria cattiva salirebbe fino alle abitazioni in pochi minuti.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Il condotto principale regge, ma vibra.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E13x3",
+          "testo": "Guardare la gente nella sala filtri",
+          "riserva": "Uomini e donne si passano panni bagnati da mettere sulla bocca. Nessuno corre. Qualcuno ha già preso in braccio i bambini.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "La gente si passa panni bagnati: nessuno corre."
+            }
+          ]
+        },
+        {
+          "id": "E13x4",
+          "testo": "Controllare le scorte di ricambi",
+          "riserva": "Nel cassone dei ricambi restano tre guarnizioni e un pezzo di rete. Il resto della lista, scritto da Mirea, è barrato.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Restano tre guarnizioni e un pezzo di rete."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "mirea",
+          "apertura": "Mirea ha le mani nere di polvere di filtro. «Non guardarmi così. Adesso non serve sapere perché. Serve aria.»",
+          "argomenti": [
+            {
+              "id": "E13_mirea_1",
+              "testo": "Chiedere quanto tempo resta",
+              "riserva": "«Poche ore. Meno, per i vecchi e per i bambini.» Mirea non alza la testa. «Ho già fatto il conto.»",
+              "effetti": [
+                {
+                  "nota": "Mirea Krun: «Poche ore. Meno, per i vecchi e per i bambini.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E13_mirea_2",
+              "testo": "Chiedere che cosa si può riparare",
+              "riserva": "«Una cartuccia su tre, forse, con quello che resta.» Getta una guarnizione sul banco. «Non basta. Non basta mai.»",
+              "effetti": [
+                {
+                  "nota": "Mirea Krun: «Una cartuccia su tre, forse, con quello che resta.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E13_mirea_3",
+              "testo": "Chiedere se se lo aspettava",
+              "riserva": "Mirea si ferma. «Me lo aspettavo più tardi.» Poi riprende a lavorare, più in fretta."
+            }
+          ],
+          "chiusura": "«Vai», dice Mirea. «Io resto qui finché c'è qualcosa da girare.»"
+        },
+        {
+          "png": "ada",
+          "apertura": "Ada ha un panno bagnato sulla bocca e un altro in mano, per te. «Prendilo. E poi decidiamo in fretta, per favore.»",
+          "argomenti": [
+            {
+              "id": "E13_ada_1",
+              "testo": "Chiedere quante persone ci sono",
+              "riserva": "«Tutte. Non manca nessuno.» Ada guarda la sala. «Per una volta, Soglia è tutta nello stesso posto.»"
+            },
+            {
+              "id": "E13_ada_2",
+              "testo": "Chiedere della rotta di fuga",
+              "riserva": "«Le gallerie ci sono. Sono strette, allagate in più punti.» Ada stringe il panno. «Ma portano fuori.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Le gallerie ci sono. Sono strette, allagate in più punti.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E13_ada_3",
+              "testo": "Chiedere che cosa ne pensa la gente",
+              "riserva": "«Hanno paura di andare e paura di restare.» Ada ti guarda. «Aspettano che qualcuno scelga per loro. Mi dispiace che tocchi a te.»",
+              "effetti": [
+                {
+                  "nota": "La gente aspetta che qualcuno scelga."
+                }
+              ]
+            }
+          ],
+          "chiusura": "Ada ti mette il panno in mano. «Qualunque cosa decidi, io porto fuori gli anziani per ultima.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Il condotto principale geme, poi una giunzione salta con un fischio. Mirea ci si butta sopra con un panno. «Tiene ancora poco», grida.",
+        "esplora": [
+          {
+            "id": "E13d1",
+            "testo": "Aiutare Mirea a tenere la giunzione",
+            "riserva": "Tenete la giunzione insieme, le mani nella polvere grigia. Regge. Mirea ti guarda un momento, senza dire niente.",
+            "effetti": [
+              {
+                "nota": "Tu e Mirea avete tenuto insieme la giunzione.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E13x1",
+          "E13x2",
+          "E13_mirea_1",
+          "E13_mirea_2"
+        ],
+        "risoluzione": [
+          "E13d1",
+          "E13_ada_2"
+        ]
+      },
+      "required_beats": [
+        "E13x1",
+        "E13x2",
+        "E13_mirea_1",
+        "E13_mirea_2",
+        "E13d1",
+        "E13_ada_2"
+      ],
+      "optional_beats": [
+        "E13_ada_3"
+      ],
+      "riserva_libera": "Resti un momento nella sala filtri. Il panno bagnato ti tiene lontano l'odore di ferro; tutto il resto è silenzio di macchine ferme.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio.",
+      "pressione": {
+        "nome": "L'aria si fa cattiva",
+        "max": 12,
+        "per_interazione": 1,
+        "testo_max": "Qualcuno tossisce e non smette. L'aria è ormai cattiva: bisogna agire subito.",
+        "conseguenza": "L'aria è cattiva: bisogna agire adesso.",
+        "sostituto": {
+          "id": "E13p",
+          "testo": "Tappare la giunzione con quello che c'è",
+          "riserva": "Premi la giunzione con le mani mentre qualcuno tossisce alle tue spalle. Mirea ti grida quanto tempo resta, e quanto poco basta.",
+          "effetti": [
+            {
+              "nota": "Premi la giunzione con le mani mentre qualcuno tossisce alle tue spalle.",
+              "categoria": "cambiamento"
+            }
+          ]
+        }
+      }
+    },
+    "E14": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "E14x1",
+          "testo": "Ascoltare le voci della Casa, un'ultima volta",
+          "riserva": "Le registrazioni continuano come se niente fosse cambiato. Una voce racconta di un raccolto; un'altra insegna una canzone a qualcuno che non risponde più da anni.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Le registrazioni continuano come se niente fosse cambiato.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E14x2",
+          "testo": "Guardare gli inviati sulla soglia della Casa",
+          "riserva": "Cassian, Reik e Tal stanno appena fuori dal portello, ognuno con la propria scorta. Nessuno entra. Sembrano aspettare un permesso che non chiederanno.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Cassian, Reik e Tal stanno appena fuori dal portello, ognuno con la propria scorta.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E14x3",
+          "testo": "Toccare gli scaffali delle testimonianze",
+          "riserva": "Lo spago delle cartelle è ruvido sotto le dita. Alcune hanno un nome che ormai conosci; altre sono di persone che non incontrerai mai.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Alcune cartelle portano nomi che ormai conosci."
+            }
+          ]
+        },
+        {
+          "id": "E14x4",
+          "testo": "Guardare Ada al centro della stanza",
+          "riserva": "Ada non tocca niente. Tiene le mani in tasca, come se avesse paura di prendere una decisione solo sfiorando uno scaffale.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Ada non tocca nulla nella Casa."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "ada",
+          "apertura": "Ada parla piano, per non coprire le voci. «Qualunque cosa tu scelga, io resterò con quello che ne rimane.»",
+          "argomenti": [
+            {
+              "id": "E14_ada_1",
+              "testo": "Chiedere che cosa vorrebbe lei",
+              "riserva": "«Che restasse. Che restasse qui, viva, disordinata.» Ada chiude gli occhi. «Ma io non sono imparziale. Nessuno che l'ha ascoltata lo è.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Che restasse. Che restasse qui, viva, disordinata.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E14_ada_2",
+              "testo": "Chiedere che cosa temono gli inviati",
+              "riserva": "«Che la usi qualcun altro.» Ada guarda il portello. «È l'unica cosa su cui sono tutti d'accordo.»",
+              "effetti": [
+                {
+                  "nota": "Tutti temono che la Casa la usi qualcun altro.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E14_ada_3",
+              "testo": "Chiedere se la Casa può sopravvivere a questa scelta",
+              "riserva": "«Le voci sopravvivono se qualcuno le ascolta.» Ada apre gli occhi. «Il resto è legno e spago.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Le voci sopravvivono se qualcuno le ascolta.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E14_ada_4",
+              "testo": "Chiedere che cosa resterà di lei, dopo",
+              "riserva": "«Resterà quello che ho ascoltato.» Ada sorride appena. «È più di quanto resta di molti.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Resterà quello che ho ascoltato.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Ada fa un passo indietro, lasciandoti al centro della stanza. «È tua, adesso. Almeno per il tempo di una scelta.»"
+        },
+        {
+          "png": "tal",
+          "apertura": "Tal si affaccia al portello senza entrare. «Posso dire la mia? Gratis, per una volta.»",
+          "argomenti": [
+            {
+              "id": "E14_tal_1",
+              "testo": "Chiedere che cosa offre per la Casa",
+              "riserva": "«Un magazzino asciutto a Lechta, guardie, un catalogo.» Tal sorride. «E un prezzo per chi vorrà consultarla. Tutto ha un prezzo, anche i ricordi.»",
+              "effetti": [
+                {
+                  "nota": "Tal Emek: «Un magazzino asciutto a Lechta, guardie, un catalogo.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E14_tal_2",
+              "testo": "Chiedere perché gli interessa",
+              "riserva": "«Perché le cose che la gente vuole ricordare si vendono bene.» Tal alza le spalle. «È brutto da dire. Ma è vero.»",
+              "effetti": [
+                {
+                  "nota": "Tal: i ricordi si vendono bene.",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E14_tal_3",
+              "testo": "Chiedere che cosa farebbe se la Casa bruciasse",
+              "riserva": "Tal perde il sorriso per un istante. «Mi dispiacerebbe. Davvero.» Poi lo ritrova. «E cercherei un altro affare.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "tal",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Tal si ritira oltre il portello. «La mia offerta vale fino al tramonto.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Fuori dal portello le voci degli inviati si alzano: Cassian e Reik discutono su chi debba entrare per primo. Tal li interrompe con una battuta. Ada chiude gli occhi.",
+        "esplora": [
+          {
+            "id": "E14d1",
+            "testo": "Chiudere il portello per un momento",
+            "riserva": "Chiudi il portello. Per un momento nella Casa ci sono solo le voci registrate e voi due. Ada ti ringrazia con un cenno.",
+            "effetti": [
+              {
+                "nota": "Hai chiuso il portello: per un momento, nella Casa, solo le voci.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E14d2",
+            "testo": "Guardare i volti degli inviati oltre il portello",
+            "riserva": "Cassian ha l'aria di chi aspetta un ordine che non arriva. Reik guarda i suoi stivali. Tal sorride a tutti, e non guarda nessuno.",
+            "effetti": [
+              {
+                "nota": "Cassian ha l'aria di chi aspetta un ordine che non arriva.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E14d3",
+            "testo": "Ascoltare la voce registrata più vecchia",
+            "riserva": "È una donna che parla lentamente, una lingua dopo l'altra, sempre la stessa frase. Non capisci tutte le lingue, ma capisci che è un saluto.",
+            "effetti": [
+              {
+                "nota": "È una donna che parla lentamente, una lingua dopo l'altra, sempre la stessa frase.",
+                "categoria": "indizio"
+              }
+            ]
+          },
+          {
+            "id": "E14d4",
+            "testo": "Contare le cartelle rimaste",
+            "riserva": "Sono più di quanto sembrasse: scaffali interi dietro la prima fila. Nessuna scelta le salverà tutte allo stesso modo.",
+            "effetti": [
+              {
+                "nota": "Sono più di quanto sembrasse: scaffali interi dietro la prima fila.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E14x1",
+          "E14x2",
+          "E14_ada_1",
+          "E14_ada_2",
+          "E14_ada_4",
+          "E14_tal_2"
+        ],
+        "risoluzione": [
+          "E14d1",
+          "E14_ada_3",
+          "E14_tal_1",
+          "E14d2",
+          "E14d3",
+          "E14d4"
+        ]
+      },
+      "required_beats": [
+        "E14x1",
+        "E14x2",
+        "E14_ada_1",
+        "E14_ada_2",
+        "E14_ada_4",
+        "E14_tal_2",
+        "E14d1",
+        "E14_ada_3",
+        "E14_tal_1",
+        "E14d2",
+        "E14d3",
+        "E14d4"
+      ],
+      "optional_beats": [
+        "E14_tal_3"
+      ],
+      "riserva_libera": "Resti al centro della Casa. Le voci si sovrappongono; per un momento sembra che parlino tutte di te.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    },
+    "E15": {
+      "fase_iniziale": "arrival",
+      "pacing_band": "decisive",
+      "fascia_orientativa": [
+        16,
+        30
+      ],
+      "max_stagnant_turns": 4,
+      "esplora": [
+        {
+          "id": "E15x1",
+          "testo": "Guardare la piazza piena",
+          "riserva": "Tutta Soglia è qui: le famiglie, i ragazzi delle pompe, i vecchi seduti sulle casse. Qualcuno ha acceso lampade anche se è giorno, come per una festa o un funerale.",
+          "fase": "arrival",
+          "effetti": [
+            {
+              "nota": "Tutta Soglia è qui: le famiglie, i ragazzi delle pompe, i vecchi seduti sulle casse.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E15x2",
+          "testo": "Osservare le fazioni ai margini",
+          "riserva": "Gli inviati sono rimasti ai margini della piazza, dove la gente li ha spinti senza violenza. Ascoltano, e per la prima volta non parlano.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Gli inviati sono rimasti ai margini della piazza, dove la gente li ha spinti senza violenza.",
+              "categoria": "indizio"
+            }
+          ]
+        },
+        {
+          "id": "E15x3",
+          "testo": "Guardare le pompe",
+          "riserva": "Le pompe tossiscono ancora, riparate alla meglio. Il loro rumore irregolare copre i sussurri: si sente solo chi parla forte.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Le pompe coprono i sussurri: si sente solo chi parla forte."
+            }
+          ]
+        },
+        {
+          "id": "E15x4",
+          "testo": "Guardare Mirea e Ada",
+          "riserva": "Mirea sta vicino ai magazzini con il quaderno stretto al petto. Ada sta vicino al portello della Casa. Si guardano una volta, e poi guardano te.",
+          "fase": "exploration",
+          "effetti": [
+            {
+              "nota": "Ada e Mirea si guardano una volta."
+            }
+          ]
+        }
+      ],
+      "dialoghi": [
+        {
+          "png": "ada",
+          "apertura": "Ada ti raggiunge al centro della piazza. «Qualunque nome darai a Soglia, lo porteremo addosso.»",
+          "argomenti": [
+            {
+              "id": "E15_ada_1",
+              "testo": "Chiedere che cosa vuole sentirsi dire la gente",
+              "riserva": "«La verità, anche se non la vogliono.» Ada guarda la folla. «E poi qualcosa a cui aggrapparsi.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «La verità, anche se non la vogliono.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E15_ada_2",
+              "testo": "Chiedere se Soglia può restare com'è",
+              "riserva": "«Niente resta com'è. Ma si può scegliere come cambiare.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Niente resta com'è. Ma si può scegliere come cambiare.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E15_ada_3",
+              "testo": "Chiedere di restare accanto a te",
+              "riserva": "Ada annuisce. «Resto. Qualunque cosa tu dica, qualcuno dovrà ricordarla.»",
+              "effetti": [
+                {
+                  "nota": "Ada Soren: «Resto. Qualunque cosa tu dica, qualcuno dovrà ricordarla.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Ada fa un passo indietro e ti lascia la piazza."
+        },
+        {
+          "png": "mirea",
+          "apertura": "Mirea ti ferma per la manica. «Prima che parli. Qualunque cosa tu dica di me, di' anche che ho contato ogni pezzo.»",
+          "argomenti": [
+            {
+              "id": "E15_mirea_1",
+              "testo": "Chiedere che cosa ne sarà di lei",
+              "riserva": "«Quello che deciderà Soglia.» Mirea stringe il quaderno. «Non chiedo niente. Chiedo solo che non buttiate i registri.»",
+              "effetti": [
+                {
+                  "nota": "Mirea Krun: «Quello che deciderà Soglia.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E15_mirea_2",
+              "testo": "Chiedere che cosa vorrebbe per Soglia",
+              "riserva": "«Che non resti sola.» Lo dice di nuovo, come un'abitudine. «Mai più.»",
+              "effetti": [
+                {
+                  "nota": "Mirea Krun: «Che non resti sola.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E15_mirea_3",
+              "testo": "Chiedere se si pente di qualcosa",
+              "riserva": "Mirea ti guarda a lungo. «Mi pento di non aver trovato un altro modo.» Non dice quale fosse il primo.",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "mirea",
+                    "delta": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "chiusura": "Mirea ti lascia la manica. «Va'. Parla.»"
+        },
+        {
+          "png": "yara",
+          "apertura": "Yara ha lo zaino in spalla, pronta a partire o a restare. «Non fare discorsi lunghi. La gente ha freddo.»",
+          "argomenti": [
+            {
+              "id": "E15_yara_1",
+              "testo": "Chiedere che cosa farà lei",
+              "riserva": "«Dipende da te. Come tutti, oggi.» Yara stringe le cinghie dello zaino. «Ma io so sempre dov'è l'uscita.»",
+              "effetti": [
+                {
+                  "nota": "Yara Tèren: «Dipende da te. Come tutti, oggi.»",
+                  "categoria": "indizio"
+                }
+              ]
+            },
+            {
+              "id": "E15_yara_2",
+              "testo": "Chiedere che cosa pensa di Soglia",
+              "riserva": "«Che è più testarda di quanto credessi.» Mezzo sorriso. «Mi piace, anche se non lo dirò a nessuno.»",
+              "effetti": [
+                {
+                  "relazione": {
+                    "png": "yara",
+                    "delta": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "E15_yara_3",
+              "testo": "Chiedere un consiglio",
+              "riserva": "«Di' una cosa sola, e dilla in modo che anche i bambini la capiscano.»",
+              "effetti": [
+                {
+                  "nota": "Yara Tèren: «Di' una cosa sola, e dilla in modo che anche i bambini la capiscano.»",
+                  "categoria": "indizio"
+                }
+              ]
+            }
+          ],
+          "chiusura": "Yara si fa da parte. «Vai. Ti ascolto.»"
+        }
+      ],
+      "sviluppo": {
+        "testo": "Un ragazzo delle pompe sale su una cassa e grida che Soglia non ha bisogno di nessuno. Alcuni applaudono, altri lo tirano giù. Poi, piano, tutti tornano a guardare te.",
+        "esplora": [
+          {
+            "id": "E15d1",
+            "testo": "Guardare il ragazzo sulla cassa",
+            "riserva": "Ha le mani nere di grasso e la voce che trema. Non ha detto niente che non pensassero in molti. Ha solo avuto il coraggio di dirlo per primo.",
+            "effetti": [
+              {
+                "nota": "Molti a Soglia pensano di non aver bisogno di nessuno.",
+                "categoria": "indizio"
+              }
+            ]
+          }
+        ],
+        "effetti": []
+      },
+      "sblocco": {
+        "sviluppo": [
+          "E15x1",
+          "E15x2",
+          "E15_ada_1",
+          "E15_ada_2",
+          "E15_ada_3",
+          "E15_mirea_2",
+          "E15_yara_1"
+        ],
+        "risoluzione": [
+          "E15d1",
+          "E15_mirea_1",
+          "E15_yara_3"
+        ]
+      },
+      "required_beats": [
+        "E15x1",
+        "E15x2",
+        "E15_ada_1",
+        "E15_ada_2",
+        "E15_ada_3",
+        "E15_mirea_2",
+        "E15_yara_1",
+        "E15d1",
+        "E15_mirea_1",
+        "E15_yara_3"
+      ],
+      "optional_beats": [
+        "E15_mirea_3",
+        "E15_yara_2"
+      ],
+      "riserva_libera": "Resti in mezzo alla piazza. Le pompe tossiscono, poi tacciono per un attimo, e in quel silenzio tutti aspettano te.",
+      "uscita_fail_forward": "Se la pressione arriva al massimo, la scena passa comunque alla risoluzione, in svantaggio."
+    }
+  }
+}

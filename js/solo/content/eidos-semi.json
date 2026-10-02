@@ -1,0 +1,4699 @@
+{
+  "formato": "rm-solo-semi/1",
+  "storia": "eidos",
+  "statoApprovazione": "fixture_tecnica_non_canonica",
+  "avviso": "Generato da scripts/solo-genera-semi.js: nessun testo nuovo. Scene, interazioni, verità generate, atti e snodi restano proposte finché non approvati singolarmente.",
+  "canone": {
+    "premessaPubblica": {
+      "ref": "contratto.premessa_pubblica",
+      "statoCanonico": "canonico_esplicito"
+    },
+    "fattiImmutabili": {
+      "ref": "contratto.fatti_immutabili",
+      "n": 6,
+      "statoCanonico": "canonico_esplicito"
+    },
+    "regole": {
+      "ref": "vincoli_narrativi",
+      "n": 4,
+      "statoCanonico": "canonico_esplicito"
+    },
+    "lessicoRiservato": {
+      "ref": "lessico_riservato",
+      "statoCanonico": "canonico_esplicito"
+    },
+    "segreti": [
+      "truth_founders",
+      "truth_filters",
+      "truth_silent_line",
+      "truth_antarsi",
+      "truth_eporian",
+      "truth_traitor",
+      "truth_archive_copy"
+    ],
+    "fatti": {
+      "eidos_fact_filtri_cedono": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "eidos_fact_ricambi_rimossi": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "eidos_fact_casa": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "eidos_fact_linea_muta": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "eidos_fact_offerte": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "eidos_fact_test_daren": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "eidos_fact_test_neris": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "eidos_fact_test_sava": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "eidos_fact_test_ilyan": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "eidos_fact_test_tessa": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "eidos_fact_magia_vista": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "eidos_fact_magia_senza_gemme": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "truth_founders": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "truth_filters": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "truth_silent_line": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "truth_antarsi": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "truth_eporian": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "truth_traitor": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "truth_archive_copy": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      }
+    },
+    "figure": {
+      "ada": {
+        "ref": "png.ada",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "mirea": {
+        "ref": "png.mirea",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "cassian": {
+        "ref": "png.cassian",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "reik": {
+        "ref": "png.reik",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "yara": {
+        "ref": "png.yara",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "tal": {
+        "ref": "png.tal",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      }
+    }
+  },
+  "verita": {
+    "E01_T_x2": {
+      "scena": "E01",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E01_T_ada_3": {
+      "scena": "E01",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E01_T_d1": {
+      "scena": "E01",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E02_T_x1": {
+      "scena": "E02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E02_T_x4": {
+      "scena": "E02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E02_T_mirea_2": {
+      "scena": "E02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mirea",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E02_T_mirea_1": {
+      "scena": "E02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mirea",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E02_T_mirea_3": {
+      "scena": "E02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mirea",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E02_T_d1": {
+      "scena": "E02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E02_T_d2": {
+      "scena": "E02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E02_T_d3": {
+      "scena": "E02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E03_T_x1": {
+      "scena": "E03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E03_T_x3": {
+      "scena": "E03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E03_T_ada_1": {
+      "scena": "E03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E03_T_x2": {
+      "scena": "E03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E03_T_d1": {
+      "scena": "E03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E03_T_ada_3": {
+      "scena": "E03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E03_T_d2": {
+      "scena": "E03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E03_T_d3": {
+      "scena": "E03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E04_T_x1": {
+      "scena": "E04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E04_T_x2": {
+      "scena": "E04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E04_T_cassian_1": {
+      "scena": "E04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "cassian",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E04_T_reik_1": {
+      "scena": "E04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "reik",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E04_T_cassian_2": {
+      "scena": "E04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "cassian",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E04_T_d1": {
+      "scena": "E04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E04_T_tal_1": {
+      "scena": "E04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "tal",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E04_T_yara_1": {
+      "scena": "E04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "yara",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E05_T_x1": {
+      "scena": "E05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E05_T_x2": {
+      "scena": "E05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E05_T_ada_2": {
+      "scena": "E05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E05_T_ada_1": {
+      "scena": "E05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E05_T_cassian_2": {
+      "scena": "E05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "cassian",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E05_T_cassian_3": {
+      "scena": "E05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "cassian",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E05_T_yara_2": {
+      "scena": "E05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "yara",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E05_T_d1": {
+      "scena": "E05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E05_T_cassian_1": {
+      "scena": "E05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "cassian",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E05_T_yara_1": {
+      "scena": "E05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "yara",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E06_T_x1": {
+      "scena": "E06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E06_T_x2": {
+      "scena": "E06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E06_T_mirea_2": {
+      "scena": "E06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mirea",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E06_T_mirea_1": {
+      "scena": "E06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mirea",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E06_T_d1": {
+      "scena": "E06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E06_T_ada_1": {
+      "scena": "E06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E07_T_x1": {
+      "scena": "E07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E07_T_x2": {
+      "scena": "E07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E07_T_cassian_1": {
+      "scena": "E07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "cassian",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E07_T_cassian_2": {
+      "scena": "E07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "cassian",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E07_T_d1": {
+      "scena": "E07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E07_T_reik_1": {
+      "scena": "E07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "reik",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E08_T_x1": {
+      "scena": "E08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E08_T_x2": {
+      "scena": "E08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E08_T_tal_1": {
+      "scena": "E08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "tal",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E08_T_tal_3": {
+      "scena": "E08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "tal",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E08_T_d1": {
+      "scena": "E08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E08_T_tal_2": {
+      "scena": "E08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "tal",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E08_T_d2": {
+      "scena": "E08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E08_T_d3": {
+      "scena": "E08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E09_T_x1": {
+      "scena": "E09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E09_T_x2": {
+      "scena": "E09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E09_T_yara_1": {
+      "scena": "E09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "yara",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E09_T_d1": {
+      "scena": "E09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E09_T_yara_3": {
+      "scena": "E09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "yara",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E09_T_d2": {
+      "scena": "E09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E09_T_d3": {
+      "scena": "E09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E09_T_d4": {
+      "scena": "E09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E10_T_x1": {
+      "scena": "E10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E10_T_x2": {
+      "scena": "E10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E10_T_x3": {
+      "scena": "E10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E10_T_d1": {
+      "scena": "E10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E10_T_mirea_2": {
+      "scena": "E10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mirea",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E10_T_d2": {
+      "scena": "E10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E10_T_d3": {
+      "scena": "E10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E10_T_d4": {
+      "scena": "E10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E11_T_x1": {
+      "scena": "E11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E11_T_x2": {
+      "scena": "E11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E11_T_ada_1": {
+      "scena": "E11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E11_T_d1": {
+      "scena": "E11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E11_T_ada_3": {
+      "scena": "E11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E11_T_d2": {
+      "scena": "E11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E11_T_d3": {
+      "scena": "E11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E11_T_d4": {
+      "scena": "E11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E12_T_x1": {
+      "scena": "E12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E12_T_x2": {
+      "scena": "E12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E12_T_cassian_1": {
+      "scena": "E12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "cassian",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E12_T_reik_1": {
+      "scena": "E12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "reik",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E12_T_cassian_2": {
+      "scena": "E12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "cassian",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E12_T_reik_2": {
+      "scena": "E12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "reik",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E12_T_ada_1": {
+      "scena": "E12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E12_T_ada_2": {
+      "scena": "E12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E12_T_d1": {
+      "scena": "E12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E12_T_ada_3": {
+      "scena": "E12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E13_T_x1": {
+      "scena": "E13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E13_T_x2": {
+      "scena": "E13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E13_T_mirea_1": {
+      "scena": "E13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mirea",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E13_T_mirea_2": {
+      "scena": "E13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mirea",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E13_T_d1": {
+      "scena": "E13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E13_T_ada_2": {
+      "scena": "E13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E14_T_x1": {
+      "scena": "E14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E14_T_x2": {
+      "scena": "E14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E14_T_ada_1": {
+      "scena": "E14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E14_T_ada_2": {
+      "scena": "E14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E14_T_ada_4": {
+      "scena": "E14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E14_T_tal_2": {
+      "scena": "E14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "tal",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E14_T_d1": {
+      "scena": "E14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E14_T_ada_3": {
+      "scena": "E14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E14_T_tal_1": {
+      "scena": "E14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "tal",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E14_T_d2": {
+      "scena": "E14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E14_T_d3": {
+      "scena": "E14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E14_T_d4": {
+      "scena": "E14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E15_T_x1": {
+      "scena": "E15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E15_T_x2": {
+      "scena": "E15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E15_T_ada_1": {
+      "scena": "E15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E15_T_ada_2": {
+      "scena": "E15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E15_T_ada_3": {
+      "scena": "E15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ada",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E15_T_mirea_2": {
+      "scena": "E15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mirea",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E15_T_yara_1": {
+      "scena": "E15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "yara",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E15_T_d1": {
+      "scena": "E15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E15_T_mirea_1": {
+      "scena": "E15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mirea",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "E15_T_yara_3": {
+      "scena": "E15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "yara",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    }
+  },
+  "scene": {
+    "E01": {
+      "id": "E01",
+      "atto": 1,
+      "funzioneDrammatica": "Trovare un motivo personale per restare a Soglia",
+      "luogoIniziale": "Soglia, sala delle pompe",
+      "situazioneIniziale": {
+        "ref": "scene.E01.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "ada",
+          "obiettivo": {
+            "ref": "png.ada.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ada.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_founders",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_archive_copy",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "mirea",
+          "obiettivo": {
+            "ref": "png.mirea.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mirea.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_filters",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_traitor",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [
+        "eidos_fact_filtri_cedono"
+      ],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "eidos_fact_filtri_cedono"
+        ],
+        "materialeDiScena": [
+          "E01_T_x2",
+          "E01_T_ada_3",
+          "E01_T_d1"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_filters",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_eporian",
+        "truth_traitor",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E01x1",
+          "ref": "interazioni.E01.E01x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E01x2",
+          "ref": "interazioni.E01.E01x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E01x3",
+          "ref": "interazioni.E01.E01x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E01x4",
+          "ref": "interazioni.E01.E01x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E01d1",
+          "ref": "interazioni.E01.E01d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "E01A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E01x1"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E01x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E01x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E01_ada_1"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E01_ada_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E01_mirea_1"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E01_mirea_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E01_mirea_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E02",
+          "quando": {
+            "obiettivo_tentato": "E01A"
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "flag",
+          "relazione",
+          "ricompensa",
+          "scopri",
+          "voce"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_ingresso"
+        ],
+        "snodiDellAtto": [
+          "I_ingresso",
+          "I_convoglio",
+          "I_casa",
+          "I_offerte",
+          "I_ultimatum"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E01",
+        "narrativa": "narrativa.scene.E01"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E02": {
+      "id": "E02",
+      "atto": 1,
+      "funzioneDrammatica": "Esaminare il convoglio vuoto",
+      "luogoIniziale": "Galleria del convoglio, sotto la frana",
+      "situazioneIniziale": {
+        "ref": "scene.E02.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "mirea",
+          "obiettivo": {
+            "ref": "png.mirea.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mirea.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_filters",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_traitor",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "E02_tens_pressione",
+          "tipo": "pressione"
+        },
+        {
+          "id": "E02_tens_scontro",
+          "tipo": "scontro"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "nemico",
+          "nemico": "teras_condotta",
+          "alternativa": true,
+          "introduttivo": true
+        },
+        {
+          "tipo": "pressione",
+          "nome": "Il Tèras si avvicina",
+          "max": 12
+        },
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [
+        "eidos_fact_ricambi_rimossi"
+      ],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "eidos_fact_ricambi_rimossi"
+        ],
+        "materialeDiScena": [
+          "E02_T_x1",
+          "E02_T_x4",
+          "E02_T_mirea_2",
+          "E02_T_mirea_1",
+          "E02_T_mirea_3",
+          "E02_T_d1",
+          "E02_T_d2",
+          "E02_T_d3"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_filters",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_eporian",
+        "truth_traitor",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E02x1",
+          "ref": "interazioni.E02.E02x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E02x2",
+          "ref": "interazioni.E02.E02x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E02x3",
+          "ref": "interazioni.E02.E02x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E02x4",
+          "ref": "interazioni.E02.E02x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E02d1",
+          "ref": "interazioni.E02.E02d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E02d2",
+          "ref": "interazioni.E02.E02d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E02d3",
+          "ref": "interazioni.E02.E02d3",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "E02A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E02x2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E02x3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E03",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E02A"
+              },
+              {
+                "incontro_concluso": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "flag",
+          "relazione",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_convoglio"
+        ],
+        "snodiDellAtto": [
+          "I_ingresso",
+          "I_convoglio",
+          "I_casa",
+          "I_offerte",
+          "I_ultimatum"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E02",
+        "narrativa": "narrativa.scene.E02"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E03": {
+      "id": "E03",
+      "atto": 1,
+      "funzioneDrammatica": "Entrare nella Casa delle Voci",
+      "luogoIniziale": "Camera sigillata sotto la stazione",
+      "situazioneIniziale": {
+        "ref": "scene.E03.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "ada",
+          "obiettivo": {
+            "ref": "png.ada.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ada.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_founders",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_archive_copy",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [
+        "eidos_fact_casa",
+        "eidos_fact_test_daren",
+        "eidos_fact_test_neris",
+        "eidos_fact_test_sava",
+        "eidos_fact_test_ilyan",
+        "eidos_fact_test_tessa"
+      ],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "eidos_fact_casa",
+          "eidos_fact_test_daren",
+          "eidos_fact_test_neris",
+          "eidos_fact_test_sava",
+          "eidos_fact_test_ilyan",
+          "eidos_fact_test_tessa",
+          "truth_founders"
+        ],
+        "materialeDiScena": [
+          "E03_T_x1",
+          "E03_T_x3",
+          "E03_T_ada_1",
+          "E03_T_x2",
+          "E03_T_d1",
+          "E03_T_ada_3",
+          "E03_T_d2",
+          "E03_T_d3"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_filters",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_eporian",
+        "truth_traitor",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E03x1",
+          "ref": "interazioni.E03.E03x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E03x2",
+          "ref": "interazioni.E03.E03x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E03x3",
+          "ref": "interazioni.E03.E03x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E03x4",
+          "ref": "interazioni.E03.E03x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E03d1",
+          "ref": "interazioni.E03.E03d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E03d2",
+          "ref": "interazioni.E03.E03d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E03d3",
+          "ref": "interazioni.E03.E03d3",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "E03A"
+        },
+        {
+          "tipo": "obiettivo",
+          "id": "E03B"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E03x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E03_ada_2"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E04",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E03A"
+              },
+              {
+                "obiettivo_tentato": "E03B"
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "flag",
+          "orologio",
+          "relazione",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_casa"
+        ],
+        "snodiDellAtto": [
+          "I_ingresso",
+          "I_convoglio",
+          "I_casa",
+          "I_offerte",
+          "I_ultimatum"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E03",
+        "narrativa": "narrativa.scene.E03"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E04": {
+      "id": "E04",
+      "atto": 1,
+      "funzioneDrammatica": "Ascoltare le offerte delle fazioni",
+      "luogoIniziale": "Sala comune di Soglia",
+      "situazioneIniziale": {
+        "ref": "scene.E04.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "cassian",
+          "obiettivo": {
+            "ref": "png.cassian.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.cassian.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "reik",
+          "obiettivo": {
+            "ref": "png.reik.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.reik.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "tal",
+          "obiettivo": {
+            "ref": "png.tal.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.tal.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_eporian",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_filters",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "yara",
+          "obiettivo": {
+            "ref": "png.yara.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.yara.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_antarsi",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [
+        "eidos_fact_offerte"
+      ],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "eidos_fact_offerte"
+        ],
+        "materialeDiScena": [
+          "E04_T_x1",
+          "E04_T_x2",
+          "E04_T_cassian_1",
+          "E04_T_reik_1",
+          "E04_T_cassian_2",
+          "E04_T_d1",
+          "E04_T_tal_1",
+          "E04_T_yara_1"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_filters",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_eporian",
+        "truth_traitor",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E04x1",
+          "ref": "interazioni.E04.E04x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E04x2",
+          "ref": "interazioni.E04.E04x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E04x3",
+          "ref": "interazioni.E04.E04x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E04x4",
+          "ref": "interazioni.E04.E04x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E04d1",
+          "ref": "interazioni.E04.E04d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "E04A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E04x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E04x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E04_cassian_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E04_reik_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E04_reik_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E04_tal_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E04_tal_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E04_yara_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E04_yara_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E05",
+          "quando": {
+            "obiettivo_tentato": "E04A"
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "relazione",
+          "scopri",
+          "voce"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_offerte"
+        ],
+        "snodiDellAtto": [
+          "I_ingresso",
+          "I_convoglio",
+          "I_casa",
+          "I_offerte",
+          "I_ultimatum"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E04",
+        "narrativa": "narrativa.scene.E04"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E05": {
+      "id": "E05",
+      "atto": 1,
+      "funzioneDrammatica": "Scegliere una prima collaborazione davanti all'ultimatum",
+      "luogoIniziale": "Piazza delle pompe",
+      "situazioneIniziale": {
+        "ref": "scene.E05.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "ada",
+          "obiettivo": {
+            "ref": "png.ada.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ada.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_founders",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_archive_copy",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "cassian",
+          "obiettivo": {
+            "ref": "png.cassian.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.cassian.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "reik",
+          "obiettivo": {
+            "ref": "png.reik.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.reik.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "tal",
+          "obiettivo": {
+            "ref": "png.tal.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.tal.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_eporian",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_filters",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "yara",
+          "obiettivo": {
+            "ref": "png.yara.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.yara.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_antarsi",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "E05_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "E05_T_x1",
+          "E05_T_x2",
+          "E05_T_ada_2",
+          "E05_T_ada_1",
+          "E05_T_cassian_2",
+          "E05_T_cassian_3",
+          "E05_T_yara_2",
+          "E05_T_d1",
+          "E05_T_cassian_1",
+          "E05_T_yara_1"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_filters",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_eporian",
+        "truth_traitor",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E05x1",
+          "ref": "interazioni.E05.E05x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E05x2",
+          "ref": "interazioni.E05.E05x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E05x3",
+          "ref": "interazioni.E05.E05x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E05x4",
+          "ref": "interazioni.E05.E05x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E05d1",
+          "ref": "interazioni.E05.E05d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "spunto",
+          "id": "E05x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E05x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E05_ada_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E05_yara_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E06",
+          "quando": {
+            "scelta_fatta": true
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "relazione",
+          "reputazione"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_ultimatum"
+        ],
+        "snodiDellAtto": [
+          "I_ingresso",
+          "I_convoglio",
+          "I_casa",
+          "I_offerte",
+          "I_ultimatum"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E05",
+        "narrativa": "narrativa.scene.E05"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E06": {
+      "id": "E06",
+      "atto": 2,
+      "funzioneDrammatica": "Decidere dove mettere le poche risorse",
+      "luogoIniziale": "Magazzini e sala filtri",
+      "situazioneIniziale": {
+        "ref": "scene.E06.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "mirea",
+          "obiettivo": {
+            "ref": "png.mirea.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mirea.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_filters",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_traitor",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "ada",
+          "obiettivo": {
+            "ref": "png.ada.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ada.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_founders",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_archive_copy",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "E06_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        },
+        {
+          "tipo": "orologio",
+          "id": "filtri"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "E06_T_x1",
+          "E06_T_x2",
+          "E06_T_mirea_2",
+          "E06_T_mirea_1",
+          "E06_T_d1",
+          "E06_T_ada_1"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_filters",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_eporian",
+        "truth_traitor",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E06x1",
+          "ref": "interazioni.E06.E06x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E06x2",
+          "ref": "interazioni.E06.E06x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E06x3",
+          "ref": "interazioni.E06.E06x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E06x4",
+          "ref": "interazioni.E06.E06x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E06d1",
+          "ref": "interazioni.E06.E06d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "E06A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E06x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E06x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E06_mirea_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E06_ada_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E06_ada_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E07",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E06A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "orologio"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_risorse"
+        ],
+        "snodiDellAtto": [
+          "II_risorse",
+          "II_ordine",
+          "II_lechta",
+          "II_fuoco",
+          "II_mirea",
+          "II_copia"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E06",
+        "narrativa": "narrativa.scene.E06"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E07": {
+      "id": "E07",
+      "atto": 2,
+      "funzioneDrammatica": "Cercare le due metà dell'ordine",
+      "luogoIniziale": "Posti di ascolto sopra la stazione",
+      "situazioneIniziale": {
+        "ref": "scene.E07.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "cassian",
+          "obiettivo": {
+            "ref": "png.cassian.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.cassian.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "reik",
+          "obiettivo": {
+            "ref": "png.reik.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.reik.immediateGoal"
+          },
+          "conoscenze": []
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "E07_T_x1",
+          "E07_T_x2",
+          "E07_T_cassian_1",
+          "E07_T_cassian_2",
+          "E07_T_d1",
+          "E07_T_reik_1"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_filters",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_eporian",
+        "truth_traitor",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E07x1",
+          "ref": "interazioni.E07.E07x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E07x2",
+          "ref": "interazioni.E07.E07x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E07x3",
+          "ref": "interazioni.E07.E07x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E07x4",
+          "ref": "interazioni.E07.E07x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E07d1",
+          "ref": "interazioni.E07.E07d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "E07A"
+        },
+        {
+          "tipo": "obiettivo",
+          "id": "E07B"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E07x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E07x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E07_cassian_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E07_reik_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E07_reik_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E08",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E07A"
+              },
+              {
+                "obiettivo_tentato": "E07B"
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "flag",
+          "orologio",
+          "relazione",
+          "ricompensa"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_ordine"
+        ],
+        "snodiDellAtto": [
+          "II_risorse",
+          "II_ordine",
+          "II_lechta",
+          "II_fuoco",
+          "II_mirea",
+          "II_copia"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E07",
+        "narrativa": "narrativa.scene.E07"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E08": {
+      "id": "E08",
+      "atto": 2,
+      "funzioneDrammatica": "Affrontare il contratto di Lechta",
+      "luogoIniziale": "Banchina nascosta",
+      "situazioneIniziale": {
+        "ref": "scene.E08.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "tal",
+          "obiettivo": {
+            "ref": "png.tal.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.tal.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_eporian",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_filters",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "E08_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "truth_eporian"
+        ],
+        "materialeDiScena": [
+          "E08_T_x1",
+          "E08_T_x2",
+          "E08_T_tal_1",
+          "E08_T_tal_3",
+          "E08_T_d1",
+          "E08_T_tal_2",
+          "E08_T_d2",
+          "E08_T_d3"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_filters",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_traitor",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E08x1",
+          "ref": "interazioni.E08.E08x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E08x2",
+          "ref": "interazioni.E08.E08x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E08x3",
+          "ref": "interazioni.E08.E08x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E08x4",
+          "ref": "interazioni.E08.E08x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E08d1",
+          "ref": "interazioni.E08.E08d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E08d2",
+          "ref": "interazioni.E08.E08d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E08d3",
+          "ref": "interazioni.E08.E08d3",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "E08A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E08x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E08x4"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E09",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E08A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "relazione",
+          "reputazione",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_lechta"
+        ],
+        "snodiDellAtto": [
+          "II_risorse",
+          "II_ordine",
+          "II_lechta",
+          "II_fuoco",
+          "II_mirea",
+          "II_copia"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E08",
+        "narrativa": "narrativa.scene.E08"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E09": {
+      "id": "E09",
+      "atto": 2,
+      "funzioneDrammatica": "Affrontare il piano degli Antarsi",
+      "luogoIniziale": "Condotti sotto la Casa",
+      "situazioneIniziale": {
+        "ref": "scene.E09.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "yara",
+          "obiettivo": {
+            "ref": "png.yara.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.yara.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_antarsi",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "E09_tens_pressione",
+          "tipo": "pressione"
+        },
+        {
+          "id": "E09_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "pressione",
+          "nome": "L'innesco",
+          "max": 12
+        },
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "truth_antarsi"
+        ],
+        "materialeDiScena": [
+          "E09_T_x1",
+          "E09_T_x2",
+          "E09_T_yara_1",
+          "E09_T_d1",
+          "E09_T_yara_3",
+          "E09_T_d2",
+          "E09_T_d3",
+          "E09_T_d4"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_filters",
+        "truth_silent_line",
+        "truth_eporian",
+        "truth_traitor",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E09x1",
+          "ref": "interazioni.E09.E09x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E09x2",
+          "ref": "interazioni.E09.E09x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E09x3",
+          "ref": "interazioni.E09.E09x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E09x4",
+          "ref": "interazioni.E09.E09x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E09d1",
+          "ref": "interazioni.E09.E09d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E09d2",
+          "ref": "interazioni.E09.E09d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E09d3",
+          "ref": "interazioni.E09.E09d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E09d4",
+          "ref": "interazioni.E09.E09d4",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "E09A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E09x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E09x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E09_yara_2"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E10",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E09A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "relazione",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_fuoco"
+        ],
+        "snodiDellAtto": [
+          "II_risorse",
+          "II_ordine",
+          "II_lechta",
+          "II_fuoco",
+          "II_mirea",
+          "II_copia"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E09",
+        "narrativa": "narrativa.scene.E09"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E10": {
+      "id": "E10",
+      "atto": 2,
+      "funzioneDrammatica": "Confrontarsi con Mirea",
+      "luogoIniziale": "Magazzino di Soglia",
+      "situazioneIniziale": {
+        "ref": "scene.E10.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "mirea",
+          "obiettivo": {
+            "ref": "png.mirea.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mirea.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_filters",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_traitor",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "E10_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "truth_filters",
+          "truth_traitor"
+        ],
+        "materialeDiScena": [
+          "E10_T_x1",
+          "E10_T_x2",
+          "E10_T_x3",
+          "E10_T_d1",
+          "E10_T_mirea_2",
+          "E10_T_d2",
+          "E10_T_d3",
+          "E10_T_d4"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_eporian",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E10x1",
+          "ref": "interazioni.E10.E10x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E10x2",
+          "ref": "interazioni.E10.E10x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E10x3",
+          "ref": "interazioni.E10.E10x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E10x4",
+          "ref": "interazioni.E10.E10x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E10d1",
+          "ref": "interazioni.E10.E10d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E10d2",
+          "ref": "interazioni.E10.E10d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E10d3",
+          "ref": "interazioni.E10.E10d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E10d4",
+          "ref": "interazioni.E10.E10d4",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "E10A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E10x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E10_mirea_1"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E10_mirea_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E11",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E10A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "orologio",
+          "relazione",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_mirea"
+        ],
+        "snodiDellAtto": [
+          "II_risorse",
+          "II_ordine",
+          "II_lechta",
+          "II_fuoco",
+          "II_mirea",
+          "II_copia"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E10",
+        "narrativa": "narrativa.scene.E10"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E11": {
+      "id": "E11",
+      "atto": 2,
+      "funzioneDrammatica": "Scegliere che cosa salvare della Casa",
+      "luogoIniziale": "Casa delle Voci e ripetitore",
+      "situazioneIniziale": {
+        "ref": "scene.E11.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "ada",
+          "obiettivo": {
+            "ref": "png.ada.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ada.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_founders",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_archive_copy",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "E11_tens_pressione",
+          "tipo": "pressione"
+        },
+        {
+          "id": "E11_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "pressione",
+          "nome": "Il cavo scalda",
+          "max": 12
+        },
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "truth_archive_copy"
+        ],
+        "materialeDiScena": [
+          "E11_T_x1",
+          "E11_T_x2",
+          "E11_T_ada_1",
+          "E11_T_d1",
+          "E11_T_ada_3",
+          "E11_T_d2",
+          "E11_T_d3",
+          "E11_T_d4"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_filters",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_eporian",
+        "truth_traitor",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E11x1",
+          "ref": "interazioni.E11.E11x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E11x2",
+          "ref": "interazioni.E11.E11x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E11x3",
+          "ref": "interazioni.E11.E11x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E11x4",
+          "ref": "interazioni.E11.E11x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E11d1",
+          "ref": "interazioni.E11.E11d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E11d2",
+          "ref": "interazioni.E11.E11d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E11d3",
+          "ref": "interazioni.E11.E11d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E11d4",
+          "ref": "interazioni.E11.E11d4",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "E11A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E11x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E11x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E11_ada_2"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E12",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E11A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "orologio",
+          "relazione",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_copia"
+        ],
+        "snodiDellAtto": [
+          "II_risorse",
+          "II_ordine",
+          "II_lechta",
+          "II_fuoco",
+          "II_mirea",
+          "II_copia"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E11",
+        "narrativa": "narrativa.scene.E11"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E12": {
+      "id": "E12",
+      "atto": 3,
+      "funzioneDrammatica": "Affrontare l'arrivo di Linea Muta",
+      "luogoIniziale": "Ingresso della stazione",
+      "situazioneIniziale": {
+        "ref": "scene.E12.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "cassian",
+          "obiettivo": {
+            "ref": "png.cassian.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.cassian.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "reik",
+          "obiettivo": {
+            "ref": "png.reik.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.reik.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "ada",
+          "obiettivo": {
+            "ref": "png.ada.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ada.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_founders",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_archive_copy",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "E12_tens_pressione",
+          "tipo": "pressione"
+        },
+        {
+          "id": "E12_tens_scontro",
+          "tipo": "scontro"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "nemico",
+          "nemico": "avanguardia",
+          "alternativa": false,
+          "introduttivo": false
+        },
+        {
+          "tipo": "pressione",
+          "nome": "L'avanguardia avanza",
+          "max": 18
+        },
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "E12_T_x1",
+          "E12_T_x2",
+          "E12_T_cassian_1",
+          "E12_T_reik_1",
+          "E12_T_cassian_2",
+          "E12_T_reik_2",
+          "E12_T_ada_1",
+          "E12_T_ada_2",
+          "E12_T_d1",
+          "E12_T_ada_3"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_filters",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_eporian",
+        "truth_traitor",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E12x1",
+          "ref": "interazioni.E12.E12x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E12x2",
+          "ref": "interazioni.E12.E12x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E12x3",
+          "ref": "interazioni.E12.E12x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E12x4",
+          "ref": "interazioni.E12.E12x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E12d1",
+          "ref": "interazioni.E12.E12d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "E12A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E12x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E12x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E12_cassian_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E12_reik_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E13",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E12A"
+              },
+              {
+                "incontro_concluso": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "orologio",
+          "relazione"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "III_assedio"
+        ],
+        "snodiDellAtto": [
+          "III_assedio",
+          "III_filtri",
+          "III_casa",
+          "III_climax"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E12",
+        "narrativa": "narrativa.scene.E12"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E13": {
+      "id": "E13",
+      "atto": 3,
+      "funzioneDrammatica": "Superare la crisi dei filtri",
+      "luogoIniziale": "Sala filtri",
+      "situazioneIniziale": {
+        "ref": "scene.E13.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "mirea",
+          "obiettivo": {
+            "ref": "png.mirea.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mirea.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_filters",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_traitor",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "ada",
+          "obiettivo": {
+            "ref": "png.ada.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ada.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_founders",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_archive_copy",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "E13_tens_pressione",
+          "tipo": "pressione"
+        },
+        {
+          "id": "E13_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "pressione",
+          "nome": "L'aria si fa cattiva",
+          "max": 12
+        },
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "E13_T_x1",
+          "E13_T_x2",
+          "E13_T_mirea_1",
+          "E13_T_mirea_2",
+          "E13_T_d1",
+          "E13_T_ada_2"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_filters",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_eporian",
+        "truth_traitor",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E13x1",
+          "ref": "interazioni.E13.E13x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E13x2",
+          "ref": "interazioni.E13.E13x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E13x3",
+          "ref": "interazioni.E13.E13x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E13x4",
+          "ref": "interazioni.E13.E13x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E13d1",
+          "ref": "interazioni.E13.E13d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "E13A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E13x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E13x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E13_mirea_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E13_ada_1"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E13_ada_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E14",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E13A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "III_filtri"
+        ],
+        "snodiDellAtto": [
+          "III_assedio",
+          "III_filtri",
+          "III_casa",
+          "III_climax"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E13",
+        "narrativa": "narrativa.scene.E13"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E14": {
+      "id": "E14",
+      "atto": 3,
+      "funzioneDrammatica": "Decidere della Casa",
+      "luogoIniziale": "Casa delle Voci",
+      "situazioneIniziale": {
+        "ref": "scene.E14.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "ada",
+          "obiettivo": {
+            "ref": "png.ada.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ada.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_founders",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_archive_copy",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "cassian",
+          "obiettivo": {
+            "ref": "png.cassian.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.cassian.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "reik",
+          "obiettivo": {
+            "ref": "png.reik.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.reik.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "tal",
+          "obiettivo": {
+            "ref": "png.tal.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.tal.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_eporian",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_filters",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "E14_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "E14_T_x1",
+          "E14_T_x2",
+          "E14_T_ada_1",
+          "E14_T_ada_2",
+          "E14_T_ada_4",
+          "E14_T_tal_2",
+          "E14_T_d1",
+          "E14_T_ada_3",
+          "E14_T_tal_1",
+          "E14_T_d2",
+          "E14_T_d3",
+          "E14_T_d4"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_filters",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_eporian",
+        "truth_traitor",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E14x1",
+          "ref": "interazioni.E14.E14x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E14x2",
+          "ref": "interazioni.E14.E14x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E14x3",
+          "ref": "interazioni.E14.E14x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E14x4",
+          "ref": "interazioni.E14.E14x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E14d1",
+          "ref": "interazioni.E14.E14d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E14d2",
+          "ref": "interazioni.E14.E14d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E14d3",
+          "ref": "interazioni.E14.E14d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E14d4",
+          "ref": "interazioni.E14.E14d4",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "spunto",
+          "id": "E14x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E14x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E14_tal_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E15",
+          "quando": {
+            "scelta_fatta": true
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "relazione"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "III_casa"
+        ],
+        "snodiDellAtto": [
+          "III_assedio",
+          "III_filtri",
+          "III_casa",
+          "III_climax"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E14",
+        "narrativa": "narrativa.scene.E14"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E15": {
+      "id": "E15",
+      "atto": 3,
+      "funzioneDrammatica": "Dare un nome a Soglia",
+      "luogoIniziale": "Piazza delle pompe",
+      "situazioneIniziale": {
+        "ref": "scene.E15.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "ada",
+          "obiettivo": {
+            "ref": "png.ada.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ada.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_founders",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_archive_copy",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "mirea",
+          "obiettivo": {
+            "ref": "png.mirea.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mirea.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_filters",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_traitor",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "cassian",
+          "obiettivo": {
+            "ref": "png.cassian.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.cassian.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "reik",
+          "obiettivo": {
+            "ref": "png.reik.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.reik.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "yara",
+          "obiettivo": {
+            "ref": "png.yara.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.yara.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_antarsi",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "tal",
+          "obiettivo": {
+            "ref": "png.tal.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.tal.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_eporian",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_filters",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "E15_tens_scontro",
+          "tipo": "scontro"
+        },
+        {
+          "id": "E15_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "nemico",
+          "nemico": "villain_cassian",
+          "alternativa": false,
+          "introduttivo": false
+        },
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "E15_T_x1",
+          "E15_T_x2",
+          "E15_T_ada_1",
+          "E15_T_ada_2",
+          "E15_T_ada_3",
+          "E15_T_mirea_2",
+          "E15_T_yara_1",
+          "E15_T_d1",
+          "E15_T_mirea_1",
+          "E15_T_yara_3"
+        ]
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_filters",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_eporian",
+        "truth_traitor",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "E15x1",
+          "ref": "interazioni.E15.E15x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E15x2",
+          "ref": "interazioni.E15.E15x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E15x3",
+          "ref": "interazioni.E15.E15x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E15x4",
+          "ref": "interazioni.E15.E15x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "E15d1",
+          "ref": "interazioni.E15.E15d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "spunto",
+          "id": "E15x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E15x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E15_mirea_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "E15_yara_2"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "E16",
+          "quando": {
+            "scelta_fatta": true
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "III_climax"
+        ],
+        "snodiDellAtto": [
+          "III_assedio",
+          "III_filtri",
+          "III_casa",
+          "III_climax"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.E15",
+        "narrativa": "narrativa.scene.E15"
+      },
+      "statoCanonico": "proposta"
+    },
+    "E16": {
+      "id": "E16",
+      "atto": 3,
+      "funzioneDrammatica": "Chiudere la storia",
+      "luogoIniziale": "Soglia",
+      "situazioneIniziale": {
+        "ref": "scene.E16.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "ada",
+          "obiettivo": {
+            "ref": "png.ada.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ada.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "truth_founders",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "truth_archive_copy",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "linea_muta"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": []
+      },
+      "segretiProibiti": [
+        "truth_founders",
+        "truth_filters",
+        "truth_silent_line",
+        "truth_antarsi",
+        "truth_eporian",
+        "truth_traitor",
+        "truth_archive_copy",
+        "eidos_fact_magia_vista",
+        "eidos_fact_magia_senza_gemme"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [],
+      "filiIrrisolti": [],
+      "condizioniUscita": [],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [],
+        "snodiDellAtto": [
+          "III_assedio",
+          "III_filtri",
+          "III_casa",
+          "III_climax"
+        ]
+      },
+      "finale": true,
+      "riferimenti": {
+        "interazioni": null,
+        "narrativa": "narrativa.scene.E16"
+      },
+      "statoCanonico": "proposta"
+    }
+  }
+}
