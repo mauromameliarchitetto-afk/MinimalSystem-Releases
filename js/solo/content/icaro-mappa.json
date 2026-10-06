@@ -1,0 +1,2035 @@
+{
+  "formato": "rm-solo-mappa/1",
+  "id": "mappa_icaro",
+  "storia": "icaro",
+  "statoMappa": "fornita",
+  "avviso": "Mappa originale fornita dall'autore: coordinate dei punti etichettati e scala lette dall'immagine; durate dei viaggi da velocità proposte, da approvare.",
+  "immagine": "img/solo/mappe/icaro-mappa.webp",
+  "dimensioni": {
+    "larghezza": 1536,
+    "altezza": 1024
+  },
+  "scala": {
+    "geodetica": true,
+    "fonte": "premessa Icaro: le metropoli sorgono sopra città reali; distanza geodetica fra le città"
+  },
+  "orientamento": "nord in alto (planisfero)",
+  "tipiLuogo": [
+    "citta",
+    "citta_cupola",
+    "insediamento",
+    "regione",
+    "continente",
+    "territorio",
+    "luogo",
+    "struttura",
+    "struttura_esterna",
+    "sito_industriale",
+    "sito_estrattivo",
+    "stazione",
+    "area_inabitabile",
+    "area_pericolosa",
+    "acque"
+  ],
+  "tipiRotta": [
+    "terrestre",
+    "marittimo",
+    "costiero",
+    "interno_insediamento",
+    "sotterraneo",
+    "collegamento_protetto",
+    "esterno_protetto",
+    "speciale",
+    "da_classificare"
+  ],
+  "viaggi": {
+    "longJourneyThresholdDays": 3,
+    "longJourneyThresholdFonte": "decisione autore: lungo quando supera tre giorni; 4–7 giorni massimo una scena, da 8 massimo due",
+    "maxSceneViaggio": 2,
+    "velocita": {
+      "collegamento_protetto": {
+        "kmOra": 600,
+        "modalita": [
+          "treno a sospensione magnetica"
+        ],
+        "fonte": "premessa Icaro (treni a sospensione magnetica fra le città); velocità proposta da approvare"
+      }
+    }
+  },
+  "paesaggi": {
+    "cupola": "Il treno a sospensione magnetica esce dalla cupola in un sibilo; fuori dal vetro c'è solo ghiaccio, buio e il riflesso blu delle luci di bordo. Dentro, il riscaldamento ronza e qualcuno conta i crediti che gli restano.",
+    "mare": "Sotto i binari sospesi l'oceano è una lastra bianca e immobile; la condensa sul finestrino si fa ghiaccio prima che tu possa toccarla."
+  },
+  "testiViaggio": {
+    "partenza": "Il biglietto ti costa crediti che non hai voglia di contare. Da {da} a {a}: {durata} {modo}.",
+    "tappe": "Il convoglio ferma a {tappe}.",
+    "arrivo": "Dopo {durata} il treno rallenta: il vetro si appanna di condensa e {a} si accende davanti a te come un circuito.",
+    "arrivoBreve": "Raggiungi {a}.",
+    "rischio": "Un allarme di linea: il convoglio si ferma in mezzo al ghiaccio, le luci passano al rosso e il riscaldamento tace. Aspetti, e il freddo trova le fessure.",
+    "relazione": "{png} siede di fronte a te nella carrozza. Fuori il ghiaccio scorre senza fine; dentro, la conversazione arriva a scatti.",
+    "riflessione": "Il treno vibra, costante. Nel riflesso del finestrino vedi la tua faccia stanca e, dietro, il buio dell'esterno.",
+    "promessa": "Un messaggio non letto lampeggia sull'interfaccia: una promessa che qualcuno aspetta ancora che tu mantenga.",
+    "conseguenza": "Sui canali della carrozza passa una notizia che ti riguarda più di quanto vorresti.",
+    "arco_personale": "Ore di viaggio e nessun turno da coprire: abbastanza per chiederti per chi stai lavorando davvero."
+  },
+  "luoghi": {
+    "c1": {
+      "id": "c1",
+      "nome": "C1",
+      "storia": "icaro",
+      "tipo": "citta_cupola",
+      "regione": null,
+      "coordinate": {
+        "x": 0.3451,
+        "y": 0.7207
+      },
+      "fonte": "premessa Icaro, «Le nove metropoli»; punto: mappa di Icaro fornita dall'autore (2026-10-01)",
+      "descrizionePubblica": "Metropoli sotto cupola costruita sopra São Paulo.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "localizzato",
+      "condizioniAmbientali": "sotto cupola",
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "c9",
+        "c2"
+      ],
+      "collegamenti": [
+        "c1__c9",
+        "c1__c2",
+        "h_17__c1"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "terra": "pianeta",
+      "terreno": "cupola",
+      "geo": {
+        "lat": -23.55,
+        "lon": -46.63,
+        "sopra": "São Paulo"
+      }
+    },
+    "c2": {
+      "id": "c2",
+      "nome": "C2",
+      "storia": "icaro",
+      "tipo": "citta_cupola",
+      "regione": null,
+      "coordinate": {
+        "x": 0.2363,
+        "y": 0.4521
+      },
+      "fonte": "premessa Icaro, «Le nove metropoli»; punto: mappa di Icaro fornita dall'autore (2026-10-01)",
+      "descrizionePubblica": "Metropoli sotto cupola costruita sopra New York.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "localizzato",
+      "condizioniAmbientali": "sotto cupola",
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "c6"
+      ],
+      "collegamenti": [
+        "c2__c4",
+        "c1__c2",
+        "c2__c6"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "terra": "pianeta",
+      "terreno": "cupola",
+      "geo": {
+        "lat": 40.71,
+        "lon": -74.01,
+        "sopra": "New York"
+      }
+    },
+    "c3": {
+      "id": "c3",
+      "nome": "C3",
+      "storia": "icaro",
+      "tipo": "citta_cupola",
+      "regione": null,
+      "coordinate": {
+        "x": 0.7747,
+        "y": 0.4365
+      },
+      "fonte": "premessa Icaro, «Le nove metropoli»; punto: mappa di Icaro fornita dall'autore (2026-10-01)",
+      "descrizionePubblica": "Metropoli sotto cupola costruita sopra Pechino.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "localizzato",
+      "condizioniAmbientali": "sotto cupola",
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "c7"
+      ],
+      "collegamenti": [
+        "c3__c5",
+        "c3__c7"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "terra": "pianeta",
+      "terreno": "cupola",
+      "geo": {
+        "lat": 39.9,
+        "lon": 116.4,
+        "sopra": "Pechino"
+      }
+    },
+    "c4": {
+      "id": "c4",
+      "nome": "C4",
+      "storia": "icaro",
+      "tipo": "citta_cupola",
+      "regione": null,
+      "coordinate": {
+        "x": 0.5072,
+        "y": 0.3994
+      },
+      "fonte": "premessa Icaro, «Le nove metropoli»; punto: mappa di Icaro fornita dall'autore (2026-10-01)",
+      "descrizionePubblica": "Metropoli sotto cupola costruita sopra Roma.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "localizzato",
+      "condizioniAmbientali": "sotto cupola",
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "c6",
+        "c2"
+      ],
+      "collegamenti": [
+        "c4__c8",
+        "c4__c6",
+        "c2__c4"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "terra": "pianeta",
+      "terreno": "cupola",
+      "geo": {
+        "lat": 41.9,
+        "lon": 12.5,
+        "sopra": "Roma"
+      }
+    },
+    "c5": {
+      "id": "c5",
+      "nome": "C5",
+      "storia": "icaro",
+      "tipo": "citta_cupola",
+      "regione": null,
+      "coordinate": {
+        "x": 0.6901,
+        "y": 0.5039
+      },
+      "fonte": "premessa Icaro, «Le nove metropoli»; punto: mappa di Icaro fornita dall'autore (2026-10-01)",
+      "descrizionePubblica": "Metropoli sotto cupola costruita sopra Nuova Delhi.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "localizzato",
+      "condizioniAmbientali": "sotto cupola",
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "c3"
+      ],
+      "collegamenti": [
+        "c5__c6",
+        "c3__c5",
+        "c5__c7"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "terra": "pianeta",
+      "terreno": "cupola",
+      "geo": {
+        "lat": 28.61,
+        "lon": 77.21,
+        "sopra": "Nuova Delhi"
+      }
+    },
+    "c6": {
+      "id": "c6",
+      "nome": "C6",
+      "storia": "icaro",
+      "tipo": "citta_cupola",
+      "regione": null,
+      "coordinate": {
+        "x": 0.7116,
+        "y": 0.2891
+      },
+      "fonte": "premessa Icaro, «Le nove metropoli»; punto: mappa di Icaro fornita dall'autore (2026-10-01)",
+      "descrizionePubblica": "Metropoli sotto cupola costruita sopra Mosca.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "localizzato",
+      "condizioniAmbientali": "sotto cupola",
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "c5",
+        "c8"
+      ],
+      "collegamenti": [
+        "c4__c6",
+        "c5__c6",
+        "c2__c6",
+        "c6__c8"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "terra": "pianeta",
+      "terreno": "cupola",
+      "geo": {
+        "lat": 55.76,
+        "lon": 37.62,
+        "sopra": "Mosca"
+      }
+    },
+    "c7": {
+      "id": "c7",
+      "nome": "C7",
+      "storia": "icaro",
+      "tipo": "citta_cupola",
+      "regione": null,
+      "coordinate": {
+        "x": 0.8451,
+        "y": 0.4424
+      },
+      "fonte": "premessa Icaro, «Le nove metropoli»; punto: mappa di Icaro fornita dall'autore (2026-10-01)",
+      "descrizionePubblica": "Metropoli sotto cupola costruita sopra Tokyo.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "localizzato",
+      "condizioniAmbientali": "sotto cupola",
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "c5"
+      ],
+      "collegamenti": [
+        "c3__c7",
+        "c5__c7"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "terra": "pianeta",
+      "terreno": "cupola",
+      "geo": {
+        "lat": 35.68,
+        "lon": 139.69,
+        "sopra": "Tokyo"
+      }
+    },
+    "c8": {
+      "id": "c8",
+      "nome": "C8",
+      "storia": "icaro",
+      "tipo": "citta_cupola",
+      "regione": null,
+      "coordinate": {
+        "x": 0.5671,
+        "y": 0.4932
+      },
+      "fonte": "premessa Icaro, «Le nove metropoli»; punto: mappa di Icaro fornita dall'autore (2026-10-01)",
+      "descrizionePubblica": "Metropoli sotto cupola costruita sopra Il Cairo.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "localizzato",
+      "condizioniAmbientali": "sotto cupola",
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "c4"
+      ],
+      "collegamenti": [
+        "c8__c9",
+        "c4__c8",
+        "c6__c8"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "terra": "pianeta",
+      "terreno": "cupola",
+      "geo": {
+        "lat": 30.04,
+        "lon": 31.24,
+        "sopra": "Il Cairo"
+      }
+    },
+    "c9": {
+      "id": "c9",
+      "nome": "C9",
+      "storia": "icaro",
+      "tipo": "citta_cupola",
+      "regione": null,
+      "coordinate": {
+        "x": 0.5345,
+        "y": 0.7695
+      },
+      "fonte": "premessa Icaro, «Le nove metropoli»; punto: mappa di Icaro fornita dall'autore (2026-10-01)",
+      "descrizionePubblica": "Metropoli sotto cupola costruita sopra Johannesburg.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "localizzato",
+      "condizioniAmbientali": "sotto cupola",
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "c8"
+      ],
+      "collegamenti": [
+        "c1__c9",
+        "c8__c9"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "terra": "pianeta",
+      "terreno": "cupola",
+      "geo": {
+        "lat": -26.2,
+        "lon": 28.05,
+        "sopra": "Johannesburg"
+      }
+    },
+    "esterno_delle_cupole": {
+      "id": "esterno_delle_cupole",
+      "nome": "Esterno delle cupole",
+      "storia": "icaro",
+      "tipo": "area_inabitabile",
+      "regione": null,
+      "coordinate": null,
+      "fonte": "premessa Icaro, «Premessa» e «Corpi, abiti e armature»",
+      "descrizionePubblica": "Ghiaccio e buio: fuori dalle cupole la tuta è obbligatoria.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sentito_dire",
+      "condizioniAmbientali": "esterno",
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [
+        "gelo a circa -140 °C",
+        "aria senza ossigeno",
+        "notte assoluta"
+      ],
+      "accessi": [],
+      "uscite": [],
+      "collegamenti": [],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [
+        "tuta termica",
+        "casco sigillato",
+        "riserva d'ossigeno"
+      ],
+      "eventiPossibili": [],
+      "macroCapitoli": [],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "grotte_di_scarto": {
+      "id": "grotte_di_scarto",
+      "nome": "Grotte di Scarto",
+      "storia": "icaro",
+      "tipo": "luogo",
+      "regione": "c7",
+      "coordinate": null,
+      "fonte": "premessa Icaro, «C7»",
+      "descrizionePubblica": "Raccolgono componenti difettosi e persone espulse dal sistema.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sentito_dire",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [],
+      "collegamenti": [],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "cliniche_grigie": {
+      "id": "cliniche_grigie",
+      "nome": "Cliniche Grigie",
+      "storia": "icaro",
+      "tipo": "struttura",
+      "regione": "c8",
+      "coordinate": null,
+      "fonte": "premessa Icaro, «C8»",
+      "descrizionePubblica": "Dove si sperimentano terapie non approvate.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sentito_dire",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [],
+      "collegamenti": [],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "mercati_del_ricordo": {
+      "id": "mercati_del_ricordo",
+      "nome": "Mercati del Ricordo",
+      "storia": "icaro",
+      "tipo": "luogo",
+      "regione": "c9",
+      "coordinate": null,
+      "fonte": "premessa Icaro, «C9»",
+      "descrizionePubblica": "Si vendono datachip, reliquie e frammenti di esperienze.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sentito_dire",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [],
+      "collegamenti": [],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "h_17": {
+      "id": "h_17",
+      "nome": "H-17",
+      "storia": "icaro",
+      "tipo": "struttura",
+      "regione": "c1",
+      "coordinate": null,
+      "fonte": "copione Icaro, scena I01",
+      "descrizionePubblica": "Nodo termico che scalda una fascia inferiore di C1.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sconosciuto",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [
+        "jax"
+      ],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "c1"
+      ],
+      "collegamenti": [
+        "nodo_termico_h_17__h_17",
+        "h_17__c1"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [
+        "I17"
+      ],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "nodo_termico_h_17": {
+      "id": "nodo_termico_h_17",
+      "nome": "Nodo termico H-17",
+      "storia": "icaro",
+      "tipo": "luogo",
+      "regione": "h_17",
+      "coordinate": null,
+      "fonte": "copione icaro, scene",
+      "descrizionePubblica": null,
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "visitato",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [
+        "jax",
+        "seline",
+        "kade",
+        "anja",
+        "oko"
+      ],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "livelli_inferiori_di_h_17",
+        "archivio_clinico",
+        "sala_del_consiglio_di_c1",
+        "archivio_neurale",
+        "h_17"
+      ],
+      "collegamenti": [
+        "nodo_termico_h_17__livelli_inferiori_di_h_17",
+        "reparto_clinico_di_h_17__nodo_termico_h_17",
+        "nodo_termico_h_17__archivio_clinico",
+        "sala_di_controllo_di_h_17__nodo_termico_h_17",
+        "nodo_termico_h_17__sala_del_consiglio_di_c1",
+        "sala_del_consiglio_di_c1__nodo_termico_h_17",
+        "nodo_termico_h_17__archivio_neurale",
+        "piazza_del_settore__nodo_termico_h_17",
+        "nodo_termico_h_17__h_17"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [
+        "I01",
+        "I05",
+        "I11",
+        "I13",
+        "I16"
+      ],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "livelli_inferiori_di_h_17": {
+      "id": "livelli_inferiori_di_h_17",
+      "nome": "Livelli inferiori di H-17",
+      "storia": "icaro",
+      "tipo": "luogo",
+      "regione": "h_17",
+      "coordinate": null,
+      "fonte": "copione icaro, scene",
+      "descrizionePubblica": null,
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sconosciuto",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [
+        "jax",
+        "kade"
+      ],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "ufficio_di_revisione_di_c1"
+      ],
+      "collegamenti": [
+        "nodo_termico_h_17__livelli_inferiori_di_h_17",
+        "livelli_inferiori_di_h_17__ufficio_di_revisione_di_c1"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [
+        "I02"
+      ],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "ufficio_di_revisione_di_c1": {
+      "id": "ufficio_di_revisione_di_c1",
+      "nome": "Ufficio di revisione di C1",
+      "storia": "icaro",
+      "tipo": "luogo",
+      "regione": "h_17",
+      "coordinate": null,
+      "fonte": "copione icaro, scene",
+      "descrizionePubblica": null,
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sconosciuto",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [
+        "seline",
+        "amministratore"
+      ],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "reparto_clinico_di_h_17"
+      ],
+      "collegamenti": [
+        "livelli_inferiori_di_h_17__ufficio_di_revisione_di_c1",
+        "ufficio_di_revisione_di_c1__reparto_clinico_di_h_17"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [
+        "I03"
+      ],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "reparto_clinico_di_h_17": {
+      "id": "reparto_clinico_di_h_17",
+      "nome": "Reparto clinico di H-17",
+      "storia": "icaro",
+      "tipo": "luogo",
+      "regione": "h_17",
+      "coordinate": null,
+      "fonte": "copione icaro, scene",
+      "descrizionePubblica": null,
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sconosciuto",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [
+        "mira47",
+        "jax"
+      ],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "nodo_termico_h_17"
+      ],
+      "collegamenti": [
+        "ufficio_di_revisione_di_c1__reparto_clinico_di_h_17",
+        "reparto_clinico_di_h_17__nodo_termico_h_17"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [
+        "I04"
+      ],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "archivio_clinico": {
+      "id": "archivio_clinico",
+      "nome": "Archivio clinico",
+      "storia": "icaro",
+      "tipo": "luogo",
+      "regione": "h_17",
+      "coordinate": null,
+      "fonte": "copione icaro, scene",
+      "descrizionePubblica": null,
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sconosciuto",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [
+        "anja"
+      ],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "condotte_industriali_blackroot"
+      ],
+      "collegamenti": [
+        "nodo_termico_h_17__archivio_clinico",
+        "archivio_clinico__condotte_industriali_blackroot"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [
+        "I06"
+      ],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "condotte_industriali_blackroot": {
+      "id": "condotte_industriali_blackroot",
+      "nome": "Condotte industriali BlackRoot",
+      "storia": "icaro",
+      "tipo": "sito_industriale",
+      "regione": "h_17",
+      "coordinate": null,
+      "fonte": "copione icaro, scene",
+      "descrizionePubblica": null,
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sconosciuto",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [
+        "seline"
+      ],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "archivio_neurale"
+      ],
+      "collegamenti": [
+        "archivio_clinico__condotte_industriali_blackroot",
+        "condotte_industriali_blackroot__archivio_neurale"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [
+        "I07"
+      ],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "archivio_neurale": {
+      "id": "archivio_neurale",
+      "nome": "Archivio neurale",
+      "storia": "icaro",
+      "tipo": "luogo",
+      "regione": "h_17",
+      "coordinate": null,
+      "fonte": "copione icaro, scene",
+      "descrizionePubblica": null,
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sconosciuto",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [
+        "mira47",
+        "mira_eco",
+        "mira_ombra",
+        "anja"
+      ],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "rovine_congelate",
+        "piazza_del_settore"
+      ],
+      "collegamenti": [
+        "condotte_industriali_blackroot__archivio_neurale",
+        "archivio_neurale__rovine_congelate",
+        "nodo_termico_h_17__archivio_neurale",
+        "archivio_neurale__piazza_del_settore"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [
+        "I08",
+        "I14"
+      ],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "rovine_congelate": {
+      "id": "rovine_congelate",
+      "nome": "Rovine congelate",
+      "storia": "icaro",
+      "tipo": "struttura_esterna",
+      "regione": "h_17",
+      "coordinate": null,
+      "fonte": "copione icaro, scene; protezione: scena I09.esterno",
+      "descrizionePubblica": null,
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sconosciuto",
+      "condizioniAmbientali": "esterno",
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [
+        "oko"
+      ],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "sala_di_controllo_di_h_17"
+      ],
+      "collegamenti": [
+        "archivio_neurale__rovine_congelate",
+        "rovine_congelate__sala_di_controllo_di_h_17"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [
+        "tuta termica",
+        "casco sigillato",
+        "riserva d'ossigeno"
+      ],
+      "eventiPossibili": [],
+      "macroCapitoli": [
+        "I09"
+      ],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "sala_di_controllo_di_h_17": {
+      "id": "sala_di_controllo_di_h_17",
+      "nome": "Sala di controllo di H-17",
+      "storia": "icaro",
+      "tipo": "luogo",
+      "regione": "h_17",
+      "coordinate": null,
+      "fonte": "copione icaro, scene",
+      "descrizionePubblica": null,
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sconosciuto",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [
+        "kade",
+        "jax"
+      ],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "nodo_termico_h_17"
+      ],
+      "collegamenti": [
+        "rovine_congelate__sala_di_controllo_di_h_17",
+        "sala_di_controllo_di_h_17__nodo_termico_h_17"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [
+        "I10"
+      ],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "sala_del_consiglio_di_c1": {
+      "id": "sala_del_consiglio_di_c1",
+      "nome": "Sala del consiglio di C1",
+      "storia": "icaro",
+      "tipo": "luogo",
+      "regione": "h_17",
+      "coordinate": null,
+      "fonte": "copione icaro, scene",
+      "descrizionePubblica": null,
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sconosciuto",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [
+        "seline",
+        "amministratore"
+      ],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "nodo_termico_h_17"
+      ],
+      "collegamenti": [
+        "nodo_termico_h_17__sala_del_consiglio_di_c1",
+        "sala_del_consiglio_di_c1__nodo_termico_h_17"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [
+        "I12"
+      ],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "piazza_del_settore": {
+      "id": "piazza_del_settore",
+      "nome": "Piazza del settore",
+      "storia": "icaro",
+      "tipo": "luogo",
+      "regione": "h_17",
+      "coordinate": null,
+      "fonte": "copione icaro, scene",
+      "descrizionePubblica": null,
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "sconosciuto",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [
+        "jax",
+        "kade",
+        "oko",
+        "seline"
+      ],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [
+        "nodo_termico_h_17"
+      ],
+      "collegamenti": [
+        "archivio_neurale__piazza_del_settore",
+        "piazza_del_settore__nodo_termico_h_17"
+      ],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [
+        "I15"
+      ],
+      "fili": [],
+      "stato": "integro",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "coordinateMancanti": true
+    },
+    "cupola_spenta": {
+      "id": "cupola_spenta",
+      "nome": "Cupola spenta",
+      "storia": "icaro",
+      "tipo": "area_inabitabile",
+      "regione": null,
+      "coordinate": {
+        "x": 0.1471,
+        "y": 0.4102
+      },
+      "fonte": "mappa di Icaro fornita dall'autore (2026-10-01); premessa Icaro (undici metropoli, nove attive) e decisione dell'autore (2026-10-02)",
+      "descrizionePubblica": "Una delle due metropoli spente della Repubblica: la cupola è buia e inabitabile. Nessun treno ci arriva.",
+      "descrizioneRiservata": null,
+      "conoscenzaIniziale": "localizzato",
+      "condizioniAmbientali": null,
+      "popolazione": null,
+      "appartenenze": [],
+      "png": [],
+      "servizi": [],
+      "risorse": [],
+      "pericoli": [],
+      "accessi": [],
+      "uscite": [],
+      "collegamenti": [],
+      "mezzi": [],
+      "tempiPercorrenza": null,
+      "requisiti": [],
+      "eventiPossibili": [],
+      "macroCapitoli": [],
+      "fili": [],
+      "stato": "spenta",
+      "maiLocalizzabile": false,
+      "rivelazione": null,
+      "visibile": true,
+      "terra": "pianeta",
+      "terreno": "cupola"
+    }
+  },
+  "collegamenti": [
+    {
+      "id": "nodo_termico_h_17__livelli_inferiori_di_h_17",
+      "origine": "nodo_termico_h_17",
+      "destinazione": "livelli_inferiori_di_h_17",
+      "direzione": "entrambe",
+      "tipo": "interno_insediamento",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I01 → I02"
+    },
+    {
+      "id": "livelli_inferiori_di_h_17__ufficio_di_revisione_di_c1",
+      "origine": "livelli_inferiori_di_h_17",
+      "destinazione": "ufficio_di_revisione_di_c1",
+      "direzione": "entrambe",
+      "tipo": "interno_insediamento",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I02 → I03"
+    },
+    {
+      "id": "ufficio_di_revisione_di_c1__reparto_clinico_di_h_17",
+      "origine": "ufficio_di_revisione_di_c1",
+      "destinazione": "reparto_clinico_di_h_17",
+      "direzione": "entrambe",
+      "tipo": "interno_insediamento",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I03 → I04"
+    },
+    {
+      "id": "reparto_clinico_di_h_17__nodo_termico_h_17",
+      "origine": "reparto_clinico_di_h_17",
+      "destinazione": "nodo_termico_h_17",
+      "direzione": "entrambe",
+      "tipo": "interno_insediamento",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I04 → I05"
+    },
+    {
+      "id": "nodo_termico_h_17__archivio_clinico",
+      "origine": "nodo_termico_h_17",
+      "destinazione": "archivio_clinico",
+      "direzione": "entrambe",
+      "tipo": "interno_insediamento",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I05 → I06"
+    },
+    {
+      "id": "archivio_clinico__condotte_industriali_blackroot",
+      "origine": "archivio_clinico",
+      "destinazione": "condotte_industriali_blackroot",
+      "direzione": "entrambe",
+      "tipo": "da_classificare",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I06 → I07"
+    },
+    {
+      "id": "condotte_industriali_blackroot__archivio_neurale",
+      "origine": "condotte_industriali_blackroot",
+      "destinazione": "archivio_neurale",
+      "direzione": "entrambe",
+      "tipo": "da_classificare",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I07 → I08"
+    },
+    {
+      "id": "archivio_neurale__rovine_congelate",
+      "origine": "archivio_neurale",
+      "destinazione": "rovine_congelate",
+      "direzione": "entrambe",
+      "tipo": "esterno_protetto",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [
+        "tuta termica",
+        "casco sigillato",
+        "riserva d'ossigeno"
+      ],
+      "ambiente": "esterno",
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I08 → I09; protezione: scena esterna"
+    },
+    {
+      "id": "rovine_congelate__sala_di_controllo_di_h_17",
+      "origine": "rovine_congelate",
+      "destinazione": "sala_di_controllo_di_h_17",
+      "direzione": "entrambe",
+      "tipo": "esterno_protetto",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [
+        "tuta termica",
+        "casco sigillato",
+        "riserva d'ossigeno"
+      ],
+      "ambiente": "esterno",
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I09 → I10; protezione: scena esterna"
+    },
+    {
+      "id": "sala_di_controllo_di_h_17__nodo_termico_h_17",
+      "origine": "sala_di_controllo_di_h_17",
+      "destinazione": "nodo_termico_h_17",
+      "direzione": "entrambe",
+      "tipo": "interno_insediamento",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I10 → I11"
+    },
+    {
+      "id": "nodo_termico_h_17__sala_del_consiglio_di_c1",
+      "origine": "nodo_termico_h_17",
+      "destinazione": "sala_del_consiglio_di_c1",
+      "direzione": "entrambe",
+      "tipo": "interno_insediamento",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I11 → I12"
+    },
+    {
+      "id": "sala_del_consiglio_di_c1__nodo_termico_h_17",
+      "origine": "sala_del_consiglio_di_c1",
+      "destinazione": "nodo_termico_h_17",
+      "direzione": "entrambe",
+      "tipo": "da_classificare",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I12 → I13"
+    },
+    {
+      "id": "nodo_termico_h_17__archivio_neurale",
+      "origine": "nodo_termico_h_17",
+      "destinazione": "archivio_neurale",
+      "direzione": "entrambe",
+      "tipo": "da_classificare",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I13 → I14"
+    },
+    {
+      "id": "archivio_neurale__piazza_del_settore",
+      "origine": "archivio_neurale",
+      "destinazione": "piazza_del_settore",
+      "direzione": "entrambe",
+      "tipo": "interno_insediamento",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I14 → I15"
+    },
+    {
+      "id": "piazza_del_settore__nodo_termico_h_17",
+      "origine": "piazza_del_settore",
+      "destinazione": "nodo_termico_h_17",
+      "direzione": "entrambe",
+      "tipo": "interno_insediamento",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I15 → I16"
+    },
+    {
+      "id": "nodo_termico_h_17__h_17",
+      "origine": "nodo_termico_h_17",
+      "destinazione": "h_17",
+      "direzione": "entrambe",
+      "tipo": "interno_insediamento",
+      "distanza": null,
+      "durata": null,
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sconosciuto",
+      "accessibilita": "aperto",
+      "fonte": "copione icaro: uscita I16 → I17"
+    },
+    {
+      "id": "c1__c9",
+      "origine": "c1",
+      "destinazione": "c9",
+      "direzione": "entrambe",
+      "tipo": "collegamento_protetto",
+      "distanza": {
+        "valore": 7429,
+        "unita": "km",
+        "calcolata": false,
+        "fonte": "premessa Icaro: le metropoli sorgono sopra città reali; distanza geodetica fra le città"
+      },
+      "durata": {
+        "valore": 12,
+        "unita": "ore",
+        "fonte": "premessa Icaro (treni a sospensione magnetica fra le città); velocità proposta da approvare",
+        "proposta": true
+      },
+      "modalita": [
+        "treno a sospensione magnetica"
+      ],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": "un titolo di viaggio o crediti per il treno",
+      "mezzoFornito": true,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sentito_dire",
+      "accessibilita": "aperto",
+      "paesaggio": [
+        "Il treno a sospensione magnetica esce dalla cupola in un sibilo; fuori dal vetro c'è solo ghiaccio, buio e il riflesso blu delle luci di bordo. Dentro, il riscaldamento ronza e qualcuno conta i crediti che gli restano."
+      ],
+      "fonte": "mappa di icaro: metropoli più vicine (rotta proposta)"
+    },
+    {
+      "id": "c8__c9",
+      "origine": "c9",
+      "destinazione": "c8",
+      "direzione": "entrambe",
+      "tipo": "collegamento_protetto",
+      "distanza": {
+        "valore": 6263,
+        "unita": "km",
+        "calcolata": false,
+        "fonte": "premessa Icaro: le metropoli sorgono sopra città reali; distanza geodetica fra le città"
+      },
+      "durata": {
+        "valore": 10,
+        "unita": "ore",
+        "fonte": "premessa Icaro (treni a sospensione magnetica fra le città); velocità proposta da approvare",
+        "proposta": true
+      },
+      "modalita": [
+        "treno a sospensione magnetica"
+      ],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": "un titolo di viaggio o crediti per il treno",
+      "mezzoFornito": true,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sentito_dire",
+      "accessibilita": "aperto",
+      "paesaggio": [
+        "Il treno a sospensione magnetica esce dalla cupola in un sibilo; fuori dal vetro c'è solo ghiaccio, buio e il riflesso blu delle luci di bordo. Dentro, il riscaldamento ronza e qualcuno conta i crediti che gli restano."
+      ],
+      "fonte": "mappa di icaro: metropoli più vicine (rotta proposta)"
+    },
+    {
+      "id": "c4__c8",
+      "origine": "c8",
+      "destinazione": "c4",
+      "direzione": "entrambe",
+      "tipo": "collegamento_protetto",
+      "distanza": {
+        "valore": 2133,
+        "unita": "km",
+        "calcolata": false,
+        "fonte": "premessa Icaro: le metropoli sorgono sopra città reali; distanza geodetica fra le città"
+      },
+      "durata": {
+        "valore": 4,
+        "unita": "ore",
+        "fonte": "premessa Icaro (treni a sospensione magnetica fra le città); velocità proposta da approvare",
+        "proposta": true
+      },
+      "modalita": [
+        "treno a sospensione magnetica"
+      ],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": "un titolo di viaggio o crediti per il treno",
+      "mezzoFornito": true,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sentito_dire",
+      "accessibilita": "aperto",
+      "paesaggio": [
+        "Il treno a sospensione magnetica esce dalla cupola in un sibilo; fuori dal vetro c'è solo ghiaccio, buio e il riflesso blu delle luci di bordo. Dentro, il riscaldamento ronza e qualcuno conta i crediti che gli restano."
+      ],
+      "fonte": "mappa di icaro: metropoli più vicine (rotta proposta)"
+    },
+    {
+      "id": "c4__c6",
+      "origine": "c4",
+      "destinazione": "c6",
+      "direzione": "entrambe",
+      "tipo": "collegamento_protetto",
+      "distanza": {
+        "valore": 2376,
+        "unita": "km",
+        "calcolata": false,
+        "fonte": "premessa Icaro: le metropoli sorgono sopra città reali; distanza geodetica fra le città"
+      },
+      "durata": {
+        "valore": 4,
+        "unita": "ore",
+        "fonte": "premessa Icaro (treni a sospensione magnetica fra le città); velocità proposta da approvare",
+        "proposta": true
+      },
+      "modalita": [
+        "treno a sospensione magnetica"
+      ],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": "un titolo di viaggio o crediti per il treno",
+      "mezzoFornito": true,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sentito_dire",
+      "accessibilita": "aperto",
+      "paesaggio": [
+        "Il treno a sospensione magnetica esce dalla cupola in un sibilo; fuori dal vetro c'è solo ghiaccio, buio e il riflesso blu delle luci di bordo. Dentro, il riscaldamento ronza e qualcuno conta i crediti che gli restano."
+      ],
+      "fonte": "mappa di icaro: metropoli più vicine (rotta proposta)"
+    },
+    {
+      "id": "c5__c6",
+      "origine": "c6",
+      "destinazione": "c5",
+      "direzione": "entrambe",
+      "tipo": "collegamento_protetto",
+      "distanza": {
+        "valore": 4343,
+        "unita": "km",
+        "calcolata": false,
+        "fonte": "premessa Icaro: le metropoli sorgono sopra città reali; distanza geodetica fra le città"
+      },
+      "durata": {
+        "valore": 7,
+        "unita": "ore",
+        "fonte": "premessa Icaro (treni a sospensione magnetica fra le città); velocità proposta da approvare",
+        "proposta": true
+      },
+      "modalita": [
+        "treno a sospensione magnetica"
+      ],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": "un titolo di viaggio o crediti per il treno",
+      "mezzoFornito": true,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sentito_dire",
+      "accessibilita": "aperto",
+      "paesaggio": [
+        "Il treno a sospensione magnetica esce dalla cupola in un sibilo; fuori dal vetro c'è solo ghiaccio, buio e il riflesso blu delle luci di bordo. Dentro, il riscaldamento ronza e qualcuno conta i crediti che gli restano."
+      ],
+      "fonte": "mappa di icaro: metropoli più vicine (rotta proposta)"
+    },
+    {
+      "id": "c3__c5",
+      "origine": "c5",
+      "destinazione": "c3",
+      "direzione": "entrambe",
+      "tipo": "collegamento_protetto",
+      "distanza": {
+        "valore": 3779,
+        "unita": "km",
+        "calcolata": false,
+        "fonte": "premessa Icaro: le metropoli sorgono sopra città reali; distanza geodetica fra le città"
+      },
+      "durata": {
+        "valore": 6,
+        "unita": "ore",
+        "fonte": "premessa Icaro (treni a sospensione magnetica fra le città); velocità proposta da approvare",
+        "proposta": true
+      },
+      "modalita": [
+        "treno a sospensione magnetica"
+      ],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": "un titolo di viaggio o crediti per il treno",
+      "mezzoFornito": true,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sentito_dire",
+      "accessibilita": "aperto",
+      "paesaggio": [
+        "Il treno a sospensione magnetica esce dalla cupola in un sibilo; fuori dal vetro c'è solo ghiaccio, buio e il riflesso blu delle luci di bordo. Dentro, il riscaldamento ronza e qualcuno conta i crediti che gli restano."
+      ],
+      "fonte": "mappa di icaro: metropoli più vicine (rotta proposta)"
+    },
+    {
+      "id": "c3__c7",
+      "origine": "c3",
+      "destinazione": "c7",
+      "direzione": "entrambe",
+      "tipo": "collegamento_protetto",
+      "distanza": {
+        "valore": 2093,
+        "unita": "km",
+        "calcolata": false,
+        "fonte": "premessa Icaro: le metropoli sorgono sopra città reali; distanza geodetica fra le città"
+      },
+      "durata": {
+        "valore": 3,
+        "unita": "ore",
+        "fonte": "premessa Icaro (treni a sospensione magnetica fra le città); velocità proposta da approvare",
+        "proposta": true
+      },
+      "modalita": [
+        "treno a sospensione magnetica"
+      ],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": "un titolo di viaggio o crediti per il treno",
+      "mezzoFornito": true,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sentito_dire",
+      "accessibilita": "aperto",
+      "paesaggio": [
+        "Il treno a sospensione magnetica esce dalla cupola in un sibilo; fuori dal vetro c'è solo ghiaccio, buio e il riflesso blu delle luci di bordo. Dentro, il riscaldamento ronza e qualcuno conta i crediti che gli restano."
+      ],
+      "fonte": "mappa di icaro: metropoli più vicine (rotta proposta)"
+    },
+    {
+      "id": "c2__c4",
+      "origine": "c4",
+      "destinazione": "c2",
+      "direzione": "entrambe",
+      "tipo": "collegamento_protetto",
+      "distanza": {
+        "valore": 6891,
+        "unita": "km",
+        "calcolata": false,
+        "fonte": "premessa Icaro: le metropoli sorgono sopra città reali; distanza geodetica fra le città"
+      },
+      "durata": {
+        "valore": 11,
+        "unita": "ore",
+        "fonte": "premessa Icaro (treni a sospensione magnetica fra le città); velocità proposta da approvare",
+        "proposta": true
+      },
+      "modalita": [
+        "treno a sospensione magnetica"
+      ],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": "un titolo di viaggio o crediti per il treno",
+      "mezzoFornito": true,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sentito_dire",
+      "accessibilita": "aperto",
+      "paesaggio": [
+        "Il treno a sospensione magnetica esce dalla cupola in un sibilo; fuori dal vetro c'è solo ghiaccio, buio e il riflesso blu delle luci di bordo. Dentro, il riscaldamento ronza e qualcuno conta i crediti che gli restano."
+      ],
+      "fonte": "mappa di icaro: metropoli più vicine (rotta proposta)"
+    },
+    {
+      "id": "c1__c2",
+      "origine": "c1",
+      "destinazione": "c2",
+      "direzione": "entrambe",
+      "tipo": "collegamento_protetto",
+      "distanza": {
+        "valore": 7686,
+        "unita": "km",
+        "calcolata": false,
+        "fonte": "premessa Icaro: le metropoli sorgono sopra città reali; distanza geodetica fra le città"
+      },
+      "durata": {
+        "valore": 13,
+        "unita": "ore",
+        "fonte": "premessa Icaro (treni a sospensione magnetica fra le città); velocità proposta da approvare",
+        "proposta": true
+      },
+      "modalita": [
+        "treno a sospensione magnetica"
+      ],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": "un titolo di viaggio o crediti per il treno",
+      "mezzoFornito": true,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sentito_dire",
+      "accessibilita": "aperto",
+      "paesaggio": [
+        "Il treno a sospensione magnetica esce dalla cupola in un sibilo; fuori dal vetro c'è solo ghiaccio, buio e il riflesso blu delle luci di bordo. Dentro, il riscaldamento ronza e qualcuno conta i crediti che gli restano."
+      ],
+      "fonte": "mappa di icaro: metropoli più vicine (rotta proposta)"
+    },
+    {
+      "id": "c2__c6",
+      "origine": "c2",
+      "destinazione": "c6",
+      "direzione": "entrambe",
+      "tipo": "collegamento_protetto",
+      "distanza": {
+        "valore": 7511,
+        "unita": "km",
+        "calcolata": false,
+        "fonte": "premessa Icaro: le metropoli sorgono sopra città reali; distanza geodetica fra le città"
+      },
+      "durata": {
+        "valore": 13,
+        "unita": "ore",
+        "fonte": "premessa Icaro (treni a sospensione magnetica fra le città); velocità proposta da approvare",
+        "proposta": true
+      },
+      "modalita": [
+        "treno a sospensione magnetica"
+      ],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": "un titolo di viaggio o crediti per il treno",
+      "mezzoFornito": true,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sentito_dire",
+      "accessibilita": "aperto",
+      "paesaggio": [
+        "Il treno a sospensione magnetica esce dalla cupola in un sibilo; fuori dal vetro c'è solo ghiaccio, buio e il riflesso blu delle luci di bordo. Dentro, il riscaldamento ronza e qualcuno conta i crediti che gli restano."
+      ],
+      "fonte": "mappa di icaro: metropoli più vicine (rotta proposta)"
+    },
+    {
+      "id": "c6__c8",
+      "origine": "c6",
+      "destinazione": "c8",
+      "direzione": "entrambe",
+      "tipo": "collegamento_protetto",
+      "distanza": {
+        "valore": 2904,
+        "unita": "km",
+        "calcolata": false,
+        "fonte": "premessa Icaro: le metropoli sorgono sopra città reali; distanza geodetica fra le città"
+      },
+      "durata": {
+        "valore": 5,
+        "unita": "ore",
+        "fonte": "premessa Icaro (treni a sospensione magnetica fra le città); velocità proposta da approvare",
+        "proposta": true
+      },
+      "modalita": [
+        "treno a sospensione magnetica"
+      ],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": "un titolo di viaggio o crediti per il treno",
+      "mezzoFornito": true,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sentito_dire",
+      "accessibilita": "aperto",
+      "paesaggio": [
+        "Il treno a sospensione magnetica esce dalla cupola in un sibilo; fuori dal vetro c'è solo ghiaccio, buio e il riflesso blu delle luci di bordo. Dentro, il riscaldamento ronza e qualcuno conta i crediti che gli restano."
+      ],
+      "fonte": "mappa di icaro: metropoli più vicine (rotta proposta)"
+    },
+    {
+      "id": "c5__c7",
+      "origine": "c7",
+      "destinazione": "c5",
+      "direzione": "entrambe",
+      "tipo": "collegamento_protetto",
+      "distanza": {
+        "valore": 5838,
+        "unita": "km",
+        "calcolata": false,
+        "fonte": "premessa Icaro: le metropoli sorgono sopra città reali; distanza geodetica fra le città"
+      },
+      "durata": {
+        "valore": 10,
+        "unita": "ore",
+        "fonte": "premessa Icaro (treni a sospensione magnetica fra le città); velocità proposta da approvare",
+        "proposta": true
+      },
+      "modalita": [
+        "treno a sospensione magnetica"
+      ],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": "un titolo di viaggio o crediti per il treno",
+      "mezzoFornito": true,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sentito_dire",
+      "accessibilita": "aperto",
+      "paesaggio": [
+        "Il treno a sospensione magnetica esce dalla cupola in un sibilo; fuori dal vetro c'è solo ghiaccio, buio e il riflesso blu delle luci di bordo. Dentro, il riscaldamento ronza e qualcuno conta i crediti che gli restano."
+      ],
+      "fonte": "mappa di icaro: metropoli più vicine (rotta proposta)"
+    },
+    {
+      "id": "h_17__c1",
+      "origine": "h_17",
+      "destinazione": "c1",
+      "direzione": "entrambe",
+      "tipo": "interno_insediamento",
+      "distanza": null,
+      "durata": {
+        "valore": 1,
+        "unita": "ore",
+        "fonte": "proposta da approvare: risalita dai livelli inferiori di C1",
+        "proposta": true
+      },
+      "modalita": [],
+      "requisiti": [],
+      "ambiente": null,
+      "costo": null,
+      "rischio": null,
+      "stagionalita": null,
+      "intermedi": [],
+      "alternative": [],
+      "conoscenzaIniziale": "sentito_dire",
+      "accessibilita": "aperto",
+      "paesaggio": [],
+      "fonte": "copione icaro: H-17 è nei livelli inferiori di C1"
+    }
+  ],
+  "mancanti": [
+    {
+      "dove": "collegamenti",
+      "campo": "durata/distanza",
+      "richiesta": "tempi di percorrenza approvati per i 16 collegamenti del copione (dentro e intorno all'insediamento) senza durata"
+    },
+    {
+      "dove": "viaggi",
+      "campo": "velocità",
+      "richiesta": "approvare le velocità proposte dei mezzi: le durate delle rotte fra i luoghi della mappa ne derivano"
+    },
+    {
+      "dove": "collegamenti",
+      "campo": "tipo",
+      "richiesta": "tipo del collegamento verso le Condotte industriali BlackRoot e del Nodo termico fuori città nel capitolo I13 (protetto o esterno?)"
+    }
+  ],
+  "fonte": "js/library-settings.js (premesse) + js/solo/content/icaro-campagna.json (scene e uscite) + mappa di Icaro fornita dall'autore (2026-10-01)"
+}

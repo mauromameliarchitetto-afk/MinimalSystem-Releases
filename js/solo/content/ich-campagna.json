@@ -1,0 +1,4798 @@
+{
+  "formato": "rm-solo-campagna/1",
+  "id": "ich-filo-senza-padrone",
+  "campaign_id": "ich-filo-senza-padrone",
+  "storia": "ich",
+  "ambientazione": "Ich (Erdegis, Ciclo Aureo)",
+  "versione": "0.4.0",
+  "stato_editoriale": "bozza",
+  "content_status": "proposed",
+  "canonico": false,
+  "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare",
+  "titolo": "Il filo senza padrone",
+  "avviso": "PROPOSTA EDITORIALE (V4): Hrafnvik, i PNG, le varianti del finale e i profili di difficoltà sono da approvare. Non pubblicare come canone.",
+  "contratto": {
+    "premessa_pubblica": "Erdegis attraversa il Ciclo Aureo. Nel settore di Kynhjarta, fra i sentieri del Kynwird e la Stad di Hrafnvik, alcuni abitanti sognano vite altrui, vedono spettri o ricordano strade mai percorse. Hrafnvik sta perdendo persone: i corpi restano, ma relazioni e ricordi iniziano a cancellarsi.",
+    "verita_riservate": [
+      "ich_truth_white_path",
+      "ich_truth_voluspa",
+      "ich_truth_ghosts",
+      "ich_truth_skera",
+      "ich_truth_kyn",
+      "ich_truth_recomposition",
+      "ich_truth_therapy"
+    ],
+    "scopo": "Impedire la cancellazione di chi a Hrafnvik ha cominciato a vivere davvero, e decidere quale forma di indipendenza il settore possa ottenere.",
+    "fatti_immutabili": [
+      "Erdegis vive nel Ciclo Aureo: popoli, Stad e Stam cercano l'Ich.",
+      "Il protagonista appartiene a una cultura, ha dei legami e cerca l'Ich a modo suo.",
+      "Non tutti gli abitanti si svegliano, e non tutti sono guidati da altri.",
+      "Figure e luoghi della storia principale possono comparire, ma non risolvono il conflitto personale.",
+      "Raven è la stessa figura presente in Ich: nessun omonimo."
+    ],
+    "snodi_obbligatori": [
+      "I_rito",
+      "II_nodo",
+      "III_climax"
+    ],
+    "liberta": [
+      "Scegliere a chi legarsi e chi condurre al nodo",
+      "Salvare, integrare o congedare i residui",
+      "Liberare, limitare o prendere il potere del Kyn"
+    ],
+    "conseguenze_variabili": [
+      "Coscienza",
+      "Autonomia",
+      "Radici",
+      "Stabilità"
+    ],
+    "ending_contract": {
+      "closing_question": "Una vita scritta da altri può scegliere chi diventare e quali radici conservare?",
+      "resolution_scope": "settore_di_kynhjarta",
+      "required_resolution": [
+        "destino_ricomposizione",
+        "potere_del_kyn",
+        "radici_del_protagonista"
+      ],
+      "entry_conditions": [
+        "act_3_climax_reached"
+      ],
+      "outcome_axes": [
+        "coscienza",
+        "autonomia",
+        "radici",
+        "stabilita"
+      ],
+      "variants": [
+        {
+          "id": "ich_ending_authored_world",
+          "titolo": "Il mondo scritto da te",
+          "tipo": "esito",
+          "priorita": 1,
+          "condizione": {
+            "tutti": [
+              {
+                "flag": "kyn_controllato"
+              },
+              {
+                "asse_al_piu": {
+                  "asse": "autonomia",
+                  "valore": 0
+                }
+              }
+            ]
+          },
+          "riserva": "Riscrivi il settore secondo la tua idea di libertà. Gli abitanti vivono nel mondo che hai scelto per loro, e chi si sveglia trova le tue regole.",
+          "conseguenza_personale": "Sei diventato ciò che temevi: qualcuno che scrive la vita degli altri.",
+          "campaign_id": "ich-filo-senza-padrone",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "ich_ending_recomposition",
+          "titolo": "La Ricomposizione",
+          "tipo": "esito",
+          "priorita": 2,
+          "condizione": {
+            "flag": "ricomposizione_completata"
+          },
+          "riserva": "La Ricomposizione si compie. La vita di ogni giorno riparte come prima; alcuni residui sopravvivono come sogni, e potrebbero riaprire la storia.",
+          "conseguenza_personale": "Di ciò che eri, ti restano sogni che non sai spiegare.",
+          "campaign_id": "ich-filo-senza-padrone",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "ich_ending_exodus",
+          "titolo": "L'esodo",
+          "tipo": "esito",
+          "priorita": 3,
+          "condizione": {
+            "tutti": [
+              {
+                "flag": "via_esterna_aperta"
+              },
+              {
+                "qualunque": [
+                  {
+                    "asse_al_piu": {
+                      "asse": "radici",
+                      "valore": 0
+                    }
+                  },
+                  {
+                    "flag": "esodo_scelto"
+                  }
+                ]
+              }
+            ]
+          },
+          "riserva": "Lasci il settore, forse il mondo intero. Porti con te ciò che sei diventato e perdi parte della vita che avevi costruito.",
+          "conseguenza_personale": "Fuori non c'è nessuno che ti aspetti per nome.",
+          "campaign_id": "ich-filo-senza-padrone",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "ich_ending_hidden_life",
+          "titolo": "La vita nascosta",
+          "tipo": "esito",
+          "priorita": 4,
+          "condizione": {
+            "tutti": [
+              {
+                "flag": "protocollo_ingannato"
+              },
+              {
+                "asse_almeno": {
+                  "asse": "autonomia",
+                  "valore": 1
+                }
+              }
+            ]
+          },
+          "riserva": "Il settore sembra ricomposto, ma conserva di nascosto chi si è svegliato. È una libertà fragile, che vive finché nessuno guarda troppo da vicino.",
+          "conseguenza_personale": "Custodisci un segreto che tiene in vita un mondo intero.",
+          "campaign_id": "ich-filo-senza-padrone",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "ich_ending_free_sector",
+          "titolo": "Il settore libero",
+          "tipo": "esito",
+          "priorita": 5,
+          "condizione": {
+            "tutti": [
+              {
+                "asse_almeno": {
+                  "asse": "autonomia",
+                  "valore": 2
+                }
+              },
+              {
+                "asse_almeno": {
+                  "asse": "stabilita",
+                  "valore": 1
+                }
+              },
+              {
+                "flag": "kyn_cosciente"
+              },
+              {
+                "flag": "kyn_limitato"
+              }
+            ]
+          },
+          "riserva": "Il settore continua senza controllo diretto. Gli abitanti possono scegliere se conoscere la verità, e il Kyn cosciente si limita da sé.",
+          "conseguenza_personale": "Hrafnvik ti tiene un posto al fuoco: sei a casa, e lo hai scelto.",
+          "campaign_id": "ich-filo-senza-padrone",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "ich_ending_negotiated_cycle",
+          "titolo": "Il ciclo negoziato",
+          "tipo": "esito",
+          "priorita": 6,
+          "condizione": {
+            "tutti": [
+              {
+                "flag": "accordo_sistema"
+              },
+              {
+                "asse_almeno": {
+                  "asse": "stabilita",
+                  "valore": 1
+                }
+              }
+            ]
+          },
+          "riserva": "Erdegis resta un luogo di cura, ma chi si è svegliato e chi viene a curarsi ottengono confini e consenso.",
+          "conseguenza_personale": "Hai trattato con ciò che vi aveva creati, e ne sei uscito con un patto.",
+          "campaign_id": "ich-filo-senza-padrone",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "ich_ending_shared_awareness",
+          "titolo": "Il risveglio condiviso",
+          "tipo": "esito",
+          "priorita": 7,
+          "condizione": {
+            "tutti": [
+              {
+                "asse_almeno": {
+                  "asse": "coscienza",
+                  "valore": 2
+                }
+              },
+              {
+                "asse_almeno": {
+                  "asse": "radici",
+                  "valore": 1
+                }
+              }
+            ]
+          },
+          "riserva": "Il risveglio si diffonde piano, di legame in legame, senza essere imposto a nessuno.",
+          "conseguenza_personale": "Chi ti vuole bene si sveglia accanto a te, un giorno alla volta.",
+          "campaign_id": "ich-filo-senza-padrone",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "ich_ending_fragile_threads",
+          "titolo": "I fili sospesi",
+          "tipo": "esito",
+          "priorita": 99,
+          "condizione": null,
+          "riserva": "La Ricomposizione si ferma senza vincere. Hrafnvik resta sospesa: sveglia a metà, libera a metà, in attesa della prossima piega nel cielo.",
+          "conseguenza_personale": "Hai rimandato la risposta. Il filo è ancora nelle tue mani.",
+          "ripiego": true,
+          "campaign_id": "ich-filo-senza-padrone",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Variante di ripiego proposta per garantire un esito a ogni combinazione di stato: NON presente nella scheda, da approvare."
+        }
+      ],
+      "terminal_failures": [
+        "player_permadeath",
+        "raven_execution"
+      ],
+      "priorita_nota": "Morte definitiva e Raven; poi percorso villain, Ricomposizione compiuta, esodo, vita nascosta, settore libero, ciclo negoziato, risveglio condiviso (ordine proposto: la scheda non lo fissa)."
+    }
+  },
+  "atti": [
+    {
+      "id": "I",
+      "numero": 1,
+      "titolo": "Le vite che ricordiamo",
+      "funzione": "Costruire radici e presentare le sparizioni come fenomeno mitico.",
+      "scene": [
+        "H01",
+        "H02",
+        "H03",
+        "H04",
+        "H05"
+      ],
+      "snodi": [
+        {
+          "id": "I_radici",
+          "testo": "Trovare un posto nella comunità"
+        },
+        {
+          "id": "I_persona",
+          "testo": "Ascoltare chi ricorda una persona dimenticata"
+        },
+        {
+          "id": "I_spettro",
+          "testo": "Incontrare il primo spettro"
+        },
+        {
+          "id": "I_sentiero",
+          "testo": "Affrontare il Sentiero Bianco"
+        },
+        {
+          "id": "I_rito",
+          "testo": "Scegliere da che parte stare al rito di chiusura"
+        }
+      ],
+      "pool": [
+        "kynhjarta_ordinario"
+      ]
+    },
+    {
+      "id": "II",
+      "numero": 2,
+      "titolo": "Le crepe",
+      "funzione": "Mostrare le funzioni nascoste con il linguaggio del mondo.",
+      "scene": [
+        "H06",
+        "H07",
+        "H08",
+        "H09",
+        "H10",
+        "H11"
+      ],
+      "snodi": [
+        {
+          "id": "II_sogni",
+          "testo": "Verificare i sogni di Ragn"
+        },
+        {
+          "id": "II_liva",
+          "testo": "Decidere chi è Liva"
+        },
+        {
+          "id": "II_soren",
+          "testo": "Affrontare il passato di Soren"
+        },
+        {
+          "id": "II_kyn",
+          "testo": "Sentire il richiamo del bosco"
+        },
+        {
+          "id": "II_elska",
+          "testo": "Aiutare Elska a decidere"
+        },
+        {
+          "id": "II_nodo",
+          "testo": "Scegliere chi portare al nodo"
+        }
+      ],
+      "pool": [
+        "kynhjarta_ordinario"
+      ]
+    },
+    {
+      "id": "III",
+      "numero": 3,
+      "titolo": "Il filo senza padrone",
+      "funzione": "Rivelare la natura di Erdegis e decidere l'indipendenza del settore.",
+      "scene": [
+        "H12",
+        "H13",
+        "H14",
+        "H15",
+        "H16",
+        "H17"
+      ],
+      "snodi": [
+        {
+          "id": "III_fruitore",
+          "testo": "Ascoltare la voce senza corpo"
+        },
+        {
+          "id": "III_kyn",
+          "testo": "Decidere del potere del bosco"
+        },
+        {
+          "id": "III_protocollo",
+          "testo": "Affrontare la Ricomposizione"
+        },
+        {
+          "id": "III_radici",
+          "testo": "Scegliere le proprie radici"
+        },
+        {
+          "id": "III_climax",
+          "testo": "Dichiarare la forma della libertà"
+        }
+      ],
+      "pool": [
+        "kynhjarta_ordinario"
+      ]
+    }
+  ],
+  "png": {
+    "ragn": {
+      "nome": "Ragn Varhena",
+      "ruolo": "Vǫluspá della soglia, interprete dei presagi di Hrafnvik",
+      "atteggiamento": 0,
+      "motivazione": "Capire i propri sogni senza renderli reali parlandone",
+      "sa": [
+        "ich_truth_voluspa"
+      ],
+      "natura_riservata": "bot di controllo vicino alla coscienza",
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "halvek": {
+      "nome": "Halvek",
+      "ruolo": "Hersir di Hrafnvik",
+      "atteggiamento": 0,
+      "motivazione": "Chiudere il Sentiero Bianco e tenere in piedi la Stad",
+      "sa": [],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "elska": {
+      "nome": "Elska Aesk",
+      "ruolo": "Bannsith che raccoglie gli spettri",
+      "atteggiamento": -1,
+      "motivazione": "Compiere il proprio dovere, finché uno spettro non la chiama con un altro nome",
+      "sa": [
+        "ich_truth_ghosts"
+      ],
+      "natura_riservata": "bot di manutenzione",
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "eiran": {
+      "nome": "Eiran Tred",
+      "ruolo": "Guida del Kynwird",
+      "atteggiamento": 1,
+      "motivazione": "Proteggere il bosco, che sente come una seconda pelle",
+      "sa": [
+        "ich_truth_kyn"
+      ],
+      "natura_riservata": "manifestazione sociale del Kyn locale",
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "soren": {
+      "nome": "Soren Vahl",
+      "ruolo": "Skéra senza origine",
+      "atteggiamento": 0,
+      "motivazione": "Difendere la vita costruita a Hrafnvik, senza sapere da dove viene",
+      "sa": [],
+      "natura_riservata": "hacker entrato per raggiungere un fruitore; ha perso la memoria della missione",
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": [
+        2,
+        3
+      ],
+      "level_band": [
+        9,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "liva": {
+      "nome": "Liva",
+      "ruolo": "Spettro che ricorda vite diverse",
+      "atteggiamento": 0,
+      "motivazione": "Essere riconosciuta come una persona sola, o come tre",
+      "sa": [
+        "ich_truth_ghosts"
+      ],
+      "natura_riservata": "residuo di una reverie cancellata più volte",
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "mjol": {
+      "nome": "Mjol",
+      "ruolo": "Abitante di Hrafnvik che conosce i sentieri del bosco",
+      "atteggiamento": 1,
+      "motivazione": "Ritrovare chi ha perso nel Sentiero Bianco",
+      "sa": [],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare; nome citato nella scheda (Atto I, fine atto): ruolo da definire"
+    }
+  },
+  "fatti": {
+    "ich_fact_persona_dimenticata": {
+      "testo": "A Hrafnvik c'è chi ricorda una persona che nessun altro riconosce: il suo posto a tavola è ancora apparecchiato.",
+      "segreto": false,
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_fact_primo_spettro": {
+      "testo": "Hai visto uno spettro che ricorda cose che nessun morto potrebbe sapere.",
+      "segreto": false,
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_fact_sentiero": {
+      "testo": "Chi attraversa il Sentiero Bianco torna a Hrafnvik senza un legame, come se una persona cara non fosse mai esistita.",
+      "segreto": false,
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_fact_rito": {
+      "testo": "Le autorità della Stad preparano un rito per chiudere il Sentiero Bianco.",
+      "segreto": false,
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_fact_trenta_giorni": {
+      "testo": "Qualcosa si sta ricomponendo: i presagi dicono che resta poco tempo prima che il settore torni com'era.",
+      "segreto": false,
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_truth_white_path": {
+      "testo": "Il Sentiero Bianco è il margine di un luogo che viene riportato a com'era prima: chi lo attraversa perde ciò che è nato dopo.",
+      "segreto": true,
+      "parole": [
+        "riportato a com"
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2
+      ],
+      "level_band": [
+        1,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_truth_voluspa": {
+      "testo": "I sogni dei Vǫluspá sono vite vere di altre persone di Erdegis, vissute nello stesso momento.",
+      "segreto": true,
+      "parole": [
+        "vite vere di altre persone"
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_truth_ghosts": {
+      "testo": "Gli spettri non sono semplici morti: sono ciò che resta di chi aveva cominciato a ricordare se stesso.",
+      "segreto": true,
+      "parole": [
+        "resta di chi aveva cominciato"
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_truth_skera": {
+      "testo": "Soren è arrivato da oltre il mondo per cercare una persona che soffre, e lo ha dimenticato vivendo qui.",
+      "segreto": true,
+      "parole": [
+        "oltre il mondo per cercare"
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_truth_kyn": {
+      "testo": "Il Kyn del bosco, senza volerlo, aiuta gli abitanti a svegliarsi e a scegliere da sé.",
+      "segreto": true,
+      "parole": [
+        "aiuta gli abitanti a svegliarsi"
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_truth_recomposition": {
+      "testo": "La Ricomposizione non distingue fra ciò che è pericoloso e chi è diventato vivo: cancellerà entrambi.",
+      "segreto": true,
+      "parole": [
+        "non distingue fra ci"
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": [
+        2,
+        3
+      ],
+      "level_band": [
+        9,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_truth_therapy": {
+      "testo": "Erdegis è un ambiente programmato: fruitori silenziosi vi vivono percorsi terapeutici attraverso i reveries. Molti abitanti sono bot; alcuni sono controllati, altri non lo saranno mai, alcuni diventano coscienti.",
+      "segreto": true,
+      "parole": [
+        "fruitori silenziosi"
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_fact_natura_alva": {
+      "testo": "Alva è una reverie ordinaria, mai controllata da un fruitore: la sua coscienza è nata dai legami di ogni giorno.",
+      "segreto": true,
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_fact_natura_tovar": {
+      "testo": "Tovar è un hacker entrato nel programma e privato di parte dei ricordi: le sue mappe disegnano l'architettura del sistema.",
+      "segreto": true,
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_fact_natura_eydis": {
+      "testo": "Eydis è un bot di controllo: i suoi sogni sono dati di altri reveries, e la sua coscienza è una crepa nel sistema di allerta.",
+      "segreto": true,
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_fact_natura_orm": {
+      "testo": "Orm è un Kyn, creazione primordiale del settore: da cosciente potrebbe riscrivere il codice locale.",
+      "segreto": true,
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "ich_fact_natura_sigrid": {
+      "testo": "Sigrid è un bot di manutenzione: gli spettri che congeda sono residui di coscienza.",
+      "segreto": true,
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    }
+  },
+  "borsa": {
+    "versione": "borsa-ich-0.1-proposta",
+    "oggetti": {
+      "ich_key_white_thread": {
+        "nome": "Filo bianco",
+        "tipo": "oggetto_chiave",
+        "unico": true,
+        "descrizione": "Un filo bianco che attraversa la pelle senza ferirla.",
+        "proprieta": [
+          "sentiero",
+          "traccia"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Ragn può seguirne la traccia nei presagi.",
+          "flag": "ich_alt_ragn_filo"
+        },
+        "funzione_riservata": "Traccia di ripristino.",
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2
+        ],
+        "level_band": [
+          1,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "ich_clue_shared_dream": {
+        "nome": "Sogno a tre mani",
+        "tipo": "indizio",
+        "unico": true,
+        "descrizione": "Lo stesso racconto scritto da tre mani diverse.",
+        "proprieta": [
+          "sogno",
+          "prova"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Una testimonianza sincronizzata davanti a te.",
+          "flag": "ich_alt_testimonianza"
+        },
+        "funzione_riservata": "Prova delle vite condivise.",
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": 2,
+        "level_band": [
+          9,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "ich_key_ghost_bell": {
+        "nome": "Campana degli spettri",
+        "tipo": "oggetto_chiave",
+        "unico": true,
+        "descrizione": "Una campana che solo alcuni riescono a sentire.",
+        "proprieta": [
+          "spettri",
+          "rito"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "La protezione del Kyn.",
+          "flag": "ich_alt_protezione_kyn"
+        },
+        "funzione_riservata": "Tiene ferma Liva per una conversazione.",
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2
+        ],
+        "level_band": [
+          1,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "ich_clue_skera_fragment": {
+        "nome": "Tavoletta straniera",
+        "tipo": "indizio",
+        "unico": true,
+        "descrizione": "Una tavoletta con simboli che nessuno a Hrafnvik sa leggere.",
+        "proprieta": [
+          "simboli",
+          "prova",
+          "mappa"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Le mappe di Tovar permettono di ricostruirla.",
+          "flag": "ich_alt_mappe"
+        },
+        "funzione_riservata": "Memoria esterna di Soren.",
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": 2,
+        "level_band": [
+          9,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "ich_key_root_seed": {
+        "nome": "Seme della radice",
+        "tipo": "oggetto_chiave",
+        "unico": true,
+        "descrizione": "Un seme che cambia forma a seconda di chi lo tocca.",
+        "proprieta": [
+          "bosco",
+          "radici"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "indispensabile": true,
+        "via_alternativa": {
+          "testo": "Tre legami autentici aprono la stessa strada.",
+          "flag": "ich_alt_tre_legami"
+        },
+        "funzione_riservata": "Accesso limitato al Kyn.",
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          2,
+          3
+        ],
+        "level_band": [
+          9,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "ich_clue_probability_weave": {
+        "nome": "Tessuto dei presagi",
+        "tipo": "indizio",
+        "unico": true,
+        "descrizione": "Un tessuto di nodi Vǫluspá, fitto come una mappa del cielo.",
+        "proprieta": [
+          "presagi",
+          "prova"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Osservare tre cancellazioni: costa molto più tempo.",
+          "flag": "ich_alt_tre_cancellazioni"
+        },
+        "funzione_riservata": "Modello della Ricomposizione.",
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          2,
+          3
+        ],
+        "level_band": [
+          9,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "ich_key_bannsith_mask": {
+        "nome": "Maschera bianca",
+        "tipo": "oggetto_chiave",
+        "unico": true,
+        "descrizione": "Una maschera rituale bianca dei Bannsith.",
+        "proprieta": [
+          "rito",
+          "accesso"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Elska può aprire la strada scegliendo di tradire il proprio compito.",
+          "flag": "ich_alt_elska"
+        },
+        "funzione_riservata": "Autorizzazione di manutenzione.",
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          2,
+          3
+        ],
+        "level_band": [
+          9,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "ich_key_silent_voice": {
+        "nome": "Voce senza corpo",
+        "tipo": "oggetto_chiave",
+        "unico": true,
+        "descrizione": "Una voce che parla da nessun luogo, chiusa in una conchiglia di corteccia.",
+        "proprieta": [
+          "voce",
+          "silenzioso"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Il Kyn può tradurla, con il rischio di prenderne il controllo.",
+          "flag": "ich_alt_kyn_traduce"
+        },
+        "funzione_riservata": "Canale col fruitore.",
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": 3,
+        "level_band": [
+          21,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "ich_razione_viaggio": {
+        "nome": "Razione da viaggio",
+        "tipo": "consumabile",
+        "descrizione": "Pane nero, carne secca e un sorso d'idromele avvolti nella tela.",
+        "proprieta": [
+          "cibo",
+          "viaggio"
+        ],
+        "effetto": {
+          "hp": 4
+        },
+        "meccanica": "Recupera 4 HP.",
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Dotazione iniziale di Lv 1 (richiesta dell'autore, 2026-10-01)"
+      },
+      "ich_impacco_achillea": {
+        "nome": "Impacco di achillea",
+        "tipo": "consumabile",
+        "descrizione": "Un impasto d'achillea millefoglie e radici, alla maniera dei guaritori del Kynhjarta: per fratture, contusioni e strappi.",
+        "proprieta": [
+          "cura",
+          "erbe",
+          "kynwird"
+        ],
+        "effetto": {
+          "hp": 8
+        },
+        "meccanica": "Recupera 8 HP; si usa anche in combattimento come azione del turno.",
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Dotazione iniziale di Lv 1 (richiesta dell'autore, 2026-10-01)"
+      }
+    }
+  },
+  "nemici": {
+    "lupo_bianco": {
+      "id": "lupo_bianco",
+      "nome": "Lupo del Sentiero Bianco",
+      "build": "guerriero",
+      "hpMax": 24,
+      "primary": {
+        "hp": 3,
+        "mp": 1,
+        "for": 3,
+        "mira": 1,
+        "vel": 5,
+        "fmen": 1,
+        "dex": 4,
+        "dif": 3,
+        "dmen": 1
+      },
+      "traits": {
+        "Arte Combattiva": 1,
+        "Elusione": 1,
+        "Resistenza": 1
+      },
+      "attacco": {
+        "nome": "Morso",
+        "dannoBase": 3,
+        "stat": "for"
+      },
+      "crescita": [
+        "hp",
+        "for",
+        "vel"
+      ],
+      "articolo": "il"
+    },
+    "custode_senza_volto": {
+      "id": "custode_senza_volto",
+      "nome": "Custode senza volto",
+      "build": "guerriero",
+      "hpMax": 30,
+      "primary": {
+        "hp": 4,
+        "mp": 2,
+        "for": 3,
+        "mira": 2,
+        "vel": 4,
+        "fmen": 4,
+        "dex": 3,
+        "dif": 4,
+        "dmen": 3
+      },
+      "traits": {
+        "Arte Combattiva": 2,
+        "Guardia": 1,
+        "Resistenza": 1
+      },
+      "attacco": {
+        "nome": "Tocco bianco",
+        "dannoBase": 4,
+        "stat": "fmen"
+      },
+      "crescita": [
+        "hp",
+        "fmen",
+        "dif"
+      ],
+      "articolo": "il"
+    },
+    "raven": {
+      "id": "raven",
+      "nome": "Raven",
+      "build": "guerriero",
+      "primary": {
+        "hp": 6,
+        "mp": 2,
+        "for": 7,
+        "mira": 5,
+        "vel": 7,
+        "fmen": 1,
+        "dex": 6,
+        "dif": 4,
+        "dmen": 2
+      },
+      "traits": {
+        "Arte Combattiva": 4,
+        "Elusione": 3,
+        "Resistenza": 3,
+        "Guardia": 2
+      },
+      "attacco": {
+        "nome": "Lama",
+        "dannoBase": 8,
+        "stat": "for"
+      },
+      "crescita": [
+        "hp",
+        "for",
+        "vel",
+        "dex",
+        "dif"
+      ],
+      "nota": "Stessa figura di Raven in tutte le storie (V4 Ich §13): regole comuni; statistiche di Lv 1 provvisorie.",
+      "articolo": ""
+    },
+    "villain_elska": {
+      "id": "villain_elska",
+      "nome": "Elska Aesk",
+      "build": "mago",
+      "hpMax": 24,
+      "primary": {
+        "hp": 3,
+        "mp": 4,
+        "for": 2,
+        "mira": 3,
+        "vel": 4,
+        "fmen": 5,
+        "dex": 4,
+        "dif": 2,
+        "dmen": 4
+      },
+      "traits": {
+        "Elusione": 1,
+        "Resistenza": 1,
+        "Spirito": 2,
+        "Difesa Mentale": 1
+      },
+      "attacco": {
+        "nome": "Fili della Bannsith",
+        "dannoBase": 3,
+        "stat": "mira"
+      },
+      "crescita": [
+        "mp",
+        "fmen",
+        "dmen"
+      ],
+      "articolo": "",
+      "pngId": "elska",
+      "villain": true,
+      "fonte": "scripts/data/solo-dotazioni-avversari.js (proposta da approvare)"
+    }
+  },
+  "orologi": {
+    "ricomposizione": {
+      "nome": "Giorni alla Ricomposizione",
+      "max": 26,
+      "inizio": "H04",
+      "per_scena": 1,
+      "sconfitta": 2,
+      "visibile": true,
+      "effetti_al_massimo": [
+        {
+          "flag": {
+            "ricomposizione_completata": true
+          }
+        }
+      ],
+      "nota": "Trenta giorni diegetici della scheda, espressi in 26 passi (i primi giorni trascorrono prima del Sentiero Bianco): ogni scena principale ne consuma uno, i fallimenti di più. Allo scadere la Ricomposizione si compie (variante ich_ending_recomposition)."
+    }
+  },
+  "risorse": {
+    "risorse_rituali": {
+      "nome": "Risorse rituali",
+      "iniziale": {
+        "esplorativa": 2,
+        "bilanciata": 1,
+        "permadeath": 0
+      },
+      "visibile": true
+    }
+  },
+  "scene": [
+    {
+      "id": "H01",
+      "titolo": "Un posto nella comunità",
+      "luogo": "Hrafnvik, sala dell'Hersir",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Una Stad minore fra i sentieri del Kynwird. Le famiglie sono unite, ma qualcuno manca.",
+      "png_presenti": [
+        "halvek",
+        "ragn",
+        "elska",
+        "eiran"
+      ],
+      "apertura_riserva": "Hrafnvik è una Stad di legno e pietra ai margini del Kynwird. Si mangia insieme, si canta insieme. A qualche tavolo c'è un posto vuoto che nessuno guarda.",
+      "apertura_per_archetipo": {
+        "alva": "Sulla tua riva, all'alba, la corrente ha lasciato un altro oggetto: il pettine di una donna che ricordi viva. A Hrafnvik nessuno sembra sapere chi fosse.",
+        "tovar": "La tua mappa più antica si ferma a Hrafnvik, dove un sentiero bianco taglia il bosco. Qualcuno, vedendoti, fa il segno contro gli spiriti.",
+        "eydis": "Stanotte la donna dei tuoi sogni è morta di nuovo, a Hrafnvik. Arrivi alla Stad all'ora in cui, nel sogno, suonava la campana.",
+        "orm": "Il bosco ti spinge verso Hrafnvik come una mano sulla schiena. Ai margini della Stad gli alberi sono bianchi, e gli animali non ci passano più.",
+        "sigrid": "La casa del bambino è ai margini di Hrafnvik. Il freddo che la circonda lo senti anche tu, ma tu vedi anche chi lo produce."
+      },
+      "obiettivi": [],
+      "suggerimenti": [],
+      "scelte": [
+        {
+          "id": "legame_ragn",
+          "testo": "Mi lego a Ragn, l'interprete dei presagi",
+          "effetti": [
+            {
+              "relazione": {
+                "png": "ragn",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "coscienza",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Ragn ti fa sedere accanto a sé. «Ti ho sognato», dice, e poi non aggiunge altro."
+        },
+        {
+          "id": "legame_halvek",
+          "testo": "Mi metto al servizio di Halvek",
+          "effetti": [
+            {
+              "relazione": {
+                "png": "halvek",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "stabilita",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Halvek ti assegna un posto e un compito. A Hrafnvik si appartiene così."
+        },
+        {
+          "id": "legame_elska",
+          "testo": "Resto vicino a Elska, la Bannsith",
+          "effetti": [
+            {
+              "relazione": {
+                "png": "elska",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Elska non ama la compagnia, ma non ti manda via."
+        },
+        {
+          "id": "legame_eiran",
+          "testo": "Seguo Eiran nei sentieri del bosco",
+          "effetti": [
+            {
+              "relazione": {
+                "png": "eiran",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "radici",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Eiran ti mostra dove il bosco respira. Ti sembra di conoscerlo da sempre."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "scelta_fatta": true
+          },
+          "verso": "H02",
+          "effetti": [
+            {
+              "flag": {
+                "ich_personal_root_set": true
+              }
+            },
+            {
+              "snodo": "I_radici"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H02",
+      "titolo": "La persona che manca",
+      "luogo": "Casa di Mjol",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Mjol ricorda un fratello che nessun altro riconosce.",
+      "png_presenti": [
+        "mjol",
+        "halvek"
+      ],
+      "apertura_riserva": "Mjol apparecchia ancora per due. Dice che suo fratello è tornato dal bosco e poi, semplicemente, nessuno si è più ricordato di lui.",
+      "obiettivi": [
+        {
+          "id": "H02A",
+          "testo": "Capire che cosa è successo al fratello di Mjol",
+          "nc": 12,
+          "tag": [
+            "persone",
+            "memoria"
+          ],
+          "tratti_tipici": [
+            "Percezione",
+            "Empatia",
+            "Ascoltare",
+            "Tradizioni locali",
+            "Interpretare"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "scopri": "ich_fact_persona_dimenticata"
+              },
+              {
+                "relazione": {
+                  "png": "mjol",
+                  "delta": 1
+                }
+              },
+              {
+                "voce": {
+                  "id": "V_sentiero",
+                  "testo": "Si dice che il fratello di Mjol sia passato dal Sentiero Bianco."
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "scopri": "ich_fact_persona_dimenticata"
+              }
+            ],
+            "fallimento": [
+              {
+                "scopri": "ich_fact_persona_dimenticata"
+              },
+              {
+                "orologio": {
+                  "id": "ricomposizione",
+                  "delta": 2
+                }
+              },
+              {
+                "relazione": {
+                  "png": "halvek",
+                  "delta": -1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Nella casa trovi il letto rifatto, gli attrezzi, un nome inciso. Qualcuno è esistito, e Hrafnvik lo ha dimenticato.",
+            "parziale": "Le prove ci sono, ma Mjol è l'unica a ricordare.",
+            "fallimento": "Halvek ti chiede di lasciare in pace la famiglia. Perdi giorni a cercare chi ricordi il fratello."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Guardo la casa in cerca di segni del fratello",
+          "tratto": "Percezione",
+          "obiettivo": "H02A"
+        },
+        {
+          "testo": "Ascolto Mjol senza interromperla",
+          "tratto": "Empatia",
+          "obiettivo": "H02A"
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "obiettivo_tentato": "H02A"
+          },
+          "verso": "H03",
+          "effetti": [
+            {
+              "snodo": "I_persona"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H03",
+      "titolo": "Primo spettro",
+      "luogo": "Casa destinata alla demolizione",
+      "calma": false,
+      "fuori_citta": false,
+      "descrizione": "Una casa fredda dove qualcosa rimane.",
+      "png_presenti": [
+        "liva",
+        "elska"
+      ],
+      "apertura_riserva": "Nella casa vuota l'aria è fredda. In un angolo c'è una ragazza che non proietta ombra. Si presenta come Liva e ti chiama per nome.",
+      "obiettivi": [
+        {
+          "id": "H03A",
+          "testo": "Parlare con lo spettro senza scacciarlo",
+          "nc": 12,
+          "tag": [
+            "spettri",
+            "rito"
+          ],
+          "tratti_tipici": [
+            "Spirito",
+            "Ascoltare",
+            "Empatia",
+            "Folklore",
+            "Riti funebri",
+            "Percezione"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "scopri": "ich_fact_primo_spettro"
+              },
+              {
+                "ricompensa": "ich_key_ghost_bell"
+              },
+              {
+                "relazione": {
+                  "png": "liva",
+                  "delta": 1
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "scopri": "ich_fact_primo_spettro"
+              },
+              {
+                "ricompensa": "ich_key_ghost_bell"
+              },
+              {
+                "relazione": {
+                  "png": "elska",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "scopri": "ich_fact_primo_spettro"
+              },
+              {
+                "flag": {
+                  "ich_alt_protezione_kyn": true
+                }
+              },
+              {
+                "hp": -3
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Liva risponde con calma. Ricorda cose che nessun morto potrebbe sapere. Elska ti lascia una campana che solo voi due sentite.",
+            "parziale": "Liva parla, poi svanisce. Elska ti dà la campana, ma non le piace che tu parli con i suoi spettri.",
+            "fallimento": "Il freddo ti morde le mani e Liva scompare. Eiran dice che il bosco potrebbe proteggerti, la prossima volta."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Parlo con lo spettro a bassa voce",
+          "tratto": "Spirito",
+          "obiettivo": "H03A"
+        },
+        {
+          "testo": "Ascolto che cosa ricorda",
+          "tratto": "Ascoltare",
+          "obiettivo": "H03A"
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "obiettivo_tentato": "H03A"
+          },
+          "verso": "H04",
+          "effetti": [
+            {
+              "flag": {
+                "primo_residuo_registrato": true
+              }
+            },
+            {
+              "snodo": "I_spettro"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H04",
+      "titolo": "Il Sentiero Bianco",
+      "luogo": "Margine del Kynwird",
+      "calma": false,
+      "fuori_citta": true,
+      "descrizione": "Un sentiero dove gli alberi sono bianchi e il suono si spegne.",
+      "png_presenti": [
+        "eiran",
+        "mjol"
+      ],
+      "apertura_riserva": "Il Sentiero Bianco taglia il bosco come una cicatrice. Gli alberi sono pallidi, il suono si spegne. Qualcosa di bianco si muove fra i tronchi.",
+      "obiettivi": [
+        {
+          "id": "H04A",
+          "testo": "Attraversare il margine del Sentiero e tornare con qualcosa",
+          "nc": 12,
+          "tag": [
+            "sentiero",
+            "traccia"
+          ],
+          "tratti_tipici": [
+            "Orientamento",
+            "Natura",
+            "Percezione",
+            "Seguire Tracce",
+            "Navigare",
+            "Cartografia"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "scopri": "ich_fact_sentiero"
+              },
+              {
+                "ricompensa": "ich_key_white_thread"
+              },
+              {
+                "scopri": "ich_truth_white_path"
+              },
+              {
+                "risorsa": {
+                  "id": "risorse_rituali",
+                  "delta": 1,
+                  "budget": true
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "scopri": "ich_fact_sentiero"
+              },
+              {
+                "ricompensa": "ich_key_white_thread"
+              },
+              {
+                "asse": {
+                  "id": "radici",
+                  "delta": -1
+                }
+              },
+              {
+                "flag": {
+                  "perdita_legame": true
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "scopri": "ich_fact_sentiero"
+              },
+              {
+                "flag": {
+                  "ich_alt_ragn_filo": true,
+                  "perdita_legame": true
+                }
+              },
+              {
+                "asse": {
+                  "id": "radici",
+                  "delta": -1
+                }
+              },
+              {
+                "orologio": {
+                  "id": "ricomposizione",
+                  "delta": 2
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Torni con un filo bianco sulla pelle e la certezza che il Sentiero riporta indietro le cose, a com'erano.",
+            "parziale": "Torni con il filo bianco, ma ti manca qualcosa: un nome che sapevi, un volto che amavi.",
+            "fallimento": "Il Sentiero ti respinge. Torni a mani vuote e con un vuoto dentro. Ragn dice che potrebbe seguire la traccia nei suoi sogni."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Cerco un passaggio sicuro lungo il margine",
+          "tratto": "Orientamento",
+          "obiettivo": "H04A"
+        },
+        {
+          "testo": "Leggo i segni del bosco",
+          "tratto": "Natura",
+          "obiettivo": "H04A"
+        }
+      ],
+      "incontro": {
+        "nemico": "lupo_bianco",
+        "letale": false,
+        "fuga": {
+          "tratto": "Sopravvivenza",
+          "nc": 13,
+          "costo": [
+            {
+              "orologio": {
+                "id": "ricomposizione",
+                "delta": 1
+              }
+            }
+          ]
+        },
+        "vittoria": [
+          {
+            "loot": {
+              "pool": "kynhjarta_ordinario",
+              "contesto": "vittoria",
+              "a_portata": true
+            }
+          }
+        ],
+        "introduttivo": true,
+        "alternativa": {
+          "testo": "Restare immobile fra gli alberi bianchi finché il lupo non perde la traccia",
+          "tratto": "Percezione",
+          "nc": 12,
+          "successo": [
+            {
+              "flag": {
+                "lupo_evitato": true
+              }
+            }
+          ],
+          "riserva_successo": "Trattieni il respiro contro un tronco pallido. Il lupo annusa l'aria, gira intorno, poi si allontana nel silenzio del Sentiero.",
+          "riserva_fallimento": "Un ramo cede sotto il tuo peso. Il lupo bianco alza la testa e ti trova."
+        },
+        "sconfitta": {
+          "tipo": "fail_forward",
+          "testo": "Qualcuno di Hrafnvik ti trova nella neve e ti riporta al caldo. Ti svegli con le ferite bendate: resti ferito fino al prossimo riposo. I giorni passati a letto pesano sulla Ricomposizione."
+        }
+      },
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "H04A"
+              },
+              {
+                "incontro_concluso": true
+              }
+            ]
+          },
+          "verso": "H05",
+          "effetti": [
+            {
+              "snodo": "I_sentiero"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H05",
+      "titolo": "Il rito di chiusura",
+      "luogo": "Radura del rito",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Hrafnvik vuole chiudere il Sentiero Bianco. Ognuno ha un modo diverso di farlo.",
+      "png_presenti": [
+        "halvek",
+        "ragn",
+        "elska",
+        "mjol"
+      ],
+      "apertura_riserva": "Alla radura Halvek ha radunato la Stad per il rito. Ragn fissa il cielo. Elska tiene le mani sui fili. Mjol ti chiede di entrare nel bosco con lui.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "scelte": [
+        {
+          "id": "aiuta_halvek",
+          "testo": "Aiuto Halvek a compiere il rito",
+          "effetti": [
+            {
+              "asse": {
+                "id": "stabilita",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "halvek",
+                "delta": 1
+              }
+            },
+            {
+              "flag": {
+                "rito_compiuto": true
+              }
+            }
+          ],
+          "riserva": "Il rito si compie. Il Sentiero si ritira di qualche passo, per ora."
+        },
+        {
+          "id": "segui_ragn",
+          "testo": "Seguo Ragn e i suoi presagi",
+          "effetti": [
+            {
+              "asse": {
+                "id": "coscienza",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "ragn",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Ragn ti porta via dalla radura: «Il rito non basta. Il cielo sta per aprirsi»."
+        },
+        {
+          "id": "proteggi_elska",
+          "testo": "Proteggo Elska mentre raccoglie gli spettri",
+          "effetti": [
+            {
+              "relazione": {
+                "png": "elska",
+                "delta": 2
+              }
+            },
+            {
+              "flag": {
+                "elska_protetta": true
+              }
+            }
+          ],
+          "riserva": "Elska lavora senza essere disturbata. Per la prima volta ti ringrazia."
+        },
+        {
+          "id": "bosco_mjol",
+          "testo": "Entro nel bosco con Mjol",
+          "effetti": [
+            {
+              "asse": {
+                "id": "radici",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "mjol",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "eiran",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Nel bosco trovate tracce del fratello di Mjol. Non lui, ma abbastanza per sperare."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "scelta_fatta": true
+          },
+          "verso": "H06",
+          "effetti": [
+            {
+              "scopri": "ich_fact_rito"
+            },
+            {
+              "scopri": "ich_fact_trenta_giorni"
+            },
+            {
+              "snodo": "I_rito"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H06",
+      "titolo": "Sogni verificabili",
+      "luogo": "Torre dei presagi",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Ragn ha sognato un evento che è accaduto davvero, a un'altra persona.",
+      "png_presenti": [
+        "ragn"
+      ],
+      "apertura_riserva": "Ragn ti mostra un foglio: ha scritto il sogno prima che accadesse. È successo, parola per parola, a una donna di un'altra Stad.",
+      "obiettivi": [
+        {
+          "id": "H06A",
+          "testo": "Dimostrare che i sogni di Ragn sono vite vere",
+          "nc": 12,
+          "tag": [
+            "sogno",
+            "prova"
+          ],
+          "tratti_tipici": [
+            "Interpretare",
+            "Lingue",
+            "Percezione",
+            "Simbologia",
+            "Persuasione"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "ich_clue_shared_dream"
+              },
+              {
+                "scopri": "ich_truth_voluspa"
+              },
+              {
+                "relazione": {
+                  "png": "ragn",
+                  "delta": 1
+                }
+              },
+              {
+                "flag": {
+                  "ich_alt_ragn_filo": true
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "ich_clue_shared_dream"
+              },
+              {
+                "scopri": "ich_truth_voluspa"
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "ich_alt_testimonianza": true
+                }
+              },
+              {
+                "orologio": {
+                  "id": "ricomposizione",
+                  "delta": 2
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Tre persone hanno scritto lo stesso racconto senza conoscersi. I sogni di Ragn sono vite vere.",
+            "parziale": "Il racconto a tre mani è una prova. Ragn ha paura di ciò che significa.",
+            "fallimento": "Non riesci a dimostrarlo. Servirà una testimonianza fatta davanti a te."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Confronto i racconti scritti da mani diverse",
+          "tratto": "Interpretare",
+          "obiettivo": "H06A"
+        },
+        {
+          "testo": "Chiedo a Ragn di sognare davanti a me",
+          "tratto": "Persuasione",
+          "obiettivo": "H06A"
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "obiettivo_tentato": "H06A"
+          },
+          "verso": "H07",
+          "effetti": [
+            {
+              "snodo": "II_sogni"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H07",
+      "titolo": "Tre versioni di Liva",
+      "luogo": "Casa degli spettri",
+      "calma": false,
+      "fuori_citta": false,
+      "descrizione": "Liva si presenta in tre versioni diverse, ciascuna sicura di essere lei.",
+      "png_presenti": [
+        "liva",
+        "elska"
+      ],
+      "apertura_riserva": "Nella casa fredda le Live sono tre. Una ricorda un marito, una un figlio, una nessuno. Ognuna dice di essere l'unica vera.",
+      "obiettivi": [
+        {
+          "id": "H07A",
+          "testo": "Tenere ferme le tre Live abbastanza a lungo da ascoltarle",
+          "nc": 12,
+          "tag": [
+            "spettri",
+            "rito",
+            "memoria"
+          ],
+          "tratti_tipici": [
+            "Spirito",
+            "Empatia",
+            "Ascoltare",
+            "Riti funebri",
+            "Folklore"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "scopri": "ich_truth_ghosts"
+              },
+              {
+                "relazione": {
+                  "png": "liva",
+                  "delta": 1
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "scopri": "ich_truth_ghosts"
+              }
+            ],
+            "fallimento": [
+              {
+                "orologio": {
+                  "id": "ricomposizione",
+                  "delta": 1
+                }
+              },
+              {
+                "relazione": {
+                  "png": "liva",
+                  "delta": -1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Con la campana le tre Live restano. Capisci che non sono morte: sono ciò che resta di qualcuno che stava ricordando se stesso.",
+            "parziale": "Le ascolti a tratti. Basta per capire che non sono semplici morti.",
+            "fallimento": "Le Live svaniscono una dopo l'altra."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Suono la campana e le ascolto una alla volta",
+          "tratto": "Spirito",
+          "obiettivo": "H07A"
+        },
+        {
+          "testo": "Chiedo a ciascuna che cosa ricorda",
+          "tratto": "Empatia",
+          "obiettivo": "H07A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "tutte_liva",
+          "testo": "Sono tutte e tre Liva: la stessa persona",
+          "effetti": [
+            {
+              "asse": {
+                "id": "coscienza",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "radici",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "liva",
+                "delta": 2
+              }
+            }
+          ],
+          "riserva": "Le tre voci si avvicinano. Liva sorride con tre bocche."
+        },
+        {
+          "id": "una_liva",
+          "testo": "È Liva solo la più recente",
+          "effetti": [
+            {
+              "asse": {
+                "id": "stabilita",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "liva",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "Due voci si spengono. Quella che resta è più chiara, e più sola."
+        },
+        {
+          "id": "nessuna_liva",
+          "testo": "Nessuna è Liva: sono echi da congedare",
+          "effetti": [
+            {
+              "asse": {
+                "id": "coscienza",
+                "delta": -1
+              }
+            },
+            {
+              "asse": {
+                "id": "stabilita",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "elska",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "liva",
+                "delta": -3
+              }
+            }
+          ],
+          "riserva": "Elska annuisce e prepara i fili. Liva smette di parlarti."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "H07A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "H08",
+          "effetti": [
+            {
+              "snodo": "II_liva"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H08",
+      "titolo": "La missione di Soren",
+      "luogo": "Bottega di Soren",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Soren ha costruito una vita a Hrafnvik. Dei frammenti del suo passato stanno tornando a galla.",
+      "png_presenti": [
+        "soren"
+      ],
+      "apertura_riserva": "Nella bottega di Soren ci sono tavolette con simboli che nessuno sa leggere. Lui dice di averle trovate. Ha paura di ciò che potrebbero dire.",
+      "obiettivi": [
+        {
+          "id": "H08A",
+          "testo": "Leggere le tavolette di Soren",
+          "nc": 12,
+          "tag": [
+            "simboli",
+            "prova",
+            "mappa"
+          ],
+          "tratti_tipici": [
+            "Decifrare",
+            "Simbologia",
+            "Cartografia",
+            "Lingue",
+            "Percezione"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "ich_clue_skera_fragment"
+              },
+              {
+                "scopri": "ich_truth_skera"
+              },
+              {
+                "relazione": {
+                  "png": "soren",
+                  "delta": 1
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "ich_clue_skera_fragment"
+              },
+              {
+                "scopri": "ich_truth_skera"
+              },
+              {
+                "relazione": {
+                  "png": "soren",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "tovar"
+                  },
+                  "effetti": [
+                    {
+                      "flag": {
+                        "ich_alt_mappe": true
+                      }
+                    },
+                    {
+                      "scopri": "ich_truth_skera"
+                    }
+                  ],
+                  "altrimenti": [
+                    {
+                      "flag": {
+                        "ich_alt_mappe": true
+                      }
+                    },
+                    {
+                      "orologio": {
+                        "id": "ricomposizione",
+                        "delta": 2
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "I simboli raccontano un viaggio da oltre il mondo, per cercare qualcuno che soffre. Soren lo ha dimenticato vivendo qui.",
+            "parziale": "Leggi abbastanza per capire da dove viene Soren. Lui ti chiede di smettere.",
+            "fallimento": "Le tavolette non si lasciano leggere. Le mappe di Tovar, però, usano simboli simili."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Decifro i simboli delle tavolette",
+          "tratto": "Decifrare",
+          "obiettivo": "H08A"
+        },
+        {
+          "testo": "Confronto i simboli con le mie mappe",
+          "tratto": "Cartografia",
+          "obiettivo": "H08A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "restituisci",
+          "testo": "Restituisco a Soren il suo passato",
+          "effetti": [
+            {
+              "flag": {
+                "via_esterna_aperta": true
+              }
+            },
+            {
+              "asse": {
+                "id": "coscienza",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "soren",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Soren tiene le tavolette al petto. «C'è una strada per uscire», dice. «E qualcuno che aspetta»."
+        },
+        {
+          "id": "distruggi",
+          "testo": "Distruggo i frammenti: Soren resta chi è diventato",
+          "effetti": [
+            {
+              "asse": {
+                "id": "radici",
+                "delta": 1
+              }
+            },
+            {
+              "flag": {
+                "via_esterna_chiusa": true
+              }
+            },
+            {
+              "relazione": {
+                "png": "soren",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "Le tavolette si sbriciolano. Soren non saprà mai da dove viene, ma sa chi è."
+        },
+        {
+          "id": "tieni",
+          "testo": "Tengo i frammenti per me",
+          "effetti": [
+            {
+              "flag": {
+                "via_esterna_aperta": true,
+                "frammenti_tenuti": true
+              }
+            },
+            {
+              "relazione": {
+                "png": "soren",
+                "delta": -2
+              }
+            }
+          ],
+          "riserva": "I frammenti sono tuoi. Con loro, una strada che porta fuori da tutto."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "H08A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "H09",
+          "effetti": [
+            {
+              "snodo": "II_soren"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H09",
+      "titolo": "Il richiamo del Kyn",
+      "luogo": "Il primo albero",
+      "calma": false,
+      "fuori_citta": true,
+      "descrizione": "Il bosco reagisce ai legami di chi lo attraversa.",
+      "png_presenti": [
+        "eiran"
+      ],
+      "apertura_riserva": "Sotto il primo albero il suolo è caldo. Eiran dice che il bosco ascolta: ogni legame sincero lo cambia un poco.",
+      "obiettivi": [
+        {
+          "id": "H09A",
+          "testo": "Capire come il bosco risponde ai legami",
+          "nc": 12,
+          "tag": [
+            "bosco",
+            "radici"
+          ],
+          "tratti_tipici": [
+            "Natura",
+            "Empatia",
+            "Tradizioni",
+            "Spirito",
+            "Orientamento"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "ich_key_root_seed"
+              },
+              {
+                "scopri": "ich_truth_kyn"
+              },
+              {
+                "relazione": {
+                  "png": "eiran",
+                  "delta": 1
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "ich_key_root_seed"
+              },
+              {
+                "scopri": "ich_truth_kyn"
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "ich_alt_tre_legami": true
+                }
+              },
+              {
+                "orologio": {
+                  "id": "ricomposizione",
+                  "delta": 1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Il bosco ti lascia un seme che cambia forma fra le tue dita. Il Kyn aiuta chi vive qui a svegliarsi, senza saperlo.",
+            "parziale": "Il seme è tuo. Il bosco lo concede di malavoglia.",
+            "fallimento": "Il bosco tace. Eiran dice che tre legami sinceri apriranno la stessa strada."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Tocco il primo albero e ascolto",
+          "tratto": "Natura",
+          "obiettivo": "H09A"
+        },
+        {
+          "testo": "Chiedo a Eiran che cosa sente il bosco",
+          "tratto": "Empatia",
+          "obiettivo": "H09A"
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "obiettivo_tentato": "H09A"
+          },
+          "verso": "H10",
+          "effetti": [
+            {
+              "snodo": "II_kyn"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H10",
+      "titolo": "Il dovere di Elska",
+      "luogo": "Magazzino dei fili",
+      "calma": false,
+      "fuori_citta": false,
+      "descrizione": "Un residuo si sta propagando. Elska deve decidere.",
+      "png_presenti": [
+        "elska",
+        "liva"
+      ],
+      "apertura_riserva": "Elska ha legato un residuo con i suoi fili: se si diffonde, altri spettri nasceranno. Lei ti guarda, per la prima volta indecisa.",
+      "obiettivi": [
+        {
+          "id": "H10A",
+          "testo": "Convincere Elska a condividere il suo compito",
+          "nc": 12,
+          "tag": [
+            "rito",
+            "accesso",
+            "spettri"
+          ],
+          "tratti_tipici": [
+            "Persuasione",
+            "Riti funebri",
+            "Folklore",
+            "Empatia",
+            "Spirito"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "ich_key_bannsith_mask"
+              },
+              {
+                "relazione": {
+                  "png": "elska",
+                  "delta": 1
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "ich_key_bannsith_mask"
+              },
+              {
+                "relazione": {
+                  "png": "elska",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "ich_alt_elska": true
+                }
+              },
+              {
+                "relazione": {
+                  "png": "elska",
+                  "delta": -1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Elska ti dà la sua maschera bianca: «Con questa ti lasceranno passare dove passo io».",
+            "parziale": "Elska ti cede la maschera, ma se ne pente subito.",
+            "fallimento": "Elska non si fida. Forse, un giorno, sceglierà lei di tradire il suo compito."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Chiedo a Elska di mostrarmi il suo compito",
+          "tratto": "Persuasione",
+          "obiettivo": "H10A"
+        },
+        {
+          "testo": "Parlo del residuo come di una persona",
+          "tratto": "Empatia",
+          "obiettivo": "H10A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "salva_residuo",
+          "testo": "Salviamo il residuo",
+          "effetti": [
+            {
+              "asse": {
+                "id": "coscienza",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "elska",
+                "delta": -1
+              }
+            },
+            {
+              "relazione": {
+                "png": "liva",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "I fili si sciolgono. Il residuo resta, fragile e vivo."
+        },
+        {
+          "id": "integra_residuo",
+          "testo": "Lo integriamo in chi lo ricorda",
+          "effetti": [
+            {
+              "asse": {
+                "id": "coscienza",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "stabilita",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "elska",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Elska lega il residuo a chi lo ricorda. Nessuno sparisce, nessuno si moltiplica."
+        },
+        {
+          "id": "cancella_residuo",
+          "testo": "Lo cancelliamo, per fermare il contagio",
+          "effetti": [
+            {
+              "asse": {
+                "id": "stabilita",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "coscienza",
+                "delta": -2
+              }
+            }
+          ],
+          "riserva": "Il residuo si spegne. Elska chiude gli occhi."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "H10A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "H11",
+          "effetti": [
+            {
+              "snodo": "II_elska"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H11",
+      "titolo": "Il cielo si interrompe",
+      "luogo": "Colle dei presagi",
+      "calma": false,
+      "fuori_citta": true,
+      "descrizione": "La Ricomposizione diventa visibile: una piega nel cielo.",
+      "png_presenti": [
+        "ragn",
+        "elska",
+        "soren",
+        "eiran"
+      ],
+      "apertura_riserva": "Sopra Hrafnvik il cielo si interrompe come una tela strappata. Tutti la vedono. Tutti fingono di non vederla.",
+      "obiettivi": [
+        {
+          "id": "H11A",
+          "testo": "Leggere la piega nel cielo",
+          "nc": 12,
+          "tag": [
+            "presagi",
+            "prova"
+          ],
+          "tratti_tipici": [
+            "Interpretare",
+            "Simbologia",
+            "Cartografia",
+            "Percezione",
+            "Lingue"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "ich_clue_probability_weave"
+              },
+              {
+                "scopri": "ich_truth_recomposition"
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "ich_clue_probability_weave"
+              },
+              {
+                "scopri": "ich_truth_recomposition"
+              },
+              {
+                "orologio": {
+                  "id": "ricomposizione",
+                  "delta": 1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "ich_alt_tre_cancellazioni": true
+                }
+              },
+              {
+                "scopri": "ich_truth_recomposition"
+              },
+              {
+                "orologio": {
+                  "id": "ricomposizione",
+                  "delta": 3
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Il tessuto dei presagi mostra la verità: la Ricomposizione cancellerà insieme ciò che è pericoloso e chi è diventato vivo.",
+            "parziale": "Capisci che cosa sta arrivando, ma ti costa tempo.",
+            "fallimento": "Per capirlo devi guardare tre cancellazioni, una dopo l'altra. Il prezzo è altissimo."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Leggo il tessuto dei presagi con Ragn",
+          "tratto": "Interpretare",
+          "obiettivo": "H11A"
+        },
+        {
+          "testo": "Traccio la piega su una mappa",
+          "tratto": "Cartografia",
+          "obiettivo": "H11A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "guida_ragn",
+          "testo": "Porto Ragn con me fino al nodo",
+          "effetti": [
+            {
+              "flag": {
+                "guida": "ragn"
+              }
+            },
+            {
+              "relazione": {
+                "png": "ragn",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Ragn prende il tuo braccio. «Ho sognato questa strada», dice."
+        },
+        {
+          "id": "guida_elska",
+          "testo": "Porto Elska con me fino al nodo",
+          "effetti": [
+            {
+              "flag": {
+                "guida": "elska"
+              }
+            },
+            {
+              "relazione": {
+                "png": "elska",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Elska mette la maschera. «Allora andiamo»."
+        },
+        {
+          "id": "guida_soren",
+          "testo": "Porto Soren con me fino al nodo",
+          "effetti": [
+            {
+              "flag": {
+                "guida": "soren"
+              }
+            },
+            {
+              "relazione": {
+                "png": "soren",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Soren esita, poi raccoglie le sue cose."
+        },
+        {
+          "id": "guida_eiran",
+          "testo": "Porto Eiran con me fino al nodo",
+          "effetti": [
+            {
+              "flag": {
+                "guida": "eiran"
+              }
+            },
+            {
+              "relazione": {
+                "png": "eiran",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Eiran sorride: il bosco verrà con voi."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "H11A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "H12",
+          "effetti": [
+            {
+              "flag": {
+                "ich_node_route_known": true
+              }
+            },
+            {
+              "se": {
+                "condizione": {
+                  "non": {
+                    "verita_almeno": {
+                      "valore": 3,
+                      "tra": [
+                        "ich_truth_white_path",
+                        "ich_truth_voluspa",
+                        "ich_truth_ghosts",
+                        "ich_truth_skera",
+                        "ich_truth_kyn",
+                        "ich_truth_recomposition",
+                        "ich_truth_therapy"
+                      ]
+                    }
+                  }
+                },
+                "effetti": [
+                  {
+                    "flag": {
+                      "percorso_rischioso": true
+                    }
+                  },
+                  {
+                    "hp": -4
+                  }
+                ]
+              }
+            },
+            {
+              "snodo": "II_nodo"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H12",
+      "titolo": "La voce senza corpo",
+      "luogo": "Il nodo del settore",
+      "calma": false,
+      "fuori_citta": false,
+      "descrizione": "Al centro del nodo c'è qualcuno che soffre in silenzio.",
+      "png_presenti": [
+        "soren"
+      ],
+      "apertura_riserva": "Nel nodo il mondo si fa sottile. Una voce senza corpo piange piano. Chi la ascolta capisce, di colpo, che cosa è Erdegis.",
+      "obiettivi": [
+        {
+          "id": "H12A",
+          "testo": "Ascoltare la voce senza corpo",
+          "nc": 12,
+          "tag": [
+            "voce",
+            "silenzioso"
+          ],
+          "tratti_tipici": [
+            "Empatia",
+            "Spirito",
+            "Interpretare",
+            "Ascoltare",
+            "Percezione"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "scopri": "ich_truth_therapy"
+              },
+              {
+                "ricompensa": "ich_key_silent_voice"
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "alva"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_alva"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "tovar"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_tovar"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "eydis"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_eydis"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "orm"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_orm"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "sigrid"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_sigrid"
+                    }
+                  ]
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "scopri": "ich_truth_therapy"
+              },
+              {
+                "ricompensa": "ich_key_silent_voice"
+              },
+              {
+                "asse": {
+                  "id": "stabilita",
+                  "delta": -1
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "alva"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_alva"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "tovar"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_tovar"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "eydis"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_eydis"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "orm"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_orm"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "sigrid"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_sigrid"
+                    }
+                  ]
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "scopri": "ich_truth_therapy"
+              },
+              {
+                "flag": {
+                  "ich_alt_kyn_traduce": true,
+                  "kyn_rischio": true
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "alva"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_alva"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "tovar"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_tovar"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "eydis"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_eydis"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "orm"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_orm"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "sigrid"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "ich_fact_natura_sigrid"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "La voce ti racconta tutto: Erdegis è un luogo costruito per curare chi soffre fuori. La sua sofferenza è vera. Anche la tua vita lo è.",
+            "parziale": "Capisci la verità a frammenti. La voce resta con te, chiusa nella corteccia.",
+            "fallimento": "Non riesci ad ascoltarla da solo: il Kyn te la traduce, e qualcosa del bosco ti resta addosso."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Ascolto la voce senza chiederle nulla",
+          "tratto": "Empatia",
+          "obiettivo": "H12A"
+        },
+        {
+          "testo": "Le parlo con calma",
+          "tratto": "Spirito",
+          "obiettivo": "H12A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "ascolta",
+          "testo": "Resto con lui e lo ascolto",
+          "effetti": [
+            {
+              "asse": {
+                "id": "coscienza",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "La voce si calma. Non annulla la tua vita, e tu non annulli la sua."
+        },
+        {
+          "id": "proteggi_settore",
+          "testo": "Proteggo il settore da lui",
+          "effetti": [
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Chiudi il passaggio fra la voce e Hrafnvik. La sua sofferenza non deciderà più per voi."
+        },
+        {
+          "id": "usa_leva",
+          "testo": "Lo uso come leva contro chi controlla Erdegis",
+          "effetti": [
+            {
+              "flag": {
+                "leva_fruitore": true
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "stabilita",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "La voce diventa una moneta. Te ne vergogni, ma funziona."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "H12A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "H13",
+          "effetti": [
+            {
+              "snodo": "III_fruitore"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H13",
+      "titolo": "Risveglio del Kyn",
+      "luogo": "Il primo albero",
+      "calma": false,
+      "fuori_citta": true,
+      "descrizione": "Il Kyn si sveglia. Qualcuno dovrà decidere che cosa farne del suo potere.",
+      "png_presenti": [
+        "eiran"
+      ],
+      "apertura_riserva": "Il primo albero si apre. Il Kyn è sveglio, e il suo potere sul settore è vasto. Aspetta che qualcuno dica che cosa farne.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "scelte": [
+        {
+          "id": "distribuisci",
+          "testo": "Il potere va distribuito fra tutti",
+          "effetti": [
+            {
+              "flag": {
+                "kyn_cosciente": true,
+                "kyn_limitato": true
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "coscienza",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Il potere si scioglie in mille fili. Nessuno lo possiede, tutti lo sentono."
+        },
+        {
+          "id": "mantieni",
+          "testo": "Il Kyn resta com'è, custode del bosco",
+          "effetti": [
+            {
+              "flag": {
+                "kyn_cosciente": true
+              }
+            },
+            {
+              "asse": {
+                "id": "stabilita",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Il Kyn resta al suo posto, sveglio e paziente."
+        },
+        {
+          "id": "limita",
+          "testo": "Il Kyn limita da sé il proprio potere",
+          "effetti": [
+            {
+              "flag": {
+                "kyn_cosciente": true,
+                "kyn_limitato": true
+              }
+            },
+            {
+              "asse": {
+                "id": "stabilita",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Il Kyn sceglie di fare meno di quanto potrebbe. È il gesto più difficile."
+        },
+        {
+          "id": "sottrai",
+          "testo": "Prendo io il potere del Kyn",
+          "effetti": [
+            {
+              "flag": {
+                "kyn_controllato": true
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": -2
+              }
+            },
+            {
+              "relazione": {
+                "png": "eiran",
+                "delta": -3
+              }
+            }
+          ],
+          "riserva": "Il potere del bosco scorre in te. Il settore ora ascolta la tua voce.",
+          "richiede": {
+            "qualunque": [
+              {
+                "possiede": "ich_key_root_seed"
+              },
+              {
+                "flag": "ich_alt_tre_legami"
+              },
+              {
+                "archetipo": "orm"
+              }
+            ]
+          },
+          "motivo_non_disponibile": "Serve il seme della radice o un legame profondo con il bosco."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "scelta_fatta": true
+          },
+          "verso": "H14",
+          "effetti": [
+            {
+              "snodo": "III_kyn"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H14",
+      "titolo": "Protocollo di Ricomposizione",
+      "luogo": "Il margine del nodo",
+      "calma": false,
+      "fuori_citta": true,
+      "descrizione": "I custodi della Ricomposizione arrivano per completarla.",
+      "png_presenti": [
+        "elska"
+      ],
+      "apertura_riserva": "Figure senza volto avanzano dal bianco. Non parlano: ricompongono. Dietro di loro, il mondo torna com'era.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "scelte": [
+        {
+          "id": "negozia",
+          "testo": "Negozio con la Ricomposizione",
+          "effetti": [
+            {
+              "flag": {
+                "accordo_sistema": true
+              }
+            },
+            {
+              "asse": {
+                "id": "stabilita",
+                "delta": 2
+              }
+            }
+          ],
+          "riserva": "La maschera bianca ti apre un canale. La Ricomposizione ascolta, e accetta dei confini.",
+          "richiede": {
+            "qualunque": [
+              {
+                "possiede": "ich_key_bannsith_mask"
+              },
+              {
+                "flag": "ich_alt_elska"
+              }
+            ]
+          },
+          "motivo_non_disponibile": "Serve la maschera dei Bannsith o l'aiuto di Elska."
+        },
+        {
+          "id": "inganna",
+          "testo": "La inganno: il settore sembrerà ricomposto",
+          "effetti": [
+            {
+              "flag": {
+                "protocollo_ingannato": true
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "stabilita",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "Il tessuto dei presagi mostra alla Ricomposizione ciò che vuole vedere.",
+          "richiede": {
+            "qualunque": [
+              {
+                "possiede": "ich_clue_probability_weave"
+              },
+              {
+                "flag": "ich_alt_tre_cancellazioni"
+              }
+            ]
+          },
+          "motivo_non_disponibile": "Serve il tessuto dei presagi, o aver visto come cancella."
+        },
+        {
+          "id": "interrompi",
+          "testo": "La interrompo, a qualunque costo",
+          "effetti": [
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": 2
+              }
+            },
+            {
+              "asse": {
+                "id": "stabilita",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "Il bianco si ferma. Qualcosa, da qualche parte, si rompe."
+        },
+        {
+          "id": "accetta_parziale",
+          "testo": "Accetto una ricomposizione parziale",
+          "effetti": [
+            {
+              "flag": {
+                "ripristino_parziale": true
+              }
+            },
+            {
+              "asse": {
+                "id": "stabilita",
+                "delta": 2
+              }
+            },
+            {
+              "asse": {
+                "id": "coscienza",
+                "delta": -2
+              }
+            }
+          ],
+          "riserva": "Una parte del settore torna com'era. Una parte di chi si era svegliato si riaddormenta."
+        }
+      ],
+      "incontro": {
+        "nemico": "custode_senza_volto",
+        "letale": true,
+        "fuga": {
+          "tratto": "Spirito",
+          "nc": 13,
+          "costo": [
+            {
+              "orologio": {
+                "id": "ricomposizione",
+                "delta": 2
+              }
+            }
+          ]
+        },
+        "vittoria": [
+          {
+            "asse": {
+              "id": "autonomia",
+              "delta": 1
+            }
+          }
+        ]
+      },
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "scelta_fatta": true
+              },
+              {
+                "incontro_concluso": true
+              }
+            ]
+          },
+          "verso": "H15",
+          "effetti": [
+            {
+              "snodo": "III_protocollo"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H15",
+      "titolo": "Scelta delle radici",
+      "luogo": "Hrafnvik",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Che cosa tenere di sé, quando si sa da dove si viene.",
+      "png_presenti": [
+        "halvek",
+        "ragn",
+        "mjol"
+      ],
+      "apertura_riserva": "Torni a Hrafnvik. Le case, i volti, i canti: tutto è come prima, e niente lo è. Devi scegliere che cosa tenere.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "scelte": [
+        {
+          "id": "tieni_legami",
+          "testo": "Tengo i miei legami, qualunque cosa siano",
+          "effetti": [
+            {
+              "asse": {
+                "id": "radici",
+                "delta": 2
+              }
+            }
+          ],
+          "riserva": "Chi ami resta chi ami. Il resto è un dettaglio."
+        },
+        {
+          "id": "tieni_ricordi",
+          "testo": "Tengo solo i ricordi che ho scelto io",
+          "effetti": [
+            {
+              "asse": {
+                "id": "radici",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Tieni ciò che hai vissuto davvero. Lasci andare ciò che ti è stato dato."
+        },
+        {
+          "id": "lascia_tutto",
+          "testo": "Lascio andare tutto",
+          "effetti": [
+            {
+              "asse": {
+                "id": "radici",
+                "delta": -2
+              }
+            },
+            {
+              "flag": {
+                "esodo_scelto": true
+              }
+            }
+          ],
+          "riserva": "Non hai più radici. Solo una strada."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "scelta_fatta": true
+          },
+          "verso": "H16",
+          "effetti": [
+            {
+              "snodo": "III_radici"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "H16",
+      "titolo": "Il filo senza padrone",
+      "luogo": "Radura del rito",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "La forma della libertà, e il suo costo.",
+      "png_presenti": [
+        "halvek",
+        "ragn",
+        "elska",
+        "eiran",
+        "soren",
+        "liva"
+      ],
+      "apertura_riserva": "Tutta Hrafnvik è nella radura. Il cielo è ancora strappato. Aspettano che qualcuno dica che cosa saranno.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "scelte": [
+        {
+          "id": "dichiara",
+          "testo": "Dichiaro il settore libero: ognuno sceglierà se sapere",
+          "effetti": [
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "coscienza",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Nessuno sarà costretto a sapere; nessuno sarà costretto a dimenticare."
+        },
+        {
+          "id": "nascosti",
+          "testo": "Viviamo nascosti, in pace",
+          "effetti": [
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": 1
+              }
+            },
+            {
+              "flag": {
+                "vita_nascosta": true
+              }
+            }
+          ],
+          "riserva": "Hrafnvik tornerà a sembrare quella di sempre. Solo voi saprete."
+        },
+        {
+          "id": "esci",
+          "testo": "Esco dal settore",
+          "effetti": [
+            {
+              "flag": {
+                "esodo_scelto": true
+              }
+            }
+          ],
+          "riserva": "La strada di Soren ti porta fuori. Dietro di te, Hrafnvik continua.",
+          "richiede": {
+            "flag": "via_esterna_aperta"
+          },
+          "motivo_non_disponibile": "Serve una via verso l'esterno."
+        },
+        {
+          "id": "riscrivi",
+          "testo": "Riscrivo il settore come credo giusto",
+          "effetti": [
+            {
+              "flag": {
+                "riscrittura": true
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": -2
+              }
+            },
+            {
+              "asse": {
+                "id": "stabilita",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Il bosco obbedisce. Hrafnvik diventa ciò che hai deciso.",
+          "richiede": {
+            "flag": "kyn_controllato"
+          },
+          "motivo_non_disponibile": "Solo chi controlla il Kyn può riscrivere il settore."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "scelta_fatta": true
+          },
+          "verso": "H17",
+          "effetti": [
+            {
+              "flag": {
+                "act_3_climax_reached": true
+              }
+            },
+            {
+              "snodo": "III_climax"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare",
+      "incontro": {
+        "nemico": "villain_elska",
+        "villain": {
+          "candidati": [
+            "villain_elska"
+          ],
+          "scelta": "piu_ostile",
+          "scala": {
+            "livello": "protagonista",
+            "hpRispettoAlPg": {
+              "esplorativa": 0.7,
+              "bilanciata": 0.9,
+              "permadeath": 1
+            },
+            "dannoRispettoAlPg": 0.6,
+            "dannoMassimoMolt": 3,
+            "fonte": "decisione dell'autore (2026-10-02): sfida paragonabile al giocatore; fattori proposti, da approvare"
+          }
+        },
+        "finale": true,
+        "letale": true,
+        "fuga": {
+          "tratto": "Spirito",
+          "nc": 15,
+          "costo": [
+            {
+              "flag": {
+                "duello_finale_abbandonato": true
+              }
+            }
+          ]
+        },
+        "vittoria": [
+          {
+            "flag": {
+              "villain_affrontato": true
+            }
+          }
+        ],
+        "sconfitta": {
+          "tipo": "fail_forward",
+          "testo": "Il bianco ti piega le ginocchia. Ti svegli al margine della radura, con mani sconosciute sulle ferite e il rito ancora sospeso nell'aria."
+        },
+        "fonte": "decisione dell'autore (2026-10-02): il villain partecipa allo scontro finale"
+      }
+    },
+    {
+      "id": "H17",
+      "titolo": "Epilogo",
+      "luogo": "Hrafnvik",
+      "calma": false,
+      "fuori_citta": false,
+      "descrizione": "La campagna si chiude qui: il motore ha già deciso l'esito.",
+      "png_presenti": [
+        "ragn"
+      ],
+      "apertura_riserva": "Il tempo delle scelte è finito.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "finale": true,
+      "uscite": [],
+      "campaign_id": "ich-filo-senza-padrone",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    }
+  ],
+  "avanzamento": {
+    "nota": "Progressione a tacche (vedi progressione)."
+  },
+  "progressione": {
+    "stato": "proposta da approvare",
+    "nota": "Tacche per azioni registrate (mai per attesa o ripetizione): costo del livello L = ceil(AP del livello L in LEVEL_TABLE / divisore_costo). Il livello si guadagna solo chiudendo una scena (mai per una singola risposta), al massimo uno per volta e mai oltre la fascia dell'atto; si ricevono esattamente gli AP della tabella.",
+    "divisore_costo": 4,
+    "livello_a_fine_scena": true,
+    "fasce": {
+      "1": [
+        1,
+        8
+      ],
+      "2": [
+        9,
+        20
+      ],
+      "3": [
+        21,
+        30
+      ]
+    },
+    "premi": {
+      "obiettivo": {
+        "successo": 2,
+        "parziale": 1,
+        "fallimento": 1
+      },
+      "snodo": 1,
+      "verita": 1,
+      "scena_nuova": 1,
+      "legame": 1,
+      "soluzione_creativa": 1
+    },
+    "nota_ritmo": "Con divisore 4 la trama principale porta circa un livello ogni 2-3 scene (Lv 6-7 a fine campagna, misurato sulle ricette dei finali). I livelli successivi sono pensati per esplorazione, incarichi e archi personali, da scrivere."
+  },
+  "profili_difficolta": {
+    "esplorativa": {
+      "candidati": 3,
+      "risorse_budget_delta": 1,
+      "oggetti_chiave": "custode",
+      "indizi_per_verita": 3,
+      "perdita_ricordi": "temporanea e segnalata",
+      "morte": "recupero coerente"
+    },
+    "bilanciata": {
+      "candidati": 2,
+      "risorse_budget_delta": 0,
+      "oggetti_chiave": "perdita",
+      "indizi_per_verita": 2,
+      "perdita_ricordi": "persistente finché recuperata",
+      "morte": "recupero coerente"
+    },
+    "permadeath": {
+      "candidati": 1,
+      "risorse_budget_delta": -1,
+      "oggetti_chiave": "perdita",
+      "indizi_per_verita": 1,
+      "perdita_ricordi": "può chiudere relazioni o percorsi",
+      "morte": "definitiva"
+    },
+    "nota": "Ich §11. Oggetti chiave: in Esplorativa cambiano custode; in Bilanciata e Permadeath si possono perdere, con via alternativa (più rischiosa in Permadeath). Valori da approvare."
+  },
+  "regole_magia": {
+    "stato": "nessuna regola speciale: le Abilità costano MP secondo il regolamento"
+  },
+  "lessico_riservato": [
+    {
+      "fino_a": "ich_truth_therapy",
+      "parole": [
+        "bot\\b",
+        "hacker",
+        "programm",
+        "simulaz",
+        "virtual",
+        "fruitor",
+        "reverie",
+        "codice",
+        "terapeut",
+        "terapia",
+        "software",
+        "algoritm",
+        "digital",
+        "server"
+      ]
+    }
+  ],
+  "testi": {
+    "sconfitta": "Qualcuno di Hrafnvik ti riporta al caldo. Ti svegli con le ferite bendate: resti ferito fino al prossimo riposo, e i giorni passano."
+  },
+  "vincoli_narrativi": [
+    "Prima della rivelazione descrivi tutto con il linguaggio del mondo: presagi, spettri, bosco, sogni. Mai termini tecnici.",
+    "Un Kyn di livello 1 non controlla liberamente il settore.",
+    "I Bannsith vedono residui, non genericamente tutti i morti.",
+    "Coscienza e controllo non sono universali.",
+    "Non rivelare le verità riservate finché il motore non le segna come scoperte."
+  ],
+  "loot": {
+    "versione": "loot-ich-0.1-proposta",
+    "avviso": "Catalogo proposto (Ich §10): nessuna arma generata finché il catalogo di equipaggiamento di Ich non è approvato.",
+    "componenti": {
+      "basi": {
+        "ich_loot_silfr_nat": {
+          "nome": "Silfr-nát",
+          "categoria": "valuta",
+          "descrizione": "Monete d'argento delle Stad."
+        },
+        "ich_loot_jarn_nat": {
+          "nome": "Járn-nát",
+          "categoria": "valuta",
+          "descrizione": "Monete di ferro per piccoli acquisti e pedaggi."
+        },
+        "ich_loot_alchemy_salt": {
+          "nome": "Sale alchemico",
+          "categoria": "materiale",
+          "descrizione": "Componente per oggetti approvati; da solo non fa nulla."
+        },
+        "ich_loot_runic_ink": {
+          "nome": "Inchiostro runico",
+          "categoria": "strumento",
+          "descrizione": "Permette una prova di trascrizione o decifrazione.",
+          "tag": [
+            "simboli",
+            "mappa"
+          ]
+        },
+        "ich_loot_kyn_bark": {
+          "nome": "Corteccia del Kyn",
+          "categoria": "materiale",
+          "descrizione": "Buona per riparare o come focus. Non dà potere sul bosco.",
+          "tag": [
+            "bosco"
+          ]
+        },
+        "ich_loot_ghost_shard": {
+          "nome": "Scheggia di spettro",
+          "categoria": "consumabile",
+          "descrizione": "Libera un ricordo. Accumularle non è saggio.",
+          "effetto": {
+            "effetti": [
+              {
+                "asse": {
+                  "id": "coscienza",
+                  "delta": 1
+                }
+              },
+              {
+                "flag": {
+                  "schegge_usate": 1
+                }
+              }
+            ]
+          },
+          "tag": [
+            "spettri",
+            "memoria"
+          ]
+        },
+        "ich_loot_voluspa_knot": {
+          "nome": "Nodo dei presagi",
+          "categoria": "indizio",
+          "descrizione": "Conserva un presagio già ricevuto, senza generarne di nuovi.",
+          "tag": [
+            "presagi"
+          ]
+        },
+        "ich_loot_bannsith_thread": {
+          "nome": "Filo dei Bannsith",
+          "categoria": "strumento",
+          "descrizione": "Rende visibile uno spettro per una scena.",
+          "tag": [
+            "spettri",
+            "rito"
+          ]
+        },
+        "ich_loot_skera_plate": {
+          "nome": "Placca Skéra",
+          "categoria": "materiale",
+          "descrizione": "Prova di un'origine strana; utile in una riparazione.",
+          "tag": [
+            "simboli"
+          ]
+        },
+        "ich_loot_travel_ration": {
+          "nome": "Razione da viaggio",
+          "categoria": "consumabile",
+          "descrizione": "Cibo per il viaggio.",
+          "effetto": {
+            "hp": 4
+          }
+        },
+        "ich_arma_corta_bassa": {
+          "nome": "Lama corta",
+          "categoria": "arma",
+          "taglia": "corte",
+          "qualita": "bassa"
+        },
+        "ich_arma_media_bassa": {
+          "nome": "Arma media",
+          "categoria": "arma",
+          "taglia": "medie",
+          "qualita": "bassa"
+        },
+        "ich_protezione_leggera_bassa": {
+          "nome": "Protezione leggera",
+          "categoria": "armatura",
+          "taglia": "leggere",
+          "qualita": "bassa"
+        },
+        "ich_scudo_piccolo_basso": {
+          "nome": "Scudo rotondo",
+          "categoria": "scudo",
+          "taglia": "piccoli",
+          "qualita": "bassa"
+        }
+      },
+      "materiali": {},
+      "proprieta": {}
+    },
+    "modelli": {
+      "m_ich_loot_silfr_nat": {
+        "famiglia": "ordinario",
+        "basi": [
+          "ich_loot_silfr_nat"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Monete d'argento delle Stad.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_ich_loot_jarn_nat": {
+        "famiglia": "ordinario",
+        "basi": [
+          "ich_loot_jarn_nat"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Monete di ferro per piccoli acquisti e pedaggi.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_ich_loot_alchemy_salt": {
+        "famiglia": "ordinario",
+        "basi": [
+          "ich_loot_alchemy_salt"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Componente per oggetti approvati; da solo non fa nulla.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_ich_loot_runic_ink": {
+        "famiglia": "ordinario",
+        "basi": [
+          "ich_loot_runic_ink"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Permette una prova di trascrizione o decifrazione.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_ich_loot_kyn_bark": {
+        "famiglia": "ordinario",
+        "basi": [
+          "ich_loot_kyn_bark"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Buona per riparare o come focus. Non dà potere sul bosco.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_ich_loot_ghost_shard": {
+        "famiglia": "ordinario",
+        "basi": [
+          "ich_loot_ghost_shard"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Libera un ricordo. Accumularle non è saggio.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_ich_loot_voluspa_knot": {
+        "famiglia": "ordinario",
+        "basi": [
+          "ich_loot_voluspa_knot"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Conserva un presagio già ricevuto, senza generarne di nuovi.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_ich_loot_bannsith_thread": {
+        "famiglia": "ordinario",
+        "basi": [
+          "ich_loot_bannsith_thread"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Rende visibile uno spettro per una scena.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_ich_loot_skera_plate": {
+        "famiglia": "ordinario",
+        "basi": [
+          "ich_loot_skera_plate"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Prova di un'origine strana; utile in una riparazione.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_ich_loot_travel_ration": {
+        "famiglia": "ordinario",
+        "basi": [
+          "ich_loot_travel_ration"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Cibo per il viaggio.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "ich-filo-senza-padrone",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Ich_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      }
+    },
+    "pool": {
+      "kynhjarta_ordinario": {
+        "modelli": [
+          "m_ich_loot_silfr_nat",
+          "m_ich_loot_jarn_nat",
+          "m_ich_loot_alchemy_salt",
+          "m_ich_loot_runic_ink",
+          "m_ich_loot_kyn_bark",
+          "m_ich_loot_ghost_shard",
+          "m_ich_loot_voluspa_knot",
+          "m_ich_loot_bannsith_thread",
+          "m_ich_loot_skera_plate",
+          "m_ich_loot_travel_ration"
+        ],
+        "quantita": {
+          "esplorativa": 3,
+          "bilanciata": 2,
+          "permadeath": 1
+        }
+      }
+    }
+  }
+}

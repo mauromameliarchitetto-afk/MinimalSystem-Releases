@@ -1,0 +1,5678 @@
+{
+  "formato": "rm-solo-campagna/1",
+  "id": "eidos-casa-delle-voci",
+  "campaign_id": "eidos-casa-delle-voci",
+  "storia": "eidos",
+  "ambientazione": "Eidos",
+  "versione": "0.4.0",
+  "stato_editoriale": "bozza",
+  "content_status": "proposed",
+  "canonico": false,
+  "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare",
+  "titolo": "Alla ricerca dell'Aletheia",
+  "avviso": "PROPOSTA EDITORIALE (V4): titolo, Soglia, PNG, varianti del finale, cariche delle gemme e profili di difficoltà sono da approvare. Non pubblicare come canone.",
+  "contratto": {
+    "premessa_pubblica": "Eidos, circa cento anni dopo l'esilio di Aima. Soglia è un piccolo insediamento nascosto nelle rovine di una stazione di filtraggio, dove discendenti di disertori, profughi e mercanti vivono senza simboli né provenienze. I filtri stanno cedendo.",
+    "verita_riservate": [
+      "truth_founders",
+      "truth_filters",
+      "truth_silent_line",
+      "truth_antarsi",
+      "truth_eporian",
+      "truth_traitor",
+      "truth_archive_copy"
+    ],
+    "scopo": "Impedire che Soglia venga cancellata entro la scadenza di Linea Muta, decidere il destino della Casa delle Voci e il rapporto futuro dell'insediamento con le quattro popolazioni.",
+    "fatti_immutabili": [
+      "Sono passati circa cento anni dall'esilio di Aima; l'aria esterna è un gas nocivo rossastro.",
+      "Le quattro popolazioni sono Chorisfos, Epizi, Eporiani e Antarsi; Lechta è la città degli Eporiani.",
+      "I soldati Chorisfos canalizzano la magia attraverso gemme contate; le arti sono loro vietate.",
+      "Per gli Epizi la magia è antiscientifica: chi la mostra rischia l'emarginazione.",
+      "I Tèras sono mostri comparsi dopo la sconfitta del Dio.",
+      "Il protagonista non sostituisce i protagonisti della storia principale e non salva Eidos: la sua vicenda è locale."
+    ],
+    "snodi_obbligatori": [
+      "I_ultimatum",
+      "II_copia",
+      "III_climax"
+    ],
+    "liberta": [
+      "Allearsi con qualunque fazione e cambiare alleanza",
+      "Salvare, disperdere, consegnare o distruggere la Casa",
+      "Diventare eroe, antieroe o villain"
+    ],
+    "conseguenze_variabili": [
+      "Sopravvivenza degli abitanti",
+      "Autonomia di Soglia",
+      "Memoria preservata",
+      "Fiducia nel protagonista"
+    ],
+    "ending_contract": {
+      "closing_question": "Quando la neutralità diventa impossibile, quale idea deve guidare Soglia e che cosa merita di essere ricordato della sua origine?",
+      "resolution_scope": "insediamento_e_rotta_locale",
+      "required_resolution": [
+        "status_insediamento",
+        "destino_archivio",
+        "minaccia_immediata"
+      ],
+      "entry_conditions": [
+        "act_3_climax_reached"
+      ],
+      "outcome_axes": [
+        "survival",
+        "autonomy",
+        "memory",
+        "trust"
+      ],
+      "variants": [
+        {
+          "id": "ending_personal_rule",
+          "titolo": "Il nuovo padrone di Soglia",
+          "tipo": "esito",
+          "priorita": 1,
+          "condizione": {
+            "tutti": [
+              {
+                "flag": "dominio"
+              },
+              {
+                "qualunque": [
+                  {
+                    "flag": "controllo_casa"
+                  },
+                  {
+                    "flag": "controllo_casa_finale"
+                  }
+                ]
+              },
+              {
+                "asse_al_piu": {
+                  "asse": "trust",
+                  "valore": 0
+                }
+              }
+            ]
+          },
+          "riserva": "Soglia sopravvive sotto una nuova autorità: la tua. La Casa e la rotta rispondono a te. Qualcuno resiste in silenzio, e il costo umano cresce ogni giorno.",
+          "conseguenza_personale": "Hai ottenuto ciò che volevi; nessuno a Soglia ti chiama più per nome.",
+          "campaign_id": "eidos-casa-delle-voci",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "ending_diaspora",
+          "titolo": "Soglia nelle persone",
+          "tipo": "esito",
+          "priorita": 2,
+          "condizione": {
+            "tutti": [
+              {
+                "flag": "evacuazione_completata"
+              },
+              {
+                "qualunque": [
+                  {
+                    "flag": "sito_abbandonato"
+                  },
+                  {
+                    "flag": "soglia_dispersa"
+                  }
+                ]
+              }
+            ]
+          },
+          "riserva": "Soglia cessa di esistere come luogo. La stazione resta vuota; le persone no. Dove si fermano, portano con sé i nomi e le abitudini di chi le ha accolte.",
+          "conseguenza_personale": "Parti con loro. Quale comunità resterà dipende da ciò che avete salvato e da quanto vi fidate ancora.",
+          "campaign_id": "eidos-casa-delle-voci",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "ending_occupied_ruin",
+          "titolo": "La rovina occupata",
+          "tipo": "esito",
+          "priorita": 3,
+          "condizione": {
+            "tutti": [
+              {
+                "asse_al_piu": {
+                  "asse": "survival",
+                  "valore": 0
+                }
+              },
+              {
+                "non": {
+                  "flag": "evacuazione_completata"
+                }
+              }
+            ]
+          },
+          "riserva": "Linea Muta conquista una stazione svuotata e ferita. I sopravvissuti sono pochi e dispersi. Tu sei vivo, e devi rispondere delle scelte fatte.",
+          "conseguenza_personale": "Le bandiere cambiano; il peso di ciò che non hai salvato resta tuo.",
+          "campaign_id": "eidos-casa-delle-voci",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "ending_free_threshold",
+          "titolo": "Soglia libera",
+          "tipo": "esito",
+          "priorita": 4,
+          "condizione": {
+            "tutti": [
+              {
+                "asse_almeno": {
+                  "asse": "survival",
+                  "valore": 1
+                }
+              },
+              {
+                "asse_almeno": {
+                  "asse": "autonomy",
+                  "valore": 2
+                }
+              },
+              {
+                "asse_almeno": {
+                  "asse": "trust",
+                  "valore": 1
+                }
+              }
+            ]
+          },
+          "riserva": "Soglia resta indipendente e apre una rotta controllata. Nessuna fazione la possiede. Quello che la Casa ricorda diventa il suo nuovo volto pubblico.",
+          "conseguenza_personale": "Soglia ti offre un posto fra chi decide. Puoi restare, o sapere che c'è un luogo dove tornare.",
+          "campaign_id": "eidos-casa-delle-voci",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "ending_protected_enclave",
+          "titolo": "L'enclave protetta",
+          "tipo": "esito",
+          "priorita": 5,
+          "condizione": {
+            "tutti": [
+              {
+                "asse_almeno": {
+                  "asse": "survival",
+                  "valore": 1
+                }
+              },
+              {
+                "asse_al_piu": {
+                  "asse": "autonomy",
+                  "valore": 0
+                }
+              },
+              {
+                "flag": "accordo_valido"
+              }
+            ]
+          },
+          "riserva": "Gli abitanti sopravvivono sotto protezione. Diritti, censura e risorse dipendono dal contratto firmato: la sicurezza c'è, la libertà si negozia ogni giorno.",
+          "conseguenza_personale": "Hai garantito la sopravvivenza di Soglia; ora devi convivere con le condizioni che hai accettato.",
+          "campaign_id": "eidos-casa-delle-voci",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "ending_silence",
+          "titolo": "Il silenzio",
+          "tipo": "esito",
+          "priorita": 6,
+          "condizione": {
+            "qualunque": [
+              {
+                "flag": "casa_distrutta"
+              },
+              {
+                "asse_al_piu": {
+                  "asse": "memory",
+                  "valore": -2
+                }
+              }
+            ]
+          },
+          "riserva": "Le persone di Soglia possono sopravvivere, ma l'origine comune è perduta o cancellata di proposito. Nessuno saprà più chi fondò questo posto.",
+          "conseguenza_personale": "Ricordi tu, e pochi altri. Quanto a lungo, dipende da te.",
+          "campaign_id": "eidos-casa-delle-voci",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "ending_fragile_truce",
+          "titolo": "La tregua fragile",
+          "tipo": "esito",
+          "priorita": 99,
+          "condizione": null,
+          "riserva": "Linea Muta si ritira senza vincere. Soglia resta in piedi, ma nessuno ha deciso che cosa sarà: la prossima crisi troverà le stesse domande senza risposta.",
+          "conseguenza_personale": "Hai rimandato la scelta. Soglia lo sa, e aspetta che torni a farla.",
+          "ripiego": true,
+          "campaign_id": "eidos-casa-delle-voci",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Variante di ripiego proposta per garantire un esito a ogni combinazione di stato: NON presente nella scheda, da approvare."
+        },
+        {
+          "id": "ending_open_archive",
+          "titolo": "L'archivio aperto",
+          "tipo": "modificatore",
+          "priorita": 10,
+          "condizione": {
+            "tutti": [
+              {
+                "asse_almeno": {
+                  "asse": "memory",
+                  "valore": 2
+                }
+              },
+              {
+                "flag": "trasmissione_riuscita"
+              }
+            ]
+          },
+          "riserva": "Le testimonianze della Casa vengono diffuse. Soglia perde il controllo esclusivo della propria storia, e i racconti delle fazioni cambiano, senza che la guerra si fermi.",
+          "conseguenza_personale": "Hai reso pubblica la memoria di Soglia: non potrai più decidere chi la ascolta.",
+          "combinabile_con": [
+            "ending_free_threshold",
+            "ending_protected_enclave",
+            "ending_diaspora",
+            "ending_fragile_truce"
+          ],
+          "campaign_id": "eidos-casa-delle-voci",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+        }
+      ],
+      "terminal_failures": [
+        "player_permadeath",
+        "raven_execution"
+      ],
+      "priorita_nota": "Morte definitiva e Raven; personal_rule; diaspora; open_archive come modificatore; poi stato politico e sopravvivenza (scheda §7)."
+    }
+  },
+  "atti": [
+    {
+      "id": "I",
+      "numero": 1,
+      "titolo": "Nessuna bandiera",
+      "funzione": "Legare il personaggio a Soglia e mostrare che il guasto coinvolge più fazioni.",
+      "scene": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05"
+      ],
+      "snodi": [
+        {
+          "id": "I_ingresso",
+          "testo": "Trovare un motivo personale per restare a Soglia"
+        },
+        {
+          "id": "I_convoglio",
+          "testo": "Esaminare il convoglio vuoto"
+        },
+        {
+          "id": "I_casa",
+          "testo": "Entrare nella Casa delle Voci"
+        },
+        {
+          "id": "I_offerte",
+          "testo": "Ascoltare le offerte delle fazioni"
+        },
+        {
+          "id": "I_ultimatum",
+          "testo": "Scegliere una prima collaborazione davanti all'ultimatum"
+        }
+      ],
+      "pool": [
+        "soglia_ordinario"
+      ]
+    },
+    {
+      "id": "II",
+      "numero": 2,
+      "titolo": "Il prezzo della memoria",
+      "funzione": "Ricostruire le verità e scegliere che cosa proteggere.",
+      "scene": [
+        "E06",
+        "E07",
+        "E08",
+        "E09",
+        "E10",
+        "E11"
+      ],
+      "snodi": [
+        {
+          "id": "II_risorse",
+          "testo": "Decidere dove mettere le poche risorse"
+        },
+        {
+          "id": "II_ordine",
+          "testo": "Cercare le due metà dell'ordine"
+        },
+        {
+          "id": "II_lechta",
+          "testo": "Affrontare il contratto di Lechta"
+        },
+        {
+          "id": "II_fuoco",
+          "testo": "Affrontare il piano degli Antarsi"
+        },
+        {
+          "id": "II_mirea",
+          "testo": "Confrontarsi con Mirea"
+        },
+        {
+          "id": "II_copia",
+          "testo": "Scegliere che cosa salvare della Casa"
+        }
+      ],
+      "pool": [
+        "soglia_ordinario"
+      ]
+    },
+    {
+      "id": "III",
+      "numero": 3,
+      "titolo": "La voce che rimane",
+      "funzione": "Risolvere Linea Muta, il destino della Casa e lo status di Soglia.",
+      "scene": [
+        "E12",
+        "E13",
+        "E14",
+        "E15",
+        "E16"
+      ],
+      "snodi": [
+        {
+          "id": "III_assedio",
+          "testo": "Affrontare l'arrivo di Linea Muta"
+        },
+        {
+          "id": "III_filtri",
+          "testo": "Superare la crisi dei filtri"
+        },
+        {
+          "id": "III_casa",
+          "testo": "Decidere della Casa"
+        },
+        {
+          "id": "III_climax",
+          "testo": "Dare un nome a Soglia"
+        }
+      ],
+      "pool": [
+        "soglia_ordinario"
+      ]
+    }
+  ],
+  "png": {
+    "ada": {
+      "nome": "Ada Soren",
+      "ruolo": "Custode della Casa delle Voci",
+      "atteggiamento": 1,
+      "motivazione": "Far conoscere a Soglia le proprie origini senza spezzarne la convivenza",
+      "sa": [
+        "truth_founders",
+        "truth_archive_copy"
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "mirea": {
+      "nome": "Mirea Krun",
+      "ruolo": "Responsabile dei magazzini di Soglia",
+      "atteggiamento": 0,
+      "motivazione": "Costringere Soglia a scegliere prima di essere scoperta impreparata",
+      "sa": [
+        "truth_filters",
+        "truth_traitor"
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "cassian": {
+      "nome": "Cassian Vey",
+      "ruolo": "Ufficiale epizio a capo della squadra di recupero",
+      "atteggiamento": -1,
+      "motivazione": "Recuperare le cartelle della Casa per non ripetere errori scientifici",
+      "sa": [],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "reik": {
+      "nome": "Reik Damos",
+      "ruolo": "Caporale Chorisfos con l'ordine di sigillare il sito",
+      "atteggiamento": -1,
+      "motivazione": "Eseguire l'ordine, finché una voce registrata non gli ricorda da dove viene",
+      "sa": [],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "yara": {
+      "nome": "Yara Tèren",
+      "ruolo": "Esploratrice Antarsi",
+      "atteggiamento": 0,
+      "motivazione": "Salvare le persone di Soglia e impedire che i vincitori si approprino dei morti",
+      "sa": [
+        "truth_antarsi"
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "tal": {
+      "nome": "Tal Emek",
+      "ruolo": "Intermediario eporiano di Lechta",
+      "atteggiamento": 0,
+      "motivazione": "Portare a Lechta rotta e materiali in cambio di una protezione reale",
+      "sa": [
+        "truth_eporian",
+        "truth_filters"
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    }
+  },
+  "fatti": {
+    "eidos_fact_filtri_cedono": {
+      "testo": "I filtri di Soglia stanno cedendo: le sostituzioni risultano registrate ma non eseguite.",
+      "segreto": false,
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "eidos_fact_ricambi_rimossi": {
+      "testo": "I ricambi del convoglio scomparso sono stati rimossi prima dell'assalto, non durante.",
+      "segreto": false,
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "eidos_fact_casa": {
+      "testo": "Sotto la stazione di filtraggio c'è una camera sigillata di registrazioni, disegni e testimonianze: la Casa delle Voci.",
+      "segreto": false,
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "eidos_fact_linea_muta": {
+      "testo": "Un'operazione militare chiamata Linea Muta ha fissato una scadenza per Soglia.",
+      "segreto": false,
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "eidos_fact_offerte": {
+      "testo": "Epizi, Chorisfos ed Eporiani offrono protezione a Soglia; gli Antarsi offrono un'evacuazione.",
+      "segreto": false,
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "eidos_fact_test_daren": {
+      "testo": "Nella Casa c'è la registrazione di reclute Chorisfos cancellate dai registri: una delle voci è quella del tuo compagno.",
+      "segreto": false,
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "eidos_fact_test_neris": {
+      "testo": "Nella Casa ci sono cartelle di compatibilità epizie tenute nascoste: fra i soggetti c'è chi porta una corazza come la tua.",
+      "segreto": false,
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "eidos_fact_test_sava": {
+      "testo": "Nella Casa sono custoditi i nomi e il percorso dei superstiti del tuo villaggio confluiti negli Antarsi.",
+      "segreto": false,
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "eidos_fact_test_ilyan": {
+      "testo": "Nella Casa c'è il registro dei mercanti che aiutarono a fondare Soglia: c'è anche la firma della tua famiglia.",
+      "segreto": false,
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "eidos_fact_test_tessa": {
+      "testo": "Nella Casa c'è lo schema dei filtri modificato dai fondatori: le sostituzioni fittizie non ne tengono conto.",
+      "segreto": false,
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "eidos_fact_magia_vista": {
+      "testo": "Il protagonista ha usato una vera Abilità magica davanti a testimoni.",
+      "segreto": true,
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "eidos_fact_magia_senza_gemme": {
+      "testo": "Il protagonista ha manifestato la magia senza gemme davanti a testimoni.",
+      "segreto": true,
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "truth_founders": {
+      "testo": "Soglia fu fondata da disertori e civili di tutte e quattro le popolazioni.",
+      "segreto": true,
+      "parole": [
+        "disertori[^.]{0,60}quattro popolazioni"
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2
+      ],
+      "level_band": [
+        1,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "truth_filters": {
+      "testo": "I filtri non sono guasti: alcuni ricambi sono stati deviati per accelerare l'evacuazione.",
+      "segreto": true,
+      "parole": [
+        "ricambi[^.]{0,40}deviat"
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2
+      ],
+      "level_band": [
+        1,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "truth_silent_line": {
+      "testo": "Linea Muta è un'operazione parallela: Chorisfos ed Epizi vogliono prendere il sito prima che lo trovi l'altro.",
+      "segreto": true,
+      "parole": [
+        "operazione parallela"
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "truth_antarsi": {
+      "testo": "La cellula Antarsi vuole salvare gli abitanti ma bruciare la Casa, perché nessuno se ne appropri.",
+      "segreto": true,
+      "parole": [
+        "salvare gli abitanti ma bruciare"
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "truth_eporian": {
+      "testo": "La protezione eporiana è reale, ma farebbe di Soglia un avamposto commerciale dipendente da Lechta.",
+      "segreto": true,
+      "parole": [
+        "avamposto commerciale dipendente"
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "truth_traitor": {
+      "testo": "Mirea Krun ha deviato i ricambi per costringere Soglia a scegliere un protettore, non per ucciderla.",
+      "segreto": true,
+      "parole": [
+        "Mirea[^.]{0,40}(deviato|sottratto) i ricambi"
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "truth_archive_copy": {
+      "testo": "La Casa si può copiare solo in parte prima della scadenza: scegliere che cosa salvare è inevitabile.",
+      "segreto": true,
+      "parole": [
+        "copiare solo in parte"
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    }
+  },
+  "borsa": {
+    "versione": "borsa-eidos-casa-0.1-proposta",
+    "oggetti": {
+      "key_voice_prism": {
+        "nome": "Prisma delle voci",
+        "tipo": "oggetto_chiave",
+        "unico": true,
+        "descrizione": "Un prisma opaco che restituisce voci sovrapposte quando lo si scalda nel palmo.",
+        "proprieta": [
+          "casa",
+          "memoria",
+          "indice"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "indispensabile": true,
+        "via_alternativa": {
+          "testo": "Ada può ricostruire l'indice della Casa da tre frammenti.",
+          "flag": "eidos_alt_indice_ada"
+        },
+        "funzione_riservata": "Indice della Casa; non contiene da solo l'archivio.",
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "clue_filter_stamp": {
+        "nome": "Marchio di sostituzione",
+        "tipo": "indizio",
+        "unico": true,
+        "descrizione": "Un marchio di sostituzione impresso sopra un filtro esausto.",
+        "proprieta": [
+          "filtri",
+          "prova",
+          "registro"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Confronto fra i registri del magazzino e il lotto del convoglio.",
+          "flag": "eidos_alt_registri"
+        },
+        "funzione_riservata": "Collega il magazzino alla deviazione dei ricambi.",
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2
+        ],
+        "level_band": [
+          1,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "clue_split_order_epizi": {
+        "nome": "Ordine cifrato epizio",
+        "tipo": "indizio",
+        "unico": true,
+        "descrizione": "Un ordine cifrato su carta epizia, con metà delle coordinate.",
+        "proprieta": [
+          "ordine",
+          "prova",
+          "epizi"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Cassian può testimoniarne il contenuto se si fida abbastanza.",
+          "flag": "eidos_alt_cassian"
+        },
+        "funzione_riservata": "Metà epizia di Linea Muta.",
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": 2,
+        "level_band": [
+          9,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "clue_split_order_chorisfos": {
+        "nome": "Trasmissione incompleta",
+        "tipo": "indizio",
+        "unico": true,
+        "descrizione": "Una trasmissione radio Chorisfos registrata a metà.",
+        "proprieta": [
+          "ordine",
+          "prova",
+          "chorisfos"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Reik può ripeterne il contenuto se diserta.",
+          "flag": "eidos_alt_reik"
+        },
+        "funzione_riservata": "Metà Chorisfos di Linea Muta.",
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": 2,
+        "level_band": [
+          9,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "key_eporian_clause": {
+        "nome": "Sigillo di Lechta",
+        "tipo": "oggetto_chiave",
+        "unico": true,
+        "descrizione": "Un sigillo commerciale a doppio strato: sotto il primo c'è un secondo testo.",
+        "proprieta": [
+          "trattativa",
+          "lechta",
+          "prova"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Tal può rinegoziare la clausola davanti a prove e reputazione.",
+          "flag": "eidos_alt_tal"
+        },
+        "funzione_riservata": "Contiene la clausola di dipendenza.",
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": 2,
+        "level_band": [
+          9,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "key_archive_seed": {
+        "nome": "Seme d'archivio",
+        "tipo": "oggetto_chiave",
+        "unico": true,
+        "descrizione": "Un supporto di registrazione capace di conservare una parte della Casa.",
+        "proprieta": [
+          "casa",
+          "memoria",
+          "trasmissione"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "indispensabile": true,
+        "via_alternativa": {
+          "testo": "Più supporti parziali, raccolti con missioni e risorse dedicate.",
+          "flag": "eidos_alt_supporti"
+        },
+        "funzione_riservata": "Registra la selezione finale, una sola volta.",
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          2,
+          3
+        ],
+        "level_band": [
+          9,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "clue_founders_oath": {
+        "nome": "Giuramento dei fondatori",
+        "tipo": "indizio",
+        "unico": true,
+        "descrizione": "Quattro strisce di stoffa scritte con grafie differenti.",
+        "proprieta": [
+          "casa",
+          "prova",
+          "memoria"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Tre testimonianze orali: una prova meno credibile.",
+          "flag": "eidos_alt_testimonianze"
+        },
+        "funzione_riservata": "Prova dell'origine mista di Soglia.",
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2
+        ],
+        "level_band": [
+          1,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "key_escape_chart": {
+        "nome": "Rotta dei condotti",
+        "tipo": "oggetto_chiave",
+        "unico": true,
+        "descrizione": "Una rotta tracciata attraverso i condotti fino alla costa.",
+        "proprieta": [
+          "percorso",
+          "fuga"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Yara conosce una via più rischiosa.",
+          "flag": "rotta_yara"
+        },
+        "funzione_riservata": "Permette la diaspora.",
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          2,
+          3
+        ],
+        "level_band": [
+          9,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "kit_filtri": {
+        "nome": "Kit per filtri",
+        "tipo": "strumento",
+        "unico": true,
+        "descrizione": "Guarnizioni, maglie filtranti e un tester a lancetta.",
+        "proprieta": [
+          "riparazione",
+          "filtri"
+        ],
+        "meccanica": "Garanzia del kit dell'Atto I (profili di difficoltà). Se pertinente, fino a +2 alla prova.",
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": 1,
+        "level_band": [
+          1,
+          8
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "eidos_bende_emostatiche": {
+        "nome": "Bende emostatiche",
+        "tipo": "consumabile",
+        "descrizione": "Bende della dotazione di squadra: fermano un'emorragia e tengono insieme una ferita fino all'avamposto.",
+        "proprieta": [
+          "cura",
+          "medicazione"
+        ],
+        "effetto": {
+          "hp": 8
+        },
+        "meccanica": "Recupera 8 HP; si usa anche in combattimento come azione del turno.",
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Dotazione iniziale di Lv 1 (richiesta dell'autore, 2026-10-01)"
+      },
+      "eidos_razione_da_campo": {
+        "nome": "Razione da campo",
+        "tipo": "consumabile",
+        "descrizione": "Pane compresso e grasso: poco sapore, abbastanza forza per un'altra marcia.",
+        "proprieta": [
+          "cibo",
+          "viaggio"
+        ],
+        "effetto": {
+          "hp": 4
+        },
+        "meccanica": "Recupera 4 HP.",
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Dotazione iniziale di Lv 1 (richiesta dell'autore, 2026-10-01)"
+      },
+      "eidos_kit_medico_epizio": {
+        "nome": "Kit medico epizio",
+        "tipo": "consumabile",
+        "descrizione": "Un iniettore sigillato e garze filtranti, con il marchio della Repubblica degli Epizi.",
+        "proprieta": [
+          "cura",
+          "medicazione",
+          "epizi"
+        ],
+        "effetto": {
+          "hp": 10
+        },
+        "meccanica": "Recupera 10 HP; si usa anche in combattimento.",
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Dotazione iniziale di Lv 1 (richiesta dell'autore, 2026-10-01)"
+      }
+    }
+  },
+  "nemici": {
+    "teras_condotta": {
+      "id": "teras_condotta",
+      "nome": "Tèras della condotta",
+      "build": "guerriero",
+      "hpMax": 24,
+      "primary": {
+        "hp": 3,
+        "mp": 1,
+        "for": 3,
+        "mira": 1,
+        "vel": 5,
+        "fmen": 1,
+        "dex": 4,
+        "dif": 3,
+        "dmen": 1
+      },
+      "traits": {
+        "Arte Combattiva": 1,
+        "Elusione": 1,
+        "Resistenza": 1
+      },
+      "attacco": {
+        "nome": "Morso",
+        "dannoBase": 3,
+        "stat": "for"
+      },
+      "crescita": [
+        "hp",
+        "for",
+        "vel"
+      ],
+      "articolo": "il"
+    },
+    "avanguardia": {
+      "id": "avanguardia",
+      "nome": "Avanguardia di Linea Muta",
+      "build": "guerriero",
+      "hpMax": 30,
+      "primary": {
+        "hp": 4,
+        "mp": 1,
+        "for": 4,
+        "mira": 3,
+        "vel": 4,
+        "fmen": 1,
+        "dex": 3,
+        "dif": 4,
+        "dmen": 2
+      },
+      "traits": {
+        "Arte Combattiva": 2,
+        "Guardia": 1,
+        "Resistenza": 1
+      },
+      "attacco": {
+        "nome": "Fucile d'ordinanza",
+        "dannoBase": 4,
+        "stat": "mira"
+      },
+      "crescita": [
+        "hp",
+        "for",
+        "mira",
+        "dif"
+      ],
+      "articolo": "l'"
+    },
+    "raven": {
+      "id": "raven",
+      "nome": "Raven",
+      "build": "guerriero",
+      "primary": {
+        "hp": 6,
+        "mp": 2,
+        "for": 7,
+        "mira": 5,
+        "vel": 7,
+        "fmen": 1,
+        "dex": 6,
+        "dif": 4,
+        "dmen": 2
+      },
+      "traits": {
+        "Arte Combattiva": 4,
+        "Elusione": 3,
+        "Resistenza": 3,
+        "Guardia": 2
+      },
+      "attacco": {
+        "nome": "Lama",
+        "dannoBase": 8,
+        "stat": "for"
+      },
+      "crescita": [
+        "hp",
+        "for",
+        "vel",
+        "dex",
+        "dif"
+      ],
+      "nota": "Stessa figura di Raven in tutte le storie (V4 Ich §13): regole comuni; statistiche di Lv 1 provvisorie.",
+      "articolo": ""
+    },
+    "villain_cassian": {
+      "id": "villain_cassian",
+      "nome": "Cassian Vey",
+      "build": "guerriero",
+      "hpMax": 34,
+      "primary": {
+        "hp": 4,
+        "mp": 1,
+        "for": 5,
+        "mira": 3,
+        "vel": 4,
+        "fmen": 2,
+        "dex": 4,
+        "dif": 5,
+        "dmen": 3
+      },
+      "traits": {
+        "Arte Combattiva": 2,
+        "Guardia": 2,
+        "Resistenza": 1
+      },
+      "attacco": {
+        "nome": "Affondo di lancia",
+        "dannoBase": 5,
+        "stat": "for"
+      },
+      "crescita": [
+        "hp",
+        "for",
+        "dif"
+      ],
+      "articolo": "",
+      "pngId": "cassian",
+      "villain": true,
+      "fonte": "scripts/data/solo-dotazioni-avversari.js (proposta da approvare)"
+    },
+    "villain_reik": {
+      "id": "villain_reik",
+      "nome": "Reik Damos",
+      "build": "guerriero",
+      "hpMax": 30,
+      "primary": {
+        "hp": 4,
+        "mp": 3,
+        "for": 4,
+        "mira": 2,
+        "vel": 4,
+        "fmen": 3,
+        "dex": 4,
+        "dif": 4,
+        "dmen": 2
+      },
+      "traits": {
+        "Arte Combattiva": 2,
+        "Resistenza": 2,
+        "Guardia": 1
+      },
+      "attacco": {
+        "nome": "Spada d'ordinanza",
+        "dannoBase": 4,
+        "stat": "for"
+      },
+      "crescita": [
+        "hp",
+        "for",
+        "fmen"
+      ],
+      "articolo": "",
+      "pngId": "reik",
+      "villain": true,
+      "fonte": "scripts/data/solo-dotazioni-avversari.js (proposta da approvare)"
+    }
+  },
+  "orologi": {
+    "linea_muta": {
+      "nome": "Scadenza di Linea Muta",
+      "max": 14,
+      "inizio": "E06",
+      "per_scena": 1,
+      "sconfitta": 1,
+      "visibile": true,
+      "effetti_al_massimo": [
+        {
+          "flag": {
+            "linea_muta_scaduta": true
+          }
+        },
+        {
+          "asse": {
+            "id": "survival",
+            "delta": -1
+          }
+        }
+      ],
+      "nota": "Fallimento in avanti: allo scadere l'assedio arriva prima e costa vite, ma la campagna prosegue."
+    },
+    "filtri": {
+      "nome": "Riparazione dei filtri",
+      "max": 4,
+      "inizio": "E06",
+      "visibile": true,
+      "effetti_al_massimo": [
+        {
+          "flag": {
+            "filtri_riparati": true
+          }
+        },
+        {
+          "asse": {
+            "id": "survival",
+            "delta": 1
+          }
+        }
+      ]
+    }
+  },
+  "risorse": {
+    "materiali_riparazione": {
+      "nome": "Materiali di riparazione",
+      "iniziale": {
+        "esplorativa": 1,
+        "bilanciata": 0,
+        "permadeath": 0
+      },
+      "visibile": true
+    }
+  },
+  "scene": [
+    {
+      "id": "E01",
+      "titolo": "Ingresso a Soglia",
+      "luogo": "Soglia, sala delle pompe",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Un insediamento nascosto dentro le rovine di una stazione di filtraggio. Nessuno porta simboli di popolazione.",
+      "png_presenti": [
+        "ada",
+        "mirea"
+      ],
+      "apertura_riserva": "Soglia vive dentro una vecchia stazione di filtraggio. Le pompe tossiscono, i filtri gemono. Nessuno porta insegne, e nessuno te ne chiede.",
+      "apertura_per_archetipo": {
+        "daren": "Il condotto di servizio ti lascia in una sala dove nessuno porta insegne. Secondo i registri che hai sottratto, il tuo compagno è passato di qui prima di sparire. Una donna con le mani sporche di grasso ti chiede che cosa cerchi, non chi sei.",
+        "neris": "La corazza segnala un modulo gemello oltre la frana: lo stesso lotto del convoglio scomparso. Il segnale ti porta dentro una stazione di filtraggio che nessuna mappa epizia riporta, dove la gente abbassa la voce quando passi.",
+        "sava": "Hai seguito i segni incisi sul reperto fino a una grata arrugginita. Dietro, un villaggio intero vive nelle rovine di una stazione di filtraggio. Qualcuno riconosce i segni sul tuo arco prima ancora del tuo volto.",
+        "ilyan": "Il registro dei baratti della tua famiglia finisce con un nome: Soglia. La rotta secondaria verso Lechta ti porta a una banchina nascosta, dove i mercanti di qui parlano come i vostri, ma senza stemmi.",
+        "tessa": "Il componente esausto che ti hanno ordinato di chiudere porta un marchio di lotto che nessun magazzino di Epimno riconosce. Il lotto risulta consegnato a un insediamento che non esiste sulle carte: Soglia."
+      },
+      "obiettivi": [
+        {
+          "id": "E01A",
+          "testo": "Trovare un motivo personale per restare a Soglia",
+          "nc": 12,
+          "tag": [
+            "persone",
+            "filtri"
+          ],
+          "tratti_tipici": [
+            "Percezione",
+            "Persuasione",
+            "Riparare",
+            "Contrattazione",
+            "Ascoltare"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "flag": {
+                  "personal_stake_registered": true
+                }
+              },
+              {
+                "scopri": "eidos_fact_filtri_cedono"
+              },
+              {
+                "relazione": {
+                  "png": "ada",
+                  "delta": 1
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "difficolta": "esplorativa"
+                  },
+                  "effetti": [
+                    {
+                      "ricompensa": "kit_filtri"
+                    }
+                  ]
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "flag": {
+                  "personal_stake_registered": true
+                }
+              },
+              {
+                "scopri": "eidos_fact_filtri_cedono"
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "difficolta": "esplorativa"
+                  },
+                  "effetti": [
+                    {
+                      "ricompensa": "kit_filtri"
+                    }
+                  ]
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "personal_stake_registered": true
+                }
+              },
+              {
+                "relazione": {
+                  "png": "mirea",
+                  "delta": -1
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "difficolta": "esplorativa"
+                  },
+                  "effetti": [
+                    {
+                      "ricompensa": "kit_filtri"
+                    }
+                  ]
+                }
+              },
+              {
+                "voce": {
+                  "id": "V_forestiero",
+                  "testo": "A Soglia si dice che sei qui per conto di qualcuno."
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Ada ti mostra il filtro principale: le sostituzioni risultano fatte, ma le maglie sono quelle vecchie. Qui c'è qualcosa che ti riguarda: un motivo per restare.",
+            "parziale": "Qualcuno ti spiega che i filtri cedono. Non ti dicono altro, ma è abbastanza per restare.",
+            "fallimento": "Mirea ti fa capire che a Soglia i forestieri non sono graditi. Resti comunque: quello che cerchi è qui."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Chiedo alla gente delle pompe che cosa sta succedendo ai filtri",
+          "tratto": "Persuasione",
+          "obiettivo": "E01A"
+        },
+        {
+          "testo": "Osservo come lavorano e che cosa manca",
+          "tratto": "Percezione",
+          "obiettivo": "E01A"
+        },
+        {
+          "testo": "Mi offro di dare una mano con le pompe",
+          "tratto": "Riparare",
+          "obiettivo": "E01A"
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "obiettivo_tentato": "E01A"
+          },
+          "verso": "E02",
+          "effetti": [
+            {
+              "snodo": "I_ingresso"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "E02",
+      "titolo": "Il convoglio vuoto",
+      "luogo": "Galleria del convoglio, sotto la frana",
+      "calma": false,
+      "fuori_citta": true,
+      "descrizione": "Tre carri di ricambi assaliti e abbandonati nella galleria che porta a Soglia.",
+      "png_presenti": [
+        "mirea"
+      ],
+      "apertura_riserva": "Nella galleria i carri del convoglio sono ancora lì, rovesciati. Qualcosa si muove fra le ruote: un Tèras attirato dal metallo caldo.",
+      "obiettivi": [
+        {
+          "id": "E02A",
+          "testo": "Capire quando e da chi sono stati tolti i ricambi",
+          "nc": 12,
+          "tag": [
+            "filtri",
+            "prova",
+            "registro"
+          ],
+          "tratti_tipici": [
+            "Percezione",
+            "Seguire Tracce",
+            "Meccanica",
+            "Riparare"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "clue_filter_stamp"
+              },
+              {
+                "scopri": "eidos_fact_ricambi_rimossi"
+              },
+              {
+                "flag": {
+                  "prova_filtri": true
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "difficolta": "bilanciata"
+                  },
+                  "effetti": [
+                    {
+                      "ricompensa": "kit_filtri"
+                    }
+                  ]
+                }
+              },
+              {
+                "risorsa": {
+                  "id": "materiali_riparazione",
+                  "delta": 1,
+                  "budget": true
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "clue_filter_stamp"
+              },
+              {
+                "scopri": "eidos_fact_ricambi_rimossi"
+              },
+              {
+                "flag": {
+                  "prova_filtri": true
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "difficolta": "bilanciata"
+                  },
+                  "effetti": [
+                    {
+                      "ricompensa": "kit_filtri"
+                    }
+                  ]
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "scopri": "eidos_fact_ricambi_rimossi"
+              },
+              {
+                "flag": {
+                  "prova_filtri": true,
+                  "eidos_alt_registri": true
+                }
+              },
+              {
+                "hp": -3
+              },
+              {
+                "relazione": {
+                  "png": "mirea",
+                  "delta": -1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Le casse sono state svuotate con cura, prima dell'assalto. Su un filtro esausto c'è un marchio di sostituzione: lo stacchi e lo tieni.",
+            "parziale": "Capisci che i ricambi sono spariti prima dell'assalto. Prendi il marchio di sostituzione, ma Mirea ti guarda farlo.",
+            "fallimento": "Ti ferisci fra le lamiere. Non trovi prove sui carri: resta da confrontare i registri del magazzino con il lotto del convoglio."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Esamino le casse vuote e i sigilli",
+          "tratto": "Percezione",
+          "obiettivo": "E02A"
+        },
+        {
+          "testo": "Seguo le tracce di chi ha scaricato i carri",
+          "tratto": "Seguire Tracce",
+          "obiettivo": "E02A"
+        },
+        {
+          "testo": "Controllo i filtri rimasti sui carri",
+          "tratto": "Meccanica",
+          "obiettivo": "E02A"
+        }
+      ],
+      "incontro": {
+        "nemico": "teras_condotta",
+        "letale": false,
+        "fuga": {
+          "tratto": "Sopravvivenza",
+          "nc": 13,
+          "costo": [
+            {
+              "flag": {
+                "fuga_convoglio": true
+              }
+            }
+          ]
+        },
+        "vittoria": [
+          {
+            "loot": {
+              "pool": "soglia_ordinario",
+              "contesto": "vittoria",
+              "a_portata": true
+            }
+          }
+        ],
+        "introduttivo": true,
+        "alternativa": {
+          "testo": "Attirare il Tèras lontano con il calore delle lampade",
+          "tratto": "Percezione",
+          "nc": 12,
+          "successo": [
+            {
+              "flag": {
+                "teras_aggirato": true
+              }
+            }
+          ],
+          "riserva_successo": "Accendi una lampada e la fai rotolare in fondo alla galleria. Il Tèras segue il calore, lento, e il varco verso le casse resta libero per il tempo che ti serve.",
+          "riserva_fallimento": "La lampada si ferma troppo vicina ai carri: il Tèras si volta verso di te prima che tu riesca ad allontanarti."
+        },
+        "sconfitta": {
+          "tipo": "fail_forward",
+          "testo": "Qualcuno di Soglia ti trascina al riparo dietro i carri. Ti risvegli con il fianco fasciato: resti ferito fino al prossimo riposo. Mentre eri a terra, la Linea Muta ha guadagnato terreno."
+        }
+      },
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E02A"
+              },
+              {
+                "incontro_concluso": true
+              }
+            ]
+          },
+          "verso": "E03",
+          "effetti": [
+            {
+              "snodo": "I_convoglio"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "E03",
+      "titolo": "La Casa delle Voci",
+      "luogo": "Camera sigillata sotto la stazione",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Registrazioni, disegni e testimonianze raccolti dai fondatori di Soglia.",
+      "png_presenti": [
+        "ada"
+      ],
+      "apertura_riserva": "Ada apre la camera sigillata. Dentro, voci registrate si sovrappongono come un coro che nessuno dirige. Alcune parlano lingue che credevi nemiche fra loro.",
+      "obiettivi": [
+        {
+          "id": "E03A",
+          "testo": "Trovare la testimonianza che ti riguarda",
+          "nc": 12,
+          "tag": [
+            "casa",
+            "memoria"
+          ],
+          "tratti_tipici": [
+            "Ascoltare",
+            "Percezione",
+            "Spirito",
+            "Seguire Tracce"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "scopri": "eidos_fact_casa"
+              },
+              {
+                "ricompensa": "key_voice_prism"
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "daren"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_daren"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "neris"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_neris"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "sava"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_sava"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "ilyan"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_ilyan"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "tessa"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_tessa"
+                    }
+                  ]
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "scopri": "eidos_fact_casa"
+              },
+              {
+                "ricompensa": "key_voice_prism"
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "daren"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_daren"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "neris"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_neris"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "sava"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_sava"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "ilyan"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_ilyan"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "tessa"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_tessa"
+                    }
+                  ]
+                }
+              },
+              {
+                "relazione": {
+                  "png": "ada",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "scopri": "eidos_fact_casa"
+              },
+              {
+                "flag": {
+                  "eidos_alt_indice_ada": true
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "daren"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_daren"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "neris"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_neris"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "sava"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_sava"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "ilyan"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_ilyan"
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "archetipo": "tessa"
+                  },
+                  "effetti": [
+                    {
+                      "scopri": "eidos_fact_test_tessa"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Fra le voci trovi quella che cercavi. Ada ti affida il prisma che fa da indice alla Casa.",
+            "parziale": "Trovi la testimonianza, ma forzi un sigillo per arrivarci. Ada ti consegna il prisma, di malavoglia.",
+            "fallimento": "Ti perdi fra le voci; è Ada a ritrovare per te la testimonianza. Il prisma resta a lei: dice che saprà ricostruire l'indice da tre frammenti."
+          }
+        },
+        {
+          "id": "E03B",
+          "testo": "Capire chi ha fondato Soglia",
+          "nc": 12,
+          "tag": [
+            "casa",
+            "prova",
+            "persone"
+          ],
+          "tratti_tipici": [
+            "Persuasione",
+            "Politica",
+            "Percezione",
+            "Ascoltare"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "clue_founders_oath"
+              },
+              {
+                "scopri": "truth_founders"
+              },
+              {
+                "relazione": {
+                  "png": "ada",
+                  "delta": 1
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "scopri": "truth_founders"
+              },
+              {
+                "flag": {
+                  "eidos_alt_testimonianze": true,
+                  "prova_debole": true
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "eidos_alt_testimonianze": true
+                }
+              },
+              {
+                "orologio": {
+                  "id": "linea_muta",
+                  "delta": 1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Ada ti mostra quattro strisce di stoffa scritte con grafie diverse: il giuramento dei fondatori.",
+            "parziale": "Tre anziani raccontano la fondazione. Le loro parole bastano a te, ma sarebbero una prova debole per chiunque altro.",
+            "fallimento": "Ada non si fida ancora. Dovrai raccogliere le testimonianze degli anziani, una per una."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Ascolto le registrazioni una a una",
+          "tratto": "Ascoltare",
+          "obiettivo": "E03A"
+        },
+        {
+          "testo": "Cerco segni o nomi che conosco",
+          "tratto": "Percezione",
+          "obiettivo": "E03A"
+        },
+        {
+          "testo": "Chiedo ad Ada chi ha costruito Soglia",
+          "tratto": "Persuasione",
+          "obiettivo": "E03B"
+        },
+        {
+          "testo": "Confronto le grafie dei documenti più vecchi",
+          "tratto": "Percezione",
+          "obiettivo": "E03B"
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E03A"
+              },
+              {
+                "obiettivo_tentato": "E03B"
+              }
+            ]
+          },
+          "verso": "E04",
+          "effetti": [
+            {
+              "snodo": "I_casa"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "E04",
+      "titolo": "Tre offerte",
+      "luogo": "Sala comune di Soglia",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Quattro fazioni hanno saputo di Soglia nello stesso giorno. Ognuna manda qualcuno.",
+      "png_presenti": [
+        "cassian",
+        "reik",
+        "tal",
+        "yara"
+      ],
+      "apertura_riserva": "Nella sala comune arrivano, a poche ore l'uno dall'altro, un ufficiale epizio, un caporale Chorisfos, un mercante di Lechta e un'esploratrice Antarsi. Ognuno ha un'offerta.",
+      "obiettivi": [
+        {
+          "id": "E04A",
+          "testo": "Capire che cosa chiede davvero ogni fazione in cambio",
+          "nc": 12,
+          "tag": [
+            "persone",
+            "trattativa"
+          ],
+          "tratti_tipici": [
+            "Politica",
+            "Persuasione",
+            "Contrattazione",
+            "Ascoltare",
+            "Percezione"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "scopri": "eidos_fact_offerte"
+              },
+              {
+                "relazione": {
+                  "png": "tal",
+                  "delta": 1
+                }
+              },
+              {
+                "relazione": {
+                  "png": "yara",
+                  "delta": 1
+                }
+              },
+              {
+                "voce": {
+                  "id": "V_cartelle",
+                  "testo": "L'ufficiale epizio cerca qualcosa di preciso nella Casa: cartelle, non persone."
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "scopri": "eidos_fact_offerte"
+              },
+              {
+                "voce": {
+                  "id": "V_cartelle",
+                  "testo": "L'ufficiale epizio cerca qualcosa di preciso nella Casa: cartelle, non persone."
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "scopri": "eidos_fact_offerte"
+              },
+              {
+                "relazione": {
+                  "png": "cassian",
+                  "delta": -1
+                }
+              },
+              {
+                "relazione": {
+                  "png": "reik",
+                  "delta": -1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Ascolti tutti e quattro. Ognuno offre salvezza; nessuno dice il prezzo intero, ma capisci dove stanno le crepe.",
+            "parziale": "Le offerte sono chiare, i prezzi no. Qualcuno lascia cadere un dettaglio sulle cartelle della Casa.",
+            "fallimento": "Fai domande troppo dirette: l'ufficiale e il caporale smettono di parlare con te."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Ascolto le quattro offerte senza prendere posizione",
+          "tratto": "Ascoltare",
+          "obiettivo": "E04A"
+        },
+        {
+          "testo": "Chiedo a ciascuno che cosa vuole in cambio",
+          "tratto": "Politica",
+          "obiettivo": "E04A"
+        },
+        {
+          "testo": "Tratto con il mercante di Lechta",
+          "tratto": "Contrattazione",
+          "obiettivo": "E04A"
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "obiettivo_tentato": "E04A"
+          },
+          "verso": "E05",
+          "effetti": [
+            {
+              "snodo": "I_offerte"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "E05",
+      "titolo": "Ultimatum",
+      "luogo": "Piazza delle pompe",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Linea Muta ha fissato una scadenza. Soglia deve scegliere con chi collaborare, almeno per ora.",
+      "png_presenti": [
+        "ada",
+        "cassian",
+        "reik",
+        "tal",
+        "yara"
+      ],
+      "apertura_riserva": "Una trasmissione viene letta ad alta voce: Linea Muta arriverà. Nessuno sa quando. Tutti guardano te, il forestiero che ha parlato con ogni fazione.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "scelte": [
+        {
+          "id": "alleato_epizi",
+          "testo": "Collaboro con Cassian e la squadra epizia",
+          "effetti": [
+            {
+              "flag": {
+                "alleato_iniziale": "epizi"
+              }
+            },
+            {
+              "relazione": {
+                "png": "cassian",
+                "delta": 1
+              }
+            },
+            {
+              "reputazione": {
+                "fazione": "Epizi",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomy",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "Cassian annuisce: i suoi tecnici entreranno nella stazione domani."
+        },
+        {
+          "id": "alleato_chorisfos",
+          "testo": "Collaboro con Reik e i Chorisfos",
+          "effetti": [
+            {
+              "flag": {
+                "alleato_iniziale": "chorisfos"
+              }
+            },
+            {
+              "relazione": {
+                "png": "reik",
+                "delta": 1
+              }
+            },
+            {
+              "reputazione": {
+                "fazione": "Chorisfos",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomy",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "Reik ordina ai suoi di non toccare la Casa. Per ora."
+        },
+        {
+          "id": "alleato_eporiani",
+          "testo": "Accetto la protezione provvisoria di Tal",
+          "effetti": [
+            {
+              "flag": {
+                "alleato_iniziale": "eporiani"
+              }
+            },
+            {
+              "relazione": {
+                "png": "tal",
+                "delta": 1
+              }
+            },
+            {
+              "reputazione": {
+                "fazione": "Eporiani",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Tal stringe la mano. «Provvisoria», ripete sorridendo."
+        },
+        {
+          "id": "alleato_antarsi",
+          "testo": "Aiuto Yara a preparare l'evacuazione",
+          "effetti": [
+            {
+              "flag": {
+                "alleato_iniziale": "antarsi",
+                "vie_fuga": true
+              }
+            },
+            {
+              "relazione": {
+                "png": "yara",
+                "delta": 1
+              }
+            },
+            {
+              "reputazione": {
+                "fazione": "Antarsi",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Yara ti mostra le prime vie di fuga. «Le persone prima di tutto», dice."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "scelta_fatta": true
+          },
+          "verso": "E06",
+          "effetti": [
+            {
+              "flag": {
+                "deadline_linea_muta_started": true
+              }
+            },
+            {
+              "scopri": "eidos_fact_linea_muta"
+            },
+            {
+              "snodo": "I_ultimatum"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "E06",
+      "titolo": "Riparare o evacuare",
+      "luogo": "Magazzini e sala filtri",
+      "calma": false,
+      "fuori_citta": false,
+      "descrizione": "Le risorse bastano per una cosa sola fatta bene: i filtri, le vie di fuga o il ripetitore costiero.",
+      "png_presenti": [
+        "mirea",
+        "ada"
+      ],
+      "apertura_riserva": "I materiali sono pochi. Mirea li conta tre volte davanti a tutti. Filtri, vie di fuga o ripetitore: bisogna scegliere dove metterli.",
+      "avamposto": true,
+      "obiettivi": [
+        {
+          "id": "E06A",
+          "testo": "Recuperare altro materiale di riparazione",
+          "nc": 12,
+          "tag": [
+            "riparazione",
+            "filtri"
+          ],
+          "tratti_tipici": [
+            "Riparare",
+            "Meccanica",
+            "Contrattazione",
+            "Percezione",
+            "Architettura"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "risorsa": {
+                  "id": "materiali_riparazione",
+                  "delta": 2,
+                  "budget": true
+                }
+              },
+              {
+                "orologio": {
+                  "id": "filtri",
+                  "delta": 1
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "risorsa": {
+                  "id": "materiali_riparazione",
+                  "delta": 1,
+                  "budget": true
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "orologio": {
+                  "id": "linea_muta",
+                  "delta": 1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Smonti due pompe inutilizzate e ricavi materiale buono. Una parte dei filtri torna a respirare.",
+            "parziale": "Recuperi qualcosa, poco ma utile.",
+            "fallimento": "Ci metti troppo tempo e non trovi nulla di utilizzabile. Fuori, la scadenza si avvicina."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Smonto le pompe inutilizzate",
+          "tratto": "Riparare",
+          "obiettivo": "E06A"
+        },
+        {
+          "testo": "Tratto con Mirea per i materiali del magazzino",
+          "tratto": "Contrattazione",
+          "obiettivo": "E06A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "ripara_filtri",
+          "testo": "Investo tutto nei filtri",
+          "effetti": [
+            {
+              "flag": {
+                "filtri_riparati": true
+              }
+            },
+            {
+              "orologio": {
+                "id": "filtri",
+                "delta": 2
+              }
+            },
+            {
+              "asse": {
+                "id": "survival",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomy",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Le pompe riprendono un ritmo regolare. Soglia potrà restare dove è, almeno per un po'."
+        },
+        {
+          "id": "prepara_fuga",
+          "testo": "Preparo le vie di fuga",
+          "effetti": [
+            {
+              "flag": {
+                "vie_fuga": true
+              }
+            },
+            {
+              "asse": {
+                "id": "survival",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Tracciate le prime vie di fuga lungo i condotti. Se servirà, la gente saprà dove andare."
+        },
+        {
+          "id": "ripara_ripetitore",
+          "testo": "Riparo il ripetitore costiero",
+          "effetti": [
+            {
+              "flag": {
+                "ripetitore_riparato": true
+              }
+            },
+            {
+              "asse": {
+                "id": "memory",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Il ripetitore sulla costa torna a ronzare. La Casa potrà parlare oltre Soglia."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E06A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "E07",
+          "effetti": [
+            {
+              "snodo": "II_risorse"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "E07",
+      "titolo": "Le due metà dell'ordine",
+      "luogo": "Posti di ascolto sopra la stazione",
+      "calma": false,
+      "fuori_citta": true,
+      "descrizione": "Epizi e Chorisfos comunicano con i rispettivi comandi. Ciascuno ha solo metà del piano.",
+      "png_presenti": [
+        "cassian",
+        "reik"
+      ],
+      "apertura_riserva": "Dai posti di ascolto si sentono due trasmissioni diverse: una cifrata alla maniera epizia, una sulle frequenze dei Chorisfos. Parlano dello stesso luogo.",
+      "obiettivi": [
+        {
+          "id": "E07A",
+          "testo": "Procurarsi l'ordine epizio",
+          "nc": 12,
+          "tag": [
+            "ordine",
+            "epizi"
+          ],
+          "tratti_tipici": [
+            "Hacking",
+            "Percezione",
+            "Furtività",
+            "Persuasione",
+            "Meccanica"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "clue_split_order_epizi"
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "clue_split_order_epizi"
+              },
+              {
+                "relazione": {
+                  "png": "cassian",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "se": {
+                  "condizione": {
+                    "relazione_almeno": {
+                      "png": "cassian",
+                      "valore": 1
+                    }
+                  },
+                  "effetti": [
+                    {
+                      "flag": {
+                        "eidos_alt_cassian": true
+                      }
+                    }
+                  ],
+                  "altrimenti": [
+                    {
+                      "orologio": {
+                        "id": "linea_muta",
+                        "delta": 1
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Copi l'ordine epizio senza che nessuno se ne accorga.",
+            "parziale": "Prendi l'ordine, ma Cassian sa che sei stato tu.",
+            "fallimento": "Non riesci a prendere l'ordine. Se Cassian si fida di te, potrà raccontarti che cosa dice."
+          }
+        },
+        {
+          "id": "E07B",
+          "testo": "Registrare la trasmissione Chorisfos",
+          "nc": 12,
+          "tag": [
+            "ordine",
+            "chorisfos"
+          ],
+          "tratti_tipici": [
+            "Ascoltare",
+            "Percezione",
+            "Politica",
+            "Persuasione",
+            "Navigare"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "clue_split_order_chorisfos"
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "clue_split_order_chorisfos"
+              },
+              {
+                "relazione": {
+                  "png": "reik",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "eidos_alt_reik": true
+                }
+              },
+              {
+                "orologio": {
+                  "id": "linea_muta",
+                  "delta": 1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Registri la trasmissione Chorisfos fino all'ultima parola.",
+            "parziale": "La registri a metà, e il caporale ti vede andare via.",
+            "fallimento": "La trasmissione si interrompe. Solo Reik potrebbe ripeterla, se decidesse di disertare."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Copio l'ordine dalla tenda epizia",
+          "tratto": "Furtività",
+          "obiettivo": "E07A"
+        },
+        {
+          "testo": "Decifro la trasmissione epizia",
+          "tratto": "Hacking",
+          "obiettivo": "E07A"
+        },
+        {
+          "testo": "Chiedo a Cassian di mostrarmelo",
+          "tratto": "Persuasione",
+          "obiettivo": "E07A"
+        },
+        {
+          "testo": "Ascolto le frequenze Chorisfos",
+          "tratto": "Ascoltare",
+          "obiettivo": "E07B"
+        },
+        {
+          "testo": "Convinco Reik a lasciarmi ascoltare",
+          "tratto": "Persuasione",
+          "obiettivo": "E07B"
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E07A"
+              },
+              {
+                "obiettivo_tentato": "E07B"
+              }
+            ]
+          },
+          "verso": "E08",
+          "effetti": [
+            {
+              "se": {
+                "condizione": {
+                  "tutti": [
+                    {
+                      "qualunque": [
+                        {
+                          "possiede": "clue_split_order_epizi"
+                        },
+                        {
+                          "flag": "eidos_alt_cassian"
+                        }
+                      ]
+                    },
+                    {
+                      "qualunque": [
+                        {
+                          "possiede": "clue_split_order_chorisfos"
+                        },
+                        {
+                          "flag": "eidos_alt_reik"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "effetti": [
+                  {
+                    "scopri": "truth_silent_line"
+                  }
+                ]
+              }
+            },
+            {
+              "snodo": "II_ordine"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "E08",
+      "titolo": "Il debito di Lechta",
+      "luogo": "Banchina nascosta",
+      "calma": false,
+      "fuori_citta": false,
+      "descrizione": "Tal Emek aspetta una firma. Il contratto garantisce protezione, ma ha un secondo strato.",
+      "png_presenti": [
+        "tal"
+      ],
+      "apertura_riserva": "Sulla banchina Tal ha disteso il contratto e il suo sigillo. «Navi, filtri, riconoscimento. Basta una firma», dice.",
+      "obiettivi": [
+        {
+          "id": "E08A",
+          "testo": "Leggere che cosa c'è sotto il sigillo",
+          "nc": 12,
+          "tag": [
+            "trattativa",
+            "lechta"
+          ],
+          "tratti_tipici": [
+            "Contrattazione",
+            "Percezione",
+            "Politica",
+            "Navigare",
+            "Persuasione"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "key_eporian_clause"
+              },
+              {
+                "scopri": "truth_eporian"
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "key_eporian_clause"
+              },
+              {
+                "scopri": "truth_eporian"
+              },
+              {
+                "relazione": {
+                  "png": "tal",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "eidos_alt_tal": true
+                }
+              },
+              {
+                "relazione": {
+                  "png": "tal",
+                  "delta": -1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Sotto il primo strato del sigillo c'è la clausola vera: rotta e materiali passerebbero a Lechta.",
+            "parziale": "Stacchi il primo strato del sigillo e leggi la clausola. Tal non la prende bene.",
+            "fallimento": "Tal ritira il sigillo. «Se hai dubbi, portami prove e ne riparliamo»."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Esamino il sigillo a doppio strato",
+          "tratto": "Percezione",
+          "obiettivo": "E08A"
+        },
+        {
+          "testo": "Tratto con Tal clausola per clausola",
+          "tratto": "Contrattazione",
+          "obiettivo": "E08A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "firma_lechta",
+          "testo": "Firmo la protezione di Lechta",
+          "effetti": [
+            {
+              "flag": {
+                "accordo_valido": true,
+                "accordo_con": "eporiani"
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomy",
+                "delta": -2
+              }
+            },
+            {
+              "asse": {
+                "id": "survival",
+                "delta": 1
+              }
+            },
+            {
+              "reputazione": {
+                "fazione": "Eporiani",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "La firma è fatta. Le navi di Lechta arriveranno; la rotta, da oggi, è anche loro."
+        },
+        {
+          "id": "rinegozia_lechta",
+          "testo": "Rinegozio il contratto con le prove in mano",
+          "effetti": [
+            {
+              "flag": {
+                "accordo_valido": true,
+                "accordo_con": "eporiani"
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomy",
+                "delta": -1
+              }
+            },
+            {
+              "asse": {
+                "id": "survival",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "trust",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Tal cede sulla clausola peggiore. La protezione resta, la dipendenza si allenta.",
+          "richiede": {
+            "qualunque": [
+              {
+                "possiede": "key_eporian_clause"
+              },
+              {
+                "flag": "eidos_alt_tal"
+              }
+            ]
+          },
+          "motivo_non_disponibile": "Per rinegoziare servono il sigillo o almeno la disponibilità di Tal."
+        },
+        {
+          "id": "rifiuta_lechta",
+          "testo": "Rifiuto il contratto",
+          "effetti": [
+            {
+              "asse": {
+                "id": "autonomy",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "survival",
+                "delta": -1
+              }
+            },
+            {
+              "relazione": {
+                "png": "tal",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "Tal ripiega il contratto senza una parola. Soglia resta sola, e libera."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E08A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "E09",
+          "effetti": [
+            {
+              "snodo": "II_lechta"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "E09",
+      "titolo": "Il fuoco Antarsi",
+      "luogo": "Condotti sotto la Casa",
+      "calma": false,
+      "fuori_citta": true,
+      "descrizione": "Yara ha piazzato delle cariche lungo i condotti che portano alla Casa.",
+      "png_presenti": [
+        "yara"
+      ],
+      "apertura_riserva": "Nei condotti sotto la Casa trovi cariche collegate con cura. Yara è lì, e non sembra sorpresa di vederti.",
+      "obiettivi": [
+        {
+          "id": "E09A",
+          "testo": "Capire che cosa vuole davvero la cellula Antarsi",
+          "nc": 12,
+          "tag": [
+            "persone",
+            "fuga"
+          ],
+          "tratti_tipici": [
+            "Persuasione",
+            "Seguire Tracce",
+            "Furtività",
+            "Percezione",
+            "Sopravvivenza"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "scopri": "truth_antarsi"
+              },
+              {
+                "ricompensa": "key_escape_chart"
+              },
+              {
+                "relazione": {
+                  "png": "yara",
+                  "delta": 1
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "scopri": "truth_antarsi"
+              },
+              {
+                "flag": {
+                  "rotta_yara": true
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "rotta_yara": true
+                }
+              },
+              {
+                "hp": -3
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Yara ti dice tutto: salverà gli abitanti, poi brucerà la Casa. Ti affida la rotta dei condotti per l'evacuazione.",
+            "parziale": "Capisci il piano di Yara. Non ti dà la rotta, ma ti mostra una via più rischiosa che conosce solo lei.",
+            "fallimento": "Una carica si stacca e ti ferisce. Yara ti trascina via e ti indica una sola via d'uscita, la sua."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Parlo con Yara delle persone da salvare",
+          "tratto": "Persuasione",
+          "obiettivo": "E09A"
+        },
+        {
+          "testo": "Seguo i fili delle cariche",
+          "tratto": "Seguire Tracce",
+          "obiettivo": "E09A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "ferma_fuoco",
+          "testo": "Stacco le cariche: la Casa non brucia",
+          "effetti": [
+            {
+              "flag": {
+                "casa_salvata": true
+              }
+            },
+            {
+              "asse": {
+                "id": "memory",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "yara",
+                "delta": -2
+              }
+            }
+          ],
+          "riserva": "Stacchi le cariche una a una. Yara non ti ferma, ma non ti perdonerà facilmente."
+        },
+        {
+          "id": "aiuta_yara",
+          "testo": "Aiuto Yara con l'evacuazione e chiedo tempo per la Casa",
+          "effetti": [
+            {
+              "flag": {
+                "vie_fuga": true,
+                "yara_alleata": true
+              }
+            },
+            {
+              "asse": {
+                "id": "survival",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "yara",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Yara concede tempo: le cariche restano, ma nessuno le accenderà prima dell'ultima partenza."
+        },
+        {
+          "id": "lascia_bruciare",
+          "testo": "Lascio che la Casa bruci",
+          "effetti": [
+            {
+              "flag": {
+                "casa_distrutta": true
+              }
+            },
+            {
+              "asse": {
+                "id": "memory",
+                "delta": -3
+              }
+            },
+            {
+              "relazione": {
+                "png": "ada",
+                "delta": -3
+              }
+            },
+            {
+              "relazione": {
+                "png": "yara",
+                "delta": 2
+              }
+            }
+          ],
+          "riserva": "Il fuoco divora registrazioni e disegni. Ada guarda in silenzio finché non resta nulla."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E09A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "E10",
+          "effetti": [
+            {
+              "snodo": "II_fuoco"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "E10",
+      "titolo": "Confronto con Mirea",
+      "luogo": "Magazzino di Soglia",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Il magazzino, i registri e la donna che li tiene.",
+      "png_presenti": [
+        "mirea"
+      ],
+      "apertura_riserva": "Mirea chiude i registri quando entri. «Se sei qui per accusarmi, portami qualcosa di più delle tue impressioni».",
+      "obiettivi": [
+        {
+          "id": "E10A",
+          "testo": "Confrontare i registri del magazzino con il lotto del convoglio",
+          "nc": 12,
+          "tag": [
+            "registro",
+            "filtri",
+            "prova"
+          ],
+          "tratti_tipici": [
+            "Percezione",
+            "Meccanica",
+            "Politica",
+            "Contrattazione",
+            "Architettura"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "scopri": "truth_filters"
+              },
+              {
+                "flag": {
+                  "eidos_alt_registri": true
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "scopri": "truth_filters"
+              },
+              {
+                "relazione": {
+                  "png": "mirea",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "orologio": {
+                  "id": "linea_muta",
+                  "delta": 1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Il confronto è chiaro: i ricambi sono stati deviati, non persi. La mano che li ha spostati è di qui.",
+            "parziale": "Trovi la deviazione, ma Mirea capisce che hai visto.",
+            "fallimento": "I registri non tornano, ma non riesci a dimostrare nulla. Il tempo passa."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Confronto i registri con il lotto del convoglio",
+          "tratto": "Percezione",
+          "obiettivo": "E10A"
+        },
+        {
+          "testo": "Chiedo a Mirea di spiegare le sostituzioni",
+          "tratto": "Politica",
+          "obiettivo": "E10A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "accusa_prova",
+          "testo": "Accuso Mirea davanti a tutti, con le prove",
+          "effetti": [
+            {
+              "scopri": "truth_traitor"
+            },
+            {
+              "asse": {
+                "id": "trust",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "mirea",
+                "delta": -2
+              }
+            }
+          ],
+          "riserva": "Mostri il marchio e i registri. Mirea non nega: voleva costringere Soglia a scegliere prima che fosse troppo tardi.",
+          "richiede": {
+            "tutti": [
+              {
+                "fatto_scoperto": "truth_filters"
+              },
+              {
+                "qualunque": [
+                  {
+                    "possiede": "clue_filter_stamp"
+                  },
+                  {
+                    "flag": "eidos_alt_registri"
+                  }
+                ]
+              }
+            ]
+          },
+          "motivo_non_disponibile": "Senza la prova della deviazione la tua sarebbe solo un'accusa."
+        },
+        {
+          "id": "accusa_senza",
+          "testo": "Accuso Mirea senza prove",
+          "effetti": [
+            {
+              "asse": {
+                "id": "trust",
+                "delta": -2
+              }
+            },
+            {
+              "relazione": {
+                "png": "mirea",
+                "delta": -3
+              }
+            },
+            {
+              "relazione": {
+                "png": "ada",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "Soglia si spacca in due: chi ti crede e chi difende Mirea. Nessuno vince."
+        },
+        {
+          "id": "usa_mirea",
+          "testo": "Tengo per me quello che so e mi servo di Mirea",
+          "effetti": [
+            {
+              "scopri": "truth_traitor"
+            },
+            {
+              "flag": {
+                "mirea_complice": true
+              }
+            },
+            {
+              "asse": {
+                "id": "trust",
+                "delta": -1
+              }
+            },
+            {
+              "relazione": {
+                "png": "mirea",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Mirea capisce che sai. Da oggi lavora per te, e tutti e due sapete perché.",
+          "richiede": {
+            "fatto_scoperto": "truth_filters"
+          },
+          "motivo_non_disponibile": "Per usare Mirea devi prima sapere che cosa ha fatto."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E10A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "E11",
+          "effetti": [
+            {
+              "snodo": "II_mirea"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "E11",
+      "titolo": "La copia incompleta",
+      "luogo": "Casa delle Voci e ripetitore",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Il ripetitore può trasmettere solo una parte della Casa prima della scadenza.",
+      "png_presenti": [
+        "ada"
+      ],
+      "apertura_riserva": "Ada ha collegato la Casa al ripetitore. Le spie si accendono una alla volta, troppo lente. «Non ci starà tutto», dice.",
+      "obiettivi": [
+        {
+          "id": "E11A",
+          "testo": "Misurare quanto della Casa si può salvare",
+          "nc": 12,
+          "tag": [
+            "casa",
+            "memoria",
+            "trasmissione"
+          ],
+          "tratti_tipici": [
+            "Meccanica",
+            "Riparare",
+            "Ascoltare",
+            "Percezione",
+            "Architettura"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "scopri": "truth_archive_copy"
+              },
+              {
+                "ricompensa": "key_archive_seed"
+              },
+              {
+                "flag": {
+                  "ripetitore_riparato": true
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "scopri": "truth_archive_copy"
+              },
+              {
+                "ricompensa": "key_archive_seed"
+              }
+            ],
+            "fallimento": [
+              {
+                "scopri": "truth_archive_copy"
+              },
+              {
+                "flag": {
+                  "eidos_alt_supporti": true
+                }
+              },
+              {
+                "orologio": {
+                  "id": "linea_muta",
+                  "delta": 1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Il limite è chiaro, e il seme d'archivio è pronto a ricevere la selezione. Ada ti guarda: la scelta è tua.",
+            "parziale": "Capisci il limite. Il seme d'archivio funziona, ma il ripetitore no.",
+            "fallimento": "Il seme d'archivio si incrina. Serviranno più supporti parziali, e altro tempo."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Misuro la capacità del ripetitore",
+          "tratto": "Meccanica",
+          "obiettivo": "E11A"
+        },
+        {
+          "testo": "Ascolto con Ada che cosa conta di più",
+          "tratto": "Ascoltare",
+          "obiettivo": "E11A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "salva_tutte",
+          "testo": "Salvo le testimonianze di tutte e quattro le popolazioni",
+          "effetti": [
+            {
+              "asse": {
+                "id": "memory",
+                "delta": 2
+              }
+            },
+            {
+              "relazione": {
+                "png": "ada",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Scegli il coro, non le voci singole: Chorisfos, Epizi, Eporiani e Antarsi, insieme."
+        },
+        {
+          "id": "salva_soglia",
+          "testo": "Salvo ciò che riguarda la vita di Soglia",
+          "effetti": [
+            {
+              "asse": {
+                "id": "memory",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "trust",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Scegli i nomi di chi vive qui oggi. La gente di Soglia se ne accorge."
+        },
+        {
+          "id": "affida_casa",
+          "testo": "Affido la Casa alle persone, pezzo per pezzo",
+          "effetti": [
+            {
+              "asse": {
+                "id": "memory",
+                "delta": 1
+              }
+            },
+            {
+              "flag": {
+                "archivio_affidato": true
+              }
+            },
+            {
+              "asse": {
+                "id": "trust",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Ogni famiglia porta via una registrazione. La Casa non è più in un posto solo."
+        },
+        {
+          "id": "tieni_indice",
+          "testo": "Tengo per me l'indice e la rotta dei dati",
+          "effetti": [
+            {
+              "flag": {
+                "controllo_casa": true
+              }
+            },
+            {
+              "asse": {
+                "id": "trust",
+                "delta": -2
+              }
+            }
+          ],
+          "riserva": "Il prisma e il seme restano con te. Nessun altro sa più dove sia cosa.",
+          "richiede": {
+            "qualunque": [
+              {
+                "possiede": "key_voice_prism"
+              },
+              {
+                "possiede": "key_archive_seed"
+              }
+            ]
+          },
+          "motivo_non_disponibile": "Ti serve almeno il prisma o il seme d'archivio."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E11A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "E12",
+          "effetti": [
+            {
+              "flag": {
+                "archive_selection_locked": true
+              }
+            },
+            {
+              "snodo": "II_copia"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "E12",
+      "titolo": "Assedio o negoziato",
+      "luogo": "Ingresso della stazione",
+      "calma": false,
+      "fuori_citta": true,
+      "descrizione": "L'avanguardia di Linea Muta è arrivata alle porte di Soglia.",
+      "png_presenti": [
+        "cassian",
+        "reik",
+        "ada"
+      ],
+      "apertura_riserva": "L'avanguardia di Linea Muta si ferma davanti all'ingresso della stazione. Qualcuno spara, qualcuno aspetta ordini.",
+      "obiettivi": [
+        {
+          "id": "E12A",
+          "testo": "Fermare l'avanzata di Linea Muta",
+          "nc": 12,
+          "tag": [
+            "persone",
+            "prova",
+            "ordine"
+          ],
+          "tratti_tipici": [
+            "Politica",
+            "Persuasione",
+            "Tattica Militare",
+            "Intimidire",
+            "Arte Combattiva"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "asse": {
+                  "id": "survival",
+                  "delta": 1
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "verita_almeno": {
+                      "valore": 3,
+                      "tra": [
+                        "truth_founders",
+                        "truth_filters",
+                        "truth_silent_line",
+                        "truth_antarsi",
+                        "truth_eporian",
+                        "truth_traitor",
+                        "truth_archive_copy"
+                      ]
+                    }
+                  },
+                  "effetti": [
+                    {
+                      "flag": {
+                        "negoziato": true
+                      }
+                    },
+                    {
+                      "asse": {
+                        "id": "trust",
+                        "delta": 1
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "flag": "eidos_alt_reik"
+                  },
+                  "effetti": [
+                    {
+                      "relazione": {
+                        "png": "reik",
+                        "delta": 2
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "se": {
+                  "condizione": {
+                    "verita_almeno": {
+                      "valore": 3,
+                      "tra": [
+                        "truth_founders",
+                        "truth_filters",
+                        "truth_silent_line",
+                        "truth_antarsi",
+                        "truth_eporian",
+                        "truth_traitor",
+                        "truth_archive_copy"
+                      ]
+                    }
+                  },
+                  "effetti": [
+                    {
+                      "flag": {
+                        "negoziato": true
+                      }
+                    }
+                  ],
+                  "altrimenti": [
+                    {
+                      "asse": {
+                        "id": "survival",
+                        "delta": -1
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "asse": {
+                  "id": "survival",
+                  "delta": -1
+                }
+              },
+              {
+                "orologio": {
+                  "id": "linea_muta",
+                  "delta": 2
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Metti le due metà dell'ordine davanti ai comandanti: nessuno dei due vuole che l'altro sappia. L'avanzata si ferma.",
+            "parziale": "L'avanzata rallenta, ma non si ferma del tutto.",
+            "fallimento": "Linea Muta sfonda il primo sbarramento. Ci sono feriti."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Mostro ai comandanti le due metà dell'ordine",
+          "tratto": "Politica",
+          "obiettivo": "E12A"
+        },
+        {
+          "testo": "Tengo la linea all'ingresso",
+          "tratto": "Tattica Militare",
+          "obiettivo": "E12A"
+        }
+      ],
+      "incontro": {
+        "nemico": "avanguardia",
+        "letale": true,
+        "fuga": {
+          "tratto": "Sopravvivenza",
+          "nc": 13,
+          "costo": [
+            {
+              "asse": {
+                "id": "survival",
+                "delta": -1
+              }
+            }
+          ]
+        },
+        "vittoria": [
+          {
+            "loot": {
+              "pool": "soglia_ordinario",
+              "contesto": "vittoria",
+              "a_portata": true
+            }
+          },
+          {
+            "asse": {
+              "id": "autonomy",
+              "delta": 1
+            }
+          }
+        ]
+      },
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E12A"
+              },
+              {
+                "incontro_concluso": true
+              }
+            ]
+          },
+          "verso": "E13",
+          "effetti": [
+            {
+              "snodo": "III_assedio"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "E13",
+      "titolo": "Crisi dei filtri",
+      "luogo": "Sala filtri",
+      "calma": false,
+      "fuori_citta": false,
+      "descrizione": "Durante l'assedio i filtri cedono di colpo.",
+      "png_presenti": [
+        "mirea",
+        "ada"
+      ],
+      "apertura_riserva": "Un boato, poi il silenzio delle pompe. I filtri hanno ceduto. Senza aria pulita Soglia ha poche ore.",
+      "avamposto": true,
+      "obiettivi": [
+        {
+          "id": "E13A",
+          "testo": "Rimettere in funzione i filtri",
+          "nc": 12,
+          "tag": [
+            "riparazione",
+            "filtri"
+          ],
+          "tratti_tipici": [
+            "Riparare",
+            "Meccanica",
+            "Architettura",
+            "Percezione",
+            "Sopravvivenza"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "se": {
+                  "condizione": {
+                    "qualunque": [
+                      {
+                        "flag": "filtri_riparati"
+                      },
+                      {
+                        "risorsa_almeno": {
+                          "id": "materiali_riparazione",
+                          "valore": 1
+                        }
+                      }
+                    ]
+                  },
+                  "effetti": [
+                    {
+                      "asse": {
+                        "id": "survival",
+                        "delta": 1
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "risorsa": {
+                  "id": "materiali_riparazione",
+                  "delta": -1
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "risorsa": {
+                  "id": "materiali_riparazione",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "asse": {
+                  "id": "survival",
+                  "delta": -1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Con i materiali messi da parte le pompe ripartono. Soglia respira.",
+            "parziale": "Le pompe tossiscono e ripartono a metà potenza.",
+            "fallimento": "Non basta. Qualcuno dovrà decidere se restare o andare."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Riparo i filtri con i materiali rimasti",
+          "tratto": "Riparare",
+          "obiettivo": "E13A"
+        },
+        {
+          "testo": "Isolo il settore guasto",
+          "tratto": "Architettura",
+          "obiettivo": "E13A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "trasferisci",
+          "testo": "Porto tutti fuori lungo la rotta di fuga",
+          "effetti": [
+            {
+              "flag": {
+                "evacuazione_completata": true,
+                "sito_abbandonato": true
+              }
+            },
+            {
+              "asse": {
+                "id": "survival",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Le famiglie partono in fila lungo i condotti. La stazione resta vuota dietro di voi.",
+          "richiede": {
+            "qualunque": [
+              {
+                "flag": "vie_fuga"
+              },
+              {
+                "possiede": "key_escape_chart"
+              },
+              {
+                "flag": "rotta_yara"
+              }
+            ]
+          },
+          "motivo_non_disponibile": "Serve una via di fuga: la rotta dei condotti, quella di Yara o le vie preparate."
+        },
+        {
+          "id": "resta",
+          "testo": "Restiamo: Soglia resta dov'è",
+          "effetti": [
+            {
+              "flag": {
+                "sito_difeso": true
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomy",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Soglia resta. Qualunque cosa succeda, succederà qui."
+        },
+        {
+          "id": "sacrifica",
+          "testo": "Sacrifico la sala filtri per salvare il condotto principale",
+          "effetti": [
+            {
+              "asse": {
+                "id": "survival",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomy",
+                "delta": -1
+              }
+            },
+            {
+              "flag": {
+                "sito_ferito": true
+              }
+            }
+          ],
+          "riserva": "La sala filtri crolla, ma il condotto regge. Soglia sopravvive, più piccola e più fragile."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "E13A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "E14",
+          "effetti": [
+            {
+              "snodo": "III_filtri"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "E14",
+      "titolo": "Decisione sulla Casa",
+      "luogo": "Casa delle Voci",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "La Casa aspetta il suo destino.",
+      "png_presenti": [
+        "ada",
+        "cassian",
+        "reik",
+        "tal"
+      ],
+      "apertura_riserva": "Nella Casa le voci continuano a parlare. Fuori, tutti aspettano di sapere che cosa ne sarà.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "scelte": [
+        {
+          "id": "preserva",
+          "testo": "La Casa resta dov'è, custodita da Ada",
+          "effetti": [
+            {
+              "asse": {
+                "id": "memory",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "ada",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Ada richiude la camera. Resterà a Soglia, finché ci sarà Soglia."
+        },
+        {
+          "id": "trasmetti",
+          "testo": "Trasmetto la selezione oltre Soglia",
+          "effetti": [
+            {
+              "flag": {
+                "trasmissione_riuscita": true
+              }
+            },
+            {
+              "asse": {
+                "id": "memory",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Il ripetitore canta per una notte intera. Le voci di Soglia arrivano a chi non doveva sentirle.",
+          "richiede": {
+            "qualunque": [
+              {
+                "flag": "ripetitore_riparato"
+              },
+              {
+                "possiede": "key_archive_seed"
+              },
+              {
+                "flag": "eidos_alt_supporti"
+              }
+            ]
+          },
+          "motivo_non_disponibile": "Serve il ripetitore riparato o un supporto d'archivio."
+        },
+        {
+          "id": "consegna",
+          "testo": "Consegno la Casa a una fazione in cambio di protezione",
+          "effetti": [
+            {
+              "flag": {
+                "casa_consegnata": true,
+                "accordo_valido": true
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomy",
+                "delta": -1
+              }
+            },
+            {
+              "asse": {
+                "id": "memory",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "La Casa lascia Soglia su un carro scortato. La protezione arriva, e con lei le condizioni."
+        },
+        {
+          "id": "distruggi",
+          "testo": "Distruggo la Casa",
+          "effetti": [
+            {
+              "flag": {
+                "casa_distrutta": true
+              }
+            },
+            {
+              "asse": {
+                "id": "memory",
+                "delta": -3
+              }
+            }
+          ],
+          "riserva": "Le registrazioni bruciano. Nessuno potrà più usarle, nemmeno Soglia."
+        },
+        {
+          "id": "controlla",
+          "testo": "Tengo la Casa sotto il mio controllo",
+          "effetti": [
+            {
+              "flag": {
+                "controllo_casa_finale": true
+              }
+            },
+            {
+              "asse": {
+                "id": "trust",
+                "delta": -2
+              }
+            }
+          ],
+          "riserva": "Le chiavi della Casa sono tue. Nessuno entra senza il tuo permesso."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "scelta_fatta": true
+          },
+          "verso": "E15",
+          "effetti": [
+            {
+              "snodo": "III_casa"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "E15",
+      "titolo": "Il nome di Soglia",
+      "luogo": "Piazza delle pompe",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Soglia deve dire chi è, davanti a tutti.",
+      "png_presenti": [
+        "ada",
+        "mirea",
+        "cassian",
+        "reik",
+        "yara",
+        "tal"
+      ],
+      "apertura_riserva": "Tutta Soglia è in piazza. Le fazioni ascoltano da fuori. Qualcuno ti passa la parola.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "scelte": [
+        {
+          "id": "autonomia",
+          "testo": "Proclamo Soglia libera e padrona della propria rotta",
+          "effetti": [
+            {
+              "asse": {
+                "id": "autonomy",
+                "delta": 2
+              }
+            },
+            {
+              "asse": {
+                "id": "trust",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Soglia si dichiara libera. Le fazioni prendono nota; nessuno applaude, nessuno spara."
+        },
+        {
+          "id": "protezione",
+          "testo": "Accetto la protezione di chi l'ha offerta",
+          "effetti": [
+            {
+              "flag": {
+                "accordo_valido": true
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomy",
+                "delta": -1
+              }
+            },
+            {
+              "asse": {
+                "id": "survival",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Soglia accetta una bandiera. La sicurezza ha un prezzo, e da oggi si paga."
+        },
+        {
+          "id": "disperdi",
+          "testo": "Sciolgo Soglia: la gente parte, la comunità resta",
+          "effetti": [
+            {
+              "flag": {
+                "soglia_dispersa": true,
+                "evacuazione_completata": true
+              }
+            },
+            {
+              "asse": {
+                "id": "survival",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Soglia si scioglie. Le persone partono insieme, portando con sé i nomi.",
+          "richiede": {
+            "qualunque": [
+              {
+                "flag": "vie_fuga"
+              },
+              {
+                "possiede": "key_escape_chart"
+              },
+              {
+                "flag": "rotta_yara"
+              }
+            ]
+          },
+          "motivo_non_disponibile": "Senza una via di fuga la gente non ha dove andare."
+        },
+        {
+          "id": "dominio",
+          "testo": "Prendo il comando di Soglia",
+          "effetti": [
+            {
+              "flag": {
+                "dominio": true
+              }
+            },
+            {
+              "asse": {
+                "id": "trust",
+                "delta": -1
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomy",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Parli e nessuno ti contraddice. Soglia ha un nuovo padrone."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "scelta_fatta": true
+          },
+          "verso": "E16",
+          "effetti": [
+            {
+              "flag": {
+                "act_3_climax_reached": true
+              }
+            },
+            {
+              "snodo": "III_climax"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare",
+      "incontro": {
+        "nemico": "villain_cassian",
+        "villain": {
+          "candidati": [
+            "villain_cassian",
+            "villain_reik"
+          ],
+          "scelta": "piu_ostile",
+          "scala": {
+            "livello": "protagonista",
+            "hpRispettoAlPg": {
+              "esplorativa": 0.7,
+              "bilanciata": 0.9,
+              "permadeath": 1
+            },
+            "dannoRispettoAlPg": 0.6,
+            "dannoMassimoMolt": 3,
+            "fonte": "decisione dell'autore (2026-10-02): sfida paragonabile al giocatore; fattori proposti, da approvare"
+          }
+        },
+        "finale": true,
+        "letale": true,
+        "fuga": {
+          "tratto": "Sopravvivenza",
+          "nc": 15,
+          "costo": [
+            {
+              "flag": {
+                "duello_finale_abbandonato": true
+              }
+            }
+          ]
+        },
+        "vittoria": [
+          {
+            "flag": {
+              "villain_affrontato": true
+            }
+          }
+        ],
+        "sconfitta": {
+          "tipo": "fail_forward",
+          "testo": "Cadi sulle lastre della piazza. Quando riapri gli occhi qualcuno della comunità ti tiene sollevata la testa e ti stringe le ferite: lo scontro è finito senza di te, e la piazza aspetta ancora la tua parola."
+        },
+        "fonte": "decisione dell'autore (2026-10-02): il villain partecipa allo scontro finale"
+      }
+    },
+    {
+      "id": "E16",
+      "titolo": "Epilogo",
+      "luogo": "Soglia",
+      "calma": false,
+      "fuori_citta": false,
+      "descrizione": "La campagna si chiude qui: il motore ha già deciso l'esito.",
+      "png_presenti": [
+        "ada"
+      ],
+      "apertura_riserva": "Il tempo delle scelte è finito.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "finale": true,
+      "uscite": [],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+    }
+  ],
+  "avanzamento": {
+    "nota": "Progressione a tacche (vedi progressione)."
+  },
+  "progressione": {
+    "stato": "proposta da approvare",
+    "nota": "Tacche per azioni registrate (mai per attesa o ripetizione): costo del livello L = ceil(AP del livello L in LEVEL_TABLE / divisore_costo). Il livello si guadagna solo chiudendo una scena (mai per una singola risposta), al massimo uno per volta e mai oltre la fascia dell'atto; si ricevono esattamente gli AP della tabella.",
+    "divisore_costo": 4,
+    "livello_a_fine_scena": true,
+    "fasce": {
+      "1": [
+        1,
+        8
+      ],
+      "2": [
+        9,
+        20
+      ],
+      "3": [
+        21,
+        30
+      ]
+    },
+    "premi": {
+      "obiettivo": {
+        "successo": 2,
+        "parziale": 1,
+        "fallimento": 1
+      },
+      "snodo": 1,
+      "verita": 1,
+      "scena_nuova": 1,
+      "legame": 1,
+      "soluzione_creativa": 1
+    },
+    "nota_ritmo": "Con divisore 4 la trama principale porta circa un livello ogni 2-3 scene (Lv 6-7 a fine campagna, misurato sulle ricette dei finali). I livelli successivi sono pensati per esplorazione, incarichi e archi personali, da scrivere."
+  },
+  "profili_difficolta": {
+    "esplorativa": {
+      "candidati": 3,
+      "risorse_budget_delta": 1,
+      "oggetti_chiave": "protetti",
+      "kit_atto_1": "garantito dopo il primo obiettivo",
+      "morte": "recupero coerente"
+    },
+    "bilanciata": {
+      "candidati": 2,
+      "risorse_budget_delta": 0,
+      "oggetti_chiave": "custode",
+      "kit_atto_1": "solo indagando il convoglio",
+      "morte": "recupero coerente"
+    },
+    "permadeath": {
+      "candidati": 1,
+      "risorse_budget_delta": -1,
+      "oggetti_chiave": "perdita",
+      "kit_atto_1": "nessuna garanzia; via narrativa alternativa",
+      "morte": "definitiva"
+    },
+    "nota": "I profili cambiano disponibilità e conseguenze, mai la potenza massima degli oggetti (V4 §11). Valori da approvare."
+  },
+  "regole_magia": {
+    "stato": "regola delle gemme approvata dall'autore (revisione capacità); valori delle capacità speciali e dell'armatura da approvare",
+    "gemme": {
+      "popolazioni": [
+        "Chorisfos"
+      ],
+      "modello": "attiva/scarica: la gemma attiva permette la capacità associata, che costa MP; scaricarla (azione completa) recupera MP (SOLO_TUNING.gemme, per difetto, mai oltre il massimo) e la disattiva fino al reintegro",
+      "reintegro": "una gemma a scelta tra un avamposto e il successivo, senza recupero di MP"
+    },
+    "manifestazione_senza_gemme": {
+      "flag_abilitante": "manifestazione_senza_gemme",
+      "fatto_testimoni": "eidos_fact_magia_senza_gemme",
+      "conseguenze": "La magia è uscita senza una gemma, davanti a testimoni. Tra i Chorisfos questo significa emarginazione, abbandono o qualcuno che, senza clamore, decide di farti sparire."
+    },
+    "magia_epizi": {
+      "popolazioni": [
+        "Epizi"
+      ],
+      "flag_abilitante": "manifestazione_epizio",
+      "fatto_testimoni": "eidos_fact_magia_vista",
+      "conseguenze": "Qualcuno ha visto un Epizio fare ciò che la scienza chiama impossibile: arrivano l'accusa di comportamento antiscientifico, l'isolamento e l'interesse di chi vorrebbe studiarti."
+    }
+  },
+  "lessico_riservato": [],
+  "testi": {
+    "sconfitta": "Qualcuno di Soglia ti trascina al riparo. Ti risvegli con una ferita fasciata: resti ferito fino al prossimo riposo, e il tempo perso pesa."
+  },
+  "vincoli_narrativi": [
+    "Grafie canoniche: Eidos, Aima, Tèras, Tèime, Chorisfos, Epizi, Eporiani, Antarsi, Apologeti, Epimno, Lechta, Antarsia, Erissa, Periphto.",
+    "Non far intervenire Mhor, Misia, Sombra o altri protagonisti della storia principale per risolvere la vicenda.",
+    "La Casa non contiene armi risolutive: il suo valore è politico e personale.",
+    "Non rivelare le verità riservate finché il motore non le segna come scoperte."
+  ],
+  "loot": {
+    "versione": "loot-eidos-casa-0.1-proposta",
+    "avviso": "Catalogo proposto (V4 §10): nomi ed effetti da approvare. Statistiche solo da EQUIP_TABLE (js/data.js); qualità solo Bassa, Media, Alta.",
+    "componenti": {
+      "basi": {
+        "loot_antidote_dose": {
+          "nome": "Dose di antidoto",
+          "categoria": "consumabile",
+          "descrizione": "Una dose Chorisfos, valida per la durata prevista. Nessun bonus in combattimento.",
+          "effetto": {
+            "effetti": [
+              {
+                "flag": {
+                  "antidoto_assunto": true
+                }
+              }
+            ]
+          }
+        },
+        "loot_filter_patch": {
+          "nome": "Toppa per filtri",
+          "categoria": "consumabile",
+          "descrizione": "Una maglia di ricambio: ripara per poco un segmento dei filtri.",
+          "effetto": {
+            "effetti": [
+              {
+                "orologio": {
+                  "id": "filtri",
+                  "delta": 1
+                }
+              }
+            ]
+          },
+          "tag": [
+            "filtri",
+            "riparazione"
+          ]
+        },
+        "loot_gem_spent": {
+          "nome": "Gemma esausta",
+          "categoria": "materiale",
+          "descrizione": "Una gemma senza cariche: merce di scambio o ricambio. Non canalizza.",
+          "tag": [
+            "scambio"
+          ]
+        },
+        "loot_gem_charge": {
+          "nome": "Carica per gemma",
+          "categoria": "consumabile",
+          "descrizione": "Ripristina le cariche di una gemma compatibile, fino al massimo.",
+          "effetto": {
+            "cariche_gemma": "max"
+          }
+        },
+        "loot_teras_sinew": {
+          "nome": "Tendine di Tèras",
+          "categoria": "materiale",
+          "descrizione": "Tendine resistente, buono per le riparazioni.",
+          "tag": [
+            "riparazione"
+          ]
+        },
+        "loot_epizi_sensor": {
+          "nome": "Sensore epizio",
+          "categoria": "strumento",
+          "descrizione": "Un sensore diagnostico: rende possibile una verifica altrimenti impossibile.",
+          "tag": [
+            "diagnosi",
+            "filtri",
+            "macchinari"
+          ]
+        },
+        "loot_eporian_seal": {
+          "nome": "Sigillo mercantile",
+          "categoria": "strumento",
+          "descrizione": "Apre l'accesso a una trattativa precisa, senza garantirne l'esito.",
+          "tag": [
+            "trattativa",
+            "lechta"
+          ]
+        },
+        "loot_water_map": {
+          "nome": "Mappa dell'acqua",
+          "categoria": "consumabile",
+          "descrizione": "Segna un percorso e un punto di rifornimento.",
+          "effetto": {
+            "effetti": [
+              {
+                "flag": {
+                  "percorso_acqua": true
+                }
+              }
+            ]
+          },
+          "tag": [
+            "percorso"
+          ]
+        },
+        "loot_founder_token": {
+          "nome": "Ricordo dei fondatori",
+          "categoria": "indizio",
+          "descrizione": "Un piccolo oggetto dei primi abitanti. Nessun valore in combattimento.",
+          "tag": [
+            "casa",
+            "memoria"
+          ]
+        },
+        "loot_field_tools": {
+          "nome": "Attrezzi da campo",
+          "categoria": "strumento",
+          "descrizione": "Permettono una prova di riparazione; non la superano da soli.",
+          "tag": [
+            "riparazione"
+          ]
+        },
+        "arma_corta_bassa": {
+          "nome": "Lama corta",
+          "categoria": "arma",
+          "taglia": "corte",
+          "qualita": "bassa"
+        },
+        "arma_corta_media": {
+          "nome": "Arma corta",
+          "categoria": "arma",
+          "taglia": "corte",
+          "qualita": "media"
+        },
+        "arma_media_bassa": {
+          "nome": "Lancia",
+          "categoria": "arma",
+          "taglia": "medie",
+          "qualita": "bassa"
+        },
+        "arco_medio_alto": {
+          "nome": "Arco composito",
+          "categoria": "arma",
+          "taglia": "medie",
+          "qualita": "alta",
+          "classe": "tiro"
+        },
+        "protezione_leggera_bassa": {
+          "nome": "Protezione leggera",
+          "categoria": "armatura",
+          "taglia": "leggere",
+          "qualita": "bassa"
+        },
+        "protezione_leggera_media": {
+          "nome": "Protezione leggera",
+          "categoria": "armatura",
+          "taglia": "leggere",
+          "qualita": "media"
+        },
+        "corazza_media_media": {
+          "nome": "Corazza connessa",
+          "categoria": "armatura",
+          "taglia": "medie",
+          "qualita": "media"
+        },
+        "scudo_piccolo_basso": {
+          "nome": "Scudo piccolo",
+          "categoria": "scudo",
+          "taglia": "piccoli",
+          "qualita": "bassa"
+        },
+        "arco_medio_basso": {
+          "nome": "Arco",
+          "categoria": "arma",
+          "taglia": "medie",
+          "qualita": "bassa",
+          "classe": "tiro"
+        }
+      },
+      "materiali": {
+        "acciaio_recupero": {
+          "nome": "d'acciaio di recupero",
+          "qualita": [
+            "bassa",
+            "media"
+          ]
+        },
+        "lega_epizia": {
+          "nome": "in lega epizia",
+          "qualita": [
+            "media"
+          ]
+        },
+        "osso_teras": {
+          "nome": "in osso di Tèras",
+          "qualita": [
+            "alta"
+          ]
+        }
+      },
+      "proprieta": {
+        "bilanciata": {
+          "nome": "bilanciata",
+          "costo": 1,
+          "categorie": [
+            "arma"
+          ],
+          "incompatibili": [
+            "sbilanciata"
+          ],
+          "effetto": "descrittiva: nessun bonus numerico approvato"
+        },
+        "sbilanciata": {
+          "nome": "sbilanciata",
+          "costo": 1,
+          "categorie": [
+            "arma"
+          ],
+          "incompatibili": [
+            "bilanciata"
+          ],
+          "effetto": "descrittiva"
+        },
+        "rinforzata": {
+          "nome": "rinforzata",
+          "costo": 1,
+          "categorie": [
+            "armatura"
+          ],
+          "effetto": "descrittiva"
+        }
+      }
+    },
+    "modelli": {
+      "m_antidoto": {
+        "famiglia": "ordinario",
+        "basi": [
+          "loot_antidote_dose"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Una dose avanzata da una squadra Chorisfos.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_toppa_filtri": {
+        "famiglia": "ordinario",
+        "basi": [
+          "loot_filter_patch"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Materiale di Soglia per i filtri.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_gemma_esausta": {
+        "famiglia": "ordinario",
+        "basi": [
+          "loot_gem_spent"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Una gemma consumata.",
+        "filtri": {
+          "atto": [
+            1,
+            2
+          ]
+        },
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2
+        ],
+        "level_band": [
+          1,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_carica_gemma": {
+        "famiglia": "ordinario",
+        "basi": [
+          "loot_gem_charge"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Una carica per le gemme dei Chorisfos.",
+        "filtri": {
+          "fazione": [
+            "Chorisfos"
+          ],
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "requisiti": {
+          "classe": [
+            "mago",
+            "eclettico"
+          ]
+        },
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare",
+        "disattivato": "da approvare: sarebbe un secondo reintegro oltre a quello dell'avamposto"
+      },
+      "m_tendine": {
+        "famiglia": "ordinario",
+        "basi": [
+          "loot_teras_sinew"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Resti di Tèras.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_sensore": {
+        "famiglia": "ordinario",
+        "basi": [
+          "loot_epizi_sensor"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Uno strumento epizio abbandonato.",
+        "filtri": {
+          "atto": [
+            1,
+            2
+          ]
+        },
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2
+        ],
+        "level_band": [
+          1,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_sigillo": {
+        "famiglia": "ordinario",
+        "basi": [
+          "loot_eporian_seal"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Un sigillo di Lechta.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_mappa_acqua": {
+        "famiglia": "ordinario",
+        "basi": [
+          "loot_water_map"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Una mappa disegnata a mano.",
+        "filtri": {
+          "atto": [
+            1,
+            2
+          ]
+        },
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2
+        ],
+        "level_band": [
+          1,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_ricordo": {
+        "famiglia": "ordinario",
+        "basi": [
+          "loot_founder_token"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Un ricordo dei fondatori.",
+        "filtri": {
+          "atto": [
+            2,
+            3
+          ]
+        },
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          2,
+          3
+        ],
+        "level_band": [
+          9,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_attrezzi": {
+        "famiglia": "ordinario",
+        "basi": [
+          "loot_field_tools"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Attrezzi di chi lavorava ai filtri.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_lama_recupero": {
+        "famiglia": "ordinario",
+        "basi": [
+          "arma_corta_bassa"
+        ],
+        "nome_modello": "{base} {materiale}",
+        "descrizione": "Una lama di dotazione abbandonata.",
+        "materiali": [
+          "acciaio_recupero"
+        ],
+        "proprieta": [
+          "bilanciata",
+          "sbilanciata"
+        ],
+        "max_proprieta": 1,
+        "budget": 1,
+        "filtri": {
+          "fazione": [
+            "Chorisfos",
+            "Eporiani"
+          ],
+          "atto": [
+            1,
+            2
+          ]
+        },
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2
+        ],
+        "level_band": [
+          1,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_protezione_recupero": {
+        "famiglia": "ordinario",
+        "basi": [
+          "protezione_leggera_bassa"
+        ],
+        "nome_modello": "{base} {materiale}",
+        "descrizione": "Piastre di recupero.",
+        "materiali": [
+          "acciaio_recupero"
+        ],
+        "proprieta": [
+          "rinforzata"
+        ],
+        "max_proprieta": 1,
+        "budget": 1,
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_arma_epizia": {
+        "famiglia": "ordinario",
+        "basi": [
+          "arma_corta_media"
+        ],
+        "nome_modello": "{base} {materiale}",
+        "descrizione": "Un'arma corta epizia, di qualità Media.",
+        "materiali": [
+          "lega_epizia"
+        ],
+        "filtri": {
+          "fazione": [
+            "Epizi"
+          ],
+          "atto": [
+            2,
+            3
+          ]
+        },
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          2,
+          3
+        ],
+        "level_band": [
+          9,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_arco_antarsi": {
+        "famiglia": "ordinario",
+        "basi": [
+          "arco_medio_alto"
+        ],
+        "nome_modello": "{base} {materiale}",
+        "descrizione": "Un arco dei cacciatori Antarsi.",
+        "materiali": [
+          "osso_teras"
+        ],
+        "filtri": {
+          "fazione": [
+            "Antarsi"
+          ],
+          "atto": [
+            2,
+            3
+          ]
+        },
+        "unico": true,
+        "campaign_id": "eidos-casa-delle-voci",
+        "content_status": "proposed",
+        "act": [
+          2,
+          3
+        ],
+        "level_band": [
+          9,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Eidos_Scheda_Contenuti_e_Finali_V2.md (pacchetto V4): proposta editoriale da approvare"
+      }
+    },
+    "pool": {
+      "soglia_ordinario": {
+        "modelli": [
+          "m_antidoto",
+          "m_toppa_filtri",
+          "m_gemma_esausta",
+          "m_carica_gemma",
+          "m_tendine",
+          "m_sensore",
+          "m_sigillo",
+          "m_mappa_acqua",
+          "m_ricordo",
+          "m_attrezzi",
+          "m_lama_recupero",
+          "m_protezione_recupero",
+          "m_arma_epizia",
+          "m_arco_antarsi"
+        ],
+        "quantita": {
+          "esplorativa": 3,
+          "bilanciata": 2,
+          "permadeath": 1
+        }
+      }
+    }
+  },
+  "regole_armatura": {
+    "stato": "da approvare: nessun valore di forzatura è definito",
+    "popolazioni": [
+      "Epizi"
+    ],
+    "risorsa": "MP (energia controllabile dell'armatura)",
+    "conseguenza_testo": "Senza energia l'armatura inizia a nutrirsi della tua linfa vitale: senti le forze scivolare via.",
+    "soglia_incoscienza": null,
+    "soglia_morte": null
+  },
+  "origini": {
+    "sede": {
+      "luogo": "soglia",
+      "segnaposto": "Soglia",
+      "forma": "la stazione di {citta}"
+    },
+    "perPopolazione": {
+      "Epizi": {
+        "citta": [
+          "epimno"
+        ]
+      },
+      "Chorisfos": {
+        "citta": [
+          "apologeti"
+        ]
+      },
+      "Eporiani": {
+        "citta": [
+          "lechta"
+        ]
+      },
+      "Antarsi": {
+        "qualsiasi": true,
+        "escluse": [
+          "lechta"
+        ],
+        "predefinita": "antarsia",
+        "nota": "Antarsi: qualsiasi città che non sia Lechta; vale la città dichiarata dal personaggio (Sava: Antarsia), altrimenti Antarsia"
+      }
+    },
+    "riscritture": [
+      [
+        "Soglia è un piccolo insediamento nascosto nelle rovine di una stazione di filtraggio",
+        "La comunità vive nascosta fra le rovine di una vecchia stazione di filtraggio ai margini di {citta}"
+      ],
+      [
+        "Soglia vive dentro una vecchia stazione di filtraggio",
+        "La comunità vive dentro una vecchia stazione di filtraggio ai margini di {citta}"
+      ],
+      [
+        "prima di diventare Soglia",
+        "prima che ci vivesse la comunità"
+      ]
+    ],
+    "descrizioneSede": "La vecchia stazione di filtraggio ai margini di {citta}, dove vive la comunità della Casa delle Voci.",
+    "fonte": "decisione dell'autore (2026-10-02): «Soglia» non è nei materiali originali; la campagna si svolge nella città di partenza del popolo del personaggio (Epizi: Epimno; Chorisfos: Apologeti; Antarsi: qualsiasi città che non sia Lechta; Eporiani: Lechta). «Soglia» resta solo come segnaposto interno nei dati: il motore lo sostituisce prima di mostrare qualsiasi testo."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "formato": "rm-solo-voce/1",
+  "id": "eidos_voice_v1",
+  "storia": "eidos",
+  "campaign_id": "eidos-casa-delle-voci",
+  "versione": "0.5.0",
+  "content_status": "proposed",
+  "source_note": "Role_Makers_Voci_Narratore_Analisi_Giocate_V1.md (pacchetto V5): proposta da approvare",
+  "narrative_voice": {
+    "id": "eidos_voice_v1",
+    "tone": [
+      "epic_concrete",
+      "political",
+      "personal"
+    ],
+    "lexicon": [
+      "materia",
+      "fiamma",
+      "nebbia",
+      "vetro",
+      "osso",
+      "metallo",
+      "respiro",
+      "idea",
+      "scelta",
+      "forma",
+      "radice",
+      "luce"
+    ],
+    "dialogue_mode": "position_plus_personal_stake",
+    "act_modifiers": {
+      "1": "discovery_and_belonging",
+      "2": "contradiction_and_responsibility",
+      "3": "choice_and_transformation"
+    },
+    "forbidden": [
+      "omniscient_spoiler",
+      "npc_unknown_fact",
+      "protagonist_thoughts",
+      "theme_lecture",
+      "historical_hero_solution"
+    ],
+    "eroi_storici": [
+      "Mhor",
+      "Misia",
+      "Sombra"
+    ],
+    "conflitto_di_valori": true,
+    "pov": "second_perceptive",
+    "pov_ammessi": [
+      "second_perceptive",
+      "third_limited"
+    ],
+    "nota_pov": "La scheda ammette terza persona limitata o seconda persona percettiva \"secondo l'impostazione dell'interfaccia\": oggi l'interfaccia e i testi di riserva usano la seconda persona.",
+    "scene_pattern": [
+      "consequence",
+      "world_detail",
+      "npc_reaction",
+      "action_opening"
+    ]
+  },
+  "guida": {
+    "esempio": "Il frammento di vetro vibra tra le dita di Daren. Dall'altra parte della piazza, due soldati epizi spingono un ragazzo contro il muro e gli aprono il mantello alla ricerca di una gemma. La folla continua a camminare. Nessuno vuole essere il secondo nome sul registro. [...] La via verso l'archivio è libera. Per pochi istanti lo è anche quella verso il ragazzo."
+  },
+  "voce_autore": "voce_autore_v1",
+  "timbro": "eidos-contesto.json#timbro"
+}

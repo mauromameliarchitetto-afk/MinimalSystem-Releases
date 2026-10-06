@@ -1,0 +1,4998 @@
+{
+  "formato": "rm-solo-semi/1",
+  "storia": "ich",
+  "statoApprovazione": "fixture_tecnica_non_canonica",
+  "avviso": "Generato da scripts/solo-genera-semi.js: nessun testo nuovo. Scene, interazioni, verità generate, atti e snodi restano proposte finché non approvati singolarmente.",
+  "canone": {
+    "premessaPubblica": {
+      "ref": "contratto.premessa_pubblica",
+      "statoCanonico": "canonico_esplicito"
+    },
+    "fattiImmutabili": {
+      "ref": "contratto.fatti_immutabili",
+      "n": 5,
+      "statoCanonico": "canonico_esplicito"
+    },
+    "regole": {
+      "ref": "vincoli_narrativi",
+      "n": 5,
+      "statoCanonico": "canonico_esplicito"
+    },
+    "lessicoRiservato": {
+      "ref": "lessico_riservato",
+      "statoCanonico": "canonico_esplicito"
+    },
+    "segreti": [
+      "ich_truth_white_path",
+      "ich_truth_voluspa",
+      "ich_truth_ghosts",
+      "ich_truth_skera",
+      "ich_truth_kyn",
+      "ich_truth_recomposition",
+      "ich_truth_therapy"
+    ],
+    "fatti": {
+      "ich_fact_persona_dimenticata": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "ich_fact_primo_spettro": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "ich_fact_sentiero": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "ich_fact_rito": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "ich_fact_trenta_giorni": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "ich_truth_white_path": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "ich_truth_voluspa": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "ich_truth_ghosts": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "ich_truth_skera": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "ich_truth_kyn": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "ich_truth_recomposition": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "ich_truth_therapy": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "ich_fact_natura_alva": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "ich_fact_natura_tovar": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "ich_fact_natura_eydis": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "ich_fact_natura_orm": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "ich_fact_natura_sigrid": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      }
+    },
+    "figure": {
+      "ragn": {
+        "ref": "png.ragn",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "halvek": {
+        "ref": "png.halvek",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "elska": {
+        "ref": "png.elska",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "eiran": {
+        "ref": "png.eiran",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "soren": {
+        "ref": "png.soren",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "liva": {
+        "ref": "png.liva",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "mjol": {
+        "ref": "png.mjol",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      }
+    }
+  },
+  "verita": {
+    "H01_T_x2": {
+      "scena": "H01",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H01_T_halvek_2": {
+      "scena": "H01",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "halvek",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H01_T_ragn_2": {
+      "scena": "H01",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ragn",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H01_T_d1": {
+      "scena": "H01",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H01_T_elska_2": {
+      "scena": "H01",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "elska",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H02_T_x1": {
+      "scena": "H02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H02_T_x3": {
+      "scena": "H02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H02_T_mjol_1": {
+      "scena": "H02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mjol",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H02_T_x4": {
+      "scena": "H02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H02_T_halvek_1": {
+      "scena": "H02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "halvek",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H02_T_d1": {
+      "scena": "H02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H02_T_mjol_2": {
+      "scena": "H02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mjol",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H03_T_x1": {
+      "scena": "H03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H03_T_x2": {
+      "scena": "H03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H03_T_liva_1": {
+      "scena": "H03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "liva",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H03_T_x3": {
+      "scena": "H03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H03_T_elska_1": {
+      "scena": "H03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "elska",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H03_T_d1": {
+      "scena": "H03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H03_T_liva_3": {
+      "scena": "H03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "liva",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H04_T_x1": {
+      "scena": "H04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H04_T_x3": {
+      "scena": "H04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H04_T_eiran_1": {
+      "scena": "H04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "eiran",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H04_T_eiran_2": {
+      "scena": "H04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "eiran",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H04_T_d1": {
+      "scena": "H04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H04_T_mjol_1": {
+      "scena": "H04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mjol",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H05_T_x1": {
+      "scena": "H05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H05_T_x2": {
+      "scena": "H05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H05_T_halvek_1": {
+      "scena": "H05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "halvek",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H05_T_ragn_1": {
+      "scena": "H05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ragn",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H05_T_ragn_2": {
+      "scena": "H05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ragn",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H05_T_mjol_2": {
+      "scena": "H05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mjol",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H05_T_x4": {
+      "scena": "H05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H05_T_d1": {
+      "scena": "H05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H05_T_mjol_1": {
+      "scena": "H05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mjol",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H05_T_halvek_2": {
+      "scena": "H05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "halvek",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H06_T_x1": {
+      "scena": "H06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H06_T_x2": {
+      "scena": "H06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H06_T_ragn_1": {
+      "scena": "H06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ragn",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H06_T_d1": {
+      "scena": "H06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H06_T_ragn_2": {
+      "scena": "H06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ragn",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H06_T_d2": {
+      "scena": "H06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H06_T_d3": {
+      "scena": "H06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H06_T_d4": {
+      "scena": "H06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H07_T_x1": {
+      "scena": "H07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H07_T_x2": {
+      "scena": "H07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H07_T_x3": {
+      "scena": "H07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H07_T_liva_1": {
+      "scena": "H07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "liva",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H07_T_d1": {
+      "scena": "H07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H07_T_elska_2": {
+      "scena": "H07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "elska",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H08_T_x1": {
+      "scena": "H08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H08_T_x3": {
+      "scena": "H08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H08_T_soren_1": {
+      "scena": "H08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "soren",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H08_T_d1": {
+      "scena": "H08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H08_T_soren_3": {
+      "scena": "H08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "soren",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H08_T_d2": {
+      "scena": "H08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H08_T_d3": {
+      "scena": "H08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H08_T_d4": {
+      "scena": "H08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H09_T_x1": {
+      "scena": "H09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H09_T_x2": {
+      "scena": "H09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H09_T_eiran_1": {
+      "scena": "H09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "eiran",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H09_T_d1": {
+      "scena": "H09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H09_T_eiran_2": {
+      "scena": "H09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "eiran",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H09_T_d2": {
+      "scena": "H09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H09_T_d3": {
+      "scena": "H09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H09_T_d4": {
+      "scena": "H09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H10_T_x1": {
+      "scena": "H10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H10_T_x2": {
+      "scena": "H10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H10_T_elska_1": {
+      "scena": "H10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "elska",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H10_T_elska_2": {
+      "scena": "H10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "elska",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H10_T_d1": {
+      "scena": "H10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H10_T_liva_1": {
+      "scena": "H10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "liva",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H11_T_x1": {
+      "scena": "H11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H11_T_x2": {
+      "scena": "H11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H11_T_ragn_1": {
+      "scena": "H11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ragn",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H11_T_soren_2": {
+      "scena": "H11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "soren",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H11_T_ragn_2": {
+      "scena": "H11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ragn",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H11_T_soren_1": {
+      "scena": "H11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "soren",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H11_T_eiran_2": {
+      "scena": "H11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "eiran",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H11_T_x3": {
+      "scena": "H11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H11_T_d1": {
+      "scena": "H11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H11_T_eiran_1": {
+      "scena": "H11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "eiran",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H12_T_x1": {
+      "scena": "H12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H12_T_x2": {
+      "scena": "H12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H12_T_soren_1": {
+      "scena": "H12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "soren",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H12_T_soren_4": {
+      "scena": "H12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "soren",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H12_T_soren_5": {
+      "scena": "H12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "soren",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H12_T_soren_6": {
+      "scena": "H12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "soren",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H12_T_soren_7": {
+      "scena": "H12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "soren",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H12_T_x4": {
+      "scena": "H12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H12_T_d1": {
+      "scena": "H12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H12_T_soren_3": {
+      "scena": "H12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "soren",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H12_T_d2": {
+      "scena": "H12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H12_T_d3": {
+      "scena": "H12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H12_T_d4": {
+      "scena": "H12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H12_T_d5": {
+      "scena": "H12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H13_T_x1": {
+      "scena": "H13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H13_T_x2": {
+      "scena": "H13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H13_T_eiran_1": {
+      "scena": "H13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "eiran",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H13_T_eiran_4": {
+      "scena": "H13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "eiran",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H13_T_eiran_5": {
+      "scena": "H13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "eiran",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H13_T_eiran_6": {
+      "scena": "H13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "eiran",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H13_T_eiran_7": {
+      "scena": "H13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "eiran",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H13_T_x3": {
+      "scena": "H13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H13_T_d1": {
+      "scena": "H13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H13_T_eiran_2": {
+      "scena": "H13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "eiran",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H13_T_d2": {
+      "scena": "H13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H13_T_d3": {
+      "scena": "H13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H13_T_d4": {
+      "scena": "H13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H13_T_d5": {
+      "scena": "H13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H14_T_x1": {
+      "scena": "H14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H14_T_x2": {
+      "scena": "H14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H14_T_elska_1": {
+      "scena": "H14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "elska",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H14_T_elska_4": {
+      "scena": "H14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "elska",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H14_T_elska_5": {
+      "scena": "H14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "elska",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H14_T_elska_6": {
+      "scena": "H14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "elska",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H14_T_elska_7": {
+      "scena": "H14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "elska",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H14_T_x4": {
+      "scena": "H14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H14_T_d1": {
+      "scena": "H14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H14_T_elska_2": {
+      "scena": "H14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "elska",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H14_T_d2": {
+      "scena": "H14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H14_T_d3": {
+      "scena": "H14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H14_T_d4": {
+      "scena": "H14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H14_T_d5": {
+      "scena": "H14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H15_T_x1": {
+      "scena": "H15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H15_T_x2": {
+      "scena": "H15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H15_T_halvek_1": {
+      "scena": "H15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "halvek",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H15_T_halvek_2": {
+      "scena": "H15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "halvek",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H15_T_d1": {
+      "scena": "H15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H15_T_mjol_1": {
+      "scena": "H15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mjol",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H16_T_x1": {
+      "scena": "H16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H16_T_x2": {
+      "scena": "H16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H16_T_ragn_1": {
+      "scena": "H16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ragn",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H16_T_ragn_2": {
+      "scena": "H16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "ragn",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H16_T_soren_2": {
+      "scena": "H16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "soren",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H16_T_liva_3": {
+      "scena": "H16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "liva",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H16_T_x3": {
+      "scena": "H16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H16_T_d1": {
+      "scena": "H16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H16_T_soren_1": {
+      "scena": "H16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "soren",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "H16_T_liva_1": {
+      "scena": "H16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "liva",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    }
+  },
+  "scene": {
+    "H01": {
+      "id": "H01",
+      "atto": 1,
+      "funzioneDrammatica": "Trovare un posto nella comunità",
+      "luogoIniziale": "Hrafnvik, sala dell'Hersir",
+      "situazioneIniziale": {
+        "ref": "scene.H01.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "halvek",
+          "obiettivo": {
+            "ref": "png.halvek.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.halvek.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "ragn",
+          "obiettivo": {
+            "ref": "png.ragn.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ragn.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_voluspa",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "elska",
+          "obiettivo": {
+            "ref": "png.elska.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.elska.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_ghosts",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "eiran",
+          "obiettivo": {
+            "ref": "png.eiran.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.eiran.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_kyn",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "H01_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "H01_T_x2",
+          "H01_T_halvek_2",
+          "H01_T_ragn_2",
+          "H01_T_d1",
+          "H01_T_elska_2"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H01x1",
+          "ref": "interazioni.H01.H01x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H01x2",
+          "ref": "interazioni.H01.H01x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H01x3",
+          "ref": "interazioni.H01.H01x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H01x4",
+          "ref": "interazioni.H01.H01x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H01d1",
+          "ref": "interazioni.H01.H01d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "spunto",
+          "id": "H01x1"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H01x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H01x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H01_halvek_1"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H01_halvek_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H01_ragn_1"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H01_ragn_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H01_elska_1"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H01_elska_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H01_eiran_1"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H01_eiran_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H01_eiran_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H02",
+          "quando": {
+            "scelta_fatta": true
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "relazione"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_radici"
+        ],
+        "snodiDellAtto": [
+          "I_radici",
+          "I_persona",
+          "I_spettro",
+          "I_sentiero",
+          "I_rito"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H01",
+        "narrativa": "narrativa.scene.H01"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H02": {
+      "id": "H02",
+      "atto": 1,
+      "funzioneDrammatica": "Ascoltare chi ricorda una persona dimenticata",
+      "luogoIniziale": "Casa di Mjol",
+      "situazioneIniziale": {
+        "ref": "scene.H02.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "mjol",
+          "obiettivo": {
+            "ref": "png.mjol.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mjol.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "halvek",
+          "obiettivo": {
+            "ref": "png.halvek.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.halvek.immediateGoal"
+          },
+          "conoscenze": []
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [
+        "ich_fact_persona_dimenticata"
+      ],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "ich_fact_persona_dimenticata"
+        ],
+        "materialeDiScena": [
+          "H02_T_x1",
+          "H02_T_x3",
+          "H02_T_mjol_1",
+          "H02_T_x4",
+          "H02_T_halvek_1",
+          "H02_T_d1",
+          "H02_T_mjol_2"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H02x1",
+          "ref": "interazioni.H02.H02x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H02x2",
+          "ref": "interazioni.H02.H02x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H02x3",
+          "ref": "interazioni.H02.H02x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H02x4",
+          "ref": "interazioni.H02.H02x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H02d1",
+          "ref": "interazioni.H02.H02d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "H02A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H02x2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H02_mjol_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H02_halvek_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H02_halvek_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H03",
+          "quando": {
+            "obiettivo_tentato": "H02A"
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "orologio",
+          "relazione",
+          "scopri",
+          "voce"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_persona"
+        ],
+        "snodiDellAtto": [
+          "I_radici",
+          "I_persona",
+          "I_spettro",
+          "I_sentiero",
+          "I_rito"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H02",
+        "narrativa": "narrativa.scene.H02"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H03": {
+      "id": "H03",
+      "atto": 1,
+      "funzioneDrammatica": "Incontrare il primo spettro",
+      "luogoIniziale": "Casa destinata alla demolizione",
+      "situazioneIniziale": {
+        "ref": "scene.H03.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "liva",
+          "obiettivo": {
+            "ref": "png.liva.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.liva.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_ghosts",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "elska",
+          "obiettivo": {
+            "ref": "png.elska.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.elska.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_ghosts",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [
+        "ich_fact_primo_spettro"
+      ],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "ich_fact_primo_spettro"
+        ],
+        "materialeDiScena": [
+          "H03_T_x1",
+          "H03_T_x2",
+          "H03_T_liva_1",
+          "H03_T_x3",
+          "H03_T_elska_1",
+          "H03_T_d1",
+          "H03_T_liva_3"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H03x1",
+          "ref": "interazioni.H03.H03x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H03x2",
+          "ref": "interazioni.H03.H03x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H03x3",
+          "ref": "interazioni.H03.H03x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H03x4",
+          "ref": "interazioni.H03.H03x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H03d1",
+          "ref": "interazioni.H03.H03d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "H03A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H03x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H03_liva_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H03_elska_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H03_elska_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H04",
+          "quando": {
+            "obiettivo_tentato": "H03A"
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "flag",
+          "relazione",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_spettro"
+        ],
+        "snodiDellAtto": [
+          "I_radici",
+          "I_persona",
+          "I_spettro",
+          "I_sentiero",
+          "I_rito"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H03",
+        "narrativa": "narrativa.scene.H03"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H04": {
+      "id": "H04",
+      "atto": 1,
+      "funzioneDrammatica": "Affrontare il Sentiero Bianco",
+      "luogoIniziale": "Margine del Kynwird",
+      "situazioneIniziale": {
+        "ref": "scene.H04.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "eiran",
+          "obiettivo": {
+            "ref": "png.eiran.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.eiran.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_kyn",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "mjol",
+          "obiettivo": {
+            "ref": "png.mjol.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mjol.immediateGoal"
+          },
+          "conoscenze": []
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "H04_tens_pressione",
+          "tipo": "pressione"
+        },
+        {
+          "id": "H04_tens_scontro",
+          "tipo": "scontro"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "nemico",
+          "nemico": "lupo_bianco",
+          "alternativa": true,
+          "introduttivo": true
+        },
+        {
+          "tipo": "pressione",
+          "nome": "Il lupo bianco si avvicina",
+          "max": 12
+        },
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [
+        "ich_fact_sentiero"
+      ],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "ich_fact_sentiero",
+          "ich_truth_white_path"
+        ],
+        "materialeDiScena": [
+          "H04_T_x1",
+          "H04_T_x3",
+          "H04_T_eiran_1",
+          "H04_T_eiran_2",
+          "H04_T_d1",
+          "H04_T_mjol_1"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H04x1",
+          "ref": "interazioni.H04.H04x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H04x2",
+          "ref": "interazioni.H04.H04x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H04x3",
+          "ref": "interazioni.H04.H04x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H04x4",
+          "ref": "interazioni.H04.H04x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H04d1",
+          "ref": "interazioni.H04.H04d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "H04A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H04x2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H04x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H04_eiran_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H04_mjol_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H04_mjol_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H05",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "H04A"
+              },
+              {
+                "incontro_concluso": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "orologio",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_sentiero"
+        ],
+        "snodiDellAtto": [
+          "I_radici",
+          "I_persona",
+          "I_spettro",
+          "I_sentiero",
+          "I_rito"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H04",
+        "narrativa": "narrativa.scene.H04"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H05": {
+      "id": "H05",
+      "atto": 1,
+      "funzioneDrammatica": "Scegliere da che parte stare al rito di chiusura",
+      "luogoIniziale": "Radura del rito",
+      "situazioneIniziale": {
+        "ref": "scene.H05.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "halvek",
+          "obiettivo": {
+            "ref": "png.halvek.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.halvek.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "ragn",
+          "obiettivo": {
+            "ref": "png.ragn.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ragn.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_voluspa",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "elska",
+          "obiettivo": {
+            "ref": "png.elska.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.elska.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_ghosts",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "mjol",
+          "obiettivo": {
+            "ref": "png.mjol.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mjol.immediateGoal"
+          },
+          "conoscenze": []
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "H05_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "H05_T_x1",
+          "H05_T_x2",
+          "H05_T_halvek_1",
+          "H05_T_ragn_1",
+          "H05_T_ragn_2",
+          "H05_T_mjol_2",
+          "H05_T_x4",
+          "H05_T_d1",
+          "H05_T_mjol_1",
+          "H05_T_halvek_2"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H05x1",
+          "ref": "interazioni.H05.H05x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H05x2",
+          "ref": "interazioni.H05.H05x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H05x3",
+          "ref": "interazioni.H05.H05x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H05x4",
+          "ref": "interazioni.H05.H05x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H05d1",
+          "ref": "interazioni.H05.H05d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "spunto",
+          "id": "H05x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H05_halvek_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H05_ragn_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H05_mjol_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H06",
+          "quando": {
+            "scelta_fatta": true
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "relazione"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_rito"
+        ],
+        "snodiDellAtto": [
+          "I_radici",
+          "I_persona",
+          "I_spettro",
+          "I_sentiero",
+          "I_rito"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H05",
+        "narrativa": "narrativa.scene.H05"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H06": {
+      "id": "H06",
+      "atto": 2,
+      "funzioneDrammatica": "Verificare i sogni di Ragn",
+      "luogoIniziale": "Torre dei presagi",
+      "situazioneIniziale": {
+        "ref": "scene.H06.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "ragn",
+          "obiettivo": {
+            "ref": "png.ragn.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ragn.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_voluspa",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "ich_truth_voluspa"
+        ],
+        "materialeDiScena": [
+          "H06_T_x1",
+          "H06_T_x2",
+          "H06_T_ragn_1",
+          "H06_T_d1",
+          "H06_T_ragn_2",
+          "H06_T_d2",
+          "H06_T_d3",
+          "H06_T_d4"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H06x1",
+          "ref": "interazioni.H06.H06x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H06x2",
+          "ref": "interazioni.H06.H06x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H06x3",
+          "ref": "interazioni.H06.H06x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H06x4",
+          "ref": "interazioni.H06.H06x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H06d1",
+          "ref": "interazioni.H06.H06d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H06d2",
+          "ref": "interazioni.H06.H06d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H06d3",
+          "ref": "interazioni.H06.H06d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H06d4",
+          "ref": "interazioni.H06.H06d4",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "H06A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H06x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H06x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H06_ragn_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H07",
+          "quando": {
+            "obiettivo_tentato": "H06A"
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "flag",
+          "orologio",
+          "relazione",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_sogni"
+        ],
+        "snodiDellAtto": [
+          "II_sogni",
+          "II_liva",
+          "II_soren",
+          "II_kyn",
+          "II_elska",
+          "II_nodo"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H06",
+        "narrativa": "narrativa.scene.H06"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H07": {
+      "id": "H07",
+      "atto": 2,
+      "funzioneDrammatica": "Decidere chi è Liva",
+      "luogoIniziale": "Casa degli spettri",
+      "situazioneIniziale": {
+        "ref": "scene.H07.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "liva",
+          "obiettivo": {
+            "ref": "png.liva.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.liva.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_ghosts",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "elska",
+          "obiettivo": {
+            "ref": "png.elska.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.elska.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_ghosts",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "H07_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "ich_truth_ghosts"
+        ],
+        "materialeDiScena": [
+          "H07_T_x1",
+          "H07_T_x2",
+          "H07_T_x3",
+          "H07_T_liva_1",
+          "H07_T_d1",
+          "H07_T_elska_2"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H07x1",
+          "ref": "interazioni.H07.H07x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H07x2",
+          "ref": "interazioni.H07.H07x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H07x3",
+          "ref": "interazioni.H07.H07x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H07x4",
+          "ref": "interazioni.H07.H07x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H07d1",
+          "ref": "interazioni.H07.H07d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "H07A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H07x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H07_liva_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H07_liva_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H07_elska_1"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H07_elska_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H08",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "H07A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "orologio",
+          "relazione",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_liva"
+        ],
+        "snodiDellAtto": [
+          "II_sogni",
+          "II_liva",
+          "II_soren",
+          "II_kyn",
+          "II_elska",
+          "II_nodo"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H07",
+        "narrativa": "narrativa.scene.H07"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H08": {
+      "id": "H08",
+      "atto": 2,
+      "funzioneDrammatica": "Affrontare il passato di Soren",
+      "luogoIniziale": "Bottega di Soren",
+      "situazioneIniziale": {
+        "ref": "scene.H08.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "soren",
+          "obiettivo": {
+            "ref": "png.soren.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.soren.immediateGoal"
+          },
+          "conoscenze": []
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "H08_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "ich_truth_skera"
+        ],
+        "materialeDiScena": [
+          "H08_T_x1",
+          "H08_T_x3",
+          "H08_T_soren_1",
+          "H08_T_d1",
+          "H08_T_soren_3",
+          "H08_T_d2",
+          "H08_T_d3",
+          "H08_T_d4"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_kyn",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H08x1",
+          "ref": "interazioni.H08.H08x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H08x2",
+          "ref": "interazioni.H08.H08x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H08x3",
+          "ref": "interazioni.H08.H08x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H08x4",
+          "ref": "interazioni.H08.H08x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H08d1",
+          "ref": "interazioni.H08.H08d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H08d2",
+          "ref": "interazioni.H08.H08d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H08d3",
+          "ref": "interazioni.H08.H08d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H08d4",
+          "ref": "interazioni.H08.H08d4",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "H08A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H08x2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H08x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H08_soren_2"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H09",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "H08A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "orologio",
+          "relazione",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_soren"
+        ],
+        "snodiDellAtto": [
+          "II_sogni",
+          "II_liva",
+          "II_soren",
+          "II_kyn",
+          "II_elska",
+          "II_nodo"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H08",
+        "narrativa": "narrativa.scene.H08"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H09": {
+      "id": "H09",
+      "atto": 2,
+      "funzioneDrammatica": "Sentire il richiamo del bosco",
+      "luogoIniziale": "Il primo albero",
+      "situazioneIniziale": {
+        "ref": "scene.H09.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "eiran",
+          "obiettivo": {
+            "ref": "png.eiran.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.eiran.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_kyn",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "ich_truth_kyn"
+        ],
+        "materialeDiScena": [
+          "H09_T_x1",
+          "H09_T_x2",
+          "H09_T_eiran_1",
+          "H09_T_d1",
+          "H09_T_eiran_2",
+          "H09_T_d2",
+          "H09_T_d3",
+          "H09_T_d4"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H09x1",
+          "ref": "interazioni.H09.H09x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H09x2",
+          "ref": "interazioni.H09.H09x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H09x3",
+          "ref": "interazioni.H09.H09x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H09x4",
+          "ref": "interazioni.H09.H09x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H09d1",
+          "ref": "interazioni.H09.H09d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H09d2",
+          "ref": "interazioni.H09.H09d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H09d3",
+          "ref": "interazioni.H09.H09d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H09d4",
+          "ref": "interazioni.H09.H09d4",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "H09A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H09x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H09x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H09_eiran_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H10",
+          "quando": {
+            "obiettivo_tentato": "H09A"
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "flag",
+          "orologio",
+          "relazione",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_kyn"
+        ],
+        "snodiDellAtto": [
+          "II_sogni",
+          "II_liva",
+          "II_soren",
+          "II_kyn",
+          "II_elska",
+          "II_nodo"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H09",
+        "narrativa": "narrativa.scene.H09"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H10": {
+      "id": "H10",
+      "atto": 2,
+      "funzioneDrammatica": "Aiutare Elska a decidere",
+      "luogoIniziale": "Magazzino dei fili",
+      "situazioneIniziale": {
+        "ref": "scene.H10.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "elska",
+          "obiettivo": {
+            "ref": "png.elska.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.elska.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_ghosts",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "liva",
+          "obiettivo": {
+            "ref": "png.liva.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.liva.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_ghosts",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "H10_tens_pressione",
+          "tipo": "pressione"
+        },
+        {
+          "id": "H10_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "pressione",
+          "nome": "Il residuo si allarga",
+          "max": 12
+        },
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "H10_T_x1",
+          "H10_T_x2",
+          "H10_T_elska_1",
+          "H10_T_elska_2",
+          "H10_T_d1",
+          "H10_T_liva_1"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H10x1",
+          "ref": "interazioni.H10.H10x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H10x2",
+          "ref": "interazioni.H10.H10x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H10x3",
+          "ref": "interazioni.H10.H10x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H10x4",
+          "ref": "interazioni.H10.H10x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H10d1",
+          "ref": "interazioni.H10.H10d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "H10A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H10x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H10x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H10_elska_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H10_liva_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H10_liva_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H11",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "H10A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "relazione",
+          "ricompensa"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_elska"
+        ],
+        "snodiDellAtto": [
+          "II_sogni",
+          "II_liva",
+          "II_soren",
+          "II_kyn",
+          "II_elska",
+          "II_nodo"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H10",
+        "narrativa": "narrativa.scene.H10"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H11": {
+      "id": "H11",
+      "atto": 2,
+      "funzioneDrammatica": "Scegliere chi portare al nodo",
+      "luogoIniziale": "Colle dei presagi",
+      "situazioneIniziale": {
+        "ref": "scene.H11.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "ragn",
+          "obiettivo": {
+            "ref": "png.ragn.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ragn.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_voluspa",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "elska",
+          "obiettivo": {
+            "ref": "png.elska.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.elska.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_ghosts",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "soren",
+          "obiettivo": {
+            "ref": "png.soren.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.soren.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "eiran",
+          "obiettivo": {
+            "ref": "png.eiran.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.eiran.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_kyn",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "H11_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "ich_truth_recomposition"
+        ],
+        "materialeDiScena": [
+          "H11_T_x1",
+          "H11_T_x2",
+          "H11_T_ragn_1",
+          "H11_T_soren_2",
+          "H11_T_ragn_2",
+          "H11_T_soren_1",
+          "H11_T_eiran_2",
+          "H11_T_x3",
+          "H11_T_d1",
+          "H11_T_eiran_1"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H11x1",
+          "ref": "interazioni.H11.H11x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H11x2",
+          "ref": "interazioni.H11.H11x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H11x3",
+          "ref": "interazioni.H11.H11x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H11x4",
+          "ref": "interazioni.H11.H11x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H11d1",
+          "ref": "interazioni.H11.H11d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "H11A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H11x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H11_ragn_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H11_soren_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H11_eiran_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H12",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "H11A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "flag",
+          "orologio",
+          "relazione",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_nodo"
+        ],
+        "snodiDellAtto": [
+          "II_sogni",
+          "II_liva",
+          "II_soren",
+          "II_kyn",
+          "II_elska",
+          "II_nodo"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H11",
+        "narrativa": "narrativa.scene.H11"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H12": {
+      "id": "H12",
+      "atto": 3,
+      "funzioneDrammatica": "Ascoltare la voce senza corpo",
+      "luogoIniziale": "Il nodo del settore",
+      "situazioneIniziale": {
+        "ref": "scene.H12.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "soren",
+          "obiettivo": {
+            "ref": "png.soren.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.soren.immediateGoal"
+          },
+          "conoscenze": []
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "H12_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "ich_truth_therapy",
+          "ich_fact_natura_alva",
+          "ich_fact_natura_tovar",
+          "ich_fact_natura_eydis",
+          "ich_fact_natura_orm",
+          "ich_fact_natura_sigrid"
+        ],
+        "materialeDiScena": [
+          "H12_T_x1",
+          "H12_T_x2",
+          "H12_T_soren_1",
+          "H12_T_soren_4",
+          "H12_T_soren_5",
+          "H12_T_soren_6",
+          "H12_T_soren_7",
+          "H12_T_x4",
+          "H12_T_d1",
+          "H12_T_soren_3",
+          "H12_T_d2",
+          "H12_T_d3",
+          "H12_T_d4",
+          "H12_T_d5"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_recomposition"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H12x1",
+          "ref": "interazioni.H12.H12x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H12x2",
+          "ref": "interazioni.H12.H12x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H12x3",
+          "ref": "interazioni.H12.H12x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H12x4",
+          "ref": "interazioni.H12.H12x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H12d1",
+          "ref": "interazioni.H12.H12d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H12d2",
+          "ref": "interazioni.H12.H12d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H12d3",
+          "ref": "interazioni.H12.H12d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H12d4",
+          "ref": "interazioni.H12.H12d4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H12d5",
+          "ref": "interazioni.H12.H12d5",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "H12A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H12x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H12_soren_2"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H13",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "H12A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "III_fruitore"
+        ],
+        "snodiDellAtto": [
+          "III_fruitore",
+          "III_kyn",
+          "III_protocollo",
+          "III_radici",
+          "III_climax"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H12",
+        "narrativa": "narrativa.scene.H12"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H13": {
+      "id": "H13",
+      "atto": 3,
+      "funzioneDrammatica": "Decidere del potere del bosco",
+      "luogoIniziale": "Il primo albero",
+      "situazioneIniziale": {
+        "ref": "scene.H13.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "eiran",
+          "obiettivo": {
+            "ref": "png.eiran.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.eiran.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_kyn",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "H13_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "H13_T_x1",
+          "H13_T_x2",
+          "H13_T_eiran_1",
+          "H13_T_eiran_4",
+          "H13_T_eiran_5",
+          "H13_T_eiran_6",
+          "H13_T_eiran_7",
+          "H13_T_x3",
+          "H13_T_d1",
+          "H13_T_eiran_2",
+          "H13_T_d2",
+          "H13_T_d3",
+          "H13_T_d4",
+          "H13_T_d5"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H13x1",
+          "ref": "interazioni.H13.H13x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H13x2",
+          "ref": "interazioni.H13.H13x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H13x3",
+          "ref": "interazioni.H13.H13x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H13x4",
+          "ref": "interazioni.H13.H13x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H13d1",
+          "ref": "interazioni.H13.H13d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H13d2",
+          "ref": "interazioni.H13.H13d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H13d3",
+          "ref": "interazioni.H13.H13d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H13d4",
+          "ref": "interazioni.H13.H13d4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H13d5",
+          "ref": "interazioni.H13.H13d5",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "spunto",
+          "id": "H13x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H13_eiran_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H14",
+          "quando": {
+            "scelta_fatta": true
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "relazione"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "III_kyn"
+        ],
+        "snodiDellAtto": [
+          "III_fruitore",
+          "III_kyn",
+          "III_protocollo",
+          "III_radici",
+          "III_climax"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H13",
+        "narrativa": "narrativa.scene.H13"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H14": {
+      "id": "H14",
+      "atto": 3,
+      "funzioneDrammatica": "Affrontare la Ricomposizione",
+      "luogoIniziale": "Il margine del nodo",
+      "situazioneIniziale": {
+        "ref": "scene.H14.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "elska",
+          "obiettivo": {
+            "ref": "png.elska.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.elska.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_ghosts",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "H14_tens_pressione",
+          "tipo": "pressione"
+        },
+        {
+          "id": "H14_tens_scontro",
+          "tipo": "scontro"
+        },
+        {
+          "id": "H14_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "nemico",
+          "nemico": "custode_senza_volto",
+          "alternativa": false,
+          "introduttivo": false
+        },
+        {
+          "tipo": "pressione",
+          "nome": "I custodi avanzano",
+          "max": 18
+        },
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "H14_T_x1",
+          "H14_T_x2",
+          "H14_T_elska_1",
+          "H14_T_elska_4",
+          "H14_T_elska_5",
+          "H14_T_elska_6",
+          "H14_T_elska_7",
+          "H14_T_x4",
+          "H14_T_d1",
+          "H14_T_elska_2",
+          "H14_T_d2",
+          "H14_T_d3",
+          "H14_T_d4",
+          "H14_T_d5"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H14x1",
+          "ref": "interazioni.H14.H14x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H14x2",
+          "ref": "interazioni.H14.H14x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H14x3",
+          "ref": "interazioni.H14.H14x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H14x4",
+          "ref": "interazioni.H14.H14x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H14d1",
+          "ref": "interazioni.H14.H14d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H14d2",
+          "ref": "interazioni.H14.H14d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H14d3",
+          "ref": "interazioni.H14.H14d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H14d4",
+          "ref": "interazioni.H14.H14d4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H14d5",
+          "ref": "interazioni.H14.H14d5",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "spunto",
+          "id": "H14x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H14_elska_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H15",
+          "quando": {
+            "tutti": [
+              {
+                "scelta_fatta": true
+              },
+              {
+                "incontro_concluso": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "III_protocollo"
+        ],
+        "snodiDellAtto": [
+          "III_fruitore",
+          "III_kyn",
+          "III_protocollo",
+          "III_radici",
+          "III_climax"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H14",
+        "narrativa": "narrativa.scene.H14"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H15": {
+      "id": "H15",
+      "atto": 3,
+      "funzioneDrammatica": "Scegliere le proprie radici",
+      "luogoIniziale": "Hrafnvik",
+      "situazioneIniziale": {
+        "ref": "scene.H15.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "halvek",
+          "obiettivo": {
+            "ref": "png.halvek.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.halvek.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "ragn",
+          "obiettivo": {
+            "ref": "png.ragn.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ragn.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_voluspa",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "mjol",
+          "obiettivo": {
+            "ref": "png.mjol.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mjol.immediateGoal"
+          },
+          "conoscenze": []
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "H15_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "H15_T_x1",
+          "H15_T_x2",
+          "H15_T_halvek_1",
+          "H15_T_halvek_2",
+          "H15_T_d1",
+          "H15_T_mjol_1"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H15x1",
+          "ref": "interazioni.H15.H15x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H15x2",
+          "ref": "interazioni.H15.H15x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H15x3",
+          "ref": "interazioni.H15.H15x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H15x4",
+          "ref": "interazioni.H15.H15x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H15d1",
+          "ref": "interazioni.H15.H15d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "spunto",
+          "id": "H15x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H15x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H15_halvek_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H15_mjol_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H15_mjol_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H16",
+          "quando": {
+            "scelta_fatta": true
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "III_radici"
+        ],
+        "snodiDellAtto": [
+          "III_fruitore",
+          "III_kyn",
+          "III_protocollo",
+          "III_radici",
+          "III_climax"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H15",
+        "narrativa": "narrativa.scene.H15"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H16": {
+      "id": "H16",
+      "atto": 3,
+      "funzioneDrammatica": "Dichiarare la forma della libertà",
+      "luogoIniziale": "Radura del rito",
+      "situazioneIniziale": {
+        "ref": "scene.H16.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "halvek",
+          "obiettivo": {
+            "ref": "png.halvek.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.halvek.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "ragn",
+          "obiettivo": {
+            "ref": "png.ragn.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ragn.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_voluspa",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "elska",
+          "obiettivo": {
+            "ref": "png.elska.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.elska.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_ghosts",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "eiran",
+          "obiettivo": {
+            "ref": "png.eiran.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.eiran.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_kyn",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "soren",
+          "obiettivo": {
+            "ref": "png.soren.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.soren.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "liva",
+          "obiettivo": {
+            "ref": "png.liva.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.liva.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_ghosts",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "H16_tens_scontro",
+          "tipo": "scontro"
+        },
+        {
+          "id": "H16_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "nemico",
+          "nemico": "villain_elska",
+          "alternativa": false,
+          "introduttivo": false
+        },
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "H16_T_x1",
+          "H16_T_x2",
+          "H16_T_ragn_1",
+          "H16_T_ragn_2",
+          "H16_T_soren_2",
+          "H16_T_liva_3",
+          "H16_T_x3",
+          "H16_T_d1",
+          "H16_T_soren_1",
+          "H16_T_liva_1"
+        ]
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "H16x1",
+          "ref": "interazioni.H16.H16x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H16x2",
+          "ref": "interazioni.H16.H16x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H16x3",
+          "ref": "interazioni.H16.H16x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H16x4",
+          "ref": "interazioni.H16.H16x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "H16d1",
+          "ref": "interazioni.H16.H16d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "spunto",
+          "id": "H16x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H16_ragn_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H16_soren_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "H16_liva_2"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "H17",
+          "quando": {
+            "scelta_fatta": true
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "III_climax"
+        ],
+        "snodiDellAtto": [
+          "III_fruitore",
+          "III_kyn",
+          "III_protocollo",
+          "III_radici",
+          "III_climax"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.H16",
+        "narrativa": "narrativa.scene.H16"
+      },
+      "statoCanonico": "proposta"
+    },
+    "H17": {
+      "id": "H17",
+      "atto": 3,
+      "funzioneDrammatica": "Chiudere la storia",
+      "luogoIniziale": "Hrafnvik",
+      "situazioneIniziale": {
+        "ref": "scene.H17.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "ragn",
+          "obiettivo": {
+            "ref": "png.ragn.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.ragn.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "ich_truth_voluspa",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "ricomposizione"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": []
+      },
+      "segretiProibiti": [
+        "ich_truth_white_path",
+        "ich_truth_voluspa",
+        "ich_truth_ghosts",
+        "ich_truth_skera",
+        "ich_truth_kyn",
+        "ich_truth_recomposition",
+        "ich_truth_therapy",
+        "ich_fact_natura_alva",
+        "ich_fact_natura_tovar",
+        "ich_fact_natura_eydis",
+        "ich_fact_natura_orm",
+        "ich_fact_natura_sigrid"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [],
+      "filiIrrisolti": [],
+      "condizioniUscita": [],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [],
+        "snodiDellAtto": [
+          "III_fruitore",
+          "III_kyn",
+          "III_protocollo",
+          "III_radici",
+          "III_climax"
+        ]
+      },
+      "finale": true,
+      "riferimenti": {
+        "interazioni": null,
+        "narrativa": "narrativa.scene.H17"
+      },
+      "statoCanonico": "proposta"
+    }
+  }
+}

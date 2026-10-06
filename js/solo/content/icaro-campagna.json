@@ -1,0 +1,4613 @@
+{
+  "formato": "rm-solo-campagna/1",
+  "id": "icaro-otto-minuti",
+  "campaign_id": "icaro-otto-minuti",
+  "storia": "icaro",
+  "ambientazione": "Icaro — The Light Seekers (161 CE)",
+  "versione": "0.4.0",
+  "stato_editoriale": "bozza",
+  "content_status": "proposed",
+  "canonico": false,
+  "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare",
+  "titolo": "Otto minuti di calore",
+  "avviso": "PROPOSTA EDITORIALE (V4): H-17, i PNG, le varianti del finale e i profili di difficoltà sono da approvare. La campagna non stabilisce il finale della serie principale.",
+  "contratto": {
+    "premessa_pubblica": "161 CE. Nei livelli inferiori di C1, la città costruita sopra San Paolo, il Nodo termico H-17 scalda una fascia di case. La Repubblica lo ha dichiarato inefficiente e ne ha programmato lo spegnimento: secondo i registri, gli abitanti sono già stati trasferiti.",
+    "verita_riservate": [
+      "icaro_truth_population",
+      "icaro_truth_heat",
+      "icaro_truth_archive",
+      "icaro_truth_brainfreeze",
+      "icaro_truth_transfer",
+      "icaro_truth_outside_route",
+      "icaro_truth_choice"
+    ],
+    "scopo": "Impedire la disattivazione automatica di H-17, scoprire chi vive ancora nel settore dichiarato evacuato e decidere quale prezzo sia accettabile per garantirgli calore.",
+    "fatti_immutabili": [
+      "La storia si svolge nel 161 CE, durante Icaro — The Light Seekers, senza sovrapporsi alle missioni dei protagonisti.",
+      "Lexa, Scilla, Dahlia, Chroma e Rabbit non risolvono la vicenda di H-17.",
+      "Metropoli, bassifondi ed esterno ghiacciato hanno estetica, risorse e pericoli diversi.",
+      "Le modifiche corporee valgono solo per gli effetti registrati: nessuna capacità implicita.",
+      "Brainfreeze, copie e memoria non cancellano la responsabilità del personaggio."
+    ],
+    "snodi_obbligatori": [
+      "I_firma",
+      "II_distribuzione",
+      "III_climax"
+    ],
+    "liberta": [
+      "Lavorare per la Repubblica, per H-17, per gli Spenti o verso l'esterno",
+      "Unire, separare, proteggere o cancellare le copie di Mira",
+      "Decidere a che cosa dare gli ultimi otto minuti"
+    ],
+    "conseguenze_variabili": [
+      "Vite",
+      "Autonomia",
+      "Verità",
+      "Continuità"
+    ],
+    "ending_contract": {
+      "closing_question": "Quando il sistema considera una vita antieconomica, chi ha il diritto di stabilire se debba continuare?",
+      "resolution_scope": "nodo_h17_e_abitanti",
+      "required_resolution": [
+        "destino_del_nodo",
+        "destino_archivio",
+        "abitanti_di_h17"
+      ],
+      "entry_conditions": [
+        "act_3_climax_reached"
+      ],
+      "outcome_axes": [
+        "vite",
+        "autonomia",
+        "verita",
+        "continuita"
+      ],
+      "variants": [
+        {
+          "id": "icaro_ending_owned_node",
+          "titolo": "Il nodo di proprietà",
+          "tipo": "esito",
+          "priorita": 1,
+          "condizione": {
+            "tutti": [
+              {
+                "flag": "nodo_controllato"
+              },
+              {
+                "asse_al_piu": {
+                  "asse": "autonomia",
+                  "valore": 0
+                }
+              }
+            ]
+          },
+          "riserva": "H-17 sopravvive come tua proprietà e tua leva personale. Il calore arriva a chi ti serve.",
+          "conseguenza_personale": "Hai salvato il nodo; nessuno a H-17 ti considera più uno di loro.",
+          "campaign_id": "icaro-otto-minuti",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "icaro_ending_efficient_silence",
+          "titolo": "Il silenzio efficiente",
+          "tipo": "esito",
+          "priorita": 2,
+          "condizione": {
+            "flag": "spegnimento_completato"
+          },
+          "riserva": "Lo spegnimento si compie e la produzione continua. Di H-17 resta ciò che hai salvato: nomi, memorie, qualche vita altrove.",
+          "conseguenza_personale": "Porti con te i nomi di chi è rimasto al buio.",
+          "campaign_id": "icaro-otto-minuti",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "icaro_ending_exodus",
+          "titolo": "L'esodo",
+          "tipo": "esito",
+          "priorita": 3,
+          "condizione": {
+            "tutti": [
+              {
+                "flag": "rotta_verificata"
+              },
+              {
+                "flag": "evacuazione_scelta"
+              }
+            ]
+          },
+          "riserva": "Parte della comunità lascia C1 attraverso le rovine. La scelta di chi è partito e le perdite del viaggio restano nell'epilogo.",
+          "conseguenza_personale": "Hai deciso chi aveva un posto nel convoglio. Lo ricorderai.",
+          "campaign_id": "icaro-otto-minuti",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "icaro_ending_recognized_district",
+          "titolo": "Il distretto riconosciuto",
+          "tipo": "esito",
+          "priorita": 4,
+          "condizione": {
+            "tutti": [
+              {
+                "asse_almeno": {
+                  "asse": "vite",
+                  "valore": 1
+                }
+              },
+              {
+                "asse_almeno": {
+                  "asse": "verita",
+                  "valore": 2
+                }
+              },
+              {
+                "flag": "accordo_politico"
+              }
+            ]
+          },
+          "riserva": "H-17 ottiene esistenza legale e servizi. In cambio accetta controlli e registrazione.",
+          "conseguenza_personale": "Gli abitanti hanno un nome sui registri, e tu con loro.",
+          "campaign_id": "icaro-otto-minuti",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "icaro_ending_free_heat",
+          "titolo": "Il calore libero",
+          "tipo": "esito",
+          "priorita": 5,
+          "condizione": {
+            "tutti": [
+              {
+                "asse_almeno": {
+                  "asse": "autonomia",
+                  "valore": 2
+                }
+              },
+              {
+                "asse_almeno": {
+                  "asse": "continuita",
+                  "valore": 1
+                }
+              }
+            ]
+          },
+          "riserva": "Il nodo resta indipendente e alimenta una comunità clandestina, fragile ma sua.",
+          "conseguenza_personale": "Vivi fuori dai registri, al caldo, con chi hai scelto.",
+          "campaign_id": "icaro-otto-minuti",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "icaro_ending_borrowed_heat",
+          "titolo": "Il calore in prestito",
+          "tipo": "esito",
+          "priorita": 99,
+          "condizione": null,
+          "riserva": "H-17 non si spegne e non si salva: il nodo tira avanti a strappi, di rinvio in rinvio, finché qualcuno non deciderà per davvero.",
+          "conseguenza_personale": "Hai comprato tempo. Otto minuti alla volta.",
+          "ripiego": true,
+          "campaign_id": "icaro-otto-minuti",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Variante di ripiego proposta per garantire un esito a ogni combinazione di stato: NON presente nella scheda, da approvare."
+        },
+        {
+          "id": "icaro_ending_public_scandal",
+          "titolo": "Lo scandalo pubblico",
+          "tipo": "modificatore",
+          "priorita": 10,
+          "condizione": {
+            "tutti": [
+              {
+                "asse_almeno": {
+                  "asse": "verita",
+                  "valore": 2
+                }
+              },
+              {
+                "flag": "trasmissione_riuscita"
+              }
+            ]
+          },
+          "riserva": "La frode diventa pubblica. Che H-17 sopravviva o cada dipende dalle vite salvate e dalla continuità del nodo, ma nessuno potrà dire di non aver saputo.",
+          "conseguenza_personale": "Il tuo nome è legato alle prove, per sempre.",
+          "campaign_id": "icaro-otto-minuti",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+        },
+        {
+          "id": "icaro_ending_living_archive",
+          "titolo": "L'archivio vivente",
+          "tipo": "modificatore",
+          "priorita": 11,
+          "condizione": {
+            "tutti": [
+              {
+                "flag": "archivio_consenso"
+              },
+              {
+                "asse_almeno": {
+                  "asse": "vite",
+                  "valore": 1
+                }
+              }
+            ]
+          },
+          "riserva": "Corpi e copie stabiliscono nuove regole d'identità, senza chiudere il dibattito fuori da H-17.",
+          "conseguenza_personale": "Hai chiesto il consenso quando nessuno lo faceva.",
+          "campaign_id": "icaro-otto-minuti",
+          "content_status": "proposed",
+          "act": 3,
+          "level_band": [
+            21,
+            30
+          ],
+          "difficulty_tags": [
+            "esplorativa",
+            "bilanciata",
+            "permadeath"
+          ],
+          "visibility_rule": "solo_motore",
+          "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+        }
+      ],
+      "terminal_failures": [
+        "player_permadeath",
+        "raven_execution"
+      ],
+      "priorita_nota": "Morte definitiva e Raven; poi nodo di proprietà, silenzio efficiente, esodo, distretto riconosciuto, calore libero. Scandalo pubblico e archivio vivente sono modificatori (scheda §7: \"possono modificare altri finali\")."
+    }
+  },
+  "atti": [
+    {
+      "id": "I",
+      "numero": 1,
+      "titolo": "Funzione",
+      "funzione": "Assegnare al personaggio un posto nel sistema e mostrargli le vite escluse dai dati.",
+      "scene": [
+        "I01",
+        "I02",
+        "I03",
+        "I04",
+        "I05"
+      ],
+      "snodi": [
+        {
+          "id": "I_otto",
+          "testo": "Riattivare il nodo durante la prima crisi"
+        },
+        {
+          "id": "I_censimento",
+          "testo": "Contare chi vive a H-17"
+        },
+        {
+          "id": "I_ordine",
+          "testo": "Esaminare l'ordine di spegnimento"
+        },
+        {
+          "id": "I_mira",
+          "testo": "Incontrare Mira-47"
+        },
+        {
+          "id": "I_firma",
+          "testo": "Scegliere da che parte stare"
+        }
+      ],
+      "pool": [
+        "h17_ordinario"
+      ]
+    },
+    {
+      "id": "II",
+      "numero": 2,
+      "titolo": "Scarto",
+      "funzione": "Mostrare come il sistema dà valore alle vite e rendere incompatibili alcune risorse.",
+      "scene": [
+        "I06",
+        "I07",
+        "I08",
+        "I09",
+        "I10",
+        "I11"
+      ],
+      "snodi": [
+        {
+          "id": "II_cartelle",
+          "testo": "Aprire le cartelle originali"
+        },
+        {
+          "id": "II_blackroot",
+          "testo": "Affrontare la linea BlackRoot"
+        },
+        {
+          "id": "II_mira",
+          "testo": "Decidere delle copie di Mira"
+        },
+        {
+          "id": "II_esterno",
+          "testo": "Verificare la via esterna"
+        },
+        {
+          "id": "II_spenti",
+          "testo": "Affrontare l'occupazione degli Spenti"
+        },
+        {
+          "id": "II_distribuzione",
+          "testo": "Bloccare il piano delle risorse"
+        }
+      ],
+      "pool": [
+        "h17_ordinario"
+      ]
+    },
+    {
+      "id": "III",
+      "numero": 3,
+      "titolo": "Vita",
+      "funzione": "Risolvere il valore concreto delle vite di H-17.",
+      "scene": [
+        "I12",
+        "I13",
+        "I14",
+        "I15",
+        "I16",
+        "I17"
+      ],
+      "snodi": [
+        {
+          "id": "III_revisione",
+          "testo": "Affrontare l'ultima revisione"
+        },
+        {
+          "id": "III_collasso",
+          "testo": "Superare il collasso termico"
+        },
+        {
+          "id": "III_archivio",
+          "testo": "Decidere dell'archivio"
+        },
+        {
+          "id": "III_politica",
+          "testo": "Scegliere la strada politica"
+        },
+        {
+          "id": "III_climax",
+          "testo": "Dare gli ultimi otto minuti"
+        }
+      ],
+      "pool": [
+        "h17_ordinario"
+      ]
+    }
+  ],
+  "png": {
+    "anja": {
+      "nome": "Dottoressa Anja Mire",
+      "ruolo": "Responsabile clinica di H-17",
+      "atteggiamento": 0,
+      "motivazione": "Tenere in vita pazienti che il sistema ha cancellato, e non dover rispondere di come",
+      "sa": [
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze"
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        2,
+        3
+      ],
+      "level_band": [
+        9,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "jax": {
+      "nome": "Jax Rami",
+      "ruolo": "Capotecnico del Nodo H-17",
+      "atteggiamento": 1,
+      "motivazione": "Tenere acceso il nodo come se fosse un organismo vivo",
+      "sa": [
+        "icaro_truth_population"
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "seline": {
+      "nome": "Seline Ward",
+      "ruolo": "Revisora BlackRoot incaricata di certificare lo spegnimento",
+      "atteggiamento": -1,
+      "motivazione": "Proteggere la continuità delle cupole",
+      "sa": [
+        "icaro_truth_choice"
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        1,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "oko": {
+      "nome": "Oko Vale",
+      "ruolo": "Guida dell'esterno",
+      "atteggiamento": 0,
+      "motivazione": "Portare fuori chi può partire, sapendo che non tutti possono",
+      "sa": [
+        "icaro_truth_outside_route"
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        2,
+        3
+      ],
+      "level_band": [
+        9,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "mira47": {
+      "nome": "Mira-47",
+      "ruolo": "Paziente archiviata, viva nel corpo",
+      "atteggiamento": 0,
+      "motivazione": "Essere considerata una persona, non un fascicolo",
+      "sa": [],
+      "identita": "corpo",
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "mira_eco": {
+      "nome": "Mira (la voce che ricorda il mare)",
+      "ruolo": "Copia parziale di Mira-47 nell'archivio",
+      "atteggiamento": 0,
+      "motivazione": "Essere riconosciuta come la vera Mira",
+      "sa": [],
+      "identita": "copia",
+      "collegata_a": "mira47",
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        2,
+        3
+      ],
+      "level_band": [
+        9,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "mira_ombra": {
+      "nome": "Mira (la voce che ricorda il turno di notte)",
+      "ruolo": "Seconda copia parziale di Mira-47 nell'archivio",
+      "atteggiamento": 0,
+      "motivazione": "Essere riconosciuta come persona distinta",
+      "sa": [],
+      "identita": "copia",
+      "collegata_a": "mira47",
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        2,
+        3
+      ],
+      "level_band": [
+        9,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "kade": {
+      "nome": "Kade Orlov",
+      "ruolo": "Portavoce degli Spenti",
+      "atteggiamento": 0,
+      "motivazione": "Occupare H-17 e distribuirne l'energia ai bassifondi",
+      "sa": [
+        "icaro_truth_population"
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "amministratore": {
+      "nome": "L'amministratore di C1",
+      "ruolo": "Funzionario locale della Repubblica",
+      "atteggiamento": -1,
+      "motivazione": "Chiudere il settore senza scandali",
+      "sa": [
+        "icaro_truth_transfer"
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        1,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare; figura citata dalla scheda senza nome: resta anonima finché l'autore non la nomina"
+    }
+  },
+  "fatti": {
+    "icaro_fact_vite_escluse": {
+      "testo": "A H-17 vive ancora gente che i registri danno per trasferita.",
+      "segreto": false,
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "icaro_fact_ordine": {
+      "testo": "Il Nodo H-17 è stato dichiarato inefficiente: lo spegnimento è programmato.",
+      "segreto": false,
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "icaro_fact_mira": {
+      "testo": "Una paziente chiamata Mira-47 ti riconosce, o riconosce il tuo ruolo.",
+      "segreto": false,
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "icaro_truth_population": {
+      "testo": "H-17 ospita persone mai trasferite: Spenti, lavoratori cancellati, pazienti, bambini fuori quota.",
+      "segreto": true,
+      "parole": [
+        "mai trasferite"
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2
+      ],
+      "level_band": [
+        1,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "icaro_truth_heat": {
+      "testo": "Il risparmio dichiarato è gonfiato per finanziare una linea BlackRoot di metamateriali.",
+      "segreto": true,
+      "parole": [
+        "gonfiato per finanziare"
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "icaro_truth_archive": {
+      "testo": "L'archivio neurale di H-17 conserva le identità di pazienti dichiarati morti.",
+      "segreto": true,
+      "parole": [
+        "pazienti dichiarati morti"
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "icaro_truth_brainfreeze": {
+      "testo": "Alcuni pazienti sono stati alterati per ridurre emozioni e costi di assistenza.",
+      "segreto": true,
+      "parole": [
+        "ridurre emozioni e costi"
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "icaro_truth_transfer": {
+      "testo": "I trasferimenti degli abitanti esistono soltanto come transazioni contabili.",
+      "segreto": true,
+      "parole": [
+        "soltanto come transazioni"
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2
+      ],
+      "level_band": [
+        1,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "icaro_truth_outside_route": {
+      "testo": "Una via esterna può evacuare parte degli abitanti, non tutti.",
+      "segreto": true,
+      "parole": [
+        "parte degli abitanti, non tutti"
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    "icaro_truth_choice": {
+      "testo": "La dirigenza salverà H-17 solo se diventa redditizio o se spegnerlo diventa politicamente pericoloso.",
+      "segreto": true,
+      "parole": [
+        "politicamente pericoloso"
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "alla_scoperta",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    }
+  },
+  "borsa": {
+    "versione": "borsa-icaro-0.1-proposta",
+    "oggetti": {
+      "icaro_key_heat_token": {
+        "nome": "Chiave termica H-17",
+        "tipo": "oggetto_chiave",
+        "unico": true,
+        "descrizione": "La chiave che assegna otto minuti di alimentazione di emergenza.",
+        "proprieta": [
+          "nodo",
+          "calore"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "indispensabile": true,
+        "via_alternativa": {
+          "testo": "Jax può attivare il nodo a mano, rischiando la vita.",
+          "flag": "icaro_alt_jax"
+        },
+        "funzione_riservata": "Otto minuti di emergenza.",
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "icaro_clue_false_transfer": {
+        "nome": "Registro dei trasferimenti",
+        "tipo": "indizio",
+        "unico": true,
+        "descrizione": "Un registro di trasferimenti con destinazioni che non tornano.",
+        "proprieta": [
+          "registro",
+          "prova"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Il censimento più tre testimonianze.",
+          "flag": "icaro_alt_testimonianze"
+        },
+        "funzione_riservata": "Prova delle identità contabili.",
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2
+        ],
+        "level_band": [
+          1,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "icaro_key_mira_shard": {
+        "nome": "Frammento di Mira",
+        "tipo": "oggetto_chiave",
+        "unico": true,
+        "descrizione": "Un frammento neurale che conserva una versione di Mira.",
+        "proprieta": [
+          "memoria",
+          "archivio"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Una copia lenta dentro il nodo, pagata in calore.",
+          "flag": "icaro_alt_copia_lenta"
+        },
+        "funzione_riservata": "Conserva una versione di Mira.",
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          2,
+          3
+        ],
+        "level_band": [
+          9,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "icaro_clue_blackroot_order": {
+        "nome": "Ordine industriale BlackRoot",
+        "tipo": "indizio",
+        "unico": true,
+        "descrizione": "Un ordine che collega lo spegnimento a una linea privata di metamateriali.",
+        "proprieta": [
+          "prova",
+          "blackroot"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Audit dei consumi e dei contratti.",
+          "flag": "icaro_alt_audit"
+        },
+        "funzione_riservata": "Collega lo spegnimento alla linea BlackRoot.",
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": 2,
+        "level_band": [
+          9,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "icaro_key_outside_map": {
+        "nome": "Mappa termica delle rovine",
+        "tipo": "oggetto_chiave",
+        "unico": true,
+        "descrizione": "Una mappa termica delle rovine congelate fuori da C1.",
+        "proprieta": [
+          "percorso",
+          "esterno"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Oko guida senza mappa, con perdite maggiori.",
+          "flag": "icaro_alt_oko"
+        },
+        "funzione_riservata": "Abilita l'evacuazione.",
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          2,
+          3
+        ],
+        "level_band": [
+          9,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "icaro_clue_original_chart": {
+        "nome": "Cartella clinica originale",
+        "tipo": "indizio",
+        "unico": true,
+        "descrizione": "Una cartella clinica non alterata.",
+        "proprieta": [
+          "prova",
+          "clinica"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "La testimonianza del medico, meno credibile.",
+          "flag": "icaro_alt_testimone_medico"
+        },
+        "funzione_riservata": "Prova di brainfreeze e consenso manipolato.",
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": 2,
+        "level_band": [
+          9,
+          20
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "icaro_key_broadcast_cell": {
+        "nome": "Trasmettitore autonomo",
+        "tipo": "oggetto_chiave",
+        "unico": true,
+        "descrizione": "Un trasmettitore che non passa dalle reti ufficiali.",
+        "proprieta": [
+          "trasmissione",
+          "prova"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "La rete degli Spenti, con rischio di intercettazione.",
+          "flag": "icaro_alt_rete_spenti"
+        },
+        "funzione_riservata": "Rende pubbliche le prove.",
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          2,
+          3
+        ],
+        "level_band": [
+          9,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "icaro_key_oxygen_diverter": {
+        "nome": "Deviatore d'ossigeno",
+        "tipo": "oggetto_chiave",
+        "unico": true,
+        "descrizione": "Un deviatore per spostare ossigeno fra i settori.",
+        "proprieta": [
+          "ossigeno",
+          "nodo"
+        ],
+        "meccanica": "Nessun bonus statistico. Se pertinente all'approccio, fino a +2 alla prova (deciso dal motore).",
+        "via_alternativa": {
+          "testo": "Chiudere a mano un settore abitato.",
+          "flag": "icaro_alt_chiusura"
+        },
+        "funzione_riservata": "Sposta ossigeno durante il climax.",
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": 3,
+        "level_band": [
+          21,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "icaro_dose_medica": {
+        "nome": "Dose medica",
+        "tipo": "consumabile",
+        "descrizione": "Una siringa automatica con un farmaco rigenerativo di catalogo: chiude le ferite, non chiede di chi siano.",
+        "proprieta": [
+          "cura",
+          "clinica"
+        ],
+        "effetto": {
+          "hp": 8
+        },
+        "meccanica": "Recupera 8 HP; si usa anche in combattimento come azione del turno.",
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Dotazione iniziale di Lv 1 (richiesta dell'autore, 2026-10-01)"
+      },
+      "icaro_pasto_multinutrizionale": {
+        "nome": "Pasto multinutrizionale",
+        "tipo": "consumabile",
+        "descrizione": "Una busta di sostentamento: senza consistenza, sapore ferroso e un po' acido. Tiene in piedi.",
+        "proprieta": [
+          "cibo"
+        ],
+        "effetto": {
+          "hp": 3
+        },
+        "meccanica": "Recupera 3 HP.",
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Dotazione iniziale di Lv 1 (richiesta dell'autore, 2026-10-01)"
+      },
+      "icaro_cella_termica_dotazione": {
+        "nome": "Cella termica",
+        "tipo": "consumabile",
+        "descrizione": "Una cella a stato solido carica: abbastanza calore per un dispositivo, o per una notte in più.",
+        "proprieta": [
+          "calore",
+          "energia"
+        ],
+        "effetto": {
+          "effetti": [
+            {
+              "risorsa": {
+                "id": "riserva_termica",
+                "delta": 1
+              }
+            }
+          ]
+        },
+        "meccanica": "Aggiunge un'unità alla riserva termica.",
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Dotazione iniziale di Lv 1 (richiesta dell'autore, 2026-10-01)"
+      }
+    }
+  },
+  "nemici": {
+    "sicurezza_blackroot": {
+      "id": "sicurezza_blackroot",
+      "nome": "Squadra di sicurezza BlackRoot",
+      "build": "guerriero",
+      "hpMax": 26,
+      "primary": {
+        "hp": 3,
+        "mp": 1,
+        "for": 3,
+        "mira": 4,
+        "vel": 4,
+        "fmen": 1,
+        "dex": 3,
+        "dif": 4,
+        "dmen": 2
+      },
+      "traits": {
+        "Arte Combattiva": 1,
+        "Guardia": 1,
+        "Resistenza": 1
+      },
+      "attacco": {
+        "nome": "Arma d'ordinanza",
+        "dannoBase": 3,
+        "stat": "mira"
+      },
+      "crescita": [
+        "hp",
+        "mira",
+        "dif"
+      ],
+      "articolo": "la"
+    },
+    "predatore_ghiaccio": {
+      "id": "predatore_ghiaccio",
+      "nome": "Predatore del ghiaccio",
+      "build": "guerriero",
+      "hpMax": 30,
+      "primary": {
+        "hp": 4,
+        "mp": 1,
+        "for": 4,
+        "mira": 1,
+        "vel": 4,
+        "fmen": 1,
+        "dex": 4,
+        "dif": 4,
+        "dmen": 1
+      },
+      "traits": {
+        "Arte Combattiva": 2,
+        "Elusione": 1,
+        "Resistenza": 1
+      },
+      "attacco": {
+        "nome": "Artigli",
+        "dannoBase": 4,
+        "stat": "for"
+      },
+      "crescita": [
+        "hp",
+        "for",
+        "dif"
+      ],
+      "articolo": "il"
+    },
+    "raven": {
+      "id": "raven",
+      "nome": "Raven",
+      "build": "guerriero",
+      "primary": {
+        "hp": 6,
+        "mp": 2,
+        "for": 7,
+        "mira": 5,
+        "vel": 7,
+        "fmen": 1,
+        "dex": 6,
+        "dif": 4,
+        "dmen": 2
+      },
+      "traits": {
+        "Arte Combattiva": 4,
+        "Elusione": 3,
+        "Resistenza": 3,
+        "Guardia": 2
+      },
+      "attacco": {
+        "nome": "Lama",
+        "dannoBase": 8,
+        "stat": "for"
+      },
+      "crescita": [
+        "hp",
+        "for",
+        "vel",
+        "dex",
+        "dif"
+      ],
+      "nota": "Stessa figura di Raven in tutte le storie (V4 Ich §13): regole comuni; statistiche di Lv 1 provvisorie.",
+      "articolo": ""
+    },
+    "villain_seline": {
+      "id": "villain_seline",
+      "nome": "Seline Ward",
+      "build": "eclettico",
+      "hpMax": 22,
+      "primary": {
+        "hp": 3,
+        "mp": 2,
+        "for": 2,
+        "mira": 4,
+        "vel": 3,
+        "fmen": 3,
+        "dex": 4,
+        "dif": 3,
+        "dmen": 4
+      },
+      "traits": {
+        "Resistenza": 1,
+        "Elusione": 1
+      },
+      "attacco": {
+        "nome": "Storditore da revisione",
+        "dannoBase": 3,
+        "stat": "mira"
+      },
+      "crescita": [
+        "mira",
+        "dmen"
+      ],
+      "articolo": "",
+      "pngId": "seline",
+      "villain": true,
+      "fonte": "scripts/data/solo-dotazioni-avversari.js (proposta da approvare)"
+    },
+    "villain_amministratore": {
+      "id": "villain_amministratore",
+      "nome": "L'amministratore di C1",
+      "build": "eclettico",
+      "hpMax": 18,
+      "primary": {
+        "hp": 2,
+        "mp": 1,
+        "for": 2,
+        "mira": 3,
+        "vel": 2,
+        "fmen": 2,
+        "dex": 3,
+        "dif": 2,
+        "dmen": 5
+      },
+      "traits": {
+        "Resistenza": 1
+      },
+      "attacco": {
+        "nome": "Storditore di servizio",
+        "dannoBase": 3,
+        "stat": "mira"
+      },
+      "crescita": [
+        "dmen"
+      ],
+      "articolo": "l'",
+      "pngId": "amministratore",
+      "villain": true,
+      "fonte": "scripts/data/solo-dotazioni-avversari.js (proposta da approvare)"
+    }
+  },
+  "orologi": {
+    "spegnimento": {
+      "nome": "Spegnimento di H-17",
+      "max": 20,
+      "inizio": "I03",
+      "per_scena": 1,
+      "sconfitta": 1,
+      "visibile": true,
+      "effetti_al_massimo": [
+        {
+          "flag": {
+            "spegnimento_completato": true
+          }
+        },
+        {
+          "asse": {
+            "id": "vite",
+            "delta": -1
+          }
+        }
+      ],
+      "nota": "Ogni scena principale avvicina lo spegnimento, i fallimenti di più. Allo scadere H-17 si spegne (variante icaro_ending_efficient_silence)."
+    }
+  },
+  "risorse": {
+    "riserva_termica": {
+      "nome": "Riserva termica",
+      "iniziale": {
+        "esplorativa": 5,
+        "bilanciata": 3,
+        "permadeath": 2
+      },
+      "visibile": true,
+      "nota": "Icaro §11: +2 in Esplorativa, standard in Bilanciata, −1 in Permadeath (standard proposto: 3)."
+    }
+  },
+  "scene": [
+    {
+      "id": "I01",
+      "titolo": "Otto minuti",
+      "luogo": "Nodo termico H-17",
+      "calma": false,
+      "fuori_citta": false,
+      "descrizione": "Il nodo termico che scalda una fascia inferiore di C1 sta per fermarsi.",
+      "png_presenti": [
+        "jax"
+      ],
+      "apertura_riserva": "Il Nodo H-17 rantola. Jax ti mette in mano una chiave: «Otto minuti di alimentazione straordinaria. Usali bene».",
+      "apertura_per_archetipo": {
+        "elian": "Il protocollo che porta il tuo nome è stato applicato qui, su pazienti che non risultano da nessuna parte. Quando arrivi, il nodo sta morendo.",
+        "mara": "Il segnale biometrico del lavoratore \"morto\" viene da qui. Il settore è dichiarato evacuato; l'aria è calda di respiri.",
+        "rho": "Una registrazione dei tuoi ricordi porta questo indirizzo. Il corridoio è gelido, e qualcuno ti chiede aiuto prima che tu possa chiedere il tuo.",
+        "nia": "Il pacchetto che devi consegnare è indirizzato a un settore evacuato. L'indirizzo esiste. Le persone anche.",
+        "tomas": "La richiesta di soccorso arrivava da qui. Non è una stazione vuota: è un nodo termico con gente dentro, e sta per spegnersi."
+      },
+      "obiettivi": [
+        {
+          "id": "I01A",
+          "testo": "Riattivare il nodo durante la crisi",
+          "nc": 12,
+          "tag": [
+            "nodo",
+            "calore"
+          ],
+          "tratti_tipici": [
+            "Riparare",
+            "Meccanica",
+            "Tecnologia",
+            "Tecnologia militare",
+            "Analizzare",
+            "Rovine"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "icaro_key_heat_token"
+              },
+              {
+                "risorsa": {
+                  "id": "riserva_termica",
+                  "delta": 1,
+                  "budget": true
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "icaro_key_heat_token"
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "icaro_alt_jax": true
+                }
+              },
+              {
+                "relazione": {
+                  "png": "jax",
+                  "delta": 1
+                }
+              },
+              {
+                "hp": -3
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Il nodo riparte. Otto minuti comprati, e la chiave termica resta a te.",
+            "parziale": "Il nodo riparte a fatica. La chiave resta a te, ma la riserva non cresce.",
+            "fallimento": "La chiave non basta. Jax apre il nodo a mani nude e lo fa ripartire, bruciandosi. Da ora sai che può farlo di nuovo."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Riavvio il nodo seguendo Jax",
+          "tratto": "Riparare",
+          "obiettivo": "I01A"
+        },
+        {
+          "testo": "Leggo i parametri del nodo",
+          "tratto": "Analizzare",
+          "obiettivo": "I01A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "calore",
+          "testo": "Gli otto minuti vanno al riscaldamento delle case",
+          "effetti": [
+            {
+              "asse": {
+                "id": "vite",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Le case tornano tiepide. Qualcuno piange di sollievo."
+        },
+        {
+          "id": "ossigeno",
+          "testo": "Gli otto minuti vanno all'ossigeno",
+          "effetti": [
+            {
+              "asse": {
+                "id": "vite",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "continuita",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "I ventilatori ripartono. Si respira."
+        },
+        {
+          "id": "archivio",
+          "testo": "Gli otto minuti vanno all'archivio medico",
+          "effetti": [
+            {
+              "flag": {
+                "archivio_protetto": true
+              }
+            },
+            {
+              "asse": {
+                "id": "continuita",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Qualcosa, in fondo al nodo, resta acceso. Jax non ti dice cosa."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "I01A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "I02",
+          "effetti": [
+            {
+              "snodo": "I_otto"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "I02",
+      "titolo": "Il censimento impossibile",
+      "luogo": "Livelli inferiori di H-17",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Persone che ufficialmente non esistono.",
+      "png_presenti": [
+        "jax",
+        "kade"
+      ],
+      "apertura_riserva": "Nei corridoi di H-17 ci sono famiglie, bambini, malati. Sui registri, nessuno di loro vive più qui.",
+      "obiettivi": [
+        {
+          "id": "I02A",
+          "testo": "Contare chi vive davvero a H-17",
+          "nc": 12,
+          "tag": [
+            "registro",
+            "prova",
+            "persone"
+          ],
+          "tratti_tipici": [
+            "Analizzare",
+            "Percezione",
+            "Bassifondi C7",
+            "Economia",
+            "Persuasione",
+            "Orientamento"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "scopri": "icaro_fact_vite_escluse"
+              },
+              {
+                "scopri": "icaro_truth_population"
+              },
+              {
+                "ricompensa": "icaro_clue_false_transfer"
+              },
+              {
+                "scopri": "icaro_truth_transfer"
+              }
+            ],
+            "parziale": [
+              {
+                "scopri": "icaro_fact_vite_escluse"
+              },
+              {
+                "scopri": "icaro_truth_population"
+              },
+              {
+                "flag": {
+                  "icaro_alt_testimonianze": true
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "scopri": "icaro_fact_vite_escluse"
+              },
+              {
+                "flag": {
+                  "icaro_alt_testimonianze": true
+                }
+              },
+              {
+                "relazione": {
+                  "png": "kade",
+                  "delta": -1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Conti trecento persone e trovi il registro: trasferimenti verso destinazioni impossibili. Esistono solo sulla carta.",
+            "parziale": "Il numero è chiaro: qui non se n'è andato nessuno. Serviranno testimonianze per provarlo.",
+            "fallimento": "Kade ti accusa di contare persone per conto della Repubblica. Qualcuno, comunque, parla."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Conto le persone casa per casa",
+          "tratto": "Percezione",
+          "obiettivo": "I02A"
+        },
+        {
+          "testo": "Confronto consumi d'acqua e registri",
+          "tratto": "Analizzare",
+          "obiettivo": "I02A"
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "obiettivo_tentato": "I02A"
+          },
+          "verso": "I03",
+          "effetti": [
+            {
+              "snodo": "I_censimento"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "I03",
+      "titolo": "Ordine di spegnimento",
+      "luogo": "Ufficio di revisione di C1",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Seline Ward presenta numeri apparentemente corretti.",
+      "png_presenti": [
+        "seline",
+        "amministratore"
+      ],
+      "apertura_riserva": "Seline Ward proietta i numeri: H-17 costa più di quanto rende. Lo spegnimento proteggerà milioni di persone. I numeri sono puliti. Forse troppo.",
+      "obiettivi": [
+        {
+          "id": "I03A",
+          "testo": "Trovare la crepa nei numeri di Seline",
+          "nc": 12,
+          "tag": [
+            "prova",
+            "registro"
+          ],
+          "tratti_tipici": [
+            "Economia",
+            "Analizzare",
+            "Diritto corporativo",
+            "Politica corporativa",
+            "Percezione"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "flag": {
+                  "numeri_sospetti": true
+                }
+              },
+              {
+                "voce": {
+                  "id": "V_blackroot",
+                  "testo": "Si dice che il calore di H-17 finirà in una linea privata di BlackRoot."
+                }
+              },
+              {
+                "relazione": {
+                  "png": "seline",
+                  "delta": 1
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "flag": {
+                  "numeri_sospetti": true
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "orologio": {
+                  "id": "spegnimento",
+                  "delta": 1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "I numeri tornano, ma il risparmio è calcolato su una resa che nessun nodo ha mai avuto.",
+            "parziale": "Qualcosa non torna, ma non sai ancora cosa.",
+            "fallimento": "I numeri reggono. Lo spegnimento si avvicina."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Controllo il calcolo del risparmio",
+          "tratto": "Economia",
+          "obiettivo": "I03A"
+        },
+        {
+          "testo": "Chiedo a Seline chi ha commissionato la revisione",
+          "tratto": "Persuasione",
+          "obiettivo": "I03A"
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "obiettivo_tentato": "I03A"
+          },
+          "verso": "I04",
+          "effetti": [
+            {
+              "scopri": "icaro_fact_ordine"
+            },
+            {
+              "snodo": "I_ordine"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "I04",
+      "titolo": "Primo contatto con Mira",
+      "luogo": "Reparto clinico di H-17",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Una paziente senza nome ufficiale.",
+      "png_presenti": [
+        "mira47",
+        "jax"
+      ],
+      "apertura_riserva": "Nel reparto clinico una donna con un numero al posto del nome ti guarda. «Ti conosco», dice Mira-47. «O conosco quello che fai».",
+      "obiettivi": [
+        {
+          "id": "I04A",
+          "testo": "Parlare con Mira-47",
+          "nc": 12,
+          "tag": [
+            "persone",
+            "clinica",
+            "memoria"
+          ],
+          "tratti_tipici": [
+            "Persuasione",
+            "Medicina",
+            "Empatia",
+            "Percezione",
+            "Analizzare"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "scopri": "icaro_fact_mira"
+              },
+              {
+                "relazione": {
+                  "png": "mira47",
+                  "delta": 2
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "scopri": "icaro_fact_mira"
+              },
+              {
+                "relazione": {
+                  "png": "mira47",
+                  "delta": 1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "scopri": "icaro_fact_mira"
+              },
+              {
+                "relazione": {
+                  "png": "mira47",
+                  "delta": -1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Mira ti racconta la sua vita di prima: quella che, dice, qualcuno le ha tolto.",
+            "parziale": "Mira parla poco, ma abbastanza da capire che qualcuno le ha tolto qualcosa.",
+            "fallimento": "Mira si chiude. Ti ha riconosciuto, e non le è piaciuto."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Le chiedo chi era prima",
+          "tratto": "Persuasione",
+          "obiettivo": "I04A"
+        },
+        {
+          "testo": "Controllo la sua cartella",
+          "tratto": "Medicina",
+          "obiettivo": "I04A"
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "obiettivo_tentato": "I04A"
+          },
+          "verso": "I05",
+          "effetti": [
+            {
+              "snodo": "I_mira"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "I05",
+      "titolo": "La firma",
+      "luogo": "Nodo termico H-17",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Da che parte stare.",
+      "png_presenti": [
+        "seline",
+        "jax",
+        "kade"
+      ],
+      "apertura_riserva": "Seline ti offre un incarico ufficiale. Jax ti chiede di restare. Kade ti vuole con gli Spenti. Una guida dell'esterno ha lasciato un messaggio per te.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "scelte": [
+        {
+          "id": "repubblica",
+          "testo": "Accetto l'incarico della Repubblica",
+          "effetti": [
+            {
+              "flag": {
+                "posta": "repubblica"
+              }
+            },
+            {
+              "asse": {
+                "id": "continuita",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": -1
+              }
+            },
+            {
+              "relazione": {
+                "png": "seline",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "La tua firma è sul contratto. Da ora lavori per chi vuole spegnere H-17, dall'interno."
+        },
+        {
+          "id": "h17",
+          "testo": "Mi schiero con H-17",
+          "effetti": [
+            {
+              "flag": {
+                "posta": "h17"
+              }
+            },
+            {
+              "asse": {
+                "id": "vite",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "jax",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Jax ti stringe la mano. «Allora restiamo accesi»."
+        },
+        {
+          "id": "spenti",
+          "testo": "Lavoro per gli Spenti",
+          "effetti": [
+            {
+              "flag": {
+                "posta": "spenti"
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "kade",
+                "delta": 2
+              }
+            }
+          ],
+          "riserva": "Kade ti presenta agli altri: «Questa è dei nostri»."
+        },
+        {
+          "id": "esterno",
+          "testo": "Cerco la via esterna",
+          "effetti": [
+            {
+              "flag": {
+                "posta": "esterno"
+              }
+            },
+            {
+              "relazione": {
+                "png": "oko",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Rispondi al messaggio. Una guida dell'esterno ti aspetta al margine delle rovine."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "scelta_fatta": true
+          },
+          "verso": "I06",
+          "effetti": [
+            {
+              "flag": {
+                "h17_shutdown_clock_started": true,
+                "posta_personale_registrata": true
+              }
+            },
+            {
+              "snodo": "I_firma"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 1,
+      "level_band": [
+        1,
+        8
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "I06",
+      "titolo": "Cartelle originali",
+      "luogo": "Archivio clinico",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Esperimenti, brainfreeze e consenso manipolato.",
+      "png_presenti": [
+        "anja"
+      ],
+      "apertura_riserva": "La dottoressa Mire tiene le cartelle originali sotto chiave. Non ti chiede come hai fatto ad arrivare fin qui: ti chiede che cosa vuoi farne.",
+      "obiettivi": [
+        {
+          "id": "I06A",
+          "testo": "Leggere le cartelle originali",
+          "nc": 12,
+          "tag": [
+            "clinica",
+            "prova"
+          ],
+          "tratti_tipici": [
+            "Medicina",
+            "Genetica",
+            "Analizzare",
+            "Decifrare",
+            "Persuasione"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "icaro_clue_original_chart"
+              },
+              {
+                "scopri": "icaro_truth_brainfreeze"
+              },
+              {
+                "scopri": "icaro_truth_archive"
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "icaro_clue_original_chart"
+              },
+              {
+                "scopri": "icaro_truth_archive"
+              },
+              {
+                "relazione": {
+                  "png": "anja",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "icaro_alt_testimone_medico": true
+                }
+              },
+              {
+                "scopri": "icaro_truth_archive"
+              },
+              {
+                "orologio": {
+                  "id": "spegnimento",
+                  "delta": 1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Le cartelle dicono tutto: pazienti alterati per costare meno, identità conservate nell'archivio.",
+            "parziale": "Leggi abbastanza per capire che cosa custodisce l'archivio. Mire ti guarda con rancore.",
+            "fallimento": "Mire non ti lascia leggere. Potrebbe testimoniare, ma la sua parola vale meno di una cartella."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Leggo le cartelle una per una",
+          "tratto": "Medicina",
+          "obiettivo": "I06A"
+        },
+        {
+          "testo": "Chiedo alla dottoressa di spiegarmi",
+          "tratto": "Persuasione",
+          "obiettivo": "I06A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "denuncia_anja",
+          "testo": "Denuncio la dottoressa Mire",
+          "effetti": [
+            {
+              "asse": {
+                "id": "verita",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "anja",
+                "delta": -2
+              }
+            }
+          ],
+          "riserva": "Mire non si difende. «Li ho tenuti vivi», dice soltanto."
+        },
+        {
+          "id": "proteggi_anja",
+          "testo": "La proteggo: senza di lei i pazienti muoiono",
+          "effetti": [
+            {
+              "asse": {
+                "id": "vite",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "anja",
+                "delta": 2
+              }
+            }
+          ],
+          "riserva": "Mire torna al lavoro. I pazienti hanno ancora un medico."
+        },
+        {
+          "id": "consenso",
+          "testo": "La obbligo a chiedere il consenso ai pazienti",
+          "effetti": [
+            {
+              "flag": {
+                "consenso_richiesto": true
+              }
+            },
+            {
+              "asse": {
+                "id": "vite",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "verita",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Per la prima volta qualcuno chiede ai pazienti che cosa vogliono."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "I06A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "I07",
+          "effetti": [
+            {
+              "snodo": "II_cartelle"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "I07",
+      "titolo": "La linea BlackRoot",
+      "luogo": "Condotte industriali BlackRoot",
+      "calma": false,
+      "fuori_citta": true,
+      "descrizione": "Dove finirà il calore di H-17.",
+      "png_presenti": [
+        "seline"
+      ],
+      "apertura_riserva": "Le condotte BlackRoot sono nuove e lucide. Una squadra di sicurezza pattuglia l'accesso.",
+      "obiettivi": [
+        {
+          "id": "I07A",
+          "testo": "Trovare l'ordine che collega spegnimento e linea BlackRoot",
+          "nc": 12,
+          "tag": [
+            "prova",
+            "blackroot"
+          ],
+          "tratti_tipici": [
+            "Furtività",
+            "Analizzare",
+            "Economia",
+            "Reti",
+            "Diritto corporativo"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "icaro_clue_blackroot_order"
+              },
+              {
+                "scopri": "icaro_truth_heat"
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "icaro_clue_blackroot_order"
+              },
+              {
+                "scopri": "icaro_truth_heat"
+              },
+              {
+                "relazione": {
+                  "png": "seline",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "icaro_alt_audit": true
+                }
+              },
+              {
+                "orologio": {
+                  "id": "spegnimento",
+                  "delta": 2
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "L'ordine industriale è lì: il calore di H-17 finirà nelle cupole, e il risparmio è gonfiato per pagarlo.",
+            "parziale": "Trovi l'ordine, ma Seline sa che l'hai visto.",
+            "fallimento": "Non trovi l'ordine. Resta l'audit dei consumi: lento, ma possibile."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Mi infiltro negli uffici della linea",
+          "tratto": "Furtività",
+          "obiettivo": "I07A"
+        },
+        {
+          "testo": "Controllo contratti e consumi",
+          "tratto": "Economia",
+          "obiettivo": "I07A"
+        }
+      ],
+      "incontro": {
+        "nemico": "sicurezza_blackroot",
+        "letale": false,
+        "fuga": {
+          "tratto": "Furtività",
+          "nc": 13,
+          "costo": [
+            {
+              "orologio": {
+                "id": "spegnimento",
+                "delta": 1
+              }
+            }
+          ]
+        },
+        "vittoria": [
+          {
+            "loot": {
+              "pool": "h17_ordinario",
+              "contesto": "vittoria",
+              "a_portata": true
+            }
+          }
+        ],
+        "introduttivo": true,
+        "alternativa": {
+          "testo": "Aspettare dietro le casse il cambio della pattuglia",
+          "tratto": "Percezione",
+          "nc": 12,
+          "successo": [
+            {
+              "flag": {
+                "pattuglia_evitata": true
+              }
+            }
+          ],
+          "riserva_successo": "Conti i passi della pattuglia finché non cambiano ritmo. Al cambio di turno scivoli oltre il varco, senza che nessuno si volti.",
+          "riserva_fallimento": "Una torcia si ferma sulle casse. La squadra di sicurezza ti ha visto."
+        },
+        "sconfitta": {
+          "tipo": "fail_forward",
+          "testo": "Qualcuno di H-17 ti trascina al caldo prima che la pattuglia torni. Ti svegli con le costole fasciate: resti ferito fino al prossimo riposo. Intanto lo spegnimento si è avvicinato."
+        }
+      },
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "I07A"
+              },
+              {
+                "incontro_concluso": true
+              }
+            ]
+          },
+          "verso": "I08",
+          "effetti": [
+            {
+              "snodo": "II_blackroot"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "I08",
+      "titolo": "Le copie di Mira",
+      "luogo": "Archivio neurale",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Versioni diverse di Mira rivendicano di essere lei.",
+      "png_presenti": [
+        "mira47",
+        "mira_eco",
+        "mira_ombra",
+        "anja"
+      ],
+      "apertura_riserva": "Nell'archivio neurale due voci dicono di essere Mira. Nel reparto, Mira-47 dice lo stesso. Nessuna mente.",
+      "obiettivi": [
+        {
+          "id": "I08A",
+          "testo": "Isolare una versione di Mira senza danneggiarla",
+          "nc": 12,
+          "tag": [
+            "memoria",
+            "archivio"
+          ],
+          "tratti_tipici": [
+            "Reti",
+            "Medicina",
+            "Analizzare",
+            "Decifrare",
+            "Tecnologia"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "icaro_key_mira_shard"
+              },
+              {
+                "relazione": {
+                  "png": "mira_eco",
+                  "delta": 1
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "icaro_key_mira_shard"
+              },
+              {
+                "relazione": {
+                  "png": "mira_ombra",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "icaro_alt_copia_lenta": true
+                }
+              },
+              {
+                "risorsa": {
+                  "id": "riserva_termica",
+                  "delta": -1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Isoli una versione di Mira in un frammento neurale. È intera, e ti ringrazia.",
+            "parziale": "Il frammento regge, ma una delle voci si spegne per un momento, spaventata.",
+            "fallimento": "Non riesci. L'unica via è una copia lenta dentro il nodo, che consuma calore."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Isolo la voce nell'archivio",
+          "tratto": "Reti",
+          "obiettivo": "I08A"
+        },
+        {
+          "testo": "Stabilizzo Mira-47 mentre lavoro",
+          "tratto": "Medicina",
+          "obiettivo": "I08A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "unisci",
+          "testo": "Le unisco in una sola Mira",
+          "effetti": [
+            {
+              "flag": {
+                "mira_unita": true
+              }
+            },
+            {
+              "asse": {
+                "id": "continuita",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "mira47",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Le voci si fondono. Mira-47 si sveglia con ricordi che non sa se sono suoi."
+        },
+        {
+          "id": "separa",
+          "testo": "Le separo: sono persone distinte",
+          "effetti": [
+            {
+              "flag": {
+                "mira_separate": true
+              }
+            },
+            {
+              "asse": {
+                "id": "vite",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "mira_eco",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "mira_ombra",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Tre Mira, tre nomi, tre vite. Nessuna è una copia dell'altra."
+        },
+        {
+          "id": "proteggi_copie",
+          "testo": "Le proteggo tutte e chiedo loro che cosa vogliono",
+          "effetti": [
+            {
+              "flag": {
+                "archivio_consenso_mira": true
+              }
+            },
+            {
+              "asse": {
+                "id": "vite",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "verita",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Chiedi. Ognuna risponde in modo diverso. Nessuna viene toccata senza il suo sì."
+        },
+        {
+          "id": "cancella",
+          "testo": "Cancello le copie",
+          "effetti": [
+            {
+              "asse": {
+                "id": "vite",
+                "delta": -1
+              }
+            },
+            {
+              "asse": {
+                "id": "continuita",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "mira47",
+                "delta": -2
+              }
+            }
+          ],
+          "riserva": "Le voci nell'archivio si spengono. Mira-47 non sa di aver perso qualcosa."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "I08A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "I09",
+          "effetti": [
+            {
+              "snodo": "II_mira"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "I09",
+      "titolo": "Ricognizione esterna",
+      "luogo": "Rovine congelate",
+      "calma": false,
+      "fuori_citta": true,
+      "descrizione": "La via di fuga esiste. Quanto costa?",
+      "png_presenti": [
+        "oko"
+      ],
+      "apertura_riserva": "Sigilli il casco e controlli la riserva d'ossigeno prima di uscire. Fuori dalle cupole il freddo taglia anche attraverso la tuta termica. Oko Vale ti guida fra le rovine. Qualcosa di grande si muove sotto il ghiaccio.",
+      "obiettivi": [
+        {
+          "id": "I09A",
+          "testo": "Verificare la capacità della via esterna",
+          "nc": 12,
+          "tag": [
+            "percorso",
+            "esterno"
+          ],
+          "tratti_tipici": [
+            "Sopravvivenza",
+            "Orientamento",
+            "Rovine",
+            "Percezione",
+            "Tattica"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "icaro_key_outside_map"
+              },
+              {
+                "scopri": "icaro_truth_outside_route"
+              },
+              {
+                "flag": {
+                  "rotta_verificata": true
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "icaro_key_outside_map"
+              },
+              {
+                "scopri": "icaro_truth_outside_route"
+              },
+              {
+                "flag": {
+                  "rotta_verificata": true
+                }
+              },
+              {
+                "risorsa": {
+                  "id": "riserva_termica",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "icaro_alt_oko": true,
+                  "rotta_verificata": true
+                }
+              },
+              {
+                "scopri": "icaro_truth_outside_route"
+              },
+              {
+                "asse": {
+                  "id": "vite",
+                  "delta": -1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "La mappa termica è tua. La via regge, ma porta fuori solo una parte degli abitanti.",
+            "parziale": "Tracci la mappa, ma ti costa calore. La via non basta per tutti.",
+            "fallimento": "Senza mappa, solo Oko sa la strada. Costerà vite."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Traccio la via con Oko",
+          "tratto": "Orientamento",
+          "obiettivo": "I09A"
+        },
+        {
+          "testo": "Misuro le riserve lungo il percorso",
+          "tratto": "Sopravvivenza",
+          "obiettivo": "I09A"
+        }
+      ],
+      "incontro": {
+        "nemico": "predatore_ghiaccio",
+        "letale": true,
+        "fuga": {
+          "tratto": "Sopravvivenza",
+          "nc": 13,
+          "costo": [
+            {
+              "asse": {
+                "id": "vite",
+                "delta": -1
+              }
+            }
+          ]
+        },
+        "vittoria": [
+          {
+            "loot": {
+              "pool": "h17_ordinario",
+              "contesto": "vittoria",
+              "a_portata": true
+            }
+          }
+        ]
+      },
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "I09A"
+              },
+              {
+                "incontro_concluso": true
+              }
+            ]
+          },
+          "verso": "I10",
+          "effetti": [
+            {
+              "snodo": "II_esterno"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare",
+      "esterno": {
+        "protezione": "tuta termica, casco sigillato e riserva d'ossigeno",
+        "nota": "Fuori dalle cupole nessuno resta senza protezione: l'aria e il freddo uccidono."
+      }
+    },
+    {
+      "id": "I10",
+      "titolo": "Occupazione degli Spenti",
+      "luogo": "Sala di controllo di H-17",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Gli Spenti vogliono prendersi il nodo.",
+      "png_presenti": [
+        "kade",
+        "jax"
+      ],
+      "apertura_riserva": "Kade e gli Spenti hanno occupato la sala di controllo. Vogliono dare l'energia ai bassifondi. L'archivio, dicono, è un privilegio della Repubblica.",
+      "obiettivi": [
+        {
+          "id": "I10A",
+          "testo": "Procurarsi un trasmettitore fuori dalle reti ufficiali",
+          "nc": 12,
+          "tag": [
+            "trasmissione",
+            "prova"
+          ],
+          "tratti_tipici": [
+            "Reti",
+            "Bassifondi C7",
+            "Mercato nero",
+            "Contrattazione",
+            "Riparare"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "icaro_key_broadcast_cell"
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "icaro_key_broadcast_cell"
+              },
+              {
+                "relazione": {
+                  "png": "kade",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "icaro_alt_rete_spenti": true
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Un trasmettitore autonomo, montato con pezzi del mercato nero. Nessuno potrà spegnerlo.",
+            "parziale": "Hai il trasmettitore; Kade non ha gradito il prezzo.",
+            "fallimento": "Niente trasmettitore. Resta la rete degli Spenti, che qualcuno potrebbe ascoltare."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Monto un trasmettitore con pezzi del mercato nero",
+          "tratto": "Riparare",
+          "obiettivo": "I10A"
+        },
+        {
+          "testo": "Tratto con gli Spenti per averne uno",
+          "tratto": "Contrattazione",
+          "obiettivo": "I10A"
+        }
+      ],
+      "scelte": [
+        {
+          "id": "sostieni",
+          "testo": "Sostengo l'occupazione",
+          "effetti": [
+            {
+              "flag": {
+                "occupazione": true,
+                "icaro_alt_rete_spenti": true
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": 1
+              }
+            },
+            {
+              "relazione": {
+                "png": "kade",
+                "delta": 2
+              }
+            }
+          ],
+          "riserva": "Gli Spenti tengono la sala. Il nodo è loro, e un poco anche tuo."
+        },
+        {
+          "id": "negozia",
+          "testo": "Negozio fra Spenti e tecnici",
+          "effetti": [
+            {
+              "flag": {
+                "icaro_alt_rete_spenti": true
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "continuita",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Kade e Jax si stringono la mano. Nessuno dei due è contento: buon segno."
+        },
+        {
+          "id": "impedisci",
+          "testo": "Impedisco l'occupazione",
+          "effetti": [
+            {
+              "asse": {
+                "id": "continuita",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": -1
+              }
+            },
+            {
+              "relazione": {
+                "png": "kade",
+                "delta": -2
+              }
+            }
+          ],
+          "riserva": "Gli Spenti lasciano la sala. Il nodo resta in mano ai tecnici, e alla Repubblica."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "I10A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          },
+          "verso": "I11",
+          "effetti": [
+            {
+              "snodo": "II_spenti"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "I11",
+      "titolo": "Distribuzione",
+      "luogo": "Nodo termico H-17",
+      "calma": false,
+      "fuori_citta": false,
+      "descrizione": "Bloccare il piano delle risorse per il climax.",
+      "png_presenti": [
+        "jax",
+        "kade",
+        "anja"
+      ],
+      "apertura_riserva": "Jax ti mostra la tavola di distribuzione. Calore, ossigeno, archivio, trasmissione: non si può dare tutto a tutto.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "scelte": [
+        {
+          "id": "piano_case",
+          "testo": "Il piano privilegia il calore delle case",
+          "effetti": [
+            {
+              "asse": {
+                "id": "vite",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Le case avranno calore fino all'ultimo."
+        },
+        {
+          "id": "piano_archivio",
+          "testo": "Il piano protegge ossigeno e archivio",
+          "effetti": [
+            {
+              "asse": {
+                "id": "continuita",
+                "delta": 1
+              }
+            },
+            {
+              "flag": {
+                "archivio_protetto": true
+              }
+            }
+          ],
+          "riserva": "L'archivio e i ventilatori restano accesi per primi."
+        },
+        {
+          "id": "piano_prove",
+          "testo": "Il piano tiene energia per trasmettere le prove",
+          "effetti": [
+            {
+              "asse": {
+                "id": "verita",
+                "delta": 1
+              }
+            },
+            {
+              "flag": {
+                "prove_pronte": true
+              }
+            }
+          ],
+          "riserva": "Una parte dell'energia resta per la trasmissione."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "scelta_fatta": true
+          },
+          "verso": "I12",
+          "effetti": [
+            {
+              "flag": {
+                "h17_resource_plan_locked": true
+              }
+            },
+            {
+              "se": {
+                "condizione": {
+                  "non": {
+                    "verita_almeno": {
+                      "valore": 3,
+                      "tra": [
+                        "icaro_truth_population",
+                        "icaro_truth_heat",
+                        "icaro_truth_archive",
+                        "icaro_truth_brainfreeze",
+                        "icaro_truth_transfer",
+                        "icaro_truth_outside_route",
+                        "icaro_truth_choice"
+                      ]
+                    }
+                  }
+                },
+                "effetti": [
+                  {
+                    "flag": {
+                      "piano_fragile": true
+                    }
+                  },
+                  {
+                    "asse": {
+                      "id": "continuita",
+                      "delta": -1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "snodo": "II_distribuzione"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 2,
+      "level_band": [
+        9,
+        20
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "I12",
+      "titolo": "Ultima revisione",
+      "luogo": "Sala del consiglio di C1",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Il confronto con BlackRoot e l'amministrazione.",
+      "png_presenti": [
+        "seline",
+        "amministratore"
+      ],
+      "apertura_riserva": "Seline Ward e l'amministratore di C1 ascoltano. Hai pochi minuti per cambiare un calcolo.",
+      "obiettivi": [
+        {
+          "id": "I12A",
+          "testo": "Rendere lo spegnimento troppo costoso da decidere",
+          "nc": 12,
+          "tag": [
+            "prova",
+            "blackroot",
+            "registro"
+          ],
+          "tratti_tipici": [
+            "Persuasione",
+            "Economia",
+            "Diritto corporativo",
+            "Politica corporativa",
+            "Intimidire"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "scopri": "icaro_truth_choice"
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "verita_almeno": {
+                      "valore": 2,
+                      "tra": [
+                        "icaro_truth_population",
+                        "icaro_truth_heat",
+                        "icaro_truth_archive",
+                        "icaro_truth_brainfreeze",
+                        "icaro_truth_transfer",
+                        "icaro_truth_outside_route",
+                        "icaro_truth_choice"
+                      ]
+                    }
+                  },
+                  "effetti": [
+                    {
+                      "flag": {
+                        "accordo_politico": true
+                      }
+                    },
+                    {
+                      "asse": {
+                        "id": "verita",
+                        "delta": 1
+                      }
+                    }
+                  ],
+                  "altrimenti": [
+                    {
+                      "asse": {
+                        "id": "verita",
+                        "delta": 1
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "scopri": "icaro_truth_choice"
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "verita_almeno": {
+                      "valore": 3,
+                      "tra": [
+                        "icaro_truth_population",
+                        "icaro_truth_heat",
+                        "icaro_truth_archive",
+                        "icaro_truth_brainfreeze",
+                        "icaro_truth_transfer",
+                        "icaro_truth_outside_route",
+                        "icaro_truth_choice"
+                      ]
+                    }
+                  },
+                  "effetti": [
+                    {
+                      "flag": {
+                        "accordo_politico": true
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "scopri": "icaro_truth_choice"
+              },
+              {
+                "orologio": {
+                  "id": "spegnimento",
+                  "delta": 2
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Con le prove in mano cambi il calcolo: salvare H-17 diventa meno pericoloso che spegnerlo.",
+            "parziale": "Capisci che cosa li convincerebbe. Forse basta.",
+            "fallimento": "Capisci che cosa li convincerebbe, ma non riesci a darglielo. Lo spegnimento accelera."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Metto le prove sul tavolo",
+          "tratto": "Persuasione",
+          "obiettivo": "I12A"
+        },
+        {
+          "testo": "Ricalcolo davanti a loro costi e rischi",
+          "tratto": "Economia",
+          "obiettivo": "I12A"
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "obiettivo_tentato": "I12A"
+          },
+          "verso": "I13",
+          "effetti": [
+            {
+              "snodo": "III_revisione"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "I13",
+      "titolo": "Collasso termico",
+      "luogo": "Nodo termico H-17",
+      "calma": false,
+      "fuori_citta": true,
+      "descrizione": "Il nodo cede. Si usa ciò che si è messo da parte.",
+      "png_presenti": [
+        "jax"
+      ],
+      "apertura_riserva": "Il nodo cede di colpo. Le temperature crollano. Ora conta quello che hai messo da parte.",
+      "obiettivi": [
+        {
+          "id": "I13A",
+          "testo": "Tenere in vita il settore durante il collasso",
+          "nc": 12,
+          "tag": [
+            "nodo",
+            "calore",
+            "ossigeno"
+          ],
+          "tratti_tipici": [
+            "Riparare",
+            "Meccanica",
+            "Sopravvivenza",
+            "Tecnologia",
+            "Rovine",
+            "Analizzare"
+          ],
+          "esiti": {
+            "successo": [
+              {
+                "ricompensa": "icaro_key_oxygen_diverter"
+              },
+              {
+                "se": {
+                  "condizione": {
+                    "risorsa_almeno": {
+                      "id": "riserva_termica",
+                      "valore": 2
+                    }
+                  },
+                  "effetti": [
+                    {
+                      "asse": {
+                        "id": "vite",
+                        "delta": 1
+                      }
+                    },
+                    {
+                      "risorsa": {
+                        "id": "riserva_termica",
+                        "delta": -2
+                      }
+                    }
+                  ],
+                  "altrimenti": [
+                    {
+                      "risorsa": {
+                        "id": "riserva_termica",
+                        "delta": -1
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "parziale": [
+              {
+                "ricompensa": "icaro_key_oxygen_diverter"
+              },
+              {
+                "risorsa": {
+                  "id": "riserva_termica",
+                  "delta": -1
+                }
+              }
+            ],
+            "fallimento": [
+              {
+                "flag": {
+                  "icaro_alt_chiusura": true
+                }
+              },
+              {
+                "asse": {
+                  "id": "vite",
+                  "delta": -1
+                }
+              },
+              {
+                "risorsa": {
+                  "id": "riserva_termica",
+                  "delta": -1
+                }
+              }
+            ]
+          },
+          "riserva": {
+            "successo": "Con la riserva messa da parte e il deviatore, il settore resiste.",
+            "parziale": "Il deviatore regge, ma consumi riserva.",
+            "fallimento": "Per salvare il resto, qualcuno deve chiudere a mano un settore abitato."
+          }
+        }
+      ],
+      "suggerimenti": [
+        {
+          "testo": "Uso la riserva termica per reggere il collasso",
+          "tratto": "Riparare",
+          "obiettivo": "I13A"
+        },
+        {
+          "testo": "Devio l'ossigeno verso le case",
+          "tratto": "Tecnologia",
+          "obiettivo": "I13A"
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "obiettivo_tentato": "I13A"
+          },
+          "verso": "I14",
+          "effetti": [
+            {
+              "snodo": "III_collasso"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "I14",
+      "titolo": "Destino dell'archivio",
+      "luogo": "Archivio neurale",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Copie, corpi e consenso.",
+      "png_presenti": [
+        "anja",
+        "mira47",
+        "mira_eco",
+        "mira_ombra"
+      ],
+      "apertura_riserva": "L'archivio neurale regge ancora. Dentro ci sono persone che il mondo dà per morte. Fuori, qualcuno vuole comprarle.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "scelte": [
+        {
+          "id": "consenso",
+          "testo": "L'archivio resta, con il consenso di chi c'è dentro",
+          "effetti": [
+            {
+              "flag": {
+                "archivio_consenso": true
+              }
+            },
+            {
+              "asse": {
+                "id": "vite",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Ogni identità sceglie. Alcune restano, altre chiedono di andare.",
+          "richiede": {
+            "qualunque": [
+              {
+                "flag": "consenso_richiesto"
+              },
+              {
+                "flag": "archivio_consenso_mira"
+              },
+              {
+                "possiede": "icaro_key_mira_shard"
+              }
+            ]
+          },
+          "motivo_non_disponibile": "Serve un modo per chiedere il consenso: le cartelle, le copie di Mira o il frammento."
+        },
+        {
+          "id": "cancella",
+          "testo": "Cancello l'archivio",
+          "effetti": [
+            {
+              "asse": {
+                "id": "continuita",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "vite",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "L'archivio si svuota. Nessuno potrà più comprarlo."
+        },
+        {
+          "id": "vendi",
+          "testo": "Vendo l'archivio",
+          "effetti": [
+            {
+              "flag": {
+                "archivio_venduto": true
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": -1
+              }
+            },
+            {
+              "risorsa": {
+                "id": "riserva_termica",
+                "delta": 2
+              }
+            }
+          ],
+          "riserva": "Il prezzo è alto. Il calore arriva, le identità se ne vanno."
+        },
+        {
+          "id": "restituisci",
+          "testo": "Restituisco le identità ai loro corpi e alle famiglie",
+          "effetti": [
+            {
+              "asse": {
+                "id": "verita",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Pezzo per pezzo, le identità tornano a chi le aspettava."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "scelta_fatta": true
+          },
+          "verso": "I15",
+          "effetti": [
+            {
+              "snodo": "III_archivio"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "I15",
+      "titolo": "Evacuazione, riconoscimento o occupazione",
+      "luogo": "Piazza del settore",
+      "calma": true,
+      "fuori_citta": false,
+      "descrizione": "Una scelta politica personale.",
+      "png_presenti": [
+        "jax",
+        "kade",
+        "oko",
+        "seline"
+      ],
+      "apertura_riserva": "Tutto H-17 aspetta nella piazza gelata. Si può partire, chiedere di esistere, o prendersi il nodo.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "scelte": [
+        {
+          "id": "evacua",
+          "testo": "Porto fuori chi può partire",
+          "effetti": [
+            {
+              "flag": {
+                "evacuazione_scelta": true
+              }
+            },
+            {
+              "asse": {
+                "id": "vite",
+                "delta": 1
+              }
+            }
+          ],
+          "riserva": "Il convoglio si prepara. Non c'è posto per tutti: la lista pesa.",
+          "richiede": {
+            "flag": "rotta_verificata"
+          },
+          "motivo_non_disponibile": "Serve una via esterna verificata."
+        },
+        {
+          "id": "riconoscimento",
+          "testo": "Chiedo il riconoscimento legale del settore",
+          "effetti": [
+            {
+              "flag": {
+                "accordo_politico": true
+              }
+            },
+            {
+              "asse": {
+                "id": "vite",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "H-17 chiede di esistere, con i nomi e i registri che questo comporta."
+        },
+        {
+          "id": "occupa",
+          "testo": "Occupiamo il nodo",
+          "effetti": [
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": 2
+              }
+            },
+            {
+              "asse": {
+                "id": "continuita",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "Il nodo è di chi ci vive. La Repubblica prenderà nota."
+        },
+        {
+          "id": "controlla",
+          "testo": "Prendo il controllo del nodo e delle prove",
+          "effetti": [
+            {
+              "flag": {
+                "nodo_controllato": true
+              }
+            },
+            {
+              "asse": {
+                "id": "autonomia",
+                "delta": -2
+              }
+            }
+          ],
+          "riserva": "La chiave termica e le prove sono tue. H-17 vive, finché ti conviene.",
+          "richiede": {
+            "qualunque": [
+              {
+                "possiede": "icaro_key_heat_token"
+              },
+              {
+                "flag": "icaro_alt_jax"
+              }
+            ]
+          },
+          "motivo_non_disponibile": "Serve la chiave termica o l'aiuto di Jax."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "scelta_fatta": true
+          },
+          "verso": "I16",
+          "effetti": [
+            {
+              "snodo": "III_politica"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    },
+    {
+      "id": "I16",
+      "titolo": "Otto minuti finali",
+      "luogo": "Nodo termico H-17",
+      "calma": false,
+      "fuori_citta": false,
+      "descrizione": "A che cosa dare gli ultimi otto minuti.",
+      "png_presenti": [
+        "jax",
+        "anja",
+        "kade",
+        "oko"
+      ],
+      "apertura_riserva": "Otto minuti. Ultima alimentazione straordinaria. Non basta per tutto: qualcosa resterà al buio.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "scelte": [
+        {
+          "id": "trasmetti",
+          "testo": "Trasmetto le prove a tutta la Repubblica",
+          "effetti": [
+            {
+              "flag": {
+                "trasmissione_riuscita": true
+              }
+            },
+            {
+              "asse": {
+                "id": "verita",
+                "delta": 1
+              }
+            },
+            {
+              "risorsa": {
+                "id": "riserva_termica",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "Per otto minuti le prove girano ovunque. Nessuno potrà dire di non aver saputo.",
+          "richiede": {
+            "qualunque": [
+              {
+                "possiede": "icaro_key_broadcast_cell"
+              },
+              {
+                "flag": "icaro_alt_rete_spenti"
+              }
+            ]
+          },
+          "motivo_non_disponibile": "Serve il trasmettitore autonomo o la rete degli Spenti."
+        },
+        {
+          "id": "case",
+          "testo": "Alimento le case",
+          "effetti": [
+            {
+              "asse": {
+                "id": "vite",
+                "delta": 1
+              }
+            },
+            {
+              "asse": {
+                "id": "continuita",
+                "delta": 1
+              }
+            },
+            {
+              "risorsa": {
+                "id": "riserva_termica",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "Le case restano calde. Le prove e l'archivio restano al buio."
+        },
+        {
+          "id": "convoglio",
+          "testo": "Alimento il convoglio",
+          "effetti": [
+            {
+              "flag": {
+                "evacuazione_scelta": true
+              }
+            },
+            {
+              "asse": {
+                "id": "vite",
+                "delta": 1
+              }
+            },
+            {
+              "risorsa": {
+                "id": "riserva_termica",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "Il convoglio parte con il pieno. H-17 resta più freddo.",
+          "richiede": {
+            "flag": "rotta_verificata"
+          },
+          "motivo_non_disponibile": "Serve una via esterna verificata."
+        },
+        {
+          "id": "archivio",
+          "testo": "Alimento l'archivio",
+          "effetti": [
+            {
+              "asse": {
+                "id": "continuita",
+                "delta": 1
+              }
+            },
+            {
+              "flag": {
+                "archivio_alimentato": true
+              }
+            },
+            {
+              "risorsa": {
+                "id": "riserva_termica",
+                "delta": -1
+              }
+            }
+          ],
+          "riserva": "L'archivio resta vivo. Le case si raffreddano."
+        }
+      ],
+      "uscite": [
+        {
+          "quando": {
+            "scelta_fatta": true
+          },
+          "verso": "I17",
+          "effetti": [
+            {
+              "flag": {
+                "act_3_climax_reached": true
+              }
+            },
+            {
+              "snodo": "III_climax"
+            }
+          ]
+        }
+      ],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare",
+      "incontro": {
+        "nemico": "villain_seline",
+        "villain": {
+          "candidati": [
+            "villain_seline",
+            "villain_amministratore"
+          ],
+          "scelta": "piu_ostile",
+          "scala": {
+            "livello": "protagonista",
+            "hpRispettoAlPg": {
+              "esplorativa": 0.7,
+              "bilanciata": 0.9,
+              "permadeath": 1
+            },
+            "dannoRispettoAlPg": 0.6,
+            "dannoMassimoMolt": 3,
+            "fonte": "decisione dell'autore (2026-10-02): sfida paragonabile al giocatore; fattori proposti, da approvare"
+          }
+        },
+        "finale": true,
+        "letale": true,
+        "fuga": {
+          "tratto": "Furtività",
+          "nc": 15,
+          "costo": [
+            {
+              "flag": {
+                "duello_finale_abbandonato": true
+              }
+            }
+          ]
+        },
+        "vittoria": [
+          {
+            "flag": {
+              "villain_affrontato": true
+            }
+          }
+        ],
+        "sconfitta": {
+          "tipo": "fail_forward",
+          "testo": "Il pavimento grigliato ti arriva addosso. Qualcuno ti trascina dietro una paratia e ti tampona le ferite: il nodo ronza ancora, e gli otto minuti non sono finiti."
+        },
+        "fonte": "decisione dell'autore (2026-10-02): il villain partecipa allo scontro finale"
+      }
+    },
+    {
+      "id": "I17",
+      "titolo": "Epilogo",
+      "luogo": "H-17",
+      "calma": false,
+      "fuori_citta": false,
+      "descrizione": "La campagna si chiude qui: il motore ha già deciso l'esito.",
+      "png_presenti": [
+        "jax"
+      ],
+      "apertura_riserva": "Il tempo delle scelte è finito.",
+      "obiettivi": [],
+      "suggerimenti": [],
+      "finale": true,
+      "uscite": [],
+      "campaign_id": "icaro-otto-minuti",
+      "content_status": "proposed",
+      "act": 3,
+      "level_band": [
+        21,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+    }
+  ],
+  "avanzamento": {
+    "nota": "Progressione a tacche (vedi progressione)."
+  },
+  "progressione": {
+    "stato": "proposta da approvare",
+    "nota": "Tacche per azioni registrate (mai per attesa o ripetizione): costo del livello L = ceil(AP del livello L in LEVEL_TABLE / divisore_costo). Il livello si guadagna solo chiudendo una scena (mai per una singola risposta), al massimo uno per volta e mai oltre la fascia dell'atto; si ricevono esattamente gli AP della tabella.",
+    "divisore_costo": 4,
+    "livello_a_fine_scena": true,
+    "fasce": {
+      "1": [
+        1,
+        8
+      ],
+      "2": [
+        9,
+        20
+      ],
+      "3": [
+        21,
+        30
+      ]
+    },
+    "premi": {
+      "obiettivo": {
+        "successo": 2,
+        "parziale": 1,
+        "fallimento": 1
+      },
+      "snodo": 1,
+      "verita": 1,
+      "scena_nuova": 1,
+      "legame": 1,
+      "soluzione_creativa": 1
+    },
+    "nota_ritmo": "Con divisore 4 la trama principale porta circa un livello ogni 2-3 scene (Lv 6-7 a fine campagna, misurato sulle ricette dei finali). I livelli successivi sono pensati per esplorazione, incarichi e archi personali, da scrivere."
+  },
+  "profili_difficolta": {
+    "esplorativa": {
+      "candidati": 3,
+      "risorse_budget_delta": 1,
+      "oggetti_chiave": "custode",
+      "vie_prova_critica": 3,
+      "tute_ossigeno": "recupero facilitato",
+      "morte": "recupero coerente"
+    },
+    "bilanciata": {
+      "candidati": 2,
+      "risorse_budget_delta": 0,
+      "oggetti_chiave": "perdita",
+      "vie_prova_critica": 2,
+      "tute_ossigeno": "budget scena",
+      "morte": "recupero coerente"
+    },
+    "permadeath": {
+      "candidati": 1,
+      "risorse_budget_delta": -1,
+      "oggetti_chiave": "perdita",
+      "vie_prova_critica": 1,
+      "tute_ossigeno": "perdite persistenti",
+      "morte": "definitiva"
+    },
+    "nota": "Icaro §11. Permadeath non assegna equipaggiamento più potente. Valori da approvare."
+  },
+  "regole_magia": {
+    "stato": "Nessuna regola speciale: \"Mago\" è la classe meccanica; gli effetti sono modifiche, dispositivi o interfacce e costano MP secondo il regolamento."
+  },
+  "lessico_riservato": [],
+  "testi": {
+    "sconfitta": "Qualcuno di H-17 ti trascina al caldo. Ti svegli con una ferita fasciata: resti ferito fino al prossimo riposo, e il tempo scorre."
+  },
+  "vincoli_narrativi": [
+    "Non anticipare eventi futuri di The Light Seekers oltre il materiale approvato.",
+    "Descrivi le modifiche corporee solo attraverso effetti registrati.",
+    "Le copie di Mira sono identità distinte e collegate: non trattarle come una sola persona se il motore non lo ha deciso.",
+    "Crudeltà e cannibalismo del mondo possono esistere nel tono, entro le regole della modalità single player.",
+    "Non rivelare le verità riservate finché il motore non le segna come scoperte."
+  ],
+  "loot": {
+    "versione": "loot-icaro-0.1-proposta",
+    "avviso": "Catalogo proposto (Icaro §10): nessuna arma o modifica corporea generata finché i cataloghi non sono approvati. Nessuna droga di lavori precedenti diventa canonica.",
+    "componenti": {
+      "basi": {
+        "icaro_loot_thermal_cell": {
+          "nome": "Cella termica",
+          "categoria": "consumabile",
+          "descrizione": "Alimenta un dispositivo o aggiunge un'unità alla riserva termica.",
+          "effetto": {
+            "effetti": [
+              {
+                "risorsa": {
+                  "id": "riserva_termica",
+                  "delta": 1
+                }
+              }
+            ]
+          },
+          "tag": [
+            "calore",
+            "nodo"
+          ]
+        },
+        "icaro_loot_oxygen_canister": {
+          "nome": "Bombola d'ossigeno",
+          "categoria": "consumabile",
+          "descrizione": "Sostiene una tratta esterna o una scena di crisi.",
+          "effetto": {
+            "effetti": [
+              {
+                "flag": {
+                  "ossigeno_extra": 1
+                }
+              }
+            ]
+          },
+          "tag": [
+            "ossigeno",
+            "esterno"
+          ]
+        },
+        "icaro_loot_telonium_scrap": {
+          "nome": "Scarto di telonio",
+          "categoria": "materiale",
+          "descrizione": "Materiale per riparazioni secondo ricetta approvata.",
+          "tag": [
+            "riparazione"
+          ]
+        },
+        "icaro_loot_neural_patch": {
+          "nome": "Toppa neurale",
+          "categoria": "strumento",
+          "descrizione": "Permette una prova sulla memoria. Non cura il brainfreeze.",
+          "tag": [
+            "memoria",
+            "clinica"
+          ]
+        },
+        "icaro_loot_corporate_credential": {
+          "nome": "Credenziale corporativa",
+          "categoria": "strumento",
+          "descrizione": "Apre un livello coerente con l'autorizzazione registrata.",
+          "tag": [
+            "accesso",
+            "registro"
+          ]
+        },
+        "icaro_loot_spento_relay": {
+          "nome": "Ripetitore degli Spenti",
+          "categoria": "strumento",
+          "descrizione": "Comunica attraverso la rete clandestina.",
+          "tag": [
+            "trasmissione"
+          ]
+        },
+        "icaro_loot_heat_suit_part": {
+          "nome": "Pezzo di tuta termica",
+          "categoria": "materiale",
+          "descrizione": "Ripara una tuta esterna. Nessun bonus fuori catalogo.",
+          "tag": [
+            "esterno",
+            "riparazione"
+          ]
+        },
+        "icaro_loot_medical_dose": {
+          "nome": "Dose medica",
+          "categoria": "consumabile",
+          "descrizione": "Cura di catalogo: effetto medico approvato.",
+          "effetto": {
+            "hp": 5
+          }
+        },
+        "icaro_loot_memory_packet": {
+          "nome": "Pacchetto di memoria",
+          "categoria": "indizio",
+          "descrizione": "Un ricordo impacchettato: sblocca un fatto o un legame.",
+          "tag": [
+            "memoria"
+          ]
+        },
+        "icaro_loot_blackroot_alloy": {
+          "nome": "Lega BlackRoot",
+          "categoria": "materiale",
+          "descrizione": "Componente raro di ricompensa: non è un'arma completa.",
+          "tag": [
+            "blackroot"
+          ]
+        },
+        "icaro_arma_corta_bassa": {
+          "nome": "Arma corta",
+          "categoria": "arma",
+          "taglia": "corte",
+          "qualita": "bassa"
+        },
+        "icaro_arma_corta_media": {
+          "nome": "Arma integrata",
+          "categoria": "arma",
+          "taglia": "corte",
+          "qualita": "media"
+        },
+        "icaro_arma_media_bassa": {
+          "nome": "Utensile pesante",
+          "categoria": "arma",
+          "taglia": "medie",
+          "qualita": "bassa"
+        },
+        "icaro_protezione_leggera_bassa": {
+          "nome": "Abito protettivo",
+          "categoria": "armatura",
+          "taglia": "leggere",
+          "qualita": "bassa"
+        },
+        "icaro_armatura_media_bassa": {
+          "nome": "Armatura media",
+          "categoria": "armatura",
+          "taglia": "medie",
+          "qualita": "bassa"
+        },
+        "icaro_scudo_piccolo_basso": {
+          "nome": "Scudo da braccio",
+          "categoria": "scudo",
+          "taglia": "piccoli",
+          "qualita": "bassa"
+        },
+        "icaro_scudo_medio_basso": {
+          "nome": "Scudo di lamiera",
+          "categoria": "scudo",
+          "taglia": "medi",
+          "qualita": "bassa"
+        }
+      },
+      "materiali": {},
+      "proprieta": {}
+    },
+    "modelli": {
+      "m_icaro_loot_thermal_cell": {
+        "famiglia": "ordinario",
+        "basi": [
+          "icaro_loot_thermal_cell"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Alimenta un dispositivo o aggiunge un'unità alla riserva termica.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_icaro_loot_oxygen_canister": {
+        "famiglia": "ordinario",
+        "basi": [
+          "icaro_loot_oxygen_canister"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Sostiene una tratta esterna o una scena di crisi.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_icaro_loot_telonium_scrap": {
+        "famiglia": "ordinario",
+        "basi": [
+          "icaro_loot_telonium_scrap"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Materiale per riparazioni secondo ricetta approvata.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_icaro_loot_neural_patch": {
+        "famiglia": "ordinario",
+        "basi": [
+          "icaro_loot_neural_patch"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Permette una prova sulla memoria. Non cura il brainfreeze.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_icaro_loot_corporate_credential": {
+        "famiglia": "ordinario",
+        "basi": [
+          "icaro_loot_corporate_credential"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Apre un livello coerente con l'autorizzazione registrata.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_icaro_loot_spento_relay": {
+        "famiglia": "ordinario",
+        "basi": [
+          "icaro_loot_spento_relay"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Comunica attraverso la rete clandestina.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_icaro_loot_heat_suit_part": {
+        "famiglia": "ordinario",
+        "basi": [
+          "icaro_loot_heat_suit_part"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Ripara una tuta esterna. Nessun bonus fuori catalogo.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_icaro_loot_medical_dose": {
+        "famiglia": "ordinario",
+        "basi": [
+          "icaro_loot_medical_dose"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Cura di catalogo: effetto medico approvato.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_icaro_loot_memory_packet": {
+        "famiglia": "ordinario",
+        "basi": [
+          "icaro_loot_memory_packet"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Un ricordo impacchettato: sblocca un fatto o un legame.",
+        "filtri": {
+          "atto": [
+            1,
+            2,
+            3
+          ]
+        },
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          1,
+          2,
+          3
+        ],
+        "level_band": [
+          1,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      },
+      "m_icaro_loot_blackroot_alloy": {
+        "famiglia": "ordinario",
+        "basi": [
+          "icaro_loot_blackroot_alloy"
+        ],
+        "nome_modello": "{base}",
+        "descrizione": "Componente raro di ricompensa: non è un'arma completa.",
+        "filtri": {
+          "atto": [
+            2,
+            3
+          ]
+        },
+        "unico": true,
+        "campaign_id": "icaro-otto-minuti",
+        "content_status": "proposed",
+        "act": [
+          2,
+          3
+        ],
+        "level_band": [
+          9,
+          30
+        ],
+        "difficulty_tags": [
+          "esplorativa",
+          "bilanciata",
+          "permadeath"
+        ],
+        "visibility_rule": "pubblica",
+        "source_note": "Role_Makers_Icaro_Scheda_Contenuti_V1.md (pacchetto V4): proposta editoriale da approvare"
+      }
+    },
+    "pool": {
+      "h17_ordinario": {
+        "modelli": [
+          "m_icaro_loot_thermal_cell",
+          "m_icaro_loot_oxygen_canister",
+          "m_icaro_loot_telonium_scrap",
+          "m_icaro_loot_neural_patch",
+          "m_icaro_loot_corporate_credential",
+          "m_icaro_loot_spento_relay",
+          "m_icaro_loot_heat_suit_part",
+          "m_icaro_loot_medical_dose",
+          "m_icaro_loot_memory_packet",
+          "m_icaro_loot_blackroot_alloy"
+        ],
+        "quantita": {
+          "esplorativa": 3,
+          "bilanciata": 2,
+          "permadeath": 1
+        }
+      }
+    }
+  }
+}

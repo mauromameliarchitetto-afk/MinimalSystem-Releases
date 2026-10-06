@@ -1,0 +1,2647 @@
+{
+ "formato": "rm-solo-contesto/1",
+ "storia": "eidos",
+ "campaign_id": "eidos-casa-delle-voci",
+ "versione": "1.0.0",
+ "descrizione": "Contesto narrativo di Eidos: che cosa si può raccontare in questa campagna. Ogni dato cita le fonti del manifesto; la campagna di gioco «La Casa delle Voci» è una proposta ambientata nel mondo delle fonti, non un capitolo delle fonti.",
+ "copertura": {
+  "corpora": [
+   "EID-PRE",
+   "EID-RW",
+   "EID-SP",
+   "EID-EM"
+  ],
+  "stato": {
+   "v": "Campagna principale completa (capitoli 1-47); storia parallela e Roots of War parziali.",
+   "fonte": [
+    {
+     "id": "EID-PRE-009"
+    },
+    {
+     "id": "EID-SP-001"
+    },
+    {
+     "id": "EID-RW-007"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "lacune": [
+   {
+    "v": null,
+    "fonte": [],
+    "classe": "incompleto",
+    "limite": "Roots of War: episodi 5, 6 e 10 assenti dall'archivio."
+   },
+   {
+    "v": null,
+    "fonte": [],
+    "classe": "incompleto",
+    "limite": "Storia parallela: Capitolo VIII «Red is come» vuoto; atti I-II solo come sinossi."
+   },
+   {
+    "v": null,
+    "fonte": [],
+    "classe": "incompleto",
+    "limite": "Campagna principale: «My Vengeance» (Cap. 26) e «2_Istros» vuoti."
+   }
+  ]
+ },
+ "timbro": {
+  "nome": "La voce delle idee in conflitto",
+  "tono": {
+   "v": "Epico concreto, politico e umano: la guerra fra idee si misura su corpi, famiglie e comunità.",
+   "fonte": [
+    {
+     "id": "EID-EM-104",
+     "cita": "Il nemico non è fuori. Il nemico è dentro"
+    },
+    {
+     "id": "EID-EM-003",
+     "cita": "siamo tutti figli di tutti"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "distanza": {
+   "v": "Vicina al corpo nel pericolo e nell'intimità; più ampia solo per eserciti, città e trasformazioni del paesaggio.",
+   "fonte": [
+    {
+     "id": "EID-EM-061",
+     "cita": "La battaglia durerà giorni"
+    },
+    {
+     "id": "EID-EM-004",
+     "cita": "Quanti calli"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "immagini": {
+   "v": "Ogni principio lascia una traccia fisica: una targhetta, una gemma, una piuma, una cicatrice, un nome completo detto come atto di verità.",
+   "fonte": [
+    {
+     "id": "EID-PRE-009",
+     "cita": "Mhor con la questione targhetta"
+    },
+    {
+     "id": "EID-RW-006",
+     "cita": "stringendo a sé la piuma"
+    },
+    {
+     "id": "EID-PRE-003",
+     "cita": "ricavano le gemme fondamentali"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "sensoriale": {
+   "v": "Materia e calore: fuoco, metallo, sangue, nebbia, fiume; il costo del potere si sente nel corpo (bruciature, emicrania).",
+   "fonte": [
+    {
+     "id": "EID-PRE-004",
+     "cita": "prende fuoco nella parte sinistra"
+    },
+    {
+     "id": "EID-EM-024",
+     "cita": "pallida e trasparente"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "dialoghi": {
+   "v": "Confronto diretto: ogni interlocutore difende una posizione e insieme un interesse personale; le battute filosofiche nascono dall'azione presente.",
+   "fonte": [
+    {
+     "id": "EID-EM-024",
+     "cita": "Giusta per chi"
+    },
+    {
+     "id": "EID-EM-040",
+     "cita": "il potere non fa le cose giuste"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "regole": [
+   {
+    "v": "Mostra almeno due letture credibili del conflitto.",
+    "fonte": [
+     {
+      "id": "EID-EM-024",
+      "cita": "Giusta per chi"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Collega ogni snodo maggiore a una relazione personale.",
+    "fonte": [
+     {
+      "id": "EID-PRE-009",
+      "cita": "si riunisce a Tessa"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Tecnologia, arkè e armamento riflettono la cultura che li produce.",
+    "fonte": [
+     {
+      "id": "EID-PRE-003",
+      "cita": "ricavano le gemme fondamentali"
+     },
+     {
+      "id": "EID-PRE-004",
+      "cita": "Telonio: Minerale estratto dalla cava di Lechta"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "I Tèras sono mostri: ogni popolo ne dà una spiegazione diversa, nessuna confermata.",
+    "fonte": [
+     {
+      "id": "EID-PRE-003",
+      "cita": "chiamati Tèras, mostri"
+     },
+     {
+      "id": "AUT-001"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Dopo eventi lunghi, inserisci una pausa quotidiana che misura ciò che rischia di andare perduto.",
+    "fonte": [
+     {
+      "id": "EID-EM-098",
+      "cita": "Passano 3 giorni"
+     },
+     {
+      "id": "EID-EM-004",
+      "cita": "Quanti calli"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Non ridurre nessun popolo a una caricatura: la parola «Antarsi» serve a togliere umanità a chi viene chiamato così.",
+    "fonte": [
+     {
+      "id": "EID-EM-104",
+      "cita": "Questa parola ha lo scopo di toglierci umanità"
+     },
+     {
+      "id": "AUT-002"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "La magia senza gemme ha un costo fisico su chi la usa.",
+    "fonte": [
+     {
+      "id": "EID-PRE-004",
+      "cita": "veicolare il fuoco senza le gemme"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "La magia senza gemme di un Chorisfos e quella clandestina di un Epizio producono sospetto sociale prima del pericolo fisico.",
+    "fonte": [
+     {
+      "id": "IMP-EIDOS-VOCE"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Non attestato negli originali: viene dal timbro precedente (derivato V5)."
+   }
+  ],
+  "evitare": [
+   {
+    "v": "esposizioni filosofiche scollegate dalla scena",
+    "fonte": [
+     {
+      "id": "EID-EM-104",
+      "cita": "Voi non siete numeri"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": "Il discorso pubblico è sempre un atto in scena, mai una spiegazione al giocatore."
+   },
+   {
+    "v": "fazioni perfettamente unite",
+    "fonte": [
+     {
+      "id": "EID-EM-102",
+      "cita": "perché bracchiamo gli Antarsi"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   {
+    "v": "antagonisti mossi solo dal potere",
+    "fonte": [
+     {
+      "id": "EID-EM-040",
+      "cita": "il potere non fa le cose giuste"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   {
+    "v": "il ritorno dei protagonisti delle storie originali come soluzione",
+    "fonte": [
+     {
+      "id": "IMP-EIDOS-VOCE"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Regola di prodotto: la partita è di un nuovo protagonista."
+   }
+  ]
+ },
+ "tema": {
+  "domanda": {
+   "v": "Che cosa resta umano quando le idee diventano armi e i popoli diventano nemici per definizione?",
+   "fonte": [
+    {
+     "id": "EID-EM-104",
+     "cita": "Il nemico non è fuori"
+    },
+    {
+     "id": "EID-EM-076",
+     "cita": "Siamo tutti diversi"
+    }
+   ],
+   "classe": "deducibile",
+   "limite": "Formulazione sintetica: l'autore non la scrive come domanda."
+  },
+  "tesi": {
+   "v": "Il destino si scrive: le scelte delle persone cambiano il mondo, anche a un prezzo.",
+   "fonte": [
+    {
+     "id": "EID-EM-004",
+     "cita": "A noi uomini spetta scrivere il destino"
+    },
+    {
+     "id": "EID-EM-050",
+     "cita": "Le cose andranno come decideremo noi"
+    },
+    {
+     "id": "EID-PRE-008",
+     "cita": "le scelte prese dai ragazzi soldato costruiscono le basi"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "antitesi": {
+   "v": "Il potere che fa la storia senza chiedersi se è giusto; il controllo che misura ogni cosa.",
+   "fonte": [
+    {
+     "id": "EID-EM-040",
+     "cita": "il potere non fa le cose giuste, fa solo la storia"
+    },
+    {
+     "id": "EID-EM-099",
+     "cita": "ogni cosa è misurabile"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "nota": {
+   "v": "La tesi non vince per argomento ma per il costo pagato da chi la sostiene.",
+   "fonte": [
+    {
+     "id": "EID-EM-016",
+     "cita": "Per salvare il mondo non bisogna salvare tutti"
+    },
+    {
+     "id": "EID-EM-091",
+     "cita": "I morti devono rimanere morti"
+    }
+   ],
+   "classe": "deducibile",
+   "limite": null
+  }
+ },
+ "atti": {
+  "1": {
+   "funzione": {
+    "v": "Introduzione e separazione: identità, prima missione, gruppi divisi, primi dubbi del soldato.",
+    "fonte": [
+     {
+      "id": "EID-PRE-009",
+      "cita": "Nelle prima fasi di introduzione"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "domanda": {
+    "v": "A chi appartieni, e che cosa costa restare?",
+    "fonte": [
+     {
+      "id": "EID-PRE-009",
+      "cita": "discorso sull'identità"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  },
+  "2": {
+   "funzione": {
+    "v": "Rapporti, rientro, dinamiche sociali; rottura dello status, scontro verbale e tensioni.",
+    "fonte": [
+     {
+      "id": "EID-PRE-009",
+      "cita": "Successivamente nella parte centrale si mostrano i rapporti"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "domanda": {
+    "v": "Che cosa sei disposto a perdere per ciò che hai scoperto?",
+    "fonte": [
+     {
+      "id": "EID-PRE-009",
+      "cita": "rottura dello status"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  },
+  "3": {
+   "funzione": {
+    "v": "Ritorno, convergenza dei fili, sacrificio e scelta che cambia il mondo; finale aperto alla giocata.",
+    "fonte": [
+     {
+      "id": "EID-PRE-009",
+      "cita": "il ritorno di corsa verso il sud"
+     },
+     {
+      "id": "EID-EM-091",
+      "cita": "I morti devono rimanere morti"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "domanda": {
+    "v": "Quale mondo lasci dietro la tua scelta?",
+    "fonte": [
+     {
+      "id": "EID-PRE-008",
+      "cita": "portandoli così a combattere per dar forma alle loro idee"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  }
+ },
+ "metodo": {
+  "costruzioneAtti": {
+   "v": "Blocchi di capitoli per filo di PG (1-12, 12-25, 26-40) con funzione dichiarata per blocco.",
+   "fonte": [
+    {
+     "id": "EID-PRE-009",
+     "cita": "Nelle prima fasi di introduzione"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "aperturaCapitoli": {
+   "v": "Il capitolo riprende esattamente il punto di sospensione del precedente.",
+   "fonte": [
+    {
+     "id": "EID-EM-099",
+     "cita": "Qualcuno vi strattona"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "chiusuraCapitoli": {
+   "v": "Chiusura dichiarata su un'immagine o una sospensione; a volte il conflitto prosegue alla giocata successiva.",
+   "fonte": [
+    {
+     "id": "EID-EM-012",
+     "cita": "chiudere la scena con l'immagine del fuoco"
+    },
+    {
+     "id": "EID-RW-007",
+     "cita": "lo scontro proseguirà nella prossima giocata"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "ritmo": {
+   "v": "Lunghe scene di relazione fra un picco e l'altro; salti di tempo dichiarati; tempo per descrivere luoghi e passaggio del tempo.",
+   "fonte": [
+    {
+     "id": "EID-RW-007",
+     "cita": "prendi tempo per descrivere le ambientazioni"
+    },
+    {
+     "id": "EID-EM-098",
+     "cita": "Passano 3 giorni"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "alternanza": {
+   "v": "Montaggio parallelo per filo; due fili si commentano a vicenda senza contatto (contrappunto).",
+   "fonte": [
+    {
+     "id": "EID-EM-012",
+     "cita": "la prima pietra del nostro impero"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "scene": {
+   "v": "Ogni scena ha un titolo-funzione, PNG con agenda e battute preparate, spazio al roleplay.",
+   "fonte": [
+    {
+     "id": "EID-EM-101",
+     "cita": "Spazio al roleplay"
+    },
+    {
+     "id": "EID-EM-102",
+     "cita": "Lascia libertà"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "spostamenti": {
+   "v": "Il viaggio è una finestra di dialogo e di logistica (guasti, razioni), non un salto di scena.",
+   "fonte": [
+    {
+     "id": "EID-RW-010",
+     "cita": "più calmo e rilassato"
+    },
+    {
+     "id": "EID-EM-099",
+     "cita": "surriscald"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "introduzionePng": {
+   "v": "Il PNG entra in azione con un gesto o un oggetto identitario.",
+   "fonte": [
+    {
+     "id": "EID-RW-006",
+     "cita": "stringendo a sé la piuma"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "rapporti": {
+   "v": "I rapporti crescono per micro-confidenze e attriti dichiarati nel piano dell'autore.",
+   "fonte": [
+    {
+     "id": "EID-PRE-009",
+     "cita": "Primi litigi con Alida"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "sottotesto": {
+   "v": "Il PNG può mentire e il giocatore lo vede solo dagli effetti; il narratore sa la verità.",
+   "fonte": [
+    {
+     "id": "EID-EM-042",
+     "cita": "Mente ovviamente, non può saperlo"
+    },
+    {
+     "id": "EID-EM-099",
+     "cita": "Si è sacrificato"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "presagi": {
+   "v": "Profezie ripetute e leggende lette in scena tornano molto più avanti; una visione può compiersi spostandosi su un altro.",
+   "fonte": [
+    {
+     "id": "EID-EM-060",
+     "cita": "Posso cambiarlo vero"
+    },
+    {
+     "id": "EID-EM-091",
+     "cita": "fenice nera"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "informazioni": {
+   "v": "Liste di ciò che un PNG sa e può dire; tiri di memoria e di osservare decidono che cosa emerge.",
+   "fonte": [
+    {
+     "id": "EID-EM-053",
+     "cita": "Cosa sa Bedros"
+    },
+    {
+     "id": "EID-EM-015",
+     "cita": "Tiro di memoria di Herys"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "rivelazioni": {
+   "v": "A strati e materiali: registrazioni, scritte, documenti, eredità testuali dei morti.",
+   "fonte": [
+    {
+     "id": "EID-EM-022",
+     "cita": "Ho visto le registrazioni della ragazza"
+    },
+    {
+     "id": "EID-EM-102",
+     "cita": "Hope was come here"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "conflitti": {
+   "v": "Tesi e antitesi incarnate da PNG pari, mai risolte per pura argomentazione.",
+   "fonte": [
+    {
+     "id": "EID-EM-024",
+     "cita": "Giusta per chi"
+    },
+    {
+     "id": "EID-EM-040",
+     "cita": "il potere non fa le cose giuste"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "combattimenti": {
+   "v": "Battaglie con compressione del tempo e PNG che scuotono il PG; lo scontro personale decisivo è breve.",
+   "fonte": [
+    {
+     "id": "EID-EM-061",
+     "cita": "O uccidi o muori"
+    },
+    {
+     "id": "EID-SP-006",
+     "cita": "Lo scontro è rapido"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "aftermath": {
+   "v": "Rito verbale o funebre, silenzio lasciato in scena, lettera come chiusura.",
+   "fonte": [
+    {
+     "id": "EID-EM-045",
+     "cita": "may the peace be with you"
+    },
+    {
+     "id": "EID-EM-022",
+     "cita": "Lascia il silenzio"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "trasformazioni": {
+   "v": "Il costo del potere trasforma il corpo (trasparenza, cristallizzazione, bruciature).",
+   "fonte": [
+    {
+     "id": "EID-EM-024",
+     "cita": "pallida e trasparente"
+    },
+    {
+     "id": "EID-PRE-004",
+     "cita": "prende fuoco nella parte sinistra"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "archi": {
+   "v": "Ogni personaggio ha 3-4 difetti: uno si supera, uno si attenua, uno cresce, uno resta costante; il capitolo inverte il valore emotivo; un PNG specchio rende visibili i difetti.",
+   "fonte": [
+    {
+     "id": "EID-PRE-002",
+     "cita": "supera la paura del passato"
+    },
+    {
+     "id": "EID-PRE-007",
+     "cita": "se inizia con valore positivo deve finire in valore negativo"
+    },
+    {
+     "id": "EID-PRE-009",
+     "cita": "Hunter funge da narratore dei difetti"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "temi": {
+   "v": "Il tema è espresso anche da artefatti del mondo (una recita, un discorso), non dalla voce narrante.",
+   "fonte": [
+    {
+     "id": "EID-EM-076",
+     "cita": "Siamo tutti diversi"
+    },
+    {
+     "id": "EID-EM-104",
+     "cita": "Voi non siete numeri"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "secondari": {
+   "v": "Scene libere fra i fili principali; le scene preparate e non giocate scivolano ai capitoli successivi.",
+   "fonte": [
+    {
+     "id": "EID-SP-005",
+     "cita": "Scene libere"
+    },
+    {
+     "id": "EID-EM-051",
+     "cita": "A civil war"
+    },
+    {
+     "id": "EID-EM-060",
+     "cita": "A civil war"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "deviazioni": {
+   "v": "La scelta del PG è rispettata, ma il mondo può contraddirla.",
+   "fonte": [
+    {
+     "id": "EID-EM-012",
+     "cita": "Se lo salva, interviene uno dei suoi e gli spara"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "ricongiungimenti": {
+   "v": "I fili separati convergono in un evento pubblico o in un luogo; la storia parallela si ricongiunge alla principale.",
+   "fonte": [
+    {
+     "id": "EID-PRE-009",
+     "cita": "si riunisce a Tessa"
+    },
+    {
+     "id": "EID-SP-001",
+     "cita": "Hiberic"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": "La citazione di EID-SP-001 indica il corpus, non un passo."
+  },
+  "decisioniConseguenze": {
+   "v": "Le scelte biforcano i fili e le loro conseguenze sono tracciate (liste del piano antagonista aggiornate).",
+   "fonte": [
+    {
+     "id": "EID-EM-019",
+     "cita": "Hunter dovrà decidere se andare alla capitale"
+    },
+    {
+     "id": "EID-EM-021",
+     "cita": "Operazioni in corso"
+    },
+    {
+     "id": "EID-RW-009",
+     "cita": "La scena si conclude con la decisione"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "vocePng": {
+   "v": "Forte idioletto: motti di gruppo, gerghi, lingue straniere come marca culturale, frasi ereditate da un PNG all'altro.",
+   "fonte": [
+    {
+     "id": "EID-EM-102",
+     "cita": "To the justice"
+    },
+    {
+     "id": "EID-EM-064",
+     "cita": "Che i numeri siano dalla tua"
+    },
+    {
+     "id": "EID-EM-016",
+     "cita": "Per salvare il mondo non bisogna salvare tutti"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "variazioni": {
+   "v": "L'autore riscrive le scene e lascia esiti alternativi non decisi: le battute sono ancore, l'esito dipende dalla giocata.",
+   "fonte": [
+    {
+     "id": "EID-EM-044",
+     "cita": "Vediamo cosa scrivere"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  }
+ },
+ "canone": {
+  "leggi": [
+   {
+    "v": "Chorisfos ed Epizi sono le fazioni in guerra per il dominio; i Chorisfos ricavano le gemme per combattere.",
+    "fonte": [
+     {
+      "id": "EID-PRE-003",
+      "cita": "ricavano le gemme fondamentali"
+     },
+     {
+      "id": "AUT-002"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "«Antarsi» non è una razza: è il nome dato da altri a una terza fazione di sopravvissuti, nata dalla città di Antarsia, e una parola usata per disumanizzare i popoli esterni.",
+    "fonte": [
+     {
+      "id": "EID-PRE-003",
+      "cita": "Dal nome di quella coraggiosa città"
+     },
+     {
+      "id": "EID-EM-104",
+      "cita": "Questa parola ha lo scopo di toglierci umanità"
+     },
+     {
+      "id": "AUT-002"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "I Tèras sono mostri apparsi dopo la sconfitta del Dio; ogni popolo ne dà una spiegazione diversa.",
+    "fonte": [
+     {
+      "id": "EID-PRE-003",
+      "cita": "chiamati Tèras, mostri"
+     },
+     {
+      "id": "AUT-001"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Gli Eporiani di Lechta sono neutrali, commerciano e finanziano l'una o l'altra fazione secondo convenienza.",
+    "fonte": [
+     {
+      "id": "EID-PRE-003",
+      "cita": "neutrale nelle lotte di potere"
+     },
+     {
+      "id": "PRM-001",
+      "cita": "Gli Eporiani intrattengono scambi commerciali con Epizi e Chorisfos"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Popolo, provenienza e appartenenza politica sono campi distinti: «Antarsi» non va mai usato come popolo con tratti fisici comuni.",
+    "fonte": [
+     {
+      "id": "PRM-001",
+      "cita": "Popolo, provenienza e appartenenza politica restano campi distinti"
+     },
+     {
+      "id": "AUT-002"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Il Telonio è un minerale della cava di Lechta, commerciato con Chorisfos ed Epizi.",
+    "fonte": [
+     {
+      "id": "EID-PRE-004",
+      "cita": "Telonio: Minerale estratto dalla cava di Lechta"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Magia, gemme, armature, equipaggiamento e conseguenze sociali della magia restano confinati a Eidos.",
+    "fonte": [
+     {
+      "id": "PRM-001",
+      "cita": "Magia, gemme, armature, equipaggiamento e conseguenze sociali restano confinati a Eidos"
+     },
+     {
+      "id": "AUT-005"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  ],
+  "pubblico": [
+   {
+    "v": "La guerra fra Chorisfos ed Epizi dura da circa cinquant'anni, con pause fra un conflitto e l'altro.",
+    "fonte": [
+     {
+      "id": "EID-PRE-003",
+      "cita": "si è protratta per circa cinquant"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  ],
+  "riservato": [
+   {
+    "v": "Il livello meta della campagna originale (Gaia, il programma, «essere stati come Icaro») non entra mai in partita, né come canone pubblico né come rivelazione.",
+    "fonte": [
+     {
+      "id": "EID-EM-070"
+     },
+     {
+      "id": "AUT-005"
+     }
+    ],
+    "classe": "canonico_riservato",
+    "limite": "Collegamento riservato fra campagne: mai trasferito, mai sbloccato."
+   }
+  ]
+ },
+ "profiliPng": {
+  "ada": {
+   "nome": "Ada Soren",
+   "voce": {
+    "registro": {
+     "v": "misurato, ospitale e franco; offre una verità in cambio di una domanda",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Sei arrivato dalla galleria. Pochi la trovano, e ancora meno restano. Chiedi pure: qui le domande costano meno delle bugie."
+      },
+      {
+       "id": "EID-EM-004",
+       "cita": "A noi uomini spetta scrivere il destino"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "rovescia le domande: «qui le domande costano meno delle bugie»",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Sei arrivato dalla galleria. Pochi la trovano, e ancora meno restano. Chiedi pure: qui le domande costano meno delle bugie."
+      },
+      {
+       "id": "EID-EM-064",
+       "cita": "Che i numeri siano dalla tua"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Sei arrivato dalla galleria. Pochi la trovano, e ancora meno restano. Chiedi pure: qui le domande costano meno delle bugie.",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Sei arrivato dalla galleria. Pochi la trovano, e ancora meno restano. Chiedi pure: qui le domande costano meno delle bugie."
+      }
+     ],
+     "classe": "proposta",
+     "limite": "Battuta già presente nei dialoghi della campagna di gioco."
+    },
+    "sottoPressione": {
+     "v": "diventa breve e pratica, elenca ciò che va salvato per primo",
+     "fonte": [
+      {
+       "id": "EID-EM-004",
+       "cita": "A noi uomini spetta scrivere il destino"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [
+      "truth_founders",
+      "truth_archive_copy"
+     ],
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "non mente; tace su quanto poco della Casa si possa salvare finché la scelta non è inevitabile",
+     "fonte": [
+      {
+       "id": "EID-EM-099",
+       "cita": "Si è sacrificato"
+      },
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "sposta il discorso sulle persone di Soglia quando le chiedono dei fondatori",
+     "fonte": [
+      {
+       "id": "EID-EM-042",
+       "cita": "Mente ovviamente, non può saperlo"
+      },
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "da custode di tutto a chi accetta di scegliere che cosa salvare",
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "supera la paura del passato"
+     },
+     {
+      "id": "IMP-EIDOS-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "mirea": {
+   "nome": "Mirea Krun",
+   "voce": {
+    "registro": {
+     "v": "pratico, contabile; parla di scorte, turni e numeri",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Un forestiero è una bocca in più. Se sai riparare qualcosa, dillo subito."
+      },
+      {
+       "id": "EID-EM-099",
+       "cita": "Si è sacrificato"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "quantifica ogni rischio",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Un forestiero è una bocca in più. Se sai riparare qualcosa, dillo subito."
+      },
+      {
+       "id": "EID-EM-064",
+       "cita": "Che i numeri siano dalla tua"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Un forestiero è una bocca in più. Se sai riparare qualcosa, dillo subito.",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Un forestiero è una bocca in più. Se sai riparare qualcosa, dillo subito."
+      }
+     ],
+     "classe": "proposta",
+     "limite": "Battuta già presente nei dialoghi della campagna di gioco."
+    },
+    "sottoPressione": {
+     "v": "giustifica: voleva costringere Soglia a scegliere, non ucciderla",
+     "fonte": [
+      {
+       "id": "EID-EM-099",
+       "cita": "Si è sacrificato"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [
+      "truth_filters",
+      "truth_traitor"
+     ],
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "mente per omissione sulle sostituzioni registrate e non eseguite",
+     "fonte": [
+      {
+       "id": "EID-EM-099",
+       "cita": "Si è sacrificato"
+      },
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "risponde con un'altra urgenza quando le chiedono dei ricambi",
+     "fonte": [
+      {
+       "id": "EID-EM-042",
+       "cita": "Mente ovviamente, non può saperlo"
+      },
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "dalla menzogna utile alla confessione o alla fuga",
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "supera la paura del passato"
+     },
+     {
+      "id": "IMP-EIDOS-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "cassian": {
+   "nome": "Cassian Vey",
+   "voce": {
+    "registro": {
+     "v": "gerarchico, procedurale; numeri e ordini",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Tu non sei di qui. Bene: forse mi dirai le cose come stanno."
+      },
+      {
+       "id": "EID-EM-064",
+       "cita": "Che i numeri siano dalla tua"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "chiude con una formula di grado o di conto",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Tu non sei di qui. Bene: forse mi dirai le cose come stanno."
+      },
+      {
+       "id": "EID-EM-064",
+       "cita": "Che i numeri siano dalla tua"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Tu non sei di qui. Bene: forse mi dirai le cose come stanno.",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Tu non sei di qui. Bene: forse mi dirai le cose come stanno."
+      }
+     ],
+     "classe": "proposta",
+     "limite": "Battuta già presente nei dialoghi della campagna di gioco."
+    },
+    "sottoPressione": {
+     "v": "diventa freddo e minaccia con il registro",
+     "fonte": [
+      {
+       "id": "EID-EM-064",
+       "cita": "Che i numeri siano dalla tua"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [],
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "presenta l'operazione come recupero, non come presa del sito",
+     "fonte": [
+      {
+       "id": "EID-EM-099",
+       "cita": "Si è sacrificato"
+      },
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "rimanda alla catena di comando",
+     "fonte": [
+      {
+       "id": "EID-EM-042",
+       "cita": "Mente ovviamente, non può saperlo"
+      },
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "da esecutore a responsabile della propria scelta (proposta)",
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "supera la paura del passato"
+     },
+     {
+      "id": "IMP-EIDOS-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "reik": {
+   "nome": "Reik Damos",
+   "voce": {
+    "registro": {
+     "v": "militare e rituale; parla di ordine, fuoco e lealtà",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Caporale Damos. Ho un ordine, e non è una trattativa. Ma posso ascoltare."
+      },
+      {
+       "id": "EID-RW-007",
+       "cita": "Teniamo alta la torcia"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "richiama l'ordine ricevuto come fosse un giuramento",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Caporale Damos. Ho un ordine, e non è una trattativa. Ma posso ascoltare."
+      },
+      {
+       "id": "EID-EM-064",
+       "cita": "Che i numeri siano dalla tua"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Caporale Damos. Ho un ordine, e non è una trattativa. Ma posso ascoltare.",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Caporale Damos. Ho un ordine, e non è una trattativa. Ma posso ascoltare."
+      }
+     ],
+     "classe": "proposta",
+     "limite": "Battuta già presente nei dialoghi della campagna di gioco."
+    },
+    "sottoPressione": {
+     "v": "alza la voce, poi chiede che cosa farebbe il protagonista al suo posto",
+     "fonte": [
+      {
+       "id": "EID-RW-007",
+       "cita": "Teniamo alta la torcia"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [],
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "non mente; nasconde il dubbio sull'ordine di sigillare",
+     "fonte": [
+      {
+       "id": "EID-EM-099",
+       "cita": "Si è sacrificato"
+      },
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "taglia corto quando si parla dei civili",
+     "fonte": [
+      {
+       "id": "EID-EM-042",
+       "cita": "Mente ovviamente, non può saperlo"
+      },
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "dall'obbedienza al dubbio (proposta)",
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "supera la paura del passato"
+     },
+     {
+      "id": "IMP-EIDOS-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "yara": {
+   "nome": "Yara Tèren",
+   "voce": {
+    "registro": {
+     "v": "secco e diffidente; luoghi, tracce e nomi dei morti",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Tu parli con tutti. Allora parla anche con me, ma in fretta."
+      },
+      {
+       "id": "EID-EM-099",
+       "cita": "A me piace spingermi verso la morte"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "nomina chi è scomparso prima di rispondere",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Tu parli con tutti. Allora parla anche con me, ma in fretta."
+      },
+      {
+       "id": "EID-EM-064",
+       "cita": "Che i numeri siano dalla tua"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Tu parli con tutti. Allora parla anche con me, ma in fretta.",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "Tu parli con tutti. Allora parla anche con me, ma in fretta."
+      }
+     ],
+     "classe": "proposta",
+     "limite": "Battuta già presente nei dialoghi della campagna di gioco."
+    },
+    "sottoPressione": {
+     "v": "diventa laconica, quasi autodistruttiva",
+     "fonte": [
+      {
+       "id": "EID-EM-099",
+       "cita": "A me piace spingermi verso la morte"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [
+      "truth_antarsi"
+     ],
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "tace l'intenzione di bruciare la Casa",
+     "fonte": [
+      {
+       "id": "EID-EM-099",
+       "cita": "Si è sacrificato"
+      },
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "non parla della cellula davanti a chi porta un'uniforme",
+     "fonte": [
+      {
+       "id": "EID-EM-042",
+       "cita": "Mente ovviamente, non può saperlo"
+      },
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "dalla distruzione per proteggere alla custodia condivisa (proposta)",
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "supera la paura del passato"
+     },
+     {
+      "id": "IMP-EIDOS-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "tal": {
+   "nome": "Tal Emek",
+   "voce": {
+    "registro": {
+     "v": "cortese, mercantile; trattativa e garanzie",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "I forestieri sono i migliori clienti: non hanno ancora imparato a fidarsi di nessuno."
+      },
+      {
+       "id": "EID-EM-022",
+       "cita": "dazio"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "mette un prezzo e un dazio a ogni promessa",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "I forestieri sono i migliori clienti: non hanno ancora imparato a fidarsi di nessuno."
+      },
+      {
+       "id": "EID-EM-064",
+       "cita": "Che i numeri siano dalla tua"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "I forestieri sono i migliori clienti: non hanno ancora imparato a fidarsi di nessuno.",
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-INTERAZIONI",
+       "cita": "I forestieri sono i migliori clienti: non hanno ancora imparato a fidarsi di nessuno."
+      }
+     ],
+     "classe": "proposta",
+     "limite": "Battuta già presente nei dialoghi della campagna di gioco."
+    },
+    "sottoPressione": {
+     "v": "offre un accordo migliore, mai una rinuncia",
+     "fonte": [
+      {
+       "id": "EID-EM-022",
+       "cita": "dazio"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [
+      "truth_eporian",
+      "truth_filters"
+     ],
+     "fonte": [
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "presenta la protezione come gratuita, tacendo la dipendenza da Lechta",
+     "fonte": [
+      {
+       "id": "EID-EM-099",
+       "cita": "Si è sacrificato"
+      },
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "sposta sui contratti quando si parla di persone",
+     "fonte": [
+      {
+       "id": "EID-EM-042",
+       "cita": "Mente ovviamente, non può saperlo"
+      },
+      {
+       "id": "IMP-EIDOS-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "trasformazione": {
+    "v": "da intermediario a garante o a creditore (proposta)",
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "supera la paura del passato"
+     },
+     {
+      "id": "IMP-EIDOS-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  }
+ },
+ "antagonisti": [
+  {
+   "id": "mirea",
+   "metodo": {
+    "v": "Antagonista con una ragione: la menzogna serve un fine che il PNG crede giusto.",
+    "fonte": [
+     {
+      "id": "EID-EM-099",
+      "cita": "Si è sacrificato"
+     },
+     {
+      "id": "EID-EM-024",
+      "cita": "Giusta per chi"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "agenda": {
+    "v": "Costringere Soglia a scegliere un protettore deviando i ricambi.",
+    "fonte": [
+     {
+      "id": "IMP-EIDOS-CAMPAGNA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  {
+   "id": "avanguardia_comandante",
+   "metodo": {
+    "v": "Il piano antagonista è una lista che il narratore aggiorna e il PG scopre per gradi.",
+    "fonte": [
+     {
+      "id": "EID-EM-021",
+      "cita": "Operazioni in corso"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "agenda": {
+    "v": "Linea Muta: prendere il sito prima dell'altra fazione.",
+    "fonte": [
+     {
+      "id": "IMP-EIDOS-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  {
+   "id": "teras_condotta",
+   "metodo": {
+    "v": "Il Tèras è un mostro, conseguenza del mondo, non un nemico con un'idea.",
+    "fonte": [
+     {
+      "id": "EID-PRE-003",
+      "cita": "chiamati Tèras, mostri"
+     },
+     {
+      "id": "AUT-001"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "agenda": {
+    "v": null,
+    "fonte": [],
+    "classe": "incompleto",
+    "limite": "Una creatura non ha agenda."
+   }
+  }
+ ],
+ "archiArchetipo": {
+  "daren": {
+   "modello": {
+    "v": "Metodo dei difetti: uno si supera, uno si attenua, uno cresce, uno resta costante; il capitolo inverte il valore emotivo.",
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "supera la paura del passato"
+     },
+     {
+      "id": "EID-PRE-007",
+      "cita": "se inizia con valore positivo deve finire in valore negativo"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "difetti": {
+    "v": [
+     {
+      "difetto": "lealtà cieca verso la comunità",
+      "traiettoria": "si attenua"
+     },
+     {
+      "difetto": "paura di essere cancellato come il compagno",
+      "traiettoria": "si supera"
+     },
+     {
+      "difetto": "rancore verso chi tiene i registri",
+      "traiettoria": "cresce"
+     },
+     {
+      "difetto": "silenzio sulle proprie emozioni",
+      "traiettoria": "costante"
+     }
+    ],
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "Romanzo 1) vendetta iniziale"
+     },
+     {
+      "id": "IMP-EIDOS-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Difetti proposti dal background dell'archetipo; da approvare."
+   },
+   "specchio": {
+    "v": "reik",
+    "fonte": [
+     {
+      "id": "EID-PRE-009",
+      "cita": "Hunter funge da narratore dei difetti"
+     },
+     {
+      "id": "IMP-EIDOS-CAMPAGNA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "PNG specchio proposto: rende visibile il difetto principale."
+   },
+   "liberta": {
+    "v": "La libertà ottenuta non è mai completa.",
+    "fonte": [
+     {
+      "id": "EID-PRE-007",
+      "cita": "Concetto di libertà che non è completa"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  },
+  "neris": {
+   "modello": {
+    "v": "Metodo dei difetti: uno si supera, uno si attenua, uno cresce, uno resta costante; il capitolo inverte il valore emotivo.",
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "supera la paura del passato"
+     },
+     {
+      "id": "EID-PRE-007",
+      "cita": "se inizia con valore positivo deve finire in valore negativo"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "difetti": {
+    "v": [
+     {
+      "difetto": "fiducia nella scienza epizia",
+      "traiettoria": "si supera"
+     },
+     {
+      "difetto": "orgoglio della compatibilità",
+      "traiettoria": "cresce"
+     },
+     {
+      "difetto": "dipendenza dalla corazza",
+      "traiettoria": "costante"
+     }
+    ],
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "Romanzo 1) vendetta iniziale"
+     },
+     {
+      "id": "IMP-EIDOS-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Difetti proposti dal background dell'archetipo; da approvare."
+   },
+   "specchio": {
+    "v": "cassian",
+    "fonte": [
+     {
+      "id": "EID-PRE-009",
+      "cita": "Hunter funge da narratore dei difetti"
+     },
+     {
+      "id": "IMP-EIDOS-CAMPAGNA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "PNG specchio proposto: rende visibile il difetto principale."
+   },
+   "liberta": {
+    "v": "La libertà ottenuta non è mai completa.",
+    "fonte": [
+     {
+      "id": "EID-PRE-007",
+      "cita": "Concetto di libertà che non è completa"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  },
+  "sava": {
+   "modello": {
+    "v": "Metodo dei difetti: uno si supera, uno si attenua, uno cresce, uno resta costante; il capitolo inverte il valore emotivo.",
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "supera la paura del passato"
+     },
+     {
+      "id": "EID-PRE-007",
+      "cita": "se inizia con valore positivo deve finire in valore negativo"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "difetti": {
+    "v": [
+     {
+      "difetto": "possesso della memoria dei morti",
+      "traiettoria": "si attenua"
+     },
+     {
+      "difetto": "diffidenza verso le uniformi",
+      "traiettoria": "costante"
+     },
+     {
+      "difetto": "desiderio di vendetta",
+      "traiettoria": "cresce"
+     }
+    ],
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "Romanzo 1) vendetta iniziale"
+     },
+     {
+      "id": "IMP-EIDOS-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Difetti proposti dal background dell'archetipo; da approvare."
+   },
+   "specchio": {
+    "v": "yara",
+    "fonte": [
+     {
+      "id": "EID-PRE-009",
+      "cita": "Hunter funge da narratore dei difetti"
+     },
+     {
+      "id": "IMP-EIDOS-CAMPAGNA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "PNG specchio proposto: rende visibile il difetto principale."
+   },
+   "liberta": {
+    "v": "La libertà ottenuta non è mai completa.",
+    "fonte": [
+     {
+      "id": "EID-PRE-007",
+      "cita": "Concetto di libertà che non è completa"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  },
+  "ilyan": {
+   "modello": {
+    "v": "Metodo dei difetti: uno si supera, uno si attenua, uno cresce, uno resta costante; il capitolo inverte il valore emotivo.",
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "supera la paura del passato"
+     },
+     {
+      "id": "EID-PRE-007",
+      "cita": "se inizia con valore positivo deve finire in valore negativo"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "difetti": {
+    "v": [
+     {
+      "difetto": "debito verso la famiglia",
+      "traiettoria": "costante"
+     },
+     {
+      "difetto": "neutralità come scusa",
+      "traiettoria": "si supera"
+     },
+     {
+      "difetto": "calcolo del guadagno",
+      "traiettoria": "cresce"
+     }
+    ],
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "Romanzo 1) vendetta iniziale"
+     },
+     {
+      "id": "IMP-EIDOS-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Difetti proposti dal background dell'archetipo; da approvare."
+   },
+   "specchio": {
+    "v": "tal",
+    "fonte": [
+     {
+      "id": "EID-PRE-009",
+      "cita": "Hunter funge da narratore dei difetti"
+     },
+     {
+      "id": "IMP-EIDOS-CAMPAGNA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "PNG specchio proposto: rende visibile il difetto principale."
+   },
+   "liberta": {
+    "v": "La libertà ottenuta non è mai completa.",
+    "fonte": [
+     {
+      "id": "EID-PRE-007",
+      "cita": "Concetto di libertà che non è completa"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  },
+  "tessa": {
+   "modello": {
+    "v": "Metodo dei difetti: uno si supera, uno si attenua, uno cresce, uno resta costante; il capitolo inverte il valore emotivo.",
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "supera la paura del passato"
+     },
+     {
+      "id": "EID-PRE-007",
+      "cita": "se inizia con valore positivo deve finire in valore negativo"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "difetti": {
+    "v": [
+     {
+      "difetto": "disciplina sopra la sicurezza",
+      "traiettoria": "si supera"
+     },
+     {
+      "difetto": "solitudine nella responsabilità",
+      "traiettoria": "cresce"
+     },
+     {
+      "difetto": "perfezionismo tecnico",
+      "traiettoria": "costante"
+     }
+    ],
+    "fonte": [
+     {
+      "id": "EID-PRE-002",
+      "cita": "Romanzo 1) vendetta iniziale"
+     },
+     {
+      "id": "IMP-EIDOS-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Difetti proposti dal background dell'archetipo; da approvare."
+   },
+   "specchio": {
+    "v": "mirea",
+    "fonte": [
+     {
+      "id": "EID-PRE-009",
+      "cita": "Hunter funge da narratore dei difetti"
+     },
+     {
+      "id": "IMP-EIDOS-CAMPAGNA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "PNG specchio proposto: rende visibile il difetto principale."
+   },
+   "liberta": {
+    "v": "La libertà ottenuta non è mai completa.",
+    "fonte": [
+     {
+      "id": "EID-PRE-007",
+      "cita": "Concetto di libertà che non è completa"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  }
+ },
+ "rivelazioni": {
+  "scala": {
+   "v": [
+    {
+     "fatto": "truth_founders",
+     "atto": 1,
+     "dopo": [],
+     "chiSa": [
+      "ada"
+     ]
+    },
+    {
+     "fatto": "truth_filters",
+     "atto": 2,
+     "dopo": [],
+     "chiSa": [
+      "mirea",
+      "tal"
+     ]
+    },
+    {
+     "fatto": "truth_silent_line",
+     "atto": 2,
+     "dopo": [],
+     "chiSa": []
+    },
+    {
+     "fatto": "truth_eporian",
+     "atto": 2,
+     "dopo": [],
+     "chiSa": [
+      "tal"
+     ]
+    },
+    {
+     "fatto": "truth_antarsi",
+     "atto": 2,
+     "dopo": [
+      "truth_silent_line"
+     ],
+     "chiSa": [
+      "yara"
+     ]
+    },
+    {
+     "fatto": "truth_traitor",
+     "atto": 2,
+     "dopo": [
+      "truth_filters"
+     ],
+     "chiSa": [
+      "mirea"
+     ]
+    },
+    {
+     "fatto": "truth_archive_copy",
+     "atto": 2,
+     "dopo": [
+      "truth_founders"
+     ],
+     "chiSa": [
+      "ada"
+     ]
+    }
+   ],
+   "fonte": [
+    {
+     "id": "IMP-EIDOS-STRUTTURA"
+    },
+    {
+     "id": "IMP-EIDOS-CAMPAGNA"
+    }
+   ],
+   "classe": "proposta",
+   "limite": "Ordine e prerequisiti della campagna di gioco; i segreti sono riservati fino allo sblocco del motore."
+  },
+  "regola": {
+   "v": "Le verità arrivano a strati e per materiali; una rivelazione apre una domanda nuova.",
+   "fonte": [
+    {
+     "id": "EID-EM-022",
+     "cita": "Ho visto le registrazioni della ragazza"
+    },
+    {
+     "id": "EID-EM-102",
+     "cita": "Hope was come here"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  }
+ },
+ "limitiSpoiler": [
+  {
+   "v": "Nessun segreto della scala delle rivelazioni entra nel prompt prima che il motore lo registri come scoperto.",
+   "fonte": [
+    {
+     "id": "EID-EM-053",
+     "cita": "Cosa sa Bedros"
+    },
+    {
+     "id": "AUT-005"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  {
+   "v": "Il livello meta delle fonti originali non viene mai mostrato né accennato.",
+   "fonte": [
+    {
+     "id": "EID-EM-070"
+    },
+    {
+     "id": "AUT-005"
+    }
+   ],
+   "classe": "canonico_riservato",
+   "limite": null
+  },
+  {
+   "v": "Le menzogne dei PNG restano menzogne finché un fatto scoperto non le smentisce.",
+   "fonte": [
+    {
+     "id": "EID-EM-099",
+     "cita": "Si è sacrificato"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  }
+ ],
+ "fili": {
+  "tipiConseguenza": [
+   {
+    "v": "ferita o costo fisico che dura",
+    "fonte": [
+     {
+      "id": "EID-EM-024",
+      "cita": "pallida e trasparente"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "perdita di un legame costruito prima",
+    "fonte": [
+     {
+      "id": "EID-EM-091",
+      "cita": "I morti devono rimanere morti"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "conseguenza politica (lista del piano aggiornata, legge, dazio, ostaggi)",
+    "fonte": [
+     {
+      "id": "EID-EM-021",
+      "cita": "Operazioni in corso"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "promessa o motto ereditato da un altro PNG",
+    "fonte": [
+     {
+      "id": "EID-EM-016",
+      "cita": "Per salvare il mondo non bisogna salvare tutti"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  ]
+ },
+ "riserva": {
+  "spostamento": {
+   "v": [
+    "Percorri le gallerie seguendo i segni sulle pareti.",
+    "Attraversi terreno aperto, con l'aria che punge la gola.",
+    "Scendi per un sentiero tra rocce e sterpaglie.",
+    "Il mezzo procede a strappi; il motore scalda e il tragitto si allunga."
+   ],
+   "fonte": [
+    {
+     "id": "IMP-FEEDBACK",
+     "cita": "Percorri le gallerie seguendo i segni sulle pareti."
+    },
+    {
+     "id": "EID-EM-099",
+     "cita": "surriscald"
+    }
+   ],
+   "classe": "proposta",
+   "limite": null
+  },
+  "gemma_scaricata": {
+   "v": [
+    "Stringi {gemma} finché la luce non passa nel palmo; si spegne, e con lei {capacita}.",
+    "Svuoti {gemma} del suo potere: la pietra diventa opaca e {capacita} non risponde più.",
+    "{gemma} si svuota con un ultimo bagliore; l'energia torna a te, ma {capacita} è perduta fino al reintegro."
+   ],
+   "fonte": [
+    {
+     "id": "IMP-FEEDBACK",
+     "cita": "Svuoti {gemma} del suo potere"
+    },
+    {
+     "id": "EID-PRE-003",
+     "cita": "ricavano le gemme fondamentali"
+    }
+   ],
+   "classe": "proposta",
+   "limite": null
+  },
+  "gemma_reintegrata": {
+   "v": [
+    "{gemma} torna viva contro il palmo: {capacita} è di nuovo disponibile.",
+    "All'avamposto ti restituiscono {gemma} carica di luce: {capacita} risponde ancora."
+   ],
+   "fonte": [
+    {
+     "id": "IMP-FEEDBACK",
+     "cita": "torna viva contro il palmo"
+    },
+    {
+     "id": "EID-PRE-003",
+     "cita": "ricavano le gemme fondamentali"
+    }
+   ],
+   "classe": "proposta",
+   "limite": null
+  }
+ },
+ "interpreteParole": {
+  "v": {
+   "Politica": [
+    "concilio",
+    "gerarc",
+    "fazion"
+   ],
+   "Orientamento": [
+    "condott",
+    "galleri"
+   ],
+   "Sopravvivenza": [
+    "aria",
+    "gas",
+    "filtr"
+   ]
+  },
+  "fonte": [
+   {
+    "id": "IMP-NARRATORE",
+    "cita": "concilio"
+   },
+   {
+    "id": "IMP-EIDOS-CAMPAGNA"
+   }
+  ],
+  "classe": "proposta",
+  "limite": "Radici per l'interprete di riserva; aggiunte alle parole comuni solo quando Eidos è la campagna attiva."
+ },
+ "improvvisazione": {
+  "ammesso": [
+   {
+    "v": "Persone di passaggio, oggetti comuni, dettagli d'ambiente coerenti con fazione e luogo.",
+    "fonte": [
+     {
+      "id": "EID-SP-005",
+      "cita": "Scene libere"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   {
+    "v": "Battute nuove di un PNG coerenti con la sua agenda e con ciò che sa.",
+    "fonte": [
+     {
+      "id": "EID-EM-053",
+      "cita": "Cosa sa Bedros"
+     },
+     {
+      "id": "EID-EM-102",
+      "cita": "Lascia libertà"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   {
+    "v": "Spostare una scena preparata più avanti se il giocatore va altrove.",
+    "fonte": [
+     {
+      "id": "EID-EM-051",
+      "cita": "A civil war"
+     },
+     {
+      "id": "EID-EM-060",
+      "cita": "A civil war"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  ],
+  "vietato": [
+   {
+    "v": "Trattare gli Antarsi come una razza o un popolo con tratti fisici comuni.",
+    "fonte": [
+     {
+      "id": "AUT-002"
+     },
+     {
+      "id": "EID-EM-104",
+      "cita": "Questa parola ha lo scopo di toglierci umanità"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Presentare i Tèras come un popolo, una fazione o una provenienza.",
+    "fonte": [
+     {
+      "id": "AUT-001"
+     },
+     {
+      "id": "EID-PRE-003",
+      "cita": "chiamati Tèras, mostri"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Introdurre tecnologie, città o termini di altre ambientazioni.",
+    "fonte": [
+     {
+      "id": "AUT-005"
+     },
+     {
+      "id": "PRM-001",
+      "cita": "Nessun trasferimento automatico di lessico"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Far tornare i protagonisti delle storie originali o rivelare il livello meta.",
+    "fonte": [
+     {
+      "id": "EID-EM-070"
+     },
+     {
+      "id": "AUT-005"
+     }
+    ],
+    "classe": "canonico_riservato",
+    "limite": null
+   },
+   {
+    "v": "Inventare il contenuto delle parti mancanti delle fonti (Roots of War 5, 6, 10; storia parallela VIII).",
+    "fonte": [
+     {
+      "id": "AUT-005"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": "Le lacune sono elencate in copertura.lacune."
+   }
+  ]
+ },
+ "strutturaLunga": {
+  "macroCapitoli": {
+   "v": [
+    "E01",
+    "E02",
+    "E03",
+    "E04",
+    "E05",
+    "E06",
+    "E07",
+    "E08",
+    "E09",
+    "E10",
+    "E11",
+    "E12",
+    "E13",
+    "E14",
+    "E15",
+    "E16"
+   ],
+   "fonte": [
+    {
+     "id": "IMP-EIDOS-STRUTTURA"
+    }
+   ],
+   "classe": "proposta",
+   "limite": "Macro-capitoli della campagna di gioco (proposta)."
+  },
+  "modelloBlocchi": {
+   "v": "Tre blocchi come nel piano dell'autore: introduzione e separazione → rapporti e rottura → ritorno, convergenza e sacrificio.",
+   "fonte": [
+    {
+     "id": "EID-PRE-009",
+     "cita": "Nelle prima fasi di introduzione"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "persistenzaSecondari": {
+   "v": "Un contenuto secondario non giocato resta in attesa e può riemergere più avanti, invece di sparire.",
+   "fonte": [
+    {
+     "id": "EID-EM-051",
+     "cita": "Make it rain"
+    },
+    {
+     "id": "EID-EM-052",
+     "cita": "Make it rain"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "snodiMetodo": {
+   "v": {
+    "I_ingresso": {
+     "atto": 1,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti"
+     ]
+    },
+    "I_convoglio": {
+     "atto": 1,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti"
+     ]
+    },
+    "I_casa": {
+     "atto": 1,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti"
+     ]
+    },
+    "I_offerte": {
+     "atto": 1,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti"
+     ]
+    },
+    "I_ultimatum": {
+     "atto": 1,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti"
+     ]
+    },
+    "II_risorse": {
+     "atto": 2,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti",
+      "rivelazioni"
+     ]
+    },
+    "II_ordine": {
+     "atto": 2,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti",
+      "rivelazioni"
+     ]
+    },
+    "II_lechta": {
+     "atto": 2,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti",
+      "rivelazioni"
+     ]
+    },
+    "II_fuoco": {
+     "atto": 2,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti",
+      "rivelazioni"
+     ]
+    },
+    "II_mirea": {
+     "atto": 2,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti",
+      "rivelazioni"
+     ]
+    },
+    "II_copia": {
+     "atto": 2,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti",
+      "rivelazioni"
+     ]
+    },
+    "III_assedio": {
+     "atto": 3,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti",
+      "ricongiungimenti"
+     ]
+    },
+    "III_filtri": {
+     "atto": 3,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti",
+      "ricongiungimenti"
+     ]
+    },
+    "III_casa": {
+     "atto": 3,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti",
+      "ricongiungimenti"
+     ]
+    },
+    "III_climax": {
+     "atto": 3,
+     "aspetti": [
+      "decisioniConseguenze",
+      "conflitti",
+      "ricongiungimenti"
+     ]
+    }
+   },
+   "fonte": [
+    {
+     "id": "IMP-EIDOS-STRUTTURA"
+    }
+   ],
+   "classe": "proposta",
+   "limite": "Collega ogni snodo della campagna di gioco agli aspetti del metodo da rispettare."
+  },
+  "funzioniScena": {
+   "v": [
+    "situazione concreta",
+    "PNG con posizione e agenda",
+    "scelta del PG",
+    "conseguenza nella scena successiva"
+   ],
+   "fonte": [
+    {
+     "id": "EID-RW-009",
+     "cita": "La scena si conclude con la decisione"
+    },
+    {
+     "id": "EID-EM-053",
+     "cita": "Cosa sa Bedros"
+    }
+   ],
+   "classe": "deducibile",
+   "limite": null
+  }
+ },
+ "collegamentiRiservati": [
+  {
+   "v": "Il capitolo 36 delle fonti mostra Gaia, il programma e la battuta «essere stati come Icaro»: collegamento meta fra le campagne.",
+   "fonte": [
+    {
+     "id": "EID-EM-070"
+    }
+   ],
+   "classe": "canonico_riservato",
+   "limite": "Mai trasferito; mai rivelato in partita."
+  },
+  {
+   "v": "Robert Epos è il fondatore pubblico nelle fonti di Eidos; i suoi omonimi delle altre campagne non lo riguardano.",
+   "fonte": [
+    {
+     "id": "EID-PRE-003",
+     "cita": "Robert Epos"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": "Nome condiviso: vale solo il significato di Eidos."
+  }
+ ],
+ "incompleti": [
+  {
+   "v": null,
+   "fonte": [],
+   "classe": "incompleto",
+   "limite": "Varianti di nome fra corpora (Hope Delacroix / Hope Espoir): non determinabile."
+  },
+  {
+   "v": null,
+   "fonte": [],
+   "classe": "incompleto",
+   "limite": "Nomi dei cinque fratelli nel taccuino di Robert Epos: due stesure discordanti."
+  }
+ ]
+}

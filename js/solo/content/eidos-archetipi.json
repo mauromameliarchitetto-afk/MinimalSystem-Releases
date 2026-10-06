@@ -1,0 +1,1965 @@
+{
+  "formato": "rm-solo-archetipi/1",
+  "storia": "eidos",
+  "versione": "0.4.1",
+  "avviso": "Valori meccanici proposti dei 15 preset approvati dall’autore il 2026-10-01 per il gioco in modalità normale; restano revisionabili dopo la prova.",
+  "archetipi": [
+    {
+      "id": "daren",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Daren",
+      "popolazione": "Chorisfos",
+      "citta": "Apologeti",
+      "mansione": "Recluta addestrata alla canalizzazione tramite gemme",
+      "ritratto": "img/solo/ritratti/eidos-daren.webp",
+      "ritratto_alt": "Ritratto di Daren, Recluta addestrata alla canalizzazione tramite gemme",
+      "build": "eclettico",
+      "eclecticoHpMult": 7,
+      "classePrecedente": {
+        "build": "mago",
+        "fonte": "pacchetto V4",
+        "corretta_da": "autore (correzione: Daren diventa Eclettico)"
+      },
+      "background": "Cresciuto nel Periphto, Daren si allenava al buio con un compagno che riconosceva dal passo. Poco prima della prima missione, il nome di quel compagno è scomparso dai registri e il suo alloggio è già stato assegnato.",
+      "obiettivo": "Ritrovare il compagno e scoprire perché la fazione ne abbia cancellato le tracce.",
+      "missione_iniziale": "Seguire la traccia del compagno fino a un insediamento che non compare sulle carte.",
+      "capitolo": "eidos-casa-delle-voci",
+      "primary": {
+        "hp": 6,
+        "mp": 6,
+        "for": 2,
+        "mira": 4,
+        "vel": 4,
+        "fmen": 7,
+        "dex": 3,
+        "dif": 3,
+        "dmen": 5
+      },
+      "tertiary": {
+        "stile": 1,
+        "fortuna": 2,
+        "carisma": 2
+      },
+      "traits": {
+        "conoscenze": {
+          "Orientamento": 2,
+          "Sopravvivenza": 2,
+          "Politica": 1
+        },
+        "capacitaNormali": {
+          "Percezione": 2,
+          "Ascoltare": 2,
+          "Persuasione": 1
+        },
+        "capacitaCombattive": {
+          "Spirito": 3,
+          "Difesa Mentale": 1,
+          "Resistenza": 1
+        }
+      },
+      "tecniche": [
+        {
+          "id": "passo_nel_buio",
+          "nome": "Passo nel buio",
+          "categoria": "tecnica",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Difesa per 1 turno",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "forzatura": {
+            "consentita": false,
+            "costoVitalita": null
+          },
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 1,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "bonusStat": {
+            "dif": 2
+          },
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "supporto",
+          "lv": 1,
+          "stat": null,
+          "descrizione": "Come negli allenamenti al buio del Periphto: ascolta il passo dell'avversario prima di vederlo.",
+          "fonteCanone": "background di Daren (allenamenti al buio con un compagno riconosciuto dal passo); premessa Eidos (Periphto)",
+          "fonti": {
+            "nome": "A",
+            "categoria": "A",
+            "tipoAzione": "A",
+            "bersaglio": "A",
+            "dannoBase": "A",
+            "effetto": "A",
+            "costoMP": "A",
+            "risorsaSpeciale": "A",
+            "costoRisorsaSpeciale": "A",
+            "forzatura": "A",
+            "utilizziMassimi": "A",
+            "durataTurni": "A",
+            "condizioniUso": "A",
+            "bonus": "A",
+            "malus": "A",
+            "livelloRichiesto": "A",
+            "slotRichiesti": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-dotazioni-2026-10-01",
+            "valori": {}
+          }
+        }
+      ],
+      "slotVacanti": [],
+      "abilita": [
+        {
+          "id": "impulso",
+          "nome": "Impulso canalizzato",
+          "categoria": "magia",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 8,
+          "effetto": "Attacco magico: danno base 8 + Forza Magica",
+          "costoMP": 6,
+          "risorsaSpeciale": "gemma",
+          "gemma": "gemma_attacco_1",
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [
+            "gemma associata attiva"
+          ],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "fmen",
+          "descrizione": "Attacco magico emesso attraverso la gemma.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "D",
+            "risorsaSpeciale": "A",
+            "costoRisorsaSpeciale": "A",
+            "durataTurni": "R",
+            "condizioniUso": "A",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato",
+              "risorsaSpeciale": "gemma"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null,
+              "risorsaSpeciale": "P"
+            }
+          }
+        }
+      ],
+      "capacitaIncompatibili": [],
+      "equip": [
+        {
+          "id": "arma_corta",
+          "nome": "Spada corta d'addestramento",
+          "tipo": "arma",
+          "taglia": "corte",
+          "qualita": "bassa",
+          "atk": 8,
+          "dif": 4,
+          "durabilita": 80,
+          "resistenza": null,
+          "base": "arma_corta_bassa",
+          "descrizione": "L'arma con cui ogni bambino del Periphto impara a combattere.",
+          "fonteCanone": "premessa Eidos, «Armamenti»: «l'allenamento base di ogni bambino viene portato avanti con la spada»"
+        },
+        {
+          "id": "protezione",
+          "nome": "Armatura a slot di gemme",
+          "tipo": "armatura",
+          "taglia": "leggere",
+          "qualita": "bassa",
+          "atk": 0,
+          "dif": 5,
+          "durabilita": 80,
+          "resistenza": null,
+          "base": "protezione_leggera_bassa",
+          "descrizione": "L'armatura dei soldati Chorisfos ideata da Robert Epos: gli slot tengono le gemme sul braccio. Lo scudo lo dà la gemma difensiva.",
+          "fonteCanone": "premessa Eidos, «Armamenti»: armatura con slot per le gemme"
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "reik",
+          "natura": "caporale Chorisfos dello stesso livello d'origine (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "Predisporre prove compatibili con un futuro uso della magia senza gemme: la manifestazione non è automatica e, se pubblica, porta emarginazione o tentativi occulti di eliminazione."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Lealtà verso la comunità Chorisfos o verso chi è stato cancellato dai registri."
+        },
+        {
+          "atto": 2,
+          "possibilita": "Scoprire le eliminazioni silenziose e decidere che cosa farne."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Liberare i perseguitati, consegnarli o usare la lista come leva."
+        }
+      ],
+      "gemme": [
+        {
+          "id": "gemma_cura",
+          "tipo": "cura",
+          "nome": "Gemma di cura",
+          "capacitaAssociata": "cura_gemma",
+          "effettoAttivo": "Permette la cura della gemma, che ripristina una parte degli HP.",
+          "stato": "attiva",
+          "reintegrabile": true,
+          "fonti": {
+            "tipo": "A",
+            "nome": "P",
+            "capacitaAssociata": "A",
+            "stato": "A",
+            "reintegrabile": "A"
+          }
+        },
+        {
+          "id": "gemma_attacco_1",
+          "tipo": "attacco",
+          "nome": "Gemma d'attacco I",
+          "capacitaAssociata": "impulso",
+          "effettoAttivo": "Permette Impulso canalizzato.",
+          "stato": "attiva",
+          "reintegrabile": true,
+          "fonti": {
+            "tipo": "A",
+            "nome": "P",
+            "capacitaAssociata": "P",
+            "stato": "A",
+            "reintegrabile": "A"
+          }
+        },
+        {
+          "id": "gemma_attacco_2",
+          "tipo": "attacco",
+          "nome": "Gemma d'attacco II",
+          "capacitaAssociata": "potenziamento_arma",
+          "effettoAttivo": "Permette di potenziare l'arma impugnata, anche con un elemento.",
+          "stato": "attiva",
+          "reintegrabile": true,
+          "fonti": {
+            "tipo": "A",
+            "nome": "P",
+            "capacitaAssociata": "A",
+            "stato": "A",
+            "reintegrabile": "A"
+          }
+        },
+        {
+          "id": "gemma_difesa_1",
+          "tipo": "difesa",
+          "nome": "Gemma difensiva I",
+          "capacitaAssociata": "reticolo",
+          "effettoAttivo": "Permette Reticolo protettivo fuori dagli slot di classe; usarlo costa MP e non scarica la gemma.",
+          "stato": "attiva",
+          "reintegrabile": true,
+          "fonti": {
+            "tipo": "A",
+            "nome": "P",
+            "capacitaAssociata": "A",
+            "stato": "A",
+            "reintegrabile": "A"
+          }
+        },
+        {
+          "id": "gemma_difesa_2",
+          "tipo": "difesa",
+          "nome": "Gemma difensiva II",
+          "capacitaAssociata": "scudo_gemma",
+          "effettoAttivo": "Permette di far comparire uno scudo nella mano sinistra, che si rompe quando la gemma perde il potere.",
+          "stato": "attiva",
+          "reintegrabile": true,
+          "fonti": {
+            "tipo": "A",
+            "nome": "P",
+            "capacitaAssociata": "A",
+            "stato": "A",
+            "reintegrabile": "A"
+          }
+        },
+        {
+          "id": "gemma_caratteristiche",
+          "tipo": "caratteristiche",
+          "nome": "Gemma delle caratteristiche",
+          "capacitaAssociata": "potenziamento_caratteristiche",
+          "effettoAttivo": "Permette di aumentare velocità, resistenza o difesa.",
+          "stato": "attiva",
+          "reintegrabile": true,
+          "fonti": {
+            "tipo": "A",
+            "nome": "P",
+            "capacitaAssociata": "A",
+            "stato": "A",
+            "reintegrabile": "A"
+          }
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "capacitaSpeciali": [
+        {
+          "id": "cura_gemma",
+          "nome": "Cura della gemma",
+          "categoria": "abilità",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "Ripristina il 25% degli HP massimi (Lv 1); la gemma si scarica",
+          "costoMP": 0,
+          "risorsaSpeciale": "gemma",
+          "gemma": "gemma_cura",
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "una carica della gemma",
+          "durataTurni": 0,
+          "condizioniUso": [
+            "gemma associata attiva"
+          ],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 0,
+          "tipo": "speciale",
+          "lv": 1,
+          "fonti": {
+            "nome": "A",
+            "categoria": "A",
+            "tipoAzione": "A",
+            "bersaglio": "A",
+            "effetto": "A",
+            "risorsaSpeciale": "A",
+            "costoRisorsaSpeciale": "A",
+            "condizioniUso": "A",
+            "dannoBase": "A",
+            "bonus": "A",
+            "malus": "A",
+            "livelloRichiesto": "P",
+            "costoMP": "A",
+            "utilizziMassimi": "A",
+            "durataTurni": "A",
+            "slotRichiesti": "A"
+          },
+          "proposte": {},
+          "daApprovare": [],
+          "curaPercentuale": 25,
+          "approvazione": {
+            "decisione": "autore-dotazioni-2026-10-01",
+            "valori": {}
+          }
+        },
+        {
+          "id": "potenziamento_arma",
+          "nome": "Potenziamento dell'arma",
+          "categoria": "abilità",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Forza agli attacchi per 2 turni; la gemma si scarica",
+          "costoMP": 0,
+          "risorsaSpeciale": "gemma",
+          "gemma": "gemma_attacco_2",
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "una carica della gemma",
+          "durataTurni": 2,
+          "condizioniUso": [
+            "gemma associata attiva"
+          ],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 0,
+          "tipo": "speciale",
+          "lv": 1,
+          "fonti": {
+            "nome": "A",
+            "categoria": "A",
+            "tipoAzione": "A",
+            "bersaglio": "A",
+            "effetto": "A",
+            "risorsaSpeciale": "A",
+            "costoRisorsaSpeciale": "A",
+            "condizioniUso": "A",
+            "dannoBase": "A",
+            "bonus": "A",
+            "malus": "A",
+            "livelloRichiesto": "P",
+            "costoMP": "A",
+            "utilizziMassimi": "A",
+            "durataTurni": "A",
+            "slotRichiesti": "A"
+          },
+          "proposte": {},
+          "daApprovare": [],
+          "bonusStat": {
+            "for": 2
+          },
+          "approvazione": {
+            "decisione": "autore-dotazioni-2026-10-01",
+            "valori": {}
+          }
+        },
+        {
+          "id": "scudo_gemma",
+          "nome": "Scudo della gemma",
+          "categoria": "abilità",
+          "tipoAzione": "difesa",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "Scudo nella mano sinistra per 3 turni: rende possibile il Blocco; la gemma si scarica",
+          "costoMP": 0,
+          "risorsaSpeciale": "gemma",
+          "gemma": "gemma_difesa_2",
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "una carica della gemma",
+          "durataTurni": 3,
+          "condizioniUso": [
+            "gemma associata attiva"
+          ],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 0,
+          "tipo": "speciale",
+          "lv": 1,
+          "fonti": {
+            "nome": "A",
+            "categoria": "A",
+            "tipoAzione": "A",
+            "bersaglio": "A",
+            "effetto": "A",
+            "risorsaSpeciale": "A",
+            "costoRisorsaSpeciale": "A",
+            "condizioniUso": "A",
+            "dannoBase": "A",
+            "bonus": "A",
+            "malus": "A",
+            "livelloRichiesto": "P",
+            "costoMP": "A",
+            "utilizziMassimi": "A",
+            "durataTurni": "A",
+            "slotRichiesti": "A"
+          },
+          "proposte": {},
+          "daApprovare": [],
+          "scudo": true,
+          "approvazione": {
+            "decisione": "autore-dotazioni-2026-10-01",
+            "valori": {}
+          }
+        },
+        {
+          "id": "potenziamento_caratteristiche",
+          "nome": "Potenziamento delle caratteristiche",
+          "categoria": "abilità",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Difesa per 2 turni; la gemma si scarica",
+          "costoMP": 0,
+          "risorsaSpeciale": "gemma",
+          "gemma": "gemma_caratteristiche",
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "una carica della gemma",
+          "durataTurni": 2,
+          "condizioniUso": [
+            "gemma associata attiva"
+          ],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 0,
+          "tipo": "speciale",
+          "lv": 1,
+          "fonti": {
+            "nome": "A",
+            "categoria": "A",
+            "tipoAzione": "A",
+            "bersaglio": "A",
+            "effetto": "A",
+            "risorsaSpeciale": "A",
+            "costoRisorsaSpeciale": "A",
+            "condizioniUso": "A",
+            "dannoBase": "A",
+            "bonus": "A",
+            "malus": "A",
+            "livelloRichiesto": "P",
+            "costoMP": "A",
+            "utilizziMassimi": "A",
+            "durataTurni": "A",
+            "slotRichiesti": "A"
+          },
+          "proposte": {},
+          "daApprovare": [],
+          "bonusStat": {
+            "dif": 2
+          },
+          "approvazione": {
+            "decisione": "autore-dotazioni-2026-10-01",
+            "valori": {}
+          }
+        },
+        {
+          "id": "reticolo",
+          "nome": "Reticolo protettivo",
+          "categoria": "magia",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Difesa per 1 turno",
+          "costoMP": 6,
+          "risorsaSpeciale": "gemma",
+          "gemma": "gemma_difesa_1",
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 1,
+          "condizioniUso": [
+            "gemma associata attiva"
+          ],
+          "bonus": [
+            {
+              "stat": "dif",
+              "valore": 2,
+              "testo": "+2 Difesa"
+            }
+          ],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 0,
+          "tipo": "supporto",
+          "lv": 1,
+          "bonusStat": {
+            "dif": 2
+          },
+          "descrizione": "Supporto personale tramite canalizzazione: +2 Difesa per 1 turno.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "R",
+            "bersaglio": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "D",
+            "risorsaSpeciale": "A",
+            "costoRisorsaSpeciale": "A",
+            "durataTurni": "D",
+            "condizioniUso": "A",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "utilizziMassimi": "illimitato",
+              "risorsaSpeciale": "gemma"
+            },
+            "fontiPrecedenti": {
+              "utilizziMassimi": null,
+              "risorsaSpeciale": "P"
+            }
+          },
+          "fuoriSlot": true,
+          "approvazioneFuoriSlot": {
+            "decisione": "autore-audit-single-player-2026-10-01",
+            "fonte": "Decisione esplicita: capacità della Gemma difensiva, fuori dagli slot Tecnica e Abilità; richiede gemma disponibile, costa MP; la scarica è separata.",
+            "valori": {
+              "slotRichiesti": 0,
+              "fuoriSlot": true
+            }
+          }
+        }
+      ],
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": "chorisfos",
+        "factionId": "chorisfos",
+        "cultureId": null,
+        "regionId": "apologeti",
+        "roleId": "recluta_canalizzatore_gemme",
+        "creatureFamilyId": null,
+        "socialClassId": null,
+        "corporationId": null,
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [],
+        "statoAffiliazione": "confermata",
+        "fonti": {
+          "factionId": "autore (correzione: Daren è Chorisfos)",
+          "peopleId": "autore; premessa (Periphto di Apologeti)",
+          "regionId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4); premessa: Apologeti capitale Chorisfos",
+          "build": "autore (correzione: Daren diventa Eclettico)"
+        },
+        "dubbi": []
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "inventarioIniziale": [
+        {
+          "id": "eidos_bende_emostatiche",
+          "qty": 2
+        },
+        {
+          "id": "eidos_razione_da_campo",
+          "qty": 1
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    },
+    {
+      "id": "neris",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Neris",
+      "popolazione": "Epizi",
+      "citta": "Epimno",
+      "mansione": "Soldato compatibile con una corazza connessa",
+      "ritratto": "img/solo/ritratti/eidos-neris.webp",
+      "ritratto_alt": "Ritratto di Neris, Soldato compatibile con una corazza connessa",
+      "build": "guerriero",
+      "background": "Neris è una dei pochi compatibili con la corazza connessa. L'armatura consuma più energia di quanto dichiarato nei collaudi, e nessuno risponde alle sue domande.",
+      "obiettivo": "Rendere sicura la connessione e capire se l'anomalia sia un guasto, una modifica o una sperimentazione nascosta.",
+      "missione_iniziale": "Seguire il segnale di un modulo gemello fino al convoglio scomparso.",
+      "capitolo": "eidos-casa-delle-voci",
+      "primary": {
+        "hp": 8,
+        "mp": 2,
+        "for": 6,
+        "mira": 4,
+        "vel": 4,
+        "fmen": 2,
+        "dex": 5,
+        "dif": 6,
+        "dmen": 3
+      },
+      "tertiary": {
+        "stile": 2,
+        "fortuna": 1,
+        "carisma": 2
+      },
+      "traits": {
+        "conoscenze": {
+          "Meccanica": 2,
+          "Orientamento": 2,
+          "Fauna": 1
+        },
+        "capacitaNormali": {
+          "Percezione": 2,
+          "Riparare": 2,
+          "Intimidire": 1
+        },
+        "capacitaCombattive": {
+          "Arte Combattiva": 2,
+          "Guardia": 2,
+          "Resistenza": 1
+        }
+      },
+      "tecniche": [
+        {
+          "id": "affondo",
+          "nome": "Affondo assistito",
+          "categoria": "tecnica",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 8,
+          "effetto": "Attacco fisico: danno base 8 + Forza",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "forzatura": {
+            "consentita": false,
+            "costoVitalita": null
+          },
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "for",
+          "descrizione": "Attacco fisico spinto dalla corazza.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A",
+            "risorsaSpeciale": "A",
+            "costoRisorsaSpeciale": "A",
+            "forzatura": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato",
+              "risorsaSpeciale": null,
+              "costoRisorsaSpeciale": 0,
+              "forzatura": {
+                "consentita": false,
+                "costoVitalita": null
+              }
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null,
+              "risorsaSpeciale": null,
+              "costoRisorsaSpeciale": null,
+              "forzatura": null
+            }
+          }
+        },
+        {
+          "id": "assetto_tenuta",
+          "nome": "Assetto di tenuta",
+          "categoria": "tecnica",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Difesa, −1 Velocità per 1 turno",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "forzatura": {
+            "consentita": false,
+            "costoVitalita": null
+          },
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 1,
+          "condizioniUso": [],
+          "bonus": [
+            {
+              "stat": "dif",
+              "valore": 2,
+              "testo": "+2 Difesa"
+            }
+          ],
+          "malus": [
+            {
+              "stat": "vel",
+              "valore": -1,
+              "testo": "−1 Velocità"
+            }
+          ],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "supporto",
+          "lv": 1,
+          "bonusStat": {
+            "dif": 2,
+            "vel": -1
+          },
+          "descrizione": "+2 Difesa e −1 Velocità per 1 turno.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "R",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "durataTurni": "D",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A",
+            "risorsaSpeciale": "A",
+            "costoRisorsaSpeciale": "A",
+            "forzatura": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "sé",
+              "utilizziMassimi": "illimitato",
+              "risorsaSpeciale": null,
+              "costoRisorsaSpeciale": 0,
+              "forzatura": {
+                "consentita": false,
+                "costoVitalita": null
+              }
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null,
+              "risorsaSpeciale": null,
+              "costoRisorsaSpeciale": null,
+              "forzatura": null
+            }
+          }
+        }
+      ],
+      "abilita": [],
+      "equip": [
+        {
+          "id": "arma_integrata",
+          "nome": "Arma integrata corta",
+          "tipo": "arma",
+          "taglia": "corte",
+          "qualita": "media",
+          "atk": 12,
+          "dif": 14,
+          "durabilita": 120,
+          "resistenza": null,
+          "base": "arma_corta_media",
+          "descrizione": "Un'arma corta che esce dalla corazza connessa: per gli Epizi le armi sono parte dell'armatura.",
+          "fonteCanone": "premessa Eidos, «Armamenti»: «gli equipaggiamenti e le armi utilizzabili sono parte dell'armatura stessa»"
+        },
+        {
+          "id": "corazza",
+          "nome": "Corazza connessa",
+          "tipo": "armatura",
+          "taglia": "medie",
+          "qualita": "media",
+          "atk": 8,
+          "dif": 15,
+          "durabilita": 180,
+          "resistenza": null,
+          "base": "corazza_media_media",
+          "nota": "Qualità Media ai valori inferiori della fascia (V4 §13: niente \"medio-bassa\"). Sensori e autonomia della tuta da registrare come risorse.",
+          "descrizione": "La corazza connessa, plasmata con l'essenza di un Tèras: dà forza e resistenza, ma se l'energia finisce si nutre di chi la indossa.",
+          "fonteCanone": "premessa Eidos, «Armamenti»: armature epizie dalle essenze dei mostri"
+        },
+        {
+          "id": "scudo_corazza",
+          "nome": "Scudo ripiegabile della corazza",
+          "tipo": "scudo",
+          "taglia": "piccoli",
+          "qualita": "bassa",
+          "atk": 4,
+          "dif": 8,
+          "durabilita": 80,
+          "resistenza": null,
+          "base": "scudo_piccolo_basso",
+          "descrizione": "Una lastra di guscio di Tèras che si apre sull'avambraccio della corazza: lo scudo dei lefkopli.",
+          "fonteCanone": "Glossario Eidos: «Lefkopli: arma bianca, solitamente lancia e scudo»"
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "cassian",
+          "natura": "ufficiale epizio del suo stesso comando (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "Un eventuale sviluppo magico deve scontrarsi con lo status antiscientifico della magia fra gli Epizi. Nessuna magia iniziale."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Fidarsi della scienza epizia o delle proprie misure."
+        },
+        {
+          "atto": 2,
+          "possibilita": "Il costo umano dell'efficienza: chi paga per le corazze."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Esporre gli esperimenti, correggerli o appropriarsene."
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": "epizi",
+        "factionId": "epizi",
+        "cultureId": null,
+        "regionId": "epimno",
+        "roleId": "soldato_corazza_connessa",
+        "creatureFamilyId": null,
+        "socialClassId": null,
+        "corporationId": null,
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [],
+        "statoAffiliazione": "confermata",
+        "fonti": {
+          "factionId": "autore (correzione: Neris è Epizi)",
+          "peopleId": "autore",
+          "regionId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4); premessa: Epimno capitale Epizi"
+        },
+        "dubbi": []
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "inventarioIniziale": [
+        {
+          "id": "eidos_kit_medico_epizio",
+          "qty": 1
+        },
+        {
+          "id": "eidos_razione_da_campo",
+          "qty": 1
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    },
+    {
+      "id": "sava",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Sava",
+      "popolazione": "",
+      "citta": "",
+      "mansione": "Esploratrice e recuperatrice",
+      "ritratto": "img/solo/ritratti/eidos-sava.webp",
+      "ritratto_alt": "Ritratto di Sava, Esploratrice e recuperatrice",
+      "build": "guerriero",
+      "background": "Sava conserva i nomi di un villaggio scomparso. Ha riconosciuto gli stessi segni sopra un reperto destinato a una collezione, e lo ha seguito.",
+      "obiettivo": "Recuperare le testimonianze e scoprire se esistano superstiti.",
+      "missione_iniziale": "Seguire i segni del reperto fino a dove è custodito.",
+      "capitolo": "eidos-casa-delle-voci",
+      "primary": {
+        "hp": 6,
+        "mp": 2,
+        "for": 5,
+        "mira": 7,
+        "vel": 6,
+        "fmen": 1,
+        "dex": 7,
+        "dif": 3,
+        "dmen": 3
+      },
+      "tertiary": {
+        "stile": 1,
+        "fortuna": 3,
+        "carisma": 1
+      },
+      "traits": {
+        "conoscenze": {
+          "Seguire Tracce": 2,
+          "Sopravvivenza": 2,
+          "Fauna": 1
+        },
+        "capacitaNormali": {
+          "Furtività": 2,
+          "Percezione": 2,
+          "Scalare": 1
+        },
+        "capacitaCombattive": {
+          "Arco": 2,
+          "Elusione": 2,
+          "Resistenza": 1
+        }
+      },
+      "tecniche": [
+        {
+          "id": "assetto_arciere",
+          "nome": "Assetto dell'arciere",
+          "categoria": "tecnica",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Mira, −1 Difesa",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 1,
+          "condizioniUso": [],
+          "bonus": [
+            {
+              "stat": "mira",
+              "valore": 2,
+              "testo": "+2 Mira"
+            }
+          ],
+          "malus": [
+            {
+              "stat": "dif",
+              "valore": -1,
+              "testo": "−1 Difesa"
+            }
+          ],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "supporto",
+          "lv": 1,
+          "bonusStat": {
+            "mira": 2,
+            "dif": -1
+          },
+          "descrizione": "+2 Mira e −1 Difesa per 1 turno.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "R",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A",
+            "durataTurni": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "sé",
+              "utilizziMassimi": "illimitato",
+              "durataTurni": 1
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null,
+              "durataTurni": null
+            }
+          }
+        },
+        {
+          "id": "disimpegno",
+          "nome": "Passo di disimpegno",
+          "categoria": "tecnica",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Velocità, −1 Mira",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 1,
+          "condizioniUso": [],
+          "bonus": [
+            {
+              "stat": "vel",
+              "valore": 2,
+              "testo": "+2 Velocità"
+            }
+          ],
+          "malus": [
+            {
+              "stat": "mira",
+              "valore": -1,
+              "testo": "−1 Mira"
+            }
+          ],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "supporto",
+          "lv": 1,
+          "bonusStat": {
+            "vel": 2,
+            "mira": -1
+          },
+          "descrizione": "+2 Velocità e −1 Mira per 1 turno.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "R",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A",
+            "durataTurni": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "sé",
+              "utilizziMassimi": "illimitato",
+              "durataTurni": 1
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null,
+              "durataTurni": null
+            }
+          }
+        }
+      ],
+      "abilita": [],
+      "equip": [
+        {
+          "id": "arco",
+          "nome": "Arco in osso di Tèras",
+          "tipo": "arma",
+          "taglia": "medie",
+          "qualita": "bassa",
+          "atk": 10,
+          "dif": 8,
+          "durabilita": 100,
+          "resistenza": null,
+          "base": "arco_medio_basso",
+          "descrizione": "Un arco degli Antarsi, legato con tendini di Tèras.",
+          "fonteCanone": "premessa Eidos, «Armamenti»: «utilizzano prevalentemente archi o else di spade in osso o in legno»",
+          "classe": "tiro"
+        },
+        {
+          "id": "pugnale_osso",
+          "nome": "Pugnale d'osso",
+          "tipo": "arma",
+          "taglia": "corte",
+          "qualita": "bassa",
+          "atk": 8,
+          "dif": 4,
+          "durabilita": 80,
+          "resistenza": null,
+          "base": "arma_corta_bassa",
+          "descrizione": "Una lama ricavata dall'osso di un Tèras, per quando il nemico è troppo vicino.",
+          "fonteCanone": "Glossario Eidos: «le loro armi [sono ricavate] dalle ossa dei Tèras»"
+        },
+        {
+          "id": "protezione",
+          "nome": "Pelli di Tèras, mantellina ed elmo di stoffa",
+          "tipo": "armatura",
+          "taglia": "leggere",
+          "qualita": "bassa",
+          "atk": 0,
+          "dif": 5,
+          "durabilita": 80,
+          "resistenza": null,
+          "base": "protezione_leggera_bassa",
+          "descrizione": "Indumenti in pelle, la mantellina sul busto e l'elmo rivestito di stoffa che copre quasi tutto il viso.",
+          "fonteCanone": "premessa Eidos, «Armamenti»: «armature leggere, composte da indumenti in pelle… mantellina… elmo rivestito di stoffa»"
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "yara",
+          "natura": "esploratrice Antarsi della stessa rete (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "L'arco in osso di Tèras apparteneva a un caduto. Le riparazioni richiedono competenze rare e aprono un arco di relazioni; Sava non conosce la lavorazione."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Memoria contro possesso: chi ha diritto ai resti."
+        },
+        {
+          "atto": 2,
+          "possibilita": "L'uso commerciale dei morti."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Restituire la memoria, diffonderla o vendicarla."
+        }
+      ],
+      "note_revisione": "Nessuna tecnica con danno proprio: combatte con l'arco (classe tiro, Mira). ATK dell'arco Alta molto superiore ai nemici di Lv 1: bilanciamento da verificare.",
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": null,
+        "factionId": "antarsi",
+        "cultureId": null,
+        "regionId": null,
+        "roleId": "esploratrice_recuperatrice",
+        "creatureFamilyId": null,
+        "socialClassId": null,
+        "corporationId": null,
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [],
+        "statoAffiliazione": "confermata",
+        "proposte": {},
+        "fonti": {
+          "proposta": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4) (popolazione «Antarsi», città «Antarsia»)",
+          "peopleId": "autore: popolo non documentato, lasciare vuoto",
+          "factionId": "autore: Sava è Antarsi sul piano politico",
+          "regionId": "autore: provenienza non documentata, lasciare vuota"
+        },
+        "dubbi": [
+          "Provenienza specifica non verificata negli originali disponibili."
+        ]
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "identitaPrecedente": {
+        "popolazione": "Antarsi",
+        "citta": "Antarsia",
+        "fonte": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4) (popolazione «Antarsi», città «Antarsia»)",
+        "stato": "documento derivato; corretto dalle decisioni esplicite dell’autore"
+      },
+      "inventarioIniziale": [
+        {
+          "id": "eidos_bende_emostatiche",
+          "qty": 1
+        },
+        {
+          "id": "eidos_razione_da_campo",
+          "qty": 2
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    },
+    {
+      "id": "ilyan",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Ilyan",
+      "popolazione": "Eporiani",
+      "citta": "",
+      "mansione": "Apprendista navigatore e scorta mercantile",
+      "ritratto": "img/solo/ritratti/eidos-ilyan.webp",
+      "ritratto_alt": "Ritratto di Ilyan, Apprendista navigatore e scorta mercantile",
+      "build": "eclettico",
+      "background": "Una spedizione finanziata dalla famiglia di Ilyan è rientrata senza parte del carico e con registri discordanti. Il debito ricade su tutti loro.",
+      "obiettivo": "Recuperare l'investimento e ricostruire il vero percorso della merce.",
+      "missione_iniziale": "Seguire l'ultima voce del registro dei baratti.",
+      "capitolo": "eidos-casa-delle-voci",
+      "primary": {
+        "hp": 6,
+        "mp": 6,
+        "for": 4,
+        "mira": 4,
+        "vel": 4,
+        "fmen": 5,
+        "dex": 4,
+        "dif": 3,
+        "dmen": 4
+      },
+      "tertiary": {
+        "stile": 1,
+        "fortuna": 1,
+        "carisma": 3
+      },
+      "traits": {
+        "conoscenze": {
+          "Navigare": 2,
+          "Geografia": 2,
+          "Orientamento": 1
+        },
+        "capacitaNormali": {
+          "Contrattazione": 2,
+          "Nuotare": 2,
+          "Persuasione": 1
+        },
+        "capacitaCombattive": {
+          "Arte Combattiva": 2,
+          "Lancia": 1,
+          "Spirito": 1,
+          "Elusione": 1
+        }
+      },
+      "tecniche": [
+        {
+          "id": "punta_bordo",
+          "nome": "Punta di bordo",
+          "categoria": "tecnica",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 7,
+          "effetto": "Attacco fisico: danno base 7 + Forza",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "for",
+          "descrizione": "Attacco fisico con la lancia.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "abilita": [
+        {
+          "id": "dardo_marea",
+          "nome": "Dardo di marea",
+          "categoria": "magia",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 8,
+          "effetto": "Attacco magico: danno base 8 + Forza Magica",
+          "costoMP": 6,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "fmen",
+          "descrizione": "Attacco magico legato all'acqua. Costo 6 MP.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "D",
+            "risorsaSpeciale": "R",
+            "costoRisorsaSpeciale": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato"
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null
+            }
+          }
+        }
+      ],
+      "equip": [
+        {
+          "id": "lancia",
+          "nome": "Lancia",
+          "tipo": "arma",
+          "taglia": "medie",
+          "qualita": "bassa",
+          "atk": 10,
+          "dif": 8,
+          "durabilita": 100,
+          "resistenza": null,
+          "base": "arma_media_bassa",
+          "descrizione": "La lancia dei lancieri eporiani, buona sui ponti delle navi quanto sulle banchine di Lechta.",
+          "fonteCanone": "premessa Eidos, «Armamenti»: gli Eporiani «sono principalmente dei lancieri»"
+        },
+        {
+          "id": "protezione",
+          "nome": "Corsaletto eporiano di cuoio e metallo",
+          "tipo": "armatura",
+          "taglia": "leggere",
+          "qualita": "media",
+          "atk": 2,
+          "dif": 10,
+          "durabilita": 140,
+          "resistenza": null,
+          "base": "protezione_leggera_media",
+          "descrizione": "Il corsaletto dei lancieri di Lechta: cuoio cotto e piastre leggere, fresco sotto il sole dell'isola.",
+          "fonteCanone": "premessa Eidos, «Armamenti»: «principalmente dei lancieri e portano delle armature realizzate in cuoio e metallo»"
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "tal",
+          "natura": "intermediario di Lechta che conosce la sua famiglia (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "La sensibilità all'acqua non concede controllo del mare, purificazione o creazione di risorse."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Famiglia e debito."
+        },
+        {
+          "atto": 2,
+          "possibilita": "Neutralità commerciale contro persone coinvolte nella tratta."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Rinegoziare la rotta, liberarla o monopolizzarla."
+        }
+      ],
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": "eporiani",
+        "factionId": null,
+        "cultureId": null,
+        "regionId": null,
+        "roleId": "apprendista_navigatore",
+        "creatureFamilyId": null,
+        "socialClassId": null,
+        "corporationId": null,
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [],
+        "statoAffiliazione": "confermata",
+        "proposte": {},
+        "fonti": {
+          "proposta": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4) (popolazione «Eporiani», città «Lechta»)",
+          "peopleId": "autore: Ilyan è Eporiano",
+          "regionId": "autore: provenienza non documentata, lasciare vuota"
+        },
+        "dubbi": [
+          "Provenienza specifica non verificata negli originali disponibili."
+        ]
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "identitaPrecedente": {
+        "popolazione": "Eporiani",
+        "citta": "Lechta",
+        "fonte": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4) (popolazione «Eporiani», città «Lechta»)",
+        "stato": "documento derivato; corretto dalle decisioni esplicite dell’autore"
+      },
+      "inventarioIniziale": [
+        {
+          "id": "eidos_bende_emostatiche",
+          "qty": 1
+        },
+        {
+          "id": "eidos_razione_da_campo",
+          "qty": 1
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    },
+    {
+      "id": "tessa",
+      "versione": "0.4.1",
+      "stato_editoriale": "bozza",
+      "fixture_interna": false,
+      "fonte": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4)",
+      "nome": "Tessa",
+      "popolazione": "Epizi",
+      "citta": "Epimno",
+      "mansione": "Manutentrice civile abilitata alla connessione tecnica",
+      "ritratto": "img/solo/ritratti/eidos-tessa.webp",
+      "ritratto_alt": "Ritratto di Tessa, Manutentrice civile abilitata alla connessione tecnica",
+      "build": "guerriero",
+      "background": "Tessa ha trovato un componente esausto che risulta appena sostituito. Le hanno ordinato di chiudere comunque l'intervento.",
+      "obiettivo": "Individuare la catena delle sostituzioni fittizie e impedire il cedimento del settore.",
+      "missione_iniziale": "Seguire il lotto del componente fino al magazzino di origine.",
+      "capitolo": "eidos-casa-delle-voci",
+      "primary": {
+        "hp": 7,
+        "mp": 2,
+        "for": 4,
+        "mira": 4,
+        "vel": 5,
+        "fmen": 3,
+        "dex": 7,
+        "dif": 5,
+        "dmen": 3
+      },
+      "tertiary": {
+        "stile": 0,
+        "fortuna": 2,
+        "carisma": 3
+      },
+      "traits": {
+        "conoscenze": {
+          "Meccanica": 3,
+          "Architettura": 2
+        },
+        "capacitaNormali": {
+          "Riparare": 3,
+          "Percezione": 2
+        },
+        "capacitaCombattive": {
+          "Arte Combattiva": 2,
+          "Elusione": 2,
+          "Resistenza": 1
+        }
+      },
+      "tecniche": [
+        {
+          "id": "colpo_leva",
+          "nome": "Colpo di leva",
+          "categoria": "tecnica",
+          "tipoAzione": "attacco",
+          "bersaglio": "singolo nemico",
+          "dannoBase": 5,
+          "effetto": "Attacco fisico: danno base 5 + Forza",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "forzatura": {
+            "consentita": false,
+            "costoVitalita": null
+          },
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 0,
+          "condizioniUso": [],
+          "bonus": [],
+          "malus": [],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "danno",
+          "lv": 1,
+          "stat": "for",
+          "descrizione": "Attacco fisico con l'utensile.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "D",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "durataTurni": "R",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A",
+            "risorsaSpeciale": "A",
+            "costoRisorsaSpeciale": "A",
+            "forzatura": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "singolo nemico",
+              "utilizziMassimi": "illimitato",
+              "risorsaSpeciale": null,
+              "costoRisorsaSpeciale": 0,
+              "forzatura": {
+                "consentita": false,
+                "costoVitalita": null
+              }
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null,
+              "risorsaSpeciale": null,
+              "costoRisorsaSpeciale": null,
+              "forzatura": null
+            }
+          }
+        },
+        {
+          "id": "presa_precisione",
+          "nome": "Presa di precisione",
+          "categoria": "tecnica",
+          "tipoAzione": "supporto",
+          "bersaglio": "sé",
+          "dannoBase": 0,
+          "effetto": "+2 Destrezza, −1 Forza per 1 turno",
+          "costoMP": 0,
+          "risorsaSpeciale": null,
+          "costoRisorsaSpeciale": 0,
+          "forzatura": {
+            "consentita": false,
+            "costoVitalita": null
+          },
+          "utilizziMassimi": "illimitato",
+          "durataTurni": 1,
+          "condizioniUso": [],
+          "bonus": [
+            {
+              "stat": "dex",
+              "valore": 2,
+              "testo": "+2 Destrezza"
+            }
+          ],
+          "malus": [
+            {
+              "stat": "for",
+              "valore": -1,
+              "testo": "−1 Forza"
+            }
+          ],
+          "livelloRichiesto": 1,
+          "slotRichiesti": 1,
+          "tipo": "supporto",
+          "lv": 1,
+          "bonusStat": {
+            "dex": 2,
+            "for": -1
+          },
+          "descrizione": "+2 Destrezza e −1 Forza per 1 turno.",
+          "fonti": {
+            "nome": "D",
+            "categoria": "D",
+            "tipoAzione": "R",
+            "dannoBase": "D",
+            "effetto": "D",
+            "costoMP": "R",
+            "durataTurni": "D",
+            "condizioniUso": "D",
+            "bonus": "D",
+            "malus": "D",
+            "livelloRichiesto": "R",
+            "slotRichiesti": "R",
+            "bersaglio": "A",
+            "utilizziMassimi": "A",
+            "risorsaSpeciale": "A",
+            "costoRisorsaSpeciale": "A",
+            "forzatura": "A"
+          },
+          "daApprovare": [],
+          "proposte": {},
+          "approvazione": {
+            "decisione": "autore-preset-2026-10-01",
+            "valori": {
+              "bersaglio": "sé",
+              "utilizziMassimi": "illimitato",
+              "risorsaSpeciale": null,
+              "costoRisorsaSpeciale": 0,
+              "forzatura": {
+                "consentita": false,
+                "costoVitalita": null
+              }
+            },
+            "fontiPrecedenti": {
+              "bersaglio": null,
+              "utilizziMassimi": null,
+              "risorsaSpeciale": null,
+              "costoRisorsaSpeciale": null,
+              "forzatura": null
+            }
+          }
+        }
+      ],
+      "abilita": [],
+      "equip": [
+        {
+          "id": "utensile",
+          "nome": "Utensile da difesa corto",
+          "tipo": "arma",
+          "taglia": "corte",
+          "qualita": "media",
+          "atk": 12,
+          "dif": 14,
+          "durabilita": 120,
+          "resistenza": null,
+          "base": "arma_corta_media",
+          "descrizione": "Un utensile da manutenzione abbastanza solido da difendersi: per gli Epizi civili le armi sono rare.",
+          "fonteCanone": "mansione di Tessa: manutentrice civile"
+        },
+        {
+          "id": "protezione",
+          "nome": "Protezione leggera",
+          "tipo": "armatura",
+          "taglia": "leggere",
+          "qualita": "media",
+          "atk": 2,
+          "dif": 10,
+          "durabilita": 140,
+          "resistenza": null,
+          "base": "protezione_leggera_media",
+          "descrizione": "Una tuta da manutenzione rinforzata, compatibile con la connessione tecnica.",
+          "fonteCanone": "mansione di Tessa: manutentrice abilitata alla connessione"
+        }
+      ],
+      "legami_iniziali": [
+        {
+          "png": "mirea",
+          "natura": "nome sul registro dei lotti che Tessa sta seguendo (proposta)"
+        }
+      ],
+      "conoscenze": [],
+      "segreti_narratore": [
+        "L'abilitazione civile alla connessione è una proposta editoriale da approvare: non trattarla come canone."
+      ],
+      "occasioni_sviluppo": [
+        {
+          "atto": 1,
+          "possibilita": "Sicurezza contro disciplina."
+        },
+        {
+          "atto": 2,
+          "possibilita": "Responsabilità individuale in una catena di ordini."
+        },
+        {
+          "atto": 3,
+          "possibilita": "Mettere in sicurezza il sistema, denunciarlo o controllarlo."
+        }
+      ],
+      "avviso_creazione": "Abilitazione civile epizia alla connessione: proposta da confermare.",
+      "campaign_id": "eidos-casa-delle-voci",
+      "content_status": "proposed",
+      "act": [
+        1,
+        2,
+        3
+      ],
+      "level_band": [
+        1,
+        30
+      ],
+      "difficulty_tags": [
+        "esplorativa",
+        "bilanciata",
+        "permadeath"
+      ],
+      "visibility_rule": "pubblica",
+      "source_note": "Role_Makers_Campagne_e_15_Archetipi_V1.md (pacchetto V4); natura_riservata e segreti_narratore: solo motore",
+      "ontologia": {
+        "entityType": "personaggio_giocabile",
+        "peopleId": "epizi",
+        "factionId": "epizi",
+        "cultureId": null,
+        "regionId": "epimno",
+        "roleId": "manutentrice_civile",
+        "creatureFamilyId": null,
+        "socialClassId": null,
+        "corporationId": null,
+        "playable": true,
+        "playerVisible": true,
+        "narratorOnly": [],
+        "statoAffiliazione": "coerente_da_confermare",
+        "fonti": {
+          "factionId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4); coerente con la regola dell'autore (appartenenza normale Chorisfos o Epizi)",
+          "peopleId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4)",
+          "regionId": "documento derivato (Role_Makers_Campagne_e_15_Archetipi_V1.md, pacchetto V4)"
+        },
+        "dubbi": [
+          "Epizi dal solo documento derivato: coerente con la regola normale, non confermato esplicitamente dall'autore.",
+          "Abilitazione civile epizia alla connessione: già segnalata come proposta (avviso_creazione)."
+        ]
+      },
+      "approvazioneMeccanica": {
+        "id": "autore-preset-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Decisione esplicita dell’autore: «approvo tutto e al massimo lo modifichi dopo che gli do un’occhiata»; riferita ai valori proposti dei 15 preset.",
+        "ambito": "Valori meccanici proposti già presenti; nessuna capacità o valore mancante inventato."
+      },
+      "inventarioIniziale": [
+        {
+          "id": "eidos_kit_medico_epizio",
+          "qty": 1
+        },
+        {
+          "id": "eidos_razione_da_campo",
+          "qty": 1
+        }
+      ],
+      "approvazioneDotazioni": {
+        "id": "autore-dotazioni-2026-10-01",
+        "data": "2026-10-01",
+        "fonte": "Richiesta esplicita dell'autore: armi, consumabili, scudi se necessari alla build e armature compilati per il Lv 1; tecniche e abilità compilate.",
+        "ambito": "Dotazioni, zaino iniziale, Tecnica di Daren e capacità delle gemme; valori revisionabili dopo la prova."
+      }
+    }
+  ],
+  "formato_capacita": "rm-solo-capacita/1",
+  "legenda_fonti": {
+    "R": "regolamento dell'app",
+    "D": "documento Campagne e 15 archetipi V1",
+    "A": "regola approvata dall'autore (revisione gemme)",
+    "P": "proposta da approvare"
+  }
+}

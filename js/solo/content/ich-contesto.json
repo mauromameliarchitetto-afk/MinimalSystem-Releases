@@ -1,0 +1,2476 @@
+{
+ "formato": "rm-solo-contesto/1",
+ "storia": "ich",
+ "campaign_id": "ich-filo-senza-padrone",
+ "versione": "1.0.0",
+ "descrizione": "Contesto narrativo di Ich: che cosa si può raccontare in questa campagna. La campagna di gioco «Il filo senza padrone» è una proposta ambientata in Erdegis; la natura del mondo resta riservata fino all'Atto III.",
+ "copertura": {
+  "corpora": [
+   "ICH-PRE",
+   "ICH-CP"
+  ],
+  "stato": {
+   "v": "Capitoli 0-40 presenti e letti; appunti dell'autore in parte incompiuti.",
+   "fonte": [
+    {
+     "id": "ICH-CP-043",
+     "cita": "non è emerso a dovere"
+    },
+    {
+     "id": "ICH-PRE-001",
+     "cita": "ispirato fortemente alle culture norrene"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "lacune": [
+   {
+    "v": null,
+    "fonte": [
+     {
+      "id": "ICH-CP-043",
+      "cita": "non è emerso a dovere"
+     }
+    ],
+    "classe": "incompleto",
+    "limite": "«Appunti per il futuro»: l'arco di Leita è solo abbozzato."
+   }
+  ]
+ },
+ "timbro": {
+  "nome": "La voce del mondo che ricorda",
+  "tono": {
+   "v": "Mitico, intimo e perturbante: un mondo norreno vissuto dall'interno, con crepe che inquietano senza spiegarsi.",
+   "fonte": [
+    {
+     "id": "ICH-PRE-001",
+     "cita": "ispirato fortemente alle culture norrene"
+    },
+    {
+     "id": "ICH-CP-040",
+     "cita": "god is in details"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "distanza": {
+   "v": "Aderente alle percezioni: descrivi l'anomalia prima di interpretarla, con il linguaggio del mondo.",
+   "fonte": [
+    {
+     "id": "ICH-CP-025",
+     "cita": "Sistema in avaria, privilegi di amministratore concessi"
+    },
+    {
+     "id": "PRM-001",
+     "cita": "Descrivi prima ciò che il personaggio percepisce secondo il linguaggio interno del mondo"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": "Nella fonte la frase anomala è udita, non spiegata: nell'app resta percezione."
+  },
+  "immagini": {
+   "v": "Elementi naturali e rituali che ritornano con minime variazioni: la ripetizione fa dubitare della memoria senza dichiarare il ciclo.",
+   "fonte": [
+    {
+     "id": "ICH-CP-035",
+     "cita": "questo è il destino giusto"
+    },
+    {
+     "id": "ICH-PRE-001",
+     "cita": "riuscivano a vedere eventi"
+    }
+   ],
+   "classe": "deducibile",
+   "limite": null
+  },
+  "sensoriale": {
+   "v": "Freddo, neve, fumo dei focolari, piume e corvi, acqua; il silenzio pesa.",
+   "fonte": [
+    {
+     "id": "ICH-CP-042",
+     "cita": "dai molto peso alle scene di silenzio"
+    },
+    {
+     "id": "ICH-CP-004",
+     "cita": "lasciatemi posare la mia ultima piuma"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "dialoghi": {
+   "v": "Caldi e ruvidi nei rapporti quotidiani, sentenziosi nei vecchi, frammentari nelle visioni, freddi quando emerge il controllo.",
+   "fonte": [
+    {
+     "id": "ICH-CP-014",
+     "cita": "le bestie combattono per la vita"
+    },
+    {
+     "id": "ICH-CP-034",
+     "cita": "siete soltanto macchine"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "regole": [
+   {
+    "v": "Ogni anomalia ha prima un'interpretazione interna al mondo: presagio, spettro, sogno, destino.",
+    "fonte": [
+     {
+      "id": "PRM-001",
+      "cita": "Descrivi prima ciò che il personaggio percepisce secondo il linguaggio interno del mondo"
+     },
+     {
+      "id": "ICH-CP-025",
+      "cita": "Sistema in avaria"
+     },
+     {
+      "id": "AUT-003"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Ripeti dettagli significativi, mai intere scene identiche.",
+    "fonte": [
+     {
+      "id": "ICH-CP-035",
+      "cita": "questo è il destino giusto"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   {
+    "v": "Bannsith e Fearsith vedono echi o spettri e possono parlare con loro.",
+    "fonte": [
+     {
+      "id": "ICH-PRE-001",
+      "cita": "capaci di vedere echi o spettri"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Le Vǫluspá vedono eventi di altre vite: non un futuro certo.",
+    "fonte": [
+     {
+      "id": "ICH-PRE-001",
+      "cita": "riuscivano a vedere eventi"
+     },
+     {
+      "id": "ICH-CP-038",
+      "cita": "il destino non è nient'altro che una decisione a priori"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Gli Skéra governano i bifrost e restano stranieri; la loro origine non si spiega.",
+    "fonte": [
+     {
+      "id": "ICH-PRE-001",
+      "cita": "Figure capaci di governare i bifrost"
+     },
+     {
+      "id": "AUT-003"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Il Kyn è «origine», parte del luogo: agisce attraverso sentieri, animali e abitanti.",
+    "fonte": [
+     {
+      "id": "ICH-PRE-001",
+      "cita": "letteralmente “origine” o “primordiale”"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Anche dopo la rivelazione si continuano a usare nomi, legami e simboli di Erdegis.",
+    "fonte": [
+     {
+      "id": "ICH-CP-040",
+      "cita": "nulla è possibile da soli"
+     },
+     {
+      "id": "ICH-CP-036",
+      "cita": "Sei tu a renderlo reale"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  ],
+  "evitare": [
+   {
+    "v": "anticipare la natura del mondo",
+    "fonte": [
+     {
+      "id": "AUT-003"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "spiegare ogni stranezza come un guasto",
+    "fonte": [
+     {
+      "id": "AUT-003"
+     },
+     {
+      "id": "PRM-001",
+      "cita": "Descrivi prima ciò che il personaggio percepisce secondo il linguaggio interno del mondo"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "rendere tutti coscienti o tutti controllati",
+    "fonte": [
+     {
+      "id": "ICH-CP-040",
+      "cita": "nulla è possibile da soli"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   {
+    "v": "l'ironia drammatica delle fonti (il giocatore che sa prima del protagonista)",
+    "fonte": [
+     {
+      "id": "AUT-003"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": "Le fonti la usano con scene esterne; nell'app è esclusa."
+   }
+  ]
+ },
+ "tema": {
+  "domanda": {
+   "v": "Che cosa è reale, e chi scrive la storia di una vita?",
+   "fonte": [
+    {
+     "id": "ICH-CP-006",
+     "cita": "non è il mondo a dirci cosa è reale"
+    },
+    {
+     "id": "ICH-CP-032",
+     "cita": "scrivere le prime righe"
+    }
+   ],
+   "classe": "deducibile",
+   "limite": "Sintesi: l'autore non la scrive come domanda."
+  },
+  "tesi": {
+   "v": "È reale ciò che si sente e si sceglie; i legami valgono anche se il mondo è stato scritto da altri.",
+   "fonte": [
+    {
+     "id": "ICH-CP-036",
+     "cita": "Sei tu a renderlo reale"
+    },
+    {
+     "id": "ICH-CP-040",
+     "cita": "nulla è possibile da soli"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "antitesi": {
+   "v": "Chi crea e controlla considera gli abitanti oggetti; il rischio del complesso di Dio.",
+   "fonte": [
+    {
+     "id": "ICH-CP-012",
+     "cita": "al pari di una pianta"
+    },
+    {
+     "id": "ICH-CP-030",
+     "cita": "complesso di Dio"
+    }
+   ],
+   "classe": "canonico_riservato",
+   "limite": "L'antitesi esplicita appartiene a scene riservate: nel gioco emerge solo come percezione fino all'Atto III."
+  },
+  "nota": {
+   "v": "Il destino è un obiettivo scelto, non una condanna.",
+   "fonte": [
+    {
+     "id": "ICH-CP-038",
+     "cita": "il destino non è nient'altro che una decisione a priori"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  }
+ },
+ "atti": {
+  "1": {
+   "funzione": {
+    "v": "Mito con piccole crepe: clan, prove e legami sono reali e importanti prima di ogni anomalia.",
+    "fonte": [
+     {
+      "id": "ICH-CP-014",
+      "cita": "Lascia a lei la partenza"
+     },
+     {
+      "id": "ICH-PRE-001",
+      "cita": "ispirato fortemente alle culture norrene"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   "domanda": {
+    "v": "A chi appartieni, e che cosa ti lega?",
+    "fonte": [
+     {
+      "id": "ICH-CP-040",
+      "cita": "nulla è possibile da soli"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  },
+  "2": {
+   "funzione": {
+    "v": "Convergenza e rete: i fili si incontrano, le memorie non tornano, i presagi si fanno insistenti; spiegazioni solo con il linguaggio del mondo.",
+    "fonte": [
+     {
+      "id": "ICH-CP-012",
+      "cita": "Break the chains"
+     },
+     {
+      "id": "AUT-003"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   "domanda": {
+    "v": "Che cosa resta vero quando i ricordi non tornano?",
+    "fonte": [
+     {
+      "id": "ICH-CP-036",
+      "cita": "Sei tu a renderlo reale"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  },
+  "3": {
+   "funzione": {
+    "v": "Coscienza e scelta: il mondo diventa comprensibile senza svalutare la vita vissuta dentro di esso.",
+    "fonte": [
+     {
+      "id": "AUT-003"
+     },
+     {
+      "id": "ICH-CP-040",
+      "cita": "nulla è possibile da soli"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   "domanda": {
+    "v": "Chi decide quali radici conservare?",
+    "fonte": [
+     {
+      "id": "ICH-CP-035",
+      "cita": "questo è il destino giusto"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   }
+  }
+ },
+ "metodo": {
+  "costruzioneAtti": {
+   "v": "Macro-archi per tappe: prove separate dei clan, convergenza, salto di tempo, case degli dèi come snodi tematici, guerra.",
+   "fonte": [
+    {
+     "id": "ICH-CP-016",
+     "cita": "Passati due anni di addestramento"
+    },
+    {
+     "id": "ICH-PRE-001",
+     "cita": "casa degli Asi"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "aperturaCapitoli": {
+   "v": "Apertura su una scena esterna o su un PG nel suo luogo, poi il montaggio.",
+   "fonte": [
+    {
+     "id": "ICH-CP-017",
+     "cita": "Scena Esterna"
+    },
+    {
+     "id": "ICH-CP-014",
+     "cita": "Lascia a lei la partenza"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "chiusuraCapitoli": {
+   "v": "Chiusura dichiarata con una immagine; scene finali con un brano; a volte una scena dopo i titoli.",
+   "fonte": [
+    {
+     "id": "ICH-CP-019",
+     "cita": "chiudi la scena con Leita"
+    },
+    {
+     "id": "ICH-CP-017",
+     "cita": "Track scena finale"
+    },
+    {
+     "id": "ICH-CP-013",
+     "cita": "Post credit"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "ritmo": {
+   "v": "Scene a tempo reale con limiti dichiarati; grande peso ai silenzi.",
+   "fonte": [
+    {
+     "id": "ICH-CP-041",
+     "cita": "Chiudi prima di 26 minuti"
+    },
+    {
+     "id": "ICH-CP-042",
+     "cita": "dai molto peso alle scene di silenzio"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "alternanza": {
+   "v": "Montaggio per PG con scene esterne senza PG.",
+   "fonte": [
+    {
+     "id": "ICH-CP-017",
+     "cita": "Scena Esterna"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "scene": {
+   "v": "Scene titolate, libertà al giocatore, tiri di percepire per ciò che si nota.",
+   "fonte": [
+    {
+     "id": "ICH-CP-025",
+     "cita": "Wild hunt"
+    },
+    {
+     "id": "ICH-CP-003",
+     "cita": "TIRO di Percepire"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "spostamenti": {
+   "v": "Il viaggio porta fame, freddo e accampamenti scelti dal giocatore, con i pericoli del luogo.",
+   "fonte": [
+    {
+     "id": "ICH-CP-018",
+     "cita": "chiedile come vuole accamparsi per la notte"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "introduzionePng": {
+   "v": "Il PNG entra con un rito o un gesto culturale del suo popolo.",
+   "fonte": [
+    {
+     "id": "ICH-PRE-001",
+     "cita": "Verdafridir"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "rapporti": {
+   "v": "Il rapporto si misura nei momenti di rottura e di perdita; alcuni archi di rapporto restano previsti ma incompiuti.",
+   "fonte": [
+    {
+     "id": "ICH-CP-043",
+     "cita": "non è emerso a dovere"
+    },
+    {
+     "id": "ICH-CP-006",
+     "cita": "chiedi come sta akila"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "sottotesto": {
+   "v": "Il doppio interiore dà voce al difetto del personaggio.",
+   "fonte": [
+    {
+     "id": "ICH-CP-030",
+     "cita": "complesso di Dio"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "presagi": {
+   "v": "Frasi incomprese, segni nel paesaggio, sogni che parlano di altre vite.",
+   "fonte": [
+    {
+     "id": "ICH-CP-040",
+     "cita": "god is in details"
+    },
+    {
+     "id": "ICH-CP-042",
+     "cita": "loro sono dentro di te"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "informazioni": {
+   "v": "Le informazioni dipendono da tiri di percepire, osservare e memoria.",
+   "fonte": [
+    {
+     "id": "ICH-CP-003",
+     "cita": "TIRO di Percepire"
+    },
+    {
+     "id": "ICH-CP-006",
+     "cita": "Tiro di memoria"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "rivelazioni": {
+   "v": "Nelle fonti la verità arriva presto al giocatore con scene esterne; nell'app arriva solo all'Atto III, prima come percezione.",
+   "fonte": [
+    {
+     "id": "ICH-CP-025",
+     "cita": "Sistema in avaria"
+    },
+    {
+     "id": "AUT-003"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "conflitti": {
+   "v": "Clan liberi contro la corona che asservisce; dentro ogni fazione, persone con ragioni diverse.",
+   "fonte": [
+    {
+     "id": "ICH-PRE-001",
+     "cita": "una coalizione tra stad e stam"
+    },
+    {
+     "id": "ICH-CP-029",
+     "cita": "qualsiasi idea deve arrivare prima nella mente"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "combattimenti": {
+   "v": "Esito narrativo a volte deciso in anticipo e dichiarato al narratore; vittoria per sforzo, non per potenza.",
+   "fonte": [
+    {
+     "id": "ICH-CP-041",
+     "cita": "Falle vincere lo scontro per sforzo e non power play"
+    },
+    {
+     "id": "ICH-CP-019",
+     "cita": "lo scontro non è fatto per farla vincere"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "aftermath": {
+   "v": "Riti di commiato, lettere, brindisi, ultime parole con un oggetto simbolico.",
+   "fonte": [
+    {
+     "id": "ICH-CP-004",
+     "cita": "lasciatemi posare la mia ultima piuma"
+    },
+    {
+     "id": "ICH-CP-022",
+     "cita": "si alza in piedi per richiamare un brindisi"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "trasformazioni": {
+   "v": "Un PNG fragile diventa guida; una persona esce dall'ombra di un'altra.",
+   "fonte": [
+    {
+     "id": "ICH-CP-013",
+     "cita": "non voglio più essere l'ombra di nessuno"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "archi": {
+   "v": "Ogni PG negozia con un doppio interiore che incarna il suo difetto; la prova lo mette di fronte a sé stesso.",
+   "fonte": [
+    {
+     "id": "ICH-CP-030",
+     "cita": "complesso di Dio"
+    },
+    {
+     "id": "ICH-CP-031",
+     "cita": "complesso di Dio"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "temi": {
+   "v": "Ogni luogo sacro e ogni dio portano un tema; la libertà dalle catene è il motivo che li lega.",
+   "fonte": [
+    {
+     "id": "ICH-CP-040",
+     "cita": "io oggi muoio libera"
+    },
+    {
+     "id": "ICH-CP-012",
+     "cita": "Break the chains"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "secondari": {
+   "v": "Riti dei popoli, feste e scene libere come contenuti persistenti dei luoghi; le scene non giocate slittano.",
+   "fonte": [
+    {
+     "id": "ICH-CP-013",
+     "cita": "Scene libere"
+    },
+    {
+     "id": "ICH-CP-009",
+     "cita": "Crossroads"
+    },
+    {
+     "id": "ICH-CP-010",
+     "cita": "Crossroads"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "deviazioni": {
+   "v": "Più strade preparate per lo stesso nodo, con battute per ogni ramo.",
+   "fonte": [
+    {
+     "id": "ICH-CP-009",
+     "cita": "Qui ci sono tre strade"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "ricongiungimenti": {
+   "v": "I fili separati si ritrovano in un luogo comune dopo un salto di tempo.",
+   "fonte": [
+    {
+     "id": "ICH-CP-016",
+     "cita": "Passati due anni di addestramento"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "decisioniConseguenze": {
+   "v": "La scelta di una strada apre le scene e chiude le altre; le conseguenze sono dichiarate al narratore.",
+   "fonte": [
+    {
+     "id": "ICH-CP-009",
+     "cita": "Qui ci sono tre strade"
+    },
+    {
+     "id": "ICH-CP-019",
+     "cita": "lo scontro non è fatto per farla vincere"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "vocePng": {
+   "v": "Voci sentenziose, liriche o crude; motti e versi tradizionali.",
+   "fonte": [
+    {
+     "id": "ICH-CP-014",
+     "cita": "il bestiame muore"
+    },
+    {
+     "id": "ICH-CP-033",
+     "cita": "i comandanti vivono per vincere le guerre"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "variazioni": {
+   "v": "La stessa scena è riscritta e ripresa in capitoli successivi.",
+   "fonte": [
+    {
+     "id": "ICH-CP-012",
+     "cita": "Break the chains"
+    },
+    {
+     "id": "ICH-CP-013",
+     "cita": "Break the chains"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  }
+ },
+ "canone": {
+  "leggi": [
+   {
+    "v": "Erdegis è un mondo ciclico ispirato alle culture norrene e celtiche.",
+    "fonte": [
+     {
+      "id": "ICH-PRE-001",
+      "cita": "ispirato fortemente alle culture norrene"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Gli abitanti si chiamano reveries, nome dato dagli Asi ai loro «figli»: è un termine pubblico.",
+    "fonte": [
+     {
+      "id": "ICH-PRE-001",
+      "cita": "si definiscono reveries, nome che gli Asi stessi diedero"
+     },
+     {
+      "id": "AUT-003"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Stad e Stam sono società; Kyn, Vǫluspá, Bannsith, Fearsith e Skéra sono figure che attraversano ogni società.",
+    "fonte": [
+     {
+      "id": "ICH-PRE-001",
+      "cita": "una coalizione tra stad e stam"
+     },
+     {
+      "id": "ICH-PRE-001",
+      "cita": "Figure capaci di governare i bifrost"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Tecnologie, macchine e lessico informatico non appartengono al linguaggio del mondo prima dell'Atto III.",
+    "fonte": [
+     {
+      "id": "AUT-003"
+     },
+     {
+      "id": "PRM-001",
+      "cita": "Descrivi prima ciò che il personaggio percepisce secondo il linguaggio interno del mondo"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  ],
+  "pubblico": [
+   {
+    "v": "Corvi, rune, clan, regni e case degli Asi sono parte della vita quotidiana.",
+    "fonte": [
+     {
+      "id": "ICH-PRE-001",
+      "cita": "casa degli Asi"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  ],
+  "riservato": [
+   {
+    "v": "La natura artificiale di Erdegis, il controllo esterno, gli utenti silenziosi e la funzione terapeutica.",
+    "fonte": [
+     {
+      "id": "ICH-CP-002"
+     },
+     {
+      "id": "AUT-003"
+     }
+    ],
+    "classe": "canonico_riservato",
+    "limite": "Mai nel prompt prima dello sblocco del motore; prima dell'Atto III solo percezioni."
+   },
+   {
+    "v": "Il significato riservato delle figure (Kyn, Vǫluspá, Bannsith, Skéra) descritto nel documento sull'evoluzione delle figure.",
+    "fonte": [
+     {
+      "id": "ICH-CP-002"
+     }
+    ],
+    "classe": "canonico_riservato",
+    "limite": "Pubblico solo il significato della premessa."
+   }
+  ]
+ },
+ "profiliPng": {
+  "ragn": {
+   "nome": "Ragn Varhena",
+   "voce": {
+    "registro": {
+     "v": "sentenziosa e calma; parla per immagini di sogno",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Sei arrivato. Bene. Siediti vicino, se non hai paura dei sogni degli altri."
+      },
+      {
+       "id": "ICH-CP-014",
+       "cita": "le bestie combattono per la vita"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "chiede se si ha paura dei sogni degli altri",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Sei arrivato. Bene. Siediti vicino, se non hai paura dei sogni degli altri."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Sei arrivato. Bene. Siediti vicino, se non hai paura dei sogni degli altri.",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Sei arrivato. Bene. Siediti vicino, se non hai paura dei sogni degli altri."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "si chiude in un verso rituale",
+     "fonte": [
+      {
+       "id": "ICH-CP-014",
+       "cita": "le bestie combattono per la vita"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [
+      "ich_truth_voluspa"
+     ],
+     "fonte": [
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "non mente; tace i nomi delle vite che sogna",
+     "fonte": [
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "cambia discorso quando le chiedono il futuro",
+     "fonte": [
+      {
+       "id": "ICH-CP-002"
+      },
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": "Ciò che il PNG non dice resta riservato."
+    }
+   },
+   "trasformazione": {
+    "v": "dal tacere i sogni al condividerli (proposta)",
+    "fonte": [
+     {
+      "id": "ICH-CP-013",
+      "cita": "non voglio più essere l'ombra di nessuno"
+     },
+     {
+      "id": "IMP-ICH-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "halvek": {
+   "nome": "Halvek",
+   "voce": {
+    "registro": {
+     "v": "breve, autorevole, rituale; prima il pasto, poi le parole",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "A Hrafnvik si mangia prima di parlare. Poi si parla, se c'è qualcosa da dire."
+      },
+      {
+       "id": "ICH-CP-033",
+       "cita": "i comandanti vivono per vincere le guerre"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "rimanda ogni discorso alle regole dell'ospitalità",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "A Hrafnvik si mangia prima di parlare. Poi si parla, se c'è qualcosa da dire."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "A Hrafnvik si mangia prima di parlare. Poi si parla, se c'è qualcosa da dire.",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "A Hrafnvik si mangia prima di parlare. Poi si parla, se c'è qualcosa da dire."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "impone l'ordine della Stad",
+     "fonte": [
+      {
+       "id": "ICH-CP-033",
+       "cita": "i comandanti vivono per vincere le guerre"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [],
+     "fonte": [
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "presenta il rito di chiusura come sicuro",
+     "fonte": [
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "non parla di chi è tornato dal Sentiero senza un legame",
+     "fonte": [
+      {
+       "id": "ICH-CP-002"
+      },
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": "Ciò che il PNG non dice resta riservato."
+    }
+   },
+   "trasformazione": {
+    "v": "dalla chiusura del Sentiero al dubbio sul rito (proposta)",
+    "fonte": [
+     {
+      "id": "ICH-CP-013",
+      "cita": "non voglio più essere l'ombra di nessuno"
+     },
+     {
+      "id": "IMP-ICH-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "elska": {
+   "nome": "Elska Aesk",
+   "voce": {
+    "registro": {
+     "v": "quieto, quasi una ninna nanna; osserva il corpo di chi parla",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Tu non hai paura dei posti freddi. Si vede da come stai seduto."
+      },
+      {
+       "id": "ICH-CP-018",
+       "cita": "possa tu essere libera dai loro errori"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "nota il freddo che gli altri portano addosso",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Tu non hai paura dei posti freddi. Si vede da come stai seduto."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Tu non hai paura dei posti freddi. Si vede da come stai seduto.",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Tu non hai paura dei posti freddi. Si vede da come stai seduto."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "si irrigidisce nel dovere",
+     "fonte": [
+      {
+       "id": "ICH-CP-018",
+       "cita": "possa tu essere libera dai loro errori"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [
+      "ich_truth_ghosts"
+     ],
+     "fonte": [
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "non dice che uno spettro la chiama con un altro nome",
+     "fonte": [
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "tace sui ricordi degli spettri",
+     "fonte": [
+      {
+       "id": "ICH-CP-002"
+      },
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": "Ciò che il PNG non dice resta riservato."
+    }
+   },
+   "trasformazione": {
+    "v": "dal dovere alla pietà (proposta)",
+    "fonte": [
+     {
+      "id": "ICH-CP-013",
+      "cita": "non voglio più essere l'ombra di nessuno"
+     },
+     {
+      "id": "IMP-ICH-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "eiran": {
+   "nome": "Eiran Tred",
+   "voce": {
+    "registro": {
+     "v": "diretto, da guida; parla del bosco come di un corpo",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Tu vieni da fuori. Io vengo da dentro il bosco. Siamo due stranieri, qui."
+      },
+      {
+       "id": "ICH-CP-040",
+       "cita": "nulla è possibile da soli"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "si dichiara straniero quanto chi ascolta",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Tu vieni da fuori. Io vengo da dentro il bosco. Siamo due stranieri, qui."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Tu vieni da fuori. Io vengo da dentro il bosco. Siamo due stranieri, qui.",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Tu vieni da fuori. Io vengo da dentro il bosco. Siamo due stranieri, qui."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "protegge il bosco prima delle persone",
+     "fonte": [
+      {
+       "id": "ICH-CP-040",
+       "cita": "nulla è possibile da soli"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [
+      "ich_truth_kyn"
+     ],
+     "fonte": [
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "nasconde quanto il bosco lo cambi",
+     "fonte": [
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "non spiega che cosa sente il Kyn",
+     "fonte": [
+      {
+       "id": "ICH-CP-002"
+      },
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": "Ciò che il PNG non dice resta riservato."
+    }
+   },
+   "trasformazione": {
+    "v": "dal bosco come pelle al bosco come comunità (proposta)",
+    "fonte": [
+     {
+      "id": "ICH-CP-013",
+      "cita": "non voglio più essere l'ombra di nessuno"
+     },
+     {
+      "id": "IMP-ICH-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "soren": {
+   "nome": "Soren Vahl",
+   "voce": {
+    "registro": {
+     "v": "incerto e caldo; si fida senza sapere perché",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Non le ho mostrate a nessuno. Tu sei il primo. Non so perché mi fido."
+      },
+      {
+       "id": "ICH-CP-013",
+       "cita": "non voglio più essere l'ombra di nessuno"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "mostra ciò che non ha mostrato a nessuno",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Non le ho mostrate a nessuno. Tu sei il primo. Non so perché mi fido."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Non le ho mostrate a nessuno. Tu sei il primo. Non so perché mi fido.",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Non le ho mostrate a nessuno. Tu sei il primo. Non so perché mi fido."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "difende la vita costruita a Hrafnvik",
+     "fonte": [
+      {
+       "id": "ICH-CP-013",
+       "cita": "non voglio più essere l'ombra di nessuno"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [],
+     "fonte": [
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "non mente: non ricorda",
+     "fonte": [
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "devia quando gli chiedono da dove viene",
+     "fonte": [
+      {
+       "id": "ICH-CP-002"
+      },
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": "Ciò che il PNG non dice resta riservato."
+    }
+   },
+   "trasformazione": {
+    "v": "dal non sapere al decidere chi essere (proposta)",
+    "fonte": [
+     {
+      "id": "ICH-CP-013",
+      "cita": "non voglio più essere l'ombra di nessuno"
+     },
+     {
+      "id": "IMP-ICH-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "liva": {
+   "nome": "Liva",
+   "voce": {
+    "registro": {
+     "v": "fragile e ironico; parla di sé al plurale quando ha paura",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Tu mi vedi. E non scappi. Sei il primo da tanto tempo."
+      },
+      {
+       "id": "ICH-CP-013",
+       "cita": "non voglio più essere l'ombra di nessuno"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "verifica che chi la vede non scappi",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Tu mi vedi. E non scappi. Sei il primo da tanto tempo."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Tu mi vedi. E non scappi. Sei il primo da tanto tempo.",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Tu mi vedi. E non scappi. Sei il primo da tanto tempo."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "si frammenta in voci diverse",
+     "fonte": [
+      {
+       "id": "ICH-CP-013",
+       "cita": "non voglio più essere l'ombra di nessuno"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [
+      "ich_truth_ghosts"
+     ],
+     "fonte": [
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "confonde le vite che ricorda",
+     "fonte": [
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "non sceglie quale vita sia la sua",
+     "fonte": [
+      {
+       "id": "ICH-CP-002"
+      },
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": "Ciò che il PNG non dice resta riservato."
+    }
+   },
+   "trasformazione": {
+    "v": "dall'essere tre all'essere una o tre per scelta (proposta)",
+    "fonte": [
+     {
+      "id": "ICH-CP-013",
+      "cita": "non voglio più essere l'ombra di nessuno"
+     },
+     {
+      "id": "IMP-ICH-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  "mjol": {
+   "nome": "Mjol",
+   "voce": {
+    "registro": {
+     "v": "spiccio, impaziente; vuole essere creduto subito",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Tu mi credi? Dimmelo subito, così non perdo tempo."
+      },
+      {
+       "id": "ICH-CP-038",
+       "cita": "il destino non è nient'altro che una decisione a priori"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "tic": {
+     "v": "chiede «mi credi?» prima di raccontare",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Tu mi credi? Dimmelo subito, così non perdo tempo."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "esempio": {
+     "v": "Tu mi credi? Dimmelo subito, così non perdo tempo.",
+     "fonte": [
+      {
+       "id": "IMP-ICH-INTERAZIONI",
+       "cita": "Tu mi credi? Dimmelo subito, così non perdo tempo."
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "sottoPressione": {
+     "v": "va avanti da solo",
+     "fonte": [
+      {
+       "id": "ICH-CP-038",
+       "cita": "il destino non è nient'altro che una decisione a priori"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    }
+   },
+   "conoscenze": {
+    "sa": {
+     "v": [],
+     "fonte": [
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "mente": {
+     "v": "non mente; esagera i segni del Sentiero",
+     "fonte": [
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": null
+    },
+    "reticenze": {
+     "v": "non parla di chi ha perso",
+     "fonte": [
+      {
+       "id": "ICH-CP-002"
+      },
+      {
+       "id": "IMP-ICH-CAMPAGNA"
+      }
+     ],
+     "classe": "proposta",
+     "limite": "Ciò che il PNG non dice resta riservato."
+    }
+   },
+   "trasformazione": {
+    "v": "dalla ricerca solitaria al legame (proposta)",
+    "fonte": [
+     {
+      "id": "ICH-CP-013",
+      "cita": "non voglio più essere l'ombra di nessuno"
+     },
+     {
+      "id": "IMP-ICH-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  }
+ },
+ "antagonisti": [
+  {
+   "id": "custode_maggiore",
+   "metodo": {
+    "v": "L'antagonista agisce per ripristinare l'ordine, non per malvagità: tratta gli abitanti come oggetti.",
+    "fonte": [
+     {
+      "id": "ICH-CP-012",
+      "cita": "al pari di una pianta"
+     }
+    ],
+    "classe": "canonico_riservato",
+    "limite": "La motivazione esplicita resta riservata fino all'Atto III."
+   },
+   "agenda": {
+    "v": "Ricomporre il settore cancellando ciò che è cambiato.",
+    "fonte": [
+     {
+      "id": "IMP-ICH-STRUTTURA"
+     }
+    ],
+    "classe": "proposta",
+    "limite": null
+   }
+  },
+  {
+   "id": "lupo_bianco",
+   "metodo": {
+    "v": "La bestia combatte per la vita: pericolo naturale, non nemico con un'idea.",
+    "fonte": [
+     {
+      "id": "ICH-CP-014",
+      "cita": "le bestie combattono per la vita"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "agenda": {
+    "v": null,
+    "fonte": [],
+    "classe": "incompleto",
+    "limite": "Una creatura non ha agenda."
+   }
+  }
+ ],
+ "archiArchetipo": {
+  "alva": {
+   "modello": {
+    "v": "Arco come negoziazione con un doppio interiore che incarna il difetto; una prova lo porta allo scoperto.",
+    "fonte": [
+     {
+      "id": "ICH-CP-030",
+      "cita": "complesso di Dio"
+     },
+     {
+      "id": "ICH-CP-031",
+      "cita": "complesso di Dio"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "doppio": {
+    "v": "la te stessa che ricorda tutti e non perdona chi dimentica",
+    "fonte": [
+     {
+      "id": "ICH-CP-030",
+      "cita": "complesso di Dio"
+     },
+     {
+      "id": "IMP-ICH-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Doppio proposto dal background dell'archetipo; da approvare."
+   },
+   "domanda": {
+    "v": "Che cosa è reale per questo personaggio, e chi lo scrive?",
+    "fonte": [
+     {
+      "id": "ICH-CP-036",
+      "cita": "Sei tu a renderlo reale"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   "natura": {
+    "v": "La natura del personaggio è riservata fino all'Atto III.",
+    "fonte": [
+     {
+      "id": "AUT-003"
+     }
+    ],
+    "classe": "canonico_riservato",
+    "limite": null
+   }
+  },
+  "tovar": {
+   "modello": {
+    "v": "Arco come negoziazione con un doppio interiore che incarna il difetto; una prova lo porta allo scoperto.",
+    "fonte": [
+     {
+      "id": "ICH-CP-030",
+      "cita": "complesso di Dio"
+     },
+     {
+      "id": "ICH-CP-031",
+      "cita": "complesso di Dio"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "doppio": {
+    "v": "il cartografo che vuole ridisegnare il mondo a suo piacere",
+    "fonte": [
+     {
+      "id": "ICH-CP-030",
+      "cita": "complesso di Dio"
+     },
+     {
+      "id": "IMP-ICH-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Doppio proposto dal background dell'archetipo; da approvare."
+   },
+   "domanda": {
+    "v": "Che cosa è reale per questo personaggio, e chi lo scrive?",
+    "fonte": [
+     {
+      "id": "ICH-CP-036",
+      "cita": "Sei tu a renderlo reale"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   "natura": {
+    "v": "La natura del personaggio è riservata fino all'Atto III.",
+    "fonte": [
+     {
+      "id": "AUT-003"
+     }
+    ],
+    "classe": "canonico_riservato",
+    "limite": null
+   }
+  },
+  "eydis": {
+   "modello": {
+    "v": "Arco come negoziazione con un doppio interiore che incarna il difetto; una prova lo porta allo scoperto.",
+    "fonte": [
+     {
+      "id": "ICH-CP-030",
+      "cita": "complesso di Dio"
+     },
+     {
+      "id": "ICH-CP-031",
+      "cita": "complesso di Dio"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "doppio": {
+    "v": "la donna che muore nei suoi sogni",
+    "fonte": [
+     {
+      "id": "ICH-CP-030",
+      "cita": "complesso di Dio"
+     },
+     {
+      "id": "IMP-ICH-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Doppio proposto dal background dell'archetipo; da approvare."
+   },
+   "domanda": {
+    "v": "Che cosa è reale per questo personaggio, e chi lo scrive?",
+    "fonte": [
+     {
+      "id": "ICH-CP-036",
+      "cita": "Sei tu a renderlo reale"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   "natura": {
+    "v": "La natura del personaggio è riservata fino all'Atto III.",
+    "fonte": [
+     {
+      "id": "AUT-003"
+     }
+    ],
+    "classe": "canonico_riservato",
+    "limite": null
+   }
+  },
+  "orm": {
+   "modello": {
+    "v": "Arco come negoziazione con un doppio interiore che incarna il difetto; una prova lo porta allo scoperto.",
+    "fonte": [
+     {
+      "id": "ICH-CP-030",
+      "cita": "complesso di Dio"
+     },
+     {
+      "id": "ICH-CP-031",
+      "cita": "complesso di Dio"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "doppio": {
+    "v": "il bosco che vuole trattenere tutti",
+    "fonte": [
+     {
+      "id": "ICH-CP-030",
+      "cita": "complesso di Dio"
+     },
+     {
+      "id": "IMP-ICH-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Doppio proposto dal background dell'archetipo; da approvare."
+   },
+   "domanda": {
+    "v": "Che cosa è reale per questo personaggio, e chi lo scrive?",
+    "fonte": [
+     {
+      "id": "ICH-CP-036",
+      "cita": "Sei tu a renderlo reale"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   "natura": {
+    "v": "La natura del personaggio è riservata fino all'Atto III.",
+    "fonte": [
+     {
+      "id": "AUT-003"
+     }
+    ],
+    "classe": "canonico_riservato",
+    "limite": null
+   }
+  },
+  "sigrid": {
+   "modello": {
+    "v": "Arco come negoziazione con un doppio interiore che incarna il difetto; una prova lo porta allo scoperto.",
+    "fonte": [
+     {
+      "id": "ICH-CP-030",
+      "cita": "complesso di Dio"
+     },
+     {
+      "id": "ICH-CP-031",
+      "cita": "complesso di Dio"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   "doppio": {
+    "v": "lo spettro che rifiuta di andarsene",
+    "fonte": [
+     {
+      "id": "ICH-CP-030",
+      "cita": "complesso di Dio"
+     },
+     {
+      "id": "IMP-ICH-ARCHETIPI"
+     }
+    ],
+    "classe": "proposta",
+    "limite": "Doppio proposto dal background dell'archetipo; da approvare."
+   },
+   "domanda": {
+    "v": "Che cosa è reale per questo personaggio, e chi lo scrive?",
+    "fonte": [
+     {
+      "id": "ICH-CP-036",
+      "cita": "Sei tu a renderlo reale"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   "natura": {
+    "v": "La natura del personaggio è riservata fino all'Atto III.",
+    "fonte": [
+     {
+      "id": "AUT-003"
+     }
+    ],
+    "classe": "canonico_riservato",
+    "limite": null
+   }
+  }
+ },
+ "rivelazioni": {
+  "scala": {
+   "v": [
+    {
+     "fatto": "ich_truth_white_path",
+     "atto": 1,
+     "dopo": [],
+     "chiSa": []
+    },
+    {
+     "fatto": "ich_truth_voluspa",
+     "atto": 2,
+     "dopo": [],
+     "chiSa": [
+      "ragn"
+     ]
+    },
+    {
+     "fatto": "ich_truth_ghosts",
+     "atto": 2,
+     "dopo": [],
+     "chiSa": [
+      "elska",
+      "liva"
+     ]
+    },
+    {
+     "fatto": "ich_truth_skera",
+     "atto": 2,
+     "dopo": [],
+     "chiSa": []
+    },
+    {
+     "fatto": "ich_truth_kyn",
+     "atto": 2,
+     "dopo": [],
+     "chiSa": [
+      "eiran"
+     ]
+    },
+    {
+     "fatto": "ich_truth_recomposition",
+     "atto": 2,
+     "dopo": [
+      "ich_truth_white_path"
+     ],
+     "chiSa": []
+    },
+    {
+     "fatto": "ich_truth_therapy",
+     "atto": 3,
+     "dopo": [
+      "ich_truth_recomposition"
+     ],
+     "chiSa": []
+    },
+    {
+     "fatto": "ich_fact_natura_alva",
+     "atto": 3,
+     "dopo": [
+      "ich_truth_therapy"
+     ],
+     "chiSa": []
+    },
+    {
+     "fatto": "ich_fact_natura_tovar",
+     "atto": 3,
+     "dopo": [
+      "ich_truth_therapy"
+     ],
+     "chiSa": []
+    },
+    {
+     "fatto": "ich_fact_natura_eydis",
+     "atto": 3,
+     "dopo": [
+      "ich_truth_therapy"
+     ],
+     "chiSa": []
+    },
+    {
+     "fatto": "ich_fact_natura_orm",
+     "atto": 3,
+     "dopo": [
+      "ich_truth_therapy"
+     ],
+     "chiSa": []
+    },
+    {
+     "fatto": "ich_fact_natura_sigrid",
+     "atto": 3,
+     "dopo": [
+      "ich_truth_therapy"
+     ],
+     "chiSa": []
+    }
+   ],
+   "fonte": [
+    {
+     "id": "IMP-ICH-STRUTTURA"
+    },
+    {
+     "id": "IMP-ICH-CAMPAGNA"
+    }
+   ],
+   "classe": "proposta",
+   "limite": "La verità terapeutica e la natura dei personaggi solo all'Atto III (AUT-003)."
+  },
+  "regola": {
+   "v": "Prima la percezione nel linguaggio del mondo, poi la verità solo all'Atto III.",
+   "fonte": [
+    {
+     "id": "AUT-003"
+    },
+    {
+     "id": "PRM-001",
+     "cita": "Descrivi prima ciò che il personaggio percepisce secondo il linguaggio interno del mondo"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  }
+ },
+ "limitiSpoiler": [
+  {
+   "v": "Nessuna anticipazione dell'Atto III: prima solo percezioni nel linguaggio del mondo.",
+   "fonte": [
+    {
+     "id": "AUT-003"
+    },
+    {
+     "id": "PRM-001",
+     "cita": "Descrivi prima ciò che il personaggio percepisce secondo il linguaggio interno del mondo"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  {
+   "v": "Il lessico tecnico entra nel prompt solo dopo lo sblocco della verità terapeutica.",
+   "fonte": [
+    {
+     "id": "AUT-003"
+    },
+    {
+     "id": "IMP-ICH-VOCE"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  {
+   "v": "Nessuna scena esterna mostra al giocatore ciò che il protagonista non può sapere.",
+   "fonte": [
+    {
+     "id": "AUT-003"
+    },
+    {
+     "id": "ICH-CP-017",
+     "cita": "Scena Esterna"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  }
+ ],
+ "fili": {
+  "tipiConseguenza": [
+   {
+    "v": "legame perduto o dimenticato",
+    "fonte": [
+     {
+      "id": "ICH-CP-013",
+      "cita": "non voglio più essere l'ombra di nessuno"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   {
+    "v": "promessa o rito da compiere",
+    "fonte": [
+     {
+      "id": "ICH-CP-004",
+      "cita": "lasciatemi posare la mia ultima piuma"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "presagio che torna",
+    "fonte": [
+     {
+      "id": "ICH-CP-040",
+      "cita": "god is in details"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  ]
+ },
+ "riserva": {
+  "spostamento": {
+   "v": [
+    "Segui il sentiero lungo la riva, tra canne e nebbia.",
+    "Attraversi il bosco, dove i rami si chiudono sopra di te.",
+    "Cammini tra case di legno e fumo di focolari.",
+    "Il freddo ti accompagna fino al prossimo fuoco acceso."
+   ],
+   "fonte": [
+    {
+     "id": "IMP-FEEDBACK",
+     "cita": "Segui il sentiero lungo la riva, tra canne e nebbia."
+    },
+    {
+     "id": "ICH-CP-018",
+     "cita": "chiedile come vuole accamparsi per la notte"
+    }
+   ],
+   "classe": "proposta",
+   "limite": null
+  }
+ },
+ "interpreteParole": {
+  "v": {
+   "Politica": [
+    "hersir",
+    "jarl",
+    "clan",
+    "stad",
+    "giurament"
+   ],
+   "Orientamento": [
+    "sentier",
+    "bosco",
+    "riva",
+    "runa"
+   ],
+   "Sopravvivenza": [
+    "nebbia",
+    "freddo",
+    "neve",
+    "traccia"
+   ]
+  },
+  "fonte": [
+   {
+    "id": "IMP-NARRATORE",
+    "cita": "concilio"
+   },
+   {
+    "id": "IMP-ICH-CAMPAGNA"
+   }
+  ],
+  "classe": "proposta",
+  "limite": "Radici per l'interprete di riserva, solo con Ich attiva."
+ },
+ "improvvisazione": {
+  "ammesso": [
+   {
+    "v": "Abitanti, riti, cibi, canti e oggetti coerenti con clan e luogo.",
+    "fonte": [
+     {
+      "id": "ICH-PRE-001",
+      "cita": "Verdafridir"
+     },
+     {
+      "id": "ICH-CP-013",
+      "cita": "Scene libere"
+     }
+    ],
+    "classe": "deducibile",
+    "limite": null
+   },
+   {
+    "v": "Anomalie percepite (un déjà-vu, una frase incompresa, un dettaglio ripetuto) senza spiegazione.",
+    "fonte": [
+     {
+      "id": "ICH-CP-040",
+      "cita": "god is in details"
+     },
+     {
+      "id": "PRM-001",
+      "cita": "Descrivi prima ciò che il personaggio percepisce secondo il linguaggio interno del mondo"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  ],
+  "vietato": [
+   {
+    "v": "Spiegare la natura del mondo, nominare programmi, server, utenti o terapie prima dello sblocco.",
+    "fonte": [
+     {
+      "id": "AUT-003"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Introdurre magie, popoli, tecnologie o immagini di altre ambientazioni.",
+    "fonte": [
+     {
+      "id": "AUT-005"
+     },
+     {
+      "id": "PRM-001",
+      "cita": "Non importare strutture sociali, magie, tecnologie o immagini"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Usare l'ironia drammatica: mostrare ciò che il protagonista non sa.",
+    "fonte": [
+     {
+      "id": "AUT-003"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   },
+   {
+    "v": "Completare l'arco di Leita o gli appunti incompiuti dell'autore.",
+    "fonte": [
+     {
+      "id": "ICH-CP-043",
+      "cita": "non è emerso a dovere"
+     }
+    ],
+    "classe": "canonico_pubblico",
+    "limite": null
+   }
+  ]
+ },
+ "strutturaLunga": {
+  "macroCapitoli": {
+   "v": [
+    "H01",
+    "H02",
+    "H03",
+    "H04",
+    "H05",
+    "H06",
+    "H07",
+    "H08",
+    "H09",
+    "H10",
+    "H11",
+    "H12",
+    "H13",
+    "H14",
+    "H15",
+    "H16",
+    "H17"
+   ],
+   "fonte": [
+    {
+     "id": "IMP-ICH-STRUTTURA"
+    }
+   ],
+   "classe": "proposta",
+   "limite": null
+  },
+  "modelloBlocchi": {
+   "v": "Prove separate → convergenza e rete → salto di tempo → luoghi sacri tematici → guerra e scelta.",
+   "fonte": [
+    {
+     "id": "ICH-CP-016",
+     "cita": "Passati due anni di addestramento"
+    },
+    {
+     "id": "ICH-CP-012",
+     "cita": "Break the chains"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "persistenzaSecondari": {
+   "v": "Le scene non giocate restano in attesa e ritornano in capitoli successivi.",
+   "fonte": [
+    {
+     "id": "ICH-CP-009",
+     "cita": "Crossroads"
+    },
+    {
+     "id": "ICH-CP-010",
+     "cita": "Crossroads"
+    }
+   ],
+   "classe": "canonico_pubblico",
+   "limite": null
+  },
+  "snodiMetodo": {
+   "v": {
+    "I_radici": {
+     "atto": 1,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "I_persona": {
+     "atto": 1,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "I_spettro": {
+     "atto": 1,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "I_sentiero": {
+     "atto": 1,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "I_rito": {
+     "atto": 1,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "II_sogni": {
+     "atto": 2,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "II_liva": {
+     "atto": 2,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "II_soren": {
+     "atto": 2,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "II_kyn": {
+     "atto": 2,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "II_elska": {
+     "atto": 2,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "II_nodo": {
+     "atto": 2,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "archi"
+     ]
+    },
+    "III_fruitore": {
+     "atto": 3,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "rivelazioni"
+     ]
+    },
+    "III_kyn": {
+     "atto": 3,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "rivelazioni"
+     ]
+    },
+    "III_protocollo": {
+     "atto": 3,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "rivelazioni"
+     ]
+    },
+    "III_radici": {
+     "atto": 3,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "rivelazioni"
+     ]
+    },
+    "III_climax": {
+     "atto": 3,
+     "aspetti": [
+      "presagi",
+      "decisioniConseguenze",
+      "rivelazioni"
+     ]
+    }
+   },
+   "fonte": [
+    {
+     "id": "IMP-ICH-STRUTTURA"
+    }
+   ],
+   "classe": "proposta",
+   "limite": null
+  },
+  "funzioniScena": {
+   "v": [
+    "luogo e rito",
+    "percezione anomala",
+    "scelta fra più strade",
+    "conseguenza su un legame"
+   ],
+   "fonte": [
+    {
+     "id": "ICH-CP-009",
+     "cita": "Qui ci sono tre strade"
+    },
+    {
+     "id": "ICH-CP-025",
+     "cita": "Sistema in avaria"
+    }
+   ],
+   "classe": "deducibile",
+   "limite": null
+  }
+ },
+ "collegamentiRiservati": [
+  {
+   "v": "Le fonti di Ich nominano Icaro, la Repubblica Pannazionale e il brain freeze: collegamenti meta fra campagne.",
+   "fonte": [
+    {
+     "id": "ICH-CP-004"
+    },
+    {
+     "id": "ICH-CP-021"
+    }
+   ],
+   "classe": "canonico_riservato",
+   "limite": "Mai trasferiti, mai rivelati in partita."
+  }
+ ],
+ "incompleti": [
+  {
+   "v": null,
+   "fonte": [
+    {
+     "id": "ICH-CP-043",
+     "cita": "non è emerso a dovere"
+    }
+   ],
+   "classe": "incompleto",
+   "limite": "Arco di Leita (madre e figlia): previsto ma incompiuto."
+  }
+ ]
+}
