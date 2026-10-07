@@ -1,0 +1,36 @@
+{
+  "name": "Role Makers",
+  "subtitle": "Companion app di Role Makers System",
+  "description": "Sorgente di installazione e aggiornamento per Role Makers su iOS.",
+  "iconURL": "https://rolemakers.it/icons/icon-512.png",
+  "tintColor": "#14161A",
+  "website": "https://rolemakers.it",
+  "sourceURL": "https://raw.githubusercontent.com/mauromameliarchitetto-afk/MinimalSystem-Releases/altstore/apps.json",
+  "apps": [
+    {
+      "name": "Role Makers",
+      "bundleIdentifier": "it.rolemakers.app",
+      "developerName": "Role Makers",
+      "subtitle": "Companion app di Role Makers System",
+      "localizedDescription": "Companion app del gioco di ruolo Role Makers System.",
+      "iconURL": "https://rolemakers.it/icons/icon-512.png",
+      "tintColor": "#14161A",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "1.0.346",
+          "buildVersion": "346",
+          "date": "2026-10-07T00:20:13Z",
+          "downloadURL": "https://github.com/mauromameliarchitetto-afk/MinimalSystem-Releases/releases/download/ios-v1.0.346/Role-Makers-System-v1.0.346.ipa",
+          "size": 32511479,
+          "minOSVersion": "13.0"
+        }
+      ],
+      "version": "1.0.346",
+      "versionDate": "2026-10-07T00:20:13Z",
+      "downloadURL": "https://github.com/mauromameliarchitetto-afk/MinimalSystem-Releases/releases/download/ios-v1.0.346/Role-Makers-System-v1.0.346.ipa",
+      "size": 32511479
+    }
+  ],
+  "news": []
+}
