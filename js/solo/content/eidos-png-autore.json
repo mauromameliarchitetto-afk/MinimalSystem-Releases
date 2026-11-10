@@ -1,0 +1,925 @@
+{
+ "formato": "rm-solo-png-autore/1",
+ "storia": "eidos",
+ "stato": "proposta (2026-10-18): distillato dagli script e dalle giocate dell'autore; non caricato dal motore; da approvare",
+ "avviso": "I campi pubblici non contengono nulla di riservato (scripts/solo-riservato.js); il riservato sta in `riservato` con la condizione di rivelazione. I personaggi dei giocatori (scripts/solo-pg-autore.js) non sono PNG e nelle trame sono anonimi («[PG]»); `trama` indica la fonte (le tre giocate di Eidos restano separate).",
+ "fonti": {
+  "documenti": 87,
+  "script_e_giocate": [
+   "incipit",
+   "resoconto",
+   "script",
+   "trascrizione"
+  ]
+ },
+ "png": [
+  {
+   "nome": "Teersa",
+   "righe": 241,
+   "file": 10,
+   "arco": {
+    "dal": 0.1,
+    "al": 0.34
+   },
+   "obiettivo": {
+    "testo": "Tenere la squadra disciplinata e pronta alla missione sul campo",
+    "certezza": "esplicita",
+    "fonte": [
+     "Capitolo 4 - Ghosts - Script",
+     "Capitolo 6 - The sons of liberty"
+    ]
+   },
+   "paura": null,
+   "bisogno": {
+    "testo": "Soldati in forma sul campo, non cadaveri",
+    "certezza": "esplicita",
+    "fonte": [
+     "Capitolo 4 - Ghosts - Script",
+     "Capitolo 6 - The sons of liberty"
+    ]
+   },
+   "voce": {
+    "paroleMedie": 17.7,
+    "brevi": 0.16,
+    "domande": 0.3,
+    "puntini": 0.0,
+    "esclamazioni": 0.13,
+    "paroleRicorrenti": [
+     "teersa",
+     "kendas",
+     "jagon",
+     "direzione",
+     "tageti"
+    ]
+   },
+   "relazioni": [
+    "Tageti",
+    "Teb",
+    "Kendas",
+    "Ktara"
+   ],
+   "trame": [
+    "Eidos V2"
+   ],
+   "riservato": [
+    {
+     "tema": "riservato",
+     "testo": "Teersa inizia a contattare i suoi, parla con Flea (Psylea) che le chiede dei soccorsi poi contatta la squadra che ha recuperato un elicottero per informarli della presenza di feriti a nord di…",
+     "rivela_se": "mai (canone riservato dell'autore)",
+     "fonte": "Capitolo 13 - Robert_s ashes.docx"
+    }
+   ],
+   "ruolo": "ufficiale di squadra, brusca, con un'armatura potenziata"
+  },
+  {
+   "nome": "Hope",
+   "righe": 234,
+   "file": 31,
+   "arco": {
+    "dal": 0.31,
+    "al": 0.94
+   },
+   "obiettivo": {
+    "testo": "Convincere chi può a unirsi per cambiare le cose dall'interno, senza uccidere",
+    "certezza": "esplicita",
+    "fonte": [
+     "Sottocapitolo 1-13_Crash"
+    ]
+   },
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 22.5,
+    "brevi": 0.07,
+    "domande": 0.28,
+    "puntini": 0.04,
+    "esclamazioni": 0.04,
+    "paroleRicorrenti": [
+     "comune",
+     "carta",
+     "parare",
+     "cadrà",
+     "canzone"
+    ]
+   },
+   "relazioni": [
+    "Erebo",
+    "Matthaios",
+    "Hermes",
+    "Ava"
+   ],
+   "trame": [
+    "A Hiberic Story (Eidos Marmotte)",
+    "Eidos V2",
+    "Roots of War"
+   ],
+   "riservato": [
+    {
+     "tema": "riservato",
+     "testo": "Hope parlerà con [PG] delle regole che vogliono scrivere, gli dirà che ha parlato con Minho in merito al partire con [PG] e quindi poi di iniziare a muovere la gente indifesa verso Erissa",
+     "rivela_se": "mai (canone riservato dell'autore)",
+     "fonte": "Capitolo 43.docx"
+    }
+   ],
+   "ruolo": "organizzatrice di un gruppo che vuole cambiare le cose dall'interno"
+  },
+  {
+   "nome": "Foeh",
+   "righe": 202,
+   "file": 35,
+   "arco": {
+    "dal": 0.1,
+    "al": 0.93
+   },
+   "obiettivo": {
+    "testo": "Vendicarsi di chi l'ha ferita",
+    "certezza": "dedotta",
+    "fonte": [
+     "Capitolo 46 - The world that we can design",
+     "Capitolo 31 - A land of all"
+    ]
+   },
+   "paura": {
+    "testo": "Essere morta",
+    "certezza": "esplicita",
+    "fonte": [
+     "Capitolo 46 - The world that we can design",
+     "Capitolo 31 - A land of all"
+    ]
+   },
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 19.1,
+    "brevi": 0.07,
+    "domande": 0.33,
+    "puntini": 0.01,
+    "esclamazioni": 0.13,
+    "paroleRicorrenti": [
+     "regina",
+     "fuoco",
+     "piaciuto",
+     "fighetta",
+     "incollato",
+     "fiamma"
+    ]
+   },
+   "relazioni": [
+    "Ligo",
+    "Sidd",
+    "Thillion",
+    "Joseph"
+   ],
+   "trame": [
+    "A Hiberic Story (Eidos Marmotte)",
+    "Eidos V2",
+    "Roots of War"
+   ],
+   "riservato": [],
+   "ruolo": "combattente del fuoco, legata a Ligo"
+  },
+  {
+   "nome": "Dimitri",
+   "righe": 194,
+   "file": 23,
+   "arco": {
+    "dal": 0.24,
+    "al": 0.79
+   },
+   "obiettivo": {
+    "testo": "Rafforzare il potere della famiglia",
+    "certezza": "esplicita",
+    "fonte": [
+     "Capitolo 9 - Adranès",
+     "19_Your Chance to the future"
+    ]
+   },
+   "paura": {
+    "testo": "Che qualcosa di male accada alla sorella [PG]",
+    "certezza": "dedotta",
+    "fonte": [
+     "Capitolo 9 - Adranès",
+     "19_Your Chance to the future"
+    ]
+   },
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 20.1,
+    "brevi": 0.07,
+    "domande": 0.14,
+    "puntini": 0.01,
+    "esclamazioni": 0.07,
+    "paroleRicorrenti": [
+     "dimitri",
+     "dorcas",
+     "pubblico",
+     "mettere",
+     "grande",
+     "militari"
+    ]
+   },
+   "relazioni": [
+    "Matthaios",
+    "Anastasios",
+    "Teersa",
+    "Afelis"
+   ],
+   "trame": [
+    "Eidos V2"
+   ],
+   "riservato": [],
+   "ruolo": "figlio di una famiglia potente, guida gli uomini a scorta del padre, fratello di [PG]"
+  },
+  {
+   "nome": "Karya",
+   "righe": 162,
+   "file": 24,
+   "arco": {
+    "dal": 0.3,
+    "al": 0.93
+   },
+   "obiettivo": {
+    "testo": "Guidare il gruppo al fianco di [PG]",
+    "certezza": "esplicita",
+    "fonte": [
+     "Capitolo 26 - Vengeance",
+     "Capitolo 17 - The meeting"
+    ]
+   },
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 19.8,
+    "brevi": 0.13,
+    "domande": 0.34,
+    "puntini": 0.01,
+    "esclamazioni": 0.06,
+    "paroleRicorrenti": [
+     "karya",
+     "justice",
+     "salvare",
+     "salvato",
+     "sorride",
+     "dispiace"
+    ]
+   },
+   "relazioni": [
+    "Tessa",
+    "Egil",
+    "Matthaios",
+    "Damian"
+   ],
+   "trame": [
+    "A Hiberic Story (Eidos Marmotte)",
+    "Eidos V2"
+   ],
+   "riservato": [],
+   "ruolo": "responsabile di un porto, con uno studio nelle cabine"
+  },
+  {
+   "nome": "Thillion",
+   "righe": 146,
+   "file": 9,
+   "arco": {
+    "dal": 0.1,
+    "al": 0.33
+   },
+   "obiettivo": {
+    "testo": "Farsi scortare a sud e rispettare il patto di Crio",
+    "certezza": "esplicita",
+    "fonte": [
+     "Domino",
+     "Capitolo 3 - A Cruel World pt.2 - Script"
+    ]
+   },
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 18.4,
+    "brevi": 0.11,
+    "domande": 0.16,
+    "puntini": 0.01,
+    "esclamazioni": 0.13,
+    "paroleRicorrenti": [
+     "thillion",
+     "xenos",
+     "soppressori",
+     "sopra",
+     "trovata",
+     "soppressione"
+    ]
+   },
+   "relazioni": [
+    "Sidd",
+    "Ligo",
+    "Suna",
+    "Foeh"
+   ],
+   "trame": [
+    "Eidos V2"
+   ],
+   "riservato": [],
+   "ruolo": "capo di una squadra armata"
+  },
+  {
+   "nome": "Tessa",
+   "righe": 137,
+   "file": 8,
+   "arco": {
+    "dal": 0.36,
+    "al": 0.51
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 19.5,
+    "brevi": 0.12,
+    "domande": 0.21,
+    "puntini": 0.0,
+    "esclamazioni": 0.04,
+    "paroleRicorrenti": [
+     "tessa",
+     "ottenere",
+     "obbiettivi",
+     "libertà",
+     "sistema",
+     "anastasios"
+    ]
+   },
+   "relazioni": [
+    "Karya",
+    "Jagon",
+    "Egos",
+    "Vlad"
+   ],
+   "trame": [
+    "Eidos V2"
+   ],
+   "riservato": [],
+   "ruolo": "capo di una squadra armata che entra nelle sedi nemiche"
+  },
+  {
+   "nome": "Matthaios",
+   "righe": 100,
+   "file": 19,
+   "arco": {
+    "dal": 0.24,
+    "al": 0.93
+   },
+   "obiettivo": {
+    "testo": "Fare rapporto a [PG] su quanto sta accadendo",
+    "certezza": "esplicita",
+    "fonte": [
+     "Capitolo 44",
+     "Capitolo 30 - A Land of all pt.1"
+    ]
+   },
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 18.6,
+    "brevi": 0.11,
+    "domande": 0.21,
+    "puntini": 0.01,
+    "esclamazioni": 0.09,
+    "paroleRicorrenti": [
+     "matthaios",
+     "segnale",
+     "fronte",
+     "generale",
+     "uomini",
+     "appena"
+    ]
+   },
+   "relazioni": [
+    "Dimitri",
+    "Hope",
+    "Karya",
+    "Teersa"
+   ],
+   "trame": [
+    "A Hiberic Story (Eidos Marmotte)",
+    "Eidos V2"
+   ],
+   "riservato": [
+    {
+     "tema": "riservato",
+     "testo": "Matthaios dirà a [PG] di rimanersene ad Erissa, essendo storpio è meglio che stia li",
+     "rivela_se": "mai (canone riservato dell'autore)",
+     "fonte": "Capitolo 46 - The world that we can design.docx"
+    }
+   ],
+   "ruolo": "ufficiale agli ordini di Dimitri e di [PG]; finisce davanti a un tribunale militare"
+  },
+  {
+   "nome": "Erebo",
+   "righe": 90,
+   "file": 12,
+   "arco": {
+    "dal": 0.17,
+    "al": 0.6
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 21.1,
+    "brevi": 0.07,
+    "domande": 0.36,
+    "puntini": 0.02,
+    "esclamazioni": 0.0,
+    "paroleRicorrenti": [
+     "erebo",
+     "capisci",
+     "amico",
+     "ragazza",
+     "scontro",
+     "combattere"
+    ]
+   },
+   "relazioni": [
+    "Hope",
+    "Hermes",
+    "Karya",
+    "Crio"
+   ],
+   "trame": [
+    "Eidos V2"
+   ],
+   "riservato": [],
+   "ruolo": null
+  },
+  {
+   "nome": "Damian",
+   "righe": 84,
+   "file": 13,
+   "arco": {
+    "dal": 0.42,
+    "al": 0.93
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 22.6,
+    "brevi": 0.14,
+    "domande": 0.25,
+    "puntini": 0.02,
+    "esclamazioni": 0.06,
+    "paroleRicorrenti": [
+     "damian",
+     "scambio",
+     "bella",
+     "padre",
+     "farmi"
+    ]
+   },
+   "relazioni": [
+    "Karya",
+    "Dimitri",
+    "Soldato",
+    "L’arithmi"
+   ],
+   "trame": [
+    "A Hiberic Story (Eidos Marmotte)",
+    "Eidos V2"
+   ],
+   "riservato": [],
+   "ruolo": null
+  },
+  {
+   "nome": "Sidd",
+   "righe": 80,
+   "file": 10,
+   "arco": {
+    "dal": 0.03,
+    "al": 0.47
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 16.0,
+    "brevi": 0.16,
+    "domande": 0.28,
+    "puntini": 0.0,
+    "esclamazioni": 0.04,
+    "paroleRicorrenti": [
+     "mostro",
+     "ragazzo",
+     "visto",
+     "qualcosa",
+     "thillion"
+    ]
+   },
+   "relazioni": [
+    "Thillion",
+    "Foeh",
+    "Ligo",
+    "Loke"
+   ],
+   "trame": [
+    "Eidos V2"
+   ],
+   "riservato": [],
+   "ruolo": null
+  },
+  {
+   "nome": "Hermes",
+   "righe": 74,
+   "file": 15,
+   "arco": {
+    "dal": 0.17,
+    "al": 0.95
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 19.4,
+    "brevi": 0.09,
+    "domande": 0.31,
+    "puntini": 0.0,
+    "esclamazioni": 0.09,
+    "paroleRicorrenti": [
+     "hermes",
+     "perdere",
+     "insieme",
+     "chorisfos"
+    ]
+   },
+   "relazioni": [
+    "Hope",
+    "Hemres",
+    "Erebo",
+    "Foeh"
+   ],
+   "trame": [
+    "A Hiberic Story (Eidos Marmotte)",
+    "Eidos V2"
+   ],
+   "riservato": [
+    {
+     "tema": "segreto",
+     "testo": "Successivamente questo diventerà un punto di attrito tra lei e Turi con lei che nasconde la cosa e Hermes che si approfitta del segreto per torturare [PG].",
+     "rivela_se": "condizione non indicata negli script: a cura dell'autore",
+     "fonte": "A Hiberic Story.docx"
+    }
+   ],
+   "ruolo": null
+  },
+  {
+   "nome": "Alida",
+   "righe": 72,
+   "file": 12,
+   "arco": {
+    "dal": 0.07,
+    "al": 0.33
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 16.0,
+    "brevi": 0.17,
+    "domande": 0.21,
+    "puntini": 0.0,
+    "esclamazioni": 0.14,
+    "paroleRicorrenti": [
+     "alida",
+     "azzannatori",
+     "cerco",
+     "torre",
+     "senti"
+    ]
+   },
+   "relazioni": [
+    "Thillion",
+    "Ligo",
+    "Nill",
+    "Loke"
+   ],
+   "trame": [
+    "Eidos V2"
+   ],
+   "riservato": [],
+   "ruolo": null
+  },
+  {
+   "nome": "Ligo",
+   "righe": 58,
+   "file": 15,
+   "arco": {
+    "dal": 0.07,
+    "al": 0.6
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 17.0,
+    "brevi": 0.12,
+    "domande": 0.26,
+    "puntini": 0.0,
+    "esclamazioni": 0.0,
+    "paroleRicorrenti": [
+     "ragione",
+     "sorella",
+     "signore",
+     "squadra",
+     "capitano",
+     "credo"
+    ]
+   },
+   "relazioni": [
+    "Foeh",
+    "Thillion",
+    "Sidd",
+    "Tracy"
+   ],
+   "trame": [
+    "Eidos V2"
+   ],
+   "riservato": [],
+   "ruolo": null
+  }
+ ],
+ "ramificazioni": [
+  {
+   "testo": "Se chiede: Teersa – “ah, report… nulla di che”",
+   "fonte": "Capitolo 4 - Ghosts - Script.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Se non ha una poker-face Mors capirà",
+   "fonte": "Capitolo 9 - Adranès.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Se chiede come si chiamava: Alexander Dam",
+   "fonte": "14 - Coming home.docx",
+   "trama": "Eidos V2"
+  }
+ ],
+ "colpiDiScena": [
+  {
+   "testo": "Questa luce esplode dividendosi in tre frammenti.",
+   "fonte": "Ep. 0.1 - Intro.docx",
+   "trama": "Roots of War"
+  },
+  {
+   "testo": "La nave esplode e lei finisce in mezzo alle onde, vede qualcosa di luminoso brillare in mezzo alla notte sotto le onde.",
+   "fonte": "Ep. 0.1 - Intro.docx",
+   "trama": "Roots of War"
+  },
+  {
+   "testo": "Avranno modo di conoscersi meglio, il mercante alla fine si scopre che non sa leggere quelle scritte che [PG] ha recuperato e persino Petra sembra decifrarle a fatica.",
+   "fonte": "Ep. 3 - Simboli.docx",
+   "trama": "Roots of War"
+  },
+  {
+   "testo": "Loke sembra stremato e crolla addormentato sul sedile",
+   "fonte": "5_The heroes Circus.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Tira una freccia di fuoco con la gemma e la moto esplode sui Theras che seguivano [PG], gli altri li stanno circondando.",
+   "fonte": "Capitolo 8 - Echoes.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Poi sente rumore di esplosione e vede che la città crolla a pezzi da cima a fondo.|",
+   "fonte": "Domino.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Al suo risveglio vede un medico che le apre i bendaggi, qui scopre che la ferita non è una ma sono varie.",
+   "fonte": "Capitolo 13 - Robert_s ashes.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Si apre la porta improvvisamente, Anapnos entra con le sue guardie, a guidare c’è un uomo sulla trentina d’anni.",
+   "fonte": "Capitolo 13 - Robert_s ashes.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Dentro il casco [PG] scopre che Flea ha conservato dei dati criptati, informazioni che ha rimosso per farle trovare solo a lui però deve trovare la chiave d’accesso, un log di Alida dove la vede legarsi quel bracciale al polso, poi prende un bastoncino di…",
+   "fonte": "resoconto Evrae 1 Crash + Idee script 2.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "L’azione sembra non andare a buon fine quando un vomvatos esplode affianco al suo compagno oplitis.",
+   "fonte": "Capitolo 25 - Exodus.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "[PG] arriva a Phlegethia, viene sistemato in una camera e gli viene prestata assistenza da parte della sorella, scena tra i due, poi passa a [PG] con Pagonia, dopo di chè incontra Ethae che chiede di Suna e scopre che hanno perso comunicazione con la…",
+   "fonte": "Capitolo 32.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "La sua velocità cala all’improvviso e davanti a sé inizia a scorgere il campo di battaglia",
+   "fonte": "Capitolo 47 - End - The world that we can make.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Si scopre attraverso di lui che la gente qui ha ripopolato Drakte ma che erano epizi che hanno dimenticato con l’apertura dello squarcio.",
+   "fonte": "Riassunto Marmotte.docx",
+   "trama": "A Hiberic Story (Eidos Marmotte)"
+  }
+ ],
+ "conseguenze": [
+  {
+   "testo": "Per un attimo della terra va verso di lei, ma si ferma, come se non volesse colpirla.",
+   "fonte": "1_Through the path of the lies and ashes.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Rikà abbassa il volume della musica, poi Sebastian “Toglila, altrimenti si spegne.”",
+   "fonte": "2_Misia&Mohr.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "In questa placca c’è scritto “Delta 15” come se non fosse sua quell’armatura.",
+   "fonte": "3_Misia&Mohr.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Lui la guarda un po’ turbato per questo suo continuo parlare di Rikà.",
+   "fonte": "3_Misia&Mohr.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Lei lo lascia andare, anche se non vorrebbe, sa che non può stargli troppo addosso.",
+   "fonte": "3_Misia&Mohr.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Anche lei sarà un po’ in imbarazzo per questo contatto, sono quasi nudi e a contatto.",
+   "fonte": "3_Misia&Mohr.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Prende la spada come sempre e tende sempre a stare in una posizione che potrebbe evitarle dei colpi, un leggero passo in avanti, si guarda spesso alle spalle, si sente in dovere di proteggerla anche se non si sa perché.",
+   "fonte": "3_Misia&Mohr.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "La giustizia oggettiva non ascolta il cuore, per questo chi la segue ciecamente deve cedere una parte di sé alla causa, per un bene comune.",
+   "fonte": "Ep. 1 - Fragments of destiny.docx",
+   "trama": "Roots of War"
+  },
+  {
+   "testo": "La squadra di verrà mandata per questo recupero e lì ci sarà [PG], e altri npc",
+   "fonte": "Capitolo 1 - Awekening - Script.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Per lei la chiave è prevalere sul più forte, così come rappresentato nel numero uno, per lei quel numero è il simbolo di solitudine ma di supremazia, e per questo lei vuole essere la migliore sul campo.",
+   "fonte": "Capitolo 1 - Awekening - Script.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "In questa sezione si dovrà svolgere la loro diatriba, con Korkas che le chiederà di contribuire all’interrogatorio e che lei stessa è una prigioniera di guerra visto che ora Lectha, a causa di Talamis (il mercante), è in guerra con loro.",
+   "fonte": "Ep. 3 - Simboli.docx",
+   "trama": "Roots of War"
+  },
+  {
+   "testo": "Cose da dire, per questo spostamento tengono la tuta, ma una volta messo in stazione hanno camere per rimuovere l’armatura e una doccia",
+   "fonte": "Capitolo 4 - Ghosts - Script.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Se non riesce fa avvicinare anche [PG]",
+   "fonte": "5_The heroes Circus.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "vede le sue mani cambiare, inizia a vomitare, ciò che vomita le sembra del veleno, si ricorda quando fu quasi morta per questo.",
+   "fonte": "Capitolo 6 - The sons of liberty.doc",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Se non lo sa lei gli spiega cosa hanno visto",
+   "fonte": "Capitolo 7 - Minds in progress.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Lo porta dentro l’edificio (4 piani) in mezzo ad un piazzale, non hanno altra scelta se non quella di nascondersi là dentro, arrivano mostri dalle strade che portano alla piazza.",
+   "fonte": "Capitolo 7 - Minds in progress.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "non hanno altra scelta se non quella di nascondersi là dentro, arrivano mostri dalle strade che portano alla piazza.",
+   "fonte": "Capitolo 8 - Echoes.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Si muove in maniera decisa, come se non si curasse di cosa ha attorno, punta un obbiettivo e lo raggiunge.",
+   "fonte": "Capitolo 8 - Echoes.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Ligo se non l’ha già aiutata [PG] va a curare Foeh, sennò si avvicina a loro e lo ringrazia e lo cura.",
+   "fonte": "Capitolo 8 - Echoes.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Alida ripone l’arco e mette il casco se non lo aveva.",
+   "fonte": "Capitolo 9 - Adranès.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Se non ha una poker-face Mors capirà",
+   "fonte": "Capitolo 9 - Adranès.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Thillion chiederà di essere scortati con i loro animali a sud, e che per questo continuerà a rispettare il patto di Crio.",
+   "fonte": "Domino.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "[PG] si ritroverà con Foeh, fagli fare una prova di cavalcare ma fagliela descrivere, se non riesce lo prende Foeh.",
+   "fonte": "Domino.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "[PG] segue un fuggitivo del gruppo che difendevano i guerrieri, se non lo fa Matthaios stesso lo spingerà ad inseguirlo, è un bambino di 10 anni che cercherà di animare le piante per difendersi.",
+   "fonte": "Domino.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Durante questo scontro viene ferito Ferem, [PG] inizia a sentire una sensazione strana al braccio destro, ogni tanto sente come se non avesse più presa con la lancia.",
+   "fonte": "Glass Cannon.docx",
+   "trama": "Eidos V2"
+  }
+ ],
+ "fronti": [
+  {
+   "testo": "Dopo la minaccia mossagli da parte di Petra chiedile come vuole agire.",
+   "fonte": "Ep. 3 - Simboli.docx",
+   "trama": "Roots of War"
+  },
+  {
+   "testo": "Quest’ultimo è affiancato da Snit e Zoi, che la fermano prima che lei possa intervenire.",
+   "fonte": "Ep. 9 - The weight of choices.docx",
+   "trama": "Roots of War"
+  },
+  {
+   "testo": "Poco prima che [PG] bruci il cubo Petra le chiederà di lasciarla attraversare lo squarcio, poiché in grado di vedere ancora Sifo.",
+   "fonte": "Ep. 12 Verso la speranza.docx",
+   "trama": "Roots of War"
+  },
+  {
+   "testo": "Flea mostra debolezza, dicendogli che lei sa che non potrà tornare nel suo corpo visto che ormai è privo di vita, si è spostata giusto in tempo dentro il casco di [PG] prima che anche il suo finisse male, lei lo ha aiutato a crearsi uno scudo.",
+   "fonte": "Sottocapitolo 1-13_Crash.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Hope mentre saluta [PG] prima che vada e mentre lui si volta",
+   "fonte": "First step towards the future me.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Poi lasciagli modo di andare in palestra chiudi prima che arrivi",
+   "fonte": "capitolo 21 - To mi Novia.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Parte l’assedio degli Adranès che in carica con il fothià aprono breccia sul muro",
+   "fonte": "Capitolo 31 - A land of all.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Ci vorrà del tempo prima che possano iniziare a pensare di perdonarlo, dopo tutto ciò che ha fatto.",
+   "fonte": "recita.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Le farà presente che c'è una delle tre spie che è portata ad agire solo perché sua moglie Aurora e Gisea sua figlia sono sotto minaccia di morte se lui non collabora.",
+   "fonte": "Capitolo 39.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "Prima che iniziate a vedere questo film vorrei che sappiate un'ultima cosa, senza questi eventi non sarei mai venuta al mondo...",
+   "fonte": "Eidos.docx",
+   "trama": "Eidos V2"
+  },
+  {
+   "testo": "[PG] finisce sotto a delle macerie e passerà del tempo prima che si riprenda del tutto.",
+   "fonte": "A Hiberic Story.docx",
+   "trama": "A Hiberic Story (Eidos Marmotte)"
+  },
+  {
+   "testo": "Lo scontro si conclude con una ritirata all’interno della città, gli uomini di Uran vengono attaccati da sopra le mura con armi da fuoco e questo sfoltisce tantissimo il numero dei guerrieri per l’assedio, il loro capo decide così di recuperare i feriti e di…",
+   "fonte": "A Hiberic Story.docx",
+   "trama": "A Hiberic Story (Eidos Marmotte)"
+  },
+  {
+   "testo": "[PG] poco prima che i due partano la ferma",
+   "fonte": "Fin.docx",
+   "trama": "A Hiberic Story (Eidos Marmotte)"
+  }
+ ]
+}

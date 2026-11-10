@@ -1,0 +1,374 @@
+{
+ "formato": "rm-solo-percorsi/1",
+ "storia": "icaro",
+ "stato": "proposta scritta in autonomia (2026-10-17), rivedibile in docs/single-player/DECISIONI_DA_RIVEDERE.md",
+ "obiettivi": {
+  "sopravvivere": {
+   "nome": "Sopravvivere",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "I01",
+     "titolo": "Otto minuti",
+     "indizio": "Il tempo è poco e non perdona esitazioni.",
+     "beat": "Il tempo è poco e non perdona esitazioni: si può fare la cosa giusta nell'ordine giusto.",
+     "tratti": [
+      "Meccanica",
+      "Sopravvivenza"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Fai le cose giuste nell'ordine giusto: gli otto minuti bastano.",
+      "parziale": "Fai quasi tutto in tempo: un conto resta aperto.",
+      "mancato": "Perdi minuti preziosi: il nodo è più vicino a fermarsi."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "I09",
+     "titolo": "Fuori dal riparo",
+     "indizio": "Oltre le cupole il gelo non fa sconti, a nessuno.",
+     "beat": "Oltre le cupole il gelo non fa sconti: si può reggere la tratta.",
+     "tratti": [
+      "Sopravvivenza",
+      "Resistenza"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Regge tutto: tuta, respiro, gelo. Torni dentro con il fiato intero.",
+      "parziale": "Torni, ma con la tuta e il respiro al limite.",
+      "mancato": "La tratta ti lascia {stremato|stremata|senza forze}: ci si arriva a malapena."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "I13",
+     "titolo": "Il collasso",
+     "indizio": "Una prova in cui resistere è l'unico obiettivo.",
+     "beat": "Una prova in cui resistere è l'unico obiettivo.",
+     "tratti": [
+      "Resistenza",
+      "Spirito"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Resisti fino all'ultimo e ne esci in piedi.",
+      "parziale": "Resisti, ma ne esci piegato.",
+      "mancato": "Cedi per un istante: qualcosa si perde."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "{Sei sopravvissuto|Sei sopravvissuta|Ce l'hai fatta}. Non per fortuna: per come hai scelto ogni minuto.",
+    "parziale": "{Sei sopravvissuto|Sei sopravvissuta|Ce l'hai fatta}, ma qualcosa ti è stato tolto lungo la strada.",
+    "mancato": "{Sei sopravvissuto per un soffio|Sei sopravvissuta per un soffio|Ce l'hai fatta per un soffio}. La prossima volta il soffio potrebbe non bastare."
+   }
+  },
+  "scalare_il_proprio_settore": {
+   "nome": "Scalare il proprio settore",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "I03",
+     "titolo": "Un ordine dall'alto",
+     "indizio": "Un ufficio, una firma, un posto da guadagnare.",
+     "beat": "Un ufficio, una firma, un posto da guadagnare: puoi farti notare nel modo giusto.",
+     "tratti": [
+      "Politica",
+      "Persuasione"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Dici la cosa giusta alla persona giusta: il tuo nome comincia a circolare.",
+      "parziale": "Ti noti, ma non abbastanza.",
+      "mancato": "Passi inosservato, o peggio."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "I07",
+     "titolo": "La linea che conta",
+     "indizio": "Per salire bisogna capire chi tiene in piedi tutto il resto.",
+     "beat": "Per salire bisogna capire chi tiene in piedi tutto il resto.",
+     "tratti": [
+      "Meccanica",
+      "Percezione"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Capisci chi tiene in piedi la linea e ti fai trovare dalla parte giusta.",
+      "parziale": "Capisci la linea, ma non chi la tiene.",
+      "mancato": "La linea ti resta incomprensibile."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "I12",
+     "titolo": "L'ultima revisione",
+     "indizio": "Un consiglio che decide chi merita di restare dov'è.",
+     "beat": "Un consiglio decide chi merita di restare dov'è.",
+     "tratti": [
+      "Persuasione",
+      "Politica"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Parli al consiglio e ti ascoltano: il tuo posto sale di un gradino.",
+      "parziale": "Parli e ti ascoltano a metà.",
+      "mancato": "Il consiglio non ti ascolta."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "Hai scalato il tuo settore: ora qualcuno guarda te per decidere chi sale.",
+    "parziale": "Hai guadagnato un gradino: il resto della scala è ancora lunga.",
+    "mancato": "{Sei rimasto dov'eri|Sei rimasta dov'eri|Non ti sei mosso}. Il settore ti conosce, ma non ti ha ancora scelto."
+   }
+  },
+  "conquistare_una_vita_agiata": {
+   "nome": "Conquistare una vita agiata",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "I03",
+     "titolo": "Il prezzo di un posto",
+     "indizio": "Una vita comoda si compra con qualcosa, di solito di altri.",
+     "beat": "Una vita comoda si compra con qualcosa, di solito di altri: puoi valutare il prezzo.",
+     "tratti": [
+      "Contrattazione",
+      "Politica"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Capisci il prezzo prima di pagarlo: puoi ancora tirarti indietro, e lo sai.",
+      "parziale": "Intuisci il prezzo, ma non quanto sia alto.",
+      "mancato": "Il prezzo ti sfugge e lo scoprirai dopo."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "I10",
+     "titolo": "Chi occupa cosa",
+     "indizio": "Occupare è facile; tenere ciò che si è preso, no.",
+     "beat": "Occupare è facile; tenere ciò che si è preso, no: puoi mettere al sicuro quello che hai.",
+     "tratti": [
+      "Contrattazione",
+      "Politica"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Metti al sicuro ciò che hai preso, senza far torto a nessuno che non debba farlo.",
+      "parziale": "Metti al sicuro quasi tutto.",
+      "mancato": "Non riesci a tenere ciò che hai preso."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "I15",
+     "titolo": "Cosa resta quando hai tutto",
+     "indizio": "Un momento in cui l'agio ha un costo che prima non vedevi.",
+     "beat": "Un momento in cui l'agio ha un costo che prima non vedevi.",
+     "tratti": [
+      "Spirito",
+      "Persuasione"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Guardi il costo in faccia e decidi con gli occhi aperti.",
+      "parziale": "Guardi il costo, ma solo a metà.",
+      "mancato": "Il costo ti viene presentato quando è tardi."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "Hai conquistato una vita agiata, sapendo quanto è costata e a chi.",
+    "parziale": "Hai una vita più comoda di prima: il conto, però, non è chiuso.",
+    "mancato": "La vita agiata non è arrivata. Restano le rovine, e ciò che hai deciso di non pagare."
+   }
+  },
+  "guarire_o_salvare_qualcuno": {
+   "nome": "Guarire o salvare qualcuno",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "I04",
+     "titolo": "Una persona da curare",
+     "indizio": "Qualcuno ha bisogno di aiuto e il sistema ha altro da fare.",
+     "beat": "Qualcuno ha bisogno di aiuto e il sistema ha altro da fare: puoi occuparti tu.",
+     "tratti": [
+      "Guarigione",
+      "Persuasione"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Ti prendi cura di chi il sistema ignora, e funziona.",
+      "parziale": "Fai ciò che puoi: non basta, ma aiuta.",
+      "mancato": "Non hai gli strumenti: dovrai trovarli."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "I08",
+     "titolo": "Copie e originali",
+     "indizio": "Salvare una vita può voler dire scegliere quale versione tenere.",
+     "beat": "Salvare una vita può voler dire scegliere quale versione tenere.",
+     "tratti": [
+      "Percezione",
+      "Spirito"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Scegli con attenzione e senza fretta: ciò che conservi è ciò che serve.",
+      "parziale": "Scegli, con un dubbio che non si spegne.",
+      "mancato": "Non riesci a scegliere in tempo."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "I14",
+     "titolo": "Il destino di un archivio",
+     "indizio": "Una scelta che decide se qualcosa viene conservato o perso per sempre.",
+     "beat": "Una scelta che decide se qualcosa viene conservato o perso per sempre.",
+     "tratti": [
+      "Spirito",
+      "Persuasione",
+      "Difesa Mentale"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Conservi ciò che conta, e chi hai curato ne ha un'altra possibilità.",
+      "parziale": "Conservi ciò che puoi: una parte va persa.",
+      "mancato": "Non riesci a conservare nulla: serve una strada nuova."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "Hai curato e salvato ciò che si poteva: ora chi era in pericolo respira da solo.",
+    "parziale": "Hai salvato una parte: il resto è nelle mani di chi resta.",
+    "mancato": "{Non sei riuscito a|Non sei riuscita a|Non ti è riuscito di} salvare come volevi. Resta la cura, e la strada per riprovarci."
+   }
+  },
+  "ridare_vita_al_pianeta": {
+   "nome": "Ridare vita al pianeta",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "I02",
+     "titolo": "Il censimento delle assenze",
+     "indizio": "Per far rinascere qualcosa bisogna prima contare ciò che manca.",
+     "beat": "Per far rinascere qualcosa bisogna prima contare ciò che manca: puoi tenere il conto.",
+     "tratti": [
+      "Percezione",
+      "Geografia"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Tieni un conto onesto di ciò che manca: è il primo passo per riempirlo.",
+      "parziale": "Il conto è parziale: manca qualcosa.",
+      "mancato": "Il conto non torna e non sai dove cercare l'errore."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "I09",
+     "titolo": "Segni di vita fuori dalle cupole",
+     "indizio": "Dove tutto è gelo, qualcosa potrebbe ancora crescere.",
+     "beat": "Dove tutto è gelo, qualcosa potrebbe ancora crescere: puoi riconoscerlo.",
+     "tratti": [
+      "Sopravvivenza",
+      "Flora"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Riconosci un segno di vita e lo segni sulla mappa.",
+      "parziale": "Intravedi un segno di vita e non {sei sicuro|sei sicura|hai certezze}.",
+      "mancato": "Non trovi nessun segno di vita."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "I16",
+     "titolo": "L'ultima occasione",
+     "indizio": "Un solo gesto può dare o togliere un'altra possibilità al mondo.",
+     "beat": "Un solo gesto può dare o togliere un'altra possibilità al mondo.",
+     "tratti": [
+      "Spirito",
+      "Persuasione"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Il gesto riesce: il mondo ha una possibilità in più.",
+      "parziale": "Il gesto riesce a metà: una possibilità resta.",
+      "mancato": "Il gesto non riesce: la possibilità si allontana."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "Hai dato una possibilità al pianeta: da oggi qualcosa può crescere.",
+    "parziale": "Hai acceso una piccola luce: non basta ancora, ma c'è.",
+    "mancato": "Il pianeta resta com'era. Hai però provato, e qualcuno lo sa."
+   }
+  },
+  "capire_cosa_ti_rende_umano": {
+   "nome": "Capire cosa ti rende umano",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "I02",
+     "titolo": "Un dato che non torna",
+     "indizio": "Alcune vite non entrano nei numeri, eppure ci sono.",
+     "beat": "Alcune vite non entrano nei numeri, eppure ci sono: puoi guardarle.",
+     "tratti": [
+      "Percezione",
+      "Spirito"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Guardi chi non sta nei numeri e capisci ciò che i numeri non dicono.",
+      "parziale": "Guardi, e capisci a metà.",
+      "mancato": "Guardi, e non capisci ancora."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "I08",
+     "titolo": "Cosa vale una copia",
+     "indizio": "Se qualcosa si può duplicare, cosa lo rende unico?",
+     "beat": "Se qualcosa si può duplicare, che cosa lo rende unico?",
+     "tratti": [
+      "Spirito",
+      "Difesa Mentale"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Trovi ciò che nessuna copia ha: e lo riconosci in te.",
+      "parziale": "Trovi una parte di ciò che nessuna copia ha.",
+      "mancato": "La domanda resta aperta."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "I15",
+     "titolo": "Riconoscimento",
+     "indizio": "Alla fine decidi chi, o cosa, merita di essere chiamato persona.",
+     "beat": "Alla fine decidi chi, o che cosa, merita di essere chiamato persona.",
+     "tratti": [
+      "Spirito",
+      "Persuasione"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Decidi con chiarezza, e la risposta ti appartiene.",
+      "parziale": "Decidi, con un dubbio.",
+      "mancato": "Non decidi: la risposta verrà da altri."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "Hai capito che cosa ti rende umano: e lo hai detto in un modo che chiunque può usare.",
+    "parziale": "Hai capito una parte: il resto ti accompagnerà.",
+    "mancato": "Non hai ancora una risposta. Hai però una domanda tua, che è già qualcosa."
+   }
+  }
+ }
+}

@@ -1,0 +1,1778 @@
+{
+ "formato": "rm-solo-interazioni/1",
+ "storia": "seconda-possibilita",
+ "scene": {
+  "V01": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V01x1",
+     "testo": "Esaminare il contratto",
+     "riserva": "Sul tetto del Red Mill il contratto mette una cifra davanti a ogni altra cosa: quindici anni di vita a testa. Dodici ore per recuperare i dati. Non aprirli, non coinvolgere i Patrioti. Sotto il tetto continua la vita di C3; il tempo promesso, per adesso, appartiene ancora a chi paga.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il file è stato visto a una riunione della Numan; alcuni membri della Epos Corp sono stati derubati e uccisi. Dalla parata arriva il discorso di Richard Philips: «Quale significato date alla vita?» La domanda pubblica accompagna un incarico che promette anni come compenso. La pista delle registrazioni conduce dalla Numan a Koga. Rabbit, Tommen e Lucas hanno bisogno della sua routine per la parata: in cambio offrono copertura.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V01d1",
+      "testo": "Seguire gli eventi: il contratto",
+      "riserva": "Non chiedono di consegnare loro il contenuto dei dati. Quando i Patrioti arrivano, il cargo del gruppo dei trasporti è la via rimasta per lasciare C3.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V01x1"
+    ],
+    "risoluzione": [
+     "V01d1"
+    ]
+   },
+   "required_beats": [
+    "V01x1",
+    "V01d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Sul tetto del Red Mill il contratto mette una cifra davanti a ogni altra cosa: quindici anni di vita a testa. Dodici ore per recuperare i dati. Non aprirli, non coinvolgere i Patrioti. Sotto il tetto continua la vita di C3; il tempo promesso, per adesso, appartiene ancora a chi paga.",
+   "uscita_fail_forward": "",
+   "dialoghi": []
+  },
+  "V02": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V02x1",
+     "testo": "Esaminare protocollo zero",
+     "riserva": "Sul rompighiaccio arriva il messaggio: «Fondi congelati. Protocollo 0 attivato.» Seguono le accuse e la notizia dell'arresto di Bob: favoreggiamento, nessun contatto consentito.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Sul messaggio si accumulano accuse: Thomas Epos, il furto, Antoine Delacroix. Il nome di Bob compare per favoreggiamento, senza un canale per raggiungerlo.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V02d1",
+      "testo": "Seguire gli eventi: protocollo zero",
+      "riserva": "Dal treno vicino arrivano gli Scavenger. Grid e Nine-Nine non offrono un viaggio pagato in anni di vita: chiedono cellule energetiche. La città fantasma è il passaggio per C6; il Protocollo Zero continua a valere anche oltre i controlli.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V02x1"
+    ],
+    "risoluzione": [
+     "V02d1"
+    ]
+   },
+   "required_beats": [
+    "V02x1",
+    "V02d1"
+   ],
+   "optional_beats": [
+    "V02_domanda"
+   ],
+   "riserva_libera": "Sul rompighiaccio arriva il messaggio: «Fondi congelati. Protocollo 0 attivato.» Seguono le accuse e la notizia dell'arresto di Bob: favoreggiamento, nessun contatto consentito.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "grid",
+     "argomenti": [
+      {
+       "id": "V02_domanda",
+       "testo": "Contrattare il passaggio",
+       "riserva": "Non anni di vita: Grid chiede cellule energetiche per guidarvi attraverso la città fantasma verso C6.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V03": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V03x1",
+     "testo": "Esaminare le fondamenta",
+     "riserva": "Nelle fondamenta di C6 il telonio fa sanguinare le orbite degli impianti. I controlli sono vicini; Candor Rhee barcolla accanto al gruppo.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il telonio delle fondamenta sanguina intorno agli impianti di chi attraversa C6. Kusanagi riconosce il gruppo e comunica con Rodano: Raven ha funzionato.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V03d1",
+      "testo": "Seguire gli eventi: le fondamenta",
+      "riserva": "Dietro la doppia parete del covo, Tommen spiega a Kestrel dove sono i dati: dentro Ferra Ostrom. Non sono quindi un file da consegnare senza coinvolgere chi lo porta. L'inseguimento ha raggiunto il nascondiglio.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V03x1"
+    ],
+    "risoluzione": [
+     "V03d1"
+    ]
+   },
+   "required_beats": [
+    "V03x1",
+    "V03d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Nelle fondamenta di C6 il telonio fa sanguinare le orbite degli impianti. I controlli sono vicini; Candor Rhee barcolla accanto al gruppo.",
+   "uscita_fail_forward": "",
+   "dialoghi": []
+  },
+  "V04": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V04x1",
+     "testo": "Esaminare la centrale",
+     "riserva": "Davanti alla capsula di mantenimento Ferra Ostrom perde il controllo. Un impulso la immobilizza; Kusanagi ordina l'arresto. Alla centrale registrano anche il respiro e le microespressioni.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Alla centrale il respiro viene registrato insieme alle parole. Rodano ricostruisce il contratto della Bernard; Kusanagi ricorda il lavoro di Bob con tuo padre.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V04d1",
+      "testo": "Seguire gli eventi: la centrale",
+      "riserva": "La versione ufficiale parla di un sequestro di protesi illegali finito con la morte di tuo padre. Quando il controllo emotivo si spegne, la cella può aprirsi. Fuori Rabbit ha preparato un disturbatore; davanti al Patriota interviene Gaia Epos.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V04x1"
+    ],
+    "risoluzione": [
+     "V04d1"
+    ]
+   },
+   "required_beats": [
+    "V04x1",
+    "V04d1"
+   ],
+   "optional_beats": [
+    "V04_domanda"
+   ],
+   "riserva_libera": "Davanti alla capsula di mantenimento Ferra Ostrom perde il controllo. Un impulso la immobilizza; Kusanagi ordina l'arresto. Alla centrale registrano anche il respiro e le microespressioni.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "kusanagi",
+     "argomenti": [
+      {
+       "id": "V04_domanda",
+       "testo": "Chiedere del lavoro di Bob con mio padre",
+       "riserva": "Kusanagi ricorda che Bob lavorava con tuo padre. La versione ufficiale parla del sequestro di protesi illegali.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V05": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V05x1",
+     "testo": "Esaminare crypto memories",
+     "riserva": "A C9 la folla rallenta ai controlli a campione. Gaia Epos vuole raggiungere Evan alla Crypto Memories: sei la sua guardia del corpo, e lei ti aspetta all'ascensore.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "L'ascensore della Crypto Memories porta lontano dalla folla dei controlli di C9. Gaia attende di parlare con Evan.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V05d1",
+      "testo": "Seguire gli eventi: crypto memories",
+      "riserva": "Nel vecchio ufficio di Thomas le fotografie accostano Gaia, Amelia e una donna in tuta spaziale. I nei di quest'ultima compongono un codice di posizione. Evan descrive un programma di riabilitazione; quell'espressione è ciò che viene offerto ai visitatori, non una spiegazione completa del progetto.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V05x1"
+    ],
+    "risoluzione": [
+     "V05d1"
+    ]
+   },
+   "required_beats": [
+    "V05x1",
+    "V05d1"
+   ],
+   "optional_beats": [
+    "V05_domanda"
+   ],
+   "riserva_libera": "A C9 la folla rallenta ai controlli a campione. Gaia Epos vuole raggiungere Evan alla Crypto Memories: sei la sua guardia del corpo, e lei ti aspetta all'ascensore.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "evan_wood",
+     "argomenti": [
+      {
+       "id": "V05_domanda",
+       "testo": "Chiedere che cosa offre la Crypto Memories",
+       "riserva": "Evan presenta il programma come riabilitazione. Gaia è venuta alla Crypto Memories per parlare con lui.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V06": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V06x1",
+     "testo": "Esaminare la porta di telonio",
+     "riserva": "Sul mezzo pubblico qualcuno ti segue. Al laboratorio di Thomas i tecnici della Crypto Memories sono già davanti alle porte. La porta interna riconosce il padre della voce che accompagna Ferra Ostrom.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "I tecnici della Crypto Memories sono già al laboratorio. La porta interna riconosce il legame fra la voce che accompagna Ferra e Thomas; Ferra cede ricordi di Frida per aprirla.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V06d1",
+      "testo": "Seguire gli eventi: la porta di telonio",
+      "riserva": "I file distinguono memorie e Cromo: copiare le prime non significa aver copiato il secondo. Poi entrano Alpha, Beta e Gamma. Rabbit cerca una via per avvertire gli altri mentre il laboratorio viene chiuso dalla squadra d'assalto.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V06x1"
+    ],
+    "risoluzione": [
+     "V06d1"
+    ]
+   },
+   "required_beats": [
+    "V06x1",
+    "V06d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Sul mezzo pubblico qualcuno ti segue. Al laboratorio di Thomas i tecnici della Crypto Memories sono già davanti alle porte. La porta interna riconosce il padre della voce che accompagna Ferra Ostrom.",
+   "uscita_fail_forward": "",
+   "dialoghi": []
+  },
+  "V07": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V07x1",
+     "testo": "Esaminare antoine",
+     "riserva": "Il convoglio verso C2 si arresta fra le esplosioni. Antoine Delacroix abbatte i due agenti e si avvicina: non è venuto per ucciderti.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Le esplosioni bloccano il convoglio prima di C2. Antoine abbatte i due agenti e offre materiale destinato a Bob, vincolato alla sua sopravvivenza.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V07d1",
+      "testo": "Seguire gli eventi: antoine",
+      "riserva": "Il video torna su tuo padre: la sua morte non fu un caso. Antoine chiede che tu cerchi Alikea Rodano, consegnandoti. Tre giorni dopo il viaggio raggiunge C2; sugli schermi passa la strage del pub di C4, non una conferma della sorte di ogni persona che vi si trovava.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V07x1"
+    ],
+    "risoluzione": [
+     "V07d1"
+    ]
+   },
+   "required_beats": [
+    "V07x1",
+    "V07d1"
+   ],
+   "optional_beats": [
+    "V07_domanda"
+   ],
+   "riserva_libera": "Il convoglio verso C2 si arresta fra le esplosioni. Antoine Delacroix abbatte i due agenti e si avvicina: non è venuto per ucciderti.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "antoine",
+     "argomenti": [
+      {
+       "id": "V07_domanda",
+       "testo": "Chiedere perché cercare Alikea",
+       "riserva": "Antoine indica Alikea Rodano come il contatto da cercare dopo la consegna. Le prove destinate a Bob restano legate alla sua sopravvivenza.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V08": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V08x1",
+     "testo": "Esaminare produzione attiva",
+     "riserva": "La divisa del carcere è nera. Dal bordo della mensa ad anello si vedono le capsule dei piani inferiori. Mara, Rhett e Nyx osservano chi scende e chi non risale.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V08_capsula",
+     "testo": "Scendere ai livelli delle capsule e cercare Bob",
+     "riserva": "La registrazione porta il nome di Bob Harlan e la dicitura PRODUZIONE ATTIVA. Attraverso la capsula i suoi occhi sembrano muoversi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "vigilia_bob_capsula"
+      }
+     ],
+     "fonte": "Schema 08 P6: S1 Ep.9 r.279 e giocata r.248; discesa del PG facoltativa."
+    }
+   ],
+   "sviluppo": {
+    "testo": "La mensa è un anello sopra i livelli delle capsule. Mara, Rhett e Nyx conoscono il traffico di chi viene portato sotto. Kusanagi mantiene la parte della sorvegliante ostile, ma indica dove cercare Bob.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V08d1",
+      "testo": "Seguire gli eventi: produzione attiva",
+      "riserva": "Le detenute cercano una compagna per l’evasione. Alikea rimane l’altra strada per contestare il provvedimento. La discesa ai livelli inferiori è un’azione che puoi ancora scegliere.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V08x1"
+    ],
+    "risoluzione": [
+     "V08d1"
+    ]
+   },
+   "required_beats": [
+    "V08x1",
+    "V08d1"
+   ],
+   "optional_beats": [
+    "V08_domanda",
+    "V08_capsula"
+   ],
+   "riserva_libera": "La divisa del carcere è nera. Dal bordo della mensa ad anello si vedono le capsule dei piani inferiori. Mara, Rhett e Nyx osservano chi scende e chi non risale.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "mara",
+     "argomenti": [
+      {
+       "id": "V08_domanda",
+       "testo": "Chiedere del piano delle detenute",
+       "riserva": "Mara, Rhett e Nyx preparano un’evasione. Il patto può essere discusso; non è ancora una promessa fatta al loro posto.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V09": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V09x1",
+     "testo": "Esaminare la stanza schermata",
+     "riserva": "Alikea si ferma sulla soglia. Nella stanza schermata pronuncia Raven e il sistema passa in attesa.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Alikea entra nella stanza schermata e pronuncia Raven: il sistema rimane in attesa. Hammond ha richiesto la capsula di Bob. Il giorno dopo si terrà l'udienza e Alikea può contestare l'accusa. Alikea mostra la registrazione della capsula: Bob è indicato come produzione attiva.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V09d1",
+      "testo": "Seguire gli eventi: la stanza schermata",
+      "riserva": "Intanto le detenute organizzano la fuga con credenziali, caos e buio. Nel tentativo il Patriota dal volto di Tommen rompe condotti e capsule; gli uomini di Alikea riprendono chi fugge. La stanza schermata e l'evasione sono due modi di arrivare alla stessa udienza. L’impulso del Patriota apre anche la capsula di Bob. Lui si ferma invece di fuggire; la squadra di Alikea riprende i fuggitivi.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V09x1"
+    ],
+    "risoluzione": [
+     "V09d1"
+    ]
+   },
+   "required_beats": [
+    "V09x1",
+    "V09d1"
+   ],
+   "optional_beats": [
+    "V09_domanda"
+   ],
+   "riserva_libera": "Alikea si ferma sulla soglia. Nella stanza schermata pronuncia Raven e il sistema passa in attesa.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "alikea",
+     "argomenti": [
+      {
+       "id": "V09_domanda",
+       "testo": "Chiedere la difesa di Bob",
+       "riserva": "Hammond ha richiesto la capsula di Bob. Alikea può contestare l’accusa durante l’udienza del giorno dopo.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V10": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V10x1",
+     "testo": "Esaminare la seconda possibilità",
+     "riserva": "In aula Philips siede sul podio e Hammond legge le accuse. Prima di entrare Kusanagi ti ha mostrato su carta la richiesta di mandarti ai piani alti.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Hammond legge le accuse davanti al podio di Philips. Kusanagi ha mostrato la richiesta su carta che ti destinava ai piani alti. Il contratto contiene elementi con cui contestare l'incastro e scagionare Bob: se non li presenti tu, interviene Alikea.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V10d1",
+      "testo": "Seguire gli eventi: la seconda possibilità",
+      "riserva": "Alla condanna per congelamento oppone il programma Underhounds. Philips firma. La nuova squadra è proprietà operativa della Repubblica; il primo ordine riguarda Roxanne, da prendere vivo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V10x1"
+    ],
+    "risoluzione": [
+     "V10d1"
+    ]
+   },
+   "required_beats": [
+    "V10x1",
+    "V10d1"
+   ],
+   "optional_beats": [
+    "V10_domanda"
+   ],
+   "riserva_libera": "In aula Philips siede sul podio e Hammond legge le accuse. Prima di entrare Kusanagi ti ha mostrato su carta la richiesta di mandarti ai piani alti.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "alikea",
+     "argomenti": [
+      {
+       "id": "V10_domanda",
+       "testo": "Chiedere che cosa comportano gli Underhounds",
+       "riserva": "Il programma evita il congelamento, ma la squadra diventa proprietà operativa della Repubblica.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V11": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V11x1",
+     "testo": "Esaminare la mensa",
+     "riserva": "La base degli Underhounds occupa una stanza d'interrogatorio riadattata. Alikea indica i volti dei ricercati con colpi delle dita: la missione è vicina.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Alikea ha riadattato una stanza d'interrogatorio a base della squadra e indica i ricercati sui quali lavorare. Bob, ancora provato dal congelatore, siede nella mensa.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V11d1",
+      "testo": "Seguire gli eventi: la mensa",
+      "riserva": "Tre detenuti offrono una pista su Roxanne: insieme alle parole c'è una lama. Bob vede il pericolo e si mette in mezzo. Le guardie raggiungono il gruppo prima che gli aggressori possano essere interrogati; nessun nome di mandante è stato provato.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V11x1"
+    ],
+    "risoluzione": [
+     "V11d1"
+    ]
+   },
+   "required_beats": [
+    "V11x1",
+    "V11d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "La base degli Underhounds occupa una stanza d'interrogatorio riadattata. Alikea indica i volti dei ricercati con colpi delle dita: la missione è vicina.",
+   "uscita_fail_forward": "",
+   "dialoghi": []
+  },
+  "V12": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V12x1",
+     "testo": "Esaminare la discoteca",
+     "riserva": "Le registrazioni su Roxanne sono cifrate; alcuni messaggi viaggiano ancora su carta. Nael Prism ritorna nei contratti della pista.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "I messaggi cifrati di Roxanne convivono con quelli affidati alla carta. Nael Prism ritorna nei contratti; la pista porta alla discoteca clandestina di C5.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V12d1",
+      "testo": "Seguire gli eventi: la discoteca",
+      "riserva": "Lucas e Niklaus stanno cercando di portarlo via. Fra loro c'è Felia Moreau: la runner che risultava perduta dopo il pub. Per fermare un trasferimento non è necessario sparare prima di averle rivolto la parola, ma il tempo del confronto appartiene anche a chi sta accompagnando Prism.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V12x1"
+    ],
+    "risoluzione": [
+     "V12d1"
+    ]
+   },
+   "required_beats": [
+    "V12x1",
+    "V12d1"
+   ],
+   "optional_beats": [
+    "V12_domanda"
+   ],
+   "riserva_libera": "Le registrazioni su Roxanne sono cifrate; alcuni messaggi viaggiano ancora su carta. Nael Prism ritorna nei contratti della pista.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "felia_moreau",
+     "argomenti": [
+      {
+       "id": "V12_domanda",
+       "testo": "Chiedere di Prism",
+       "riserva": "Lucas e Niklaus stanno portando via Prism. Felia è viva e presente nella discoteca: l’incontro può essere affrontato anche parlando.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V13": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V13x1",
+     "testo": "Esaminare bere per nyx",
+     "riserva": "Alikea parte per C8 e ti affida la squadra. Nyx è morta; il modo e il responsabile non sono stabiliti dai materiali disponibili.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Alikea parte per C8 e affida a te la squadra. Il posto di Nyx rimane vuoto. Nell'underground di C7 si riparano e si comprano corpi; al pub Antoine compare con il volto nascosto da stracci.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V13d1",
+      "testo": "Seguire gli eventi: bere per nyx",
+      "riserva": "Dice che Hammond è una pedina, accusa uno degli hacker raccolti da Gaia e vuole Ilysia viva. Su Alikea è esplicito: il ruolo di Icaro la mette in pericolo. Le accuse aspettano ancora una prova.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V13x1"
+    ],
+    "risoluzione": [
+     "V13d1"
+    ]
+   },
+   "required_beats": [
+    "V13x1",
+    "V13d1"
+   ],
+   "optional_beats": [
+    "V13_domanda"
+   ],
+   "riserva_libera": "Alikea parte per C8 e ti affida la squadra. Nyx è morta; il modo e il responsabile non sono stabiliti dai materiali disponibili.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "antoine",
+     "argomenti": [
+      {
+       "id": "V13_domanda",
+       "testo": "Chiedere perché Alikea è in pericolo",
+       "riserva": "Antoine vuole Ilysia viva e avverte che Alikea deve rinunciare al ruolo di Icaro, altrimenti rischia di essere eliminata.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V14": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V14x1",
+     "testo": "Esaminare il clone",
+     "riserva": "Il laboratorio contiene il corpo morto di un clone di Hammond. Rhett, Bob e Kusanagi sono feriti; Mara si rialza. Felia non vede ancora bene.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il corpo morto ha il volto di Hammond. Rhett, Bob e Kusanagi sono feriti; Mara si rialza e Felia vede ancora male. I terminali registrano il Prototipo 32 e collegamenti esterni.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V14d1",
+      "testo": "Seguire gli eventi: il clone",
+      "riserva": "Poi il laboratorio comincia ad allagarsi e il gelo si prende le prove lasciate dentro. Felia ha duplicato dati: la copia può uscire anche se non ogni oggetto fisico viene portato via. La pista che resta conduce a Marek.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V14x1"
+    ],
+    "risoluzione": [
+     "V14d1"
+    ]
+   },
+   "required_beats": [
+    "V14x1",
+    "V14d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Il laboratorio contiene il corpo morto di un clone di Hammond. Rhett, Bob e Kusanagi sono feriti; Mara si rialza. Felia non vede ancora bene.",
+   "uscita_fail_forward": "",
+   "dialoghi": []
+  },
+  "V15": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V15x1",
+     "testo": "Esaminare prove che reggano",
+     "riserva": "Il luogo indicato da Antoine è ridotto a rottami. Nei dati del laboratorio compare un interlocutore: lo Spettro Bianco.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nei dati compare lo Spettro Bianco. La voce coincide con la registrazione modificata ricevuta da Antoine; il video mostra Hammond uccidere tuo padre.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V15d1",
+      "testo": "Seguire gli eventi: prove che reggano",
+      "riserva": "Alikea parla delle morti di Bernard e Philips, ma distingue le versioni sui responsabili. Un volto non basta, quando più persone possono averlo identico. Ti chiede un'indagine che produca prove contro Hammond senza aprirne una sulle reti della Repubblica: Raven è la via di contatto.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V15x1"
+    ],
+    "risoluzione": [
+     "V15d1"
+    ]
+   },
+   "required_beats": [
+    "V15x1",
+    "V15d1"
+   ],
+   "optional_beats": [
+    "V15_domanda"
+   ],
+   "riserva_libera": "Il luogo indicato da Antoine è ridotto a rottami. Nei dati del laboratorio compare un interlocutore: lo Spettro Bianco.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "alikea",
+     "argomenti": [
+      {
+       "id": "V15_domanda",
+       "testo": "Chiedere quali prove servono contro Hammond",
+       "riserva": "Alikea vuole prove che distinguano persone diverse con la stessa faccia. Il canale da usare è Raven, non le reti della Repubblica.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V16": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V16x1",
+     "testo": "Esaminare i bunny-hoppers",
+     "riserva": "Tre accessi, telecamere e droni proteggono il covo. Candor apre un collegamento protetto con te e Felia; Bob fa cenno di misurare le informazioni.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il covo dei Bunny-Hoppers ha tre accessi, telecamere e droni. Candor apre un collegamento con te e Felia; Bob invita a misurare ciò che passa sulla linea. Marek scende dal livello superiore, atterra Rhett e contesta il lavoro per il nemico.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V16d1",
+      "testo": "Seguire gli eventi: i bunny-hoppers",
+      "riserva": "Nello scontro Felia viene colpita e si smaterializza; Rhett ferisce Marek al collo, ma lo lascia vivo. Marek cerca lo Spettro Bianco e indica Rabbit diretta a C3. Bob riconosce lo stesso nome negli ordini a Hammond.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V16x1"
+    ],
+    "risoluzione": [
+     "V16d1"
+    ]
+   },
+   "required_beats": [
+    "V16x1",
+    "V16d1"
+   ],
+   "optional_beats": [
+    "V16_domanda"
+   ],
+   "riserva_libera": "Tre accessi, telecamere e droni proteggono il covo. Candor apre un collegamento protetto con te e Felia; Bob fa cenno di misurare le informazioni.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "marek",
+     "argomenti": [
+      {
+       "id": "V16_domanda",
+       "testo": "Chiedere dove sia Rabbit",
+       "riserva": "Marek indica Rabbit partita per C3 dietro a due ragazzini diretti alla Bernard Tower.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V17": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V17x1",
+     "testo": "Esaminare il furgone",
+     "riserva": "Mara tiene fasciato il collo di Marek nel furgone. Bob conduce le domande mentre Felia distingue a fatica le sagome.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Marek è disteso nel furgone, con il collo fasciato da Mara. Bob conduce le domande. Marek conferma lo Spettro e parla di Gaia Epos, della sorella trattenuta in un programma, di provviste e traiettorie verso una stazione di lancio.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V17d1",
+      "testo": "Seguire gli eventi: il furgone",
+      "riserva": "Antoine conosce gli accessi; Marek non consegna a te il nome del compratore. Bob apre la mappa dei trasporti rapidi. Felia va a C3; la squadra con Marek raggiungerà C5 e Koga.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V17x1"
+    ],
+    "risoluzione": [
+     "V17d1"
+    ]
+   },
+   "required_beats": [
+    "V17x1",
+    "V17d1"
+   ],
+   "optional_beats": [
+    "V17_domanda"
+   ],
+   "riserva_libera": "Mara tiene fasciato il collo di Marek nel furgone. Bob conduce le domande mentre Felia distingue a fatica le sagome.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "marek",
+     "argomenti": [
+      {
+       "id": "V17_domanda",
+       "testo": "Chiedere degli accessi alla stazione",
+       "riserva": "Marek collega provviste e traiettorie alla stazione di lancio. Gli accessi li conosce Antoine o chi ha comprato la stazione; il nome del compratore non viene fornito.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V18": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V18x1",
+     "testo": "Esaminare c5",
+     "riserva": "Un lavoratore di C5 vomita sangue con schegge di vetro e metallo. Marek parla del Cromo saldato al corpo; teme che una parte dell'umanità non torni.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Per strada un lavoratore vomita sangue misto a vetro e metallo. Mara propone rinforzi. Marek descrive un Cromo saldato al corpo, come quello di Koga, e chiede del brainfreeze.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V18d1",
+      "testo": "Seguire gli eventi: c5",
+      "riserva": "Il gruppo raggiunge il settore cargo passando da un mezzo della polizia; in albergo c'è Candor, ormai Icaro. La sua presenza non rende automaticamente accessibili alla squadra tutte le sue scoperte. Alle uscite comincia a prendere forma il piano per Koga.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V18x1"
+    ],
+    "risoluzione": [
+     "V18d1"
+    ]
+   },
+   "required_beats": [
+    "V18x1",
+    "V18d1"
+   ],
+   "optional_beats": [
+    "V18_domanda"
+   ],
+   "riserva_libera": "Un lavoratore di C5 vomita sangue con schegge di vetro e metallo. Marek parla del Cromo saldato al corpo; teme che una parte dell'umanità non torni.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "marek",
+     "argomenti": [
+      {
+       "id": "V18_domanda",
+       "testo": "Chiedere del Cromo saldato al corpo",
+       "riserva": "Marek parla di sé e Koga: il Cromo è saldato al metallo. Teme che una parte dell’umanità possa essere perduta.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V19": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V19x1",
+     "testo": "Esaminare il blitz",
+     "riserva": "Alikea dispone gli Underhounds alle uscite. Bob segue le frequenze; Ferra è vicina. Per l'operazione qualcuno dovrà essere consegnato.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Alikea dispone gli Underhounds alle uscite e vengono richiesti supporti. Bob controlla le frequenze.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V19d1",
+      "testo": "Seguire gli eventi: il blitz",
+      "riserva": "L'accordo di Marek offre una via differente dal catturare Koga: entrare nel carcere per aiutare altri a uscirne. Alikea deve comunque consegnare qualcuno. Il piano arriva al punto in cui l'ordine non può essere risolto con una promessa generica di salvare tutti; Koga, se viene abbattuto, fugge invece di sparire dalla storia.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V19x1"
+    ],
+    "risoluzione": [
+     "V19d1"
+    ]
+   },
+   "required_beats": [
+    "V19x1",
+    "V19d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Alikea dispone gli Underhounds alle uscite. Bob segue le frequenze; Ferra è vicina. Per l'operazione qualcuno dovrà essere consegnato.",
+   "uscita_fail_forward": "",
+   "dialoghi": []
+  },
+  "V20": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V20x1",
+     "testo": "Esaminare il nuovo potere",
+     "riserva": "Florant Esprit, un Icaro, ottiene il controllo della Repubblica. L'ordine politico cambia prima che la minaccia esterna diventi pubblica.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Florant Esprit, un Icaro, assume il controllo della Repubblica. Le insegne degli Underhounds sono ancora quelle di una proprietà operativa dello Stato, ma lo Stato ha un nuovo vertice.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V20d1",
+      "testo": "Seguire gli eventi: il nuovo potere",
+      "riserva": "Dal pianeta arrivano ormai segni che non possono essere contenuti in una segnalazione scartata: la flotta marziana si mostra. Il cambio di potere e l'invasione sono due minacce contemporanee. Il nome di Florant non spiega ancora da solo tutte le voci registrate nei mesi precedenti.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V20x1"
+    ],
+    "risoluzione": [
+     "V20d1"
+    ]
+   },
+   "required_beats": [
+    "V20x1",
+    "V20d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Florant Esprit, un Icaro, ottiene il controllo della Repubblica. L'ordine politico cambia prima che la minaccia esterna diventi pubblica.",
+   "uscita_fail_forward": "",
+   "dialoghi": []
+  },
+  "V21": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V21x1",
+     "testo": "Esaminare la delegazione",
+     "riserva": "C2 attende una risposta agli invasori. Una delegazione si prepara a trattare; la proposta è che la squadra la accompagni.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "La delegazione diretta agli invasori viene preparata mentre C2 organizza la difesa. Gli Underhounds ricevono il compito di scorta.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V21d1",
+      "testo": "Seguire gli eventi: la delegazione",
+      "riserva": "Bob e Kusanagi sono i volti attraverso cui quell'ordine arriva alla squadra; su Alikea non c'è una notizia verificata. La delegazione può partire anche senza una tua promessa di fedeltà. Il percorso verso le trattative rimane disponibile come occasione per proteggere le persone che vi partecipano.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V21x1"
+    ],
+    "risoluzione": [
+     "V21d1"
+    ]
+   },
+   "required_beats": [
+    "V21x1",
+    "V21d1"
+   ],
+   "optional_beats": [
+    "V21_domanda"
+   ],
+   "riserva_libera": "C2 attende una risposta agli invasori. Una delegazione si prepara a trattare; la proposta è che la squadra la accompagni.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "bob_harlan",
+     "argomenti": [
+      {
+       "id": "V21_domanda",
+       "testo": "Parlare della scorta",
+       "riserva": "Bob resta con la squadra mentre la delegazione viene preparata. Proteggere persone e sostenere il nuovo potere non diventano per questo la stessa promessa.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V22": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V22x1",
+     "testo": "Esaminare il telonio",
+     "riserva": "Nei ghiacci la base degli invasori segue le radici metalliche del vecchio core. Il loro bisogno di telonio è concreto: senza si cristallizzano.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nei ghiacci la base conquistata conserva un vecchio core e radici di metallo. Gli invasori cercano telonio: la mancanza li espone alla cristallizzazione.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V22d1",
+      "testo": "Seguire gli eventi: il telonio",
+      "riserva": "Zephir lo consuma avanzando. Luhman, arrestato dai suoi per pacifismo, è una presenza che contraddice l'idea di una volontà identica in tutta la flotta. La delegazione è arrivata, ma l'accesso a un tavolo non è ancora un accordo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V22x1"
+    ],
+    "risoluzione": [
+     "V22d1"
+    ]
+   },
+   "required_beats": [
+    "V22x1",
+    "V22d1"
+   ],
+   "optional_beats": [
+    "V22_domanda"
+   ],
+   "riserva_libera": "Nei ghiacci la base degli invasori segue le radici metalliche del vecchio core. Il loro bisogno di telonio è concreto: senza si cristallizzano.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "luhman",
+     "argomenti": [
+      {
+       "id": "V22_domanda",
+       "testo": "Chiedere perché sia prigioniero",
+       "riserva": "Luhman è stato arrestato dai suoi per pacifismo. La sua presenza dimostra una divergenza dentro la flotta, non che il comando abbia rinunciato all’invasione.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V23": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V23x1",
+     "testo": "Esaminare le trattative",
+     "riserva": "Gli invasori chiedono il telonio e ritengono i terrestri responsabili dello spegnimento del Sole. La trattativa deve precedere il conflitto finale.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Shapira conduce il confronto per gli invasori; Florant partecipa come vertice della Repubblica. Il telonio è la loro richiesta, la colpa dei terrestri nello spegnimento del Sole la loro accusa.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V23d1",
+      "testo": "Seguire gli eventi: le trattative",
+      "riserva": "Shapira porta l’accusa dentro la trattativa. «La stazione sul Sole vi aveva avvertiti. Da terra avete imposto di completare il ciclo di estrazione. Per il profitto di quell’energia avete provocato uno strappo nelle onde di oscillazione del Cromo e spento il Sole. La figlia di Epos è sopravvissuta lassù. È diventata un’entità ricolma di Cromo: è lei che ci guida contro la Terra.» La rabbia che la muove conserva, nel subconscio, l’ordine ricevuto e il sacrificio imposto dai terrestri. Le comunicazioni registrate offrono adesso un confronto con la voce del nuovo capo: Florant è lo Spettro Bianco. Le prove possono essere presentate, oppure si può insistere sulle persone che la guerra travolgerà.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "icaro_sole_estrazione"
+       }
+      ],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA. DECISIONI_AUTORE.md §11, risposta dell’autore del 1 novembre 2026 sullo spegnimento del Sole."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V23x1"
+    ],
+    "risoluzione": [
+     "V23d1"
+    ]
+   },
+   "required_beats": [
+    "V23x1",
+    "V23d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Gli invasori chiedono il telonio e ritengono i terrestri responsabili dello spegnimento del Sole. La trattativa deve precedere il conflitto finale.",
+   "uscita_fail_forward": "",
+   "dialoghi": []
+  },
+  "V24": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V24x1",
+     "testo": "Esaminare la rottura",
+     "riserva": "Le trattative non fermano il conflitto. La squadra deve uscire dalla base prima che il passaggio alle navi diventi impossibile.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il tavolo non evita il conflitto. Le condizioni sostenute dal vertice della Repubblica non proteggono tutta la popolazione e la base non è più un luogo sicuro per la delegazione.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V24d1",
+      "testo": "Seguire gli eventi: la rottura",
+      "riserva": "Mara propone rinforzi mentre il gruppo cerca un passaggio verso l'esterno. Luhman è ancora sotto custodia: occuparsi di lui richiede una scelta, diversa da coprire soltanto la ritirata della delegazione. La fuga apre la strada alle navi, non chiude la guerra.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V24x1"
+    ],
+    "risoluzione": [
+     "V24d1"
+    ]
+   },
+   "required_beats": [
+    "V24x1",
+    "V24d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Le trattative non fermano il conflitto. La squadra deve uscire dalla base prima che il passaggio alle navi diventi impossibile.",
+   "uscita_fail_forward": "",
+   "dialoghi": []
+  },
+  "V25": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V25x1",
+     "testo": "Esaminare lasciare la terra",
+     "riserva": "La Terra comincia a collassare: Gaia Epos consuma il pianeta per creare un buco bianco. Non è una Gaia di un altro mondo.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Gaia Epos consuma la Terra per creare un buco bianco. Il pianeta da rianimare diventa un luogo da cui sottrarre esseri umani al collasso. Antoine conosce accessi alla stazione di lancio già citata da Marek.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V25d1",
+      "testo": "Seguire gli eventi: lasciare la terra",
+      "riserva": "Il programma della Crypto Memories ha un nome: Ich, un mondo scritto nel quale si portano a vivere persone. Questa informazione non aggiunge al suo funzionamento storie provenienti da un altro mondo. Stazione e flotta sono adesso vie d'evacuazione.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V25x1"
+    ],
+    "risoluzione": [
+     "V25d1"
+    ]
+   },
+   "required_beats": [
+    "V25x1",
+    "V25d1"
+   ],
+   "optional_beats": [
+    "V25_domanda"
+   ],
+   "riserva_libera": "La Terra comincia a collassare: Gaia Epos consuma il pianeta per creare un buco bianco. Non è una Gaia di un altro mondo.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "antoine",
+     "argomenti": [
+      {
+       "id": "V25_domanda",
+       "testo": "Chiedere della via d’uscita",
+       "riserva": "Antoine conosce gli accessi alla stazione di lancio. Lasciare il pianeta diventa necessario mentre Gaia Epos consuma la Terra.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V26": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V26x1",
+     "testo": "Esaminare le capsule",
+     "riserva": "Nel carcere le capsule continuano a registrare rendimento e Cromo. Fra quelle file c'è stato Bob, trasformato in produzione attiva.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Le capsule del carcere riportano nome del Cromo e rendimento. Anche Bob è stato ridotto a produzione attiva in una di quelle file.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V26d1",
+      "testo": "Seguire gli eventi: le capsule",
+      "riserva": "Hammond difende il sistema che fornisce energia al nuovo potere. Aprire i collegamenti dei detenuti significa sottrarre persone a quella produzione; proteggere il passaggio permette a chi è già fuori di raggiungere le navi. Il tempo impiegato alle capsule pesa sulla partenza.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V26x1"
+    ],
+    "risoluzione": [
+     "V26d1"
+    ]
+   },
+   "required_beats": [
+    "V26x1",
+    "V26d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Nel carcere le capsule continuano a registrare rendimento e Cromo. Fra quelle file c'è stato Bob, trasformato in produzione attiva.",
+   "uscita_fail_forward": "",
+   "dialoghi": []
+  },
+  "V27": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V27x1",
+     "testo": "Esaminare le navi",
+     "riserva": "Il conflitto si sposta sulle astronavi. I corridoi non sono una fine della fuga: servono a far salire chi è ancora a terra.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "La guerra prosegue sulle astronavi. Il punto da conquistare non è soltanto un corridoio: è il tempo e lo spazio per far salire i civili.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V27d1",
+      "testo": "Seguire gli eventi: le navi",
+      "riserva": "Zephir contrasta l'imbarco. Il passaggio aperto da chi ha ricevuto una seconda possibilità può aiutare la squadra, ma nessun alleato compare senza il precedente incontro. Oltre le navi rimane l'astronave madre, dove si decide l'ultimo confronto con il comando.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V27x1"
+    ],
+    "risoluzione": [
+     "V27d1"
+    ]
+   },
+   "required_beats": [
+    "V27x1",
+    "V27d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Il conflitto si sposta sulle astronavi. I corridoi non sono una fine della fuga: servono a far salire chi è ancora a terra.",
+   "uscita_fail_forward": "",
+   "dialoghi": []
+  },
+  "V28": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V28x1",
+     "testo": "Esaminare l'astronave madre",
+     "riserva": "Nell'astronave madre lo scontro raggiunge Florant Esprit e Shapira. Il villain partecipa: non viene rimosso dal finale per comodità.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nell'astronave madre ci sono Shapira e Florant Esprit.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V28d1",
+      "testo": "Seguire gli eventi: l'astronave madre",
+      "riserva": "Il villain partecipa al confronto, non delega la conclusione a un ostacolo senza volto. Le prove raccolte su Hammond e sullo Spettro possono essere rivolte contro il suo potere; la forza resta una via differente.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V28x1"
+    ],
+    "risoluzione": [
+     "V28d1"
+    ]
+   },
+   "required_beats": [
+    "V28x1",
+    "V28d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Nell'astronave madre lo scontro raggiunge Florant Esprit e Shapira. Il villain partecipa: non viene rimosso dal finale per comodità.",
+   "uscita_fail_forward": "",
+   "dialoghi": []
+  },
+  "V29": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V29x1",
+     "testo": "Esaminare il prezzo",
+     "riserva": "Le ultime navi tentano di lasciare la Terra che collassa. Bob è vicino a te; fra le capsule e gli imbarchi rimane poco tempo per decidere come partire.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Le navi si allontanano dalla Terra che collassa. Le capsule trasformano persone in energia: entrarvi per sostenere la fuga significa restare collegata mentre gli altri partono.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V29d1",
+      "testo": "Seguire gli eventi: il prezzo",
+      "riserva": "Bob è ancora qualcuno con cui parlare e da portare via. Resta possibile salire con la squadra; nessuna prova mancata assegna automaticamente il sacrificio.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V29x1"
+    ],
+    "risoluzione": [
+     "V29d1"
+    ]
+   },
+   "required_beats": [
+    "V29x1",
+    "V29d1"
+   ],
+   "optional_beats": [
+    "V29_domanda"
+   ],
+   "riserva_libera": "Le ultime navi tentano di lasciare la Terra che collassa. Bob è ancora una persona da salvare, non una ricompensa assegnata da un conteggio nascosto.",
+   "uscita_fail_forward": "",
+   "dialoghi": [
+    {
+     "png": "bob_harlan",
+     "argomenti": [
+      {
+       "id": "V29_domanda",
+       "testo": "Parlare prima della partenza",
+       "riserva": "Bob è ancora una persona da portare via. Entrare in una capsula o salire con lui rimane una tua scelta; nessuna risposta viene pronunciata per te.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ]
+  },
+  "V30": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "V30x1",
+     "testo": "Esaminare chi difendi",
+     "riserva": "La Terra è perduta; le navi portano chi avete sottratto al collasso. Sul metallo resta il rumore di chi è riuscito a salire.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "sviluppo": {
+    "testo": "La Terra non può più essere raggiunta come prima. Sulla nave restano persone, prove e le conseguenze di chi avete difeso.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "V30d1",
+      "testo": "Seguire gli eventi: chi difendi",
+      "riserva": "Bob è fuori dal carcere; la medaglietta dell'accademia conserva il legame con tuo padre, senza spiegare al tuo posto ciò che provi. Il congedo può rivolgersi ai sopravvissuti oppure a quel legame. Solo la conclusione compatibile con le scelte compiute deve essere letta, non tutti gli esiti insieme.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "V30x1"
+    ],
+    "risoluzione": [
+     "V30d1"
+    ]
+   },
+   "required_beats": [
+    "V30x1",
+    "V30d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "La Terra è perduta; le navi portano chi avete sottratto al collasso. Sul metallo resta il rumore di chi è riuscito a salire.",
+   "uscita_fail_forward": "",
+   "dialoghi": []
+  }
+ }
+}

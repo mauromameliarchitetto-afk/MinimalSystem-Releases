@@ -1,0 +1,302 @@
+{
+ "formato": "rm-solo-archetipi/1",
+ "storia": "eidos",
+ "versione": "0.2.0",
+ "avviso": "Pilota «Il filo di cenere» (Atto I). Il nome della protagonista è approvato; i valori meccanici sono proposti: da approvare.",
+ "archetipi": [
+  {
+   "id": "nephele",
+   "versione": "0.2.0",
+   "stato_editoriale": "bozza",
+   "fixture_interna": false,
+   "fonte": "docs/single-player/trame/EIDOS.md §4.1 «Il filo di cenere», Atto I",
+   "nome": "Nephele",
+   "genere": "femminile",
+   "popolazione": "Antarsi",
+   "citta": "Istros",
+   "mansione": "Sergente medico di Delta 15",
+   "ritratto": "img/solo/ritratti/eidos-tessa.webp",
+   "ritratto_alt": "Volto di Nephele, sergente medico di Delta 15",
+   "build": "eclettico",
+   "background": "Sergente e medico di Delta 15, la squadra d'élite del capitano Thillion. Le hanno revocato il diritto di guida per alcuni inconvenienti psicologici, e un sogno ricorrente la segue anche al campo.",
+   "obiettivo": "Capire che cosa significa il sogno del bambino che piange in una pozza di sangue.",
+   "missione_iniziale": "Uscire dalle rovine e tornare a Critto con chi è ancora con te.",
+   "capitolo": "cenere-atto-1",
+   "primary": {
+    "hp": 6,
+    "mp": 6,
+    "for": 4,
+    "mira": 4,
+    "vel": 4,
+    "fmen": 5,
+    "dex": 4,
+    "dif": 3,
+    "dmen": 4
+   },
+   "tertiary": {
+    "stile": 1,
+    "fortuna": 1,
+    "carisma": 3
+   },
+   "traits": {
+    "conoscenze": {
+     "Medicina": 2,
+     "Guidare": 2,
+     "Sopravvivenza": 1
+    },
+    "capacitaNormali": {
+     "Percezione": 2,
+     "Persuasione": 2,
+     "Ascoltare": 1
+    },
+    "capacitaCombattive": {
+     "Guarigione": 2,
+     "Arte Combattiva": 1,
+     "Spirito": 1,
+     "Arkè": 1
+    }
+   },
+   "tecniche": [
+    {
+     "id": "antarsi.tiro_dell_ombra",
+     "nome": "Tiro dell'ombra",
+     "categoria": "tecnica",
+     "tipoAzione": "attacco",
+     "bersaglio": "singolo nemico",
+     "dannoBase": 7,
+     "effetto": "Attacco fisico: danno base 7 + Mira",
+     "costoMP": 0,
+     "risorsaSpeciale": null,
+     "costoRisorsaSpeciale": 0,
+     "forzatura": {
+      "consentita": false,
+      "costoVitalita": null
+     },
+     "utilizziMassimi": "utilizziLimitFor",
+     "durataTurni": 0,
+     "condizioniUso": [],
+     "bonus": [],
+     "malus": [],
+     "livelloRichiesto": 1,
+     "slotRichiesti": 1,
+     "tipo": "danno",
+     "lv": 1,
+     "stat": "mira",
+     "descrizione": "Un colpo scoccato dal margine della luce, che il nemico non vede partire.",
+     "content_status": "approved",
+     "approvazione": {
+      "decisione": "autore-2026-11-07",
+      "ambito": "scelta della tecnica (DECISIONI_AUTORE §15 J.5)"
+     },
+     "fonte": "Approvata dall'autore (7/11/2026, DECISIONI_AUTORE §15 I.4h e J): dal catalogo di Eidos (antarsi, eclettico), fonte del catalogo: proposta coerente con la cultura del gruppo. Motivo: l'arco dal filo invisibile che tende il filo di chi mira (EIDOS.md §4.1, [V2 0/3]); usa l'arco in dotazione e la Mira."
+    }
+   ],
+   "abilita": [
+    {
+     "id": "occhio_del_vero",
+     "nome": "Occhio del vero",
+     "categoria": "magia",
+     "tipoAzione": "supporto",
+     "bersaglio": "sé",
+     "dannoBase": 0,
+     "effetto": "+2 Difesa Magica e +2 all'arte combattiva per 2 turni (Arkè Aletheia Mati)",
+     "costoMP": 6,
+     "risorsaSpeciale": null,
+     "costoRisorsaSpeciale": 0,
+     "forzatura": {
+      "consentita": false,
+      "costoVitalita": null
+     },
+     "utilizziMassimi": "utilizziLimitFor",
+     "durataTurni": 2,
+     "condizioniUso": [],
+     "bonus": [
+      {
+       "stat": "dmen",
+       "valore": 2,
+       "testo": "+2 Difesa Magica"
+      }
+     ],
+     "malus": [],
+     "livelloRichiesto": 1,
+     "slotRichiesti": 1,
+     "tipo": "supporto",
+     "lv": 1,
+     "stat": null,
+     "descrizione": "Aletheia Mati: lo sguardo osserva l'anima altrui.",
+     "arke": "aletheia",
+     "bonusStat": {
+      "dmen": 2
+     },
+     "bonusTratto": [
+      {
+       "tratto": "Arte Combattiva",
+       "valore": 2
+      }
+     ],
+     "fonte": "PROPOSTA dell'autore [autore, chat 27/10]: +2 Difesa Magica per 2 turni e +2 all'arte combattiva usata (per Nephele l'arco, che colpisce con il tratto Arte Combattiva: js/solo/solo-rules.js r.161-167); il +2 al tratto è `bonusTratto` dei supporti (js/solo/solo-engine.js, bonusTratto), DECISIONI_AUTORE.md §9.4; l'approvazione nei dati resta all'autore (decisione D11 del piano)",
+     "content_status": "approved",
+     "daApprovare": [],
+     "fonti": {
+      "nome": "A",
+      "categoria": "A",
+      "tipoAzione": "A",
+      "dannoBase": "R",
+      "costoMP": "R",
+      "risorsaSpeciale": "R",
+      "costoRisorsaSpeciale": "R",
+      "bonus": "A",
+      "malus": "A",
+      "livelloRichiesto": "R",
+      "slotRichiesti": "R",
+      "bersaglio": "A",
+      "effetto": "A",
+      "durataTurni": "A",
+      "utilizziMassimi": "A",
+      "condizioniUso": "A"
+     },
+     "approvazione": {
+      "decisione": "autore-2026-11-07",
+      "valori": {
+       "bersaglio": "sé",
+       "effetto": "+2 Difesa Magica e +2 all'arte combattiva per 2 turni (Arkè Aletheia Mati)",
+       "durataTurni": 2,
+       "utilizziMassimi": "utilizziLimitFor",
+       "condizioniUso": []
+      }
+     }
+    }
+   ],
+   "equip": [
+    {
+     "id": "arco_osso",
+     "tipo": "arma",
+     "nome": "Arco in osso di Tèras",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "classe": "tiro",
+     "descrizione": "L'arma più usata dagli Antarsi: osso di Tèras lavorato.",
+     "fonteCanone": "EP p.13; EG «Antarsi»; EImm eidos-antarsi-finale; per Nephele DEDOTTO, da confermare dall'autore: l'arte combattiva dipende dalla fazione, fucili o arco [autore, chat 27/10]; Nephele ha «un arco dal filo invisibile» (EIDOS.md r.150, [V2 0/3 r.1169-1180]) e in battaglia tira da lontano ([V2 0/1 r.86-94]). Una sola arma: l'Eclettico ne ha una (docs/DECISIONI_AUTORE.md §2)",
+     "base": "arco_medio_basso",
+     "content_status": "proposed"
+    },
+    {
+     "id": "protezione",
+     "tipo": "armatura",
+     "nome": "Pelli di Tèras, mantellina ed elmo di stoffa",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "descrizione": "Armatura leggera in pelle di mostro; la mantellina sul busto è il tratto distintivo.",
+     "fonteCanone": "EP p.13; EG «Antarsi»; EImm eidos-antarsi-finale; per Nephele PROPOSTA, da approvare: nei capitoli indossa la dotazione della squadra chorisfos, con il casco ([V2 Cap.11 r.38, r.67]; [V2 Cap.12 r.21])",
+     "base": "protezione_leggera_bassa",
+     "content_status": "proposed"
+    }
+   ],
+   "legami_iniziali": [
+    {
+     "png": "fobos",
+     "natura": "caporale di Delta 15, compagno di squadra (script Eidos V2 Cap.5)"
+    }
+   ],
+   "conoscenze": [],
+   "segreti_narratore": [
+    "La madre era chorisfos e voleva partorire fra i suoi (riservato fino a metà Atto II; scheda EIDOS.md r.177; la scheda dice «La madre era chorisfos e voleva partorire fra i suoi»; [V2 0/2 r.680-690] dice il contrario: correzione del piano (D4, PROPOSTA del piano) tenuta nello schema «Il filo di cenere» approvato il 30/10, scena 16)."
+   ],
+   "occasioni_sviluppo": [
+    {
+     "atto": 1,
+     "possibilita": "Il sogno del bambino e la fiducia di Fobos."
+    },
+    {
+     "atto": 2,
+     "possibilita": "Tenere Fobos in questo mondo sulla strada del nord."
+    },
+    {
+     "atto": 3,
+     "possibilita": "Il destino legato a quello di Fobos."
+    }
+   ],
+   "campaign_id": "cenere-atto-1",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "docs/single-player/trame/EIDOS.md §4.1 «Il filo di cenere», Atto I: nome approvato (docs/single-player/trame/EIDOS.md), valori meccanici dal preset più vicino con i tratti del mestiere (medico), da approvare; l'arco come arma è DEDOTTO (PROPOSTA); l'abilità «Occhio del vero» è una PROPOSTA dell'autore [autore, chat 27/10]; lo slot della tecnica resta vuoto in attesa dell'autore",
+   "ontologia": {
+    "entityType": "personaggio_giocabile",
+    "peopleId": null,
+    "factionId": "antarsi",
+    "cultureId": null,
+    "regionId": null,
+    "roleId": "sergente_medico",
+    "creatureFamilyId": null,
+    "socialClassId": null,
+    "corporationId": null,
+    "playable": true,
+    "playerVisible": true,
+    "narratorOnly": [],
+    "statoAffiliazione": "confermata",
+    "proposte": {},
+    "fonti": {
+     "proposta": "trama: docs/single-player/trame/EIDOS.md §4.1 r.172 (popolo: Antarsi di Istros)",
+     "peopleId": "autore: popolo non documentato, lasciare vuoto",
+     "factionId": "[autore] Antarsi di Istros (docs/single-player/trame/EIDOS.md r.172, «confermato dall'autore»)",
+     "regionId": "autore: provenienza non documentata, lasciare vuota"
+    },
+    "dubbi": [
+     "Provenienza specifica non verificata negli originali disponibili."
+    ]
+   },
+   "approvazioneMeccanica": {
+    "id": "da-approvare",
+    "stato": "da approvare (protagonista di trama)",
+    "fonte": "docs/DECISIONI_AUTORE.md §2: l'approvazione dei preset del 2026-10-01 riguarda i personaggi delle avventure di prova ed è superata; i protagonisti delle trame si approvano uno per uno.",
+    "ambito": "Valori meccanici proposti (dal preset più vicino, con i tratti del mestiere): da approvare."
+   },
+   "inventarioIniziale": [
+    {
+     "id": "eidos_bende_emostatiche",
+     "qty": 2
+    },
+    {
+     "id": "eidos_razione_da_campo",
+     "qty": 1
+    }
+   ],
+   "approvazioneDotazioni": {
+    "id": "da-approvare",
+    "stato": "da approvare (protagonista di trama)",
+    "fonte": "docs/DECISIONI_AUTORE.md §2: l'approvazione dei preset del 2026-10-01 riguarda i personaggi delle avventure di prova ed è superata; i protagonisti delle trame si approvano uno per uno.",
+    "ambito": "Arma (arco, DEDOTTO), protezione (PROPOSTA) e zaino iniziale: da approvare."
+   },
+   "slotVacanti": []
+  }
+ ],
+ "formato_capacita": "rm-solo-capacita/1",
+ "legenda_fonti": {
+  "R": "regolamento dell'app",
+  "D": "documento Campagne e 15 archetipi V1",
+  "A": "regola approvata dall'autore (revisione gemme)",
+  "P": "proposta da approvare"
+ }
+}

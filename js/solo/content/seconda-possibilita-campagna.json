@@ -1,0 +1,5981 @@
+{
+ "formato": "rm-solo-campagna/1",
+ "id": "seconda-possibilita-trama",
+ "campaign_id": "seconda-possibilita-trama",
+ "storia": "seconda-possibilita",
+ "ambientazione": "Icaro",
+ "versione": "0.1.0",
+ "stato_editoriale": "bozza",
+ "content_status": "proposed",
+ "canonico": false,
+ "source_note": "SCHEMA_LA_SECONDA_POSSIBILITA.md approvato; DECISIONI_AUTORE §9.7/10. Dati in lavorazione, non registrati nel menu. Dati per anteprima; valori PG e raccordi degli scontri PROPOSTA; il contratto finale reale resta incompleto.",
+ "titolo": "La seconda possibilità",
+ "contratto": {
+  "premessa_pubblica": "Un contratto di recupero dati ha portato alle accuse. Il Protocollo Zero congela i fondi, e Bob è stato arrestato.",
+  "scopo": "Affrontare l’incastro, difendere le persone scelte e sottrarre vite al collasso della Terra.",
+  "verita_riservate": [
+   "vigilia_padre_non_caso",
+   "vigilia_contratto",
+   "vigilia_video_padre",
+   "vigilia_spettro",
+   "vigilia_florant",
+   "vigilia_programma",
+   "vigilia_gaia",
+   "vigilia_bob_capsula",
+   "icaro_sole_estrazione"
+  ],
+  "snodi_obbligatori": [
+   "vigilia_atto_1",
+   "vigilia_atto_2",
+   "vigilia_atto_3"
+  ]
+ },
+ "atti": [
+  {
+   "numero": 1,
+   "titolo": "Incastrata",
+   "scene": [
+    "V01",
+    "V02",
+    "V03",
+    "V04",
+    "V05",
+    "V06",
+    "V07",
+    "V08",
+    "V09",
+    "V10"
+   ],
+   "snodi": [
+    {
+     "id": "vigilia_atto_1",
+     "testo": "Il programma Underhounds è approvato."
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "titolo": "Underhounds",
+   "scene": [
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20"
+   ],
+   "snodi": [
+    {
+     "id": "vigilia_atto_2",
+     "testo": "Florant prende il potere e la flotta si svela."
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "titolo": "L’invasione",
+   "scene": [
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "V29",
+    "V30",
+    "V30E"
+   ],
+   "snodi": [
+    {
+     "id": "vigilia_atto_3",
+     "testo": "Confronto nell’astronave madre."
+    }
+   ]
+  }
+ ],
+ "scene": [
+  {
+   "id": "V01",
+   "act": 1,
+   "titolo": "Il contratto",
+   "luogo": "La periferia di C3 ; la sede dell'azienda Numan e il tetto del Red Mill ; i condotti e la zona delle teste di metallo ; un cargo merci . Che la città sia C3 è DEDOTTO da r.70 e da «abbiamo discusso a C3» [ICA S1 Ep.10 r.393].",
+   "descrizione": "Sul tetto del Red Mill il contratto mette una cifra davanti a ogni altra cosa: quindici anni di vita a testa. Dodici ore per recuperare i dati. Non aprirli, non coinvolgere i Patrioti. Sotto il tetto continua la vita di C3; il tempo promesso, per adesso, appartiene ancora a chi paga.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V01_prima",
+     "testo": "Seguire le registrazioni",
+     "effetti": [
+      {
+       "flag": {
+        "V01_prima": true
+       }
+      }
+     ],
+     "riserva": "Le registrazioni restringono la ricerca a Koga. La sua routine interessa anche Rabbit, Tommen e Lucas: la loro offerta di copertura rimane sul tavolo, distinta dal compenso promesso per i dati.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V01_seconda",
+     "testo": "Cercare Koga nelle strade",
+     "effetti": [
+      {
+       "flag": {
+        "V01_seconda": true
+       }
+      }
+     ],
+     "riserva": "La ricerca nelle strade riporta allo stesso nome: Koga. Rabbit, Tommen e Lucas possono coprire il passaggio durante la parata, ma chiedono la sua routine in cambio.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V02",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Sul tetto del Red Mill il contratto mette una cifra davanti a ogni altra cosa: quindici anni di vita a testa. Dodici ore per recuperare i dati. Non aprirli, non coinvolgere i Patrioti. Sotto il tetto continua la vita di C3; il tempo promesso, per adesso, appartiene ancora a chi paga.",
+   "png_presenti": [
+    "koga",
+    "rabbit",
+    "tommen",
+    "lucas"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA. Riscontro dei pilastri iniziali: ICA S1 Ep.0 r.9 e S1 Ep.1 r.3–7, nello schema approvato.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "koga",
+    "letale": false,
+    "alternativa": {
+     "testo": "Seguire le tracce dei dati tenendomi fuori dalla presa di Koga",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Koga deve scegliere fra la tua posizione e la pista dei dati; riesci a mantenerla senza affrontarlo da vicino.",
+     "riserva_fallimento": "Koga intercetta il movimento verso i dati e ti chiude la distanza.",
+     "fonte": "PROPOSTA di prova di scena: NC base esistente del motore, tratto di scheda; non è un’approvazione del valore."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "V01_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Koga cede il passaggio e si sottrae al confronto. La pista dei dati prosegue.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Koga respinge l’assalto; il recupero continua attraverso le tracce e l’offerta di copertura del gruppo."
+    },
+    "fonte": "Schema scena 1; modello PNG_ICARO_DA_APPROVARE. Raccordi degli esiti PROPOSTA; nessuna nuova formula, HP o livello."
+   }
+  },
+  {
+   "id": "V02",
+   "act": 1,
+   "titolo": "Protocollo zero",
+   "luogo": "Il rompighiaccio nelle terre esterne, verso C6 ; il treno assaltato e la città fantasma ; C6",
+   "descrizione": "Sul rompighiaccio arriva il messaggio: «Fondi congelati. Protocollo 0 attivato.» Seguono le accuse e la notizia dell'arresto di Bob: favoreggiamento, nessun contatto consentito.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V02_prima",
+     "testo": "Espormi per i passeggeri",
+     "effetti": [
+      {
+       "flag": {
+        "V02_prima": true
+       }
+      }
+     ],
+     "riserva": "I passeggeri sono ancora esposti all'assalto. Intervenire li mette al centro della tua azione; il blocco dei crediti non si allenta e il nome di Bob resta fra gli arrestati. Grid conserva il controllo del passaggio verso C6.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V02_seconda",
+     "testo": "Trattare il passaggio con Grid",
+     "effetti": [
+      {
+       "flag": {
+        "V02_seconda": true
+       }
+      }
+     ],
+     "riserva": "Grid non accetta anni di vita come merce. Indica le cellule energetiche: è quello che chiede per attraversare la città fantasma. La discussione può continuare senza impegnare un pagamento che non hai ancora offerto.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V03",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Sul rompighiaccio arriva il messaggio: «Fondi congelati. Protocollo 0 attivato.» Seguono le accuse e la notizia dell'arresto di Bob: favoreggiamento, nessun contatto consentito.",
+   "png_presenti": [
+    "grid",
+    "nine_nine"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V03",
+   "act": 1,
+   "titolo": "Le fondamenta",
+   "luogo": "C6: le fondamenta, una sala di manutenzione, i bassifondi, il covo degli hacker indipendenti",
+   "descrizione": "Nelle fondamenta di C6 il telonio fa sanguinare le orbite degli impianti. I controlli sono vicini; Candor Rhee barcolla accanto al gruppo.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V03_prima",
+     "testo": "Tentare di sfuggire a Kusanagi",
+     "effetti": [
+      {
+       "flag": {
+        "V03_prima": true
+       }
+      }
+     ],
+     "riserva": "Kusanagi mantiene il contatto con Rodano mentre cerca di chiudere le vie di fuga. Il covo dietro la doppia parete resta il punto verso cui convergono le piste; la caccia continua anche se perdi il contatto visivo con lei.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V03_seconda",
+     "testo": "Affrontarla e aprire un passaggio",
+     "effetti": [
+      {
+       "flag": {
+        "V03_seconda": true
+       }
+      }
+     ],
+     "riserva": "Kusanagi difende il passaggio. Se cade, non scompare chi ha ricevuto la sua comunicazione: Rodano è già stata avvertita. La via può essere contesa, ma i dati rimangono dentro Ferra.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V04",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Nelle fondamenta di C6 il telonio fa sanguinare le orbite degli impianti. I controlli sono vicini; Candor Rhee barcolla accanto al gruppo.",
+   "png_presenti": [
+    "kusanagi",
+    "medico",
+    "ferra_ostrom",
+    "tommen",
+    "kestrel"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "kusanagi",
+    "letale": false,
+    "alternativa": {
+     "testo": "Cercare un varco fra i lavori delle fondamenta",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Fra i lavori individui una via che evita il fronte delle guardie. Il cantiere rimane sotto il loro controllo.",
+     "riserva_fallimento": "Il varco è sorvegliato: la guardia ti raggiunge prima che tu possa oltrepassarlo.",
+     "fonte": "PROPOSTA di prova di scena: NC base esistente del motore, tratto di scheda; non è un’approvazione del valore."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "V03_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Kusanagi cade, ma Rodano è già stata avvertita. La via verso il covo rimane aperta.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Kusanagi chiude il passaggio e mantiene la caccia. Il gruppo viene ricondotto al confronto alla centrale."
+    },
+    "fonte": "Schema scena 3; modello PNG_ICARO_DA_APPROVARE. Raccordi degli esiti PROPOSTA; nessuna nuova formula, HP o livello."
+   }
+  },
+  {
+   "id": "V04",
+   "act": 1,
+   "titolo": "La centrale",
+   "luogo": "C6 : una capsula di mantenimento cittadino, la centrale di polizia, le macerie e una crepa nel muro fuori dalla centrale, il covo dove il gruppo riprende fiato",
+   "descrizione": "Davanti alla capsula di mantenimento Ferra Ostrom perde il controllo. Un impulso la immobilizza; Kusanagi ordina l'arresto. Alla centrale registrano anche il respiro e le microespressioni.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V04_prima",
+     "testo": "Dare la mia versione dell'incarico",
+     "effetti": [
+      {
+       "flag": {
+        "V04_prima": true
+       }
+      }
+     ],
+     "riserva": "Rodano confronta la tua versione con il contratto e con le accuse già registrate. La promessa di un recupero dati non cancella il nome della Bernard né dimostra da sola chi abbia ucciso Thomas Epos.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V04_seconda",
+     "testo": "Chiedere perché Bob sia coinvolto",
+     "effetti": [
+      {
+       "flag": {
+        "V04_seconda": true
+       }
+      }
+     ],
+     "riserva": "Kusanagi ricorda che Bob lavorava con tuo padre. È un collegamento personale, non una prova contro Bob: la sua detenzione resta da affrontare e la versione ufficiale sulla morte di tuo padre resta quella del sequestro.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V05",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Davanti alla capsula di mantenimento Ferra Ostrom perde il controllo. Un impulso la immobilizza; Kusanagi ordina l'arresto. Alla centrale registrano anche il respiro e le microespressioni.",
+   "png_presenti": [
+    "alikea",
+    "kusanagi",
+    "ferra_ostrom",
+    "rabbit",
+    "gaia_epos"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V05",
+   "act": 1,
+   "titolo": "Crypto Memories",
+   "luogo": "C9, la calca dei controlli ; l'edificio della Crypto Memories, con il vecchio ufficio di Thomas e l'ufficio di Evan",
+   "descrizione": "A C9 la folla rallenta ai controlli a campione. Gaia Epos vuole raggiungere Evan alla Crypto Memories: sei la sua guardia del corpo, e lei ti aspetta all'ascensore.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V05_prima",
+     "testo": "Studiare da sola la fotografia",
+     "effetti": [
+      {
+       "flag": {
+        "V05_prima": true
+       }
+      }
+     ],
+     "riserva": "La disposizione dei nei può essere confrontata come un codice. La posizione che ne risulta è un indizio della fotografia: non stabilisce chi vi si trovi adesso né rende vera ogni spiegazione di Evan.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V05_seconda",
+     "testo": "Lasciare che Gaia scansioni il codice",
+     "effetti": [
+      {
+       "flag": {
+        "V05_seconda": true
+       }
+      }
+     ],
+     "riserva": "Gaia si occupa della scansione. Il codice della fotografia rimane collegato alla posizione indicata; affidarle la lettura non equivale a concederle il controllo di ogni dato che il gruppo possiede.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V06",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "A C9 la folla rallenta ai controlli a campione. Gaia Epos vuole raggiungere Evan alla Crypto Memories: sei la sua guardia del corpo, e lei ti aspetta all'ascensore.",
+   "png_presenti": [
+    "gaia_epos",
+    "evan_wood"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V06",
+   "act": 1,
+   "titolo": "La porta di telonio",
+   "luogo": "Un mezzo pubblico di C9 ; il vecchio laboratorio di Thomas, che la Crypto Memories sta già scandagliando",
+   "descrizione": "Sul mezzo pubblico qualcuno ti segue. Al laboratorio di Thomas i tecnici della Crypto Memories sono già davanti alle porte. La porta interna riconosce il padre della voce che accompagna Ferra Ostrom.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V06_prima",
+     "testo": "Coprire la fuga di Rabbit",
+     "effetti": [
+      {
+       "flag": {
+        "V06_prima": true
+       }
+      }
+     ],
+     "riserva": "Rabbit ha lo spazio per tentare la fuga mentre le squadre serrano il laboratorio. Il suo allontanamento lascia qualcuno fuori dall'assedio, ma non apre automaticamente una seconda uscita per te.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V06_seconda",
+     "testo": "Resistere alle squadre d'assalto",
+     "effetti": [
+      {
+       "flag": {
+        "V06_seconda": true
+       }
+      }
+     ],
+     "riserva": "Le squadre avanzano fra i tecnici e le porte. Opporsi può cambiare il modo in cui avviene la cattura e ciò che riesci a proteggere; il laboratorio resta circondato e il trasporto dei prigionieri viene preparato.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V07",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Sul mezzo pubblico qualcuno ti segue. Al laboratorio di Thomas i tecnici della Crypto Memories sono già davanti alle porte. La porta interna riconosce il padre della voce che accompagna Ferra Ostrom.",
+   "png_presenti": [
+    "ferra_ostrom",
+    "rabbit"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "soldato_corporativo",
+    "letale": false,
+    "alternativa": {
+     "testo": "Mettere i dati al riparo durante l’irruzione",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Riesci a sottrarre i dati alla prima linea dell’irruzione. Il soldato prosegue l’assalto al laboratorio.",
+     "riserva_fallimento": "Il soldato ti intercetta mentre cerchi riparo per i dati.",
+     "fonte": "PROPOSTA di prova di scena: NC base esistente del motore, tratto di scheda; non è un’approvazione del valore."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "V06_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "La prima linea arretra, ma le altre squadre hanno chiuso il laboratorio. Rabbit ha una possibilità di uscire e avvertire gli altri.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Le squadre avanzano e chiudono l’assedio. La cattura conduce al convoglio per C2."
+    },
+    "fonte": "Schema scena 6; modello PNG_ICARO_DA_APPROVARE. Raccordi degli esiti PROPOSTA; nessuna nuova formula, HP o livello."
+   }
+  },
+  {
+   "id": "V07",
+   "act": 1,
+   "titolo": "Antoine",
+   "luogo": "Il convoglio nei ghiacci verso C2 ; poi C2, il distretto centrale",
+   "descrizione": "Il convoglio verso C2 si arresta fra le esplosioni. Antoine Delacroix abbatte i due agenti e si avvicina: non è venuto per ucciderti.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V07_prima",
+     "testo": "Trattare per le prove di Bob",
+     "effetti": [
+      {
+       "flag": {
+        "V07_prima": true
+       }
+      }
+     ],
+     "riserva": "Antoine lega le prove alla vita di Bob. Il video conserva il riferimento al caso scomodo di tuo padre; ottenere altro da lui richiede continuare il confronto, senza trasformare la sua offerta in una prova già presentata al tribunale.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V07_seconda",
+     "testo": "Esigere che Antoine spieghi la sua richiesta",
+     "effetti": [
+      {
+       "flag": {
+        "V07_seconda": true
+       }
+      }
+     ],
+     "riserva": "Antoine indica Alikea Rodano e la possibilità di difendervi attraverso di lei. Non promette che la consegna cancelli le accuse. Il materiale per Bob resta il motivo concreto della sua richiesta.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V08",
+     "effetti": [
+      {
+       "scopri": "vigilia_padre_non_caso"
+      },
+      {
+       "ricompensa": "vigilia_file_antoine"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Il convoglio verso C2 si arresta fra le esplosioni. Antoine Delacroix abbatte i due agenti e si avvicina: non è venuto per ucciderti.",
+   "png_presenti": [
+    "antoine"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V08",
+   "act": 1,
+   "titolo": "Produzione attiva",
+   "luogo": "Il carcere di massima sicurezza di C2: ingresso, blocco intermedio, mensa ad anello, ascensori di servizio, livelli delle capsule",
+   "descrizione": "La divisa del carcere è nera. Dal bordo della mensa ad anello si vedono le capsule dei piani inferiori. Mara, Rhett e Nyx osservano chi scende e chi non risale.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V08_prima",
+     "testo": "Accettare il patto delle detenute",
+     "effetti": [
+      {
+       "flag": {
+        "V08_prima": true
+       }
+      }
+     ],
+     "riserva": "Mara, Rhett e Nyx possono discutere il piano con te. Il patto riguarda l'evasione: non include una promessa di abbandonare Bob né autorizza le altre a parlare in tuo nome con Alikea.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V08_seconda",
+     "testo": "Chiedere di parlare con Alikea",
+     "effetti": [
+      {
+       "flag": {
+        "V08_seconda": true
+       }
+      }
+     ],
+     "riserva": "La richiesta di un colloquio porta il nome di Alikea fra le tue domande. La registrazione di Bob come produzione attiva rimane disponibile per quel confronto, anche senza attribuirti una discesa alle capsule.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V09",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "La divisa del carcere è nera. Dal bordo della mensa ad anello si vedono le capsule dei piani inferiori. Mara, Rhett e Nyx osservano chi scende e chi non risale.",
+   "png_presenti": [
+    "mara",
+    "rhett",
+    "nyx",
+    "kusanagi"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA. Revisione narrativa: separata la vista diretta di Bob dalla scena mensa; se non si scende, l’informazione arriva da Alikea in V09, come nello schema.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V09",
+   "act": 1,
+   "titolo": "La stanza schermata",
+   "luogo": "Il carcere di C2: la cella, una stanza schermata, la mensa, il panottico, il fondo con le capsule",
+   "descrizione": "Alikea si ferma sulla soglia. Nella stanza schermata pronuncia Raven e il sistema passa in attesa.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V09_prima",
+     "testo": "Evadere con le detenute",
+     "effetti": [
+      {
+       "flag": {
+        "V09_prima": true
+       }
+      }
+     ],
+     "riserva": "Le detenute includono il tuo intervento nel tentativo di fuga. Il Patriota dal volto di Tommen sconvolge i passaggi; la squadra di Alikea chiude le uscite. Il tentativo non porta fuori dal carcere: rimane da affrontare l'udienza.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V09_seconda",
+     "testo": "Restare e trattare con Alikea",
+     "effetti": [
+      {
+       "flag": {
+        "V09_seconda": true
+       }
+      }
+     ],
+     "riserva": "Le detenute tentano la fuga senza di te. Con Alikea rimane aperta la difesa di Bob; il clamore dai livelli inferiori non trasforma la tua permanenza in una partecipazione all'evasione.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V10",
+     "effetti": [
+      {
+       "ricompensa": "vigilia_medaglietta"
+      },
+      {
+       "scopri": "vigilia_bob_capsula"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Alikea si ferma sulla soglia. Nella stanza schermata pronuncia Raven e il sistema passa in attesa.",
+   "png_presenti": [
+    "alikea",
+    "bob_harlan",
+    "mara",
+    "rhett",
+    "nyx",
+    "patriota_sperimentale"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V10",
+   "act": 1,
+   "titolo": "La seconda possibilità",
+   "luogo": "Il tribunale speciale di C2, la sala della corte ; poi l'alloggio di Roxanne, in un palazzo di fronte a un casinò",
+   "descrizione": "In aula Philips siede sul podio e Hammond legge le accuse. Prima di entrare Kusanagi ti ha mostrato su carta la richiesta di mandarti ai piani alti.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V10_prima",
+     "testo": "Presentare la difesa di Bob",
+     "effetti": [
+      {
+       "flag": {
+        "V10_prima": true
+       }
+      }
+     ],
+     "riserva": "Le prove a difesa di Bob entrano nel confronto con le accuse. Alikea sostiene la contestazione e propone gli Underhounds quando arriva la condanna. La liberazione di Bob non cancella il vincolo che la Repubblica impone alla squadra.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V10_seconda",
+     "testo": "Contestare il contratto della Bernard",
+     "effetti": [
+      {
+       "flag": {
+        "V10_seconda": true
+       }
+      }
+     ],
+     "riserva": "La Bernard compare nel contratto che ha condotto alle accuse. Alikea usa quel materiale anche per la difesa di Bob. L'udienza termina con il programma firmato da Philips, non con una dichiarazione che la Repubblica abbia rinunciato a usarvi.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V11",
+     "effetti": [
+      {
+       "scopri": "vigilia_contratto"
+      },
+      {
+       "snodo": "vigilia_atto_1"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "In aula Philips siede sul podio e Hammond legge le accuse. Prima di entrare Kusanagi ti ha mostrato su carta la richiesta di mandarti ai piani alti.",
+   "png_presenti": [
+    "philips",
+    "hammond",
+    "alikea",
+    "kusanagi",
+    "roxanne"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA. Chiusura dell'Atto I: approvata dall'autore il 7/11/2026 (CHIUSURE_ATTO_I_ICARO.md, DECISIONI §15 G.5).",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "chiusura_atto": "Philips: Bob sarà rivalutato e poi scagionato. La condanna: 120 anni di congelamento energetico; Hammond propone il programma rieducativo all'ultimo piano. Alikea entra con il PROGRAMMA UNDERHOUNDS e Philips firma. «Da questo momento lei è proprietà operativa della Repubblica.»\n\nAlikea ti mostra il contratto con la Bernard firmato dalle quattro: la prima missione è Roxanne, il dirigente che fece l'accordo, e Roxanne serve vivo. La squadra salta da una finestra all'altra e irrompe nel suo alloggio. Roxanne: «Vi manda lui? Sapevo ci avrebbe fottuti, ora il suo prossimo bersaglio sarà Philips. Non siete altro che pedine, tutti!» Lo caricate con voi."
+  },
+  {
+   "id": "V11",
+   "act": 2,
+   "titolo": "La mensa",
+   "luogo": "Il carcere di C2: la mensa del piano terra e la base degli Underhounds, una stanza degli interrogatori riadattata",
+   "descrizione": "La base degli Underhounds occupa una stanza d'interrogatorio riadattata. Alikea indica i volti dei ricercati con colpi delle dita: la missione è vicina.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V11_prima",
+     "testo": "Fermare gli aggressori proteggendo Bob",
+     "effetti": [
+      {
+       "flag": {
+        "V11_prima": true
+       }
+      }
+     ],
+     "riserva": "L'aggressione si concentra attorno a Bob e alla lama. Le guardie interrompono lo scontro e portano via i detenuti. La pista su Roxanne resta sospetta: non diventa attendibile perché è stata pronunciata prima dell'attacco.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V11_seconda",
+     "testo": "Trattenere vivo uno degli aggressori",
+     "effetti": [
+      {
+       "flag": {
+        "V11_seconda": true
+       }
+      }
+     ],
+     "riserva": "La lama può essere contesa durante l’intervento. Le guardie prendono in consegna gli aggressori; non c’è ancora una confessione con cui attribuire l’ordine a Roxanne o a Hammond.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V12",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "La base degli Underhounds occupa una stanza d'interrogatorio riadattata. Alikea indica i volti dei ricercati con colpi delle dita: la missione è vicina.",
+   "png_presenti": [
+    "bob_harlan",
+    "detenuto"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "detenuto",
+    "letale": false,
+    "alternativa": {
+     "testo": "Richiamare le guardie mentre copro Bob",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "La chiamata interrompe lo spazio lasciato ai detenuti: Bob può restare dietro la tua copertura.",
+     "riserva_fallimento": "I detenuti ti raggiungono prima che le guardie riescano a separarvi.",
+     "fonte": "PROPOSTA di prova di scena: NC base esistente del motore, tratto di scheda; non è un’approvazione del valore."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "V11_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "L’aggressore viene disarmato; le guardie lo prendono in consegna. Non emerge ancora un mandante.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Bob si mette in mezzo mentre le guardie interrompono l’aggressione. La pista offerta dai detenuti resta sospetta."
+    },
+    "fonte": "Schema scena 11; modello PNG_ICARO_DA_APPROVARE. Raccordi degli esiti PROPOSTA; nessuna nuova formula, HP o livello."
+   }
+  },
+  {
+   "id": "V12",
+   "act": 2,
+   "titolo": "La discoteca",
+   "luogo": "Il luogo delle indagini su Roxanne ; C5, una discoteca clandestina",
+   "descrizione": "Le registrazioni su Roxanne sono cifrate; alcuni messaggi viaggiano ancora su carta. Nael Prism ritorna nei contratti della pista.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V12_prima",
+     "testo": "Parlare con Felia",
+     "effetti": [
+      {
+       "flag": {
+        "V12_prima": true
+       }
+      }
+     ],
+     "riserva": "Felia è viva e può rispondere direttamente. Il suo incontro con Lucas e Niklaus non dimostra ancora quale accordo li leghi; Prism rimane al centro della pista su Roxanne.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V12_seconda",
+     "testo": "Intervenire contro la fuga di Prism",
+     "effetti": [
+      {
+       "flag": {
+        "V12_seconda": true
+       }
+      }
+     ],
+     "riserva": "Lucas e Niklaus cercano di portare Prism fuori dalla discoteca. Intervenire mette in discussione quel movimento, non rende automaticamente Prism un prigioniero della tua squadra: il confronto o lo scontro deve ancora determinarlo.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V13",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Le registrazioni su Roxanne sono cifrate; alcuni messaggi viaggiano ancora su carta. Nael Prism ritorna nei contratti della pista.",
+   "png_presenti": [
+    "felia_moreau",
+    "lucas",
+    "niklaus",
+    "nael_prism",
+    "kusanagi"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V13",
+   "act": 2,
+   "titolo": "Bere per Nyx",
+   "luogo": "C7: l'underground di Shibuya Zero, le vecchie stazioni della metropolitana con le botteghe dei Kintsugi, un pub",
+   "descrizione": "Alikea parte per C8 e ti affida la squadra. Nyx è morta; il modo e il responsabile non sono stabiliti dai materiali disponibili.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V13_prima",
+     "testo": "Chiedere prove delle accuse",
+     "effetti": [
+      {
+       "flag": {
+        "V13_prima": true
+       }
+      }
+     ],
+     "riserva": "Antoine insiste su Hammond come pedina e sul pericolo per Alikea. La sua sicurezza non basta a identificare il colpevole fra gli hacker: la domanda sulle prove rimane legittima e il materiale già ricevuto resta da controllare.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V13_seconda",
+     "testo": "Parlare con Bob del lutto",
+     "effetti": [
+      {
+       "flag": {
+        "V13_seconda": true
+       }
+      }
+     ],
+     "riserva": "Bob resta con te al tavolo mentre l'assenza di Nyx pesa sulla squadra. Non attribuisce per questo una morte già ricostruita a un nuovo colpevole; la missione continua con una persona in meno.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V14",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Alikea parte per C8 e ti affida la squadra. Nyx è morta; il modo e il responsabile non sono stabiliti dai materiali disponibili.",
+   "png_presenti": [
+    "alikea",
+    "bob_harlan",
+    "rhett",
+    "felia_moreau",
+    "antoine"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V14",
+   "act": 2,
+   "titolo": "Il clone",
+   "luogo": "Il laboratorio dei cloni, con una cucina",
+   "descrizione": "Il laboratorio contiene il corpo morto di un clone di Hammond. Rhett, Bob e Kusanagi sono feriti; Mara si rialza. Felia non vede ancora bene.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V14_prima",
+     "testo": "Mettere al sicuro la copia dei dati",
+     "effetti": [
+      {
+       "flag": {
+        "V14_prima": true
+       }
+      }
+     ],
+     "riserva": "La copia di Felia conserva i dati che ha già duplicato. Il gelo continua a chiudere il laboratorio: proteggere la copia non salva automaticamente il corpo del clone o ogni terminale sommerso.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V14_seconda",
+     "testo": "Aiutare i feriti a uscire",
+     "effetti": [
+      {
+       "flag": {
+        "V14_seconda": true
+       }
+      }
+     ],
+     "riserva": "I feriti hanno bisogno di un passaggio fuori dal laboratorio che si allaga. I dati già duplicati rimangono con il gruppo; ciò che resta nel ghiaccio non diventa una prova materialmente recuperata.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V15",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Il laboratorio contiene il corpo morto di un clone di Hammond. Rhett, Bob e Kusanagi sono feriti; Mara si rialza. Felia non vede ancora bene.",
+   "png_presenti": [
+    "clone_hammond",
+    "rhett",
+    "bob_harlan",
+    "kusanagi",
+    "mara",
+    "felia_moreau"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V15",
+   "act": 2,
+   "titolo": "Prove che reggano",
+   "luogo": "Dove la scorta militare prende in carico il gruppo ; il posto indicato da Antoine, solo rottami",
+   "descrizione": "Il luogo indicato da Antoine è ridotto a rottami. Nei dati del laboratorio compare un interlocutore: lo Spettro Bianco.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V15_prima",
+     "testo": "Costruire una trappola di prove",
+     "effetti": [
+      {
+       "flag": {
+        "V15_prima": true
+       }
+      }
+     ],
+     "riserva": "Alikea vuole una prova che distingua Hammond dalle copie e lo colleghi agli ordini. Il video di tuo padre e la registrazione dello Spettro sono due elementi da collegare; il caso che tuo padre stava seguendo resta da ricostruire.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V15_seconda",
+     "testo": "Affrontare Hammond apertamente",
+     "effetti": [
+      {
+       "flag": {
+        "V15_seconda": true
+       }
+      }
+     ],
+     "riserva": "Alikea richiama il rischio delle persone con la stessa faccia. Il confronto aperto può essere scelto, ma la caduta di una copia non dimostrerebbe da sola che ogni Hammond sia stato fermato.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V16",
+     "effetti": [
+      {
+       "scopri": "vigilia_video_padre"
+      },
+      {
+       "scopri": "vigilia_spettro"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Il luogo indicato da Antoine è ridotto a rottami. Nei dati del laboratorio compare un interlocutore: lo Spettro Bianco.",
+   "png_presenti": [
+    "alikea",
+    "kusanagi",
+    "mara",
+    "rhett",
+    "bob_harlan"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V16",
+   "act": 2,
+   "titolo": "I Bunny-Hoppers",
+   "luogo": "Il covo dei Bunny-Hoppers, una zona dell'underground piena di rottami",
+   "descrizione": "Tre accessi, telecamere e droni proteggono il covo. Candor apre un collegamento protetto con te e Felia; Bob fa cenno di misurare le informazioni.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V16_prima",
+     "testo": "Tentare un ingresso nascosto",
+     "effetti": [
+      {
+       "flag": {
+        "V16_prima": true
+       }
+      }
+     ],
+     "riserva": "Telecamere e droni continuano a controllare i tre accessi. Cercare un ingresso nascosto non rende invisibile la squadra né anticipa una vittoria su Marek: il contatto con il covo resta da affrontare.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V16_seconda",
+     "testo": "Richiedere un contatto prima dello scontro",
+     "effetti": [
+      {
+       "flag": {
+        "V16_seconda": true
+       }
+      }
+     ],
+     "riserva": "La richiesta di contatto raggiunge un luogo sorvegliato. Marek riconosce chi lavora per gli Underhounds e oppone la sua accusa; la possibilità di parlare non equivale alla sua resa.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V17",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Tre accessi, telecamere e droni proteggono il covo. Candor apre un collegamento protetto con te e Felia; Bob fa cenno di misurare le informazioni.",
+   "png_presenti": [
+    "marek",
+    "rhett",
+    "bob_harlan",
+    "felia_moreau",
+    "medico"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "marek",
+    "letale": false,
+    "alternativa": {
+     "testo": "Chiedere a Marek di parlare prima di colpire",
+     "tratto": "Persuasione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Marek accetta il confronto: la conversazione sul programma può precedere le armi.",
+     "riserva_fallimento": "Marek non interrompe l’avvicinamento; il confronto si apre sul terreno dello scontro.",
+     "fonte": "PROPOSTA di prova di scena: NC base esistente del motore, tratto di scheda; non è un’approvazione del valore."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "V16_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Marek viene atterrato e resta vivo; Mara può occuparsi della ferita mentre il gruppo prepara il furgone.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Rhett interviene con il cavo e il coltello. Marek cade ferito, vivo; il confronto continua nel furgone."
+    },
+    "fonte": "Schema scena 16; modello PNG_ICARO_DA_APPROVARE. Raccordi degli esiti PROPOSTA; nessuna nuova formula, HP o livello."
+   }
+  },
+  {
+   "id": "V17",
+   "act": 2,
+   "titolo": "Il furgone",
+   "luogo": "Il furgone di trasporto rubato agli hacker",
+   "descrizione": "Mara tiene fasciato il collo di Marek nel furgone. Bob conduce le domande mentre Felia distingue a fatica le sagome.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V17_prima",
+     "testo": "Convincere Marek a collaborare",
+     "effetti": [
+      {
+       "flag": {
+        "V17_prima": true
+       }
+      }
+     ],
+     "riserva": "Marek parla degli ordini a Hammond e dei trasporti, ma la collaborazione non cancella quello che Rhett gli rimprovera. Mara mantiene la fasciatura: serve vivo per la strada verso C5.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V17_seconda",
+     "testo": "Affidare l'interrogatorio a Bob",
+     "effetti": [
+      {
+       "flag": {
+        "V17_seconda": true
+       }
+      }
+     ],
+     "riserva": "Bob segue i collegamenti fra provviste, traiettorie e stazione. Le risposte di Marek raggiungono anche te senza attribuirti le domande di Bob; il piano per C5 resta quello mostrato sulla mappa.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V18",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Mara tiene fasciato il collo di Marek nel furgone. Bob conduce le domande mentre Felia distingue a fatica le sagome.",
+   "png_presenti": [
+    "marek",
+    "mara",
+    "bob_harlan",
+    "rhett",
+    "felia_moreau"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V18",
+   "act": 2,
+   "titolo": "C5",
+   "luogo": "C5: le strade, una serra, una stanza d'albergo, il settore cargo",
+   "descrizione": "Un lavoratore di C5 vomita sangue con schegge di vetro e metallo. Marek parla del Cromo saldato al corpo; teme che una parte dell'umanità non torni.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V18_prima",
+     "testo": "Fermarsi ad aiutare il lavoratore",
+     "effetti": [
+      {
+       "flag": {
+        "V18_prima": true
+       }
+      }
+     ],
+     "riserva": "Il lavoratore ha sangue e schegge alla bocca. La tua attenzione gli è rivolta, ma l’origine del male non è ancora identificata: non basta fermarsi per promettere una guarigione o attribuirlo a un nemico.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V18_seconda",
+     "testo": "Preparare con Bob l'ingresso al cargo",
+     "effetti": [
+      {
+       "flag": {
+        "V18_seconda": true
+       }
+      }
+     ],
+     "riserva": "Bob confronta le frequenze con gli accessi al settore cargo. Mara chiede rinforzi e il gruppo prepara l’avvicinamento a Koga. I segni della malattia restano alle vostre spalle senza una spiegazione verificata.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V19",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Un lavoratore di C5 vomita sangue con schegge di vetro e metallo. Marek parla del Cromo saldato al corpo; teme che una parte dell'umanità non torni.",
+   "png_presenti": [
+    "marek",
+    "mara",
+    "bob_harlan",
+    "rhett",
+    "medico"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V19",
+   "act": 2,
+   "titolo": "Il blitz",
+   "luogo": "C5: il settore cargo e le uscite ; un deposito alimentare sotterraneo di C5 [ICA S2 Ep.4 r.149-150]",
+   "descrizione": "Alikea dispone gli Underhounds alle uscite. Bob segue le frequenze; Ferra è vicina. Per l'operazione qualcuno dovrà essere consegnato.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V19_prima",
+     "testo": "Cercare un accordo con Marek",
+     "effetti": [
+      {
+       "flag": {
+        "V19_prima": true
+       }
+      }
+     ],
+     "riserva": "Marek accetta di prendere il posto di Koga nell'arresto previsto dall'accordo. La consegna gli apre il passaggio verso il carcere, non garantisce già l'evasione degli altri. La seconda possibilità concessa rimane legata a ciò che farà.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V19_seconda",
+     "testo": "Tenere il piano d’arresto su Koga",
+     "effetti": [
+      {
+       "flag": {
+        "V19_seconda": true
+       }
+      }
+     ],
+     "riserva": "Gli Underhounds tengono le uscite e Bob controlla le frequenze. Il piano mantiene Koga come bersaglio; Marek non viene consegnato al suo posto senza l’accordo. La richiesta di Alikea su chi consegnare rimane davanti alla squadra.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V20",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Alikea dispone gli Underhounds alle uscite. Bob segue le frequenze; Ferra è vicina. Per l'operazione qualcuno dovrà essere consegnato.",
+   "png_presenti": [
+    "alikea",
+    "bob_harlan",
+    "marek",
+    "ferra_ostrom",
+    "medico",
+    "koga_s2"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "koga_s2",
+    "letale": false,
+    "alternativa": {
+     "testo": "Tenere il perimetro e chiedere ad Alikea di trattare",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Il perimetro regge e la consegna rimane una questione da discutere con Alikea; Koga non è stato catturato.",
+     "riserva_fallimento": "Il movimento nel settore cargo rompe il confronto a distanza: Koga arriva sulla tua linea.",
+     "fonte": "PROPOSTA di prova di scena: NC base esistente del motore, tratto di scheda; non è un’approvazione del valore."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "V19_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Koga perde il confronto e si sottrae alla cattura definitiva. L’accordo con Marek resta una decisione distinta.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Il blitz non ferma Koga. Gli Underhounds devono rispondere ad Alikea senza poter dichiarare compiuto un arresto."
+    },
+    "fonte": "Schema scena 19; modello PNG_ICARO_DA_APPROVARE. Raccordi degli esiti PROPOSTA; nessuna nuova formula, HP o livello."
+   }
+  },
+  {
+   "id": "V20",
+   "act": 2,
+   "titolo": "Il nuovo potere",
+   "luogo": "C2, la capitale della Repubblica ; la base degli Underhounds nel carcere",
+   "descrizione": "Florant Esprit, un Icaro, ottiene il controllo della Repubblica. L'ordine politico cambia prima che la minaccia esterna diventi pubblica.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V20_prima",
+     "testo": "Opporsi al nuovo comando",
+     "effetti": [
+      {
+       "flag": {
+        "V20_prima": true
+       }
+      }
+     ],
+     "riserva": "Opporsi mette in discussione l'uso della squadra da parte del nuovo vertice. La Repubblica non cessa per questo di rivendicare gli Underhounds e la flotta continua a scendere: il confronto sulle persone da difendere rimane urgente.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V20_seconda",
+     "testo": "Usare il ruolo per proteggere la squadra",
+     "effetti": [
+      {
+       "flag": {
+        "V20_seconda": true
+       }
+      }
+     ],
+     "riserva": "Gli ordini del nuovo potere raggiungono gli Underhounds. Seguirne uno non attribuisce una fedeltà senza limiti né cancella le prove raccolte prima che Florant ottenesse il comando.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V21",
+     "effetti": [
+      {
+       "snodo": "vigilia_atto_2"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Florant Esprit, un Icaro, ottiene il controllo della Repubblica. L'ordine politico cambia prima che la minaccia esterna diventi pubblica.",
+   "png_presenti": [
+    "spettro_bianco"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V21",
+   "act": 3,
+   "titolo": "La delegazione",
+   "luogo": "C2, la capitale , e la base degli Underhounds nel carcere",
+   "descrizione": "C2 attende una risposta agli invasori. Una delegazione si prepara a trattare; la proposta è che la squadra la accompagni.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V21_prima",
+     "testo": "Accompagnare la delegazione",
+     "effetti": [
+      {
+       "flag": {
+        "V21_prima": true
+       }
+      }
+     ],
+     "riserva": "La squadra prende posto nella scorta della delegazione. Il viaggio conduce al confronto con gli invasori; accettare questo compito non equivale a giustificare tutti gli ordini del nuovo vertice della Repubblica.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V21_seconda",
+     "testo": "Cercare prima Alikea",
+     "effetti": [
+      {
+       "flag": {
+        "V21_seconda": true
+       }
+      }
+     ],
+     "riserva": "La ricerca non dà una notizia certa su Alikea. La delegazione viene preparata ugualmente; Bob e Kusanagi rimangono i contatti con cui discutere se raggiungerla o proseguire la ricerca.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V22",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "C2 attende una risposta agli invasori. Una delegazione si prepara a trattare; la proposta è che la squadra la accompagni.",
+   "png_presenti": [
+    "bob_harlan",
+    "kusanagi"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V22",
+   "act": 3,
+   "titolo": "Il telonio",
+   "luogo": "I ghiacci fuori dalle città ; la base degli invasori: la vecchia città con il vecchio core e le radici di metallo » [ICA S1 Ep.10 r.596])",
+   "descrizione": "Nei ghiacci la base degli invasori segue le radici metalliche del vecchio core. Il loro bisogno di telonio è concreto: senza si cristallizzano.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V22_prima",
+     "testo": "Cercare la versione di Luhman",
+     "effetti": [
+      {
+       "flag": {
+        "V22_prima": true
+       }
+      }
+     ],
+     "riserva": "Luhman è prigioniero dei suoi per pacifismo. Il colloquio gli permette di esporre una posizione diversa dalla conquista; non lo libera e non gli restituisce da solo il comando.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V22_seconda",
+     "testo": "Studiare le difese della base",
+     "effetti": [
+      {
+       "flag": {
+        "V22_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il consumo di telonio e il rischio di cristallizzazione rendono visibile un bisogno degli invasori. Osservarlo non attribuisce ancora alla squadra un modo sicuro per usarlo contro Zephir.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V23",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Nei ghiacci la base degli invasori segue le radici metalliche del vecchio core. Il loro bisogno di telonio è concreto: senza si cristallizzano.",
+   "png_presenti": [
+    "zephir",
+    "luhman"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V23",
+   "act": 3,
+   "titolo": "Le trattative",
+   "luogo": "La base degli invasori",
+   "descrizione": "Gli invasori chiedono il telonio e ritengono i terrestri responsabili dello spegnimento del Sole. La trattativa deve precedere il conflitto finale.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V23_prima",
+     "testo": "Presentare le prove sullo Spettro",
+     "effetti": [
+      {
+       "flag": {
+        "V23_prima": true
+       }
+      }
+     ],
+     "riserva": "La registrazione e la voce di Florant vengono poste a confronto. Il collegamento con lo Spettro riguarda gli ordini già raccolti; la sua responsabilità per quegli ordini resta distinta dall’accusa degli invasori sul Sole.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V23_seconda",
+     "testo": "Sostenere un accordo che protegga i civili",
+     "effetti": [
+      {
+       "flag": {
+        "V23_seconda": true
+       }
+      }
+     ],
+     "riserva": "Shapira mantiene la richiesta di telonio e l'accusa rivolta alla Terra. La proposta di proteggere i civili entra nella trattativa, senza convertirla in una pace già conclusa.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V24",
+     "effetti": [
+      {
+       "scopri": "vigilia_florant"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Gli invasori chiedono il telonio e ritengono i terrestri responsabili dello spegnimento del Sole. La trattativa deve precedere il conflitto finale.",
+   "png_presenti": [
+    "shapira",
+    "spettro_bianco"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V24",
+   "act": 3,
+   "titolo": "La rottura",
+   "luogo": "La base degli invasori ; poi i ghiacci e il ritorno verso C5",
+   "descrizione": "Le trattative non fermano il conflitto. La squadra deve uscire dalla base prima che il passaggio alle navi diventi impossibile.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V24_prima",
+     "testo": "Liberare Luhman",
+     "effetti": [
+      {
+       "flag": {
+        "V24_prima": true
+       }
+      }
+     ],
+     "riserva": "Luhman viene sottratto alla custodia. La libertà ottenuta gli permette di restare un possibile interlocutore nelle navi; non lo trasforma in un subordinato della squadra.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V24_seconda",
+     "testo": "Coprire la ritirata della delegazione",
+     "effetti": [
+      {
+       "flag": {
+        "V24_seconda": true
+       }
+      }
+     ],
+     "riserva": "La delegazione ha bisogno di un passaggio attraverso la base. Coprirlo concentra l'azione su chi sta uscendo; Luhman rimane dove era detenuto finché nessuno interviene per liberarlo.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V25",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Le trattative non fermano il conflitto. La squadra deve uscire dalla base prima che il passaggio alle navi diventi impossibile.",
+   "png_presenti": [
+    "mara",
+    "luhman"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V25",
+   "act": 3,
+   "titolo": "Lasciare la Terra",
+   "luogo": "C5 ; la stazione di lancio",
+   "descrizione": "La Terra comincia a collassare: Gaia Epos consuma il pianeta per creare un buco bianco. Non è una Gaia di un altro mondo.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V25_prima",
+     "testo": "Cercare gli accessi alla stazione",
+     "effetti": [
+      {
+       "flag": {
+        "V25_prima": true
+       }
+      }
+     ],
+     "riserva": "Gli accessi conosciuti da Antoine diventano il riferimento della ricerca. Sapere che esiste una via non significa avere già caricato le persone sulle navi; il collasso continua mentre si prepara l'evacuazione.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V25_seconda",
+     "testo": "Raccogliere la squadra per l'evacuazione",
+     "effetti": [
+      {
+       "flag": {
+        "V25_seconda": true
+       }
+      }
+     ],
+     "riserva": "La squadra si raccoglie attorno all’evacuazione. Bob, gli Underhounds e i civili devono ancora attraversare i passaggi verso le navi; chiudere la fila troppo presto lascerebbe qualcuno indietro.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V26",
+     "effetti": [
+      {
+       "scopri": "vigilia_programma"
+      },
+      {
+       "scopri": "vigilia_gaia"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "La Terra comincia a collassare: Gaia Epos consuma il pianeta per creare un buco bianco. Non è una Gaia di un altro mondo.",
+   "png_presenti": [
+    "antoine"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V26",
+   "act": 3,
+   "titolo": "Le capsule",
+   "luogo": "Il carcere di C2, i livelli delle capsule",
+   "descrizione": "Nel carcere le capsule continuano a registrare rendimento e Cromo. Fra quelle file c'è stato Bob, trasformato in produzione attiva.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V26_prima",
+     "testo": "Aprire le capsule ai detenuti",
+     "effetti": [
+      {
+       "flag": {
+        "V26_prima": true
+       }
+      }
+     ],
+     "riserva": "Le capsule vengono aperte ai detenuti. Gli uomini e le donne sottratti alla produzione hanno bisogno di raggiungere le navi; la squadra rompe così con l'uso che la Repubblica faceva dei loro corpi.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V26_seconda",
+     "testo": "Proteggere il passaggio verso le navi",
+     "effetti": [
+      {
+       "flag": {
+        "V26_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il passaggio verso le navi diventa il centro della difesa. Le capsule non vengono per questo dichiarate svuotate: la decisione di restituire libertà ai detenuti rimane distinta.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V27",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Nel carcere le capsule continuano a registrare rendimento e Cromo. Fra quelle file c'è stato Bob, trasformato in produzione attiva.",
+   "png_presenti": [
+    "hammond",
+    "detenuto"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "hammond",
+    "letale": false,
+    "alternativa": {
+     "testo": "Cercare l’accesso laterale alle capsule",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "L’accesso trovato ti porta ai collegamenti dei detenuti senza passare davanti a Hammond. Aprirli resta la scelta successiva.",
+     "riserva_fallimento": "Hammond individua la tua via verso i collegamenti e la chiude di persona.",
+     "fonte": "PROPOSTA di prova di scena: NC base esistente del motore, tratto di scheda; non è un’approvazione del valore."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "V26_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Hammond è a terra. Le capsule rimangono collegate: aprirle o difendere il passaggio è ancora una scelta.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Hammond mantiene la difesa delle capsule. La squadra cerca un passaggio verso le navi senza dichiarare liberati i detenuti."
+    },
+    "fonte": "Schema scena 26; modello PNG_ICARO_DA_APPROVARE. Raccordi degli esiti PROPOSTA; nessuna nuova formula, HP o livello."
+   }
+  },
+  {
+   "id": "V27",
+   "act": 3,
+   "titolo": "Le navi",
+   "luogo": "Le navi della flotta degli invasori",
+   "descrizione": "Il conflitto si sposta sulle astronavi. I corridoi non sono una fine della fuga: servono a far salire chi è ancora a terra.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V27_prima",
+     "testo": "Difendere l'imbarco dei civili",
+     "effetti": [
+      {
+       "flag": {
+        "V27_prima": true
+       }
+      }
+     ],
+     "riserva": "L'imbarco resta aperto mentre la squadra difende chi sale. Il combattimento non viene dichiarato vinto soltanto perché la priorità è chiara: Zephir continua a ostacolare il passaggio finché non viene fermato o aggirato.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V27_seconda",
+     "testo": "Cercare una via attraverso le difese",
+     "effetti": [
+      {
+       "flag": {
+        "V27_seconda": true
+       }
+      }
+     ],
+     "riserva": "Le difese separano la squadra dai corridoi d'imbarco. Cercare una via alternativa lascia alla difesa avversaria un problema diverso dal confronto frontale; le persone in attesa devono ancora attraversarla.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V28",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Il conflitto si sposta sulle astronavi. I corridoi non sono una fine della fuga: servono a far salire chi è ancora a terra.",
+   "png_presenti": [
+    "zephir"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "zephir",
+    "letale": false,
+    "alternativa": {
+     "testo": "Coprire l’imbarco da un passaggio riparato",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Il passaggio riparato permette alla fila di continuare senza esporti subito al Patriota.",
+     "riserva_fallimento": "Il Patriota raggiunge il passaggio e costringe la copertura a uno scontro diretto.",
+     "fonte": "PROPOSTA di prova di scena: NC base esistente del motore, tratto di scheda; non è un’approvazione del valore."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "V27_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Zephir arretra e il corridoio può essere conteso per l’imbarco. L’astronave madre rimane davanti alla squadra.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Zephir mantiene il passaggio principale. Il gruppo deve coprire l’imbarco o cercare un’altra via verso il comando."
+    },
+    "fonte": "Schema scena 27; modello PNG_ICARO_DA_APPROVARE. Raccordi degli esiti PROPOSTA; nessuna nuova formula, HP o livello."
+   }
+  },
+  {
+   "id": "V28",
+   "act": 3,
+   "titolo": "L'astronave madre",
+   "luogo": "L'astronave madre",
+   "descrizione": "Nell'astronave madre lo scontro raggiunge Florant Esprit e Shapira. Il villain partecipa: non viene rimosso dal finale per comodità.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V28_prima",
+     "testo": "Fermare Florant con le prove",
+     "effetti": [
+      {
+       "flag": {
+        "V28_prima": true
+       }
+      }
+     ],
+     "riserva": "Le prove vengono opposte a Florant nel luogo del comando. Il percorso di giustizia dipende da averle conservate e collegate: nominarle qui non crea retroattivamente ciò che manca alla ricostruzione.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V28_seconda",
+     "testo": "Combattere per aprire la fuga",
+     "effetti": [
+      {
+       "flag": {
+        "V28_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il confronto per aprire la fuga mette Florant e Shapira davanti alla squadra. La loro partecipazione rimane concreta, ma l'esito dello scontro non è deciso da questa scelta prima della risoluzione.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V29",
+     "effetti": [
+      {
+       "snodo": "vigilia_atto_3"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Nell'astronave madre lo scontro raggiunge Florant Esprit e Shapira. Il villain partecipa: non viene rimosso dal finale per comodità.",
+   "png_presenti": [
+    "shapira",
+    "spettro_bianco",
+    "uomo_capelli_rossi"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "spettro_bianco",
+    "letale": false,
+    "alternativa": {
+     "testo": "Tenere Florant sulle registrazioni mentre cerco una via",
+     "tratto": "Persuasione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Le registrazioni obbligano Florant a rispondere mentre individui uno spazio per muoverti. Il comando non è ancora caduto.",
+     "riserva_fallimento": "Florant cerca di troncare il confronto sulle registrazioni e ti affronta.",
+     "fonte": "PROPOSTA di prova di scena: NC base esistente del motore, tratto di scheda; non è un’approvazione del valore."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "V28_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Florant perde il confronto nel comando. La fuga rimane da sostenere mentre la Terra collassa.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Florant mantiene il comando della sala, ma lo scontro non arresta il collasso. La squadra deve raggiungere le navi senza chiamare vittoria la ritirata."
+    },
+    "fonte": "Schema scena 28; modello PNG_ICARO_DA_APPROVARE. Raccordi degli esiti PROPOSTA; nessuna nuova formula, HP o livello."
+   }
+  },
+  {
+   "id": "V29",
+   "act": 3,
+   "titolo": "Il prezzo",
+   "luogo": "L'astronave madre e le navi che lasciano la Terra",
+   "descrizione": "Le ultime navi tentano di lasciare la Terra che collassa. Bob è vicino a te; fra le capsule e gli imbarchi rimane poco tempo per decidere come partire.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V29_prima",
+     "testo": "Offrirmi per alimentare la fuga",
+     "effetti": [
+      {
+       "flag": {
+        "V29_prima": true
+       }
+      }
+     ],
+     "riserva": "La scelta di alimentare la fuga porta te nella capsula. L'energia sostiene le navi e la salvezza di Bob; questa strada ha un costo personale esplicito, diverso dal partire insieme agli altri.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V29_seconda",
+     "testo": "Partire con Bob e la squadra",
+     "effetti": [
+      {
+       "flag": {
+        "V29_seconda": true
+       }
+      }
+     ],
+     "riserva": "Sali con Bob e la squadra. La capsula resta alle vostre spalle; davanti ci sono i posti ancora disponibili sulla nave e le persone da accompagnare fino a bordo.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V30",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Le ultime navi tentano di lasciare la Terra che collassa. Bob è vicino a te; fra le capsule e gli imbarchi rimane poco tempo per decidere come partire.",
+   "png_presenti": [
+    "bob_harlan"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V30",
+   "act": 3,
+   "titolo": "Chi difendi",
+   "luogo": "Finali 1 e 2: una nave lontano dalla Terra . Finale 3: una capsula sulla nave",
+   "descrizione": "La Terra è perduta; le navi portano chi avete sottratto al collasso. Sul metallo resta il rumore di chi è riuscito a salire.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "V30_prima",
+     "testo": "Chiudere con chi è stato salvato",
+     "effetti": [
+      {
+       "flag": {
+        "V30_prima": true
+       }
+      }
+     ],
+     "riserva": "I sopravvissuti si raccolgono sulla nave. Puoi rivolgerti a loro, cercare i compagni oppure restare in silenzio davanti alla Terra che collassa.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "V30_seconda",
+     "testo": "Ricordare il padre e la medaglietta",
+     "effetti": [
+      {
+       "flag": {
+        "V30_seconda": true
+       }
+      }
+     ],
+     "riserva": "La medaglietta è il legame materiale con l'accademia e con tuo padre. Le prove sulla sua morte restano quelle acquisite; il ricordo non assegna una confessione o un caso risolto che i materiali non hanno fornito.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "V30E",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "La Terra è perduta; le navi portano chi avete sottratto al collasso. Sul metallo resta il rumore di chi è riuscito a salire.",
+   "png_presenti": [],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "V30E",
+   "act": 3,
+   "finale": true,
+   "titolo": "Dopo la partenza",
+   "luogo": "Una nave lontano dalla Terra; collocazione proposta dallo schema",
+   "descrizione": "Epilogo personale in attesa del contratto finale completo.",
+   "obiettivi": [],
+   "uscite": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_SECONDA_POSSIBILITA.md, Finali; DECISIONI §9.7. Varianti scritte nella scena 30; condizioni di selezione non approvate: non integrate.",
+   "png_presenti": [],
+   "apertura_riserva": ""
+  }
+ ],
+ "png": {
+  "koga": {
+   "nome": "Koga",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "rabbit": {
+   "nome": "Rabbit",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "tommen": {
+   "nome": "Tommen",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "lucas": {
+   "nome": "Lucas",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "grid": {
+   "nome": "Grid",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "nine_nine": {
+   "nome": "Nine-Nine",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "kusanagi": {
+   "nome": "Makoto Kusanagi",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "medico": {
+   "nome": "Candor Rhee",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "ferra_ostrom": {
+   "nome": "Ferra Ostrom",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "kestrel": {
+   "nome": "Kestrel",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "alikea": {
+   "nome": "Alikea Rodano",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "gaia_epos": {
+   "nome": "Gaia Epos",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "evan_wood": {
+   "nome": "Evan Wood",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "antoine": {
+   "nome": "Antoine Delacroix",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "mara": {
+   "nome": "Mara",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "rhett": {
+   "nome": "Rhett",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "nyx": {
+   "nome": "Nyx",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "bob_harlan": {
+   "nome": "Bob Harlan",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "patriota_sperimentale": {
+   "nome": "Patriota sperimentale",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "philips": {
+   "nome": "Richard Philips",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "hammond": {
+   "nome": "Ruth Hammond",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "roxanne": {
+   "nome": "Roxanne",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "detenuto": {
+   "nome": "Detenuto",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "felia_moreau": {
+   "nome": "Felia Moreau",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "niklaus": {
+   "nome": "Niklaus",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "nael_prism": {
+   "nome": "Nael Prism",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "clone_hammond": {
+   "nome": "Clone di Hammond",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "marek": {
+   "nome": "Marek Volkov",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "koga_s2": {
+   "nome": "Koga",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "spettro_bianco": {
+   "nome": "Florant Esprit",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "zephir": {
+   "nome": "Zephir Zylos",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "luhman": {
+   "nome": "Capitano Luhman",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "shapira": {
+   "nome": "Shapira Kamar",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  },
+  "uomo_capelli_rossi": {
+   "nome": "Uomo dai capelli rossi",
+   "ruolo": "Personaggio di Icaro presente nei passaggi indicati dallo schema; non trasferire conoscenze di altre scene.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_ICARO_DA_APPROVARE.md, tabella scene e appendice; nomi aggiornati da DECISIONI_AUTORE §10."
+  }
+ },
+ "fatti": {
+  "vigilia_padre_non_caso": {
+   "testo": "La morte del padre non fu un caso: lo dice il video consegnato da Antoine.",
+   "segreto": true,
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": 1,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+  },
+  "vigilia_contratto": {
+   "testo": "Il contratto della Bernard ha consentito l’incastro.",
+   "segreto": true,
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": 1,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+  },
+  "vigilia_video_padre": {
+   "testo": "Il video mostra Hammond uccidere il padre.",
+   "segreto": true,
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": 2,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+  },
+  "vigilia_spettro": {
+   "testo": "Hammond riceve ordini dallo Spettro Bianco.",
+   "segreto": true,
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": 2,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+  },
+  "vigilia_florant": {
+   "testo": "Florant Esprit è lo Spettro Bianco.",
+   "segreto": true,
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": 3,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+  },
+  "vigilia_programma": {
+   "testo": "Il programma si chiama Ich e porta persone a vivere in un mondo scritto.",
+   "segreto": true,
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": 3,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+  },
+  "vigilia_gaia": {
+   "testo": "Gaia Epos consuma la Terra per creare un buco bianco.",
+   "segreto": true,
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": 3,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+  },
+  "vigilia_bob_capsula": {
+   "testo": "Bob era registrato come produzione attiva nella capsula del carcere.",
+   "segreto": true,
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": 1,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "docs/single-player/trame/SCHEMA_LA_SECONDA_POSSIBILITA.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+  },
+  "icaro_sole_estrazione": {
+   "testo": "La stazione a terra ignorò gli avvertimenti della stazione sul Sole e impose di completare il ciclo di estrazione per profitto. Il ciclo causò uno strappo nelle onde di oscillazione del Cromo estratte dal Sole, provocandone lo spegnimento. La figlia di Epos sopravvisse alla stazione sul Sole e divenne un’entità ricolma di Cromo. Ora guida i marziani contro la Terra; nel suo subconscio rimane la rabbia per l’ordine ricevuto e il sacrificio imposto dai terrestri.",
+   "segreto": true,
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "approved",
+   "act": 3,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "DECISIONI_AUTORE.md §11, risposta dell’autore del 1 novembre 2026 sullo spegnimento del Sole."
+  }
+ },
+ "borsa": {
+  "oggetti": {
+   "vigilia_file_antoine": {
+    "id": "vigilia_file_antoine",
+    "nome": "File consegnati da Antoine",
+    "descrizione": "Registrazioni digitali offerte da Antoine: il modello non presuppone un telefono o un nuovo supporto fisico.",
+    "tipo": "indizio",
+    "unico": true,
+    "indispensabile": false,
+    "via_alternativa": {
+     "testo": "La conoscenza già acquisita resta distinta dal possesso materiale: perdere il supporto non crea né cancella retroattivamente prove."
+    },
+    "campaign_id": "seconda-possibilita-trama",
+    "content_status": "proposed",
+    "act": 1,
+    "level_band": [
+     1,
+     30
+    ],
+    "difficulty_tags": [
+     "esplorativa",
+     "bilanciata",
+     "permadeath"
+    ],
+    "visibility_rule": "pubblica",
+    "source_note": "SCHEMA_LA_SECONDA_POSSIBILITA.md; valori applicativi PROPOSTA, regole esistenti. Supporto materiale non specificato nella fonte: rappresentazione come dato digitale, non invenzione di un oggetto fisico.",
+    "natura": "dati"
+   },
+   "vigilia_medaglietta": {
+    "id": "vigilia_medaglietta",
+    "nome": "Medaglietta dell’accademia",
+    "descrizione": "La medaglietta restituita da Alikea, legata al padre.",
+    "tipo": "indizio",
+    "unico": true,
+    "indispensabile": false,
+    "via_alternativa": {
+     "testo": "La conoscenza già acquisita resta distinta dal possesso materiale: perdere il supporto non crea né cancella retroattivamente prove."
+    },
+    "campaign_id": "seconda-possibilita-trama",
+    "content_status": "proposed",
+    "act": 1,
+    "level_band": [
+     1,
+     30
+    ],
+    "difficulty_tags": [
+     "esplorativa",
+     "bilanciata",
+     "permadeath"
+    ],
+    "visibility_rule": "pubblica",
+    "source_note": "SCHEMA_LA_SECONDA_POSSIBILITA.md; valori applicativi PROPOSTA, regole esistenti."
+   }
+  }
+ },
+ "orologi": {},
+ "risorse": {},
+ "nemici": {
+  "koga": {
+   "id": "koga",
+   "nome": "Koga",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 1,
+    "for": 8,
+    "mira": 2,
+    "vel": 8,
+    "fmen": 1,
+    "dex": 7,
+    "dif": 6,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Elusione": 2
+   },
+   "attacco": {
+    "nome": "Katana",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "vel",
+    "dex"
+   ],
+   "pngId": "koga",
+   "attacco_originale": {
+    "nome": "Katana",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "grigio.abiti_termici_leggeri",
+     "tipo": "armatura",
+     "nome": "Abiti termici leggeri",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "grigio.placca_di_camera",
+     "tipo": "scudo",
+     "nome": "Placca di camera",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "vel",
+    "dex",
+    "dif"
+   ]
+  },
+  "rabbit": {
+   "id": "rabbit",
+   "nome": "Rabbit",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 4,
+    "for": 5,
+    "mira": 5,
+    "vel": 8,
+    "fmen": 3,
+    "dex": 7,
+    "dif": 2,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 3
+   },
+   "attacco": {
+    "nome": "Calci",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "vel",
+    "dex",
+    "for"
+   ],
+   "pngId": "rabbit",
+   "attacco_originale": {
+    "nome": "Calci",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [],
+   "crescita_originale": [
+    "hp",
+    "vel",
+    "dex",
+    "for"
+   ]
+  },
+  "tommen": {
+   "id": "tommen",
+   "nome": "Tommen",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 5,
+    "for": 3,
+    "mira": 4,
+    "vel": 6,
+    "fmen": 6,
+    "dex": 6,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 3,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Asta a impulsi",
+    "dannoBase": 10,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ],
+   "pngId": "tommen",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "giallo.asta_a_impulsi",
+     "tipo": "arma",
+     "nome": "Asta a impulsi",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.tuta_da_lavoro_tecnica",
+     "tipo": "armatura",
+     "nome": "Tuta da lavoro tecnica",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ]
+  },
+  "lucas": {
+   "id": "lucas",
+   "nome": "Lucas",
+   "build": "eclettico",
+   "primary": {
+    "hp": 3,
+    "mp": 5,
+    "for": 3,
+    "mira": 4,
+    "vel": 7,
+    "fmen": 5,
+    "dex": 7,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 3,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama a molla",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dex",
+    "vel",
+    "fmen"
+   ],
+   "pngId": "lucas",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "blu.lama_a_molla",
+     "tipo": "arma",
+     "nome": "Lama a molla",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "blu.tuta_da_meccanico",
+     "tipo": "armatura",
+     "nome": "Tuta da meccanico rinforzata",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dex",
+    "vel",
+    "fmen"
+   ]
+  },
+  "grid": {
+   "id": "grid",
+   "nome": "Grid",
+   "build": "guerriero",
+   "primary": {
+    "hp": 6,
+    "mp": 1,
+    "for": 8,
+    "mira": 3,
+    "vel": 4,
+    "fmen": 1,
+    "dex": 5,
+    "dif": 8,
+    "dmen": 4
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Asta a impulsi",
+    "dannoBase": 10,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "vel"
+   ],
+   "pngId": "grid",
+   "attacco_originale": {
+    "nome": "Colpo d'arma",
+    "dannoBase": 7,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "giallo.asta_a_impulsi",
+     "tipo": "arma",
+     "nome": "Asta a impulsi",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.tuta_da_lavoro_tecnica",
+     "tipo": "armatura",
+     "nome": "Tuta da lavoro tecnica",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.scudo_di_cantiere",
+     "tipo": "scudo",
+     "nome": "Scudo di cantiere",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "vel"
+   ]
+  },
+  "nine_nine": {
+   "id": "nine_nine",
+   "nome": "Nine-Nine",
+   "build": "eclettico",
+   "primary": {
+    "hp": 2,
+    "mp": 3,
+    "for": 2,
+    "mira": 4,
+    "vel": 8,
+    "fmen": 3,
+    "dex": 9,
+    "dif": 3,
+    "dmen": 6
+   },
+   "traits": {
+    "Elusione": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Stiletto da palcoscenico",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "vel",
+    "dex"
+   ],
+   "pngId": "nine_nine",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "verde.stiletto_da_palcoscenico",
+     "tipo": "arma",
+     "nome": "Stiletto da palcoscenico",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "verde.camice_verde",
+     "tipo": "armatura",
+     "nome": "Camice verde",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "vel",
+    "dex"
+   ]
+  },
+  "kusanagi": {
+   "id": "kusanagi",
+   "nome": "Makoto Kusanagi",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 1,
+    "for": 7,
+    "mira": 3,
+    "vel": 6,
+    "fmen": 1,
+    "dex": 7,
+    "dif": 6,
+    "dmen": 4
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Elusione": 1,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Piccone da ghiaccio",
+    "dannoBase": 10,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "dex",
+    "vel"
+   ],
+   "pngId": "kusanagi",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "viola.piccone_da_ghiaccio",
+     "tipo": "arma",
+     "nome": "Piccone da ghiaccio",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "viola.abiti_di_strada",
+     "tipo": "armatura",
+     "nome": "Abiti di strada",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "viola.coperchio_di_barile",
+     "tipo": "scudo",
+     "nome": "Coperchio di barile",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dex",
+    "vel",
+    "dif"
+   ]
+  },
+  "medico": {
+   "id": "medico",
+   "nome": "Candor Rhee",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 7,
+    "for": 2,
+    "mira": 2,
+    "vel": 4,
+    "fmen": 8,
+    "dex": 6,
+    "dif": 3,
+    "dmen": 4
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 2,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Siringhe",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "dex",
+    "mp"
+   ],
+   "pngId": "medico",
+   "attacco_originale": {
+    "nome": "Siringhe",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "senza_colore.tuta_esplorazione",
+     "tipo": "armatura",
+     "nome": "Tuta di esplorazione con isolante",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "dex",
+    "mp"
+   ]
+  },
+  "ferra_ostrom": {
+   "id": "ferra_ostrom",
+   "nome": "Ferra Ostrom",
+   "build": "guerriero",
+   "primary": {
+    "hp": 6,
+    "mp": 3,
+    "for": 8,
+    "mira": 2,
+    "vel": 4,
+    "fmen": 4,
+    "dex": 5,
+    "dif": 7,
+    "dmen": 1
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Lama da fuga",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "fmen"
+   ],
+   "pngId": "ferra_ostrom",
+   "attacco_originale": {
+    "nome": "Lama",
+    "dannoBase": 7,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "nero.lama_da_fuga",
+     "tipo": "arma",
+     "nome": "Lama da fuga",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.tuta_da_agricoltore",
+     "tipo": "armatura",
+     "nome": "Tuta da serra",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.scudo_di_cantiere",
+     "tipo": "scudo",
+     "nome": "Scudo di cantiere",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "fmen"
+   ]
+  },
+  "kestrel": {
+   "id": "kestrel",
+   "nome": "Kestrel",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 5,
+    "for": 4,
+    "mira": 4,
+    "vel": 5,
+    "fmen": 6,
+    "dex": 6,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 2,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama retrattile",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ],
+   "pngId": "kestrel",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "amaranto.lama_retrattile",
+     "tipo": "arma",
+     "nome": "Lama retrattile",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "amaranto.completo_rinforzato",
+     "tipo": "armatura",
+     "nome": "Completo da vincente rinforzato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ]
+  },
+  "alikea": {
+   "id": "alikea",
+   "nome": "Alikea Rodano",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 6,
+    "for": 2,
+    "mira": 3,
+    "vel": 5,
+    "fmen": 8,
+    "dex": 5,
+    "dif": 3,
+    "dmen": 4
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 2,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Impulso di Raven",
+    "dannoBase": 6,
+    "stat": "fmen"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "dmen",
+    "vel"
+   ],
+   "pngId": "alikea",
+   "attacco_originale": {
+    "nome": "Impulso di Raven",
+    "dannoBase": 6,
+    "stat": "fmen"
+   },
+   "equip": [
+    {
+     "id": "bianco.abito_bianco_leggero",
+     "tipo": "armatura",
+     "nome": "Abito protettivo bianco",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "dmen",
+    "vel"
+   ]
+  },
+  "gaia_epos": {
+   "id": "gaia_epos",
+   "nome": "Gaia Epos",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 4,
+    "for": 3,
+    "mira": 4,
+    "vel": 5,
+    "fmen": 4,
+    "dex": 6,
+    "dif": 4,
+    "dmen": 6
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 2,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Lama nascosta nel palmo",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dmen",
+    "dex",
+    "vel"
+   ],
+   "pngId": "gaia_epos",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "viola.lama_nel_palmo",
+     "tipo": "arma",
+     "nome": "Lama nascosta nel palmo",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "viola.giubba_da_estrattore",
+     "tipo": "armatura",
+     "nome": "Giubba da estrattore",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dmen",
+    "dex",
+    "vel"
+   ]
+  },
+  "evan_wood": {
+   "id": "evan_wood",
+   "nome": "Evan Wood",
+   "build": "eclettico",
+   "primary": {
+    "hp": 3,
+    "mp": 4,
+    "for": 2,
+    "mira": 3,
+    "vel": 4,
+    "fmen": 5,
+    "dex": 5,
+    "dif": 4,
+    "dmen": 10
+   },
+   "traits": {
+    "Elusione": 2,
+    "Resistenza": 3
+   },
+   "attacco": {
+    "nome": "Lama da fuga",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dmen",
+    "dex"
+   ],
+   "pngId": "evan_wood",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "nero.lama_da_fuga",
+     "tipo": "arma",
+     "nome": "Lama da fuga",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "nero.mantello_antirilevamento",
+     "tipo": "armatura",
+     "nome": "Mantello antirilevamento",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dmen",
+    "dex"
+   ]
+  },
+  "antoine": {
+   "id": "antoine",
+   "nome": "Antoine Delacroix",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 1,
+    "for": 6,
+    "mira": 8,
+    "vel": 6,
+    "fmen": 1,
+    "dex": 6,
+    "dif": 4,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Elusione": 2
+   },
+   "attacco": {
+    "nome": "Pistola elettrificata",
+    "dannoBase": 12,
+    "stat": "mira"
+   },
+   "crescita": [
+    "hp",
+    "mira",
+    "vel",
+    "dex"
+   ],
+   "pngId": "antoine",
+   "attacco_originale": {
+    "nome": "Arma da fuoco",
+    "dannoBase": 7,
+    "stat": "mira"
+   },
+   "equip": [
+    {
+     "id": "arancio.pistola_elettrificata",
+     "tipo": "arma",
+     "nome": "Pistola elettrificata",
+     "taglia": "corte",
+     "qualita": "media",
+     "classe": "tiro",
+     "atk": 12,
+     "dif": 14,
+     "durabilita": 120,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "blu.tuta_da_meccanico",
+     "tipo": "armatura",
+     "nome": "Tuta da meccanico rinforzata",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "mira",
+    "vel",
+    "dex"
+   ]
+  },
+  "mara": {
+   "id": "mara",
+   "nome": "Mara",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 1,
+    "for": 7,
+    "mira": 2,
+    "vel": 5,
+    "fmen": 1,
+    "dex": 7,
+    "dif": 7,
+    "dmen": 5
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Chiave pesante",
+    "dannoBase": 10,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "dex"
+   ],
+   "pngId": "mara",
+   "attacco_originale": {
+    "nome": "Barra di metallo",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "blu.chiave_pesante",
+     "tipo": "arma",
+     "nome": "Chiave pesante",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "amaranto.completo_amaranto",
+     "tipo": "armatura",
+     "nome": "Completo amaranto",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "amaranto.scudo_da_braccio",
+     "tipo": "scudo",
+     "nome": "Scudo da braccio",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "dex"
+   ]
+  },
+  "rhett": {
+   "id": "rhett",
+   "nome": "Rhett",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 3,
+    "for": 5,
+    "mira": 4,
+    "vel": 7,
+    "fmen": 3,
+    "dex": 8,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Elusione": 2
+   },
+   "attacco": {
+    "nome": "Lama a molla",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dex",
+    "vel",
+    "for"
+   ],
+   "pngId": "rhett",
+   "attacco_originale": {
+    "nome": "Coltello",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "blu.lama_a_molla",
+     "tipo": "arma",
+     "nome": "Lama a molla",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "blu.tuta_da_pilota",
+     "tipo": "armatura",
+     "nome": "Tuta da pilota",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 4,
+     "durabilita": 70,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dex",
+    "vel",
+    "for"
+   ]
+  },
+  "nyx": {
+   "id": "nyx",
+   "nome": "Nyx",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 3,
+    "for": 4,
+    "mira": 4,
+    "vel": 7,
+    "fmen": 3,
+    "dex": 9,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 3
+   },
+   "attacco": {
+    "nome": "Stiletto da palcoscenico",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dex",
+    "vel"
+   ],
+   "pngId": "nyx",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "verde.stiletto_da_palcoscenico",
+     "tipo": "arma",
+     "nome": "Stiletto da palcoscenico",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "verde.camice_verde",
+     "tipo": "armatura",
+     "nome": "Camice verde",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dex",
+    "vel"
+   ]
+  },
+  "bob_harlan": {
+   "id": "bob_harlan",
+   "nome": "Bob Harlan",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 1,
+    "for": 7,
+    "mira": 3,
+    "vel": 3,
+    "fmen": 1,
+    "dex": 6,
+    "dif": 9,
+    "dmen": 5
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 1,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Storditore da tasca",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "dex"
+   ],
+   "pngId": "bob_harlan",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "rosso.storditore_da_tasca",
+     "tipo": "arma",
+     "nome": "Storditore da tasca",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "rosso.cappotto_rosso_schermato",
+     "tipo": "armatura",
+     "nome": "Cappotto rosso schermato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "rosso.scudo_di_protocollo",
+     "tipo": "scudo",
+     "nome": "Scudo di protocollo",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dif",
+    "for",
+    "dex"
+   ]
+  },
+  "patriota_sperimentale": {
+   "id": "patriota_sperimentale",
+   "nome": "Patriota sperimentale",
+   "build": "guerriero",
+   "primary": {
+    "hp": 6,
+    "mp": 3,
+    "for": 8,
+    "mira": 2,
+    "vel": 5,
+    "fmen": 5,
+    "dex": 4,
+    "dif": 6,
+    "dmen": 1
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Impulso",
+    "dannoBase": 7,
+    "stat": "fmen"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "fmen"
+   ],
+   "articolo": "il",
+   "pngId": "tommen",
+   "attacco_originale": {
+    "nome": "Impulso",
+    "dannoBase": 7,
+    "stat": "fmen"
+   },
+   "equip": [
+    {
+     "id": "blu.tuta_da_meccanico",
+     "tipo": "armatura",
+     "nome": "Tuta da meccanico rinforzata",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "blu.scudo_di_lamiera",
+     "tipo": "scudo",
+     "nome": "Scudo di lamiera",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "fmen",
+    "dif"
+   ]
+  },
+  "philips": {
+   "id": "philips",
+   "nome": "Richard Philips",
+   "build": "eclettico",
+   "primary": {
+    "hp": 3,
+    "mp": 5,
+    "for": 2,
+    "mira": 3,
+    "vel": 3,
+    "fmen": 5,
+    "dex": 4,
+    "dif": 5,
+    "dmen": 10
+   },
+   "traits": {
+    "Elusione": 2,
+    "Resistenza": 3
+   },
+   "attacco": {
+    "nome": "Lama a molla",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dmen"
+   ],
+   "pngId": "philips",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "blu.lama_a_molla",
+     "tipo": "arma",
+     "nome": "Lama a molla",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "blu.tuta_da_pilota",
+     "tipo": "armatura",
+     "nome": "Tuta da pilota",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 4,
+     "durabilita": 70,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dmen",
+    "dif"
+   ]
+  },
+  "hammond": {
+   "id": "hammond",
+   "nome": "Ruth Hammond",
+   "build": "guerriero",
+   "primary": {
+    "hp": 6,
+    "mp": 2,
+    "for": 8,
+    "mira": 5,
+    "vel": 4,
+    "fmen": 1,
+    "dex": 5,
+    "dif": 6,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Lama nascosta nel palmo",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "mira"
+   ],
+   "boss": true,
+   "pngId": "hammond",
+   "attacco_originale": {
+    "nome": "Colpo d'arma",
+    "dannoBase": 7,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "viola.lama_nel_palmo",
+     "tipo": "arma",
+     "nome": "Lama nascosta nel palmo",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "viola.giubba_da_estrattore",
+     "tipo": "armatura",
+     "nome": "Giubba da estrattore",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "viola.coperchio_di_barile",
+     "tipo": "scudo",
+     "nome": "Coperchio di barile",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "mira"
+   ]
+  },
+  "roxanne": {
+   "id": "roxanne",
+   "nome": "Roxanne",
+   "build": "eclettico",
+   "primary": {
+    "hp": 3,
+    "mp": 3,
+    "for": 3,
+    "mira": 3,
+    "vel": 5,
+    "fmen": 3,
+    "dex": 5,
+    "dif": 6,
+    "dmen": 9
+   },
+   "traits": {
+    "Elusione": 2,
+    "Resistenza": 3
+   },
+   "attacco": {
+    "nome": "Stiletto da palcoscenico",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dmen"
+   ],
+   "pngId": "roxanne",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "verde.stiletto_da_palcoscenico",
+     "tipo": "arma",
+     "nome": "Stiletto da palcoscenico",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "verde.camice_verde",
+     "tipo": "armatura",
+     "nome": "Camice verde",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dmen",
+    "dif"
+   ]
+  },
+  "detenuto": {
+   "id": "detenuto",
+   "nome": "Detenuto",
+   "build": "guerriero",
+   "primary": {
+    "hp": 4,
+    "mp": 1,
+    "for": 6,
+    "mira": 2,
+    "vel": 6,
+    "fmen": 1,
+    "dex": 7,
+    "dif": 7,
+    "dmen": 6
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 2,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama da fuga",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "dex",
+    "vel"
+   ],
+   "articolo": "un",
+   "attacco_originale": {
+    "nome": "Lama nascosta",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "nero.lama_da_fuga",
+     "tipo": "arma",
+     "nome": "Lama da fuga",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.tuta_da_lavoro_tecnica",
+     "tipo": "armatura",
+     "nome": "Tuta da lavoro tecnica",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.scudo_di_cantiere",
+     "tipo": "scudo",
+     "nome": "Scudo di cantiere",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dex",
+    "vel"
+   ]
+  },
+  "felia_moreau": {
+   "id": "felia_moreau",
+   "nome": "Felia Moreau",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 6,
+    "for": 2,
+    "mira": 4,
+    "vel": 7,
+    "fmen": 8,
+    "dex": 5,
+    "dif": 2,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 3
+   },
+   "attacco": {
+    "nome": "Cavi di telonio",
+    "dannoBase": 6,
+    "stat": "fmen"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "vel",
+    "dex"
+   ],
+   "pngId": "felia_moreau",
+   "attacco_originale": {
+    "nome": "Cavi di telonio",
+    "dannoBase": 6,
+    "stat": "fmen"
+   },
+   "equip": [
+    {
+     "id": "giallo.tuta_da_agricoltore",
+     "tipo": "armatura",
+     "nome": "Tuta da serra",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "vel",
+    "dex"
+   ]
+  },
+  "niklaus": {
+   "id": "niklaus",
+   "nome": "Niklaus",
+   "build": "eclettico",
+   "primary": {
+    "hp": 3,
+    "mp": 5,
+    "for": 3,
+    "mira": 4,
+    "vel": 7,
+    "fmen": 5,
+    "dex": 7,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 3,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama ricurva arrugginita",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dex",
+    "vel",
+    "fmen"
+   ],
+   "pngId": "niklaus",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "senza_colore.lama_arrugginita",
+     "tipo": "arma",
+     "nome": "Lama ricurva arrugginita",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "senza_colore.tuta_esplorazione",
+     "tipo": "armatura",
+     "nome": "Tuta di esplorazione con isolante",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dex",
+    "vel",
+    "fmen"
+   ]
+  },
+  "nael_prism": {
+   "id": "nael_prism",
+   "nome": "Nael Prism",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 5,
+    "for": 4,
+    "mira": 4,
+    "vel": 5,
+    "fmen": 6,
+    "dex": 6,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 2,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama da dirigente",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ],
+   "pngId": "nael_prism",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "rosso.lama_da_dirigente",
+     "tipo": "arma",
+     "nome": "Lama da dirigente",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "rosso.cappotto_rosso_schermato",
+     "tipo": "armatura",
+     "nome": "Cappotto rosso schermato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ]
+  },
+  "clone_hammond": {
+   "id": "clone_hammond",
+   "nome": "Clone di Hammond",
+   "build": "guerriero",
+   "primary": {
+    "hp": 6,
+    "mp": 2,
+    "for": 8,
+    "mira": 5,
+    "vel": 4,
+    "fmen": 1,
+    "dex": 5,
+    "dif": 6,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Sonda a scarica",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "mira"
+   ],
+   "articolo": "il",
+   "attacco_originale": {
+    "nome": "Colpo d'arma",
+    "dannoBase": 7,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "giallo.sonda_a_scarica",
+     "tipo": "arma",
+     "nome": "Sonda a scarica",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.tuta_da_lavoro_tecnica",
+     "tipo": "armatura",
+     "nome": "Tuta da lavoro tecnica",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.scudo_di_cantiere",
+     "tipo": "scudo",
+     "nome": "Scudo di cantiere",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "mira"
+   ]
+  },
+  "marek": {
+   "id": "marek",
+   "nome": "Marek Volkov",
+   "build": "guerriero",
+   "primary": {
+    "hp": 7,
+    "mp": 1,
+    "for": 7,
+    "mira": 7,
+    "vel": 4,
+    "fmen": 1,
+    "dex": 4,
+    "dif": 8,
+    "dmen": 1
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Disturbatore a mano",
+    "dannoBase": 8,
+    "stat": "mira"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "mira"
+   ],
+   "boss": true,
+   "pngId": "marek",
+   "attacco_originale": {
+    "nome": "Pistola",
+    "dannoBase": 7,
+    "stat": "mira"
+   },
+   "equip": [
+    {
+     "id": "nero.disturbatore_a_mano",
+     "tipo": "arma",
+     "nome": "Disturbatore a mano",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "classe": "tiro",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "verde.giacca_di_scena",
+     "tipo": "armatura",
+     "nome": "Giacca di scena rinforzata",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "mira"
+   ]
+  },
+  "koga_s2": {
+   "id": "koga_s2",
+   "nome": "Koga",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 1,
+    "for": 8,
+    "mira": 2,
+    "vel": 8,
+    "fmen": 1,
+    "dex": 7,
+    "dif": 6,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Elusione": 2
+   },
+   "attacco": {
+    "nome": "Stiletto da palcoscenico",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "vel",
+    "dex"
+   ],
+   "pngId": "koga",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "verde.stiletto_da_palcoscenico",
+     "tipo": "arma",
+     "nome": "Stiletto da palcoscenico",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "verde.giacca_di_scena",
+     "tipo": "armatura",
+     "nome": "Giacca di scena rinforzata",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "verde.scudo_da_scena",
+     "tipo": "scudo",
+     "nome": "Scudo da scena",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "vel",
+    "dex",
+    "dif"
+   ]
+  },
+  "spettro_bianco": {
+   "id": "spettro_bianco",
+   "nome": "Florant Esprit",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 6,
+    "for": 4,
+    "mira": 5,
+    "vel": 5,
+    "fmen": 7,
+    "dex": 5,
+    "dif": 2,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 2,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama da dirigente",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "vel",
+    "dex"
+   ],
+   "boss": true,
+   "villain": true,
+   "pngId": "spettro_bianco",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "rosso.lama_da_dirigente",
+     "tipo": "arma",
+     "nome": "Lama da dirigente",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "rosso.cappotto_rosso_schermato",
+     "tipo": "armatura",
+     "nome": "Cappotto rosso schermato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "vel",
+    "dex"
+   ]
+  },
+  "zephir": {
+   "id": "zephir",
+   "nome": "Zephir Zylos",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 4,
+    "for": 7,
+    "mira": 2,
+    "vel": 5,
+    "fmen": 6,
+    "dex": 5,
+    "dif": 4,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Mano nel corpo",
+    "dannoBase": 7,
+    "stat": "fmen"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "for"
+   ],
+   "boss": true,
+   "pngId": "zephir",
+   "attacco_originale": {
+    "nome": "Mano nel corpo",
+    "dannoBase": 7,
+    "stat": "fmen"
+   },
+   "equip": [
+    {
+     "id": "bianco.abito_bianco_schermato",
+     "tipo": "armatura",
+     "nome": "Abito bianco schermato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "bianco.scudo_a_campo",
+     "tipo": "scudo",
+     "nome": "Scudo a campo",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "for",
+    "dif"
+   ]
+  },
+  "luhman": {
+   "id": "luhman",
+   "nome": "Capitano Luhman",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 3,
+    "for": 3,
+    "mira": 4,
+    "vel": 4,
+    "fmen": 3,
+    "dex": 5,
+    "dif": 6,
+    "dmen": 8
+   },
+   "traits": {
+    "Elusione": 2,
+    "Resistenza": 3
+   },
+   "attacco": {
+    "nome": "Bastone di rappresentanza",
+    "dannoBase": 10,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dmen"
+   ],
+   "articolo": "il",
+   "pngId": "luhman",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "bianco.bastone_di_rappresentanza",
+     "tipo": "arma",
+     "nome": "Bastone di rappresentanza",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "bianco.abito_bianco_leggero",
+     "tipo": "armatura",
+     "nome": "Abito protettivo bianco",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dmen",
+    "dif"
+   ]
+  },
+  "shapira": {
+   "id": "shapira",
+   "nome": "Shapira Kamar",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 6,
+    "for": 4,
+    "mira": 5,
+    "vel": 5,
+    "fmen": 7,
+    "dex": 4,
+    "dif": 3,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 1,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Filamenti di telonio",
+    "dannoBase": 7,
+    "stat": "fmen"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "mira",
+    "vel"
+   ],
+   "boss": true,
+   "pngId": "shapira",
+   "attacco_originale": {
+    "nome": "Filamenti di telonio",
+    "dannoBase": 7,
+    "stat": "fmen"
+   },
+   "equip": [
+    {
+     "id": "giallo.tuta_da_lavoro_tecnica",
+     "tipo": "armatura",
+     "nome": "Tuta da lavoro tecnica",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "mira",
+    "vel"
+   ]
+  },
+  "uomo_capelli_rossi": {
+   "id": "uomo_capelli_rossi",
+   "nome": "Uomo dai capelli rossi",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 5,
+    "for": 3,
+    "mira": 5,
+    "vel": 5,
+    "fmen": 6,
+    "dex": 6,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 2,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Storditore a scarica",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ],
+   "articolo": "l'",
+   "pngId": "uomo_capelli_rossi",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "arancio.storditore_a_scarica",
+     "tipo": "arma",
+     "nome": "Storditore a scarica",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "arancio.camice_schermato",
+     "tipo": "armatura",
+     "nome": "Camice schermato",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 4,
+     "durabilita": 70,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ]
+  },
+  "soldato_corporativo": {
+   "id": "soldato_corporativo",
+   "nome": "Soldato corporativo",
+   "build": "guerriero",
+   "primary": {
+    "hp": 4,
+    "mp": 1,
+    "for": 5,
+    "mira": 8,
+    "vel": 5,
+    "fmen": 1,
+    "dex": 5,
+    "dif": 8,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 1,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Pistola elettrificata",
+    "dannoBase": 12,
+    "stat": "mira"
+   },
+   "crescita": [
+    "hp",
+    "mira",
+    "vel"
+   ],
+   "articolo": "un",
+   "attacco_originale": {
+    "nome": "Fucile a impulso",
+    "dannoBase": 6,
+    "stat": "mira"
+   },
+   "equip": [
+    {
+     "id": "arancio.pistola_elettrificata",
+     "tipo": "arma",
+     "nome": "Pistola elettrificata",
+     "taglia": "corte",
+     "qualita": "media",
+     "classe": "tiro",
+     "atk": 12,
+     "dif": 14,
+     "durabilita": 120,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "verde.camice_verde",
+     "tipo": "armatura",
+     "nome": "Camice verde",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "mira",
+    "dif",
+    "vel"
+   ]
+  }
+ },
+ "trama": "seconda-possibilita",
+ "fino_atto": 1
+}

@@ -1,0 +1,4819 @@
+{
+ "formato": "rm-solo-campagna/1",
+ "id": "luce-nelle-dalie-trama",
+ "campaign_id": "luce-nelle-dalie-trama",
+ "storia": "luce-nelle-dalie",
+ "trama": "luce-nelle-dalie",
+ "ambientazione": "Icaro",
+ "titolo": "La luce nelle dalie",
+ "versione": "0.1.0",
+ "stato_editoriale": "bozza",
+ "content_status": "proposed",
+ "canonico": false,
+ "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md; candidata non registrata nel menu",
+ "contratto": {
+  "premessa_pubblica": "La luce nelle dalie: persone, corpi e anni di vita nella Repubblica Pannazionale.",
+  "scopo": "Affrontare il percorso personale e salvare persone prima del collasso della Terra.",
+  "verita_riservate": [
+   "L_capsule",
+   "L_programma",
+   "L_gaia",
+   "icaro_sole_estrazione"
+  ],
+  "snodi_obbligatori": [
+   "L_atto_1",
+   "L_atto_2",
+   "L_atto_3"
+  ]
+ },
+ "atti": [
+  {
+   "numero": 1,
+   "titolo": "Atto 1",
+   "scene": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05",
+    "L06",
+    "L07",
+    "L08",
+    "L09",
+    "L10"
+   ],
+   "snodi": [
+    {
+     "id": "L_atto_1",
+     "testo": "Il primo passaggio è compiuto."
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "titolo": "Atto 2",
+   "scene": [
+    "L11",
+    "L12",
+    "L13",
+    "L14",
+    "L15",
+    "L16",
+    "L17",
+    "L18",
+    "L19",
+    "L20"
+   ],
+   "snodi": [
+    {
+     "id": "L_atto_2",
+     "testo": "Il potere passa a Florant e gli invasori si mostrano."
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "titolo": "Atto 3",
+   "scene": [
+    "L21",
+    "L22",
+    "L23",
+    "L24",
+    "L25",
+    "L26",
+    "L27",
+    "L28",
+    "L29",
+    "L30",
+    "L30E"
+   ],
+   "snodi": [
+    {
+     "id": "L_atto_3",
+     "testo": "Confronto nell’astronave madre."
+    }
+   ]
+  }
+ ],
+ "scene": [
+  {
+   "id": "L01",
+   "act": 1,
+   "titolo": "Le cure",
+   "luogo": "C3 e i suoi bassifondi ; i condotti e il quartiere delle teste di metallo ; un cargo merci",
+   "descrizione": "Quindici anni di vita a testa. Per altri è il compenso di un recupero dati; per te esiste anche il progetto di Cleyra, di cui Dawn ha parlato per le cure dei tuoi genitori. Il contratto non ha ancora pagato nessuno. Restano dodici ore per trovare i dati e la condizione di non aprirli.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L01_prima",
+     "testo": "Mettere al primo posto le cure dei genitori",
+     "effetti": [
+      {
+       "flag": {
+        "L01_prima": true
+       }
+      }
+     ],
+     "riserva": "Il progetto di Cleyra rimane la possibilità indicata da Dawn. Finché il compenso non è disponibile, nessuna cura viene registrata come pagata e nessuna guarigione è promessa.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L01_seconda",
+     "testo": "Aiutare i feriti del gruppo",
+     "effetti": [
+      {
+       "flag": {
+        "L01_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il bisogno dei feriti resta distinto dal compenso e dal progetto di Cleyra. Il tempo dedicato a loro non risolve la ricerca di Koga: la pista e l’offerta di copertura restano disponibili.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L02",
+     "effetti": [
+      {
+       "ricompensa": "medaglione_dalia"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Quindici anni di vita a testa. Per altri è il compenso di un recupero dati; per te esiste anche il progetto di Cleyra, di cui Dawn ha parlato per le cure dei tuoi genitori. Il contratto non ha ancora pagato nessuno. Restano dodici ore per trovare i dati e la condizione di non aprirli.",
+   "png_presenti": [
+    "rabbit",
+    "tommen",
+    "lucas"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA. Riscontro dei pilastri iniziali: ICA S1 Ep.0 r.9 e S1 Ep.1 r.3–7, nello schema approvato.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L02",
+   "act": 1,
+   "titolo": "Grigio",
+   "luogo": "Il rompighiaccio nelle terre esterne ; il treno assaltato e la città fantasma ; C6",
+   "descrizione": "I fondi vengono congelati. Il messaggio avverte che il credito delle cure sarà tolto dall'alimentazione dei tuoi genitori.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L02_prima",
+     "testo": "Chiedere al gruppo di proteggere i genitori",
+     "effetti": [
+      {
+       "flag": {
+        "L02_prima": true
+       }
+      }
+     ],
+     "riserva": "Il gruppo conosce la minaccia rivolta ai tuoi genitori. Chiedere protezione non localizza da solo una squadra capace di raggiungerli; il credito resta bloccato.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L02_seconda",
+     "testo": "Espormi verso il treno",
+     "effetti": [
+      {
+       "flag": {
+        "L02_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il treno è ancora sotto l’assalto. Tentare di raggiungerlo non garantisce il salvataggio delle dottoresse e non trasforma l’impossibilità di intervenire in una rinuncia scelta da te.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L03",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "I fondi vengono congelati. Il messaggio avverte che il credito delle cure sarà tolto dall'alimentazione dei tuoi genitori.",
+   "png_presenti": [
+    "grid",
+    "nine_nine"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L03",
+   "act": 1,
+   "titolo": "Il luogo che chiama",
+   "luogo": "C6: le fondamenta, una sala di manutenzione, i bassifondi, il covo degli hacker indipendenti",
+   "descrizione": "Nelle fondamenta di C6 gli impulsi del Core attraversano le pareti. I postumi della droga rendono difficile seguire il passo degli altri.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L03_prima",
+     "testo": "Parlare della mia dipendenza",
+     "effetti": [
+      {
+       "flag": {
+        "L03_prima": true
+       }
+      }
+     ],
+     "riserva": "La dipendenza entra nel confronto come un fatto del quale scegli di parlare. Il gruppo non riceve per questo una promessa di smettere pronunciata al tuo posto.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L03_seconda",
+     "testo": "Chiedere a Kestrel del brainfreeze",
+     "effetti": [
+      {
+       "flag": {
+        "L03_seconda": true
+       }
+      }
+     ],
+     "riserva": "Kestrel ha già visto persone scivolare nel brainfreeze. La diffidenza non è una diagnosi capace di risolvere ciò che stai sentendo nelle pareti.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L04",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Nelle fondamenta di C6 gli impulsi del Core attraversano le pareti. I postumi della droga rendono difficile seguire il passo degli altri.",
+   "png_presenti": [
+    "kestrel",
+    "ferra_ostrom"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L04",
+   "act": 1,
+   "titolo": "Con Rabbit",
+   "luogo": "Il covo che si svuota e il tunnel; una sala giochi; il distretto borghese di C6; la Black Tower",
+   "descrizione": "Il covo si svuota. Ci sono cariche da portare e pistole puntate contro i ragazzi se il gruppo si oppone.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L04_prima",
+     "testo": "Curare durante la fuga",
+     "effetti": [
+      {
+       "flag": {
+        "L04_prima": true
+       }
+      }
+     ],
+     "riserva": "L’attenzione si rivolge ai feriti durante la fuga. Nessuna guarigione completa è dichiarata prima dell’intervento e del suo esito; il gruppo continua a cercare Dotcom.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L04_seconda",
+     "testo": "Esaminare il telonio delle cariche",
+     "effetti": [
+      {
+       "flag": {
+        "L04_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il telonio delle cariche è materiale da esaminare. Guardarlo non le piazza e non provoca un’esplosione attribuita a te.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L05",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Il covo si svuota. Ci sono cariche da portare e pistole puntate contro i ragazzi se il gruppo si oppone.",
+   "png_presenti": [
+    "rabbit",
+    "ferra_ostrom"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L05",
+   "act": 1,
+   "titolo": "Il raduno",
+   "luogo": "C6, l'esterno con la crepa nel muro; il raduno degli hacker, «The cove»",
+   "descrizione": "Il Patriota 03 emette impulsi che senti insieme al mal di testa. Gaia Epos interviene in diretta e ne ottiene il richiamo.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L05_prima",
+     "testo": "Aiutare Lucas a cercare informazioni",
+     "effetti": [
+      {
+       "flag": {
+        "L05_prima": true
+       }
+      }
+     ],
+     "riserva": "La ricerca di Lucas riguarda Tommen. Le informazioni possono essere scambiate e confrontate senza trasformare una probabilità in un luogo certo.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L05_seconda",
+     "testo": "Restare accanto a Gaia e al gruppo",
+     "effetti": [
+      {
+       "flag": {
+        "L05_seconda": true
+       }
+      }
+     ],
+     "riserva": "Restare vicino al gruppo mantiene un contatto con chi cerca il passaggio successivo. Non attribuisce a Gaia ogni conoscenza che hai ricavato dal telonio.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L06",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Il Patriota 03 emette impulsi che senti insieme al mal di testa. Gaia Epos interviene in diretta e ne ottiene il richiamo.",
+   "png_presenti": [
+    "lucas",
+    "gaia_epos"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L06",
+   "act": 1,
+   "titolo": "I fiori di metallo",
+   "luogo": "Il viaggio, il campo di fiori di metallo; C4 e la città temporanea della White Hell Cup",
+   "descrizione": "Il viaggio concede una pausa. Nel ghiaccio i fiori di metallo hanno radici nei corpi; il telonio conserva tracce che la mano può sentire.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L06_prima",
+     "testo": "Cercare Dawn a C9",
+     "effetti": [
+      {
+       "flag": {
+        "L06_prima": true
+       }
+      }
+     ],
+     "riserva": "C9 diventa la destinazione della ricerca di Dawn. Gli altri possono seguire i giochi a C4 senza che la divisione sia una rottura con loro.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L06_seconda",
+     "testo": "Esaminare un fiore con la leggimetallo",
+     "effetti": [
+      {
+       "flag": {
+        "L06_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il telonio rimanda alle tracce presenti nel materiale. La presenza di corpi sotto le radici non dimostra chi li abbia portati lì.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L07",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Il viaggio concede una pausa. Nel ghiaccio i fiori di metallo hanno radici nei corpi; il telonio conserva tracce che la mano può sentire.",
+   "png_presenti": [],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L07",
+   "act": 1,
+   "titolo": "Dawn",
+   "luogo": "C9 ; un laboratorio secondario temporaneo",
+   "descrizione": "Nel laboratorio temporaneo Dawn risponde più lentamente. Il danno neurologico è visibile prima di ricevere un nome sicuro.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L07_prima",
+     "testo": "Ascoltare gli studi di Dawn",
+     "effetti": [
+      {
+       "flag": {
+        "L07_prima": true
+       }
+      }
+     ],
+     "riserva": "La teoria distingue la luce della vita dalle impronte conservate nel telonio. Ascoltarla non dimostra già che Dawn possa essere ricostruita.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L07_seconda",
+     "testo": "Chiedere a Cleyra come aiutarla",
+     "effetti": [
+      {
+       "flag": {
+        "L07_seconda": true
+       }
+      }
+     ],
+     "riserva": "Cleyra può discutere ciò che serve a Dawn. Le credenziali per la presentazione vanno cercate attraverso chi può ottenerle, senza assegnarti capacità da runner.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L08",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Nel laboratorio temporaneo Dawn risponde più lentamente. Il danno neurologico è visibile prima di ricevere un nome sicuro.",
+   "png_presenti": [
+    "dawn",
+    "cleyra"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L08",
+   "act": 1,
+   "titolo": "Il potere",
+   "luogo": "Il luogo della presentazione del programma; un laboratorio",
+   "descrizione": "Evan e George presentano il programma. George cede la chiave per Dawn; Cleyra viene autorizzata. Gli hacker armati interrompono la sicurezza promessa.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L08_prima",
+     "testo": "Difendere le dottoresse",
+     "effetti": [
+      {
+       "flag": {
+        "L08_prima": true
+       }
+      }
+     ],
+     "riserva": "La difesa riguarda Dawn e Cleyra mentre l’attacco continua. L’inserimento nel programma rimane distinto dall’esito dello scontro.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L08_seconda",
+     "testo": "Aiutare Cleyra a mettere Dawn al sicuro",
+     "effetti": [
+      {
+       "flag": {
+        "L08_seconda": true
+       }
+      }
+     ],
+     "riserva": "Cleyra dispone dell’autorizzazione di George. Aiutarla non richiede che il racconto ti attribuisca ogni gesto tecnico compiuto da lei.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L09",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Evan e George presentano il programma. George cede la chiave per Dawn; Cleyra viene autorizzata. Gli hacker armati interrompono la sicurezza promessa.",
+   "png_presenti": [
+    "dawn",
+    "cleyra",
+    "evan_wood",
+    "george_script"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L09",
+   "act": 1,
+   "titolo": "Le uscite chiuse",
+   "luogo": "C9: le arterie, la piazza, i checkpoint ; l'ospedale 17 ; un sottopasso industriale",
+   "descrizione": "Negli studi di Dawn il brainfreeze si lega alla perdita di Cromo. Sui Core resta una domanda: da dove viene l'energia che consumano?",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L09_prima",
+     "testo": "Cercare Rabbit nell'ospedale",
+     "effetti": [
+      {
+       "flag": {
+        "L09_prima": true
+       }
+      }
+     ],
+     "riserva": "L’ospedale è il luogo dove cercare Rabbit sedata. Raggiungerla o liberarla richiede ancora il passaggio fra sorveglianza e condotti: non è già un recupero concluso.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L09_seconda",
+     "testo": "Preparare il passaggio al sottopasso",
+     "effetti": [
+      {
+       "flag": {
+        "L09_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il sottopasso viene preparato come passaggio della fuga. Se non sei tu a recuperare Rabbit, può raggiungervi da sola: il suo arrivo non diventa una tua azione retroattiva.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L10",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Negli studi di Dawn il brainfreeze si lega alla perdita di Cromo. Sui Core resta una domanda: da dove viene l'energia che consumano?",
+   "png_presenti": [
+    "rabbit",
+    "ferra_ostrom"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L10",
+   "act": 1,
+   "titolo": "La tuta",
+   "luogo": "La strada industriale di C9; il Core di C9 ; i condotti e la dorsale ; i ghiacci fuori da C9",
+   "descrizione": "Il furgone riparato arriva al Core; la dorsale passa sotto la struttura. Il Patriota insegue il mezzo e, sconfitto, si autodistrugge. Il mezzo di manutenzione: tre tute per quattro. Dawn ti cede la tuta e si pugnala al petto: «Sei un medico brillante, trova le risposte che cerchiamo, voglio che questo sia il modo in cui mi manterrai viva». Cleyra: «Ragazzino, riesci a collegarla al motore?»",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L10_prima",
+     "testo": "Alimentare il motore con la mano",
+     "effetti": [
+      {
+       "flag": {
+        "L10_prima": true
+       }
+      }
+     ],
+     "riserva": "La mano alimenta il motore e sente le impronte di chi vi ha lavorato. Il mezzo avanza senza trasformare questo gesto nel consenso alla morte di Dawn.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L10_seconda",
+     "testo": "Proteggere gli altri mentre Cleyra guida",
+     "effetti": [
+      {
+       "flag": {
+        "L10_seconda": true
+       }
+      }
+     ],
+     "riserva": "Cleyra mantiene la guida mentre proteggi gli altri. Il mezzo avanza più lentamente sulla dorsale; la mano non viene collegata al motore al tuo posto.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L11",
+     "effetti": [
+      {
+       "snodo": "L_atto_1"
+      },
+      {
+       "ricompensa": "tuta_dawn"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Il furgone riparato arriva al Core; la dorsale passa sotto la struttura. Il Patriota insegue il mezzo e, sconfitto, si autodistrugge. Il mezzo di manutenzione: tre tute per quattro. Dawn ti cede la tuta e si pugnala al petto: «Sei un medico brillante, trova le risposte che cerchiamo, voglio che questo sia il modo in cui mi manterrai viva». Cleyra: «Ragazzino, riesci a collegarla al motore?»",
+   "png_presenti": [
+    "dawn",
+    "cleyra",
+    "patriota"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA. Chiusura dell'Atto I: approvata dall'autore il 7/11/2026 (CHIUSURE_ATTO_I_ICARO.md, DECISIONI §15 G.5).",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "patriota",
+    "letale": false,
+    "alternativa": {
+     "testo": "Proteggere la tuta e cercare riparo dal Patriota",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Trovi riparo per la tuta fuori dalla prima linea del Patriota. Dawn e l’energia del mezzo rimangono il problema immediato.",
+     "riserva_fallimento": "Il Patriota ti raggiunge prima che il riparo possa coprire la tuta.",
+     "fonte": "PROPOSTA: prova di scena con NC base già esistente, nessuna nuova regola."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "L10_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Il Patriota sconfitto si autodistrugge. Il mezzo può raggiungere la dorsale sotto il Core.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Il mezzo raggiunge la dorsale mentre il Patriota mantiene l’inseguimento; Cleyra continua a cercare il passaggio."
+    },
+    "fonte": "Schema scena 10; modelli PNG pertinenti; raccordi degli esiti PROPOSTA."
+   },
+   "chiusura_atto": "Cleyra guida. Al bivio scegli C8."
+  },
+  {
+   "id": "L11",
+   "act": 2,
+   "titolo": "Ricostruire Dawn",
+   "luogo": "Non specificato nelle trame ; le Cliniche Grigie di C8 [ICA Metropoli r.170]",
+   "descrizione": "Nelle cliniche grigie il valore della cura si contratta in anni di vita o informazioni. Fra te e Rabbit è rimasto il litigio; adesso il suo modo di parlare è più duro.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L11_prima",
+     "testo": "Lavorare alle cure nelle cliniche",
+     "effetti": [
+      {
+       "flag": {
+        "L11_prima": true
+       }
+      }
+     ],
+     "riserva": "I pazienti delle cliniche ricevono il tuo lavoro come medico. Il valore delle cure può essere discusso senza ridurre ogni persona a un pagamento già riscosso.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L11_seconda",
+     "testo": "Collaborare con Cleyra sui dati di Dawn",
+     "effetti": [
+      {
+       "flag": {
+        "L11_seconda": true
+       }
+      }
+     ],
+     "riserva": "Cleyra condivide i dati disponibili su Dawn. La collaborazione non dichiara compiuto un recupero del corpo da parte tua se non lo hai scelto.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L12",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Nelle cliniche grigie il valore della cura si contratta in anni di vita o informazioni. Fra te e Rabbit è rimasto il litigio; adesso il suo modo di parlare è più duro.",
+   "png_presenti": [
+    "cleyra",
+    "rabbit"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L12",
+   "act": 2,
+   "titolo": "I barattoli",
+   "luogo": "Un laboratorio",
+   "descrizione": "La ricerca sul telonio permette di vedere ciò che le capsule fanno: prosciugano Cromo dagli esseri umani e alimentano le città.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L12_prima",
+     "testo": "Rendere pubblica la scoperta verificata",
+     "effetti": [
+      {
+       "flag": {
+        "L12_prima": true
+       }
+      }
+     ],
+     "riserva": "La pubblicazione riguarda il prosciugamento di Cromo osservato. Le ipotesi su ogni Icaro e sui cloni restano tali: il testo non le presenta come prove concluse.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L12_seconda",
+     "testo": "Studiare prima una possibile cura",
+     "effetti": [
+      {
+       "flag": {
+        "L12_seconda": true
+       }
+      }
+     ],
+     "riserva": "La ricerca resta rivolta alla cura. Rinviare una pubblicazione non sana da solo i genitori e non cambia il funzionamento delle capsule già osservato.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L13",
+     "effetti": [
+      {
+       "scopri": "L_capsule"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "La ricerca sul telonio permette di vedere ciò che le capsule fanno: prosciugano Cromo dagli esseri umani e alimentano le città.",
+   "png_presenti": [],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L13",
+   "act": 2,
+   "titolo": "Bianco",
+   "luogo": "C8 ; il mezzo con la scorta; la piazza con gli schermi; la sala di un edificio importante",
+   "descrizione": "Philips ti chiama per la candidatura a Icaro. Il mezzo della scorta aspetta; a C8 il tuo volto vestito di bianco appare sugli schermi.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L13_prima",
+     "testo": "Parlare della ricerca",
+     "effetti": [
+      {
+       "flag": {
+        "L13_prima": true
+       }
+      }
+     ],
+     "riserva": "La ricerca può essere esposta senza accettare ogni significato che gli organizzatori attribuiscono al bianco. La sala resta il luogo in cui ti hanno presentato come candidato.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L13_seconda",
+     "testo": "Contestare la candidatura imposta",
+     "effetti": [
+      {
+       "flag": {
+        "L13_seconda": true
+       }
+      }
+     ],
+     "riserva": "La contestazione distingue la tua volontà dall’immagine già pubblicata. Gli schermi non si spengono per questo, ma il loro uso non diventa il tuo consenso.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L14",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Philips ti chiama per la candidatura a Icaro. Il mezzo della scorta aspetta; a C8 il tuo volto vestito di bianco appare sugli schermi.",
+   "png_presenti": [
+    "philips",
+    "bernard",
+    "alikea",
+    "fate",
+    "spettro_bianco"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L14",
+   "act": 2,
+   "titolo": "Il buio",
+   "luogo": "La sala dell'evento a C8",
+   "descrizione": "Ferra entra nella sala. Il suo Cromo provoca un crollo e le luci saltano. Nel buio si muovono Koga e Kato; Bernard fugge.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L14_prima",
+     "testo": "Rispondere a Ferra",
+     "effetti": [
+      {
+       "flag": {
+        "L14_prima": true
+       }
+      }
+     ],
+     "riserva": "La richiesta di Ferra può ricevere una risposta, una riserva o una promessa precisa. Non viene risolta con un trasferimento di coscienza già dimostrato.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L14_seconda",
+     "testo": "Cercare un riparo durante il crollo",
+     "effetti": [
+      {
+       "flag": {
+        "L14_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il riparo riguarda il crollo e il buio della sala. Non cancella la ferita né attribuisce a te le morti che emergeranno quando tornano le luci.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L15",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Ferra entra nella sala. Il suo Cromo provoca un crollo e le luci saltano. Nel buio si muovono Koga e Kato; Bernard fugge.",
+   "png_presenti": [
+    "koga",
+    "kato",
+    "ferra_ostrom"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "kato",
+    "letale": false,
+    "alternativa": {
+     "testo": "Orientarmi nel buio per evitare la linea di Kato",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Nel buio individui una direzione che evita Kato. Il corpo ferito e la sala restano da affrontare.",
+     "riserva_fallimento": "Kato legge il tuo movimento nel buio e arriva sulla tua linea.",
+     "fonte": "PROPOSTA: prova di scena con NC base già esistente, nessuna nuova regola."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "L14_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Kato perde il passaggio e fugge nel buio. La ferita da Cromo rimane.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Il buio e il crollo separano i combattenti; la ferita non viene cancellata dalla ritirata."
+    },
+    "fonte": "Schema scena 14; modelli PNG pertinenti; raccordi degli esiti PROPOSTA."
+   }
+  },
+  {
+   "id": "L15",
+   "act": 2,
+   "titolo": "Il frammento",
+   "luogo": "La torre: la sala dell'evento e il balcone",
+   "descrizione": "Quando le luci tornano, Bernard è decapitato e Philips è morto accanto a lui. Alikea chiama Raven; Koga e Kato fuggono.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L15_prima",
+     "testo": "Riferire il ricordo ad Alikea",
+     "effetti": [
+      {
+       "flag": {
+        "L15_prima": true
+       }
+      }
+     ],
+     "riserva": "Alikea riceve il ricordo dell’ordine contro Ilysia. È un’informazione da confrontare, non una ricostruzione completa di come Philips sia arrivato a morire accanto a Bernard.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L15_seconda",
+     "testo": "Ascoltare prima ciò che dice Fate",
+     "effetti": [
+      {
+       "flag": {
+        "L15_seconda": true
+       }
+      }
+     ],
+     "riserva": "Le parole di Fate possono essere osservate. Il labiale non dà da solo un’identità certa all’interlocutore telefonico.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L16",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Quando le luci tornano, Bernard è decapitato e Philips è morto accanto a lui. Alikea chiama Raven; Koga e Kato fuggono.",
+   "png_presenti": [
+    "alikea",
+    "fate"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L16",
+   "act": 2,
+   "titolo": "I campioni",
+   "luogo": "La torre . In comune con le trame 1 e 2",
+   "descrizione": "Hammond prende il coordinamento, poi arriva alla torre. Fate torna sulla tua nomina a Icaro e ti mostra campioni da esaminare.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L16_prima",
+     "testo": "Dire a Fate soltanto ciò che è verificato",
+     "effetti": [
+      {
+       "flag": {
+        "L16_prima": true
+       }
+      }
+     ],
+     "riserva": "Fate riceve una distinzione fra osservazioni e ipotesi. I marker duplicati restano un dato, non una promessa di trasferimento già garantito.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L16_seconda",
+     "testo": "Aprire il collegamento con le alleate",
+     "effetti": [
+      {
+       "flag": {
+        "L16_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il collegamento raggiunge Felia e Vigilia. Soltanto ciò che comunichi passa sulla linea: non tutte le scoperte delle tre persone vengono condivise automaticamente.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L17",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Hammond prende il coordinamento, poi arriva alla torre. Fate torna sulla tua nomina a Icaro e ti mostra campioni da esaminare.",
+   "png_presenti": [
+    "fate",
+    "hammond",
+    "alikea",
+    "ferra_ostrom"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L17",
+   "act": 2,
+   "titolo": "Il simbolo",
+   "luogo": "Piazza Mercato, sugli schermi di C5",
+   "descrizione": "Fate parla prima di te sugli schermi di Piazza Mercato. La tua immagine in bianco è già parte del suo discorso.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L17_prima",
+     "testo": "Accettare il ruolo di Icaro",
+     "effetti": [
+      {
+       "flag": {
+        "L17_prima": true
+       }
+      }
+     ],
+     "riserva": "L’accettazione riguarda il ruolo che hai scelto. Il discorso resta tuo: Fate non riceve per questo il diritto di attribuirti ogni frase futura.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L17_seconda",
+     "testo": "Rifiutare di parlare come simbolo",
+     "effetti": [
+      {
+       "flag": {
+        "L17_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il rifiuto lascia Fate a parlare senza di te. Il bianco rimane nell’immagine pubblica, ma non viene registrato come una fedeltà che hai negato.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L18",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Fate parla prima di te sugli schermi di Piazza Mercato. La tua immagine in bianco è già parte del suo discorso.",
+   "png_presenti": [
+    "fate"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L18",
+   "act": 2,
+   "titolo": "L'alloggio",
+   "luogo": "C5 : l'alloggio di Alikea, una stanza d'albergo . In comune con la trama 1",
+   "descrizione": "Ferra riconosce la tua voce prima di voltarsi. Alikea ricorda che il luogo è pericoloso e non vuole esporre l'Icaro di C5.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L18_prima",
+     "testo": "Restare e parlare con Ferra",
+     "effetti": [
+      {
+       "flag": {
+        "L18_prima": true
+       }
+      }
+     ],
+     "riserva": "Ferra resta l’interlocutrice della promessa fatta durante l’evento. Il suo bisogno di un corpo non la trasforma in un oggetto da acquistare.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L18_seconda",
+     "testo": "Condividere la scoperta sulle capsule",
+     "effetti": [
+      {
+       "flag": {
+        "L18_seconda": true
+       }
+      }
+     ],
+     "riserva": "La scoperta delle capsule viene comunicata alla squadra. Restano distinte le informazioni osservate e le ipotesi su che cosa gli Icaro ne facciano.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L19",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Ferra riconosce la tua voce prima di voltarsi. Alikea ricorda che il luogo è pericoloso e non vuole esporre l'Icaro di C5.",
+   "png_presenti": [
+    "alikea",
+    "ferra_ostrom",
+    "vigilia_haas"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L19",
+   "act": 2,
+   "titolo": "Il settore cargo",
+   "luogo": "C5: il settore cargo e le uscite ; un deposito alimentare sotterraneo . In comune con la trama 1",
+   "descrizione": "Alikea dispone gli uomini alle uscite. Sei con Vigilia e Ferra; un lavoratore delle serre sputa sangue con schegge metalliche.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L19_prima",
+     "testo": "Aiutare il lavoratore",
+     "effetti": [
+      {
+       "flag": {
+        "L19_prima": true
+       }
+      }
+     ],
+     "riserva": "L’intervento si rivolge al lavoratore. Le schegge e il sangue richiedono cura, ma non certificano l’origine del male o una guarigione immediata.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L19_seconda",
+     "testo": "Preparare l'accesso con la squadra",
+     "effetti": [
+      {
+       "flag": {
+        "L19_seconda": true
+       }
+      }
+     ],
+     "riserva": "La squadra prepara il passaggio nel settore cargo. L’accesso non equivale a un arresto concluso di Koga né identifica da solo chi sarà consegnato ad Alikea.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L20",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Alikea dispone gli uomini alle uscite. Sei con Vigilia e Ferra; un lavoratore delle serre sputa sangue con schegge metalliche.",
+   "png_presenti": [
+    "alikea",
+    "vigilia_haas",
+    "ferra_ostrom"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "koga_s2",
+    "letale": false,
+    "alternativa": {
+     "testo": "Dare spazio ai feriti fuori dalla linea di Koga",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Riesci a tenere il lavoro sui feriti fuori dalla linea diretta di Koga. La consegna chiesta ad Alikea resta aperta.",
+     "riserva_fallimento": "Il movimento di Koga raggiunge la zona dei feriti e ti costringe a difenderla.",
+     "fonte": "PROPOSTA: prova di scena con NC base già esistente, nessuna nuova regola."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "L19_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Koga perde il confronto e fugge; Alikea deve ancora decidere chi consegnare.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Il blitz non porta Koga in custodia. La squadra deve conservare una via d’uscita."
+    },
+    "fonte": "Schema scena 19; modelli PNG pertinenti; raccordi degli esiti PROPOSTA."
+   }
+  },
+  {
+   "id": "L20",
+   "act": 2,
+   "titolo": "Un altro Icaro",
+   "luogo": "Non specificato nelle trame",
+   "descrizione": "Florant Esprit prende il controllo della Repubblica. Il ruolo assegnato a te non ti dà potere su questa decisione.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L20_prima",
+     "testo": "Oppormi al nuovo potere",
+     "effetti": [
+      {
+       "flag": {
+        "L20_prima": true
+       }
+      }
+     ],
+     "riserva": "L’opposizione viene espressa al nuovo vertice. Non cancella il ruolo pubblico o l’immagine già diffusa, ma ne distingue la tua posizione.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L20_seconda",
+     "testo": "Proteggere le persone restando nel ruolo",
+     "effetti": [
+      {
+       "flag": {
+        "L20_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il ruolo viene usato per cercare protezione alle persone. Non diventa una promessa di accettare ogni richiesta del nuovo comando.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L21",
+     "effetti": [
+      {
+       "snodo": "L_atto_2"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Florant Esprit prende il controllo della Repubblica. Il ruolo assegnato a te non ti dà potere su questa decisione.",
+   "png_presenti": [],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L21",
+   "act": 3,
+   "titolo": "Il debito",
+   "luogo": "C5",
+   "descrizione": "Fate torna a chiedere la tua voce per la comunicazione pubblica. I genitori sono ancora sotto osservazione dalla prima minaccia.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L21_prima",
+     "testo": "Rifiutare la propaganda",
+     "effetti": [
+      {
+       "flag": {
+        "L21_prima": true
+       }
+      }
+     ],
+     "riserva": "La propaganda viene rifiutata. La ricerca della cura e delle notizie sui genitori rimane aperta, senza trasformare il rifiuto in una rinuncia a loro.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L21_seconda",
+     "testo": "Parlare chiedendo prima notizie dei genitori",
+     "effetti": [
+      {
+       "flag": {
+        "L21_seconda": true
+       }
+      }
+     ],
+     "riserva": "La richiesta di notizie precede l’eventuale intervento. Lo sponsor non riceve una frase pubblica già pronunciata prima di rispondere al tuo limite.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L22",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Fate torna a chiedere la tua voce per la comunicazione pubblica. I genitori sono ancora sotto osservazione dalla prima minaccia.",
+   "png_presenti": [
+    "fate"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L22",
+   "act": 3,
+   "titolo": "Le serre",
+   "luogo": "C5: le serre e i lavoratori malati",
+   "descrizione": "Le colture sono grigie e i lavoratori sputano vetro e metallo. La leggimetallo può cercare tracce, ma il costo sul tuo corpo resta.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L22_prima",
+     "testo": "Esaminare i malati con Cleyra",
+     "effetti": [
+      {
+       "flag": {
+        "L22_prima": true
+       }
+      }
+     ],
+     "riserva": "Cleyra condivide l’esame dei segni nei malati. La diagnosi rimane vincolata a ciò che osservate, senza assegnare una causa unica a ogni guasto o infezione.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L22_seconda",
+     "testo": "Studiare la dipendenza degli invasori",
+     "effetti": [
+      {
+       "flag": {
+        "L22_seconda": true
+       }
+      }
+     ],
+     "riserva": "La dipendenza dal telonio diventa il centro dello studio. Sapere che mantiene in vita gli invasori non decide ancora se usarlo come arma o cura.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L23",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Le colture sono grigie e i lavoratori sputano vetro e metallo. La leggimetallo può cercare tracce, ma il costo sul tuo corpo resta.",
+   "png_presenti": [
+    "cleyra"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L23",
+   "act": 3,
+   "titolo": "La cura come offerta",
+   "luogo": "Il luogo delle trattative",
+   "descrizione": "Le trattative devono cercare di evitare il conflitto. Gli invasori chiedono telonio e accusano la Terra dello spegnimento del Sole.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L23_prima",
+     "testo": "Proporre una collaborazione medica",
+     "effetti": [
+      {
+       "flag": {
+        "L23_prima": true
+       }
+      }
+     ],
+     "riserva": "La collaborazione medica viene offerta al tavolo. Non è una guarigione già fornita né l’accettazione di Shapira; la trattativa rimane aperta al suo esito.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L23_seconda",
+     "testo": "Contestare il prezzo chiesto ai terrestri",
+     "effetti": [
+      {
+       "flag": {
+        "L23_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il prezzo imposto ai terrestri viene contestato. Questa opposizione non trasforma la dipendenza degli invasori in una condanna già eseguita contro di loro.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L24",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Le trattative devono cercare di evitare il conflitto. Gli invasori chiedono telonio e accusano la Terra dello spegnimento del Sole.",
+   "png_presenti": [
+    "shapira"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L24",
+   "act": 3,
+   "titolo": "Arma o cura",
+   "luogo": "Un laboratorio",
+   "descrizione": "Il conflitto comincia. Nel laboratorio rimane il frammento di Philips sulla vecchia C1; davanti a te ci sono la ricerca e i malati che ne attendono i risultati.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L24_prima",
+     "testo": "Destinare la ricerca alla cura",
+     "effetti": [
+      {
+       "flag": {
+        "L24_prima": true
+       }
+      }
+     ],
+     "riserva": "La ricerca viene indirizzata alla cura. Il Cromo infettante rimane un problema anche per te; scegliere questo fine non dimostra già di aver trovato la terapia.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L24_seconda",
+     "testo": "Preparare un'arma contro gli invasori",
+     "effetti": [
+      {
+       "flag": {
+        "L24_seconda": true
+       }
+      }
+     ],
+     "riserva": "La ricerca viene indirizzata a fermare gli invasori. Prima di impiegarla servirà capire quali corpi colpisce e quale prezzo impone a chi la usa.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L25",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Il conflitto comincia. Nel laboratorio rimane il frammento di Philips sulla vecchia C1; davanti a te ci sono la ricerca e i malati che ne attendono i risultati.",
+   "png_presenti": [],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L25",
+   "act": 3,
+   "titolo": "La Terra",
+   "luogo": "C5 e le altre città",
+   "descrizione": "Gaia Epos consuma il pianeta per creare un buco bianco. Il collasso sposta la priorità dalla difesa dei luoghi al salvataggio delle persone.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L25_prima",
+     "testo": "Portare via i dati di Dawn",
+     "effetti": [
+      {
+       "flag": {
+        "L25_prima": true
+       }
+      }
+     ],
+     "riserva": "I dati di Dawn vengono messi al centro di ciò che tenti di portare via. La loro conservazione non dichiara ricostruita la sua coscienza.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L25_seconda",
+     "testo": "Curare chi deve essere trasportato",
+     "effetti": [
+      {
+       "flag": {
+        "L25_seconda": true
+       }
+      }
+     ],
+     "riserva": "L’intervento riguarda chi deve essere trasportato. Preparare i malati alla partenza non li colloca ancora su una nave che non hanno raggiunto.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L26",
+     "effetti": [
+      {
+       "scopri": "L_programma"
+      },
+      {
+       "scopri": "L_gaia"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Gaia Epos consuma il pianeta per creare un buco bianco. Il collasso sposta la priorità dalla difesa dei luoghi al salvataggio delle persone.",
+   "png_presenti": [
+    "cleyra",
+    "rabbit"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L26",
+   "act": 3,
+   "titolo": "L'imbarco",
+   "luogo": "Le astronavi",
+   "descrizione": "Meadow e Dhruva sono fra i malati in attesa dell’imbarco. Il conflitto sulle astronavi rende il passaggio insicuro; i pazienti senza registro cercano lo stesso accesso.",
+   "obiettivi": [
+    {
+     "id": "L26A",
+     "testo": "Tenere praticabile l’imbarco dei malati",
+     "tratti": [
+      "Guarigione",
+      "Percezione",
+      "Persuasione"
+     ],
+     "esiti": {
+      "successo": [
+       {
+        "flag": {
+         "L26_imbarco_praticabile": true
+        }
+       }
+      ],
+      "fallimento": [
+       {
+        "flag": {
+         "L26_imbarco_in_difficolta": true
+        }
+       }
+      ]
+     },
+     "riserva": {
+      "successo": "Il passaggio è tenuto aperto per accompagnare chi attende.",
+      "fallimento": "Il passaggio rimane in difficoltà: nessuno viene dichiarato morto o già a bordo."
+     },
+     "nc": 12,
+     "fonte": "PROPOSTA applicativa, schema 26: imbarco dei malati, NC base esistente."
+    }
+   ],
+   "scelte": [
+    {
+     "id": "L26_prima",
+     "testo": "Portare a bordo i genitori",
+     "effetti": [
+      {
+       "flag": {
+        "L26_prima": true
+       }
+      },
+      {
+       "se": {
+        "condizione": {
+         "obiettivo_raggiunto": "L26A"
+        },
+        "effetti": [
+         {
+          "flag": {
+           "L26_genitori_a_bordo": true
+          }
+         }
+        ]
+       }
+      }
+     ],
+     "riserva": "La ricerca si rivolge ai genitori. Soltanto il loro effettivo arrivo a bordo potrà essere registrato come salvataggio; il nome bianco non li teletrasporta sulla nave.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L26_seconda",
+     "testo": "Assicurare un posto ai pazienti senza registro",
+     "effetti": [
+      {
+       "flag": {
+        "L26_seconda": true
+       }
+      }
+     ],
+     "riserva": "Un posto viene cercato per i pazienti privi di registro. Il loro accesso resta un lavoro da difendere durante l’imbarco, non un totale di salvati aggiunto dal racconto.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "tutti": [
+       {
+        "scelta_fatta": true
+       },
+       {
+        "obiettivo_tentato": "L26A"
+       }
+      ]
+     },
+     "verso": "L27",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Meadow e Dhruva sono fra i malati in attesa dell’imbarco. Il conflitto sulle astronavi rende il passaggio insicuro; i pazienti senza registro cercano lo stesso accesso.",
+   "png_presenti": [
+    "meadow",
+    "dhruva"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA. Presenza dei genitori nella 26: PNG_LA_LUCE_NELLE_DALIE_DA_APPROVARE.md, tabella e §Meadow/Dhruva. Collegamento all’imbarco: raccordo PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L27",
+   "act": 3,
+   "titolo": "La promessa a Ferra",
+   "luogo": "Le navi della flotta",
+   "descrizione": "Il telonio della nave restituisce alla mano il modo in cui viene alimentata. Ferra attende ancora l'aiuto chiesto durante l'evento.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L27_prima",
+     "testo": "Aiutare Ferra senza consumare nessuno",
+     "effetti": [
+      {
+       "flag": {
+        "L27_prima": true
+       }
+      }
+     ],
+     "riserva": "L’aiuto a Ferra viene affrontato con il limite di non consumare nessuno. La ricerca di un corpo non riceve un donatore o una tecnica nuova senza averli trovati.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L27_seconda",
+     "testo": "Proteggere i dati di Dawn",
+     "effetti": [
+      {
+       "flag": {
+        "L27_seconda": true
+       }
+      }
+     ],
+     "riserva": "I dati di Dawn ricevono protezione durante il passaggio sulle navi. La promessa a Ferra rimane una questione distinta e non viene dichiarata mantenuta al suo posto.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L28",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Il telonio della nave restituisce alla mano il modo in cui viene alimentata. Ferra attende ancora l'aiuto chiesto durante l'evento.",
+   "png_presenti": [
+    "ferra_ostrom"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L28",
+   "act": 3,
+   "titolo": "L'astronave madre",
+   "luogo": "L'astronave madre",
+   "descrizione": "Shapira e Florant partecipano allo scontro nell'astronave madre. La ricerca scelta come arma o cura arriva davanti a persone, non soltanto a bersagli.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L28_prima",
+     "testo": "Usare la ricerca come cura",
+     "effetti": [
+      {
+       "flag": {
+        "L28_prima": true
+       }
+      }
+     ],
+     "riserva": "La ricerca viene proposta come cura davanti a Shapira. Non si dichiara provata su ogni invasore o accettata prima della risposta e dell’esito.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L28_seconda",
+     "testo": "Usare la ricerca per aprire la fuga",
+     "effetti": [
+      {
+       "flag": {
+        "L28_seconda": true
+       }
+      }
+     ],
+     "riserva": "La ricerca viene usata nel tentativo di aprire la fuga. Il suo risultato non diventa una vittoria già assegnata prima del confronto.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L29",
+     "effetti": [
+      {
+       "snodo": "L_atto_3"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Shapira e Florant partecipano allo scontro nell'astronave madre. La ricerca scelta come arma o cura arriva davanti a persone, non soltanto a bersagli.",
+   "png_presenti": [
+    "spettro_bianco",
+    "shapira"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "spettro_bianco",
+    "letale": false,
+    "alternativa": {
+     "testo": "Portare il tema della cura davanti al comando di Florant",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Il tema della cura trattiene il confronto davanti al comando; non è ancora un accordo con gli invasori.",
+     "riserva_fallimento": "Florant tronca il confronto sulla cura e ti affronta nella sala.",
+     "fonte": "PROPOSTA: prova di scena con NC base già esistente, nessuna nuova regola."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "L28_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Florant viene fermato nel comando; il lavoro sulle navi continua.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "La sala rimane contesa e la ricerca può ancora essere rivolta all’apertura della fuga."
+    },
+    "fonte": "Schema scena 28; modelli PNG pertinenti; raccordi degli esiti PROPOSTA."
+   }
+  },
+  {
+   "id": "L29",
+   "act": 3,
+   "titolo": "La mano sul motore",
+   "luogo": "L'astronave madre e le navi che lasciano la Terra",
+   "descrizione": "Una nave non riesce ancora a partire mentre la Terra collassa. Il gesto che alimentò il mezzo di C9 è una possibilità, non un obbligo.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L29_prima",
+     "testo": "Alimentare la nave con la mano",
+     "effetti": [
+      {
+       "flag": {
+        "L29_prima": true
+       }
+      }
+     ],
+     "riserva": "La mano sostiene l’alimentazione della nave. Il Cromo che ti infetta consuma il corpo mentre gli altri partono; interrompere il contatto toglierebbe alla fuga l’energia che hai scelto di dare.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L29_seconda",
+     "testo": "Affidare la partenza alla squadra",
+     "effetti": [
+      {
+       "flag": {
+        "L29_seconda": true
+       }
+      }
+     ],
+     "riserva": "La squadra mantiene la responsabilità della partenza. La mano non viene collegata al motore dopo che hai scelto di affidarla agli altri.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L30",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Una nave non riesce ancora a partire mentre la Terra collassa. Il gesto che alimentò il mezzo di C9 è una possibilità, non un obbligo.",
+   "png_presenti": [
+    "cleyra",
+    "rabbit"
+   ],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L30",
+   "act": 3,
+   "titolo": "Le dalie",
+   "luogo": "Una nave lontano dalla Terra",
+   "descrizione": "Le navi si allontanano dalla Terra. Il medaglione con la dalia può ancora stare in una mano; il prato immaginato non viene promesso su un pianeta inventato.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "L30_prima",
+     "testo": "Chiudere con i pazienti salvati",
+     "effetti": [
+      {
+       "flag": {
+        "L30_prima": true
+       }
+      }
+     ],
+     "riserva": "Il congedo si rivolge ai pazienti salvati. La loro presenza non impone il ritorno al bianco o una frase di gratitudine che non hanno pronunciato.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "L30_seconda",
+     "testo": "Chiudere sul medaglione e sui genitori",
+     "effetti": [
+      {
+       "flag": {
+        "L30_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il medaglione conserva il legame con i genitori e con il sogno delle dalie. Non promette un pianeta o un Sole risorto contro ciò che è accaduto alla Terra.",
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "L30E",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Le navi si allontanano dalla Terra. Il medaglione con la dalia può ancora stare in una mano; il prato immaginato non viene promesso su un pianeta inventato.",
+   "png_presenti": [],
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "L30E",
+   "titolo": "Epilogo personale",
+   "descrizione": "Conclusione in attesa del contratto finale approvato.",
+   "apertura_riserva": "",
+   "png_presenti": [],
+   "finale": true,
+   "uscite": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": 3,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  }
+ ],
+ "png": {
+  "rabbit": {
+   "nome": "Rabbit",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "tommen": {
+   "nome": "Tommen",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "lucas": {
+   "nome": "Lucas",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "grid": {
+   "nome": "Grid",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "nine_nine": {
+   "nome": "Nine-Nine",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "kestrel": {
+   "nome": "Kestrel",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "ferra_ostrom": {
+   "nome": "Ferra Ostrom",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "gaia_epos": {
+   "nome": "Gaia Epos",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "dawn": {
+   "nome": "Dawn Jordsonn",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "cleyra": {
+   "nome": "Cleyra",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "evan_wood": {
+   "nome": "Evan Wood",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "george_script": {
+   "nome": "George Script",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "patriota": {
+   "nome": "Patriota",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "philips": {
+   "nome": "Richard Philips",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "bernard": {
+   "nome": "Jacques Bernard",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "alikea": {
+   "nome": "Alikea Rodano",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "fate": {
+   "nome": "Fate Alatri",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "spettro_bianco": {
+   "nome": "Florant Esprit",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "koga": {
+   "nome": "Koga",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "kato": {
+   "nome": "Kato",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "hammond": {
+   "nome": "Ruth Hammond",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "vigilia_haas": {
+   "nome": "Vigilia Haas",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "shapira": {
+   "nome": "Shapira Kamar",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "meadow": {
+   "nome": "Meadow",
+   "ruolo": "Genitore di Candor, apatico per il brainfreeze; nessuna guarigione o battuta inventata.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_LA_LUCE_NELLE_DALIE_DA_APPROVARE.md, §Meadow e Dhruva."
+  },
+  "dhruva": {
+   "nome": "Dhruva",
+   "ruolo": "Genitore di Candor, apatico per il brainfreeze; nessuna guarigione o battuta inventata.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "PNG_LA_LUCE_NELLE_DALIE_DA_APPROVARE.md, §Meadow e Dhruva."
+  }
+ },
+ "nemici": {
+  "rabbit": {
+   "id": "rabbit",
+   "nome": "Rabbit",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 4,
+    "for": 5,
+    "mira": 5,
+    "vel": 8,
+    "fmen": 3,
+    "dex": 7,
+    "dif": 2,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 3
+   },
+   "attacco": {
+    "nome": "Calci",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "vel",
+    "dex",
+    "for"
+   ],
+   "pngId": "rabbit",
+   "attacco_originale": {
+    "nome": "Calci",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [],
+   "crescita_originale": [
+    "hp",
+    "vel",
+    "dex",
+    "for"
+   ]
+  },
+  "tommen": {
+   "id": "tommen",
+   "nome": "Tommen",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 5,
+    "for": 3,
+    "mira": 4,
+    "vel": 6,
+    "fmen": 6,
+    "dex": 6,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 3,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Asta a impulsi",
+    "dannoBase": 10,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ],
+   "pngId": "tommen",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "giallo.asta_a_impulsi",
+     "tipo": "arma",
+     "nome": "Asta a impulsi",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.tuta_da_lavoro_tecnica",
+     "tipo": "armatura",
+     "nome": "Tuta da lavoro tecnica",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ]
+  },
+  "lucas": {
+   "id": "lucas",
+   "nome": "Lucas",
+   "build": "eclettico",
+   "primary": {
+    "hp": 3,
+    "mp": 5,
+    "for": 3,
+    "mira": 4,
+    "vel": 7,
+    "fmen": 5,
+    "dex": 7,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 3,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama a molla",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dex",
+    "vel",
+    "fmen"
+   ],
+   "pngId": "lucas",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "blu.lama_a_molla",
+     "tipo": "arma",
+     "nome": "Lama a molla",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "blu.tuta_da_meccanico",
+     "tipo": "armatura",
+     "nome": "Tuta da meccanico rinforzata",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dex",
+    "vel",
+    "fmen"
+   ]
+  },
+  "grid": {
+   "id": "grid",
+   "nome": "Grid",
+   "build": "guerriero",
+   "primary": {
+    "hp": 6,
+    "mp": 1,
+    "for": 8,
+    "mira": 3,
+    "vel": 4,
+    "fmen": 1,
+    "dex": 5,
+    "dif": 8,
+    "dmen": 4
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Asta a impulsi",
+    "dannoBase": 10,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "vel"
+   ],
+   "pngId": "grid",
+   "attacco_originale": {
+    "nome": "Colpo d'arma",
+    "dannoBase": 7,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "giallo.asta_a_impulsi",
+     "tipo": "arma",
+     "nome": "Asta a impulsi",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.tuta_da_lavoro_tecnica",
+     "tipo": "armatura",
+     "nome": "Tuta da lavoro tecnica",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.scudo_di_cantiere",
+     "tipo": "scudo",
+     "nome": "Scudo di cantiere",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "vel"
+   ]
+  },
+  "nine_nine": {
+   "id": "nine_nine",
+   "nome": "Nine-Nine",
+   "build": "eclettico",
+   "primary": {
+    "hp": 2,
+    "mp": 3,
+    "for": 2,
+    "mira": 4,
+    "vel": 8,
+    "fmen": 3,
+    "dex": 9,
+    "dif": 3,
+    "dmen": 6
+   },
+   "traits": {
+    "Elusione": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Stiletto da palcoscenico",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "vel",
+    "dex"
+   ],
+   "pngId": "nine_nine",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "verde.stiletto_da_palcoscenico",
+     "tipo": "arma",
+     "nome": "Stiletto da palcoscenico",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "verde.camice_verde",
+     "tipo": "armatura",
+     "nome": "Camice verde",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "vel",
+    "dex"
+   ]
+  },
+  "kestrel": {
+   "id": "kestrel",
+   "nome": "Kestrel",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 5,
+    "for": 4,
+    "mira": 4,
+    "vel": 5,
+    "fmen": 6,
+    "dex": 6,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 2,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama retrattile",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ],
+   "pngId": "kestrel",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "amaranto.lama_retrattile",
+     "tipo": "arma",
+     "nome": "Lama retrattile",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "amaranto.completo_rinforzato",
+     "tipo": "armatura",
+     "nome": "Completo da vincente rinforzato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ]
+  },
+  "ferra_ostrom": {
+   "id": "ferra_ostrom",
+   "nome": "Ferra Ostrom",
+   "build": "guerriero",
+   "primary": {
+    "hp": 6,
+    "mp": 3,
+    "for": 8,
+    "mira": 2,
+    "vel": 4,
+    "fmen": 4,
+    "dex": 5,
+    "dif": 7,
+    "dmen": 1
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Lama da fuga",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "fmen"
+   ],
+   "pngId": "ferra_ostrom",
+   "attacco_originale": {
+    "nome": "Lama",
+    "dannoBase": 7,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "nero.lama_da_fuga",
+     "tipo": "arma",
+     "nome": "Lama da fuga",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.tuta_da_agricoltore",
+     "tipo": "armatura",
+     "nome": "Tuta da serra",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.scudo_di_cantiere",
+     "tipo": "scudo",
+     "nome": "Scudo di cantiere",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "fmen"
+   ]
+  },
+  "gaia_epos": {
+   "id": "gaia_epos",
+   "nome": "Gaia Epos",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 4,
+    "for": 3,
+    "mira": 4,
+    "vel": 5,
+    "fmen": 4,
+    "dex": 6,
+    "dif": 4,
+    "dmen": 6
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 2,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Lama nascosta nel palmo",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dmen",
+    "dex",
+    "vel"
+   ],
+   "pngId": "gaia_epos",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "viola.lama_nel_palmo",
+     "tipo": "arma",
+     "nome": "Lama nascosta nel palmo",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "viola.giubba_da_estrattore",
+     "tipo": "armatura",
+     "nome": "Giubba da estrattore",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dmen",
+    "dex",
+    "vel"
+   ]
+  },
+  "dawn": {
+   "id": "dawn",
+   "nome": "Dawn Jordsonn",
+   "build": "eclettico",
+   "primary": {
+    "hp": 3,
+    "mp": 6,
+    "for": 2,
+    "mira": 3,
+    "vel": 2,
+    "fmen": 8,
+    "dex": 4,
+    "dif": 5,
+    "dmen": 7
+   },
+   "traits": {
+    "Elusione": 2,
+    "Resistenza": 3
+   },
+   "attacco": {
+    "nome": "Stiletto da palcoscenico",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "dmen"
+   ],
+   "pngId": "dawn",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "verde.stiletto_da_palcoscenico",
+     "tipo": "arma",
+     "nome": "Stiletto da palcoscenico",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "verde.giacca_di_scena",
+     "tipo": "armatura",
+     "nome": "Giacca di scena rinforzata",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "dmen"
+   ]
+  },
+  "cleyra": {
+   "id": "cleyra",
+   "nome": "Cleyra",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 5,
+    "for": 4,
+    "mira": 3,
+    "vel": 5,
+    "fmen": 6,
+    "dex": 6,
+    "dif": 3,
+    "dmen": 4
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 2,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Bisturi a impulsi",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dex",
+    "fmen",
+    "vel"
+   ],
+   "pngId": "cleyra",
+   "attacco_originale": {
+    "nome": "Bisturi",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "arancio.bisturi_a_impulsi",
+     "tipo": "arma",
+     "nome": "Bisturi a impulsi",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "nero.mantello_antirilevamento",
+     "tipo": "armatura",
+     "nome": "Mantello antirilevamento",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dex",
+    "fmen",
+    "vel"
+   ]
+  },
+  "evan_wood": {
+   "id": "evan_wood",
+   "nome": "Evan Wood",
+   "build": "eclettico",
+   "primary": {
+    "hp": 3,
+    "mp": 4,
+    "for": 2,
+    "mira": 3,
+    "vel": 4,
+    "fmen": 5,
+    "dex": 5,
+    "dif": 4,
+    "dmen": 10
+   },
+   "traits": {
+    "Elusione": 2,
+    "Resistenza": 3
+   },
+   "attacco": {
+    "nome": "Lama da fuga",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dmen",
+    "dex"
+   ],
+   "pngId": "evan_wood",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "nero.lama_da_fuga",
+     "tipo": "arma",
+     "nome": "Lama da fuga",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "nero.mantello_antirilevamento",
+     "tipo": "armatura",
+     "nome": "Mantello antirilevamento",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dmen",
+    "dex"
+   ]
+  },
+  "george_script": {
+   "id": "george_script",
+   "nome": "George Script",
+   "build": "eclettico",
+   "primary": {
+    "hp": 3,
+    "mp": 5,
+    "for": 2,
+    "mira": 3,
+    "vel": 3,
+    "fmen": 6,
+    "dex": 4,
+    "dif": 4,
+    "dmen": 10
+   },
+   "traits": {
+    "Elusione": 2,
+    "Resistenza": 3
+   },
+   "attacco": {
+    "nome": "Lama da fuga",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dmen",
+    "fmen"
+   ],
+   "pngId": "george_script",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "nero.lama_da_fuga",
+     "tipo": "arma",
+     "nome": "Lama da fuga",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "nero.giubba_nera_rinforzata",
+     "tipo": "armatura",
+     "nome": "Giubba nera rinforzata",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dmen",
+    "fmen"
+   ]
+  },
+  "patriota": {
+   "id": "patriota",
+   "nome": "Patriota",
+   "build": "guerriero",
+   "primary": {
+    "hp": 6,
+    "mp": 1,
+    "for": 8,
+    "mira": 7,
+    "vel": 5,
+    "fmen": 1,
+    "dex": 5,
+    "dif": 6,
+    "dmen": 1
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Emettitore clandestino",
+    "dannoBase": 8,
+    "stat": "mira"
+   },
+   "crescita": [
+    "hp",
+    "mira",
+    "for"
+   ],
+   "articolo": "un",
+   "attacco_originale": {
+    "nome": "Arma da fuoco",
+    "dannoBase": 7,
+    "stat": "mira"
+   },
+   "equip": [
+    {
+     "id": "grigio.emettitore_clandestino",
+     "tipo": "arma",
+     "nome": "Emettitore clandestino",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "classe": "tiro",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "amaranto.completo_rinforzato",
+     "tipo": "armatura",
+     "nome": "Completo da vincente rinforzato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "mira",
+    "for",
+    "dif"
+   ]
+  },
+  "philips": {
+   "id": "philips",
+   "nome": "Richard Philips",
+   "build": "eclettico",
+   "primary": {
+    "hp": 3,
+    "mp": 5,
+    "for": 2,
+    "mira": 3,
+    "vel": 3,
+    "fmen": 5,
+    "dex": 4,
+    "dif": 5,
+    "dmen": 10
+   },
+   "traits": {
+    "Elusione": 2,
+    "Resistenza": 3
+   },
+   "attacco": {
+    "nome": "Lama a molla",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dmen"
+   ],
+   "pngId": "philips",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "blu.lama_a_molla",
+     "tipo": "arma",
+     "nome": "Lama a molla",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "blu.tuta_da_pilota",
+     "tipo": "armatura",
+     "nome": "Tuta da pilota",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 4,
+     "durabilita": 70,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dmen",
+    "dif"
+   ]
+  },
+  "bernard": {
+   "id": "bernard",
+   "nome": "Jacques Bernard",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 5,
+    "for": 3,
+    "mira": 6,
+    "vel": 5,
+    "fmen": 6,
+    "dex": 5,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 3,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama nascosta nel palmo",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "vel",
+    "dex",
+    "fmen"
+   ],
+   "pngId": "bernard",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "grigio.lama_del_palmo_grigia",
+     "tipo": "arma",
+     "nome": "Lama nascosta nel palmo",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "grigio.abiti_termici_leggeri",
+     "tipo": "armatura",
+     "nome": "Abiti termici leggeri",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "vel",
+    "dex",
+    "fmen"
+   ]
+  },
+  "alikea": {
+   "id": "alikea",
+   "nome": "Alikea Rodano",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 6,
+    "for": 2,
+    "mira": 3,
+    "vel": 5,
+    "fmen": 8,
+    "dex": 5,
+    "dif": 3,
+    "dmen": 4
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 2,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Impulso di Raven",
+    "dannoBase": 6,
+    "stat": "fmen"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "dmen",
+    "vel"
+   ],
+   "pngId": "alikea",
+   "attacco_originale": {
+    "nome": "Impulso di Raven",
+    "dannoBase": 6,
+    "stat": "fmen"
+   },
+   "equip": [
+    {
+     "id": "bianco.abito_bianco_leggero",
+     "tipo": "armatura",
+     "nome": "Abito protettivo bianco",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "dmen",
+    "vel"
+   ]
+  },
+  "fate": {
+   "id": "fate",
+   "nome": "Fate Alatri",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 6,
+    "for": 2,
+    "mira": 4,
+    "vel": 5,
+    "fmen": 7,
+    "dex": 5,
+    "dif": 2,
+    "dmen": 5
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 2,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Lama retrattile",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dmen",
+    "fmen",
+    "vel"
+   ],
+   "pngId": "fate",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "amaranto.lama_retrattile",
+     "tipo": "arma",
+     "nome": "Lama retrattile",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "amaranto.completo_rinforzato",
+     "tipo": "armatura",
+     "nome": "Completo da vincente rinforzato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dmen",
+    "fmen",
+    "vel"
+   ]
+  },
+  "spettro_bianco": {
+   "id": "spettro_bianco",
+   "nome": "Florant Esprit",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 6,
+    "for": 4,
+    "mira": 5,
+    "vel": 5,
+    "fmen": 7,
+    "dex": 5,
+    "dif": 2,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 2,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama da dirigente",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "vel",
+    "dex"
+   ],
+   "boss": true,
+   "villain": true,
+   "pngId": "spettro_bianco",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "rosso.lama_da_dirigente",
+     "tipo": "arma",
+     "nome": "Lama da dirigente",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "rosso.cappotto_rosso_schermato",
+     "tipo": "armatura",
+     "nome": "Cappotto rosso schermato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "vel",
+    "dex"
+   ]
+  },
+  "koga": {
+   "id": "koga",
+   "nome": "Koga",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 1,
+    "for": 8,
+    "mira": 2,
+    "vel": 8,
+    "fmen": 1,
+    "dex": 7,
+    "dif": 6,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Elusione": 2
+   },
+   "attacco": {
+    "nome": "Katana",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "vel",
+    "dex"
+   ],
+   "pngId": "koga",
+   "attacco_originale": {
+    "nome": "Katana",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "grigio.abiti_termici_leggeri",
+     "tipo": "armatura",
+     "nome": "Abiti termici leggeri",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "grigio.placca_di_camera",
+     "tipo": "scudo",
+     "nome": "Placca di camera",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "vel",
+    "dex",
+    "dif"
+   ]
+  },
+  "kato": {
+   "id": "kato",
+   "nome": "Kato",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 2,
+    "for": 8,
+    "mira": 2,
+    "vel": 7,
+    "fmen": 4,
+    "dex": 6,
+    "dif": 5,
+    "dmen": 1
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Elusione": 2
+   },
+   "attacco": {
+    "nome": "Lama che congela",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "vel",
+    "dex"
+   ],
+   "pngId": "kato",
+   "attacco_originale": {
+    "nome": "Lama che congela",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "amaranto.completo_amaranto",
+     "tipo": "armatura",
+     "nome": "Completo amaranto",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "amaranto.scudo_da_braccio",
+     "tipo": "scudo",
+     "nome": "Scudo da braccio",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "vel",
+    "dex"
+   ]
+  },
+  "hammond": {
+   "id": "hammond",
+   "nome": "Ruth Hammond",
+   "build": "guerriero",
+   "primary": {
+    "hp": 6,
+    "mp": 2,
+    "for": 8,
+    "mira": 5,
+    "vel": 4,
+    "fmen": 1,
+    "dex": 5,
+    "dif": 6,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Lama nascosta nel palmo",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "mira"
+   ],
+   "boss": true,
+   "pngId": "hammond",
+   "attacco_originale": {
+    "nome": "Colpo d'arma",
+    "dannoBase": 7,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "viola.lama_nel_palmo",
+     "tipo": "arma",
+     "nome": "Lama nascosta nel palmo",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "viola.giubba_da_estrattore",
+     "tipo": "armatura",
+     "nome": "Giubba da estrattore",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "viola.coperchio_di_barile",
+     "tipo": "scudo",
+     "nome": "Coperchio di barile",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "mira"
+   ]
+  },
+  "vigilia_haas": {
+   "id": "vigilia_haas",
+   "nome": "Vigilia Haas",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 1,
+    "for": 7,
+    "mira": 4,
+    "vel": 5,
+    "fmen": 1,
+    "dex": 6,
+    "dif": 7,
+    "dmen": 4
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Elusione": 1,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Arma elettrificata",
+    "dannoBase": 7,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "dex"
+   ],
+   "pngId": "vigilia_haas",
+   "attacco_originale": {
+    "nome": "Arma elettrificata",
+    "dannoBase": 7,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "senza_colore.tuta_termica_con_casco",
+     "tipo": "armatura",
+     "nome": "Tuta termica esterna con casco sigillato",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 5,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "senza_colore.scudo_da_convoglio",
+     "tipo": "scudo",
+     "nome": "Scudo di lamiera da convoglio",
+     "taglia": "medi",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 10,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "dex"
+   ]
+  },
+  "shapira": {
+   "id": "shapira",
+   "nome": "Shapira Kamar",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 6,
+    "for": 4,
+    "mira": 5,
+    "vel": 5,
+    "fmen": 7,
+    "dex": 4,
+    "dif": 3,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 1,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Filamenti di telonio",
+    "dannoBase": 7,
+    "stat": "fmen"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "mira",
+    "vel"
+   ],
+   "boss": true,
+   "pngId": "shapira",
+   "attacco_originale": {
+    "nome": "Filamenti di telonio",
+    "dannoBase": 7,
+    "stat": "fmen"
+   },
+   "equip": [
+    {
+     "id": "giallo.tuta_da_lavoro_tecnica",
+     "tipo": "armatura",
+     "nome": "Tuta da lavoro tecnica",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "mira",
+    "vel"
+   ]
+  },
+  "koga_s2": {
+   "id": "koga_s2",
+   "nome": "Koga",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 1,
+    "for": 8,
+    "mira": 2,
+    "vel": 8,
+    "fmen": 1,
+    "dex": 7,
+    "dif": 6,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Elusione": 2
+   },
+   "attacco": {
+    "nome": "Stiletto da palcoscenico",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "vel",
+    "dex"
+   ],
+   "pngId": "koga",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "verde.stiletto_da_palcoscenico",
+     "tipo": "arma",
+     "nome": "Stiletto da palcoscenico",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "verde.giacca_di_scena",
+     "tipo": "armatura",
+     "nome": "Giacca di scena rinforzata",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "verde.scudo_da_scena",
+     "tipo": "scudo",
+     "nome": "Scudo da scena",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "vel",
+    "dex",
+    "dif"
+   ]
+  },
+  "meadow": {
+   "id": "meadow",
+   "nome": "Meadow",
+   "build": "eclettico",
+   "primary": {
+    "hp": 3,
+    "mp": 5,
+    "for": 2,
+    "mira": 3,
+    "vel": 3,
+    "fmen": 6,
+    "dex": 5,
+    "dif": 5,
+    "dmen": 8
+   },
+   "traits": {
+    "Elusione": 1,
+    "Resistenza": 4
+   },
+   "attacco": {
+    "nome": "Lama da fuga",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dmen"
+   ],
+   "pngId": "meadow",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "nero.lama_da_fuga",
+     "tipo": "arma",
+     "nome": "Lama da fuga",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "nero.giubba_nera_rinforzata",
+     "tipo": "armatura",
+     "nome": "Giubba nera rinforzata",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dmen",
+    "dif"
+   ]
+  },
+  "dhruva": {
+   "id": "dhruva",
+   "nome": "Dhruva",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 3,
+    "for": 4,
+    "mira": 3,
+    "vel": 3,
+    "fmen": 3,
+    "dex": 6,
+    "dif": 6,
+    "dmen": 8
+   },
+   "traits": {
+    "Elusione": 1,
+    "Resistenza": 4
+   },
+   "attacco": {
+    "nome": "Lama a molla",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dmen"
+   ],
+   "pngId": "dhruva",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "blu.lama_a_molla",
+     "tipo": "arma",
+     "nome": "Lama a molla",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "blu.tuta_da_meccanico",
+     "tipo": "armatura",
+     "nome": "Tuta da meccanico rinforzata",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dif",
+    "dmen"
+   ]
+  }
+ },
+ "fatti": {
+  "L_capsule": {
+   "testo": "Le capsule prosciugano Cromo dagli esseri umani e alimentano le città.",
+   "segreto": true,
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": 2,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "L_programma": {
+   "testo": "Il programma si chiama Ich e porta persone a vivere in un mondo scritto.",
+   "segreto": true,
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": 3,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "L_gaia": {
+   "testo": "Gaia Epos consuma la Terra per creare un buco bianco.",
+   "segreto": true,
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "proposed",
+   "act": 3,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "SCHEMA_LA_LUCE_NELLE_DALIE.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "icaro_sole_estrazione": {
+   "testo": "La stazione a terra ignorò gli avvertimenti della stazione sul Sole e impose di completare il ciclo di estrazione per profitto. Il ciclo causò uno strappo nelle onde di oscillazione del Cromo estratte dal Sole, provocandone lo spegnimento. La figlia di Epos sopravvisse alla stazione sul Sole e divenne un’entità ricolma di Cromo. Ora guida i marziani contro la Terra; nel suo subconscio rimane la rabbia per l’ordine ricevuto e il sacrificio imposto dai terrestri.",
+   "segreto": true,
+   "campaign_id": "luce-nelle-dalie-trama",
+   "content_status": "approved",
+   "act": 3,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "DECISIONI_AUTORE.md §11, risposta dell’autore del 1 novembre 2026 sullo spegnimento del Sole."
+  }
+ },
+ "borsa": {
+  "oggetti": {
+   "medaglione_dalia": {
+    "id": "medaglione_dalia",
+    "nome": "Medaglione con la dalia",
+    "descrizione": "Legame materiale con il sogno per i genitori.",
+    "tipo": "indizio",
+    "unico": true,
+    "indispensabile": false,
+    "via_alternativa": {
+     "testo": "Conoscenza e possesso restano distinti: nessuna prova nuova viene creata se il supporto si perde."
+    },
+    "campaign_id": "luce-nelle-dalie-trama",
+    "content_status": "proposed",
+    "act": 1,
+    "level_band": [
+     1,
+     30
+    ],
+    "difficulty_tags": [
+     "esplorativa",
+     "bilanciata",
+     "permadeath"
+    ],
+    "visibility_rule": "pubblica",
+    "source_note": "Oggetto dello schema della storia, scena 1; rappresentazione nei dati PROPOSTA."
+   },
+   "tuta_dawn": {
+    "id": "tuta_dawn",
+    "nome": "Tuta ceduta da Dawn",
+    "descrizione": "Tuta per uscire da C9, ceduta da Dawn; nessun bonus numerico aggiunto.",
+    "tipo": "indizio",
+    "unico": true,
+    "indispensabile": false,
+    "via_alternativa": {
+     "testo": "Conoscenza e possesso restano distinti: nessuna prova nuova viene creata se il supporto si perde."
+    },
+    "campaign_id": "luce-nelle-dalie-trama",
+    "content_status": "proposed",
+    "act": 1,
+    "level_band": [
+     1,
+     30
+    ],
+    "difficulty_tags": [
+     "esplorativa",
+     "bilanciata",
+     "permadeath"
+    ],
+    "visibility_rule": "pubblica",
+    "source_note": "Oggetto dello schema della storia, scena 10; rappresentazione nei dati PROPOSTA."
+   }
+  }
+ },
+ "orologi": {},
+ "risorse": {},
+ "fino_atto": 1
+}

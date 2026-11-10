@@ -1,0 +1,226 @@
+{
+ "formato": "rm-solo-archetipi/1",
+ "storia": "eidos",
+ "versione": "0.1.0",
+ "avviso": "Trama «La chiave del cubo». Il nome del protagonista è approvato; classe e valori meccanici sono proposti: da approvare.",
+ "archetipi": [
+  {
+   "id": "pontios",
+   "versione": "0.1.0",
+   "stato_editoriale": "bozza",
+   "fixture_interna": false,
+   "fonte": "docs/single-player/trame/SCHEMA_LA_CHIAVE_DEL_CUBO.md (schema approvato il 30/10); EIDOS.md §3.1 r.65-99",
+   "nome": "Pontios",
+   "genere": "maschile",
+   "popolazione": "Eporiani",
+   "citta": "",
+   "mansione": "Naviga con una flotta di soldati diretta a Besidd",
+   "ritratto": "img/solo/ritratti/eidos-ilyan.webp",
+   "ritratto_alt": "Volto di Pontios, giovane eporiano",
+   "build": "eclettico",
+   "background": "Un giovane eporiano che naviga verso Besidd, la città del legno, con una flotta di soldati. Dentro porta il Keravnos, l'arkè del fulmine: usarlo gli costa emicrania e sangue.",
+   "obiettivo": "Capire che cosa sia il frammento caduto dal cielo, e scrivere la tua storia.",
+   "missione_iniziale": "Arrivare a Besidd con la flotta.",
+   "capitolo": "cubo-trama",
+   "primary": {
+    "hp": 6,
+    "mp": 6,
+    "for": 4,
+    "mira": 4,
+    "vel": 4,
+    "fmen": 5,
+    "dex": 4,
+    "dif": 3,
+    "dmen": 4
+   },
+   "tertiary": {
+    "stile": 1,
+    "fortuna": 1,
+    "carisma": 3
+   },
+   "traits": {
+    "conoscenze": {
+     "Navigare": 2,
+     "Orientamento": 2,
+     "Geografia": 1
+    },
+    "capacitaNormali": {
+     "Percezione": 2,
+     "Nuotare": 2,
+     "Ascoltare": 1
+    },
+    "capacitaCombattive": {
+     "Arte Combattiva": 2,
+     "Elusione": 1,
+     "Resistenza": 1,
+     "Arkè": 1
+    }
+   },
+   "tecniche": [
+    {
+     "id": "eporiani.abbordaggio",
+     "nome": "Abbordaggio",
+     "categoria": "tecnica",
+     "tipoAzione": "attacco",
+     "bersaglio": "singolo nemico",
+     "dannoBase": 6,
+     "effetto": "Attacco fisico: danno base 6 + Destrezza",
+     "costoMP": 0,
+     "risorsaSpeciale": null,
+     "costoRisorsaSpeciale": 0,
+     "forzatura": {
+      "consentita": false,
+      "costoVitalita": null
+     },
+     "utilizziMassimi": "utilizziLimitFor",
+     "durataTurni": 0,
+     "condizioniUso": [],
+     "bonus": [],
+     "malus": [],
+     "livelloRichiesto": 1,
+     "slotRichiesti": 1,
+     "tipo": "danno",
+     "lv": 1,
+     "stat": "dex",
+     "descrizione": "Un salto, una lama corta, il ponte è tuo.",
+     "content_status": "approved",
+     "approvazione": {
+      "decisione": "autore-2026-11-07",
+      "ambito": "scelta della tecnica (DECISIONI_AUTORE §15 J.5)"
+     },
+     "fonte": "Approvata dall'autore (7/11/2026, DECISIONI_AUTORE §15 I.4h e J): dal catalogo di Eidos (eporiani, eclettico), fonte del catalogo: proposta coerente con la cultura del gruppo. Motivo: naviga verso Besidd con una flotta di soldati (EIDOS.md §3.1, [RW Ep.0.1]); colpo da nave con la daga di bordo, di Destrezza."
+    }
+   ],
+   "abilita": [],
+   "equip": [
+    {
+     "id": "daga_di_bordo",
+     "tipo": "arma",
+     "nome": "Daga di bordo",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "descrizione": "Lama corta da nave, buona per gli abbordaggi.",
+     "fonteCanone": "proposta coerente con la premessa; per Pontios PROPOSTA, da approvare: naviga con una flotta (EIDOS.md r.72), la scheda non dice l'arma",
+     "base": "arma_corta_bassa",
+     "content_status": "proposed"
+    },
+    {
+     "id": "veste",
+     "tipo": "armatura",
+     "nome": "Veste da navigante e mantello",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "descrizione": "Tessuto leggero contro il sole, cucito per un navigatore.",
+     "fonteCanone": "proposta coerente con la premessa; per Pontios PROPOSTA, da approvare: a bordo della flotta (EIDOS.md r.72)",
+     "base": "protezione_leggera_bassa",
+     "content_status": "proposed"
+    }
+   ],
+   "legami_iniziali": [
+    {
+     "png": "soldato_flotta",
+     "natura": "un soldato della flotta diretta a Besidd (EIDOS.md r.72)"
+    }
+   ],
+   "conoscenze": [],
+   "segreti_narratore": [
+    "Chi sia davvero Nyx è riservato fino alla scena 10; che la chiave sia lui, fino alla 14 (EIDOS.md r.98)."
+   ],
+   "occasioni_sviluppo": [
+    {
+     "atto": 1,
+     "possibilita": "Il frammento che porta dentro, e il primo legame con Athres."
+    },
+    {
+     "atto": 2,
+     "possibilita": "Affidarsi o no ad Athres, e l'altra versione di sé."
+    },
+    {
+     "atto": 3,
+     "possibilita": "Accettare sé stesso, e scrivere la propria storia."
+    }
+   ],
+   "campaign_id": "cubo-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "docs/single-player/trame/SCHEMA_LA_CHIAVE_DEL_CUBO.md (schema approvato il 30/10); EIDOS.md §3.1 r.65-99: nome approvato (DECISIONI_AUTORE.md §10: Pontios, «del mare aperto»); popolo Eporiano (EIDOS.md r.93, confermato); classe Eclettico (EIDOS.md r.94, PROPOSTA) e primarie dal preset eporiano Eclettico più vicino, con i tratti del mestiere: da approvare; tratto Arkè Keravnos (EIDOS.md r.96); slot della Tecnica e dell'Abilità vuoti, in attesa dell'autore",
+   "ontologia": {
+    "entityType": "personaggio_giocabile",
+    "peopleId": "eporiani",
+    "factionId": null,
+    "cultureId": null,
+    "regionId": null,
+    "roleId": "naufrago",
+    "creatureFamilyId": null,
+    "socialClassId": null,
+    "corporationId": null,
+    "playable": true,
+    "playerVisible": true,
+    "narratorOnly": [],
+    "statoAffiliazione": "confermata",
+    "proposte": {},
+    "fonti": {
+     "proposta": "trama: docs/single-player/trame/EIDOS.md §3.1 r.69 e r.93 (popolo: Eporiani)",
+     "peopleId": "[autore] Eporiano (EIDOS.md r.93, «confermato dall'autore»)",
+     "regionId": "trama: la città d'origine non è specificata nelle trame"
+    },
+    "dubbi": []
+   },
+   "approvazioneMeccanica": {
+    "id": "da-approvare",
+    "stato": "da approvare (protagonista di trama)",
+    "fonte": "docs/DECISIONI_AUTORE.md §2: l'approvazione dei preset del 2026-10-01 riguarda i personaggi delle avventure di prova ed è superata; i protagonisti delle trame si approvano uno per uno.",
+    "ambito": "Valori meccanici proposti (dal preset eporiano Eclettico più vicino, con i tratti del mestiere): da approvare."
+   },
+   "inventarioIniziale": [
+    {
+     "id": "eidos_razione_da_campo",
+     "qty": 1
+    }
+   ],
+   "approvazioneDotazioni": {
+    "id": "da-approvare",
+    "stato": "da approvare (protagonista di trama)",
+    "fonte": "docs/DECISIONI_AUTORE.md §2: l'approvazione dei preset del 2026-10-01 riguarda i personaggi delle avventure di prova ed è superata; i protagonisti delle trame si approvano uno per uno.",
+    "ambito": "Daga di bordo e veste da navigante del catalogo eporiano (PROPOSTA) e zaino iniziale: da approvare."
+   },
+   "slotVacanti": [
+    {
+     "tipo": "abilita",
+     "livello": 1,
+     "stato": "da_assegnare",
+     "motivo": "Slot Abilità magica dell'Eclettico al Lv 1: il Keravnos è il suo tratto Arkè (EIDOS.md r.96), ma nessuna fonte indica l'abilità; non viene inventata. In attesa dell'autore."
+    }
+   ]
+  }
+ ],
+ "formato_capacita": "rm-solo-capacita/1",
+ "legenda_fonti": {
+  "R": "regolamento dell'app",
+  "D": "documento Campagne e 15 archetipi V1",
+  "A": "regola approvata dall'autore (revisione gemme)",
+  "P": "proposta da approvare"
+ }
+}

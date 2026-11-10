@@ -1,0 +1,3965 @@
+{
+ "formato": "rm-solo-interazioni/1",
+ "campaign_id": "cavaliera-trama",
+ "stato": "bozza",
+ "content_status": "proposed",
+ "nota": "«La cavaliera di cenere»: docs/single-player/trame/SCHEMA_LA_CAVALIERA_DI_CENERE.md (schema approvato il 30/10); ICH.md §2 r.68-93. Ogni frase riprende un fatto o una battuta della fonte (note di lettura rm-work/ich/letture/); nessun fatto nuovo se non segnato PROPOSTA.",
+ "regole": {},
+ "scene": {
+  "E01": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E01x1",
+     "parte": "la piazza del mercato",
+     "testo": "Andare allo spettacolo di marionette in piazza",
+     "riserva": "Al mercato la compagnia Marcel ha montato il suo teatro: tre jarnat per lo spettacolo. Un burattino rosso grida: «Salve a tutti popolani, sono lo Jarl del regno, stamattina leggero i testi degli Aesir così da riuscire il mio castello nel cielo!» Un burattino di cencio, con la voce di donna, risponde che solo madre Embla può regalare ai reveries un bene così prezioso: dei ciuffi d'erba. Poi entra un burattino grigio: «Ridete, ridete pure, ma non riderete più quando i corvi vi chiameranno a sé. Io sono un loro emissario.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Al mercato di Umea c'è lo spettacolo della compagnia Marcel.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.1 r.38-49] (le battute del burattino rosso [r.41], di quello di cencio [r.46], resa in discorso indiretto, e di quello grigio [r.49], accorciata); «Aesir» qui è solo il nome degli dèi, come lo usano i personaggi"
+    },
+    {
+     "id": "E01x2",
+     "parte": "la piazza del mercato",
+     "testo": "Guardare la folla del mercato",
+     "riserva": "Il mercato è pieno come nei giorni di festa. Fra la gente si muovono esponenti importanti della capitale, con le loro scorte.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_folla"
+      }
+     ],
+     "fonte": "P3 [ICH Cap.1 r.56]; le scorte: PROPOSTA",
+     "scopo": "la capitale, dove porterà la strada"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "spettro",
+     "apertura": "L'ombra nera è ancora alla finestra, e guarda fuori.",
+     "chiusura": "L'ombra torna a guardare fuori.",
+     "riserva_libera": "L'ombra non risponde: si volta un momento verso di te, poi torna a guardare fuori.",
+     "argomenti": [
+      {
+       "id": "E01_spettro_1",
+       "testo": "Parlare all'ombra alla finestra",
+       "riserva": "Le parli piano, come a qualcuno che conosci. L'ombra si volta verso di te, ferma, per un tempo che sembra lungo; poi torna a guardare fuori, verso la piazza.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "spettro",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.1 r.36] (l'ombra si volta e torna a guardare fuori); testo PROPOSTA",
+       "scopo": "il primo segno degli spettri (L dello schema)"
+      }
+     ]
+    },
+    {
+     "png": "burattinaio",
+     "parte": "la piazza del mercato",
+     "apertura": "Il burattinaio rimette in fila le sue marionette.",
+     "chiusura": "Il burattinaio torna fra le sue marionette.",
+     "riserva_libera": "Il burattinaio ti fa l'occhiolino, e non risponde.",
+     "argomenti": [
+      {
+       "id": "E01_burattinaio_1",
+       "testo": "Chiedere al burattinaio della sua compagnia",
+       "riserva": "Il burattinaio si presenta con un inchino: la compagnia Marcel gira le città, e a Umea torna ogni volta che c'è folla.",
+       "effetti": [],
+       "richiede": [
+        "E01x1"
+       ],
+       "fonte": "[ICH Cap.1 r.54] (il burattinaio si presenta); le città e il ritorno a Umea: PROPOSTA",
+       "scopo": "il burattinaio, prima della sua battuta"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Lo spettacolo finisce fra gli applausi. Il burattinaio cerca qualcuno fra la gente, e ti trova.",
+    "fonte": "P2 [ICH Cap.1 r.54-55] (il burattinaio si rivolge a lei)",
+    "esplora": [
+     {
+      "id": "E01d1",
+      "parte": "la piazza del mercato",
+      "testo": "Avvicinarti al burattinaio",
+      "riserva": "Il burattinaio ti viene incontro con un sorriso complice, come se ti conoscesse.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Il burattinaio della compagnia Marcel vuole parlarti.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.1 r.54-55]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E01x1"
+    ],
+    "risoluzione": [
+     "E01d1"
+    ]
+   },
+   "required_beats": [
+    "E01x1",
+    "E01d1"
+   ],
+   "optional_beats": [
+    "E01x2",
+    "E01_spettro_1",
+    "E01_burattinaio_1"
+   ],
+   "riserva_libera": "A Umea nessuno ti risponde: la piazza è troppo piena di voci.",
+   "uscita_fail_forward": "Se la scena si ferma, lo spettacolo comincia comunque, e il burattinaio ti cerca fra la folla."
+  },
+  "E02": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E02x1",
+     "testo": "Guardare i condannati del rogo",
+     "riserva": "Sono reverie tribali, legati ai pali; il fuoco li prende piano, senza fretta. Alcuni hanno gli occhi di un ciano intenso, e non li chiudono fino alla fine.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_rogo"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.1 r.132-133]; gli occhi che non chiudono: PROPOSTA"
+    },
+    {
+     "id": "E02x2",
+     "testo": "Andare al banco degli schiavi",
+     "riserva": "Barn Hesse compra uno schiavo per qualche moneta di silfr. Lo schiavo ha cicatrici di battaglia, la mano sinistra ferita e due linee di sporco sul viso; tiene gli occhi bassi, finché Barn Hesse non lo tocca.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Barn Hesse ha comprato uno schiavo dalla mano sinistra ferita.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P3 [ICH Cap.1 r.137] (il prezzo, le cicatrici, la mano, lo sporco sul viso: le note del PNG); gli occhi bassi: PROPOSTA"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "viandante",
+     "apertura": "Un viandante straniero ti si para davanti, con una mano vicina all'arma.",
+     "chiusura": "Il viandante rimette il cubo sotto il mantello e si allontana.",
+     "riserva_libera": "Il viandante ti guarda, teso, e non risponde.",
+     "argomenti": [
+      {
+       "id": "E02_viandante_1",
+       "testo": "Chiedere al viandante straniero che cosa cerca",
+       "riserva": "«Dov'è la sede principale del culto?» ti chiede, pronto a estrarre l'arma. Poi apre la mano e ti mostra un cubo metallico nero, opaco. «Hai mai visto uno di questi nelle loro mani?»",
+       "effetti": [
+        {
+         "nota": "Un viandante straniero cerca il culto con un cubo nero in mano.",
+         "categoria": "indizio"
+        }
+       ],
+       "fonte": "L dello schema [ICH Cap.1 r.134-136] (la battuta [r.135]); il cubo resta un indizio aperto",
+       "scopo": "un indizio che resta aperto"
+      }
+     ]
+    },
+    {
+     "png": "barn_hesse",
+     "apertura": "Barn Hesse conta le monete, contento dell'affare.",
+     "chiusura": "Barn Hesse torna a contare le sue monete.",
+     "riserva_libera": "Barn Hesse ti guarda dall'alto in basso: «Non ho tempo per le chiacchiere.»",
+     "argomenti": [
+      {
+       "id": "E02_barn_1",
+       "testo": "Chiedere a Barn Hesse dello schiavo",
+       "riserva": "«Qualche moneta di silfr, e mi porto a casa una belva» dice Barn Hesse, senza staccare gli occhi dallo schiavo. «Ai giochi della capitale farà la mia fortuna.»",
+       "effetti": [],
+       "richiede": [
+        "E02x2"
+       ],
+       "fonte": "[ICH Cap.1 r.137, r.177] (il prezzo, la «belva», i giochi); battuta PROPOSTA",
+       "scopo": "il mercante e la sua belva"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Gli occhi dello schiavo brillano. Un'ombra nera lo invade: sventra una guardia, mozza la mano a un'altra e fugge fra la folla, mentre Barn Hesse urla una ricompensa per chi glielo riporta.",
+    "fonte": "P3 [ICH Cap.1 r.138-140]",
+    "esplora": [
+     {
+      "id": "E02d1",
+      "testo": "Inseguire lo schiavo",
+      "riserva": "Corri fra le bancarelle. Lo schiavo, stanco e ferito alla mano sinistra, si volta verso di te: si porta il polso al naso, con la guardia alzata.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Insegui lo schiavo fuggito per le strade di Umea.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P* [ICH Cap.1 r.141-145]: come combattere è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E02x1",
+     "E02x2"
+    ],
+    "risoluzione": [
+     "E02d1"
+    ]
+   },
+   "required_beats": [
+    "E02x1",
+    "E02x2",
+    "E02d1"
+   ],
+   "optional_beats": [
+    "E02_viandante_1",
+    "E02_barn_1"
+   ],
+   "riserva_libera": "In piazza nessuno ti risponde: tutti guardano il rogo.",
+   "uscita_fail_forward": "Se la scena si ferma, lo schiavo fugge comunque fra la folla, e Barn Hesse urla la sua ricompensa."
+  },
+  "E03": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E03x1",
+     "parte": "La casa di Barn Hesse",
+     "testo": "Ascoltare l'offerta di Barn Hesse",
+     "riserva": "Non è un'offerta, è un ordine con un prezzo: gli farai da guardia del corpo fino alla capitale, baderai alla sua «belva» e assisterai ai giochi; poi ci sarà un altro incarico. Le sue guardie restano alle tue spalle per tutto il tempo. La donna in rosso ascolta, e non dice una parola.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_ingaggio"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.1 r.177-180]"
+    },
+    {
+     "id": "E03x2",
+     "parte": "le strade di Umea e la partenza",
+     "testo": "Uscire per le strade di Umea, prima di partire",
+     "riserva": "Per strada un reverie in abiti verdi e marroni ti ferma e ti mette in mano un fiordaliso. Non guarda te: guarda accanto a te. «Daglielo, lei ne ha bisogno, questo mondo è tutto ciò che le rimane.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_fiordaliso"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.2 r.58] (la battuta del reverie); che guardi accanto a lei: PROPOSTA (lo spettro è con lei)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "spettro",
+     "apertura": "Lo spettro guarda il fiordaliso che hai in mano.",
+     "chiusura": "Lo spettro alza gli occhi al cielo.",
+     "riserva_libera": "Lo spettro non risponde: guarda il cielo.",
+     "argomenti": [
+      {
+       "id": "E03_spettro_1",
+       "testo": "Dare il fiordaliso allo spettro",
+       "riserva": "Lo spettro guarda il fiore senza prenderlo. «Grazie, apprezzo il gesto, ma penso stia meglio a te.» Poi alza gli occhi al cielo, con il viso triste.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "spettro",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E03x2"
+       ],
+       "fonte": "P2 [ICH Cap.2 r.59] (la battuta dello spettro; lo lascia a lei, poi guarda il cielo con il volto depresso)",
+       "scopo": "il legame con lo spettro"
+      }
+     ]
+    },
+    {
+     "png": "ragazzo_umea",
+     "apertura": "Il reverie in abiti verdi e marroni ti guarda, o guarda accanto a te.",
+     "chiusura": "Il reverie si allontana fra la gente.",
+     "riserva_libera": "Il reverie sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "E03_ragazzo_1",
+       "testo": "Chiedere al reverie perché ti ha dato il fiore",
+       "riserva": "Il reverie sorride, come se la domanda fosse strana. «Per lei» dice soltanto, e se ne va.",
+       "effetti": [],
+       "richiede": [
+        "E03x2"
+       ],
+       "fonte": "PROPOSTA: [ICH Cap.2 r.58] (il fiore è per lo spettro); che cosa sappia il reverie la fonte non lo dice",
+       "scopo": "un'eco che tornerà nella 10"
+      }
+     ]
+    },
+    {
+     "png": "barn_hesse",
+     "apertura": "Barn Hesse ti guarda come si guarda un buon acquisto.",
+     "chiusura": "Barn Hesse torna ai suoi conti.",
+     "riserva_libera": "Barn Hesse sbuffa: «Fai il tuo lavoro, e non fare domande.»",
+     "argomenti": [
+      {
+       "id": "E03_barn_1",
+       "testo": "Chiedere a Barn Hesse della sua belva",
+       "riserva": "«La mia belva» dice Barn Hesse, e ride. «Ai giochi della capitale si batterà per me. Tu bada che ci arrivi intera.»",
+       "effetti": [],
+       "richiede": [
+        "E03x1"
+       ],
+       "fonte": "[ICH Cap.1 r.177] (badare alla belva, i giochi); battuta PROPOSTA",
+       "scopo": "il mercante e la sua belva"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "All'alba si parte. Ti portano un cavallo, Stjarna; dietro la carrozza c'è una gabbia, e dentro lo schiavo della piazza: lo chiamano Ingen, «Nessuno».",
+    "fonte": "P3 [ICH Cap.2 r.60-61]",
+    "esplora": [
+     {
+      "id": "E03d1",
+      "parte": "le strade di Umea e la partenza",
+      "testo": "Montare su Stjarna e partire",
+      "riserva": "Sali in sella. Dalla gabbia Ingen ti guarda senza abbassare gli occhi; una donna vestita di nero esce dalla casa e va verso la carrozza di Barn Hesse.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Si parte da Umea verso la capitale.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.2 r.60-62]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E03x1",
+     "E03x2"
+    ],
+    "risoluzione": [
+     "E03d1"
+    ]
+   },
+   "required_beats": [
+    "E03x1",
+    "E03x2",
+    "E03d1"
+   ],
+   "optional_beats": [
+    "E03_spettro_1",
+    "E03_ragazzo_1",
+    "E03_barn_1"
+   ],
+   "riserva_libera": "Nessuno ti risponde: in casa di Barn Hesse parla solo lui.",
+   "uscita_fail_forward": "Se la scena si ferma, Barn Hesse fa preparare comunque i cavalli, e la carrozza parte."
+  },
+  "E04": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E04x1",
+     "testo": "Fare il tuo turno di guardia",
+     "riserva": "Intorno al fuoco tutti dormono. Poi senti le voci: tante, basse, da ogni parte. Una è più vicina delle altre, vecchia e stanca: «Stavolta abbiamo parecchia compagnia figliola, non vedevo così tanta gente disperata dai tempi del primo ciclo.» Accanto a te c'è un vecchio spettro, che guarda il buio come te.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_nonno"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.2 r.129-130] (le voci; la battuta del nonno-spettro)"
+    },
+    {
+     "id": "E04x2",
+     "testo": "Guardare i corvi sui rami",
+     "riserva": "Sui rami intorno all'accampamento ci sono dei corvi. Non dormono: ti guardano, con gli occhi vitrei, tutti insieme. Le voci martellano più forte.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "I corvi intorno all'accampamento ti guardano.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "[ICH Cap.2 r.137-138] (i corvi con gli sguardi vitrei, le voci che martellano)",
+     "scopo": "il primo segno dei corvi"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "nonno",
+     "apertura": "Il vecchio spettro ti guarda con gentilezza, malinconico.",
+     "chiusura": "Il vecchio spettro torna a guardare il buio.",
+     "riserva_libera": "Il vecchio spettro sorride: «Non tutto si può dire, figliola.»",
+     "argomenti": [
+      {
+       "id": "E04_nonno_1",
+       "testo": "Ascoltare il vecchio spettro",
+       "riserva": "«Fa tutto parte di un disegno, ogni matrice ha una forma precisa, ogni soggetto possiede qualcosa di unico, di inespresso… sta a te ascoltarli figliola.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "nonno",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E04x1"
+       ],
+       "fonte": "P2 [ICH Cap.2 r.132]",
+       "scopo": "gli spettri che le parlano"
+      },
+      {
+       "id": "E04_nonno_2",
+       "testo": "Chiedere al vecchio spettro chi ha lasciato",
+       "riserva": "«Chissà come sta mia nipote, lei si impegna per aiutare il prossimo… dopo che sua sorella è morta è stata dura.» Non dice altro.",
+       "effetti": [
+        {
+         "nota": "Il vecchio spettro ha una nipote che ha perso la sorella.",
+         "categoria": "indizio"
+        }
+       ],
+       "richiede": [
+        "E04x1"
+       ],
+       "fonte": "[ICH Cap.2 r.133] (accenno alla verità della 10: nessun nome)",
+       "scopo": "un accenno a chi sia lo spettro"
+      }
+     ]
+    },
+    {
+     "png": "spettro",
+     "apertura": "Lo spettro ti sta vicino, più pallido del solito.",
+     "chiusura": "Lo spettro guarda il buio, e non parla più.",
+     "riserva_libera": "Lo spettro scuote la testa: non vuole parlarne.",
+     "argomenti": [
+      {
+       "id": "E04_spettro_1",
+       "testo": "Chiedere allo spettro se sente le voci",
+       "riserva": "Lo spettro si stringe le braccia intorno al corpo, come se avesse freddo. Le sente, sì. Sono tanti, e sono tutti disperati.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "spettro",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E04x1"
+       ],
+       "fonte": "PROPOSTA: le voci [ICH Cap.2 r.129-130]; lo spettro depresso [Cap.2 r.59]",
+       "scopo": "il legame con lo spettro"
+      }
+     ]
+    },
+    {
+     "png": "runi",
+     "apertura": "Ingen ti guarda dalla gabbia, sveglio, con la mano sinistra stretta al petto.",
+     "chiusura": "Ingen torna a guardare il buio.",
+     "riserva_libera": "Ingen non risponde.",
+     "argomenti": [
+      {
+       "id": "E04_ingen_1",
+       "testo": "Parlare con Ingen al cambio di guardia",
+       "riserva": "Quando gli altri si danno il cambio, Ingen ti chiama piano. Non ti ringrazia. Ti chiede soltanto che fine gli faranno fare.",
+       "effetti": [],
+       "richiede": [
+        "E04d1"
+       ],
+       "fonte": "[ICH Cap.2 r.162-163] (Ingen le chiede che fine gli faranno fare; la fonte non riporta la battuta)",
+       "scopo": "la scelta su Ingen"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Una figura corre nella notte, e un'ombra la segue: il fuggitivo cade senza un grido. La figura che lo ha ucciso si volta: una donna con un manto di piume, il volto macchiato di nero. Avanza verso di te. «{nome} smettila di fare il dannato rottame e muovi quel culo! Devi riportarmi a casa non voglio morire qua dentro!» ti urla lo spettro.",
+    "fonte": "P3 [ICH Cap.2 r.139-142] (la battuta dello spettro [r.142]; l'aspetto di Raven dalle note del PNG [r.78-97])",
+    "esplora": [
+     {
+      "id": "E04d1",
+      "testo": "Affrontare la donna con il manto di piume",
+      "riserva": "Alzi l'arma. Intorno a voi i corvi si levano dai rami tutti insieme.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Una donna con un manto di piume ti attacca all'accampamento.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.2 r.139-151]: come combattere, o se lasciare l'arma a Ingen, è del giocatore"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E04x1"
+    ],
+    "risoluzione": [
+     "E04d1"
+    ]
+   },
+   "required_beats": [
+    "E04x1",
+    "E04d1"
+   ],
+   "optional_beats": [
+    "E04x2",
+    "E04_nonno_1",
+    "E04_nonno_2",
+    "E04_spettro_1",
+    "E04_ingen_1"
+   ],
+   "riserva_libera": "Nell'accampamento nessuno ti risponde: dormono tutti, tranne le voci.",
+   "uscita_fail_forward": "Se la scena si ferma, la donna con il manto di piume esce comunque dalla notte, e avanza verso di te."
+  },
+  "E05": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E05x1",
+     "parte": "il ponte",
+     "testo": "Guardare il ragazzo che si allena al ponte",
+     "riserva": "Sulla riva, vicino al ponte, un ragazzo si allena con la spada, da solo. I colpi sono goffi, ma non si ferma mai.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "P2 [ICH Cap.3 r.32] (un ragazzo si allena con la spada); il modo: PROPOSTA",
+     "scopo": "il ponte, prima della lite"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "spettro",
+     "apertura": "Lo spettro cammina accanto a te, senza lasciare orme.",
+     "chiusura": "Lo spettro torna a guardare la strada.",
+     "riserva_libera": "Lo spettro sbuffa: «Non me lo ricordo, e non insistere.»",
+     "argomenti": [
+      {
+       "id": "E05_spettro_1",
+       "testo": "Chiedere allo spettro chi era",
+       "riserva": "«Dove vivevo io non avevamo il sole, ricordo che ero triste e che mi sentivo così vuota.» Ha una sorella; i genitori non li ricorda. Non è di Erdegis. «Solo che poi non ricordo più nulla, ricordo solo di aver visto molte persone morire, probabilmente le stesse che hai visto tu la scorsa notte.»",
+       "effetti": [
+        {
+         "scopri": "cavaliera_fact_racconto"
+        },
+        {
+         "relazione": {
+          "png": "spettro",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P1 [ICH Cap.3 r.24-29] (le battute [r.28] e [r.29], accorciata: «perché ero sua nipote» si tace fino alla 25)",
+       "scopo": "l'obiettivo «riportarla a casa» (r.92)"
+      },
+      {
+       "id": "E05_spettro_2",
+       "testo": "Chiedere allo spettro dove vuole tornare",
+       "riserva": "Lo spettro guarda il cielo, a lungo. Non sa dirti dove: sa soltanto che non è qui.",
+       "effetti": [],
+       "richiede": [
+        "E05_spettro_1"
+       ],
+       "fonte": "PROPOSTA: non è di Erdegis [ICH Cap.3 r.27-28]; dove sia casa sua la fonte qui non lo dice",
+       "scopo": "l'obiettivo «riportarla a casa»"
+      }
+     ]
+    },
+    {
+     "png": "runi",
+     "apertura": "Ingen ti guarda attraverso le sbarre, con un mezzo sorriso.",
+     "chiusura": "Ingen chiude gli occhi, e si appoggia alle sbarre.",
+     "riserva_libera": "Ingen non risponde.",
+     "argomenti": [
+      {
+       "id": "E05_ingen_1",
+       "testo": "Parlare con Ingen dopo la lite",
+       "riserva": "«Ha comprato la mia vita, dice lui» fa Ingen, e sputa fuori dalla gabbia. «Io non sono la bestia di nessuno.» Poi ti guarda: alle giostre, se lo fanno battere, non si batterà per Barn Hesse.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "runi",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E05d1"
+       ],
+       "fonte": "L dello schema (parlare con Ingen, scopo: la giostra): [ICH Cap.3 r.34-35] (riprese le parole della lite); il resto PROPOSTA",
+       "scopo": "la giostra"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Al ponte le carrozze si fermano in fila. Barn Hesse scende e va dritto alla gabbia di Ingen.",
+    "fonte": "P2 [ICH Cap.3 r.32-33]",
+    "esplora": [
+     {
+      "id": "E05d1",
+      "parte": "il ponte",
+      "testo": "Fermarti accanto alla gabbia",
+      "riserva": "«Se accetteranno la mia offerta dovrai batterti probabilmente con lui, vedi di non perdere» dice Barn Hesse, e indica il ragazzo sulla riva. «Non sono la tua bestia da combattimento» risponde Ingen. «Si invece mio caro, ho comprato la tua vita, solo i corvi hanno diritto di reclamo.» «Non temo i corvi, né tantomeno un cittadino come te.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cavaliera_fact_ponte"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.3 r.33-36] (le battute di Barn Hesse e di Ingen); che indichi il ragazzo: PROPOSTA (con chi dovrebbe battersi la nota non lo dice)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E05_spettro_1"
+    ],
+    "risoluzione": [
+     "E05d1"
+    ]
+   },
+   "required_beats": [
+    "E05_spettro_1",
+    "E05d1"
+   ],
+   "optional_beats": [
+    "E05x1",
+    "E05_spettro_2",
+    "E05_ingen_1"
+   ],
+   "riserva_libera": "Sulla strada nessuno ti risponde: si sentono solo le ruote.",
+   "uscita_fail_forward": "Se la scena si ferma, le carrozze arrivano comunque al ponte, e Barn Hesse scende verso la gabbia di Ingen."
+  },
+  "E06": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E06x1",
+     "testo": "Ascoltare l'offerta di Celya",
+     "riserva": "Barn Hesse ti paga, e il vostro contratto finisce qui: fino alla capitale, come d'accordo. Celya Molvrick, la donna in nero, ti propone subito un altro lavoro: farle da scorta, a basso prezzo. Lo dice come si dice una cosa già decisa.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_scorta"
+      },
+      {
+       "scopri": "cavaliera_fact_celya"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.3 r.73-75] (la scorta a basso prezzo, il contratto chiuso); il tono: PROPOSTA (Celya pratica, le note del PNG)"
+    },
+    {
+     "id": "E06x2",
+     "testo": "Guardare i preparativi delle giostre",
+     "riserva": "Si montano i palchi, si provano i cavalli. Gli uomini dallo stemma di cervo si fermano davanti alle scuderie; il loro cavaliere scambia due parole con le guardie della città, e tutti gli fanno spazio.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_giostre"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.3 r.73-81] (i preparativi, il cavaliere con gli uomini dallo stemma di cervo); il resto PROPOSTA",
+     "scopo": "la giostra che viene"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "sindre",
+     "apertura": "Sindre ti guarda come si guarda il tempo che fa: senza interesse.",
+     "chiusura": "Sindre torna al suo bicchiere.",
+     "riserva_libera": "Sindre alza appena le spalle, e non risponde.",
+     "argomenti": [
+      {
+       "id": "E06_sindre_1",
+       "testo": "Salutare tuo cugino Sindre",
+       "riserva": "Sindre ti saluta appena, apatico, come se vi foste visti ieri. Ti guarda la spada, poi le mani. «Le tieni male» dice soltanto. Da domani ti addestra lui.",
+       "effetti": [
+        {
+         "scopri": "cavaliera_fact_sindre"
+        }
+       ],
+       "fonte": "P3 [ICH Cap.3 r.77-78] (il cugino apatico che la addestra); la battuta: PROPOSTA",
+       "scopo": "il cugino"
+      },
+      {
+       "id": "E06_sindre_2",
+       "testo": "Allenarti con Sindre",
+       "riserva": "Sindre non ti risparmia niente. Ti mette a terra tre volte, senza cambiare espressione; alla quarta resti in piedi, e lui annuisce, una volta sola.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "sindre",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E06_sindre_1"
+       ],
+       "fonte": "L dello schema (l'addestramento, scopo: il legame che si spezzerà nella 14) [ICH Cap.3 r.77-78]; testo PROPOSTA",
+       "scopo": "il legame che si spezzerà nella 14"
+      }
+     ]
+    },
+    {
+     "png": "celya",
+     "apertura": "Celya ti osserva, con le mani giunte davanti al vestito nero.",
+     "chiusura": "Celya si volta e se ne va.",
+     "riserva_libera": "Celya sorride appena: «Fai troppe domande.»",
+     "argomenti": [
+      {
+       "id": "E06_celya_1",
+       "testo": "Chiedere a Celya perché proprio tu",
+       "riserva": "«Perché costi poco, e perché ti ho {visto|vista|visto} lavorare» dice Celya. Non aggiunge altro.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "celya",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E06x1"
+       ],
+       "fonte": "PROPOSTA: [ICH Cap.3 r.73] (la scorta a basso prezzo); perché la scelga la fonte non lo dice",
+       "scopo": "Celya, che dice poco"
+      }
+     ]
+    },
+    {
+     "png": "spettro",
+     "apertura": "Lo spettro guarda Sindre da lontano, e non gli si avvicina.",
+     "chiusura": "Lo spettro ti volta le spalle.",
+     "riserva_libera": "Lo spettro non risponde.",
+     "argomenti": [
+      {
+       "id": "E06_spettro_1",
+       "testo": "Chiedere allo spettro di tuo cugino",
+       "riserva": "Lo spettro guarda Sindre a lungo, con le braccia strette al corpo. Non dice niente; ma quando Sindre si avvicina, lui si allontana.",
+       "effetti": [],
+       "richiede": [
+        "E06_sindre_1"
+       ],
+       "fonte": "PROPOSTA: lo spettro e Sindre (la fonte qui non dice niente)",
+       "scopo": "un'ombra su Sindre"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La sera, in una taverna, un tizio sbatte un pugno sul banco e minaccia l'oste per i soldi. La gente si fa da parte. Sindre, al suo tavolo, non alza nemmeno gli occhi.",
+    "fonte": "P4 [ICH Cap.3 r.79]",
+    "esplora": [
+     {
+      "id": "E06d1",
+      "testo": "Metterti fra il tizio e l'oste",
+      "riserva": "Ti metti in mezzo. Il tizio ti guarda dall'alto in basso, con l'arma in pugno; l'oste, dietro di te, trattiene il fiato.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "In taverna un tizio minaccia l'oste.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P* [ICH Cap.3 r.79-80]: che cosa dire o fare è del giocatore"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E06x1",
+     "E06_sindre_1"
+    ],
+    "risoluzione": [
+     "E06d1"
+    ]
+   },
+   "required_beats": [
+    "E06x1",
+    "E06_sindre_1",
+    "E06d1"
+   ],
+   "optional_beats": [
+    "E06x2",
+    "E06_sindre_2",
+    "E06_celya_1",
+    "E06_spettro_1"
+   ],
+   "riserva_libera": "A Skjioldstad nessuno ti risponde: tutti pensano alle giostre.",
+   "uscita_fail_forward": "Se la scena si ferma, la sera arriva comunque, e in taverna il tizio comincia a gridare contro l'oste."
+  },
+  "E07": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E07x1",
+     "testo": "Girare l'area della giostra",
+     "riserva": "Le scuderie, i fabbri e i maniscalchi stanno sotto la struttura di legno dove pendono i drappi delle dodici casate. Più in là c'è la zona dei mercanti, sotto il segno di Fehu, poi i banchi del cibo, e quelli degli unguenti e delle pozioni, sotto il segno di Inguz. In una bettola chiedono dieci silfernat per una stanza, e cinquanta jarnat per il cavallo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_area"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.4 r.50-57] (i luoghi e i prezzi delle note)"
+    },
+    {
+     "id": "E07x2",
+     "testo": "Guardare gli stemmi delle casate",
+     "riserva": "Sui drappi riconosci qualche simbolo: i Bauclaire portano quello di Bhorkyn; i Kraken una piovra nera; gli Aevarr un cervo a due teste; i Solsvart un anello nero con il triskele. Brynden, il fratello minore dello jarl, ha accanto un campagnolo con un leone dorato: Rend, che il titolo se l'è guadagnato.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Alla giostra ci sono Brynden, fratello dello jarl, e i Bauclaire.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "[ICH Cap.4 r.53, r.82-86] (le casate e i loro simboli, Brynden fratello minore dello jarl, Rend il campagnolo con il leone dorato)",
+     "scopo": "riconoscere chi ritroverà a Ourobera (Brynden, i Bauclaire)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "sindre",
+     "apertura": "Sindre è in piedi davanti a te, con le mani dietro la schiena.",
+     "chiusura": "Sindre si volta e se ne va verso il palco dello jarl.",
+     "riserva_libera": "Sindre non risponde: guarda verso le gabbie.",
+     "argomenti": [
+      {
+       "id": "E07_sindre_1",
+       "testo": "Ascoltare che cosa vuole Sindre",
+       "riserva": "Sindre parla piano, cortese, come quando caccia. Vuole sapere di Barn Hesse: se è vero che trasporta un Kyn.",
+       "effetti": [
+        {
+         "scopri": "cavaliera_fact_kyn"
+        }
+       ],
+       "fonte": "P1 [ICH Cap.4 r.49] (la domanda; il tono «cortese e calmo quando caccia» dalle note del PNG)",
+       "scopo": "il pericolo per Ingen"
+      }
+     ]
+    },
+    {
+     "png": "brynden",
+     "apertura": "Brynden si sistema i guanti accanto al suo cavallo.",
+     "chiusura": "Brynden torna al suo cavallo.",
+     "riserva_libera": "Brynden ti fa un cenno cortese, e non risponde.",
+     "argomenti": [
+      {
+       "id": "E07_brynden_1",
+       "testo": "Salutare Brynden",
+       "riserva": "Brynden ti risponde con un inchino da cavaliere, cortese anche con chi non ha uno stemma. Poi torna a pensare al suo turno.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "brynden",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E07x2"
+       ],
+       "fonte": "PROPOSTA: Brynden cavalleresco e onorevole (le note del PNG [ICH Cap.4 r.83])",
+       "scopo": "riconoscere chi ritroverà a Ourobera"
+      }
+     ]
+    },
+    {
+     "png": "runi",
+     "apertura": "Ingen aspetta il suo turno in catene, con un elmo spaccato che gli lascia scoperta la bocca.",
+     "chiusura": "Ingen sputa nella polvere, e non ti guarda più.",
+     "riserva_libera": "Ingen sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "E07_ingen_1",
+       "testo": "Parlare con Ingen prima del suo turno",
+       "riserva": "Ingen sorride sotto l'elmo spaccato. Non ha paura dell'arena; ha paura di quello che succede dopo.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "runi",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.4 r.79] (l'elmo spaccato con la bocca in vista, sorridente in duello); il resto PROPOSTA",
+       "scopo": "il pericolo per Ingen"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Squillano i corni: il primo turno della giostra comincia. I cavalieri delle casate entrano nell'arena uno dopo l'altro.",
+    "fonte": "P3 [ICH Cap.4 r.78]",
+    "esplora": [
+     {
+      "id": "E07d1",
+      "testo": "Prendere posto vicino all'arena",
+      "riserva": "Trovi posto vicino alla staccionata, dove puoi vedere l'arena e la gabbia di Ingen.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Il primo turno della giostra dello jarl è cominciato.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.4 r.78-87]; dove stare: L dello schema (08), PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E07x1",
+     "E07_sindre_1"
+    ],
+    "risoluzione": [
+     "E07d1"
+    ]
+   },
+   "required_beats": [
+    "E07x1",
+    "E07_sindre_1",
+    "E07d1"
+   ],
+   "optional_beats": [
+    "E07x2",
+    "E07_brynden_1",
+    "E07_ingen_1"
+   ],
+   "riserva_libera": "Alla giostra nessuno ti risponde: c'è troppo rumore.",
+   "uscita_fail_forward": "Se la scena si ferma, i corni squillano comunque, e il primo turno comincia."
+  },
+  "E08": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E08x1",
+     "testo": "Guardare il duello di Bjorta",
+     "riserva": "«Voi delle Stad morirete tutti per mano dell'orsa dorata, morirai per mano mia Bauclaire» grida Bjorta. «Una schiava che tenta di ribellarsi alla corona? Bene, una volta sconfitta verrai epurata dalle fiamme davanti alla tua gente, sarai un monito.» Bjorta vince, nel sangue, e lascia l'arena ferita, senza voltarsi. Poi Vetsen di Gea batte Brynden.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Bjorta, l'orsa dorata, ha battuto Bauclaire.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.4 r.88-93] (le battute di Bjorta [r.90] e del Bauclaire [r.91]; Bjorta vince e se ne va ferita; Vetsen batte Brynden)"
+    },
+    {
+     "id": "E08x2",
+     "testo": "Guardare Ingen contro Veter",
+     "riserva": "Veter Tevel entra con l'alabarda, e sembra camminare sull'aria: cerca vendetta su Ingen. Ingen resiste con la lama crepata, finché una massa nera non lo ricopre e i suoi occhi si illuminano. Vince. Sul palco, Sindre si alza di scatto e va dallo jarl.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_secondo_turno"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.4 r.94-99] (Veter, l'alabarda, l'aria; la massa nera e gli occhi; Sindre si altera e va dallo jarl)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "spettro",
+     "apertura": "Lo spettro guarda l'arena, con gli occhi fissi su Ingen.",
+     "chiusura": "Lo spettro torna a guardare Ingen.",
+     "riserva_libera": "Lo spettro non risponde: guarda Ingen.",
+     "argomenti": [
+      {
+       "id": "E08_spettro_1",
+       "testo": "Chiedere allo spettro che cosa vede in Ingen",
+       "riserva": "Lo spettro non stacca gli occhi da Ingen. «Lui mi serve» dice soltanto, come al ponte. «Non lasciarglielo prendere.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "spettro",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E08x2"
+       ],
+       "fonte": "[ICH Cap.3 r.30] («lui mi serve»); il resto PROPOSTA",
+       "scopo": "proteggere Ingen"
+      }
+     ]
+    },
+    {
+     "png": "bjorta",
+     "apertura": "Bjorta passa accanto alla staccionata, ferita, con le asce ancora in pugno.",
+     "chiusura": "Bjorta se ne va, senza voltarsi.",
+     "riserva_libera": "Bjorta ti guarda, e non risponde.",
+     "argomenti": [
+      {
+       "id": "E08_bjorta_1",
+       "testo": "Parlare con Bjorta mentre lascia l'arena",
+       "riserva": "Bjorta si ferma un momento. Ti guarda, poi guarda la gabbia di Ingen, e capisci che lei sa che cosa vuol dire essere la belva di qualcuno. Poi se ne va.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "bjorta",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E08x1"
+       ],
+       "fonte": "PROPOSTA: Bjorta schiava che si ribella alla corona [ICH Cap.4 r.89-92]; la fonte non le dà una battuta per lei",
+       "scopo": "chi ritroverà più avanti"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La finale: Vetsen di Gea contro Ingen. Ingen tenta la fuga, ma la guardia lo obbliga a battersi. Con la mano sinistra oscura colpisce Vetsen, che perde l'elmo. Poi Sindre entra nell'arena, e con un colpo solo spezza la spada di Ingen.",
+    "fonte": "P2 e P3 [ICH Cap.4 r.121-127]",
+    "esplora": [
+     {
+      "id": "E08d1",
+      "testo": "Guardare Ingen disarmato davanti a Sindre",
+      "riserva": "Ingen resta con l'elsa spezzata in mano, davanti a Sindre. Tutta l'arena tace. Tu sei a pochi passi dalla staccionata.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cavaliera_fact_finale_giostra"
+       },
+       {
+        "scopri": "cavaliera_fact_spada"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.4 r.125-127]: che cosa fare è del giocatore (P*)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E08x1",
+     "E08x2"
+    ],
+    "risoluzione": [
+     "E08d1"
+    ]
+   },
+   "required_beats": [
+    "E08x1",
+    "E08x2",
+    "E08d1"
+   ],
+   "optional_beats": [
+    "E08_spettro_1",
+    "E08_bjorta_1"
+   ],
+   "riserva_libera": "Nell'arena nessuno ti risponde: la folla grida troppo forte.",
+   "uscita_fail_forward": "Se la scena si ferma, la finale comincia comunque, e Sindre scende verso l'arena."
+  },
+  "E09": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E09x1",
+     "testo": "Seguire Celya per le strade",
+     "riserva": "Celya ti guida per vicoli che non conosci, svelta e silenziosa, con il vestito nero che si confonde con il buio. Stjarna vi segue alla briglia.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Celya ti guida fuori da Skjioldstad.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.5 r.25] (la fuga con l'aiuto di Celya); i vicoli: PROPOSTA"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "celya",
+     "apertura": "Celya cammina svelta, senza voltarsi.",
+     "chiusura": "Celya ti fa cenno di tacere.",
+     "riserva_libera": "Celya non risponde: ascolta le strade.",
+     "argomenti": [
+      {
+       "id": "E09_celya_1",
+       "testo": "Chiedere a Celya perché ti aiuta",
+       "riserva": "«Mi serve una scorta viva, non appesa» dice Celya, e non rallenta.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "celya",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "PROPOSTA: la scorta a basso prezzo [ICH Cap.3 r.73]; perché la aiuti la fonte non lo dice",
+       "scopo": "Celya, che dice poco"
+      }
+     ]
+    },
+    {
+     "png": "spettro",
+     "apertura": "Lo spettro ti corre accanto, senza fiato e senza passi.",
+     "chiusura": "Lo spettro guarda indietro, verso la città.",
+     "riserva_libera": "Lo spettro scuote la testa: non è il momento.",
+     "argomenti": [
+      {
+       "id": "E09_spettro_1",
+       "testo": "Chiedere allo spettro dello schiavo",
+       "riserva": "«Lui mi serve» ti ricorda lo spettro, e guarda la gabbia. Non dice altro.",
+       "effetti": [],
+       "fonte": "[ICH Cap.3 r.30] («lui mi serve»)",
+       "scopo": "aiutare lo schiavo"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Alla porta della città le guardie di Skjoldland vi sbarrano la strada. Dietro di loro, lontana ma sempre più vicina, la voce di Sindre.",
+    "fonte": "L dello schema (le guardie; Sindre che la insegue) [ICH Cap.5 r.25]; testo PROPOSTA",
+    "esplora": [
+     {
+      "id": "E09d1",
+      "testo": "Aprirti la strada fra le guardie",
+      "riserva": "Sguaini la spada. Una guardia ti viene contro, mentre Celya scivola via nel buio.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Combatti contro le guardie di Skjoldland alla porta della città.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "L dello schema: come combattere è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E09x1"
+    ],
+    "risoluzione": [
+     "E09d1"
+    ]
+   },
+   "required_beats": [
+    "E09x1",
+    "E09d1"
+   ],
+   "optional_beats": [
+    "E09_celya_1",
+    "E09_spettro_1"
+   ],
+   "riserva_libera": "Per le strade nessuno ti risponde: la città dorme, o fa finta.",
+   "uscita_fail_forward": "Se la scena si ferma, le guardie vi trovano comunque alla porta della città."
+  },
+  "E10": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E10x1",
+     "testo": "Fermarti accanto allo spettro",
+     "riserva": "Rallenti Stjarna, e lo spettro ti viene accanto. Ti sfiora la mano, e per la prima volta la senti: è calda. Respira, e lo senti respirare.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_respiro"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.5 r.127] (il respiro e il calore, per la prima volta); il cavallo che rallenta: PROPOSTA"
+    },
+    {
+     "id": "E10x2",
+     "testo": "Riprendere la strada con Celya",
+     "riserva": "Al bivio Celya ferma i cavalli e chiede a un viandante la strada per Bhorkyn. Più avanti, sul ciglio della strada, c'è un ragazzo con gli abiti verdi e marroni che hai già visto a Umea: guarda il fiore appassito che lo spettro porta con sé, e sorride.",
+     "fase": "exploration",
+     "richiede": [
+      "E10d1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_bhorkyn"
+      }
+     ],
+     "fonte": "P4 [ICH Cap.6 r.68-69] (il ragazzo con gli abiti già visti a Umea, il fiore appassito; Celya chiede la direzione di Bhorkyn); il bivio e il viandante: PROPOSTA",
+     "scopo": "la strada per Memnea"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "spettro",
+     "apertura": "Lo spettro cammina accanto a Stjarna, e questa volta i suoi passi lasciano un segno sulla strada.",
+     "chiusura": "Lo spettro guarda il cielo, e sorride.",
+     "riserva_libera": "Lo spettro scuote la testa: «Non lo so, davvero.»",
+     "argomenti": [
+      {
+       "id": "E10_spettro_1",
+       "testo": "Chiederle del simbolo sulla tua spada",
+       "riserva": "«Da quanto ho capito rappresenta l'interdipendenza tra due cose o persone giusto?» Ti guarda la spada. «Prima di andarmene, se riuscirò a riavere il mio corpo, vorrei avere qualcosa con me con quel simbolo e il tuo nome… dopotutto dopo tutti questi “anni” credo che tra di noi ci sia un certo legame… chissà quanto tempo è passato davvero.»",
+       "effetti": [
+        {
+         "scopri": "cavaliera_fact_simbolo"
+        },
+        {
+         "relazione": {
+          "png": "spettro",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E10d1"
+       ],
+       "fonte": "P3 [ICH Cap.6 r.61-62] (le battute alla lettera)",
+       "scopo": "il filo del finale 1"
+      },
+      {
+       "id": "E10_spettro_2",
+       "testo": "Chiederle delle storie che ricorda",
+       "riserva": "«Nelle tue memorie esistono delle storie? Qualcosa che conosci ma che non sai il loro significato?» Ci pensa. «La tua figura mi ricorda tanto quella di Fantaghirò, ma il tuo nome mi ricorda Cenerentola…»",
+       "effetti": [],
+       "richiede": [
+        "E10_spettro_1"
+       ],
+       "fonte": "P3 [ICH Cap.6 r.64] (la battuta alla lettera)",
+       "scopo": "il nome che verrà, «cavaliere di cenere» (la 13)"
+      }
+     ]
+    },
+    {
+     "png": "ragazzo_umea",
+     "apertura": "Il ragazzo in verde e marrone ti guarda passare, e non sembra sorpreso di vederti.",
+     "chiusura": "Il ragazzo alza la mano, in un saluto.",
+     "riserva_libera": "Il ragazzo sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "E10_ragazzo_1",
+       "testo": "Parlare con il ragazzo di Umea",
+       "riserva": "È lui, il reverie che a Umea ti ha dato il fiordaliso. Guarda il fiore appassito accanto allo spettro, e sorride come se fosse andato tutto come doveva.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "ragazzo_umea",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E10x2"
+       ],
+       "fonte": "L dello schema (parlare con il ragazzo di Umea, scopo: un'eco della 03): [ICH Cap.6 r.68-69] (nota il fiore appassito e sorride); che sia lo stesso del fiordaliso [ICH Cap.2 r.58]: DEDOTTO dalle note",
+       "scopo": "un'eco della 03"
+      }
+     ]
+    },
+    {
+     "png": "celya",
+     "apertura": "Celya ti guarda da sopra la spalla, impaziente.",
+     "chiusura": "Celya torna a guardare la strada.",
+     "riserva_libera": "Celya non risponde: conta le miglia.",
+     "argomenti": [
+      {
+       "id": "E10_celya_1",
+       "testo": "Chiedere a Celya dove andate",
+       "riserva": "«A Bhorkyn» dice Celya. «Il mio prossimo incarico è là. Se volete restare vivi, venite con me.»",
+       "effetti": [],
+       "fonte": "[ICH Cap.6 r.69] (Celya chiede la via per Bhorkyn); la battuta: PROPOSTA (il prossimo incarico [ICH Cap.9 r.120])",
+       "scopo": "la strada"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Lo spettro ti stringe la mano, e trema. Ha qualcosa da dirti, e ha paura di non riuscirci.",
+    "fonte": "P1 [ICH Cap.5 r.127] (esitante, commossa: note di lettura); testo PROPOSTA",
+    "esplora": [
+     {
+      "id": "E10d1",
+      "testo": "Lasciare che lo spettro parli",
+      "riserva": "«Il mio nome… il mio nome, tu lo hai sempre saputo…» La voce le si rompe, e per un momento non dice altro.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Lo spettro sta per dirti il suo nome.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P1 [ICH Cap.5 r.127] (l'inizio della battuta, alla lettera; il nome lo dice l'obiettivo E10A)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E10x1"
+    ],
+    "risoluzione": [
+     "E10d1"
+    ]
+   },
+   "required_beats": [
+    "E10x1",
+    "E10d1"
+   ],
+   "optional_beats": [
+    "E10x2",
+    "E10_spettro_1",
+    "E10_spettro_2",
+    "E10_ragazzo_1",
+    "E10_celya_1"
+   ],
+   "riserva_libera": "Sulla strada si sentono solo gli zoccoli dei cavalli.",
+   "uscita_fail_forward": "Se la scena si ferma, lo spettro ti stringe comunque la mano, e trova la voce per dirti il suo nome."
+  },
+  "E11": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E11x1",
+     "testo": "Seguire la figura fra i fiori",
+     "riserva": "La figura ha il volto di una donna e la pelle come petali. «{Benvenuto giovane guerriero|Benvenuta giovane guerriera|Ti do il benvenuto, giovane spada}, la tua lama di giustizia attende i suoi alleati ad est…» Si chiama Skuld. «Voi quattro siete il futuro, il passato e il presente, ogni figura come voi regge la trama del destino… nulla è possibile da soli, ma uniti noi saremo finalmente vivi.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_memnea"
+      },
+      {
+       "scopri": "cavaliera_fact_skuld"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.6 r.72] e P2 [ICH Cap.7 r.9-10] (le battute alla lettera, accorciate); il volto e i petali: PROPOSTA (la donna fiore, ICH.md r.77)"
+    },
+    {
+     "id": "E11x2",
+     "testo": "Guardare le case di Memnea",
+     "riserva": "Le case sono alberi intrecciati, le trevelta. Una donna culla una mandragora come un bambino, poi la pianta nella terra.",
+     "fase": "exploration",
+     "richiede": [
+      "E11x1"
+     ],
+     "effetti": [],
+     "fonte": "[ICH Cap.7 r.73-75] (la mandragora, le trevelta: note di lettura)",
+     "scopo": "Memnea"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "skuld",
+     "apertura": "Skuld cammina fra i fiori senza piegarne uno.",
+     "chiusura": "Skuld sorride, e guarda verso sud.",
+     "riserva_libera": "Skuld sorride: «Non tutto si può dire con le parole, giovane amica.»",
+     "argomenti": [
+      {
+       "id": "E11_skuld_1",
+       "testo": "Chiedere a Skuld che cosa vuole da te",
+       "riserva": "«Ogni legame è come un filo, una radice ogni essere a qualcosa. Ogni filo può essere spezzato, come le radici di un fiore strappato al suo mondo.» Vuole portarti al Kynwird. «Il nostro mondo non potrà essere libero finchè non impareremo ad essere tutti fratelli, a convivere e legare i nostri destini in una rete le cui trame saranno inscindibili.»",
+       "effetti": [
+        {
+         "scopri": "cavaliera_fact_legami"
+        },
+        {
+         "relazione": {
+          "png": "skuld",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E11x1"
+       ],
+       "fonte": "P3 [ICH Cap.7 r.70, r.72] (le battute alla lettera, accorciata [r.70]); il Kynwird [r.68-69]",
+       "scopo": "il Kynwird"
+      },
+      {
+       "id": "E11_skuld_2",
+       "testo": "Chiedere a Skuld dei «quattro»",
+       "riserva": "«Una donna mi chiese di preservare la sua memoria, affinchè voi possiate rendere possibile il cammino della libertà, solo l'unione vi permetterà di rendere possibile l'impossibile.» Chi siano le altre, Skuld non lo dice: dice soltanto che le incontrerai.",
+       "effetti": [],
+       "richiede": [
+        "E11x1"
+       ],
+       "fonte": "L dello schema (domande a Skuld sui «quattro», scopo: le altre protagoniste come fatti del mondo): [ICH Cap.7 r.71] (la battuta alla lettera); che le incontrerà: PROPOSTA (il porto, la 16)",
+       "scopo": "le altre reverie"
+      },
+      {
+       "id": "E11_skuld_3",
+       "testo": "Chiedere a Skuld che cosa c'è a sud",
+       "riserva": "«Verso sud c'è l'abbraccio» dice Skuld. Lì si racconta la storia di Asker ed Embla, i primi dei reverie.",
+       "effetti": [],
+       "richiede": [
+        "E11x1"
+       ],
+       "fonte": "[ICH Cap.7 r.76] («l'abbraccio» con la storia di Asker ed Embla, progenitori dei reveries: note di lettura)",
+       "scopo": "il sud"
+      }
+     ]
+    },
+    {
+     "png": "spettro",
+     "apertura": "Amelia corre fra i fiori, li annusa, guarda il sole che scende.",
+     "chiusura": "Amelia torna a guardare i fiori.",
+     "riserva_libera": "Amelia alza le spalle: «Non lo so. Ma è bello, no?»",
+     "argomenti": [
+      {
+       "id": "E11_amelia_1",
+       "testo": "Chiedere ad Amelia che cosa le sta succedendo",
+       "riserva": "«Sento l'odore dei fiori» dice, e ride. Ha il fiato corto, come chi ha corso davvero. Non sa che cosa le stia succedendo; sa che le piace.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "spettro",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.8 r.31] (gioca tra i fiori, corre, annusa, guarda il sole; parlano di ciò che le sta accadendo: note di lettura); la battuta: PROPOSTA",
+       "scopo": "il legame con Amelia"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Di notte, fra i fiori spenti, fa freddo. Una figura ti viene incontro, e i fiori non si accendono per lei.",
+    "fonte": "P4 [ICH Cap.7 r.98-100] (di notte, oppressa e infreddolita, appare una figura); i fiori spenti: PROPOSTA",
+    "esplora": [
+     {
+      "id": "E11d1",
+      "testo": "Andare incontro alla figura della notte",
+      "riserva": "«Tu sei quella che ha accolto mia sorella? L'hai recuperata?» La figura non guarda Amelia, che dorme poco lontano: guarda te. «Ho bisogno che tu la porti al nucleo centrale, è a sud del settore 4, questo popolo la chiama Kynwird, il cuore del mondo o albero della vita.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "La figura della notte ti chiede di portare sua sorella al Kynwird.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 [ICH Cap.7 r.100-101] (le battute alla lettera); che non guardi Amelia: PROPOSTA (nella 17 Amelia non la vede, schema)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E11x1",
+     "E11_skuld_1"
+    ],
+    "risoluzione": [
+     "E11d1"
+    ]
+   },
+   "required_beats": [
+    "E11x1",
+    "E11_skuld_1",
+    "E11d1"
+   ],
+   "optional_beats": [
+    "E11x2",
+    "E11_skuld_2",
+    "E11_skuld_3",
+    "E11_amelia_1"
+   ],
+   "riserva_libera": "A Memnea ti rispondono soltanto i fiori, che si muovono senza vento.",
+   "uscita_fail_forward": "Se la scena si ferma, la notte arriva comunque, e con lei la figura fra i fiori."
+  },
+  "E12": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E12x1",
+     "parte": "Le strade dei Kynwird, la locanda",
+     "testo": "Entrare nella locanda per ripararvi dalla pioggia",
+     "riserva": "La locanda è calda e piena di fumo. Il locandiere vi guarda appena: «Hey tu, {forestiero|forestiera|che vieni da fuori}… allontanami questa bestia dal banco o mi sporcherà tutto.» Runi alza la testa. «A chi hai detto bestia?»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_locanda"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.8 r.147; Cap.9 r.16-17] (la locanda dopo nebbia e pioggia; le battute alla lettera)"
+    },
+    {
+     "id": "E12x2",
+     "parte": "Le strade dei Kynwird, la locanda",
+     "testo": "Fermarti al banco delle matrioske",
+     "riserva": "Al mercato una vecchia intaglia bambole di legno, una dentro l'altra. «Sono delle matrioske.» Ne apre una davanti a te. «Questo sei tu…» poi un'altra, e un'altra ancora. «E questi… sono loro… gli Aesir che vivono con noi, loro sono dentro di te, di te e di…» Guarda Amelia, e si ferma. «Sono 10 silfernat se ne volete una.»",
+     "fase": "exploration",
+     "richiede": [
+      "E12x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_matrioske"
+      }
+     ],
+     "fonte": "P3 [ICH Cap.9 r.22-25] (la battuta alla lettera; indica Amèlie e si ferma: note di lettura)",
+     "scopo": "un accenno che resta aperto (25)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "runi",
+     "apertura": "Runi cavalca a testa bassa, con la mano sinistra stretta alle redini.",
+     "chiusura": "Runi si chiude nel mantello.",
+     "riserva_libera": "Runi non risponde: guarda la nebbia.",
+     "argomenti": [
+      {
+       "id": "E12_runi_1",
+       "testo": "Ascoltare Runi",
+       "riserva": "«A volte mi chiedo se sto cercando qualcosa di reale, a volte standoti accanto mi chiedo se anche io non stia soltanto inseguendo uno spettro…» Guarda Amelia. «Lei è uno skera vero? Non riesco ad averci a che fare, ho avuto più di un legame con uno skera.» Poi, piano: «Sento questa sensazione, come se fossi lacerato dentro, strappato da me stesso.»",
+       "effetti": [
+        {
+         "scopri": "cavaliera_fact_runi_cerca"
+        },
+        {
+         "relazione": {
+          "png": "runi",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P1 [ICH Cap.8 r.103-107] (le battute alla lettera, accorciate)",
+       "scopo": "il legame con Runi"
+      },
+      {
+       "id": "E12_runi_2",
+       "testo": "Chiedere a Runi delle sue ombre",
+       "riserva": "«Sai forse sarebbe la volta buona per smettere di combattere, sprofondare finalmente nelle ombre che ricoprono la mia carne, quelle tenebre della mente che mi rendono un assassino.» Ride, senza allegria. «Dopotutto i mostri non provano rimorso, i mostri non sentono dolore.»",
+       "effetti": [],
+       "richiede": [
+        "E12_runi_1"
+       ],
+       "fonte": "[ICH Cap.8 r.110-111] (le battute alla lettera)",
+       "scopo": "le ombre di Runi"
+      }
+     ]
+    },
+    {
+     "png": "spettro",
+     "apertura": "Amelia ti cammina accanto, e adesso le sue scarpe si sporcano di fango.",
+     "chiusura": "Amelia si guarda le mani.",
+     "riserva_libera": "Amelia scuote la testa: non lo sa.",
+     "argomenti": [
+      {
+       "id": "E12_amelia_1",
+       "testo": "Chiedere ad Amelia del reverie marchiato",
+       "riserva": "Amelia ha dato al reverie marchiato un unguento dei Kynwird, e lo guarda ancora mentre se ne va. «Più sono fisica e più questo mondo mi sembra reale, non mi sembrano più soltanto dei pupazzi, in un certo senso siete vivi… anche se le vostre storie sono già scritte.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "spettro",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E12d1"
+       ],
+       "fonte": "[ICH Cap.9 r.106-108] (l'unguento; la battuta alla lettera)",
+       "scopo": "Amelia, che diventa fisica"
+      }
+     ]
+    },
+    {
+     "png": "muninn",
+     "apertura": "L'uomo che parla con Celya ha il passo leggero di chi non vuole farsi sentire.",
+     "chiusura": "Muninn china il capo, galante.",
+     "riserva_libera": "Muninn sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "E12_muninn_1",
+       "testo": "Chiedere all'amico di Celya chi è",
+       "riserva": "«Celya, qual buon vento» aveva detto, vedendola; lei lo ha chiamato «passo piumato». Con te è galante, e non dice niente. «Il mio cuore è gelido Celya, non penso riuscirete a scioglierlo, ma accetto volentieri un drink.»",
+       "effetti": [],
+       "richiede": [
+        "E12d1"
+       ],
+       "fonte": "[ICH Cap.9 r.110-111, r.119] (le battute alla lettera); che con lei non dica niente: PROPOSTA (Muninn non dice di servire la regina, file dei PNG)",
+       "scopo": "Muninn"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Una strada di fango vi porta fino a Stadgull. All'ingresso ci sono due file, e le guardie guardano Runi più a lungo degli altri.",
+    "fonte": "P4 [ICH Cap.9 r.29-33] (la strada di fango; le due file all'ingresso)",
+    "esplora": [
+     {
+      "id": "E12d1",
+      "parte": "Stadgull",
+      "testo": "Passare la porta di Stadgull",
+      "riserva": "«Lui è il vostro schiavo?» chiede l'uomo alla porta. «È uno dei miei accompagnatori, è un forestiero di Skjioldland» risponde Celya, e vi mettono nella fila dei ricchi. Stadgull è tetra, d'oro solo di nome: fucine, distretti, schiavi marchiati a fuoco, e Kynjager dai capelli d'argento che vi guardano passare. «Com'è che tutti quelli con i capelli di silfer sono così simpatici?» borbotta Runi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cavaliera_fact_stadgull"
+       }
+      ],
+      "fonte": "P4 [ICH Cap.9 r.31-35, r.97-100] (le battute alla lettera; la città tetra «di gull solo di nome», i distretti, le fucine, il marchio, i Kynjager dai capelli d'argento: note di lettura)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E12_runi_1",
+     "E12x1"
+    ],
+    "risoluzione": [
+     "E12d1"
+    ]
+   },
+   "required_beats": [
+    "E12_runi_1",
+    "E12x1",
+    "E12d1"
+   ],
+   "optional_beats": [
+    "E12x2",
+    "E12_runi_2",
+    "E12_amelia_1",
+    "E12_muninn_1"
+   ],
+   "riserva_libera": "Nella nebbia nessuno ti risponde: si sente solo la pioggia.",
+   "uscita_fail_forward": "Se la scena si ferma, la strada di fango vi porta comunque alla porta di Stadgull."
+  },
+  "E13": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E13x1",
+     "testo": "Osservare i due uomini in fondo alla piazza",
+     "riserva": "Hanno un ciondolo al collo, tutti e due, e abiti diversi da chiunque. «Ma non potremo direttamente obbligare gli utenti ad uscire?» dice uno. «Qualcuno di loro ha trovato la risposta alla domanda, probabilmente parte di quel codice è dentro uno di loro» risponde l'altro, «Raven potrebbe cancellare i dati per sbaglio.» Poi un bagliore, e non ci sono più.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_uomini_ciondolo"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.9 r.141-150] (il tiro di osservare della fonte; le battute [r.143-144] alla lettera, accorciate; il bagliore: note di lettura)"
+    },
+    {
+     "id": "E13x2",
+     "testo": "Tornare verso la locanda del gufo bruno",
+     "riserva": "Per strada urti una donna con la mantellina e una sciarpa sul viso, che si guarda alle spalle. «Voi siete una possibile scorta? Siete {armato|armata|in armi}.» Ha paura, e lo nasconde male. «Se accettate di accompagnarmi al sud della regione vi pagherò profumatamente.» Si fa chiamare Fiordaliso.",
+     "fase": "exploration",
+     "richiede": [
+      "E13d1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_fiordaliso_donna"
+      }
+     ],
+     "fonte": "P5 [ICH Cap.10 r.117-121] (il tiro di fortuna della fonte; le battute [r.118, r.120] alla lettera); il nome «Fiordaliso»: schema P5",
+     "scopo": "la regina in fuga (la 14)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "nidle_kursten",
+     "apertura": "La donna in armatura ha modi da cavaliere, e vi guarda come si guarda un buon cavallo.",
+     "chiusura": "Nidle Kursten torna al suo bando.",
+     "riserva_libera": "Nidle Kursten ride: «Chiedetelo alle mie guarnigioni.»",
+     "argomenti": [
+      {
+       "id": "E13_nidle_1",
+       "testo": "Ascoltare il bando",
+       "riserva": "«Alcuni skera hanno creato scompiglio al sud della regione, i volenterosi verranno pagati 5 gullnat a fine servizio.» Amelia ti passa davanti: «Il cavaliere di cenere non presta servizi per voi, {lui è un paladino libero|lei è una paladina libera|agisce in piena libertà}, non agisce per denaro ma per senso di giustizia.» «E chi è tra voi due {compagni|damigelle|viandanti} il cavaliere mie dolci principessine?» «Come osate? Io sono la duchessa di Icaro, signora d'oltre mondo e patria di uomini duri come il metallo.» Nidle Kursten si inchina, divertita. «Lieta di conoscervi, se voi cavaliere di cenere volete avere l'onore?»",
+       "effetti": [
+        {
+         "scopri": "cavaliera_fact_bando"
+        }
+       ],
+       "fonte": "P2 [ICH Cap.9 r.151-156] (le battute alla lettera, accorciata [r.156]); «Icaro»: parola di Ich (ICH.md r.161)",
+       "scopo": "il bando"
+      },
+      {
+       "id": "E13_nidle_2",
+       "testo": "Chiedere a Nidle Kursten della rivolta",
+       "riserva": "«Come ho detto degli Skera hanno architettato questa rivolta, i nostri schiavi si ribellano a noi dopo che è stato dato loro cibo, casa e vestiti.»",
+       "effetti": [],
+       "richiede": [
+        "E13_nidle_1"
+       ],
+       "fonte": "[ICH Cap.9 r.157] (la battuta alla lettera)",
+       "scopo": "la rivolta"
+      }
+     ]
+    },
+    {
+     "png": "runi",
+     "apertura": "Runi è teso: da quando siete a Stadgull non si toglie la mano dall'elsa.",
+     "chiusura": "Runi guarda le mura, in silenzio.",
+     "riserva_libera": "Runi scuote la testa: non lo sa.",
+     "argomenti": [
+      {
+       "id": "E13_runi_1",
+       "testo": "Chiedere a Runi dei due uomini",
+       "riserva": "«Li ho visti anch'io» dice Runi. «Chiederò in giro se hanno visto qualcuno che porta al collo quel ciondolo.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "runi",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E13x1"
+       ],
+       "fonte": "[ICH Cap.10 r.49] (la battuta alla lettera)",
+       "scopo": "il ciondolo"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Di notte la rivolta arriva alle mura. Sulle scale, accanto a Sindre, rapidissimo e furioso, vedi i tribali uccidere il generale Edmund Skold; poi dalla rocca ti viene incontro una donna con occhi da lupa.",
+    "fonte": "P3 [ICH Cap.9 r.178-182] (Sindre rapidissimo, la furia nei fendenti; i tribali uccidono il generale Edmund Skold; la lupa dall'altra parte: note di lettura); gli occhi da lupa: PROPOSTA (come in «L'Hersir dei nodi», H16)",
+    "esplora": [
+     {
+      "id": "E13d1",
+      "testo": "Affrontare la lupa sulle mura",
+      "riserva": "Sguaini la spada. La lupa ti è addosso in un salto, e dietro di lei il branco riempie le scale.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Sulle mura di Stadgull combatti contro la lupa.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "L dello schema: come combattere è del giocatore, con le regole dello scontro; il branco [ICH Cap.9 r.167-186]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E13x1",
+     "E13_nidle_1"
+    ],
+    "risoluzione": [
+     "E13d1"
+    ]
+   },
+   "required_beats": [
+    "E13x1",
+    "E13_nidle_1",
+    "E13d1"
+   ],
+   "optional_beats": [
+    "E13x2",
+    "E13_nidle_2",
+    "E13_runi_1"
+   ],
+   "riserva_libera": "A Stadgull nessuno ti risponde: tutti hanno fretta.",
+   "uscita_fail_forward": "Se la scena si ferma, la rivolta arriva comunque alle mura, e la lupa ti viene incontro sulle scale."
+  },
+  "E14": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E14x1",
+     "parte": "Stadsteinn",
+     "testo": "Fermarti a Stadsteinn",
+     "riserva": "Stadsteinn è la sosta delle carovane che scendono a sud. Saoirse ti chiede di aiutarla nel bagno, e quando si scopre le spalle vedi i lividi, e i segni. «Questi? Fanno parte della mia storia.» Fuori, sotto le finestre, passano le ronde.",
+     "fase": "exploration",
+     "richiede": [
+      "E14_saoirse_2"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_lividi"
+      }
+     ],
+     "fonte": "P3 [ICH Cap.11 r.92-97] (la sosta delle carovane, il bagno, i lividi e i segni; la battuta [r.95] alla lettera; le ronde)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "saoirse",
+     "apertura": "La donna parla piano, e dà del voi a tutti.",
+     "chiusura": "Saoirse si rimette la sciarpa sul viso.",
+     "riserva_libera": "Saoirse sorride appena: «Non qui. Non ora.»",
+     "argomenti": [
+      {
+       "id": "E14_saoirse_1",
+       "testo": "Dirle chi siete",
+       "riserva": "«Piacere, io sono Amelia, me puoi chiamarmi Amèlie» dice Amelia, prima di te. La donna non sorride. «Siete tutti senzienti?» «Io sì, loro non so» fa Runi. «{Il vostro compagno|La vostra compagna|Chi vi accompagna} lo è» dice lei, e guarda te. «Voi li avete visti giusto? Gli uomini in grigio.» Si chiama Saoirse.",
+       "effetti": [
+        {
+         "scopri": "cavaliera_fact_saoirse"
+        },
+        {
+         "relazione": {
+          "png": "saoirse",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P1 [ICH Cap.11 r.43-47] (le battute alla lettera); il nome di Saoirse: file dei PNG",
+       "scopo": "Saoirse"
+      },
+      {
+       "id": "E14_saoirse_2",
+       "testo": "Chiederle da chi sta fuggendo",
+       "riserva": "«Sentite io devo andare, potrebbero starmi cercando, ero scortata da una guardia del corpo di nome Muninn che è stata uccisa da un assassino, è stato avvelenato e ora probabilmente sta prendendo tempo perché io possa fuggire.» Conosce i villaggi dove vivono gli Skera. «Conosco i luoghi, saprei raggiungerli, ma ho bisogno di una nave, non passeremo per le montagne.» Runi ti afferra il braccio. «{nome}… ti prego, ne ho bisogno.»",
+       "effetti": [
+        {
+         "scopri": "cavaliera_fact_saoirse_fuga"
+        }
+       ],
+       "richiede": [
+        "E14_saoirse_1"
+       ],
+       "fonte": "P1 [ICH Cap.11 r.53, r.59-64] (le battute alla lettera)",
+       "scopo": "la scelta: proteggerla"
+      }
+     ]
+    },
+    {
+     "png": "runi",
+     "apertura": "Runi non stacca gli occhi dalla donna.",
+     "chiusura": "Runi stringe i pugni.",
+     "riserva_libera": "Runi non risponde.",
+     "argomenti": [
+      {
+       "id": "E14_runi_1",
+       "testo": "Chiedere a Runi perché gli importa",
+       "riserva": "«Io sto cercando notizie su una Skera, poco prima di morire era insieme a me.» Amelia gli posa una mano sul braccio: «Scusa, è che la tua storia è così triste… spero che la troverai un giorno.» Runi si scosta. «Non mi piace essere compiaciuto Amelia.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "runi",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E14_saoirse_1"
+       ],
+       "fonte": "[ICH Cap.11 r.49, r.65-66] (le battute alla lettera)",
+       "scopo": "la Skera che Runi cerca"
+      }
+     ]
+    },
+    {
+     "png": "sindre",
+     "apertura": "Sindre ti guarda come si guarda una cosa rotta.",
+     "chiusura": "Sindre stringe l'elsa.",
+     "riserva_libera": "Sindre non risponde: aspetta che tu parli di lui.",
+     "argomenti": [
+      {
+       "id": "E14_sindre_1",
+       "testo": "Chiedere a Sindre perché ti dà la caccia",
+       "riserva": "«Per caso provi affetto verso quello sporco bastardo? È forse amore ciò che provi? O forse anche dovremmo smettere di fare distinzione tra razze e uccidervi alla nascita, dopotutto anche tu sei un'aberrazione dei reverie.»",
+       "effetti": [],
+       "richiede": [
+        "E14d1"
+       ],
+       "fonte": "[ICH Cap.11 r.111] (la battuta alla lettera)",
+       "scopo": "il tema: «anche tu sei un'aberrazione dei reverie»"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Fuori da Stadsteinn, al buio, qualcuno ti segue da un pezzo. Quando ti volti, è tuo cugino.",
+    "fonte": "P4 [ICH Cap.11 r.107] (Sindre la sorprende, nei dintorni di Stadsteinn); testo PROPOSTA",
+    "esplora": [
+     {
+      "id": "E14d1",
+      "testo": "Affrontare Sindre",
+      "riserva": "«Lui dov'è?» Sindre ha la spada già in mano. «Dimmi dov'è e farò ridurre la tua pena.» Non rispondi. «Sei {ricercato|ricercata|nel mirino} {nome}, non puoi scappare, tutta Magna ti cercherà per ucciderti… ma non temere, il fuoco che Sol mi ha donato ti purificherà.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cavaliera_fact_aberrazione"
+       },
+       {
+        "nota": "Fuori da Stadsteinn combatti contro tuo cugino Sindre.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 [ICH Cap.11 r.108-112] (le battute alla lettera, accorciate)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E14_saoirse_1",
+     "E14_saoirse_2",
+     "E14x1"
+    ],
+    "risoluzione": [
+     "E14d1"
+    ]
+   },
+   "required_beats": [
+    "E14_saoirse_1",
+    "E14_saoirse_2",
+    "E14x1",
+    "E14d1"
+   ],
+   "optional_beats": [
+    "E14_runi_1",
+    "E14_sindre_1"
+   ],
+   "riserva_libera": "Sulla strada nessuno ti risponde: le masse camminano a testa bassa.",
+   "uscita_fail_forward": "Se la scena si ferma, Sindre ti trova comunque, al buio, fuori da Stadsteinn."
+  },
+  "E15": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E15x1",
+     "parte": "I dintorni di Stadsteinn",
+     "testo": "Cercare di alzarti",
+     "riserva": "Capogiri, il sangue che ti cola dal naso, il cuore che batte troppo forte. Accanto a te c'è Sindre, a terra in una pozza di sangue. Provi a puntare un ginocchio, e intorno le voci crescono, crescono, finché non senti più niente.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_svenuta"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.12 r.3-7] (capogiri, sangue dal naso, voci, tachicardia; Sindre in una pozza di sangue; il tiro di robustezza: sviene comunque)"
+    },
+    {
+     "id": "E15x2",
+     "testo": "Lasciarti andare nella visione",
+     "riserva": "Sei nel mercato di Umea, ma è vuoto. Uno spettro ti corre incontro e ti entra dentro: «Mi sta cercando, vuole uccidermi, aveva una pistola e… sono tutti morti.» Intorno, voci di morti: «lei ci ha reso liberi», «non mi merito questo, riportatemi indietro». Poi un vecchio ti prende la mano. «Amelia, perché sei qui?» Ti stringe a sé. «Non temere, ti protegge nonno ora.»",
+     "fase": "exploration",
+     "richiede": [
+      "E15x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_visione"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.12 r.8-15] (le battute [r.9, r.11, r.14, r.15] alla lettera, accorciata [r.11]); il mercato vuoto: PROPOSTA"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "marten",
+     "apertura": "Il vecchio ha gli occhi lucidi, e non smette di guardarti.",
+     "chiusura": "Il vecchio si asciuga gli occhi.",
+     "riserva_libera": "Il vecchio scuote la testa: «Non ora, figliola.»",
+     "argomenti": [
+      {
+       "id": "E15_marten_1",
+       "testo": "Chiedere al vecchio che cosa sono",
+       "riserva": "«Non è il compito di un padre dare un mestiere al proprio figlio… il nostro compito è quello di crescerli, istruirli e lasciarli liberi di esprimere appieno ciò che sono.» Si chiama Marten, dice. Non dice altro di sé.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "marten",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E15d1"
+       ],
+       "fonte": "L dello schema (le domande a Marten e George, scopo: capire che cosa è): [ICH Cap.12 r.67] (la battuta alla lettera, accorciata); il nome Marten: schema; chi sia si tace (25)",
+       "scopo": "capire che cosa è"
+      },
+      {
+       "id": "E15_marten_2",
+       "testo": "Chiedere al vecchio che cosa vuole da te",
+       "riserva": "«Tu devi preservarla figliola, è tutto ciò che resta di lei.» Ti guarda come si guarda una cosa preziosa. «Posso ancora aiutarli a diventare reali, loro sono il nostro futuro.»",
+       "effetti": [],
+       "richiede": [
+        "E15d1"
+       ],
+       "fonte": "[ICH Cap.12 r.50, r.65] (le battute alla lettera, accorciata [r.65])",
+       "scopo": "che cosa vuole Marten"
+      }
+     ]
+    },
+    {
+     "png": "george",
+     "apertura": "L'uomo più giovane ha il viso spigoloso, e l'aria di chi è stato svegliato per niente.",
+     "chiusura": "George alza gli occhi al soffitto.",
+     "riserva_libera": "George sbuffa: «Chiedilo a lui.»",
+     "argomenti": [
+      {
+       "id": "E15_george_1",
+       "testo": "Chiedere all'uomo più giovane chi è",
+       "riserva": "Si chiama George. «Ho fatto il meglio che potessi fare per riscriverla, fossi reale probabilmente mi sarebbero venute idee migliori.» «Ma è tutta una finzione» dice al vecchio. «Non per lei…» risponde Marten. «Non è il mondo a dirci cosa è reale e cosa non lo è… siamo noi a renderle tali, un giorno magari saranno loro.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "george",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E15d1"
+       ],
+       "fonte": "L dello schema (le domande a Marten e George): [ICH Cap.12 r.50, r.69-70] (le battute alla lettera); chi sia si tace (25)",
+       "scopo": "capire che cosa è"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Poi una luce bianca. Sei in una stanza bianchissima, piena di scritte e di giornali che compongono volti. Davanti a te ci sono un vecchio, che piange, e un uomo più giovane.",
+    "fonte": "P3 [ICH Cap.12 r.48-49] (la stanza fortemente illuminata di bianco, scritte e giornali che compongono volti; Martèn piange; George più giovane: note di lettura)",
+    "esplora": [
+     {
+      "id": "E15d1",
+      "parte": "la stanza bianca",
+      "testo": "Guardare il vecchio",
+      "riserva": "«Chi sono figliola? Mi riconosci?» Lo guardi, e ti sembra tuo nonno, anche se non sai perché. «Beata ignoranza dissero, dovevi proprio scomodarmi per questo?» borbotta l'altro. Il vecchio non lo ascolta: «Tu devi preservarla figliola, è tutto ciò che resta di lei.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nella stanza bianca un vecchio che ti sembra un nonno vuole farti delle domande.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.12 r.48-50] (le battute alla lettera; [r.49] accorciata: il nome si tace fino alla 25)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E15x1",
+     "E15x2"
+    ],
+    "risoluzione": [
+     "E15d1"
+    ]
+   },
+   "required_beats": [
+    "E15x1",
+    "E15x2",
+    "E15d1"
+   ],
+   "optional_beats": [
+    "E15_marten_1",
+    "E15_marten_2",
+    "E15_george_1"
+   ],
+   "riserva_libera": "Nella stanza bianca la tua voce non fa eco.",
+   "uscita_fail_forward": "Se la scena si ferma, la luce bianca ti prende comunque, e il vecchio ti chiede se lo riconosci."
+  },
+  "E16": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E16x1",
+     "parte": "La nebbia",
+     "testo": "Provare a tirarti su dal carro",
+     "riserva": "«Stai {calmo|calma|giù} {nome}, non sollevarti» dice Amelia, e ti tiene giù con una mano. Il medico della carovana conta le monete di Saoirse e se ne va senza salutare. Fuori dal carro la nebbia è così fitta che non si vedono i cavalli.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_carro"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.12 r.131-134] (la battuta di Amèlie [r.133] alla lettera; chi paghi il medico: PROPOSTA)"
+    },
+    {
+     "id": "E16x2",
+     "parte": "La nebbia",
+     "testo": "Ascoltare la nebbia",
+     "riserva": "Grida, ferro, e ombre che si muovono a scatti. «No, procederemo senza distrazioni, lasciate che combattano tra di loro» dice Saoirse. Runi guarda te, poi Amelia. «Amelia prendi {nome} sulle spalle, tu dammi la tua spada o con questo spillo al massimo gli levo la carne da mezzo ai denti.» Ti toglie la spada di mano, gli si accendono gli occhi, e sparisce nella nebbia contro gli spettri oscuri. «Bene, muovete il culo, se vi vedo ancora qui quando torno vi ammazzo con le mie mani.»",
+     "fase": "exploration",
+     "richiede": [
+      "E16x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_nebbia"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.12 r.135-158] (le battute [r.144, r.148, r.158] alla lettera; Runi combatte gli spettri oscuri con gli occhi accesi: note di lettura)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "runi",
+     "apertura": "Runi ti ha riportato la spada, pulita, e si è seduto accanto al fuoco.",
+     "chiusura": "Runi guarda il fuoco.",
+     "riserva_libera": "Runi scuote la testa: «Non stanotte.»",
+     "argomenti": [
+      {
+       "id": "E16_runi_1",
+       "testo": "Parlare con Runi, di notte",
+       "riserva": "«Quello disteso a terra dentro la Stad era tuo cugino vero?» Annuisci. «So che tenevi a lui… me ne vuoi parlare?» Gli parli di Sindre, e piangi, e Runi ti lascia piangere. Amelia ti porta un fiore: «So che ti piacciono tanto…» «Abbiamo tutti dei dubbi sulle nostre vite» dice Runi, «ma tra vivere senza sapere e non vivere affatto preferisco la prima.» Poi, guardando la spada: «Certo la tua spada mi ha aiutato.»",
+       "effetti": [
+        {
+         "scopri": "cavaliera_fact_cugino"
+        },
+        {
+         "relazione": {
+          "png": "runi",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E16d1"
+       ],
+       "fonte": "P4 [ICH Cap.15 r.5-10] (le battute alla lettera, accorciata [r.9]; il cugino morto è Sindre: DEDOTTO dallo schema)",
+       "scopo": "il lutto per Sindre"
+      }
+     ]
+    },
+    {
+     "png": "spettro",
+     "apertura": "Amelia non si allontana da te di un passo.",
+     "chiusura": "Amelia si stringe le braccia.",
+     "riserva_libera": "Amelia non riesce a risponderti.",
+     "argomenti": [
+      {
+       "id": "E16_amelia_1",
+       "testo": "Chiedere ad Amelia di che cosa ha paura",
+       "riserva": "«È lei…» Amelia guarda la cacciatrice dagli occhi diversi, e trema. Non sa dirti perché: sa soltanto che ha già visto quegli occhi, da qualche parte, e che allora faceva male.",
+       "effetti": [],
+       "richiede": [
+        "E16d1"
+       ],
+       "fonte": "[ICH Cap.12 r.167; Cap.13 r.31] (Amèlie terrorizzata da Knytta); il perché: PROPOSTA (resta del filo di Knytta)",
+       "scopo": "Amelia"
+      }
+     ]
+    },
+    {
+     "png": "saoirse",
+     "apertura": "Saoirse ha l'aria di chi ha già deciso tutto, anche da ostaggio.",
+     "chiusura": "Saoirse china appena il capo.",
+     "riserva_libera": "Saoirse sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "E16_saoirse_1",
+       "testo": "Chiedere a Saoirse perché si è consegnata",
+       "riserva": "«Mastro Runi, se voi e la vostra ritrovata volete seguirci fate pure, noi proseguiremo a sud» aveva detto, al porto. Ora ti guarda. «La mia nave si trova a sud, troverò un modo.» Da ostaggio, o da regina.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "saoirse",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E16d1"
+       ],
+       "fonte": "[ICH Cap.13 r.40, r.42] (le battute alla lettera, accorciata [r.42]); il resto PROPOSTA",
+       "scopo": "Saoirse"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La baia vi porta a un vecchio villaggio, e al porto non siete soli: vi vengono incontro una cacciatrice del nord con il simbolo di Restan sul petto, e il suo clan. Saoirse la guarda e fa un passo avanti. «Quello è un simbolo di Restan, sono la regina dei Kraken di Ourobera, prendeteci come ostaggi.»",
+    "fonte": "P3 [ICH Cap.12 r.161-163] (il vecchio villaggio, il porto, i gruppi si incontrano; la battuta di Saoirse alla lettera, come in H16); che la cacciatrice sia Knytta: schema",
+    "esplora": [
+     {
+      "id": "E16d1",
+      "parte": "il porto di un vecchio villaggio",
+      "testo": "Guardare chi arriva dal villaggio",
+      "riserva": "Dal villaggio arriva una donna con occhi da lupa: la lupa delle mura di Stadgull. «Vargynja» sussurra Runi, come se il nome gli bruciasse in bocca, e tu lo gridi. La lupa non guarda te: guarda la cacciatrice. Un lampo, e la cacciatrice non è più lei: qualcun altro le muove il corpo verso di voi. «È lei… no no! Ti prego, non farmi del male!» grida Amelia.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cavaliera_fact_porto_lupa"
+       },
+       {
+        "nota": "Al porto l'altra sé della cacciatrice le ha preso il corpo, e viene verso Amelia.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.12 r.164-167] (Vargynja ricompare; il flash; l'altra sé di Knytta prende il corpo; la battuta di Amèlie [r.167] alla lettera, come in H16); che Runi le dica il nome: PROPOSTA (in H16 la cavaliera la chiama per nome)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E16x1",
+     "E16x2"
+    ],
+    "risoluzione": [
+     "E16d1"
+    ]
+   },
+   "required_beats": [
+    "E16x1",
+    "E16x2",
+    "E16d1"
+   ],
+   "optional_beats": [
+    "E16_runi_1",
+    "E16_amelia_1",
+    "E16_saoirse_1"
+   ],
+   "riserva_libera": "Al porto il vento si porta via le parole.",
+   "uscita_fail_forward": "Se la scena si ferma, la baia vi porta comunque al vecchio villaggio, e al porto vi viene incontro la cacciatrice del nord."
+  },
+  "E17": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E17x1",
+     "testo": "Avvicinarti al Kynwird",
+     "riserva": "Il Kynwird è un albero con radici luminose che si intrecciano nel terreno come uno scheletro che lo regge da sotto. Amelia ti cammina accanto, e per la prima volta da quando la conosci ha paura di qualcosa che non è un pericolo.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "P2 [ICH Cap.18 r.107] (l'albero e le radici luminose: note di lettura); la paura di Amelia: PROPOSTA"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "gaia",
+     "apertura": "La sorella di Amelia è davanti all'albero, e la vedi soltanto tu.",
+     "chiusura": "Gaia guarda sua sorella, e non dice altro.",
+     "riserva_libera": "Gaia scuote la testa: non c'è tempo.",
+     "argomenti": [
+      {
+       "id": "E17_gaia_1",
+       "testo": "Chiedere a Gaia perché è qui",
+       "riserva": "«Voglio aiutarti, il nonno aveva ancora speranza nel genere umano, sono qui per aiutare le sue creazioni a rendere il loro mondo reale…» Guarda Amelia, che non la vede. «Permettimi di conservare i tuoi dati all'interno, se tu ti esponi così come stai facendo potresti venire eliminata e moriresti per sempre.»",
+       "effetti": [],
+       "richiede": [
+        "E17d1"
+       ],
+       "fonte": "[ICH Cap.18 r.115, r.117] (le battute alla lettera, accorciata [r.115])",
+       "scopo": "Gaia"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Davanti all'albero Amelia si ferma. «Gaia sei tu?» Tu la vedi: una donna accanto alle radici, con lo sguardo di chi ha corso troppo. Amelia no.",
+    "fonte": "P2 [ICH Cap.18 r.109-111] (vede Gaia, che Amelia non vede; la battuta [r.111] alla lettera)",
+    "esplora": [
+     {
+      "id": "E17d1",
+      "testo": "Restare accanto ad Amelia",
+      "riserva": "«Si sorellina.» «Perché sei qui… io non te l'ho chiesto.» Ripeti ad Amelia le parole di sua sorella, una per una. «Io non voglio tornare… ormai è questo il mio mondo, che sia reale o meno ci sono persone che rendono reale la mia vita ora.» Poi Amelia alza la voce: «Basta! Non sono più una ragazzina indifesa, non sono più la tua ombra.» Si volta verso di te. «Ti prometto che avrete la vostra vita, avrai il tuo mondo… in fin dei conti devo questo a tante persone.» «Allora chiamala» dice Gaia, piano. «Amèlie, sono fiera di te.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cavaliera_fact_sorelle"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.18 r.112-123] (le battute alla lettera, accorciate); che sia lei a ripeterle ad Amelia: PROPOSTA (Amelia non la vede, schema)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E17x1"
+    ],
+    "risoluzione": [
+     "E17d1"
+    ]
+   },
+   "required_beats": [
+    "E17x1",
+    "E17d1"
+   ],
+   "optional_beats": [
+    "E17_gaia_1"
+   ],
+   "riserva_libera": "Al Kynhjarta ti rispondono solo le foglie.",
+   "uscita_fail_forward": "Se la scena si ferma, Amelia arriva comunque davanti all'albero, e sua sorella la sta già guardando."
+  },
+  "E18": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E18x1",
+     "testo": "Sbarcare a Ourobera",
+     "riserva": "Il porto di Ourobera non ti accoglie: i reverie ti guardano di traverso, e nessuno ti chiede da dove vieni. Poi un uomo con abiti di pelle e camicia ti si mette davanti; al polso ha un bracciale con due teste di serpente, e un altro a forma di lunga zanna. Si chiama Mann, e dice di sapere dov'è la persona che cerchi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_mann"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.21 r.78-83] (l'accoglienza guardinga; Mann e i bracciali: note di lettura)"
+    },
+    {
+     "id": "E18x2",
+     "testo": "Viaggiare con la donna dai capelli chiari",
+     "riserva": "Si chiama Cirilla, e mente su tutto. «Mio padre era uno studioso di Bhorkyn ed essendo io gravemente malata mi donò una cura che però mi rese i capelli in questo modo. Lui però morì per mare durante una attraversata e Jorgen mi prese con sé.» Sulla strada per Sliasthorp incontrate due carovane: un ragazzo con un leone di stoffa gialla, Rend Gotersonn; un cavaliere brizzolato con l'elmo a corna di cervo, Brynden di Skjold; un uomo dall'armatura lucente, Vodrick Skold; e una donna che non mostra mai il volto, Najya Refar. «Non sembrate della zona, avete fatto un lungo viaggio?» chiede Rend.",
+     "fase": "exploration",
+     "richiede": [
+      "E18x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_carovane"
+      }
+     ],
+     "fonte": "P3 [ICH Cap.22 r.20-32] (la bugia di Cirilla [r.23-24] e la battuta di Rend [r.32] alla lettera; le carovane e i loro segni: note di lettura)"
+    },
+    {
+     "id": "E18x3",
+     "testo": "Ascoltare lo spettro sulla strada per Krakborg",
+     "riserva": "Uno spettro vi segue da Sliasthorp. Quando ti promette di aiutarti, vedi un suo ricordo: nascondeva dei ragazzi con il simbolo del cerchio aperto, e punture sulle braccia. Ne ricordi il nome: Amr. Poco dopo uno dei vostri cavalli muore all'improvviso, e l'altro comincia a perdere bava nera.",
+     "fase": "exploration",
+     "richiede": [
+      "E18x2"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_amr"
+      }
+     ],
+     "fonte": "P4 [ICH Cap.23 r.65-67] (lo spettro Amr, letto «Amer», il ricordo; i cavalli: note di lettura)"
+    },
+    {
+     "id": "E18x4",
+     "testo": "Osservare Brynden e il suo scudiero a Sliasthorp",
+     "riserva": "Nel mercato del pesce di Sliasthorp, fra i ponti sospesi, Brynden passa una lettera a Rend senza guardarlo. «Di pure che attendiamo alla piovra nera.» «Sì signore.» Poi Brynden ride forte, e ti guarda come se non avesse detto niente.",
+     "fase": "exploration",
+     "richiede": [
+      "E18x2"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_piovra"
+      }
+     ],
+     "fonte": "L dello schema (il tiro di percepire della fonte [ICH Cap.22 r.105-107], scopo: chi tiene i fili; le battute alla lettera); Sliasthorp: note di lettura",
+     "scopo": "chi tiene i fili"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "cirilla",
+     "apertura": "Cirilla mastica qualcosa che non ha pagato.",
+     "chiusura": "Cirilla alza le spalle.",
+     "riserva_libera": "Cirilla ride: «E perché dovrei dirtelo?»",
+     "argomenti": [
+      {
+       "id": "E18_cirilla_1",
+       "testo": "Chiedere a Cirilla la verità",
+       "riserva": "«Ti nascondi dagli uomini in grigio, parli con alcuni regnanti e scappi da altri… sei per caso un corvo?» Non ti risponde altro: la verità, con lei, è sempre un'altra.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "cirilla",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E18x2"
+       ],
+       "fonte": "[ICH Cap.24 r.35] (la battuta alla lettera); la bugia [ICH Cap.22 r.21-24]: la verità (c) nella 23",
+       "scopo": "Cirilla"
+      }
+     ]
+    },
+    {
+     "png": "brynden",
+     "apertura": "Brynden ride forte, e guarda tutti come se li conoscesse da sempre.",
+     "chiusura": "Brynden si rimette l'elmo con le corna di cervo.",
+     "riserva_libera": "Brynden ride: «Chiedetelo al mio panettiere.»",
+     "argomenti": [
+      {
+       "id": "E18_brynden_1",
+       "testo": "Chiedere a Brynden del suo scudiero",
+       "riserva": "«Non è un servo, è un giovanotto valoroso e pieno di coraggio, lui insegna me a fare il pane e io insegno lui a tenere in mano una spada.» Ride. «Chi Rend? Sua madre è morta di febbre e suo padre è morto in mare… se vi interessa l'unica cosa che esiste di regale di suo è la sua panetteria a Goteborg.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "brynden",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E18x2"
+       ],
+       "fonte": "[ICH Cap.22 r.109, r.111] (le battute alla lettera); lo stemma di cervo della 06-07",
+       "scopo": "Brynden, che ritroverai a palazzo"
+      }
+     ]
+    },
+    {
+     "png": "mercante_krakborg",
+     "apertura": "Il mercante del pescato ti guarda più a lungo degli altri clienti.",
+     "chiusura": "Il mercante torna ai suoi pesci.",
+     "riserva_libera": "Il mercante non sa di che cosa parli.",
+     "argomenti": [
+      {
+       "id": "E18_mercante_1",
+       "testo": "Chiedere al mercante del biglietto",
+       "riserva": "Il mercante non dice niente di più. Il biglietto è scritto di fretta: «la luna sorge a est stanotte tra le campane sul mare, dove un tempo il fiordaliso attendeva un pugno di cenere».",
+       "effetti": [],
+       "richiede": [
+        "E18d1"
+       ],
+       "fonte": "[ICH Cap.24 r.41] (il biglietto alla lettera)",
+       "scopo": "il biglietto"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Krakborg è piena di guardie di Bhorkyn e di Skjoldland, e di navi che arrivano. Al mercato del pescato Cirilla si ferma, e ti guarda.",
+    "fonte": "P5 [ICH Cap.23 r.102, r.136-141] (Krakborg fortemente controllata, molte navi in arrivo, il mercato del pescato: note di lettura)",
+    "esplora": [
+     {
+      "id": "E18d1",
+      "testo": "Ascoltare Cirilla",
+      "riserva": "«A lungo andare finisci per essere soltanto la maschera di {te stesso|te stessa|chi sei}, perché se guardi dentro l'unica cosa che senti è la puzza di sangue e morte. Perciò pensa a te, perché in fin dei conti sai che siamo soltanto dei mostri, fogli di carta bianchi pronti ad essere macchiati di inchiostro di una storia non nostra.» Se ne va. «È da troppo che non bevo e ne ho bisogno.» Un mercante del pescato ti si avvicina. «{Signore|Signorina|Voi siete} {nome} Wraskard?» Annuisci. «Il fiordaliso germoglia a palazzo.» E ti mette in mano un biglietto.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cavaliera_fact_krakborg"
+       }
+      ],
+      "fonte": "P5 [ICH Cap.24 r.37-41] (le battute alla lettera; il mercante e il biglietto in codice)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E18x1",
+     "E18x2",
+     "E18x3"
+    ],
+    "risoluzione": [
+     "E18d1"
+    ]
+   },
+   "required_beats": [
+    "E18x1",
+    "E18x2",
+    "E18x3",
+    "E18d1"
+   ],
+   "optional_beats": [
+    "E18x4",
+    "E18_cirilla_1",
+    "E18_brynden_1",
+    "E18_mercante_1"
+   ],
+   "riserva_libera": "A Ourobera nessuno ti risponde: qui si fanno poche domande.",
+   "uscita_fail_forward": "Se la scena si ferma, la strada ti porta comunque a Krakborg, e il mercante del pescato ti trova."
+  },
+  "E19": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E19x1",
+     "testo": "Presentarti alla regina",
+     "riserva": "Mostri la taglia e il sacco. Saoirse parla per prima, ma il re la interrompe: «non penso che ai nostri ospiti interessi sinceramente». Un cavaliere biondo, Aurus Bauclaire, chiede a Vodrick Skold di sfidarti per l'affronto. Brynden si sistema sulla sedia: «Per quanto io apprezzi i singolar tenzone ritengo che non dovreste sfidare un'assassina ser Vodrick.» «Non temo una cacciatrice di ratti.» Saoirse prova a fermarli: «Non siete qui per dar spettacolo di sangue ser.» Il re batte la mano sul trono: «TU STA ZITTA.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_corte"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.25 r.24-38] (le battute [r.26], [r.30], [r.31], [r.34], [r.38] alla lettera)"
+    },
+    {
+     "id": "E19x2",
+     "testo": "Conoscere i politici della corte",
+     "riserva": "Nella sala ci sono tutti: Najya Refar, con la maschera e un cappuccio dalle orecchie a punta, e suo cugino Ikosh Tevel; Brynden in un abito rossobruno; Aurus Bauclaire con la madre, Agnes Skold, e lo zio, Vodrick; Lukà Arborg, figlio di Ricker Arborg di Restan, con una camicia ad anelli sottili; e Rend di Goteborg, lo scudiero di Brynden. Ognuno ti guarda come si guarda una lama nuova.",
+     "fase": "exploration",
+     "richiede": [
+      "E19x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_politici"
+      }
+     ],
+     "fonte": "L dello schema (conoscere i politici [ICH Cap.26 r.3-10], scopo: chi seguire nel ramo della 20); «una lama nuova»: PROPOSTA",
+     "scopo": "chi seguire nel ramo della 20"
+    },
+    {
+     "id": "E19x3",
+     "testo": "Ascoltare lo spettro che ti segue a palazzo",
+     "riserva": "Mentre Egil ti medica con un unguento di erbe, le stesse che hai visto fra i Kynwird, uno spettro ti sussurra di un uomo, Esprit: ferito, ha toccato uno dei suoi e gli ha preso la faccia, e quello è caduto a terra. Poi l'ha visto salire in carrozza con un uomo vestito di nero, verso il palazzo.",
+     "fase": "resolution",
+     "richiede": [
+      "E19d1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_volti"
+      }
+     ],
+     "fonte": "L dello schema (ascoltare lo spettro su Esprit che ruba i volti [ICH Cap.25 r.76-80], scopo: il pericolo)",
+     "scopo": "il pericolo di Esprit"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "brynden",
+     "apertura": "Brynden ti guarda con un sorriso storto.",
+     "chiusura": "Brynden torna al suo posto.",
+     "riserva_libera": "Brynden ride: «Ne parleremo, madame.»",
+     "argomenti": [
+      {
+       "id": "E19_brynden_1",
+       "testo": "Rispondere a Brynden dopo il duello",
+       "riserva": "Ti tira su per un braccio. «Ci sapete fare con la lama madame.» Poi, sottovoce: «Credo che voi mi dobbiate delle spiegazioni ora.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "brynden",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E19d1"
+       ],
+       "fonte": "[ICH Cap.25 r.47-48] (le battute alla lettera)",
+       "scopo": "Brynden, che nella 20 sarà contrario a tutto"
+      }
+     ]
+    },
+    {
+     "png": "hjalmar",
+     "apertura": "Il re si annoia, e non lo nasconde.",
+     "chiusura": "Hjalmar si gira verso i suoi ospiti.",
+     "riserva_libera": "Hjalmar ridacchia e non risponde.",
+     "argomenti": [
+      {
+       "id": "E19_hjalmar_1",
+       "testo": "Ascoltare il re",
+       "riserva": "«Bene, mi stavo giusto annoiando e ritengo che uno scontro potrebbe allietare le nostre menti prima di lunghe ore di racconti e dicerie.» Più tardi, a Brynden: «In questo mondo o conquisti o vieni conquistato ser Brynden.»",
+       "effetti": [],
+       "richiede": [
+        "E19x1"
+       ],
+       "fonte": "[ICH Cap.25 r.36; Cap.26 r.107] (le battute alla lettera, accorciate)",
+       "scopo": "il re"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Brynden fa togliere l'armatura a Vodrick: «Dopo tutto è una donna e la vostra pelle è dura quanto il gull nevvero?» Vodrick scende nello spazio davanti al trono, la lama in mano.",
+    "fonte": "P2 [ICH Cap.25 r.32-33] (Brynden fa togliere l'armatura a Vodrick; la battuta [r.32] alla lettera, accorciata)",
+    "esplora": [
+     {
+      "id": "E19d1",
+      "testo": "Affrontare Vodrick Skold",
+      "riserva": "«Se temete che possa sporcare le vostre sale mi assicurerò di non sporcare troppo e di ripulire io stesso… ma ne va del mio onore e dell'onore di tutta Bhorkyn.» Il re fa un gesto: «Perciò fate pure.» Se lo uccidi, a palazzo avrai dei nemici; se perdi, non avrai niente.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nella sala della corte duelli con Vodrick Skold.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.25 r.35-36] (le battute alla lettera, accorciate); se lo uccide crea problemi [r.40-43] (note di lettura)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E19x1"
+    ],
+    "risoluzione": [
+     "E19d1"
+    ]
+   },
+   "required_beats": [
+    "E19x1",
+    "E19d1"
+   ],
+   "optional_beats": [
+    "E19x2",
+    "E19x3",
+    "E19_brynden_1",
+    "E19_hjalmar_1"
+   ],
+   "riserva_libera": "A corte nessuno risponde a una domanda senza chiedersi che cosa ci guadagna.",
+   "uscita_fail_forward": "Se la scena si ferma, Saoirse ti fa chiamare comunque: la festa si prepara, e lei ti vuole accanto."
+  },
+  "E20": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E20x1",
+     "parte": "la sala del banchetto",
+     "testo": "Rispondere a Esprit",
+     "riserva": "Esprit beve, e ti guarda come si guarda un quadro. Dice di conoscere i tuoi punti deboli: che cosa sei, da dove vieni, chi ti porti dentro. Si gode la festa come se fosse sua. Che cosa gli rispondi, lo decidi tu; lui ride comunque, e se ne va al tavolo della regina.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_esprit"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.27 r.24-25] (Esprit dice di conoscere i suoi punti deboli, DEDOTTO con lei; si gode la festa [r.51]; la risposta di lei è un gesto del giocatore); i punti deboli elencati: PROPOSTA"
+    },
+    {
+     "id": "E20x2",
+     "parte": "la sala del banchetto",
+     "testo": "Guardare i tavoli del banchetto",
+     "riserva": "I posti li ha scelti la regina. Su ogni tavolo c'è un mazzo di fiordalisi, e il numero cambia da un tavolo all'altro; al centro, un bouquet. Al tavolo della regina siedono Muninn, il re ed Esprit. Dietro gli esponenti stanno i loro soldati, e in fondo alla sala le botti di vino.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_banchetto"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.27 r.49-51] (i posti scelti dalla regina; i fiordalisi in numero diverso e il bouquet; Muninn, lo Jarl ed Esprit al tavolo della regina; i soldati e le botti: note di lettura)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "brynden",
+     "apertura": "Brynden non ha toccato il vino.",
+     "chiusura": "Brynden si passa una mano sul viso.",
+     "riserva_libera": "Brynden scuote la testa: «Non ora.»",
+     "argomenti": [
+      {
+       "id": "E20_brynden_1",
+       "testo": "Convincere Brynden",
+       "riserva": "«Volete forse renderci complici di questo massacro?» Ha il viso pallido. Gli parli a lungo, lontano dagli altri, e alla fine non ti dà ragione; ma resta.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "brynden",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E20d1"
+       ],
+       "fonte": "L dello schema (convincere Brynden [ICH Cap.28 r.2-4], scopo: l'alleanza); la battuta [ICH Cap.27 r.74] alla lettera; «ma resta»: PROPOSTA",
+       "scopo": "l'alleanza con Brynden"
+      }
+     ]
+    },
+    {
+     "png": "mann",
+     "apertura": "Mann è in ginocchio davanti alla regina.",
+     "chiusura": "Mann si rialza.",
+     "riserva_libera": "Mann non ti risponde: guarda solo la regina.",
+     "argomenti": [
+      {
+       "id": "E20_mann_1",
+       "testo": "Ascoltare Mann",
+       "riserva": "«Finalmente indosso la mia pelle, la mia carne brucia all'interno senza il male, qui rinasco e attendo la nostra nuova era.» Saoirse gli posa una mano sulla spalla: «Come promesso voi riavrete le vostre terre.»",
+       "effetti": [],
+       "richiede": [
+        "E20d1"
+       ],
+       "fonte": "[ICH Cap.27 r.78-79] (le battute alla lettera)",
+       "scopo": "Mann e gli urobri"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Saoirse si alza con la coppa in mano. «Brindiamo alla nostra nuova vita insieme, a nuovi regni e nuove alleanze, e al nostro mondo… che sarà testimone del nostro nuovo avvenire.» La sala beve.",
+    "fonte": "P4 [ICH Cap.27 r.66-67] (il brindisi; la battuta [r.67] alla lettera)",
+    "esplora": [
+     {
+      "id": "E20d1",
+      "parte": "la sala del banchetto",
+      "testo": "Guardare la sala dopo il brindisi",
+      "riserva": "I bicchieri cadono. Il re si piega in due, e Saoirse lo pugnala all'addome, agonizzante. Mann prende il viso di Esprit fra le mani, e il viso si scioglie: «questo è per gli urobri». Molti invitati muoiono avvelenati. Saoirse, con l'abito sporco di sangue: «Vi do il benvenuto nel mio nuovo regno, unitevi a me e costruiremo un mondo nuovo insieme, cogliete i fiori che sono stati posti per voi, cogliete la vostra opportunità.» Quasi tutti li colgono. Vodrick porge un fiore a Brynden: «Prima di un'alba v'è bisogno di un tramonto, o come in questo caso di un'eclissi.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cavaliera_fact_re"
+       },
+       {
+        "scopri": "cavaliera_fact_fiori"
+       },
+       {
+        "nota": "Al banchetto Saoirse ha pugnalato il re, e il nuovo regno è cominciato.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 [ICH Cap.27 r.65-76] (Saoirse pugnala Hjalmar; Mann scioglie il volto di Esprit; le battute [r.71], [r.72], [r.75] alla lettera, accorciate; la maggior parte coglie i fiori): FISSO dell'Atto II"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E20x1",
+     "E20x2"
+    ],
+    "risoluzione": [
+     "E20d1"
+    ]
+   },
+   "required_beats": [
+    "E20x1",
+    "E20x2",
+    "E20d1"
+   ],
+   "optional_beats": [
+    "E20_brynden_1",
+    "E20_mann_1"
+   ],
+   "riserva_libera": "Alla festa nessuno ti risponde davvero: tutti aspettano il brindisi.",
+   "uscita_fail_forward": "Se la scena si ferma, il brindisi arriva comunque: le botti sono avvelenate, e il re muore."
+  },
+  "E21": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E21x1",
+     "parte": "il mercato",
+     "testo": "Scortare la regina in piazza",
+     "riserva": "Al mercato la folla blocca le strade e chiede la testa della regina. Saoirse sale sul patio, accanto alla fune. «Popolo di Ourobera, so che siete scontenti e che volete indietro il vostro re… ma non è attentando alla vita di suo figlio che avrete giustizia. Porto in grembo il seme di mio marito e ho intenzione di fargli conoscere lo splendido regno che è Ourobera, ma voi dovrete essere con me.» Poi si volta verso di te: i manifestanti, dice, li lascia a te.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_manifestanti"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.28 r.56-62] (le battute [r.61], [r.62] alla lettera; lascia a lei la scelta)"
+    },
+    {
+     "id": "E21x2",
+     "testo": "Salire in carrozza con la regina e Brynden",
+     "riserva": "In carrozza Brynden non aspetta che le porte si chiudano. «Ditemi, come intendete partorire un figlio che non aspettate?» Saoirse guarda fuori dal finestrino. «A Bhorkyn sarà presto pieno di orfani, non intendo negare loro l'opportunità della vita a palazzo.» Al popolo, questo, nessuno lo dirà.",
+     "fase": "exploration",
+     "richiede": [
+      "E21x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_gravidanza"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.28 r.63-64] (le battute alla lettera); al popolo resta nascosta (schema, R della 21)"
+    },
+    {
+     "id": "E21x3",
+     "testo": "Ascoltare l'avviso di Dawn",
+     "riserva": "Dawn ti trova a palazzo, senza fiato: qualcuno farà un salto fino a Ourobera, sulle coordinate di Krakborg, con il codice di Runi. Non ha finito di parlare che ti richiamano in caserma: attaccano le forze della regina.",
+     "fase": "exploration",
+     "richiede": [
+      "E21x2"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_salto"
+      }
+     ],
+     "fonte": "P3 [ICH Cap.28 r.87] (Dawn avvisa di un salto a Ourobera con il codice di Runi, coordinate di Krakborg; richiamata in caserma: note di lettura)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "rend",
+     "apertura": "Rend stringe la spada come gli ha insegnato Brynden.",
+     "chiusura": "Rend corre verso il palazzo.",
+     "riserva_libera": "Rend non ha tempo: ha una regina da difendere.",
+     "argomenti": [
+      {
+       "id": "E21_rend_1",
+       "testo": "Guardare Rend diventare cavaliere",
+       "riserva": "«Signore io non posso abbandonare il campo di battaglia.» Brynden lo prende per il bavero: «Hai voluto che lei fosse la tua regina? Bene! Come capo delle guardie ti nomino cavaliere del leone, ser Rend di Goteborg. In quanto cavaliere hai dei doveri da rispettare, ora muovete il culo Ser.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "rend",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E21x3"
+       ],
+       "fonte": "P4 [ICH Cap.28 r.95-97] (le battute alla lettera, accorciate)",
+       "scopo": "Rend"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Davanti alla caserma la gente scappa. «Delle belve e un mostro stanno attaccando le guarnigioni!» Brynden guarda il fumo: «Dunque i corvi sono giunti a giudicare le nostre azioni… Rend, corri subito nelle stanze della regina, prendi degli uomini con te e difendetela ad ogni costo.»",
+    "fonte": "P4 [ICH Cap.28 r.91-94] (la gente in fuga; le battute [r.93], [r.94] alla lettera)",
+    "esplora": [
+     {
+      "id": "E21d1",
+      "parte": "la caserma",
+      "testo": "Entrare nella caserma",
+      "riserva": "Dentro ci sono Kynjager, e fra loro una donna dai capelli chiari, con una balestra e una scimitarra: Cirilla. Ti guarda, e per un momento nessuno si muove. Poi parla lei, e le parole sono più affilate della lama.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cavaliera_fact_caserma"
+       },
+       {
+        "nota": "Nella caserma di Ourobera affronti Cirilla, fra i Kynjager.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P5 [ICH Cap.28 r.99-103] (in caserma ci sono Kynjager; vede Cirilla; si affrontano, più a parole che con le armi)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E21x1",
+     "E21x2",
+     "E21x3"
+    ],
+    "risoluzione": [
+     "E21d1"
+    ]
+   },
+   "required_beats": [
+    "E21x1",
+    "E21x2",
+    "E21x3",
+    "E21d1"
+   ],
+   "optional_beats": [
+    "E21_rend_1"
+   ],
+   "riserva_libera": "A Ourobera oggi nessuno ha tempo per le domande.",
+   "uscita_fail_forward": "Se la scena si ferma, le belve arrivano comunque alla caserma, e Cirilla con loro."
+  },
+  "E22": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E22x1",
+     "parte": "Il mondo dei morti",
+     "testo": "Seguire Amr nel buio",
+     "riserva": "Amr cammina, e tu lo segui. Intorno a voi ci sono altre ombre, che non ti guardano. La ninna nanna dei corvi si fa più forte; poi, sotto, una voce d'uomo che conosci, quella di George, come quando ti scriveva: che un giorno, forse, potresti diventare te {stesso|stessa|stesso}.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_amr_guida"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.29 r.43-56] (Amr come guida, la ninna nanna di corvi, la voce maschile e le parole di George: note di lettura); le parole riprendono il ricordo della 17 [ICH Cap.20 r.31] (PROPOSTA: le note non le riportano alla lettera)"
+    },
+    {
+     "id": "E22x2",
+     "testo": "Guardare il tuo corpo",
+     "riserva": "Dall'alto vedi un letto, e sul letto c'è il tuo corpo, fasciato. Brynden ha il viso ferito e una benda sull'occhio; sveglia Saoirse, che si era addormentata sulla sedia accanto a te. Poi ti risvegli, e fa male tutto.",
+     "fase": "exploration",
+     "richiede": [
+      "E22x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_risveglio"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.29 r.55-59] (vede il suo corpo, Brynden ferito al viso che sveglia Saoirse; si risveglia); la benda sull'occhio: PROPOSTA"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "saoirse",
+     "apertura": "Saoirse ha le occhiaie di chi non dorme da giorni.",
+     "chiusura": "Saoirse ti sistema la coperta.",
+     "riserva_libera": "Saoirse scuote la testa: «Riposate, adesso.»",
+     "argomenti": [
+      {
+       "id": "E22_saoirse_1",
+       "testo": "Chiedere a Saoirse della battaglia",
+       "riserva": "Circa tremila caduti. Hanno colpito anche Sliasthorp. E Cirilla è in cella, viva. «Vi ho fatto portare i vostri strumenti per la pittura, penso che nel tempo libero vi siano di supporto per arricchire l'attesa con le vostre stupende opere.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "saoirse",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E22x2"
+       ],
+       "fonte": "P4 [ICH Cap.29 r.63-75] (circa 3000 caduti, Sliasthorp, Cirilla in cella; la battuta [r.63] alla lettera)",
+       "scopo": "la battaglia e Cirilla"
+      },
+      {
+       "id": "E22_saoirse_2",
+       "testo": "Prendere in mano il pennello",
+       "riserva": "Dipingi quello che hai visto nel buio: Amr, i corvi, un letto visto dall'alto. Saoirse guarda il quadro a lungo, e non dice niente.",
+       "effetti": [],
+       "richiede": [
+        "E22_saoirse_1"
+       ],
+       "fonte": "L dello schema (dipingere, scopo: la cura di sé [ICH Cap.29 r.63]); che cosa dipinge: PROPOSTA",
+       "scopo": "la cura di sé"
+      }
+     ]
+    },
+    {
+     "png": "brynden",
+     "apertura": "Brynden si tocca la ferita sul viso, e sorride storto.",
+     "chiusura": "Brynden torna alla finestra.",
+     "riserva_libera": "Brynden ride piano: «Chiedete alla regina.»",
+     "argomenti": [
+      {
+       "id": "E22_brynden_1",
+       "testo": "Chiedere a Brynden della sua ferita",
+       "riserva": "«Non è necessario regina Saoirse» le dice, quando lei gli parla degli artigiani che ha chiamato per lui. «Non lo faccio perché è necessario, ma perché siete un brav'uomo e meritate questo e più ser.» Brynden non risponde, e guarda fuori.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "brynden",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E22x2"
+       ],
+       "fonte": "[ICH Cap.29 r.64-66] (le battute alla lettera)",
+       "scopo": "Brynden e la regina"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Egil entra con il suo libro e i suoi unguenti, e si siede sul bordo del letto.",
+    "fonte": "P3 [ICH Cap.29 r.60] (il medico Egil)",
+    "esplora": [
+     {
+      "id": "E22d1",
+      "parte": "la tua stanza a Ourobera",
+      "testo": "Ascoltare il medico",
+      "riserva": "Egil elenca, senza fretta: per mesi la mano e l'occhio non andranno d'accordo; vertigini, nausea, il cuore che batte forte per tutto il primo mese. «E a volte, al posto delle voci, sentirete il rumore degli spettri.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cavaliera_fact_danni"
+       },
+       {
+        "nota": "Dopo la battaglia, a volte senti il rumore degli spettri al posto delle voci.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.29 r.60-62] (i danni: coordinazione occhio-mano debole per mesi, il rumore degli spettri al posto delle voci, vertigini, nausea, il cuore forte nel primo mese: note di lettura; la battuta: PROPOSTA dalle note)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E22x1",
+     "E22x2",
+     "E22_saoirse_1"
+    ],
+    "risoluzione": [
+     "E22d1"
+    ]
+   },
+   "required_beats": [
+    "E22x1",
+    "E22x2",
+    "E22_saoirse_1",
+    "E22d1"
+   ],
+   "optional_beats": [
+    "E22_saoirse_2",
+    "E22_brynden_1"
+   ],
+   "riserva_libera": "Nella stanza nessuno parla forte: ti credono ancora troppo debole.",
+   "uscita_fail_forward": "Se la scena si ferma, ti risvegli comunque, ed Egil ti dice che cosa ti ha lasciato la battaglia."
+  },
+  "E23": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E23x1",
+     "testo": "Parlare con Cirilla",
+     "riserva": "Le versi il vino di Brynden. Cirilla beve come chi ha sete da giorni. «Allora? Sei {venuto|venuta|qui} a vedere il mostro in gabbia?» Ride, e la risata le fa male. Parlate a lungo di niente: della caserma, del fulmine rosso, di Krakborg. Non ti chiede mai perché sei lì.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_cella"
+      }
+     ],
+     "fonte": "P1-P2 [ICH Cap.29 r.72-75, r.136-138] (il vino; parlano: scena libera nella fonte); le battute: PROPOSTA (il «mostro» riprende «siamo soltanto dei mostri» [ICH Cap.24 r.37])"
+    },
+    {
+     "id": "E23x2",
+     "testo": "Aspettare Ivor sotto la pioggia",
+     "riserva": "Fuori piove. Hai due prigionieri della caserma, e aspetti l'uomo che deve interrogarli. Quando arriva è spaventato e confuso, si guarda le mani come se non fossero sue; poi alza gli occhi, e capisci che cos'è: un fearsith, uno che i ricordi li legge. Si chiama Ivor.",
+     "fase": "exploration",
+     "richiede": [
+      "E23x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_ivor"
+      }
+     ],
+     "fonte": "L dello schema [ICH Cap.30 r.14-16] (sotto la pioggia, i due prigionieri, l'arrivo di Ivor spaventato e confuso: è un fearsith; l'interrogatorio: note di lettura); «uno che i ricordi li legge»: PROPOSTA (la fonte non spiega che cosa sia un fearsith)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "ivor",
+     "apertura": "Ivor si scrolla la pioggia di dosso come un cane.",
+     "chiusura": "Ivor torna dai prigionieri.",
+     "riserva_libera": "Ivor ti guarda, confuso, e non risponde.",
+     "argomenti": [
+      {
+       "id": "E23_ivor_1",
+       "testo": "Chiedere a Ivor che cosa gli è successo",
+       "riserva": "Ivor non lo sa bene. Si ricorda dei lupi, di una zanna da far sistemare, di una caccia. Poi più niente, fino a Ourobera. «Mi sento usato» dice soltanto.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "ivor",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E23x2"
+       ],
+       "fonte": "il file dei PNG, Ivor (la zanna [ICH Cap.1 r.66]; si sente usato [ICH Cap.29 r.109-112]); il resto: PROPOSTA (decisione dell'autore: Ivor muore e torna)",
+       "scopo": "Ivor"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Di notte torni nella cella. La brocca è vuota, e Cirilla guarda il muro.",
+    "fonte": "P2 [ICH Cap.29 r.136-138] (parla con Cirilla: scena libera nella fonte); testo PROPOSTA",
+    "esplora": [
+     {
+      "id": "E23d1",
+      "testo": "Sederti accanto a Cirilla",
+      "riserva": "Ti siedi per terra, accanto a lei. Per un po' nessuno parla. «Ti nascondi dagli uomini in grigio» le dici, «parli con alcuni e scappi da altri.» Cirilla sorride senza allegria.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nella cella di Ourobera sei vicina a sapere chi è Cirilla.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 (scena libera); la battuta riprende la domanda della 18 [ICH Cap.24 r.35] (PROPOSTA)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E23x1",
+     "E23x2"
+    ],
+    "risoluzione": [
+     "E23d1"
+    ]
+   },
+   "required_beats": [
+    "E23x1",
+    "E23x2",
+    "E23d1"
+   ],
+   "optional_beats": [
+    "E23_ivor_1"
+   ],
+   "riserva_libera": "In cella le domande rimbalzano sui muri.",
+   "uscita_fail_forward": "Se la scena si ferma, Cirilla parla comunque, una notte, quando il vino è finito."
+  },
+  "E24": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E24x1",
+     "testo": "Scortare la regina in piazza",
+     "riserva": "In piazza ci sono i militari feriti, come Brynden, e la gente che ha perso qualcuno. Egil non si allontana mai dalla regina. «Popolo di Ourobera, piango alla perdita di tutti i caduti che hanno combattuto contro gli invasori.» La folla tace. «Loro torneranno, forti del fatto che ci hanno già sconfitto una volta, ma le nostre ferite diverranno cicatrici, salde e spesse come il cuoio… ciò che non ci potranno mai togliere è la volontà di andare avanti.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_lutto"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.31 r.38-47] (in piazza con i militari feriti come Brynden; Egil controlla la regina; le battute [r.41], [r.47] alla lettera, accorciate)"
+    },
+    {
+     "id": "E24x2",
+     "testo": "Accogliere il corteo",
+     "riserva": "Il corteo l'avete deciso tu e la regina: bandiere, tamburi, la strada sgombra fino al palazzo. In mezzo ci sono loro: Knytta, Knut, la lupa, e Amelia, che ti corre incontro e ti abbraccia così forte da farti male alle ferite. Knytta si guarda intorno: è la prima vera città che vede, e i reverie mutilati della battaglia ricostruiscono insieme, una pietra dopo l'altra.",
+     "fase": "exploration",
+     "richiede": [
+      "E24x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_corteo"
+      }
+     ],
+     "fonte": "P3 [ICH Cap.31 r.77-85] (il corteo deciso da lei e dalla regina; lei e Amelia si abbracciano; Knytta vede la prima vera città, reverie mutilati che ricostruiscono insieme); bandiere e tamburi: PROPOSTA"
+    },
+    {
+     "id": "E24x3",
+     "testo": "Lasciare che Amelia ti tocchi la fronte",
+     "riserva": "Amelia ride, e ti posa due dita sulla fronte. Per un momento i tuoi pensieri non sono più solo tuoi: lei è dentro, come si entra in casa propria, e ci guarda tutto. Poi esce, e ti bacia la fronte dove ti ha toccata. «Sei sempre {lo stesso|la stessa|tu}.»",
+     "fase": "exploration",
+     "richiede": [
+      "E24x2"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_hacker"
+      }
+     ],
+     "fonte": "P4 [ICH Cap.31 r.77-84; Cap.32 r.14] (Amelia la «hackera», dopo la lupa); che cosa sia e la battuta: PROPOSTA (la fonte non lo spiega)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "spettro",
+     "apertura": "Amelia non ti lascia la mano.",
+     "chiusura": "Amelia ti sorride.",
+     "riserva_libera": "Amelia ride: «Dopo, dopo.»",
+     "argomenti": [
+      {
+       "id": "E24_amelia_1",
+       "testo": "Chiedere ad Amelia di Skara",
+       "riserva": "Te lo racconta a pezzi, mangiandosi le parole: la strada, i compagni, le notti. Poi si ferma. «Non era un addio, te l'avevo detto.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "spettro",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E24x2"
+       ],
+       "fonte": "l'addio della 17 [ICH Cap.19 r.3-9] («non è un addio, ma un arrivederci»); il racconto: PROPOSTA (il filo di Amelia con Antoine è tolto: schema, «Come si è arrivati a 30»)",
+       "scopo": "il legame con Amelia"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La sera, a palazzo, la regina dà una cena per chi è arrivato. Agli invitati mostrano i servi, il lavoro, il pane. Poi Knut alza gli occhi dal piatto, e la vede: Cirilla.",
+    "fonte": "P5 [ICH Cap.32 r.3-5] (la cena: agli invitati si mostra il concetto di servitù e di lavoro; Knut vede Cirilla: note di lettura)",
+    "esplora": [
+     {
+      "id": "E24d1",
+      "testo": "Guardare Knut",
+      "riserva": "Il primo coltello vola; Cirilla lo schiva facendo volare un vassoio. «Non ti ho fatto un cazzo, sei pazzo per caso?» Knut ha già in mano il secondo, e si alza.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cavaliera_fact_cena"
+       },
+       {
+        "nota": "A cena Knut attacca Cirilla con i coltelli.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P5 [ICH Cap.32 r.5-9] (Knut le lancia un coltello, lei schiva con un vassoio, poi lui la attacca con un altro; la battuta [r.7] alla lettera)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E24x1",
+     "E24x2",
+     "E24x3"
+    ],
+    "risoluzione": [
+     "E24d1"
+    ]
+   },
+   "required_beats": [
+    "E24x1",
+    "E24x2",
+    "E24x3",
+    "E24d1"
+   ],
+   "optional_beats": [
+    "E24_amelia_1"
+   ],
+   "riserva_libera": "In mezzo alla festa nessuno ti sente.",
+   "uscita_fail_forward": "Se la scena si ferma, la cena arriva comunque, e con lei il coltello di Knut."
+  },
+  "E25": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E25x1",
+     "testo": "Ascoltare Raven",
+     "riserva": "«Gli errori dei padri ricadono sui figli. Tu che sei la più anziana di noi lo sai bene, Knytta, promettetemi che non diventeremo mai come lui.» Non dice chi. Ma parla di chi vi ha fatti, e la sua mano trema sulla piuma.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_raven_padri"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.33 r.10-11; Cap.32 r.48-50] (la critica di Raven, la battuta [r.11] alla lettera; la mano che trema sulla piuma); il nome taciuto: è il lessico della verità degli Asi, che si dice in questa scena con l'obiettivo"
+    },
+    {
+     "id": "E25x2",
+     "testo": "Ascoltare la regina con Knytta",
+     "riserva": "Saoirse offre a Knytta provviste e denaro per la sua nave. Dove andranno, lo sapete tutti: a Bo Aesir, dove si nasconde chi cercate.",
+     "fase": "exploration",
+     "richiede": [
+      "E25x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_nave_knytta"
+      }
+     ],
+     "fonte": "P5 [ICH Cap.33 r.13-19] (Saoirse offre provviste e denaro per la nave di Knytta, destinazione Bo Aesir); lo stesso fatto di «L'Hersir dei nodi» H22 (chi cercate si nasconde a Bo Aesir)"
+    },
+    {
+     "id": "E25x3",
+     "testo": "Tornare nelle tue stanze, da lei",
+     "riserva": "Hai trascurato le cure per troppo tempo, e ricominci: gli unguenti, il riposo, le ore senza spada. Amelia passa le notti a studiare il codice dei Kynjager, per farti uno scudo contro il loro tocco. Una sera chiude il libro. Fate pace di tutto quello che è rimasto in sospeso, e quella notte, per la prima volta, dormite insieme.",
+     "fase": "exploration",
+     "richiede": [
+      "E25x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_pace"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.33 r.13-16] (torna a curarsi dopo aver trascurato la terapia; pace con Amelia, l'amore confermato, la prima notte; Amelia studia il codice dei Kynjager per uno scudo contro il loro tocco); il modo: PROPOSTA"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "knytta",
+     "apertura": "Knytta guarda la nave dalla finestra.",
+     "chiusura": "Knytta torna ai suoi preparativi.",
+     "riserva_libera": "Knytta alza le spalle: «Lo vedremo là.»",
+     "argomenti": [
+      {
+       "id": "E25_knytta_1",
+       "testo": "Chiedere a Knytta di Raven",
+       "riserva": "«Lei ricorda cose che noi abbiamo dimenticato» dice Knytta. «E quando le ricorda, le trema la mano.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knytta",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E25x1"
+       ],
+       "fonte": "la mano di Raven che trema [ICH Cap.33 r.10]; la battuta: PROPOSTA",
+       "scopo": "Raven"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Di notte i tuoi spettri tornano. Sono stati dove nessun vivo può entrare: a Restan nord, sotto le mura, nelle sale dei comandanti.",
+    "fonte": "P3 [ICH Cap.33 r.18-19] (la rete di spettri-spie porta notizie su Bo Aesir e Restan nord: note di lettura)",
+    "esplora": [
+     {
+      "id": "E25d1",
+      "testo": "Ascoltare i tuoi spettri",
+      "riserva": "Ti dicono tutto, uno sopra l'altro: le navi a Restan nord, gli aiuti che arrivano da Bhorkyn e da Skjoldland, il piano di invadere Ourobera. Poi Amelia ti trova {sveglio|sveglia|ancora in piedi} alla finestra, e si siede accanto a te. Parlate di quanto è cambiato tutto. «C'è una cosa che ho sempre ammirato di mia sorella, la sua dedizione alla causa, che fosse quella di scovare la verità intervistando qualcuno o quella di sacrificare sé stessa e l'intero mondo pur di avere una seconda occasione.» Si ferma. «Tu e lei avete lo stesso spirito di sacrificio.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cavaliera_fact_spie"
+       },
+       {
+        "nota": "I tuoi spettri ti hanno portato il piano di Restan nord.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.33 r.18-19] (le notizie degli spettri-spie: il piano di invasione) e P4 [r.60-63] (Amelia parla di Gaia: le battute [r.62], [r.63] alla lettera, accorciate)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E25x1",
+     "E25x2",
+     "E25x3"
+    ],
+    "risoluzione": [
+     "E25d1"
+    ]
+   },
+   "required_beats": [
+    "E25x1",
+    "E25x2",
+    "E25x3",
+    "E25d1"
+   ],
+   "optional_beats": [
+    "E25_knytta_1"
+   ],
+   "riserva_libera": "Nelle tue stanze, per una volta, nessuno ha fretta.",
+   "uscita_fail_forward": "Se la scena si ferma, i tuoi spettri tornano comunque con le notizie di Restan, e Amelia ti parla di sua sorella."
+  },
+  "E26": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E26x1",
+     "testo": "Partire con Amelia",
+     "riserva": "Sulla nave Amelia ti chiede dei tuoi genitori. Non sai bene che cosa risponderle: dopo la stanza bianca, la parola «genitori» non è più quella di prima. Lei ti ascolta, e non ti chiede di più.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_skjoldland"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.34 r.20-27] (la partenza con Amelia) e L dello schema (i genitori con Amelia [ICH Cap.36 r.6]); che cosa si dicono: PROPOSTA (dopo la verità della 25)"
+    },
+    {
+     "id": "E26x2",
+     "parte": "Il palazzo di Skjoldland",
+     "testo": "Entrare nel palazzo di Skjoldland",
+     "riserva": "La regina arriva a palazzo, e le occhiate non sono gentili. Poi qualcuno ti riconosce. Il tuo nome passa di bocca in bocca, e con il nome la tua taglia: a Skjoldland c'è chi ti vuole, e paga bene. L'udienza è in fondo alla sala.",
+     "fase": "exploration",
+     "richiede": [
+      "E26x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_skjoldland"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.35 r.24-28] (la regina a palazzo; occhiatacce; la riconoscono, la sua taglia fa gola; bisogna arrivare all'udienza)"
+    },
+    {
+     "id": "E26x3",
+     "testo": "Ascoltare il paggio di Brynden",
+     "riserva": "«Signore, la gilda dei mercanti si è offerta volontaria per fornirci un carico di risorse e cibo, la proposta viene da un loro rappresentante, un certo Jorgen Wraskard.» Wraskard: la tua casata. Brynden non se ne accorge: «Dite loro che al nostro rientro ridurremo loro le tasse per un anno intero per ripagarli di questo dono.»",
+     "fase": "exploration",
+     "richiede": [
+      "E26x2"
+     ],
+     "effetti": [],
+     "fonte": "L dello schema (chiedere di Jorgen Wraskard [ICH Cap.36 r.17-18], scopo: un legame con Cirilla, punto aperto 4: le battute alla lettera; se sia lo stesso Jorgen della 23 resta aperto)",
+     "scopo": "un legame con Cirilla (punto aperto 4)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "ecbert",
+     "apertura": "Il re Ecbert siede rigido, come chi non ama le sorprese.",
+     "chiusura": "Ecbert torna ai suoi consiglieri.",
+     "riserva_libera": "Ecbert non risponde a chi non conosce.",
+     "argomenti": [
+      {
+       "id": "E26_ecbert_1",
+       "testo": "Ascoltare il re e la regina",
+       "riserva": "«La vostra proposta è certamente fruttuosa, ma ha un costo oneroso.» Saoirse non abbassa gli occhi: «Un costo che non pagherete voi con la vita, ma tutti i reverie che bramano libertà e imbracciano le armi per ottenerla.»",
+       "effetti": [],
+       "richiede": [
+        "E26x2"
+       ],
+       "fonte": "[ICH Cap.35 r.40-41] (le battute alla lettera, accorciate)",
+       "scopo": "la coalizione"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Fra te e l'udienza ci sono troppe persone, e alcune non guardano il re: guardano te.",
+    "fonte": "P2 [ICH Cap.35 r.26-28] (la taglia fa gola: deve uscirne lei); testo PROPOSTA",
+    "esplora": [
+     {
+      "id": "E26d1",
+      "parte": "Il palazzo di Skjoldland",
+      "testo": "Vedere chi ti segue nella sala",
+      "riserva": "Sono in tre, poi in quattro: non portano lo stemma del cervo, e hanno le mani vicine ai coltelli. Ti seguono a distanza, e aspettano che resti {solo|sola|senza nessuno}.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "A Skjoldland gli uomini della taglia ti seguono per il palazzo.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.35 r.26-28]; gli uomini e i coltelli: PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E26x1",
+     "E26x2"
+    ],
+    "risoluzione": [
+     "E26d1"
+    ]
+   },
+   "required_beats": [
+    "E26x1",
+    "E26x2",
+    "E26d1"
+   ],
+   "optional_beats": [
+    "E26x3",
+    "E26_ecbert_1"
+   ],
+   "riserva_libera": "A Skjoldland, oggi, il tuo nome vale più delle tue domande.",
+   "uscita_fail_forward": "Se la scena si ferma, l'udienza si tiene comunque, e l'esercito parte."
+  },
+  "E27": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E27x1",
+     "parte": "Il mare davanti a Restan nord",
+     "testo": "Guardare il mare davanti a Restan nord",
+     "riserva": "Fumi di fabbriche, una nebbiolina bassa. Dal fondo del mare salgono delle luci, e l'acqua diventa rossa. Le prime mine saltano sotto le navi davanti, e le fiamme corrono sull'acqua: un fuoco che l'acqua non spegne. Dalle mura arrivano i colpi. «Su gli scudi!»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_mare_rosso"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.37 r.105-118] (i fumi, la nebbiolina, le luci dal fondo, il mare rosso, le mine, il fuoco greco, i colpi dalle mura; «Su gli scudi!» alla lettera)"
+    },
+    {
+     "id": "E27x2",
+     "parte": "Il mare davanti a Restan nord",
+     "testo": "Ordinare la farina nei cannoni",
+     "riserva": "L'acqua non spegne quel fuoco: lo capisci prima degli altri. «Farina nei cannoni! E le navi su un fianco!» I cannoni sparano nuvole bianche sopra le fiamme, e le navi si piegano fino a far scivolare via il fuoco dai ponti. Passate, e le perdite sono poche.",
+     "fase": "exploration",
+     "richiede": [
+      "E27x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_farina"
+      },
+      {
+       "nota": "Sul mare in fiamme hai salvato la flotta con la farina nei cannoni.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P* P2 [ICH Cap.37 r.112-113] (i cannoni con farina e le navi su un fianco: il gesto è del giocatore, un punto facoltativo); se non dà l'ordine la flotta passa con più perdite (PROPOSTA dello schema: lo dice lo sviluppo); la battuta: PROPOSTA",
+     "scopo": "la flotta"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "La flotta passa il mare in fiamme: chi non ha spento il fuoco con la farina perde le sue navi, e l'acqua rossa si porta via molti. Poi le navi toccano la costa di Restan nord; le porte delle stive si aprono, e la cavalleria scende nell'acqua bassa, sotto i fulmini dei Kynjager.",
+    "fonte": "P2-P3 [ICH Cap.37 r.112-118, r.147-149] (la flotta passa; se non dà l'ordine dei cannoni, con più perdite: PROPOSTA dello schema; lo sbarco e la carica sotto i fulmini)",
+    "esplora": [
+     {
+      "id": "E27d1",
+      "parte": "la costa e le strade",
+      "testo": "Caricare con l'esercito",
+      "riserva": "Spingi il cavallo nell'acqua, poi sulla sabbia. Accanto a te c'è chi non ha mai visto una guerra, e trema. Davanti, un Kynjager alza la mano, e la mano si accende.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cavaliera_fact_sbarco"
+       },
+       {
+        "nota": "Sulla costa di Restan nord carichi contro i Kynjager.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.37 r.147-156] (la carica; il panico dei nuovi [ICH Cap.38 r.14-20]); testo PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E27x1"
+    ],
+    "risoluzione": [
+     "E27d1"
+    ]
+   },
+   "required_beats": [
+    "E27x1",
+    "E27d1"
+   ],
+   "optional_beats": [
+    "E27x2"
+   ],
+   "riserva_libera": "In mezzo alla battaglia nessuno ti sente.",
+   "uscita_fail_forward": "Se la scena si ferma, la flotta tocca comunque la costa, e la battaglia ti porta fino alle strade di Restan nord."
+  },
+  "E28": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E28x1",
+     "testo": "Tenere la linea con Knytta",
+     "riserva": "Il nemico esce dalle mura, riposato, e voi siete stanchi da giorni. Molti dei tuoi cadono. Brynden, più indietro, ordina ai suoi di ritirarsi di qualche passo per non farsi chiudere. Tu e Knytta restate davanti, schiena contro schiena.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_campi"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.38 r.42-43, r.80-84] (sostiene i fanti e combatte accanto a Knytta; il nemico esce riposato; molti cadono; la ritirata di Brynden)"
+    },
+    {
+     "id": "E28x2",
+     "testo": "Guardare lo spettro che segue Baku",
+     "riserva": "Un uomo ferito, Baku, segue uno spettro che solo tu vedi. «Il tuo ciclo è concluso Baku, a breve i tuoi compagni moriranno.» Baku si trascina fino a te e muore ai tuoi piedi; nel terreno, sotto la sua mano, resta una parola bruciata: TRAPPOLA. La casa degli Asi, dove è andata Knytta, è una trappola. Intorno, i nemici cominciano a muoversi a scatti, e le luci calano.",
+     "fase": "exploration",
+     "richiede": [
+      "E28x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_trappola"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.38 r.85-88] (Baku segue uno spettro, la battuta [r.85] alla lettera; si trascina davanti a lei e muore lasciando «TRAPPOLA» bruciato nel terreno; i nemici a scatti, le luci che calano); la casa degli Asi è una trappola: lo stesso fatto di «L'Hersir dei nodi» H28 (con il senso della 25)"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Le luci si abbassano ancora. I nemici scompaiono e ricompaiono a un passo di distanza. Fra loro e Amelia, che spara da dietro un carro, ci sei soltanto tu.",
+    "fonte": "P2-P3 [ICH Cap.38 r.87-90] (i nemici a scatti; Amelia viene colpita); testo PROPOSTA",
+    "esplora": [
+     {
+      "id": "E28d1",
+      "testo": "Metterti davanti ad Amelia",
+      "riserva": "Corri verso il carro. Un Kynjager ti viene incontro a scatti, e capisci che non riuscirai a passare senza abbatterlo.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Ai Campi rossi ti metti fra i Kynjager e lei.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "L dello schema (proteggere Amelia prima del colpo); testo PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E28x1",
+     "E28x2"
+    ],
+    "risoluzione": [
+     "E28d1"
+    ]
+   },
+   "required_beats": [
+    "E28x1",
+    "E28x2",
+    "E28d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Ai Campi rossi nessuno ha fiato per risponderti.",
+   "uscita_fail_forward": "Se la scena si ferma, il colpo arriva comunque, e lei si sacrifica per te."
+  },
+  "E29": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E29x1",
+     "parte": "I Campi rossi, la costa rossa di Restan, il confine",
+     "testo": "Ascoltare Raven",
+     "riserva": "«Knut vuole che ci ritiriamo, è una trappola, hanno preso Knytta. Lui sta andando verso le navi e vuole che ci raduniamo lì.» Le piume le cadono a ciocche. «Resta poco tempo, stiamo scomparendo, Knut ha detto che dovete raggiungere assolutamente le navi e salpare con quelle che vi servono prima che il server crolli.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_ritirata"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.39 r.112-119] (le battute [r.116], [r.118] alla lettera); le piume: PROPOSTA"
+    },
+    {
+     "id": "E29x2",
+     "parte": "I Campi rossi, la costa rossa di Restan, il confine",
+     "testo": "Ascoltare la voce di Amelia dentro di te",
+     "riserva": "«Ho un'idea per prendere tempo.» La sua voce è dentro di te, calma. «Utilizzare me come contenitore di spettri, comprimiamo questi dati con me come main, questo farà guadagnare del tempo a Gaia… {tranquillo|tranquilla|tranquillo}, so come fare, ho imparato ora da te. Tu devi solo richiamarli a te.» Li chiami. I morti dei Campi rossi vengono, uno dopo l'altro, e spariscono dentro di lei, dentro di te. Poi la ritirata: giorni a piedi.",
+     "fase": "exploration",
+     "richiede": [
+      "E29x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_contenitore"
+      }
+     ],
+     "fonte": "P3 [ICH Cap.39 r.120-127] (le battute [r.120]-[r.122] alla lettera, accorciate; gli spettri spariscono; la ritirata di giorni, a piedi); Amelia come voce in lei (PROPOSTA dello schema); «tranquilla»: il genere della battuta resta quello della fonte"
+    },
+    {
+     "id": "E29x3",
+     "parte": "I Campi rossi, la costa rossa di Restan, il confine",
+     "testo": "Arrivare alla costa e alle navi",
+     "riserva": "Sulla costa rossa di Restan l'artiglieria ti sbalza via, e le gambe non ti rispondono più. Allora è Amelia a camminare per te: il tuo corpo si alza, passo dopo passo, fino alla nave. Lì Knut ti mette in mano un filo. «Fallo toccare a tutti quelli che sono sulla tua nave.» «Se anche fosse la fine» dice Amelia, dentro di te, «so che abbiamo fatto di tutto per riuscirci, io sono qui, accanto a te… non lasciarmi andare fino alla fine.»",
+     "fase": "exploration",
+     "richiede": [
+      "E29x2"
+     ],
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_confine"
+      }
+     ],
+     "fonte": "P4-P5 [ICH Cap.39 r.164-181] (l'artiglieria la sbalza; Amelia cammina per lei; il filo di Knut [r.172] e Amelia [r.181]: le battute alla lettera)"
+    },
+    {
+     "id": "E29x4",
+     "testo": "Far toccare il filo a chi è sulla tua nave",
+     "riserva": "Lo fai passare di mano in mano: soldati di Ourobera, lupi, un ragazzo che non conosci. Ognuno lo tocca, e ognuno, dopo, ti guarda come se adesso ti appartenesse un poco.",
+     "fase": "exploration",
+     "richiede": [
+      "E29x3"
+     ],
+     "effetti": [],
+     "fonte": "L dello schema (a chi far toccare il filo [ICH Cap.39 r.172], scopo: chi la seguirà nel deserto); i nomi: PROPOSTA",
+     "scopo": "chi ti seguirà nel deserto"
+    },
+    {
+     "id": "E29x5",
+     "testo": "Prendere la lettera che Brynden ti porge",
+     "riserva": "Brynden legge una lettera e poi te la lascia. È di Saoirse. «Il fiordaliso fiorirà, che sia in questo o nel nuovo mondo non ha importanza, so che le nostre idee hanno forza e valore, ed è per questo che vi ho {scelto|scelta|scelto} come mio cavaliere {nome}.» In fondo, la firma: Saoirse Solsvart.",
+     "fase": "resolution",
+     "effetti": [
+      {
+       "scopri": "cavaliera_fact_lettera"
+      }
+     ],
+     "fonte": "L dello schema (leggere la lettera [ICH Cap.40 r.168-176], scopo: filo del finale 2: la battuta [r.170] alla lettera, accorciata; la firma [r.176])",
+     "scopo": "il filo del finale 2"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "lucas",
+     "apertura": "Lucas si scuote la sabbia dai capelli.",
+     "chiusura": "Lucas torna a guardare i Foa.",
+     "riserva_libera": "Lucas ride: «Non chiedere a me.»",
+     "argomenti": [
+      {
+       "id": "E29_lucas_1",
+       "testo": "Chiedere a Lucas dove siete",
+       "riserva": "«Vi ho rilocati in un server, ma non ho badato a quale.» Intorno, rottami e sabbia rossa; e uomini armati, i Foa, che non si fidano di te. «Questi ti fanno secca, stammi vicino.» Dentro di te Amelia risponde per te: «Provateci, e poi ve la vedrete con me.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "lucas",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "E29x3"
+       ],
+       "fonte": "P1 della 30 dello schema [ICH Cap.40 r.3-13] (le battute [r.4], [r.10], [r.11] alla lettera)",
+       "scopo": "il deserto dei Foa"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Passate il confine. Lucas attiva il ciondolo, e il mondo si spegne. Ti svegli nel deserto, fra i rottami, con i reverie del filo intorno a te; poi la battaglia delle sabbie rosse, e tu guidi la difesa come {un morto|una morta|un morto} che cammina, con le forze di lei. Qualcosa sotto la sabbia ti avvolge. È Knut: ti ha {legato|legata|legato} alla sua mente.",
+    "fonte": "P6 della 29 [ICH Cap.39 r.187-198] (il confine, il ciondolo di Lucas, il risveglio nel deserto fra i rottami) e P1-P3 della 30 dello schema [ICH Cap.40 r.3-13, r.37-58] (i reverie del filo; la battaglia delle sabbie rosse: guida la difesa, come una morta che cammina con le forze di Amelia; qualcosa sotto la sabbia la avvolge; la mente alveare di Knut)",
+    "esplora": [
+     {
+      "id": "E29d1",
+      "parte": "il deserto dei Foa e il Kynhjarta",
+      "testo": "Sentire Knut nella tua mente",
+      "riserva": "«Voi ora siete il mio esercito, arrendetevi a me o morirete.» La sua voce è dappertutto. «So cosa hai fatto a Ourobera, loro hanno Knytta per causa tua.» Le tue mani si muovono da sole, e davanti a te, mandato da lui, arriva Runi. Poi un'altra voce, la sua: «Öskudís, ribellati, smettila di essere uno strumento per gli altri. Così facendo morirai ancora prima di portare a termine la tua promessa.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cavaliera_fact_alveare"
+       },
+       {
+        "nota": "Nel deserto Knut ti usa come un'arma, e ti manda contro Runi.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3-P4 della 30 dello schema [ICH Cap.40 r.53-58, r.111-123] (le battute [r.53], [r.123], [r.113] alla lettera, accorciate; Knut la usa come arma; affronta Runi)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E29x1",
+     "E29x2",
+     "E29x3"
+    ],
+    "risoluzione": [
+     "E29d1"
+    ]
+   },
+   "required_beats": [
+    "E29x1",
+    "E29x2",
+    "E29x3",
+    "E29d1"
+   ],
+   "optional_beats": [
+    "E29x4",
+    "E29x5",
+    "E29_lucas_1"
+   ],
+   "riserva_libera": "Nel deserto il vento si porta via le domande.",
+   "uscita_fail_forward": "Se la scena si ferma, l'urlo che chiude la battaglia spezza comunque il legame, e il Kynhjarta ti aspetta."
+  },
+  "E30": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "E30x1",
+     "testo": "Osservare l’ultima immagine",
+     "riserva": "Al Kynhjarta, con le mani sull'albero, senti la voce di Gaia che si sta spegnendo. «In mezzo al buio vi sono tante luci, non resta che accenderle.»",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "apertura uguale per tutti i finali [ICH Cap.40 r.190-206] (tocca l'albero con le altre; nasce un nuovo pianeta; Gaia [r.200] alla lettera, la stessa battuta di «L'Hersir dei nodi» H30); schema «La cavaliera di cenere», scena 30 (finale): i finali si raccontano qui, con le varianti del contratto del finale (ending_contract), scelte dalla scelta della 29 (come «L'Hersir dei nodi» H30 e «Il filo di cenere» C30). (1) il prato di fiori [ICH Cap.40 r.208-247]; (2) il giuramento e (3) lo spettro: PROPOSTA (ICH.md r.91; nessuna riga della fonte li racconta). Con `finale` il motore chiude la partita all'ingresso. R nessuna verità nuova: tutte le verità sono già dette"
+    }
+   ],
+   "sviluppo": {
+    "testo": "La voce di Gaia si fa più debole al Kynhjarta. Il tuo legame e il finale scelto restano; l’ultima risposta appartiene a te, senza un giuramento aggiunto al posto tuo.",
+    "esplora": [],
+    "effetti": [],
+    "fonte": "apertura uguale per tutti i finali [ICH Cap.40 r.190-206] (tocca l'albero con le altre; nasce un nuovo pianeta; Gaia [r.200] alla lettera, la stessa battuta di «L'Hersir dei nodi» H30); schema «La cavaliera di cenere», scena 30 (finale): i finali si raccontano qui, con le varianti del contratto del finale (ending_contract), scelte dalla scelta della 29 (come «L'Hersir dei nodi» H30 e «Il filo di cenere» C30). (1) il prato di fiori [ICH Cap.40 r.208-247]; (2) il giuramento e (3) lo spettro: PROPOSTA (ICH.md r.91; nessuna riga della fonte li racconta). Con `finale` il motore chiude la partita all'ingresso. R nessuna verità nuova: tutte le verità sono già dette"
+   },
+   "sblocco": {
+    "sviluppo": [
+     "E30x1"
+    ],
+    "risoluzione": []
+   },
+   "required_beats": [
+    "E30x1"
+   ],
+   "optional_beats": []
+  }
+ }
+}

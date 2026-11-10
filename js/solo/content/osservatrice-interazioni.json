@@ -1,0 +1,3599 @@
+{
+ "formato": "rm-solo-interazioni/1",
+ "campaign_id": "osservatrice-trama",
+ "stato": "bozza",
+ "content_status": "proposed",
+ "nota": "«L'osservatrice dei fili»: docs/single-player/trame/SCHEMA_L_OSSERVATRICE_DEI_FILI.md (schema approvato il 30/10); ICH.md §2 r.98-127. Ogni frase riprende un fatto o una battuta della fonte (note di lettura rm-work/ich/letture/); nessun fatto nuovo se non segnato PROPOSTA.",
+ "regole": {},
+ "scene": {
+  "D01": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D01x1",
+     "testo": "Guardare lo stormo che arriva da est",
+     "riserva": "Da est arriva uno stormo di Errir. Sopra i campi si divide, e ogni gruppo prende una strada diversa nel cielo. Argus lo segue con gli occhi. «Messaggeri degli Asi… pensi che sia successo qualcosa di brutto?»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_errir"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.1 r.88-92] (la battuta di Argus [r.92])"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "argus",
+     "apertura": "Argus lavora alle frecce, e ogni tanto alza gli occhi al cielo.",
+     "chiusura": "Argus torna alle sue frecce.",
+     "riserva_libera": "Argus sorride, e non sa che cosa risponderti.",
+     "argomenti": [
+      {
+       "id": "D01_argus_1",
+       "testo": "Parlare con Argus mentre lavorate",
+       "riserva": "Argus ti sorride senza smettere di lavorare e ti mostra la freccia che ha appena finito, dritta e leggera. «Sono certo che questa può arrivare oltre le nuvole.» Vede il bello in ogni cosa, anche in una freccia.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "argus",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.1 r.89-90] (la battuta di Argus; dolce, vede il bello: note del PNG); testo PROPOSTA",
+       "scopo": "il legame che la 12 spezza (L dello schema)"
+      }
+     ]
+    },
+    {
+     "png": "astrid",
+     "apertura": "Astrid posa il cesto di frutta nell'erba, ancora senza fiato.",
+     "chiusura": "Astrid ti mette in mano un frutto e ride.",
+     "riserva_libera": "Astrid fa spallucce: «E che ne so io? Chiedilo all'hersir.»",
+     "argomenti": [
+      {
+       "id": "D01_astrid_1",
+       "testo": "Chiedere ad Astrid che cosa si dice al villaggio",
+       "riserva": "«Dovrai {farti bello|farti bella|sistemarti un po'}» ride Astrid. «Davanti all'hersir non puoi presentarti come una spunta frecce!»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "astrid",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "D01d1"
+       ],
+       "fonte": "[ICH Cap.1 r.105] (la battuta di Astrid, accorciata e resa nelle tre forme del genere)",
+       "scopo": "la sorella, che vuole che tu parta"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Dal sentiero del villaggio arriva di corsa Astrid, tua sorella, con un cesto di frutta e una notizia che non riesce a tenere per sé.",
+    "fonte": "P2 [ICH Cap.1 r.97-98]",
+    "esplora": [
+     {
+      "id": "D01d1",
+      "testo": "Ascoltare la notizia di Astrid",
+      "riserva": "«Che ci fate lì, voi due?» ride Astrid, e posa il cesto. Poi, d'un fiato: al villaggio dicono che l'hersir vuole convocare tutti i voluspà della regione. Argus si fa serio. «Che sia morto Occhio vispo? Il voluspà di fiducia dell'hersir?»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_convocazione"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.1 r.97-105] (la battuta di Argus [r.103]; la domanda di Astrid [r.98] resa senza genere)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D01x1"
+    ],
+    "risoluzione": [
+     "D01d1"
+    ]
+   },
+   "required_beats": [
+    "D01x1",
+    "D01d1"
+   ],
+   "optional_beats": [
+    "D01_argus_1",
+    "D01_astrid_1"
+   ],
+   "riserva_libera": "Nei campi ti rispondono soltanto la brezza e il canto degli uccelli.",
+   "uscita_fail_forward": "Se la scena si ferma, Astrid arriva comunque dal villaggio con la sua notizia."
+  },
+  "D02": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D02x1",
+     "testo": "Ascoltare tuo padre a cena",
+     "riserva": "«{nome}, {sei stato convocato|sei stata convocata|ti vogliono} ai piedi del monte sacro: dovrai partire domani mattina, all'alba.» Tua madre gli posa una mano sul braccio. «È un grande onore per noi. A quanto pare i voluspà della regione sono stati richiamati per diventare la voce degli Skrykru.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_cena"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.1 r.110-111] (le battute del padre e della madre; la forma neutra «ti vogliono» evita il genere)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "padre",
+     "apertura": "Tuo padre ti guarda dall'altra parte della tavola, orgoglioso e preoccupato insieme.",
+     "chiusura": "Tuo padre torna alla sua cena.",
+     "riserva_libera": "Tuo padre scuote la testa, piano: «Questo non lo so.»",
+     "argomenti": [
+      {
+       "id": "D02_padre_1",
+       "testo": "Chiedere a tuo padre che cosa pensa della convocazione",
+       "riserva": "«Sono certo che i tuoi sogni ci guideranno oltre le nuvole{, mio caro|, mia cara|}. Non temere: le nostre ali saranno sempre sulle tue spalle, per alleggerire i tuoi passi.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "padre",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "D02x1"
+       ],
+       "fonte": "[ICH Cap.1 r.112] (la battuta del padre, con il vocativo nelle tre forme del genere)",
+       "scopo": "la famiglia che ti lascia andare"
+      }
+     ]
+    },
+    {
+     "png": "inger",
+     "apertura": "Tua madre Inger ti versa da bere e ti sorride.",
+     "chiusura": "Tua madre ti accarezza i capelli e si rimette a mangiare.",
+     "riserva_libera": "Tua madre ti sorride: «Lo saprai al monte.»",
+     "argomenti": [
+      {
+       "id": "D02_inger_1",
+       "testo": "Chiedere a tua madre dei voluspà della regione",
+       "riserva": "«Saranno la voce degli Skrykru» ripete tua madre, piano, come se volesse imparare la frase a memoria. «È un grande onore per noi.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "inger",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "D02x1"
+       ],
+       "fonte": "[ICH Cap.1 r.111] (la battuta della madre); la ripetizione a memoria: PROPOSTA",
+       "scopo": "la voce degli Skrykru (02-27)"
+      }
+     ]
+    },
+    {
+     "png": "skuld",
+     "apertura": "La donna fiore ti guarda con calma, con il suo fiore luminoso fra le mani.",
+     "chiusura": "La donna fiore abbassa gli occhi sul suo fiore.",
+     "riserva_libera": "La donna fiore sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "D02_skuld_1",
+       "testo": "Chiedere alla donna fiore del wird",
+       "riserva": "«I fili del wird si congiungono» ripete la donna fiore, e guarda il fiore nella tua mano. «Il vostro destino è legato. Il futuro vi attende.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "skuld",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "D02d1"
+       ],
+       "fonte": "[ICH Cap.1 r.220] (la battuta della donna fiore, ripetuta)",
+       "scopo": "il messaggio del wird"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ti alzi per uscire, e un'emicrania fortissima ti piega in due. Cadi a terra; le voci della tua famiglia si allontanano.",
+    "fonte": "P2 [ICH Cap.1 r.114]",
+    "esplora": [
+     {
+      "id": "D02d1",
+      "testo": "Lasciarti andare alla premonizione",
+      "riserva": "Vedi la luna, e il metallo. Torri con occhi che bruciano; sagome che bruciano dentro mostri di metallo; il vuoto, e la fame. Due occhi ciano. Una bimba con un ciondolo. Una figura che supplica le ombre. Un labirinto, e una lancia spezzata con due corde annodate. Alberi luminosi, corvi. Poi un messaggero degli Asi, con un fiore: «Fiori del nuovo mondo germogliano, concedimi di raggiungerti. Il tuo volo sarà come un canto per il futuro di coloro che sentono la voce della vita.» Ti svegli con un fiore luminoso in mano, fra i tribali che ascoltano in silenzio la tua melodia. La folla si apre, e una donna viene verso di te con lo stesso fiore. «Buongiorno {nome}, sono qui per consegnarti un messaggio. È giunto il momento che i fili del wird si congiungano: il vostro destino è legato… il futuro vi attende.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_premonizione"
+       },
+       {
+        "scopri": "osservatrice_fact_donna_fiore"
+       }
+      ],
+      "fonte": "P3 e P4 [ICH Cap.1 r.205-220] (le immagini della premonizione, la frase del messaggero [r.216], il risveglio, le battute della donna fiore [r.218, r.220]); le immagini restano senza spiegazione (R dello schema)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D02x1"
+    ],
+    "risoluzione": [
+     "D02d1"
+    ]
+   },
+   "required_beats": [
+    "D02x1",
+    "D02d1"
+   ],
+   "optional_beats": [
+    "D02_padre_1",
+    "D02_inger_1",
+    "D02_skuld_1"
+   ],
+   "riserva_libera": "Al villaggio tutti parlano della convocazione, e nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, l'emicrania arriva comunque, e con lei la premonizione."
+  },
+  "D03": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D03x1",
+     "testo": "Ascoltare la tua famiglia che discute",
+     "riserva": "Tuo padre cammina avanti e indietro. «Forse è il caso che tu non vada: non sei nel pieno delle forze, e temo che potresti stare male di nuovo.» Astrid scuote la testa: non se ne parla, devi partire. Tua madre vi guarda tutti e due. «Penso che questa decisione spetti a {nome}. Ora lasciamo che ci pensi qualche minuto.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_partenza"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.2 r.69-72] (le battute del padre [r.70] e di Inger [r.72], quest'ultima resa senza genere)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "astrid",
+     "apertura": "Astrid si sporge verso di te, impaziente.",
+     "chiusura": "Astrid torna a sedersi in fondo al letto.",
+     "riserva_libera": "Astrid fa spallucce: «Io so solo che devi partire.»",
+     "argomenti": [
+      {
+       "id": "D03_astrid_1",
+       "testo": "Chiedere ad Astrid se è passato qualcuno",
+       "riserva": "«Argus» dice Astrid, con un sorriso furbo. «Ha chiesto di te.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "astrid",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.2 r.69-76] (Argus ha chiesto di lei); il sorriso furbo: PROPOSTA",
+       "scopo": "Argus, che la accompagnerà"
+      }
+     ]
+    },
+    {
+     "png": "padre",
+     "apertura": "Tuo padre si ferma accanto al letto.",
+     "chiusura": "Tuo padre torna alla finestra.",
+     "riserva_libera": "Tuo padre sospira, e non risponde.",
+     "argomenti": [
+      {
+       "id": "D03_padre_1",
+       "testo": "Rassicurare tuo padre",
+       "riserva": "Tuo padre ti ascolta, poi ti posa una mano sulla spalla. «Le nostre ali saranno sempre sulle tue spalle.» Non dice altro, ma smette di camminare avanti e indietro.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "padre",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "D03x1"
+       ],
+       "fonte": "[ICH Cap.1 r.112] (la battuta del padre, ripresa); testo PROPOSTA",
+       "scopo": "la famiglia che ti lascia andare"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Tua madre fa uscire tutti dalla stanza e chiude la porta. Resti {solo|sola|in silenzio}, con il fiore luminoso sul cuscino accanto a te.",
+    "fonte": "P1 [ICH Cap.2 r.72] (la madre la lascia pensare); il fiore sul cuscino: PROPOSTA (il fiore luminoso della 02 [ICH Cap.1 r.217])",
+    "esplora": [
+     {
+      "id": "D03d1",
+      "testo": "Pensare alla convocazione",
+      "riserva": "Il monte sacro, l'hersir, la voce degli Skrykru. I fili del wird si congiungono, ha detto la donna fiore. Sai che la decisione è tua, e di nessun altro.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "La decisione di partire per il monte sacro è tua.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P* dello schema [ICH Cap.2 r.72]; la battuta della donna fiore [ICH Cap.1 r.220], ripresa"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D03x1"
+    ],
+    "risoluzione": [
+     "D03d1"
+    ]
+   },
+   "required_beats": [
+    "D03x1",
+    "D03d1"
+   ],
+   "optional_beats": [
+    "D03_astrid_1",
+    "D03_padre_1"
+   ],
+   "riserva_libera": "Nessuno ti risponde: in casa tutti guardano te.",
+   "uscita_fail_forward": "Se la scena si ferma, la convocazione dell'hersir arriva comunque, e Argus viene a prenderti."
+  },
+  "D04": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D04x1",
+     "testo": "Guardare i dipinti di Kuss",
+     "riserva": "Sono i suoi sogni, dipinti. Linee rosse su un fondo nero. Le bestie: un quadrupede che uccide un serpente, il sangue che scorre verso un cervo, dischi di metallo che cadono verso nove figure. Un sole nero, con un triscele, sopra una terra gelida. Un contenitore di metallo: un cilindro con scritte verdognole e gialle, una strisciata di mano nella polvere, e dentro un volto deformato. L'ultimo è un fiore nel vuoto, che illumina una rete fra pietre luminose. Kuss li tiene davanti a te uno per uno, e non dice niente: non ha la lingua.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_dipinti"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.3 r.3-10] (i cinque dipinti come li descrivono le note; Kuss muto [Cap.2 r.160])"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "kuss",
+     "apertura": "Kuss ti guarda e sorride, con le mani macchiate di tempera.",
+     "chiusura": "Kuss torna ai suoi fogli.",
+     "riserva_libera": "Kuss scuote la testa, piano: non può risponderti a parole.",
+     "argomenti": [
+      {
+       "id": "D04_kuss_1",
+       "testo": "Chiedere a Kuss che cosa vuol dire il fiore del futuro",
+       "riserva": "Kuss guarda il dipinto del fiore nel vuoto, poi guarda te. Ti indica, e indica il fiore; poi alza le spalle, come chi non sa dire di più.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "kuss",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "D04x1"
+       ],
+       "fonte": "il Fiore del futuro [ICH Cap.3 r.3-10]; il gesto: PROPOSTA (Kuss parla con i dipinti: note del PNG); R (a): il silenzio di Kuss resta un enigma",
+       "scopo": "il primo segno di (a) (L dello schema)"
+      }
+     ]
+    },
+    {
+     "png": "argus",
+     "apertura": "Argus si siede accanto a te, vicino al fuoco.",
+     "chiusura": "Argus ti dà una pacca sulla spalla e torna al fuoco.",
+     "riserva_libera": "Argus sorride: «Questo lo saprai tu meglio di me.»",
+     "argomenti": [
+      {
+       "id": "D04_argus_1",
+       "testo": "Chiedere ad Argus che cosa pensa della prova",
+       "riserva": "«Ti spaventa metterti alla prova con loro?» ti chiede Argus. «Tutti siamo costantemente messi alla prova: la vita ce lo richiede. Io mi limito a vedere il bello di questo mondo, ma so che tu hai un'idea diversa dalla mia per il nostro clan.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "argus",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.3 r.53, r.56] (le battute di Argus)",
+       "scopo": "il legame con Argus"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Quella notte sogni. Scali una vetta; un'arne ti attacca, poi una massa nera ti travolge, e muori. Accanto a te c'è un uccello più vecchio, morto da tempo, e delle uova schiuse. Ti svegli con il fiato corto, e Argus è già sveglio.",
+    "fonte": "P2 [ICH Cap.3 r.51-52] (il sogno dell'arne come lo riassumono le note)",
+    "esplora": [
+     {
+      "id": "D04d1",
+      "testo": "Ascoltare Argus, dopo il sogno",
+      "riserva": "Argus ti ascolta e scuote la testa. «Non li vincerai con la forza, ma hai carisma da vendere: portali dalla tua parte.» Poi sorride. «E prima o poi dovrai alzare la voce, e far sentire le tue parole dalla cima della montagna.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_arne_sogno"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.3 r.54, r.57] (le battute di Argus; la prima resa senza genere)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D04x1"
+    ],
+    "risoluzione": [
+     "D04d1"
+    ]
+   },
+   "required_beats": [
+    "D04x1",
+    "D04d1"
+   ],
+   "optional_beats": [
+    "D04_kuss_1",
+    "D04_argus_1"
+   ],
+   "riserva_libera": "Sulla strada del monte sacro ti risponde soltanto il vento.",
+   "uscita_fail_forward": "Se la scena si ferma, la notte arriva comunque, e con lei il sogno."
+  },
+  "D05": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D05x1",
+     "testo": "Ascoltare l'hersir che ferma le suppliche",
+     "riserva": "L'hersir alza una mano, e la folla tace. «Skrykru, calmate le vostre paure: questi voluspà sono qui per raccogliere le piume del mio fidato amico e consigliere, Occhio vispo.» Accanto a lui c'è un vecchio voluspà, malato, con le dita delle mani unite: è vivo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_folla"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.3 r.101-102] (la battuta dell'hersir; Occhio vispo vivo, malato, le dita unite)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "icharn",
+     "apertura": "L'hersir degli Skrykru vi guarda uno per uno, fiero.",
+     "chiusura": "L'hersir torna a guardare la montagna.",
+     "riserva_libera": "L'hersir sorride: «Lo saprai in cima, mio fedele errir.»",
+     "argomenti": [
+      {
+       "id": "D05_icharn_1",
+       "testo": "Chiedere all'hersir di Occhio vispo",
+       "riserva": "«È il mio fidato amico e consigliere» dice l'hersir, e posa una mano sulla spalla del vecchio. «Le sue piume voleranno con voi.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "icharn",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "D05x1"
+       ],
+       "fonte": "[ICH Cap.3 r.101] (la battuta dell'hersir, ripresa); «Le sue piume voleranno con voi»: PROPOSTA",
+       "scopo": "l'hersir e il suo consigliere"
+      }
+     ]
+    },
+    {
+     "png": "occhio_vispo",
+     "apertura": "Occhio vispo ti guarda con occhi stanchi, le dita delle mani unite.",
+     "chiusura": "Occhio vispo chiude gli occhi.",
+     "riserva_libera": "Occhio vispo non parla: ti guarda, e basta.",
+     "argomenti": [
+      {
+       "id": "D05_occhio_1",
+       "testo": "Avvicinarti a Occhio vispo",
+       "riserva": "Il vecchio voluspà non parla. Ti guarda a lungo, e per un momento ti sembra che sorrida.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "occhio_vispo",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "D05x1"
+       ],
+       "fonte": "[ICH Cap.3 r.101-102] (Occhio vispo malato, non parla: note del PNG); il sorriso: PROPOSTA",
+       "scopo": "il consigliere dell'hersir"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Occhio vispo consegna le sue piume all'hersir. «Ora entrate nella corona del sole» dice l'hersir, «raccogliete la vostra piuma, e giurate a voi stessi che il vostro sguardo sarà in grado di volare oltre le nuvole.»",
+    "fonte": "P2 [ICH Cap.3 r.102-104] (le piume e la battuta dell'hersir [r.104])",
+    "esplora": [
+     {
+      "id": "D05d1",
+      "testo": "Entrare nel cerchio e raccogliere la tua piuma",
+      "riserva": "Nel rito del cerchio ci sono quattro piume. Arne va per prima: raccoglie la sua, bacia la mano dell'hersir e gli sorride. Poi tocca agli altri, e l'hersir sussurra qualcosa a ognuno. Quando è il tuo turno si china verso di te. «Sarò fiero di averti al mio fianco. Vola oltre te stessa, e raggiungi la cima fino al sole.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_piume"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.3 r.104-108] (il rito, le quattro piume, Arne per prima, il sussurro dell'hersir [r.108])"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D05x1"
+    ],
+    "risoluzione": [
+     "D05d1"
+    ]
+   },
+   "required_beats": [
+    "D05x1",
+    "D05d1"
+   ],
+   "optional_beats": [
+    "D05_icharn_1",
+    "D05_occhio_1"
+   ],
+   "riserva_libera": "Ai piedi del monte la folla è troppo rumorosa: nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, l'hersir ferma comunque le suppliche e comincia il rito delle piume."
+  },
+  "D06": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D06x1",
+     "testo": "Conoscere gli altri voluspà",
+     "riserva": "Al mattino, presso il cammino del sole, vedi gli altri voluspà da vicino. Arne, con il rosso e le due linee gialle sul viso. Iska, con le guance bluastre sfumate come un arcobaleno. Mira, con il celeste e un cerchio giallo sulla fronte. Rodi, con il giallo sugli occhi e punti rossi e azzurri. E Kuss, con le sue macchie di tempera.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_arn"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.4 r.68-73] (i voluspà e i loro colori sul viso come li descrivono le note)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "iska",
+     "apertura": "Iska ti sorride, con il suo bastone dal rampino appoggiato alla spalla.",
+     "chiusura": "Iska torna a controllare il suo rampino.",
+     "riserva_libera": "Iska scuote la testa, gentile: «Non lo so.»",
+     "argomenti": [
+      {
+       "id": "D06_iska_1",
+       "testo": "Salutare Iska",
+       "riserva": "«Auguri a tutti per la prova» dice Iska, e lo dice a te come a ognuno degli altri, gentile.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "iska",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.4 r.107] (la battuta di Iska)",
+       "scopo": "Iska, che nella 07 sta morendo"
+      }
+     ]
+    },
+    {
+     "png": "arne",
+     "apertura": "Arne ti guarda dall'alto in basso, con l'arco già in mano.",
+     "chiusura": "Arne ti volta le spalle e guarda la cascata.",
+     "riserva_libera": "Arne sbuffa: «Pensa alla prova.»",
+     "argomenti": [
+      {
+       "id": "D06_arne_1",
+       "testo": "Parlare con Arne prima della prova",
+       "riserva": "Arne ti squadra, poi guarda la cascata. «Ci vediamo in cima.» Non è un augurio: è una sfida.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "arne",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.4 r.108] (la battuta di Arne); «non è un augurio: è una sfida»: PROPOSTA (Arne la schernisce, note)",
+       "scopo": "il legame con Arne"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ai piedi della cascata Icharn Piumargentea vi raduna. «…E Agilaz disse a suo figlio: non temere la vastità del cielo, non temere di cadere da esso, poiché le tue ali sono forti nonostante il viaggio le abbia lacerate.»",
+    "fonte": "P3 [ICH Cap.4 r.101] (il racconto di Agilaz)",
+    "esplora": [
+     {
+      "id": "D06d1",
+      "testo": "Ascoltare le regole della prova",
+      "riserva": "«Avete nove giorni e nove ore per raggiungere il picco della montagna» dice Icharn. «Chi di voi è il vincitore di questa prova probabilmente sa già di esserlo, ma si dovrà muovere senza arroganza e presunzione, perché il suo destino avvenga. Perciò sii impavido, e compi il tuo destino, mio fedele errir.» Iska augura a tutti buona fortuna; Arne ride di lei, e corre per prima verso la cascata.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_prova"
+       }
+      ],
+      "fonte": "P3, snodo fisso dell'Atto I [ICH Cap.4 r.102-108] (le battute di Icharn [r.102-103]; Iska e Arne [r.107-108]); ICH.md r.119"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D06x1"
+    ],
+    "risoluzione": [
+     "D06d1"
+    ]
+   },
+   "required_beats": [
+    "D06x1",
+    "D06d1"
+   ],
+   "optional_beats": [
+    "D06_iska_1",
+    "D06_arne_1"
+   ],
+   "riserva_libera": "Sul monte sacro ti risponde soltanto il rumore della cascata.",
+   "uscita_fail_forward": "Se la scena si ferma, Icharn fissa comunque la prova, e Arne corre per prima verso la cascata."
+  },
+  "D07": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D07x1",
+     "testo": "Guardare la salita sui piloni",
+     "riserva": "Sui piloni Kuss allunga una mano per trattenere Arne. Arne si volta e gli pianta un gomito nel petto: Kuss barcolla sull'orlo e quasi cade. È Mira ad afferrarlo per il braccio e a tirarlo indietro.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_partenza_prova"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.5 r.51-56] (Kuss cerca di fermare Arne, la gomitata, Mira lo aiuta)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "kuss",
+     "apertura": "Kuss si massaggia il petto dove Arne l'ha colpito, e ti guarda.",
+     "chiusura": "Kuss riprende a salire.",
+     "riserva_libera": "Kuss scuote la testa: non può risponderti a parole.",
+     "argomenti": [
+      {
+       "id": "D07_kuss_1",
+       "testo": "Chiedere a Kuss perché ha cercato di fermare Arne",
+       "riserva": "Kuss non risponde. Indica Arne, poi la cima, poi abbassa la mano. Non capisci se volesse fermarla o soltanto arrivare prima di lei.",
+       "effetti": [],
+       "richiede": [
+        "D07x1"
+       ],
+       "fonte": "[ICH Cap.5 r.51-56] (Kuss cerca di fermare Arne); il gesto: PROPOSTA; R (a): resta un enigma (schema 07-08)",
+       "scopo": "un segno di (a)"
+      }
+     ]
+    },
+    {
+     "png": "mira",
+     "apertura": "Mira stringe la sua sacca di cibo, ancora senza fiato.",
+     "chiusura": "Mira torna a guardare la salita.",
+     "riserva_libera": "Mira si guarda intorno, disorientata: non lo sa.",
+     "argomenti": [
+      {
+       "id": "D07_mira_1",
+       "testo": "Chiedere a Mira come sta",
+       "riserva": "Mira si guarda intorno, come se non sapesse più da che parte è la cima. Poi ti offre un pezzo di pane dalla sua sacca.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "mira",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "D07x1"
+       ],
+       "fonte": "[ICH Cap.5 r.49-57] (Mira disorientata, la sacca di cibo); il pane: PROPOSTA",
+       "scopo": "Mira, che nella 08 è sotto le macerie"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ti perdi di vista con Kuss. Cala la notte sul monte sacro, e sei {solo|sola|lontano dagli altri} fra gli alberi, quando senti qualcuno piangere.",
+    "fonte": "P2 [ICH Cap.5 r.60-61] (separata da Kuss; il tiro di fortuna degli incontri notturni: qui il caso che la fa trovare)",
+    "esplora": [
+     {
+      "id": "D07d1",
+      "testo": "Seguire il pianto nel buio",
+      "riserva": "È Arne. È seduta contro una roccia, con l'arco sulle ginocchia, e parla a qualcuno che non c'è. «Mamma, non so come fare con loro… devo vincere, o moriranno di fame.» Si stringe le ginocchia. «Come faccio a vincere, se sanno già tutto? Mi manchi…»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_pianto"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.5 r.62-64] (le battute di Arne)"
+     },
+     {
+      "id": "D07d2",
+      "testo": "Seguire il lamento più in basso, nel bosco",
+      "riserva": "Più in basso, fra le radici, c'è Iska. Il suo bastone con il rampino è spezzato accanto a lei; si tiene una mano sul petto, e respira a fatica. Un colpo al cuore: sta morendo.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_iska"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.5 r.66] (Iska che sta morendo per un colpo al cuore); il bastone spezzato: PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D07x1"
+    ],
+    "risoluzione": [
+     "D07d1",
+     "D07d2"
+    ]
+   },
+   "required_beats": [
+    "D07x1",
+    "D07d1",
+    "D07d2"
+   ],
+   "optional_beats": [
+    "D07_kuss_1",
+    "D07_mira_1"
+   ],
+   "riserva_libera": "Sul monte sacro nessuno ti risponde: ognuno pensa alla sua salita.",
+   "uscita_fail_forward": "Se la scena si ferma, la notte arriva comunque, e con lei il pianto di Arne e il lamento di Iska."
+  },
+  "D08": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D08x1",
+     "testo": "Salire dietro ad Arne",
+     "riserva": "Sali dietro ad Arne, appiglio dopo appiglio. Sotto di te Mira arranca con la sua sacca; più in basso, Kuss guadagna terreno, e non guarda te: guarda Arne.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Kuss sale verso Arne, e non guarda nessun altro.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.5 r.68] (la fase finale della prova, Kuss contro Arne); testo PROPOSTA"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "arne",
+     "apertura": "Arne si ferma un momento su una cengia, e ti guarda salire.",
+     "chiusura": "Arne riprende a salire.",
+     "riserva_libera": "Arne non ha fiato per risponderti.",
+     "argomenti": [
+      {
+       "id": "D08_arne_1",
+       "testo": "Avvertire Arne che Kuss la sta raggiungendo",
+       "riserva": "Arne guarda in basso, vede Kuss, e stringe la mascella. «Che ci provi.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "arne",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "D08x1"
+       ],
+       "fonte": "Kuss contro Arne [ICH Cap.5 r.68]; battuta PROPOSTA (Arne combattiva, sfide brevi: note del PNG)",
+       "scopo": "il legame con Arne"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Kuss si lancia di nuovo contro Arne. Nello stesso momento la roccia sotto Mira cede: senti il rumore della frana, e quando ti volti Mira è sotto le macerie.",
+    "fonte": "P1 [ICH Cap.5 r.68-69] (Kuss contro Arne; Mira sotto le macerie)",
+    "esplora": [
+     {
+      "id": "D08d1",
+      "testo": "Metterti fra Kuss e Arne",
+      "riserva": "Ti butti fra loro due. Kuss alza la mano contro di te: dovrai fermarlo tu.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_frana"
+       }
+      ],
+      "fonte": "L dello schema (fermare Kuss o Arne) [ICH Cap.5 r.68-69]: come combattere è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D08x1"
+    ],
+    "risoluzione": [
+     "D08d1"
+    ]
+   },
+   "required_beats": [
+    "D08x1",
+    "D08d1"
+   ],
+   "optional_beats": [
+    "D08_arne_1"
+   ],
+   "riserva_libera": "Sulla parete nessuno ha fiato per risponderti.",
+   "uscita_fail_forward": "Se la scena si ferma, l'alba del decimo giorno arriva comunque, e con lei la fine della prova."
+  },
+  "D09": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D09x1",
+     "testo": "Lasciarti portare dalla visione",
+     "riserva": "Davanti a te c'è un guscio di metallo, e dentro una persona. Sul vetro vedi riflessa una donna sulla trentina, dai capelli scuri, con una cartelletta fra le mani: la sua mente è piena di pensieri, e tu li senti come se fossero tuoi. Una donna bionda le porge un bicchiere. «Prego, faccia pure le sue domande, signorina Epos: sarò lieta di risponderle.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_visione"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.5 r.117-118] (la visione e la battuta della donna bionda [r.118]); R (b): la donna resta «signorina Epos»"
+    },
+    {
+     "id": "D09x2",
+     "testo": "Guardare la capsula nella visione",
+     "riserva": "Un uomo accoglie la signorina Epos con un sorriso da cerimonia e le parla di un programma. «Un cielo nero e una terra gelida sono ciò che meritiamo per essere stati come Icaro. Ma un nuovo mondo ci attende, mentre la morte accompagna la fine del nostro ciclo, e con esso i suoi errori.» Dietro di loro, in una capsula piena di liquido, dorme un ragazzo dai capelli biondo platino, con parti del viso di metallo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Nella visione un uomo parla alla signorina Epos di un programma; in una capsula dorme un ragazzo.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P3 (DEDOTTO dallo schema: la visione continua) [ICH Cap.6 r.3, r.25, r.41-44] (l'uomo che accoglie la signorina Epos; la frase del programma [r.25]; il ragazzo nella capsula, senza nome); il sorriso da cerimonia: PROPOSTA (da portavoce, note del PNG)",
+     "scopo": "la visione continua (DEDOTTO)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "icharn",
+     "apertura": "L'hersir vi guarda uno per uno, alla luce del fuoco.",
+     "chiusura": "L'hersir torna a guardare il fuoco.",
+     "riserva_libera": "L'hersir resta in silenzio, pensieroso.",
+     "argomenti": [
+      {
+       "id": "D09_icharn_1",
+       "testo": "Raccontare all'hersir la visione",
+       "riserva": "L'hersir ascolta del guscio di metallo e della donna con la cartelletta senza interromperti. «Occhio vispo mi ha avvisato di futuri pericoli» dice alla fine, piano. «Forse li hai visti anche tu.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "icharn",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "D09x1"
+       ],
+       "fonte": "[ICH Cap.4 r.75] (la battuta dell'hersir, ripresa); «Forse li hai visti anche tu»: PROPOSTA",
+       "scopo": "la visione detta all'hersir"
+      }
+     ]
+    },
+    {
+     "png": "kuss",
+     "apertura": "Kuss siede vicino al fuoco, con un livido sul viso fra le macchie di tempera.",
+     "chiusura": "Kuss torna a guardare le fiamme.",
+     "riserva_libera": "Kuss scuote la testa: non può risponderti a parole.",
+     "argomenti": [
+      {
+       "id": "D09_kuss_1",
+       "testo": "Sederti accanto a Kuss",
+       "riserva": "Kuss ti fa posto accanto al fuoco. Tira fuori un foglio e ci traccia sopra, con il dito sporco di tempera, un cerchio nero. Poi lo piega e se lo rimette in tasca.",
+       "effetti": [],
+       "fonte": "Kuss parla con i dipinti (note del PNG; il sole nero dei suoi dipinti [ICH Cap.3 r.3-10]); il gesto: PROPOSTA; R (a): resta un enigma",
+       "scopo": "il silenzio di Kuss (R (a))"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ti svegli fra i voluspà, sul monte sacro. Intorno al fuoco si festeggia la fine della prova; poi l'hersir si alza, e tutti tacciono.",
+    "fonte": "P4 [ICH Cap.6 r.46-50] (tra i voluspà; i festeggiamenti)",
+    "esplora": [
+     {
+      "id": "D09d1",
+      "testo": "Ascoltare l'hersir",
+      "riserva": "«Bene» dice l'hersir. «Chi di voi sarà il messaggero di luce che guiderà la nazione attraverso la sua parola e i suoi consigli?» Nessuno risponde subito. Arne guarda il fuoco; Kuss guarda te.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_messaggero"
+       }
+      ],
+      "fonte": "P4 [ICH Cap.6 r.48] (la battuta di Icharn); gli sguardi: PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D09x1"
+    ],
+    "risoluzione": [
+     "D09d1"
+    ]
+   },
+   "required_beats": [
+    "D09x1",
+    "D09d1"
+   ],
+   "optional_beats": [
+    "D09x2",
+    "D09_icharn_1",
+    "D09_kuss_1"
+   ],
+   "riserva_libera": "Intorno al fuoco si festeggia, e nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, l'hersir decide comunque i ruoli dei voluspà."
+  },
+  "D10": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D10x1",
+     "testo": "Cercare la tua famiglia fra la gente",
+     "riserva": "Le famiglie dei voluspà vi vengono incontro, e tutte dicono la stessa cosa, con lo stesso sorriso: «Dov'è il vincitore?» Lo ripetono come una tiritera, anche dopo che hai risposto. Argus ride e saluta, Arne cerca i suoi: nessuno dei due se ne accorge. Solo Astrid è come sempre, e ti stringe forte.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_ritorno"
+      },
+      {
+       "nota": "Al ritorno le famiglie dei voluspà ripetono le stesse parole, come una tiritera; Arne e Argus non se ne accorgono.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.7 r.21-28] (le famiglie «mezzo buggate», la battuta [r.24]; Arne e Argus non se ne accorgono; la sorella [r.27]); «come una tiritera»: la «tiritera del voluspà» dei genitori [ICH Cap.8 r.54]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "astrid",
+     "apertura": "Astrid non ti lascia la mano.",
+     "chiusura": "Astrid corre a dirlo agli altri.",
+     "riserva_libera": "Astrid ride, e parla d'altro.",
+     "argomenti": [
+      {
+       "id": "D10_astrid_1",
+       "testo": "Raccontare ad Astrid della prova",
+       "riserva": "Astrid ascolta a bocca aperta della cascata e del picco. «Lo sapevo che ce l'avresti fatta» dice. «Adesso sei la voce degli Skrykru.» Poi si guarda intorno, e abbassa la voce. «Però mamma e papà sono strani, da quando sei partita.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "astrid",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "la sorella le fa i complimenti [ICH Cap.7 r.27]; la voce degli Skrykru [ICH Cap.1 r.111]; i genitori «mezzo buggati» [ICH Cap.7 r.21-26]; le battute: PROPOSTA (vivace e chiacchierona, note del PNG)",
+       "scopo": "il legame con la famiglia"
+      }
+     ]
+    },
+    {
+     "png": "padre",
+     "apertura": "Tuo padre ti guarda scendere da cavallo, con un sorriso che non cambia mai.",
+     "chiusura": "Tuo padre torna fra la gente.",
+     "riserva_libera": "«Dov'è il vincitore?» ripete tuo padre, sorridendo.",
+     "argomenti": [
+      {
+       "id": "D10_padre_1",
+       "testo": "Chiedere a tuo padre come sta",
+       "riserva": "«Dov'è il vincitore?» dice tuo padre, e ti abbraccia. Gli rispondi, e lui ti guarda con lo stesso sorriso. «Dov'è il vincitore?»",
+       "effetti": [
+        {
+         "nota": "Tuo padre ripete la stessa domanda, come se non ti avesse sentito.",
+         "categoria": "indizio"
+        }
+       ],
+       "fonte": "la battuta delle famiglie [ICH Cap.7 r.24]; il padre «mezzo buggato» (note del PNG [ICH Cap.7 r.21-26]): il perché la fonte non lo spiega",
+       "scopo": "le famiglie cambiate"
+      }
+     ]
+    },
+    {
+     "png": "arne",
+     "apertura": "Arne ti cammina accanto, con il cavallo per le redini e l'arco in spalla.",
+     "chiusura": "Arne guarda la strada davanti a sé.",
+     "riserva_libera": "Arne alza le spalle: non lo sa.",
+     "argomenti": [
+      {
+       "id": "D10_arne_1",
+       "testo": "Chiedere ad Arne del boga",
+       "riserva": "«Dovrai imparare il boga» dice Arne, come se fosse già deciso. Ce ne sono di tre tipi, e scegli tu quale; il suo è quello da guerriero, e l'ha fatto con le sue mani. Te lo fa tenere un momento: pesa più di quanto credevi.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "arne",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L dello schema (scegliere il boga fra tre tipi, scopo: il suo stile d'arco) [ICH Cap.7 r.62-63] (Arne: dovrà imparare il boga, tre tipi, sceglie lei; il suo da guerriero, fatto da sé); il peso: PROPOSTA",
+       "scopo": "il suo stile d'arco"
+      },
+      {
+       "id": "D10_arne_2",
+       "testo": "Chiedere ad Arne dei suoi fratelli",
+       "riserva": "«Kaere e Vetle» dice Arne. «Li ho cresciuti io, quasi.» Poi tace a lungo. «Eppure certe notti sogno altri due nomi, e mi sembrano più miei.»",
+       "effetti": [],
+       "richiede": [
+        "D10x1"
+       ],
+       "fonte": "[ICH Cap.7 r.64-66] (Sasha e Andre, che sente come i suoi veri fratelli più di Kaere e Vetle); «Li ho cresciuti io, quasi»: PROPOSTA (ama i fratelli quasi per forza [ICH Cap.8 r.98])",
+       "scopo": "i due nomi di Arne"
+      }
+     ]
+    },
+    {
+     "png": "argus",
+     "apertura": "Argus ti viene incontro con una manciata di frecce nuove.",
+     "chiusura": "Argus torna alle sue frecce.",
+     "riserva_libera": "Argus sorride: non lo sa.",
+     "argomenti": [
+      {
+       "id": "D10_argus_1",
+       "testo": "Raccontare ad Argus il volo dalla cima",
+       "riserva": "Argus ti ascolta con gli occhi al cielo, come quando guardava gli Errir. «Allora l'hai fatta sentire, la tua voce» dice. «Dalla cima della montagna.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "argus",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "Argus [ICH Cap.3 r.57] (far sentire la sua voce dalla cima della montagna), [ICH Cap.1 r.88-92] (gli Errir); la battuta: PROPOSTA",
+       "scopo": "il legame che la 12 spezza"
+      }
+     ]
+    },
+    {
+     "png": "bestia_nera",
+     "apertura": "Fra le fiamme, la bestia nera ti fissa con i suoi occhi luminosi.",
+     "chiusura": "Gli occhi della bestia si chiudono fra le fiamme.",
+     "riserva_libera": "«Vedo» dice la bestia, e non dice altro.",
+     "argomenti": [
+      {
+       "id": "D10_bestia_1",
+       "testo": "Chiedere alla bestia chi è",
+       "riserva": "La bestia non risponde alla domanda. «Le fiamme illuminano a giorno lo scenario» dice. «Le voci dentro le case si mescolano con le voci di Erdegis.»",
+       "effetti": [],
+       "richiede": [
+        "D10d1"
+       ],
+       "fonte": "[ICH Cap.7 r.92] (la battuta della bestia); chi sia la bestia la fonte non lo dice (punto aperto 2 dello schema): non risponde",
+       "scopo": "chi è la bestia (resta un enigma)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ripartite verso la casa di Arne. In viaggio, al passo dei cavalli, Arne ti racconta un incubo: un mare verde, e due nomi, Sasha e Andre, che sente come i suoi veri fratelli. La sera, nella casa della sua famiglia, un sibilo ti riempie le orecchie.",
+    "fonte": "P2 [ICH Cap.7 r.62-66] (l'incubo di Arne; la casa di Arne), P3 [r.90] (il sibilo)",
+    "esplora": [
+     {
+      "id": "D10d1",
+      "testo": "Seguire il sibilo",
+      "riserva": "La casa si spegne, e intorno a te si accendono le fiamme. Davanti a te c'è una bestia nera, con gli occhi luminosi. «Vedo cinque torri, queste torri accolgono il sole» dice. «Vedo due uccelli differenti, vedo che volano oltre un muro, vedo che tu corri insieme a una persona, impugni l'arco per poi volare oltre un muro di nebbia.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_incubo_arne"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.7 r.90-91] (il sibilo, la bestia nera, la battuta [r.91] alla lettera, con «cinque» in lettere)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D10x1"
+    ],
+    "risoluzione": [
+     "D10d1"
+    ]
+   },
+   "required_beats": [
+    "D10x1",
+    "D10d1"
+   ],
+   "optional_beats": [
+    "D10_astrid_1",
+    "D10_padre_1",
+    "D10_arne_1",
+    "D10_arne_2",
+    "D10_argus_1",
+    "D10_bestia_1"
+   ],
+   "riserva_libera": "Fra la gente che festeggia, nessuno ti sente.",
+   "uscita_fail_forward": "Se la scena si ferma, la visione arriva comunque, e al risveglio il villaggio si prepara alla guerra."
+  },
+  "D11": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D11x1",
+     "testo": "Avvisare i tuoi del pericolo",
+     "riserva": "Racconti ai tuoi del fuoco e delle torri. Tuo padre annuisce, con il suo sorriso fermo. «L'hersir sa che cosa fare. Il voluspà sa che cosa fare.» Tua madre ripete le stesse parole, una dopo l'altra. Argus ti ascolta sul serio, poi prende l'arco: andrà al confine. E Arne, accanto a te, non dice niente; ma ti guarda come se cominciasse a dubitare anche lei.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "I tuoi genitori si affidano all'hersir, e ripetono le stesse parole; Argus parte per il confine.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.8 r.51-55] (i genitori: lasciar fare all'hersir, fiducia cieca nel «voluspà», la tiritera [r.54]; Argus al confine [r.53]; Arne dubita [r.55]); le battute dei genitori: PROPOSTA dalla tiritera"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "inger",
+     "apertura": "Tua madre prepara le sacche, piano, come ogni mattina.",
+     "chiusura": "Tua madre torna alle sacche.",
+     "riserva_libera": "«L'hersir sa che cosa fare» dice tua madre.",
+     "argomenti": [
+      {
+       "id": "D11_inger_1",
+       "testo": "Chiedere a tua madre se ha paura",
+       "riserva": "Tua madre ti accarezza i capelli. «Paura? Il voluspà sa che cosa fare.» Poi, per un momento, il sorriso le trema. «Tu stai {attento|attenta|in guardia}, però.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "inger",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "la tiritera del voluspà [ICH Cap.8 r.54]; «Tu stai in guardia, però»: PROPOSTA (dolce, lascia decidere a lei: note del PNG)",
+       "scopo": "la famiglia cambiata"
+      }
+     ]
+    },
+    {
+     "png": "arne",
+     "apertura": "Arne ha legato il fratello più piccolo sulle spalle, e la sorella al polso con una fune.",
+     "chiusura": "Arne stringe la fune al polso.",
+     "riserva_libera": "Arne guarda il fiume, e non risponde.",
+     "argomenti": [
+      {
+       "id": "D11_arne_1",
+       "testo": "Chiedere ad Arne se ti crede",
+       "riserva": "«Non lo so» dice Arne. «Ma non lascio i miei a nessun hersir.» Tira la fune, e la sorella le si stringe accanto.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "arne",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "anche Arne comincia a dubitare [ICH Cap.8 r.55]; Arne si lega i fratelli [r.86]; la battuta: PROPOSTA (protegge i fratelli: note del PNG)",
+       "scopo": "il dubbio di Arne"
+      }
+     ]
+    },
+    {
+     "png": "icharn",
+     "apertura": "L'hersir passa lungo la fila degli arcieri, su un cavallo argenteo.",
+     "chiusura": "L'hersir sprona il cavallo verso la testa della colonna.",
+     "riserva_libera": "L'hersir guarda verso il confine, e non risponde.",
+     "argomenti": [
+      {
+       "id": "D11_icharn_1",
+       "testo": "Raccontare all'hersir la bestia nera",
+       "riserva": "L'hersir ascolta delle cinque torri e del muro di nebbia, e annuisce piano. «Occhio vispo vedeva il fuoco prima che si accendesse» dice. «Tieni gli occhi aperti, mio fedele errir.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "icharn",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "le battute della bestia [ICH Cap.7 r.91]; «mio fedele errir» (il modo di parlare dell'hersir, note del PNG); la battuta: PROPOSTA",
+       "scopo": "la visione detta all'hersir"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Gli Skrykru lasciano i villaggi e si mettono in cammino lungo il grande fiume. L'hersir, su un cavallo argenteo, passa in testa agli arcieri e alza la voce: «Che i voluspà si rechino ai piedi della montagna, lo scontro sarà duro. Salutate i vostri cari ora, e iniziate a spiccare il volo, miei Skrykru.»",
+    "fonte": "P2 [ICH Cap.8 r.85-91] (l'esodo lungo il grande fiume; l'hersir su un cavallo argenteo; la battuta [r.91] alla lettera, con la grafia «Skrykru» dello schema)",
+    "esplora": [
+     {
+      "id": "D11d1",
+      "testo": "Salutare Argus prima che parta",
+      "riserva": "Argus è già in fila con gli arcieri. Quando ti vede scende da cavallo, e ti mette in mano una freccia, una delle sue. «Per la prossima volta che tiriamo insieme» dice, e ride. Poi risale, e la colonna si muove verso il confine.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "relazione": {
+         "png": "argus",
+         "delta": 1
+        }
+       }
+      ],
+      "fonte": "P2, il saluto con Argus [ICH Cap.8 r.92]; L dello schema (il saluto ad Argus, scopo il peso della 12); la freccia e la battuta: PROPOSTA (Argus fa frecce: [ICH Cap.1 r.88-92]; nella 12 riconosce la punta dell'ultima freccia [ICH Cap.8 r.157-158])"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D11x1"
+    ],
+    "risoluzione": [
+     "D11d1"
+    ]
+   },
+   "required_beats": [
+    "D11x1",
+    "D11d1"
+   ],
+   "optional_beats": [
+    "D11_inger_1",
+    "D11_arne_1",
+    "D11_icharn_1"
+   ],
+   "riserva_libera": "Intorno a te si caricano i carri, e nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, l'esodo parte comunque, all'ordine dell'hersir."
+  },
+  "D12": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D12x1",
+     "testo": "Ascoltare Arne nella notte",
+     "riserva": "«A volte credo che sarei dovuta scendere in battaglia insieme a loro, sai… per ritrovare un briciolo di onore» dice Arne. «Dopo la scelta di voler partecipare alla prova ho abbandonato ogni onore per raggiungere il mio scopo.» Guarda i fratelli che dormono. «Più li osservo e più vedo il volto di quei due ragazzi… Sasha e Andre.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_codarda"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.8 r.95, r.98] (le battute di Arne alla lettera, accorciate)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "arne",
+     "apertura": "Arne si stringe le ginocchia al petto.",
+     "chiusura": "Arne torna a guardare verso il confine.",
+     "riserva_libera": "Arne scuote la testa, e non risponde.",
+     "argomenti": [
+      {
+       "id": "D12_arne_1",
+       "testo": "Dire ad Arne che non è una codarda",
+       "riserva": "Arne ride, senza allegria. «Tra me e te c'è un cielo immenso, tu sei così buona, {nome}, ma a volte dici cose senza senso… non si può temere l'ignoto all'infinito, non dopo quanto {sei riuscito a fare|sei riuscita a fare|hai fatto}.» Poi, più piano: «Qui si tratta di chi sei e cosa vuoi essere. Io non so se voglio essere ancora una codarda.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "arne",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "D12x1"
+       ],
+       "fonte": "[ICH Cap.8 r.97-98] (le battute di Arne alla lettera, accorciate; il nome con il segnaposto)",
+       "scopo": "il legame con Arne"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Prima dell'alba un bagliore rosso si alza dal confine. Chiudi gli occhi, e la tua mente si alza in volo sopra la valle, verso le torri.",
+    "fonte": "P2 [ICH Cap.8 r.150-152] (la proiezione sopra l'esercito)",
+    "esplora": [
+     {
+      "id": "D12d1",
+      "testo": "Volare sopra il confine",
+      "riserva": "Le torri del confine bruciano. Una catapulta scaglia fuoco, frecce infuocate attraversano il cielo, e dal buio arriva una carica su bestie enormi. «Mirate in cielo, oltre le nubi» grida l'hersir, «abbattiamo questa oscurità che assalta le nostre terre! Fate volare le vostre piume!» Fra gli arcieri vedi Argus. Scocca la sua ultima freccia e colpisce un punto scoperto, ma la bestia lo travolge. Muore guardando il cielo, dove vola un errir di luce. Quando riapri gli occhi, il rumore della carica è fra gli alberi, vicino.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_argus"
+       },
+       {
+        "nota": "Argus è morto al confine, travolto dalla carica.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.8 r.150-156] (torri in fiamme, catapulta, frecce infuocate, la carica su bestie; le battute dell'hersir [r.153-154] alla lettera); P3, snodo fisso [r.157-158] (Argus scocca l'ultima freccia, colpisce un punto scoperto, è travolto dalla bestia e muore guardando un errir di luce); la carica vicina: PROPOSTA (prepara lo scontro)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D12x1"
+    ],
+    "risoluzione": [
+     "D12d1"
+    ]
+   },
+   "required_beats": [
+    "D12x1",
+    "D12d1"
+   ],
+   "optional_beats": [
+    "D12_arne_1"
+   ],
+   "riserva_libera": "Intorno a te la gente dorme, e nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, la carica arriva comunque, e Arne ti trascina via fra gli alberi."
+  },
+  "D13": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D13x1",
+     "testo": "Proiettarti per orientarti",
+     "riserva": "Ti fermi all'ombra di un muro e lasci andare la mente. Dall'alto vedi il nemico che si muove verso i villaggi; nelle case non c'è acqua, e l'unica che resta è quella del fiume; gli alberi sono il solo nascondiglio. Torni nel tuo corpo, e lo sai: siete tu e Arne contro un esercito, e potete solo restare in silenzio.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_fuga"
+      },
+      {
+       "nota": "Il nemico va verso i villaggi; l'unica acqua è quella del fiume; gli alberi nascondono.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.9 r.3-13] (la proiezione per orientarsi: il nemico verso i villaggi, niente acqua, il fiume, gli alberi; lei contro un esercito, in silenzio)"
+    },
+    {
+     "id": "D13x2",
+     "testo": "Cercare cibo nelle case vuote",
+     "riserva": "Nelle dispense trovi un po' di pane secco e una forma di formaggio dimenticata. Arne mangia in piedi, vicino alla finestra, senza smettere di guardare la strada.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "L dello schema (cibo e riparo, scopo sopravvivere in silenzio) [ICH Cap.9 r.7-11] (cercano cibo e dormono nelle case); che cosa trovano: PROPOSTA",
+     "scopo": "sopravvivere in silenzio"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "arne",
+     "apertura": "Arne si ferma un momento, con le spalle al muro.",
+     "chiusura": "Arne torna a guardare la strada.",
+     "riserva_libera": "Arne ti fa segno di non fare rumore: qualcuno potrebbe sentire.",
+     "argomenti": [
+      {
+       "id": "D13_arne_1",
+       "testo": "Raccontare ad Arne che cosa hai visto al confine",
+       "riserva": "Le racconti delle torri, della catapulta, di Argus. Arne ascolta senza fermarsi. «Allora non possiamo tornare indietro» dice. «Andiamo avanti, e {restiamo vivi|restiamo vive|restiamo in vita}.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "arne",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.9 r.3-6] (parlano di ciò che ha visto); la battuta: PROPOSTA (incitamenti brevi: note del PNG)",
+       "scopo": "il legame con Arne"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il giorno se ne va fra case vuote e strade senza voci. Verso sera arrivate in un villaggio più grande degli altri, e Arne si ferma di colpo: in fondo alla valle si alza la polvere di una colonna in marcia.",
+    "fonte": "P2 [ICH Cap.9 r.68-71] (silenzio e sopravvivenza; Arne pronta a esporsi); la colonna in marcia: PROPOSTA (il nemico va verso i villaggi [r.3-13])",
+    "esplora": [
+     {
+      "id": "D13d1",
+      "testo": "Entrare nella casa più vicina",
+      "riserva": "Entrate in una casa con la porta sfondata. Dentro c'è odore di cenere fredda e di paglia. Arne si mette di guardia alla finestra: «Trova un posto dove nasconderci. Io resto qui.»",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P2 [ICH Cap.9 r.71-72] (Arne pronta a esporsi; la casa abbandonata); la battuta: PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D13x1"
+    ],
+    "risoluzione": [
+     "D13d1"
+    ]
+   },
+   "required_beats": [
+    "D13x1",
+    "D13d1"
+   ],
+   "optional_beats": [
+    "D13x2",
+    "D13_arne_1"
+   ],
+   "riserva_libera": "Nel villaggio vuoto nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, l'esercito passa comunque oltre il villaggio, e all'alba Arne apre la botola."
+  },
+  "D14": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D14x1",
+     "testo": "Provare a passare il muro di nebbia",
+     "riserva": "Fai un passo nella nebbia, poi un altro. Non vedi più niente, nemmeno le tue mani; e dopo dieci passi ti ritrovi fuori, davanti agli stessi alberi, come se il muro ti avesse fatto girare su te {stesso|stessa|stesso}. Arne prova a tirare una freccia nella nebbia: la freccia non torna indietro, e il muro non si apre.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_barriera"
+      },
+      {
+       "nota": "Il muro di nebbia non si lascia passare: dentro non si vede nulla, e le frecce di Arne non lo bucano.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.11 r.69-70] (se prova a passare non vede nulla e non riesce); le frecce di Arne non bucano il muro [r.100]; «girare su te stessa»: PROPOSTA"
+    },
+    {
+     "id": "D14x2",
+     "testo": "Guardare i corpi fra le radici",
+     "riserva": "Sono Skrykru, e qualcuno di loro ha ancora l'arco in mano. Sono caduti con il viso verso il muro, come se cercassero di passare.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "[ICH Cap.11 r.69] (odore di bruciato, corpi); chi siano e come siano caduti: PROPOSTA",
+     "scopo": "la barriera"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "arne",
+     "apertura": "Arne guarda il muro di nebbia, con l'arco teso a metà.",
+     "chiusura": "Arne torna a guardare il muro.",
+     "riserva_libera": "Arne non lo sa: non ha mai visto niente di simile.",
+     "argomenti": [
+      {
+       "id": "D14_arne_1",
+       "testo": "Chiedere ad Arne se ha paura",
+       "riserva": "«Paura?» Arne sorride, storto. «Ho promesso a me stessa che non sarei più stata una codarda.» Tende l'arco del tutto. «Se il muro non si apre, lo apriamo noi.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "arne",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "il ricordo della 12 (non vuole essere ancora una codarda [ICH Cap.8 r.98]); la battuta: PROPOSTA (sfide brevi: note del PNG)",
+       "scopo": "il legame con Arne"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Dietro di voi, fra gli alberi, si spezza un ramo. Poi un altro. Qualcuno vi ha seguiti fino alla barriera.",
+    "fonte": "P2 [ICH Cap.11 r.99] (Arne sente uomini che arrivano)",
+    "esplora": [
+     {
+      "id": "D14d1",
+      "testo": "Metterti con le spalle al muro, accanto ad Arne",
+      "riserva": "Ti metti con le spalle alla nebbia, accanto ad Arne, e incocchi una freccia. Fra gli alberi si muovono delle ombre: uomini, armati, che vengono verso di voi.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "L dello schema (difendere Arne con l'arco) [ICH Cap.11 r.99]: come combattere è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D14x1"
+    ],
+    "risoluzione": [
+     "D14d1"
+    ]
+   },
+   "required_beats": [
+    "D14x1",
+    "D14d1"
+   ],
+   "optional_beats": [
+    "D14x2",
+    "D14_arne_1"
+   ],
+   "riserva_libera": "La nebbia si mangia la tua voce.",
+   "uscita_fail_forward": "Se la scena si ferma, la luce arriva comunque dall'altra parte del muro, e la freccia di Arne lo buca."
+  },
+  "D15": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D15x1",
+     "testo": "Fermarti a riposare con il gruppo",
+     "riserva": "«Quelli erano corvi, cercavano noi… cercavano loro» dice la donna con lo scudo, Anyja. «Stiamo tutti calmi» dice Knut. «Cos'ha la tua amica?» Arne si guarda le mani arrossate e non risponde. «La nebbia è la nostra carne, Igy, nessuno può scalfire la nebbia, nessuno può acchiapparla» dice Bjorta a suo fratello. Poi Knut ti guarda. «{Sei stanco, lascia|Sei stanca, lascia|Hai bisogno di dormire: lascia} che ti dia il cambio, e riposa.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_gruppo"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.12 r.17-24] (le battute di Anyja [r.18], Knut [r.19, r.24], Bjorta [r.23] alla lettera, come in «L'Hersir dei nodi», H15x2)"
+    },
+    {
+     "id": "D15x2",
+     "testo": "Ascoltare il piano di Knut",
+     "riserva": "«Siamo pochi, ma sparsi nella nebbia sembreremo di più» dice Knut. «I più fragili staranno nelle retroguardie: Egil, tu starai lì insieme a Dag, {lo Skrykru|la Skrykru|chi viene dagli Skrykru} e la sua amica.» «Posso aiutare…» dice Arne. «Si inizia col non essere di peso e seguire gli ordini» le risponde Anyja. Knut ha anche dei sacchi: «Useremo la farina per nasconderci tra la nebbia, il bianco ci camufferà meglio.» «È farina Knut, puoi anche chiamarla con il suo nome per diamine» ride Dag.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Nella battaglia starai nelle retroguardie, con Egil, Dag e Arne.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "[ICH Cap.12 r.99-104] (il piano di Knut, le battute di Knut [r.99, r.104], Arne [r.100], Anyja [r.101], Dag [r.104] alla lettera, con la grafia «Skrykru» dello schema)",
+     "scopo": "il piano della battaglia"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "dag",
+     "apertura": "Dag ti fissa le pitture sul viso, e ride.",
+     "chiusura": "Dag torna a ridere da solo.",
+     "riserva_libera": "Dag ride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "D15_dag_1",
+       "testo": "Rispondere a Dag che ride delle tue pitture",
+       "riserva": "«Quella roba… te la fai tu?» chiede Dag. Si sporca la faccia di terra per imitarti, e si batte il petto. «Beh, chi potrà mai battermi ora? Sono la distruzione, sono una Bikkja senza rivali, io sono KOSH.» «Bel nome Dag» fa Anyja, «certo che per averci pensato potevi fare di meglio, ma a volte gli stupidi arrivano dove possono no?»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "dag",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L dello schema (rispondere a Dag, scopo farsi accettare) [ICH Cap.12 r.26-31] (le battute di Dag [r.26, r.30] e di Anyja [r.31] alla lettera, come in «L'Hersir dei nodi», H15_dag_1)",
+       "scopo": "farsi accettare"
+      }
+     ]
+    },
+    {
+     "png": "anyja",
+     "apertura": "Anyja non vi toglie gli occhi di dosso, con lo scudo al braccio.",
+     "chiusura": "Anyja torna a guardare la nebbia.",
+     "riserva_libera": "Anyja ti guarda, e non risponde.",
+     "argomenti": [
+      {
+       "id": "D15_anyja_1",
+       "testo": "Chiedere ad Anyja perché non si fida di voi",
+       "riserva": "«{Sei armato|Sei armata|Hai armi}? Oltre al giocattolo?» chiede Anyja, guardando il tuo arco. Poi alza le spalle. «È un male non fidarsi degli estranei?»",
+       "effetti": [],
+       "fonte": "[ICH Cap.12 r.28-29] (le battute di Anyja alla lettera; «armata» è la sua parola nella fonte)",
+       "scopo": "la diffidenza del gruppo"
+      }
+     ]
+    },
+    {
+     "png": "knytta",
+     "apertura": "Knytta ti guarda come se ti conoscesse già.",
+     "chiusura": "Knytta torna dai suoi.",
+     "riserva_libera": "Knytta non risponde, ma non smette di guardarti.",
+     "argomenti": [
+      {
+       "id": "D15_knytta_1",
+       "testo": "Dire a Knytta come l'hai trovata",
+       "riserva": "Le dici che la sentivi da lontano, come si sente un fuoco nel buio, e che per questo la cercavi. Knytta ti prende le mani, e le tiene fra le sue un momento più del necessario.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knytta",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "il dialogo del filo [ICH Cap.12 r.17-32]; la stessa immagine di «L'Hersir dei nodi» (H15_draumdis_1: «Ti sentiva da lontano, dice, come si sente un fuoco nel buio: per questo ti cercava», PROPOSTA lì); Knytta non ha battute da PNG nelle note: il gesto, PROPOSTA",
+       "scopo": "il legame con Knytta"
+      }
+     ]
+    },
+    {
+     "png": "thorbjorg",
+     "apertura": "Un uomo enorme, con un martello sulla spalla, guarda i suoi figli dormire.",
+     "chiusura": "Thorbjorg torna a guardare i suoi figli.",
+     "riserva_libera": "Thorbjorg grugnisce, e non risponde.",
+     "argomenti": [
+      {
+       "id": "D15_thorbjorg_1",
+       "testo": "Chiedere a Thorbjorg dei suoi figli",
+       "riserva": "«Bjorta ed Egil» dice Thorbjorg. «E tutta la mia gente.» Guarda Knytta, dall'altra parte del fuoco. «Se cado, saranno suoi.»",
+       "effetti": [],
+       "fonte": "[ICH Cap.12 r.73-75] (Thorbjorg affida figli e gente a Knytta); i figli Bjorta ed Egil: «L'Hersir dei nodi» (H15, Bjorta che vuole tornare indietro da suo padre); la battuta: PROPOSTA",
+       "scopo": "il sacrificio che arriva"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La notte cala sulla nebbia. Ti addormenti fra gli sconosciuti, con Arne accanto, e il sonno ti porta lontano.",
+    "fonte": "P2 [ICH Cap.12 r.76] (il sogno)",
+    "esplora": [
+     {
+      "id": "D15d1",
+      "testo": "Lasciarti portare dal sogno",
+      "riserva": "Sei in un bosco di fiori che cambiano colore, e intorno a dieci figure lo spazio si fa scuro, come se nascesse al loro passaggio. «È come essere gli dei di un mondo, poterlo plasmare a nostro piacimento, farlo brillare di luce» dice una. «Un luogo in cui rinascere… peccato che non sia reale» risponde un'altra. «Rendiamolo tale.» Una donna scuote la testa: «…la nostra specie ha spento il sole, noi siamo i responsabili.» «Il genere umano deve combattere, deve rialzarsi» dice un'altra voce, «e vincere il peso dei suoi errori.» Poi una delle figure si volta verso una donna immobile fra loro: è Knytta. «Tu sarai lo specchio del nostro IO.» Ti svegli di colpo: nella nebbia, fra gli alberi, si muove qualcosa.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_specchio"
+       },
+       {
+        "nota": "Nel sogno dieci figure parlano di plasmare un mondo; una dice a Knytta: «Tu sarai lo specchio del nostro IO».",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.12 r.76-95] (il bosco di fiori, lo spazio scuro che nasce al loro passaggio [r.78-80]; le battute [r.81, r.83, r.84, r.87, r.92, r.95] alla lettera, accorciate, SENZA i nomi: R Asi fino alla 25); il risveglio: [r.97]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D15x1"
+    ],
+    "risoluzione": [
+     "D15d1"
+    ]
+   },
+   "required_beats": [
+    "D15x1",
+    "D15d1"
+   ],
+   "optional_beats": [
+    "D15x2",
+    "D15_dag_1",
+    "D15_anyja_1",
+    "D15_knytta_1",
+    "D15_thorbjorg_1"
+   ],
+   "riserva_libera": "Nella nebbia nessuno ti risponde, e Dag ride ancora.",
+   "uscita_fail_forward": "Se la scena si ferma, la battaglia arriva comunque, e il gruppo si ritira verso la baia."
+  },
+  "D16": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D16x1",
+     "testo": "Correre in aiuto di Knytta",
+     "riserva": "Dal villaggio arriva una donna con gli occhi da lupa, e Knytta si irrigidisce. Un lampo, e Knytta non è più lei: qualcun altro le muove il corpo verso gli stranieri. La cavaliera la afferra per le braccia e la tiene; la ragazza spaventata grida: «È lei… no no! Ti prego, non farmi del male!» Ti inginocchi accanto a Knytta e le prendi il viso fra le mani: dentro i suoi occhi senti un labirinto, e lei che ci cammina dentro. «State lontani dall'hersir o ve la vedrete con me» ringhia Anyja agli stranieri. Poi, piano piano, Knytta torna.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_porto"
+      },
+      {
+       "relazione": {
+        "png": "knytta",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 [ICH Cap.12 r.164-167] (Vargynja ricompare; il flash; l'altra sé prende il corpo; Eimyrja la aiuta; la battuta di Amèlie [r.167], come in «L'Hersir dei nodi», H16d1, e «La cavaliera di cenere», E16d1); [ICH Cap.13 r.31-32] (Knut chiede aiuto; Anyja: «state lontani dall'hersir o ve la vedrete con me…» [r.32], accorciata); il labirinto della mente di Knytta: «L'Hersir dei nodi», H16 («il labirinto della tua mente»); come l'aiuta: PROPOSTA"
+    },
+    {
+     "id": "D16x2",
+     "testo": "Ascoltare i soldati delle gallerie",
+     "riserva": "Saoirse ha un piano: un foglio falso, con il simbolo dei Bhorkyn impresso a caldo, da mostrare soltanto al capo militare. Arne scalda la brace fra le mani finché il metallo non le cola dalle dita. A te tocca contare i soldati: lasci andare la mente fino al posto di guardia, li conti uno per uno e ascolti le loro voci, finché uno non pronuncia il nome di chi comanda. «Il Capitano Hoffmann.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_gallerie"
+      },
+      {
+       "nota": "Il capo delle guardie delle gallerie è il Capitano Hoffmann.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.14 r.3-8] (il piano di Saoirse con il foglio falso [r.3]; Arne e il metallo che cola dalle mani [r.4-5]; lei conta i soldati e ascolta fino al nome del Capitano Hoffmann [r.8]), [r.27] (il foglio solo al capo militare); L dello schema (come ascoltare i soldati: qui con la proiezione, PROPOSTA)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "saoirse",
+     "apertura": "La regina ti osserva con interesse, come si osserva una carta da giocare.",
+     "chiusura": "Saoirse torna ai suoi fogli.",
+     "riserva_libera": "Saoirse sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "D16_saoirse_1",
+       "testo": "Chiedere a Saoirse come vuole convincere i soldati",
+       "riserva": "«Io parlerò solo se interpellata direttamente» dice Saoirse. «Dovrete far sembrare me inavvicinabile: se gli dimostrate che per arrivare a me devono strisciare, allora saranno docili con voi per poter ricevere attenzioni. Dopodiché saranno miei.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "saoirse",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.14 r.17] (la battuta di Saoirse alla lettera, accorciata)",
+       "scopo": "il piano delle gallerie"
+      }
+     ]
+    },
+    {
+     "png": "arne",
+     "apertura": "Arne si soffia sulle mani, ancora calde di metallo.",
+     "chiusura": "Arne guarda lontano, verso la luce.",
+     "riserva_libera": "Arne ride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "D16_arne_1",
+       "testo": "Chiedere ad Arne delle sue mani",
+       "riserva": "Arne apre le mani: il palmo è rosso, ma non bruciato. «Da quando la luce mi ha attraversata, al muro, il fuoco mi ascolta» dice. «Non so se mi fa paura o se mi piace.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "arne",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "Arne scalda la brace fino a far colare metallo dalle mani [ICH Cap.14 r.4-5]; «la voluspà del fuoco» [ICH Cap.14 r.5]; la luce del muro [ICH Cap.11 r.101-104]; la battuta: PROPOSTA",
+       "scopo": "il fuoco di Arne"
+      }
+     ]
+    },
+    {
+     "png": "bjorta",
+     "apertura": "Bjorta guarda gli schiavi liberati uscire dalle gallerie, uno dopo l'altro.",
+     "chiusura": "Bjorta torna fra i suoi.",
+     "riserva_libera": "Bjorta ti guarda dall'alto in basso, e non risponde.",
+     "argomenti": [
+      {
+       "id": "D16_bjorta_1",
+       "testo": "Ascoltare Bjorta che parla ai Bhorkyn liberati",
+       "riserva": "«Ho promesso a mio padre che avrei cercato di liberare quanti più di voi avessi potuto, sfidando la morte stessa» grida Bjorta. «Ma prima… voglio sentire l'urlo degli orsi, la vostra forza, fatemi sentire che volete vivere, dannazione!» E le gallerie rispondono con un urlo solo.",
+       "effetti": [],
+       "fonte": "[ICH Cap.14 r.44-47] (la liberazione degli schiavi; le battute di Bjorta [r.46-47] alla lettera, accorciate)",
+       "scopo": "la gente di Bjorta"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il foglio di Saoirse funziona: le guardie lasciano le gallerie, e voi liberate la gente che ci lavorava. All'alba uscite dall'altra parte, in una luce che acceca.",
+    "fonte": "P2-P3 [ICH Cap.14 r.44-54] (la liberazione degli schiavi; all'uscita la luce abbagliante all'alba)",
+    "esplora": [
+     {
+      "id": "D16d1",
+      "testo": "Seguire Arne nella luce",
+      "riserva": "Oltre le palizzate c'è un campo fiorito, così grande che non se ne vede la fine. Arne ti tira per mano e vi gettate sul prato, ridendo. Poi ti posa una mano sul petto. «Grazie per avermi spinta ad andare così lontano… so che nelle terre che raggiungeremo incontreremo molti soli, ma anche noi porteremo il nostro con noi.» La notte la passate lì, sul prato. Al risveglio, nell'accampamento, senti Arne gridare: «Tu {gli|le|le} devi stare lontano, hai capito, lurido pezzo di merda?» Un Bhorkyn ti si era avvicinato nel sonno. Bjorta lo ferma, e si volta verso Arne con l'ascia: «Fermati… tu, skrykru, tanti dei nostri sono morti per recuperarvi, persino mio padre, perciò modera i toni o ti faccio assaggiare la mia ascia.» «Ridillo se hai il coraggio» risponde Arne, «sarò lieta di aprirti come avete fatto con i nostri a Skry i Kalter, e di lasciarti in pasto ai corvi.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_campo"
+       },
+       {
+        "relazione": {
+         "png": "arne",
+         "delta": 1
+        }
+       }
+      ],
+      "fonte": "P3 [ICH Cap.14 r.54-59] (il campo fiorito oltre le palizzate; Arne e lei sul prato; la mano sul petto; la battuta [r.59] alla lettera); P4 [ICH Cap.16 r.31-34] (la lite: le battute di Arne [r.32, r.34] e di Bjorta [r.33] alla lettera); che il Bhorkyn le si fosse avvicinato nel sonno: PROPOSTA (Arne protettiva fino alla violenza con chi la minaccia, note del PNG); la notte sul prato: dorme vicino ad Arne [ICH Cap.16 r.31]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D16x1",
+     "D16x2"
+    ],
+    "risoluzione": [
+     "D16d1"
+    ]
+   },
+   "required_beats": [
+    "D16x1",
+    "D16x2",
+    "D16d1"
+   ],
+   "optional_beats": [
+    "D16_saoirse_1",
+    "D16_arne_1",
+    "D16_bjorta_1"
+   ],
+   "riserva_libera": "Intorno a te tutti hanno qualcosa da fare, e nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, la lite finisce comunque: Bjorta ferma Arne con la forza, e il gruppo riparte verso il Kynhjarta."
+  },
+  "D17": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D17x1",
+     "testo": "Ascoltare la donna fiore",
+     "riserva": "«I simboli hanno un potere molto più forte delle parole, a volte» dice la donna fiore. «Essi racchiudono un significato che deve prima essere compreso per poter essere trasmesso agli altri. Ogni simbolo è parte di un messaggio accessibile a chi conosce quella lingua, e noi, {nome}, siamo consapevoli di conoscerne altre, persino quelle degli Asi stessi.» Ti prende le mani. «I nostri occhi viaggiano tra i mondi, tra tempo e spazio. Siamo il filo che lega la nostra esistenza in un dato momento, siamo le radici della nostra stessa coscienza.» Poi, per la prima volta, ti dice il suo nome: Skuld Hjarta.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_simboli"
+      },
+      {
+       "relazione": {
+        "png": "skuld",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 [ICH Cap.19 r.14-17] (le battute di Skuld [r.15-17] alla lettera, accorciate; il nome con il segnaposto); il nome «Skuld Hjarta» [Cap.19 r.10-24]: si dice qui (schema)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "skuld",
+     "apertura": "La donna fiore ti guarda con pazienza, come si guarda un seme.",
+     "chiusura": "La donna fiore torna a guardare l'albero.",
+     "riserva_libera": "La donna fiore sorride: non tutto si può dire con le parole.",
+     "argomenti": [
+      {
+       "id": "D17_skuld_1",
+       "testo": "Chiedere a Skuld delle immagini della premonizione",
+       "riserva": "Le racconti delle torri con gli occhi che bruciano, della bimba con il ciondolo, del labirinto con la lancia spezzata e le due corde annodate. Skuld ascolta. «Non chiederti che cosa significano» dice. «Chiediti a chi devi raccontarle. Un simbolo che resta chiuso in te non è ancora un messaggio.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "skuld",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L dello schema (le domande a Skuld, scopo leggere i simboli della 02) [ICH Cap.19 r.15-16] (il simbolo va compreso per poter essere trasmesso); le immagini della premonizione [ICH Cap.1 r.205-216]; la battuta: PROPOSTA (le immagini restano senza spiegazione)",
+       "scopo": "i simboli della 02"
+      },
+      {
+       "id": "D17_skuld_2",
+       "testo": "Chiedere a Skuld della bestia nera e di sua figlia",
+       "riserva": "Skuld chiude gli occhi. «Le bestie vedono lontano, ma parlano per enigmi, come noi» dice. «Quando la troverai, lo saprai. Fino ad allora, ascolta le voci che vengono dal fuoco.»",
+       "effetti": [],
+       "fonte": "L dello schema (le domande a Skuld, scopo leggere i simboli della 10); chi sia la bestia e chi la figlia non si dice (punto aperto 2 dello schema): la battuta, PROPOSTA, non risponde",
+       "scopo": "i simboli della 10"
+      }
+     ]
+    },
+    {
+     "png": "dawn",
+     "apertura": "Una donna dai capelli chiari lavora a una tavoletta luminosa, fra le radici dell'albero.",
+     "chiusura": "Dawn torna alla sua tavoletta.",
+     "riserva_libera": "Dawn sorride, distratta: non ha tempo per rispondere.",
+     "argomenti": [
+      {
+       "id": "D17_dawn_1",
+       "testo": "Chiedere alla donna chi è",
+       "riserva": "«Mi chiamo Dawn» dice la donna. «Qui mi chiamano anche Embla.» Ti guarda le pitture sul viso. «Fate venire pure gli altri del vostro gruppo, uno alla volta: li renderò figli di Embla. Mantengo sempre le mie promesse.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "dawn",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.18 r.80-81, r.97] (Knut la chiama Embla; la battuta di Dawn [r.97] alla lettera); che si presenti così: PROPOSTA",
+       "scopo": "la madre dei Kyn"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Quando chiudi gli occhi per riposare, tutto si fa buio. Una figura meccanica, con una maschera di pelle, attraversa l'acqua verso di te. Ti riconosce: la sua mano di metallo ti accarezza il viso. «Stai facendo un buon lavoro.» E anche tu, senza sapere perché, conosci quel volto.",
+    "fonte": "P2 [ICH Cap.19 r.37] (la visione: la figura meccanica con maschera di pelle, la mano di metallo, la battuta alla lettera; lei ne riconosce il volto, il testo non dice di chi)",
+    "esplora": [
+     {
+      "id": "D17d1",
+      "testo": "Riaprire gli occhi",
+      "riserva": "Riapri gli occhi, e il cielo è buio, anche se è giorno. Dai rami dell'albero si alzano i corvi; sui prati comincia a cadere una pioggia nera, e con la pioggia arrivano ombre umanoidi e fumo, che toccano i reverie e li svuotano. La donna fiore ti stringe le mani. «So che il tempo non è dalla nostra parte, giovane errir, ma tu devi vivere per raccontare il futuro che verrà. Spetta a te il ruolo di proteggere il futuro, ora.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_maschera"
+       },
+       {
+        "scopri": "osservatrice_fact_vivere"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.18 r.140-141; Cap.19 r.59-61, r.79] (il cielo che si fa buio, i corvi; la pioggia nera, le ombre e il fumo che svuotano i reverie, come in «L'Hersir dei nodi», H18, e «La cavaliera di cenere», E17; la battuta della donna fiore [Cap.19 r.79] alla lettera, con «raccontare»)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D17x1"
+    ],
+    "risoluzione": [
+     "D17d1"
+    ]
+   },
+   "required_beats": [
+    "D17x1",
+    "D17d1"
+   ],
+   "optional_beats": [
+    "D17_skuld_1",
+    "D17_skuld_2",
+    "D17_dawn_1"
+   ],
+   "riserva_libera": "Fra le radici dell'albero nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, la luce del ciondolo vi porta via comunque, uno dopo l'altro."
+  },
+  "D18": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D18x1",
+     "testo": "Lasciare che Arne ti stia vicino",
+     "riserva": "Arne ti prende fra le braccia e ti tiene {stretto|stretta|vicino}, finché il tremito non si calma un poco. Parlate di paure, e di che cosa sia la coscienza; di quello che avete visto prima della luce, no. «Permettimi almeno di darti qualcosa» dice alla fine.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_rifugio"
+      },
+      {
+       "relazione": {
+        "png": "arne",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 [ICH Cap.20 r.34-38] (Arne la trova sola e spaventata e la tiene stretta; parlano di fobie e coscienza; la battuta [r.38] alla lettera)"
+    },
+    {
+     "id": "D18x2",
+     "testo": "Seguire Arne fra i reverie caduti",
+     "riserva": "Arne cammina fra i reverie che non si sono rialzati dopo il salto, e si ferma davanti a ognuno. Poi va da Dawn. «Mi dispiace per la tua gente… ho sentito il legame che vi univa… se c'è qualcosa che possiamo fare…» Dawn stringe il ciondolo fra le mani. «Alcuni posso ancora recuperarli…»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_omaggio"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.20 r.45-47] (Arne rende omaggio ai reverie morti; le battute di Arne [r.46] e di Dawn [r.47] alla lettera); Dawn con il ciondolo: piange stringendo il ciondolo [ICH Cap.19 r.85-90] (note del PNG)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "dawn",
+     "apertura": "Dawn lavora alla sua tavoletta, con gli occhi rossi.",
+     "chiusura": "Dawn torna alla sua tavoletta.",
+     "riserva_libera": "Dawn scuote la testa: non lo sa.",
+     "argomenti": [
+      {
+       "id": "D18_dawn_1",
+       "testo": "Chiedere a Dawn dove siete",
+       "riserva": "Dawn alza gli occhi dalla tavoletta. «Lontano da dove credete» dice. «Non si può tornare indietro da qui, non adesso.» Guarda verso l'alto, come se oltre il soffitto ci fosse qualcosa. «Chiedilo a lei. Ti risponderà meglio di me.»",
+       "effetti": [],
+       "fonte": "Dawn: non si può rientrare perché sono in orbita [ICH Cap.20 r.54]; la battuta: PROPOSTA (la parola «orbita» la dice Gaia, con le immagini)",
+       "scopo": "dove sono"
+      }
+     ]
+    },
+    {
+     "png": "gaia",
+     "apertura": "Una voce di donna ti parla da dentro la testa, calma e stanca.",
+     "chiusura": "La voce tace, ma senti che è ancora lì.",
+     "riserva_libera": "La voce non risponde; ma senti che è ancora lì.",
+     "argomenti": [
+      {
+       "id": "D18_gaia_1",
+       "testo": "Chiedere alla voce chi è",
+       "riserva": "«{Ci siamo già visti, anche se tu eri lontano|Ci siamo già viste, anche se tu eri lontana|Non è la prima volta che ci incontriamo, anche da lontano}» dice la voce. «Sul vostro monte, mentre facevo le mie domande.» Una pausa. «Questo era l'unico modo per sottrarvi a loro. Ora guarda là fuori: vedi l'infinito che si staglia di fronte a voi…»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "gaia",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L dello schema (che cosa chiedere a Gaia, scopo riconoscerla); [ICH Cap.20 r.107] (la battuta alla lettera, accorciata); la visione sul monte sacro [ICH Cap.5 r.117-118] (le sue domande: «faccia pure le sue domande», [r.118]); «Ci siamo già viste…»: PROPOSTA (prepara D18A senza dire il nome)",
+       "scopo": "riconoscerla"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Arne si fruga nei capelli, fra le piume di Arn intrecciate, e ne scioglie una. Te la porge. «Nel caso stessi cadendo… e ti servisse per atterrare comodamente, ricordati che da me troverai sempre un nido in cui tornare.»",
+    "fonte": "P1 [ICH Cap.20 r.39] (la piuma e la battuta di Arne alla lettera); le piume di Arn nei capelli [ICH Cap.2 r.160]",
+    "esplora": [
+     {
+      "id": "D18d1",
+      "testo": "Guardare la piuma",
+      "riserva": "La piuma è rossa e gialla, come le pitture sul viso di Arne. Mentre la guardi, una voce di donna ti parla da dentro la testa: «Quando vorrai, ti mostrerò dove siete.»",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "la piuma [ICH Cap.20 r.39]; i colori del viso di Arne (rosso e giallo, note del PNG); la voce che prepara la capsula [ICH Cap.20 r.103]: PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D18x1",
+     "D18x2"
+    ],
+    "risoluzione": [
+     "D18d1"
+    ]
+   },
+   "required_beats": [
+    "D18x1",
+    "D18x2",
+    "D18d1"
+   ],
+   "optional_beats": [
+    "D18_dawn_1",
+    "D18_gaia_1"
+   ],
+   "riserva_libera": "Nel rifugio ognuno è perso nei suoi pensieri, e nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, la donna ti mostra comunque con i suoi occhi dove siete, e la riconosci."
+  },
+  "D19": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D19x1",
+     "parte": "Il rifugio",
+     "testo": "Imparare a sognare nel passato",
+     "riserva": "Per due anni il vecchio maestro ti insegna a non avere paura dei tuoi sogni. Impari a sognare nel passato, e a vedere te stessa in altre strade, in altri tempi. «Ognuno è capace di scrivere il proprio destino, di forzarlo, di modificarne gli eventi… ma nessuno è mai stato in grado di generare la vita se non attraverso l'unione.» Alla fine Arne fa esplodere il suo sole in una vampa di fiamme, e Knut fa spuntare radici fiorite dal prato. «Bene, ora siete pronti ad uscire.» Il maestro guarda Knytta. «Spero che un giorno ci rincontreremo figliola.» «Teniamoci in contatto, vi osserverò da qui» dice Dawn. La porta si apre su un mare coperto di nebbia.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_maestro"
+      },
+      {
+       "relazione": {
+        "png": "figura_labirinto",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 [ICH Cap.21 r.64-95] (sognare nel passato e sé stessa in altre linee temporali [r.72]; le battute del maestro [r.70, r.90, r.92] e di Dawn [r.93] alla lettera; Arne e Knut [r.87]; la porta su Hellheim [r.94-95]), come in «L'Hersir dei nodi» (H19); il maestro senza nome (schema)"
+    },
+    {
+     "id": "D19x2",
+     "parte": "Hellheim e la seconda casa dell'isola",
+     "testo": "Guardare la costa di Hellheim",
+     "riserva": "Sulla costa gli alberi sono scurissimi, con il legno biancastro. Guardi meglio: sull'acqua ci sono figure che danzano, e poi si gettano a terra; fra gli alberi, corvi che ti fissano. Qualcuno ti tocca la spalla, e quando ti volti non c'è nessuno. «Create piccoli gruppi, legatevi tra di voi e tenete sempre d'occhio chi vi sta accanto così da non perderci» dice Knut. Poco più avanti, su una pietra, una scritta: «Lasciate ogni speranza, o voi ch'entrate.» «Dante… tra gli italiani si dice che andasse forte un tempo» dice Lucas.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_hellheim"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.22 r.3-14] (il tiro di osservare [r.4]; le figure sull'acqua, i corvi, la spalla [r.8]; Knut [r.11], la scritta [r.13] e Lucas [r.14] alla lettera), come in «L'Hersir dei nodi» (H20)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "figura_labirinto",
+     "apertura": "Il vecchio maestro chiude il suo quaderno, e ti guarda da sopra gli occhiali.",
+     "chiusura": "Il maestro torna al suo quaderno.",
+     "riserva_libera": "Il maestro sorride: questo lo imparerai {da solo|da sola|per conto tuo}.",
+     "argomenti": [
+      {
+       "id": "D19_maestro_1",
+       "testo": "Chiedere al maestro che cosa sono i sogni",
+       "riserva": "«Dar vita a qualcosa o a qualcuno ha sempre un valore intrinseco» dice il maestro. «Ma è la mente che in un groviglio di strade costruisce la tua persona… senza carattere e senz'anima non esisterebbe il legame tra realtà e coscienza, tra mente e corpo.» Ti batte un dito sulla fronte. «I tuoi sogni sono strade. Impara a percorrerle.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "figura_labirinto",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.21 r.68-69] (le battute alla lettera, accorciate: «il concetto stesso di Ich» tolto); l'ultima frase: PROPOSTA (sognare nel passato, [r.72])",
+       "scopo": "la scuola dei sogni"
+      },
+      {
+       "id": "D19_maestro_2",
+       "testo": "Chiedere al maestro che cosa costa creare",
+       "riserva": "«Creare qualcosa comporta il suo peso di responsabilità» dice il maestro. «Ogni forma di vita può essere libera su Erdegis, ma sarebbero come infanti che devono ancora imparare a camminare… senza qualcuno che li sorregge e guida i loro passi finirebbero col cadere e potrebbero persino non rialzarsi.»",
+       "effetti": [],
+       "fonte": "[ICH Cap.21 r.71] (la battuta alla lettera)",
+       "scopo": "la responsabilità"
+      }
+     ]
+    },
+    {
+     "png": "lucas",
+     "apertura": "Lucas armeggia con il ciondolo e con certi numeri che solo lui vede.",
+     "chiusura": "Lucas torna ai suoi numeri.",
+     "riserva_libera": "Lucas alza le spalle: di questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "D19_lucas_1",
+       "testo": "Chiedere a Lucas dove siete",
+       "riserva": "«Hellheim» dice Lucas. «Le coordinate me le ha date Dawn, e non sbaglia mai… quasi mai.» Guarda gli alberi neri, e per una volta non fa battute.",
+       "effetti": [],
+       "fonte": "Lucas e le coordinate con Dawn [ICH Cap.22 r.10]; la battuta: PROPOSTA (come la H20: non fa battute)",
+       "scopo": "dove sono"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Mentre il gruppo avanza verso nord fra sussurri che non hanno bocca, chiudi gli occhi, e vedi: Knytta che tocca una pietra con un codice inciso, piume che cadono, Lucas con il ciondolo in mano. Poi una piuma bianca, una lacrima che ci cade sopra, e una figura che sguaina la lama per difenderla.",
+    "fonte": "P3 [ICH Cap.22 r.15-18, r.49-52] (verso nord fra i sussurri; la visione della veggente: la pietra con il codice, le piume, Lucas con il ciondolo; la piuma bianca, la lacrima, la figura con la lama), come in «L'Hersir dei nodi» (H20)",
+    "esplora": [
+     {
+      "id": "D19d1",
+      "parte": "Hellheim e la seconda casa dell'isola",
+      "testo": "Raccontare la visione agli altri",
+      "riserva": "Racconti la pietra e il codice. Ne venite a capo insieme: è Knytta la chiave. «Quale dito?» chiede Lucas, e le preme una cosa sul polpastrello. «Che cosa le hai fatto?» chiede Knut. «Forse le ho scritto qualcosa… certo una chiave di criptazione… ma perché?» «Forse c'entrano i corvi, forse è come quando ci siamo registrati da Dawn» dice Arne. Poi, dal bosco, una voce. «Lancieri, in prima linea, Arne io e te difenderemo {nome}, Lucas e Knytta» grida Knut. «Knytta, se {nome} ti mostra la posizione tu riesci a correre fin lì?»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_codice"
+       },
+       {
+        "relazione": {
+         "png": "lucas",
+         "delta": 1
+        }
+       }
+      ],
+      "fonte": "P3-P4 [ICH Cap.22 r.53-56, r.62, r.66] (le battute di Lucas, Knut e Arne alla lettera, con il segnaposto e il nome nuovo; la domanda di Knut [r.54] detta con altre parole: la parola della fonte è riservata fino alla 25 dall'ontologia di Ich), come in «L'Hersir dei nodi» (H20x2)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D19x1",
+     "D19x2"
+    ],
+    "risoluzione": [
+     "D19d1"
+    ]
+   },
+   "required_beats": [
+    "D19x1",
+    "D19x2",
+    "D19d1"
+   ],
+   "optional_beats": [
+    "D19_maestro_1",
+    "D19_maestro_2",
+    "D19_lucas_1"
+   ],
+   "riserva_libera": "Sull'isola i sussurri ti rispondono, ma non con parole che capisci.",
+   "uscita_fail_forward": "Se la scena si ferma, la pietra si accende comunque, e le due piume vi mostrano come è morta Alikea."
+  },
+  "D20": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D20x1",
+     "testo": "Guardare il tatuaggio di Arne",
+     "riserva": "Sul braccio di Arne c'è un tatuaggio nuovo: due rune intrecciate, Sowelu e Kano. «È il simbolo che mi ricorda te» dice. «La tua luce oltre le tenebre. Il mio sole.» Te lo fa toccare: la pelle è ancora calda.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_tatuaggio"
+      },
+      {
+       "relazione": {
+        "png": "arne",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 [ICH Cap.24 r.61-62] (Arne si tatua Sowelu + Kano, il simbolo che le ricorda Draumdís: la sua luce oltre le tenebre, il suo sole); le parole di Arne: dalla nota della fonte, in prima persona (PROPOSTA)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "folr_dreymar",
+     "apertura": "Folr Dreymar ti ascolta con gli occhi chiusi, appoggiato al bastone.",
+     "chiusura": "Dreymar sorride, e non dice altro.",
+     "riserva_libera": "Dreymar scuote piano la testa: questo lo sai già tu.",
+     "argomenti": [
+      {
+       "id": "D20_dreymar_1",
+       "testo": "Rispondere che lo fai perché è il destino a chiamarti",
+       "riserva": "«Il destino chiama il mio ruolo» gli dici. Dreymar annuisce piano. «So che la tua voce spiccherà il volo e che essa percorrerà passato, presente e futuro… scegli con cura le tue parole, giovane errir.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "folr_dreymar",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L dello schema (rispondere a «tu perché lo fai?», scopo il tema) [ICH Cap.25 r.69-70] (la domanda e la battuta [r.70] alla lettera); la risposta: PROPOSTA",
+       "scopo": "il tema"
+      },
+      {
+       "id": "D20_dreymar_2",
+       "testo": "Rispondere che lo fai per qualcuno a cui tieni",
+       "riserva": "Guardi Arne, dall'altra parte della sala, e glielo dici. Dreymar sorride come se l'avesse sognato anche questo. «Mi fido delle tue scelte. Anch'io ho sognato il tuo volo, ho sognato che tu parlavi alle nostre vite future e a quelle passate.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "folr_dreymar",
+          "delta": 1
+         }
+        },
+        {
+         "relazione": {
+          "png": "arne",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L dello schema (rispondere a «tu perché lo fai?»: «o lo fai anche per qualcosa di personale?» [ICH Cap.25 r.69]); [ICH Cap.24 r.65] (la battuta alla lettera, accorciata); la risposta: PROPOSTA",
+       "scopo": "il tema"
+      }
+     ]
+    },
+    {
+     "png": "knut",
+     "apertura": "Knut è seduto sui gradini della casa degli Hersir, con una mappa sulle ginocchia.",
+     "chiusura": "Knut torna alla sua mappa.",
+     "riserva_libera": "Knut alza le spalle: di questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "D20_knut_1",
+       "testo": "Chiedere a Knut dove andrete adesso",
+       "riserva": "Knut ti guarda a lungo. «Vorrei vedere le tue terre, {nome}» dice. «Skry i Kalter. Me ne hai parlato così tante volte che mi sembra di conoscerle.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knut",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P1 della 21: Knut le chiede di vedere le sue terre [ICH Cap.25 r.54] (la battuta: PROPOSTA, dalla nota)",
+       "scopo": "le sue terre"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Folr Dreymar ti fa sedere accanto a sé. Ti ringrazia per il viaggio; poi ti chiede perché ti sei allontanata da Knytta. «Esistono diversi tipi di guide o leader, tu non sei adatta a guidare battaglie o interi popoli ma sei una voce che viene ascoltata e le tue parole hanno un peso nelle loro vite… la forza necessaria al cambiamento sta in Knytta, ma tu {sei già riuscito ad|sei già riuscita ad|hai già saputo} influenzare la sua strada.» Tu non sei uno strumento del destino, dice: ne sei l'osservatrice.",
+    "fonte": "P2 [ICH Cap.25 r.63-67] (Dreymar la ringrazia, le chiede perché si sia allontanata da Knytta; le battute [r.66-67] alla lettera, accorciate, con il nome nuovo; «tu non sei strumento del destino ma osservatrice»: ICH.md r.109, schema 20)",
+    "esplora": [
+     {
+      "id": "D20d1",
+      "testo": "Ascoltare Dreymar fino in fondo",
+      "riserva": "«Questo mondo è un paradiso sotto menzogna, {nome}, per quanto esso sia parte di voi ciò che dovete comprendere è che voi siete molto di più di questo… 4 sono le figure che si ergeranno durante l'ultimo ciclo, quale che sia il cammino che percorrerete solo tu puoi saperlo.» Ti accarezza il viso. «Mi fido delle tue scelte, {nome}, per quanto tu sei ancora giovane so che la aiuterai in futuro… l'unica domanda che ti porgo è questa però: tu perché lo fai? Solo perché è il destino a chiamare il tuo ruolo o lo fai anche per qualcosa di personale?» Alle sue spalle Arne ti tende la mano. «{Pronto a|Pronta a|Te la senti di} toccare il sole?»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_dreymar"
+       },
+       {
+        "relazione": {
+         "png": "folr_dreymar",
+         "delta": 1
+        }
+       }
+      ],
+      "fonte": "P2-P3 [ICH Cap.25 r.68-69, r.73] (le battute di Dreymar e di Arne alla lettera, con il segnaposto)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D20x1"
+    ],
+    "risoluzione": [
+     "D20d1"
+    ]
+   },
+   "required_beats": [
+    "D20x1",
+    "D20d1"
+   ],
+   "optional_beats": [
+    "D20_dreymar_1",
+    "D20_dreymar_2",
+    "D20_knut_1"
+   ],
+   "riserva_libera": "Restan è piena di voci, ma nessuna risponde alla tua.",
+   "uscita_fail_forward": "Se la scena si ferma, Arne ti prende comunque per mano e vola, e la luce ti viene incontro."
+  },
+  "D21": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D21x1",
+     "testo": "Volare sopra la tua regione",
+     "riserva": "Voli bassa sopra i campi e i villaggi della tua regione. E lungo la strada vedi un gruppo che cammina: Knut, Arne, gli altri. E fra loro ci sei anche tu. Siete già lì, prima di esserci.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_skry"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.25 r.82] (si muove nella sua regione e vede «loro stessi che sono già lì»)"
+    },
+    {
+     "id": "D21x2",
+     "testo": "Avvicinarti a Kuss",
+     "riserva": "Kuss è lì, fra i campi, con le macchie di tempera sul viso, e qui parla. Vi saluta come se vi aspettasse da tanto. Conosce un posto sicuro, dice, poco lontano: case, coltivazioni, e nessuno intorno. Arne è stanca, e lo segue.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "relazione": {
+        "png": "kuss",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P2 [ICH Cap.25 r.83-84] (Kuss conosce un posto sicuro, in apparenza disabitato, con le coltivazioni); nel passato di Skry i Kalter parla (file dei PNG, Kuss); Arne stanca: PROPOSTA"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "kuss",
+     "apertura": "Kuss ti sorride, e per la prima volta senti la sua voce.",
+     "chiusura": "Kuss torna a guardare la strada.",
+     "riserva_libera": "Kuss sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "D21_kuss_1",
+       "testo": "Chiedere a Kuss dei suoi dipinti",
+       "riserva": "«Li ricordi ancora?» Kuss sembra contento. «Le linee rosse sul nero, le bestie, il sole nero… li dipingevo perché non sapevo dirli. Adesso so che cosa erano.» Non ti dice che cosa.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "kuss",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "i dipinti di Kuss [ICH Cap.3 r.3-10] (restano enigmi fino alla 21: qui Kuss non li spiega); la battuta: PROPOSTA",
+       "scopo": "un ultimo segno di (a)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Mentre il gruppo segue Kuss, tu voli un poco più in alto. Al margine dei campi ci sono uomini vestiti di nero, con oggetti di metallo con un manico legati in spalla. Uno di loro scava, e nasconde qualcosa sotto terra.",
+    "fonte": "P2 [ICH Cap.25 r.85-86] (in volo vede uomini in nero, uno nasconde qualcosa sotto terra; portano oggetti metallici con un manico legati in spalla); gli uomini in nero non sono fra i presenti (modello soldato del file dei PNG se il giocatore li attacca: nessuno scontro imposto con loro)",
+    "esplora": [
+     {
+      "id": "D21d1",
+      "testo": "Scendere nel posto sicuro con gli altri",
+      "riserva": "Nel posto sicuro Kuss si siede accanto a te. «Sai {nome}, non è semplice osservare voi e comprendere chi è dalla nostra parte ma se osservo dentro di me capisco quale è il mio sole, quando quei reverie si sono spenti in massa ho compreso che sareste arrivati e vi stavo aspettando.» Poi dalle case escono uomini, e sparano. Arne si volta verso di te, e Kuss la pugnala. «Ti ringrazio per aver condiviso con me la posizione degli skera, loro saranno i prossimi e poi finalmente saremo salvi.» Arne cade. Kuss ti afferra la gola.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_uomini_nero"
+       },
+       {
+        "scopri": "osservatrice_truth_kuss"
+       },
+       {
+        "relazione": {
+         "png": "kuss",
+         "delta": -3
+        }
+       }
+      ],
+      "fonte": "P3 [ICH Cap.25 r.107-110] (le battute di Kuss [r.107, r.109] alla lettera, con il segnaposto; gli uomini escono dalle case e sparano; Kuss pugnala a morte Arne; le afferra la gola); R (a) qui (ICH.md r.110, r.126)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D21x1",
+     "D21x2"
+    ],
+    "risoluzione": [
+     "D21d1"
+    ]
+   },
+   "required_beats": [
+    "D21x1",
+    "D21x2",
+    "D21d1"
+   ],
+   "optional_beats": [
+    "D21_kuss_1"
+   ],
+   "riserva_libera": "Nel tempo che non è il tuo, nessuno ti sente davvero.",
+   "uscita_fail_forward": "Se la scena si ferma, la visione si chiude comunque, e ti ritrovi a Restan, davanti ad Arne."
+  },
+  "D22": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D22x1",
+     "parte": "Restan",
+     "testo": "Seguire Arne dal tatuatore",
+     "riserva": "Arne ti porta con sé, per non lasciarti a pensare da {solo|sola|te}, e si fa tatuare di nuovo, accanto al sole. Tu le tieni la mano mentre l'ago lavora. Poi, nella casa degli Hersir, Folr Dreymar ti ascolta raccontare ancora, a occhi chiusi. «Scegli con cura le tue parole, giovane errir» ti dice soltanto.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_racconto"
+      },
+      {
+       "relazione": {
+        "png": "arne",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 [ICH Cap.26 r.22-24] (il racconto, il tatuaggio di Arne per calmarla, di nuovo Dreymar); la battuta di Dreymar [ICH Cap.25 r.70] (ripresa); dove si tatui Arne: PROPOSTA"
+    },
+    {
+     "id": "D22x2",
+     "parte": "le risaie di Skry i Kalter",
+     "testo": "Guardare la ragazza che arriva con Raven",
+     "riserva": "A Skry i Kalter le risaie arrivano fino alla montagna, e le case sembrano nidi. Raven vi raggiunge con una ragazza che non parla. «Ditemi quando partire, con me verranno alcuni corvi ma il resto del gruppo rimarrà con voi.» «Puoi lasciare Ava con noi?» chiede Lucas. «Non è sotto il mio controllo.» «Eppure io la vedo come una marionetta al momento sotto il tuo controllo.» «Può fare ciò che vuole, la sua mente ha bisogno di ripararsi, è per questo che ancora non ti parla… io gli sto soltanto dando una seconda occasione.» Ava resta con voi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_ava"
+      }
+     ],
+     "fonte": "P3 [ICH Cap.27 r.32-37] (le battute di Raven e Lucas alla lettera, accorciate: il nome riservato della battuta [r.37] tolto); le risaie e le case come nidi: come in «L'Hersir dei nodi» (H24) [ICH Cap.28 r.79-80]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "raven",
+     "apertura": "Raven ti guarda dall'alto, con le piume nere che le scendono sulle spalle.",
+     "chiusura": "Raven torna fra i suoi corvi.",
+     "riserva_libera": "Raven non risponde: guarda già altrove.",
+     "argomenti": [
+      {
+       "id": "D22_raven_1",
+       "testo": "Chiedere a Raven di Kuss",
+       "riserva": "Le racconti del posto sicuro, del pugnale. Raven ascolta senza muovere un muscolo. «Chi ha tradito una volta sceglie da che parte cadere» dice. «Non sta a te giudicarlo. Sta a te vedere.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "raven",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "Raven moralista, sentenze brevi (file dei PNG, Raven); la battuta: PROPOSTA (dopo la 21 il tradimento si può dire)",
+       "scopo": "fermare il tradimento"
+      }
+     ]
+    },
+    {
+     "png": "ava",
+     "apertura": "Ava ti guarda, e non dice niente.",
+     "chiusura": "Ava abbassa gli occhi.",
+     "riserva_libera": "Ava non parla ancora.",
+     "argomenti": [
+      {
+       "id": "D22_ava_1",
+       "testo": "Sederti accanto ad Ava",
+       "riserva": "Ti siedi accanto a lei, senza chiederle niente. Dopo un po' Ava ti appoggia la testa sulla spalla, come fanno i bambini quando sono stanchi.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "ava",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "Ava: la sua mente deve ripararsi, ancora non parla [ICH Cap.27 r.37]; il gesto: PROPOSTA",
+       "scopo": "Ava"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Knut ti fa inginocchiare fra le risaie e ti posa le mani sulla terra. Sotto le tue dita le radici si fanno dure, lisce, come cavi. «La connessione è attiva» dice una voce che senti solo tu.",
+    "fonte": "P2 [ICH Cap.27 r.39-40] (Knut le fa toccare il terreno: radici che diventano cavi; «la connessione è attiva», la sente solo lei)",
+    "esplora": [
+     {
+      "id": "D22d1",
+      "parte": "le risaie di Skry i Kalter",
+      "testo": "Ascoltare chi c'è dall'altra parte",
+      "riserva": "«Non so se posso parlare o se puoi sentirmi o meno mentre sei in trans con lui» dice Knut, piano, «quindi per evitare problemi ti chiederò di porgli alcune domande e di dargli alcune informazioni.» Dall'altra parte c'è Kuss. Attraverso di te dice che sono sotto attacco, che gli skrykru si radunano alla montagna. Poi: «Dovresti venire anche tu qui, Arne è con te?» «Dì nemmeno un centinaio, meno della metà sono feriti» ti sussurra Knut. «E non dirgli delle armi.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_contatto"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.27 r.41-47] (le battute di Knut [r.41, r.45, r.47] e di Kuss [r.43] alla lettera, accorciate; sono sotto attacco, gli skrykru si radunano alla montagna)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D22x1",
+     "D22x2"
+    ],
+    "risoluzione": [
+     "D22d1"
+    ]
+   },
+   "required_beats": [
+    "D22x1",
+    "D22x2",
+    "D22d1"
+   ],
+   "optional_beats": [
+    "D22_raven_1",
+    "D22_ava_1"
+   ],
+   "riserva_libera": "Fra le risaie c'è solo il vento, e nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, Knut parla comunque con Kuss attraverso di te, e il piccolo esercito arriva come aveva previsto."
+  },
+  "D23": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D23x1",
+     "testo": "Salutare Amèlie",
+     "riserva": "«Sono felice di vedervi, temevo che vi fosse successo qualcosa di brutto là in mezzo» dice Amèlie, e ha gli occhi lucidi. «Come facevate a sapere che eravamo qui?» Una ragazza della sua squadra la interrompe: «Capitano, scusi l'interruzione ma dovrebbe farsi controllare da Nil.» Amèlie sospira. «Avete feriti tra voi?» Poi guarda la montagna. «Noi siamo diretti là. A quanto pare qualcuno parla attraverso uno di loro, è la sua voce.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_amelia_squadra"
+      },
+      {
+       "relazione": {
+        "png": "amelia",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 [ICH Cap.28 r.9-20] (le battute di Amelia [r.10, r.14-15, r.20] e della ragazza [r.9] alla lettera, accorciate; il nome di chi parla attraverso il voluspà [r.20] si tace fino alla 25: «qualcuno»)"
+    },
+    {
+     "id": "D23x2",
+     "testo": "Ascoltare Lucas che fa le presentazioni",
+     "riserva": "Lucas saluta tutti e si apre la giacca per mostrare il busto: «Tutto integro, qua dentro poi è come essere tornati nel vecchio mondo.» «Almeno ci sono i segni, nel caso debba fare i punti di saldatura saprai seguire il filo» ribatte Antoine. Poi Antoine chiede di condividere le informazioni, e alla fine vi danno delle piccole radio a basse frequenze: una anche a te.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_radio"
+      },
+      {
+       "relazione": {
+        "png": "lucas",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P2 [ICH Cap.28 r.25-29] (le battute di Lucas [r.26] e Antoine [r.27] alla lettera; le radio)"
+    },
+    {
+     "id": "D23x3",
+     "testo": "Parlare ancora con Kuss attraverso il terreno",
+     "riserva": "Posi le mani sulla terra, e il filo con Kuss si tende di nuovo. Ti chiede dove siete, quanti siete; ti chiede ancora di Arne. Gli rispondi come hai deciso di rispondergli. Quando il filo si allenta, ti accorgi che Arne ti sta guardando.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "L dello schema (parlare con Kuss [ICH Cap.28 r.9], scopo l'obiettivo su Kuss); le domande di Kuss [ICH Cap.27 r.43]; testo PROPOSTA"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "antoine",
+     "apertura": "Antoine ti squadra, con le mani sui fianchi.",
+     "chiusura": "Antoine torna dai suoi.",
+     "riserva_libera": "Antoine scuote la testa: non lo sa.",
+     "argomenti": [
+      {
+       "id": "D23_antoine_1",
+       "testo": "Chiedere ad Antoine chi è",
+       "riserva": "«Per quanto non mi faccia piacere sapere di essere stato usato non nego che avrei fatto lo stesso» dice Antoine. «Uno scambio di informazioni, e siamo pari.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "antoine",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.28 r.8] (la battuta alla lettera); lo scambio di informazioni [r.6-8, r.28]",
+       "scopo": "chi è Antoine"
+      }
+     ]
+    },
+    {
+     "png": "amelia",
+     "apertura": "Amèlie si sistema il fucile sulla spalla.",
+     "chiusura": "Amèlie torna dalla sua squadra.",
+     "riserva_libera": "Amèlie non lo sa.",
+     "argomenti": [
+      {
+       "id": "D23_amelia_1",
+       "testo": "Chiedere ad Amèlie che cosa ha visto",
+       "riserva": "«Pensavo di essere pronta ma quello spettacolo è stato inquietante… cittadini, tribali, chiunque…» Amèlie si guarda le mani. «Se risalissimo a quel reverie potremmo capire meglio dove si trova, ed eliminarlo.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "amelia",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.28 r.18, r.21] (le battute alla lettera; le pire)",
+       "scopo": "le pire e la montagna"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La strada della montagna passa per i villaggi della tua regione. In ogni villaggio la gente esce dalle case e vi guarda passare: Bhorkyn, Skera, ragazze con armi strane. E guardano te.",
+    "fonte": "P3 [ICH Cap.28 r.30-31] (nei villaggi gli skrykru le chiedono chi siano quelli che porta con sé)",
+    "esplora": [
+     {
+      "id": "D23d1",
+      "testo": "Fermarti nel primo villaggio",
+      "riserva": "Nel primo villaggio una vecchia ti prende per il braccio. «Tu sei dei nostri voluspà. Chi sono questi che porti con te?» Dietro di lei, tutto il villaggio aspetta la tua risposta.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_villaggi"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.28 r.30-31] (la domanda degli skrykru: la battuta, PROPOSTA, dalla nota)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D23x1",
+     "D23x2"
+    ],
+    "risoluzione": [
+     "D23d1"
+    ]
+   },
+   "required_beats": [
+    "D23x1",
+    "D23x2",
+    "D23d1"
+   ],
+   "optional_beats": [
+    "D23x3",
+    "D23_antoine_1",
+    "D23_amelia_1"
+   ],
+   "riserva_libera": "Lungo la strada la gente vi guarda passare, e nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, Knut e Knytta schierano comunque i guerrieri, e tu cominci a salire."
+  },
+  "D24": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D24x1",
+     "testo": "Lasciare che Lucas ti legga i ricordi",
+     "riserva": "Lucas ti posa il ciondolo sulla nuca, freddo. «Allora… oh questa è tua sorellina… rumori forti… Argus… vecchia cotta?» Ridacchia, poi si fa serio. «{nome}, sai che qui in ballo ci sono anche le loro vite vero? Facciamo in modo che Knytta e Knuttino non debbano salire sulla montagna e uccidere tutti, {rimani concentrato|rimani concentrata|non distrarti} e muoviamoci, tutto andrà per il meglio… sono certo che tu conosci già la risposta dopotutto.» «Non possiamo usare il ciondolo per arrivare su?» chiede Ava. «Le coordinate sono diverse e poi ci sgamerebbero subito.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_ricordi"
+      },
+      {
+       "relazione": {
+        "png": "lucas",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P2 [ICH Cap.29 r.18-23] (le battute di Lucas [r.18, r.20, r.23] e di Ava [r.22] alla lettera, accorciate, con il segnaposto e il nome nuovo)"
+    },
+    {
+     "id": "D24x2",
+     "testo": "Ascoltare il piano di Knut fino in fondo",
+     "riserva": "«Durante la notte sarà più difficile colpire gli avversari in cima» dice Arne. «Lo so, ma così facendo potremmo muovere Raven e i corvi tra le loro fila per degli attacchi a sorpresa ai loro rifornimenti» risponde Knut. Un terzo della fanteria non si mostrerà; la prima carica la guideranno lui, Anyja, Knytta e Arne. Arne ti cerca con gli occhi, e annuisce.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_piano"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.29 r.10-13] (le battute di Arne [r.10] e Knut [r.11] alla lettera; il terzo della fanteria e la prima carica [r.12-13]), come in «L'Hersir dei nodi» (H24)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "arne",
+     "apertura": "Arne prepara i vasi per le frecce incendiarie, con le mani nere di pece.",
+     "chiusura": "Arne torna ai suoi vasi.",
+     "riserva_libera": "Arne alza le spalle, e sorride.",
+     "argomenti": [
+      {
+       "id": "D24_arne_1",
+       "testo": "Salutare Arne prima di salire",
+       "riserva": "Arne si pulisce le mani sui calzoni e ti prende il viso. «Ci vediamo in cima» dice, come il primo giorno della prova. Ti bacia, e torna ai suoi vasi prima che tu possa rispondere.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "arne",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "Arne e gli skrykru preparano i vasi per le frecce incendiarie [ICH Cap.29 r.16]; «Ci vediamo in cima» [ICH Cap.4 r.108] (ripresa); il bacio: PROPOSTA (il filo di Arne, 18)",
+       "scopo": "il filo di Arne"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Salite di notte, tu, Lucas e Ava, mentre in basso comincia la battaglia. A un certo punto, sopra di te, si accende una luce: piccola, ferma, come quella che ti venne incontro nel cielo di Restan. Ti indica la strada, appiglio dopo appiglio. Più su, una figura luminosa ti osserva, e senti cantare degli uccelli dove non ci sono uccelli. Sogno e roccia si confondono.",
+    "fonte": "P3 [ICH Cap.29 r.26-32] (la scalata notturna con Lucas e Ava; una luce le indica la strada, una figura luminosa la osserva, il canto degli uccelli; realtà e sogno si fondono); la luce di Restan (la 20): PROPOSTA",
+    "esplora": [
+     {
+      "id": "D24d1",
+      "testo": "Seguire la luce",
+      "riserva": "Segui la luce, e la roccia sotto le tue dita sembra più calda. Dietro di te Lucas impreca a mezza voce; Ava sale in silenzio. Poi, dal basso, il primo sibilo di una freccia.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_scalata"
+       }
+      ],
+      "fonte": "P3-P4 [ICH Cap.29 r.26-32, r.97] (la luce; gli inseguitori, soprattutto frecce); testo PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D24x1",
+     "D24x2"
+    ],
+    "risoluzione": [
+     "D24d1"
+    ]
+   },
+   "required_beats": [
+    "D24x1",
+    "D24x2",
+    "D24d1"
+   ],
+   "optional_beats": [
+    "D24_arne_1"
+   ],
+   "riserva_libera": "Sulla parete c'è solo il vento, e il rumore lontano della battaglia.",
+   "uscita_fail_forward": "Se la scena si ferma, la luce vi porta comunque fino alla cengia sotto la cima."
+  },
+  "D25": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D25x1",
+     "testo": "Guardare la figura nella luce",
+     "riserva": "Resti in piedi nello stridio, a fatica, e guardi. È una donna, con le pitture sul viso come le tue, e un solo occhio. Quando parla, ha la tua voce, e ti chiama con il tuo nome: {nome}.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_cima"
+      },
+      {
+       "relazione": {
+        "png": "se_anziana",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 [ICH Cap.29 r.170-173] (i tiri di spirito, robustezza e osservare; la figura con pitture sul viso e un solo occhio, che nel testo porta il nome della protagonista); che abbia la sua voce: PROPOSTA (accenno a (c), schema)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "ava",
+     "apertura": "Ava ti tiene per un braccio, e trema.",
+     "chiusura": "Ava non ti lascia il braccio.",
+     "riserva_libera": "Ava non risponde.",
+     "argomenti": [
+      {
+       "id": "D25_ava_1",
+       "testo": "Dire ad Ava di non avere paura",
+       "riserva": "«Non ho paura» dice Ava, e sono le prime parole che ti dice. Poi ti stringe il braccio più forte.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "ava",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "Ava: «non ti lascio qui» [ICH Cap.29 r.206] (leale); la battuta: PROPOSTA",
+       "scopo": "Ava"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La donna con un solo occhio ti viene vicina. «Per ottenere quel destino, anche tu come me dovrai sacrificare metà della luce del mondo.»",
+    "fonte": "P1 [ICH Cap.29 r.173] (la battuta alla lettera)",
+    "esplora": [
+     {
+      "id": "D25d1",
+      "testo": "Chiederle che cosa vuole da te",
+      "riserva": "«Per farlo, stringi con forza la luce che si dirada, affinché il cammino ti sia chiaro.» Il sole, alle sue spalle, tocca l'orizzonte. Ti ricordi della luce che ti venne incontro nel cielo di Restan, e di quello che le hai promesso. La donna aspetta la tua risposta.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_cima"
+       }
+      ],
+      "fonte": "P1 [ICH Cap.29 r.174] (la battuta alla lettera); la promessa della 20 (RAMO, PROPOSTA)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D25x1"
+    ],
+    "risoluzione": [
+     "D25d1"
+    ]
+   },
+   "required_beats": [
+    "D25x1",
+    "D25d1"
+   ],
+   "optional_beats": [
+    "D25_ava_1"
+   ],
+   "riserva_libera": "In cima c'è solo lo stridio, e il sole che scende.",
+   "uscita_fail_forward": "Se la scena si ferma, il sole scende comunque, la luce si spegne, e Ava salta con te dalla cima."
+  },
+  "D26": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D26x1",
+     "parte": "Le terre degli Skrykru",
+     "testo": "Preparare il rito con gli altri voluspà",
+     "riserva": "Prima dell'alba i voluspà degli Skrykru si siedono in cerchio, come sul monte sacro. Bruciate olio di radice e sali di roccia; il fumo sale dritto, e ha l'odore delle case della tua infanzia. Gli altri ti guardano: questa volta il cerchio lo guidi tu.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_rito"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.30 r.30] (il rito all'alba, l'olio di radice e i sali di roccia); il cerchio del monte sacro [ICH Cap.3 r.104-108]; che lo guidi lei: PROPOSTA"
+    },
+    {
+     "id": "D26x2",
+     "parte": "Le terre degli Skrykru",
+     "testo": "Sederti accanto a Knut",
+     "riserva": "Knut non piange. Guarda il fuoco, e ogni tanto si guarda le mani, come se ci fosse ancora qualcosa da trattenere. Ti siedi accanto a lui, e restate così fino a quando il cielo non comincia a schiarire.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "relazione": {
+        "png": "knut",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "la morte di Dawn per Knut [ICH Cap.29 r.180-196] (come in «L'Hersir dei nodi», H24); Knut da consolare [ICH Cap.30 r.12]; testo PROPOSTA"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "saoirse",
+     "apertura": "Saoirse ti accoglie a Krakborg con un cenno del capo, come si accoglie un'alleata.",
+     "chiusura": "Saoirse torna ai suoi consiglieri.",
+     "riserva_libera": "Saoirse sorride: di questo non parlerà.",
+     "argomenti": [
+      {
+       "id": "D26_saoirse_1",
+       "testo": "Chiedere a Saoirse dei voluspà degli Jarl",
+       "riserva": "«Li ho visti» dice Saoirse. «Ragazze e ragazzi che parlano con la bocca di un altro.» Ti guarda. «Voi parlate con la vostra. Non lasciate che nessuno ve la tolga.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "saoirse",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "i voluspà controllati dagli Jarl [ICH Cap.32 r.13]; la voce di qualcuno attraverso un voluspà [ICH Cap.28 r.20]; la battuta: PROPOSTA (Saoirse dà del voi)",
+       "scopo": "i voluspà degli Jarl"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "All'alba il fumo del rito vi prende. La tua mente si stacca dal corpo e vola, con quella degli altri voluspà, attraverso le tenebre, verso una luce lontana: il nuovo orizzonte. Da lassù vedi tutte le terre degli Skrykru, e ogni fuoco acceso.",
+    "fonte": "P1 [ICH Cap.30 r.30] (la mente dei voluspà vola nelle tenebre verso la luce del nuovo orizzonte)",
+    "esplora": [
+     {
+      "id": "D26d1",
+      "parte": "Le terre degli Skrykru",
+      "testo": "Cercare con la mente la tua gente",
+      "riserva": "Cerchi il tuo villaggio, e lo trovi: un fuoco piccolo, e intorno tua madre, tuo padre, Astrid. Non possono vederti; ma possono sentirti, se parli.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "la famiglia [ICH Cap.1 r.97-113]; la voce degli Skrykru (la 02, [ICH Cap.1 r.111]); testo PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D26x1"
+    ],
+    "risoluzione": [
+     "D26d1"
+    ]
+   },
+   "required_beats": [
+    "D26x1",
+    "D26d1"
+   ],
+   "optional_beats": [
+    "D26x2",
+    "D26_saoirse_1"
+   ],
+   "riserva_libera": "Intorno al fuoco nessuno ha voglia di parlare.",
+   "uscita_fail_forward": "Se la scena si ferma, il rito si compie comunque all'alba, e a Krakborg Saoirse ti offre il suo stendardo."
+  },
+  "D27": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D27x1",
+     "parte": "Ourobera e il palazzo di Skjoldland",
+     "testo": "Imparare da Saoirse a parlare per convincere",
+     "riserva": "Saoirse ti insegna che un discorso si costruisce come una casa, una pietra alla volta, e che ai molti si parla con messaggi semplici. «I messaggi contorti servono per la segretezza» dice, «o, come nel vostro caso, per le premonizioni.» Per un mese, a Ourobera, mentre gli altri si addestrano con le armi, tu ti addestri con le parole.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_discorso"
+      },
+      {
+       "relazione": {
+        "png": "saoirse",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 [ICH Cap.33 r.51-58] (costruire il discorso, messaggi semplici; quelli contorti per segretezza o per le premonizioni: la frase in bocca a Saoirse, PROPOSTA, dalla nota); P2 [ICH Cap.34 r.20-27] (un mese di addestramento a Ourobera)"
+    },
+    {
+     "id": "D27x2",
+     "parte": "Ourobera e il palazzo di Skjoldland",
+     "testo": "Entrare a palazzo, a Skjoldland",
+     "riserva": "A palazzo, a Skjoldland, gli sguardi ti seguono per i corridoi: occhiatacce, smorfie di disgusto per le pitture sul tuo viso. Qualcuno riconosce la cavaliera che viaggia con voi, e sussurra della taglia sulla sua testa. Saoirse cammina dritta, e ti tiene accanto.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_palazzo"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.35 r.24-28] (occhiatacce e disgusto a palazzo; la cavaliera riconosciuta, la sua taglia), come in «La cavaliera di cenere» (E26); le pitture sul viso: PROPOSTA"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "ecbert",
+     "apertura": "Il re Ecbert ti guarda dall'alto del trono, come si guarda un oggetto che qualcuno ha portato a corte.",
+     "chiusura": "Il re torna a parlare con Saoirse.",
+     "riserva_libera": "Il re non ti risponde: guarda Saoirse.",
+     "argomenti": [
+      {
+       "id": "D27_ecbert_1",
+       "testo": "Parlare al re con un messaggio semplice",
+       "riserva": "Gli dici una cosa sola, come ti ha insegnato Saoirse: gli Skrykru combatteranno, se Skjoldland combatte. Il re ti guarda per la prima volta davvero. «Non ne dubito» dice. «Ma se dobbiamo affrontare un mare in tempesta preferisco la pelle al metallo.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "ecbert",
+          "delta": 1
+         }
+        },
+        {
+         "relazione": {
+          "png": "saoirse",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L dello schema (che cosa dire a palazzo, scopo la voce imparata); [ICH Cap.36 r.13] (la battuta di Ecbert alla lettera); il messaggio semplice [ICH Cap.33 r.51-58]; che cosa dica lei: PROPOSTA",
+       "scopo": "la voce imparata"
+      },
+      {
+       "id": "D27_ecbert_2",
+       "testo": "Tacere, e guardare il re",
+       "riserva": "Taci, e guardi. Il re parla con Saoirse di navi e di armature, di pelle e di metallo; tu vedi che, quando dice «metallo», gli trema appena la mano. Più tardi lo dici a Saoirse, e lei sorride.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "saoirse",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L dello schema (che cosa dire a palazzo); il dialogo pelle o metallo [ICH Cap.36 r.10-19]; l'osservatrice (la 20); testo PROPOSTA",
+       "scopo": "la voce imparata"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Prima dell'udienza Saoirse ti ferma nel corridoio, e ti prende le mani. «Ricordatevi che voi non siete un oggetto, in tanti cercheranno di offrire del denaro per comprarvi, per usarvi, ma voi non siete un effimero utensile, voi siete {un uomo|una donna|una persona}. Fate rispettare la vostra voce.»",
+    "fonte": "P3 [ICH Cap.36 r.5] (la battuta di Saoirse alla lettera, con le forme di genere)",
+    "esplora": [
+     {
+      "id": "D27d1",
+      "parte": "la terra dei Bhorkyn",
+      "testo": "Partire con Knut verso la terra dei Bhorkyn",
+      "riserva": "Dopo l'udienza parti con Knut verso la terra dei Bhorkyn, dove l'alleanza si raduna. Il bosco è fitto e silenzioso. A metà strada Knut si ferma, e tu con lui: vi state guardando intorno nello stesso momento. Qualcuno vi osserva. E gli Skrykru, lontani, aspettano che qualcuno li chiami.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_bhorkyn"
+       }
+      ],
+      "fonte": "P4 [ICH Cap.36 r.39-41] (in terra Bhorkyn lei e Knut si sentono osservati; gli Skrykru in terra Bhorkyn); testo PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D27x1",
+     "D27x2"
+    ],
+    "risoluzione": [
+     "D27d1"
+    ]
+   },
+   "required_beats": [
+    "D27x1",
+    "D27x2",
+    "D27d1"
+   ],
+   "optional_beats": [
+    "D27_ecbert_1",
+    "D27_ecbert_2"
+   ],
+   "riserva_libera": "A corte nessuno ti risponde: ti guardano soltanto.",
+   "uscita_fail_forward": "Se la scena si ferma, gli Skrykru arrivano comunque in terra Bhorkyn, chiamati da Knut."
+  },
+  "D28": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D28x1",
+     "testo": "Guardare meglio il terreno sotto di te",
+     "riserva": "Scendi un poco con la mente, fra il fumo. Sul terreno, fra le postazioni, qualcosa di rosso e incandescente pulsa, come un cuore sotto la terra.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_postazioni"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.37 r.5] (il tiro di fortuna della fonte: qualcosa di rosso e incandescente pulsa sul terreno)"
+    },
+    {
+     "id": "D28x2",
+     "testo": "Aiutare il Kyn ferito",
+     "riserva": "Ti chiedono di aiutare un Kyn ferito: si chiama Mann. Gli fasci il braccio, e lui ti guarda in modo strano, come si guarda qualcosa da mangiare. «Ho fame» dice soltanto. Poi ti consiglia di tirarti indietro, si alza, e va verso le mura, defilato.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "relazione": {
+        "png": "mann",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P2 [ICH Cap.38 r.9-12] (la battuta [r.10] alla lettera; le consiglia di tirarsi indietro; va defilato verso le mura)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "mann",
+     "apertura": "Mann si ferma, a metà strada verso le mura.",
+     "chiusura": "Mann sparisce fra il fumo.",
+     "riserva_libera": "Mann ti guarda, e non risponde.",
+     "argomenti": [
+      {
+       "id": "D28_mann_1",
+       "testo": "Seguire Mann verso le mura",
+       "riserva": "Lo segui per un tratto, fra le trincee. Mann si volta una volta sola. «Indietro» ti dice, e non c'è cattiveria nella sua voce. Poi corre verso le mura, e tu non riesci più a stargli dietro.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "mann",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P* dello schema 28 (seguire Mann o no) [ICH Cap.38 r.10-12]; testo PROPOSTA",
+       "scopo": "chi salvare"
+      },
+      {
+       "id": "D28_mann_2",
+       "testo": "Tirarti indietro, come dice Mann",
+       "riserva": "Fai come dice: ti tiri indietro, in coda, fra i feriti. Da lì vedi la battaglia intera, e quelli che tornano smembrati, menomati. Li curi come puoi.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knut",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P* dello schema 28 (non seguire Mann); in coda vede i feriti [ICH Cap.38 r.26-28]; L dello schema (curare i feriti o osservare)",
+       "scopo": "chi salvare"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ai Campi rossi il nemico esce dalle mura riposato, e i vostri cadono. Le visioni ti piegano in due: vedi tutto due volte, ora e un attimo dopo. Il mondo va a scatti. E finalmente vedi che cosa ti succede da tanto: tante luci, intorno a te, che si spengono come fiori che appassiscono. Una delle luci è Amèlie.",
+    "fonte": "P3 [ICH Cap.38 r.80-90, r.115-116] (il nemico esce dalle mura riposato; lei sta male per le visioni; tutto va a scatti; Amelia colpita; le luci che si spengono come fiori che appassiscono), come in «La cavaliera di cenere» (E28)",
+    "esplora": [
+     {
+      "id": "D28d1",
+      "testo": "Ritirarti con gli altri verso la costa",
+      "riserva": "Ritirata alle navi. Sulla costa rossa ci sono macchine grosse come case, e i reverie intorno spariscono, uno dopo l'altro. Fra le macchine c'è Raven, a terra. E fra te e lei, i Kynjager.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_campi"
+       }
+      ],
+      "fonte": "P4 [ICH Cap.39 r.161-166] (la ritirata alle navi; la costa rossa; le grosse macchine; i reverie che spariscono; Raven moribonda)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D28x1",
+     "D28x2"
+    ],
+    "risoluzione": [
+     "D28d1"
+    ]
+   },
+   "required_beats": [
+    "D28x1",
+    "D28x2",
+    "D28d1"
+   ],
+   "optional_beats": [
+    "D28_mann_1",
+    "D28_mann_2"
+   ],
+   "riserva_libera": "Nel rumore della battaglia nessuno ti sente.",
+   "uscita_fail_forward": "Se la scena si ferma, la nave passa comunque il confine, e una mano ti trascina dentro."
+  },
+  "D29": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D29x1",
+     "parte": "Uno spazio fuori dal tempo",
+     "testo": "Guardare le finestre con lei",
+     "riserva": "«Ora che sei qui, possiamo fare in modo di guidarli affinché riescano a cambiare il destino» dice la donna con un solo occhio. Ti vede guardare indietro, verso Restan, verso Arne. «So che sei tentata dal tornare indietro, ma se cambiassi le cose ora tu potresti non esistere più… Questo è il destino giusto, un destino che noi non abbiamo scelto, un destino che compiranno loro, saranno loro a scriverlo.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_finestre"
+      },
+      {
+       "relazione": {
+        "png": "se_anziana",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P3 [ICH Cap.39 r.191-194] (le finestre di eventi; le battute [r.192, r.194] alla lettera, accorciate, con le forme di genere)"
+    },
+    {
+     "id": "D29x2",
+     "parte": "Uno spazio fuori dal tempo",
+     "testo": "Rivivere i momenti in cui devi intervenire",
+     "riserva": "La donna ti fa passare da una finestra all'altra, impaziente, spaventata. Guidi Arne verso gli alberi; parli con la donna fiore; guidi te stessa sulla montagna, e poi al confine. Tutto accade insieme: Knut legato a tanti reverie contro un esercito, Arne e Cirilla in un palazzo contro i kynjager, Raven in un edificio di metallo al buio. Poi l'ultimo volo: vedi la donna con un solo occhio cadere, uccisa da una donna bionda in grigio, Evan. O una sua copia.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_finestre"
+      }
+     ],
+     "fonte": "P4 [ICH Cap.40 r.23-35] (le scene da guidare; gli eventi simultanei; l'ultimo volo: la versione anziana uccisa da un clone di Evan, SNODO FISSO; Evan bionda in grigio: [ICH Cap.24 r.114])"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "se_anziana",
+     "apertura": "La donna con un solo occhio ti guarda come ci si guarda allo specchio.",
+     "chiusura": "La donna torna a guardare le finestre.",
+     "riserva_libera": "La donna scuote la testa: lo saprai quando sarà il momento.",
+     "argomenti": [
+      {
+       "id": "D29_anziana_1",
+       "testo": "Chiederle chi è",
+       "riserva": "«Lo sai già» dice. «Dovrai compiere delle scelte, come le ho compiute io.» Il suo unico occhio ti guarda, e ci vedi il tuo.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "se_anziana",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.40 r.35] («dovrai compiere delle scelte come le ho compiute io», alla lettera); che non lo dica ancora: PROPOSTA (R (c) negli obiettivi)",
+       "scopo": "riconoscerla"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il tempo si ferma, per tutti tranne che per te. Le finestre restano immobili, e tu cammini fra loro per giorni, per anni: le mani ti si fanno sottili, i capelli bianchi. La donna con un solo occhio cammina accanto a te.",
+    "fonte": "P5 [ICH Cap.40 r.59-61] (invecchia, il tempo è fermo per tutti tranne lei)",
+    "esplora": [
+     {
+      "id": "D29d1",
+      "parte": "Uno spazio fuori dal tempo",
+      "testo": "Ascoltare che cosa è successo a Bhorkyn",
+      "riserva": "«Dobbiamo andare, durante la vostra battaglia a Restan Saoirse è stata imprigionata e bruciata viva di fronte alla folla in strada. Questo ha fatto sì che Arne e Cirilla si mettessero in fuga verso i tribali… strada facendo però incontreranno un manipolo delle guardie del conio e alcuni kynjager, venendo così uccise entrambe.» Ti prende le mani. «Devi guidarle verso il centro città, e poi sfruttare loro e i fedeli del fiordaliso per aiutare Saoirse ad uscire.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_saoirse"
+       }
+      ],
+      "fonte": "P5 [ICH Cap.40 r.62-64] (le battute alla lettera, accorciate)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D29x1",
+     "D29x2"
+    ],
+    "risoluzione": [
+     "D29d1"
+    ]
+   },
+   "required_beats": [
+    "D29x1",
+    "D29x2",
+    "D29d1"
+   ],
+   "optional_beats": [
+    "D29_anziana_1"
+   ],
+   "riserva_libera": "Nel tempo fermo nessuno ti sente, tranne lei.",
+   "uscita_fail_forward": "Se la scena si ferma, il tempo riprende comunque: Arne risorge, Cirilla folgora Delos, e la donna ti mette in mano le piume."
+  },
+  "D30": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "D30x1",
+     "parte": "Un edificio spento e il suo caveau",
+     "testo": "Guardare Raven combattere la sé stessa scura",
+     "riserva": "Raven combatte, ma la sua ombra conosce ogni suo colpo. Poi Raven smette di combattere come ha sempre combattuto, e prova qualcosa di nuovo, qualcosa che l'altra non si aspetta: la sua creatività. L'ombra si spezza. Raven si appoggia alla spada, senza fiato. «Il caveau» dice. «Mostrami la strada.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "osservatrice_fact_raven_scura"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.40 r.146-151] (Raven vince la sé stessa scura con la creatività; lei la guida al caveau); la battuta di Raven: PROPOSTA"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "raven",
+     "apertura": "Raven ti guarda, zoppa, con le spalle nude dove c'erano le piume.",
+     "chiusura": "Raven torna a guardare la sua ombra.",
+     "riserva_libera": "Raven non risponde: guarda la sua ombra.",
+     "argomenti": [
+      {
+       "id": "D30_raven_1",
+       "testo": "Dare a Raven le piume che ti ha dato la te di tanti anni dopo",
+       "riserva": "Le metti in mano le piume. Raven le guarda come si guarda qualcosa che si credeva perso per sempre; poi le piume le si posano sulle spalle, nere, e lei raddrizza la schiena.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "raven",
+          "delta": 2
+         }
+        }
+       ],
+       "fonte": "P* dello schema (dare le piume a Raven) [ICH Cap.40 r.144-148] (le piume per Raven; lei gliele passa); se non lo fa, Raven combatte senza (PROPOSTA)",
+       "scopo": "le piume di Raven"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Guidi Raven per l'edificio spento, corridoio dopo corridoio, come guidavi Knytta a Hellheim: tu vedi dove andare, lei apre la strada. In fondo c'è una porta pesante. Dietro, voci: Evan, e Bernard.",
+    "fonte": "P2 [ICH Cap.40 r.150-151] (la guida al caveau di Bernard ed Evan); Hellheim (la 19): PROPOSTA",
+    "esplora": [
+     {
+      "id": "D30d1",
+      "parte": "Un edificio spento e il suo caveau",
+      "testo": "Aprire il caveau",
+      "riserva": "Raven spinge la porta. Dentro, fra schermi spenti, c'è una donna bionda in un abito grigio lucido, con i capelli legati: Evan. Accanto a lei, Bernard. Evan si volta, e sorride come chi sa già come andrà a finire.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "osservatrice_fact_caveau"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.40 r.150-152] (il caveau, Evan e Bernard); l'aspetto di Evan [ICH Cap.24 r.114]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "D30x1"
+    ],
+    "risoluzione": [
+     "D30d1"
+    ]
+   },
+   "required_beats": [
+    "D30x1",
+    "D30d1"
+   ],
+   "optional_beats": [
+    "D30_raven_1"
+   ],
+   "riserva_libera": "Nell'edificio spento nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, Raven entra comunque nel caveau, e al Kynhjarta le quattro toccano l'albero."
+  }
+ }
+}

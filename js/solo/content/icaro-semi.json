@@ -1,0 +1,4845 @@
+{
+  "formato": "rm-solo-semi/1",
+  "storia": "icaro",
+  "statoApprovazione": "fixture_tecnica_non_canonica",
+  "avviso": "Generato da scripts/solo-genera-semi.js: nessun testo nuovo. Scene, interazioni, verità generate, atti e snodi restano proposte finché non approvati singolarmente.",
+  "canone": {
+    "premessaPubblica": {
+      "ref": "contratto.premessa_pubblica",
+      "statoCanonico": "canonico_esplicito"
+    },
+    "fattiImmutabili": {
+      "ref": "contratto.fatti_immutabili",
+      "n": 5,
+      "statoCanonico": "canonico_esplicito"
+    },
+    "regole": {
+      "ref": "vincoli_narrativi",
+      "n": 5,
+      "statoCanonico": "canonico_esplicito"
+    },
+    "lessicoRiservato": {
+      "ref": "lessico_riservato",
+      "statoCanonico": "canonico_esplicito"
+    },
+    "segreti": [
+      "icaro_truth_population",
+      "icaro_truth_heat",
+      "icaro_truth_archive",
+      "icaro_truth_brainfreeze",
+      "icaro_truth_transfer",
+      "icaro_truth_outside_route",
+      "icaro_truth_choice"
+    ],
+    "fatti": {
+      "icaro_fact_vite_escluse": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "icaro_fact_ordine": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "icaro_fact_mira": {
+        "statoCanonico": "canonico_esplicito",
+        "segreto": false
+      },
+      "icaro_truth_population": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "icaro_truth_heat": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "icaro_truth_archive": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "icaro_truth_brainfreeze": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "icaro_truth_transfer": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "icaro_truth_outside_route": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      },
+      "icaro_truth_choice": {
+        "statoCanonico": "canonico_rivelabile",
+        "segreto": true
+      }
+    },
+    "figure": {
+      "anja": {
+        "ref": "png.anja",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "jax": {
+        "ref": "png.jax",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "seline": {
+        "ref": "png.seline",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "oko": {
+        "ref": "png.oko",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "mira47": {
+        "ref": "png.mira47",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "mira_eco": {
+        "ref": "png.mira_eco",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "mira_ombra": {
+        "ref": "png.mira_ombra",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "kade": {
+        "ref": "png.kade",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      },
+      "amministratore": {
+        "ref": "png.amministratore",
+        "identita": [
+          "nome",
+          "ruolo"
+        ],
+        "statoCanonico": "canonico_esplicito"
+      }
+    }
+  },
+  "verita": {
+    "I01_T_x1": {
+      "scena": "I01",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I01_T_x4": {
+      "scena": "I01",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I01_T_jax_1": {
+      "scena": "I01",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I01_T_d1": {
+      "scena": "I01",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I02_T_x1": {
+      "scena": "I02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I02_T_x3": {
+      "scena": "I02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I02_T_kade_1": {
+      "scena": "I02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "kade",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I02_T_jax_2": {
+      "scena": "I02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I02_T_d1": {
+      "scena": "I02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I02_T_jax_1": {
+      "scena": "I02",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I03_T_x1": {
+      "scena": "I03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I03_T_x3": {
+      "scena": "I03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I03_T_seline_1": {
+      "scena": "I03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "seline",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I03_T_seline_3": {
+      "scena": "I03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "seline",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I03_T_d1": {
+      "scena": "I03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I03_T_amministratore_2": {
+      "scena": "I03",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "amministratore",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I04_T_x1": {
+      "scena": "I04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I04_T_x2": {
+      "scena": "I04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I04_T_mira47_1": {
+      "scena": "I04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mira47",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I04_T_x3": {
+      "scena": "I04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I04_T_jax_1": {
+      "scena": "I04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I04_T_d1": {
+      "scena": "I04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I04_T_mira47_2": {
+      "scena": "I04",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mira47",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I05_T_x1": {
+      "scena": "I05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I05_T_x2": {
+      "scena": "I05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I05_T_seline_1": {
+      "scena": "I05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "seline",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I05_T_jax_1": {
+      "scena": "I05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I05_T_seline_2": {
+      "scena": "I05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "seline",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I05_T_seline_3": {
+      "scena": "I05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "seline",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I05_T_jax_2": {
+      "scena": "I05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I05_T_kade_2": {
+      "scena": "I05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "kade",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I05_T_d1": {
+      "scena": "I05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I05_T_kade_1": {
+      "scena": "I05",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "kade",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I06_T_x1": {
+      "scena": "I06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I06_T_x2": {
+      "scena": "I06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I06_T_anja_1": {
+      "scena": "I06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "anja",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I06_T_d1": {
+      "scena": "I06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I06_T_anja_2": {
+      "scena": "I06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "anja",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I06_T_d2": {
+      "scena": "I06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I06_T_d3": {
+      "scena": "I06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I06_T_d4": {
+      "scena": "I06",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I07_T_x1": {
+      "scena": "I07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I07_T_x3": {
+      "scena": "I07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I07_T_seline_1": {
+      "scena": "I07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "seline",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I07_T_d1": {
+      "scena": "I07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I07_T_seline_3": {
+      "scena": "I07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "seline",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I07_T_d2": {
+      "scena": "I07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I07_T_d3": {
+      "scena": "I07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I07_T_d4": {
+      "scena": "I07",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I08_T_x1": {
+      "scena": "I08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I08_T_x2": {
+      "scena": "I08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I08_T_mira_eco_1": {
+      "scena": "I08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mira_eco",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I08_T_mira_ombra_1": {
+      "scena": "I08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mira_ombra",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I08_T_mira_eco_2": {
+      "scena": "I08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mira_eco",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I08_T_mira_ombra_2": {
+      "scena": "I08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mira_ombra",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I08_T_mira_ombra_3": {
+      "scena": "I08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mira_ombra",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I08_T_anja_1": {
+      "scena": "I08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "anja",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I08_T_d1": {
+      "scena": "I08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I08_T_anja_2": {
+      "scena": "I08",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "anja",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I09_T_x1": {
+      "scena": "I09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I09_T_x2": {
+      "scena": "I09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I09_T_oko_1": {
+      "scena": "I09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "oko",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I09_T_d1": {
+      "scena": "I09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I09_T_oko_3": {
+      "scena": "I09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "oko",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I09_T_d2": {
+      "scena": "I09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I09_T_d3": {
+      "scena": "I09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I09_T_d4": {
+      "scena": "I09",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I10_T_x1": {
+      "scena": "I10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I10_T_x2": {
+      "scena": "I10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I10_T_kade_1": {
+      "scena": "I10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "kade",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I10_T_kade_2": {
+      "scena": "I10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "kade",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I10_T_d1": {
+      "scena": "I10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I10_T_jax_2": {
+      "scena": "I10",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I11_T_x1": {
+      "scena": "I11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I11_T_x2": {
+      "scena": "I11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I11_T_jax_1": {
+      "scena": "I11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I11_T_jax_2": {
+      "scena": "I11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I11_T_jax_3": {
+      "scena": "I11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I11_T_jax_4": {
+      "scena": "I11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I11_T_anja_3": {
+      "scena": "I11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "anja",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I11_T_d1": {
+      "scena": "I11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I11_T_anja_1": {
+      "scena": "I11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "anja",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I11_T_d2": {
+      "scena": "I11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I11_T_d3": {
+      "scena": "I11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I11_T_d4": {
+      "scena": "I11",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I12_T_x1": {
+      "scena": "I12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I12_T_x2": {
+      "scena": "I12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I12_T_seline_1": {
+      "scena": "I12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "seline",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I12_T_seline_3": {
+      "scena": "I12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "seline",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I12_T_seline_4": {
+      "scena": "I12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "seline",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I12_T_amministratore_2": {
+      "scena": "I12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "amministratore",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I12_T_amministratore_3": {
+      "scena": "I12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "amministratore",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I12_T_d1": {
+      "scena": "I12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I12_T_amministratore_1": {
+      "scena": "I12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "amministratore",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I12_T_d2": {
+      "scena": "I12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I12_T_d3": {
+      "scena": "I12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I12_T_d4": {
+      "scena": "I12",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I13_T_x1": {
+      "scena": "I13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I13_T_x2": {
+      "scena": "I13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I13_T_jax_1": {
+      "scena": "I13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I13_T_d1": {
+      "scena": "I13",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I14_T_x1": {
+      "scena": "I14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I14_T_x3": {
+      "scena": "I14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I14_T_anja_1": {
+      "scena": "I14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "anja",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I14_T_anja_2": {
+      "scena": "I14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "anja",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I14_T_anja_4": {
+      "scena": "I14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "anja",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I14_T_mira47_2": {
+      "scena": "I14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mira47",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I14_T_d1": {
+      "scena": "I14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I14_T_mira47_1": {
+      "scena": "I14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "mira47",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I14_T_d2": {
+      "scena": "I14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I14_T_d3": {
+      "scena": "I14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I14_T_d4": {
+      "scena": "I14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I14_T_d5": {
+      "scena": "I14",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I15_T_x1": {
+      "scena": "I15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I15_T_x2": {
+      "scena": "I15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I15_T_kade_1": {
+      "scena": "I15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "kade",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I15_T_oko_2": {
+      "scena": "I15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "oko",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I15_T_oko_3": {
+      "scena": "I15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "oko",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I15_T_kade_2": {
+      "scena": "I15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "kade",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I15_T_seline_1": {
+      "scena": "I15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "seline",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I15_T_d1": {
+      "scena": "I15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I15_T_oko_1": {
+      "scena": "I15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "oko",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I15_T_seline_2": {
+      "scena": "I15",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "seline",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I16_T_x1": {
+      "scena": "I16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I16_T_x2": {
+      "scena": "I16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I16_T_jax_1": {
+      "scena": "I16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I16_T_jax_2": {
+      "scena": "I16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I16_T_jax_3": {
+      "scena": "I16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "jax",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I16_T_anja_3": {
+      "scena": "I16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "anja",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I16_T_kade_3": {
+      "scena": "I16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "kade",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I16_T_d1": {
+      "scena": "I16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "osservato",
+      "fonte": "luogo",
+      "deducibile": true,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I16_T_anja_1": {
+      "scena": "I16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "anja",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    },
+    "I16_T_kade_1": {
+      "scena": "I16",
+      "statoCanonico": "proposta",
+      "fattoCanonico": null,
+      "statoEpistemico": "testimoniato",
+      "fonte": "kade",
+      "deducibile": false,
+      "ridondanteDi": null,
+      "cancello": false
+    }
+  },
+  "scene": {
+    "I01": {
+      "id": "I01",
+      "atto": 1,
+      "funzioneDrammatica": "Riattivare il nodo durante la prima crisi",
+      "luogoIniziale": "Nodo termico H-17",
+      "situazioneIniziale": {
+        "ref": "scene.I01.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "jax",
+          "obiettivo": {
+            "ref": "png.jax.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.jax.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "I01_tens_pressione",
+          "tipo": "pressione"
+        },
+        {
+          "id": "I01_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "pressione",
+          "nome": "Il nodo rantola",
+          "max": 9
+        },
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "I01_T_x1",
+          "I01_T_x4",
+          "I01_T_jax_1",
+          "I01_T_d1"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I01x1",
+          "ref": "interazioni.I01.I01x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I01x2",
+          "ref": "interazioni.I01.I01x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I01x3",
+          "ref": "interazioni.I01.I01x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I01x4",
+          "ref": "interazioni.I01.I01x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I01d1",
+          "ref": "interazioni.I01.I01d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "I01A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I01x2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I01x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I01_jax_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I01_jax_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I02",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "I01A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "relazione",
+          "ricompensa"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_otto"
+        ],
+        "snodiDellAtto": [
+          "I_otto",
+          "I_censimento",
+          "I_ordine",
+          "I_mira",
+          "I_firma"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I01",
+        "narrativa": "narrativa.scene.I01"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I02": {
+      "id": "I02",
+      "atto": 1,
+      "funzioneDrammatica": "Contare chi vive a H-17",
+      "luogoIniziale": "Livelli inferiori di H-17",
+      "situazioneIniziale": {
+        "ref": "scene.I02.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "jax",
+          "obiettivo": {
+            "ref": "png.jax.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.jax.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "kade",
+          "obiettivo": {
+            "ref": "png.kade.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.kade.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [
+        "icaro_fact_vite_escluse"
+      ],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "icaro_fact_vite_escluse",
+          "icaro_truth_population",
+          "icaro_truth_transfer"
+        ],
+        "materialeDiScena": [
+          "I02_T_x1",
+          "I02_T_x3",
+          "I02_T_kade_1",
+          "I02_T_jax_2",
+          "I02_T_d1",
+          "I02_T_jax_1"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I02x1",
+          "ref": "interazioni.I02.I02x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I02x2",
+          "ref": "interazioni.I02.I02x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I02x3",
+          "ref": "interazioni.I02.I02x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I02x4",
+          "ref": "interazioni.I02.I02x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I02d1",
+          "ref": "interazioni.I02.I02d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "I02A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I02x2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I02x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I02_jax_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I02_kade_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I02_kade_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I03",
+          "quando": {
+            "obiettivo_tentato": "I02A"
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "flag",
+          "relazione",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_censimento"
+        ],
+        "snodiDellAtto": [
+          "I_otto",
+          "I_censimento",
+          "I_ordine",
+          "I_mira",
+          "I_firma"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I02",
+        "narrativa": "narrativa.scene.I02"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I03": {
+      "id": "I03",
+      "atto": 1,
+      "funzioneDrammatica": "Esaminare l'ordine di spegnimento",
+      "luogoIniziale": "Ufficio di revisione di C1",
+      "situazioneIniziale": {
+        "ref": "scene.I03.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "seline",
+          "obiettivo": {
+            "ref": "png.seline.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.seline.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_choice",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "amministratore",
+          "obiettivo": {
+            "ref": "png.amministratore.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.amministratore.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_transfer",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "I03_T_x1",
+          "I03_T_x3",
+          "I03_T_seline_1",
+          "I03_T_seline_3",
+          "I03_T_d1",
+          "I03_T_amministratore_2"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I03x1",
+          "ref": "interazioni.I03.I03x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I03x2",
+          "ref": "interazioni.I03.I03x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I03x3",
+          "ref": "interazioni.I03.I03x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I03x4",
+          "ref": "interazioni.I03.I03x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I03d1",
+          "ref": "interazioni.I03.I03d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "I03A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I03x2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I03x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I03_seline_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I03_amministratore_1"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I03_amministratore_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I04",
+          "quando": {
+            "obiettivo_tentato": "I03A"
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "flag",
+          "orologio",
+          "relazione",
+          "voce"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_ordine"
+        ],
+        "snodiDellAtto": [
+          "I_otto",
+          "I_censimento",
+          "I_ordine",
+          "I_mira",
+          "I_firma"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I03",
+        "narrativa": "narrativa.scene.I03"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I04": {
+      "id": "I04",
+      "atto": 1,
+      "funzioneDrammatica": "Incontrare Mira-47",
+      "luogoIniziale": "Reparto clinico di H-17",
+      "situazioneIniziale": {
+        "ref": "scene.I04.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "mira47",
+          "obiettivo": {
+            "ref": "png.mira47.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mira47.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "jax",
+          "obiettivo": {
+            "ref": "png.jax.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.jax.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [
+        "icaro_fact_mira"
+      ],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "icaro_fact_mira"
+        ],
+        "materialeDiScena": [
+          "I04_T_x1",
+          "I04_T_x2",
+          "I04_T_mira47_1",
+          "I04_T_x3",
+          "I04_T_jax_1",
+          "I04_T_d1",
+          "I04_T_mira47_2"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I04x1",
+          "ref": "interazioni.I04.I04x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I04x2",
+          "ref": "interazioni.I04.I04x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I04x3",
+          "ref": "interazioni.I04.I04x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I04x4",
+          "ref": "interazioni.I04.I04x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I04d1",
+          "ref": "interazioni.I04.I04d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "I04A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I04x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I04_mira47_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I04_jax_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I04_jax_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I05",
+          "quando": {
+            "obiettivo_tentato": "I04A"
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "relazione",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_mira"
+        ],
+        "snodiDellAtto": [
+          "I_otto",
+          "I_censimento",
+          "I_ordine",
+          "I_mira",
+          "I_firma"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I04",
+        "narrativa": "narrativa.scene.I04"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I05": {
+      "id": "I05",
+      "atto": 1,
+      "funzioneDrammatica": "Scegliere da che parte stare",
+      "luogoIniziale": "Nodo termico H-17",
+      "situazioneIniziale": {
+        "ref": "scene.I05.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "seline",
+          "obiettivo": {
+            "ref": "png.seline.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.seline.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_choice",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "jax",
+          "obiettivo": {
+            "ref": "png.jax.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.jax.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "kade",
+          "obiettivo": {
+            "ref": "png.kade.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.kade.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "I05_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "I05_T_x1",
+          "I05_T_x2",
+          "I05_T_seline_1",
+          "I05_T_jax_1",
+          "I05_T_seline_2",
+          "I05_T_seline_3",
+          "I05_T_jax_2",
+          "I05_T_kade_2",
+          "I05_T_d1",
+          "I05_T_kade_1"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I05x1",
+          "ref": "interazioni.I05.I05x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I05x2",
+          "ref": "interazioni.I05.I05x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I05x3",
+          "ref": "interazioni.I05.I05x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I05x4",
+          "ref": "interazioni.I05.I05x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I05d1",
+          "ref": "interazioni.I05.I05d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "spunto",
+          "id": "I05x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I05x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I05_jax_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I05_kade_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I06",
+          "quando": {
+            "scelta_fatta": true
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "relazione"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "I_firma"
+        ],
+        "snodiDellAtto": [
+          "I_otto",
+          "I_censimento",
+          "I_ordine",
+          "I_mira",
+          "I_firma"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I05",
+        "narrativa": "narrativa.scene.I05"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I06": {
+      "id": "I06",
+      "atto": 2,
+      "funzioneDrammatica": "Aprire le cartelle originali",
+      "luogoIniziale": "Archivio clinico",
+      "situazioneIniziale": {
+        "ref": "scene.I06.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "anja",
+          "obiettivo": {
+            "ref": "png.anja.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.anja.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_archive",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "icaro_truth_brainfreeze",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "I06_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "icaro_truth_brainfreeze",
+          "icaro_truth_archive"
+        ],
+        "materialeDiScena": [
+          "I06_T_x1",
+          "I06_T_x2",
+          "I06_T_anja_1",
+          "I06_T_d1",
+          "I06_T_anja_2",
+          "I06_T_d2",
+          "I06_T_d3",
+          "I06_T_d4"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I06x1",
+          "ref": "interazioni.I06.I06x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I06x2",
+          "ref": "interazioni.I06.I06x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I06x3",
+          "ref": "interazioni.I06.I06x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I06x4",
+          "ref": "interazioni.I06.I06x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I06d1",
+          "ref": "interazioni.I06.I06d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I06d2",
+          "ref": "interazioni.I06.I06d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I06d3",
+          "ref": "interazioni.I06.I06d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I06d4",
+          "ref": "interazioni.I06.I06d4",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "I06A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I06x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I06x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I06_anja_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I07",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "I06A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "orologio",
+          "relazione",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_cartelle"
+        ],
+        "snodiDellAtto": [
+          "II_cartelle",
+          "II_blackroot",
+          "II_mira",
+          "II_esterno",
+          "II_spenti",
+          "II_distribuzione"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I06",
+        "narrativa": "narrativa.scene.I06"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I07": {
+      "id": "I07",
+      "atto": 2,
+      "funzioneDrammatica": "Affrontare la linea BlackRoot",
+      "luogoIniziale": "Condotte industriali BlackRoot",
+      "situazioneIniziale": {
+        "ref": "scene.I07.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "seline",
+          "obiettivo": {
+            "ref": "png.seline.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.seline.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_choice",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "I07_tens_pressione",
+          "tipo": "pressione"
+        },
+        {
+          "id": "I07_tens_scontro",
+          "tipo": "scontro"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "nemico",
+          "nemico": "sicurezza_blackroot",
+          "alternativa": true,
+          "introduttivo": true
+        },
+        {
+          "tipo": "pressione",
+          "nome": "La pattuglia",
+          "max": 12
+        },
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "icaro_truth_heat"
+        ],
+        "materialeDiScena": [
+          "I07_T_x1",
+          "I07_T_x3",
+          "I07_T_seline_1",
+          "I07_T_d1",
+          "I07_T_seline_3",
+          "I07_T_d2",
+          "I07_T_d3",
+          "I07_T_d4"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I07x1",
+          "ref": "interazioni.I07.I07x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I07x2",
+          "ref": "interazioni.I07.I07x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I07x3",
+          "ref": "interazioni.I07.I07x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I07x4",
+          "ref": "interazioni.I07.I07x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I07d1",
+          "ref": "interazioni.I07.I07d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I07d2",
+          "ref": "interazioni.I07.I07d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I07d3",
+          "ref": "interazioni.I07.I07d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I07d4",
+          "ref": "interazioni.I07.I07d4",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "I07A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I07x2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I07x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I07_seline_2"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I08",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "I07A"
+              },
+              {
+                "incontro_concluso": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "flag",
+          "orologio",
+          "relazione",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_blackroot"
+        ],
+        "snodiDellAtto": [
+          "II_cartelle",
+          "II_blackroot",
+          "II_mira",
+          "II_esterno",
+          "II_spenti",
+          "II_distribuzione"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I07",
+        "narrativa": "narrativa.scene.I07"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I08": {
+      "id": "I08",
+      "atto": 2,
+      "funzioneDrammatica": "Decidere delle copie di Mira",
+      "luogoIniziale": "Archivio neurale",
+      "situazioneIniziale": {
+        "ref": "scene.I08.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "mira47",
+          "obiettivo": {
+            "ref": "png.mira47.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mira47.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "mira_eco",
+          "obiettivo": {
+            "ref": "png.mira_eco.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mira_eco.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "mira_ombra",
+          "obiettivo": {
+            "ref": "png.mira_ombra.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mira_ombra.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "anja",
+          "obiettivo": {
+            "ref": "png.anja.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.anja.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_archive",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "icaro_truth_brainfreeze",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "I08_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "I08_T_x1",
+          "I08_T_x2",
+          "I08_T_mira_eco_1",
+          "I08_T_mira_ombra_1",
+          "I08_T_mira_eco_2",
+          "I08_T_mira_ombra_2",
+          "I08_T_mira_ombra_3",
+          "I08_T_anja_1",
+          "I08_T_d1",
+          "I08_T_anja_2"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I08x1",
+          "ref": "interazioni.I08.I08x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I08x2",
+          "ref": "interazioni.I08.I08x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I08x3",
+          "ref": "interazioni.I08.I08x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I08x4",
+          "ref": "interazioni.I08.I08x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I08d1",
+          "ref": "interazioni.I08.I08d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "I08A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I08x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I08x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I08_mira_eco_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I08_anja_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I09",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "I08A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "relazione",
+          "ricompensa"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_mira"
+        ],
+        "snodiDellAtto": [
+          "II_cartelle",
+          "II_blackroot",
+          "II_mira",
+          "II_esterno",
+          "II_spenti",
+          "II_distribuzione"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I08",
+        "narrativa": "narrativa.scene.I08"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I09": {
+      "id": "I09",
+      "atto": 2,
+      "funzioneDrammatica": "Verificare la via esterna",
+      "luogoIniziale": "Rovine congelate",
+      "situazioneIniziale": {
+        "ref": "scene.I09.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "oko",
+          "obiettivo": {
+            "ref": "png.oko.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.oko.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_outside_route",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "I09_tens_pressione",
+          "tipo": "pressione"
+        },
+        {
+          "id": "I09_tens_scontro",
+          "tipo": "scontro"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "nemico",
+          "nemico": "predatore_ghiaccio",
+          "alternativa": false,
+          "introduttivo": false
+        },
+        {
+          "tipo": "pressione",
+          "nome": "Il predatore sotto il ghiaccio",
+          "max": 12
+        },
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "icaro_truth_outside_route"
+        ],
+        "materialeDiScena": [
+          "I09_T_x1",
+          "I09_T_x2",
+          "I09_T_oko_1",
+          "I09_T_d1",
+          "I09_T_oko_3",
+          "I09_T_d2",
+          "I09_T_d3",
+          "I09_T_d4"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        },
+        {
+          "ref": "scene.I09.esterno"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I09x1",
+          "ref": "interazioni.I09.I09x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I09x2",
+          "ref": "interazioni.I09.I09x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I09x3",
+          "ref": "interazioni.I09.I09x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I09x4",
+          "ref": "interazioni.I09.I09x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I09d1",
+          "ref": "interazioni.I09.I09d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I09d2",
+          "ref": "interazioni.I09.I09d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I09d3",
+          "ref": "interazioni.I09.I09d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I09d4",
+          "ref": "interazioni.I09.I09d4",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "I09A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I09x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I09x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I09_oko_2"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I10",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "I09A"
+              },
+              {
+                "incontro_concluso": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "ricompensa",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_esterno"
+        ],
+        "snodiDellAtto": [
+          "II_cartelle",
+          "II_blackroot",
+          "II_mira",
+          "II_esterno",
+          "II_spenti",
+          "II_distribuzione"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I09",
+        "narrativa": "narrativa.scene.I09"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I10": {
+      "id": "I10",
+      "atto": 2,
+      "funzioneDrammatica": "Affrontare l'occupazione degli Spenti",
+      "luogoIniziale": "Sala di controllo di H-17",
+      "situazioneIniziale": {
+        "ref": "scene.I10.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "kade",
+          "obiettivo": {
+            "ref": "png.kade.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.kade.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "jax",
+          "obiettivo": {
+            "ref": "png.jax.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.jax.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "I10_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "I10_T_x1",
+          "I10_T_x2",
+          "I10_T_kade_1",
+          "I10_T_kade_2",
+          "I10_T_d1",
+          "I10_T_jax_2"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I10x1",
+          "ref": "interazioni.I10.I10x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I10x2",
+          "ref": "interazioni.I10.I10x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I10x3",
+          "ref": "interazioni.I10.I10x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I10x4",
+          "ref": "interazioni.I10.I10x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I10d1",
+          "ref": "interazioni.I10.I10d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "I10A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I10x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I10x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I10_kade_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I10_jax_1"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I10_jax_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I11",
+          "quando": {
+            "tutti": [
+              {
+                "obiettivo_tentato": "I10A"
+              },
+              {
+                "scelta_fatta": true
+              }
+            ]
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "relazione",
+          "ricompensa"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_spenti"
+        ],
+        "snodiDellAtto": [
+          "II_cartelle",
+          "II_blackroot",
+          "II_mira",
+          "II_esterno",
+          "II_spenti",
+          "II_distribuzione"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I10",
+        "narrativa": "narrativa.scene.I10"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I11": {
+      "id": "I11",
+      "atto": 2,
+      "funzioneDrammatica": "Bloccare il piano delle risorse",
+      "luogoIniziale": "Nodo termico H-17",
+      "situazioneIniziale": {
+        "ref": "scene.I11.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "jax",
+          "obiettivo": {
+            "ref": "png.jax.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.jax.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "kade",
+          "obiettivo": {
+            "ref": "png.kade.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.kade.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "anja",
+          "obiettivo": {
+            "ref": "png.anja.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.anja.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_archive",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "icaro_truth_brainfreeze",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "I11_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "I11_T_x1",
+          "I11_T_x2",
+          "I11_T_jax_1",
+          "I11_T_jax_2",
+          "I11_T_jax_3",
+          "I11_T_jax_4",
+          "I11_T_anja_3",
+          "I11_T_d1",
+          "I11_T_anja_1",
+          "I11_T_d2",
+          "I11_T_d3",
+          "I11_T_d4"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I11x1",
+          "ref": "interazioni.I11.I11x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I11x2",
+          "ref": "interazioni.I11.I11x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I11x3",
+          "ref": "interazioni.I11.I11x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I11x4",
+          "ref": "interazioni.I11.I11x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I11d1",
+          "ref": "interazioni.I11.I11d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I11d2",
+          "ref": "interazioni.I11.I11d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I11d3",
+          "ref": "interazioni.I11.I11d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I11d4",
+          "ref": "interazioni.I11.I11d4",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "spunto",
+          "id": "I11x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I11x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I11_anja_2"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I12",
+          "quando": {
+            "scelta_fatta": true
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "II_distribuzione"
+        ],
+        "snodiDellAtto": [
+          "II_cartelle",
+          "II_blackroot",
+          "II_mira",
+          "II_esterno",
+          "II_spenti",
+          "II_distribuzione"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I11",
+        "narrativa": "narrativa.scene.I11"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I12": {
+      "id": "I12",
+      "atto": 3,
+      "funzioneDrammatica": "Affrontare l'ultima revisione",
+      "luogoIniziale": "Sala del consiglio di C1",
+      "situazioneIniziale": {
+        "ref": "scene.I12.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "seline",
+          "obiettivo": {
+            "ref": "png.seline.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.seline.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_choice",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "amministratore",
+          "obiettivo": {
+            "ref": "png.amministratore.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.amministratore.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_transfer",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [
+          "icaro_truth_choice"
+        ],
+        "materialeDiScena": [
+          "I12_T_x1",
+          "I12_T_x2",
+          "I12_T_seline_1",
+          "I12_T_seline_3",
+          "I12_T_seline_4",
+          "I12_T_amministratore_2",
+          "I12_T_amministratore_3",
+          "I12_T_d1",
+          "I12_T_amministratore_1",
+          "I12_T_d2",
+          "I12_T_d3",
+          "I12_T_d4"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I12x1",
+          "ref": "interazioni.I12.I12x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I12x2",
+          "ref": "interazioni.I12.I12x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I12x3",
+          "ref": "interazioni.I12.I12x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I12x4",
+          "ref": "interazioni.I12.I12x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I12d1",
+          "ref": "interazioni.I12.I12d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I12d2",
+          "ref": "interazioni.I12.I12d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I12d3",
+          "ref": "interazioni.I12.I12d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I12d4",
+          "ref": "interazioni.I12.I12d4",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "I12A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I12x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I12x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I12_seline_2"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I13",
+          "quando": {
+            "obiettivo_tentato": "I12A"
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "orologio",
+          "scopri"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "III_revisione"
+        ],
+        "snodiDellAtto": [
+          "III_revisione",
+          "III_collasso",
+          "III_archivio",
+          "III_politica",
+          "III_climax"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I12",
+        "narrativa": "narrativa.scene.I12"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I13": {
+      "id": "I13",
+      "atto": 3,
+      "funzioneDrammatica": "Superare il collasso termico",
+      "luogoIniziale": "Nodo termico H-17",
+      "situazioneIniziale": {
+        "ref": "scene.I13.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "jax",
+          "obiettivo": {
+            "ref": "png.jax.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.jax.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "I13_tens_pressione",
+          "tipo": "pressione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "pressione",
+          "nome": "Il gelo",
+          "max": 8
+        },
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "I13_T_x1",
+          "I13_T_x2",
+          "I13_T_jax_1",
+          "I13_T_d1"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I13x1",
+          "ref": "interazioni.I13.I13x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I13x2",
+          "ref": "interazioni.I13.I13x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I13x3",
+          "ref": "interazioni.I13.I13x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I13x4",
+          "ref": "interazioni.I13.I13x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I13d1",
+          "ref": "interazioni.I13.I13d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "obiettivo",
+          "id": "I13A"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I13x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I13x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I13_jax_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I13_jax_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I14",
+          "quando": {
+            "obiettivo_tentato": "I13A"
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag",
+          "ricompensa"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "III_collasso"
+        ],
+        "snodiDellAtto": [
+          "III_revisione",
+          "III_collasso",
+          "III_archivio",
+          "III_politica",
+          "III_climax"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I13",
+        "narrativa": "narrativa.scene.I13"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I14": {
+      "id": "I14",
+      "atto": 3,
+      "funzioneDrammatica": "Decidere dell'archivio",
+      "luogoIniziale": "Archivio neurale",
+      "situazioneIniziale": {
+        "ref": "scene.I14.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "anja",
+          "obiettivo": {
+            "ref": "png.anja.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.anja.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_archive",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "icaro_truth_brainfreeze",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "mira47",
+          "obiettivo": {
+            "ref": "png.mira47.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mira47.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "mira_eco",
+          "obiettivo": {
+            "ref": "png.mira_eco.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mira_eco.immediateGoal"
+          },
+          "conoscenze": []
+        },
+        {
+          "id": "mira_ombra",
+          "obiettivo": {
+            "ref": "png.mira_ombra.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.mira_ombra.immediateGoal"
+          },
+          "conoscenze": []
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "I14_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "I14_T_x1",
+          "I14_T_x3",
+          "I14_T_anja_1",
+          "I14_T_anja_2",
+          "I14_T_anja_4",
+          "I14_T_mira47_2",
+          "I14_T_d1",
+          "I14_T_mira47_1",
+          "I14_T_d2",
+          "I14_T_d3",
+          "I14_T_d4",
+          "I14_T_d5"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I14x1",
+          "ref": "interazioni.I14.I14x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I14x2",
+          "ref": "interazioni.I14.I14x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I14x3",
+          "ref": "interazioni.I14.I14x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I14x4",
+          "ref": "interazioni.I14.I14x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I14d1",
+          "ref": "interazioni.I14.I14d1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I14d2",
+          "ref": "interazioni.I14.I14d2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I14d3",
+          "ref": "interazioni.I14.I14d3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I14d4",
+          "ref": "interazioni.I14.I14d4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I14d5",
+          "ref": "interazioni.I14.I14d5",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "spunto",
+          "id": "I14x2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I14x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I14_anja_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I14_mira47_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I15",
+          "quando": {
+            "scelta_fatta": true
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "III_archivio"
+        ],
+        "snodiDellAtto": [
+          "III_revisione",
+          "III_collasso",
+          "III_archivio",
+          "III_politica",
+          "III_climax"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I14",
+        "narrativa": "narrativa.scene.I14"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I15": {
+      "id": "I15",
+      "atto": 3,
+      "funzioneDrammatica": "Scegliere la strada politica",
+      "luogoIniziale": "Piazza del settore",
+      "situazioneIniziale": {
+        "ref": "scene.I15.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "jax",
+          "obiettivo": {
+            "ref": "png.jax.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.jax.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "kade",
+          "obiettivo": {
+            "ref": "png.kade.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.kade.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "oko",
+          "obiettivo": {
+            "ref": "png.oko.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.oko.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_outside_route",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "seline",
+          "obiettivo": {
+            "ref": "png.seline.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.seline.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_choice",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "I15_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "I15_T_x1",
+          "I15_T_x2",
+          "I15_T_kade_1",
+          "I15_T_oko_2",
+          "I15_T_oko_3",
+          "I15_T_kade_2",
+          "I15_T_seline_1",
+          "I15_T_d1",
+          "I15_T_oko_1",
+          "I15_T_seline_2"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I15x1",
+          "ref": "interazioni.I15.I15x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I15x2",
+          "ref": "interazioni.I15.I15x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I15x3",
+          "ref": "interazioni.I15.I15x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I15x4",
+          "ref": "interazioni.I15.I15x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I15d1",
+          "ref": "interazioni.I15.I15d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "spunto",
+          "id": "I15x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I15x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I15_kade_3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I15_seline_3"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I16",
+          "quando": {
+            "scelta_fatta": true
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "III_politica"
+        ],
+        "snodiDellAtto": [
+          "III_revisione",
+          "III_collasso",
+          "III_archivio",
+          "III_politica",
+          "III_climax"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I15",
+        "narrativa": "narrativa.scene.I15"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I16": {
+      "id": "I16",
+      "atto": 3,
+      "funzioneDrammatica": "Dare gli ultimi otto minuti",
+      "luogoIniziale": "Nodo termico H-17",
+      "situazioneIniziale": {
+        "ref": "scene.I16.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "jax",
+          "obiettivo": {
+            "ref": "png.jax.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.jax.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "anja",
+          "obiettivo": {
+            "ref": "png.anja.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.anja.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_archive",
+              "statoCanonico": "canonico_rivelabile"
+            },
+            {
+              "fatto": "icaro_truth_brainfreeze",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "kade",
+          "obiettivo": {
+            "ref": "png.kade.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.kade.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        },
+        {
+          "id": "oko",
+          "obiettivo": {
+            "ref": "png.oko.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.oko.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_outside_route",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [
+        {
+          "id": "I16_tens_scontro",
+          "tipo": "scontro"
+        },
+        {
+          "id": "I16_tens_scelta",
+          "tipo": "decisione"
+        }
+      ],
+      "minacce": [
+        {
+          "tipo": "nemico",
+          "nemico": "villain_seline",
+          "alternativa": false,
+          "introduttivo": false
+        },
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": [
+          "I16_T_x1",
+          "I16_T_x2",
+          "I16_T_jax_1",
+          "I16_T_jax_2",
+          "I16_T_jax_3",
+          "I16_T_anja_3",
+          "I16_T_kade_3",
+          "I16_T_d1",
+          "I16_T_anja_1",
+          "I16_T_kade_1"
+        ]
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [
+        {
+          "id": "I16x1",
+          "ref": "interazioni.I16.I16x1",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I16x2",
+          "ref": "interazioni.I16.I16x2",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I16x3",
+          "ref": "interazioni.I16.I16x3",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I16x4",
+          "ref": "interazioni.I16.I16x4",
+          "ruolo": "suggestione"
+        },
+        {
+          "id": "I16d1",
+          "ref": "interazioni.I16.I16d1",
+          "ruolo": "suggestione"
+        }
+      ],
+      "filiIrrisolti": [
+        {
+          "tipo": "spunto",
+          "id": "I16x3"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I16x4"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I16_anja_2"
+        },
+        {
+          "tipo": "spunto",
+          "id": "I16_kade_2"
+        }
+      ],
+      "condizioniUscita": [
+        {
+          "verso": "I17",
+          "quando": {
+            "scelta_fatta": true
+          }
+        }
+      ],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [
+          "asse",
+          "flag"
+        ],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [
+          "III_climax"
+        ],
+        "snodiDellAtto": [
+          "III_revisione",
+          "III_collasso",
+          "III_archivio",
+          "III_politica",
+          "III_climax"
+        ]
+      },
+      "finale": false,
+      "riferimenti": {
+        "interazioni": "interazioni.scene.I16",
+        "narrativa": "narrativa.scene.I16"
+      },
+      "statoCanonico": "proposta"
+    },
+    "I17": {
+      "id": "I17",
+      "atto": 3,
+      "funzioneDrammatica": "Chiudere la storia",
+      "luogoIniziale": "H-17",
+      "situazioneIniziale": {
+        "ref": "scene.I17.descrizione"
+      },
+      "pngPotenziali": [
+        {
+          "id": "jax",
+          "obiettivo": {
+            "ref": "png.jax.motivazione"
+          },
+          "motivazioni": {
+            "ref": "narrativa.png.jax.immediateGoal"
+          },
+          "conoscenze": [
+            {
+              "fatto": "icaro_truth_population",
+              "statoCanonico": "canonico_rivelabile"
+            }
+          ]
+        }
+      ],
+      "tensioniIniziali": [],
+      "minacce": [
+        {
+          "tipo": "orologio",
+          "id": "spegnimento"
+        }
+      ],
+      "veritaCanonicheRilevanti": [],
+      "veritaRivelabili": {
+        "tramiteMotore": [],
+        "materialeDiScena": []
+      },
+      "segretiProibiti": [
+        "icaro_truth_population",
+        "icaro_truth_heat",
+        "icaro_truth_archive",
+        "icaro_truth_brainfreeze",
+        "icaro_truth_transfer",
+        "icaro_truth_outside_route",
+        "icaro_truth_choice"
+      ],
+      "limitiAmbientazione": [
+        {
+          "ref": "contratto.fatti_immutabili"
+        },
+        {
+          "ref": "vincoli_narrativi"
+        }
+      ],
+      "elementiAmbiente": [],
+      "filiIrrisolti": [],
+      "condizioniUscita": [],
+      "conseguenzeAmmesse": {
+        "tipiDiScena": [],
+        "assi": {
+          "ref": "contratto.conseguenze_variabili"
+        },
+        "narrative": [
+          "dettaglio_locale",
+          "conseguenza",
+          "filo",
+          "png_minore",
+          "sottoscena",
+          "relazione_evento",
+          "tensione_evento"
+        ]
+      },
+      "conseguenzeVietate": [
+        "modifica_canone",
+        "nuova_legge_del_mondo",
+        "segreto_prima_dello_sblocco",
+        "danni_cure_stati_diretti",
+        "oggetti_o_ricompense_diretti",
+        "esito_diverso_dal_motore",
+        "scelta_imposta",
+        "chiusura_dialogo_automatica",
+        "finale_forzato"
+      ],
+      "collegamentiSnodi": {
+        "snodiDellaScena": [],
+        "snodiDellAtto": [
+          "III_revisione",
+          "III_collasso",
+          "III_archivio",
+          "III_politica",
+          "III_climax"
+        ]
+      },
+      "finale": true,
+      "riferimenti": {
+        "interazioni": null,
+        "narrativa": "narrativa.scene.I17"
+      },
+      "statoCanonico": "proposta"
+    }
+  }
+}

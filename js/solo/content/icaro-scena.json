@@ -1,0 +1,558 @@
+{
+ "formato": "rm-solo-scena/1",
+ "storia": "icaro",
+ "stato": "proposta scritta in autonomia (2026-10-17), rivedibile in docs/single-player/DECISIONI_DA_RIVEDERE.md",
+ "schede": {
+  "png": {
+   "anja": {
+    "aspetto": "Dottoressa in camice schermato, con i capelli corti e un tablet clinico; ha occhiaie profonde e parla in modo preciso."
+   },
+   "jax": {
+    "aspetto": "Capotecnico del Nodo H-17: tuta rattoppata, guanti spessi e una torcia sempre agganciata alla cintura."
+   },
+   "seline": {
+    "aspetto": "Revisora BlackRoot in abito schermato grigio, con un badge al collo e un tablet in mano; sorride solo a metà."
+   },
+   "oko": {
+    "aspetto": "Guida dell'esterno in tuta termica con casco sigillato e mantello trasparente; si fa capire con i gesti."
+   },
+   "mira47": {
+    "aspetto": "Paziente senza nome ufficiale, distesa, con un braccialetto dal numero cancellato."
+   },
+   "mira_eco": {
+    "aspetto": "Una voce nell'archivio che ricorda il mare e ne parla con nostalgia."
+   },
+   "mira_ombra": {
+    "aspetto": "Una voce nell'archivio che ricorda il turno di notte e ne parla con stanchezza."
+   },
+   "kade": {
+    "aspetto": "Portavoce degli Spenti: grigio di abiti e di pelle, con le mani sempre aperte e visibili."
+   },
+   "amministratore": {
+    "aspetto": "Funzionario di C1 in completo ordinato, con un sorriso di circostanza e un distintivo di rango."
+   }
+  }
+ },
+ "scene": {
+  "I01": {
+   "protagonista": {
+    "posizione": "Sei nel nodo termico, davanti al pannello principale",
+    "attivita": "controlli ciò che resta degli otto minuti"
+   },
+   "png": {
+    "jax": {
+     "posizione": "al pannello laterale, con la fronte sudata",
+     "attivita": "guarda un contatore che scende"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I01_p1",
+     "tratto": "Meccanica",
+     "nc": 13,
+     "testo": "Una valvola è stata chiusa a mano, non dal sistema."
+    },
+    {
+     "id": "I01_p2",
+     "tratto": "Ascoltare",
+     "nc": 12,
+     "testo": "Le pompe fanno un rumore irregolare, come un cuore in fibrillazione."
+    }
+   ]
+  },
+  "I02": {
+   "protagonista": {
+    "posizione": "Sei nei livelli inferiori, in un corridoio stretto",
+    "attivita": "guardi persone che nessun registro conosce"
+   },
+   "png": {
+    "jax": {
+     "posizione": "a pochi passi, con una torcia",
+     "attivita": "ti fa strada senza guardare indietro"
+    },
+    "kade": {
+     "posizione": "appoggiato alla parete di un alloggio",
+     "attivita": "ti osserva tenendo le mani in vista"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I02_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Sugli stipiti ci sono segni di crescita di bambini, ma nessun registro di nascite."
+    },
+    {
+     "id": "I02_p2",
+     "tratto": "Bassifondi",
+     "nc": 12,
+     "testo": "Le porte non hanno serrature, solo un sasso a tenerle chiuse."
+    }
+   ]
+  },
+  "I03": {
+   "protagonista": {
+    "posizione": "Sei nell'ufficio di revisione, davanti alla scrivania",
+    "attivita": "guardi i numeri che ti vengono mostrati"
+   },
+   "png": {
+    "seline": {
+     "posizione": "in piedi dietro la scrivania, con un tablet in mano",
+     "attivita": "scorre un elenco senza fermarsi"
+    },
+    "amministratore": {
+     "posizione": "seduto di lato, con le mani incrociate",
+     "attivita": "sorride appena quando ti guarda"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I03_p1",
+     "tratto": "Percezione",
+     "nc": 14,
+     "testo": "Uno dei numeri è stato corretto a mano e poi nascosto da una riga di testo."
+    },
+    {
+     "id": "I03_p2",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Dalla stanza accanto non viene alcun suono, nonostante le luci accese."
+    }
+   ]
+  },
+  "I04": {
+   "protagonista": {
+    "posizione": "Sei nel reparto clinico, accanto a un letto",
+    "attivita": "guardi la paziente senza nome"
+   },
+   "png": {
+    "mira47": {
+     "posizione": "distesa, con gli occhi aperti",
+     "attivita": "fissa il soffitto e muove appena le labbra"
+    },
+    "jax": {
+     "posizione": "alla porta, con le braccia conserte",
+     "attivita": "controlla il corridoio"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I04_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Il braccialetto della paziente non porta un nome ma un numero cancellato."
+    },
+    {
+     "id": "I04_p2",
+     "tratto": "Ascoltare",
+     "nc": 14,
+     "testo": "Quello che mormora sembra il rumore di onde."
+    }
+   ]
+  },
+  "I05": {
+   "protagonista": {
+    "posizione": "Sei nel nodo termico, accanto al banco delle firme",
+    "attivita": "ascolti le tre richieste"
+   },
+   "png": {
+    "seline": {
+     "posizione": "al banco, con la penna già in mano",
+     "attivita": "ti indica dove firmare"
+    },
+    "jax": {
+     "posizione": "accanto al pannello",
+     "attivita": "non guarda né te né lei"
+    },
+    "kade": {
+     "posizione": "dietro, con un gruppo di Spenti",
+     "attivita": "tiene le mani aperte, in segno di pace"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I05_p1",
+     "tratto": "Percezione",
+     "nc": 14,
+     "testo": "Il modulo da firmare ha una riga in più della copia che ti hanno mostrato."
+    },
+    {
+     "id": "I05_p2",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Dietro i pannelli qualcuno conta a mezza voce."
+    }
+   ]
+  },
+  "I06": {
+   "protagonista": {
+    "posizione": "Sei nell'archivio clinico, fra i faldoni aperti",
+    "attivita": "scorri le cartelle originali"
+   },
+   "png": {
+    "anja": {
+     "posizione": "al tavolo, con una cartella davanti",
+     "attivita": "non riesce a leggere tutto d'un fiato"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I06_p1",
+     "tratto": "Percezione",
+     "nc": 14,
+     "testo": "Una cartella ha due firme diverse sullo stesso consenso."
+    },
+    {
+     "id": "I06_p2",
+     "tratto": "Ascoltare",
+     "nc": 12,
+     "testo": "Nell'archivio si sente il ronzio di una ventola che non dovrebbe esserci."
+    }
+   ]
+  },
+  "I07": {
+   "protagonista": {
+    "posizione": "Sei nelle condotte BlackRoot, sulla passerella",
+    "attivita": "guardi dove va il calore"
+   },
+   "png": {
+    "seline": {
+     "posizione": "a pochi passi, con una radio in mano",
+     "attivita": "controlla un indicatore sul muro"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I07_p1",
+     "tratto": "Meccanica",
+     "nc": 14,
+     "testo": "Le condotte hanno una deviazione che non è segnata sulla mappa."
+    },
+    {
+     "id": "I07_p2",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Le saldature più recenti sono quelle che portano lontano da H-17."
+    }
+   ]
+  },
+  "I08": {
+   "protagonista": {
+    "posizione": "Sei nell'archivio neurale, fra i moduli luminosi",
+    "attivita": "ascolti tre voci che dicono di essere Mira"
+   },
+   "png": {
+    "mira47": {
+     "posizione": "distesa su una barella",
+     "attivita": "ascolta senza poter rispondere"
+    },
+    "mira_eco": {
+     "posizione": "nei moduli, a sinistra",
+     "attivita": "ricorda il mare e lo racconta"
+    },
+    "mira_ombra": {
+     "posizione": "nei moduli, a destra",
+     "attivita": "ricorda il turno di notte e lo racconta"
+    },
+    "anja": {
+     "posizione": "al pannello centrale, con le dita sulla tastiera",
+     "attivita": "non osa interromperle"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I08_p1",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Le tre voci hanno la stessa cadenza ma ricordano luoghi diversi."
+    },
+    {
+     "id": "I08_p2",
+     "tratto": "Percezione",
+     "nc": 14,
+     "testo": "Sulla barella i polsi portano segni di cinghie vecchie."
+    }
+   ]
+  },
+  "I09": {
+   "protagonista": {
+    "posizione": "Sei all'esterno, fra le rovine congelate",
+    "attivita": "controlli la tuta e l'ossigeno"
+   },
+   "png": {
+    "oko": {
+     "posizione": "a pochi passi, con una mano sull'ancora di sicurezza",
+     "attivita": "ti indica la direzione senza parlare"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I09_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Un cavo teso corre fra le rovine, ancora in tensione."
+    },
+    {
+     "id": "I09_p2",
+     "tratto": "Sopravvivenza",
+     "nc": 14,
+     "testo": "Il ghiaccio sotto di te scricchiola in modo diverso lungo un tratto, come se fosse più sottile."
+    }
+   ]
+  },
+  "I10": {
+   "protagonista": {
+    "posizione": "Sei nella sala di controllo, davanti alla vetrata",
+    "attivita": "guardi gli Spenti che occupano le postazioni"
+   },
+   "png": {
+    "kade": {
+     "posizione": "alla postazione centrale, con le mani sul bordo",
+     "attivita": "parla piano a chi gli sta accanto"
+    },
+    "jax": {
+     "posizione": "in un angolo, con la schiena al muro",
+     "attivita": "tiene d'occhio il pannello dell'ossigeno"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I10_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Nessuno degli Spenti ha toccato i comandi principali."
+    },
+    {
+     "id": "I10_p2",
+     "tratto": "Ascoltare",
+     "nc": 12,
+     "testo": "Fuori dalla porta si sente qualcuno che ripete lo stesso conto alla rovescia."
+    }
+   ]
+  },
+  "I11": {
+   "protagonista": {
+    "posizione": "Sei nel nodo termico, davanti alla mappa delle risorse",
+    "attivita": "guardi chi riceve quanto"
+   },
+   "png": {
+    "jax": {
+     "posizione": "al tavolo, con le mappe stese",
+     "attivita": "indica con un dito le zone che non verranno scaldate"
+    },
+    "kade": {
+     "posizione": "accanto, con la mano chiusa a pugno",
+     "attivita": "controlla i numeri"
+    },
+    "anja": {
+     "posizione": "di lato, con una cartella",
+     "attivita": "tiene la penna sospesa"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I11_p1",
+     "tratto": "Percezione",
+     "nc": 14,
+     "testo": "Le zone senza calore sono quelle senza registri."
+    },
+    {
+     "id": "I11_p2",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Nei tubi scorre meno aria del normale."
+    }
+   ]
+  },
+  "I12": {
+   "protagonista": {
+    "posizione": "Sei nella sala del consiglio, davanti al tavolo lungo",
+    "attivita": "ascolti le due voci che parlano a turno"
+   },
+   "png": {
+    "seline": {
+     "posizione": "al capotavola, con una cartella aperta",
+     "attivita": "legge un numero e poi un altro"
+    },
+    "amministratore": {
+     "posizione": "di lato, in piedi",
+     "attivita": "stringe il bordo del tavolo con una mano"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I12_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Sul tavolo c'è un bicchiere in più di quelli necessari."
+    },
+    {
+     "id": "I12_p2",
+     "tratto": "Ascoltare",
+     "nc": 12,
+     "testo": "Fuori dalla porta qualcuno aspetta senza parlare."
+    }
+   ]
+  },
+  "I13": {
+   "protagonista": {
+    "posizione": "Sei nel nodo termico, mentre i pannelli si spengono uno alla volta",
+    "attivita": "guardi che cosa è rimasto"
+   },
+   "png": {
+    "jax": {
+     "posizione": "alla leva principale, con entrambe le mani",
+     "attivita": "grida i numeri a chi lo ascolta"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I13_p1",
+     "tratto": "Meccanica",
+     "nc": 14,
+     "testo": "Un pannello laterale è rimasto acceso: ha una riserva a parte."
+    },
+    {
+     "id": "I13_p2",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "La temperatura scende più in fretta vicino ai condotti nord."
+    }
+   ]
+  },
+  "I14": {
+   "protagonista": {
+    "posizione": "Sei nell'archivio neurale, davanti al pannello centrale",
+    "attivita": "guardi i moduli e la barella"
+   },
+   "png": {
+    "anja": {
+     "posizione": "accanto al pannello, con le dita ferme",
+     "attivita": "aspetta che tu dica che cosa conservare"
+    },
+    "mira47": {
+     "posizione": "sulla barella, con gli occhi aperti",
+     "attivita": "respira piano"
+    },
+    "mira_eco": {
+     "posizione": "nei moduli, più luminosa",
+     "attivita": "aspetta la tua risposta"
+    },
+    "mira_ombra": {
+     "posizione": "nei moduli, più fioca",
+     "attivita": "aspetta, senza chiedere nulla"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I14_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Un modulo è più caldo degli altri e non porta un'etichetta."
+    },
+    {
+     "id": "I14_p2",
+     "tratto": "Ascoltare",
+     "nc": 12,
+     "testo": "Le due voci non si parlano mai addosso."
+    }
+   ]
+  },
+  "I15": {
+   "protagonista": {
+    "posizione": "Sei nella piazza del settore, davanti alla gente",
+    "attivita": "ascolti chi chiede che cosa"
+   },
+   "png": {
+    "jax": {
+     "posizione": "vicino al pozzo termico",
+     "attivita": "tiene la voce bassa"
+    },
+    "kade": {
+     "posizione": "fra gli Spenti",
+     "attivita": "guarda la folla"
+    },
+    "oko": {
+     "posizione": "ai margini, con la tuta ancora addosso",
+     "attivita": "aspetta di sapere se deve guidare qualcuno"
+    },
+    "seline": {
+     "posizione": "sul lato, con un tablet",
+     "attivita": "legge i numeri a mezza voce"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I15_p1",
+     "tratto": "Percezione",
+     "nc": 12,
+     "testo": "In piazza non ci sono bambini: sono stati tenuti dentro."
+    },
+    {
+     "id": "I15_p2",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Quando qualcuno nomina l'esterno, la piazza si irrigidisce."
+    }
+   ]
+  },
+  "I16": {
+   "protagonista": {
+    "posizione": "Sei nel nodo termico, nell'ultimo minuto utile",
+    "attivita": "guardi i quattro che aspettano un tuo gesto"
+   },
+   "png": {
+    "jax": {
+     "posizione": "al pannello principale",
+     "attivita": "tiene il dito sulla leva"
+    },
+    "anja": {
+     "posizione": "vicino alla porta clinica",
+     "attivita": "stringe una cartella"
+    },
+    "kade": {
+     "posizione": "accanto a te",
+     "attivita": "ha le mani aperte"
+    },
+    "oko": {
+     "posizione": "alla porta esterna",
+     "attivita": "ha già la tuta chiusa"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I16_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Sul pannello c'è una sola leva senza etichetta."
+    },
+    {
+     "id": "I16_p2",
+     "tratto": "Ascoltare",
+     "nc": 12,
+     "testo": "Il contatore scende con un ticchettio regolare."
+    }
+   ]
+  },
+  "I17": {
+   "protagonista": {
+    "posizione": "Sei a H-17, in un giorno qualunque",
+    "attivita": "guardi ciò che resta"
+   },
+   "png": {
+    "jax": {
+     "posizione": "al banco dei turni",
+     "attivita": "legge i turni del giorno"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "I17_p1",
+     "tratto": "Percezione",
+     "nc": 12,
+     "testo": "Ci sono più luci accese di quante ne ricordassi."
+    }
+   ]
+  }
+ }
+}

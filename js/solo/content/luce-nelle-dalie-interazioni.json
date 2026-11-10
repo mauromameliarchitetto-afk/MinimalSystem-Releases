@@ -1,0 +1,1675 @@
+{
+ "formato": "rm-solo-interazioni/1",
+ "storia": "luce-nelle-dalie",
+ "scene": {
+  "L01": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L01x1",
+     "testo": "Osservare le cure",
+     "riserva": "Quindici anni di vita a testa. Per altri è il compenso di un recupero dati; per te esiste anche il progetto di Cleyra, di cui Dawn ha parlato per le cure dei tuoi genitori. Il contratto non ha ancora pagato nessuno. Restano dodici ore per trovare i dati e la condizione di non aprirli.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Dalla parata arriva il discorso di Richard Philips: «Quale significato date alla vita?» La domanda pubblica accompagna un incarico che promette anni come compenso. La ricerca conduce a Koga; la leggimetallo è uno dei mezzi con cui leggere le tracce. Rabbit, Tommen e Lucas offrono copertura alla parata.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L01d1",
+      "testo": "Affrontare le cure",
+      "riserva": "I Patrioti arrivano prima che il gruppo possa considerarsi al sicuro. Il cargo del gruppo dei trasporti prepara l’uscita da C3: partire non equivale ad avere già pagato le cure.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L01x1"
+    ],
+    "risoluzione": [
+     "L01d1"
+    ]
+   },
+   "required_beats": [
+    "L01x1",
+    "L01d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Quindici anni di vita a testa. Per altri è il compenso di un recupero dati; per te esiste anche il progetto di Cleyra, di cui Dawn ha parlato per le cure dei tuoi genitori. Il contratto non ha ancora pagato nessuno. Restano dodici ore per trovare i dati e la condizione di non aprirli.",
+   "uscita_fail_forward": ""
+  },
+  "L02": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L02x1",
+     "testo": "Osservare grigio",
+     "riserva": "I fondi vengono congelati. Il messaggio avverte che il credito delle cure sarà tolto dall'alimentazione dei tuoi genitori.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il Protocollo Zero congela il compenso. Il credito delle cure viene richiesto all’alimentazione dei genitori, già sotto osservazione.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L02d1",
+      "testo": "Affrontare grigio",
+      "riserva": "Essere ricercato significa scendere al grigio, non aver scelto di abbandonarli. Sul treno sotto assalto viaggiano le dottoresse che ti hanno aiutato. Grid e Nine-Nine mantengono una via verso C6.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L02x1"
+    ],
+    "risoluzione": [
+     "L02d1"
+    ]
+   },
+   "required_beats": [
+    "L02x1",
+    "L02d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "I fondi vengono congelati. Il messaggio avverte che il credito delle cure sarà tolto dall'alimentazione dei tuoi genitori.",
+   "uscita_fail_forward": ""
+  },
+  "L03": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L03x1",
+     "testo": "Osservare il luogo che chiama",
+     "riserva": "Nelle fondamenta di C6 gli impulsi del Core attraversano le pareti. I postumi della droga rendono difficile seguire il passo degli altri.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "kestrel",
+     "argomenti": [
+      {
+       "id": "L03_dialogo",
+       "testo": "Chiedere del brainfreeze",
+       "riserva": "Kestrel ha già visto persone scivolare nel brainfreeze. La diffidenza non è una diagnosi risolutiva sul tuo corpo.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nelle fondamenta gli impulsi del Core passano come vene di luce nelle pareti. I postumi della droga rendono difficile seguire il gruppo; il telonio saldato nei bassifondi aggiunge fatica.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L03d1",
+      "testo": "Affrontare il luogo che chiama",
+      "riserva": "Dietro la doppia parete Kestrel guarda con diffidenza il tuo stato. I dati sono dentro Ferra, ma una direzione continua a richiamare la tua percezione.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L03x1"
+    ],
+    "risoluzione": [
+     "L03d1"
+    ]
+   },
+   "required_beats": [
+    "L03x1",
+    "L03d1"
+   ],
+   "optional_beats": [
+    "L03_dialogo"
+   ],
+   "riserva_libera": "Nelle fondamenta di C6 gli impulsi del Core attraversano le pareti. I postumi della droga rendono difficile seguire il passo degli altri.",
+   "uscita_fail_forward": ""
+  },
+  "L04": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L04x1",
+     "testo": "Osservare con rabbit",
+     "riserva": "Il covo si svuota. Ci sono cariche da portare e pistole puntate contro i ragazzi se il gruppo si oppone.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il covo si svuota sotto la minaccia delle pistole contro i ragazzi. Cariche e disturbatore accompagnano la fuga; dalle telecamere passa Vigilia diretta al Core.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L04d1",
+      "testo": "Affrontare con rabbit",
+      "riserva": "Rabbit cerca Dotcom nella sala giochi. La Black Tower resta il rifugio verso cui muove il gruppo mentre ogni intervento sui feriti deve trovare posto fra quei passaggi.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L04x1"
+    ],
+    "risoluzione": [
+     "L04d1"
+    ]
+   },
+   "required_beats": [
+    "L04x1",
+    "L04d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Il covo si svuota. Ci sono cariche da portare e pistole puntate contro i ragazzi se il gruppo si oppone.",
+   "uscita_fail_forward": ""
+  },
+  "L05": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L05x1",
+     "testo": "Osservare il raduno",
+     "riserva": "Il Patriota 03 emette impulsi che senti insieme al mal di testa. Gaia Epos interviene in diretta e ne ottiene il richiamo.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "lucas",
+     "argomenti": [
+      {
+       "id": "L05_dialogo",
+       "testo": "Chiedere notizie di Tommen",
+       "riserva": "Lucas cerca Tommen al raduno dei gruppi. Il contratto della Bernard non è valido.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Gli impulsi del Patriota si confondono con il mal di testa. Gaia interviene in diretta e ne ottiene il richiamo.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L05d1",
+      "testo": "Affrontare il raduno",
+      "riserva": "Al raduno dei gruppi Lucas cerca Tommen; il contratto della Bernard è ormai dichiarato invalido. Dawn e Cleyra hanno partecipato allo sviluppo di un programma, ma il nome riservato non appartiene ancora alle spiegazioni offerte qui.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L05x1"
+    ],
+    "risoluzione": [
+     "L05d1"
+    ]
+   },
+   "required_beats": [
+    "L05x1",
+    "L05d1"
+   ],
+   "optional_beats": [
+    "L05_dialogo"
+   ],
+   "riserva_libera": "Il Patriota 03 emette impulsi che senti insieme al mal di testa. Gaia Epos interviene in diretta e ne ottiene il richiamo.",
+   "uscita_fail_forward": ""
+  },
+  "L06": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L06x1",
+     "testo": "Osservare i fiori di metallo",
+     "riserva": "Il viaggio concede una pausa. Nel ghiaccio i fiori di metallo hanno radici nei corpi; il telonio conserva tracce che la mano può sentire.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il viaggio concede una pausa prima della coppa. Dawn e Cleyra saranno a C9; le squadre possono separarsi.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L06d1",
+      "testo": "Affrontare i fiori di metallo",
+      "riserva": "Nel campo di fiori metallici le radici arrivano ai corpi conservati nel ghiaccio. La leggimetallo rende quel materiale qualcosa da interrogare, ma non fornisce un nome di assassino o di costruttore senza una traccia.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L06x1"
+    ],
+    "risoluzione": [
+     "L06d1"
+    ]
+   },
+   "required_beats": [
+    "L06x1",
+    "L06d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Il viaggio concede una pausa. Nel ghiaccio i fiori di metallo hanno radici nei corpi; il telonio conserva tracce che la mano può sentire.",
+   "uscita_fail_forward": ""
+  },
+  "L07": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L07x1",
+     "testo": "Osservare dawn",
+     "riserva": "Nel laboratorio temporaneo Dawn risponde più lentamente. Il danno neurologico è visibile prima di ricevere un nome sicuro.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "dawn",
+     "argomenti": [
+      {
+       "id": "L07_dialogo",
+       "testo": "Chiedere del Cromo sul telonio",
+       "riserva": "Dawn cerca coscienze impresse nel telonio e descrive il Cromo come luce che cessa con la vita. Thomas finanziava la sua ricerca.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Dawn risponde lentamente nel laboratorio temporaneo. Descrive il Cromo come una luce che cessa con la vita e la sua affinità con il telonio, nel quale cerca coscienze impresse.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L07d1",
+      "testo": "Affrontare dawn",
+      "riserva": "Thomas era il suo finanziatore. Cleyra le è vicina; la presentazione con Evan rimane l’appuntamento che può dare accesso al programma.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L07x1"
+    ],
+    "risoluzione": [
+     "L07d1"
+    ]
+   },
+   "required_beats": [
+    "L07x1",
+    "L07d1"
+   ],
+   "optional_beats": [
+    "L07_dialogo"
+   ],
+   "riserva_libera": "Nel laboratorio temporaneo Dawn risponde più lentamente. Il danno neurologico è visibile prima di ricevere un nome sicuro.",
+   "uscita_fail_forward": ""
+  },
+  "L08": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L08x1",
+     "testo": "Osservare il potere",
+     "riserva": "Evan e George presentano il programma. George cede la chiave per Dawn; Cleyra viene autorizzata. Gli hacker armati interrompono la sicurezza promessa.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "cleyra",
+     "argomenti": [
+      {
+       "id": "L08_dialogo",
+       "testo": "Chiedere dell’autorizzazione per Dawn",
+       "riserva": "George ha ceduto la chiave per inserire Dawn e ha autorizzato Cleyra.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "George cede la propria chiave per Dawn e autorizza Cleyra. L’attacco degli hacker rompe la sicurezza della presentazione.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L08d1",
+      "testo": "Affrontare il potere",
+      "riserva": "Dawn può essere inserita nel programma dal tuo intervento oppure da Cleyra. Nel pericolo il potere riporta per brevi istanti azioni di pura emozione; Tommen viene ricondotto al proprio corpo, interrompendo ciò che stava facendo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L08x1"
+    ],
+    "risoluzione": [
+     "L08d1"
+    ]
+   },
+   "required_beats": [
+    "L08x1",
+    "L08d1"
+   ],
+   "optional_beats": [
+    "L08_dialogo"
+   ],
+   "riserva_libera": "Evan e George presentano il programma. George cede la chiave per Dawn; Cleyra viene autorizzata. Gli hacker armati interrompono la sicurezza promessa.",
+   "uscita_fail_forward": ""
+  },
+  "L09": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L09x1",
+     "testo": "Osservare le uscite chiuse",
+     "riserva": "Negli studi di Dawn il brainfreeze si lega alla perdita di Cromo. Sui Core resta una domanda: da dove viene l'energia che consumano?",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Negli studi di Dawn la perdita di Cromo ritorna accanto al brainfreeze e al consumo dei Core. Rabbit è sedata all’ospedale 17 e risulta senza Cromo.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L09d1",
+      "testo": "Affrontare le uscite chiuse",
+      "riserva": "Le uscite di C9 si chiudono; il sottopasso rimane un punto d’incontro possibile anche se Rabbit deve fuggire da sola. Ferra arriva durante l’agguato: il tuo tocco le procura dolore invece di una cura.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L09x1"
+    ],
+    "risoluzione": [
+     "L09d1"
+    ]
+   },
+   "required_beats": [
+    "L09x1",
+    "L09d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Negli studi di Dawn il brainfreeze si lega alla perdita di Cromo. Sui Core resta una domanda: da dove viene l'energia che consumano?",
+   "uscita_fail_forward": ""
+  },
+  "L10": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L10x1",
+     "testo": "Osservare la tuta",
+     "riserva": "Il furgone riparato arriva al Core; la dorsale passa sotto la struttura. Il Patriota insegue il mezzo e, sconfitto, si autodistrugge.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "cleyra",
+     "argomenti": [
+      {
+       "id": "L10_dialogo",
+       "testo": "Discutere la via sotto il Core",
+       "riserva": "Cleyra può guidare il mezzo sulla dorsale. Alimentarlo con la mano rimane una possibilità distinta.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ferra ripara il furgone; la mappa indica la dorsale sotto il Core. Il Patriota insegue il mezzo e si autodistrugge quando viene vinto.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L10d1",
+      "testo": "Affrontare la tuta",
+      "riserva": "Poi restano tre tute per quattro persone. Dawn cede la sua e si trafigge, affidando alla ricerca ciò che desidera lasciare vivo. Cleyra guida: la tua mano può alimentare il mezzo oppure la dorsale può farlo avanzare più lentamente.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L10x1"
+    ],
+    "risoluzione": [
+     "L10d1"
+    ]
+   },
+   "required_beats": [
+    "L10x1",
+    "L10d1"
+   ],
+   "optional_beats": [
+    "L10_dialogo"
+   ],
+   "riserva_libera": "Il furgone riparato arriva al Core; la dorsale passa sotto la struttura. Il Patriota insegue il mezzo e, sconfitto, si autodistrugge.",
+   "uscita_fail_forward": ""
+  },
+  "L11": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L11x1",
+     "testo": "Osservare ricostruire dawn",
+     "riserva": "Nelle cliniche grigie il valore della cura si contratta in anni di vita o informazioni. Fra te e Rabbit è rimasto il litigio; adesso il suo modo di parlare è più duro.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "cleyra",
+     "argomenti": [
+      {
+       "id": "L11_dialogo",
+       "testo": "Chiedere dei dati di Dawn",
+       "riserva": "Cleyra può occuparsi del recupero del corpo e condividere i dati della ricerca, senza che la ricostruzione sia già riuscita.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nelle cliniche grigie la cura viene pagata in anni o informazioni.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L11d1",
+      "testo": "Affrontare ricostruire dawn",
+      "riserva": "La ricerca di Dawn rimane una promessa mentre Rabbit è più dura nel rapporto con te. Il corpo può essere recuperato dal tuo intervento oppure da Cleyra; il materiale conservato nel programma offre una pista sulla coscienza, non la certezza di averla già ricostruita.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L11x1"
+    ],
+    "risoluzione": [
+     "L11d1"
+    ]
+   },
+   "required_beats": [
+    "L11x1",
+    "L11d1"
+   ],
+   "optional_beats": [
+    "L11_dialogo"
+   ],
+   "riserva_libera": "Nelle cliniche grigie il valore della cura si contratta in anni di vita o informazioni. Rabbit è più dura; il motivo completo del litigio non è scritto.",
+   "uscita_fail_forward": ""
+  },
+  "L12": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L12x1",
+     "testo": "Osservare i barattoli",
+     "riserva": "La ricerca sul telonio permette di vedere ciò che le capsule fanno: prosciugano Cromo dagli esseri umani e alimentano le città.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Manipolando il telonio diventa leggibile l’uso delle capsule: il Cromo dei detenuti alimenta le città.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L12d1",
+      "testo": "Affrontare i barattoli",
+      "riserva": "L’ipotesi su cloni e sopravvivenza degli Icaro va oltre ciò che questa osservazione ha già dimostrato. La ricerca può essere resa pubblica per la parte verificata oppure proseguire verso una cura che non è ancora pronta.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L12x1"
+    ],
+    "risoluzione": [
+     "L12d1"
+    ]
+   },
+   "required_beats": [
+    "L12x1",
+    "L12d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "La ricerca sul telonio permette di vedere ciò che le capsule fanno: prosciugano Cromo dagli esseri umani e alimentano le città.",
+   "uscita_fail_forward": ""
+  },
+  "L13": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L13x1",
+     "testo": "Osservare bianco",
+     "riserva": "Philips ti chiama per la candidatura a Icaro. Il mezzo della scorta aspetta; a C8 il tuo volto vestito di bianco appare sugli schermi.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Philips chiama per la candidatura a Icaro. La scorta conduce all’evento mentre il tuo volto vestito di bianco è già sugli schermi di C8.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L13d1",
+      "testo": "Affrontare bianco",
+      "riserva": "Bernard, Alikea, Fate e Florant sono nella sala. La pubblicazione dell’immagine assegna una posizione nella società: il consenso sul ruolo rimane invece un confronto che puoi ancora affrontare.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L13x1"
+    ],
+    "risoluzione": [
+     "L13d1"
+    ]
+   },
+   "required_beats": [
+    "L13x1",
+    "L13d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Philips ti chiama per la candidatura a Icaro. Il mezzo della scorta aspetta; a C8 il tuo volto vestito di bianco appare sugli schermi.",
+   "uscita_fail_forward": ""
+  },
+  "L14": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L14x1",
+     "testo": "Osservare il buio",
+     "riserva": "Ferra entra nella sala. Il suo Cromo provoca un crollo e le luci saltano. Nel buio si muovono Koga e Kato; Bernard fugge.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Ferra entra e il suo Cromo accompagna un crollo che fa saltare le luci. Nel buio si muovono Koga e Kato mentre Bernard fugge.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L14d1",
+      "testo": "Affrontare il buio",
+      "riserva": "La ferita porta un dolore che non appartiene soltanto alla carne: il Cromo infettante impedisce una semplice ripresa. Ferra chiede aiuto per avere un corpo, non la consegna di una soluzione già disponibile.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L14x1"
+    ],
+    "risoluzione": [
+     "L14d1"
+    ]
+   },
+   "required_beats": [
+    "L14x1",
+    "L14d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Ferra entra nella sala. Il suo Cromo provoca un crollo e le luci saltano. Nel buio si muovono Koga e Kato; Bernard fugge.",
+   "uscita_fail_forward": ""
+  },
+  "L15": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L15x1",
+     "testo": "Osservare il frammento",
+     "riserva": "Quando le luci tornano, Bernard è decapitato e Philips è morto accanto a lui. Alikea chiama Raven; Koga e Kato fuggono.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "La luce torna su Bernard decapitato e sul cadavere di Philips. Alikea chiama Raven; Koga e Kato si allontanano sul ghiaccio.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L15d1",
+      "testo": "Affrontare il frammento",
+      "riserva": "Sotto la pelle il telonio porta un ricordo non tuo, un ordine contro Ilysia Rodano. Sul balcone le parole lette sulle labbra di Fate restano parole osservate, senza identificare chi ascolta dall’altra parte.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L15x1"
+    ],
+    "risoluzione": [
+     "L15d1"
+    ]
+   },
+   "required_beats": [
+    "L15x1",
+    "L15d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Quando le luci tornano, Bernard è decapitato e Philips è morto accanto a lui. Alikea chiama Raven; Koga e Kato fuggono.",
+   "uscita_fail_forward": ""
+  },
+  "L16": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L16x1",
+     "testo": "Osservare i campioni",
+     "riserva": "Hammond prende il coordinamento, poi arriva alla torre. Fate torna sulla tua nomina a Icaro e ti mostra campioni da esaminare.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "fate",
+     "argomenti": [
+      {
+       "id": "L16_dialogo",
+       "testo": "Chiedere che cosa mostrino i campioni",
+       "riserva": "I campioni mostrano Cromo sul telonio e marker duplicati simili ai dati di Thomas. Trasferire una coscienza resta un’ipotesi da provare.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Hammond annuncia il nuovo coordinamento e arriva alla torre. Fate ricorda la nomina a Icaro e presenta campioni di Cromo sul telonio, con marker duplicati simili ai dati di Thomas.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L16d1",
+      "testo": "Affrontare i campioni",
+      "riserva": "Le osservazioni non dimostrano ancora ogni passaggio necessario a trasferire una coscienza. Ferra è sotto custodia; per pochi secondi una linea protetta mette in contatto Felia, Vigilia e te.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L16x1"
+    ],
+    "risoluzione": [
+     "L16d1"
+    ]
+   },
+   "required_beats": [
+    "L16x1",
+    "L16d1"
+   ],
+   "optional_beats": [
+    "L16_dialogo"
+   ],
+   "riserva_libera": "Hammond prende il coordinamento, poi arriva alla torre. Fate torna sulla tua nomina a Icaro e ti mostra campioni da esaminare.",
+   "uscita_fail_forward": ""
+  },
+  "L17": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L17x1",
+     "testo": "Osservare il simbolo",
+     "riserva": "Fate parla prima di te sugli schermi di Piazza Mercato. La tua immagine in bianco è già parte del suo discorso.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Fate parla prima di te sugli schermi di Piazza Mercato.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L17d1",
+      "testo": "Affrontare il simbolo",
+      "riserva": "Il valore della vita, la paura e la ricerca sul brainfreeze possono entrare nel tuo intervento, ma non sono parole già pronunciate. Accettare il ruolo oppure rifiutarlo distingue il rapporto con il bianco; il volto pubblico è ormai sugli schermi anche se Fate finisce per parlare da solo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L17x1"
+    ],
+    "risoluzione": [
+     "L17d1"
+    ]
+   },
+   "required_beats": [
+    "L17x1",
+    "L17d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Fate parla prima di te sugli schermi di Piazza Mercato. La tua immagine in bianco è già parte del suo discorso.",
+   "uscita_fail_forward": ""
+  },
+  "L18": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L18x1",
+     "testo": "Osservare l'alloggio",
+     "riserva": "Ferra riconosce la tua voce prima di voltarsi. Alikea ricorda che il luogo è pericoloso e non vuole esporre l'Icaro di C5.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "ferra_ostrom",
+     "argomenti": [
+      {
+       "id": "L18_dialogo",
+       "testo": "Parlare della richiesta di un corpo",
+       "riserva": "Ferra riconosce la tua voce e mantiene la richiesta di aiuto. Non dispone già di una procedura risolta.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ferra riconosce la voce prima di voltarsi. Alikea richiama il pericolo per l’Icaro di C5 e parla del telonio necessario come merce di scambio per ottenere fiducia.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L18d1",
+      "testo": "Affrontare l'alloggio",
+      "riserva": "La squadra di Vigilia raggiunge l’alloggio successivo. Il confronto sulle capsule può avvenire, ma la presenza nella stessa stanza non trasferisce da sola ogni conoscenza.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L18x1"
+    ],
+    "risoluzione": [
+     "L18d1"
+    ]
+   },
+   "required_beats": [
+    "L18x1",
+    "L18d1"
+   ],
+   "optional_beats": [
+    "L18_dialogo"
+   ],
+   "riserva_libera": "Ferra riconosce la tua voce prima di voltarsi. Alikea ricorda che il luogo è pericoloso e non vuole esporre l'Icaro di C5.",
+   "uscita_fail_forward": ""
+  },
+  "L19": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L19x1",
+     "testo": "Osservare il settore cargo",
+     "riserva": "Alikea dispone gli uomini alle uscite. Sei con Vigilia e Ferra; un lavoratore delle serre sputa sangue con schegge metalliche.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Gli Underhounds prendono posizione alle uscite e vengono chiesti supporti. Sei con Vigilia e Ferra mentre il piano di Alikea arriva alla consegna di qualcuno.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L19d1",
+      "testo": "Affrontare il settore cargo",
+      "riserva": "Nel settore delle serre i lavoratori mostrano sangue e schegge. Altrove un operatore scarta un lotto grigio attribuendolo al blackout; non è una diagnosi che hai formulato tu.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L19x1"
+    ],
+    "risoluzione": [
+     "L19d1"
+    ]
+   },
+   "required_beats": [
+    "L19x1",
+    "L19d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Alikea dispone gli uomini alle uscite. Sei con Vigilia e Ferra; un lavoratore delle serre sputa sangue con schegge metalliche.",
+   "uscita_fail_forward": ""
+  },
+  "L20": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L20x1",
+     "testo": "Osservare un altro icaro",
+     "riserva": "Florant Esprit prende il controllo della Repubblica. Il ruolo assegnato a te non ti dà potere su questa decisione.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Florant Esprit assume il controllo della Repubblica. Il tuo ruolo di Icaro esiste dentro un potere che cambia vertice senza chiederti consenso.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L20d1",
+      "testo": "Affrontare un altro icaro",
+      "riserva": "Dopo di lui la flotta marziana si svela. La parola pubblica può essere usata contro il nuovo comando oppure per cercare protezione attraverso la posizione già assegnata.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L20x1"
+    ],
+    "risoluzione": [
+     "L20d1"
+    ]
+   },
+   "required_beats": [
+    "L20x1",
+    "L20d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Florant Esprit prende il controllo della Repubblica. Il ruolo assegnato a te non ti dà potere su questa decisione.",
+   "uscita_fail_forward": ""
+  },
+  "L21": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L21x1",
+     "testo": "Osservare il debito",
+     "riserva": "Fate torna a chiedere la tua voce per la comunicazione pubblica. I genitori sono ancora sotto osservazione dalla prima minaccia.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "fate",
+     "argomenti": [
+      {
+       "id": "L21_dialogo",
+       "testo": "Chiedere dei genitori prima di parlare",
+       "riserva": "La richiesta di usare la tua voce pubblica rimane distinta dalle notizie sui genitori.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Fate chiede di nuovo la tua voce mentre il nuovo potere organizza la comunicazione pubblica.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L21d1",
+      "testo": "Affrontare il debito",
+      "riserva": "La minaccia ai genitori non è stata cancellata dal bianco. Notizie su di loro e consenso a parlare sono due questioni da affrontare nel confronto: l’una non viene raccontata come già risolta dall’altra.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L21x1"
+    ],
+    "risoluzione": [
+     "L21d1"
+    ]
+   },
+   "required_beats": [
+    "L21x1",
+    "L21d1"
+   ],
+   "optional_beats": [
+    "L21_dialogo"
+   ],
+   "riserva_libera": "Fate torna a chiedere la tua voce per la comunicazione pubblica. I genitori sono ancora sotto osservazione dalla prima minaccia.",
+   "uscita_fail_forward": ""
+  },
+  "L22": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L22x1",
+     "testo": "Osservare le serre",
+     "riserva": "Le colture sono grigie e i lavoratori sputano vetro e metallo. La leggimetallo può cercare tracce, ma il costo sul tuo corpo resta.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "cleyra",
+     "argomenti": [
+      {
+       "id": "L22_dialogo",
+       "testo": "Confrontare i segni nei malati",
+       "riserva": "Sangue e schegge nei lavoratori sono osservazioni. Una causa unica e una terapia richiedono ancora verifica.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nelle serre le colture sono grigie e i lavoratori sputano vetro e metallo.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L22d1",
+      "testo": "Affrontare le serre",
+      "riserva": "Cleyra può affiancare l’esame dei malati. Gli invasori hanno bisogno di telonio per non cristallizzarsi: mettere questa dipendenza accanto ai dati sul Cromo apre una ricerca, non una terapia già dimostrata.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L22x1"
+    ],
+    "risoluzione": [
+     "L22d1"
+    ]
+   },
+   "required_beats": [
+    "L22x1",
+    "L22d1"
+   ],
+   "optional_beats": [
+    "L22_dialogo"
+   ],
+   "riserva_libera": "Le colture sono grigie e i lavoratori sputano vetro e metallo. La leggimetallo può cercare tracce, ma il costo sul tuo corpo resta.",
+   "uscita_fail_forward": ""
+  },
+  "L23": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L23x1",
+     "testo": "Osservare la cura come offerta",
+     "riserva": "Le trattative devono cercare di evitare il conflitto. Gli invasori chiedono telonio e accusano la Terra dello spegnimento del Sole.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "shapira",
+     "argomenti": [
+      {
+       "id": "L23_dialogo",
+       "testo": "Discutere la cristallizzazione",
+       "riserva": "Gli invasori dipendono dal telonio e lo chiedono alla Terra. L’offerta di una ricerca medica non conclude ancora la trattativa.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il tavolo tenta di evitare il conflitto.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L23d1",
+      "testo": "Affrontare la cura come offerta",
+      "riserva": "Shapira porta l’accusa dentro la trattativa. «La stazione sul Sole vi aveva avvertiti. Da terra avete imposto di completare il ciclo di estrazione. Per il profitto di quell’energia avete provocato uno strappo nelle onde di oscillazione del Cromo e spento il Sole. La figlia di Epos è sopravvissuta lassù. È diventata un’entità ricolma di Cromo: è lei che ci guida contro la Terra.» La rabbia che la muove conserva, nel subconscio, l’ordine ricevuto e il sacrificio imposto dai terrestri. Gli invasori domandano telonio e accusano la Terra dello spegnimento del Sole. La ricerca sulla cristallizzazione può essere proposta come collaborazione invece che come minaccia; il suo valore dipende anche da ciò che non è ancora stato dimostrato.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "icaro_sole_estrazione"
+       }
+      ],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA. DECISIONI_AUTORE.md §11, risposta dell’autore del 1 novembre 2026 sullo spegnimento del Sole."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L23x1"
+    ],
+    "risoluzione": [
+     "L23d1"
+    ]
+   },
+   "required_beats": [
+    "L23x1",
+    "L23d1"
+   ],
+   "optional_beats": [
+    "L23_dialogo"
+   ],
+   "riserva_libera": "Le trattative devono cercare di evitare il conflitto. Gli invasori chiedono telonio e accusano la Terra dello spegnimento del Sole.",
+   "uscita_fail_forward": ""
+  },
+  "L24": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L24x1",
+     "testo": "Osservare arma o cura",
+     "riserva": "Il conflitto comincia. Nel laboratorio rimane il frammento di Philips sulla vecchia C1; davanti a te ci sono la ricerca e i malati che ne attendono i risultati.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il fallimento delle trattative porta al conflitto.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L24d1",
+      "testo": "Affrontare arma o cura",
+      "riserva": "Nel laboratorio il frammento di Philips richiama la vecchia C1, ma non contiene una spiegazione completa pronta per essere usata. La scelta concreta riguarda dove indirizzare la ricerca: verso i malati e la cristallizzazione oppure contro la forza degli invasori.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L24x1"
+    ],
+    "risoluzione": [
+     "L24d1"
+    ]
+   },
+   "required_beats": [
+    "L24x1",
+    "L24d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Il conflitto comincia. Nel laboratorio il frammento di Philips richiama la vecchia C1, ma ciò che contiene non è scritto.",
+   "uscita_fail_forward": ""
+  },
+  "L25": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L25x1",
+     "testo": "Osservare la terra",
+     "riserva": "Gaia Epos consuma il pianeta per creare un buco bianco. Il collasso sposta la priorità dalla difesa dei luoghi al salvataggio delle persone.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Gaia Epos consuma la Terra per creare un buco bianco. Il programma ha un nome, Ich, e porta persone a vivere in un mondo scritto.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L25d1",
+      "testo": "Affrontare la terra",
+      "riserva": "Lasciare il pianeta diventa necessario mentre la ricerca di Dawn rimane nei dati e nei corpi da salvare. Le navi e la stazione di lancio sono vie da raggiungere, non un imbarco già concluso.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L25x1"
+    ],
+    "risoluzione": [
+     "L25d1"
+    ]
+   },
+   "required_beats": [
+    "L25x1",
+    "L25d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Gaia Epos consuma il pianeta per creare un buco bianco. Il collasso sposta la priorità dalla difesa dei luoghi al salvataggio delle persone.",
+   "uscita_fail_forward": ""
+  },
+  "L26": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L26x1",
+     "testo": "Osservare l'imbarco",
+     "riserva": "Meadow e Dhruva sono fra i malati in attesa dell’imbarco. Il conflitto sulle astronavi rende il passaggio insicuro; i pazienti senza registro cercano lo stesso accesso.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Sulle astronavi la guerra e l’imbarco avvengono nello stesso spazio.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L26d1",
+      "testo": "Affrontare l'imbarco",
+      "riserva": "I malati hanno bisogno di posto e assistenza. Cercare i genitori oppure assicurare accesso ai pazienti senza registro distingue la priorità del tuo intervento, senza decretare per questo la morte automatica dell’altro gruppo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L26x1"
+    ],
+    "risoluzione": [
+     "L26d1"
+    ]
+   },
+   "required_beats": [
+    "L26x1",
+    "L26d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Meadow e Dhruva sono fra i malati in attesa dell’imbarco. Il conflitto sulle astronavi rende il passaggio insicuro; i pazienti senza registro cercano lo stesso accesso.",
+   "uscita_fail_forward": ""
+  },
+  "L27": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L27x1",
+     "testo": "Osservare la promessa a ferra",
+     "riserva": "Il telonio della nave restituisce alla mano il modo in cui viene alimentata. Ferra attende ancora l'aiuto chiesto durante l'evento.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Nel telonio della nave la mano sente il modo in cui viene alimentata.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L27d1",
+      "testo": "Affrontare la promessa a ferra",
+      "riserva": "Ferra porta ancora la richiesta di un corpo fatta durante l’evento. L’aiuto può essere tentato senza consumare un’altra persona; proteggere i dati di Dawn rimane una priorità diversa, non una risposta automaticamente data a Ferra.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L27x1"
+    ],
+    "risoluzione": [
+     "L27d1"
+    ]
+   },
+   "required_beats": [
+    "L27x1",
+    "L27d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Il telonio della nave restituisce alla mano il modo in cui viene alimentata. Ferra attende ancora l'aiuto chiesto durante l'evento.",
+   "uscita_fail_forward": ""
+  },
+  "L28": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L28x1",
+     "testo": "Osservare l'astronave madre",
+     "riserva": "Shapira e Florant partecipano allo scontro nell'astronave madre. La ricerca scelta come arma o cura arriva davanti a persone, non soltanto a bersagli.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Shapira e Florant partecipano allo scontro nell’astronave madre.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L28d1",
+      "testo": "Affrontare l'astronave madre",
+      "riserva": "La ricerca arriva davanti a interlocutori che possono essere curati, fermati o affrontati; non risolve da sola la resistenza del comando. Il salvataggio delle persone continua a richiedere una via fuori dalla sala e dalle navi ancora in guerra.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L28x1"
+    ],
+    "risoluzione": [
+     "L28d1"
+    ]
+   },
+   "required_beats": [
+    "L28x1",
+    "L28d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Shapira e Florant partecipano allo scontro nell'astronave madre. La ricerca scelta come arma o cura arriva davanti a persone, non soltanto a bersagli.",
+   "uscita_fail_forward": ""
+  },
+  "L29": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L29x1",
+     "testo": "Osservare la mano sul motore",
+     "riserva": "Una nave non riesce ancora a partire mentre la Terra collassa. Il gesto che alimentò il mezzo di C9 è una possibilità, non un obbligo.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Una nave non riesce ancora a partire.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L29d1",
+      "testo": "Affrontare la mano sul motore",
+      "riserva": "La mano sul motore ripropone il gesto di C9, ma il Cromo infettante mette a rischio il corpo che lo compie. Sostenere la partenza oppure affidarla alla squadra rimangono alternative: il collasso non è un consenso dato per te.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L29x1"
+    ],
+    "risoluzione": [
+     "L29d1"
+    ]
+   },
+   "required_beats": [
+    "L29x1",
+    "L29d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Una nave non riesce ancora a partire mentre la Terra collassa. Il gesto che alimentò il mezzo di C9 è una possibilità, non un obbligo.",
+   "uscita_fail_forward": ""
+  },
+  "L30": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "L30x1",
+     "testo": "Osservare le dalie",
+     "riserva": "Le navi si allontanano dalla Terra. Il medaglione con la dalia può ancora stare in una mano; il prato immaginato non viene promesso su un pianeta inventato.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "La Terra rimane dietro alle navi.",
+    "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "L30d1",
+      "testo": "Affrontare le dalie",
+      "riserva": "Il medaglione con la dalia e le persone salite portano il sogno di una cura in uno spazio dove non si può promettere un prato già trovato. Pazienti, genitori e immagine pubblica restano legami diversi del congedo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_LA_LUCE_NELLE_DALIE.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "L30x1"
+    ],
+    "risoluzione": [
+     "L30d1"
+    ]
+   },
+   "required_beats": [
+    "L30x1",
+    "L30d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Le navi si allontanano dalla Terra. Il medaglione con la dalia può ancora stare in una mano; il prato immaginato non viene promesso su un pianeta inventato.",
+   "uscita_fail_forward": ""
+  }
+ }
+}

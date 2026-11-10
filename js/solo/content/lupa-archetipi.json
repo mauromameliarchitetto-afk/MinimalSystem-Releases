@@ -1,0 +1,262 @@
+{
+ "formato": "rm-solo-archetipi/1",
+ "storia": "ich",
+ "versione": "0.1.0",
+ "avviso": "Trama «La lupa senza memoria». Il nome della protagonista è quello pronto della trama; classe, valori meccanici e dotazione sono proposti: da approvare.",
+ "archetipi": [
+  {
+   "id": "vargynja",
+   "versione": "0.1.0",
+   "stato_editoriale": "bozza",
+   "fonte": "docs/single-player/trame/SCHEMA_LA_LUPA_SENZA_MEMORIA.md (schema approvato il 30/10); ICH.md §2 r.129-154",
+   "nome": "Vargynja",
+   "genere": "femminile",
+   "popolazione": "Stam",
+   "citta": "Snaeriff",
+   "mansione": "Fabbra di Snaeriff",
+   "ritratto": "img/solo/ritratti/predefinito.svg",
+   "ritratto_alt": "Ritratto provvisorio di Vargynja, fabbra di Snaeriff (immagine d autore da fornire)",
+   "build": "eclettico",
+   "background": "Una fabbra degli Ulf Vanar che lavora alla forgia di Vegard, a Snaeriff, con la sua volpe Kil. Del suo passato ricorda solo il nome; a volte, per un attimo, le sembra di vedere un'altra vita.",
+   "obiettivo": "Capire chi sei, oltre il tuo nome.",
+   "missione_iniziale": "Lavorare le lame alla forgia di Vegard.",
+   "capitolo": "lupa-trama",
+   "primary": {
+    "hp": 5,
+    "mp": 4,
+    "for": 6,
+    "mira": 2,
+    "vel": 7,
+    "fmen": 4,
+    "dex": 7,
+    "dif": 3,
+    "dmen": 2
+   },
+   "tertiary": {
+    "stile": 1,
+    "fortuna": 2,
+    "carisma": 2
+   },
+   "traits": {
+    "conoscenze": {
+     "Caccia": 2,
+     "Seguire Tracce": 1,
+     "Sopravvivenza": 1,
+     "Fauna": 1
+    },
+    "capacitaNormali": {
+     "Riparare": 2,
+     "Percezione": 2,
+     "Hacking": 1
+    },
+    "capacitaCombattive": {
+     "Arte Combattiva": 2,
+     "Lancia": 1,
+     "Elusione": 1,
+     "Resistenza": 1
+    }
+   },
+   "tecniche": [
+    {
+     "id": "ulf_vanar.affondo_spinato",
+     "nome": "Affondo spinato",
+     "categoria": "tecnica",
+     "tipoAzione": "attacco",
+     "bersaglio": "singolo nemico",
+     "dannoBase": 7,
+     "effetto": "Attacco fisico: danno base 7 + Forza",
+     "costoMP": 0,
+     "risorsaSpeciale": null,
+     "costoRisorsaSpeciale": 0,
+     "forzatura": {
+      "consentita": false,
+      "costoVitalita": null
+     },
+     "utilizziMassimi": "utilizziLimitFor",
+     "durataTurni": 0,
+     "condizioniUso": [],
+     "bonus": [],
+     "malus": [],
+     "livelloRichiesto": 1,
+     "slotRichiesti": 1,
+     "tipo": "danno",
+     "lv": 1,
+     "stat": "for",
+     "descrizione": "La dafar con la spina: entra e non esce.",
+     "fonteCanone": "IP p.51",
+     "origine": "fonte"
+    }
+   ],
+   "abilita": [
+    {
+     "id": "ulf_vanar.furore_del_nord",
+     "nome": "Furore del nord",
+     "categoria": "abilità",
+     "tipoAzione": "supporto",
+     "bersaglio": "sé",
+     "dannoBase": 0,
+     "effetto": "+2 Forza, −1 Difesa per 2 turni",
+     "costoMP": 6,
+     "risorsaSpeciale": null,
+     "costoRisorsaSpeciale": 0,
+     "forzatura": {
+      "consentita": false,
+      "costoVitalita": null
+     },
+     "utilizziMassimi": "utilizziLimitFor",
+     "durataTurni": 2,
+     "condizioniUso": [],
+     "bonus": [],
+     "malus": [],
+     "livelloRichiesto": 1,
+     "slotRichiesti": 1,
+     "tipo": "supporto",
+     "lv": 1,
+     "stat": null,
+     "descrizione": "Il furore sale dal petto e il dolore non c'è.",
+     "fonteCanone": "IP p.51",
+     "origine": "fonte",
+     "bonusStat": {
+      "for": 2,
+      "dif": -1
+     }
+    }
+   ],
+   "equip": [
+    {
+     "id": "ulf_vanar.dafar",
+     "nome": "Dafar",
+     "tipo": "arma",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "base": "catalogo",
+     "catalogo": true,
+     "descrizione": "Lancia semplice di 2-2,5 m, anche spinata.",
+     "fonteCanone": "IP p.51; per Vargynja PROPOSTA, da approvare: dotazione Ulf Vanar del catalogo di Ich",
+     "origine": "fonte",
+     "content_status": "proposed"
+    },
+    {
+     "id": "ulf_vanar.cuoio_borchiato",
+     "nome": "Cuoio intrecciato borchiato",
+     "tipo": "armatura",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "base": "catalogo",
+     "catalogo": true,
+     "descrizione": "Cuoio intrecciato con borchie, avambracci di pelle, elmo con guardia.",
+     "fonteCanone": "IP p.51; per Vargynja PROPOSTA, da approvare: dotazione Ulf Vanar del catalogo di Ich",
+     "origine": "fonte",
+     "content_status": "proposed"
+    }
+   ],
+   "legami_iniziali": [
+    {
+     "png": "ivor",
+     "natura": "il tuo amico, che ti chiama «Fabbro!» e ti vuole con sé alla prova (ICH.md r.134)"
+    }
+   ],
+   "conoscenze": [],
+   "segreti_narratore": [
+    "La vita sulla Terra, chi sia davvero Runi e la promessa di Evan sono verità riservate: si dicono nelle scene 10, 20 e 27 (schema). Gli Asi restano gli dèi dei personaggi."
+   ],
+   "occasioni_sviluppo": [
+    {
+     "atto": 1,
+     "possibilita": "La prova delle zanne, la caccia selvaggia e il ricordo di un'altra vita."
+    },
+    {
+     "atto": 2,
+     "possibilita": "Scegliere fra il branco e ciò che sei davvero, e salvare Runi."
+    },
+    {
+     "atto": 3,
+     "possibilita": "Liberare i reveries, e scegliere quale nome tenere."
+    }
+   ],
+   "campaign_id": "lupa-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "docs/single-player/trame/SCHEMA_LA_LUPA_SENZA_MEMORIA.md (schema approvato il 30/10); ICH.md §2 r.129-154: nome pronto della trama (ICH.md r.171: Vargynja, «lupa»); la fabbra di Snaeriff, alla forgia di Vegard, fra gli Ulf Vanar (ICH.md r.131, r.134); classe Eclettico, hacker e lotta (ICH.md r.151); primarie dal modello vargynja di PNG_ICH_DA_APPROVARE.md, tratti del mestiere e dotazione Ulf Vanar del catalogo di Ich: da approvare",
+   "ontologia": {
+    "entityType": "personaggio_giocabile",
+    "peopleId": "reverie",
+    "factionId": null,
+    "cultureId": null,
+    "regionId": "vanargand",
+    "roleId": "fabbra",
+    "creatureFamilyId": null,
+    "socialClassId": null,
+    "corporationId": null,
+    "playable": true,
+    "playerVisible": true,
+    "narratorOnly": [],
+    "societyId": "stam",
+    "figureId": null,
+    "statoAffiliazione": "coerente_da_confermare",
+    "proposte": {},
+    "fonti": {
+     "peopleId": "premessa Ich: gli abitanti di Erdegis si definiscono reveries",
+     "societyId": "Stam (registro dell'ontologia di Ich): gli Ulf Vanar sono clan, con hersir e hersar",
+     "regionId": "Vanargand: catalogo di Ich, gruppo «Ulf Vanar (Vanargand)» (registro: vanargand)",
+     "roleId": "la fabbra di Snaeriff: ICH.md r.131, r.134"
+    },
+    "dubbi": [
+     "Gli Ulf Vanar non sono nel registro delle culture dell'ontologia di Ich: cultura nessuna (PROPOSTA)."
+    ]
+   },
+   "approvazioneMeccanica": {
+    "id": "da-approvare",
+    "stato": "da approvare (protagonista di trama)",
+    "fonte": "docs/DECISIONI_AUTORE.md §2: l'approvazione dei preset del 2026-10-01 riguarda i personaggi delle avventure di prova ed è superata; i protagonisti delle trame si approvano uno per uno.",
+    "ambito": "Valori meccanici proposti (le primarie della scheda vargynja già proposta, con i tratti del mestiere): da approvare."
+   },
+   "inventarioIniziale": [
+    {
+     "id": "ich_razione_viaggio",
+     "qty": 1
+    },
+    {
+     "id": "ich_impacco_achillea",
+     "qty": 1
+    }
+   ],
+   "approvazioneDotazioni": {
+    "id": "da-approvare",
+    "stato": "da approvare (protagonista di trama)",
+    "fonte": "docs/DECISIONI_AUTORE.md §2: l'approvazione dei preset del 2026-10-01 riguarda i personaggi delle avventure di prova ed è superata; i protagonisti delle trame si approvano uno per uno.",
+    "ambito": "Dafar, cuoio intrecciato borchiato, tecniche e zaino del catalogo di Ich (gruppo Ulf Vanar, Eclettico): PROPOSTA, da approvare."
+   },
+   "catalogoGruppo": "ulf_vanar"
+  }
+ ],
+ "formato_capacita": "rm-solo-capacita/1",
+ "legenda_fonti": {
+  "R": "regolamento dell'app",
+  "D": "documento Campagne e 15 archetipi V1",
+  "A": "regola approvata dall'autore (revisione gemme)",
+  "P": "proposta da approvare"
+ }
+}

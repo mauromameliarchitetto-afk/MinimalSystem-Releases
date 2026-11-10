@@ -1,0 +1,64 @@
+{
+ "formato": "rm-solo-voce/1",
+ "id": "cubo_voice_v1",
+ "storia": "cubo",
+ "campaign_id": "cubo-trama",
+ "versione": "0.1.0",
+ "content_status": "proposed",
+ "source_note": "voce di Eidos riferita alla trama «La chiave del cubo»: da approvare",
+ "narrative_voice": {
+  "id": "cubo_voice_v1",
+  "tone": [
+   "epic_concrete",
+   "political",
+   "personal"
+  ],
+  "lexicon": [
+   "materia",
+   "fiamma",
+   "nebbia",
+   "vetro",
+   "osso",
+   "metallo",
+   "respiro",
+   "idea",
+   "scelta",
+   "forma",
+   "radice",
+   "luce"
+  ],
+  "dialogue_mode": "position_plus_personal_stake",
+  "act_modifiers": {
+   "1": "discovery_and_belonging",
+   "2": "contradiction_and_responsibility",
+   "3": "choice_and_transformation"
+  },
+  "forbidden": [
+   "omniscient_spoiler",
+   "npc_unknown_fact",
+   "protagonist_thoughts",
+   "theme_lecture",
+   "historical_hero_solution"
+  ],
+  "eroi_storici": [],
+  "conflitto_di_valori": true,
+  "pov": "second_perceptive",
+  "pov_ammessi": [
+   "second_perceptive",
+   "third_limited"
+  ],
+  "nota_pov": "La scheda ammette terza persona limitata o seconda persona percettiva \"secondo l'impostazione dell'interfaccia\": oggi l'interfaccia e i testi di riserva usano la seconda persona.",
+  "scene_pattern": [
+   "consequence",
+   "world_detail",
+   "npc_reaction",
+   "action_opening"
+  ]
+ },
+ "guida": {
+  "esempio": "«L'oceano unisce le terre, tutte loro sono immerse nella stessa acqua. Non vedo perché noi non dovremmo condividere lo stesso tipo di pensiero.»",
+  "esempio_fonte": "[RW Ep.2 r.9] (Athres, la marea del cambiamento: EIDOS.md r.74)"
+ },
+ "voce_autore": "voce_autore_v1",
+ "timbro": "eidos-contesto.json#timbro"
+}

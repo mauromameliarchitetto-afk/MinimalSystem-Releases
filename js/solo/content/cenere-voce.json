@@ -1,0 +1,64 @@
+{
+ "formato": "rm-solo-voce/1",
+ "id": "cenere_voice_v1",
+ "storia": "cenere",
+ "campaign_id": "cenere-atto-1",
+ "versione": "0.2.0",
+ "content_status": "proposed",
+ "source_note": "voce di Eidos riferita alla trama pilota «Il filo di cenere»: da approvare",
+ "narrative_voice": {
+  "id": "cenere_voice_v1",
+  "tone": [
+   "epic_concrete",
+   "political",
+   "personal"
+  ],
+  "lexicon": [
+   "materia",
+   "fiamma",
+   "nebbia",
+   "vetro",
+   "osso",
+   "metallo",
+   "respiro",
+   "idea",
+   "scelta",
+   "forma",
+   "radice",
+   "luce"
+  ],
+  "dialogue_mode": "position_plus_personal_stake",
+  "act_modifiers": {
+   "1": "discovery_and_belonging",
+   "2": "contradiction_and_responsibility",
+   "3": "choice_and_transformation"
+  },
+  "forbidden": [
+   "omniscient_spoiler",
+   "npc_unknown_fact",
+   "protagonist_thoughts",
+   "theme_lecture",
+   "historical_hero_solution"
+  ],
+  "eroi_storici": [],
+  "conflitto_di_valori": true,
+  "pov": "second_perceptive",
+  "pov_ammessi": [
+   "second_perceptive",
+   "third_limited"
+  ],
+  "nota_pov": "La scheda ammette terza persona limitata o seconda persona percettiva \"secondo l'impostazione dell'interfaccia\": oggi l'interfaccia e i testi di riserva usano la seconda persona.",
+  "scene_pattern": [
+   "consequence",
+   "world_detail",
+   "npc_reaction",
+   "action_opening"
+  ]
+ },
+ "guida": {
+  "esempio": "«Nephele, puoi sistemarmi la spalla?» chiede Fobos, avvicinandosi. «Non ho più cure, credo sia lussata.» Mentre gli rimetti a posto la spalla vedi un bambino che piange in una pozza di sangue, e accanto a lui un mostro di fumo.",
+  "esempio_fonte": "[V2 Cap.5]"
+ },
+ "voce_autore": "voce_autore_v1",
+ "timbro": "eidos-contesto.json#timbro"
+}

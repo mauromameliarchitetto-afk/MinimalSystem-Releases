@@ -1,0 +1,303 @@
+{
+ "formato": "rm-solo-imprevisti/1",
+ "storia": "eidos",
+ "stato": "proposta scritta in autonomia (2026-10-17), rivedibile in docs/single-player/DECISIONI_DA_RIVEDERE.md",
+ "imprevisti": [
+  {
+   "id": "eid_radio",
+   "filo": "orologio:linea_muta",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "complica",
+   "orologio": 1,
+   "testo": "Una radio lontana gracchia più chiara di prima: l'avanguardia si è fatta più vicina."
+  },
+  {
+   "id": "eid_esploratore",
+   "filo": "orologio:linea_muta",
+   "atti": [
+    2,
+    3
+   ],
+   "effetto": "complica",
+   "orologio": 1,
+   "testo": "Qualcuno ha visto un esploratore della squadra nemica al limite della piana: la scadenza stringe."
+  },
+  {
+   "id": "eid_filtro",
+   "filo": "orologio:filtri",
+   "atti": [
+    1,
+    2
+   ],
+   "effetto": "complica",
+   "testo": "Un filtro del lato nord ha un sibilo nuovo: servirà ancora un po' di pazienza."
+  },
+  {
+   "id": "eid_ada_nastro",
+   "filo": "png:ada",
+   "atti": [
+    1,
+    2
+   ],
+   "effetto": "avanza",
+   "testo": "Ada ti fa cenno da lontano: ha ritrovato un nastro che crede ti interessi."
+  },
+  {
+   "id": "eid_ada_chiude",
+   "filo": "png:ada",
+   "atti": [
+    2,
+    3
+   ],
+   "effetto": "chiude",
+   "testo": "Ada ti porge ciò che aveva promesso di cercare: per ora, questo filo è sciolto."
+  },
+  {
+   "id": "eid_mirea",
+   "filo": "png:mirea",
+   "atti": [
+    1,
+    2
+   ],
+   "effetto": "avanza",
+   "testo": "Mirea chiude di scatto un registro quando passi, poi cambia discorso."
+  },
+  {
+   "id": "eid_yara",
+   "filo": "png:yara",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "avanza",
+   "testo": "Un fischio basso dai tetti: Yara è passata a controllare, e se n'è già andata."
+  },
+  {
+   "id": "eid_tal",
+   "filo": "png:tal",
+   "atti": [
+    1,
+    2
+   ],
+   "effetto": "avanza",
+   "testo": "Tal lascia sul tavolo una copia del contratto, «per chi volesse rileggerlo»."
+  },
+  {
+   "id": "eid_promessa",
+   "filo": "promessa",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "complica",
+   "testo": "Qualcuno ti ferma e ti ricorda, senza alzare la voce, ciò che hai promesso."
+  },
+  {
+   "id": "eid_pompe",
+   "filo": "generico",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "avanza",
+   "testo": "Il rumore delle pompe cambia per un istante, poi riprende come prima."
+  }
+ ],
+ "regia": {
+  "fonte": "training/scripts/distilla_regia.py (aggregati; nessun testo dell'autore)",
+  "documenti": 81,
+  "ritmo": {
+   "classi": {
+    "tensione": [
+     "COMBATTIMENTO",
+     "RIVELAZIONE"
+    ],
+    "respiro": [
+     "AFTERMATH",
+     "CHIUSURA",
+     "ESPLORAZIONE",
+     "VIAGGIO"
+    ],
+    "sociale": [
+     "APERTURA",
+     "DIALOGO",
+     "DOMANDA_LIBERA"
+    ]
+   },
+   "apertura": {
+    "DIALOGO": 0.37,
+    "COMBATTIMENTO": 0.296,
+    "APERTURA": 0.173,
+    "AFTERMATH": 0.049,
+    "VIAGGIO": 0.037,
+    "CHIUSURA": 0.025,
+    "ESPLORAZIONE": 0.025,
+    "RIVELAZIONE": 0.025
+   },
+   "chiusura": {
+    "DIALOGO": 0.309,
+    "COMBATTIMENTO": 0.259,
+    "VIAGGIO": 0.111,
+    "APERTURA": 0.086,
+    "CHIUSURA": 0.062,
+    "ESPLORAZIONE": 0.062,
+    "ALTRO": 0.049,
+    "AFTERMATH": 0.037,
+    "REGIA_PURA": 0.012,
+    "DOMANDA_LIBERA": 0.012
+   },
+   "transizioni": {
+    "AFTERMATH": {
+     "DIALOGO": 0.429,
+     "COMBATTIMENTO": 0.171,
+     "VIAGGIO": 0.114,
+     "APERTURA": 0.086,
+     "CHIUSURA": 0.086,
+     "ESPLORAZIONE": 0.057,
+     "ALTRO": 0.057
+    },
+    "ALTRO": {
+     "DIALOGO": 0.471,
+     "APERTURA": 0.235,
+     "ESPLORAZIONE": 0.118,
+     "RIVELAZIONE": 0.059,
+     "COMBATTIMENTO": 0.059,
+     "VIAGGIO": 0.059
+    },
+    "APERTURA": {
+     "DIALOGO": 0.414,
+     "APERTURA": 0.25,
+     "COMBATTIMENTO": 0.129,
+     "VIAGGIO": 0.078,
+     "ESPLORAZIONE": 0.078,
+     "ALTRO": 0.017,
+     "DOMANDA_LIBERA": 0.017,
+     "AFTERMATH": 0.009,
+     "CHIUSURA": 0.009
+    },
+    "CHIUSURA": {
+     "DIALOGO": 0.478,
+     "APERTURA": 0.217,
+     "VIAGGIO": 0.087,
+     "ESPLORAZIONE": 0.087,
+     "AFTERMATH": 0.043,
+     "CHIUSURA": 0.043,
+     "COMBATTIMENTO": 0.043
+    },
+    "COMBATTIMENTO": {
+     "COMBATTIMENTO": 0.391,
+     "DIALOGO": 0.332,
+     "APERTURA": 0.073,
+     "VIAGGIO": 0.055,
+     "CHIUSURA": 0.041,
+     "ESPLORAZIONE": 0.041,
+     "AFTERMATH": 0.036,
+     "ALTRO": 0.018,
+     "DOMANDA_LIBERA": 0.009,
+     "RIVELAZIONE": 0.005
+    },
+    "DIALOGO": {
+     "DIALOGO": 0.797,
+     "COMBATTIMENTO": 0.07,
+     "APERTURA": 0.037,
+     "ESPLORAZIONE": 0.031,
+     "VIAGGIO": 0.026,
+     "AFTERMATH": 0.015,
+     "CHIUSURA": 0.01,
+     "DOMANDA_LIBERA": 0.005,
+     "ALTRO": 0.004,
+     "RIVELAZIONE": 0.003,
+     "REGIA_PURA": 0.001
+    },
+    "DOMANDA_LIBERA": {
+     "DIALOGO": 0.364,
+     "COMBATTIMENTO": 0.273,
+     "ALTRO": 0.182,
+     "ESPLORAZIONE": 0.091,
+     "APERTURA": 0.091
+    },
+    "ESPLORAZIONE": {
+     "DIALOGO": 0.521,
+     "COMBATTIMENTO": 0.164,
+     "ESPLORAZIONE": 0.11,
+     "AFTERMATH": 0.068,
+     "ALTRO": 0.041,
+     "DOMANDA_LIBERA": 0.027,
+     "APERTURA": 0.027,
+     "VIAGGIO": 0.014,
+     "REGIA_PURA": 0.014,
+     "RIVELAZIONE": 0.014
+    },
+    "REGIA_PURA": {
+     "DIALOGO": 1.0
+    },
+    "RIVELAZIONE": {
+     "DIALOGO": 0.667,
+     "COMBATTIMENTO": 0.111,
+     "VIAGGIO": 0.111,
+     "ESPLORAZIONE": 0.111
+    },
+    "VIAGGIO": {
+     "DIALOGO": 0.404,
+     "COMBATTIMENTO": 0.211,
+     "APERTURA": 0.123,
+     "ESPLORAZIONE": 0.105,
+     "VIAGGIO": 0.053,
+     "ALTRO": 0.053,
+     "AFTERMATH": 0.035,
+     "CHIUSURA": 0.018
+    }
+   },
+   "serieTensione": {
+    "media": 1.54,
+    "max": 7,
+    "dopo": {
+     "sociale": 0.71,
+     "respiro": 0.29
+    }
+   },
+   "serieRespiro": {
+    "media": 1.26,
+    "max": 5
+   },
+   "fasi": {
+    "1": {
+     "sociale": 0.745,
+     "tensione": 0.141,
+     "respiro": 0.114
+    },
+    "2": {
+     "sociale": 0.749,
+     "tensione": 0.148,
+     "respiro": 0.104
+    },
+    "3": {
+     "sociale": 0.723,
+     "respiro": 0.141,
+     "tensione": 0.136
+    }
+   }
+  },
+  "voce": {
+   "quotaBattute": 0.594,
+   "quotaDescrizione": 0.308,
+   "paroleBattuta": {
+    "media": 14.32,
+    "brevi": 0.306,
+    "lunghe": 0.174
+   },
+   "registro": {
+    "puntini": 0.067,
+    "domande": 0.317,
+    "esclamazioni": 0.042
+   }
+  }
+ }
+}

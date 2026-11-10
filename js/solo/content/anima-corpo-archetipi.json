@@ -1,0 +1,188 @@
+{
+ "formato": "rm-solo-archetipi/1",
+ "storia": "icaro",
+ "archetipi": [
+  {
+   "id": "anima-corpo-pronto",
+   "versione": "0.1.0",
+   "stato_editoriale": "bozza",
+   "nome": "Ferra Ostrom",
+   "ritratto": "img/solo/ritratti/icaro-rho.webp",
+   "ritratto_alt": "Volto di Ferra Ostrom, coscienza di donna in un corpo di metallo dal volto maschile",
+   "genere": "femminile",
+   "popolazione": "",
+   "citta": "",
+   "mansione": "Coscienza in un corpo di metallo",
+   "build": "guerriero",
+   "background": "Ricorda una figlia di nome Arne. Il corpo ha volto maschile, la coscienza è una donna.",
+   "obiettivo": "Cercare Arne e un corpo, mantenendo il controllo su Frida.",
+   "capitolo": "anima-corpo-trama",
+   "primary": {
+    "hp": 7,
+    "mp": 3,
+    "for": 6,
+    "mira": 3,
+    "vel": 3,
+    "fmen": 5,
+    "dex": 4,
+    "dif": 6,
+    "dmen": 3
+   },
+   "tertiary": {
+    "stile": 1,
+    "fortuna": 2,
+    "carisma": 2
+   },
+   "traits": {
+    "conoscenze": {
+     "Bassifondi": 2,
+     "Meccanica": 2,
+     "Orientamento": 1
+    },
+    "capacitaNormali": {
+     "Percezione": 2,
+     "Persuasione": 2,
+     "Ascoltare": 1
+    },
+    "capacitaCombattive": {
+     "Arte Combattiva": 2,
+     "Elusione": 2,
+     "Resistenza": 1
+    }
+   },
+   "tecniche": [
+    {
+     "id": "colpo_ravvicinato",
+     "nome": "Colpo ravvicinato",
+     "categoria": "tecnica",
+     "tipoAzione": "attacco",
+     "bersaglio": "singolo nemico",
+     "dannoBase": 5,
+     "costoMP": 0,
+     "risorsaSpeciale": null,
+     "costoRisorsaSpeciale": 0,
+     "utilizziMassimi": "utilizziLimitFor",
+     "durataTurni": 0,
+     "condizioniUso": [],
+     "bonus": [],
+     "malus": [],
+     "livelloRichiesto": 1,
+     "slotRichiesti": 1,
+     "tipo": "danno",
+     "lv": 1,
+     "stat": "for",
+     "descrizione": "Un colpo ravvicinato diretto contro un solo avversario.",
+     "content_status": "proposed",
+     "daApprovare": [
+      "nome",
+      "valori",
+      "coerenza con il personaggio"
+     ],
+     "fonte": "PROPOSTA tecnica: formula di attacco esistente e danno sotto il tetto Lv1; nessun effetto aggiuntivo."
+    },
+    {
+     "id": "colpo_controllato",
+     "nome": "Colpo controllato",
+     "categoria": "tecnica",
+     "tipoAzione": "attacco",
+     "bersaglio": "singolo nemico",
+     "dannoBase": 5,
+     "costoMP": 0,
+     "risorsaSpeciale": null,
+     "costoRisorsaSpeciale": 0,
+     "utilizziMassimi": "utilizziLimitFor",
+     "durataTurni": 0,
+     "condizioniUso": [],
+     "bonus": [],
+     "malus": [],
+     "livelloRichiesto": 1,
+     "slotRichiesti": 1,
+     "tipo": "danno",
+     "lv": 1,
+     "stat": "dex",
+     "descrizione": "Un colpo controllato che usa la precisione del movimento.",
+     "content_status": "proposed",
+     "daApprovare": [
+      "nome",
+      "valori",
+      "coerenza con il personaggio"
+     ],
+     "fonte": "PROPOSTA tecnica: formula di attacco esistente e danno sotto il tetto Lv1; nessun effetto aggiuntivo."
+    }
+   ],
+   "abilita": [],
+   "slotVacanti": [],
+   "equip": [
+    {
+     "id": "corpo_metallo",
+     "nome": "Corpo di metallo",
+     "tipo": "descrittivo",
+     "descrizione": "Corpo di metallo dal volto maschile, abitato da una coscienza femminile."
+    }
+   ],
+   "inventarioIniziale": [],
+   "conoscenze": [],
+   "legami_iniziali": [],
+   "occasioni_sviluppo": [
+    {
+     "atto": 1,
+     "possibilita": "Affrontare i legami e le conseguenze del proprio percorso."
+    },
+    {
+     "atto": 2,
+     "possibilita": "Affrontare i legami e le conseguenze del proprio percorso."
+    },
+    {
+     "atto": 3,
+     "possibilita": "Affrontare i legami e le conseguenze del proprio percorso."
+    }
+   ],
+   "ontologia": {
+    "entityType": "personaggio_giocabile",
+    "peopleId": null,
+    "factionId": null,
+    "cultureId": null,
+    "regionId": null,
+    "roleId": null,
+    "creatureFamilyId": null,
+    "socialClassId": "senza_colore",
+    "corporationId": null,
+    "cityId": null,
+    "politicalGroupId": null,
+    "playable": true,
+    "playerVisible": true,
+    "narratorOnly": [],
+    "fonti": {
+     "peopleId": "autore: nessun popolo documentato",
+     "socialClassId": "SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md"
+    }
+   },
+   "approvazioneMeccanica": {
+    "id": "PROPOSTA",
+    "stato": "da approvare",
+    "fonte": "Distribuzione proposta di punti entro le regole esistenti; non numeri originali certificati.",
+    "ambito": "PROPOSTA: 40 primarie, terziarie, tratti e capacità compilati nel formato esistente. Nessuna approvazione per produzione."
+   },
+   "approvazioneDotazioni": {
+    "id": "PROPOSTA",
+    "stato": "da approvare",
+    "fonte": "Nessuna dotazione numerica di fantasia."
+   },
+   "campaign_id": "anima-corpo-trama",
+   "content_status": "proposed",
+   "act": 1,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  }
+ ],
+ "avviso": "PROPOSTA: valori e capacità non approvati per produzione."
+}

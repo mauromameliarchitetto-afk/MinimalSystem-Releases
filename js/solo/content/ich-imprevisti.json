@@ -1,0 +1,293 @@
+{
+ "formato": "rm-solo-imprevisti/1",
+ "storia": "ich",
+ "stato": "proposta scritta in autonomia (2026-10-17), rivedibile in docs/single-player/DECISIONI_DA_RIVEDERE.md",
+ "imprevisti": [
+  {
+   "id": "ich_giorni",
+   "filo": "orologio:ricomposizione",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "complica",
+   "orologio": 1,
+   "testo": "Il cielo, oltre gli alberi, ha una piega in più: i giorni sembrano passare più in fretta."
+  },
+  {
+   "id": "ich_ragn",
+   "filo": "png:ragn",
+   "atti": [
+    1,
+    2
+   ],
+   "effetto": "avanza",
+   "testo": "Ragn ti mostra una tavoletta con un segno nuovo, e non dice che cosa significhi."
+  },
+  {
+   "id": "ich_halvek",
+   "filo": "png:halvek",
+   "atti": [
+    1,
+    2
+   ],
+   "effetto": "avanza",
+   "testo": "Halvek ti guarda come se volesse chiederti qualcosa, poi tace e si volta."
+  },
+  {
+   "id": "ich_elska",
+   "filo": "png:elska",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "avanza",
+   "testo": "Elska scioglie e riannoda un filo intorno al polso, senza mai distogliere lo sguardo da un angolo vuoto."
+  },
+  {
+   "id": "ich_elska_chiude",
+   "filo": "png:elska",
+   "atti": [
+    2,
+    3
+   ],
+   "effetto": "chiude",
+   "testo": "Elska lega l'ultimo filo e lo lascia cadere: per ora, quello spettro è in pace."
+  },
+  {
+   "id": "ich_eiran",
+   "filo": "png:eiran",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "avanza",
+   "testo": "Eiran poggia il palmo su un tronco e ascolta, poi scuote piano la testa."
+  },
+  {
+   "id": "ich_mjol",
+   "filo": "png:mjol",
+   "atti": [
+    1,
+    2
+   ],
+   "effetto": "avanza",
+   "testo": "Mjol gira l'anello al dito e ti chiede se hai ancora quel nome in mente."
+  },
+  {
+   "id": "ich_soren",
+   "filo": "png:soren",
+   "atti": [
+    2,
+    3
+   ],
+   "effetto": "avanza",
+   "testo": "Soren lavora un pezzo di legno senza guardarlo, mormorando una lingua che qui nessuno parla."
+  },
+  {
+   "id": "ich_promessa",
+   "filo": "promessa",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "complica",
+   "testo": "Qualcuno ti ricorda, piano, ciò che hai promesso."
+  },
+  {
+   "id": "ich_bosco",
+   "filo": "generico",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "avanza",
+   "testo": "Il bosco tace per un istante: poi un solo uccello riprende a cantare."
+  }
+ ],
+ "regia": {
+  "fonte": "training/scripts/distilla_regia.py (aggregati; nessun testo dell'autore)",
+  "documenti": 45,
+  "ritmo": {
+   "classi": {
+    "tensione": [
+     "COMBATTIMENTO",
+     "RIVELAZIONE"
+    ],
+    "respiro": [
+     "AFTERMATH",
+     "CHIUSURA",
+     "ESPLORAZIONE",
+     "VIAGGIO"
+    ],
+    "sociale": [
+     "APERTURA",
+     "DIALOGO",
+     "DOMANDA_LIBERA"
+    ]
+   },
+   "apertura": {
+    "DIALOGO": 0.267,
+    "COMBATTIMENTO": 0.222,
+    "APERTURA": 0.178,
+    "ESPLORAZIONE": 0.133,
+    "VIAGGIO": 0.133,
+    "AFTERMATH": 0.044,
+    "DOMANDA_LIBERA": 0.022
+   },
+   "chiusura": {
+    "COMBATTIMENTO": 0.289,
+    "ESPLORAZIONE": 0.178,
+    "VIAGGIO": 0.133,
+    "DIALOGO": 0.133,
+    "APERTURA": 0.133,
+    "CHIUSURA": 0.067,
+    "AFTERMATH": 0.044,
+    "DOMANDA_LIBERA": 0.022
+   },
+   "transizioni": {
+    "AFTERMATH": {
+     "APERTURA": 0.318,
+     "COMBATTIMENTO": 0.273,
+     "DIALOGO": 0.136,
+     "ESPLORAZIONE": 0.091,
+     "VIAGGIO": 0.091,
+     "AFTERMATH": 0.091
+    },
+    "ALTRO": {
+     "DIALOGO": 0.25,
+     "ESPLORAZIONE": 0.25,
+     "APERTURA": 0.167,
+     "COMBATTIMENTO": 0.167,
+     "AFTERMATH": 0.083,
+     "VIAGGIO": 0.083
+    },
+    "APERTURA": {
+     "DIALOGO": 0.362,
+     "COMBATTIMENTO": 0.241,
+     "APERTURA": 0.103,
+     "CHIUSURA": 0.069,
+     "ESPLORAZIONE": 0.052,
+     "VIAGGIO": 0.052,
+     "AFTERMATH": 0.052,
+     "RIVELAZIONE": 0.034,
+     "REGIA_PURA": 0.017,
+     "ALTRO": 0.017
+    },
+    "CHIUSURA": {
+     "COMBATTIMENTO": 0.4,
+     "APERTURA": 0.3,
+     "DIALOGO": 0.2,
+     "VIAGGIO": 0.1
+    },
+    "COMBATTIMENTO": {
+     "COMBATTIMENTO": 0.378,
+     "DIALOGO": 0.23,
+     "ESPLORAZIONE": 0.126,
+     "VIAGGIO": 0.096,
+     "APERTURA": 0.074,
+     "AFTERMATH": 0.037,
+     "CHIUSURA": 0.022,
+     "DOMANDA_LIBERA": 0.015,
+     "ALTRO": 0.015,
+     "RIVELAZIONE": 0.007
+    },
+    "DIALOGO": {
+     "DIALOGO": 0.519,
+     "COMBATTIMENTO": 0.141,
+     "VIAGGIO": 0.095,
+     "ESPLORAZIONE": 0.091,
+     "APERTURA": 0.066,
+     "AFTERMATH": 0.037,
+     "ALTRO": 0.025,
+     "CHIUSURA": 0.012,
+     "DOMANDA_LIBERA": 0.012
+    },
+    "DOMANDA_LIBERA": {
+     "DIALOGO": 0.5,
+     "COMBATTIMENTO": 0.167,
+     "AFTERMATH": 0.167,
+     "ALTRO": 0.167
+    },
+    "ESPLORAZIONE": {
+     "DIALOGO": 0.338,
+     "ESPLORAZIONE": 0.235,
+     "COMBATTIMENTO": 0.176,
+     "VIAGGIO": 0.147,
+     "APERTURA": 0.029,
+     "ALTRO": 0.029,
+     "CHIUSURA": 0.029,
+     "DOMANDA_LIBERA": 0.015
+    },
+    "REGIA_PURA": {
+     "APERTURA": 0.5,
+     "COMBATTIMENTO": 0.5
+    },
+    "RIVELAZIONE": {
+     "DIALOGO": 0.6,
+     "RIVELAZIONE": 0.2,
+     "ESPLORAZIONE": 0.2
+    },
+    "VIAGGIO": {
+     "DIALOGO": 0.309,
+     "VIAGGIO": 0.221,
+     "COMBATTIMENTO": 0.191,
+     "APERTURA": 0.132,
+     "ESPLORAZIONE": 0.088,
+     "AFTERMATH": 0.015,
+     "RIVELAZIONE": 0.015,
+     "REGIA_PURA": 0.015,
+     "CHIUSURA": 0.015
+    }
+   },
+   "serieTensione": {
+    "media": 1.53,
+    "max": 5,
+    "dopo": {
+     "sociale": 0.529,
+     "respiro": 0.471
+    }
+   },
+   "serieRespiro": {
+    "media": 1.45,
+    "max": 6
+   },
+   "fasi": {
+    "1": {
+     "sociale": 0.528,
+     "respiro": 0.251,
+     "tensione": 0.221
+    },
+    "2": {
+     "sociale": 0.493,
+     "respiro": 0.301,
+     "tensione": 0.205
+    },
+    "3": {
+     "sociale": 0.422,
+     "respiro": 0.304,
+     "tensione": 0.275
+    }
+   }
+  },
+  "voce": {
+   "quotaBattute": 0.383,
+   "quotaDescrizione": 0.39,
+   "paroleBattuta": {
+    "media": 22.67,
+    "brevi": 0.087,
+    "lunghe": 0.373
+   },
+   "registro": {
+    "puntini": 0.009,
+    "domande": 0.26,
+    "esclamazioni": 0.045
+   }
+  }
+ }
+}

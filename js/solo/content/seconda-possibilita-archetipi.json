@@ -1,0 +1,194 @@
+{
+ "formato": "rm-solo-archetipi/1",
+ "storia": "icaro",
+ "archetipi": [
+  {
+   "id": "vigilia-haas",
+   "versione": "0.1.0",
+   "stato_editoriale": "bozza",
+   "nome": "Vigilia Haas",
+   "ritratto": "img/solo/ritratti/icaro-mara.webp",
+   "ritratto_alt": "Volto di Vigilia Haas, ex agente corporativa",
+   "genere": "femminile",
+   "popolazione": "",
+   "citta": "C2",
+   "mansione": "Ex agente corporativa",
+   "build": "guerriero",
+   "background": "Figlia di un agente e di un’operaia. Licenziata dalla polizia, è incastrata da un contratto di recupero dati. Bob Harlan era collega e amico di suo padre.",
+   "obiettivo": "Difendere Bob e scoprire come è morto il padre.",
+   "missione_iniziale": "Seguire le tracce del recupero dati a C3.",
+   "capitolo": "seconda-possibilita-trama",
+   "primary": {
+    "hp": 6,
+    "mp": 2,
+    "for": 7,
+    "mira": 5,
+    "vel": 4,
+    "fmen": 1,
+    "dex": 6,
+    "dif": 6,
+    "dmen": 3
+   },
+   "tertiary": {
+    "stile": 1,
+    "fortuna": 2,
+    "carisma": 2
+   },
+   "traits": {
+    "conoscenze": {
+     "Bassifondi": 2,
+     "Guidare": 2,
+     "Seguire Tracce": 1
+    },
+    "capacitaNormali": {
+     "Percezione": 2,
+     "Persuasione": 2,
+     "Ascoltare": 1
+    },
+    "capacitaCombattive": {
+     "Arte Combattiva": 2,
+     "Elusione": 2,
+     "Resistenza": 1
+    }
+   },
+   "tecniche": [
+    {
+     "id": "colpo_ravvicinato",
+     "nome": "Colpo ravvicinato",
+     "categoria": "tecnica",
+     "tipoAzione": "attacco",
+     "bersaglio": "singolo nemico",
+     "dannoBase": 5,
+     "costoMP": 0,
+     "risorsaSpeciale": null,
+     "costoRisorsaSpeciale": 0,
+     "utilizziMassimi": "utilizziLimitFor",
+     "durataTurni": 0,
+     "condizioniUso": [],
+     "bonus": [],
+     "malus": [],
+     "livelloRichiesto": 1,
+     "slotRichiesti": 1,
+     "tipo": "danno",
+     "lv": 1,
+     "stat": "for",
+     "descrizione": "Un colpo ravvicinato diretto contro un solo avversario.",
+     "content_status": "proposed",
+     "daApprovare": [
+      "nome",
+      "valori",
+      "coerenza con il personaggio"
+     ],
+     "fonte": "PROPOSTA tecnica: formula di attacco esistente e danno sotto il tetto Lv1; nessun effetto aggiuntivo."
+    },
+    {
+     "id": "colpo_controllato",
+     "nome": "Colpo controllato",
+     "categoria": "tecnica",
+     "tipoAzione": "attacco",
+     "bersaglio": "singolo nemico",
+     "dannoBase": 5,
+     "costoMP": 0,
+     "risorsaSpeciale": null,
+     "costoRisorsaSpeciale": 0,
+     "utilizziMassimi": "utilizziLimitFor",
+     "durataTurni": 0,
+     "condizioniUso": [],
+     "bonus": [],
+     "malus": [],
+     "livelloRichiesto": 1,
+     "slotRichiesti": 1,
+     "tipo": "danno",
+     "lv": 1,
+     "stat": "dex",
+     "descrizione": "Un colpo controllato che usa la precisione del movimento.",
+     "content_status": "proposed",
+     "daApprovare": [
+      "nome",
+      "valori",
+      "coerenza con il personaggio"
+     ],
+     "fonte": "PROPOSTA tecnica: formula di attacco esistente e danno sotto il tetto Lv1; nessun effetto aggiuntivo."
+    }
+   ],
+   "abilita": [],
+   "slotVacanti": [],
+   "equip": [
+    {
+     "id": "impianti_oculari",
+     "nome": "Impianti oculari",
+     "tipo": "descrittivo",
+     "descrizione": "Impianti oculari per zoom, lettura del calore e riavvolgimento delle scene."
+    }
+   ],
+   "inventarioIniziale": [],
+   "conoscenze": [],
+   "legami_iniziali": [
+    {
+     "png": "bob_harlan",
+     "atteggiamento": 1
+    }
+   ],
+   "occasioni_sviluppo": [
+    {
+     "atto": 1,
+     "possibilita": "Difendere Bob durante l’incastro."
+    },
+    {
+     "atto": 2,
+     "possibilita": "Distinguere prove e vendetta contro Hammond."
+    },
+    {
+     "atto": 3,
+     "possibilita": "Decidere chi proteggere durante l’evacuazione."
+    }
+   ],
+   "ontologia": {
+    "entityType": "personaggio_giocabile",
+    "peopleId": null,
+    "factionId": null,
+    "cultureId": null,
+    "regionId": null,
+    "roleId": null,
+    "creatureFamilyId": null,
+    "socialClassId": "arancio",
+    "corporationId": null,
+    "playable": true,
+    "playerVisible": true,
+    "narratorOnly": [],
+    "fonti": {
+     "peopleId": "autore: nessun popolo documentato; ICARO.md, ex agente Arancio",
+     "socialClassId": "ICARO.md, schema approvato"
+    },
+    "cityId": "c2",
+    "politicalGroupId": null
+   },
+   "approvazioneMeccanica": {
+    "id": "PROPOSTA",
+    "stato": "da approvare",
+    "fonte": "Distribuzione nuova di 40 punti e tratti nel rispetto delle regole esistenti; non è un valore originario certificato.",
+    "ambito": "PROPOSTA: 40 primarie, terziarie, tratti e capacità compilati nel formato esistente. Nessuna approvazione per produzione."
+   },
+   "approvazioneDotazioni": {
+    "id": "PROPOSTA",
+    "stato": "da approvare",
+    "fonte": "Dotazione descrittiva dalle fonti, senza armi o bonus numerici inventati."
+   },
+   "campaign_id": "seconda-possibilita-trama",
+   "content_status": "proposed",
+   "act": 1,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_LA_SECONDA_POSSIBILITA.md; valori applicativi PROPOSTA, regole esistenti."
+  }
+ ],
+ "avviso": "PROPOSTA: scheda per anteprima, non approvata per produzione."
+}

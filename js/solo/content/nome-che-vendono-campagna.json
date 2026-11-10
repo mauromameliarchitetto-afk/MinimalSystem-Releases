@@ -1,0 +1,4826 @@
+{
+ "formato": "rm-solo-campagna/1",
+ "id": "nome-che-vendono-trama",
+ "campaign_id": "nome-che-vendono-trama",
+ "storia": "nome-che-vendono",
+ "trama": "nome-che-vendono",
+ "ambientazione": "Icaro",
+ "titolo": "Il nome che vendono",
+ "versione": "0.1.0",
+ "stato_editoriale": "bozza",
+ "content_status": "proposed",
+ "canonico": false,
+ "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md; candidata non registrata nel menu",
+ "contratto": {
+  "premessa_pubblica": "Il nome che vendono: persone, corpi e anni di vita nella Repubblica Pannazionale.",
+  "scopo": "Affrontare il percorso personale e salvare persone prima del collasso della Terra.",
+  "verita_riservate": [
+   "B_kato",
+   "B_programma",
+   "B_gaia",
+   "icaro_sole_estrazione"
+  ],
+  "snodi_obbligatori": [
+   "B_atto_1",
+   "B_atto_2",
+   "B_atto_3"
+  ]
+ },
+ "atti": [
+  {
+   "numero": 1,
+   "titolo": "Atto 1",
+   "scene": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10"
+   ],
+   "snodi": [
+    {
+     "id": "B_atto_1",
+     "testo": "Il primo passaggio è compiuto."
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "titolo": "Atto 2",
+   "scene": [
+    "B11",
+    "B12",
+    "B13",
+    "B14",
+    "B15",
+    "B16",
+    "B17",
+    "B18",
+    "B19",
+    "B20"
+   ],
+   "snodi": [
+    {
+     "id": "B_atto_2",
+     "testo": "Il potere passa a Florant e gli invasori si mostrano."
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "titolo": "Atto 3",
+   "scene": [
+    "B21",
+    "B22",
+    "B23",
+    "B24",
+    "B25",
+    "B26",
+    "B27",
+    "B28",
+    "B29",
+    "B30",
+    "B30E"
+   ],
+   "snodi": [
+    {
+     "id": "B_atto_3",
+     "testo": "Confronto nell’astronave madre."
+    }
+   ]
+  }
+ ],
+ "scene": [
+  {
+   "id": "B01",
+   "act": 1,
+   "titolo": "Quindici anni",
+   "luogo": "C3, la periferia e i bassifondi ; il tetto del Red Mill e la sede della Numan ; un cargo merci",
+   "descrizione": "Quindici anni di vita a testa: è il compenso scritto nel contratto. Il termine è di dodici ore. Roxanne vuole i dati e impone due limiti, non aprirli e tenere fuori i Patrioti. Il loro valore esiste già prima che qualcuno sappia che cosa contengono.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B01_prima",
+     "testo": "Seguire la pista in rete",
+     "effetti": [
+      {
+       "flag": {
+        "B01_prima": true
+       }
+      }
+     ],
+     "riserva": "Nelle immagini la pista porta a Koga. Il recupero è ancora da compiere: nessuna vendita risulta conclusa e i quindici anni restano un compenso promesso.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B01_seconda",
+     "testo": "Confrontare il contratto con gli altri",
+     "effetti": [
+      {
+       "flag": {
+        "B01_seconda": true
+       }
+      }
+     ],
+     "riserva": "Le condizioni sono le stesse per il gruppo: dodici ore, dati chiusi, nessun Patriota. L’offerta di Rabbit, Tommen e Lucas aggiunge uno scambio distinto, la routine di Koga contro copertura.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B02",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Quindici anni di vita a testa: è il compenso scritto nel contratto. Il termine è di dodici ore. Roxanne vuole i dati e impone due limiti, non aprirli e tenere fuori i Patrioti. Il loro valore esiste già prima che qualcuno sappia che cosa contengono.",
+   "png_presenti": [
+    "koga",
+    "rabbit",
+    "tommen",
+    "lucas"
+   ],
+   "source_note": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA. Riscontro dei pilastri iniziali: ICA S1 Ep.0 r.9 e S1 Ep.1 r.3–7, nello schema approvato.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B02",
+   "act": 1,
+   "titolo": "Venti giorni",
+   "luogo": "Il rompighiaccio nelle terre esterne ; il treno assaltato e la città fantasma ; C6",
+   "descrizione": "Il messaggio congela i fondi. Tu hai venti giorni: gli anni che avevi li hai donati al fratello per la malattia.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B02_prima",
+     "testo": "Dire al gruppo quanto tempo mi resta",
+     "effetti": [
+      {
+       "flag": {
+        "B02_prima": true
+       }
+      }
+     ],
+     "riserva": "Il gruppo apprende la scadenza e il dono degli anni a tuo fratello. Sapere quanto tempo rimane non libera i crediti della Bernard; cambia ciò che gli altri sanno di te, non il conto già bloccato.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B02_seconda",
+     "testo": "Tentare di raggiungere i passeggeri",
+     "effetti": [
+      {
+       "flag": {
+        "B02_seconda": true
+       }
+      }
+     ],
+     "riserva": "I passeggeri sono sotto l’assalto. Esporsi rende possibile tentare un aiuto, ma le morti già avvenute non vengono cancellate e la via di Grid rimane ancora da contrattare.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B03",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Il messaggio congela i fondi. Tu hai venti giorni: gli anni che avevi li hai donati al fratello per la malattia.",
+   "png_presenti": [
+    "grid",
+    "nine_nine"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B03",
+   "act": 1,
+   "titolo": "La doppia parete",
+   "luogo": "C6: le fondamenta, una sala di manutenzione abbandonata, i bassifondi, il covo degli hacker indipendenti",
+   "descrizione": "Tommen cerca un momento in privato nella sala di manutenzione. Suo padre lavorava alla Crypto Memory; teme che il gruppo possa essere venduto.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B03_prima",
+     "testo": "Proteggere Ferra",
+     "effetti": [
+      {
+       "flag": {
+        "B03_prima": true
+       }
+      }
+     ],
+     "riserva": "Ferra resta una persona del gruppo, non un contenitore da consegnare senza una scelta. Kestrel conosce adesso la posizione dei dati; proteggerla non cancella ciò che ha sentito.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B03_seconda",
+     "testo": "Chiedere a Kestrel che cosa vuole in cambio",
+     "effetti": [
+      {
+       "flag": {
+        "B03_seconda": true
+       }
+      }
+     ],
+     "riserva": "Kestrel tratta da una posizione diversa da quella di chi ha firmato l’ingaggio. Il confronto può riguardare i dati dentro Ferra, ma nessun accordo di consegna è concluso dalla sola domanda.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B04",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Tommen cerca un momento in privato nella sala di manutenzione. Suo padre lavorava alla Crypto Memory; teme che il gruppo possa essere venduto.",
+   "png_presenti": [
+    "tommen",
+    "kestrel",
+    "ferra_ostrom"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B04",
+   "act": 1,
+   "titolo": "Le cariche",
+   "luogo": "Il covo che si svuota e il tunnel di fuga; una sala giochi; il distretto borghese di C6; la Black Tower",
+   "descrizione": "Il covo si svuota. Koga resta con i ragazzi, mentre a te affidano cariche e un disturbatore da portare sul petto.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B04_prima",
+     "testo": "Contattare Dotcom con i cavi",
+     "effetti": [
+      {
+       "flag": {
+        "B04_prima": true
+       }
+      }
+     ],
+     "riserva": "Il collegamento raggiunge Dotcom, che reagisce con rabbia. La comunicazione permette di ottenere il codice e la via verso la Black Tower; non attiva per questo le cariche.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B04_seconda",
+     "testo": "Lasciare a Rabbit il contatto e custodire le cariche",
+     "effetti": [
+      {
+       "flag": {
+        "B04_seconda": true
+       }
+      }
+     ],
+     "riserva": "Rabbit cerca un altro contatto con Dotcom. Le cariche restano affidate alla custodia, senza un piazzamento o un’esplosione compiuti al tuo posto. La strada verso la Black Tower rimane disponibile.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B05",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Il covo si svuota. Koga resta con i ragazzi, mentre a te affidano cariche e un disturbatore da portare sul petto.",
+   "png_presenti": [
+    "rabbit",
+    "koga",
+    "dotcom"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B05",
+   "act": 1,
+   "titolo": "Il contratto non vale",
+   "luogo": "C6, l'esterno con la crepa nel muro; il raduno degli hacker, «The cove»",
+   "descrizione": "Un Patriota vi ferma fuori da C6. Dotcom lo richiama e apre un varco alla fuga; la scadenza del tuo periodo di luce non aspetta il raduno.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B05_prima",
+     "testo": "Confrontare ciò che sanno i gruppi",
+     "effetti": [
+      {
+       "flag": {
+        "B05_prima": true
+       }
+      }
+     ],
+     "riserva": "Le versioni dei diversi gruppi possono essere messe a confronto. Il contratto invalido non torna valido per accordo fra loro; ciò che si vende adesso è informazione, non il compenso già promesso.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B05_seconda",
+     "testo": "Chiedere una pista su Tommen",
+     "effetti": [
+      {
+       "flag": {
+        "B05_seconda": true
+       }
+      }
+     ],
+     "riserva": "La pista punta a Hammond e a C2, ma resta formulata come probabilità. Lucas vuole ritrovare Tommen; la notizia non dimostra che il ragazzo sia già al sicuro.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B06",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Un Patriota vi ferma fuori da C6. Dotcom lo richiama e apre un varco alla fuga; la scadenza del tuo periodo di luce non aspetta il raduno.",
+   "png_presenti": [
+    "lucas",
+    "yara_sen",
+    "dotcom"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B06",
+   "act": 1,
+   "titolo": "Il blu",
+   "luogo": "Le terre esterne verso C4; la città temporanea della White Hell Cup e il suo ingresso",
+   "descrizione": "Tuo fratello propone di fermarvi a C4: un lavoro e un posto, senza continuare a puntare più in alto.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B06_prima",
+     "testo": "Iscrivermi con la squadra",
+     "effetti": [
+      {
+       "flag": {
+        "B06_prima": true
+       }
+      }
+     ],
+     "riserva": "L’iscrizione conserva la squadra come riferimento della selezione. Il giudizio sul Cromo resta Blu; non è un consenso dato alla proposta di fermarvi a C4.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B06_seconda",
+     "testo": "Presentarmi da sola alle selezioni",
+     "effetti": [
+      {
+       "flag": {
+        "B06_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il tuo nome viene presentato senza quello della squadra. Rabbit continua a occuparsi dell’anomalia di Ferra; la proposta di tuo fratello di fermarvi a C4 resta una questione fra voi.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B07",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Tuo fratello propone di fermarvi a C4: un lavoro e un posto, senza continuare a puntare più in alto.",
+   "png_presenti": [
+    "niklaus",
+    "rabbit",
+    "ferra_ostrom"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B07",
+   "act": 1,
+   "titolo": "La selezione",
+   "luogo": "Il Colosseo di C4 e gli ambienti della Selezione Nordica; l'arena della prova tribale in reverie",
+   "descrizione": "Il freddo del puzzle impone di rallentare. Seguono leve, scacchiera e una capsula buia: ogni prova offre più di un modo di leggere il problema.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B07_prima",
+     "testo": "Cercare la simmetria delle prove",
+     "effetti": [
+      {
+       "flag": {
+        "B07_prima": true
+       }
+      }
+     ],
+     "riserva": "Le simmetrie e l’ordine dei passaggi diventano il centro del tentativo. La soluzione non compare perché è stata nominata: le prove restano da affrontare, senza che un esito negativo chiuda la pista dello sponsor.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B07_seconda",
+     "testo": "Prendere tempo prima dello scontro tribale",
+     "effetti": [
+      {
+       "flag": {
+        "B07_seconda": true
+       }
+      }
+     ],
+     "riserva": "Prendere tempo permette di misurare il confronto prima di impegnarsi. Mann conserva il suo veleno; nessuna vittoria viene attribuita al tuo stile prima dell’esito.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B08",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Il freddo del puzzle impone di rallentare. Seguono leve, scacchiera e una capsula buia: ogni prova offre più di un modo di leggere il problema.",
+   "png_presenti": [
+    "mann_reverie"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "mann_reverie",
+    "letale": false,
+    "alternativa": {
+     "testo": "Leggere il percorso di selezione prima di espormi a Mann",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Il percorso ti offre un passaggio fuori dalla linea di Mann. La selezione continua davanti agli osservatori.",
+     "riserva_fallimento": "Mann legge il tuo movimento sul percorso e ti chiude il passaggio.",
+     "fonte": "PROPOSTA: prova di scena con NC base già esistente, nessuna nuova regola."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "B07_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "La prova tribale si conclude a tuo favore; l’offerta dello sponsor rimane il passaggio successivo.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Mann vince la prova; l’interesse di Fate continua e l’offerta resta disponibile."
+    },
+    "fonte": "Schema scena 7; modelli PNG pertinenti; raccordi degli esiti PROPOSTA."
+   }
+  },
+  {
+   "id": "B08",
+   "act": 1,
+   "titolo": "Il pub",
+   "luogo": "Il pub di C4 ; le strade di C4",
+   "descrizione": "La Fate company offre una sponsorizzazione: trenta a te, settanta alla compagnia. Hai un'ora per rispondere. Poi arriva il messaggio del fratello: la strada si è spenta.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B08_prima",
+     "testo": "Chiedere aiuto a Fate",
+     "effetti": [
+      {
+       "flag": {
+        "B08_prima": true
+       }
+      }
+     ],
+     "riserva": "Fate rimane un contatto capace di offrire un’uscita dalla caccia. Chiederne l’aiuto non firma retroattivamente tutti i termini della sponsorizzazione.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B08_seconda",
+     "testo": "Tentare di spiegarmi alla polizia",
+     "effetti": [
+      {
+       "flag": {
+        "B08_seconda": true
+       }
+      }
+     ],
+     "riserva": "La polizia trova un’unica superstite armata e ragazzi che hanno chiamato i soccorsi. La spiegazione può essere data, ma nessuno scagionamento viene già dichiarato; Fate rimane la via prevista per uscire dalla custodia.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B09",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "La Fate company offre una sponsorizzazione: trenta a te, settanta alla compagnia. Hai un'ora per rispondere. Poi arriva il messaggio del fratello: la strada si è spenta.",
+   "png_presenti": [
+    "fate",
+    "niklaus",
+    "lucas"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B09",
+   "act": 1,
+   "titolo": "Fate Trade",
+   "luogo": "Fate Trade: l'ingresso, l'alloggio con l'acquario, la sala di vetro sul piano operativo ; la stazione di informazione dei giochi",
+   "descrizione": "La receptionist ti aspettava e chiede del fratello. Il sangue sulle maniche non sorprende nessuno; l'alloggio contiene un acquario di serpenti elettrici.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B09_prima",
+     "testo": "Controllare il dado prima della trasmissione",
+     "effetti": [
+      {
+       "flag": {
+        "B09_prima": true
+       }
+      }
+     ],
+     "riserva": "Il contenuto può essere esaminato prima che gli schermi lo mostrino. Aprire il dado non equivale ad autorizzare la trasmissione in tuo nome; la compagnia dispone della propria via per diffonderla.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B09_seconda",
+     "testo": "Chiedere condizioni migliori a Fate",
+     "effetti": [
+      {
+       "flag": {
+        "B09_seconda": true
+       }
+      }
+     ],
+     "riserva": "Fate tratta con qualcuno che è arrivato senza un’alternativa sicura. Le condizioni possono essere contestate: il fratello rimane una persona da incontrare, non una voce che lo sponsor può sostituire.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B10",
+     "effetti": [
+      {
+       "ricompensa": "dado_fate"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "La receptionist ti aspettava e chiede del fratello. Il sangue sulle maniche non sorprende nessuno; l'alloggio contiene un acquario di serpenti elettrici.",
+   "png_presenti": [
+    "fate"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B10",
+   "act": 1,
+   "titolo": "Humble",
+   "luogo": "Fate Trade: la sala del briefing con la camera Fall-trip, la stanza privata di Fate, la sala eventi ; la stanza e il giardino virtuali nei ricordi di Prism",
+   "descrizione": "Fate risponde per tuo fratello: è disorientato, e viene mandato nella stanza vicina. Il briefing riduce vite e sponsor a percentuali di sopravvivenza.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B10_prima",
+     "testo": "Prendere la mano di Fate",
+     "effetti": [
+      {
+       "flag": {
+        "B10_prima": true
+       }
+      }
+     ],
+     "riserva": "La mano di Fate conclude un gesto preciso, non una disponibilità illimitata. Il volto di Humble entra nell’immagine dello sponsor; Niklaus conserva la sua decisione di andarsene.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B10_seconda",
+     "testo": "Tenere distinta la mia scelta dal suo contratto",
+     "effetti": [
+      {
+       "flag": {
+        "B10_seconda": true
+       }
+      }
+     ],
+     "riserva": "La mano rimane un’offerta non raccolta. La compagnia e i fotografi possono comunque usare il nome Humble; il tuo rifiuto non viene trasformato in una firma.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B11",
+     "effetti": [
+      {
+       "snodo": "B_atto_1"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Fate risponde per tuo fratello: è disorientato, e viene mandato nella stanza vicina. Il briefing riduce vite e sponsor a percentuali di sopravvivenza.",
+   "png_presenti": [
+    "fate",
+    "niklaus",
+    "lucas"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA. Chiusura dell'Atto I: approvata dall'autore il 7/11/2026 (CHIUSURE_ATTO_I_ICARO.md, DECISIONI §15 G.5).",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "chiusura_atto": "Nel visore, nei ricordi di Prism: Philips ha orchestrato l'arresto di Ilysia.\n\nTuo fratello ha visto tutto. «Non seguirmi, o ti odierò per questo.» Se ne va con Lucas. Arriva un messaggio di Koga. I fotografi ti chiamano «Humble». Passano tre anni. Fate: «Forse lo hanno trovato»."
+  },
+  {
+   "id": "B11",
+   "act": 2,
+   "titolo": "Combat Debug",
+   "luogo": "L'arena «Combat Debug» ; i luoghi dell'indagine su Yara Sen",
+   "descrizione": "Entri mascherata nell'arena: gli stessi che provavano disgusto ora ammirano Humble. Ogni colpo apre una finestra nel sistema avversario.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B11_prima",
+     "testo": "Seguire da sola la pista di Yara",
+     "effetti": [
+      {
+       "flag": {
+        "B11_prima": true
+       }
+      }
+     ],
+     "riserva": "La ricerca segue i luoghi e i nomi della pista di Yara. L’assenza di tuo fratello non viene riempita da una posizione certa soltanto perché ti muovi da sola.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B11_seconda",
+     "testo": "Usare i contatti del gruppo dei trasporti",
+     "effetti": [
+      {
+       "flag": {
+        "B11_seconda": true
+       }
+      }
+     ],
+     "riserva": "I contatti del gruppo possono essere interrogati su Yara e sui non schedati. La loro disponibilità non identifica ancora dove si trovi Niklaus.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B12",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Entri mascherata nell'arena: gli stessi che provavano disgusto ora ammirano Humble. Ogni colpo apre una finestra nel sistema avversario.",
+   "png_presenti": [
+    "rivale_arena"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "rivale_arena",
+    "letale": false,
+    "alternativa": {
+     "testo": "Usare lo spazio dell’arena per sottrarmi al rivale",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "La distanza dell’arena ti permette di interrompere l’ingaggio. Il rivale resta in campo.",
+     "riserva_fallimento": "Il rivale anticipa il cambio di distanza e ti raggiunge nell’arena.",
+     "fonte": "PROPOSTA: prova di scena con NC base già esistente, nessuna nuova regola."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "B11_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "L’avversario perde il confronto nell’arena. La ricerca di Niklaus continua fuori dai giochi.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "L’arena non dà la vittoria, ma la pista di Harvey e dei trasporti rimane disponibile."
+    },
+    "fonte": "Schema scena 11; modelli PNG pertinenti; raccordi degli esiti PROPOSTA."
+   }
+  },
+  {
+   "id": "B12",
+   "act": 2,
+   "titolo": "Harvey",
+   "luogo": "Il luogo dell'incontro con Harvey ; C5, una discoteca clandestina . Scena in comune con la trama 1",
+   "descrizione": "Harvey dice che Yara è morta e ti chiede di diffidare dell'Icaro. Ha venduto come Fall-trip i dati affidatigli da tuo padre.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B12_prima",
+     "testo": "Fermare Niklaus per parlargli",
+     "effetti": [
+      {
+       "flag": {
+        "B12_prima": true
+       }
+      }
+     ],
+     "riserva": "Niklaus è presente, non una voce rintracciata in rete. La possibilità di parlargli non lo separa automaticamente da Lucas e Prism: il loro movimento può continuare finché il confronto non li ferma.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B12_seconda",
+     "testo": "Affrontare Vigilia senza perdere la pista",
+     "effetti": [
+      {
+       "flag": {
+        "B12_seconda": true
+       }
+      }
+     ],
+     "riserva": "Vigilia e la sua squadra intervengono sulla stessa pista. Opporvisi non consegna subito Prism a te e non rende tuo fratello un avversario da abbattere per poterlo ritrovare.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B13",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Harvey dice che Yara è morta e ti chiede di diffidare dell'Icaro. Ha venduto come Fall-trip i dati affidatigli da tuo padre.",
+   "png_presenti": [
+    "harvey",
+    "niklaus",
+    "lucas",
+    "nael_prism",
+    "vigilia_haas"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B13",
+   "act": 2,
+   "titolo": "L'investimento",
+   "luogo": "C7: «Shibuya Zero», il Sensō-ji con il Mercato delle Cento Voci, la Tokyo Tower . In comune con la trama 1",
+   "descrizione": "La squadra è in lutto per Nyx. Fate chiama: ha ricevuto un avviso sui tuoi segni vitali e vuole preservare il proprio investimento.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B13_prima",
+     "testo": "Cercare informazioni al Mercato delle Cento Voci",
+     "effetti": [
+      {
+       "flag": {
+        "B13_prima": true
+       }
+      }
+     ],
+     "riserva": "Le voci possono offrire una pista da confrontare, non un ritrovamento garantito. Il mercato non rende verificata ogni notizia venduta sul fratello.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B13_seconda",
+     "testo": "Confrontarmi con la squadra di Vigilia",
+     "effetti": [
+      {
+       "flag": {
+        "B13_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il lutto di Nyx e la diffidenza della squadra entrano nel confronto. Restare con loro non significa che un ingresso nel laboratorio o uno scontro non mostrato sia già stato deciso da te.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B14",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "La squadra è in lutto per Nyx. Fate chiama: ha ricevuto un avviso sui tuoi segni vitali e vuole preservare il proprio investimento.",
+   "png_presenti": [
+    "rabbit",
+    "vigilia_haas"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B14",
+   "act": 2,
+   "titolo": "Senza vista",
+   "luogo": "Il laboratorio dei cloni . In comune con la trama 1",
+   "descrizione": "Nel laboratorio dei cloni distingui prima il buio, poi lentamente le forme. Il volto a terra è quello di Hammond; la squadra ha già combattuto.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B14_prima",
+     "testo": "Proteggere la copia dei dati",
+     "effetti": [
+      {
+       "flag": {
+        "B14_prima": true
+       }
+      }
+     ],
+     "riserva": "La copia sui server resta disponibile anche se il laboratorio viene chiuso dal gelo. Metterla al sicuro non porta fuori ogni prova fisica abbandonata dentro.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B14_seconda",
+     "testo": "Vietare a Fate di usare Niklaus nel colloquio",
+     "effetti": [
+      {
+       "flag": {
+        "B14_seconda": true
+       }
+      }
+     ],
+     "riserva": "Fate riceve un limite sulla conversazione. Il nome di Niklaus non viene per questo cancellato dai suoi interessi, ma non diventa un consenso dato da te al suo uso nel contratto.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B15",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Nel laboratorio dei cloni distingui prima il buio, poi lentamente le forme. Il volto a terra è quello di Hammond; la squadra ha già combattuto.",
+   "png_presenti": [
+    "fate"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B15",
+   "act": 2,
+   "titolo": "La parte bassa",
+   "luogo": "Il posto indicato da Antoine ; C7, il mercato delle droghe nella parte bassa",
+   "descrizione": "Nel posto indicato da Antoine ci sono soltanto rottami. Al mercato i ragazzi comprano stimolanti e patch anti-collasso.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B15_prima",
+     "testo": "Pedinarli attraverso la rete",
+     "effetti": [
+      {
+       "flag": {
+        "B15_prima": true
+       }
+      }
+     ],
+     "riserva": "Le reti permettono di seguire il movimento dei ragazzi. Se il contatto digitale si perde, la strada rimane un’altra via: non c’è ancora un arresto.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B15_seconda",
+     "testo": "Seguirli restando fra la gente",
+     "effetti": [
+      {
+       "flag": {
+        "B15_seconda": true
+       }
+      }
+     ],
+     "riserva": "La folla e il percorso dei ragazzi diventano i riferimenti del pedinamento. Chunk e Bolt rimangono i nomi uditi; il loro volto non è ancora stato ritrovato.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B16",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Nel posto indicato da Antoine ci sono soltanto rottami. Al mercato i ragazzi comprano stimolanti e patch anti-collasso.",
+   "png_presenti": [],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B16",
+   "act": 2,
+   "titolo": "La smaterializzazione",
+   "luogo": "Il covo dei Bunny-Hoppers, una zona dell'underground piena di rottami . In comune con la trama 1",
+   "descrizione": "Il covo contiene adolescenti, rottami, tre accessi e droni. Candor apre un collegamento protetto; Vigilia è davanti all'accampamento con te.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B16_prima",
+     "testo": "Chiedere di Niklaus prima di attaccare",
+     "effetti": [
+      {
+       "flag": {
+        "B16_prima": true
+       }
+      }
+     ],
+     "riserva": "Marek risponde che Niklaus non è lì. La domanda non evita da sola il pericolo: la trasformazione provocata dal colpo rimane il fatto che cambia il tuo corpo.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B16_seconda",
+     "testo": "Cercare una posizione per proteggere la squadra",
+     "effetti": [
+      {
+       "flag": {
+        "B16_seconda": true
+       }
+      }
+     ],
+     "riserva": "La posizione scelta riguarda la protezione della squadra. Il colpo di Marek e la smaterializzazione non diventano per questo una tua aggressione già compiuta.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B17",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Il covo contiene adolescenti, rottami, tre accessi e droni. Candor apre un collegamento protetto; Vigilia è davanti all'accampamento con te.",
+   "png_presenti": [
+    "marek",
+    "rhett",
+    "vigilia_haas"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "marek",
+    "letale": false,
+    "alternativa": {
+     "testo": "Tenere Marek a parlare della smaterializzazione",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Marek risponde sul fenomeno e lascia spazio al confronto prima di attaccare.",
+     "riserva_fallimento": "La domanda non arresta Marek: la distanza si chiude mentre il confronto continua.",
+     "fonte": "PROPOSTA: prova di scena con NC base già esistente, nessuna nuova regola."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "B16_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Marek cade e resta vivo; il confronto continua nel furgone.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Rhett interviene, ferisce Marek e lo lascia vivo per le domande nel furgone."
+    },
+    "fonte": "Schema scena 16; modelli PNG pertinenti; raccordi degli esiti PROPOSTA."
+   }
+  },
+  {
+   "id": "B17",
+   "act": 2,
+   "titolo": "Il sospetto",
+   "luogo": "Il furgone del mezzo rubato agli hacker . In comune con la trama 1",
+   "descrizione": "Nel furgone Marek tiene il collo fasciato. La vista restituisce ancora sagome; le sue parole sono più nette delle prove che porta.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B17_prima",
+     "testo": "Chiedere a Marek che cosa abbia visto davvero",
+     "effetti": [
+      {
+       "flag": {
+        "B17_prima": true
+       }
+      }
+     ],
+     "riserva": "La domanda separa ciò che Marek ha visto dalle conclusioni che ne ha tratto. Non presenta una prova di un tuo accordo con chi ha compiuto la strage.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B17_seconda",
+     "testo": "Rifiutare l'accusa e seguire la pista di C3",
+     "effetti": [
+      {
+       "flag": {
+        "B17_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il rifiuto dell’accusa lascia intatti i suoi limiti. Chunk e Bolt rimangono una pista concreta per C3, mentre l’ipotesi su Fate non diventa una confessione.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B18",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Nel furgone Marek tiene il collo fasciato. La vista restituisce ancora sagome; le sue parole sono più nette delle prove che porta.",
+   "png_presenti": [
+    "marek",
+    "mara",
+    "bob_harlan"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B18",
+   "act": 2,
+   "titolo": "Il palazzo",
+   "luogo": "C3: le strade, la periferia, il vecchio palazzo di famiglia, il cunicolo e l'appartamento della città vecchia sotterranea",
+   "descrizione": "A C3 la gente riconosce Humble, ma il palazzo di famiglia non c'è più. Al suo posto si vendono protesi.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B18_prima",
+     "testo": "Sciogliere il contratto con Fate",
+     "effetti": [
+      {
+       "flag": {
+        "B18_prima": true
+       }
+      }
+     ],
+     "riserva": "La scelta rompe il vincolo che hai deciso di sciogliere. La pista di Niklaus non scompare con il contratto: gli studi e i tag continuano a indicare la Bernard Tower.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B18_seconda",
+     "testo": "Mantenere il contratto alle mie condizioni",
+     "effetti": [
+      {
+       "flag": {
+        "B18_seconda": true
+       }
+      }
+     ],
+     "riserva": "La trattativa mantiene il rapporto con Fate ma non accetta ogni clausola futura. La torre resta la pista da seguire anche dopo aver posto condizioni allo sponsor.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B19",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "A C3 la gente riconosce Humble, ma il palazzo di famiglia non c'è più. Al suo posto si vendono protesi.",
+   "png_presenti": [
+    "harvey"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "patriota",
+    "letale": false,
+    "alternativa": {
+     "testo": "Leggere i movimenti dei Patrioti nel palazzo",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Riconosci il momento in cui la sorveglianza lascia libero il passaggio. Il contratto resta da discutere.",
+     "riserva_fallimento": "Il Patriota riconosce il tentativo di attraversare la sorveglianza e ti ferma.",
+     "fonte": "PROPOSTA: prova di scena con NC base già esistente, nessuna nuova regola."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "B18_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Il Patriota perde il passaggio; la pista della torre rimane davanti a te.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Il Patriota continua la caccia; la fuga punta ancora ai tag e alla Bernard Tower."
+    },
+    "fonte": "Schema scena 18; modelli PNG pertinenti; raccordi degli esiti PROPOSTA."
+   }
+  },
+  {
+   "id": "B19",
+   "act": 2,
+   "titolo": "Chunk e Bolt",
+   "luogo": "C3, la Bernard Tower",
+   "descrizione": "Alla Bernard Tower un corpo cade dall'alto. I piani sono occupati da guardie e hacker; il passaggio fino a Niklaus resta da scegliere.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B19_prima",
+     "testo": "Raggiungere Niklaus",
+     "effetti": [
+      {
+       "flag": {
+        "B19_prima": true
+       }
+      }
+     ],
+     "riserva": "Niklaus è di nuovo raggiungibile, e il suo abbraccio accompagna la frase che ti scagiona. Non spiega ancora il contenuto delle prove né quale morte intenda con ogni parola.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B19_seconda",
+     "testo": "Coprire la fuga di Lucas",
+     "effetti": [
+      {
+       "flag": {
+        "B19_seconda": true
+       }
+      }
+     ],
+     "riserva": "Lucas ha perso Tommen. Coprire la fuga non cambia quella morte né trasforma il movimento del corpo ottenuto col chip in un ritorno alla vita.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B20",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Alla Bernard Tower un corpo cade dall'alto. I piani sono occupati da guardie e hacker; il passaggio fino a Niklaus resta da scegliere.",
+   "png_presenti": [
+    "niklaus",
+    "lucas",
+    "tommen"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "guardia",
+    "letale": false,
+    "alternativa": {
+     "testo": "Cercare la via d’uscita con Chunk e Bolt",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Individui una via che tiene i ragazzi lontani dalla linea della guardia. Il confronto con loro può continuare.",
+     "riserva_fallimento": "La guardia intercetta la via scelta prima che possiate superarla.",
+     "fonte": "PROPOSTA: prova di scena con NC base già esistente, nessuna nuova regola."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "B19_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Il passaggio si apre verso i ragazzi; Tommen ha già compiuto il gesto che lo perde.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Lucas usa il chip sul corpo di Tommen e apre la fuga verso l’ascensore magnetico."
+    },
+    "fonte": "Schema scena 19; modelli PNG pertinenti; raccordi degli esiti PROPOSTA."
+   }
+  },
+  {
+   "id": "B20",
+   "act": 2,
+   "titolo": "Florant",
+   "luogo": "Non specificato nelle trame",
+   "descrizione": "Florant Esprit prende il controllo della Repubblica. Il volto di un Icaro diventa quello del nuovo potere.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B20_prima",
+     "testo": "Proteggere i ragazzi senza espormi",
+     "effetti": [
+      {
+       "flag": {
+        "B20_prima": true
+       }
+      }
+     ],
+     "riserva": "Nascondere il volto mantiene la protezione fuori dall’immagine pubblica di Humble. Il luogo dove riparare i ragazzi resta da scegliere nel dialogo, senza assegnarvi una casa mai raggiunta.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B20_seconda",
+     "testo": "Usare il volto di Humble per aprire un passaggio",
+     "effetti": [
+      {
+       "flag": {
+        "B20_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il volto riconoscibile di Humble viene usato per cercare un passaggio. La sua notorietà può aprire un confronto, ma rende anche visibili te e chi viaggia con te.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B21",
+     "effetti": [
+      {
+       "snodo": "B_atto_2"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Florant Esprit prende il controllo della Repubblica. Il volto di un Icaro diventa quello del nuovo potere.",
+   "png_presenti": [],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B21",
+   "act": 3,
+   "titolo": "Le prove mancanti",
+   "luogo": "Un rifugio",
+   "descrizione": "Niklaus vuole mostrarti che non sei responsabile della strage. Lucas deve fare i conti con la morte di Tommen.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B21_prima",
+     "testo": "Chiedere a Niklaus di restare vicino",
+     "effetti": [
+      {
+       "flag": {
+        "B21_prima": true
+       }
+      },
+      {
+       "flag": {
+        "B21_niklaus_resta": true
+       }
+      }
+     ],
+     "riserva": "Niklaus rimane vicino a te e Lucas. La ricostruzione della strage può continuare senza separare di nuovo il fratello dalla famiglia.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B21_seconda",
+     "testo": "Lasciare ai ragazzi il loro compito",
+     "effetti": [
+      {
+       "flag": {
+        "B21_seconda": true
+       }
+      }
+     ],
+     "riserva": "Niklaus e Lucas possono scegliere il proprio compito. Lasciarli parlare non equivale a perderli di nuovo né a mandarli in un pericolo già risolto dal racconto.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B22",
+     "effetti": [
+      {
+       "scopri": "B_kato"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Niklaus vuole mostrarti che non sei responsabile della strage. Lucas deve fare i conti con la morte di Tommen.",
+   "png_presenti": [
+    "niklaus",
+    "lucas"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B22",
+   "act": 3,
+   "titolo": "Il vecchio core",
+   "luogo": "C5 e la rete del vecchio core della città «C» [ICA S1 Ep.10 r.587-601]",
+   "descrizione": "A C5 le colture sono grigie; i lavoratori sputano sangue con vetro e metallo. Le spiegazioni ufficiali sul blackout non bastano.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B22_prima",
+     "testo": "Entrare nella rete",
+     "effetti": [
+      {
+       "flag": {
+        "B22_prima": true
+       }
+      }
+     ],
+     "riserva": "La rete collega il vecchio core al comando degli invasori. Il collegamento apre un accesso da gestire, non la vittoria su ogni difesa.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B22_seconda",
+     "testo": "Preparare l'accesso con i ragazzi",
+     "effetti": [
+      {
+       "flag": {
+        "B22_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il lavoro può essere diviso con i ragazzi. Preparare l’accesso con loro rende condiviso quel compito, non tutte le conoscenze precedenti di ognuno.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B23",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "A C5 le colture sono grigie; i lavoratori sputano sangue con vetro e metallo. Le spiegazioni ufficiali sul blackout non bastano.",
+   "png_presenti": [
+    "niklaus",
+    "lucas"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B23",
+   "act": 3,
+   "titolo": "Vendere il nome",
+   "luogo": "Il luogo delle trattative",
+   "descrizione": "Le trattative con gli invasori si aprono prima della battaglia finale. Il bisogno di telonio non è una promessa di pace.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B23_prima",
+     "testo": "Concedere l'immagine alla resistenza",
+     "effetti": [
+      {
+       "flag": {
+        "B23_prima": true
+       }
+      }
+     ],
+     "riserva": "L’immagine di Humble viene concessa alla resistenza. Il suo uso pubblico non decide per te come combattere o che cosa dire a Niklaus.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B23_seconda",
+     "testo": "Rifiutare la vendita del nome",
+     "effetti": [
+      {
+       "flag": {
+        "B23_seconda": true
+       }
+      }
+     ],
+     "riserva": "La vendita del nome viene rifiutata. La possibilità di aiutare le persone rimane distinta dalla cessione del volto alla campagna di Fate.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B24",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Le trattative con gli invasori si aprono prima della battaglia finale. Il bisogno di telonio non è una promessa di pace.",
+   "png_presenti": [
+    "fate",
+    "shapira"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B24",
+   "act": 3,
+   "titolo": "Il core",
+   "luogo": "Il vecchio core collegato a C5",
+   "descrizione": "Zephir avanza nutrendosi di telonio. Nel vecchio core la rete degli invasori e quella di C5 si toccano.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B24_prima",
+     "testo": "Sabotare il collegamento",
+     "effetti": [
+      {
+       "flag": {
+        "B24_prima": true
+       }
+      }
+     ],
+     "riserva": "Il sabotaggio colpisce il collegamento, esponendo C5 al rischio di perdere alimentazione. Non viene dichiarato vuoto un settore che nessuno ha evacuato.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B24_seconda",
+     "testo": "Preparare il core come trappola",
+     "effetti": [
+      {
+       "flag": {
+        "B24_seconda": true
+       }
+      }
+     ],
+     "riserva": "La rete rimane attiva come parte della trappola. Finché resta collegata, conserva anche la possibilità di essere percorsa dagli invasori.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B25",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Zephir avanza nutrendosi di telonio. Nel vecchio core la rete degli invasori e quella di C5 si toccano.",
+   "png_presenti": [
+    "zephir"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "zephir",
+    "letale": false,
+    "alternativa": {
+     "testo": "Tenere il nucleo a distanza mentre cerco spazio fra i cavi",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "I cavi e lo spazio del core consentono di evitare il contatto immediato con Zephir. La trasformazione resta davanti a te.",
+     "riserva_fallimento": "Zephir sfrutta lo spazio del core e ti raggiunge fra i cavi.",
+     "fonte": "PROPOSTA: prova di scena con NC base già esistente, nessuna nuova regola."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "B24_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Zephir arretra; il core rimane da sabotare o usare come trappola.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Zephir mantiene pressione sul core; scegliere il sabotaggio o la trappola resta possibile con il rischio ancora presente."
+    },
+    "fonte": "Schema scena 24; modelli PNG pertinenti; raccordi degli esiti PROPOSTA."
+   }
+  },
+  {
+   "id": "B25",
+   "act": 3,
+   "titolo": "Gaia Epos",
+   "luogo": "C5 e le altre città",
+   "descrizione": "La Terra collassa perché Gaia Epos consuma il pianeta per creare un buco bianco. La rivelazione non riguarda la Gaia di un altro mondo.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B25_prima",
+     "testo": "Aprire le vie per i profughi",
+     "effetti": [
+      {
+       "flag": {
+        "B25_prima": true
+       }
+      }
+     ],
+     "riserva": "Gli accessi vengono rivolti ai profughi. Le persone devono ancora attraversarli: aprire un percorso non equivale a contare tutti come già saliti.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B25_seconda",
+     "testo": "Cercare prima il passaggio per Niklaus e Lucas",
+     "effetti": [
+      {
+       "flag": {
+        "B25_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il passaggio di Niklaus e Lucas diventa la priorità. Non viene per questo chiuso agli altri ogni accesso che la rete può ancora offrire.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B26",
+     "effetti": [
+      {
+       "scopri": "B_programma"
+      },
+      {
+       "scopri": "B_gaia"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "La Terra collassa perché Gaia Epos consuma il pianeta per creare un buco bianco. La rivelazione non riguarda la Gaia di un altro mondo.",
+   "png_presenti": [
+    "niklaus",
+    "lucas"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B26",
+   "act": 3,
+   "titolo": "Le porte delle navi",
+   "luogo": "Le astronavi",
+   "descrizione": "Il conflitto si sposta sulle astronavi. Ogni accesso aperto alla rete può diventare un ingresso per persone ancora a terra.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B26_prima",
+     "testo": "Aprire un accesso ai profughi",
+     "effetti": [
+      {
+       "flag": {
+        "B26_prima": true
+       }
+      }
+     ],
+     "riserva": "I profughi in attesa trovano l’accesso libero. La sua difesa rimane necessaria mentre salgono: gli ultimi devono ancora attraversarlo.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B26_seconda",
+     "testo": "Collegarmi alla squadra di Vigilia",
+     "effetti": [
+      {
+       "flag": {
+        "B26_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il collegamento mette in comunicazione il lavoro sulla rete e quello della squadra di Vigilia. Le informazioni condivise restano quelle che passano effettivamente sulla linea.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B27",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Il conflitto si sposta sulle astronavi. Ogni accesso aperto alla rete può diventare un ingresso per persone ancora a terra.",
+   "png_presenti": [
+    "vigilia_haas"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B27",
+   "act": 3,
+   "titolo": "Ares 1",
+   "luogo": "La rete fra le navi e Ares 1",
+   "descrizione": "Il collegamento fra Echo-Tel e Ares 1 resta attivo mentre le navi combattono. La stessa connessione permette di ascoltare e di essere trovati.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B27_prima",
+     "testo": "Tagliare il collegamento",
+     "effetti": [
+      {
+       "flag": {
+        "B27_prima": true
+       }
+      }
+     ],
+     "riserva": "Il collegamento viene tagliato. Quella linea non può essere usata nello stesso momento per continuare ad ascoltare il comando.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B27_seconda",
+     "testo": "Usare il collegamento per ascoltare",
+     "effetti": [
+      {
+       "flag": {
+        "B27_seconda": true
+       }
+      }
+     ],
+     "riserva": "La linea resta aperta per ascoltare. Il vantaggio d’informazione conserva il rischio di essere individuati attraverso la stessa connessione.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B28",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Il collegamento fra Echo-Tel e Ares 1 resta attivo mentre le navi combattono. La stessa connessione permette di ascoltare e di essere trovati.",
+   "png_presenti": [],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B28",
+   "act": 3,
+   "titolo": "L'astronave madre",
+   "luogo": "L'astronave madre",
+   "descrizione": "Lo scontro raggiunge l'astronave madre. Florant è ancora parte del conflitto, non soltanto il nome di un comunicato.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B28_prima",
+     "testo": "Affrontare Florant",
+     "effetti": [
+      {
+       "flag": {
+        "B28_prima": true
+       }
+      }
+     ],
+     "riserva": "L’azione è rivolta a Florant, collegato agli ordini dello Spettro. L’esito dello scontro deve ancora essere risolto: non è una condanna già eseguita.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B28_seconda",
+     "testo": "Proteggere il passaggio delle navi",
+     "effetti": [
+      {
+       "flag": {
+        "B28_seconda": true
+       }
+      }
+     ],
+     "riserva": "Il passaggio delle navi diventa il centro della difesa. Questa scelta non dichiara Florant sconfitto da qualcun altro.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B29",
+     "effetti": [
+      {
+       "snodo": "B_atto_3"
+      }
+     ]
+    }
+   ],
+   "apertura_riserva": "Lo scontro raggiunge l'astronave madre. Florant è ancora parte del conflitto, non soltanto il nome di un comunicato.",
+   "png_presenti": [
+    "spettro_bianco",
+    "shapira"
+   ],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "incontro": {
+    "nemico": "spettro_bianco",
+    "letale": false,
+    "alternativa": {
+     "testo": "Rivolgere la mia voce a chi ascolta Florant",
+     "tratto": "Percezione",
+     "nc": 12,
+     "successo": [],
+     "riserva_successo": "Gli ascoltatori diventano parte del confronto: Florant deve rispondere davanti a loro prima di chiudere la distanza.",
+     "riserva_fallimento": "Florant interrompe il confronto pubblico e impone lo scontro sul posto.",
+     "fonte": "PROPOSTA: prova di scena con NC base già esistente, nessuna nuova regola."
+    },
+    "vittoria": [
+     {
+      "flag": {
+       "B28_scontro_vinto": true
+      }
+     }
+    ],
+    "vittoria_testo": "Florant perde il confronto nell’astronave madre. Le navi devono ancora partire.",
+    "sconfitta": {
+     "tipo": "fail_forward",
+     "testo": "Il confronto non abbatte Florant; resta da difendere la rete per la partenza."
+    },
+    "fonte": "Schema scena 28; modelli PNG pertinenti; raccordi degli esiti PROPOSTA."
+   }
+  },
+  {
+   "id": "B29",
+   "act": 3,
+   "titolo": "La scintilla",
+   "luogo": "Il nodo della rete",
+   "descrizione": "Il nodo dedicato all’evacuazione mantiene aperta la via alle ultime navi. La Terra che collassa non lascia tempo per recuperare ogni collegamento.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B29_prima",
+     "testo": "Restare nel nodo",
+     "effetti": [
+      {
+       "flag": {
+        "B29_prima": true
+       }
+      }
+     ],
+     "riserva": "Rimani collegata al nodo per tenere aperta la via. Il potere elettrico ti consuma mentre le navi passano: è il sacrificio scelto, non una conseguenza assegnata senza consenso.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B29_seconda",
+     "testo": "Staccarmi e raggiungere i ragazzi",
+     "effetti": [
+      {
+       "flag": {
+        "B29_seconda": true
+       }
+      }
+     ],
+     "riserva": "Ti stacchi dal nodo per raggiungere i ragazzi. Il racconto non mantiene il tuo corpo collegato né sostituisce automaticamente un altro sacrificio al tuo.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B30",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Il nodo dedicato all’evacuazione mantiene aperta la via alle ultime navi. La Terra che collassa non lascia tempo per recuperare ogni collegamento.",
+   "png_presenti": [],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B30",
+   "act": 3,
+   "titolo": "Il nome che resta",
+   "luogo": "Una nave che parte, oppure il nodo",
+   "descrizione": "Le navi lasciano la Terra perduta. Humble può essere un'immagine sullo schermo, ma Niklaus continua a conoscere tua sorella, non un marchio.",
+   "obiettivi": [],
+   "scelte": [
+    {
+     "id": "B30_prima",
+     "testo": "Chiudere sul legame con Niklaus",
+     "effetti": [
+      {
+       "flag": {
+        "B30_prima": true
+       }
+      }
+     ],
+     "riserva": "Il congedo si rivolge al legame con Niklaus. Non attribuisce un ritorno alle gare o una cessione d’immagine contraria alla scelta compiuta.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    },
+    {
+     "id": "B30_seconda",
+     "testo": "Chiudere sull'ultima immagine di Humble",
+     "effetti": [
+      {
+       "flag": {
+        "B30_seconda": true
+       }
+      }
+     ],
+     "riserva": "L’immagine di Humble può essere guardata come ciò che è stato venduto o trattenuto. Il suo ultimo significato non viene deciso da un annuncio dello sponsor al posto tuo.",
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "uscite": [
+    {
+     "quando": {
+      "scelta_fatta": true
+     },
+     "verso": "B30E",
+     "effetti": []
+    }
+   ],
+   "apertura_riserva": "Le navi lasciano la Terra perduta. Humble può essere un'immagine sullo schermo, ma Niklaus continua a conoscere sua sorella, non un marchio.",
+   "png_presenti": [],
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA.",
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica"
+  },
+  {
+   "id": "B30E",
+   "titolo": "Epilogo personale",
+   "descrizione": "Conclusione in attesa del contratto finale approvato.",
+   "apertura_riserva": "",
+   "png_presenti": [],
+   "finale": true,
+   "uscite": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": 3,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  }
+ ],
+ "png": {
+  "koga": {
+   "nome": "Koga",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "rabbit": {
+   "nome": "Rabbit",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "tommen": {
+   "nome": "Tommen",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "lucas": {
+   "nome": "Lucas",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "grid": {
+   "nome": "Grid",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "nine_nine": {
+   "nome": "Nine-Nine",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "kestrel": {
+   "nome": "Kestrel",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "ferra_ostrom": {
+   "nome": "Ferra Ostrom",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "dotcom": {
+   "nome": "Dotcom",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "yara_sen": {
+   "nome": "Yara Sen",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "niklaus": {
+   "nome": "Niklaus",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "mann_reverie": {
+   "nome": "Mann",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "fate": {
+   "nome": "Fate Alatri",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "rivale_arena": {
+   "nome": "Rivale d'arena",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "harvey": {
+   "nome": "Harvey",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "nael_prism": {
+   "nome": "Nael Prism",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "vigilia_haas": {
+   "nome": "Vigilia Haas",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "marek": {
+   "nome": "Marek Volkov",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "rhett": {
+   "nome": "Rhett",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "mara": {
+   "nome": "Mara",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "bob_harlan": {
+   "nome": "Bob Harlan",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "shapira": {
+   "nome": "Shapira Kamar",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "zephir": {
+   "nome": "Zephir Zylos",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "spettro_bianco": {
+   "nome": "Florant Esprit",
+   "ruolo": "Personaggio di Icaro nei passaggi dello schema; nessuna conoscenza aggiunta.",
+   "atteggiamento": 0,
+   "sa": [],
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  }
+ },
+ "nemici": {
+  "koga": {
+   "id": "koga",
+   "nome": "Koga",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 1,
+    "for": 8,
+    "mira": 2,
+    "vel": 8,
+    "fmen": 1,
+    "dex": 7,
+    "dif": 6,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Elusione": 2
+   },
+   "attacco": {
+    "nome": "Katana",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "vel",
+    "dex"
+   ],
+   "pngId": "koga",
+   "attacco_originale": {
+    "nome": "Katana",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "grigio.abiti_termici_leggeri",
+     "tipo": "armatura",
+     "nome": "Abiti termici leggeri",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "grigio.placca_di_camera",
+     "tipo": "scudo",
+     "nome": "Placca di camera",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "vel",
+    "dex",
+    "dif"
+   ]
+  },
+  "rabbit": {
+   "id": "rabbit",
+   "nome": "Rabbit",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 4,
+    "for": 5,
+    "mira": 5,
+    "vel": 8,
+    "fmen": 3,
+    "dex": 7,
+    "dif": 2,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 3
+   },
+   "attacco": {
+    "nome": "Calci",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "vel",
+    "dex",
+    "for"
+   ],
+   "pngId": "rabbit",
+   "attacco_originale": {
+    "nome": "Calci",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [],
+   "crescita_originale": [
+    "hp",
+    "vel",
+    "dex",
+    "for"
+   ]
+  },
+  "tommen": {
+   "id": "tommen",
+   "nome": "Tommen",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 5,
+    "for": 3,
+    "mira": 4,
+    "vel": 6,
+    "fmen": 6,
+    "dex": 6,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 3,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Asta a impulsi",
+    "dannoBase": 10,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ],
+   "pngId": "tommen",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "giallo.asta_a_impulsi",
+     "tipo": "arma",
+     "nome": "Asta a impulsi",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.tuta_da_lavoro_tecnica",
+     "tipo": "armatura",
+     "nome": "Tuta da lavoro tecnica",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ]
+  },
+  "lucas": {
+   "id": "lucas",
+   "nome": "Lucas",
+   "build": "eclettico",
+   "primary": {
+    "hp": 3,
+    "mp": 5,
+    "for": 3,
+    "mira": 4,
+    "vel": 7,
+    "fmen": 5,
+    "dex": 7,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 3,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama a molla",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dex",
+    "vel",
+    "fmen"
+   ],
+   "pngId": "lucas",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "blu.lama_a_molla",
+     "tipo": "arma",
+     "nome": "Lama a molla",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "blu.tuta_da_meccanico",
+     "tipo": "armatura",
+     "nome": "Tuta da meccanico rinforzata",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dex",
+    "vel",
+    "fmen"
+   ]
+  },
+  "grid": {
+   "id": "grid",
+   "nome": "Grid",
+   "build": "guerriero",
+   "primary": {
+    "hp": 6,
+    "mp": 1,
+    "for": 8,
+    "mira": 3,
+    "vel": 4,
+    "fmen": 1,
+    "dex": 5,
+    "dif": 8,
+    "dmen": 4
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Asta a impulsi",
+    "dannoBase": 10,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "vel"
+   ],
+   "pngId": "grid",
+   "attacco_originale": {
+    "nome": "Colpo d'arma",
+    "dannoBase": 7,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "giallo.asta_a_impulsi",
+     "tipo": "arma",
+     "nome": "Asta a impulsi",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.tuta_da_lavoro_tecnica",
+     "tipo": "armatura",
+     "nome": "Tuta da lavoro tecnica",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.scudo_di_cantiere",
+     "tipo": "scudo",
+     "nome": "Scudo di cantiere",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "vel"
+   ]
+  },
+  "nine_nine": {
+   "id": "nine_nine",
+   "nome": "Nine-Nine",
+   "build": "eclettico",
+   "primary": {
+    "hp": 2,
+    "mp": 3,
+    "for": 2,
+    "mira": 4,
+    "vel": 8,
+    "fmen": 3,
+    "dex": 9,
+    "dif": 3,
+    "dmen": 6
+   },
+   "traits": {
+    "Elusione": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Stiletto da palcoscenico",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "vel",
+    "dex"
+   ],
+   "pngId": "nine_nine",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "verde.stiletto_da_palcoscenico",
+     "tipo": "arma",
+     "nome": "Stiletto da palcoscenico",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "verde.camice_verde",
+     "tipo": "armatura",
+     "nome": "Camice verde",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "vel",
+    "dex"
+   ]
+  },
+  "kestrel": {
+   "id": "kestrel",
+   "nome": "Kestrel",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 5,
+    "for": 4,
+    "mira": 4,
+    "vel": 5,
+    "fmen": 6,
+    "dex": 6,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 2,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama retrattile",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ],
+   "pngId": "kestrel",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "amaranto.lama_retrattile",
+     "tipo": "arma",
+     "nome": "Lama retrattile",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "amaranto.completo_rinforzato",
+     "tipo": "armatura",
+     "nome": "Completo da vincente rinforzato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ]
+  },
+  "ferra_ostrom": {
+   "id": "ferra_ostrom",
+   "nome": "Ferra Ostrom",
+   "build": "guerriero",
+   "primary": {
+    "hp": 6,
+    "mp": 3,
+    "for": 8,
+    "mira": 2,
+    "vel": 4,
+    "fmen": 4,
+    "dex": 5,
+    "dif": 7,
+    "dmen": 1
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Lama da fuga",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "fmen"
+   ],
+   "pngId": "ferra_ostrom",
+   "attacco_originale": {
+    "nome": "Lama",
+    "dannoBase": 7,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "nero.lama_da_fuga",
+     "tipo": "arma",
+     "nome": "Lama da fuga",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.tuta_da_agricoltore",
+     "tipo": "armatura",
+     "nome": "Tuta da serra",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.scudo_di_cantiere",
+     "tipo": "scudo",
+     "nome": "Scudo di cantiere",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "fmen"
+   ]
+  },
+  "dotcom": {
+   "id": "dotcom",
+   "nome": "Dotcom",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 5,
+    "for": 3,
+    "mira": 5,
+    "vel": 6,
+    "fmen": 7,
+    "dex": 6,
+    "dif": 2,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 3
+   },
+   "attacco": {
+    "nome": "Glitch",
+    "dannoBase": 6,
+    "stat": "fmen"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ],
+   "pngId": "dotcom",
+   "attacco_originale": {
+    "nome": "Glitch",
+    "dannoBase": 6,
+    "stat": "fmen"
+   },
+   "equip": [
+    {
+     "id": "senza_colore.tuta_esplorazione",
+     "tipo": "armatura",
+     "nome": "Tuta di esplorazione con isolante",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ]
+  },
+  "yara_sen": {
+   "id": "yara_sen",
+   "nome": "Yara Sen",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 4,
+    "for": 4,
+    "mira": 4,
+    "vel": 5,
+    "fmen": 5,
+    "dex": 6,
+    "dif": 4,
+    "dmen": 4
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 2,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Stilo a impulsi",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dex",
+    "vel"
+   ],
+   "pngId": "yara_sen",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "bianco.stilo_a_impulsi",
+     "tipo": "arma",
+     "nome": "Stilo a impulsi",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "bianco.abito_bianco_schermato",
+     "tipo": "armatura",
+     "nome": "Abito bianco schermato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dex",
+    "vel"
+   ]
+  },
+  "niklaus": {
+   "id": "niklaus",
+   "nome": "Niklaus",
+   "build": "eclettico",
+   "primary": {
+    "hp": 3,
+    "mp": 5,
+    "for": 3,
+    "mira": 4,
+    "vel": 7,
+    "fmen": 5,
+    "dex": 7,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 3,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama ricurva arrugginita",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dex",
+    "vel",
+    "fmen"
+   ],
+   "pngId": "niklaus",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "senza_colore.lama_arrugginita",
+     "tipo": "arma",
+     "nome": "Lama ricurva arrugginita",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "senza_colore.tuta_esplorazione",
+     "tipo": "armatura",
+     "nome": "Tuta di esplorazione con isolante",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dex",
+    "vel",
+    "fmen"
+   ]
+  },
+  "mann_reverie": {
+   "id": "mann_reverie",
+   "nome": "Mann",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 3,
+    "for": 4,
+    "mira": 7,
+    "vel": 6,
+    "fmen": 3,
+    "dex": 7,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Elusione": 2
+   },
+   "attacco": {
+    "nome": "Cerbottana di fortuna",
+    "dannoBase": 8,
+    "stat": "mira"
+   },
+   "crescita": [
+    "hp",
+    "mira",
+    "dex",
+    "vel"
+   ],
+   "pngId": "mann_reverie",
+   "attacco_originale": {
+    "nome": "Cerbottana",
+    "dannoBase": 6,
+    "stat": "mira"
+   },
+   "equip": [
+    {
+     "id": "senza_colore.cerbottana_di_fortuna",
+     "tipo": "arma",
+     "nome": "Cerbottana di fortuna",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "classe": "tiro",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "arancio.camice_schermato",
+     "tipo": "armatura",
+     "nome": "Camice schermato",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 4,
+     "durabilita": 70,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "mira",
+    "dex",
+    "vel"
+   ]
+  },
+  "fate": {
+   "id": "fate",
+   "nome": "Fate Alatri",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 6,
+    "for": 2,
+    "mira": 4,
+    "vel": 5,
+    "fmen": 7,
+    "dex": 5,
+    "dif": 2,
+    "dmen": 5
+   },
+   "traits": {
+    "Arte Combattiva": 1,
+    "Elusione": 2,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Lama retrattile",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dmen",
+    "fmen",
+    "vel"
+   ],
+   "pngId": "fate",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "amaranto.lama_retrattile",
+     "tipo": "arma",
+     "nome": "Lama retrattile",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "amaranto.completo_rinforzato",
+     "tipo": "armatura",
+     "nome": "Completo da vincente rinforzato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dmen",
+    "fmen",
+    "vel"
+   ]
+  },
+  "rivale_arena": {
+   "id": "rivale_arena",
+   "nome": "Rivale d'arena",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 4,
+    "for": 5,
+    "mira": 4,
+    "vel": 6,
+    "fmen": 5,
+    "dex": 6,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 2,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama retrattile",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "fmen",
+    "vel"
+   ],
+   "articolo": "un",
+   "attacco_originale": {
+    "nome": "Colpo d'arma",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "amaranto.lama_retrattile",
+     "tipo": "arma",
+     "nome": "Lama retrattile",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "amaranto.completo_amaranto",
+     "tipo": "armatura",
+     "nome": "Completo amaranto",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "fmen",
+    "vel"
+   ]
+  },
+  "harvey": {
+   "id": "harvey",
+   "nome": "Harvey",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 3,
+    "for": 4,
+    "mira": 4,
+    "vel": 4,
+    "fmen": 4,
+    "dex": 6,
+    "dif": 5,
+    "dmen": 6
+   },
+   "traits": {
+    "Elusione": 2,
+    "Resistenza": 3
+   },
+   "attacco": {
+    "nome": "Asta a impulsi",
+    "dannoBase": 10,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dex",
+    "dmen"
+   ],
+   "pngId": "harvey",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "giallo.asta_a_impulsi",
+     "tipo": "arma",
+     "nome": "Asta a impulsi",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "giallo.tuta_da_agricoltore",
+     "tipo": "armatura",
+     "nome": "Tuta da serra",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dex",
+    "dmen"
+   ]
+  },
+  "nael_prism": {
+   "id": "nael_prism",
+   "nome": "Nael Prism",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 5,
+    "for": 4,
+    "mira": 4,
+    "vel": 5,
+    "fmen": 6,
+    "dex": 6,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 2,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama da dirigente",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ],
+   "pngId": "nael_prism",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "rosso.lama_da_dirigente",
+     "tipo": "arma",
+     "nome": "Lama da dirigente",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "rosso.cappotto_rosso_schermato",
+     "tipo": "armatura",
+     "nome": "Cappotto rosso schermato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "dex",
+    "vel"
+   ]
+  },
+  "vigilia_haas": {
+   "id": "vigilia_haas",
+   "nome": "Vigilia Haas",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 1,
+    "for": 7,
+    "mira": 4,
+    "vel": 5,
+    "fmen": 1,
+    "dex": 6,
+    "dif": 7,
+    "dmen": 4
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Elusione": 1,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Arma elettrificata",
+    "dannoBase": 7,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "dex"
+   ],
+   "pngId": "vigilia_haas",
+   "attacco_originale": {
+    "nome": "Arma elettrificata",
+    "dannoBase": 7,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "senza_colore.tuta_termica_con_casco",
+     "tipo": "armatura",
+     "nome": "Tuta termica esterna con casco sigillato",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 5,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "senza_colore.scudo_da_convoglio",
+     "tipo": "scudo",
+     "nome": "Scudo di lamiera da convoglio",
+     "taglia": "medi",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 10,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "dex"
+   ]
+  },
+  "marek": {
+   "id": "marek",
+   "nome": "Marek Volkov",
+   "build": "guerriero",
+   "primary": {
+    "hp": 7,
+    "mp": 1,
+    "for": 7,
+    "mira": 7,
+    "vel": 4,
+    "fmen": 1,
+    "dex": 4,
+    "dif": 8,
+    "dmen": 1
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Disturbatore a mano",
+    "dannoBase": 8,
+    "stat": "mira"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "mira"
+   ],
+   "boss": true,
+   "pngId": "marek",
+   "attacco_originale": {
+    "nome": "Pistola",
+    "dannoBase": 7,
+    "stat": "mira"
+   },
+   "equip": [
+    {
+     "id": "nero.disturbatore_a_mano",
+     "tipo": "arma",
+     "nome": "Disturbatore a mano",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "classe": "tiro",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "verde.giacca_di_scena",
+     "tipo": "armatura",
+     "nome": "Giacca di scena rinforzata",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "mira"
+   ]
+  },
+  "rhett": {
+   "id": "rhett",
+   "nome": "Rhett",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 3,
+    "for": 5,
+    "mira": 4,
+    "vel": 7,
+    "fmen": 3,
+    "dex": 8,
+    "dif": 3,
+    "dmen": 3
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Elusione": 2
+   },
+   "attacco": {
+    "nome": "Lama a molla",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "dex",
+    "vel",
+    "for"
+   ],
+   "pngId": "rhett",
+   "attacco_originale": {
+    "nome": "Coltello",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "blu.lama_a_molla",
+     "tipo": "arma",
+     "nome": "Lama a molla",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "blu.tuta_da_pilota",
+     "tipo": "armatura",
+     "nome": "Tuta da pilota",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 4,
+     "durabilita": 70,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dex",
+    "vel",
+    "for"
+   ]
+  },
+  "mara": {
+   "id": "mara",
+   "nome": "Mara",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 1,
+    "for": 7,
+    "mira": 2,
+    "vel": 5,
+    "fmen": 1,
+    "dex": 7,
+    "dif": 7,
+    "dmen": 5
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Chiave pesante",
+    "dannoBase": 10,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "dex"
+   ],
+   "pngId": "mara",
+   "attacco_originale": {
+    "nome": "Barra di metallo",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "blu.chiave_pesante",
+     "tipo": "arma",
+     "nome": "Chiave pesante",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "amaranto.completo_amaranto",
+     "tipo": "armatura",
+     "nome": "Completo amaranto",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 3,
+     "durabilita": 60,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "amaranto.scudo_da_braccio",
+     "tipo": "scudo",
+     "nome": "Scudo da braccio",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "dex"
+   ]
+  },
+  "bob_harlan": {
+   "id": "bob_harlan",
+   "nome": "Bob Harlan",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 1,
+    "for": 7,
+    "mira": 3,
+    "vel": 3,
+    "fmen": 1,
+    "dex": 6,
+    "dif": 9,
+    "dmen": 5
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 1,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Storditore da tasca",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "dex"
+   ],
+   "pngId": "bob_harlan",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 5,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "rosso.storditore_da_tasca",
+     "tipo": "arma",
+     "nome": "Storditore da tasca",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "rosso.cappotto_rosso_schermato",
+     "tipo": "armatura",
+     "nome": "Cappotto rosso schermato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "rosso.scudo_di_protocollo",
+     "tipo": "scudo",
+     "nome": "Scudo di protocollo",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "dif",
+    "for",
+    "dex"
+   ]
+  },
+  "shapira": {
+   "id": "shapira",
+   "nome": "Shapira Kamar",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 6,
+    "for": 4,
+    "mira": 5,
+    "vel": 5,
+    "fmen": 7,
+    "dex": 4,
+    "dif": 3,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 1,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Filamenti di telonio",
+    "dannoBase": 7,
+    "stat": "fmen"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "mira",
+    "vel"
+   ],
+   "boss": true,
+   "pngId": "shapira",
+   "attacco_originale": {
+    "nome": "Filamenti di telonio",
+    "dannoBase": 7,
+    "stat": "fmen"
+   },
+   "equip": [
+    {
+     "id": "giallo.tuta_da_lavoro_tecnica",
+     "tipo": "armatura",
+     "nome": "Tuta da lavoro tecnica",
+     "taglia": "leggere",
+     "qualita": "bassa",
+     "atk": 0,
+     "dif": 5,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "mira",
+    "vel"
+   ]
+  },
+  "zephir": {
+   "id": "zephir",
+   "nome": "Zephir Zylos",
+   "build": "guerriero",
+   "primary": {
+    "hp": 5,
+    "mp": 4,
+    "for": 7,
+    "mira": 2,
+    "vel": 5,
+    "fmen": 6,
+    "dex": 5,
+    "dif": 4,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Mano nel corpo",
+    "dannoBase": 7,
+    "stat": "fmen"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "for"
+   ],
+   "boss": true,
+   "pngId": "zephir",
+   "attacco_originale": {
+    "nome": "Mano nel corpo",
+    "dannoBase": 7,
+    "stat": "fmen"
+   },
+   "equip": [
+    {
+     "id": "bianco.abito_bianco_schermato",
+     "tipo": "armatura",
+     "nome": "Abito bianco schermato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "bianco.scudo_a_campo",
+     "tipo": "scudo",
+     "nome": "Scudo a campo",
+     "taglia": "piccoli",
+     "qualita": "bassa",
+     "atk": 4,
+     "dif": 8,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "for",
+    "dif"
+   ]
+  },
+  "spettro_bianco": {
+   "id": "spettro_bianco",
+   "nome": "Florant Esprit",
+   "build": "eclettico",
+   "primary": {
+    "hp": 4,
+    "mp": 6,
+    "for": 4,
+    "mira": 5,
+    "vel": 5,
+    "fmen": 7,
+    "dex": 5,
+    "dif": 2,
+    "dmen": 2
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 2,
+    "Resistenza": 1
+   },
+   "attacco": {
+    "nome": "Lama da dirigente",
+    "dannoBase": 8,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "fmen",
+    "vel",
+    "dex"
+   ],
+   "boss": true,
+   "villain": true,
+   "pngId": "spettro_bianco",
+   "attacco_originale": {
+    "nome": "Colpo",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "rosso.lama_da_dirigente",
+     "tipo": "arma",
+     "nome": "Lama da dirigente",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "rosso.cappotto_rosso_schermato",
+     "tipo": "armatura",
+     "nome": "Cappotto rosso schermato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "fmen",
+    "vel",
+    "dex"
+   ]
+  },
+  "patriota": {
+   "id": "patriota",
+   "nome": "Patriota",
+   "build": "guerriero",
+   "primary": {
+    "hp": 6,
+    "mp": 1,
+    "for": 8,
+    "mira": 7,
+    "vel": 5,
+    "fmen": 1,
+    "dex": 5,
+    "dif": 6,
+    "dmen": 1
+   },
+   "traits": {
+    "Arte Combattiva": 3,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Emettitore clandestino",
+    "dannoBase": 8,
+    "stat": "mira"
+   },
+   "crescita": [
+    "hp",
+    "mira",
+    "for"
+   ],
+   "articolo": "un",
+   "attacco_originale": {
+    "nome": "Arma da fuoco",
+    "dannoBase": 7,
+    "stat": "mira"
+   },
+   "equip": [
+    {
+     "id": "grigio.emettitore_clandestino",
+     "tipo": "arma",
+     "nome": "Emettitore clandestino",
+     "taglia": "corte",
+     "qualita": "bassa",
+     "classe": "tiro",
+     "atk": 8,
+     "dif": 4,
+     "durabilita": 80,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "amaranto.completo_rinforzato",
+     "tipo": "armatura",
+     "nome": "Completo da vincente rinforzato",
+     "taglia": "leggere",
+     "qualita": "media",
+     "atk": 2,
+     "dif": 10,
+     "durabilita": 140,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "mira",
+    "for",
+    "dif"
+   ]
+  },
+  "guardia": {
+   "id": "guardia",
+   "nome": "Guardia",
+   "build": "guerriero",
+   "primary": {
+    "hp": 4,
+    "mp": 1,
+    "for": 6,
+    "mira": 5,
+    "vel": 5,
+    "fmen": 1,
+    "dex": 6,
+    "dif": 8,
+    "dmen": 4
+   },
+   "traits": {
+    "Arte Combattiva": 2,
+    "Elusione": 1,
+    "Resistenza": 2
+   },
+   "attacco": {
+    "nome": "Manganello elettrico",
+    "dannoBase": 10,
+    "stat": "for"
+   },
+   "crescita": [
+    "hp",
+    "for",
+    "vel",
+    "dex"
+   ],
+   "articolo": "una",
+   "attacco_originale": {
+    "nome": "Arma d'ordinanza",
+    "dannoBase": 6,
+    "stat": "for"
+   },
+   "equip": [
+    {
+     "id": "arancio.manganello_elettrico",
+     "tipo": "arma",
+     "nome": "Manganello elettrico",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "arancio.corazza_corporativa",
+     "tipo": "armatura",
+     "nome": "Equipaggiamento da combattimento corporativo",
+     "taglia": "medie",
+     "qualita": "bassa",
+     "atk": 5,
+     "dif": 8,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    },
+    {
+     "id": "arancio.scudo_antisommossa",
+     "tipo": "scudo",
+     "nome": "Scudo antisommossa",
+     "taglia": "medi",
+     "qualita": "bassa",
+     "atk": 10,
+     "dif": 10,
+     "durabilita": 100,
+     "resistenza": null,
+     "catalogo": true,
+     "origine": "assegnazione",
+     "content_status": "proposed"
+    }
+   ],
+   "crescita_originale": [
+    "hp",
+    "for",
+    "dif",
+    "vel",
+    "dex"
+   ]
+  }
+ },
+ "fatti": {
+  "B_kato": {
+   "testo": "Niklaus indica Kato nella ricostruzione della strage; non è descritto il contenuto completo delle prove.",
+   "segreto": true,
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": 3,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "B_programma": {
+   "testo": "Il programma si chiama Ich e porta persone a vivere in un mondo scritto.",
+   "segreto": true,
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": 3,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "B_gaia": {
+   "testo": "Gaia Epos consuma la Terra per creare un buco bianco.",
+   "segreto": true,
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": 3,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  },
+  "icaro_sole_estrazione": {
+   "testo": "La stazione a terra ignorò gli avvertimenti della stazione sul Sole e impose di completare il ciclo di estrazione per profitto. Il ciclo causò uno strappo nelle onde di oscillazione del Cromo estratte dal Sole, provocandone lo spegnimento. La figlia di Epos sopravvisse alla stazione sul Sole e divenne un’entità ricolma di Cromo. Ora guida i marziani contro la Terra; nel suo subconscio rimane la rabbia per l’ordine ricevuto e il sacrificio imposto dai terrestri.",
+   "segreto": true,
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "approved",
+   "act": 3,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "alla_scoperta",
+   "source_note": "DECISIONI_AUTORE.md §11, risposta dell’autore del 1 novembre 2026 sullo spegnimento del Sole."
+  }
+ },
+ "borsa": {
+  "oggetti": {
+   "dado_fate": {
+    "id": "dado_fate",
+    "nome": "Dado olografico di Fate",
+    "descrizione": "Dati per la trasmissione affidati da Fate; il supporto non rivela il contenuto mancante delle prove di Niklaus.",
+    "tipo": "indizio",
+    "unico": true,
+    "indispensabile": false,
+    "via_alternativa": {
+     "testo": "Conoscenza e possesso restano distinti: nessuna prova nuova viene creata se il supporto si perde."
+    },
+    "campaign_id": "nome-che-vendono-trama",
+    "content_status": "proposed",
+    "act": 1,
+    "level_band": [
+     1,
+     30
+    ],
+    "difficulty_tags": [
+     "esplorativa",
+     "bilanciata",
+     "permadeath"
+    ],
+    "visibility_rule": "pubblica",
+    "source_note": "Oggetto dello schema della storia, scena 9; rappresentazione nei dati PROPOSTA."
+   }
+  }
+ },
+ "orologi": {},
+ "risorse": {},
+ "fino_atto": 1
+}

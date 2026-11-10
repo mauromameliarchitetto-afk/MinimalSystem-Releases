@@ -1,0 +1,313 @@
+{
+ "formato": "rm-solo-percorsi/1",
+ "storia": "ich",
+ "stato": "proposta scritta in autonomia (2026-10-17), rivedibile in docs/single-player/DECISIONI_DA_RIVEDERE.md",
+ "obiettivi": {
+  "ricordare": {
+   "nome": "Ricordare",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "H02",
+     "titolo": "Un posto vuoto a tavola",
+     "indizio": "Un'assenza che pesa più di una presenza.",
+     "beat": "Un'assenza pesa più di una presenza: puoi cercare ciò che hai dimenticato.",
+     "tratti": [
+      "Intuito Olfattivo",
+      "Percezione"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Qualcosa torna: un odore, un gesto, un nome. Ora sai da dove cominciare.",
+      "parziale": "Un ricordo a frammenti: abbastanza per non lasciar perdere.",
+      "mancato": "Il ricordo non viene. Resta la sensazione di averlo avuto."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "H07",
+     "titolo": "Versioni che non combaciano",
+     "indizio": "Ognuno ricorda la stessa cosa in modo diverso, e nessuno ha torto.",
+     "beat": "Ognuno ricorda la stessa cosa in modo diverso: puoi cercare ciò che è vero in tutte le versioni.",
+     "tratti": [
+      "Ascoltare",
+      "Intuito Olfattivo"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Ritrovi ciò che le versioni hanno in comune: è il nucleo del ricordo.",
+      "parziale": "Ritrovi un pezzo del nucleo, non tutto.",
+      "mancato": "Le versioni restano versioni."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "H12",
+     "titolo": "La voce che chiama per nome",
+     "indizio": "Un richiamo da lontano: forse è ciò che hai dimenticato.",
+     "beat": "Un richiamo da lontano potrebbe essere ciò che hai dimenticato.",
+     "tratti": [
+      "Spirito",
+      "Difesa Mentale"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Rispondi al richiamo e ricordi: ora sai chi {sei stato|sei stata|eri}.",
+      "parziale": "Rispondi al richiamo, e ricordi una parte.",
+      "mancato": "Il richiamo si spegne prima che tu risponda."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "Ricordi: non tutto, ma ciò che serve per sapere chi {sei stato|sei stata|eri}.",
+    "parziale": "Ricordi a pezzi: abbastanza per camminare, non per fermarti.",
+    "mancato": "Non ricordi. Resta la strada che non conoscevi, e la scelta di prenderla."
+   }
+  },
+  "restare_se_stesso": {
+   "nome": "Restare se stesso",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "H05",
+     "titolo": "Un rito che chiude",
+     "indizio": "Alcune cose si lasciano andare; altre vanno custodite.",
+     "beat": "Alcune cose si lasciano andare, altre vanno custodite: puoi scegliere che cosa tenere.",
+     "tratti": [
+      "Spirito",
+      "Difesa Mentale"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Tieni stretto ciò che ti fa essere te, e lasci andare il resto senza rimpianti.",
+      "parziale": "Tieni quasi tutto ciò che volevi: una parte scivola via.",
+      "mancato": "Lasci andare più di quanto volessi."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "H09",
+     "titolo": "Un richiamo che non è tuo",
+     "indizio": "Qualcosa ti chiama con una voce che somiglia alla tua.",
+     "beat": "Qualcosa ti chiama con una voce che somiglia alla tua: puoi riconoscere che non lo è.",
+     "tratti": [
+      "Difesa Mentale",
+      "Ascoltare"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Riconosci la differenza e non rispondi: la voce, per te, resta altrui.",
+      "parziale": "Esiti, poi riconosci la differenza.",
+      "mancato": "Rispondi, e per un attimo non sai più di chi sia la voce."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "H15",
+     "titolo": "La scelta delle radici",
+     "indizio": "Alla fine decidi a chi appartieni, e a cosa.",
+     "beat": "Alla fine decidi a chi appartieni, e a cosa.",
+     "tratti": [
+      "Spirito",
+      "Persuasione"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Dici chi sei e chi ti ascolta lo accetta: nessuno ti ha cambiato.",
+      "parziale": "Dici chi sei, con una parola in più o in meno di quanto volessi.",
+      "mancato": "Non trovi le parole: chi sei viene detto da altri."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "{Sei rimasto te stesso|Sei rimasta te stessa|Sei ancora tu}: attraverso tutto, e sapendo perché.",
+    "parziale": "{Sei cambiato|Sei cambiata|Qualcosa in te è cambiato} in parte, e in parte no: ciò che resta è tuo davvero.",
+    "mancato": "Non ti riconosci del tutto. Resta una radice, e la possibilità di tornarci."
+   }
+  },
+  "diventare_altro": {
+   "nome": "Diventare altro",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "H04",
+     "titolo": "Un sentiero che cambia",
+     "indizio": "Camminare porta altrove, ma anche altro da sé.",
+     "beat": "Camminare porta altrove, ma anche altro da sé: puoi lasciare che il sentiero ti cambi.",
+     "tratti": [
+      "Seguire Tracce",
+      "Orientamento"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Segui il sentiero fino in fondo e ti accorgi di non essere più quello di prima.",
+      "parziale": "Ti lasci cambiare un poco, senza decidere dove.",
+      "mancato": "Il sentiero non ti cambia: ti riporta dove eri."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "H09",
+     "titolo": "Un nome nuovo",
+     "indizio": "Qualcuno ti vede già come qualcosa che non sei ancora.",
+     "beat": "Qualcuno ti vede già come qualcosa che non sei ancora: puoi provare a esserlo.",
+     "tratti": [
+      "Persuasione",
+      "Spirito"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Provi la nuova forma e regge: ora lo sai.",
+      "parziale": "Provi la nuova forma e regge a metà.",
+      "mancato": "La nuova forma ti sta stretta, per ora."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "H13",
+     "titolo": "Il risveglio",
+     "indizio": "Un cambiamento che non si può tenere nascosto.",
+     "beat": "Un cambiamento che non si può tenere nascosto: puoi accoglierlo.",
+     "tratti": [
+      "Spirito",
+      "Difesa Mentale"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Accogli il cambiamento senza resistere e ne esci intero.",
+      "parziale": "Accogli il cambiamento a fatica: ne resta il segno.",
+      "mancato": "Resisti, e il cambiamento ti passa sopra."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "{Sei diventato altro|Sei diventata altro|Ora sei altro}, e sai da dove vieni: la nuova forma ti appartiene.",
+    "parziale": "Sei a metà fra ciò che eri e ciò che sarai: è un posto abitabile.",
+    "mancato": "{Sei rimasto quello di prima|Sei rimasta quella di prima|Sei ancora com'eri}, almeno per ora. La porta del cambiamento resta aperta."
+   }
+  },
+  "trovare_chi_muove_i_fili": {
+   "nome": "Trovare chi muove i fili",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "H03",
+     "titolo": "Il primo filo",
+     "indizio": "Ogni mistero comincia con un dettaglio fuori posto.",
+     "beat": "Ogni mistero comincia con un dettaglio fuori posto: puoi notare quale.",
+     "tratti": [
+      "Percezione",
+      "Intuito Olfattivo"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Noti il dettaglio che gli altri non vedono: ora hai un capo del filo.",
+      "parziale": "Noti un dettaglio, ma non sai ancora di cosa sia parte.",
+      "mancato": "Il dettaglio ti sfugge e il filo resta nascosto."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "H10",
+     "titolo": "Dove i fili si incrociano",
+     "indizio": "Un luogo in cui molte storie passano per le stesse mani.",
+     "beat": "Un luogo in cui molte storie passano per le stesse mani: puoi seguire il filo giusto.",
+     "tratti": [
+      "Percezione",
+      "Ascoltare"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Distingui il filo che porta lontano da quello che si ferma qui: lo segui.",
+      "parziale": "Segui un filo, ma ne perdi un altro.",
+      "mancato": "I fili si intrecciano e non sai più quale seguire."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "H16",
+     "titolo": "Il filo senza padrone",
+     "indizio": "Chi tira i fili potrebbe non essere chi pensi.",
+     "beat": "Chi tira i fili potrebbe non essere chi pensi.",
+     "tratti": [
+      "Spirito",
+      "Persuasione",
+      "Difesa Mentale"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Guardi in faccia chi muove i fili e capisci che cosa vuole.",
+      "parziale": "Intravedi chi muove i fili, senza riuscire a guardarlo in faccia.",
+      "mancato": "Il filo si spezza prima che tu veda a chi è legato."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "Hai trovato chi muoveva i fili: e ora i fili sono nelle mani di chi li ha trovati.",
+    "parziale": "Hai intravisto chi muoveva i fili: basta per non esserne più mosso.",
+    "mancato": "I fili restano nascosti. Resta la sensazione di essere guardato."
+   }
+  },
+  "salvare_chi_non_ti_riconosce": {
+   "nome": "Salvare chi non ti riconosce",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "H02",
+     "titolo": "Un volto che non ti sa",
+     "indizio": "Qualcuno che conosci ti guarda come un estraneo.",
+     "beat": "Qualcuno che conosci ti guarda come un estraneo: puoi avvicinarti senza spaventarlo.",
+     "tratti": [
+      "Persuasione",
+      "Spirito"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Ti avvicini piano e lo sguardo si ammorbidisce: non ti conosce, ma si fida.",
+      "parziale": "Ti avvicini, e per un momento non indietreggia.",
+      "mancato": "Si ritrae: dovrai riprovare."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "H08",
+     "titolo": "Una missione per un altro",
+     "indizio": "Aiutare chi non ti ricorda richiede un tipo diverso di pazienza.",
+     "beat": "Aiutare chi non ti ricorda richiede un tipo diverso di pazienza.",
+     "tratti": [
+      "Persuasione",
+      "Guarigione"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Aiuti senza chiedere nulla in cambio, nemmeno di essere ricordato.",
+      "parziale": "Aiuti, ma con un'attesa che non riesci a nascondere.",
+      "mancato": "L'aiuto viene rifiutato: aspetterai."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "H15",
+     "titolo": "Salvare a mani vuote",
+     "indizio": "Alla fine si salva qualcuno senza ottenere nemmeno un grazie.",
+     "beat": "Alla fine si salva qualcuno senza ottenere nemmeno un grazie.",
+     "tratti": [
+      "Spirito",
+      "Resistenza"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Lo salvi, e non importa che non lo sappia.",
+      "parziale": "Lo salvi, e ti resta il peso di non essere ricordato.",
+      "mancato": "Non riesci a salvarlo del tutto: resta in pericolo."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "Lo hai salvato senza essere ricordato: e va bene così.",
+    "parziale": "Lo hai salvato in parte: il resto toccherà a voi due.",
+    "mancato": "{Non sei riuscito a|Non sei riuscita a|Non ti è riuscito di} salvarlo. Resta il tentativo, che nessuno ti toglie."
+   }
+  }
+ }
+}

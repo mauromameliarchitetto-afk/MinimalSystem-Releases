@@ -1,0 +1,4134 @@
+{
+ "formato": "rm-solo-interazioni/1",
+ "campaign_id": "figlia-trama",
+ "stato": "bozza",
+ "content_status": "proposed",
+ "nota": "«La figlia prediletta»: docs/single-player/trame/SCHEMA_LA_FIGLIA_PREDILETTA.md (schema approvato il 30/10); EIDOS.md §4.4 r.243-280. Ogni frase riprende un fatto o una battuta degli script Eidos V2 (dalle note di lettura; nomi dei personaggi giocanti sostituiti da quelli della trama); nessun fatto nuovo se non segnato PROPOSTA.",
+ "regole": {},
+ "scene": {
+  "F01": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F01x0",
+     "testo": "Tenere l'ingresso del Bouleterion",
+     "riserva": "Tieni l'ingresso con gli altri militari. Dentro si cerca di convincere il consiglio a una nuova apertura verso l'esterno; qualcuno chiede invece un intervento più massiccio delle forze armate fuori dalle città.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Il consiglio discute di aprire il paese verso l'esterno, o di mandare più soldati fuori dalle città.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.1 r.20-23, r.28]"
+    },
+    {
+     "id": "F01x1",
+     "testo": "Guardare la manifestazione in strada",
+     "riserva": "In strada manifestano dei religiosi, e la polizia li reprime. Uno di loro grida: «Lui tornerà, ciò che andiamo cercando è solo il suo perdono, tornerà di nuovo per governare e fare del nostro popolo la nazione eletta e giusta!» Qualcuno gli risponde: «Sono solo uomini che non vedono il disegno perfetto del nostro mondo, non ne comprendono le leggi e l'insieme di numeri che le regola.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "In strada il credo più antico è represso dalla polizia.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "[V2 Cap.1 r.29, r.38-41] (chi risponde non è scritto)",
+     "scopo": "la guerra e le divisioni fra gli Epizi (EIDOS.md r.21)"
+    },
+    {
+     "id": "F01x2",
+     "testo": "Osservare chi aspetta fuori dal consiglio",
+     "riserva": "Ophelia Galanis è stata invitata a restare fuori, e aspetta accanto all'ingresso. Poco più in là c'è Mors, detto Ipno: tiene in mano un Kyanos e parla della fine della primavera.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "[V2 Cap.1 r.22-27]",
+     "scopo": "far esistere due PNG che contano dopo (il matrimonio, i laboratori)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "ophelia",
+     "apertura": "Ophelia Galanis aspetta accanto all'ingresso.",
+     "chiusura": "Ophelia torna a guardare la porta del consiglio.",
+     "riserva_libera": "Ophelia non risponde: guarda la porta del consiglio.",
+     "argomenti": [
+      {
+       "id": "F01_ophelia_1",
+       "testo": "Chiedere a Ophelia perché resta fuori",
+       "riserva": "Ophelia Galanis è stata invitata a restare fuori dal consiglio, e aspetta con te all'ingresso, senza entrare.",
+       "effetti": [],
+       "fonte": "[V2 Cap.1 r.22]",
+       "scopo": "far esistere Ophelia (il matrimonio)"
+      }
+     ]
+    },
+    {
+     "png": "mors",
+     "apertura": "Mors rigira il Kyanos fra le dita.",
+     "chiusura": "Mors torna a guardare il Kyanos.",
+     "riserva_libera": "Mors non risponde: torna a guardare il Kyanos.",
+     "argomenti": [
+      {
+       "id": "F01_mors_1",
+       "testo": "Chiedere a Mors del Kyanos",
+       "riserva": "Mors solleva il Kyanos verso la luce e ti parla della fine della primavera.",
+       "effetti": [],
+       "fonte": "[V2 Cap.1 r.27]; il calendario dei cicli (Ear è la primavera) [r.14-18]",
+       "scopo": "far esistere Mors (i laboratori)"
+      }
+     ]
+    },
+    {
+     "png": "anastasios",
+     "apertura": "Tuo padre ti guarda.",
+     "chiusura": "Tuo padre guarda verso la strada.",
+     "riserva_libera": "Tuo padre non risponde.",
+     "argomenti": [
+      {
+       "id": "F01_anastasios_1",
+       "testo": "Chiedere a tuo padre della scorta",
+       "riserva": "«Abbiamo una scorta pronta al confine» dice tuo padre. «Tuo fratello sai se è ancora a Litice?»",
+       "effetti": [
+        {
+         "nota": "Tuo padre chiede di tuo fratello, che forse è ancora a Litice.",
+         "categoria": "indizio"
+        }
+       ],
+       "richiede": [
+        "F01d1"
+       ],
+       "fonte": "[V2 Cap.1 r.36]",
+       "scopo": "nominare Dimitri prima che arrivi"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il consiglio finisce, e tuo padre esce dal Bouleterion. «Mi dovrò spostare in alcune città al fronte per qualche settimana» ti dice. «Mi è stato chiesto di presenziare come esponente politico del consiglio per ammorbidire gli ingenti spostamenti verso il fronte.»",
+    "fonte": "P2 [V2 Cap.1 r.31-33]",
+    "esplora": [
+     {
+      "id": "F01d1",
+      "testo": "Ascoltare tuo padre",
+      "riserva": "«A breve il paese avrà bisogno di aprirsi totalmente verso l'esterno, incrementando anche gli scambi commerciali con la città di Lechta» dice tuo padre. «Mi farai da scorta fino a Ione e poi a Gorgis, gli altri della sfera politica andranno invece verso i confini settentrionali della regione.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Farai da scorta a tuo padre fino a Ione e poi a Gorgis.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 (P*: che cosa risponde è del giocatore) [V2 Cap.1 r.34-35]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F01x0"
+    ],
+    "risoluzione": [
+     "F01d1"
+    ]
+   },
+   "required_beats": [
+    "F01x0",
+    "F01d1"
+   ],
+   "optional_beats": [
+    "F01x1",
+    "F01x2",
+    "F01_ophelia_1",
+    "F01_mors_1",
+    "F01_anastasios_1"
+   ],
+   "riserva_libera": "All'ingresso del Bouleterion nessuno passa, e dalla strada arrivano le voci della manifestazione.",
+   "uscita_fail_forward": "Se la scena si ferma, il consiglio finisce comunque, e tuo padre ti chiede di partire."
+  },
+  "F02": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F02x1",
+     "parte": "Ione, l'hangar 1;",
+     "testo": "Ascoltare il generale Dervhal",
+     "riserva": "Un messaggio sussurrato, e il generale Dervhal interrompe tuo padre: «C'è giunta notizia che alcuni dei nostri carichi diretti a Litice sono stati attaccati, vorrei che ci fossero dei volontari per una squadra di recupero.» La sergente Teersa si offre, e forma la squadra: ci sei anche tu.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Sei nella squadra di recupero della sergente Teersa.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.1 r.95-103]; che lei sia nella squadra è DEDOTTO (è sul cargo nel Cap.2)"
+    },
+    {
+     "id": "F02x2",
+     "parte": "il cargo e la palude di Theime",
+     "testo": "Guardare i resti del cargo disperso",
+     "riserva": "La base cambia la rotta, e il cargo disperso è a nord-ovest. Ha lacerazioni profonde, dall'interno, e accanto c'è un cadavere con ferite da taglio. Su un casco c'è una scritta: «S.A. 42 Schedio Adranes – Progetto Sopiti». «Galanis, Katastasis voi conoscete queste scritte?» chiede Teersa.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Un casco con la scritta «S.A. 42 Schedio Adranes – Progetto Sopiti».",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "F02x1"
+     ],
+     "fonte": "P3 [V2 Cap.2 r.40, r.53-58]; EIDOS.md r.249"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "anastasios",
+     "apertura": "Tuo padre guarda le reclute.",
+     "chiusura": "Tuo padre torna a guardare le reclute.",
+     "riserva_libera": "Tuo padre non risponde.",
+     "argomenti": [
+      {
+       "id": "F02_anastasios_1",
+       "testo": "Ascoltare il discorso di tuo padre",
+       "riserva": "«La nostra è una famiglia, e punta tutto su di voi uomini e donne…» dice tuo padre alle reclute.",
+       "effetti": [],
+       "prima_di": [
+        "F02x1"
+       ],
+       "fonte": "[V2 Cap.1 r.95] (Dervhal lo interrompe)",
+       "scopo": "il nome di famiglia davanti ai soldati"
+      }
+     ]
+    },
+    {
+     "png": "teersa",
+     "apertura": "Teersa ti squadra.",
+     "chiusura": "Teersa torna a guardare fuori.",
+     "riserva_libera": "Teersa non ti risponde.",
+     "argomenti": [
+      {
+       "id": "F02_teersa_1",
+       "testo": "Rispondere a Teersa in disparte",
+       "riserva": "«Oltre a te e a tuo padre si sono mossi altri esponenti politici verso il fronte?» chiede Teersa.",
+       "effetti": [],
+       "richiede": [
+        "F02x1"
+       ],
+       "fonte": "[V2 Cap.2 r.13-16]",
+       "scopo": "Teersa guarda la politica"
+      },
+      {
+       "id": "F02_teersa_2",
+       "testo": "Chiedere a Teersa della missione",
+       "riserva": "«Voglio essere franca con voi, là fuori durante una caccia diventa un inferno, perciò il primo che mette in discussione un mio ordine può ritenersi fortunato a raggiungere i propri avi» dice Teersa.",
+       "effetti": [],
+       "richiede": [
+        "F02x1"
+       ],
+       "fonte": "[V2 Cap.2 r.6]",
+       "scopo": "chi è Teersa"
+      }
+     ]
+    },
+    {
+     "png": "afelis",
+     "apertura": "Afelis ti guarda con curiosità.",
+     "chiusura": "Afelis torna a controllare la sua armatura.",
+     "riserva_libera": "Afelis si stringe nelle spalle.",
+     "argomenti": [
+      {
+       "id": "F02_afelis_1",
+       "testo": "Parlare con Afelis",
+       "riserva": "«Tu sei {il figlio maggiore|la figlia maggiore|il primo dei figli} di Anastasios, il mecenate di Menessa?» chiede Afelis. «Hai mai visto Lechta?»",
+       "effetti": [],
+       "richiede": [
+        "F02x1"
+       ],
+       "fonte": "[V2 Cap.2 r.24-25]",
+       "scopo": "il peso del nome di famiglia"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nella palude Teersa spruzza il gas dell'armatura: «Siamo troppo scoperti, questo coprirà il nostro odore e le nostre tracce termiche.» Fra due epizi dilaniati c'è un soldato epizio ferito, l'unico ancora cosciente.",
+    "fonte": "P4 [V2 Cap.2 r.143-153]",
+    "esplora": [
+     {
+      "id": "F02d1",
+      "parte": "il cargo e la palude di Theime",
+      "testo": "Far parlare il soldato ferito",
+      "riserva": "«Trasportavamo un civile, non posso dirvi altro, ho ordine di non parlare con nessuno al di fuori della mia squadra» dice il soldato. Poi cede: «Eravamo in 4 durante l'inseguimento, c'è stato un attacco da parte di un mostro, il medico è morto subito.» Da più avanti arrivano le grida dei dispersi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Il soldato ferito trasportava un civile; un mostro li ha attaccati.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P4 e L (P*: come lo fa parlare è del giocatore) [V2 Cap.2 r.153-162, r.177]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F02x1",
+     "F02x2"
+    ],
+    "risoluzione": [
+     "F02d1"
+    ]
+   },
+   "required_beats": [
+    "F02x1",
+    "F02x2",
+    "F02d1"
+   ],
+   "optional_beats": [
+    "F02_anastasios_1",
+    "F02_teersa_1",
+    "F02_teersa_2",
+    "F02_afelis_1"
+   ],
+   "riserva_libera": "La squadra di Teersa avanza in silenzio: nessuno discute un suo ordine.",
+   "uscita_fail_forward": "Se la scena si ferma, i mostri della palude attaccano comunque, e Teersa ordina la ritirata."
+  },
+  "F03": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F03x1",
+     "testo": "Ascoltare il rapporto di Teersa",
+     "riserva": "Teersa guarda il soldato ferito, che non ce l'ha fatta: «Stupido stronzo, avrebbe dovuto parlare invece di morire come un coglione, ora abbiamo soltanto della biomassa.» Poi si volta verso la squadra: «Il nostro rapporto sarà questo: abbiamo seguito le tracce fino alla palude, non abbiamo trovato più tracce né superstiti, il fuggitivo è sicuramente morto all'interno dell'area.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Teersa impone a tutti lo stesso rapporto.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.3 r.72-73, r.83]"
+    },
+    {
+     "id": "F03x2",
+     "testo": "Portare i cadaveri al piano −3",
+     "riserva": "Con tre soldati accompagni i cadaveri al laboratorio, al piano −3. Afelis scende con il primo ascensore, e quando arrivi giù non lo trovi più. Nelle camere ci sono dei serbatoi, simili a quelli del carburante.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Al piano −3 ci sono serbatoi simili a quelli del carburante.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "F03x1"
+     ],
+     "fonte": "P2 (P*: è un ordine, come ci va è suo) [V2 Cap.3 r.88-93]"
+    },
+    {
+     "id": "F03x3",
+     "testo": "Allenarti con il bastone",
+     "riserva": "Ti alleni con un bastone lungo fino allo sfinimento. Al terzo colpo ti fermi: è come se lo stessi dando con un terzo braccio, e lo senti come un arto che non c'è.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Allenandoti senti un terzo braccio, come un arto fantasma.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "F03d1"
+     ],
+     "fonte": "[V2 Cap.4 r.5-12]; EIDOS.md r.248",
+     "scopo": "il corpo che cambia"
+    },
+    {
+     "id": "F03x4",
+     "testo": "Passare davanti ai dormitori",
+     "riserva": "Davanti ai dormitori Natalie provoca una recluta: «Voi principini vi divertite sempre a dimostrare la vostra supremazia pure qua? Tse proprio come quella stronzetta dei Katastasis.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "F03d1"
+     ],
+     "fonte": "[V2 Cap.4 r.25-28] (nella fonte lo dice a [Dikaios], che lo schema non mette in questa scena)",
+     "scopo": "l'invidia verso i Katastasis; Natalie torna nelle scene 20 e 21"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "teersa",
+     "apertura": "Teersa ti guarda.",
+     "chiusura": "Teersa torna dalla squadra.",
+     "riserva_libera": "Teersa non ti risponde.",
+     "argomenti": [
+      {
+       "id": "F03_teersa_1",
+       "testo": "Chiedere a Teersa di tuo padre",
+       "riserva": "«Ah, se ti interessa ho saputo che tuo padre non ha avuto problemi durante lo spostamento a Menhi» dice Teersa. «Abbiamo tutti una famiglia incasinata nonostante il lusso in cui viviamo.»",
+       "effetti": [],
+       "richiede": [
+        "F03d1"
+       ],
+       "fonte": "[V2 Cap.4 r.19-20]",
+       "scopo": "la guerra fra famiglie ricche (EIDOS.md r.267)"
+      }
+     ]
+    },
+    {
+     "png": "mors",
+     "apertura": "Mors Tritos ti osserva.",
+     "chiusura": "Mors Tritos ti indica gli ascensori.",
+     "riserva_libera": "«Glielo devo per caso ripetere?» dice Mors.",
+     "argomenti": [
+      {
+       "id": "F03_mors_1",
+       "testo": "Ascoltare che cosa dice Mors di te",
+       "riserva": "«La vedo in forma, ha proprio un bell'aspetto sa?» dice Mors. Poi ti guarda negli occhi: «Mi dispiace ma non potrei mai, il colore dei suoi occhi non mi aggrada, io amo le colorazioni tendenti all'azzurro.»",
+       "effetti": [],
+       "richiede": [
+        "F03x2"
+       ],
+       "fonte": "[V2 Cap.3 r.97-98]",
+       "scopo": "che cosa vede Mors nei suoi occhi (R: il nome nella 15, chi era nella 21)"
+      }
+     ]
+    },
+    {
+     "png": "natalie",
+     "apertura": "Natalie ti squadra con disprezzo.",
+     "chiusura": "Natalie ti volta le spalle.",
+     "riserva_libera": "Natalie non ti risponde.",
+     "argomenti": [
+      {
+       "id": "F03_natalie_1",
+       "testo": "Rispondere a Natalie",
+       "riserva": "«Non valete un cazzo, e il mio è solo un promemoria per quando uscirete» dice Natalie.",
+       "effetti": [],
+       "richiede": [
+        "F03x4"
+       ],
+       "fonte": "[V2 Cap.4 r.32] (nella fonte a [Dikaios])",
+       "scopo": "l'invidia verso i Katastasis"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "«{Signor Katastasis|Signorina Katastasis|Katastasis}, cosa la porta qui da noi?» Il capo di ricerca, Mors Tritos, ti ferma. «Ho appena appreso del vostro rientro e del vostro fallimento in missione, la cosa mi ha alquanto indisposto se permette.»",
+    "fonte": "P3 [V2 Cap.3 r.94-95]",
+    "esplora": [
+     {
+      "id": "F03d1",
+      "testo": "Rispondere a Mors",
+      "riserva": "«Ho saputo che suo fratello ha avuto modo anch'egli di collaborare con un Galanis per il recupero di suo padre, l'alto Generale Galanis, sa dovreste imparare da loro due!» dice Mors. Poi la corrente manca per due secondi, e da qualche parte qualcuno urla. «Glielo devo per caso ripetere?» dice Mors, e ti rimanda di sopra.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "figlia_fact_mors"
+       },
+       {
+        "nota": "Al piano −3 la corrente è mancata per due secondi, e qualcuno ha urlato.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P3 (P*: che cosa risponde è del giocatore) e L i serbatoi, la corrente, l'urlo (prima della scena 21) [V2 Cap.3 r.96-102]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F03x1",
+     "F03x2"
+    ],
+    "risoluzione": [
+     "F03d1"
+    ]
+   },
+   "required_beats": [
+    "F03x1",
+    "F03x2",
+    "F03d1"
+   ],
+   "optional_beats": [
+    "F03x3",
+    "F03x4",
+    "F03_teersa_1",
+    "F03_mors_1",
+    "F03_natalie_1"
+   ],
+   "riserva_libera": "Alla base nessuno parla della palude: vale il rapporto di Teersa.",
+   "uscita_fail_forward": "Se la scena si ferma, Teersa ti mette comunque nella squadra che torna nella palude."
+  },
+  "F04": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F04x1",
+     "testo": "Fermarsi al campo di Kendas",
+     "riserva": "«Ci fermeremo in un piccolo campo base tenuto in piedi dal sergente Kendas Horidion, esperto di balistica e di sistemi di difesa, lasciate parlare me, senza preavvisi particolari potrebbe indisporsi» dice Teersa. Il campo è a sei ore di viaggio, con uno scudo e delle camere per togliere l'armatura.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Sosta di due ore al campo del sergente Kendas.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.4 r.87-106]"
+    },
+    {
+     "id": "F04x2",
+     "testo": "Studiare la roccia a valle",
+     "riserva": "La roccia a valle è durissima, ma la sua superficie è corrosa: tu, che di veleni te ne intendi, capisci che è stato il veleno. «Stai facendo intendere che questa sorta di acido, la cui velocità di corrosione è altissima, potrebbe aver corroso un'intera montagna?» chiede Tageti.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Il veleno della palude ha corroso la roccia.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "F04x1"
+     ],
+     "fonte": "[V2 Cap.4 r.228-232]",
+     "scopo": "il suo legame con i veleni (prima della scena 15)"
+    },
+    {
+     "id": "F04x3",
+     "testo": "Guardare Dikaios che resta indietro",
+     "riserva": "La tuta di Dikaios si blocca: non risponde più. «Dikaios muovi quel culo, corri cazzo!» grida Teersa, e non lascia che nessuno torni a prenderlo.",
+     "fase": "resolution",
+     "effetti": [],
+     "fonte": "[V2 Cap.4 r.262-269]",
+     "scopo": "Dikaios come compagno"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "teb",
+     "apertura": "Teb ti si siede accanto.",
+     "chiusura": "Teb torna da Jagon.",
+     "riserva_libera": "Teb si stringe nelle spalle.",
+     "argomenti": [
+      {
+       "id": "F04_teb_1",
+       "testo": "Parlare con Teb al campo",
+       "riserva": "Teb guarda Jagon, che non parla: «Ah, è cocciuto, è troppo abituato a non avere la lingua per parlare anche quando gli ricresce!» Poi si volta verso di te: «La tua famiglia viene da Menessa?» Ti chiede se hai mai visto l'oceano. «Sai io un giorno sogno di andarmene a Lechta, sistemarmi lì e vivere una vita tranquilla.»",
+       "effetti": [],
+       "richiede": [
+        "F04x1"
+       ],
+       "fonte": "[V2 Cap.4 r.108-114]",
+       "scopo": "dare un volto a Teb prima della scena 08"
+      }
+     ]
+    },
+    {
+     "png": "kendas",
+     "apertura": "Kendas vi viene incontro.",
+     "chiusura": "Kendas torna al suo scudo.",
+     "riserva_libera": "Kendas non ti risponde: parla con Teersa.",
+     "argomenti": [
+      {
+       "id": "F04_kendas_1",
+       "testo": "Chiedere a Kendas dello scudo",
+       "riserva": "«Teersa, qual buon vento! Abbiamo finito di testare lo scudo la settimana scorsa, ora sembra reggere lo scambio energetico tra i fusti» dice Kendas. «Ma dimmi cosa ci fate qui, non sapevo del vostro arrivo.»",
+       "effetti": [],
+       "richiede": [
+        "F04x1"
+       ],
+       "fonte": "[V2 Cap.4 r.92]",
+       "scopo": "Kendas, che recupera la squadra nella 08"
+      }
+     ]
+    },
+    {
+     "png": "tageti",
+     "apertura": "Tageti controlla il laboratorio mobile.",
+     "chiusura": "Tageti torna ai suoi campioni.",
+     "riserva_libera": "Tageti non ti risponde: è chino sui campioni.",
+     "argomenti": [
+      {
+       "id": "F04_tageti_1",
+       "testo": "Chiedere a Tageti della sua tuta",
+       "riserva": "«Perché la mia è un prototipo, si chiama Ippocrates II, il modello adatto per i medici soldato» dice Tageti.",
+       "effetti": [],
+       "fonte": "[V2 Cap.4 r.241] (nella fonte lo dice a Teersa)",
+       "scopo": "Tageti come medico della squadra"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nella palude l'acqua porta due sangui diversi, e uno, più grumoso, si muove verso Tageti. Poi dalle pozze escono degli abomini, con stracci blu e membrane d'armatura fuse addosso. «Bene preparatevi ad uccidere questi abomini» dice Teersa. «Sergente è un nuovo nome?» chiede Teb.",
+    "fonte": "P3 [V2 Cap.4 r.224, r.243-249]",
+    "esplora": [
+     {
+      "id": "F04d1",
+      "testo": "Combattere davanti, accanto a Teersa",
+      "riserva": "Combatti davanti con Teersa, mentre Tageti alza i suoi scudi. Gli abomini vi accerchiano, metà della squadra indietreggia, e quelli che vi raggiungono li uccidete; ma dalle pozze ne escono altri, e Teersa ordina la ritirata.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Gli abomini vi accerchiano: Teersa ordina la ritirata.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 (P*: come combatte è del giocatore) [V2 Cap.4 r.252, r.260-272]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F04x1"
+    ],
+    "risoluzione": [
+     "F04d1"
+    ]
+   },
+   "required_beats": [
+    "F04x1",
+    "F04d1"
+   ],
+   "optional_beats": [
+    "F04x2",
+    "F04x3",
+    "F04_teb_1",
+    "F04_kendas_1",
+    "F04_tageti_1"
+   ],
+   "riserva_libera": "Nella palude la squadra si muove in formazione, dietro Teersa.",
+   "uscita_fail_forward": "Se la scena si ferma, gli abomini escono comunque dalle pozze, e Teersa ordina la ritirata."
+  },
+  "F05": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F05x1",
+     "parte": "Il campo base epizio",
+     "testo": "Ascoltare Teersa e Tageti",
+     "riserva": "Tageti vuole un campione puro, preso nel cuore della palude. Teersa lo guarda a lungo: «Fa che ti basti un'ultima uscita o ti giuro che ti faccio diventare una di quelle cose e ti faccio aprire vivo dai tuoi amichetti giù in laboratorio.» Si torna nella palude all'alba.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "All'alba la squadra torna nel cuore della palude per un campione puro.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.5 r.153-161, r.166]"
+    },
+    {
+     "id": "F05x2",
+     "parte": "Il campo base epizio",
+     "testo": "Avvicinarti a Dikaios",
+     "riserva": "Quando Dikaios ti guarda, qualcosa in te scatta: senti salire una rabbia contro di lui che non sai da dove venga. Puoi lasciarla andare, o trattenerla.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Al risveglio di Dikaios ti è salita addosso una rabbia senza motivo.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "[V2 Cap.5 r.149] (nota di gioco: «reazione aggressiva verso di lui»); che cosa ne fa è del giocatore",
+     "scopo": "i nervi che cambiano"
+    },
+    {
+     "id": "F05x3",
+     "parte": "il cuore della palude di Theime, vicino alla luce",
+     "testo": "Guardare la luce da vicino",
+     "riserva": "Ti sporgi oltre le piante rossastre: la luce è intensa, e i rumori della palude intorno a te si fanno piatti, come se fossero lontani.",
+     "fase": "resolution",
+     "effetti": [
+      {
+       "nota": "Hai guardato la luce nel cuore della palude da vicino.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "[V2 Cap.5 r.167-172]",
+     "scopo": "il richiamo dello squarcio, che torna nella scena 07"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "tageti",
+     "apertura": "Tageti prepara le provette.",
+     "chiusura": "Tageti torna alle sue provette.",
+     "riserva_libera": "Tageti non ti risponde: pensa al suo campione.",
+     "argomenti": [
+      {
+       "id": "F05_tageti_1",
+       "testo": "Chiedere a Tageti della luce",
+       "riserva": "«E se fosse qualcosa a noi ignoto, non pensate dovremmo dare un'occhiata» dice Tageti.",
+       "effetti": [],
+       "richiede": [
+        "F05d1"
+       ],
+       "fonte": "[V2 Cap.5 r.217]",
+       "scopo": "Tageti, curioso fino all'imprudenza"
+      }
+     ]
+    },
+    {
+     "png": "jagon",
+     "apertura": "Jagon si guarda intorno.",
+     "chiusura": "Jagon torna a guardare le piante.",
+     "riserva_libera": "Jagon allarga le braccia: non lo sa.",
+     "argomenti": [
+      {
+       "id": "F05_jagon_1",
+       "testo": "Chiedere a Jagon delle piante",
+       "riserva": "«Le piante in questa zona hanno una colorazione più rossastra, sembrano assorbire il sangue e non venirne intaccate» dice Jagon.",
+       "effetti": [],
+       "richiede": [
+        "F05x1"
+       ],
+       "fonte": "[V2 Cap.5 r.169]",
+       "scopo": "le competenze naturalistiche di Jagon"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "All'alba siete nel cuore della palude. Le piante sono più rossastre, i rumori si appiattiscono, e dietro le piante c'è una luce intensa.",
+    "fonte": "P2 [V2 Cap.5 r.167-172]",
+    "esplora": [
+     {
+      "id": "F05d1",
+      "parte": "il cuore della palude di Theime, vicino alla luce",
+      "testo": "Ascoltare che cosa decide Teersa",
+      "riserva": "«Sarà un faro, teniamoci lontani da quella luce, ora non siamo pronti ad approcciare nessuno di ostile, muoviamoci con cautela» dice Teersa, e ordina il rientro.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Teersa chiama la luce «faro» e ordina il rientro.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [V2 Cap.5 r.215-220]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F05x1"
+    ],
+    "risoluzione": [
+     "F05d1"
+    ]
+   },
+   "required_beats": [
+    "F05x1",
+    "F05d1"
+   ],
+   "optional_beats": [
+    "F05x2",
+    "F05x3",
+    "F05_tageti_1",
+    "F05_jagon_1"
+   ],
+   "riserva_libera": "Nella palude la squadra resta in silenzio, con gli occhi sulla luce.",
+   "uscita_fail_forward": "Se la scena si ferma, il sibilo arriva comunque, e le armature si spengono."
+  },
+  "F06": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F06x1",
+     "testo": "Guardare chi vi sorveglia",
+     "riserva": "Vi sorveglia un ragazzo sui ventiquattro anni: ha un fucile diverso dai vostri e un pugnale rudimentale con una pietra luminosa.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Vi sorveglia Hermes, con un fucile diverso da quelli epizi.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.6 r.14-16]; EIDOS.md r.250 («Hermes li sorveglia»)"
+    },
+    {
+     "id": "F06x2",
+     "testo": "Negare le risposte all'ombra",
+     "riserva": "Per ogni risposta che neghi arriva un dolore, come un'unghia strappata. Le ombre si fanno più spesse, il buio ti chiude la gola, e nel buio vedi i volti di tua sorella, di tuo padre, di tua madre e di tuo fratello: «perdente», ti dicono, «{fallito|fallita|un fallimento}».",
+     "fase": "resolution",
+     "effetti": [
+      {
+       "nota": "Nel buio delle ombre hai visto i volti della tua famiglia.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "[V2 Cap.6 r.45-47, r.61]",
+     "scopo": "il prezzo del silenzio"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "guardia_covo",
+     "apertura": "Hermes ti guarda senza abbassare il fucile.",
+     "chiusura": "Hermes torna a guardare la porta.",
+     "riserva_libera": "Hermes non ti risponde.",
+     "argomenti": [
+      {
+       "id": "F06_hermes_1",
+       "testo": "Parlare con il ragazzo di guardia",
+       "riserva": "«Lo sai che vi stanno mentendo vero?» dice Hermes.",
+       "effetti": [],
+       "richiede": [
+        "F06x1"
+       ],
+       "fonte": "[V2 Cap.6 r.18] (nella fonte lo dice a [Dikaios])",
+       "scopo": "i rapitori hanno una loro causa"
+      }
+     ]
+    },
+    {
+     "png": "interrogante_ombre",
+     "apertura": "L'ombra ti aspetta.",
+     "chiusura": "L'ombra tace, e i fuochi crepitano.",
+     "riserva_libera": "L'ombra non ti risponde: fa lei le domande.",
+     "argomenti": [
+      {
+       "id": "F06_erebo_1",
+       "testo": "Rispondere all'ombra su tuo padre",
+       "riserva": "«Pensi che il tuo paparino farebbe uno scambio?» chiede l'ombra.",
+       "effetti": [],
+       "richiede": [
+        "F06d1"
+       ],
+       "fonte": "[V2 Cap.6 r.56]",
+       "scopo": "il peso del nome di famiglia anche qui"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Un'ombra si stacca dalle altre e ti parla con la voce di un uomo: «Sai qual è la cosa divertente? che nonostante i vostri mezzi rimanete comunque ottusi e ciechi.» Poi: «Voglio essere chiaro con te, so chi sei perciò è inutile che fingi.»",
+    "fonte": "P2 [V2 Cap.6 r.44-46]",
+    "esplora": [
+     {
+      "id": "F06d1",
+      "testo": "Ascoltare le domande dell'ombra",
+      "riserva": "L'ombra vuole sapere che cosa facevate nella palude, a che cosa servivano i campioni, che cos'è il prototipo dello scienziato. «Avete preso alcuni dei nostri qualche giorno fa, non abbiamo più loro notizie, sono in mano vostra?» Poi vuole sapere quanti soldati avete: «Sappiamo che conducete degli esperimenti lì, di cosa si tratta?»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "L'ombra chiede dei campioni, dei laboratori e dei compagni presi dagli Epizi.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P3 (P*: rispondere, tacere o mentire è del giocatore) [V2 Cap.6 r.48-60]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F06x1"
+    ],
+    "risoluzione": [
+     "F06d1"
+    ]
+   },
+   "required_beats": [
+    "F06x1",
+    "F06d1"
+   ],
+   "optional_beats": [
+    "F06x2",
+    "F06_hermes_1",
+    "F06_erebo_1"
+   ],
+   "riserva_libera": "Nella stanza di calcestruzzo si sentono solo i fuochi e le ombre che si muovono.",
+   "uscita_fail_forward": "Se la scena si ferma, arriva comunque l'ago dell'iniezione."
+  },
+  "F07": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F07x1",
+     "testo": "Fasciarti piedi e mani con le foglie",
+     "riserva": "Con le foglie larghe della palude ti fasci piedi e mani: è tutto quello che avete per camminare.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Hai fasciato piedi e mani con le foglie della palude.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "[V2 Cap.6 r.109-111]",
+     "scopo": "sopravvivere nudi"
+    },
+    {
+     "id": "F07x2",
+     "testo": "Ascoltare Tageti sulle iniezioni",
+     "riserva": "Tageti si guarda i segni sul braccio: «Quelle di destra sembrano contemporanee, penso che ad occhio e croce abbiamo dalle 6 alle 8 ore.» Jagon fa dei gesti, e Teb traduce: «Dice che siamo almeno ad un raggio di circa trenta o cinquanta chilometri.» Jagon indica la luce. «Bene, andremo al faro» dice Teersa.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Avete dalle 6 alle 8 ore: Teersa decide di andare al faro.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.6 r.112-130]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "agon",
+     "apertura": "Agon vi tiene sotto tiro.",
+     "chiusura": "Agon alza l'arma.",
+     "riserva_libera": "Agon non ti risponde: conta.",
+     "argomenti": [
+      {
+       "id": "F07_agon_1",
+       "testo": "Rispondere ad Agon",
+       "riserva": "«Muovete il culo, inizio a contare e se al dieci siete ancora qui inizio a spararvi alle gambe e vi lascio marcire qua sbranati da quei cosi, conoscete i numeri voi stronzi giusto?» dice Agon. Teersa lo sfida, e Agon la colpisce alla testa.",
+       "effetti": [],
+       "prima_di": [
+        "F07x2"
+       ],
+       "fonte": "[V2 Cap.6 r.100-105]",
+       "scopo": "la minaccia dei rapitori"
+      }
+     ]
+    },
+    {
+     "png": "teb",
+     "apertura": "Teb si tiene il volto.",
+     "chiusura": "Teb abbassa la testa.",
+     "riserva_libera": "Teb non ce la fa a rispondere.",
+     "argomenti": [
+      {
+       "id": "F07_teb_1",
+       "testo": "Chiedere a Teb come sta",
+       "riserva": "«Teersa non so quanto posso reggere in queste condizioni, è meglio se mi lasciate qua» dice Teb. «Tu verrai con noi, sei un membro indispensabile per la squadra» gli risponde Teersa.",
+       "effetti": [],
+       "richiede": [
+        "F07d1"
+       ],
+       "fonte": "[V2 Cap.7 r.71-72]",
+       "scopo": "Teb ferito, prima della scena 08"
+      }
+     ]
+    },
+    {
+     "png": "teersa",
+     "apertura": "Teersa ascolta il terreno.",
+     "chiusura": "Teersa torna ad ascoltare il terreno.",
+     "riserva_libera": "Teersa non ti risponde: ascolta il terreno.",
+     "argomenti": [
+      {
+       "id": "F07_teersa_1",
+       "testo": "Chiedere a Teersa che cosa farete",
+       "riserva": "«So di aver preso scelte sbagliate e che vi ho cacciati in questa situazione, ma noi siamo Epizi» dice Teersa. «E ciò che ci insegna l'aritmi è che ogni cosa è misurabile, ogni cosa è quantificabile.»",
+       "effetti": [],
+       "richiede": [
+        "F07x2"
+       ],
+       "fonte": "[V2 Cap.7 r.88-89]",
+       "scopo": "Teersa e la sua fede"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Tre ore di marcia in silenzio. Teb cade in una pozza, e ne esce con il volto corroso e venature nere. Poi il faro: una nube con un alone blu, uno strappo nella realtà; sotto c'è un albero grande ma basso, con i rami che salgono dentro lo strappo come radici, e le radici a terra che pulsano di rosso. Dallo strappo cadono gocce di sangue, lente.",
+    "fonte": "P3 [V2 Cap.6 r.171-182]",
+    "esplora": [
+     {
+      "id": "F07d1",
+      "testo": "Guardare dentro lo strappo",
+      "riserva": "Le tue mani cambiano. Vomiti qualcosa che sembra veleno, e ricordi che un veleno così ti ha già portato a un passo dalla morte. Un pungiglione alla nuca; il simbolo Uruz; qualcuno piange, e tu accarezzi uno scorpione che ti punge. Tuo fratello ti dice: «questo mondo sarà nostro», poi il suo volto diventa quello di un uomo che non conosci. Dalle tue mani cola sangue; sei sospesa nel cielo, e la pioggia di sangue cade su una montagna; in una folla le persone bevono quella pioggia, e tu stringi un bicchiere d'acqua rossastra. Poi una voce ti chiama: Teersa ti strattona indietro dal bordo di una pozza di sangue, un passo prima che ti inghiotta. «Che cazzo vi prende?»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Sotto lo strappo hai avuto una visione: il veleno, uno scorpione, tuo fratello, la pioggia di sangue.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 [V2 Cap.6 r.207-221] e P5 [V2 Cap.7 r.60-64] (la battuta di Teersa accorciata: senza la forma di genere)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F07x2"
+    ],
+    "risoluzione": [
+     "F07d1"
+    ]
+   },
+   "required_beats": [
+    "F07x2",
+    "F07d1"
+   ],
+   "optional_beats": [
+    "F07x1",
+    "F07_agon_1",
+    "F07_teb_1",
+    "F07_teersa_1"
+   ],
+   "riserva_libera": "Nella palude nessuno parla: Teersa ascolta il terreno, e la squadra la segue.",
+   "uscita_fail_forward": "Se la scena si ferma, la visione arriva comunque, e Teersa ti tira fuori dalla pozza."
+  },
+  "F08": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F08x1",
+     "testo": "Guidare la squadra verso nord",
+     "riserva": "Ti metti in testa, e la squadra ti segue fra le pozze senza fiatare: è la prima volta che ti seguono senza Teersa.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Hai guidato la squadra verso nord.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "prima_di": [
+      "F08x2"
+     ],
+     "fonte": "P1 (P*: come li guida è suo) [V2 Cap.7 r.190-191]",
+     "scopo": "il primo comando: il gruppo la segue"
+    },
+    {
+     "id": "F08x2",
+     "testo": "Aspettare Teersa e Teb",
+     "riserva": "Da dietro arrivano delle urla, poi più niente. Teersa vi raggiunge da sola: «Si è sacrificato.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Teb non è tornato: «Si è sacrificato», dice Teersa.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.7 r.193-201] (solo le urla: schema)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "teersa",
+     "apertura": "Teersa guarda la squadra.",
+     "chiusura": "Teersa torna dalla squadra.",
+     "riserva_libera": "Teersa non ti risponde.",
+     "argomenti": [
+      {
+       "id": "F08_teersa_1",
+       "testo": "Chiedere a Teersa dei rapitori",
+       "riserva": "«Io ho provato a scambiare la mia vita con la vostra, ma avevano già informazioni in merito a voi due quando gli ho parlato» dice Teersa, e guarda te e Dikaios.",
+       "effetti": [],
+       "richiede": [
+        "F08d1"
+       ],
+       "fonte": "[V2 Cap.7 r.278]",
+       "scopo": "il prezzo della missione"
+      }
+     ]
+    },
+    {
+     "png": "kendas",
+     "apertura": "Kendas vi guarda, ancora incredulo.",
+     "chiusura": "Kendas torna al mezzo.",
+     "riserva_libera": "Kendas non ti risponde: parla con Teersa.",
+     "argomenti": [
+      {
+       "id": "F08_kendas_1",
+       "testo": "Chiedere a Kendas del campo",
+       "riserva": "«Che cazzo facevate nudi qua in mezzo?» chiede Kendas, e vi porta al suo campo.",
+       "effetti": [],
+       "richiede": [
+        "F08d1"
+       ],
+       "fonte": "[V2 Cap.7 r.225]",
+       "scopo": "Kendas recupera la squadra"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il campo base è distrutto, lo scudo è andato. Tageti spreme nei cilindri i campioni che restano, e l'antivirus svanisce: le vie respiratorie si chiudono, la testa gira. Teersa alla radio: «Codice NERO! Siamo senza armatura la base è compromessa ti invio le coordinate ma muovi il culo.» Due ore dopo arriva Kendas.",
+    "fonte": "P3 [V2 Cap.7 r.202-231]",
+    "esplora": [
+     {
+      "id": "F08d1",
+      "testo": "Ricordare Teb al campo di Kendas",
+      "riserva": "Al campo di Kendas Teersa ricorda Teb davanti a tutti: «Io mi assumerò le responsabilità del nostro fallimento, se lui è morto è solo causa mia, ma voglio dirvi una cosa, noi quest'oggi abbiamo un'arma contro di loro.» Poi a Tageti: «So che non abbiamo il materiale delle tue ricerche sul campo, ma abbiamo visto che una cura è possibile.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Teersa si prende la colpa della morte di Teb.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 (P*: che cosa dice di Teb è del giocatore) [V2 Cap.7 r.260-276]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F08x2"
+    ],
+    "risoluzione": [
+     "F08d1"
+    ]
+   },
+   "required_beats": [
+    "F08x2",
+    "F08d1"
+   ],
+   "optional_beats": [
+    "F08x1",
+    "F08_teersa_1",
+    "F08_kendas_1"
+   ],
+   "riserva_libera": "La squadra cammina senza armature, e nessuno nomina Teb.",
+   "uscita_fail_forward": "Se la scena si ferma, Kendas vi porta comunque al suo campo, dove ci sono due prigioniere chorisfos."
+  },
+  "F09": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F09x1",
+     "testo": "Interrogare le prigioniere",
+     "riserva": "La più giovane alza gli occhi, verso Teersa: «Io… il mio nome è Ktara…» L'altra, dai capelli rossi, la fulmina: «Non dire nulla.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Le prigioniere si chiamano Ktara e Lida.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 e L (P*: come interroga è del giocatore) [V2 Cap.7 r.329-354]",
+     "scopo": "Teersa la mette alla prova"
+    },
+    {
+     "id": "F09x2",
+     "testo": "Fare quello che ti chiede il cenno di Teersa",
+     "riserva": "Teersa ti fa un cenno. Prendi le tronchesi, e strappi un dito intero a Lida.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "F09x1"
+     ],
+     "prima_di": [
+      "F09x3"
+     ],
+     "fonte": "[V2 Cap.7 r.348-351] (nella fonte lo fa; se il giocatore fa altro, Ktara parla comunque: schema, PROPOSTA)",
+     "scopo": "il prezzo dell'interrogatorio"
+    },
+    {
+     "id": "F09x3",
+     "testo": "Ascoltare Ktara",
+     "riserva": "«Vi dirò tutto, ma voglio essere dei vostri, io voglio vivere» dice Ktara a Teersa. «Dovevamo prendere informazioni in merito ai vostri esperimenti, come quello di quel ragazzo che vi è scappato qualche giorno fa.» «Lurida traditrice» le dice Lida. «Ok ragazzina, dimostralo» dice Teersa, e le dà il coltello. Ktara canta piano: «Io vivo nel cambiamento, cambio forma, mi adatto e sopravvivo, da goccia a vapore, da solida a liquida, io sono ciò che, in questo momento, l'arkè ha scelto per me.» Poi accoltella Lida.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Ktara ha tradito la sua gente e ha accoltellato Lida.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "richiede": [
+      "F09x1"
+     ],
+     "fonte": "P2 [V2 Cap.7 r.355-370]; EIDOS.md r.251"
+    },
+    {
+     "id": "F09x4",
+     "testo": "Prendere in consegna Ktara",
+     "riserva": "«Ti farò parlare con il Tenente Fhar, deciderà lui della tua vita, se ci darai altre informazioni importanti forse avrai anche modo di guadagnarti il tuo posto fra noi» dice Teersa a Ktara. Poi lascia lei a te, da sorvegliare.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Teersa ti ha lasciato Ktara da sorvegliare.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "richiede": [
+      "F09x3"
+     ],
+     "fonte": "P3 [V2 Cap.7 r.373]; [V2 Cap.8 r.114-117]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "ktara",
+     "apertura": "Ktara ti guarda, con il coltello ancora in mano.",
+     "chiusura": "Ktara abbassa gli occhi.",
+     "riserva_libera": "Ktara non ti risponde.",
+     "argomenti": [
+      {
+       "id": "F09_ktara_1",
+       "testo": "Chiedere a Ktara perché lo ha fatto",
+       "riserva": "«Non ho mai amato vivere in quel buco di fogna, voglio essere qualcuno, fare carriera, guadagnarmi una posizione, leggere qualcosa che non sia una serie di cifre davanti al nostro nome» dice Ktara. «Fanculo il fuoco, fanculo il divenire.»",
+       "effetti": [],
+       "richiede": [
+        "F09x3"
+       ],
+       "fonte": "[V2 Cap.7 r.362] (nella fonte lo dice a Teersa)",
+       "scopo": "chi è Ktara, che torna nella 17"
+      }
+     ]
+    },
+    {
+     "png": "dimitri",
+     "apertura": "Dimitri ti tiene vicino.",
+     "chiusura": "Dimitri torna a dare ordini.",
+     "riserva_libera": "Dimitri non risponde: guarda gli altri dall'alto in basso.",
+     "argomenti": [
+      {
+       "id": "F09_dimitri_1",
+       "testo": "Guardare come Dimitri tratta gli altri",
+       "riserva": "Dimitri manda Teersa a rispondere a Mors. A Ktara dice: «Non ti meriti neanche la mia saliva lurida schifosa.» Tageti prova a dire che grazie al fallimento si sono avvicinati alla chiave, e Dimitri lo zittisce: «Rimettiti a parlare dopo un mio ordine e ti do in pasto ai Theras della baia di Menhi.»",
+       "effetti": [],
+       "richiede": [
+        "F09d1"
+       ],
+       "fonte": "[V2 Cap.8 r.227-244]",
+       "scopo": "mostrare chi è Dimitri"
+      }
+     ]
+    },
+    {
+     "png": "poro",
+     "apertura": "Il tenente Poro ti osserva.",
+     "chiusura": "Poro torna da Dimitri.",
+     "riserva_libera": "Poro non ti risponde.",
+     "argomenti": [
+      {
+       "id": "F09_poro_1",
+       "testo": "Parlare con il tenente Poro",
+       "riserva": "Poro ha in mano una boccetta che era tua. «Katastasis, cosa te ne fai di questa boccetta?» chiede, e te la rende; la sua mano è freddissima. «Bel colore degli occhi, papà ti vorrebbe come suo cavaliere probabilmente.»",
+       "effetti": [],
+       "richiede": [
+        "F09d1"
+       ],
+       "fonte": "[V2 Cap.8 r.265-270]",
+       "scopo": "Poro la nota (prima della scena 10)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Arrivano due mezzi. Il primo comandante corre verso di te e grida il tuo nome: è Dimitri, tuo fratello. Il suo abbraccio è forte e caldo; ma toccando l'armatura senti due battiti, come se stessi abbracciando due persone. «Ti riporto a casa, ti hanno fatto del male?»",
+    "fonte": "P4 [V2 Cap.8 r.214-224] (la vicinanza solo come legame di possesso e protezione, EIDOS.md r.256)",
+    "esplora": [
+     {
+      "id": "F09d1",
+      "testo": "Guardare chi è arrivato con Dimitri",
+      "riserva": "Con lui ci sono Matthaios Galanis, che si toglie il casco e sputa addosso a Dikaios — «Fai schifo!» —, e il tenente Poro, albino, dai capelli bianchissimi. «Vi dobbiamo scortare ad Epimno» dice Dimitri a Teersa. «Il generale Galanis, dopo che ha scoperto che il bastardo è vivo, ha tardato ancora le esecuzioni, probabilmente vuole dare spettacolo.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Dimitri vi scorterà a Epimno, con Matthaios e il tenente Poro.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P5 [V2 Cap.8 r.230, r.248-263]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F09x3",
+     "F09x4"
+    ],
+    "risoluzione": [
+     "F09d1"
+    ]
+   },
+   "required_beats": [
+    "F09x1",
+    "F09x3",
+    "F09x4",
+    "F09d1"
+   ],
+   "optional_beats": [
+    "F09x2",
+    "F09_ktara_1",
+    "F09_dimitri_1",
+    "F09_poro_1"
+   ],
+   "riserva_libera": "Nell'officina si sente solo il respiro delle prigioniere.",
+   "uscita_fail_forward": "Se la scena si ferma, Ktara parla comunque, e i mezzi di Epimno arrivano."
+  },
+  "F10": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F10x1",
+     "testo": "Ascoltare tuo fratello in disparte",
+     "riserva": "Dimitri ti porta in un angolo dell'hangar 8, fra le scintille dei tecnici e un rumore di vento sordo, e ti parla all'orecchio: «Il tenente Poro mi ha dato un ordine preciso, mi ha chiesto di condividere l'informazione con una sola persona di cui mi fido, vuole proporre al generale di usare uno o due dei nostri con le armature nemiche per uccidere il principe di Lechta e costringere il loro re ad allearsi con noi.» E poi: «Comunicherò questo in maniera ufficiale a Matthaios e a suo padre come mi ha chiesto il tenente, tu non sai nulla, intesi?» Ti stringe forte. «Solo il sole sarà nostro pari, quella promessa che ti feci a Menessa non l'ho dimenticata. Questo mondo sarà nostro!»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Dimitri ti ha confidato il piano del tenente Poro per Lechta: tu non sai nulla.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 e P3 [V2 Cap.9 r.32-47] (la vicinanza solo come legame di possesso e protezione, EIDOS.md r.256)"
+    },
+    {
+     "id": "F10x2",
+     "testo": "Mettersi sull'attenti all'hangar",
+     "riserva": "«Sull'attenti!» All'ingresso c'è Afelis, la recluta della squadra di Teersa: i capelli sbiancati, gli occhi che diventano rosso sangue. A Matthaios si presenta con il suo grado: tenente della divisione Adranès (Sopiti). Poi guarda Dimitri: «Hai battuto le palpebre almeno 25 volte in un minuto, credo che avrei avuto la possibilità di ucciderti almeno due… anzi tre volte in questo minuto. Sergente si ricordi questo: gli occhi si chiudono solo quando si dorme, o quando si muore.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Afelis, la recluta, è un tenente della divisione Adranès.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "richiede": [
+      "F10x1"
+     ],
+     "fonte": "P4 [V2 Cap.9 r.56-69, r.85-88] (il nome che dice a Matthaios [r.69] arriva con la riserva dell'obiettivo, che scopre la verità)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "dimitri",
+     "apertura": "Dimitri ti tiene vicino.",
+     "chiusura": "Dimitri torna da Matthaios.",
+     "riserva_libera": "Dimitri non risponde: guarda se qualcuno vi osserva.",
+     "argomenti": [
+      {
+       "id": "F10_dimitri_1",
+       "testo": "Chiedere a Dimitri di Matthaios",
+       "riserva": "«Voglio lavorarmi i Galanis, il padre mi ha riempito di elogi e il fratello probabilmente vede in me il fratello che non ha mai avuto» dice Dimitri. «Farò di tutto per avverare il nostro sogno, perciò se in futuro lui sarà un ostacolo lo farò fuori, ma per ora mi serve.» Poi, piano: «Dimmi, ci stanno guardando?»",
+       "effetti": [],
+       "richiede": [
+        "F10x1"
+       ],
+       "fonte": "[V2 Cap.9 r.41, r.48-49]",
+       "scopo": "l'ambizione di Dimitri"
+      }
+     ]
+    },
+    {
+     "png": "teersa",
+     "apertura": "Teersa sta con la sua squadra.",
+     "chiusura": "Teersa torna dai suoi.",
+     "riserva_libera": "Teersa non ti risponde.",
+     "argomenti": [
+      {
+       "id": "F10_teersa_1",
+       "testo": "Guardare Teersa davanti al tenente",
+       "riserva": "«Teersa kynigós, ex sergente della squadra, loro sono i miei sottoposti» dice Teersa al tenente.",
+       "effetti": [],
+       "richiede": [
+        "F10x2"
+       ],
+       "fonte": "[V2 Cap.9 r.60] (il soprannome «Cacciatrice» fra parentesi nella fonte resta fuori)",
+       "scopo": "Teersa non è più sergente"
+      }
+     ]
+    },
+    {
+     "png": "mors",
+     "apertura": "Mors Tritos vi osserva uno per uno.",
+     "chiusura": "Mors torna ai suoi fogli.",
+     "riserva_libera": "Mors sorride, e non ti risponde.",
+     "argomenti": [
+      {
+       "id": "F10_mors_1",
+       "testo": "Guardare Mors mentre parla con Dikaios",
+       "riserva": "«Dikaios, voglio farti una domanda, vedi qualcosa di fianco a me?» chiede Mors. Dikaios non risponde, ma il suo volto lo tradisce. «Ecco, quella è la verità» dice Mors.",
+       "effetti": [],
+       "richiede": [
+        "F10d1"
+       ],
+       "fonte": "[V2 Cap.9 r.191-195] (Dikaios senza battute: è un PG dell'autore)",
+       "scopo": "gli occhi di Dikaios"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Al rapporto ci sono Mors Tritos e il generale Dervhal. Mors ti fissa: «{Ragazzino|Ragazzina|Giovane} so che avete portato un Chorisfos, ma se continui a mentire potrei cambiare idea sul da farsi.»",
+    "fonte": "P5 [V2 Cap.9 r.172-176] (la battuta con la forma di genere)",
+    "esplora": [
+     {
+      "id": "F10d1",
+      "testo": "Rispondere a Mors",
+      "riserva": "Mors ti guarda negli occhi a lungo. «I tuoi occhi non mentono, sono certo che Zoe-le sarà lieto di trascorrere molto tempo con te.» Poi sorride: «Ho conosciuto tua sorella Chloe, per un attimo ho dovuto ricredermi sulle mie parole che ti dissi qualche tempo fa, ma no ora ho compreso che avevo ragione, sei tu {il figlio prediletto|la figlia prediletta|il prediletto dei figli}.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Mors dice che nella tua famiglia sei tu {il prediletto|la prediletta|chi è prediletto}; Zoe-le ti aspetta.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P5 [V2 Cap.9 r.177-178] (EIDOS.md r.249)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F10x1",
+     "F10x2"
+    ],
+    "risoluzione": [
+     "F10d1"
+    ]
+   },
+   "required_beats": [
+    "F10x1",
+    "F10x2",
+    "F10d1"
+   ],
+   "optional_beats": [
+    "F10_dimitri_1",
+    "F10_teersa_1",
+    "F10_mors_1"
+   ],
+   "riserva_libera": "Nell'hangar 8 si sentono solo le scintille dei tecnici e un rumore di vento sordo.",
+   "uscita_fail_forward": "Se la scena si ferma, il rapporto si fa comunque, e Mors ti guarda negli occhi."
+  },
+  "F11": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F11x1",
+     "testo": "Salire sulla «Gela» al porto di Menessa",
+     "riserva": "Al porto Karya ha pronta la nave «Gela»: il carico, i magistrati, trenta uomini di scorta oltre a voi due. «Grazie Karya» dice tuo padre, e poi a voi: deciderete tu e Dimitri il da farsi. «So che Sevastianos vi ha affidato un compito, io sono qui soltanto in veste diplomatica.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Sulla «Gela» il da farsi lo decidete tu e Dimitri: vostro padre è lì solo in veste diplomatica.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.11 r.19-24] (la battuta di Anastasios divisa: il tuo nome resta fuori)"
+    },
+    {
+     "id": "F11x2",
+     "testo": "Sopportare l'armatura in mare",
+     "riserva": "Il viaggio dura un mese, e si parla dell'uragano Shylla che viene dall'isola a sud. Dopo tre settimane con l'armatura addosso stai male: è come se il suo veleno ti desse attimi di febbre e bruciore alle labbra.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "In mare l'armatura ti dà febbre e bruciore alle labbra.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "F11x1"
+     ],
+     "fonte": "[V2 Cap.11 r.90-91]",
+     "scopo": "il corpo che cambia"
+    },
+    {
+     "id": "F11x3",
+     "testo": "Salire in superficie con Dimitri",
+     "riserva": "«Pensavo che stessi meglio, ma mi sembri sotto proprio come quando ti abbiamo ripreso dalla palude» dice Dimitri, e non crede alla tua risposta. Poi ti spiega il piano: «Dobbiamo riuscire a fargli vedere i Chorisfos come minaccia, il nostro dialogo servirà solo a dar peso alle parole che diremo dopo la morte del figlio.» Di notte avviserai al mercato i loro «volontari», con le armature. «Il re sarà accecato dall'odio, a quel punto dobbiamo solo essere dei giusti consiglieri, nostro padre va tagliato fuori da subito per questo, lui mirerà ad unirsi nel cordoglio, noi invece dobbiamo mirare alla sua rabbia.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Dimitri vuole che a Lechta il re veda i Chorisfos come minaccia, e tagliare fuori vostro padre.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "F11x1"
+     ],
+     "fonte": "P3 [V2 Cap.11 r.92-107] (EIDOS.md r.252); «ti fossi ripresa» reso senza la forma di genere («stessi meglio»)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "dimitri",
+     "apertura": "Dimitri ti guarda da vicino.",
+     "chiusura": "Dimitri torna a guardare il mare.",
+     "riserva_libera": "Dimitri non risponde: guarda il radar.",
+     "argomenti": [
+      {
+       "id": "F11_dimitri_1",
+       "testo": "Dire a Dimitri che non è niente",
+       "riserva": "Dimitri non ci crede. «Ha a che fare con gli occhi vero?» chiede piano, e non aspetta la risposta.",
+       "effetti": [],
+       "richiede": [
+        "F11x1"
+       ],
+       "fonte": "[V2 Cap.11 r.94-96]",
+       "scopo": "Dimitri sa e la copre"
+      }
+     ]
+    },
+    {
+     "png": "karya",
+     "apertura": "Karya controlla il carico della «Gela».",
+     "chiusura": "Karya torna al carico.",
+     "riserva_libera": "Karya non ti risponde: ha da fare con il carico.",
+     "argomenti": [
+      {
+       "id": "F11_karya_1",
+       "testo": "Parlare con Karya prima di salpare",
+       "riserva": "Karya chiede un giorno per le visite mediche dell'equipaggio. Mentre parla ti guarda il collo, e si tocca il grembo.",
+       "effetti": [],
+       "prima_di": [
+        "F11x3"
+       ],
+       "fonte": "[V2 Cap.11 r.21-24]",
+       "scopo": "far conoscere Karya, che torna a Newport (scena 26)"
+      }
+     ]
+    },
+    {
+     "png": "anapnos",
+     "apertura": "Il principe Anapnos ti guarda da lontano.",
+     "chiusura": "Anapnos abbassa gli occhi.",
+     "riserva_libera": "Anapnos non ti risponde: arrossisce e guarda altrove.",
+     "argomenti": [
+      {
+       "id": "F11_anapnos_1",
+       "testo": "Avvicinarti al principe Anapnos",
+       "riserva": "Anapnos ti guarda come se avesse paura di te, e insieme non riesce a staccarti gli occhi di dosso. Accanto a te, tuo fratello lo osserva: sembra sempre più deciso.",
+       "effetti": [],
+       "richiede": [
+        "F11d1"
+       ],
+       "fonte": "[V2 Cap.11 r.154]",
+       "scopo": "preparare i matrimoni imposti (EIDOS.md r.267)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Sbarcate a Lechta: il porto è pieno di mercanti e pescatori, il suolo è fatto di pannelli di ferro, e i costruttori allargano la città. Vi viene incontro il capo delle guardie del palazzo, Ikanòs: «Anastasios non vi aspettavamo, cosa fate qui a Lechta?» Vi vuole disarmati; Dimitri ottiene di tenere almeno un coltello. Venti guardie vi scortano, e solo dieci dei vostri vanno a palazzo, su una carrozza trainata da una lucertola gigante.",
+    "fonte": "P4 [V2 Cap.11 r.133-149]",
+    "esplora": [
+     {
+      "id": "F11d1",
+      "testo": "Ascoltare re Hybris al banchetto",
+      "riserva": "A palazzo Dimitri parla prima di vostro padre, e punta subito sull'alleanza. Re Hybris vi offre un banchetto: sa che gli Epizi hanno attaccato il sud, e gli Antarsi sono suoi partner commerciali; se gli Epizi prenderanno i loro mercati, tanto meglio. A lui interessa solo che i mercati restino aperti.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "A re Hybris interessa solo che i mercati restino aperti.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P5 [V2 Cap.11 r.151-153]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F11x1",
+     "F11x3"
+    ],
+    "risoluzione": [
+     "F11d1"
+    ]
+   },
+   "required_beats": [
+    "F11x1",
+    "F11x3",
+    "F11d1"
+   ],
+   "optional_beats": [
+    "F11x2",
+    "F11_dimitri_1",
+    "F11_karya_1",
+    "F11_anapnos_1"
+   ],
+   "riserva_libera": "Il mare è calmo; da qualche parte, a sud, si parla di un uragano.",
+   "uscita_fail_forward": "Se la scena si ferma, la «Gela» arriva comunque a Lechta, e Dimitri ti spiega il suo piano."
+  },
+  "F12": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F12x1",
+     "testo": "Girare la città con Anapnos",
+     "riserva": "Anapnos ti porta per la città, con Ikanòs alle spalle: un impianto antico, ponti e piazze, una canna di metallo che collega un balcone a una piazza centrale. Ti racconta una leggenda: il primo re drago combatté contro Aima, si fece una famiglia altrove e tornò senza fiamma, e al suo posto fu incoronato il gemello. «Mio padre lo rinominò Imran Drakòn, la fenice spenta.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Anapnos ti ha raccontato la leggenda dei re drago di Lechta.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.12 r.95-107] (Roots of War solo come passato, EIDOS.md r.134)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "anastasios",
+     "apertura": "Tuo padre aspetta la tua risposta.",
+     "chiusura": "Tuo padre torna dal re.",
+     "riserva_libera": "Tuo padre non ti risponde: ti guarda e basta.",
+     "argomenti": [
+      {
+       "id": "F12_anastasios_1",
+       "testo": "Rispondere a tuo padre",
+       "riserva": "Tuo padre ti ascolta fino in fondo, senza dirti se ti crede. Poi vi ricorda di nuovo di non cominciare una guerra in terra neutrale.",
+       "effetti": [],
+       "prima_di": [
+        "F12x1"
+       ],
+       "fonte": "L [V2 Cap.12 r.83-86] (P*: che cosa gli dice è del giocatore)",
+       "scopo": "mentirgli o no"
+      }
+     ]
+    },
+    {
+     "png": "gala",
+     "apertura": "La regina Gàla ti accoglie nella sala principale.",
+     "chiusura": "Gàla torna dal re.",
+     "riserva_libera": "Gàla non ti risponde.",
+     "argomenti": [
+      {
+       "id": "F12_gala_1",
+       "testo": "Salutare la regina Gàla",
+       "riserva": "«Tu devi essere {il figlio|la figlia|il primo dei figli} di Anastasios, mio marito mi ha informato del vostro arrivo» dice Gàla; e non nasconde che il momento che avete scelto per venire è il peggiore.",
+       "effetti": [],
+       "prima_di": [
+        "F12d1"
+       ],
+       "fonte": "[V2 Cap.12 r.87-89]",
+       "scopo": "la corte di Lechta"
+      }
+     ]
+    },
+    {
+     "png": "anapnos",
+     "apertura": "Anapnos guarda il porto orientale.",
+     "chiusura": "Anapnos torna a guardare il porto.",
+     "riserva_libera": "Anapnos non ti risponde: guarda il mare.",
+     "argomenti": [
+      {
+       "id": "F12_anapnos_1",
+       "testo": "Chiedere ad Anapnos della guerra",
+       "riserva": "«L'odio muove la gente oltremare, noi stiamo costruendo un impero grazie al vostro odio» dice Anapnos. «A volte mi soffermo a pensare a tutto ciò e mi chiedo se sia giusto, ma poi osservo queste persone e capisco che sono felici e che in fondo noi lo facciamo anche per loro.»",
+       "effetti": [],
+       "richiede": [
+        "F12x1"
+       ],
+       "fonte": "[V2 Cap.12 r.113]",
+       "scopo": "la guerra vista da fuori (EIDOS.md r.21)"
+      },
+      {
+       "id": "F12_anapnos_2",
+       "testo": "Accettare il dono di Anapnos",
+       "riserva": "Dimitri ottiene per voi un'ultima notte a palazzo. Anapnos ti regala un ciondolo di metallo con una gemma: è fatto con i materiali della cava, e con quelli dei «tuoi odiati Chorisfos». Poi ti dice dov'è la sua stanza: al terzo piano, nel braccio sud. Dimitri stringe un pugno.",
+       "effetti": [
+        {
+         "nota": "Anapnos ti ha regalato un ciondolo; la sua stanza è al terzo piano, nel braccio sud.",
+         "categoria": "indizio"
+        }
+       ],
+       "richiede": [
+        "F12d1"
+       ],
+       "fonte": "[V2 Cap.12 r.275-288]",
+       "scopo": "il legame con Anapnos (prima della scena 13)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Anapnos ottiene che assistiate al rito. In cima al monte, in una grotta illuminata, c'è un punto sospeso da cui esce metallo, o roccia: «È telonio?» chiede tuo padre. La famiglia reale si mette davanti a una luce ciano. Hybris passa al figlio un soffio e le braci: «Ad un re filosofo, il mio respiro sarà sempre con te, presto le mie ceneri saranno le fondamenta di un nuovo e più vasto impero.» Anapnos emette fuoco, e ora ha gli occhi ciano. Gàla gli porge la corona: «Io ti nomino re di Lechta e futuro re degli eporiani, la mia corona da oggi è nel mio cuore, non più sulla mia testa.»",
+    "fonte": "P3 [V2 Cap.12 r.202-227] (EIDOS.md r.252)",
+    "esplora": [
+     {
+      "id": "F12d1",
+      "testo": "Guardare la luce ciano",
+      "riserva": "Davanti alla luce ti prende una sensazione strana: le mani ti brillano, e grondano veleno. Dimitri si mette davanti a te e ti copre, spaventato, e ti chiede di controllarti.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Davanti alla luce ciano le tue mani hanno gocciolato veleno, e Dimitri ti ha coperto.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 [V2 Cap.12 r.228-231]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F12x1"
+    ],
+    "risoluzione": [
+     "F12d1"
+    ]
+   },
+   "required_beats": [
+    "F12x1",
+    "F12d1"
+   ],
+   "optional_beats": [
+    "F12_anastasios_1",
+    "F12_gala_1",
+    "F12_anapnos_1",
+    "F12_anapnos_2"
+   ],
+   "riserva_libera": "Lechta è piena di gente che lavora, e nessuno guarda verso di voi.",
+   "uscita_fail_forward": "Se la scena si ferma, il rito si fa comunque, e davanti alla luce ciano le tue mani gocciolano veleno."
+  },
+  "F13": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F13x1",
+     "testo": "Fermarti con tuo padre nel corridoio",
+     "riserva": "Tuo padre ti ferma nel corridoio del terzo piano, e ti rimprovera: «Nemmeno darvi in pasto ad un'altra famiglia vi cambierebbe, vedete di non rovinare i nostri rapporti con loro, qui ne va della reputazione della nazione.» Poi se ne va verso le sue stanze.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Nel corridoio tuo padre ti ha rimproverato: non dovete rovinare i rapporti con Lechta.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.12 r.296-301]"
+    },
+    {
+     "id": "F13x2",
+     "testo": "Dare il segnale",
+     "riserva": "Dai il segnale. In silenzio i vostri uomini uccidono le guardie del corridoio.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Hai dato tu il segnale.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "richiede": [
+      "F13x1"
+     ],
+     "fonte": "L [V2 Cap.12 r.290-295, r.302] (nella fonte è DEDOTTO che lo dia; se non lo dà, Dimitri agisce lo stesso: schema, PROPOSTA)",
+     "scopo": "la complicità"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "dimitri",
+     "apertura": "Dimitri ti guarda, già con il coltello in mano.",
+     "chiusura": "Dimitri si volta verso la stanza dei sovrani.",
+     "riserva_libera": "Dimitri non risponde: conta i minuti.",
+     "argomenti": [
+      {
+       "id": "F13_dimitri_1",
+       "testo": "Chiedere a Dimitri che cosa succederà",
+       "riserva": "«Lascia a me il lavoro sporco» ripete Dimitri. «Tu limitati a dare il segnale.»",
+       "effetti": [],
+       "prima_di": [
+        "F13d1"
+       ],
+       "fonte": "[V2 Cap.12 r.292]",
+       "scopo": "la complicità"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "I vostri uomini uccidono le guardie in silenzio, ma altre guardie arrivano. Il re esce dalla sua stanza, e il capo delle guardie corre verso la stanza di Hybris. Nella stanza dei sovrani un uomo in tuta chorisfos protesta: «Capitano che diavolo state facendo? Il piano non era questo!» Dimitri lo uccide, e ti fa cenno di uccidere.",
+    "fonte": "P3 [V2 Cap.12 r.302-311]",
+    "esplora": [
+     {
+      "id": "F13d1",
+      "testo": "Entrare nella stanza dei sovrani",
+      "riserva": "Entri. Alle tue spalle arriva Ikanòs, il capo delle guardie, con un coltello già in mano.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nella stanza dei sovrani Ikanòs ti è addosso con un coltello.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 [V2 Cap.12 r.312-313]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F13x1"
+    ],
+    "risoluzione": [
+     "F13d1"
+    ]
+   },
+   "required_beats": [
+    "F13x1",
+    "F13d1"
+   ],
+   "optional_beats": [
+    "F13x2",
+    "F13_dimitri_1"
+   ],
+   "riserva_libera": "Nel palazzo di Lechta è notte, e nei corridoi si sentono solo i passi delle guardie.",
+   "uscita_fail_forward": "Se la scena si ferma, Dimitri grida che dei traditori chorisfos hanno ucciso i genitori del re, tu perdi coscienza, e al risveglio il nuovo re vuole sapere che cosa è successo."
+  },
+  "F14": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F14x1",
+     "testo": "Ascoltare tuo fratello rispondere a vostro padre",
+     "riserva": "«Chloe ha soltanto 18 anni padre, non è una merce che potete barattare con il primo schifoso che può concedervi potere» dice Dimitri. Tuo padre non si scompone: «Perciò asciugatevi le lacrime a vicenda quest'ultima notte e non riaprite mai questo discorso in mia presenza.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Tuo padre ha deciso: Dimitri sposerà Ophelia Galanis, tu il re di Lechta, Chloe Eli Dikastis.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.13 r.107, r.113]"
+    },
+    {
+     "id": "F14x2",
+     "testo": "Tornare a casa Katastasis",
+     "riserva": "A casa vi aspetta il generale Sevastianos con alcuni Adranès: soddisfatto, vi lascia liberi per qualche giorno. Chloe ti dà due lettere di Jagon. Nella prima c'è scritto: «Quel giorno ci ha cambiati, ma ci ha anche avvicinati. L'unica cosa che so ora è che non voglio perdere i pochi legami rimasti.» Nella seconda: «Ho visto la potenza dei loro colpi, da Critto verso e oltre Antarsia ora il cielo è stato squarciato in due e l'aria è respirabile.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Chloe ti ha dato due lettere di Jagon.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "F14x1"
+     ],
+     "fonte": "P3 [V2 Cap.13 r.129-144]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "anastasios",
+     "apertura": "Tuo padre ti guarda dall'alto.",
+     "chiusura": "Tuo padre torna sul ponte.",
+     "riserva_libera": "Tuo padre non ti risponde: ha già deciso.",
+     "argomenti": [
+      {
+       "id": "F14_anastasios_1",
+       "testo": "Protestare con tuo padre",
+       "riserva": "Tuo padre ti chiama con il tuo nome intero, e non cambia idea: il discorso è chiuso.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "anastasios",
+          "delta": -1
+         }
+        }
+       ],
+       "prima_di": [
+        "F14x2"
+       ],
+       "fonte": "L [V2 Cap.13 r.100-114] (nella fonte, se protesta, lui la chiama con il nome intero; il nome resta fuori)",
+       "scopo": "i matrimoni imposti (EIDOS.md r.267)"
+      }
+     ]
+    },
+    {
+     "png": "zoele",
+     "apertura": "Zoe-le ti osserva dal bordo della vasca.",
+     "chiusura": "Zoe-le torna a guardare l'acqua.",
+     "riserva_libera": "Zoe-le sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "F14_zoele_1",
+       "testo": "Ascoltare Zoe-le parlare d'amore",
+       "riserva": "«Hai mai amato qualcuno talmente tanto alla follia da pensare di aspettarlo anche oltre la morte?» ti chiede Zoe-le. Lui, dice, ha amato un visionario.",
+       "effetti": [],
+       "richiede": [
+        "F14d1"
+       ],
+       "fonte": "L [V2 Cap.14 r.46-50] (il nome resta fuori: parola riservata fino alla 18)",
+       "scopo": "far sentire chi Zoe-le aspetta senza dire chi è"
+      }
+     ]
+    },
+    {
+     "png": "dimitri",
+     "apertura": "Dimitri si chiude ad addestrarsi, e ti fa entrare.",
+     "chiusura": "Dimitri torna ad addestrarsi.",
+     "riserva_libera": "Dimitri non risponde: si allena.",
+     "argomenti": [
+      {
+       "id": "F14_dimitri_1",
+       "testo": "Chiedere a Dimitri che cosa farà adesso",
+       "riserva": "«Magistrati, giornali, forze armate e commercio, se riusciamo a controllare questi avremo il controllo di metà nazione» dice Dimitri, «ma per farlo dovremo scendere a patti con molte persone.»",
+       "effetti": [],
+       "richiede": [
+        "F14x2"
+       ],
+       "fonte": "L [V2 Cap.14 r.184-195] (solo come legame di possesso e protezione, EIDOS.md r.256: la scena del coltello resta fuori)",
+       "scopo": "l'ambizione di Dimitri"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Due Adranès ti vengono a prendere con un'auto di lusso: Kryno, S.A. 001, pallida, con gli occhi rossi che brillano di ciano, che si muove come un rettile; e Spitha, S.A. 211, con la tuta S.A. Dal finestrino vedi una manifestazione repressa. «Presto non sarà più necessario lottare per le nostre idee» dice Spitha, «quando tornerà l'essere umano diventerà più vero.» Vi fermate alla villa di Zoe-le Tritos.",
+    "fonte": "P4 [V2 Cap.14 r.18-22] (la battuta di Spitha accorciata: chi tornerà non si spiega, Alexander dalla 18)",
+    "esplora": [
+     {
+      "id": "F14d1",
+      "testo": "Ascoltare la proposta di Zoe-le",
+      "riserva": "Zoe-le si muove in modo forzato, a tratti con posture femminili. Ti fa entrare in una vasca e ti mette al polso un bracciale di metallo con delle spie, che diventano verdi. «Mio fratello avrebbe bisogno di un generale per la squadra Adranès, pensavo che per un primo periodo potessimo fare il suo nome» dice. «Fisicamente è in grado di far parte degli Adranès, i suoi occhi non mentono, ma ora il suo problema è la mente… le propongo un accordo, se lei accetta noi la addestreremo con un nuovo metodo di potenziamento mentale.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Zoe-le ti propone di guidare gli Adranès come generale.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P5 [V2 Cap.14 r.22-44] (EIDOS.md r.253; le battute accorciate)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F14x1",
+     "F14x2"
+    ],
+    "risoluzione": [
+     "F14d1"
+    ]
+   },
+   "required_beats": [
+    "F14x1",
+    "F14x2",
+    "F14d1"
+   ],
+   "optional_beats": [
+    "F14_anastasios_1",
+    "F14_zoele_1",
+    "F14_dimitri_1"
+   ],
+   "riserva_libera": "A Menessa la casa dei Katastasis è silenziosa, e tua madre è fuori per lavoro.",
+   "uscita_fail_forward": "Se la scena si ferma, Kryno e Spitha ti vengono a prendere comunque, e Zoe-le ti fa la sua proposta."
+  },
+  "F15": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F15x1",
+     "testo": "Raccontare Lechta nello studio di Sevastianos",
+     "riserva": "Ophelia vi accoglie. Nello studio ci sono Sevastianos, Matthaios, Mors, il tenente Poro e Zoe-le. «Tu parlerai e dirai come sono andati i fatti, noi ti supporteremo, dalla tua dichiarazione dipenderà le sorti delle persone in quella stanza» dice Sevastianos. Quando hai finito, decide: «Bene, possiamo approfittare dell'incontro per uccidere i loro generali, il re Anapnos ha chiesto che si invitino le alte cariche, verrà anche il nostro capo di stato Eirchorst.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Sevastianos vuole usare l'incontro di Lechta per uccidere i generali chorisfos.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 (P*: il racconto di Lechta è del giocatore) [V2 Cap.15 r.115-136] (la battuta di Sevastianos accorciata)"
+    },
+    {
+     "id": "F15x2",
+     "testo": "Seguire Mors in disparte",
+     "riserva": "«Domani la farò venire a prendere per un assaggio del potere che possiamo offrirle se accetta» dice Mors. «Il signor Galanis ha già puntato su un cavallo vincente, noi abbiamo lei. Le daremo gli strumenti per diventare il soldato più capace e cosciente, che dico soldato… Una dea.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Mors ti farà venire a prendere domani: vuole fare di te «una dea».",
+       "categoria": "cambiamento"
+      }
+     ],
+     "richiede": [
+      "F15x1"
+     ],
+     "fonte": "P2 [V2 Cap.15 r.141-144]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "zoele",
+     "apertura": "Zoe-le ti guarda, divertito.",
+     "chiusura": "Zoe-le torna a guardare Sevastianos.",
+     "riserva_libera": "Zoe-le sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "F15_zoele_1",
+       "testo": "Ascoltare Zoe-le sul re di Lechta",
+       "riserva": "«No ragazzo, molto probabilmente lui ora vive una turbe adolescenziale e per non sporcarsi le mani vuole che siamo noi a compiere il lavoro per lui» dice Zoe-le a Dimitri. «Se vuole una vendetta che abbia il coraggio di prendersela con le sue mani.» Poi guarda te: «Non concorda?»",
+       "effetti": [],
+       "richiede": [
+        "F15x1"
+       ],
+       "prima_di": [
+        "F15d1"
+       ],
+       "fonte": "[V2 Cap.15 r.139] (senza il tuo nome)",
+       "scopo": "Zoe-le la protegge"
+      }
+     ]
+    },
+    {
+     "png": "dimitri",
+     "apertura": "Dimitri ti prende da parte.",
+     "chiusura": "Dimitri ti lascia andare.",
+     "riserva_libera": "Dimitri non risponde.",
+     "argomenti": [
+      {
+       "id": "F15_dimitri_1",
+       "testo": "Chiedere a Dimitri di Lechta",
+       "riserva": "«Cerca di {stare attento|stare attenta|fare attenzione} a Lechta, Galanis vorrà pararsi il culo ma se concedesse te facilmente si mostrerebbe debole» dice Dimitri. «È possibile che i Chorisfos vi attacchino perciò portati qualcuno di fidato che conosci se puoi.»",
+       "effetti": [],
+       "richiede": [
+        "F15x2"
+       ],
+       "prima_di": [
+        "F15d1"
+       ],
+       "fonte": "L [V2 Cap.15 r.169] (solo come legame di possesso e protezione, EIDOS.md r.256: la scena del coltello resta fuori)",
+       "scopo": "preparare l'incontro di Lechta (16)"
+      }
+     ]
+    },
+    {
+     "png": "matthaios",
+     "apertura": "Matthaios ti aspetta all'uscita del teatro.",
+     "chiusura": "Matthaios se ne va senza salutare.",
+     "riserva_libera": "Matthaios non ti risponde: è ancora arrabbiato.",
+     "argomenti": [
+      {
+       "id": "F15_matthaios_1",
+       "testo": "Andare a teatro con Matthaios",
+       "riserva": "Matthaios ti porta a un concerto privato. «I numeri sono dalla nostra ultimamente» dice; poi, piano piano, viene fuori la sua rabbia: contro il fratello, e contro la madre.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "matthaios",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "F15d1"
+       ],
+       "fonte": "L [V2 Cap.16 r.136-142] (senza il tuo nome)",
+       "scopo": "Matthaios, che dopo diventa alleato (scene 23-30)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Al mattino gli uomini della S.A. ti aspettano davanti a casa: Ktara ridacchia e ti insulta, finché Tageti la zittisce. Chloe esce dalla sua stanza: «Che succede?» Ti portano in una sala con una sedia e dei cilindri, e ti attaccano una flebo con un liquido simile a quello dei fusti. «Inizio procedura S.I.D.D. moderata» dice Mors.",
+    "fonte": "P3 [V2 Cap.15 r.190-197] (la battuta di Chloe senza il tuo nome)",
+    "esplora": [
+     {
+      "id": "F15d1",
+      "testo": "Reggere la procedura",
+      "riserva": "Rivedi la palude; i muscoli ti si ingrossano, gli occhi ti brillano. Il tuo corpo secerne acido, e le gocce rilasciano gas. Un inserviente viene a sedarti: lo afferri, e lo senti spegnersi fra le tue mani. «Dopo di te manca solo da trovare il quarto cavaliere» dice Mors. «Bentornato su questo mondo fratello Pain.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nella procedura il tuo corpo ha secreto acido e gas, e un inserviente è morto; Mors ti ha chiamato «fratello Pain».",
+        "categoria": "cambiamento"
+       },
+       {
+        "scopri": "figlia_fact_pain"
+       }
+      ],
+      "fonte": "P3 e P4 [V2 Cap.15 r.195-203] (EIDOS.md r.254; il gesto resta del giocatore, il fatto accade: schema)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F15x1",
+     "F15x2"
+    ],
+    "risoluzione": [
+     "F15d1"
+    ]
+   },
+   "required_beats": [
+    "F15x1",
+    "F15x2",
+    "F15d1"
+   ],
+   "optional_beats": [
+    "F15_zoele_1",
+    "F15_dimitri_1",
+    "F15_matthaios_1"
+   ],
+   "riserva_libera": "A casa Galanis si parla piano, e tutti guardano il generale.",
+   "uscita_fail_forward": "Se la scena si ferma, gli uomini della S.A. ti portano comunque in laboratorio, e la procedura comincia."
+  },
+  "F16": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F16x1",
+     "testo": "Addestrarti con Spitha",
+     "riserva": "Spitha è veloce e poco potente, e scarica elettricità a terra; tu hai un tridente, e una coda di metallo che si muove con l'arkè. Distruggete la sala. Per un attimo vedi un laboratorio e una ragazza bionda che strappa l'anima agli inservienti e libera Spitha: «Fratello andiamo, Aima è ancora rinchiuso.» Poi Spitha sviene. Quando si riprende ti chiama «Madre»: «Tu hai il Pònos, è adatto ad uccidere persone con il Keravnos come me.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Spitha dice che hai il Pònos, e ti chiama «Madre».",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.17 r.113-130]"
+    },
+    {
+     "id": "F16x2",
+     "testo": "Ascoltare Chloe sul discorso",
+     "riserva": "Chloe legge il tuo discorso. «Se vuoi convincerli parla come loro, non come noi» dice. «Puoi odiarmi, puoi maltrattarmi, ma la realtà è che io ti voglio bene, perciò permettiti anche tu di voler bene a qualcun altro oltre a Dimitri.»",
+     "fase": "exploration",
+     "effetti": [],
+     "prima_di": [
+      "F16x1"
+     ],
+     "fonte": "L [V2 Cap.17 r.12-17] (la battuta accorciata: senza il tuo nome e senza le forme di genere)",
+     "scopo": "la sorella che la conosce"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "kasimir",
+     "apertura": "Kasimir, il tuo vecchio maestro di tridente e rete, passeggia con te.",
+     "chiusura": "Kasimir ti lascia andare.",
+     "riserva_libera": "Kasimir non ti risponde: pensa a suo fratello.",
+     "argomenti": [
+      {
+       "id": "F16_kasimir_1",
+       "testo": "Ascoltare Kasimir",
+       "riserva": "Kasimir ti parla del tridente, della rete e di suo fratello morto. «Se non te la senti non scendere in battaglia, saresti solo inutile, pensa a questa frase attentamente.»",
+       "effetti": [],
+       "prima_di": [
+        "F16x1"
+       ],
+       "fonte": "L [V2 Cap.17 r.18-28]",
+       "scopo": "preparare chi a Lechta bada a Chloe"
+      }
+     ]
+    },
+    {
+     "png": "afelis",
+     "apertura": "Spitha è dietro di te, pronto.",
+     "chiusura": "Spitha resta immobile.",
+     "riserva_libera": "Spitha non ti risponde: aspetta il tuo ordine.",
+     "argomenti": [
+      {
+       "id": "F16_spitha_1",
+       "testo": "Guardare Spitha quando Sevastianos dà l'ordine",
+       "riserva": "Sevastianos ordina a Spitha di attaccare Hope. Spitha non si muove: aspetta il tuo ordine.",
+       "effetti": [],
+       "richiede": [
+        "F16d1"
+       ],
+       "fonte": "L [V2 Cap.17 r.239-243]",
+       "scopo": "gli Adranès obbediscono a lei"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nella sala dell'incontro di Lechta ci sono Anapnos e Noga, i generali chorisfos, fra cui Pagonia, cieca, e due donne in nero. Il re impone un brindisi: «È una precauzione per voi stessi, e per me ovviamente, se userete l'arkè il veleno contenuto all'interno vi ucciderà nel giro di tre minuti.»",
+    "fonte": "P3 [V2 Cap.17 r.198-215] (EIDOS.md r.255)",
+    "esplora": [
+     {
+      "id": "F16d1",
+      "testo": "Prendere la parola",
+      "riserva": "Sevastianos ti dà la parola, e tu racconti la tua versione. Una delle donne in nero, Hope, ti investe di domande: «Dimmi un po' sei qui per loro o per la patria? Tu qua respiri, perché respiri? Perché vi fanno credere che oltre le vostre cupole ci sia solo morte? Perché portate la morte all'esterno? Datti una risposta a queste domande.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "All'incontro hai raccontato la tua versione, e Hope ti ha attaccato a parole.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 (P*: la versione è sua) [V2 Cap.17 r.216-238]"
+     },
+     {
+      "id": "F16d2",
+      "testo": "Ascoltare la decisione del re",
+      "riserva": "Anapnos blocca i commerci. «Ai colpevoli concedo un Dazio maggiorato, e pretendo la testa di chi ha orchestrato la cosa, che sia Chorisfos, Epizio o Antarsi dovrete presentarvi per costituirvi.» Concede quindici minuti.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Anapnos ha bloccato i commerci: vuole il colpevole della morte dei suoi genitori.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "F16d1"
+      ],
+      "fonte": "P5 [V2 Cap.17 r.241-243]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F16x1"
+    ],
+    "risoluzione": [
+     "F16d1",
+     "F16d2"
+    ]
+   },
+   "required_beats": [
+    "F16x1",
+    "F16d1",
+    "F16d2"
+   ],
+   "optional_beats": [
+    "F16x2",
+    "F16_kasimir_1",
+    "F16_spitha_1"
+   ],
+   "riserva_libera": "Nella sala di Lechta nessuno tocca il vino prima del re.",
+   "uscita_fail_forward": "Se la scena si ferma, la sala prende fuoco comunque, Sevastianos muore fra le fiamme, e Zoe-le ti copre davanti al re."
+  },
+  "F17": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F17x1",
+     "testo": "Dare la notizia di Sevastianos",
+     "riserva": "Dai la notizia. Dimitri ti guarda con un'intesa che nessun altro vede. «Da quando abbiamo iniziato a ridurci in questo modo?» dice Ophelia, e va a dirlo alle sorelle e a Matthaios.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "A casa Galanis sanno della morte di Sevastianos.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 (P*: come lo dice è suo) [V2 Cap.19 r.45-48]"
+    },
+    {
+     "id": "F17x2",
+     "testo": "Ascoltare tuo fratello",
+     "riserva": "«Qualcuno sta agendo in parallelo a noi, ora mi converrà mettere sotto protezione il mio nuovo amico» dice Dimitri. «Devo scoprire chi sta agendo così, ma soprattutto dobbiamo essere capaci di cogliere l'attimo.» Ha messo sotto indagine Mors e Zoe-le, per uso improprio delle strutture militari e per gli studi sui soldati caduti. E non gli piace che tu giri con quel soldato della S.A.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Dimitri ha messo sotto indagine Mors e Zoe-le.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "F17x1"
+     ],
+     "fonte": "P2 [V2 Cap.19 r.56-59]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "jagon",
+     "apertura": "Jagon ti aspetta a Menessa, scontento.",
+     "chiusura": "Jagon abbassa gli occhi.",
+     "riserva_libera": "Jagon non risponde: fa un gesto, e aspetta.",
+     "argomenti": [
+      {
+       "id": "F17_jagon_1",
+       "testo": "Portare Jagon a casa tua",
+       "riserva": "Jagon è scontento di essere stato costretto a restare, ma ti ringrazia di averlo tolto dal fronte. Vi avvicinate, e lo porti a casa tua.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "jagon",
+          "delta": 1
+         }
+        },
+        {
+         "nota": "Hai portato Jagon a casa tua.",
+         "categoria": "cambiamento"
+        }
+       ],
+       "richiede": [
+        "F17d1"
+       ],
+       "fonte": "L [V2 Cap.19 r.134-136; Cap.20 r.108-109] (nella fonte lo fa; se non lo fa, Jagon la raggiunge lo stesso per la cura: schema, PROPOSTA)",
+       "scopo": "un alleato fuori dalla famiglia"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Con Psema scendi nella stanza buia degli interrogatori, sorvegliata dalle guardie della S.A. C'è Dione, la ragazza che era Ktara: soffoca un uomo che la supplica, «Ti prego Ktara». Poi Dione ti chiama «Madre», ti tocca il grembo, e sorride.",
+    "fonte": "P3 (P*: come interroga è suo) [V2 Cap.19 r.127-130]",
+    "esplora": [
+     {
+      "id": "F17d1",
+      "testo": "Interrogare il prigioniero",
+      "riserva": "Il prigioniero, Kass, ha le vene gonfie. Dopo le torture ha un'emorragia; ti sputa addosso: «Dikastis ti manda i suoi saluti, voleva una figlia per una figlia.» Poi muore vomitando sangue.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "La spia Kass è morta: «Dikastis ti manda i suoi saluti, voleva una figlia per una figlia».",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P4 [V2 Cap.19 r.131-132]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F17x1",
+     "F17x2"
+    ],
+    "risoluzione": [
+     "F17d1"
+    ]
+   },
+   "required_beats": [
+    "F17x1",
+    "F17x2",
+    "F17d1"
+   ],
+   "optional_beats": [
+    "F17_jagon_1"
+   ],
+   "riserva_libera": "A casa Galanis tutti parlano piano, e nessuno nomina il generale.",
+   "uscita_fail_forward": "Se la scena si ferma, la spia parla comunque prima di morire, e tuo padre ti chiede l'esercito."
+  },
+  "F18": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F18x1",
+     "testo": "Ascoltare Jagon",
+     "riserva": "Jagon vuole provare la cura, e ti chiede dei campioni. Ti domanda perché l'hai messo a lavorare al porto, chi sia la spia, e se ci si può fidare di Tageti, che sembra cercare la chiave in campo medico. «Sono comunque un soldato, vorrei che mi permettessi di guardarti le spalle qua all'interno della città.» Poi ti raggiunge Damian.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Jagon vuole provare la cura sul tuo corpo, e guardarti le spalle.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.21 r.4-11]"
+    },
+    {
+     "id": "F18x2",
+     "testo": "Entrare nello stanzino del locale",
+     "riserva": "In un locale con musica straniera, nello stanzino, ti aspettano Damian e Thèo; tutti mostrano un numero sul braccio: Damian il 2, Thèo il 3. «Dimitri ha capito che il nostro sistema non funziona, i militari sono quelli che pagano, noi viviamo al fronte per la patria e non ci permettono di vincere questa guerra» dice Damian. «Sono stufo di combattere» dice Thèo. «Dimitri mi sembra intenzionato ad agire il giorno delle sue nozze» dice Damian. «O uno di noi è una talpa o ci spiano.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Damian e Thèo vogliono rovesciare l'impero il giorno delle nozze di Dimitri.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "F18x1"
+     ],
+     "fonte": "P2 [V2 Cap.21 r.83-96] (le battute accorciate)"
+    },
+    {
+     "id": "F18x3",
+     "testo": "Studiare il tuo corpo con Jagon",
+     "riserva": "A casa, mentre tu e Jagon studiate il tuo corpo, arriva Psema: ti porta a fare tiro al bersaglio.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Da oggi Psema ti sta accanto.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "richiede": [
+      "F18x2"
+     ],
+     "fonte": "P3 [V2 Cap.21 r.130]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "kryno",
+     "apertura": "Kryno è accanto al prigioniero, in attesa.",
+     "chiusura": "Kryno si allontana, spaesata.",
+     "riserva_libera": "Kryno non ti risponde: guarda il prigioniero.",
+     "argomenti": [
+      {
+       "id": "F18_kryno_1",
+       "testo": "Fare quello che chiede Zoe-le, con Kryno",
+       "riserva": "Zoe-le vuole la formula, e ti costringe a torturare il prigioniero. Kryno ti aiuta; per un attimo i suoi occhi cambiano colore, e lei si guarda intorno, spaesata.",
+       "effetti": [],
+       "richiede": [
+        "F18d1"
+       ],
+       "fonte": "L [V2 Cap.22 r.12-16] (nella fonte Zoe la costringe)",
+       "scopo": "che cosa le chiedono i Tritos"
+      }
+     ]
+    },
+    {
+     "png": "dimitri",
+     "apertura": "Dimitri ti aspetta nel posto che ha comprato per vedervi.",
+     "chiusura": "Dimitri ti lascia andare.",
+     "riserva_libera": "Dimitri non risponde.",
+     "argomenti": [
+      {
+       "id": "F18_dimitri_1",
+       "testo": "Chiedere a Dimitri dei test",
+       "riserva": "Parlate dei test che hai firmato quando lui ti ha detto di entrare; cercano di cancellare i ricordi di chi li fa, e Dimitri ha visto che cosa fa Poro. «Qualsiasi cosa sia contro di noi, morirà» dice.",
+       "effetti": [],
+       "richiede": [
+        "F18x3"
+       ],
+       "fonte": "L [file del Cap.22 r.41, r.67-88] (solo come legame di possesso e protezione, EIDOS.md r.256)",
+       "scopo": "Dimitri sa delle prove"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Al quartier generale dei Tritos ti aspettano Mors e Zoe-le. «Adranes, sai che significa? “sopiti”, coloro che sono sopiti non esprimono la loro magnificenza e perfezione, noi non dovremo nasconderci» dice Zoe-le.",
+    "fonte": "P4 [V2 Cap.22 r.2, r.8] (nella fonte la battuta è di Zoe: qui Zoe-le, il nome con cui si presenta)",
+    "esplora": [
+     {
+      "id": "F18d1",
+      "testo": "Guardare il prigioniero dei Tritos",
+      "riserva": "«Anche noi abbiamo avuto un padre simile a quello che hanno i nostri figli, noi però abbiamo scelto di rimuovere le loro sofferenze, così che potessero essere liberi ed efficienti» dice Zoe-le. Ti mostra un prigioniero legato e torturato: Mors lo chiama «nostro padre», e ne ha paura.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "I Tritos tengono prigioniero un uomo che chiamano «nostro padre».",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P4 [V2 Cap.22 r.11-12] (il nome del prigioniero dall'Atto III)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F18x1",
+     "F18x2",
+     "F18x3"
+    ],
+    "risoluzione": [
+     "F18d1"
+    ]
+   },
+   "required_beats": [
+    "F18x1",
+    "F18x2",
+    "F18x3",
+    "F18d1"
+   ],
+   "optional_beats": [
+    "F18_kryno_1",
+    "F18_dimitri_1"
+   ],
+   "riserva_libera": "Fuori, Menessa prepara le nozze di tuo fratello.",
+   "uscita_fail_forward": "Se la scena si ferma, i Tritos ti parlano comunque della loro guida, e Jagon prova con te il tuo veleno."
+  },
+  "F19": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F19x1",
+     "testo": "Entrare fra gli ospiti",
+     "riserva": "All'ingresso di casa Galanis ci sono gli ospiti: Dikastis, Mors e Zoe-le con dieci Adranès, Eirchorst, i Galanis. Dimitri serve da bere a Dikastis e gli dice qualcosa all'orecchio: Dikastis sbianca.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Alle nozze ci sono Dikastis, i Tritos con dieci Adranès, Eirchorst e i Galanis.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.23 r.51-57]"
+    },
+    {
+     "id": "F19x2",
+     "testo": "Accogliere Chloe",
+     "riserva": "Chloe arriva con Kasimir, vestita alla moda di Lechta, con il copricapo della madre di Anapnos, teschio e piume. «Chloe quella gente ti sta un po' imbastardendo, cosa hai addosso, vieni che ti cambio» dice vostra madre, Nysa. «No madre, mancherei di rispetto e tu lo sai.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "F19x1"
+     ],
+     "fonte": "P2 [V2 Cap.23 r.58-65]"
+    },
+    {
+     "id": "F19x3",
+     "testo": "Guardare i tuoi genitori con Dikastis",
+     "riserva": "Tuo padre e tua madre parlano con Dikastis, in disparte. «Sì, nel mio studio, dopo i balli» dice tuo padre.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Dopo i balli i tuoi genitori andranno nello studio con Dikastis.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "F19x2"
+     ],
+     "fonte": "P3 [V2 Cap.23 r.66]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "antero_melani",
+     "apertura": "Un giornalista ti blocca all'ingresso.",
+     "chiusura": "Antero Mèlani ti lascia passare.",
+     "riserva_libera": "Antero Mèlani prende appunti, e non ti risponde.",
+     "argomenti": [
+      {
+       "id": "F19_antero_1",
+       "testo": "Rispondere al giornalista",
+       "riserva": "Il giornalista Antero Mèlani ti fa domande sulla scalata dei Katastasis e sui nuovi corpi speciali. «Questa è forse una mossa per una scalata al potere e accentramento da parte della famiglia Katastasis?»",
+       "effetti": [],
+       "prima_di": [
+        "F19d1"
+       ],
+       "fonte": "L [V2 Cap.23 r.51-54]",
+       "scopo": "la scalata dei Katastasis vista da fuori; Antero torna nella 27"
+      }
+     ]
+    },
+    {
+     "png": "dimitri",
+     "apertura": "Dimitri ti trova nel giardino.",
+     "chiusura": "Dimitri torna dagli ospiti.",
+     "riserva_libera": "Dimitri non risponde: guarda l'orologio.",
+     "argomenti": [
+      {
+       "id": "F19_dimitri_1",
+       "testo": "Chiedere a Dimitri perché manda via Chloe",
+       "riserva": "Di notte Dimitri manda via Chloe, prima che sia buio. «Credimi, è meglio per lei che se ne vada.»",
+       "effetti": [],
+       "richiede": [
+        "F19d1"
+       ],
+       "fonte": "L [V2 Cap.23 r.113-118]",
+       "scopo": "Dimitri protegge Chloe"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il rito si fa nella sala circolare delle scienze, riaddobbata: otto bracci vuoti, un filo legato ai polsi degli sposi, le sorelle minori di Ophelia che cantano e suonano. «Siamo qui riuniti quest'oggi per celebrare l'unione di due persone e di due famiglie importanti della nostra comunità.» Dimitri e Ophelia uniscono le due metà di una sfera nera e le mangiano: «noi ora siamo una cosa sola, con questo gesto diventiamo uno.»",
+    "fonte": "P4 [V2 Cap.23 r.69-77]",
+    "esplora": [
+     {
+      "id": "F19d1",
+      "testo": "Ballare nella sala",
+      "riserva": "Dimitri parla di unità: «noi siamo uno, una nazione, una famiglia, individui uniti dalla causa e dall'amore per i propri cari.» Il primo ballo lo fai con Psema; fra la gente vedi Damian che si muove per la sala. Poi balli con tuo fratello.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Alla festa Damian si muove per la sala.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "[V2 Cap.23 r.92-101] (la battuta di Dimitri accorciata); L il primo ballo e Damian, scopo: Damian c'è (prepara (b))"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F19x1",
+     "F19x2",
+     "F19x3"
+    ],
+    "risoluzione": [
+     "F19d1"
+    ]
+   },
+   "required_beats": [
+    "F19x1",
+    "F19x2",
+    "F19x3",
+    "F19d1"
+   ],
+   "optional_beats": [
+    "F19_antero_1",
+    "F19_dimitri_1"
+   ],
+   "riserva_libera": "A casa Galanis la festa va avanti, e la musica copre le voci.",
+   "uscita_fail_forward": "Se la scena si ferma, le luci si spengono comunque, lo studio esplode, e ti svegli in ospedale."
+  },
+  "F20": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F20x1",
+     "testo": "Seguire tuo fratello all'udienza",
+     "riserva": "Nella sala dell'udienza Dimitri affronta Eirchorst. «Epimno sta realmente cadendo sotto mano nemica? O state ripulendo le nostre forze militari per lasciare spazio a quella feccia dai capelli bianchi?» E poi: «L'avete detto voi, servono generali, datemi un esercito ed io conquisterò il mondo.» «Va bene, avete carta bianca» dice Eirchorst. Epimno è sotto il controllo degli Adranès.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Eirchorst ha dato a Dimitri carta bianca per giustiziare i ribelli.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.25 r.34-43]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "dimitri",
+     "apertura": "Dimitri ti tiene accanto a sé.",
+     "chiusura": "Dimitri torna a guardare la folla.",
+     "riserva_libera": "Dimitri non risponde: guarda la piazza.",
+     "argomenti": [
+      {
+       "id": "F20_dimitri_1",
+       "testo": "Chiedere a Dimitri che cosa vuole da te in piazza",
+       "riserva": "«Dai tu l'ordine, devono vederci forti entrambi, quando parlerò di animali dai il segnale.»",
+       "effetti": [],
+       "richiede": [
+        "F20x1"
+       ],
+       "fonte": "L [V2 Cap.25 r.45]",
+       "scopo": "la scelta della fonte è che lo dia lei"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Sulla piazza del patibolo Eirchorst parla al popolo: «abbiamo deciso di setacciare ogni città in cerca di traditori, i nostri segugi sono esperti e capaci di trovare chi possiede il germe dell'anarchia.» Gli Adranès aprono dei camion: sono pieni di theras. Chi manifesta l'arkè viene catturato; fra la folla gli Adranès prendono Natalie. Fra i condannati riconosci Jagon.",
+    "fonte": "P3 e P4 [V2 Cap.25 r.50-53] (la battuta di Eirchorst accorciata); Jagon [r.53] (punto aperto 3)",
+    "esplora": [
+     {
+      "id": "F20d1",
+      "testo": "Ascoltare tuo fratello parlare al popolo",
+      "riserva": "Dimitri alza la voce sulla piazza: «Un popolo, una nazione, un esercito!»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Sulla piazza Dimitri ha parlato al popolo.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P5 [V2 Cap.25 r.56]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F20x1"
+    ],
+    "risoluzione": [
+     "F20d1"
+    ]
+   },
+   "required_beats": [
+    "F20x1",
+    "F20d1"
+   ],
+   "optional_beats": [
+    "F20_dimitri_1"
+   ],
+   "riserva_libera": "Sulla piazza di Epimno la folla aspetta, e nessuno parla.",
+   "uscita_fail_forward": "Se la scena si ferma, Dimitri lancia comunque la prima pietra, e qualcuno dà il segnale."
+  },
+  "F21": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F21x1",
+     "testo": "Entrare nel laboratorio dei cilindri",
+     "riserva": "Nei laboratori di Menessa ci sono dei cilindri: in uno c'è Psema, in un altro Zoe-le, in un altro ancora Natalie. «Vi rivoglio tutti con me, non faccio che perdervi» dice Mors. Poi ti fa entrare in un cilindro vuoto, e ti addormenta.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Mors ti ha fatto dormire in un cilindro, nei laboratori di Menessa.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.25 r.126-131] (la battuta di Mors accorciata: i due nomi che cerca restano fuori)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "kryno",
+     "apertura": "Kryno cammina accanto a te, come un rettile.",
+     "chiusura": "Kryno si ferma davanti ai cilindri.",
+     "riserva_libera": "Kryno non ti risponde: ti chiama soltanto «Madre».",
+     "argomenti": [
+      {
+       "id": "F21_kryno_1",
+       "testo": "Chiedere a Kryno dove ti porta",
+       "riserva": "«Madre, puoi venire con me ora?» ripete Kryno, e ti porta ai laboratori.",
+       "effetti": [],
+       "prima_di": [
+        "F21x1"
+       ],
+       "fonte": "[V2 Cap.25 r.125]",
+       "scopo": "Kryno e la «Madre»"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nel sogno c'è un fiume, e accanto a te un ragazzo biondo: Smerte. «Quindi ora sono te? Non pensavo che sarei tornato… in quanti si sono ammalati? Quanti ne ho ucciso?» Ti guarda il ventre: «Hai già deciso un nome?» Ti chini sull'acqua, e lui ti ferma: «Fermati! Se bevi da lì dimenticherai chi sei, potresti anche non vedermi più, cancelleresti tutto ciò che ci unisce ora.»",
+    "fonte": "P3 [V2 Cap.26 r.3-10] (le battute di Smerte accorciate)",
+    "esplora": [
+     {
+      "id": "F21d1",
+      "testo": "Seguire i fili che ti mostra Smerte",
+      "riserva": "Attraverso i fili vedi la fuga di cinque ragazzi da un laboratorio. «Dobbiamo muoverci Smerte, Alexander ci sta aspettando» dice Zoe, e lo sveglia; con loro c'è Snit, e Smerte lo cura e sputa nero e sangue. Poi Alexander bacia Zoe: «questo mondo sarà nostro». «Devono vedere cosa siamo realmente» dice Alexander, «abbiamo dimenticato chi o cosa eravamo, ci siamo affidati a questa tecnologia e a queste macchine perdendo le nostre radici e il nostro arkè.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nel sogno hai visto la fuga dei cinque: Smerte, Snit, Zoe, Alexander e un quinto fratello.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P4 [V2 Cap.26 r.11-26] (EIDOS.md r.278)"
+     },
+     {
+      "id": "F21d2",
+      "testo": "Guardare l'ultimo ricordo di Smerte",
+      "riserva": "L'ultimo ricordo è un dirupo. «Mi dispiace fratello, tu ora sarai il nostro martire per la causa, va e uccidili tutti con il tuo sangue» dice Alexander a Smerte. «Alex che stai facendo, vuoi uccidere anche noi ora?!» grida il quinto fratello; poi apre uno squarcio, e ci getta dentro Smerte, che diventa cristallo. «Lui voleva salvarci, ma perché mi ha usato?» ti chiede Smerte.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Alexander ha sacrificato Smerte sul dirupo, e il quinto fratello lo ha gettato in uno squarcio.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "F21d1"
+      ],
+      "fonte": "P5 [V2 Cap.25 r.133-139; Cap.26 r.188-208] (EIDOS.md r.258; chi apre lo squarcio resta senza nome: PROPOSTA)"
+     },
+     {
+      "id": "F21d3",
+      "testo": "Ascoltare Smerte parlare di Kryno",
+      "riserva": "Smerte ti racconta il suo piano per guarire Kryno.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "F21d1"
+      ],
+      "fonte": "L [V2 Cap.26 r.156-166], scopo: il legame fra Smerte e Kryno (prima della 28)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F21x1"
+    ],
+    "risoluzione": [
+     "F21d1"
+    ]
+   },
+   "required_beats": [
+    "F21x1",
+    "F21d1",
+    "F21d2"
+   ],
+   "optional_beats": [
+    "F21_kryno_1",
+    "F21d3"
+   ],
+   "riserva_libera": "Nel sogno il fiume scorre piano, e la sua acqua non fa rumore.",
+   "uscita_fail_forward": "Se la scena si ferma, il sogno arriva comunque al dirupo, e ti svegli accanto a tuo fratello."
+  },
+  "F22": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F22x1",
+     "testo": "Ascoltare tuo fratello, di notte",
+     "riserva": "Dimitri ti racconta tutto. È andato ai laboratori perché il presidente lo voleva, «sofferente». Psema è morto, ucciso da un altro Adranès. Zoe-le, «tecnicamente», è morto: ora è una ragazza bionda, e Dimitri vuole che in battaglia sia tu a ucciderla. Ti chiedi se ricordi vostro padre. «No, ho dimenticato solo papà.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "In due settimane Psema è morto, e Zoe-le ora è una ragazza bionda.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "vuoto di due settimane [giocata Cap.28 r.16-26, r.75, r.99-118, r.162] (EIDOS.md r.258; la battuta di Dimitri r.162)"
+    },
+    {
+     "id": "F22x2",
+     "testo": "Aprire il cassetto segreto nello studio di tuo padre",
+     "riserva": "Nel cassetto segreto dello studio ci sono i documenti di tuo padre: accordi con Besidd, con New Port e con Lechta, una richiesta di scambi con l'isola di Lou-Lou, Syneris, delle coordinate, e le ultime trattative con New Port per avere dei theras, insieme a Sevastianos. Il nome di Adrian non c'è.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Tuo padre trattava in segreto con Besidd, New Port e Lechta, e chiedeva theras a New Port.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "F22x1"
+     ],
+     "fonte": "P1 (P*: che cosa fa dei documenti è suo) [giocata Cap.28 r.460-462] (EIDOS.md r.259)"
+    },
+    {
+     "id": "F22x3",
+     "testo": "Andare al porto di Menessa",
+     "riserva": "Al porto c'è il caos, e i controlli sono serrati. Adrian Katastasis, il cugino di tuo padre, ne è travolto: tiene il porto, e ha chiuso tutti i porti esteri tranne quello di Lechta. Da Minote non arriva cibo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Adrian Katastasis tiene il porto di Menessa e ha chiuso i porti esteri, tranne Lechta.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "richiede": [
+      "F22x2"
+     ],
+     "fonte": "P2 [giocata Cap.28 r.612-673]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "dimitri",
+     "apertura": "Dimitri resta sveglio con te.",
+     "chiusura": "Dimitri spegne la luce.",
+     "riserva_libera": "Dimitri non risponde: guarda fuori dalla finestra.",
+     "argomenti": [
+      {
+       "id": "F22_dimitri_1",
+       "testo": "Raccontare a Dimitri di Smerte",
+       "riserva": "Gli racconti del sogno, e di quello che hai visto attraverso i fili, vicino a qualcosa come uno squarcio. Anche Dimitri ha sognato: la pioggia, e la morte del presidente. «Bah, pioveva. Eravamo ad Epimno.»",
+       "effetti": [],
+       "richiede": [
+        "F22x1"
+       ],
+       "fonte": "[giocata Cap.28 r.55-94] (la battuta di Dimitri r.90)",
+       "scopo": "Dimitri e il sogno della pioggia, che si compie nella 27"
+      },
+      {
+       "id": "F22_dimitri_2",
+       "testo": "Dire a Dimitri che cosa hai fatto con Tageti",
+       "riserva": "«In questi giorni… ne ho parlato con Snit e, come sospettavo, le intenzioni di Tageti non erano esattamente quelle sperate. L'ho ucciso.» Dimitri ti guarda; poi i suoi occhi si accendono e i muscoli gli si gonfiano. Tu ti ricopri la mano di veleno. «Ottimo strumento di tortura.»",
+       "effetti": [],
+       "richiede": [
+        "F22x1"
+       ],
+       "fonte": "L affrontare Tageti [giocata Cap.28 r.27-40] (le battute r.28, r.40), scopo: chiudere il conto con Tageti; nella fonte lei lo uccide fuori scena; se non lo fa, Tageti esce dalla trama (schema, PROPOSTA)"
+      }
+     ]
+    },
+    {
+     "png": "damian",
+     "apertura": "Al pub Damian ti fa sedere al suo tavolo.",
+     "chiusura": "Damian finisce di bere.",
+     "riserva_libera": "Damian non risponde: guarda il bicchiere.",
+     "argomenti": [
+      {
+       "id": "F22_damian_1",
+       "testo": "Dire a Damian che aspetti un bambino",
+       "riserva": "Damian vuole vincere la guerra fuori: «Possibile non mi basta. Non più. Se i nostri sono morti è perché si arrivasse a vincere, lui me lo aveva promesso.» «Sono incinta» gli dici. Damian si offre di passare per il padre, e non riesce ad abbracciarti. «Sai cosa… provo per te.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "damian",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "F22x2"
+       ],
+       "fonte": "L [giocata Cap.28 r.536-611] (le battute r.551, r.588, r.609 accorciate), scopo: il legame con Damian; per un protagonista maschile creato la riga resta come nella fonte"
+      }
+     ]
+    },
+    {
+     "png": "kryno",
+     "apertura": "In auto Kryno guida in silenzio.",
+     "chiusura": "Kryno si asciuga gli occhi.",
+     "riserva_libera": "Kryno non risponde: guarda la strada.",
+     "argomenti": [
+      {
+       "id": "F22_kryno_1",
+       "testo": "Promettere a Kryno di tacere con Snit",
+       "riserva": "Kryno ha paura che Snit se ne accorga. «Sono uno stupido Adranès e nient'altro.» Le prometti che Snit non saprà niente dei suoi capelli.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "kryno",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "F22d1"
+       ],
+       "fonte": "L tenere nascosto a Snit che Kryno torna umana [giocata Cap.28 r.720-745] (la battuta r.745), scopo: Kryno si fida di lei, prima della 26"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Dal porto vai ai laboratori, in auto con Kryno. Lei ti racconta che Patroclo ha mentito, e che Snit sembra cambiato, come riprogrammato.",
+    "fonte": "P3 [giocata Cap.28 r.680-687]",
+    "esplora": [
+     {
+      "id": "F22d1",
+      "testo": "Raccontare a Kryno di Smerte",
+      "riserva": "«Alexander lo ha ucciso. È così che hanno generato il gas, tutto quello che aveva accumulato nel corso degli anni» le dici. E le dici che Smerte era innamorato di lei. Kryno piange, e i suoi capelli diventano scuri.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Kryno piange, e i suoi capelli diventano scuri.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [giocata Cap.28 r.717-722] (la battuta r.717)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F22x1",
+     "F22x2",
+     "F22x3"
+    ],
+    "risoluzione": [
+     "F22d1"
+    ]
+   },
+   "required_beats": [
+    "F22x1",
+    "F22x2",
+    "F22x3",
+    "F22d1"
+   ],
+   "optional_beats": [
+    "F22_dimitri_1",
+    "F22_dimitri_2",
+    "F22_damian_1",
+    "F22_kryno_1"
+   ],
+   "riserva_libera": "Fuori piove, e a Menessa nessuno parla di Epimno.",
+   "uscita_fail_forward": "Se la scena si ferma, Kryno ti porta comunque ai laboratori, e Snit ti spiega la missione."
+  },
+  "F23": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F23x1",
+     "testo": "Entrare nel pantheon della scienza",
+     "riserva": "Il pantheon della scienza è un osservatorio sotto una cupola, con dei fori nelle pareti e la tetraktis illuminata. Dimitri ha la giacca da generale; tu la tenuta da generale della S.A. «Ordine prego, siamo qui per testimoniare il nostro affetto e la nostra stima verso le persone che non sono più con noi.» Ci sono le urne di tuo padre e di tua madre, e quella di Ophelia. Matthaios, che ha perso tutta la sua famiglia, si avvicina a Dimitri e lo colpisce con un pugno.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Al pantheon ci sono le urne di tuo padre, di tua madre e di Ophelia; Matthaios ha colpito Dimitri.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [giocata Cap.28 r.894-906] (la battuta degli aritmomicani r.896); DEDOTTO: i genitori sono morti alle nozze"
+    },
+    {
+     "id": "F23x2",
+     "testo": "Ascoltare il piano di tuo fratello",
+     "riserva": "Dimitri ha deciso di punire Matthaios davanti ai soli militari. Sulla mappa ti spiega il piano: un attacco da nord, per spingere il nemico nella gola. «Voi li prenderete da sud, i bianchi in battaglia saranno capaci di fare la differenza.» E poi: «Abbiamo un alleato lì, non deve vedere persone come me e te, perciò non farti vedere da lui mentre usi quella roba o perderemo il suo appoggio.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Il piano di Dimitri: lui da nord, tu con gli Adranès da sud.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "F23x1"
+     ],
+     "fonte": "P3 [V2 Cap.29 r.45-54] (le battute r.51 e r.52)"
+    },
+    {
+     "id": "F23x3",
+     "testo": "Scrivere una lettera a Chloe",
+     "riserva": "Scrivi a tua sorella, a Lechta. «Mamma e papà non ce l'hanno fatta, e neanche sua moglie. Abbiamo celebrato i loro funerali; ho tenuto delle ceneri per te.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "F23x1"
+     ],
+     "fonte": "L la lettera a Chloe [giocata Cap.28 r.943-958] (r.946), scopo: la sorella lontana; la risposta arriva nella 25"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "matthaios",
+     "apertura": "Fuori piove. Matthaios è da solo sotto la cupola.",
+     "chiusura": "Matthaios si allontana sotto la pioggia.",
+     "riserva_libera": "Matthaios non risponde: guarda l'acqua che passa dalla cupola.",
+     "argomenti": [
+      {
+       "id": "F23_matthaios_1",
+       "testo": "Parlare con Matthaios sotto la pioggia",
+       "riserva": "Matthaios ha perso madre, padre e sorelle, e andrà al fronte. Gli dici che ti dispiace per i suoi. Di tuo fratello non vuole sentire parlare: «Per quanto mi riguarda, sarebbe dovuto morire al suo posto.» Poi, piano: «Lechta non è il nemico, non quanti ce ne sono all'interno.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "matthaios",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "F23x1"
+       ],
+       "fonte": "L sotto la pioggia con Matthaios [giocata Cap.28 r.907-938] (le battute r.919, r.935), scopo: Matthaios alleato"
+      }
+     ]
+    },
+    {
+     "png": "dimitri",
+     "apertura": "Dimitri arrotola la mappa.",
+     "chiusura": "Dimitri esce dalla stanza.",
+     "riserva_libera": "Dimitri non risponde: pensa alla guerra.",
+     "argomenti": [
+      {
+       "id": "F23_dimitri_1",
+       "testo": "Parlare con Dimitri dei nomi per il bambino",
+       "riserva": "Pensate ai nomi per il bambino. «Preferisco Sophia o Helia, ma se fosse maschio vorrei chiamarlo Atreo» dice Dimitri.",
+       "effetti": [],
+       "richiede": [
+        "F23x2"
+       ],
+       "fonte": "L i nomi per il bambino [V2 Cap.29 r.60; giocata Cap.28 r.141], scopo: Sophia"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Al tribunale militare di Epimno Dimitri fa legare Matthaios nel piazzale, davanti ai soldati.",
+    "fonte": "P4 [V2 Cap.30 r.3-6]",
+    "esplora": [
+     {
+      "id": "F23d1",
+      "testo": "Guardare tuo fratello frustare Matthaios",
+      "riserva": "Dimitri frusta Matthaios di persona. «Per via dei nostri legami sono stato indulgente con te, ma non sarà così con voi: chiunque oserà mettere in discussione la mia parola o oserà mancarmi di rispetto darà luce alle piazze di Epimno con la propria carne.» Poi lo copre con una mantella, e lo mette sotto le direttive del generale Dorcas e del generale Katastasis della S.A.: le tue.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Matthaios, frustato, è sotto le direttive di Dorcas e le tue.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 [V2 Cap.30 r.3-12] (la battuta r.10); [V2 Cap.28 r.160-168] (r.165)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F23x1",
+     "F23x2"
+    ],
+    "risoluzione": [
+     "F23d1"
+    ]
+   },
+   "required_beats": [
+    "F23x1",
+    "F23x2",
+    "F23d1"
+   ],
+   "optional_beats": [
+    "F23x3",
+    "F23_matthaios_1",
+    "F23_dimitri_1"
+   ],
+   "riserva_libera": "Sopra Epimno piove, e l'acqua passa attraverso la cupola.",
+   "uscita_fail_forward": "Se la scena si ferma, Dimitri frusta comunque Matthaios, e l'elicottero ti porta al fronte."
+  },
+  "F24": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F24x1",
+     "testo": "Parlare ai tuoi figli",
+     "riserva": "«Parla ai tuoi figli» ti ha detto Snit, e tu parli agli Adranès in ginocchio sotto la pioggia. «L'uomo perfetto vincerà contro le macchine» dice Snit. Patroclo si alza: «Pronti a fare rapporto e a partire, generale.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Hai parlato agli Adranès sotto la pioggia.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 (P*: il discorso è suo) [V2 Cap.30 r.41-43]; [V2 Cap.29 r.131]"
+    },
+    {
+     "id": "F24x2",
+     "testo": "Guardare fra gli alberi",
+     "riserva": "Fra gli alberi si muove un esercito chorisfos. «C 39435… C 39435» ripete Patroclo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Un esercito chorisfos si muove nel bosco.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "F24x1"
+     ],
+     "fonte": "P3 [V2 Cap.30 r.141-142]"
+    },
+    {
+     "id": "F24x3",
+     "testo": "Guardare la mappa nella tenda",
+     "riserva": "Nella tenda c'è una mappa del globo, piena di città dai nomi che non hai mai visto.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "[V2 Cap.30 r.80]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "kryno",
+     "apertura": "Kryno resta accanto a te nella tenda.",
+     "chiusura": "Kryno torna fra gli Adranès.",
+     "riserva_libera": "Kryno non risponde: si tocca il volto.",
+     "argomenti": [
+      {
+       "id": "F24_kryno_1",
+       "testo": "Chiedere a Kryno come sta",
+       "riserva": "«I sentimenti che provo ora, perché mi rendono imperfetta? Mi rendono così umana… mi spaventa, penso che potrei fallire in qualcosa, e io non avevo paura.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "kryno",
+          "delta": 1
+         }
+        }
+       ],
+       "prima_di": [
+        "F24d1"
+       ],
+       "fonte": "L [V2 Cap.30 r.82], scopo: Kryno"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Patroclo carica. Gli Adranès entrano nel bosco: un ragazzo scompare e riappare, uno ferma il cuore di un nemico toccandogli il petto, uno diventa alto tre metri e sradica gli alberi. Tu resti {fermo|ferma|immobile}. Kryno ti strattona: «Datti una svegliata, {sei bloccato dalla paura|sei bloccata dalla paura|la paura ti blocca}. O uccidi o muori.»",
+    "fonte": "P4 (P*: come reagisce è suo; nella fonte la paura la blocca) [V2 Cap.31 r.1-6] (EIDOS.md r.260; la battuta r.5-6 accorciata)",
+    "esplora": [
+     {
+      "id": "F24d1",
+      "testo": "Entrare nella battaglia",
+      "riserva": "La battaglia dura giorni. I lancieri nemici avanzano dietro gli scudi, e la pioggia spegne il loro fuoco; ci sono droni e robot. Fra gli alberi senti una voce che conosci: «Hermes portane via quanti più puoi!» Un uomo combatte con le ombre, e oscura la vista a chi gli sta intorno.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nel bosco hai sentito la voce dell'uomo che ti interrogò nella prigionia.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P4 [V2 Cap.31 r.5-18] e P5 [r.98-104] (la voce di Erebo r.101 accorciata)"
+     },
+     {
+      "id": "F24d2",
+      "testo": "Rispondere a Snit, che ti chiama allo squarcio",
+      "riserva": "Patroclo ha preso l'uomo delle ombre, e ottiene da lui le informazioni per andare a sud. Snit ti chiama allo squarcio. Di giorno, fra i morti, provi disgusto, e la voglia di soccorrere un chorisfos ferito; il volto di Kryno è un po' cristallizzato.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Patroclo ha catturato l'uomo delle ombre.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "F24d1"
+      ],
+      "fonte": "P5 [V2 Cap.31 r.98-106]; L il disgusto e la voglia di soccorrere un chorisfos [r.98-106], scopo: la pietà"
+     },
+     {
+      "id": "F24d3",
+      "testo": "Ascoltare le voci fra i soldati",
+      "riserva": "Fra i soldati si alzano delle voci di donna. «Abbassiamo le armi, questa non è più la nostra guerra, smettiamo di combattere, avete visto ciò che eravamo, quella è la verità.» Intorno a te i soldati si toccano la testa e si tolgono i caschi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Delle voci di donna hanno fatto deporre le armi ai soldati.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "F24d2"
+      ],
+      "fonte": "P6 [V2 Cap.31 r.116-121] (la battuta r.117)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F24x1",
+     "F24x2"
+    ],
+    "risoluzione": [
+     "F24d1"
+    ]
+   },
+   "required_beats": [
+    "F24x1",
+    "F24x2",
+    "F24d1",
+    "F24d2",
+    "F24d3"
+   ],
+   "optional_beats": [
+    "F24x3",
+    "F24_kryno_1"
+   ],
+   "riserva_libera": "Nel bosco piove senza sosta, e il fango arriva alle caviglie.",
+   "uscita_fail_forward": "Se la scena si ferma, le voci fanno deporre comunque le armi, e Hope si consegna."
+  },
+  "F25": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F25x1",
+     "testo": "Raggiungere Matthaios fra i disertori",
+     "riserva": "Matthaios non uccide i disertori: li fa catturare. «I tuoi soldati dove sono? Richiamali o si faranno ammazzare, continuare ad avanzare con un esercito spaccato è solo un problema.» Dione ti viene vicino: «Madre, mi sono scappati alcuni fuggitivi, mi è venuto da ridere… mi spiace.» Nel bosco ci sono molti squarci aperti, e le loro luci ciano attirano gli uomini.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Matthaios cattura i disertori invece di ucciderli.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.32 r.7-18] (le battute r.11, r.14)"
+    },
+    {
+     "id": "F25x2",
+     "testo": "Parlare con Hope",
+     "riserva": "Hope tiene in mano un portagioie. Ti parla della vita fuori, della libertà, della guerra. «Le responsabilità di questo mondo sono nostre, ogni nostra azione influenza il destino altrui, ognuno deve essere conscio della libertà che può avere e delle responsabilità che comportano.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "F25x1"
+     ],
+     "fonte": "P2 [V2 Cap.32 r.19-23] (la battuta r.21)"
+    },
+    {
+     "id": "F25x3",
+     "testo": "Arrivare al villaggio degli elicotteri",
+     "riserva": "Dopo giorni di viaggio arrivate a un villaggio trasformato in accampamento, con gli elicotteri. «Mi giustizierete?» ti chiede Hope. «Conosci le moire? Si dice che conoscano il nostro destino… una di loro un giorno mi ha detto “saranno le donne a cambiare questo mondo”… tu sei una di loro? O vuoi rimanere schiava della guerra e dell'egoismo?»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Al villaggio devi decidere che cosa fare di Hope.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "F25x2"
+     ],
+     "fonte": "P3 [V2 Cap.32 r.81-84] (le battute accorciate)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "hope",
+     "apertura": "Hope siede in disparte, con il portagioie.",
+     "chiusura": "Hope chiude il portagioie.",
+     "riserva_libera": "Hope non risponde: si tiene la pancia.",
+     "argomenti": [
+      {
+       "id": "F25_hope_1",
+       "testo": "Osservare Hope da vicino",
+       "riserva": "Guardi Hope da vicino: si tiene la pancia, e qualcosa in lei non va. «Avete sparato sulla folla a Epimno solo perché era in fuga dai soldati che controlli» ti dice.",
+       "effetti": [],
+       "richiede": [
+        "F25x3"
+       ],
+       "fonte": "L il tiro di osservare [V2 Cap.32 r.81-88] (la battuta r.87 accorciata), scopo: qualcosa non va in Hope; R la gravidanza di Hope (EIDOS.md r.240): si vede, non si spiega"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "A Epimno fai rapporto con Kryno: di Alex e degli altri nessuna traccia. Dorcas riferisce le perdite: «Hanno agito come dei theras in libertà, hanno persino ucciso dei nostri soldati.» Dimitri la umilia davanti a tutti, e dice che si occuperà degli ostaggi.",
+    "fonte": "P4 [V2 Cap.32 r.90-106; Cap.33 r.38-53] (la battuta di Dorcas r.40; l'umiliazione solo riassunta, come nello schema)",
+    "esplora": [
+     {
+      "id": "F25d1",
+      "testo": "Leggere la lettera di Chloe",
+      "riserva": "Dimitri ti dà la lettera di Chloe. «Mi manchi tu e quegli abbracci forti ma così fragili che solo le tue braccia riescono a darmi.» Anapnos si è convinto ad appoggiarvi; Kasimir le è vicino. «Il conflitto non deve essere l'unica strada, non voglio piangere nessun'altra morte prematura.» E alla fine: «Che i numeri siano dalla tua sorella.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Chloe scrive che Anapnos vi appoggia, e spera in un armistizio.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P4 (la lettera) e L la lettera di Chloe [V2 Cap.33, Lettera a Chloe r.21-47] (le righe r.26, r.35-36, r.40, r.43 accorciate, il nome tolto), scopo: la pace possibile"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F25x1",
+     "F25x2",
+     "F25x3"
+    ],
+    "risoluzione": [
+     "F25d1"
+    ]
+   },
+   "required_beats": [
+    "F25x1",
+    "F25x2",
+    "F25x3",
+    "F25d1"
+   ],
+   "optional_beats": [
+    "F25_hope_1"
+   ],
+   "riserva_libera": "Nel bosco le luci ciano degli squarci si accendono e si spengono.",
+   "uscita_fail_forward": "Se la scena si ferma, tuo fratello ti dà comunque la lettera di Chloe, e Hope aspetta che tu decida."
+  },
+  "F26": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F26x1",
+     "testo": "Ascoltare Damian sulla vostra infanzia",
+     "riserva": "«Davvero non ti ricordi cosa è successo? Non ne abbiamo mai parlato perché da lì in poi tuo padre ti ha allontanato da noi.» Lui aveva nove anni, tu dieci: un ragazzo più grande vi aggredì; Damian lo colpì, e Dimitri lo finì con altri tre colpi e nascose il corpo. «Ricordo ancora i tuoi occhi, erano vuoti e fissi sul sangue che colava dalla testa.» Poi Damian ti bacia la mano. «Anche allearti con loro è un rischio, e non è necessario che sia tu a compiere quel rischio: hai già perso tanto per il sogno di tuo fratello, intendi perdere altro per il sogno di queste persone?»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Da bambino Dimitri uccise un ragazzo e ne nascose il corpo.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.36 r.15-27] (le battute r.17, r.21, r.27 accorciate)"
+    },
+    {
+     "id": "F26x2",
+     "testo": "Avvicinarvi al porto di Newport",
+     "riserva": "La barca si avvicina al porto. Damian ha dato il cambio a Matthaios al timone. «Com'è che diceva? Un uomo che non apprezza le cose materiali è un uomo pericoloso» dice di tuo padre. Kryno guarda la costa senza parlare.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "F26x1"
+     ],
+     "fonte": "P2 [V2 Cap.37 r.3-11] (la battuta r.8); con Hope nel ramo Hope libera: qui non si nomina (resta nei testi di F26A)"
+    },
+    {
+     "id": "F26x3",
+     "testo": "Seguire Damian nel campo di fiori",
+     "riserva": "Vicino allo squarcio c'è un campo di fiori vivi e luminosi. «Devo ammetterlo, tuo padre oltre che avere una bella moglie e due belle figlie aveva anche buon gusto in fatto di luoghi in cui commerciare.» Poi Damian si fa serio: «Ultimamente ho questo strano bisogno di non sentirmi sporco, vorrei guardare mio figlio o mia figlia negli occhi un giorno e non abbassare lo sguardo per la vergogna delle mie azioni. Sento di avere l'opportunità di ricominciare da capo, sia con te che con la mia vita.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Damian vuole ricominciare da capo.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "richiede": [
+      "F26x2"
+     ],
+     "fonte": "P3 [V2 Cap.37 r.138-144] (le battute r.140, r.143-144 accorciate; «riniziare» della fonte scritto «ricominciare»); per un protagonista maschile creato «due belle figlie» resta come nella fonte"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "karya",
+     "apertura": "Karya ti riceve nel suo ufficio, al porto.",
+     "chiusura": "Karya chiude la porta dell'ufficio.",
+     "riserva_libera": "Karya non risponde: guarda fuori, verso il porto.",
+     "argomenti": [
+      {
+       "id": "F26_karya_1",
+       "testo": "Chiedere a Karya delle spie",
+       "riserva": "A Newport ci sono delle spie. Una di loro agisce perché sua moglie e sua figlia sono minacciate di morte. «Non ditelo a Hope» dice Karya.",
+       "effetti": [],
+       "richiede": [
+        "F26x2"
+       ],
+       "fonte": "L Karya e le spie [V2 Cap.39 r.3-4; giocata Cap.39 r.294-352], scopo: le spie (EIDOS.md r.21)"
+      }
+     ]
+    },
+    {
+     "png": "kryno",
+     "apertura": "Kryno è seduta accanto a te.",
+     "chiusura": "Kryno si alza.",
+     "riserva_libera": "Kryno non risponde: si guarda le mani.",
+     "argomenti": [
+      {
+       "id": "F26_kryno_1",
+       "testo": "Chiedere a Kryno di Eirchorst",
+       "riserva": "«È compito mio, per quello che ha fatto a mio padre» dice Kryno. Eirchorst lo vuole per sé: «mi ha tenuto accanto a lui per cento anni.»",
+       "effetti": [],
+       "richiede": [
+        "F26d1"
+       ],
+       "fonte": "L Kryno vuole Eirchorst per sé [giocata Cap.39 r.249, r.508], scopo: preparare la sua sorte (punto aperto 5)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "A Newport vivete in una casa, tu, Damian e Kryno. Una mattina Kryno beve il latte in cucina, con calma, e cerca un abbraccio.",
+    "fonte": "[giocata Cap.39 r.3-23]",
+    "esplora": [
+     {
+      "id": "F26d1",
+      "testo": "Chiedere a Kryno che cosa ti hanno fatto",
+      "riserva": "Kryno ti spiega il S.I.D.D. «Manipolazione genetica, e oltre a quello… se tu riscrivi parte di una persona stai manipolando il suo arkè, se ne sei capace sei capace di produrti qualsiasi tipo di persona tu voglia. È come essere il Demiurgo.» Ora sai che l'arkè plasma la materia: tutte le idee che abbiamo dentro tornano lì, nel fiume che hai visto in sogno. «Non puoi non bere.» E il controllo di Snit: «È così che me lo ha fatto uccidere.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Kryno ti ha spiegato il S.I.D.D., il fiume e il controllo di Snit.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P4 [giocata Cap.39 r.245, r.259-271] (la battuta r.245 accorciata; «papà… Eirchorst ha venduto tutto» tolto); R comune: l'Arkè che plasma la materia (EIDOS.md r.23), DEDOTTO da r.245 e r.259 insieme (schema, PROPOSTA)"
+     },
+     {
+      "id": "F26d2",
+      "testo": "Sedere alla riunione",
+      "riserva": "Alla riunione ci sono Matthaios, Damian, Kryno e Karya. Il piano: tu fai da informatrice e da esca; un veleno di Lechta, incolore, nell'acqua per Snit; Matthaios protegge chi scappa; Damian lavora agli antidoti. E per tuo fratello? «Riempirlo di morfina fino a farlo svenire?»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Il piano: il veleno nell'acqua per Snit, la morfina per tuo fratello.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "F26d1"
+      ],
+      "fonte": "P5 [giocata Cap.39 r.469-720] (la battuta di lei r.718)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F26x1",
+     "F26x2",
+     "F26x3"
+    ],
+    "risoluzione": [
+     "F26d1"
+    ]
+   },
+   "required_beats": [
+    "F26x1",
+    "F26x2",
+    "F26x3",
+    "F26d1",
+    "F26d2"
+   ],
+   "optional_beats": [
+    "F26_karya_1",
+    "F26_kryno_1"
+   ],
+   "riserva_libera": "A Newport il mare è calmo, e dalla casa si vede il porto.",
+   "uscita_fail_forward": "Se la scena si ferma, la riunione si fa comunque, e il piano parte per Epimno."
+  },
+  "F27": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F27x1",
+     "testo": "Sentire che cosa succede al porto",
+     "riserva": "Al porto di Menessa un soldato porta l'ordine a chi lo comanda: «ha ordine di chiudere gli accessi al mare per i prossimi giorni, a breve verrà affiancato dal maggiore Domazos.» Il porto si chiude.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Il porto di Menessa ha chiuso gli accessi al mare.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.40 r.12-17] (la battuta r.12 senza il nome: la riceve Damian o Adrian, secondo la scena 22; via alternativa dello schema, PROPOSTA)"
+    },
+    {
+     "id": "F27x2",
+     "testo": "Salire nello studio di tuo fratello",
+     "riserva": "Dallo studio Dimitri ti mostra la folla dall'alto. «Guardali, sono così piccoli in confronto a noi, non sanno cosa si prova a stare al vertice, solo noi siamo l'uno… a breve saranno utili soldati da mandare in guerra.» E poi: «Questo mondo sarà finalmente nostro, Lechta inclusa, mi sto liberando dei superflui.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "F27x1"
+     ],
+     "fonte": "P4 [V2 Cap.40 r.43-47] (le battute r.45, r.47)"
+    },
+    {
+     "id": "F27x3",
+     "testo": "Restare con tuo fratello",
+     "riserva": "Dimitri vacilla. «Non esage…» Sente che perde la presa, e cade a terra.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Tuo fratello ha avuto un malore ed è caduto a terra.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "richiede": [
+      "F27x2"
+     ],
+     "fonte": "P5 [V2 Cap.40 r.50-51]: con la morfina o senza (DECISIONI §10)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "rika",
+     "apertura": "Rikà ti guarda dall'altra parte del tavolo.",
+     "chiusura": "Rikà esce dalla stanza.",
+     "riserva_libera": "Rikà non risponde: guarda la porta.",
+     "argomenti": [
+      {
+       "id": "F27_rika_1",
+       "testo": "Coprire Rikà con chi ti interroga dopo",
+       "riserva": "Quando Rikà esce, entrano altri soldati. Non lo vendi: di lui non dici niente.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "rika",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "F27d1"
+       ],
+       "fonte": "L quando Rikà esce ed entrano gli altri, venderlo o no [V2 Cap.41 r.31], scopo: coprire i Dexia o consegnarli"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ti ritrovi in una stanza degli interrogatori. Davanti a te c'è un uomo dei Dexia, Rikà, che ti descrive gli acidi delle batterie e i vermi. «Ho poco tempo e la tua risposta ti potrebbe far guadagnare la libertà.» «Avete fatto ostaggi, tra questi c'è una persona che mi interessa.» E: «Mi serve accesso ai pannelli del generale.»",
+    "fonte": "P6 [V2 Cap.41 r.19-30] (le battute r.20, r.26, r.27); come ci arriva dopo il malore: PROPOSTA (legge 4 della regia)",
+    "esplora": [
+     {
+      "id": "F27d1",
+      "testo": "Reggere l'interrogatorio",
+      "riserva": "Rikà esce, ed entrano altri soldati: ti interrogano su che cosa è successo al generale Dimitri. Poi un soldato si blocca, apre la porta, uccide il compagno e si spara in bocca, senza sporcare né te né chi entra: Snit. «Stavolta sono io a liberare te, fratello.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Snit ti ha tirato fuori dall'interrogatorio.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P6 [V2 Cap.41 r.31-36] (la battuta r.36); «la morte del generale» [r.31] scritto «che cosa è successo al generale» (DEDOTTO dello schema: Dimitri muore dopo)"
+     },
+     {
+      "id": "F27d2",
+      "testo": "Seguire Snit al proclama",
+      "riserva": "Sul palco della piazza c'è Alexander. Qualcuno gli spara, ma non lo ferisce a morte; la folla controllata si apre la carne per far cadere il sangue sugli altri. Sei accanto a Snit, e lui prova a manipolarti: in piazza vedi le persone diventare marionette. «Sei sempre stato un debole Snit, questa realtà la conosco perfettamente e presto ne sarò padrone» dice Alexander.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Al proclama Alexander controlla la folla.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "F27d1"
+      ],
+      "fonte": "P7 [V2 Cap.41 r.73-79]; [V2 Cap.42 r.4] (la battuta di Alexander accorciata)"
+     },
+     {
+      "id": "F27d3",
+      "testo": "Guardare tuo fratello sul palco",
+      "riserva": "Alexander si volta: a sparare è stato tuo fratello. Lo ignora, e le vene di Dimitri esplodono. Sopra la piazza si apre uno squarcio, e piove sangue: fitto, e a terra si muove, cercando i corpi. È la pioggia che vedesti sotto lo strappo della palude.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Tuo fratello è morto sul palco, e sulla piazza piove sangue.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "F27d2"
+      ],
+      "fonte": "P8 la morte di Dimitri (EIDOS.md r.261, r.270) [V2 Cap.42 r.3-5] e P9 [r.10-12]; R la visione della scena 07 si compie qui"
+     },
+     {
+      "id": "F27d4",
+      "testo": "Ascoltare la voce dei Dexia",
+      "riserva": "Dagli altoparlanti parla una voce dei Dexia: «Fuori dalle città vivono migliaia di persone, esistono tantissime città occupate da popolazioni pacifiche che non desiderano nient'altro che vivere in pace.» E: «Potrà anche chiedervi di bere promettendovi chissà che cosa. Se volete vivere rifiutatevi di bere!» Per loro «Antarsi» è una parola che toglie l'umanità.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "F27d2"
+      ],
+      "fonte": "L il discorso dei Dexia [V2 Cap.42, A voice for the people r.3-20] (le righe r.4, r.17), scopo: il disprezzo per gli Antarsi (EIDOS.md r.21)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F27x1",
+     "F27x2",
+     "F27x3"
+    ],
+    "risoluzione": [
+     "F27d1"
+    ]
+   },
+   "required_beats": [
+    "F27x1",
+    "F27x2",
+    "F27x3",
+    "F27d1",
+    "F27d2",
+    "F27d3"
+   ],
+   "optional_beats": [
+    "F27_rika_1",
+    "F27d4"
+   ],
+   "riserva_libera": "Sulla piazza di Epimno la folla aspetta il proclama, e nessuno beve.",
+   "uscita_fail_forward": "Se la scena si ferma, tuo fratello sale comunque sul palco, e un uomo dei Dexia ti porta via dalla piazza."
+  },
+  "F28": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F28x1",
+     "testo": "Ascoltare Fobos",
+     "riserva": "Fobos ti viene a cercare. «Senti, ho bisogno che lui smetta di farmi provare interesse nei tuoi confronti, perciò vorrei che questi echi parlino tra di loro e che finalmente smettano di condizionarci…» Ti spiega che Alexander vuole cancellare il mondo aprendo molti squarci, e ti propone mesi di addestramento.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Alexander vuole cancellare il mondo aprendo molti squarci.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.43 r.42-45] (la battuta r.42)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "damian",
+     "apertura": "Damian resta con te nella caverna.",
+     "chiusura": "Damian ti lascia ai tuoi pensieri.",
+     "riserva_libera": "Damian non risponde: ti tiene la mano.",
+     "argomenti": [
+      {
+       "id": "F28_damian_1",
+       "testo": "Parlare a Damian di Kryno",
+       "riserva": "Gli parli di Kryno. Damian non dice niente: ti lascia sfogare, e resta.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "damian",
+          "delta": 1
+         }
+        }
+       ],
+       "prima_di": [
+        "F28x1"
+       ],
+       "fonte": "P1 [V2 Cap.43 r.19]"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Allo squarcio l'eco che Fobos porta dentro e quella che porti tu si ritrovano: Leo e Smerte. «Smerte, fratello mio, mi manchi…» dice Leo.",
+    "fonte": "P3 [V2 Cap.43 r.54-55] (la battuta di Leo r.55)",
+    "esplora": [
+     {
+      "id": "F28d1",
+      "testo": "Ascoltare Smerte e Leo",
+      "riserva": "Smerte si butta a terra per Kryno: «L'ho persa un'altra volta.» Poi accusa te: «È solo colpa tua, tu l'hai lasciata lì!» E piano: «Eravamo troppo buoni per quel mondo, lo abbiamo aiutato a distruggerlo solo perché volevamo essere noi stessi… a volte tutto ciò che abbiamo dentro non è buono.» Fra le loro voci capisci quello che i Tritos non dicono: l'oblio degli Antarsi lo ha voluto Leo.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "L'oblio degli Antarsi lo ha voluto Leo.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P3 [V2 Cap.43 r.54-69] (le battute r.60 accorciata, senza l'insulto, e r.69); R comune: la verità sugli Antarsi si dice qui (PROPOSTA; DEDOTTO, [Cap.26 r.158-159, r.208]; [Cap.43 r.54-72])"
+     },
+     {
+      "id": "F28d2",
+      "testo": "Guardare Fobos e Leo",
+      "riserva": "Leo vorrebbe ridare un corpo a Kryno. Fobos rifiuta: «Non sarebbe lei, non avrebbe la sua anima, i suoi ricordi, i suoi traumi e ciò che l'ha resa la persona che voi due amavate.» «Vita tua, regole tue» dice Leo, e scompare. Smerte torna dentro di te.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "F28d1"
+      ],
+      "fonte": "P4 [V2 Cap.43 r.64-72] (la battuta di Fobos r.66)"
+     },
+     {
+      "id": "F28d3",
+      "testo": "Guardare la forma di fumo",
+      "riserva": "Fobos tira fuori dallo squarcio una forma di fumo: è Kryno. «Hey sorella…» ti dice. «Hai già una sorella, pensa a lei… sappi che non devi darti le colpe della tua scelta.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Kryno ti ha detto di pensare a tua sorella.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "F28d2"
+      ],
+      "fonte": "P5 [V2 Cap.43 r.73-76] (le battute r.74, r.76)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F28x1"
+    ],
+    "risoluzione": [
+     "F28d1"
+    ]
+   },
+   "required_beats": [
+    "F28x1",
+    "F28d1",
+    "F28d2",
+    "F28d3"
+   ],
+   "optional_beats": [
+    "F28_damian_1"
+   ],
+   "riserva_libera": "Lo squarcio ronza piano, e la sua luce ciano non scalda.",
+   "uscita_fail_forward": "Se la scena si ferma, la forma di fumo arriva comunque, e Kryno ti saluta."
+  },
+  "F29": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F29x1",
+     "testo": "Ascoltare il rapporto di Matthaios",
+     "riserva": "«Mi hanno detto che hai un bambino, non lo sapevo… sai è un peccato, ho sempre pensato che avessi un debole per me» dice Matthaios. Poi si fa serio: «Io rivoglio casa mia, temo che questa tregua momentanea durerà davvero poco.» E: «Gli adranès… puoi controllarli? Mi scoccia chiederti questa cosa, generale, ma ho bisogno di te.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Matthaios ha bisogno di te per controllare gli Adranès.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.44 r.21-26] e P3 [V2 Cap.46 r.4-9] (le battute r.4, r.6, r.7, r.9 accorciate)"
+    },
+    {
+     "id": "F29x2",
+     "testo": "Risvegliare i ricordi degli Adranès con Ambra e Loke",
+     "riserva": "Con Ambra e Loke ti occupi degli Adranès, e cercate di risvegliare i loro ricordi: i loro incubi sono la loro vita. Anthos legge i ricordi, e si spaventa leggendo i tuoi. Ti parla di Kryno: «lei era la prima di noi, l'amore e le emozioni ci rendono fragili… lei lo era ormai.» «Vedi? Non siamo poi così diversi dai nostri creatori» dice Ambra. «C'è sempre modo per tornare indietro e ripercorrere i propri sbagli, anche se sembra troppo tardi.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Con Ambra e Loke hai risvegliato i ricordi degli Adranès.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "richiede": [
+      "F29x1"
+     ],
+     "fonte": "P2 (P*: che cosa fa lei è suo) [V2 Cap.45 r.47] e P4 (P*) [V2 Cap.46 r.34-37] (le battute di Anthos r.36 e di Ambra r.37 accorciate)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "damian",
+     "apertura": "Damian ha in braccio Sophia.",
+     "chiusura": "Damian culla Sophia.",
+     "riserva_libera": "Damian non risponde: guarda sua figlia.",
+     "argomenti": [
+      {
+       "id": "F29_damian_1",
+       "testo": "Conoscere i genitori di Damian",
+       "riserva": "Damian ti presenta i suoi genitori, Serjey e Irina Stal.",
+       "effetti": [],
+       "richiede": [
+        "F29x1"
+       ],
+       "fonte": "L [V2 Cap.46 r.10], scopo: la famiglia di Damian"
+      },
+      {
+       "id": "F29_damian_2",
+       "testo": "Chiedere a Damian che cosa farà",
+       "riserva": "Damian vuole un peschereccio, per la pesca in alto mare. «Ho già il nome… smart lily, lily significa kryno in questa lingua… suona bene.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "damian",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "F29x2"
+       ],
+       "fonte": "L [V2 Cap.47 r.3-9] (la battuta r.8), scopo: il ricordo di Kryno"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "A Erissa nasce Sophia. Damian la vuole mostrare a tutti: «Ti sembrerò stupido, ma da quando sono nato, oltre te, questa è la seconda cosa più bella che io abbia mai avuto modo di vivere.»",
+    "fonte": "P5 (EIDOS.md r.262) [V2 Cap.46 r.68-70; Cap.47 r.1-3] (la battuta r.70); con il feto nei laboratori resta come nella fonte (punto aperto 4)",
+    "esplora": [
+     {
+      "id": "F29d1",
+      "testo": "Ascoltare Damian, con Sophia in braccio",
+      "riserva": "Con Sophia in braccio, Damian ti dice quello che sa. «Al matrimonio di tuo fratello io ero presente. Dimitri stava cercando di scalare i ranghi della politica: ha inscenato un attacco e pianificato la morte di Ophelia… le altre sono state un incidente non calcolato.» E poi: «Questa roba la so perché io ho piazzato una bomba in casa vostra per uccidere tuo padre Anastasios…» «Perciò quando tutto sarà finito, se dovrete farmi scontare qualche pena lo farò, ma vorrei davvero poter crescere mia figlia. Pesa poco, ma tutto quel peso io lo chiamo responsabilità.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Damian ti ha detto che cosa è successo davvero alle nozze di tuo fratello.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P6 R (b) [V2 Cap.47 r.14-23] (EIDOS.md r.262; le battute r.14, r.15, r.19, r.23 accorciate; detto a lei invece che a Dikaios: PROPOSTA, punto aperto 2; «tua sorella» e «suo padre» adattati)"
+     },
+     {
+      "id": "F29d2",
+      "testo": "Salutare Damian e Sophia",
+      "riserva": "Damian parte con i suoi genitori e con Sophia, verso Antarsia.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Damian e Sophia sono partiti per Antarsia.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "F29d1"
+      ],
+      "fonte": "P7 [V2 Cap.47 r.27]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F29x1",
+     "F29x2"
+    ],
+    "risoluzione": [
+     "F29d1"
+    ]
+   },
+   "required_beats": [
+    "F29x1",
+    "F29x2",
+    "F29d1",
+    "F29d2"
+   ],
+   "optional_beats": [
+    "F29_damian_1",
+    "F29_damian_2"
+   ],
+   "riserva_libera": "A Erissa il cielo è pieno di luci ciano.",
+   "uscita_fail_forward": "Se la scena si ferma, Damian parte comunque con Sophia, ed Erissa finisce."
+  },
+  "F30": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "F30x1",
+     "testo": "Entrare nella formazione dei lancieri",
+     "riserva": "Al buio, nella formazione dei lancieri, con Matthaios armato di lancia e scudo. Fa freddo, e c'è silenzio; chi esce dalle file si spegne nel buio. «Su gli scudi!» grida Matthaios.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "P2 [V2 Cap.47 r.124-126] (la battuta r.126)"
+    },
+    {
+     "id": "F30x2",
+     "testo": "Rispondere a Fobos nel casco",
+     "riserva": "«Critto è sotto attacco, ho bisogno di trovarlo ora» dice Fobos nel casco.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Critto è sotto attacco: Fobos cerca il nemico.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "richiede": [
+      "F30x1"
+     ],
+     "fonte": "P3 [V2 Cap.47 r.165] (la battuta senza l'insulto)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "ambra",
+     "apertura": "Ambra cammina fra gli Adranès che hanno paura.",
+     "chiusura": "Ambra torna fra i suoi.",
+     "riserva_libera": "Ambra non risponde: guarda gli Adranès.",
+     "argomenti": [
+      {
+       "id": "F30_ambra_1",
+       "testo": "Ascoltare Ambra parlare agli Adranès",
+       "riserva": "«Non siete qui per farvi mettere paura, il nostro nemico è il nostro creatore, una volta sconfitto lui potremmo avere una vita» dice Ambra agli Adranès.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "ambra",
+          "delta": 1
+         }
+        }
+       ],
+       "prima_di": [
+        "F30d1"
+       ],
+       "fonte": "L Ambra fa coraggio agli Adranès [V2 Cap.47 r.86], scopo: gli Adranès come persone"
+      }
+     ]
+    },
+    {
+     "png": "matthaios",
+     "apertura": "Matthaios guarda le file nemiche.",
+     "chiusura": "Matthaios torna al suo posto.",
+     "riserva_libera": "Matthaios non risponde: conta i nemici.",
+     "argomenti": [
+      {
+       "id": "F30_matthaios_1",
+       "testo": "Chiedere a Matthaios che cosa vuole da te",
+       "riserva": "«Appena la prima fila cade, e credo che cadrà facilmente, ho bisogno di te sul fronte per risollevare il morale degli uomini: devono credere di potercela fare, anche se non è così.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "matthaios",
+          "delta": 1
+         }
+        }
+       ],
+       "prima_di": [
+        "F30d1"
+       ],
+       "fonte": "L Matthaios le chiede di risollevare il morale in prima fila [V2 Cap.47 r.93] (il nome tolto, la battuta accorciata), scopo: lei come generale"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Gli squarci si aprono, il terreno crepita, e piove sangue. Il sangue cerca le aperture nelle armature; i morti si rialzano. Matthaios, controllato, muore soffocato. «Vinci, riporta a casa gli epizi» ti dice.",
+    "fonte": "P4 [V2 Cap.47 r.163-173] (la battuta di Matthaios r.173)",
+    "esplora": [
+     {
+      "id": "F30d1",
+      "testo": "Andare verso nord, dove va il sangue",
+      "riserva": "Il sangue va verso nord, e tu lo segui, con fatica: {sei ferito gravemente|sei ferita gravemente|hai ferite gravi}. Intorno a te c'è un massacro; poi un boato, il cielo nero, le fiamme a nord. Lì c'è Alexander, e Fobos.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "A nord ti aspetta Alexander.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "[V2 Cap.47 r.180-182, r.193] e P5 [r.199]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "F30x1",
+     "F30x2"
+    ],
+    "risoluzione": [
+     "F30d1"
+    ]
+   },
+   "required_beats": [
+    "F30x1",
+    "F30x2",
+    "F30d1"
+   ],
+   "optional_beats": [
+    "F30_ambra_1",
+    "F30_matthaios_1"
+   ],
+   "riserva_libera": "Sul fronte nord piove sangue, e nessuno parla.",
+   "uscita_fail_forward": "Se la scena si ferma, il sangue ti porta comunque davanti al nemico, accanto a Fobos."
+  }
+ }
+}

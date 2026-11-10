@@ -1,0 +1,2761 @@
+{
+ "formato": "rm-solo-interazioni/1",
+ "campaign_id": "lupa-trama",
+ "stato": "bozza",
+ "content_status": "proposed",
+ "nota": "«La lupa senza memoria»: docs/single-player/trame/SCHEMA_LA_LUPA_SENZA_MEMORIA.md (schema approvato il 30/10); ICH.md §2 r.129-154. Ogni frase riprende un fatto o una battuta della fonte (note di lettura rm-work/ich/letture/); nessun fatto nuovo se non segnato PROPOSTA.",
+ "regole": {},
+ "scene": {
+  "W01": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W01x1",
+     "testo": "Lavorare la lama sull'incudine",
+     "riserva": "Vegard guarda la lama da sopra la tua spalla, a lungo. «Devo dire che stai imparando in fretta, per essere solo {un ragazzino|una ragazzina|alle prime armi}. Saper forgiare queste lame sarà la tua vita, quando te ne andrai da qui.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_forgia"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.1 r.59-62] (la battuta di Vegard [r.62], resa nelle tre forme del genere)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "vegard",
+     "apertura": "Vegard posa le pinze e ti guarda, burbero.",
+     "chiusura": "Vegard torna al mantice.",
+     "riserva_libera": "Vegard grugnisce: «Lavora, e lascia le chiacchiere a chi non ha le mani occupate.»",
+     "argomenti": [
+      {
+       "id": "W01_vegard_1",
+       "testo": "Chiedere a Vegard perché ti ha insegnato il mestiere",
+       "riserva": "Vegard sputa nel fuoco. «So che non ti frega un cazzo di noi, ma sono fiero di averti insegnato un mestiere che ti faccia sopravvivere là fuori…» Poi si volta, come se avesse detto troppo.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "vegard",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.1 r.63] (la battuta di Vegard); testo PROPOSTA",
+       "scopo": "la forgia come casa (L dello schema: torna nella 25)"
+      }
+     ]
+    },
+    {
+     "png": "ivor",
+     "apertura": "Ivor si appoggia al banco, con la ciocca rossa che gli cade sugli occhi.",
+     "chiusura": "Ivor ti dà una pacca sulla spalla.",
+     "riserva_libera": "Ivor ride: «E che ne so io? Chiedilo alla luna rossa.»",
+     "argomenti": [
+      {
+       "id": "W01_ivor_1",
+       "testo": "Chiedere a Ivor della luna rossa",
+       "riserva": "«A breve partiremo» dice Ivor, abbassando la voce come per un segreto. «Si dice che il voluspà dell'hersar Ulfrida abbia ululato tutta la notte. Dice che ci sarà luna rossa, a breve.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "ivor",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "W01d1"
+       ],
+       "fonte": "[ICH Cap.1 r.67] (la battuta di Ivor)",
+       "scopo": "il legame con Ivor (L dello schema)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La porta della forgia si spalanca e lascia entrare il freddo. È Ivor, con la sua lama in mano e il sorriso di chi porta una notizia. «Fabbro! Ho bisogno che sistemi il filo della mia zanna.»",
+    "fonte": "P2 [ICH Cap.1 r.66] (la battuta di Ivor)",
+    "esplora": [
+     {
+      "id": "W01d1",
+      "testo": "Ascoltare Ivor",
+      "riserva": "Ivor ti mette la lama sul banco. «Hai ancora tempo per la prova. Dimostra che sei una di noi, e salpa con me.» Kil apre un occhio e lo guarda, come se avesse capito.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_ivor"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.1 r.68] (la battuta di Ivor); Kil che apre un occhio: PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W01x1"
+    ],
+    "risoluzione": [
+     "W01d1"
+    ]
+   },
+   "required_beats": [
+    "W01x1",
+    "W01d1"
+   ],
+   "optional_beats": [
+    "W01_vegard_1",
+    "W01_ivor_1"
+   ],
+   "riserva_libera": "Nella forgia ti rispondono soltanto il fuoco e il martello.",
+   "uscita_fail_forward": "Se la scena si ferma, Ivor ti trascina comunque fuori, nella neve."
+  },
+  "W02": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W02x1",
+     "testo": "Guardare il rito degli ulfer",
+     "riserva": "Gli ulfer restano immobili nella neve, con le braccia aperte e gli occhi chiusi. Qualcuno sorride, qualcuno piange piano: dicono che così si vedono gli avi, qui nella valle.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_rito"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.1 r.71-74] (il rito per vedere gli avi; i sorrisi e il pianto: PROPOSTA)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "ivor",
+     "apertura": "Ivor ti guarda, con la ciocca rossa piena di neve.",
+     "chiusura": "Ivor torna a guardare la valle.",
+     "riserva_libera": "Ivor si stringe nelle spalle: «Gli avi non rispondono a tutti.»",
+     "argomenti": [
+      {
+       "id": "W02_ivor_1",
+       "testo": "Chiedere a Ivor con chi parlava",
+       "riserva": "Ivor ti guarda come se non capisse la domanda. «Con nessuno» dice. Poi sorride, e la ciocca rossa sembra ancora accesa.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "ivor",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "W02d1"
+       ],
+       "fonte": "[ICH Cap.1 r.76-77] (Ivor parla piano con qualcuno di invisibile: la fonte non lo spiega, file dei PNG, Ivor); la risposta: PROPOSTA",
+       "scopo": "il legame con Ivor"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il rito si fa più profondo. Accanto a te Ivor ha chiuso gli occhi, e muove le labbra piano.",
+    "fonte": "P1 [ICH Cap.1 r.76-77]",
+    "esplora": [
+     {
+      "id": "W02d1",
+      "testo": "Guardare Ivor",
+      "riserva": "Ivor parla piano con qualcuno che tu non vedi. Mentre parla, la sua ciocca rossa si accende, come una brace sotto la neve.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Ivor parla piano con qualcuno che non vedi, e la sua ciocca rossa si accende.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P1 [ICH Cap.1 r.76-77] (la ciocca rossa che si accende)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W02x1"
+    ],
+    "risoluzione": [
+     "W02d1"
+    ]
+   },
+   "required_beats": [
+    "W02x1",
+    "W02d1"
+   ],
+   "optional_beats": [
+    "W02_ivor_1"
+   ],
+   "riserva_libera": "Nei campi nessuno ti risponde: tutti guardano gli avi.",
+   "uscita_fail_forward": "Se la scena si ferma, quella notte il flash arriva comunque, nel sonno, e l'hersir apre la spedizione."
+  },
+  "W03": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W03x1",
+     "parte": "Snaeriff",
+     "testo": "Avvisare l'hersar che parti per la prova",
+     "riserva": "L'hersar ti ascolta e annuisce soltanto: un'altra zanna che parte. Quando torni da Ivor, lui ti prende la mantella e ci cuce sopra un simbolo di buon auspicio. «Baderò a Kil e alla tua spada fino al tuo rientro. Salperemo insieme.» Ti spiega dove cercare le tracce e come stare al caldo di notte. Poi ti batte una mano sulla spalla. «Hai nove giorni, puoi farcela.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_mantella"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.1 r.147-152] (le battute di Ivor [r.149], [r.152]; i consigli); il cenno dell'hersar: PROPOSTA"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "ivor",
+     "apertura": "Ivor stringe l'ultimo punto e spezza il filo con i denti.",
+     "chiusura": "Ivor ti restituisce la mantella.",
+     "riserva_libera": "Ivor ride: «Non chiedere a me, chiedi alla neve.»",
+     "argomenti": [
+      {
+       "id": "W03_ivor_1",
+       "testo": "Lasciare Kil a Ivor",
+       "riserva": "Kil annusa la mano di Ivor e si accuccia ai suoi piedi, come se fosse già d'accordo. «Visto?» ride Ivor. «Ti aspetteremo tutti e due.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "ivor",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.1 r.149] (Ivor terrà Kil); testo PROPOSTA",
+       "scopo": "il legame con Ivor e con Kil (che muore nella 08)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nei boschi innevati trovi una volpe uccisa dai lupi, e poi più niente. Passano quattro giorni senza una preda, e le notti sono lunghe. Il quinto giorno, fra gli alberi, un lupo si ferma e annusa qualcosa nella neve.",
+    "fonte": "P2 [ICH Cap.1 r.154-156] (la volpe uccisa dai lupi; quattro giorni senza preda: il tiro della fonte, qui raccontato; il lupo)",
+    "esplora": [
+     {
+      "id": "W03d1",
+      "parte": "i boschi innevati",
+      "testo": "Seguire il lupo",
+      "riserva": "Il lupo annusa uno strano fiore luminoso, poi si allontana fra gli alberi; tu lo segui, e dietro la collina trovi la preda. Ma quando ti chini su di lei, nel buio si accendono altri occhi. Un altro animale ti salta addosso.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_caccia"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.1 r.156-158] (il fiore luminoso, la preda, gli occhi nel buio, l'animale); L dello schema: il lupo come guida"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W03x1"
+    ],
+    "risoluzione": [
+     "W03d1"
+    ]
+   },
+   "required_beats": [
+    "W03x1",
+    "W03d1"
+   ],
+   "optional_beats": [
+    "W03_ivor_1"
+   ],
+   "riserva_libera": "Nel bosco ti rispondono soltanto il vento e la neve.",
+   "uscita_fail_forward": "Se la scena si ferma, torni comunque con la preda, {stremato|stremata|senza forze}."
+  },
+  "W04": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W04x1",
+     "parte": "La neve",
+     "testo": "Guardare chi ti ha salvato",
+     "riserva": "È un ragazzo degli Ulf Vanar; accanto a lui, sulla neve, c'è un cucciolo d'orso che ha trascinato fin lì. «{Ti sei ripreso|Ti sei ripresa|Hai ripreso i sensi}, vedo. Non facevi che blaterare parole in una lingua incomprensibile.» Ti porge la mano. «Runulf, ma tutti mi chiamano Runi.» Poi i suoi occhi scendono al ciondolo che porti al collo. «E quello? Che cos'è?»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_runi"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.1 r.182-191] (le battute di Runi [r.185], resa nelle tre forme del genere, e [r.188]; il ciondolo)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "runi",
+     "apertura": "Runi attizza il fuoco, ma ha l'aria di chi ha fretta di ripartire.",
+     "chiusura": "Runi si carica il cucciolo d'orso sulle spalle.",
+     "riserva_libera": "Runi sorride: «Io? Io so solo cacciare, e trovare gente nella neve.»",
+     "argomenti": [
+      {
+       "id": "W04_runi_1",
+       "testo": "Chiedere a Runi del cucciolo d'orso",
+       "riserva": "«Il mio trofeo» dice Runi, e dà una pacca al cucciolo. «Ma se non mi sbrigo a tornare, i nove giorni passano anche per me.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "runi",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.1 r.182-189] (il cucciolo d'orso; la fretta di tornare: note del PNG); testo PROPOSTA",
+       "scopo": "il legame con Runi (il filo del finale 1)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Tornate insieme a Snaeriff. Nel cerchio del rito gli eletti stanno in piedi con la pelliccia della loro preda sulle spalle; il sangue dell'hersir passa di mano in mano in una ciotola, e ognuno riceve il marchio della promessa e una zanna rossa sul volto.",
+    "fonte": "P2 [ICH Cap.1 r.192-197]",
+    "esplora": [
+     {
+      "id": "W04d1",
+      "parte": "il cerchio del rito a Snaeriff",
+      "testo": "Entrare nel cerchio",
+      "riserva": "Quando tocca a te, una voluspà deforme in volto, con una catena al collo come un cane, si avvicina e ti lecca il viso. È Grey. «Ombra di te stessa, ora indossi le zanne per dare uno scopo alla tua esistenza.» E più piano, vicinissima: «Il tuo corpo ora è carne: un privilegio pagato a caro prezzo.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_zanne"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.1 r.198-200] (Grey e le sue battute: accennano alla (a) senza dirla)"
+     },
+     {
+      "id": "W04d2",
+      "parte": "il cerchio del rito a Snaeriff",
+      "testo": "Porgere il viso a Leita",
+      "riserva": "Una donna dai capelli bruni, con una cicatrice a croce sul viso, scansa Grey e ti prende il mento. Con il coltello ti incide la zanna. «Queste sono le uniche zanne che avrai per ora: sono le vite a te care che toglierai per mano di Fenris. Fino ad allora non sarai nient'altro che uno stupido beta.» Ti lascia andare. «Ora sei tra le zanne.»",
+      "fase": "resolution",
+      "richiede": [
+       "W04d1"
+      ],
+      "effetti": [
+       {
+        "scopri": "lupa_fact_profezia"
+       }
+      ],
+      "fonte": "P2 e P3 [ICH Cap.1 r.201-203] (Leita e le sue battute [r.202] e [r.203], quest'ultima resa senza genere; grafia «Fenris»)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W04x1"
+    ],
+    "risoluzione": [
+     "W04d1",
+     "W04d2"
+    ]
+   },
+   "required_beats": [
+    "W04x1",
+    "W04d1",
+    "W04d2"
+   ],
+   "optional_beats": [
+    "W04_runi_1"
+   ],
+   "riserva_libera": "Nel cerchio nessuno ti risponde: il rito non si interrompe.",
+   "uscita_fail_forward": "Se la scena si ferma, il rito si compie comunque, e Leita ti incide la zanna."
+  },
+  "W05": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W05x1",
+     "parte": "La tua tenda",
+     "testo": "Lasciarti curare dal guaritore",
+     "riserva": "Il guaritore prepara un impasto di bacche di Mhis e te lo spalma sulla fronte e sul petto; Ivor lo paga con cibo e pelli. «È {un uomo forte|una donna forte|una persona forte}» gli dice Ivor. «Ha visto di peggio di una stupida febbre. So che questo non {lo|la|la} fermerà… Vero, {nome}?» Fuori dalla tenda qualcuno dice che si parte fra tre giorni.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_febbre"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.2 r.42-48] (il guaritore e le bacche di Mhis; la battuta di Ivor [r.46], resa nelle tre forme del genere e con {nome}; la partenza fra tre giorni: il tiro di percepire della fonte [r.45])"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "leita",
+     "apertura": "Leita, in disparte, colpisce un palo con il coltello, sempre nello stesso punto.",
+     "chiusura": "Leita torna al suo palo.",
+     "riserva_libera": "Leita non si volta nemmeno.",
+     "argomenti": [
+      {
+       "id": "W05_leita_1",
+       "testo": "Avvicinarti a Leita",
+       "riserva": "Leita non smette di colpire il palo. «Sei tra le zanne da un giorno, e già bevi?» Poi ti guarda, finalmente, e la cicatrice a croce le si piega sul viso. «Bevi, allora. Ma alla prima caccia voglio vedere i tuoi denti.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "leita",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "W05d2"
+       ],
+       "fonte": "[ICH Cap.2 r.158] (Leita si addestra alla festa); duro, sprezzante: note del PNG [ICH Cap.1 r.201-203]; testo PROPOSTA",
+       "scopo": "Leita, che il branco seguirà (L dello schema)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La febbre sale ancora. E il sogno torna, uguale al flash nei campi: il buio, la terra arida, i tre compagni senza volto, gli elmi trasparenti, la voce disturbata.",
+    "fonte": "P2 [ICH Cap.2 r.49-51] (il sogno uguale al flash del Cap.1)",
+    "esplora": [
+     {
+      "id": "W05d1",
+      "testo": "Svegliarti",
+      "riserva": "Ti svegli con la guancia su una spalla. È Ivor, che cammina. «{Ben svegliato, dormiglione|Ben svegliata, dormigliona|Buongiorno, dormiglione}. Ti ho portato un po' in spalla, ma credo che tu possa camminare {da solo|da sola|per conto tuo}, ora…» Davanti a voi c'è Ulfrik, piena di reveries che spostano merci e battono metallo. Ivor ti mette in mano il tuo diario. «Tieni. A volte penso che solo Kil ti capisca.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_sogno"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.2 r.52-56] (le battute di Ivor [r.52], resa nelle tre forme del genere, e [r.55]; Ulfrik [r.53]; il diario); L dello schema: il diario, la pagina viene nella 06"
+     },
+     {
+      "id": "W05d2",
+      "parte": "Ulfrik",
+      "testo": "Andare alla festa delle nuove zanne",
+      "riserva": "Le nuove zanne bevono e giocano. C'è Runi, che ti saluta con il corno alzato; ci sono Esmyr, Flodurr, che tutti chiamano un pazzo fanatico, e Leita, che si addestra in disparte. Poi l'hersir Harald alza la voce: «Attendo il vostro rientro con un grosso bottino, mie zanne: voi siete i figli dei nove lupi, nessuno è al vostro pari!» E l'hersar Ulfrida, accanto a lui: «La caccia selvaggia è prossima. Partiremo presto per nuove terre: Grey mi ha mostrato la via. Nessuno potrà abbattere chi non teme la morte!»",
+      "fase": "resolution",
+      "richiede": [
+       "W05d1"
+      ],
+      "effetti": [
+       {
+        "scopri": "lupa_fact_caccia_selvaggia"
+       }
+      ],
+      "fonte": "P3 e P4 [ICH Cap.2 r.153-172] (la festa; le battute di Harald [r.166] e di Ulfrida [r.170-171], accorciate)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W05x1"
+    ],
+    "risoluzione": [
+     "W05d1",
+     "W05d2"
+    ]
+   },
+   "required_beats": [
+    "W05x1",
+    "W05d1",
+    "W05d2"
+   ],
+   "optional_beats": [
+    "W05_leita_1"
+   ],
+   "riserva_libera": "Intorno a te la festa è troppo rumorosa perché qualcuno ti senta.",
+   "uscita_fail_forward": "Se la scena si ferma, la festa finisce comunque, e la caccia selvaggia è annunciata."
+  },
+  "W06": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W06x1",
+     "parte": "Il porto di Ulfrik",
+     "testo": "Guardare le navi che si caricano",
+     "riserva": "Ivor ti saluta da un'altra nave: salpa con Leita, la zanna con la croce sul viso. L'hersir resta a terra ad aspettare il bottino; l'hersar Ulfrida Bloddtonn sale per prima sulla sua drekar, e il branco la segue.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_navi"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.3 r.12-14]"
+    },
+    {
+     "id": "W06x2",
+     "parte": "Il porto di Ulfrik",
+     "testo": "Salire a bordo con Runi, Esmyr e Flodurr",
+     "riserva": "Il simbolo sulle drekar somiglia a quello che Ivor ti ha cucito sulla mantella. «Lo vedrai presto sullo scudo dell'hersar, una volta arrivati» dice Flodurr. Esmyr guarda te e Runi. «Voi due non siete molvblod, vero?» «Io lo sarò» risponde Runi. «Perché, ti crea problemi?» «Devi mettere la testa a posto, cucciolo: stai nelle zanne da un giorno, non ti faranno fare il rito.» «È una cosa personale.» Flodurr ride. «Personale o no, ha ragione… ma sono molto fiero di te, ragazzo.»",
+     "fase": "exploration",
+     "richiede": [
+      "W06x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "lupa_fact_drekar"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.3 r.15-22] (le battute di Flodurr [r.16, r.21], di Esmyr [r.17, r.19] e di Runi [r.18, r.20], ritoccate nella grafia)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "runi",
+     "apertura": "Runi è appoggiato alla murata e guarda il mare di ghiaccio.",
+     "chiusura": "Runi torna a guardare il mare.",
+     "riserva_libera": "Runi alza le spalle: «Chiedilo al mare.»",
+     "argomenti": [
+      {
+       "id": "W06_runi_1",
+       "testo": "Chiedere a Runi perché vuole diventare molvblod",
+       "riserva": "Runi guarda il mare a lungo. «È una cosa personale» ripete, ma più piano. Poi i suoi occhi scendono al tuo collo. «Ce l'hai ancora, quel ciondolo?»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "runi",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "W06x2"
+       ],
+       "fonte": "[ICH Cap.3 r.20] (la battuta di Runi, ripresa: il motivo la fonte non lo spiega, file dei PNG); il ciondolo: PROPOSTA (il filo della 04)",
+       "scopo": "il legame con Runi (L dello schema)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il viaggio sul mare di ghiaccio è lungo e freddo. Una notte ti svegli di colpo: intorno a te nessuno dorme. Tutti, sulla nave, hanno gli occhi spalancati.",
+    "fonte": "P3 [ICH Cap.3 r.60-65]",
+    "esplora": [
+     {
+      "id": "W06d1",
+      "parte": "la nave sul mare di ghiaccio",
+      "testo": "Guardare i compagni",
+      "riserva": "Parlano tutti insieme, con la stessa voce piatta. «Fase di processamento dati, costante rilevata.» «Produzione energia: richiesto catalizzatore.» «Catalizzatore rilevato. Fonte: essere umano.» «Elaborazione sviluppo miglioramento genetico. Rielaborazione dati psicologici: errore nel processo.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_sequenza"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.3 r.66-69] (la sequenza, alla lettera con la grafia corretta)"
+     },
+     {
+      "id": "W06d2",
+      "parte": "la nave sul mare di ghiaccio",
+      "testo": "Scuotere chi recita",
+      "riserva": "Scuoti Runi per una spalla, poi Esmyr: nessuno ti guarda, nessuno si ferma. Quando la voce arriva all'errore, tutti chiudono gli occhi insieme e tornano a dormire, come se niente fosse stato. {Sveglio|Sveglia|Sveglio} resti soltanto tu.",
+      "fase": "resolution",
+      "richiede": [
+       "W06d1"
+      ],
+      "effetti": [
+       {
+        "nota": "Sulla nave, dopo la sequenza, sei l'unica persona rimasta sveglia.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "L dello schema: scuotere chi recita, lei sola resta sveglia (DEDOTTO); testo PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W06x2"
+    ],
+    "risoluzione": [
+     "W06d1",
+     "W06d2"
+    ]
+   },
+   "required_beats": [
+    "W06x1",
+    "W06x2",
+    "W06d1",
+    "W06d2"
+   ],
+   "optional_beats": [
+    "W06_runi_1"
+   ],
+   "riserva_libera": "Il vento del mare di ghiaccio si porta via le tue parole.",
+   "uscita_fail_forward": "Se la scena si ferma, il viaggio continua comunque, e la nave arriva alla costa straniera."
+  },
+  "W07": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W07x1",
+     "parte": "La costa straniera",
+     "testo": "Guardare la costa straniera",
+     "riserva": "La spiaggia non somiglia a nessuna che tu conosca. Flodurr sorride, con quel suo sorriso che inquieta. «Vedo qualcuno sulla costa. Bene… avevo proprio voglia di uccidere, stamattina.» A terra l'hersar segna le zanne con il suo sangue, una per una, poi alza la lancia. «Siate pronti, miei lupi: azzanneremo questo nuovo mondo. Diamo il via alla caccia selvaggia!»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_sbarco"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.3 r.118-126] (le battute di Flodurr [r.121] e di Ulfrida [r.124])"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "ivor",
+     "apertura": "Ivor ti affianca sulla spiaggia, con la zanna in pugno.",
+     "chiusura": "Ivor guarda la collina.",
+     "riserva_libera": "Ivor non ti sente: ha già gli occhi sulla collina.",
+     "argomenti": [
+      {
+       "id": "W07_ivor_1",
+       "testo": "Restare accanto a Ivor nella carica",
+       "riserva": "«Stammi vicino, Fabbro» dice Ivor, e ride. Ma quando la carica comincia, la sua risata cambia, e non la riconosci più.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "ivor",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.4 r.10] (Ivor in battaglia diventa sanguinario: note del PNG); testo PROPOSTA",
+       "scopo": "il legame con Ivor, e quello che diventa in battaglia"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Le zanne e i metalupi caricano oltre la collina. Sotto di voi c'è un villaggio: contadini con i forconi, e uomini con vesti di metallo, lance e archi. Ivor si getta fra le case con una furia che non gli hai mai visto; Esmyr combatte senza freni, e Flodurr ride, con una testa staccata in mano.",
+    "fonte": "P2 e P3 [ICH Cap.4 r.3-11]",
+    "esplora": [
+     {
+      "id": "W07d1",
+      "parte": "il villaggio oltre la collina",
+      "testo": "Correre con le zanne fra le case",
+      "riserva": "Corri con gli altri fra le case. Un uomo con la veste di metallo e la lancia ti sbarra la strada.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_carica"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.4 r.5-9] (gli uomini con vesti di metallo, lance e archi); come muoversi è del giocatore («Falle scegliere come muoversi» [r.8])"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W07x1"
+    ],
+    "risoluzione": [
+     "W07d1"
+    ]
+   },
+   "required_beats": [
+    "W07x1",
+    "W07d1"
+   ],
+   "optional_beats": [
+    "W07_ivor_1"
+   ],
+   "riserva_libera": "Nel fragore della carica nessuno ti sente.",
+   "uscita_fail_forward": "Se la scena si ferma, il villaggio cade comunque sotto le zanne."
+  },
+  "W08": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W08x1",
+     "testo": "Guardare gli uomini in armatura",
+     "riserva": "Sono quattro, forse cinque, con le armature sporche di fumo. Corrono verso i cavalli legati in fondo alla strada. Kil ringhia piano, pronta a scattare.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Gli uomini in armatura fuggono verso i cavalli, e Kil è pronta a scattare.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.4 r.14, r.59] (gli uomini che chiamano i cavalli); il numero e Kil che ringhia: PROPOSTA"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "runi",
+     "apertura": "Runi ti raggiunge, con il fiato corto e la lama sporca.",
+     "chiusura": "Runi guarda la strada.",
+     "riserva_libera": "Runi scuote la testa: non c'è tempo.",
+     "argomenti": [
+      {
+       "id": "W08_runi_1",
+       "testo": "Chiedere a Runi di restare con te",
+       "riserva": "«Sono qui» dice Runi, e si mette al tuo fianco. Non ti chiede niente: guarda gli uomini in armatura, e aspetta che sia tu a muoverti.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "runi",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.4 r.62] (Runi combatte al suo fianco); testo PROPOSTA",
+       "scopo": "il legame con Runi"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Uno degli uomini in armatura si ferma in mezzo alla strada e si volta, con l'arma alzata: vuole coprire la fuga degli altri. Kil scatta in avanti.",
+    "fonte": "P1 [ICH Cap.4 r.59-60] (uno si ferma per coprire gli altri); Kil che scatta: PROPOSTA (Kil muore per aiutarla [ICH Cap.5 r.27])",
+    "esplora": [
+     {
+      "id": "W08d1",
+      "testo": "Stringere l'arma",
+      "riserva": "Stringi l'arma. Davanti a te l'uomo che copre la fuga; dietro di lui gli altri, che slegano i cavalli. Puoi inseguirli, o lasciarli andare.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Uno degli uomini in armatura copre la fuga degli altri.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P* dello schema: inseguire o no [ICH Cap.4 r.59]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W08x1"
+    ],
+    "risoluzione": [
+     "W08d1"
+    ]
+   },
+   "required_beats": [
+    "W08x1",
+    "W08d1"
+   ],
+   "optional_beats": [
+    "W08_runi_1"
+   ],
+   "riserva_libera": "Nella strada che brucia nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, la pira si accende comunque, e Ulfrida dichiara la nuova casa."
+  },
+  "W09": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W09x1",
+     "testo": "Salutare Kil",
+     "riserva": "Ti inginocchi accanto alle pietre. Kil è morta per aiutarti, e tu non hai fatto in tempo a dirle niente. Lo fai adesso, piano, mentre il campo intorno a te si fa buio.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_saluto"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.5 r.27-28] (saluta Kil, morta per aiutarla; il campo all'imbrunire); le pietre: PROPOSTA"
+    },
+    {
+     "id": "W09x2",
+     "testo": "Ascoltare i rapporti sui fuggitivi",
+     "riserva": "Davanti alla tenda dell'hersar Runi riferisce: i paesani sono fuggiti verso est, e con loro una guardia a cavallo. Ulfrida lo ascolta con la faccia di chi ha già sentito troppe parole. «In che direzione?»",
+     "fase": "exploration",
+     "richiede": [
+      "W09x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "lupa_fact_saluto"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.5 r.38-40] (i fuggitivi a est; la battuta di Ulfrida [r.40])"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "flodurr",
+     "apertura": "Flodurr ti viene incontro con qualcosa in mano, e un sorriso largo.",
+     "chiusura": "Flodurr se ne va ridendo.",
+     "riserva_libera": "Flodurr ride, e non ti risponde.",
+     "argomenti": [
+      {
+       "id": "W09_flodurr_1",
+       "testo": "Chiedere a Flodurr che cosa tiene in mano",
+       "riserva": "Flodurr ti mostra una mano mozzata. «Avete bisogno di una mano?» Runi storce la bocca: «È di cattivo gusto.» Flodurr si stringe nelle spalle. «È di uno dei nostri compagni. Oltre alla mano, ha perso la vita.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "flodurr",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.5 r.35-37] (le battute di Flodurr e di Runi)",
+       "scopo": "scegliere i legami (L dello schema)"
+      }
+     ]
+    },
+    {
+     "png": "esmyr",
+     "apertura": "Esmyr siede da sola, e si tocca piano il taglio sul viso.",
+     "chiusura": "Esmyr si tira il cappuccio sul viso.",
+     "riserva_libera": "Esmyr ti guarda storto, e non risponde.",
+     "argomenti": [
+      {
+       "id": "W09_esmyr_1",
+       "testo": "Sederti accanto a Esmyr",
+       "riserva": "Esmyr non ti guarda. «Non fissarmi» dice, e la voce le trema appena. Poi, dopo un po', non si alza per andarsene.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "esmyr",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.5 r.33] (Esmyr fragile per il suo aspetto dopo lo sfregio); testo PROPOSTA",
+       "scopo": "scegliere i legami (L dello schema)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Passano circa trenta giorni. Le navi tornano a casa a prendere altri lupi; il villaggio si allarga, con una forgia nuova e un porto per l'arrivo dell'hersir. Tu e Runi esplorate i dintorni, giorno dopo giorno.",
+    "fonte": "P2 [ICH Cap.5 r.42-45]",
+    "esplora": [
+     {
+      "id": "W09d1",
+      "testo": "Esplorare i dintorni con Runi",
+      "riserva": "Un giorno, mentre camminate, il villaggio si sovrappone a un altro luogo. Ci sono corridoi, e un uomo accanto a te che sussurra: «Prendiamo i dati e fuggiamo, niente stronzate, ok?» Ti accarezza il viso e ti bacia. «Finalmente vivremo in mezzo alle foreste, in mezzo alla natura, in luoghi che possiamo avere solo nei sogni, guardando il sole… tutto ciò che abbiamo perso diventerà di nuovo realtà.» Poi una sala piena di capsule, collegate a cavi. Poi c'è di nuovo la neve, e Runi che ti chiama per nome.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_sovrapposta"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.5 r.112-113] (i corridoi, l'uomo e le sue battute [r.113], ritoccate; le capsule e i cavi); il luogo non si nomina e l'uomo resta «un uomo» fino alla 10 (schema); Runi che la chiama: PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W09x2"
+    ],
+    "risoluzione": [
+     "W09d1"
+    ]
+   },
+   "required_beats": [
+    "W09x1",
+    "W09x2",
+    "W09d1"
+   ],
+   "optional_beats": [
+    "W09_flodurr_1",
+    "W09_esmyr_1"
+   ],
+   "riserva_libera": "Nel villaggio conquistato nessuno ha voglia di parlare.",
+   "uscita_fail_forward": "Se la scena si ferma, i trenta giorni passano comunque, e il villaggio cresce."
+  },
+  "W10": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W10x1",
+     "testo": "Guardarti intorno nel locale",
+     "riserva": "È un capannone pieno di luci rosse e blu. Le persone intorno a te sono metà macchina; sul palco ci sono capsule che fanno luce. Uno spacciatore ti squadra da capo a piedi: «Quanta percentuale di vera carne?» E allora ricordi: questa è la tua vita, prima della neve. Qui ti chiamavi Mira.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Ricordi la tua vita prima della neve: una città buia, e il nome Mira.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.6 r.101-106] (il locale, le luci, le persone metà macchina, le capsule; la battuta dello spacciatore [r.106]); R (a) si dice qui: il nome terrestre (ICH.md r.169; «[Mira]» nelle note), scoperto prima di ogni parola riservata"
+    },
+    {
+     "id": "W10x2",
+     "testo": "Accettare il chip che ti offrono",
+     "riserva": "Un uomo ti si siede accanto, con un chip fra le dita. «In cerca di sballo?» Ti infila un chip nel collare, e per un momento vedi un bosco luminoso, alberi veri, la luce fra le foglie. «Alla lunga ti frigge le connessioni con il tuo hard disk di memoria, perciò non abusarne.» Ride. «Il tizio che mi ha dato questa roba dice che viene dal programma di riabilitazione.»",
+     "fase": "exploration",
+     "richiede": [
+      "W10x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "lupa_fact_locale"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.6 r.108-116] (Sam, il chip, la visione del bosco luminoso; le battute [r.109, r.115, r.116] alla lettera, accorciata [r.116])"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "sam",
+     "apertura": "L'uomo del chip ha gli occhi accesi, e non smette di muovere le dita.",
+     "chiusura": "L'uomo del chip si stringe nelle spalle.",
+     "riserva_libera": "L'uomo del chip ride: «Chiedilo a chi ne sa più di me.»",
+     "argomenti": [
+      {
+       "id": "W10_sam_1",
+       "testo": "Chiedere all'uomo del chip che cosa vuole",
+       "riserva": "«Mi hanno detto che stanno organizzando vari gruppi di liberazione: se mi daranno la possibilità di vivere dall'altra parte, li asseconderò.» Ti guarda di traverso. «Tu che ne dici? Ti interessa? Sembri un po' fuori di testa, e mi piace.»",
+       "richiede": [
+        "W10x2"
+       ],
+       "effetti": [
+        {
+         "relazione": {
+          "png": "sam",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.6 r.118-119] (le battute di Sam alla lettera, ritoccata la fine di [r.119])",
+       "scopo": "il legame con Sam (torna nella 17)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Poi gli spari. Soldati e robot entrano nel locale con bombe elettromagnetiche, e tu e l'uomo del chip scappate dal tetto. Dai vicoli senti un agente: «Non mi serve che tu abbia memoria di chi sei per dare energia al mondo. Caricate i corpi, buttateli dentro i cilindri per illuminare la piazza centrale.»",
+    "fonte": "P2 [ICH Cap.6 r.120-126] (l'irruzione, le bombe elettromagnetiche, i robot, la fuga dal tetto; le battute dell'agente [r.125-126] alla lettera)",
+    "esplora": [
+     {
+      "id": "W10d1",
+      "testo": "Seguire l'uomo del chip fino all'azienda",
+      "riserva": "Qualche notte dopo sei di nuovo con lui davanti a un'azienda. Sul piazzale arrivano sei ragazzine identiche, in mantellina gialla. «Ragazzina, allontanati dalla zona, non puoi accedere» dice una guardia. «Ti piacciono i fuochi d'artificio?» «Ho detto allontanati.» Il piazzale esplode. «Il segnale» dice lui, e correte dentro.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_cilindri"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.6 r.128-135] (l'azienda, le sei ragazzine in mantellina gialla, le esplosioni; le battute [r.130-132, r.135] alla lettera); «qualche notte dopo»: PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W10x2"
+    ],
+    "risoluzione": [
+     "W10d1"
+    ]
+   },
+   "required_beats": [
+    "W10x1",
+    "W10x2",
+    "W10d1"
+   ],
+   "optional_beats": [
+    "W10_sam_1"
+   ],
+   "riserva_libera": "Nel ricordo nessuno ti risponde: la città buia va avanti senza di te.",
+   "uscita_fail_forward": "Se la scena si ferma, il ricordo arriva comunque fino alla neve, e Runi ti chiede del diario."
+  },
+  "W11": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W11x1",
+     "testo": "Ascoltare Runi davanti alla grotta",
+     "riserva": "«Mio padre mi ha parlato di questi luoghi, li definiva luoghi da cui partiva tutto. Ho sempre trovato strano il suo modo di vedere le cose.» Mentre parla, fra le rocce più in basso ti sembra di vedere qualcosa che brilla: uomini in armatura, che si muovono piano.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_volti"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.7 r.13-14] (la battuta di Runi [r.13] alla lettera; il tiro di percepire della fonte, gli uomini in armatura [r.14], raccontato)"
+    },
+    {
+     "id": "W11x2",
+     "testo": "Entrare fra i volti",
+     "riserva": "Dentro, i volti sono dappertutto; uno ha la nuca aperta, come una porta. Su una parete c'è un simbolo, e ti torna in mente una frase, detta da una donna che per gioco chiamavate «novantanove per cento carne vera»: «il labirinto è il mezzo per la libertà». Fuori, da qualche parte, gracchiano i corvi.",
+     "fase": "exploration",
+     "richiede": [
+      "W11x1"
+     ],
+     "effetti": [
+      {
+       "nota": "Nella grotta dei Volti un simbolo ti ricorda una frase: «il labirinto è il mezzo per la libertà».",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1-P2 [ICH Cap.7 r.14-17] (i volti, la nuca aperta; il simbolo e la frase [r.15], la donna «99% carne vera»; i corvi); «come una porta»: PROPOSTA. La frase resta senza autore (schema)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "runi",
+     "apertura": "Runi è curioso come un cucciolo: tocca tutto, e ride di tutto.",
+     "chiusura": "Runi torna a guardare i volti.",
+     "riserva_libera": "Runi si stringe nelle spalle: «Mio padre ne sapeva più di me.»",
+     "argomenti": [
+      {
+       "id": "W11_runi_1",
+       "testo": "Chiedere a Runi di suo padre",
+       "riserva": "«Diceva che da questi luoghi partiva tutto.» Runi passa una mano su un volto di pietra. «Io pensavo che fosse un vecchio pazzo. Adesso non lo so più.»",
+       "richiede": [
+        "W11x1"
+       ],
+       "effetti": [
+        {
+         "relazione": {
+          "png": "runi",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.7 r.13] (il padre di Runi e i «luoghi da cui partiva tutto»; «ho sempre trovato strano il suo modo di vedere le cose»); il resto della battuta: PROPOSTA",
+       "scopo": "il legame con Runi"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Runi passa le dita sui rilievi della parete. Si accendono luci, una dopo l'altra, e con un rombo la caverna si chiude alle vostre spalle.",
+    "fonte": "P3 [ICH Cap.7 r.19] (Runi tocca i rilievi, le luci, la caverna si chiude)",
+    "esplora": [
+     {
+      "id": "W11d1",
+      "testo": "Restare chiusi con Runi",
+      "riserva": "Runi si siede sulla pietra e ride. «Mi è venuta un'idea: fino a che la porta non si riapre, possiamo conoscerci meglio.» Non rispondi. Allora lui ti lancia una spada. «Se non vuoi parlare con le parole, parla con la spada.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_chiusi"
+       }
+      ],
+      "fonte": "P4 [ICH Cap.7 r.78-81] (chiusi dentro, lei non vuole parlare, lui le lancia la spada; le battute [r.79, r.81] alla lettera)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W11x2"
+    ],
+    "risoluzione": [
+     "W11d1"
+    ]
+   },
+   "required_beats": [
+    "W11x1",
+    "W11x2",
+    "W11d1"
+   ],
+   "optional_beats": [
+    "W11_runi_1"
+   ],
+   "riserva_libera": "Nella grotta la tua voce torna indietro dalle pareti, e nessun altro risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, la porta della grotta si riapre comunque, e le guardie vi trovano."
+  },
+  "W12": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W12x1",
+     "testo": "Rispondere all'uomo in armatura",
+     "riserva": "«Sto parlando con te! Siete i tribali che hanno attaccato la costa?» Runi si divincola: «{Lascialo stare, se osi toccarlo|Lasciala stare, se osi toccarla|Lascia stare, se osi toccare chi è con me} giuro che ti ammazzo, bastardo.» Lo bloccano e lo pestano, finché non smette di muoversi. L'uomo torna a guardarti. «Lui è la tua scorta? Sei tu a guidare questi uomini? Si parlava di una donna alla guida di pazzi sanguinari…»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_interrogatorio"
+      },
+      {
+       "relazione": {
+        "png": "runi",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 [ICH Cap.8 r.3-10] (le battute [r.4, r.7, r.8] alla lettera, accorciata [r.8]; Runi bloccato e pestato [r.5]); che cosa rispondere è del giocatore (L dello schema: mentire o no)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "edmund",
+     "apertura": "Edmund Skjiold vi guarda dall'alto del suo cavallo, senza fretta.",
+     "chiusura": "Edmund Skjiold fa un cenno ai suoi uomini.",
+     "riserva_libera": "«Ho detto quello che la corona ha da dire» risponde Edmund Skjiold.",
+     "argomenti": [
+      {
+       "id": "W12_edmund_1",
+       "testo": "Chiedere a Edmund che cosa succederà se rifiutate",
+       "riserva": "«In caso contrario ci troveremo costretti a dover rispondere.» Lo ripete con la stessa voce di prima, come chi legge un bando.",
+       "richiede": [
+        "W12d1"
+       ],
+       "effetti": [],
+       "fonte": "[ICH Cap.8 r.14] (la fine della battuta alla lettera); formale, da comunicato (note di lettura); il resto: PROPOSTA",
+       "scopo": "la corona"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Vi legano a un cavallo e vi trascinano fino a un campo, dove vi aspetta un uomo in armatura, con l'aria di chi comanda.",
+    "fonte": "P1-P2 [ICH Cap.8 r.10-12] (legati al cavallo, portati al campo di Edmund Skjiold)",
+    "esplora": [
+     {
+      "id": "W12d1",
+      "testo": "Ascoltare il comandante",
+      "riserva": "«Vi informo che la corona vuole evitare ogni tipo di scontro: lasciate le nostre terre, cedete un compenso per i danni che avete provocato e le vittime che avete mietuto, e noi vi lasceremo in pace. In caso contrario ci troveremo costretti a dover rispondere.» Si chiama Edmund Skjiold, e parla a nome della corona. Poi fa un cenno ai suoi uomini: vi riaccompagneranno al vostro campo.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_edmund"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.8 r.12-15] (la battuta di Edmund Skjiold [r.14] alla lettera; li fa riaccompagnare)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W12x1"
+    ],
+    "risoluzione": [
+     "W12d1"
+    ]
+   },
+   "required_beats": [
+    "W12x1",
+    "W12d1"
+   ],
+   "optional_beats": [
+    "W12_edmund_1"
+   ],
+   "riserva_libera": "Fra i soldati nessuno ti risponde: ti guardano soltanto, come si guarda un lupo legato.",
+   "uscita_fail_forward": "Se la scena si ferma, Edmund vi fa riaccompagnare comunque al villaggio, e Ulfrida chiama te."
+  },
+  "W13": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W13x1",
+     "testo": "Guardare le navi dell'hersir",
+     "riserva": "Sono più di quante tu ne abbia mai viste a Ulfrik. Gli uomini dell'hersir scendono in silenzio, e guardano la palizzata, il porto, la lancia di Ulfrida piantata nel terreno.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_navi_hersir"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.8 r.74] (le navi dell'hersir, tante); il porto per l'arrivo dell'hersir [Cap.5 r.43]; la lancia piantata [Cap.4 r.113]; il resto: PROPOSTA"
+    },
+    {
+     "id": "W13x2",
+     "testo": "Seguire la folla fino all'arena",
+     "riserva": "Nell'arena del villaggio Ulfrida e Harald si guardano. «Sei ancora in tempo per smettere, lupa: io non ti caccerò, ti ucciderò per questo affronto.» Ulfrida ride. «Tu non puoi uccidere l'incarnazione di Fenris, non sei degno del titolo che porti.»",
+     "fase": "exploration",
+     "richiede": [
+      "W13x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "lupa_fact_sfida"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.8 r.132-135] (le battute [r.134, r.135] alla lettera)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "grey",
+     "apertura": "Grey è legata alla sua catena, a bordo dell'arena, e trema.",
+     "chiusura": "Grey torna a guardare l'hersar.",
+     "riserva_libera": "Grey ti guarda con gli occhi storti, e non dice niente.",
+     "argomenti": [
+      {
+       "id": "W13_grey_1",
+       "testo": "Avvicinarti a Grey",
+       "riserva": "Grey tira la catena verso di te e ti lecca la mano, come il giorno del rito delle zanne. Poi guarda Ulfrida, e guaisce piano.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "grey",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "Grey, la voluspà personale di Ulfrida, con la catena al collo come un cane [ICH Cap.1 r.192-200]; il viso leccato nel rito delle zanne [r.197]; il resto: PROPOSTA",
+       "scopo": "la profezia della 04 (L dello schema)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ulfrida ha la lancia alata, Harald la spada e lo scudo. La lancia gli ferisce il braccio e resta piantata nello scudo; lei lo colpisce con un calcio e una ginocchiata, e lo blocca a terra.",
+    "fonte": "P2 [ICH Cap.8 r.136-142] (il duello: lancia alata contro spada e scudo; il braccio, lo scudo, il calcio e la ginocchiata)",
+    "esplora": [
+     {
+      "id": "W13d1",
+      "testo": "Guardare la fine del duello",
+      "riserva": "Ulfrida affonda i denti nel collo di Harald, e lo soffoca nel suo sangue. «Mie zanne! Appena sarà morto lasceremo il suo corpo ai corvi: il suo sangue è sporco e vile, proprio come lui.» Si rialza con la bocca rossa. «Preparatevi, perché il nostro prossimo pasto saranno i cervi.» E la città grida il suo nome.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_regina"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.8 r.139-144] (lo azzanna al collo e lo soffoca nel suo sangue; le battute [r.139, r.143] alla lettera; il coro del suo nome)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W13x2"
+    ],
+    "risoluzione": [
+     "W13d1"
+    ]
+   },
+   "required_beats": [
+    "W13x1",
+    "W13x2",
+    "W13d1"
+   ],
+   "optional_beats": [
+    "W13_grey_1"
+   ],
+   "riserva_libera": "Intorno all'arena nessuno ti ascolta: tutti guardano le due lame.",
+   "uscita_fail_forward": "Se la scena si ferma, il duello finisce comunque, e la città grida il nome di Ulfrida."
+  },
+  "W14": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W14x1",
+     "parte": "L'accampamento nemico",
+     "testo": "Ascoltare fra le urla",
+     "riserva": "Fra i ruggiti e le urla senti una voce che conosci: Runi ti chiama per nome. Poi un bagliore, e un buio che mangia la luce delle torce, una dopo l'altra.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_buio"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.9 r.58-60] (il tiro di ascoltare della fonte, raccontato: Runi la chiama; il bagliore e il buio che mangia le torce)"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Le guardie ti vedono. Vengono verso di te con i bastoni, per stordirti, e dietro di loro, a cavallo, il generale dell'armata richiama i suoi in formazione.",
+    "fonte": "P1 [ICH Cap.9 r.54-57] (le guardie che cercano di stordirla e bloccarla; il generale)",
+    "esplora": [
+     {
+      "id": "W14d1",
+      "parte": "L'accampamento nemico",
+      "testo": "Guardare il generale",
+      "riserva": "Lo riconosci: è Edmund Skjiold, il comandante che parlava a nome della corona. Adesso non parla: comanda. Puoi aprirti la strada fino a lui, o sparire nel buio.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Il generale dell'armata nemica è Edmund Skjiold.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "L dello schema (il generale: attaccarlo o no); che il generale sia Edmund Skjiold: DEDOTTO dalle note («generale dell'armata / Edmund Skold» [ICH Cap.9 r.56-64, r.175-180]; domanda 1 del file dei PNG)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W14x1"
+    ],
+    "risoluzione": [
+     "W14d1"
+    ]
+   },
+   "required_beats": [
+    "W14x1",
+    "W14d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Nel campo del nemico nessuno ti risponde: ti cercano soltanto.",
+   "uscita_fail_forward": "Se la scena si ferma, il generale si ritira comunque, Runi ti trova, e Leita prende le tue parti davanti all'hersar."
+  },
+  "W15": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W15x1",
+     "testo": "Guardare il rito",
+     "riserva": "Le zanne si mettono in cerchio intorno al fuoco. Ulfrida sgozza un lupo con un colpo solo, e Leita guarda sua madre farlo senza abbassare gli occhi. Poi i lupi bevono il sangue, uno dopo l'altro.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_madre"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.9 r.165-166] (Leita guarda «sua madre» sgozzare un lupo; i lupi bevono il sangue); il cerchio: PROPOSTA (il cerchio del rito delle zanne [Cap.1 r.192])"
+    },
+    {
+     "id": "W15x2",
+     "testo": "Avvicinarti a Ivor",
+     "riserva": "Ivor è steso vicino al fuoco, pallido, con il fiato corto: ha scelto di raggiungere i suoi cari stanotte. Ti afferra il polso. «Bevi il primo sangue, la mia forza scorrerà in te.»",
+     "fase": "exploration",
+     "richiede": [
+      "W15x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "lupa_fact_ivor_rito"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.9 r.129, r.162-163] (Ivor morente dopo il fungo; la battuta [r.163] alla lettera)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "esmyr",
+     "apertura": "Esmyr siede vicino al fuoco, e la cicatrice le brilla alla luce delle fiamme.",
+     "chiusura": "Esmyr torna a guardare la coppa del sangue.",
+     "riserva_libera": "Esmyr ride, e non ti risponde.",
+     "argomenti": [
+      {
+       "id": "W15_esmyr_1",
+       "testo": "Chiedere a Esmyr se ha paura",
+       "riserva": "«Paura?» Esmyr si tocca la cicatrice. «Ho deciso. Ivor mi ha dato quest'idea, e sarò un molvblod come lui.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "esmyr",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.9 r.130-131] (Esmyr mostra la cicatrice e diventerà molvblod; la battuta alla lettera, accorciata)",
+       "scopo": "il branco"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ivor ti mette un coltello in mano, e ti tiene le dita chiuse intorno al manico.",
+    "fonte": "P1 [ICH Cap.9 r.162-163] (Ivor le chiede di sgozzarlo); il coltello in mano: PROPOSTA",
+    "esplora": [
+     {
+      "id": "W15d1",
+      "testo": "Inginocchiarti accanto a Ivor",
+      "riserva": "«Va', e azzannali per me.» Ivor chiude gli occhi, e aspetta.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_ivor_rito"
+       }
+      ],
+      "fonte": "P1 [ICH Cap.9 r.163] (la battuta alla lettera)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W15x2"
+    ],
+    "risoluzione": [
+     "W15d1"
+    ]
+   },
+   "required_beats": [
+    "W15x1",
+    "W15x2",
+    "W15d1"
+   ],
+   "optional_beats": [
+    "W15_esmyr_1"
+   ],
+   "riserva_libera": "Intorno al fuoco nessuno ti risponde: tutti guardano la coppa del sangue.",
+   "uscita_fail_forward": "Se la scena si ferma, il rito va avanti comunque, e all'alba le zanne partono per le mura."
+  },
+  "W16": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W16x1",
+     "testo": "Ascoltare Ulfrida",
+     "riserva": "«Voi oggi compirete un'impresa mai vista prima su tutta Erdegis: gli Ulf Vanar strapperanno una parte di mondo per sé. Io… Fenris sono con voi. Sentite il richiamo della morte… non temetela, e mostratele che è lei che deve temere voi.» Le zanne ululano, e la notte ulula con loro.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_assalto"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.9 r.170] (il discorso di Ulfrida alla lettera, ritoccato «mostrategli» in «mostratele»); l'ululato: PROPOSTA"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Le zanne salgono con le scale, e altre passano dal fiume. Dalle mura piovono frecce, lance e olio bollente; Ulfrida è ferita, e non si ferma. Suonano i corni. Dentro la città, figure corrono verso le mura.",
+    "fonte": "P1 [ICH Cap.9 r.171-175] (l'assalto con le scale e attraverso il fiume, l'olio bollente, Ulfrida ferita, i corni; il tiro di fortuna della fonte, figure che si muovono verso le mura da dentro la città [r.174], raccontato: la fortuna non è un tratto)",
+    "esplora": [
+     {
+      "id": "W16d2",
+      "testo": "Raggiungere il generale sulle mura",
+      "riserva": "{Sali per primo|Sali per prima|Sali davanti a tutti}. Sulle mura c'è il generale, Edmund Skjiold, che richiama i suoi; ti apri la strada fra le guardie, e lo colpisci. Cade fra i merli, e non si rialza.",
+      "effetti": [
+       {
+        "flag": {
+         "lupa_generale_16": "lei"
+        }
+       },
+       {
+        "scopri": "lupa_fact_generale_morto"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.9 r.178] (lei uccide il generale sulle mura: ICH.md r.138); è il P* dello schema (passo facoltativo); flag lupa_generale_16: PROPOSTA"
+     },
+     {
+      "id": "W16d1",
+      "testo": "Salire sulle mura",
+      "riserva": "In cima alle scale il generale giace fra i merli: è morto. Davanti a te una guerriera dai capelli biondi sfumati di bianco alza la spada; accanto a lei un guerriero dai capelli grigio perla combatte con una furia che non hai mai visto.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_generale_morto"
+       }
+      ],
+      "fonte": "P2-P3 [ICH Cap.9 r.178-183] (il generale ucciso sulle mura, da lei o dai tribali [r.180]: il testo vale per tutte e due; i difensori, i capelli grigio perla e biondi con sfumature bianche [r.183]; la furia di Sindre [r.179])"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W16x1"
+    ],
+    "risoluzione": [
+     "W16d1"
+    ]
+   },
+   "required_beats": [
+    "W16x1",
+    "W16d1"
+   ],
+   "optional_beats": [
+    "W16d2"
+   ],
+   "riserva_libera": "Sulle mura nessuno ti risponde: c'è solo il rumore delle lame.",
+   "uscita_fail_forward": "Se la scena si ferma, i difensori ti respingono comunque, e Runi si getta con te nel fiume."
+  },
+  "W17": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W17x1",
+     "testo": "Seguire Sam nel ricordo",
+     "riserva": "Sei di nuovo sulla Terra, con Sam, davanti a un edificio abbandonato. Un uomo in parte meccanico, con una tuta, vi scansiona. «I vostri nomi?» Poi si fa da parte. «Prego, potete entrare, lei vi starà aspettando all'interno.» Sam ti parla piano: «Si dice che sia andata di matto dopo che una delle città della federazione pannazionale si è spenta in un blackout. Dicono che ha perso sua sorella lì.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_covo"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.10 r.15-19] (l'uomo all'ingresso e le sue battute [r.16]; le battute di Sam [r.18-19] alla lettera, ritoccate)"
+    },
+    {
+     "id": "W17x2",
+     "testo": "Andare incontro alla donna con la matita",
+     "riserva": "Una donna vi viene incontro: abiti semplici, una giacca di pelle, i capelli raccolti, una matita consumata sull'orecchio. «Salve, voi dovete essere i nuovi. Seguitemi, facciamoci una chiacchierata.» Si chiama Gaia. Ti guarda in faccia, da vicino. «Tu invece? Hai una protesi facciale, a quanto ho visto: il lavoro è fatto bene, tra l'altro, quasi non si nota.»",
+     "fase": "exploration",
+     "richiede": [
+      "W17x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "lupa_fact_covo"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.10 r.20-24] (Gaia: abiti semplici, giacca di pelle, capelli raccolti, la matita sull'orecchio; le battute [r.20, r.24] alla lettera)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "gaia",
+     "apertura": "Gaia si siede sul bordo della scrivania, fra le mappe, e vi guarda uno alla volta.",
+     "chiusura": "Gaia torna alle sue mappe.",
+     "riserva_libera": "Gaia non risponde: torna a guardare le sue mappe.",
+     "argomenti": [
+      {
+       "id": "W17_gaia_1",
+       "testo": "Chiedere a Gaia che cosa rischiate",
+       "riserva": "«Quanto ci tieni al tuo corpo?» chiede Gaia a Sam. «L'ho già cambiato una volta» risponde lui, «dammene uno messo meglio e non ti farò storie.» «Qui non siamo al mercato nero. E comunque, se non fate cazzate, dovreste riuscire tranquillamente ad accedere e uscire nel più breve tempo possibile.»",
+       "richiede": [
+        "W17x2"
+       ],
+       "effetti": [
+        {
+         "relazione": {
+          "png": "gaia",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.10 r.30-32] (le battute di Gaia e di Sam alla lettera, accorciata [r.32])",
+       "scopo": "il furto dei dati"
+      },
+      {
+       "id": "W17_gaia_2",
+       "testo": "Chiedere a Gaia che cosa vuole",
+       "riserva": "«Farò di meglio: insieme a loro forse riusciremo ad avere un mondo nuovo. La luce del sole, gli alberi, le foreste, gli animali, e tutto quello che abbiamo perso per colpa della nostra arroganza.» Per un momento guarda fuori dalla vetrata. «E forse… anche recuperare chi abbiamo perso là dentro.»",
+       "richiede": [
+        "W17x2"
+       ],
+       "effetti": [],
+       "fonte": "[ICH Cap.10 r.41-42] (le battute di Gaia alla lettera); la vetrata [r.25]",
+       "scopo": "Gaia (torna nella 19 e nella 30)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nell'ufficio di Gaia ci sono mappe, nomi e punti del globo, e un'ampia vetrata. «Dovete accedere al mainframe dai loro server: vi daremo qualcosa che decifrerà i dati e li recupererà. È di vitale importanza che non moriate, e che riportiate i dati a me.» Sulla mappa dei piani c'è scritto il nome dell'edificio: Icaro.",
+    "fonte": "P3 [ICH Cap.10 r.25-33] (l'ufficio con le mappe, i nomi, i punti del globo, la vetrata; la battuta di Gaia [r.28] alla lettera; la mappa dei piani dell'edificio «Icaro» [r.33]: «Icaro» è una parola di Ich, ICH.md r.136, r.161)",
+    "esplora": [
+     {
+      "id": "W17d1",
+      "testo": "Prendere il ciondolo",
+      "riserva": "Gaia vi mette al collo un ciondolo. «La chiave di decifratura sarà con voi: tenetela al collo. Può contenere una grossa mole di dati complessi, persino una coscienza; è preferibile non farlo, o la vostra coscienza dentro quel mondo diventerebbe un marker, e sareste rintracciabili nel mondo reale.» «A meno che non sia la tua unica occasione» dice Sam. «Se mai doveste entrare dentro, vale la stessa regola: la chiave si materializzerà con voi, ma se la perdete potreste perdere anche voi stessi, o non riuscire mai a uscirne.» Lo tocchi. È lo stesso ciondolo che porti al collo nella neve. «È un cimelio di faglia.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_ciondolo_gaia"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.10 r.32-38] (le battute di Gaia [r.32, r.34, r.36, r.38] e di Sam [r.35] alla lettera, unite e accorciate); che sia lo stesso ciondolo della 04: schema, scena 17 («il ciondolo è solo un ciondolo fino alla 17»)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W17x2"
+    ],
+    "risoluzione": [
+     "W17d1"
+    ]
+   },
+   "required_beats": [
+    "W17x1",
+    "W17x2",
+    "W17d1"
+   ],
+   "optional_beats": [
+    "W17_gaia_1",
+    "W17_gaia_2"
+   ],
+   "riserva_libera": "Nel ricordo nessuno ti risponde: le cose sono già andate così.",
+   "uscita_fail_forward": "Se la scena si ferma, il ricordo finisce comunque, e Runi ti trascina a riva."
+  },
+  "W18": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W18x1",
+     "testo": "Chiedere a Esmyr che cosa è successo",
+     "riserva": "«Ulfrida è ferita, e sta morendo.» Esmyr guarda la tenda dell'hersar, da cui è appena uscito un uomo. «Un emissario. Hanno parlato per ore, chissà cosa si sono detti.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_emissario"
+      },
+      {
+       "relazione": {
+        "png": "esmyr",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 [ICH Cap.10 r.124-130] (Ulfrida morente, l'emissario esce dalla sua tenda; la battuta di Esmyr [r.130] alla lettera)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "runi",
+     "apertura": "Runi ha ancora i capelli bagnati di fiume, e non ti lascia la mano.",
+     "chiusura": "Runi guarda le mura.",
+     "riserva_libera": "Runi scuote la testa: «Non lo so. So solo che sei qui.»",
+     "argomenti": [
+      {
+       "id": "W18_runi_1",
+       "testo": "Chiedere a Runi del fiume",
+       "riserva": "«Te l'ho detto» dice Runi. «Dovesse venire la morte stessa a prenderti, dovrà vedersela con me.» Ride, ma la mano gli trema ancora.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "runi",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.10 r.93] (la battuta di Runi alla lettera, ripresa); la mano che trema: PROPOSTA",
+       "scopo": "il legame con Runi"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Al fuoco del consiglio si riuniscono le zanne che restano. Mancano molti volti. Leita si alza per prima.",
+    "fonte": "P2 [ICH Cap.10 r.131-132] (il consiglio dei lupi; «abbiamo perso tanti dei nostri» [r.132])",
+    "esplora": [
+     {
+      "id": "W18d1",
+      "testo": "Ascoltare il consiglio",
+      "riserva": "«Abbiamo perso due hersir per questa battaglia, abbiamo perso tanti dei nostri. Io non vedo Fenris insieme a noi. Vi chiedo dunque… volete forse continuare?» Runi si alza. «Che senso avrebbero i morti, allora? Se non continuassimo, chi ha perso la vita per questa battaglia sarà morto invano.» Poi le zanne guardano te.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_consiglio"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.10 r.132-133] (le battute di Leita e di Runi alla lettera); le zanne che guardano lei: PROPOSTA (L dello schema: la sua voce nel consiglio)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W18x1"
+    ],
+    "risoluzione": [
+     "W18d1"
+    ]
+   },
+   "required_beats": [
+    "W18x1",
+    "W18d1"
+   ],
+   "optional_beats": [
+    "W18_runi_1"
+   ],
+   "riserva_libera": "Nell'accampamento nessuno ha voglia di parlare: tutti guardano la tenda dell'hersar.",
+   "uscita_fail_forward": "Se la scena si ferma, il consiglio decide comunque, e Runi propone di accompagnare il corpo di Ulfrida in città."
+  },
+  "W19": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W19x1",
+     "testo": "Guardare i volti dei pilastri",
+     "riserva": "Le figure che cantano hanno i capelli macchiati di bianco, le donne, o di rossastro, gli uomini. Sopra di loro, alcuni volti scolpiti sui pilastri ti sembrano familiari; uno ti ricorda un nome, ma non riesci a dirlo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_tempio"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.11 r.4] (i nove pilastri, le figure che cantano, i capelli macchiati; i volti familiari); il nome che un volto le ricorda si tace (schema: Asi)"
+    },
+    {
+     "id": "W19x2",
+     "testo": "Ascoltare la predicante",
+     "riserva": "«Come richiesto, la nostra Trischelia consacrerà la vostra regina nel ciclo del tempo» dice il re, «così che in un futuro ella potrà parlare al suo passato e rivedere gli errori che hanno portato alla sua prematura morte.» La predicante alza la voce sopra i cori: «Nel nostro mondo, quello della prova, questa donna ha dimostrato forza impareggiabile.» Fa oscillare un incenso sulla bara. «Ora la sua carne è fumo scuro, ma quando la luce del suo tramonto tornerà all'alba la sua carne brillerà di vita.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_tempio"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.11 r.5-10] (le battute del re [r.5] e della Trischelia [r.7, r.10] alla lettera, accorciata [r.7]; l'incenso [r.10])"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il re si avvicina con la regina e il capo delle guardie. «Ci lascerete uscire senza problemi?» chiede Runi. «A patto che abbandoniate queste terre immediatamente, senza farvi mai più ritorno» dice Ecbert. «Non ho piacere nell'uccidervi» dice Runi, «non mi interessa farlo.»",
+    "fonte": "P2 [ICH Cap.11 r.11-14] (le battute di Runi [r.12, r.14] e di Ecbert [r.13] alla lettera)",
+    "esplora": [
+     {
+      "id": "W19d1",
+      "testo": "Guardare la bara",
+      "riserva": "Il coperchio della bara si muove, e si apre. «A me sì.» Ulfrida, viva, taglia la gola alla Trischelia con la punta della lancia e prende in ostaggio la regina; guarda il re. «Ho vinto.» I lupi trascinano fuori dalle mura il re e il capo delle guardie; quando le porte si riaprono, Ulfrida sorride alle sue zanne: «Uccideteli.» I lupi entrano in città. Più tardi Ulfrida indossa la corona e guarda il massacro da una finestra del castello. «Morirete tutti: brandirò il suo potere e spegnerò questo mondo una volta per tutte, lupi compresi.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_corona"
+       }
+      ],
+      "fonte": "P2-P3 [ICH Cap.11 r.15-25] (il tiro di percepire della fonte, raccontato: la bara si apre [r.15]; le battute di Ulfrida [r.16, r.22, r.25] alla lettera; la Trischelia sgozzata, la regina in ostaggio [r.16]; gli ostaggi fuori dalle mura [r.20]; i lupi entrano [r.21-23]; la corona e la finestra del castello [r.24])"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W19x2"
+    ],
+    "risoluzione": [
+     "W19d1"
+    ]
+   },
+   "required_beats": [
+    "W19x2",
+    "W19d1"
+   ],
+   "optional_beats": [
+    "W19x1"
+   ],
+   "riserva_libera": "Nel tempio nessuno ti risponde: ci sono solo i cori, e il fumo dell'incenso.",
+   "uscita_fail_forward": "Se la scena si ferma, la bara si apre comunque, e quella notte i lupi di Ulfrida ti chiudono in una cella."
+  },
+  "W20": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W20x1",
+     "testo": "Ascoltare Runi fra le sbarre",
+     "riserva": "«Presto ti farò uscire da qui. Ti libererò, a qualunque costo.» Runi abbassa la voce. «So che non dovrei: qualcosa dentro la mia testa mi dice che dovrei agire per un altro motivo, correggere un errore. Ma non voglio ascoltare la voce nella mia testa: non lo faccio per loro… lo faccio per te. Promettimi che, {uscito|uscita|una volta fuori} da qui, andrai via, altrove. Ti raggiungerò dopo qualche giorno: ci troveremo sotto la luna, in qualche grotta con un piccolo fuoco caldo, e dopo potrai anche portarmi con te nell'altro mondo. Leita arriverà stasera con le chiavi della cella: ormai la luna non è più rossa. Tieniti {pronto|pronta|all'erta}.» Ti bacia fra le sbarre. «Sei la prima cosa vera che mi sia mai capitata nella vita.» Poi guarda la spada che porta al fianco, e se ne va a testa bassa.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_cella"
+      },
+      {
+       "relazione": {
+        "png": "runi",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 [ICH Cap.12 r.35-46] (le battute di Runi [r.38-41, r.43, r.45] alla lettera, unite e accorciate [r.43]; le forme di genere nei segnaposto; il bacio [r.44]; il tiro di percepire della fonte, raccontato: guarda la spada e se ne va a testa bassa [r.46])"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Al tramonto i lupi festeggiano. Leita arriva sporca di sangue, uccide il lupo di guardia («Stupido beta») e apre la cella. «Lei sa… non sa quanti di noi la vogliono tradire, ma quel sorriso ora ha un senso: è venuta a salutarci per farci capire che ci avrebbe ucciso tutti. Questo branco ha bisogno di un capo, o finiremo con l'ammazzarci tra di noi.»",
+    "fonte": "P2 [ICH Cap.12 r.43, r.109-111] (i festeggiamenti prima del tramonto [r.43]; Leita sporca di sangue uccide un lupo: la battuta [r.109]; le battute [r.110-111] alla lettera)",
+    "esplora": [
+     {
+      "id": "W20d1",
+      "testo": "Seguire Leita fino alla breccia",
+      "riserva": "Fuggite in silenzio lungo le mura, fino a un cunicolo in riparazione: la breccia. Leita si ferma. «Il nostro clan si basa sulla lealtà: noi saremo disposti a fare di tutto per un compagno, persino morire per lui. {Tu saresti disposto a morire|Tu saresti disposta a morire|Moriresti} per qualcuno di noi, {nome}?» Ti mette in mano il tuo ciondolo. «{Sei libero di andare|Sei libera di andare|Puoi andare}. Ho sempre pensato che tu non lo meritassi, ma lui è stregato da te, dai tuoi sortilegi da skera, ed è affascinato da ciò che sei; e io un po' lo odio per questo. Dimmi soltanto una cosa: come ha fatto a convincerti? Com'è che lo stai lasciando indietro?» Le dici della grotta, e della luna. Leita scuote la testa. «Ti ha mentito, dunque: sapeva che non glielo avresti lasciato fare. Che amore sprecato.» Dall'arena arrivano gli ululati del branco: Runi ha sfidato Ulfrida.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_breccia"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.12 r.113-120] (il tiro di osservare della fonte, raccontato: la fuga silenziosa [r.113]; il cunicolo in riparazione [r.115]; le battute di Leita [r.114, r.116-119] alla lettera, unite; il ciondolo [r.116]; la promessa della grotta [r.41]; il duello all'arena [r.121-122]); le forme di genere nei segnaposto"
+     },
+     {
+      "id": "W20d2",
+      "testo": "Correre all'arena",
+      "richiede": [
+       "W20d1"
+      ],
+      "riserva": "Nel cerchio dei lupi Runi atterra Ulfrida e le punta la spada. «Hai perso, Ulfrida. Abbandona il clan e ti risparmierò la vita.» «Io non temo la morte» ringhia lei, «lei teme me.» Runi ti vede, e si distrae. Ulfrida lo acceca e lo trafigge. Leita ti mette in mano una spada. «Ormai è morto. Chiudi ciò che ha iniziato.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_arena"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.12 r.121-125] (le battute di Runi e di Ulfrida [r.124] e di Leita [r.125] alla lettera; Runi la vede e si distrae, Ulfrida lo acceca e lo trafigge [r.125]; ICH.md r.139)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W20x1"
+    ],
+    "risoluzione": [
+     "W20d2"
+    ]
+   },
+   "required_beats": [
+    "W20x1",
+    "W20d1",
+    "W20d2"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Fra le sbarre nessuno ti risponde: i lupi di guardia non guardano nemmeno.",
+   "uscita_fail_forward": "Se la scena si ferma, Leita apre comunque la cella, e all'arena Runi muore fra le tue braccia."
+  },
+  "W21": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W21x1",
+     "parte": "La nave al porto di un vecchio villaggio",
+     "testo": "Guardare Runi",
+     "riserva": "«{nome}?» Runi ti stringe. «Dimmi che non sto sognando, dimmi che sei davvero qui.» Ti bacia. «Ho passato mesi a cercarti, a trovare informazioni su di te. Sono tornato dove eravamo, ma non c'era più nessuno; sono stato braccato, e nel mentre tentavo di ricordarti…» Ti accarezza il viso. «Cosa è successo dopo…?»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_ritorno"
+      },
+      {
+       "relazione": {
+        "png": "runi",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 [ICH Cap.13 r.22-24] (le battute di Runi alla lettera, unite; il nome nel segnaposto; il bacio, la carezza)"
+    },
+    {
+     "id": "W21x2",
+     "parte": "La nave al porto di un vecchio villaggio",
+     "testo": "Stringere Runi",
+     "richiede": [
+      "W21x1"
+     ],
+     "riserva": "«{Attento|Attenta|Piano}, o mi rompi qualche osso se continui così: ho appena affrontato un corvo, una donna. Credo di essermi rammollito.» Si vede che è ferito. Quando ti mostra le ferite, vedi una cicatrice sul petto e una sull'addome; ti fa passare la mano sopra.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_ritorno"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.13 r.27-28] (la battuta di Runi alla lettera, la prima parola nel segnaposto di genere; le cicatrici)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "runi",
+     "apertura": "All'alba Runi si siede accanto a te, e ti prende il braccio.",
+     "chiusura": "Runi ti lascia il braccio.",
+     "riserva_libera": "Runi scuote la testa: «Lascia stare, per ora.»",
+     "argomenti": [
+      {
+       "id": "W21_runi_1",
+       "testo": "Chiedere a Runi del segno che disegna",
+       "richiede": [
+        "W21x1"
+       ],
+       "riserva": "Con un dito Runi ti disegna un segno sul braccio: Dagaz, un nuovo inizio. Vorrebbe che ve lo faceste tutti e due.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "runi",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.16 r.54] (Runi vorrebbe che tutti e due si facessero il simbolo di Dagaz, nuovo inizio); il dito sul braccio: PROPOSTA",
+       "scopo": "un nuovo inizio"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Poi, dal ponte, le urla. Una cacciatrice del nord dai capelli rossi si muove come se il suo corpo non fosse più suo; una ragazza indietreggia, terrorizzata: «È lei… no no! Ti prego, non farmi del male!» Il clan della cacciatrice le fa cerchio intorno, e una donna regale chiede a tutti di lasciarla respirare.",
+    "fonte": "P1 [ICH Cap.12 r.164-167; Cap.13 r.29-39] (le urla [Cap.13 r.29]; il lampo e l'altra sé della cacciatrice [Cap.12 r.164]; la battuta di Amèlie [Cap.12 r.167] alla lettera; il clan protegge la sua hersir [Cap.13 r.31-37]; Saoirse: «lasciamola respirare» [r.39]); i capelli rossi: come in «L'osservatrice dei fili»",
+    "esplora": [
+     {
+      "id": "W21d1",
+      "parte": "La nave al porto di un vecchio villaggio",
+      "testo": "Ascoltare la donna regale",
+      "riserva": "«Mastro Runi, se voi e la vostra ritrovata volete seguirci, fate pure: noi proseguiremo a sud» dice la donna regale. «Il sud è compromesso» risponde Runi. «Ma se vuoi combattere contro i corvi, accomodati, randagio.» «La mia nave si trova a sud: troverò un modo, anche senza di voi.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_porto"
+       }
+      ],
+      "fonte": "P1 [ICH Cap.13 r.40-42] (le battute di Saoirse e di Runi alla lettera)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W21x1"
+    ],
+    "risoluzione": [
+     "W21d1"
+    ]
+   },
+   "required_beats": [
+    "W21x1",
+    "W21d1"
+   ],
+   "optional_beats": [
+    "W21x2",
+    "W21_runi_1"
+   ],
+   "riserva_libera": "Sul ponte nessuno ti risponde: tutti guardano la cacciatrice.",
+   "uscita_fail_forward": "Se la scena si ferma, il gruppo lascia comunque il porto, e nei boschi Runi ti chiede che cosa c'è fra voi."
+  },
+  "W22": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W22x1",
+     "testo": "Tenere stretto Runi",
+     "riserva": "Cominci a sentire freddo: un freddo molto vicino a qualcosa che non fa parte di questo mondo, e una solitudine che ti entra dentro. Un po' di neve ti si posa sulle mani, mentre stringi Runi. Intorno il paesaggio cambia: una tormenta di neve ti accerchia, e dentro di te si apre un vuoto, come se qualcosa cercasse di intorpidirti le emozioni. Runi non c'è più. Senti lo scricchiolio della neve sotto passi lenti e pesanti. «Va via… non voglio farti del male.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_mente"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.18 r.10-14] (il freddo, la solitudine, la neve sulle mani, la tormenta, il vuoto; Runi sparisce; i passi della bestia; la battuta di Runi [r.14] alla lettera)"
+    },
+    {
+     "id": "W22x2",
+     "parte": "La mente di Runi",
+     "testo": "Parlare a Runi nella tormenta",
+     "richiede": [
+      "W22x1"
+     ],
+     "riserva": "«Non voglio essere come Ulfrida… non voglio essere come Fenris… io non…» Un ululato copre la sua voce: una bestia esce dalla neve azzannando l'aria, e sparisce di nuovo nella neve, come se volesse avvertirti.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_mente"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.18 r.15-16] (lei prova a parlargli; la battuta di Runi [r.16] alla lettera; il lupo che esce dalla neve come per avvertirla)"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Le parole non bastano: la bestia è dentro di lui, e devi trovarla. «Se io mi abbandono a lui non proverò più sentimenti… non voglio amarti, perché questo vorrebbe dire che vorrei tornare, e se lo faccio rischio di ferirti, o peggio.»",
+    "fonte": "P2 [ICH Cap.18 r.17-19] (trovare la bestia e combatterla insieme; la battuta di Runi [r.19] alla lettera)",
+    "esplora": [
+     {
+      "id": "W22d1",
+      "parte": "La mente di Runi",
+      "testo": "Cercare la bestia nella tormenta",
+      "riserva": "Nella tormenta i passi pesanti girano intorno a te, sempre più vicini, e la voce di Runi si allontana. Se la bestia vince, Runi non tornerà.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_mente"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.18 r.13, r.17-19] (i passi della bestia; il rischio di Runi di abbandonarsi a lui); testo PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W22x2"
+    ],
+    "risoluzione": [
+     "W22d1"
+    ]
+   },
+   "required_beats": [
+    "W22x1",
+    "W22x2",
+    "W22d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Nella tormenta nessuno ti risponde: c'è solo il vento, e i passi della bestia.",
+   "uscita_fail_forward": "Se la scena si ferma, Runi esce comunque dalla tormenta, e al Kynhjarta arriva la pioggia nera."
+  },
+  "W23": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W23x1",
+     "parte": "Il magazzino di guerra di Vanargand",
+     "testo": "Guardare le utenze sulla console",
+     "riserva": "Sulla console scorrono tutte le utenze registrate dentro il magazzino: centinaia, e tutte spente. Fra le file di macchine, corpi immobili aspettano di essere accesi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_magazzino"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.22 r.42] (le utenze registrate e ancora spente nell'enorme magazzino); le file di corpi: PROPOSTA"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Le svegli, una dopo l'altra: ti serviranno come diversivo. Alcuni aprono gli occhi e ti parlano, e cercano di capire che cosa fare. Poi uno strano impulso attraversa il magazzino, e i reverie svegli cadono storditi, per un breve momento.",
+    "fonte": "P1-P2 [ICH Cap.22 r.43-45] (svegliarli e usarli come diversivo; alcuni parlano con lei e cercano di capire il da farsi; l'impulso che li stordisce per un breve periodo: senza autore, schema)",
+    "esplora": [
+     {
+      "id": "W23d1",
+      "parte": "Il magazzino di guerra di Vanargand",
+      "testo": "Rialzare i risvegliati",
+      "riserva": "Quando l'impulso passa, i risvegliati si rialzano, uno dopo l'altro, e ti guardano. In fondo al magazzino si accendono le luci delle guardie.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_impulso"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.22 r.45] (lo stordimento dura un breve periodo); le guardie [r.121, r.130]; testo PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W23x1"
+    ],
+    "risoluzione": [
+     "W23d1"
+    ]
+   },
+   "required_beats": [
+    "W23x1",
+    "W23d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Nel magazzino nessuno ti risponde: le utenze spente non parlano.",
+   "uscita_fail_forward": "Se la scena si ferma, i risvegliati scappano comunque con te, e fuori c'è il deserto."
+  },
+  "W24": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W24x1",
+     "testo": "Lasciare che l'uomo ti tocchi il viso",
+     "riserva": "L'uomo con la maschera bianca ti tocca il viso, e qualcosa ti entra dentro, frugando: lo spingi fuori con tutta la forza che hai. Lui ritira la mano. «Tu sei una di quei terroristi…» Guarda verso il deserto. «Il tuo compagno è un idiota.» Quella notte, mentre dorme, fuggi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_vetsen"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.22 r.213-219] (Vetsen la hackera toccandole il viso; il tiro di difesa mentale e di spirito della fonte, raccontato [r.214-215]; le battute [r.216-217] alla lettera; fugge di notte [r.218-219])"
+    },
+    {
+     "id": "W24x2",
+     "testo": "Attraversare il deserto",
+     "richiede": [
+      "W24x1"
+     ],
+     "riserva": "Di giorno il deserto brucia, di notte gela. Hai sete, fame, e le ferite non si chiudono. Sotto la sabbia corrono dei cavi: li hackeri per orientarti, uno dopo l'altro. Poi il caldo ti entra nella testa, e non distingui più le dune dai sogni. Quando riapri gli occhi, {ti hanno preso|ti hanno presa|sei nelle loro mani}: sono i Foa Vanar.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_malmo"
+      }
+     ],
+     "fonte": "P2-P3 [ICH Cap.23 r.33-43] (sete, fame, ferite; i cavi da hackerare per orientarsi [r.35]; il delirio; presa dai Foa Vanar [r.40-43]); il caldo e il gelo: il deserto di Vanargand delle note; la forma di genere nel segnaposto"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "A Malmo, la città dei Foa, ritrovi i fuggiaschi del magazzino, quelli che ce l'hanno fatta. «Quella zona era la più sicura, a quanto pare.» «Noi siamo passati per le celle.» «Perché non hai scelto di venire con noi? Cercavi qualcuno, là dentro?» Rispondi, e uno di loro sorride. «Allora non è proprio vero che gli skera non provano emozioni… grazie, {nome}, a nome di tutti.»",
+    "fonte": "P4 [ICH Cap.23 r.71-77] (i fuggiaschi superstiti a Malmo; le battute [r.73-77] alla lettera, unite; il nome nel segnaposto)",
+    "esplora": [
+     {
+      "id": "W24d1",
+      "testo": "Andare alla festa delle maschere",
+      "riserva": "Alla festa delle maschere un fearsith ti mette fra le mani una maschera nera, solcata: «{A colui che è divenuto|A colei che è divenuta|A chi ora è} lo spettro di chi eri un tempo…» Durante il rito un officiante con il cappuccio rende trasparente un liquido nero e lo serve. Fra la folla, per un attimo, vedi Runi. Poi non c'è più. Più tardi l'uomo con la maschera bianca viene a cercarti. «Ho delle domande da farti, quindi ora dimmi: preferisci parlare, o vuoi che ti strappi le informazioni con la forza?»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_malmo"
+       }
+      ],
+      "fonte": "P5-P6 [ICH Cap.23 r.83-112] (la maschera nera con i solchi e la battuta del fearsith [r.84] alla lettera; il rito del liquido nero [r.105-107]; Runi fra la folla [r.110]; la battuta di Vetsen [r.112] alla lettera); la forma di genere nel segnaposto"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W24x2"
+    ],
+    "risoluzione": [
+     "W24d1"
+    ]
+   },
+   "required_beats": [
+    "W24x1",
+    "W24x2",
+    "W24d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Nella festa nessuno ti risponde: la musica copre tutto.",
+   "uscita_fail_forward": "Se la scena si ferma, Vetsen ti consiglia comunque il sud, e partite con il gruppo."
+  },
+  "W25": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W25x1",
+     "testo": "Ascoltare uno dei tuoi compagni",
+     "riserva": "Una sera, accanto al fuoco, uno dei tuoi ti chiede chi ti ha dato il tuo nome, e come possono averne uno anche loro. Capisci che non ne hanno: si chiamano per numero, a seconda di chi si è svegliato prima e chi dopo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_nome"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.24 r.48-49] (la domanda sul nome; i numeri in base all'ordine del risveglio); L dello schema: rispondere sul nome, scopo: il tema (ICH.md r.145): la risposta è libera"
+    },
+    {
+     "id": "W25x2",
+     "testo": "Attraversare il confine di sangue",
+     "richiede": [
+      "W25x1"
+     ],
+     "riserva": "In una valle al confine del deserto qualcuno vi insegue. Poi arrivano i lupi: attaccano i Foa, e alcuni li portano via, e portano via anche te. Un lupo ti annusa a lungo; il branco ti riconosce. Sei una zanna. Ti danno un metalupo, e ti portano verso nord.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_confine"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.24 r.50-58, r.97-102] (il confine di sangue: gli inseguitori, i lupi attaccano, alcuni Foa rapiti e anche lei; la riconoscono come una zanna; un metalupo; verso nord); chi guida i lupi non si dice (Ulfrida non torna: schema 25)"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Dopo un mese di viaggio arrivi a Snaeriff. La neve è la stessa, e l'odore del ferro anche.",
+    "fonte": "P3 [ICH Cap.25 r.7] (dopo un mese di viaggio raggiunge Snaeriff); l'odore del ferro: PROPOSTA",
+    "esplora": [
+     {
+      "id": "W25d1",
+      "testo": "Andare alla forgia di Vegard",
+      "riserva": "Alla forgia c'è Vegard, e accanto a lui una ragazza che batte il ferro: è Esmyr, ora sua allieva. Non ha più la cicatrice sul viso, ma una bruciatura sulla mano. Sbaglia il colpo, e tu la correggi; Vegard ti guarda e dice che hai talento. Ivor non c'è: è ai campi innevati, e parla al vento.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_snaeriff"
+       },
+       {
+        "relazione": {
+         "png": "vegard",
+         "delta": 1
+        }
+       }
+      ],
+      "fonte": "P3 [ICH Cap.25 r.8-11] (Vegard; Esmyr allieva, senza la cicatrice sul viso, con una bruciatura sulla mano; lei la corregge; Vegard dice che ha talento; Ivor ai campi innevati parla al vento); L dello schema: tornare alla forgia, scopo: il filo del finale 3"
+     },
+     {
+      "id": "W25d2",
+      "testo": "Raggiungere Ulfryk e il mare",
+      "richiede": [
+       "W25d1"
+      ],
+      "riserva": "A Ulfryk, la capitale degli ulfr, i guerrieri hanno il viso pieno di segni. Leita, che ora guida gli ulfr, ti accoglie nella sua tenda. Poi le navi prendono il mare ghiacciato: grossi pezzi di ghiaccio, una bufera di neve. Dall'est arrivano cinque navi, e vi vengono addosso a forza di remi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_snaeriff"
+       },
+       {
+        "relazione": {
+         "png": "leita",
+         "delta": 1
+        }
+       }
+      ],
+      "fonte": "P4-P5 [ICH Cap.24 r.140-144] (Ulfryk, l'élite con numerosi segni sul viso, Leita che ora guida gli ulfr, la sua tenda); [ICH Cap.26 r.19-20, r.94-96] (il mare ghiacciato, la bufera; cinque navi da est; l'abbordaggio a forza di remi)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W25x2"
+    ],
+    "risoluzione": [
+     "W25d2"
+    ]
+   },
+   "required_beats": [
+    "W25x1",
+    "W25x2",
+    "W25d1",
+    "W25d2"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Nessuno ti risponde: il vento del nord copre le voci.",
+   "uscita_fail_forward": "Se la scena si ferma, le navi da est vi abbordano comunque, e Fendra ti ripesca dal mare."
+  },
+  "W26": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W26x1",
+     "testo": "Parlare con Esmyr e Ivor",
+     "riserva": "Esmyr ti racconta della forgia di Vegard, Ivor dei campi innevati. Parlate a lungo, a prua, mentre il mar bianco scorre sotto di voi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "relazione": {
+        "png": "esmyr",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 [ICH Cap.28 r.32-36] (parla con i suoi amici Esmyr e Ivor, scena libera; il mar bianco); di che cosa parlano: PROPOSTA (dalla 25: la forgia, i campi innevati)"
+    },
+    {
+     "id": "W26x2",
+     "testo": "Guardare la costa di Ourobera",
+     "riserva": "La costa di Ourobera è piena di navi di guardia. Punti a ovest, verso una zona meno controllata, fra gli arcipelaghi. Il ciondolo ti scalda il petto: Runi è stato visto a Ourobera.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_tribali"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.28 r.88-90] (la costa piena di navi, a ovest fra gli arcipelaghi; dal ciondolo sa che Runi è stato avvistato a Ourobera); il calore del ciondolo: PROPOSTA"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Sbarcate fra gli arcipelaghi. Fra gli alberi sale un fumo che non è di fuochi, e qualcosa fischia nell'aria.",
+    "fonte": "P3 [ICH Cap.29 r.33-34] (il fumo; i dardi); testo PROPOSTA",
+    "esplora": [
+     {
+      "id": "W26d1",
+      "testo": "Avanzare nel fumo",
+      "riserva": "Dal fumo escono figure con le lame in mano, e i dardi vi piovono addosso. I lupi ringhiano, e si gettano avanti.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_tribali"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.29 r.33-38] (lo scontro nel fumo, i dardi, i lupi avanzano)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W26x2"
+    ],
+    "risoluzione": [
+     "W26d1"
+    ]
+   },
+   "required_beats": [
+    "W26x2",
+    "W26d1"
+   ],
+   "optional_beats": [
+    "W26x1"
+   ],
+   "riserva_libera": "Nel fumo nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, i tribali vi prendono comunque, e il ciondolo sparisce."
+  },
+  "W27": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W27x1",
+     "testo": "Parlare con Rend e Brynden",
+     "riserva": "Rend e Brynden ti chiedono che cosa ci fai a Ourobera, e ascoltano la tua risposta senza interromperti.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_krakborg"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.31 r.26-27] (con Rend e Brynden parlano di che cosa ci faccia lei a Ourobera: scena libera, la risposta è del giocatore)"
+    },
+    {
+     "id": "W27x2",
+     "testo": "Lasciare che Amelia ti legga il codice",
+     "riserva": "Amelia ti hackera, come poi farà con la cavaliera: per un momento senti qualcun altro dentro il tuo codice, leggero, e poi più niente.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_krakborg"
+      },
+      {
+       "relazione": {
+        "png": "amelia",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P2 [ICH Cap.31 r.84; Cap.32 r.14] (Amelia hackera prima lei e poi la cavaliera); la sensazione: PROPOSTA"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Più tardi senti una strana sensazione su tutto il corpo, finché una voce dentro la testa non ti suggerisce che qualcuno ha raggiunto il tuo codice.",
+    "fonte": "P3 [ICH Cap.32 r.52; Cap.31 r.87] (la strana sensazione su tutto il corpo, la voce dentro la testa: qualcuno ha raggiunto il suo codice)",
+    "esplora": [
+     {
+      "id": "W27d1",
+      "testo": "Ascoltare la sensazione",
+      "riserva": "La sensazione ti percorre la pelle, dentro e fuori. Qualcuno sta usando il tuo codice per parlarti.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P3 [ICH Cap.31 r.87] (può arrivare a comprendere che stanno usando il suo codice per contattarla)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W27x1"
+    ],
+    "risoluzione": [
+     "W27d1"
+    ]
+   },
+   "required_beats": [
+    "W27x1",
+    "W27d1"
+   ],
+   "optional_beats": [
+    "W27x2"
+   ],
+   "riserva_libera": "Nessuno ti risponde: a Ourobera tutti hanno da fare.",
+   "uscita_fail_forward": "Se la scena si ferma, la voce ti parla comunque nel codice, e a Bo Aesir la prova ti mette davanti a te stessa."
+  },
+  "W28": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W28x1",
+     "parte": "Ourobera",
+     "testo": "Lavorare al prototipo degli scudi",
+     "riserva": "Lavori ai tuoi scudi finché le mani non ti fanno male. Gli skera, per ordine di Amelia, migliorano le navi una dopo l'altra. Presto partiranno tutti; e se resterai {solo|sola|senza nessuno} a Ourobera, {sei praticamente morto|sei praticamente morta|non avrai scampo}.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_scudi"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.34 r.20-24] (il prototipo degli scudi per le navi; gli skera migliorano le navi per ordine di Amelia; «se rimane sola è praticamente morta» [r.24], detto qui a lei, con le forme di genere nei segnaposto); le mani: PROPOSTA"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Prima della partenza la sensazione torna, su tutta la pelle: ti stanno ricontattando, attraverso il tuo codice.",
+    "fonte": "P2 [ICH Cap.34 r.27] (prima della partenza viene ricontattata)",
+    "esplora": [
+     {
+      "id": "W28d1",
+      "parte": "Ourobera",
+      "testo": "Voltarti verso Ava",
+      "riserva": "Ava se ne è accorta. Ti viene davanti, e ti chiede con chi stai parlando.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_scudi"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.34 r.27, r.40] (Ava se ne accorge e la affronta)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W28x1"
+    ],
+    "risoluzione": [
+     "W28d1"
+    ]
+   },
+   "required_beats": [
+    "W28x1",
+    "W28d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Nessuno ti risponde: a Ourobera tutti preparano la partenza.",
+   "uscita_fail_forward": "Se la scena si ferma, il corvo ti porta comunque nella stanza bianca, e da lì ti liberi e trovi Leita."
+  },
+  "W29": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W29x1",
+     "testo": "Esplorare le sale con Leita",
+     "riserva": "A un certo punto Leita ti chiude una porta in faccia. Dall'altra parte senti due guardie che parlano: di una camera di contenimento, e di un Kyn usato per riattivare la struttura. Quando la porta si riapre, Leita ti mette in mano una radio. «Falla funzionare, e quell'affare ci terrà in vita, per ora.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_struttura"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.38 r.60-71] (i litigi; la porta chiusa; il tiro di ascoltare della fonte, raccontato: le guardie, la camera di contenimento, il Kyn per riattivare la struttura; la radio: la battuta di Leita [r.71] alla lettera)"
+    },
+    {
+     "id": "W29x2",
+     "testo": "Andare avanti insieme a Leita",
+     "richiede": [
+      "W29x1"
+     ],
+     "riserva": "Per la prima volta lavorate insieme. Una sala è piena di copie di Evan, spente, una accanto all'altra. Oltre, la camera di contenimento, piena di guardie. Riesci appena a entrare nelle telecamere: c'è Knytta, spogliata, intrappolata nei cavi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_struttura"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.38 r.92-95, r.115-126; Cap.39 r.57-64] (la collaborazione; le copie spente di Evan; la camera di contenimento con molte guardie; le telecamere; Knytta spogliata, intrappolata nei cavi)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "leita",
+     "apertura": "Leita si appoggia al muro, e ti guarda di traverso.",
+     "chiusura": "Leita torna a guardare il corridoio.",
+     "riserva_libera": "Leita sbuffa, e non risponde.",
+     "argomenti": [
+      {
+       "id": "W29_leita_1",
+       "testo": "Chiedere a Leita che cosa ci fa qui",
+       "richiede": [
+        "W29x1"
+       ],
+       "riserva": "Leita si stringe nelle spalle. «Cerco un posto largo, e un branco. Come te.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "leita",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.39 r.57] (con Leita cerca un luogo spazioso e un «branco»); la battuta: PROPOSTA",
+       "scopo": "Leita alleata"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ti colleghi alla struttura, e fra il rumore senti una voce che conosci: è Antoine, che sulla Terra ti istruì per l'assalto alla Icaro Tower, ed era accanto a Gaia. Ti spiega il crash, e ti chiede di recuperare un reverie.",
+    "fonte": "P3 [ICH Cap.39 r.65-71] (si collega alla struttura; il tiro di memoria della fonte, raccontato: la voce di Antoine, l'assalto alla Icaro Tower, accanto a Gaia; il crash; recuperare un reverie); ICH.md r.141",
+    "esplora": [
+     {
+      "id": "W29d1",
+      "testo": "Aprire la sala dei reverie addormentati",
+      "riserva": "Con Leita apri la sala: reverie addormentati, vestiti da militari; fra loro, alcuni ulfer. Leita li guarda a lungo. Poi un ruggito li sveglia tutti, e tu entri nel loro codice: ti seguono. Avanzate verso Knytta, con Runi alle calcagna.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_antoine_voce"
+       }
+      ],
+      "fonte": "P4 [ICH Cap.39 r.72-75, r.129-133] (la sala dei reverie addormentati vestiti da militari; alcuni ulfer; il ruggito; lei può hackerarli; avanzano verso Knytta con Runi alle calcagna)"
+     },
+     {
+      "id": "W29d2",
+      "testo": "Liberare Knytta dai cavi",
+      "richiede": [
+       "W29d1"
+      ],
+      "riserva": "Runi uccide le guardie della sala. Tu strappi i cavi di dosso a Knytta, e Leita la tira in piedi. Dietro di voi una valanga di ghiaccio copre l'ingresso. Poi Runi si volta verso di te, e nei suoi occhi non c'è niente di te.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_antoine_voce"
+       },
+       {
+        "flag": {
+         "lupa_knytta_29": true
+        }
+       }
+      ],
+      "fonte": "P4-P5 [ICH Cap.39 r.134-140] (Runi uccide le guardie della sala; lei sveglia Knytta; la valanga di ghiaccio sull'ingresso; poi «Shell-Runi»); i cavi strappati e Leita che la tira in piedi: come in «L'Hersir dei nodi», H29"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W29x2"
+    ],
+    "risoluzione": [
+     "W29d2"
+    ]
+   },
+   "required_beats": [
+    "W29x1",
+    "W29x2",
+    "W29d1",
+    "W29d2"
+   ],
+   "optional_beats": [
+    "W29_leita_1"
+   ],
+   "riserva_libera": "Nella struttura nessuno ti risponde: ci sono solo le macchine.",
+   "uscita_fail_forward": "Se la scena si ferma, il ciondolo risveglia comunque Runi, e Runi ti ritrova."
+  },
+  "W30": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "W30x1",
+     "testo": "Seguire la voce di Antoine",
+     "riserva": "Dalla radio e dal ciondolo la voce di Antoine vi guida, curva dopo curva. Poi Antoine vi raggiunge con una squadra, e chiude le porte dietro di voi. Resta dall'altra parte, a coprire la fuga. Le porte non si riaprono più.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_antoine"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.39 r.157-160] (Antoine guida via ciondolo e radio, poi li raggiunge con una squadra e chiude le porte dietro di loro: muore, schema 30)"
+    },
+    {
+     "id": "W30x2",
+     "testo": "Leggere il ciondolo",
+     "richiede": [
+      "W30x1"
+     ],
+     "riserva": "Fuori, Runi ti chiede di leggere il ciondolo. Dentro ci sono istruzioni: un bugfix, da inserire in una casa degli Asi. Arrivano degli Ulfr fedeli a Leita, e guardano Runi con paura.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "lupa_fact_antoine"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.40 r.15-20] (Runi le chiede di leggere il ciondolo; le istruzioni per il bugfix da inserire in una casa degli Asi; gli Ulfr fedeli a Leita, impauriti da Runi)"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Nel deserto, davanti alla casa degli Asi, i Foa vi sbarrano la strada; poi vi lasciano passare. Una voluspà dei Foa vi porta a una grande pozza nera, e parla a te e a Knytta.",
+    "fonte": "P3 [ICH Cap.40 r.81-93] (i Foa alla casa degli Asi; la voluspà dei Foa le porta a una grande pozza nera e parla a entrambe); come H29 di «L'Hersir dei nodi» (i Foa vi lasciano entrare)",
+    "esplora": [
+     {
+      "id": "W30d1",
+      "testo": "Ascoltare la voluspà dei Foa",
+      "riserva": "«Abbandona questa vita: il tuo futuro non ha bisogno del passato. Abbandona il nome dei ribelli: il tuo futuro non ha bisogno di morte e sfortuna. Prendi il nome della donna che vivrà insieme al suo lupo. Aiuta questo mondo, e ne avrai uno in cui vivere davvero insieme a lui.» Camminate nel liquido nero, e il liquido si schiarisce sotto i vostri passi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_belva"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.40 r.94-95] (la battuta della voluspà [r.94] alla lettera, ritoccata «queste vita» in «questa vita»; il liquido nero che si schiarisce)"
+     },
+     {
+      "id": "W30d2",
+      "testo": "Guardare Runi",
+      "richiede": [
+       "W30d1"
+      ],
+      "riserva": "Arriva un esercito. Runi ti prende il ciondolo e se lo lega alla mano sinistra. «Finché sono con te nulla mi potrà accadere: questo non è di certo un addio… siamo lupi, combattiamo per sopravvivere… combattiamo per noi due.» Diventa una belva enorme, e si getta contro l'esercito per darvi tempo. Leita va con lui.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "lupa_fact_belva"
+       }
+      ],
+      "fonte": "P4 [ICH Cap.40 r.96-101] (l'esercito; Runi lega il ciondolo alla mano sinistra; la battuta [r.99] alla lettera; diventa una belva per dar loro tempo; Leita con lui)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "W30x2"
+    ],
+    "risoluzione": [
+     "W30d2"
+    ]
+   },
+   "required_beats": [
+    "W30x1",
+    "W30x2",
+    "W30d1",
+    "W30d2"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Nessuno ti risponde: tutti guardano la casa degli Asi.",
+   "uscita_fail_forward": "Se la scena si ferma, il bugfix entra comunque nella tela di dati, e il mondo cambia."
+  }
+ }
+}

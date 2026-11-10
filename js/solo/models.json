@@ -1,0 +1,109 @@
+{
+  "formato": "rm-solo-modelli/1",
+  "versione": 1,
+  "avviso": "Android: il Narratore (Qwen3-4B pilota60, base in due parti + adattatore) arriva solo da Play Asset Delivery on demand, dopo consenso. Nessun URL alternativo. Le voci di «modelli» sono importabili in locale (strumenti di sviluppo) e non sono il Narratore.",
+  "runtime": {
+    "nome": "llama.cpp in WebAssembly (wllama)",
+    "versione": "3.6.1",
+    "licenza": "MIT",
+    "limite_file": "2 GB per file: i modelli più grandi vanno divisi con llama-gguf-split"
+  },
+  "modelli": [
+    {
+      "id": "qwen3-4b-instruct-2507-q4km",
+      "nome": "Qwen3-4B-Instruct-2507 (Q4_K_M)",
+      "versione": "2507-q4km-split2",
+      "formato": "gguf",
+      "runtime": "llama.cpp",
+      "licenza": "Apache-2.0",
+      "fonte": "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF (Qwen3-4B-Instruct-2507-Q4_K_M.gguf, sha256 3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597), diviso con llama-gguf-split --split-max-size 1500M",
+      "stato": "candidato_preferito",
+      "parti": [
+        {
+          "file": "Qwen3-4B-Instruct-2507-Q4_K_M-00001-of-00002.gguf",
+          "dimensione": 1496703808,
+          "sha256": "ee767a24cab3dc2880cc3b98df5bac6ec3bf14163ba12378cc79bbc4c8c30473"
+        },
+        {
+          "file": "Qwen3-4B-Instruct-2507-Q4_K_M-00002-of-00002.gguf",
+          "dimensione": 1000577504,
+          "sha256": "da1889bf2e5078116d5e72cb6668df2af57d84cbf70a392acebf46470bd4e89d"
+        }
+      ],
+      "parti_native": [
+        {
+          "file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+          "dimensione": 2497281120,
+          "sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597"
+        }
+      ],
+      "nota_parti_native": "Nell'APK (plugin nativo, nessun limite di 2 GB) si importa il file originale di Hugging Face, senza dividerlo."
+    },
+    {
+      "id": "qwen3-1.7b-q4km",
+      "nome": "Qwen3-1.7B (Q4_K_M)",
+      "versione": "q4km",
+      "formato": "gguf",
+      "runtime": "llama.cpp",
+      "licenza": "Apache-2.0",
+      "fonte": "https://huggingface.co/unsloth/Qwen3-1.7B-GGUF",
+      "stato": "non_distribuibile",
+      "parti": [
+        {
+          "file": "Qwen3-1.7B-Q4_K_M.gguf",
+          "dimensione": 1107409472,
+          "sha256": "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897"
+        }
+      ],
+      "nota": "Mai nel percorso del Narratore né nel pacchetto di rilascio (decisione dell'autore del 7/11/2026): solo prove locali sul PC."
+    }
+  ],
+  "narratore": {
+    "id": "narratore4b-pilota60",
+    "contratto": "piano",
+    "nome": "Narratore",
+    "versione": "pilota60",
+    "formato": "gguf",
+    "runtime": "llama.cpp",
+    "licenza": "Apache-2.0 (base Qwen3-4B-Instruct-2507)",
+    "distribuzione": "play-asset-delivery",
+    "base": {
+      "file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "dimensione": 2497281120,
+      "sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "fonte": "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "massimo_per_parte": 1260000000,
+      "divisione": "scripts/prepare-play-narrator.py, stesso formato di llama-gguf-split --split --split-max-size 1260M"
+    },
+    "parti": [
+      {
+        "file": "narratore4b-base-00001-of-00002.gguf",
+        "ruolo": "base",
+        "asset_pack": "narratore4b_base1",
+        "dimensione": 1262436640,
+        "sha256": "2570a7d0875c0e7660f1b4733a1acfedcb14ffdc942a9318a23057502b3e927b"
+      },
+      {
+        "file": "narratore4b-base-00002-of-00002.gguf",
+        "ruolo": "base",
+        "asset_pack": "narratore4b_base2",
+        "dimensione": 1234844704,
+        "sha256": "76f72eb6849434ef688b8719a4698e47eb2ed352bab01e1c29dfef99b7fcffea"
+      },
+      {
+        "file": "narratore4b-pilota60-lora-f16.gguf",
+        "ruolo": "adattatore",
+        "asset_pack": "narratore4b_lora",
+        "scala": 1.0,
+        "dimensione": 66095296,
+        "sha256": "35192f4ac5554332424f6f69944e54f35c2e5ceefca7afdb0bdbf8c6f65bbe79"
+      }
+    ]
+  },
+  "requisiti_narratore": {
+    "ram_minima_gib": 6.5,
+    "messaggio_memoria": "Il Narratore richiede un telefono con più memoria",
+    "messaggio_ios": "Aggiorna a iOS 26 per usare il Narratore",
+    "nota": "Soglia sulla RAM totale del telefono (Android ActivityManager.MemoryInfo.totalMem, iOS ProcessInfo.physicalMemory), ricavata dal fabbisogno documentato del 4B: calcolo voce per voce in docs/single-player/NARRATORE_4B_RILASCIO.md §3. Stesso valore in NarratorAssets.RAM_MINIMA (6979321856 byte)."
+  }
+}

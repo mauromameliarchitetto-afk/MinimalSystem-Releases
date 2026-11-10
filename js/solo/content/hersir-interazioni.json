@@ -1,0 +1,4670 @@
+{
+ "formato": "rm-solo-interazioni/1",
+ "campaign_id": "hersir-trama",
+ "stato": "bozza",
+ "content_status": "proposed",
+ "nota": "«L'Hersir dei nodi»: docs/single-player/trame/SCHEMA_L_HERSIR_DEI_NODI.md (schema approvato il 30/10); ICH.md §1 r.39-67. Ogni frase riprende un fatto o una battuta della fonte (note di lettura rm-work/ich/letture/); nessun fatto nuovo se non segnato PROPOSTA.",
+ "regole": {},
+ "scene": {
+  "H01": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H01x1",
+     "testo": "Seguire le tracce della bikkja fra gli alberi",
+     "riserva": "Fra gli alberi passa un bagliore, e una figura corre via, inseguita da qualcosa; un attimo dopo è scomparsa. Al suo posto, fra i tronchi, ringhiano due bikkja.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Due bikkja vi sbarrano la strada nella foresta nera.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.1 r.20-24] (il bagliore, la figura inseguita che scompare, l'attacco delle bikkja)"
+    },
+    {
+     "id": "H01x2",
+     "testo": "Cercare il bagliore fra i tronchi",
+     "riserva": "Dove è passato il bagliore non c'è nessuno: solo l'erba schiacciata, e niente orme che vadano via.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: la figura che scompare [ICH Cap.1 r.21-22]; chi sia la fonte non lo dice qui",
+     "scopo": "il mondo strano, senza spiegarlo"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "anyja",
+     "apertura": "Anyja ha l'arma in pugno e gli occhi fra gli alberi.",
+     "chiusura": "Anyja torna a guardare fra gli alberi.",
+     "riserva_libera": "Anyja scuote la testa: «Non è il momento.»",
+     "argomenti": [
+      {
+       "id": "H01_anyja_1",
+       "testo": "Dividere le prede con Anyja e con Vindar",
+       "riserva": "Anyja, ferita com'è, lascia una delle prede a Vindar: «Facciamo metà ciascuno, Hel non reclamerà la tua vita oggi bestia». Poi si prende un morso di fegato crudo, guardandoti.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "anyja",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H01d1"
+       ],
+       "fonte": "[ICH Cap.1 r.28-30] (lasciano a Vindar una delle due prede; la battuta di Anyja [r.29]; il fegato crudo)",
+       "scopo": "il legame con Anyja (L dello schema)"
+      }
+     ]
+    },
+    {
+     "png": "vindar",
+     "apertura": "Vindar si ferma fra gli alberi e ti guarda, con il muso sporco di sangue.",
+     "chiusura": "Vindar torna fra gli alberi.",
+     "riserva_libera": "Vindar non risponde: annusa l'aria.",
+     "argomenti": [
+      {
+       "id": "H01_vindar_1",
+       "testo": "Chiamare Vindar accanto a te",
+       "riserva": "Vindar ti viene vicino senza un suono, e si accuccia ai tuoi piedi, come se ci fosse da sempre.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "vindar",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "PROPOSTA: Vindar caccia con lei [ICH Cap.1 r.26-30]; chi sia si vede nella 18 (schema)",
+       "scopo": "il legame con Vindar, senza spiegarlo"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Le due bikkja vi girano intorno, basse sulle zampe, poi una si lancia contro di te.",
+    "fonte": "P1 [ICH Cap.1 r.24-27]",
+    "esplora": [
+     {
+      "id": "H01d1",
+      "testo": "Affrontare la bikkja",
+      "riserva": "Pianti i piedi fra le radici. La bikkja ti salta addosso.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Combatti contro una bikkja nella foresta nera.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P1 [ICH Cap.1 r.24-27]: come combattere è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H01x1"
+    ],
+    "risoluzione": [
+     "H01d1"
+    ]
+   },
+   "required_beats": [
+    "H01x1",
+    "H01d1"
+   ],
+   "optional_beats": [
+    "H01x2",
+    "H01_anyja_1",
+    "H01_vindar_1"
+   ],
+   "riserva_libera": "Nella foresta nera nessuno ti risponde: solo il fruscio degli alberi.",
+   "uscita_fail_forward": "Se la scena si ferma, le bikkja vi trovano comunque: ringhiano fra i tronchi."
+  },
+  "H02": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H02x1",
+     "parte": "Il tuo villaggio",
+     "testo": "Guardarti intorno nel villaggio",
+     "riserva": "Fra le tende la tua gente vi guarda tornare con le prede; Anyja risponde a Dreymar che è stata una caccia come le altre.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: il villaggio (non specificato nelle trame); Anyja che risponde a Dreymar [ICH Cap.1 r.119]",
+     "scopo": "il villaggio della protagonista"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "folr_dreymar",
+     "apertura": "Folr Dreymar ti tiene il viso fra le mani, con estrema calma.",
+     "chiusura": "Folr Dreymar ti lascia il viso e sorride.",
+     "riserva_libera": "Folr Dreymar sorride: «Non tutto è dato saperlo, figliola.»",
+     "argomenti": [
+      {
+       "id": "H02_dreymar_1",
+       "testo": "Ascoltare Folr Dreymar",
+       "riserva": "«La morte è ciò che permette noi di vivere, uno scambio che il patto dell'equilibrio ha sancito cicli orsono» dice Dreymar. Poi si volta verso di te. «Non ho bisogno dei miei occhi per comprendere il tormento della tua anima figliola, tu sei destinata a grandi cose non dimenticarlo… dentro di te non vedo oscurità, ma una pira pronta a far brillare questo mondo.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "folr_dreymar",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P1 [ICH Cap.1 r.121-122]",
+       "scopo": "il legame con il padre e la guida"
+      },
+      {
+       "id": "H02_dreymar_2",
+       "testo": "Rispondere a Folr Dreymar",
+       "riserva": "Dreymar ascolta, annuendo piano, come se sapesse già. «Ora permetti il riposo a questo pallido sognatore» dice, e torna alla sua tenda appoggiato al bastone.",
+       "effetti": [],
+       "richiede": [
+        "H02_dreymar_1"
+       ],
+       "fonte": "L dello schema: le parole sono del giocatore; la risposta di Dreymar [ICH Cap.1 r.123] (torna alla tenda con il bastone)",
+       "scopo": "il legame con il padre e la guida"
+      }
+     ]
+    },
+    {
+     "png": "knut",
+     "apertura": "Knut è serio, con Dag accanto.",
+     "chiusura": "Knut tace, e guarda verso il mare.",
+     "riserva_libera": "Knut scuote la testa: «Non ne so di più, mia signora.»",
+     "argomenti": [
+      {
+       "id": "H02_knut_1",
+       "testo": "Ascoltare le notizie di Knut e Dag",
+       "riserva": "«Askell richiede una riunione del consiglio dei saggi, mia signora» dice Knut. «Stessa cosa vale per Signy di Byr» aggiunge Dag. Knut abbassa la voce: «Sembra che delle navi stiano procedendo in direzione di Jotunrif, le vele sui loro alberi spogli indicano un mostro nero con molte zampe ciondolanti.»",
+       "effetti": [],
+       "fonte": "P2 [ICH Cap.1 r.126-129]",
+       "scopo": "le navi straniere e il consiglio"
+      }
+     ]
+    },
+    {
+     "png": "einar",
+     "apertura": "Einar ti cammina accanto, con la mappa del viaggio sotto il braccio.",
+     "chiusura": "Einar arrotola la mappa e ti sorride.",
+     "riserva_libera": "Einar alza le spalle: «Chi lo sa, comandante.»",
+     "argomenti": [
+      {
+       "id": "H02_einar_1",
+       "testo": "Guardare la mappa con Einar",
+       "riserva": "Sulla mappa ci sono animali mai visti; Einar ne indica uno. «Ricordo di aver visto una cosa simile a largo.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "einar",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H02d1"
+       ],
+       "fonte": "P3 [ICH Cap.1 r.164]",
+       "scopo": "Einar, l'amante"
+      }
+     ]
+    },
+    {
+     "png": "dag",
+     "apertura": "Dag ride, carico di cibo e acqua come tutti.",
+     "chiusura": "Dag ride ancora da solo.",
+     "riserva_libera": "Dag ride: «E che ne so io?»",
+     "argomenti": [
+      {
+       "id": "H02_dag_1",
+       "testo": "Lasciare che Dag scherzi lungo la strada",
+       "riserva": "Dag dubita di tutto e prende in giro tutti. «Zitto Dag, abbiamo pensato a tutto e se non basta mi mangerò te se non smetti di rompere» gli dice Anyja. Dag fa una battuta volgare su te ed Einar, e Knut lo ferma: «Anche se volessero penso che tu rovineresti l'atmosfera, perciò datti una calmata e smetti di fare l'animale.»",
+       "effetti": [],
+       "richiede": [
+        "H02d1"
+       ],
+       "fonte": "L dello schema, le battute a bordo [ICH Cap.1 r.165-173] (Anyja [r.166], Knut [r.173]; la battuta di Dag [r.172] è riassunta)",
+       "scopo": "il gruppo"
+      }
+     ]
+    },
+    {
+     "png": "anyja",
+     "apertura": "Anyja ha ancora il sangue della bikkja sulle mani.",
+     "chiusura": "Anyja torna a guardare il sentiero.",
+     "riserva_libera": "Anyja alza le spalle.",
+     "argomenti": [
+      {
+       "id": "H02_anyja_1",
+       "testo": "Chiedere ad Anyja che cosa ne pensa delle navi",
+       "riserva": "Anyja stringe i denti: è pronta a partire anche subito.",
+       "effetti": [],
+       "richiede": [
+        "H02_knut_1"
+       ],
+       "fonte": "PROPOSTA: Anyja che la segue sempre (file dei PNG, Anyja)",
+       "scopo": "il gruppo"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Partite verso la costa con Einar, Anyja, Dag e Knut, carichi di cibo e d'acqua; il sentiero si perde in una giungla fitta.",
+    "fonte": "P3 [ICH Cap.1 r.161-163]",
+    "esplora": [
+     {
+      "id": "H02d1",
+      "parte": "la giungla e la barca verso la costa",
+      "testo": "Metterti in cammino verso la costa",
+      "riserva": "Ti metti in testa al gruppo. Dietro di te, gli altri ti seguono nella giungla.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Il gruppo è in viaggio verso la costa.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.1 r.161-175]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H02_dreymar_1",
+     "H02_knut_1"
+    ],
+    "risoluzione": [
+     "H02d1"
+    ]
+   },
+   "required_beats": [
+    "H02_dreymar_1",
+    "H02_knut_1",
+    "H02d1"
+   ],
+   "optional_beats": [
+    "H02x1",
+    "H02_dreymar_2",
+    "H02_einar_1",
+    "H02_dag_1",
+    "H02_anyja_1"
+   ],
+   "riserva_libera": "Al villaggio ognuno bada alle sue cose, e nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, Knut e Dag ti raggiungono comunque con le notizie delle navi."
+  },
+  "H03": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H03x1",
+     "testo": "Ascoltare il consiglio degli Hersir",
+     "riserva": "Il consiglio pronuncia il tuo nome. Il voluspà avverte i saggi: «Attenti a cosa fate miei saggi, siete per caso consci delle conseguenze a cui andate incontro?» Hildr non si muove: ti ha {cresciuto|cresciuta|cresciuto} come una figlia, dice, e sa cosa sta facendo. «Questo male non guarirà finché la morte non avrà abbracciato le sue carni.» Folr Dreymar si fa avanti: «Allora permettetemi di anticipare la fame che brama la sua carne concedendo la mia vita.» Signy gli punta la lama contro: «Fermo oracolo, sai bene che questo è il suo volere, tu stesso hai pronunciato queste parole per suo conto.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_condanna"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.1 r.227-232] (il voluspà [r.229], Hildr [r.230], Dreymar [r.231], Siggy [r.232]); il nome del PG nella battuta di Hildr è reso in discorso indiretto"
+    },
+    {
+     "id": "H03x2",
+     "testo": "Guardare il patibolo",
+     "riserva": "Sul patibolo c'è già qualcuno: un'altra vittima. E tu ti vedi da fuori, come se il tuo corpo non fosse più tuo.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "[ICH Cap.1 r.233] (lei si vede da fuori; sul patibolo un'altra vittima)",
+     "scopo": "il mondo controllato, senza spiegarlo"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "einar",
+     "apertura": "Einar ti guarda, sereno, come chi ha già deciso.",
+     "chiusura": "Einar si volta verso il patibolo.",
+     "riserva_libera": "Einar ti sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "H03_einar_1",
+       "testo": "Salutare Einar",
+       "riserva": "Einar ti bacia. «Sarò sempre con te, il nostro è un nodo che non si potrà mai sciogliere.» Poi si volta, e va verso il patibolo.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "einar",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P1 [ICH Cap.1 r.222-226]",
+       "scopo": "Einar, che va a morire sapendo a cosa rinuncia"
+      }
+     ]
+    },
+    {
+     "png": "folr_dreymar",
+     "apertura": "Folr Dreymar stringe il bastone; i suoi occhi ciechi sono rivolti verso di te.",
+     "chiusura": "Folr Dreymar abbassa il capo.",
+     "riserva_libera": "Folr Dreymar tace.",
+     "argomenti": [
+      {
+       "id": "H03_dreymar_1",
+       "testo": "Chiamare Folr Dreymar",
+       "riserva": "Dreymar ti cerca con le mani, ma Signy gli sbarra la strada con la lama.",
+       "effetti": [],
+       "richiede": [
+        "H03x1"
+       ],
+       "fonte": "PROPOSTA: il gesto di Dreymar e di Siggy [ICH Cap.1 r.231-232]",
+       "scopo": "il padre che darebbe la vita per lei"
+      }
+     ]
+    },
+    {
+     "png": "hildr",
+     "apertura": "Hildr ti guarda dall'alto del consiglio, senza abbassare gli occhi.",
+     "chiusura": "Hildr distoglie lo sguardo.",
+     "riserva_libera": "Hildr non risponde: la sentenza è detta.",
+     "argomenti": [
+      {
+       "id": "H03_hildr_1",
+       "testo": "Chiedere a Hildr perché",
+       "riserva": "«So cosa sto facendo» dice Hildr. «La sua anima è tormentata per quanto è successo, così come lo sarà la tua.» Non aggiunge altro.",
+       "effetti": [],
+       "richiede": [
+        "H03x1"
+       ],
+       "fonte": "[ICH Cap.1 r.230] (perché sia condannata la fonte non lo dice: Hildr non lo spiega)",
+       "scopo": "la condannata"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il consiglio ha parlato, e tutti ti guardano: davanti al patibolo, ora, tocca a te.",
+    "fonte": "P2-P3 [ICH Cap.1 r.233-234] (la scelta della giocatrice)",
+    "esplora": [
+     {
+      "id": "H03d1",
+      "testo": "Fare la tua mossa davanti al patibolo",
+      "riserva": "Senti gli occhi di tutti addosso, e il cuore che batte forte.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Davanti al patibolo devi decidere che cosa fare.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.1 r.234]: il gesto è del giocatore (scelta)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H03_einar_1",
+     "H03x1"
+    ],
+    "risoluzione": [
+     "H03d1"
+    ]
+   },
+   "required_beats": [
+    "H03_einar_1",
+    "H03x1",
+    "H03d1"
+   ],
+   "optional_beats": [
+    "H03x2",
+    "H03_dreymar_1",
+    "H03_hildr_1"
+   ],
+   "riserva_libera": "Davanti al patibolo nessuno ti risponde: il consiglio aspetta.",
+   "uscita_fail_forward": "Se la scena si ferma, il tuo corpo si blocca comunque, e le figure in abiti argentei arrivano."
+  },
+  "H04": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H04x1",
+     "parte": "il villaggio",
+     "testo": "Ascoltare Hildr davanti alla sua gente",
+     "riserva": "Hildr si inginocchia con la lancia davanti alla sua gente. «Hel è dalla nostra, le sue promesse saranno messe a dura prova, molti corvi per mano sua chiederanno i nostri corpi ma la sua benedizione ci permetterà di vincere contro il nostro nemico.» Poi, più piano: «Cerco mio fratello, cerco la mia metà, cerco qualcosa che ho perso ma che sento dentro la mia anima… la notte offusca la mia mente ma non potrà mai scogliere il nodo che ci tiene uniti.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_hildr"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.2 r.24-26]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "folr_dreymar",
+     "apertura": "Folr Dreymar ha lo sguardo vitreo, e ti tiene {vicino|vicina|vicino} come quando eri {bambino|bambina|piccolo}.",
+     "chiusura": "Folr Dreymar ti lascia andare, piano.",
+     "riserva_libera": "Folr Dreymar sorride: «Non tutto è dato saperlo, figliola.»",
+     "argomenti": [
+      {
+       "id": "H04_dreymar_1",
+       "testo": "Ascoltare Folr Dreymar",
+       "riserva": "«Per riunirli dovrai essere più di questo, non potrai solamente importi su di loro, dovrai viaggiare, vedere nuovi mondi e nuove terre… o finirai per regnare su un manto di cadaveri…» Le sue mani cieche ti stringono il viso. «…Le bestie combattono per la vita, i reveries per uno scopo… devi solo lasciare che la tua strada ti guidi verso il tuo.»",
+       "effetti": [
+        {
+         "scopri": "hersir_fact_viaggio"
+        },
+        {
+         "relazione": {
+          "png": "folr_dreymar",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P2 [ICH Cap.2 r.30-31]; ICH.md r.45",
+       "scopo": "l'obiettivo «riunire le reverie libere» (ICH.md r.63)"
+      },
+      {
+       "id": "H04_dreymar_2",
+       "testo": "Chiedere a Folr Dreymar chi devi riunire",
+       "riserva": "Dreymar scuote il capo, sereno. «Lo vedrai quando sarà il momento, figliola. Per ora pensa alla tua gente.»",
+       "effetti": [],
+       "richiede": [
+        "H04_dreymar_1"
+       ],
+       "fonte": "PROPOSTA: chi siano le reverie libere si dice nella 10 e si vede nella 16 (schema); Dreymar che crede nel destino (file dei PNG)",
+       "scopo": "riunire le reverie libere, senza dirlo prima del tempo"
+      }
+     ]
+    },
+    {
+     "png": "hildr",
+     "apertura": "Hildr stringe la lancia, con gli occhi già sulla foresta.",
+     "chiusura": "Hildr torna ai suoi combattenti.",
+     "riserva_libera": "Hildr non risponde: ha altro a cui pensare.",
+     "argomenti": [
+      {
+       "id": "H04_hildr_1",
+       "testo": "Chiedere a Hildr di suo fratello",
+       "riserva": "Hildr ti guarda a lungo, con una distanza che non riesci a colmare. «Lo ritroverò» dice soltanto.",
+       "effetti": [],
+       "richiede": [
+        "H04x1"
+       ],
+       "fonte": "PROPOSTA: Hildr cerca il fratello (ICH.md r.45; [ICH Cap.2 r.26]); con la protagonista distanza e un primo astio (file dei PNG)",
+       "scopo": "Hildr e la sua metà"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Hildr muove i combattenti nella foresta, verso Jotunrif: tutti hanno un posto nel piano.",
+    "fonte": "P3 [ICH Cap.2 r.34]",
+    "esplora": [
+     {
+      "id": "H04d1",
+      "parte": "la foresta verso Jotunrif",
+      "testo": "Seguire Hildr nella foresta",
+      "riserva": "Cammini fra i combattenti, nella foresta. Hildr ti fa cenno di avvicinarti.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "I combattenti si muovono verso Jotunrif.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.2 r.34-39]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H04x1",
+     "H04_dreymar_1"
+    ],
+    "risoluzione": [
+     "H04d1"
+    ]
+   },
+   "required_beats": [
+    "H04x1",
+    "H04_dreymar_1",
+    "H04d1"
+   ],
+   "optional_beats": [
+    "H04_dreymar_2",
+    "H04_hildr_1"
+   ],
+   "riserva_libera": "A Restan ognuno si prepara alla difesa, e nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, Hildr chiama comunque i combattenti: si parte per Jotunrif."
+  },
+  "H05": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H05x1",
+     "parte": "la costa di Trakai",
+     "testo": "Andare all'incontro con gli stranieri, con Anyja e Knut",
+     "riserva": "Sulla costa di Trakai vi aspettano in sette: cinque soldati e due emissari. Uno porta un simbolo del colore del sole; l'altro, più grosso, lo stemma di una bestia.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_stranieri"
+      }
+     ],
+     "fonte": "P1 e P2 [ICH Cap.2 r.99-108] (sette persone; i simboli sono DEDOTTI nelle note di lettura)"
+    },
+    {
+     "id": "H05x2",
+     "parte": "la costa di Trakai",
+     "testo": "Osservare le armi degli stranieri",
+     "riserva": "Non ne hai mai viste di simili: lame di metallo ricurve, aste appuntite con lame in cima, e lance.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Gli stranieri portano armi mai viste: lame di metallo ricurve.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "L dello schema (nella fonte un tiro di osservare [ICH Cap.2 r.106]); le armi: file dei PNG, Barter [r.106]",
+     "scopo": "un nemico diverso"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "avarr_almrich",
+     "apertura": "L'emissario vi guarda dall'alto in basso, disarmato e sicuro di sé.",
+     "chiusura": "L'emissario sorride, supponente.",
+     "riserva_libera": "L'emissario fa un gesto vago: «Non sono cose che vi riguardano.»",
+     "argomenti": [
+      {
+       "id": "H05_avarr_1",
+       "testo": "Chiedere all'emissario che cosa vuole",
+       "riserva": "«Sono Avarr Almrich, emissario di Bhorkyn. A nome degli Aesir chiediamo accesso alla casa dei nostri pari di cui voi sembrate avere controllo.» Offre cibo e insegnamenti in cambio. Uno di Lita sputa per terra: «Perché dovremmo farlo? Chi ci dice che non ci attaccherete.» «E poi semplicemente non vogliamo uccidervi, non ci interessano le vostre… cose, vogliamo solo il dono che i nostri padri hanno lasciato custodito lì per noi conoscitori della tecnica e del loro sapere.»",
+       "effetti": [
+        {
+         "scopri": "hersir_fact_emissario"
+        }
+       ],
+       "richiede": [
+        "H05x1"
+       ],
+       "fonte": "P2 [ICH Cap.2 r.112-117] (Avarr [r.112, r.117], uno dei Lita [r.115]); ICH.md r.45",
+       "scopo": "la trattativa"
+      },
+      {
+       "id": "H05_avarr_2",
+       "testo": "Chiedere all'emissario quale sia la casa dei suoi pari",
+       "riserva": "Avarr Almrich sorride, come davanti a un bambino. «Voi la custodite senza sapere che cosa sia.»",
+       "effetti": [],
+       "richiede": [
+        "H05_avarr_1"
+       ],
+       "fonte": "PROPOSTA: che cosa sia il «dono» non lo dice (file dei PNG, Avarr Almrich); la casa è la dimora della 07 (DEDOTTO dallo schema), qui taciuta",
+       "scopo": "la dimora, senza dirla"
+      }
+     ]
+    },
+    {
+     "png": "barter_an_kraken",
+     "apertura": "Barter an Kraken tiene una mano sull'arma e gli occhi sulle vostre.",
+     "chiusura": "Barter stringe l'arma.",
+     "riserva_libera": "Barter non risponde: aspetta.",
+     "argomenti": [
+      {
+       "id": "H05_barter_1",
+       "testo": "Deporre le armi, come chiede Barter",
+       "riserva": "Posi le armi sulla sabbia, e gli altri fanno lo stesso. «Ora voi» dice Anyja agli stranieri.",
+       "effetti": [],
+       "richiede": [
+        "H05_avarr_1"
+       ],
+       "fonte": "L dello schema, deporre o no le armi [ICH Cap.2 r.114-119] (la battuta di Anyja [r.119]); se non le depone, il tradimento arriva comunque (P3)",
+       "scopo": "la trattativa"
+      }
+     ]
+    },
+    {
+     "png": "anyja",
+     "apertura": "Anyja non stacca gli occhi dagli stranieri.",
+     "chiusura": "Anyja stringe la svebba.",
+     "riserva_libera": "Anyja scuote la testa.",
+     "argomenti": [
+      {
+       "id": "H05_anyja_1",
+       "testo": "Chiedere ad Anyja che cosa fare dei prigionieri",
+       "riserva": "Anyja si preme una mano sul fianco ferito. «Diamogli un messaggio, facciamogli capire che i figli di Hel non accettano intrusioni.»",
+       "effetti": [],
+       "richiede": [
+        "H05d1"
+       ],
+       "fonte": "[ICH Cap.2 r.126] (il nome del PG è tolto dalla battuta)",
+       "scopo": "la risposta di Restan (L dello schema)"
+      }
+     ]
+    },
+    {
+     "png": "knut",
+     "apertura": "Knut ti sta accanto, calmo, con l'ascia a portata di mano.",
+     "chiusura": "Knut torna a guardare gli stranieri.",
+     "riserva_libera": "Knut non lo sa.",
+     "argomenti": [
+      {
+       "id": "H05_knut_1",
+       "testo": "Chiedere a Knut che cosa pensa degli stranieri",
+       "riserva": "«Sono troppo sicuri di sé» dice Knut, senza alzare la voce. «Tieni d'occhio quello grosso.»",
+       "effetti": [],
+       "richiede": [
+        "H05x1"
+       ],
+       "fonte": "PROPOSTA: Knut stratega prudente, che non alza mai la voce (file dei PNG)",
+       "scopo": "il gruppo"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Barter an Kraken fa un passo avanti. «Prendeteli, li scambieremo come ostaggi.» I suoi soldati vi sono addosso.",
+    "fonte": "P3 [ICH Cap.2 r.120-121] (il tradimento, con le armi deposte o no)",
+    "esplora": [
+     {
+      "id": "H05d1",
+      "parte": "la costa di Trakai",
+      "testo": "Affrontare i soldati di Barter",
+      "riserva": "Un soldato ti viene contro con una lama ricurva, mentre intorno a te Anyja e Knut si battono con gli altri.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Combatti contro i soldati di Barter sulla costa di Trakai.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.2 r.120-125]: come combattere è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H05x1",
+     "H05_avarr_1"
+    ],
+    "risoluzione": [
+     "H05d1"
+    ]
+   },
+   "required_beats": [
+    "H05x1",
+    "H05_avarr_1",
+    "H05d1"
+   ],
+   "optional_beats": [
+    "H05x2",
+    "H05_avarr_2",
+    "H05_barter_1",
+    "H05_anyja_1",
+    "H05_knut_1"
+   ],
+   "riserva_libera": "Sulla costa nessuno ti risponde: tutti guardano gli stranieri.",
+   "uscita_fail_forward": "Se la scena si ferma, Barter an Kraken vi tradisce comunque: «Prendeteli, li scambieremo come ostaggi.»"
+  },
+  "H06": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H06x1",
+     "parte": "Jotunrif e la sua gola",
+     "testo": "Guardare le navi che entrano nella gola",
+     "riserva": "Arrivano tre navi. Accendete le lance e le scagliate giù nella gola, fiamme contro il legno; dalle navi rispondono le baliste, e i dardi impalano alcuni dei tuoi accanto a te.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_gola"
+      }
+     ],
+     "fonte": "P1 e P2 [ICH Cap.2 r.174-181]"
+    },
+    {
+     "id": "H06x2",
+     "testo": "Guardare la costa sotto la gola",
+     "riserva": "Dalle navi tuona un'artiglieria che non hai mai sentito; una nave è rimasta bloccata nella gola, e sulla costa piovono dardi di balestra.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Una nave è bloccata nella gola; l'artiglieria colpisce la costa.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P3 [ICH Cap.3 r.42-44]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "knut",
+     "apertura": "Knut scende dalla vedetta, con il coccio di vetro in mano.",
+     "chiusura": "Knut torna a guardare il mare.",
+     "riserva_libera": "Knut scuote la testa: da lassù non si vedeva.",
+     "argomenti": [
+      {
+       "id": "H06_knut_1",
+       "testo": "Chiedere a Knut che cosa ha visto dalla vedetta",
+       "riserva": "«Tre navi, e altre dietro» dice Knut, calmo come sempre. «Una si è incastrata nella gola.»",
+       "effetti": [],
+       "richiede": [
+        "H06x1"
+       ],
+       "fonte": "PROPOSTA: Knut di vedetta [ICH Cap.2 r.174]; le navi [Cap.2 r.176; Cap.3 r.44]",
+       "scopo": "il gruppo nella battaglia"
+      }
+     ]
+    },
+    {
+     "png": "askell",
+     "apertura": "Askell tiene la costa con il suo clan, l'ascia in pugno.",
+     "chiusura": "Askell torna ai suoi.",
+     "riserva_libera": "Askell non ha tempo per le domande.",
+     "argomenti": [
+      {
+       "id": "H06_askell_1",
+       "testo": "Chiedere ad Askell come tiene la costa",
+       "riserva": "«Tengo» dice Askell, secco. «Pensa ai tuoi.»",
+       "effetti": [],
+       "richiede": [
+        "H06x2"
+       ],
+       "fonte": "PROPOSTA: il clan di Askell sulla costa [ICH Cap.3 r.47]; domande secche (file dei PNG)",
+       "scopo": "i clan"
+      }
+     ]
+    },
+    {
+     "png": "signy",
+     "apertura": "Signy porta via i feriti, fredda e misurata anche qui.",
+     "chiusura": "Signy torna dai feriti.",
+     "riserva_libera": "Signy non risponde: ha i feriti da portare via.",
+     "argomenti": [
+      {
+       "id": "H06_signy_1",
+       "testo": "Aiutare Signy con i feriti",
+       "riserva": "Carichi un ferito sulle spalle e lo porti al riparo. Signy ti guarda un momento, poi annuisce.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "signy",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H06x1"
+       ],
+       "fonte": "PROPOSTA: il clan di Signy con i feriti [ICH Cap.3 r.48]",
+       "scopo": "i clan"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La battaglia scende sulla costa: artiglieria, dardi, fumo. Intorno a te i tuoi cominciano a correre, nel panico, e i clan aspettano ordini.",
+    "fonte": "P3 [ICH Cap.3 r.39-48] (il panico, i clan)",
+    "esplora": [
+     {
+      "id": "H06d1",
+      "parte": "la costa",
+      "testo": "Tenere duro sulla costa sotto i dardi",
+      "riserva": "Ti butti al riparo dietro gli scudi. Le schegge ti fischiano intorno.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "La battaglia di Jotunrif scende sulla costa.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.3 r.39-46]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H06x1"
+    ],
+    "risoluzione": [
+     "H06d1"
+    ]
+   },
+   "required_beats": [
+    "H06x1",
+    "H06d1"
+   ],
+   "optional_beats": [
+    "H06x2",
+    "H06_knut_1",
+    "H06_askell_1",
+    "H06_signy_1"
+   ],
+   "riserva_libera": "Nel fragore della battaglia nessuno ti sente.",
+   "uscita_fail_forward": "Se la scena si ferma, una nave salta comunque in aria nella gola, e Anyja corre verso gli uomini sbarcati."
+  },
+  "H07": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H07x1",
+     "testo": "Seguire le persone verso la dimora degli Asi",
+     "riserva": "Sali dietro Anyja fino alla caverna. Dentro, degli uomini armati di balestre si voltano verso di voi. «Ora sta ferma e lasciaci entrare senza far storie.» Un altro sputa per terra: «Bhorkyn ha ragione, voi kyn andreste epurati.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Nella dimora degli Asi degli uomini armati di balestre vi sbarrano la strada.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 e P2 [ICH Cap.3 r.83-87] (L dello schema: seguire o no; nella fonte un tiro di percepire)"
+    },
+    {
+     "id": "H07x2",
+     "testo": "Guardare la caverna",
+     "riserva": "Le pareti della caverna non sono di roccia, in fondo: sono lisce, troppo lisce. E in fondo c'è una porta.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: la porta in fondo alla caverna [ICH Cap.3 r.110-112]; la sala di metallo è della 08",
+     "scopo": "arrivare alla porta"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "anyja",
+     "apertura": "Anyja ha la svebba in pugno e il fiato corto.",
+     "chiusura": "Anyja stringe i denti.",
+     "riserva_libera": "Anyja non risponde: guarda gli uomini.",
+     "argomenti": [
+      {
+       "id": "H07_anyja_1",
+       "testo": "Dire ad Anyja di stare indietro",
+       "riserva": "Anyja scuote la testa, e si mette davanti a te.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "anyja",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H07x1"
+       ],
+       "fonte": "PROPOSTA: Anyja la segue sempre per evitare che si ferisca (file dei PNG); si getta a salvarla [ICH Cap.3 r.85]",
+       "scopo": "Anyja che la protegge"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Le balestre si alzano. Anyja si getta davanti a te per prenderti il dardo che era tuo, e cade colpita. Gli uomini vi sono addosso.",
+    "fonte": "P2 [ICH Cap.3 r.85-88]",
+    "esplora": [
+     {
+      "id": "H07d1",
+      "testo": "Affrontare gli uomini nella caverna",
+      "riserva": "Ti butti contro il primo, sopra il corpo di Anyja.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Combatti contro gli uomini di Bhorkyn nella dimora degli Asi.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2-P3 [ICH Cap.3 r.84-96]: come combattere è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H07x1"
+    ],
+    "risoluzione": [
+     "H07d1"
+    ]
+   },
+   "required_beats": [
+    "H07x1",
+    "H07d1"
+   ],
+   "optional_beats": [
+    "H07x2",
+    "H07_anyja_1"
+   ],
+   "riserva_libera": "Nella caverna nessuno ti risponde: solo l'eco.",
+   "uscita_fail_forward": "Se la scena si ferma, gli uomini nella caverna vi trovano comunque, e le balestre si alzano."
+  },
+  "H08": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H08x1",
+     "testo": "Guardarti intorno nella sala",
+     "riserva": "Sulle pareti ci sono figure che cambiano ogni decina di secondi. Non senti odori, né caldo né freddo: solo tinte neutre e metallo, e un oggetto con delle sfere ciondolanti che si urtano piano. Ti accorgi che qui non respiri.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "La sala oltre la porta non somiglia a nessun luogo del mondo.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.4 r.16-20] (non respira: nota di lettura del Cap.4)",
+     "scopo": "capire che la sala non è un luogo del mondo (L dello schema)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "figura_labirinto",
+     "apertura": "La figura anziana ti guarda con una curiosità calma, quasi affettuosa.",
+     "chiusura": "La figura sorride, e aspetta.",
+     "riserva_libera": "La figura scuote il capo, piano: «Non è ancora il momento per questo.»",
+     "argomenti": [
+      {
+       "id": "H08_figura_1",
+       "testo": "Rispondere: che cosa ti ha portato qui",
+       "riserva": "«Cosa ti ha portato qui?» ti chiede la figura, e ascolta la tua risposta fino in fondo, annuendo. Poi: «Esistono tre leggi da cui nessuna forma di vita può scappare, esse sono Realtà, l'Io o coscienza e la Verità oggettiva.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "figura_labirinto",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P3 [ICH Cap.4 r.23, r.25]; L dello schema: la risposta è del giocatore, scopo: la curiosità che lui premia [r.36]",
+       "scopo": "la curiosità"
+      },
+      {
+       "id": "H08_figura_2",
+       "testo": "Rispondere: che cosa è reale",
+       "riserva": "«Voglio farti una domanda… cosa è reale? Non ti chiedo di calcolare una delle risposte, ti chiedo soltanto di darmi una delle tue definizioni.» Ascolta, e quando nomini Einar sorride. «Sei tu a renderlo reale, le emozioni che provi lo rendono tale e grazie a questo potrai dar forma a questa realtà se solo volessi.»",
+       "effetti": [],
+       "richiede": [
+        "H08_figura_1"
+       ],
+       "fonte": "P3 e P4 [ICH Cap.4 r.28, r.32]; L dello schema: la risposta è del giocatore, scopo: il tema (ICH.md r.58)",
+       "scopo": "il tema: da idee a materia"
+      },
+      {
+       "id": "H08_figura_3",
+       "testo": "Chiedere alla figura chi è",
+       "riserva": "La figura sorride, e non risponde: «Questa è una domanda per un altro giorno.»",
+       "effetti": [],
+       "fonte": "R Lodur (schema): chi è la figura non si dice e non si accenna fino alla 14; risposta PROPOSTA",
+       "scopo": "tenere la verità per la 14"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La figura si fa seria. «Non posso lasciarti andare con tutta questa consapevolezza lucida al di fuori di questa stanza, verresti {cacciato, cancellato|cacciata, cancellata|cacciato, cancellato} o addirittura {eliminato|eliminata|eliminato} da questo mondo per sempre.»",
+    "fonte": "P5 [ICH Cap.4 r.35] (il nome del PG è tolto dalla battuta)",
+    "esplora": [
+     {
+      "id": "H08d1",
+      "testo": "Ascoltare che cosa vuole fare la figura",
+      "riserva": "«Ti permetterò di nascondere tutto questo, a te {stesso|stessa|stesso} e a chi ti controlla, sii {curioso|curiosa|curioso} e non fermarti mai, vedo una luce ardere dentro di te.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "La figura ti farà nascondere ciò che hai visto, anche a te.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P5 [ICH Cap.4 r.36] (la fine della battuta, «voi siete l'unica speranza…», si tace fino alla 15: schema)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H08x1",
+     "H08_figura_1",
+     "H08_figura_2"
+    ],
+    "risoluzione": [
+     "H08d1"
+    ]
+   },
+   "required_beats": [
+    "H08x1",
+    "H08_figura_1",
+    "H08_figura_2",
+    "H08d1"
+   ],
+   "optional_beats": [
+    "H08_figura_3"
+   ],
+   "riserva_libera": "Nella sala di metallo la tua voce non fa eco.",
+   "uscita_fail_forward": "Se la scena si ferma, la figura anziana ti parla comunque: «Non posso lasciarti andare con tutta questa consapevolezza.»"
+  },
+  "H09": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H09x1",
+     "parte": "La costa di Jotunrif",
+     "testo": "Contare le perdite sulla costa",
+     "riserva": "Molti dei vostri sono morti sotto le balestre. Una nave è persa, un'altra è rimasta incastrata nella costa.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_perdite"
+      }
+     ],
+     "fonte": "P3 [ICH Cap.5 r.71-72]"
+    },
+    {
+     "id": "H09x2",
+     "testo": "Raggiungere il clan di Byr",
+     "riserva": "Il clan di Byr è raccolto intorno al corpo di Hildr, la sua Hersir; con loro ci sono Askell, Signy, la gente di Trakai e quella di Lita. Nessuno parla.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_hildr_cade"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.4 r.115-119]; il corpo è di Hildr (DEDOTTO dallo schema da ICH.md r.47)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "anyja",
+     "apertura": "Anyja ha gli occhi rossi, ma la voce ferma.",
+     "chiusura": "Anyja torna in silenzio accanto a te.",
+     "riserva_libera": "Anyja scuote la testa.",
+     "argomenti": [
+      {
+       "id": "H09_anyja_1",
+       "testo": "Parlare al clan di Byr",
+       "riserva": "Parli ai tuoi confratelli davanti al corpo di Hildr, e il clan ti ascolta fino alla fine. Quando taci, Anyja ti stringe il braccio.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "anyja",
+          "delta": 1
+         }
+        },
+        {
+         "asse": {
+          "id": "trust",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H09x2"
+       ],
+       "fonte": "L dello schema: che cosa dice è del giocatore [ICH Cap.4 r.115-119]; scopo: la prima voce da Hersir",
+       "scopo": "la prima voce da Hersir"
+      }
+     ]
+    },
+    {
+     "png": "askell",
+     "apertura": "Askell tiene l'ascia appoggiata alla spalla, e la faccia dura.",
+     "chiusura": "Askell guarda il mare.",
+     "riserva_libera": "Askell non risponde.",
+     "argomenti": [
+      {
+       "id": "H09_askell_1",
+       "testo": "Chiedere ad Askell che cosa vuole fare",
+       "riserva": "«Ho un'idea, intendo strappare loro quante più vittime possibili, intendo essere la mano di Hel che reclama vendetta, per questo useremo i loro abiti, diventeremo come loro…»",
+       "effetti": [],
+       "richiede": [
+        "H09d1"
+       ],
+       "fonte": "[ICH Cap.5 r.90]",
+       "scopo": "che Hersir vuole essere"
+      }
+     ]
+    },
+    {
+     "png": "signy",
+     "apertura": "Signy è fredda e misurata, anche qui.",
+     "chiusura": "Signy torna a guardare il prigioniero.",
+     "riserva_libera": "Signy tace.",
+     "argomenti": [
+      {
+       "id": "H09_signy_1",
+       "testo": "Ascoltare Signy sulla sentenza",
+       "riserva": "Signy ferma Askell con un gesto. «Hildr non vorrebbe che sprecassi la tua vita in questo modo, penso che spetti a {suo figlio|sua figlia|chi ha cresciuto} l'onore di questa sentenza…» Si volta verso di te. «…sempre che tu voglia compiere il volere di Hel.»",
+       "effetti": [],
+       "richiede": [
+        "H09d1"
+       ],
+       "fonte": "P5 [ICH Cap.5 r.91]",
+       "scopo": "la sentenza"
+      }
+     ]
+    },
+    {
+     "png": "baldur",
+     "apertura": "Baldur è legato sulla scogliera, con una gamba sola e lo sguardo al cielo.",
+     "chiusura": "Baldur chiude gli occhi.",
+     "riserva_libera": "Baldur sa solo cose da soldato, e non ti dice altro.",
+     "argomenti": [
+      {
+       "id": "H09_baldur_1",
+       "testo": "Chiedere a Baldur chi è",
+       "riserva": "«Baldur Bauclaire, terzo comandante della guarnigione di esplorazione.» Stringe i denti per il dolore. «La luce brillerà sulla mia carne, mi donerà salvezza poiché il sole accompagna il mio ciclo.»",
+       "effetti": [],
+       "fonte": "[ICH Cap.5 r.73-83] (terzo comandante; la battuta [r.83])",
+       "scopo": "ciò che si sa di Bhorkyn"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Sulla scogliera Askell e Signy cominciano l'interrogatorio del prigioniero, e ti fanno posto accanto a loro.",
+    "fonte": "P4 [ICH Cap.5 r.73]",
+    "esplora": [
+     {
+      "id": "H09d1",
+      "parte": "la scogliera dell'interrogatorio",
+      "testo": "Metterti davanti al prigioniero",
+      "riserva": "Ti pianti davanti a Baldur. Lui ti guarda come si guarda una bestia.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Sulla scogliera si interroga il prigioniero.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 [ICH Cap.5 r.73-86]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H09x1",
+     "H09x2"
+    ],
+    "risoluzione": [
+     "H09d1"
+    ]
+   },
+   "required_beats": [
+    "H09x1",
+    "H09x2",
+    "H09d1"
+   ],
+   "optional_beats": [
+    "H09_anyja_1",
+    "H09_askell_1",
+    "H09_signy_1",
+    "H09_baldur_1"
+   ],
+   "riserva_libera": "Sulla scogliera c'è solo il vento.",
+   "uscita_fail_forward": "Se la scena si ferma, Askell e Signy cominciano comunque l'interrogatorio."
+  },
+  "H10": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H10x1",
+     "parte": "Byr e il trono di Hildr",
+     "testo": "Avvicinarti al trono di Hildr",
+     "riserva": "Il corvo non si muove dal trono di Hildr. Ti guarda, e intorno a te la gente di Byr aspetta: ora l'Hersir sei tu.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_byr"
+      }
+     ],
+     "fonte": "P1 e P3 [ICH Cap.5 r.96-97]; ICH.md r.47 (diventa Hersir); [ICH Cap.6 r.78]"
+    },
+    {
+     "id": "H10x2",
+     "testo": "Riparare la nave",
+     "riserva": "Riparate la nave con l'aiuto degli schiavi, asse dopo asse, e sulla mappa tracciate una rotta.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_nave"
+      }
+     ],
+     "fonte": "P4 [ICH Cap.5 r.105]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "folr_dreymar",
+     "apertura": "Folr Dreymar siede accanto al trono, con gli occhi ciechi rivolti verso di te.",
+     "chiusura": "Dreymar sorride, sereno.",
+     "riserva_libera": "Dreymar scuote piano la testa: non è questo che ti serve sapere, figliola.",
+     "argomenti": [
+      {
+       "id": "H10_dreymar_1",
+       "testo": "Ascoltare Dreymar sulla tua gente",
+       "riserva": "«Loro ti seguiranno, non perché devono, ma perché vogliono.» Dreymar ti posa una mano sul braccio. «…ogni legame stretto avvicinerà i luoghi, le terre e i loro abitanti l'uno agli altri, così facendo la rete sarà completa e il nostro futuro potrà compiersi.»",
+       "effetti": [
+        {
+         "scopri": "hersir_fact_rete"
+        },
+        {
+         "relazione": {
+          "png": "folr_dreymar",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P2 [ICH Cap.5 r.100, r.102]",
+       "scopo": "la Hersir che la gente segue"
+      },
+      {
+       "id": "H10_dreymar_2",
+       "testo": "Dire addio a Dreymar",
+       "riserva": "«{Non sei pronto|Non sei pronta|Non riesci ancora} ad abbandonarmi, questo lo so, ma anche io prima o poi terminerò il mio ciclo…» Ti asciuga una lacrima con il pollice. «…perciò ora basta lacrime, non vorrai mica vivere in un mondo dominato dal mare per caso?»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "folr_dreymar",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H10_dreymar_1"
+       ],
+       "fonte": "[ICH Cap.5 r.103-104]; L dello schema: che cosa dire è del giocatore, scopo: il commiato dal padre",
+       "scopo": "il commiato dal padre"
+      }
+     ]
+    },
+    {
+     "png": "knut",
+     "apertura": "Knut è calmo come sempre, con l'ascia sulla spalla.",
+     "chiusura": "Knut ti guarda, e aspetta.",
+     "riserva_libera": "Knut alza le spalle: non lo sa.",
+     "argomenti": [
+      {
+       "id": "H10_knut_1",
+       "testo": "Chiedere a Knut che cosa pensa del viaggio",
+       "riserva": "«Sei {libero|libera|libero} di scegliere, non dobbiamo per forza andare in faccia alla morte.» Non ti dice che cosa farebbe lui: ti lascia la scelta.",
+       "effetti": [],
+       "fonte": "[ICH Cap.5 r.107]",
+       "scopo": "la scelta del viaggio"
+      }
+     ]
+    },
+    {
+     "png": "dag",
+     "apertura": "Dag ha le mani sporche di sangue non suo: viene dai feriti.",
+     "chiusura": "Dag torna dai feriti, fischiettando.",
+     "riserva_libera": "Dag ride, e cambia discorso.",
+     "argomenti": [
+      {
+       "id": "H10_dag_1",
+       "testo": "Chiedere a Dag dei feriti",
+       "riserva": "Dag e la gente di Lita curano i feriti da settimane. «Qualcuno ce la farà» dice, e per una volta non scherza.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "dag",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P1 [ICH Cap.5 r.98] (Dag e Lita curano i feriti); la battuta è PROPOSTA",
+       "scopo": "il gruppo"
+      }
+     ]
+    },
+    {
+     "png": "anyja",
+     "apertura": "Anyja guarda il mare, con il vento fra i capelli.",
+     "chiusura": "Anyja ti sorride.",
+     "riserva_libera": "Anyja non risponde: guarda il tramonto.",
+     "argomenti": [
+      {
+       "id": "H10_anyja_1",
+       "testo": "Guardare il tramonto con Anyja",
+       "riserva": "«Questa è la nostra terra, il nostro mondo, il loro modo di vedere il mondo è marcio, non apprezzano la sua bellezza.» Poi, piano: «…ho sempre ammirato la spinta che muove i tuoi passi per quanto tu abbia ancora bisogno del mio freno a volte, sappi che ti starò accanto per tutti i cicli che Hel ci concederà insieme {fratello|sorella|sorella}.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "anyja",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H10d1"
+       ],
+       "fonte": "P5 [ICH Cap.5 r.121-122]",
+       "scopo": "Anyja, la sorella"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La nave è pronta. Al tramonto salite a bordo, tu e i tuoi compagni, e il mare si fa rosso.",
+    "fonte": "P5 [ICH Cap.5 r.120]",
+    "esplora": [
+     {
+      "id": "H10d1",
+      "parte": "la nave riparata",
+      "testo": "Andare a prua al tramonto",
+      "riserva": "Ti metti a prua, con il sole che scende nel mare. Un brivido ti corre lungo la schiena.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Al tramonto, sulla nave riparata, qualcosa si muove a prua.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P5 [ICH Cap.5 r.120-123] (il brivido)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H10x1",
+     "H10x2",
+     "H10_dreymar_1"
+    ],
+    "risoluzione": [
+     "H10d1"
+    ]
+   },
+   "required_beats": [
+    "H10x1",
+    "H10x2",
+    "H10_dreymar_1",
+    "H10d1"
+   ],
+   "optional_beats": [
+    "H10_dreymar_2",
+    "H10_knut_1",
+    "H10_dag_1",
+    "H10_anyja_1"
+   ],
+   "riserva_libera": "A Byr il corvo ti guarda dal trono, e tace.",
+   "uscita_fail_forward": "Se la scena si ferma, la nave è pronta comunque, e al tramonto i tuoi ti chiamano a bordo."
+  },
+  "H11": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H11x1",
+     "testo": "Reggere la tempesta",
+     "riserva": "La tempesta vi prende in pieno. L'equipaggio ha paura; Egil no: guarda le onde, apatico, come se non lo riguardassero.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "La nave ha retto la tempesta; l'equipaggio ha paura.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.6 r.83-86]"
+    },
+    {
+     "id": "H11x2",
+     "testo": "Guardare il mare che si calma",
+     "riserva": "Il mare si calma e si fa argenteo, con forme di luce sotto la superficie. Egil sorride, per la prima volta: «Bhorkyn è vicina.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_mare_argento"
+      },
+      {
+       "relazione": {
+        "png": "egil",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P3 [ICH Cap.6 r.89-92]"
+    },
+    {
+     "id": "H11x3",
+     "testo": "Tuffarti nel mare d'argento",
+     "riserva": "«Ferma la nave!» grida Dag, e si butta. «Ragazzi l'acqua è fantastica! Ragazzino su, salta ti prendo io.» Knut ti prende per mano e ti trascina giù con sé in un abbraccio: «{nome}, ricordati non sei {solo|sola|solo}.» «Preparatevi sciocchi!» grida Anyja, e salta. L'acqua vi tiene a galla, leggeri.",
+     "fase": "exploration",
+     "richiede": [
+      "H11x2"
+     ],
+     "effetti": [
+      {
+       "relazione": {
+        "png": "knut",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "L dello schema, il tuffo [ICH Cap.6 r.93-97] (Dag [r.93-94], Knut [r.96], Anyja [r.97]); scopo: il gruppo",
+     "scopo": "il gruppo"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "knut",
+     "apertura": "Knut ti siede accanto, a poppa, con il mare scuro intorno.",
+     "chiusura": "Knut ti stringe la mano.",
+     "riserva_libera": "Knut tace, e ti resta accanto.",
+     "argomenti": [
+      {
+       "id": "H11_knut_1",
+       "testo": "Passare la notte a parlare con Knut",
+       "riserva": "Quella notte parli a lungo con Knut, e lui ascolta tutto, senza fretta. Più tardi Anyja viene a sedersi accanto a te, e resta fino all'alba.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knut",
+          "delta": 1
+         }
+        },
+        {
+         "relazione": {
+          "png": "anyja",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L dello schema, la notte con Knut, poi Anyja che la conforta [ICH Cap.6 r.83-86]; che cosa si dicono è del giocatore",
+       "scopo": "proteggere Knut"
+      }
+     ]
+    },
+    {
+     "png": "anyja",
+     "apertura": "Anyja affila la sua svebba, e guarda storto le armi di Egil.",
+     "chiusura": "Anyja torna alla sua lama.",
+     "riserva_libera": "Anyja alza le spalle.",
+     "argomenti": [
+      {
+       "id": "H11_anyja_1",
+       "testo": "Ascoltare Anyja ed Egil parlare di armi",
+       "riserva": "Egil le dice che a Bhorkyn le forge fanno armi migliori. «No grazie, non ho bisogno della vostra roba, io non intendo dimenticare Restan come avete fatto voi.»",
+       "effetti": [],
+       "fonte": "[ICH Cap.6 r.79-80]",
+       "scopo": "Restan"
+      }
+     ]
+    },
+    {
+     "png": "egil",
+     "apertura": "Egil ha poche parole, e le spende male.",
+     "chiusura": "Egil torna a guardare la costa.",
+     "riserva_libera": "Egil scuote la testa.",
+     "argomenti": [
+      {
+       "id": "H11_egil_1",
+       "testo": "Chiedere a Egil perché la gente vi sputa addosso",
+       "riserva": "«Vi credono mastini» ti dice Egil, piano: i Bhorkyn che servono chi li comanda. Qui li odiano più dei padroni.",
+       "effetti": [],
+       "richiede": [
+        "H11d1"
+       ],
+       "fonte": "P4 [ICH Cap.7 r.40-46] (Egil spiega i mastini, i Bhorkyn asserviti [r.44]; le parole sono PROPOSTA)",
+       "scopo": "Bhorkyn"
+      }
+     ]
+    },
+    {
+     "png": "uomo_occhi_luminosi",
+     "apertura": "L'uomo ti guarda con occhi che si illuminano, come se leggesse dentro di te.",
+     "chiusura": "L'uomo si guarda intorno, prudente.",
+     "riserva_libera": "«Non posso parlartene» sussurra l'uomo.",
+     "argomenti": [
+      {
+       "id": "H11_uomo_1",
+       "testo": "Chiedere all'uomo chi sta cercando",
+       "riserva": "«Cerco i miei…» sussurra, «…dispersi nel mondo.» Il loro nome non te lo dice.",
+       "effetti": [],
+       "richiede": [
+        "H11d1"
+       ],
+       "fonte": "[ICH Cap.7 r.51] (cerca un gruppo «dispersi nel mondo»; il nome del gruppo non si scrive: schema, punto aperto 6)",
+       "scopo": "i Kyn"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Attraversate il mare d'argento, dove sogni e immagini prendono forma come spettri luminosi, e attraccate alla costa nebbiosa di Bhorkyn.",
+    "fonte": "P3 [ICH Cap.7 r.3-6]",
+    "esplora": [
+     {
+      "id": "H11d1",
+      "testo": "Entrare nel villaggio sulla costa",
+      "riserva": "Anziani e bambini malnutriti vi guardano passare; un uomo pesta il frutto di un bambino e si copre il viso per la vergogna, altri vi sputano addosso. Uno ti ringhia: «Tu sei della Stam, chi nasce qui non può avere ciò che vuole, solo chi è delle Stad può.» Poi un uomo con gli occhi che si illuminano ti ferma: «Sei un dissidente?» I suoi occhi brillano. «Sei un reverie dagli occhi violacei?»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "hersir_fact_bhorkyn"
+       }
+      ],
+      "fonte": "P4 [ICH Cap.7 r.40-46] e P5 [r.48-50] (la sua prima domanda, sull'ospite, si tace fino alla 16: PROPOSTA dello schema)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H11x1",
+     "H11x2"
+    ],
+    "risoluzione": [
+     "H11d1"
+    ]
+   },
+   "required_beats": [
+    "H11x1",
+    "H11x2",
+    "H11d1"
+   ],
+   "optional_beats": [
+    "H11x3",
+    "H11_knut_1",
+    "H11_anyja_1",
+    "H11_egil_1",
+    "H11_uomo_1"
+   ],
+   "riserva_libera": "Sulla costa di Bhorkyn la nebbia si mangia ogni voce.",
+   "uscita_fail_forward": "Se la scena si ferma, la nave attracca comunque alla costa nebbiosa, e un uomo dagli occhi luminosi vi viene incontro."
+  },
+  "H12": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H12x1",
+     "testo": "Ascoltare Bjorta al patibolo",
+     "riserva": "«Osservate quanto sta accadendo, un orso oggi qui muore ma la sua ira rimarrà dentro di voi.» Bjorta guarda suo padre. «Uccidetemi se avete il coraggio, padre compi il loro volere, così che io possa perseguitarli come uno spettro, io non provo vergogna per ciò che ho fatto, io oggi muoio libera… senza il peso delle catene.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_bjorta"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.7 r.112-113]"
+    },
+    {
+     "id": "H12x2",
+     "testo": "Guardare l'uomo biondo-rossastro",
+     "riserva": "L'uomo biondo-rossastro schiaffeggia Bjorta. «Qualsiasi dissidente verrà ucciso, nessuno è escluso, dovreste ringraziare che la corona non vi stermini tutti… osate sfidare i Bauclaire e gli Skold e verrete puniti con la pena più dolorosa che conoscete, il perdono di Freyja.» Poi si volta verso l'hersir: «Thorbjorg Arbjiorn, tu dovresti essere il nostro baluardo, una fortezza… dov'è finita la tua lealtà?» «No signore.» «Bene… sei incaricato di eseguire la sentenza, poni fine a questa dissidente e fai capire alla tua gente come ci si comporta a Bhorkyn.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_sentenza"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.7 r.115-122] (accorciate le battute [r.116, r.118, r.120-122])"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "egil",
+     "apertura": "Egil guarda sua sorella al patibolo, atterrito.",
+     "chiusura": "Egil non stacca gli occhi dal patibolo.",
+     "riserva_libera": "Egil non riesce a parlare.",
+     "argomenti": [
+      {
+       "id": "H12_egil_1",
+       "testo": "Chiedere a Egil chi è la donna al patibolo",
+       "riserva": "«Mia sorella» dice Egil, e la voce gli si spezza. L'hersir con il martello in mano è vostro padre: Thorbjorg.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "egil",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.7 r.124] (Egil atterrito); [ICH Cap.5 r.89] (Egil è fratello di Bjorta); che Thorbjorg sia il padre di Egil è DEDOTTO (schema 12); le parole sono PROPOSTA",
+       "scopo": "liberare i Bhorkyn"
+      }
+     ]
+    },
+    {
+     "png": "thorbjorg",
+     "apertura": "Thorbjorg è un uomo enorme, con il martello e lo scudo, e gli occhi bassi.",
+     "chiusura": "Thorbjorg guarda sua figlia.",
+     "riserva_libera": "Thorbjorg scuote la testa, pesante.",
+     "argomenti": [
+      {
+       "id": "H12_thorbjorg_1",
+       "testo": "Parlare con Thorbjorg di sua figlia",
+       "riserva": "«Ero pronto a sacrificare mia figlia per loro… non so se lo avrei fatto ma avrei dovuto, tutto questo perché nessuno ci ha mai mostrato qualcosa di diverso.» Ti guarda. «{Poi sei arrivato tu e|Poi sei arrivata tu e|Poi, con te,} un nuovo mondo di responsabilità mi è piovuto addosso, ma quantomeno ora abbiamo una scelta, ora possiamo vedere oltre il nostro naso, il nostro sangue per terra, grazie.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "thorbjorg",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H12d1"
+       ],
+       "fonte": "P6 [ICH Cap.8 r.116-117]",
+       "scopo": "i Bhorkyn liberi"
+      }
+     ]
+    },
+    {
+     "png": "knut",
+     "apertura": "Knut ha ancora la fune arrotolata al polso.",
+     "chiusura": "Knut ti sorride, stanco.",
+     "riserva_libera": "Knut alza le spalle.",
+     "argomenti": [
+      {
+       "id": "H12_knut_1",
+       "testo": "Con Knut, stringere un nodo con i Bhorkyn",
+       "riserva": "Con Knut vai da Thorbjorg e dai suoi: Restan vuole stringere un nodo con i Bhorkyn. Thorbjorg ti prende il braccio, da guerriero a guerriero.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knut",
+          "delta": 1
+         }
+        },
+        {
+         "relazione": {
+          "png": "thorbjorg",
+          "delta": 1
+         }
+        },
+        {
+         "asse": {
+          "id": "trust",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H12d1"
+       ],
+       "fonte": "L dello schema, con Knut stringere nodi con i Bhorkyn [ICH Cap.8 r.113-118] (la scena del nodo); le parole sono PROPOSTA",
+       "scopo": "il titolo della trama: i nodi"
+      }
+     ]
+    },
+    {
+     "png": "uomo_biondo",
+     "apertura": "L'uomo biondo-rossastro ti squadra con disprezzo.",
+     "chiusura": "L'uomo sputa per terra.",
+     "riserva_libera": "L'uomo non si degna di risponderti.",
+     "argomenti": [
+      {
+       "id": "H12_biondo_1",
+       "testo": "Chiedere all'uomo biondo-rossastro perché la uccidono",
+       "riserva": "«Qualsiasi dissidente verrà ucciso, nessuno è escluso.» Poi si volta verso Bjorta: «Prega la tua dea che ti perdoni.»",
+       "effetti": [],
+       "richiede": [
+        "H12x2"
+       ],
+       "prima_di": [
+        "H12d1"
+       ],
+       "fonte": "[ICH Cap.7 r.116, r.119]",
+       "scopo": "la corona"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Thorbjorg sale sul patibolo con il martello in mano, davanti a sua figlia. Il popolo trattiene il fiato, e le guardie della corona stringono le armi.",
+    "fonte": "P2-P3 [ICH Cap.7 r.122-124]",
+    "esplora": [
+     {
+      "id": "H12x3",
+      "testo": "Preparare gli schieramenti",
+      "riserva": "Sussurri gli ordini ai tuoi: un centinaio di uomini al fronte sud, Anyja di corsa ad avvisare la nave. Thorbjorg ti ha {sentito|sentita|sentito}, e non dice niente.",
+      "fase": "development",
+      "effetti": [
+       {
+        "relazione": {
+         "png": "anyja",
+         "delta": 1
+        }
+       }
+      ],
+      "fonte": "L dello schema, organizzare gli schieramenti [ICH Cap.8 r.36-41] (il fronte sud, Anyja alla nave); scopo: la Hersir in guerra",
+      "scopo": "la Hersir in guerra"
+     },
+     {
+      "id": "H12d1",
+      "testo": "Batterti con la rivolta",
+      "riserva": "Le guardie della corona vi vengono addosso.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "A Bhorkyn la rivolta contro la corona è cominciata.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3-P4 [ICH Cap.8 r.36-48]: come combattere è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H12x1",
+     "H12x2"
+    ],
+    "risoluzione": [
+     "H12d1"
+    ]
+   },
+   "required_beats": [
+    "H12x1",
+    "H12x2",
+    "H12d1"
+   ],
+   "optional_beats": [
+    "H12x3",
+    "H12_egil_1",
+    "H12_thorbjorg_1",
+    "H12_knut_1",
+    "H12_biondo_1"
+   ],
+   "riserva_libera": "Al patibolo nessuno ti risponde: tutti guardano Bjorta.",
+   "uscita_fail_forward": "Se la scena si ferma, Thorbjorg urla e la rivolta di Bhorkyn comincia comunque."
+  },
+  "H13": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H13x1",
+     "parte": "La nebbia di Bhorkyn, Bhoras distrutta",
+     "testo": "Attraversare gli allevamenti abbandonati",
+     "riserva": "Recinti vuoti, animali lasciati liberi. «Questi sono degli allevamenti, cosa ci fanno qui?» dice Bjorta. «Cosa vuol dire allevamento?» chiede Knut. Più avanti, dei cadaveri mangiati da un griss; la bestia è ancora lì, e Thorbjorg le va incontro parlandole piano, in una lingua strana.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_allevamenti"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.9 r.41-48]"
+    },
+    {
+     "id": "H13x2",
+     "parte": "La nebbia di Bhorkyn, Bhoras distrutta",
+     "testo": "Entrare a Bhoras",
+     "riserva": "Bhoras è bruciata. Fra le case ci sono pali, e sui pali i Bhorkyn legati come era legata Bjorta, con l'elmo dei Bhorkyn in testa. «Bastardiiii, ucciderò le vostre madri e i vostri figli, uomini d'oro io vi ammazzerò tutti!» Bjorta impazzisce di rabbia; Thorbjorg la schiaffeggia, Egil la trattiene. Poi Thorbjorg guarda i pali: «Ciò che resta dei bhorkyn ora è solo un pugno di orsi senza catene, non ho modo di liberarli tutti.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_bhoras"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.9 r.74-80]"
+    },
+    {
+     "id": "H13x3",
+     "parte": "La nebbia di Bhorkyn, Bhoras distrutta",
+     "testo": "Frugare fra le case bruciate",
+     "riserva": "Fra la cenere trovi un ciondolo con il cordino spezzato. Sopra c'è una scritta: «sector cleaned».",
+     "fase": "exploration",
+     "richiede": [
+      "H13x2"
+     ],
+     "effetti": [
+      {
+       "nota": "A Bhoras hai trovato un ciondolo con la scritta «sector cleaned».",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "L dello schema, il ciondolo [ICH Cap.9 r.84] (nella fonte un tiro di fortuna o di osservare); scopo: qualcuno ha ripulito il settore",
+     "scopo": "qualcuno ha ripulito il settore"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "thorbjorg",
+     "apertura": "Thorbjorg accarezza la sua bestia, Grut, con gli occhi lucidi.",
+     "chiusura": "Thorbjorg torna a guardare Bhoras.",
+     "riserva_libera": "Thorbjorg scuote la testa, pesante.",
+     "argomenti": [
+      {
+       "id": "H13_thorbjorg_1",
+       "testo": "Chiedere a Thorbjorg che cosa vuole fare",
+       "riserva": "«Loro erano la nostra possibilità di rivalsa, altri come noi combattenti sono nelle città, pochi, il nostro esercito per la maggior parte era qui.» Stringe il martello. «Ho promesso di combattere per loro, non posso fermarmi.» Poi ti guarda: «Voi di Restan cosa intendete fare?»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "thorbjorg",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H13x2"
+       ],
+       "fonte": "[ICH Cap.9 r.79-82]",
+       "scopo": "i Bhorkyn senza catene"
+      }
+     ]
+    },
+    {
+     "png": "knut",
+     "apertura": "Knut osserva la nebbia, e pensa ad alta voce.",
+     "chiusura": "Knut ti stringe la spalla.",
+     "riserva_libera": "Knut alza le spalle: non lo sa.",
+     "argomenti": [
+      {
+       "id": "H13_knut_1",
+       "testo": "Ascoltare il piano di Knut",
+       "riserva": "«L'unica nostra risposta al momento è combattere nascosti…» Knut indica la nebbia. «Dobbiamo essere rapidi e feroci come le bikkjia ma altrettanto sfuggenti.» Chi corre veloce, come Egil e Anyja, farà da esca nella nebbia.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knut",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H13x2"
+       ],
+       "fonte": "L dello schema, il piano di Knut, le esche nella nebbia [ICH Cap.9 r.85-92] (Knut [r.191-192]; Egil e Anyja come esche [r.91])",
+       "scopo": "combattere nascosti"
+      },
+      {
+       "id": "H13_knut_2",
+       "testo": "Chiedere a Knut che cosa lo preoccupa",
+       "riserva": "«Mi chiedo soltanto perché vogliano ciò che c'è all'interno della nostra dimora degli Asi, cosa cercano realmente?»",
+       "effetti": [],
+       "richiede": [
+        "H13x2"
+       ],
+       "fonte": "[ICH Cap.9 r.193]",
+       "scopo": "la dimora degli Asi"
+      }
+     ]
+    },
+    {
+     "png": "dag",
+     "apertura": "Dag, per una volta, non ride.",
+     "chiusura": "Dag sputa per terra, verso Bhoras.",
+     "riserva_libera": "Dag non ha niente da dire.",
+     "argomenti": [
+      {
+       "id": "H13_dag_1",
+       "testo": "Ascoltare Dag",
+       "riserva": "Dag parla ai Bhorkyn di vendetta, a voce alta, e qualcuno di loro alza la testa. Uno gli risponde: «Imparate molto in fretta le nostre regole e culture, forse facevamo davvero parte dello stesso clan un tempo.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "dag",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H13x2"
+       ],
+       "fonte": "[ICH Cap.9 r.87] (il discorso di Dag sulla vendetta: le sue parole la fonte non le dà), [r.92] (la frase di un Bhorkyn)",
+       "scopo": "il gruppo"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Vi stabilite nei boschi presso Bhoras, con quello che resta dei Bhorkyn. La sera Bjorta siede da sola, lontano dal fuoco.",
+    "fonte": "[ICH Cap.9 r.83, r.85-93]",
+    "esplora": [
+     {
+      "id": "H13d1",
+      "parte": "il bosco",
+      "testo": "Sederti accanto a Bjorta",
+      "riserva": "«Loro ci controllano, siamo soltanto le loro marionette.» Mentre Bjorta parla, un ricordo ti attraversa: una grotta di metallo, e dentro una capsula una ragazza dai capelli rossastri. Poi tu davanti a uno specchio, con il suo stesso viso. Ti ritrovi a cercare la mano di Knut.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "hersir_fact_capsula"
+       }
+      ],
+      "fonte": "P3 [ICH Cap.9 r.93] e P4 [r.93-94] (nella fonte un tiro di memoria; il ricordo è un pilastro dello schema: qui arriva comunque); il conforto in Knut [r.95]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H13x1",
+     "H13x2"
+    ],
+    "risoluzione": [
+     "H13d1"
+    ]
+   },
+   "required_beats": [
+    "H13x1",
+    "H13x2",
+    "H13d1"
+   ],
+   "optional_beats": [
+    "H13x3",
+    "H13_thorbjorg_1",
+    "H13_knut_1",
+    "H13_knut_2",
+    "H13_dag_1"
+   ],
+   "riserva_libera": "La nebbia si mangia la tua voce.",
+   "uscita_fail_forward": "Se la scena si ferma, le vedette vi chiamano comunque: «Venite a vedere… hanno lasciato un messaggio.» Bhoras vi aspetta."
+  },
+  "H14": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H14x1",
+     "testo": "Camminare nella nebbia",
+     "riserva": "Nella nebbia ti vengono incontro volti conosciuti, come spettri. Poi masse scure ti si stringono addosso, alle braccia, alla gola.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Nella nebbia le masse scure ti si stringono addosso.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.10 r.96-97]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "anyja",
+     "apertura": "Anyja è seduta da sola, con la svebba sulle ginocchia e lo sguardo perso.",
+     "chiusura": "Anyja ti stringe la mano, forte.",
+     "riserva_libera": "Anyja scuote la testa, e non risponde.",
+     "argomenti": [
+      {
+       "id": "H14_anyja_1",
+       "testo": "Parlare con Anyja",
+       "riserva": "Parlate a lungo, voi due, lontano dagli altri. Quando vi alzate, Anyja ha lo sguardo meno perso.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "anyja",
+          "delta": 1
+         }
+        },
+        {
+         "asse": {
+          "id": "trust",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L dello schema, parlare con Anyja [ICH Cap.10 r.61-62]; che cosa si dicono è del giocatore (testo PROPOSTA)",
+       "scopo": "Anyja che rischia di impazzire"
+      }
+     ]
+    },
+    {
+     "png": "knut",
+     "apertura": "Knut ha gli occhi seri, e la voce bassa.",
+     "chiusura": "Knut ti lascia andare la mano.",
+     "riserva_libera": "Knut tace.",
+     "argomenti": [
+      {
+       "id": "H14_knut_1",
+       "testo": "Salutare Knut",
+       "riserva": "«{nome}… ho pensato tanto in questi giorni a quello di cui abbiamo discusso tutti e quattro assieme.» Ti lega al polso un cordino con il nodo di Iona. «Non sono gli Asi ad impormelo, anche se mi ostino a pensare il contrario per mettere in dubbio ciò che sento, so che qualcosa dentro di me brucia e mi fa provare queste emozioni.» Stringe il nodo. «Restan potrà anche non essere la mia vera casa, ma voi lo siete… tu lo sei.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knut",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P3 [ICH Cap.10 r.142-145] (il cordino con il nodo di Iona [r.139-147])",
+       "scopo": "Knut"
+      }
+     ]
+    },
+    {
+     "png": "bjorta",
+     "apertura": "Bjorta affila le sue asce, e non si fida di nessuno.",
+     "chiusura": "Bjorta torna alle sue asce.",
+     "riserva_libera": "Bjorta alza le spalle.",
+     "argomenti": [
+      {
+       "id": "H14_bjorta_1",
+       "testo": "Chiedere a Bjorta della veggente",
+       "riserva": "«Le cose complicate sono gestibili, le cose inaspettate no.» Bjorta prova il filo dell'ascia sul pollice. «…se questa reverie vorrà aiutarci sarà un'arma in più contro di loro, se vorrà ucciderci un'arma in meno.»",
+       "effetti": [],
+       "fonte": "L dello schema, il piano per l'incontro [ICH Cap.11 r.37-38]",
+       "scopo": "riunire le reverie libere"
+      }
+     ]
+    },
+    {
+     "png": "egil",
+     "apertura": "Egil guarda verso il confine, e si morde il labbro.",
+     "chiusura": "Egil annuisce, poco convinto.",
+     "riserva_libera": "Egil non lo sa.",
+     "argomenti": [
+      {
+       "id": "H14_egil_1",
+       "testo": "Chiedere a Egil la strada",
+       "riserva": "«Ci sono le loro torri di controllo, ma sono pericolose.» Poi, esitando: «E se volessero soltanto aiuto? Non pensate che partendo con il piede sbagliato la situazione potrebbe soltanto complicarsi?»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "egil",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L dello schema, il viaggio verso la veggente [ICH Cap.11 r.31, r.36]",
+       "scopo": "riunire le reverie libere"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Vi mettete in cammino verso il confine, dove vi aspetta la veggente. Il sole torna indietro nel cielo, e si ferma per ore.",
+    "fonte": "[ICH Cap.11 r.27-39] (il sole che torna indietro e si ferma [r.27])",
+    "esplora": [
+     {
+      "id": "H14d1",
+      "testo": "Chiudere gli occhi, lungo il cammino",
+      "riserva": "Un ricordo ti prende, e non ti lascia. Sei davanti alla figura anziana del labirinto, dopo qualcosa di terribile che hai fatto. «Hai agito per difenderti, {eri scritto per farlo|eri scritta per farlo|era scritto in te}… non pensavo {saresti arrivato|saresti arrivata|si sarebbe arrivati} a tanto.» E una voce, dentro di te: «Quanto ancora vorrai farti usare da loro? Loro mentono.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Lungo il cammino, un ricordo della figura del labirinto.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 [ICH Cap.11 r.80-82]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H14x1",
+     "H14_knut_1"
+    ],
+    "risoluzione": [
+     "H14d1"
+    ]
+   },
+   "required_beats": [
+    "H14x1",
+    "H14_knut_1",
+    "H14d1"
+   ],
+   "optional_beats": [
+    "H14_anyja_1",
+    "H14_bjorta_1",
+    "H14_egil_1"
+   ],
+   "riserva_libera": "La nebbia non ti risponde: ti restituisce solo la tua voce.",
+   "uscita_fail_forward": "Se la scena si ferma, il ricordo arriva comunque lungo il cammino, e ti porta fino al confine."
+  },
+  "H15": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H15x1",
+     "parte": "Il muro",
+     "testo": "Raggiungere la veggente oltre il muro",
+     "riserva": "La veggente passa dal varco di luce, e dietro di lei il muro si richiude. Arne ha le mani bruciate: «Draumdís… sto bruciando…» La veggente ti guarda come se ti conoscesse da sempre.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Oltre il muro avete trovato la veggente e Arne.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.11 r.98-105] (Arne [r.101])"
+    },
+    {
+     "id": "H15x2",
+     "parte": "il bosco nella nebbia",
+     "testo": "Riposare nella nebbia",
+     "riserva": "Vi fermate nella nebbia. «La nebbia è la nostra carne Igy, nessuno può scalfire la nebbia, nessuno può acchiapparla» dice Bjorta a suo fratello. Knut ti guarda: «{Sei stanco, lascia|Sei stanca, lascia|Hai bisogno di dormire: lascia} che ti dia il cambio e riposa.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_corvi"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.12 r.17-24] (Bjorta [r.23], Knut [r.24])"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "thorbjorg",
+     "apertura": "Thorbjorg siede accanto al fuoco, con il martello sulle ginocchia.",
+     "chiusura": "Thorbjorg ti batte una mano sulla spalla.",
+     "riserva_libera": "Thorbjorg scuote la testa, pesante.",
+     "argomenti": [
+      {
+       "id": "H15_thorbjorg_1",
+       "testo": "Ascoltare Thorbjorg",
+       "riserva": "Thorbjorg ti chiede una cosa sola, guardando i suoi figli: se lui muore, che sia tu a prenderti cura di loro e della sua gente.",
+       "effetti": [
+        {
+         "scopri": "hersir_fact_affida"
+        },
+        {
+         "relazione": {
+          "png": "thorbjorg",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P3 [ICH Cap.12 r.73-75] (le sue parole la fonte non le dà alla lettera)",
+       "scopo": "la promessa a Thorbjorg"
+      }
+     ]
+    },
+    {
+     "png": "knut",
+     "apertura": "Knut traccia per terra, con un bastone, la pianta del bosco.",
+     "chiusura": "Knut torna ai suoi segni per terra.",
+     "riserva_libera": "Knut alza le spalle.",
+     "argomenti": [
+      {
+       "id": "H15_knut_1",
+       "testo": "Ascoltare il piano di Knut",
+       "riserva": "«Siamo pochi, ma sparsi nella nebbia sembreremo di più, dobbiamo sembrare tanti, attaccare a turni per riposare, i più fragili staranno nelle retroguardie.» «Se sentirete i nostri corni da guerra vorranno dire due cose: un suono, il nemico si sta ritirando, due suoni, il nemico è in vantaggio» aggiunge Thorbjorg. Knut ha anche dei sacchi: «Useremo la farina per nasconderci tra la nebbia, il bianco ci camufferà meglio.» «È farina Knut, puoi anche chiamarla con il suo nome per diamine» ride Dag. «Ho anche di meglio in mente, potremmo legare delle funi da tendere a terra nel caso serva indietreggiare, due per fusto, uno tende e l'altro uccide.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knut",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L dello schema, la preparazione di Knut [ICH Cap.12 r.97-107] (Knut [r.99, r.104, r.106], Thorbjorg [r.98], Dag [r.104])",
+       "scopo": "la battaglia"
+      }
+     ]
+    },
+    {
+     "png": "dag",
+     "apertura": "Dag si è infarinato la faccia, e si guarda nell'acqua di una pozza.",
+     "chiusura": "Dag ti fa l'occhiolino.",
+     "riserva_libera": "Dag ride, e cambia discorso.",
+     "argomenti": [
+      {
+       "id": "H15_dag_1",
+       "testo": "Prendere in giro Dag",
+       "riserva": "«Beh, chi potrà mai battermi ora? Sono la distruzione, sono una Bikkja senza rivali, io sono KOSH.» «Bel nome Dag» fa Anyja, «certo che per averci pensato potevi fare di meglio, ma a volte gli stupidi arrivano dove possono no?»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "dag",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.12 r.30-31]",
+       "scopo": "il gruppo"
+      }
+     ]
+    },
+    {
+     "png": "draumdis",
+     "apertura": "La veggente ti guarda come se vedesse qualcosa dietro di te.",
+     "chiusura": "La veggente chiude gli occhi.",
+     "riserva_libera": "La veggente non risponde: ascolta qualcosa che tu non senti.",
+     "argomenti": [
+      {
+       "id": "H15_draumdis_1",
+       "testo": "Chiedere alla veggente perché ti cercava",
+       "riserva": "La veggente ti prende le mani. Ti sentiva da lontano, dice, come si sente un fuoco nel buio: per questo ti cercava.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "draumdis",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H15x1"
+       ],
+       "fonte": "P1 [ICH Cap.11 r.98-105] (la veggente in contatto con lei); le parole sono PROPOSTA (la veggente non ha battute da PNG nelle note: file dei PNG, Dubbi)",
+       "scopo": "riunire le reverie libere"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "«Preparatevi a combattere, difendiamo l'hersir e l'avamposto» dice Knut. Nella nebbia, fra gli alberi, si muove qualcosa.",
+    "fonte": "[ICH Cap.12 r.97, r.135]",
+    "esplora": [
+     {
+      "id": "H15x3",
+      "parte": "il bosco nella nebbia",
+      "testo": "Frugare sul corpo di un caduto",
+      "riserva": "Fra i caduti c'è un «aesir», diverso dagli altri: addosso ha una piastra di metallo liscia, che non somiglia a niente di questo mondo.",
+      "fase": "development",
+      "effetti": [
+       {
+        "nota": "Hai preso una piastra di metallo da un nemico caduto nella nebbia.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "L dello schema, la piastra di metallo dell'«aesir» [ICH Cap.12 r.140] (nella fonte un tiro di osservare); scopo: il mondo vero",
+      "scopo": "il mondo vero"
+     },
+     {
+      "id": "H15d1",
+      "parte": "il bosco nella nebbia",
+      "testo": "Combattere nella nebbia",
+      "riserva": "La nebbia si apre, e i nemici vi sono addosso.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Combatti nella nebbia di Bhorkyn.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P5 [ICH Cap.12 r.135-153]: come combattere è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H15x1",
+     "H15x2",
+     "H15_thorbjorg_1"
+    ],
+    "risoluzione": [
+     "H15d1"
+    ]
+   },
+   "required_beats": [
+    "H15x1",
+    "H15x2",
+    "H15_thorbjorg_1",
+    "H15d1"
+   ],
+   "optional_beats": [
+    "H15x3",
+    "H15_knut_1",
+    "H15_dag_1",
+    "H15_draumdis_1"
+   ],
+   "riserva_libera": "Nella nebbia ogni voce si perde.",
+   "uscita_fail_forward": "Se la scena si ferma, i nemici escono comunque dalla nebbia, e Knut grida di prepararsi."
+  },
+  "H16": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H16x1",
+     "parte": "Il porto di un vecchio villaggio",
+     "testo": "Andare incontro agli stranieri al porto",
+     "riserva": "La donna regale ti guarda e si ferma. «Quello è un simbolo di Restan, sono la regina dei Kraken di Ourobera, prendeteci come ostaggi.» Si chiama Saoirse. Con lei ci sono la cavaliera, il kyn, Runi, e la ragazza, Amèlie. Sono loro, capisci, le altre reverie libere della voce sulla prua: la veggente, la cavaliera, e una lupa che ancora non si vede.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_porto"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.12 r.161-163]; che siano le reverie libere della prua (la 10) è DEDOTTO (schema, R della 10)"
+    },
+    {
+     "id": "H16x2",
+     "parte": "Il porto di un vecchio villaggio",
+     "testo": "Ascoltare la lite fra Bjorta e Saoirse",
+     "riserva": "«È una solsvart, sono feccia come gli uomini d'oro» ringhia Bjorta. «Bjorta, lei non è come suo fratello» la ferma Egil. Saoirse non abbassa gli occhi: «E allora che aspettate? Volete la mia morte? Fatelo, io non sono scritta per suicidarmi… ma state pur certa che anche io riservo rancore per loro, perciò non provate a paragonarmi ai miei carnefici.»",
+     "fase": "exploration",
+     "richiede": [
+      "H16x1"
+     ],
+     "effetti": [],
+     "fonte": "[ICH Cap.13 r.44-46] (accorciata [r.46])",
+     "scopo": "Saoirse e i Bhorkyn"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "knut",
+     "apertura": "Knut non ti lascia la mano.",
+     "chiusura": "Knut ti tiene stretta la corda.",
+     "riserva_libera": "Knut tace, e ti resta accanto.",
+     "argomenti": [
+      {
+       "id": "H16_knut_1",
+       "testo": "Parlare con Knut, dopo",
+       "riserva": "«Quando stavo a Trakai e vi vedevo ero affascinato dalla tua forza di volontà, dal tuo spirito di iniziativa, dal tuo coraggio e dal tuo modo di essere.» Ti mette in mano un capo della corda. «Ricordati che c'è una corda legata tra me e te… non farti problemi a tirarla quando hai bisogno.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knut",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H16d1"
+       ],
+       "fonte": "L dello schema, la corda e il bacio [ICH Cap.13 r.58-59]",
+       "scopo": "il legame con Knut"
+      }
+     ]
+    },
+    {
+     "png": "amelia",
+     "apertura": "Amèlie si tiene lontana da te, e trema.",
+     "chiusura": "Amèlie si nasconde dietro la cavaliera.",
+     "riserva_libera": "Amèlie non riesce a risponderti.",
+     "argomenti": [
+      {
+       "id": "H16_amelie_1",
+       "testo": "Avvicinarti ad Amèlie",
+       "riserva": "Amèlie fa un passo indietro, e poi un altro. Non ti guarda negli occhi; guarda quello verde.",
+       "effetti": [],
+       "richiede": [
+        "H16d1"
+       ],
+       "fonte": "L dello schema, parlare con Amèlie, terrorizzata [ICH Cap.13 r.31-46]; testo PROPOSTA (l'occhio verde: la 14)",
+       "scopo": "Amèlie"
+      }
+     ]
+    },
+    {
+     "png": "saoirse",
+     "apertura": "Saoirse ti osserva con la calma di chi ha già deciso tutto.",
+     "chiusura": "Saoirse china appena il capo.",
+     "riserva_libera": "Saoirse sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "H16_saoirse_1",
+       "testo": "Chiedere a Saoirse che cosa vuole",
+       "riserva": "«Hanno ragione, lasciamola respirare» dice degli altri, guardando Amèlie. «Non so che rapporti avete signorina Amèlie {e voi signore|e voi signora|e voi}, ma non siamo qui per provocarvi disturbi.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "saoirse",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H16d1"
+       ],
+       "fonte": "[ICH Cap.13 r.39]",
+       "scopo": "Saoirse"
+      }
+     ]
+    },
+    {
+     "png": "dag",
+     "apertura": "Dag è più agitato di tutti.",
+     "chiusura": "Dag si gratta la testa.",
+     "riserva_libera": "Dag non sa che dire.",
+     "argomenti": [
+      {
+       "id": "H16_dag_1",
+       "testo": "Calmare Dag",
+       "riserva": "«Serviva che le urlaste contro? È una reverie sensibile! L'avete rotta…» Dag guarda Amèlie, poi te, e finalmente ride.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "dag",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H16d1"
+       ],
+       "fonte": "[ICH Cap.13 r.38]",
+       "scopo": "il gruppo"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Mentre parlate, dal villaggio arriva una donna con occhi da lupa, e la cavaliera la chiama per nome. La lupa si volta verso di te.",
+    "fonte": "P2 [ICH Cap.12 r.164] (Vargynja ricompare)",
+    "esplora": [
+     {
+      "id": "H16d1",
+      "parte": "Il porto di un vecchio villaggio",
+      "testo": "Guardare la lupa negli occhi",
+      "riserva": "Un lampo, e non sei più tu: l'altra te prende il tuo corpo, e lo senti muoversi verso gli stranieri. La cavaliera ti afferra per le braccia e ti tiene. «È lei… no no! Ti prego, non farmi del male!» grida Amèlie.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Al porto l'altra te ha preso il tuo corpo; la cavaliera ti tiene.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 [ICH Cap.12 r.164-167] (Amèlie [r.167])"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H16x1"
+    ],
+    "risoluzione": [
+     "H16d1"
+    ]
+   },
+   "required_beats": [
+    "H16x1",
+    "H16d1"
+   ],
+   "optional_beats": [
+    "H16x2",
+    "H16_knut_1",
+    "H16_amelie_1",
+    "H16_saoirse_1",
+    "H16_dag_1"
+   ],
+   "riserva_libera": "Al porto il vento si porta via le parole.",
+   "uscita_fail_forward": "Se la scena si ferma, la lupa arriva comunque dal villaggio, e il lampo ti porta nel labirinto della tua mente."
+  },
+  "H17": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H17x1",
+     "testo": "Ascoltare il piano di Saoirse",
+     "riserva": "Saoirse propone di fare da intermediaria: un finto trattato, con il simbolo dei Bhorkyn preso dalla tua armatura, che ordini di sgombrare le gallerie. Il foglio sigillato lo porterai tu, e lo mostrerai solo al capo militare; lei andrà chiamata «vostra grazia Saoirse Solsvart». «Quanto sono grandi queste gallerie? Se avessimo tempo potremmo spostare dei massi e chiudere l'ingresso» dice Knut.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Saoirse ha preparato un finto trattato per entrare nelle gallerie.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.14 r.3, r.9-16, r.27] (Knut [r.14])"
+    },
+    {
+     "id": "H17x2",
+     "parte": "Le gallerie verso il Kynhjarta, il campo fiorito",
+     "testo": "Guardare le miniere, durante le trattative",
+     "riserva": "Mentre Saoirse tratta con il capitano, guardi con Knut le miniere: le pareti sgorgano un liquido nero, pieno di cristalli duri che brillano, e la gente che ci lavora ha le catene ai piedi.",
+     "fase": "exploration",
+     "richiede": [
+      "H17x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "hersir_fact_miniere"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.14 r.39, r.44-52]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "bjorta",
+     "apertura": "Bjorta ha le asce in mano e gli occhi sugli schiavi.",
+     "chiusura": "Bjorta alza le asce verso il soffitto.",
+     "riserva_libera": "Bjorta non ti ascolta: guarda i suoi.",
+     "argomenti": [
+      {
+       "id": "H17_bjorta_1",
+       "testo": "Liberare gli schiavi con Bjorta",
+       "riserva": "Spezzate le catene, e Bjorta sale su una roccia davanti ai Bhorkyn liberati: «…il nostro Hersir è morto per renderci liberi dalla schiavitù…» Il suo discorso finisce in un grido: «Fatemi sentire che volete vivere dannazione!» E le gallerie le rispondono.",
+       "effetti": [
+        {
+         "scopri": "hersir_fact_liberati"
+        },
+        {
+         "relazione": {
+          "png": "bjorta",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H17x2"
+       ],
+       "fonte": "P3 [ICH Cap.14 r.44-47] (il «nostro Hersir» è Thorbjorg: DEDOTTO dallo schema)",
+       "scopo": "i Bhorkyn liberi"
+      }
+     ]
+    },
+    {
+     "png": "anyja",
+     "apertura": "Anyja controlla le armi di tutti, una per una.",
+     "chiusura": "Anyja annuisce.",
+     "riserva_libera": "Anyja alza le spalle.",
+     "argomenti": [
+      {
+       "id": "H17_anyja_1",
+       "testo": "Raccontare al gruppo che cosa hai sentito nelle gallerie",
+       "riserva": "Racconti ai tuoi ciò che hai sentito nelle gallerie, e il gruppo ti ascolta in silenzio. Alla fine Anyja si alza: «{nome} vuoi che vada avanti per voi?» «Sarebbe meglio che andassi con qualcun altro, non andare da sola» dice Knut.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "anyja",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H17x2"
+       ],
+       "fonte": "L dello schema, che cosa dire al gruppo [ICH Cap.15 r.3] (DEDOTTO: che cosa dice è del giocatore); Anyja [r.11], Knut [r.12]",
+       "scopo": "il gruppo"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "All'uscita delle gallerie vi abbaglia l'alba: oltre le palizzate c'è un campo fiorito, vasto, e una strada che si perde nella vegetazione. Knut ti cammina accanto: «Sai, nonostante non sappia dove porti questa strada sono felice… perché so che ad ogni passo ti ho al mio fianco.»",
+    "fonte": "P4 [ICH Cap.14 r.54-61] (Knut [r.61])",
+    "esplora": [
+     {
+      "id": "H17d1",
+      "testo": "Mettervi in cammino verso Kanach",
+      "riserva": "Ai bivi seguite Knut e la sua mappa, e i Bhorkyn liberati vi camminano dietro a testa alta. Lungo la strada Saoirse ti raggiunge e ti elenca le famiglie da cui stare alla larga: i Bauclaire, gli Skold, gli Skjold, gli Aevarr… Alcune, dice piano, sono imparentate con degli Asi che vivono tra loro.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "hersir_fact_famiglie"
+       }
+      ],
+      "fonte": "[ICH Cap.17 r.3] (i bivi, Knut e la mappa); P5 [ICH Cap.15 r.46-48; Cap.17 r.4-7] (l'elenco accorciato)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H17x1",
+     "H17x2",
+     "H17_bjorta_1"
+    ],
+    "risoluzione": [
+     "H17d1"
+    ]
+   },
+   "required_beats": [
+    "H17x1",
+    "H17x2",
+    "H17_bjorta_1",
+    "H17d1"
+   ],
+   "optional_beats": [
+    "H17_anyja_1"
+   ],
+   "riserva_libera": "Nelle gallerie la tua voce torna indietro, piena di eco.",
+   "uscita_fail_forward": "Se la scena si ferma, Saoirse entra comunque nelle gallerie con il suo foglio, e vi fa cenno di seguirla."
+  },
+  "H18": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H18x1",
+     "testo": "Lasciare che i ricordi tornino",
+     "riserva": "Ricordi Knut che ti mostra il suo mondo, e tu che senti la mancanza di Restan. Ricordi la figura del labirinto, e la nascita di Vindar: il tuo lato feroce. E ricordi lui, che allora si chiamava Ihann, davanti a Thomas. «Se è già successo, riaccadrà.» «Sappi che non ricorderete di voi, tu Ihann sarai un nuovo reverie, con una nuova storia… hai scelto un nome?» «Sì… Knut.» «E sia.» Ti stringe una cordicella al polso, e viene riscritto.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_ihann"
+      }
+     ],
+     "fonte": "P1 [ICH Cap.18 r.55-63] (Knut [r.58, r.61], Thomas [r.59-60, r.62]; Vindar [r.57])"
+    },
+    {
+     "id": "H18x2",
+     "testo": "Seguire la donna dai capelli scuri",
+     "riserva": "«Ihaann…» La donna guarda Knut come chi aspettava da tanto: è tornato, finalmente. «Chi sei?» chiede Knut. «Non ti ricordi?» «No… sono un altro ora.» La donna si chiama Gyda, e vi porta da sua madre: «Madre, è tornato da noi.» È una donna che Knut riconosce senza saperlo: «Embla?» «È bello sapere che sei ancora qui… io e George temevamo il peggio.» È Dawn, una degli Asi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_dawn"
+      }
+     ],
+     "fonte": "P2 [ICH Cap.18 r.66-81] (Gyda [r.66, r.68, r.78], Knut [r.67, r.69, r.80], Dawn [r.81]; Dawn è Embla: schema)"
+    },
+    {
+     "id": "H18x3",
+     "testo": "Ascoltare Skuld",
+     "riserva": "Skuld ti prende la mano e chiude gli occhi. «Vedo una mano, è scura, lascia andare una piuma di corvo e mentre alcune belve perdono le loro zanne… nuove luci accenderanno il cielo, come fuochi nella notte… Allora il padre dirà: non credere ai tuoi occhi, credi solo a cosa ti dice la mente, ma non credere soltanto alla mente, ascolta anche il tuo cuore… e poi lì, anima sola nel buio, guarda il nulla e lascia che la tua luce divampi come un boato nel buio per irradiare il seme della realtà.»",
+     "fase": "exploration",
+     "richiede": [
+      "H18x2"
+     ],
+     "effetti": [
+      {
+       "nota": "Skuld ti ha fatto una profezia.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P3 [ICH Cap.19 r.18-24] (accorciata [r.18-19, r.22, r.24])"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "dawn",
+     "apertura": "Dawn ha uno sguardo dolce e malinconico, e le mani calme.",
+     "chiusura": "Dawn sorride, triste.",
+     "riserva_libera": "Dawn scuote la testa: «Non importa chi sei ora.»",
+     "argomenti": [
+      {
+       "id": "H18_dawn_1",
+       "testo": "Ascoltare Dawn",
+       "riserva": "«{nome}, so del tuo legame con Thom perciò voglio aiutarti, devo registrare i vostri codici all'interno del settore, così facendo Raven non vi rivelerà come agenti ostili.» Poi, più piano: «Questa possibilità siete voi, siete capaci di trovare soluzioni, di riscrivere la matrice della realtà stessa… voi siete i sogni che renderanno possibile l'impossibile… spero che sia Thom che lei avessero ragione.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "dawn",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H18x2"
+       ],
+       "fonte": "P2 [ICH Cap.18 r.93, r.100, r.103] (accorciate)",
+       "scopo": "la seconda possibilità"
+      },
+      {
+       "id": "H18_dawn_2",
+       "testo": "Chiedere a Dawn di Knut",
+       "riserva": "«Io e George volevamo vivere assieme… così scegliemo di vivere qui, insieme a voi, come vostri pari… tu eri il primo che creammo, volevamo tanto un figlio» dice a Knut. «E vi siete chiesti se il figlio volesse voi?» Gyda lo schiaffeggia: «Ora basta, non ti permetto di parlare così ad una persona che ci ama e che ci ha amato più di chiunque altro.»",
+       "effetti": [],
+       "richiede": [
+        "H18x2"
+       ],
+       "fonte": "[ICH Cap.18 r.88-92] (accorciate)",
+       "scopo": "Knut"
+      }
+     ]
+    },
+    {
+     "png": "gyda",
+     "apertura": "Gyda non stacca gli occhi da Knut, e ti guarda storto.",
+     "chiusura": "Gyda torna da sua madre.",
+     "riserva_libera": "Gyda non ti risponde.",
+     "argomenti": [
+      {
+       "id": "H18_gyda_1",
+       "testo": "Parlare con Gyda di Knut",
+       "riserva": "«Ricordo ancora quando arrivasti qui, lui all'inizio temeva che potessi farci del male… era mio fratello e anche qualcosa di più… quando ti conobbe noi due ci allontanammo per un po' fino a quando non mi disse che sarebbe partito per starti vicino.»",
+       "effetti": [],
+       "richiede": [
+        "H18x2"
+       ],
+       "fonte": "[ICH Cap.19 r.23, r.26]",
+       "scopo": "Knut"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Al Kynwird comincia il rito che chiamano «Break the chains»: le radici sfondano le mura, e la rete dei Kyn si apre.",
+    "fonte": "P4 [ICH Cap.19 r.39-52]",
+    "esplora": [
+     {
+      "id": "H18x4",
+      "testo": "Ascoltare il cielo, durante il rito",
+      "riserva": "Per un istante, sopra il rito, senti voci che non sono di questo mondo: «Abbiamo avvistato attività anomala nel settore 4.» «Mandate una squadra.» «Non possiamo entrare nel settore 4… allora avviate il test del nuovo programma.»",
+      "fase": "development",
+      "effetti": [
+       {
+        "nota": "Durante il rito hai sentito voci dal cielo parlare del settore 4.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "L dello schema, che cosa fare dopo lo sblocco dei settori [ICH Cap.19 r.51-52] (nella fonte solo con un tiro di fortuna riuscito); scopo: proteggere i reverie",
+      "scopo": "proteggere i reverie"
+     },
+     {
+      "id": "H18d1",
+      "testo": "Entrare nel rito",
+      "riserva": "Senti i pensieri dei tuoi compagni, uno per uno, e poi il mondo intero, come un'unica rete. «Sono qui con te» dice Knut, dentro di te. Poi l'alba diventa notte: fulmini, masse nere nel cielo, e una pioggia nera da cui escono ombre e fumo che svuotano i reverie. «Prendi tutti i dati di Thom e raduna i tuoi vicino al core» ti grida Dawn.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "hersir_fact_rete_kyn"
+       }
+      ],
+      "fonte": "P4 [ICH Cap.19 r.42-49] (Knut [r.43]) e P5 [r.54-61, r.74] (Dawn [r.74])"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H18x1",
+     "H18x2",
+     "H18x3",
+     "H18_dawn_1"
+    ],
+    "risoluzione": [
+     "H18d1"
+    ]
+   },
+   "required_beats": [
+    "H18x1",
+    "H18x2",
+    "H18x3",
+    "H18_dawn_1",
+    "H18d1"
+   ],
+   "optional_beats": [
+    "H18x4",
+    "H18_dawn_2",
+    "H18_gyda_1"
+   ],
+   "riserva_libera": "Al Kynhjarta il vento fa cantare i Kynwird, e non ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, il rito comincia comunque, e Dawn vi chiama al Kynwird."
+  },
+  "H19": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H19x1",
+     "parte": "Un campo all'alba",
+     "testo": "Avvicinarti al ragazzo legato",
+     "riserva": "«Chi sei e che cazzo ci fai qui?» Knut gli è addosso prima di chiunque altro. «Cercavo riparo dal delirio là fuori.» «E nel frattempo rubavi informazioni?» chiede Dawn. «Non mentire fottuto Skera del cazzo, è colpa vostra questo!» Knut lo colpisce in faccia, una volta, due, e il ragazzo non riesce a fermarlo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_lucas"
+      }
+     ],
+     "fonte": "P1 e P3 dello schema [ICH Cap.19 r.88-90; Cap.20 r.5-10] (Knut [r.6, r.9], Lucas [r.7], Dawn [r.8])"
+    },
+    {
+     "id": "H19x2",
+     "parte": "Un campo all'alba",
+     "testo": "Guardare l'uomo anziano all'alba",
+     "riserva": "Il tempo si ferma. L'alba resta sospesa, e in mezzo al prato c'è un uomo anziano con gli occhiali, un quaderno e una penna. Intorno a lui giocano due bambine fatte di luce, Gaia e Amelia, e con loro c'è una bambina che ha il tuo viso: sei tu, in un tempo che non ricordi. L'uomo alza gli occhi e sorride. «Ciao figliola, è da tempo che ti aspettavo.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_alba"
+      }
+     ],
+     "fonte": "P2 dello schema [ICH Cap.19 r.87-92] (Thomas [r.92]; Gaia e Amelia bambine con una lei del passato [r.90])"
+    },
+    {
+     "id": "H19x3",
+     "parte": "Un campo all'alba",
+     "testo": "Fermare Knut",
+     "riserva": "Afferri il braccio di Knut prima del colpo dopo. Il ragazzo sputa sangue, e ride: «Nessun Kyn eh?» Poi ti porge una mano. Si chiama Lucas.",
+     "fase": "exploration",
+     "richiede": [
+      "H19x1"
+     ],
+     "effetti": [
+      {
+       "relazione": {
+        "png": "lucas",
+        "delta": 1
+       }
+      },
+      {
+       "flag": {
+        "hersir_lucas_19": true
+       }
+      }
+     ],
+     "fonte": "L dello schema, fermare Knut [ICH Cap.20 r.10-11] (Lucas [r.11]); scopo: Lucas nel gruppo. Se non lo ferma, Dawn li separa (PROPOSTA, legge 4 della regia: vedi il dialogo con Lucas)",
+     "scopo": "Lucas nel gruppo"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "figura_labirinto",
+     "apertura": "Thomas chiude il quaderno, e ti guarda come si guarda una figlia.",
+     "chiusura": "Thomas riapre il quaderno.",
+     "riserva_libera": "Thomas sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "H19_thomas_1",
+       "testo": "Ascoltare Thomas",
+       "riserva": "«So di non essere stato un buon padre per te {nome}, ho compiuto molti errori, ho fatto scelte avventate e spesso folli… ma di una cosa sono certo.» Ti abbraccia. «Non sei solo una mia creazione… sei un individuo autonomo e cosciente, nutro per te forte stima e amore, permettimi di aiutarti ora, prima che sia nuovamente tardi.» Poi, più piano: «Voglio insegnarti ad essere l'architetto del vostro mondo… Posso insegnarti, ma ci vorrà del tempo, concedimi questo tempo prima di tornare là fuori, ti chiedo solo questo… non voglio lasciarti andare contro di loro impreparata.»",
+       "effetti": [
+        {
+         "scopri": "hersir_fact_padre"
+        },
+        {
+         "relazione": {
+          "png": "figura_labirinto",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H19x2"
+       ],
+       "fonte": "P4 dello schema [ICH Cap.20 r.88-89, r.91, r.99] (accorciate) e L, concedergli il tempo che chiede [r.99]",
+       "scopo": "l'addestramento"
+      },
+      {
+       "id": "H19_thomas_2",
+       "testo": "Chiedere a Thomas di Dawn",
+       "riserva": "«Dawn è una brava ragazza, un po' troppo analitica a volte ma penso che il tempo l'abbia un po' ammorbidita… forse avrai avuto modo di sentire che a lei piace la musica.» Guarda il prato. «La grande speranza di Dawn di rivedere il sole un giorno le ha dato l'idea di costruire un mondo pacifico e in piena fioritura… {nome} qui non si tratta di potere, di forza o di volontà suprema… ma di speranza.»",
+       "effetti": [],
+       "richiede": [
+        "H19x2"
+       ],
+       "fonte": "[ICH Cap.20 r.92-93, r.95, r.97] (accorciate)",
+       "scopo": "la morale dei creatori"
+      }
+     ]
+    },
+    {
+     "png": "lucas",
+     "apertura": "Lucas si tocca la bocca rotta, e ti guarda di traverso.",
+     "chiusura": "Lucas torna ai suoi numeri.",
+     "riserva_libera": "«Nessun Kyn eh?» Lucas alza le spalle.",
+     "argomenti": [
+      {
+       "id": "H19_lucas_1",
+       "testo": "Chiedere a Lucas che cosa cercava",
+       "riserva": "«Il fatto che voi siete qui vuol dire che la vostra programmazione è incasinata, che vi è successo? La tenete in ostaggio?» Poi guarda Knut. «Il tuo amico è fuori di testa, ti chiederei di tenerlo lontano da me visto che per ora là fuori banchettano con la vostra carne e non possiamo uscire.» Dawn li tiene separati.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "lucas",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H19x1"
+       ],
+       "fonte": "[ICH Cap.20 r.50-51]; Dawn li separa: via di ritorno di P3 (PROPOSTA)",
+       "scopo": "Lucas nel gruppo"
+      }
+     ]
+    },
+    {
+     "png": "knut",
+     "apertura": "Knut è seduto in disparte, con le mani ancora rosse.",
+     "chiusura": "Knut ti stringe la mano.",
+     "riserva_libera": "Knut scuote la testa.",
+     "argomenti": [
+      {
+       "id": "H19_knut_1",
+       "testo": "Sederti accanto a Knut",
+       "riserva": "«Succede tutto così in fretta, avevo trovato qualcosa che sento di amare, una seconda casa, e loro l'hanno distrutta… è stato come rivivere l'attacco a Restan.» Si guarda le mani. «Voglio essere pronto la prossima volta… voglio avere un piano, voglio apprendere… stavolta io e te eravamo al sicuro, ma chi mi dice che avremo sempre la stessa fortuna?»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knut",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.20 r.79, r.85] (accorciate)",
+       "scopo": "proteggere Knut"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Gaia vi raggiunge: vuole mostrarvi che cosa c'è sopra il cielo, con i suoi occhi.",
+    "fonte": "[ICH Cap.20 r.103-104]",
+    "esplora": [
+     {
+      "id": "H19x4",
+      "parte": "il luogo dell'addestramento",
+      "testo": "Concentrare l'addestramento sul terreno",
+      "riserva": "Chiedi a Thomas di insegnarti prima di tutto la terra: le pietre, il fango, le radici. Lui annuisce: «Io ad esempio conosco i principi basilari degli stati del corpo.»",
+      "fase": "development",
+      "effetti": [
+       {
+        "nota": "Hai chiesto a Thomas di insegnarti prima di tutto a dare forma al terreno.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "L dello schema, su che cosa concentrare l'addestramento [ICH Cap.21 r.76] (Thomas [r.66]); scopo: il dono di plasmare il terreno",
+      "scopo": "il dono di plasmare il terreno"
+     },
+     {
+      "id": "H19d1",
+      "testo": "Seguire Gaia",
+      "riserva": "Gaia ti prende per mano. «C'è modo di allungare la tua vita?» le chiede qualcuno. «Non nel tuo mondo…» risponde lei. Poi chiude gli occhi, e per un istante vedi con i suoi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Gaia vi vuole mostrare che cosa c'è sopra il cielo.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "[ICH Cap.21 r.3-4] (la domanda la fonte non dice di chi sia) e [ICH Cap.20 r.103-104]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H19x1",
+     "H19x2",
+     "H19_thomas_1"
+    ],
+    "risoluzione": [
+     "H19d1"
+    ]
+   },
+   "required_beats": [
+    "H19x1",
+    "H19x2",
+    "H19_thomas_1",
+    "H19d1"
+   ],
+   "optional_beats": [
+    "H19x3",
+    "H19x4",
+    "H19_thomas_2",
+    "H19_lucas_1",
+    "H19_knut_1"
+   ],
+   "riserva_libera": "Il prato è immobile, e l'alba non finisce.",
+   "uscita_fail_forward": "Se la scena si ferma, Gaia vi chiama comunque, e Thomas apre il quaderno alla prima pagina."
+  },
+  "H20": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H20x1",
+     "testo": "Andare verso nord, fra i sussurri",
+     "riserva": "Camminate verso nord fra sussurri che non hanno bocca. Arrivate a un fiume ghiacciato: sopra il ghiaccio una figura scura si china, e prova a bere attraverso il ghiaccio, senza riuscirci. Un corvo gracchia, e la figura scompare.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_hellheim"
+      }
+     ],
+     "fonte": "P1 dello schema [ICH Cap.22 r.15-18]"
+    },
+    {
+     "id": "H20x2",
+     "testo": "Ascoltare Lucas e la veggente",
+     "riserva": "La veggente ha visto un codice inciso su una pietra, e piume. Ne venite a capo insieme: su di te vanno scritti dei dati, e sei tu la chiave. «Quale dito?» chiede Lucas. Ti preme una cosa sul polpastrello, sull'impronta. «L'hai hackerata?» chiede Knut. «Forse le ho scritto qualcosa… certo una chiave di criptazione… ma perché?» «Forse c'entrano i corvi, forse è come quando ci siamo registrati da Dawn» dice Arne. La chiave, dice Lucas, si consumerà nella pietra, per non rovinare il tuo codice.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_chiave"
+      }
+     ],
+     "fonte": "P2 dello schema [ICH Cap.22 r.49-59] (Lucas [r.53, r.55], Knut [r.54], Arne [r.56])"
+    },
+    {
+     "id": "H20x3",
+     "testo": "Chiedere alla veggente di esplorare il bosco",
+     "riserva": "«Draumdís, pensi di riuscire a muoverti tra i boschi per darci un'idea di cosa ci aspetta?» La veggente chiude gli occhi. Sull'acqua vede figure, dice, e fra gli alberi corvi, tanti corvi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "La veggente ha visto corvi nel bosco di Hellheim.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "L dello schema, chiedere alla veggente di esplorare il bosco [ICH Cap.22 r.9] (le figure sull'acqua e i corvi [r.3-9])",
+     "scopo": "la strada"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "lucas",
+     "apertura": "Lucas conta qualcosa sulle dita, e borbotta coordinate.",
+     "chiusura": "Lucas torna ai suoi conti.",
+     "riserva_libera": "«Chiedilo a Dawn» fa Lucas.",
+     "argomenti": [
+      {
+       "id": "H20_lucas_1",
+       "testo": "Chiedere a Lucas dove siete",
+       "riserva": "Lucas vuole sapere qual è la prossima tappa, per calcolare le coordinate con Dawn. Poi guarda gli alberi neri, e non fa battute.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "lucas",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.22 r.10]",
+       "scopo": "la strada"
+      }
+     ]
+    },
+    {
+     "png": "arne",
+     "apertura": "Arne ha l'arco già in mano.",
+     "chiusura": "Arne torna a guardare il bosco.",
+     "riserva_libera": "Arne non risponde: ascolta il bosco.",
+     "argomenti": [
+      {
+       "id": "H20_arne_1",
+       "testo": "Chiedere ad Arne che cosa sente",
+       "riserva": "Arne tende l'orecchio verso i sussurri. Le sue piume si scaldano appena, come braci.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "arne",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "Arne, la fiamma e il sole [ICH Cap.20 r.39-41; Cap.22 r.12] (PROPOSTA: la fonte non le dà battute qui)",
+       "scopo": "la battaglia"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Dal bosco arriva una voce: «Aratare, incubi di Hel, proteggete l'isola ad ogni costo.» «Lancieri, in prima linea, Arne io e te difenderemo Draumdís, Lucas e {nome}» grida Knut. «{nome}, se Draumdís ti mostra la posizione tu riesci a correre fin lì?»",
+    "fonte": "[ICH Cap.22 r.62, r.64, r.66]",
+    "esplora": [
+     {
+      "id": "H20d1",
+      "testo": "Correre verso la pietra",
+      "riserva": "Le ombre escono dal bosco, e sono già su di voi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "I corvi di Hellheim vi attaccano.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 dello schema [ICH Cap.22 r.60-66]: come combattere è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H20x1",
+     "H20x2"
+    ],
+    "risoluzione": [
+     "H20d1"
+    ]
+   },
+   "required_beats": [
+    "H20x1",
+    "H20x2",
+    "H20d1"
+   ],
+   "optional_beats": [
+    "H20x3",
+    "H20_lucas_1",
+    "H20_arne_1"
+   ],
+   "riserva_libera": "A Hellheim la nebbia ingoia le voci.",
+   "uscita_fail_forward": "Se la scena si ferma, i corvi escono comunque dal bosco, e Knut grida ai lancieri di mettersi in prima linea."
+  },
+  "H21": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H21x1",
+     "parte": "Byr senza case",
+     "testo": "Guardare Raven fra i Klover",
+     "riserva": "Raven si china su un Klover e lo accarezza, senza strapparlo. Una lancia lo strappa per lei: si pianta a un passo dalla sua mano. «Un altro movimento e la prossima finisce nel vostro petto» grida qualcuno dalla boscaglia. Raven ha già la spada in mano. «Se li conosci fermali prima che sia tardi per loro.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Dalla boscaglia di Byr vi hanno lanciato contro una lancia.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 dello schema [ICH Cap.24 r.11-13] (la voce [r.12], Raven [r.13])"
+    },
+    {
+     "id": "H21x2",
+     "parte": "Byr senza case",
+     "testo": "Chiamare chi è nella boscaglia",
+     "riserva": "Chiami, e dalla boscaglia esce Anyja, con la mano sul pomo. «Temevo non saresti più tornata… A Hildr tutti attendono il ritorno dell'Hersir viaggiatore.» «Hersir viaggiatore?» chiede Knut. «Sì, è così che chiamano {nome} a Hildr ormai, l'hersir che cavalca le bestie dei mari e viaggia per i mondi.» Guarda Raven. «Loro chi sono?» «Lei è Raven… la mano di Hel» dice Knut. «Sei qui per strappare delle vite?» «Sono in viaggio per trovare la via dei giusti, la mia lama richiama vendetta come la vostra un tempo, il mio viaggio ha inizio dove il vostro si è concluso.»",
+     "fase": "exploration",
+     "richiede": [
+      "H21x1"
+     ],
+     "effetti": [
+      {
+       "scopri": "hersir_fact_anyja_torna"
+      },
+      {
+       "relazione": {
+        "png": "anyja",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P2 dello schema e L, fermare gli uomini di Anyja [ICH Cap.24 r.13-22] (Anyja [r.15, r.17, r.19, r.21], Knut [r.16, r.20], Raven [r.22]); scopo: Raven fra i suoi"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "anyja",
+     "apertura": "Anyja non stacca gli occhi da Raven, ma ti sorride.",
+     "chiusura": "Anyja ti dà una pacca sulla spalla.",
+     "riserva_libera": "Anyja alza le spalle: «Chiedilo a Dag.»",
+     "argomenti": [
+      {
+       "id": "H21_anyja_1",
+       "testo": "Chiedere ad Anyja di Dag",
+       "riserva": "«È a Hilder, sarà contento di rivedervi… ha iniziato a costruire navi.» «Perché?» chiede Knut. «Voleva tornare da voi, ha mezzo convinto pure Askell e Siggy e voleva che io guidassi un piccolo esercito per aiutarvi in battaglia.» «Da quando Dag è così premuroso?» «A volte la notte non dorme, se ne sta al porto a battere il metallo… ormai ci ho fatto l'abitudine e ci siamo costruiti un piccolo rifugio nei pressi.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "anyja",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H21x2"
+       ],
+       "fonte": "[ICH Cap.24 r.26-30] (Anyja, Knut)",
+       "scopo": "il gruppo"
+      },
+      {
+       "id": "H21_anyja_2",
+       "testo": "Parlare con Anyja in privato",
+       "riserva": "«Posso parlarti in privato poi?» Vi allontanate fra i Klover. Anyja non dice niente per un po', e ti guarda come si guarda una sorella tornata da lontano.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "anyja",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H21x2"
+       ],
+       "fonte": "L dello schema, parlare con Anyja in privato [ICH Cap.24 r.31] (che cosa si dicono la fonte non lo scrive: PROPOSTA)",
+       "scopo": "Anyja"
+      }
+     ]
+    },
+    {
+     "png": "askell",
+     "apertura": "Askell ha le braccia incrociate, e guarda i Bhorkyn.",
+     "chiusura": "Askell sbuffa.",
+     "riserva_libera": "Askell non risponde.",
+     "argomenti": [
+      {
+       "id": "H21_askell_1",
+       "testo": "Chiedere ad Askell dei Bhorkyn",
+       "riserva": "«Sono figli di traditori… non dimenticarlo Siggy.» Poi, a te: «Attendevamo il tuo ritorno, per discutere di questo cambiamento… non siamo abituati a prendere decisioni senza il consenso degli altri… non tutti siamo stati cresciuti da Hildr dopotutto.»",
+       "effetti": [],
+       "richiede": [
+        "H21x3"
+       ],
+       "fonte": "[ICH Cap.24 r.70, r.74]",
+       "scopo": "i capi di Restan"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Restan è la città tribale più grande che tu abbia mai visto. Bjorta ti viene incontro, ti dà una spallata e ti abbraccia: «Hersir.»",
+    "fonte": "P3 dello schema [ICH Cap.24 r.60, r.67]",
+    "esplora": [
+     {
+      "id": "H21x3",
+      "parte": "Restan",
+      "testo": "Ascoltare Askell e Signy",
+      "riserva": "«Lei si è mostrata collaborativa e i suoi uomini sono abili costruttori» dice Signy di Bjorta. «Sono figli di traditori… non dimenticarlo Siggy.» «Coloro che combattono per la gente di Restan non sono traditori, sono uomini e donne di Restan.» «Scommetto che vorresti farla Hersir, Siggy» fa Knut. «Abbassa i toni Knut… e comunque sì, in parte per un valore che ha dimostrato in questo periodo, in parte perché Hildr è la nostra casa ora e loro non sono disposti ad ascoltare noi.»",
+      "fase": "development",
+      "effetti": [
+       {
+        "scopri": "hersir_fact_restan"
+       }
+      ],
+      "fonte": "P3 dello schema [ICH Cap.24 r.69-73] (Siggy [r.69, r.71, r.73], Askell [r.70], Knut [r.72])"
+     },
+     {
+      "id": "H21x4",
+      "parte": "Restan",
+      "testo": "Cercare Folr Dreymar",
+      "riserva": "Chiedi di Folr Dreymar. Ti dicono che è stato qui, e che ha parlato a lungo con la veggente; quando arrivi dove l'hanno visto, non c'è più nessuno.",
+      "fase": "development",
+      "effetti": [
+       {
+        "nota": "Folr Dreymar ha parlato con la veggente, a Restan; tu non l'hai trovato.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "L dello schema, cercare Dreymar [ICH Cap.24 r.75] (Dreymar parla con la veggente [r.63-65]); che non lo trovi: PROPOSTA, prepara la 22 (nella casa degli Asi non trova suo padre [ICH Cap.26 r.27])",
+      "scopo": "il padre"
+     },
+     {
+      "id": "H21d1",
+      "parte": "Restan",
+      "testo": "Assistere agli interrogatori",
+      "riserva": "Bjorta fa mettere in fila i suoi Bhorkyn, uno per uno: qualcuno, fra loro, ha tradito Restan.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "A Restan si interrogano i Bhorkyn di Bjorta.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 dello schema [ICH Cap.24 r.76]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H21x1",
+     "H21x2"
+    ],
+    "risoluzione": [
+     "H21x3",
+     "H21d1"
+    ]
+   },
+   "required_beats": [
+    "H21x1",
+    "H21x2",
+    "H21x3",
+    "H21d1"
+   ],
+   "optional_beats": [
+    "H21x4",
+    "H21_anyja_1",
+    "H21_anyja_2",
+    "H21_askell_1"
+   ],
+   "riserva_libera": "Fra i Klover di Byr il vento non risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, Anyja esce comunque dalla boscaglia, e vi porta a Restan."
+  },
+  "H22": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H22x1",
+     "parte": "La costa di Restan, la casa dei voluspà, Jotunrif",
+     "testo": "Ascoltare l'ologramma di Evan",
+     "riserva": "«Tranquilli, sono qui soltanto per parlare… sono qui per proporvi un accordo… noi siamo impossibilitati al nostro rientro dopo l'ultima modifica al programma, siamo intrappolati nel vostro mondo e vorrei che i nostri popoli potessero coesistere.» Arne si accende di fuoco e scocca: la freccia le passa attraverso. «Ora che avete lasciato una traccia sì, Sky i Kalter dunque…» «Bastarda» sibila Arne. «Che nessuno si accenda, lei non è realmente qui» dice Knut. Evan si volta verso di te: «{nome}, a nome di successore del progetto, parlo a te… so che sei legata a Thomas il tuo creatore ma quell'uomo era un folle… la mia promessa è quella di sancire nuovamente il patto di George e Dawn, che voi chiamate Asker ed Embla, in cambio a noi sarà concessa la vita su questo mondo e il controllo delle terre che sono già in possesso dei figli degli Aesir.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_evan"
+      }
+     ],
+     "fonte": "P1 e P2 dello schema [ICH Cap.24 r.118-128] (Evan [r.118, r.120, r.123, r.126, r.128], Arne [r.124], Knut [r.125]; la freccia [r.121-123]) (accorciate)"
+    },
+    {
+     "id": "H22x2",
+     "parte": "La costa di Restan, la casa dei voluspà, Jotunrif",
+     "testo": "Andare alla casa dei voluspà",
+     "riserva": "Sotto la casa dei voluspà di Restan si è radunata una folla di reverie curiosi: vogliono vedere te. I primi sono Signy e Askell. Knut spiega a tutti chi era la donna sulla costa.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_voluspa"
+      }
+     ],
+     "fonte": "P4 dello schema [ICH Cap.25 r.3-5]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "tara",
+     "apertura": "Una tribale con l'ascia ti sbarra la strada: capelli castani, cicatrici, una runa sul bracciale.",
+     "chiusura": "Tara si rimette l'ascia in spalla.",
+     "riserva_libera": "Tara si stringe nelle spalle: «Io so cacciare, Hersir.»",
+     "argomenti": [
+      {
+       "id": "H22_tara_1",
+       "testo": "Ascoltare la tribale con l'ascia",
+       "riserva": "«Hersir, è un onore conoscervi, questo mese ho ucciso 4 bikkja da sola e lo scorso mese 9… l'Hersar mi ha parlato dei vostri viaggi… vorrei seguirvi nel vostro prossimo viaggio.» Posa l'ascia ai tuoi piedi. «Concedetemi questo onore.» Si chiama Tara.",
+       "effetti": [],
+       "fonte": "L dello schema, Tara [ICH Cap.25 r.57-61] (accorciate)",
+       "scopo": "chi la segue"
+      },
+      {
+       "id": "H22_tara_2",
+       "testo": "Prendere Tara con te",
+       "riserva": "Raccogli l'ascia e gliela rendi: verrà con voi. Tara si illumina, e non dice niente.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "tara",
+          "delta": 1
+         }
+        },
+        {
+         "nota": "Tara viene con voi nei prossimi viaggi.",
+         "categoria": "cambiamento"
+        }
+       ],
+       "richiede": [
+        "H22_tara_1"
+       ],
+       "fonte": "L dello schema, prenderla o no [ICH Cap.25 r.61]: la scelta è del giocatore (testo PROPOSTA)",
+       "scopo": "chi la segue"
+      }
+     ]
+    },
+    {
+     "png": "knut",
+     "apertura": "Knut guarda gli appunti di Thomas da sopra la tua spalla.",
+     "chiusura": "Knut chiude il quaderno.",
+     "riserva_libera": "Knut scuote la testa.",
+     "argomenti": [
+      {
+       "id": "H22_knut_1",
+       "testo": "Chiedere a Knut che cosa pensa di Thomas",
+       "riserva": "«Una domanda… non ti vergogni a parlare così di lei? Tu sei suo nonno e parli come se fosse soltanto una fottuta batteria, là dentro c'è una persona, c'è qualcuno della tua famiglia, dovresti vergognarti.» «La morale è parte della coscienza, noi abbiamo varcato molti limiti dopo il vostro stadio» risponde Thomas. «Prenderò appunti per non commettere i vostri stessi errori.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knut",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H22d1"
+       ],
+       "fonte": "L dello schema, Knut accusa Thomas [ICH Cap.26 r.88-90] (accorciate); scopo: la morale dei creatori",
+       "scopo": "la morale dei creatori"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Andate verso Jotunrif, ed entrate nella casa degli Asi, la stessa dimora in cui la porta ti aveva risposto la prima volta.",
+    "fonte": "P5 dello schema [ICH Cap.25 r.62, r.105] (DEDOTTO: la dimora della 07)",
+    "esplora": [
+     {
+      "id": "H22x3",
+      "parte": "la casa degli Asi presso Jotunrif",
+      "testo": "Cercare tuo padre nella casa degli Asi",
+      "riserva": "Cerchi Folr Dreymar, e non lo trovi. Ne vedi l'aspetto, come un ritratto, ma non ha una storia: esisteva solo nei tuoi ricordi, e non è mai stato un vero reverie. Poi Thomas ti mostra i suoi progetti: «Da sogni a realtà, da idee a materia.» Amava guidarti, dice, quando eri ancora poco cosciente di te.",
+      "fase": "development",
+      "effetti": [
+       {
+        "scopri": "hersir_fact_padre_ricordo"
+       }
+      ],
+      "fonte": "P6 e P7 dello schema [ICH Cap.26 r.27-29]; ICH.md r.58"
+     },
+     {
+      "id": "H22x4",
+      "parte": "la casa degli Asi presso Jotunrif",
+      "testo": "Lasciare che tornino i ricordi di Thomas e Anastasia",
+      "riserva": "Ricordi una donna, Anastasia, che ti mette alla prova: «Sogna qualcosa che non esiste, qualcosa a cui ancora non puoi dare un volto, una forma, una spiegazione… e inizia a dargliela tu.» «Certo Thom» rispondi tu, allora. Poi la ricordi sconvolta: «Dimmi cos'è che genera tutto questo… non è la mente a crearlo… ma cosa?» «Non rispondere» ti dice Thomas. E lei: «Creerò un sognatore come il tuo… sarà libero e fiero come un lupo.»",
+      "fase": "development",
+      "effetti": [
+       {
+        "nota": "Hai ricordato Anastasia, che ti metteva alla prova e voleva sapere da dove viene il tuo dono.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "L dello schema, i ricordi di Thomas e Anastasia [ICH Cap.26 r.30-58] (Anastasia [r.40, r.48, r.52, r.54], lei [r.39], Thomas [r.49]) (accorciate)",
+      "scopo": "da dove viene il suo dono"
+     },
+     {
+      "id": "H22d1",
+      "parte": "la casa degli Asi presso Jotunrif",
+      "testo": "Leggere gli appunti di Thomas",
+      "riserva": "Gli appunti di Thomas sono pieni di formule e di nomi. «Compresi che non era da ciò che esiste che dovevo partire, ma da ciò che ancora poteva essere.» E più avanti: «Questa energia è reale, e se mia nipote è là fuori a fare da ponte, avete un'unica fiamma da cui attingere.» «Non starà a lei immaginare quel mondo, sarà {nome}… saremo noi a farlo» dice Knut. «Così facendo l'elaborazione e la manifestazione saranno su due menti separate… mi chiedo solo se il suo corpo basterà» risponde Thomas.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "hersir_fact_appunti"
+       }
+      ],
+      "fonte": "P8 dello schema [ICH Cap.26 r.81, r.84, r.86-87] (accorciate)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H22x1",
+     "H22x2"
+    ],
+    "risoluzione": [
+     "H22x3",
+     "H22d1"
+    ]
+   },
+   "required_beats": [
+    "H22x1",
+    "H22x2",
+    "H22x3",
+    "H22d1"
+   ],
+   "optional_beats": [
+    "H22x4",
+    "H22_tara_1",
+    "H22_tara_2",
+    "H22_knut_1"
+   ],
+   "riserva_libera": "Sulla costa di Restan il vento porta via le parole.",
+   "uscita_fail_forward": "Se la scena si ferma, l'ologramma si spegne da solo, e Knut vi porta verso Jotunrif."
+  },
+  "H23": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H23x1",
+     "testo": "Decidere chi parte e chi resta",
+     "riserva": "«So accettare il cambiamento, Bjorta… tu partirai con lei vero?» chiede Signy. Bjorta annuisce. «Allora ritengo che il passato di Restan starà qui a preservare il futuro, ma non staremo lontani a lungo, prepareremo le navi e partiremo per unirci allo scontro quando sentiremo il tuo richiamo.» Anche Dag resta, a costruire le navi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_partenza"
+      }
+     ],
+     "fonte": "P3 dello schema [ICH Cap.27 r.13, r.16-17] (Signy [r.13, r.16])"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "dag",
+     "apertura": "Dag ha le mani nere di pece, e un sorriso storto.",
+     "chiusura": "Dag torna al cantiere fischiettando.",
+     "riserva_libera": "Dag ride, e cambia discorso.",
+     "argomenti": [
+      {
+       "id": "H23_dag_1",
+       "testo": "Guardare Dag che saluta Anyja",
+       "riserva": "«Promettimi di tornare presto mia piccola bikkja» dice Dag ad Anyja. «Non prima di aver cacciato un po', che dici stavolta? Bestie alate con mille occhi e 9 zampe?» Si baciano, davanti a tutti.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "dag",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L dello schema, Dag e Anyja si salutano [ICH Cap.27 r.18-19]",
+       "scopo": "il gruppo che si divide"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Le navi di Dag sono quasi pronte. Lucas srotola una mappa sul tavolo del consiglio.",
+    "fonte": "[ICH Cap.27 r.17, r.21]",
+    "esplora": [
+     {
+      "id": "H23d1",
+      "testo": "Guardare la mappa di Lucas",
+      "riserva": "«Mi serve il punto preciso di atterraggio, per calcolare il percorso» dice Lucas.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Lucas vi chiede dove scendere a Skry i Kalter.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "[ICH Cap.27 r.21]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H23x1"
+    ],
+    "risoluzione": [
+     "H23d1"
+    ]
+   },
+   "required_beats": [
+    "H23x1",
+    "H23d1"
+   ],
+   "optional_beats": [
+    "H23_dag_1"
+   ],
+   "riserva_libera": "Nella sala del consiglio parlano tutti insieme, e nessuno ti sente.",
+   "uscita_fail_forward": "Se la scena si ferma, i capi tribù decidono comunque, e Lucas ti mette la mappa sotto il naso."
+  },
+  "H24": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H24x1",
+     "parte": "le risaie",
+     "testo": "Guardare Raven e la ragazza che non parla",
+     "riserva": "«Puoi lasciare Ava con noi?» chiede Lucas. «Non è sotto il mio controllo» risponde Raven. «Eppure io la vedo come una marionetta al momento sotto il tuo controllo.» «Può fare ciò che vuole, la sua mente ha bisogno di ripararsi, è per questo che ancora non ti parla… io gli sto soltanto dando una seconda occasione.» Ava resta con voi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_ava"
+      }
+     ],
+     "fonte": "P1 dello schema [ICH Cap.27 r.34-37] (accorciata: la frase su «Mhis» [r.37] si tace)"
+    },
+    {
+     "id": "H24x2",
+     "testo": "Andare incontro alla squadra di Amelia",
+     "riserva": "La squadra di Amelia è di almeno un centinaio di persone, un capogruppo ogni venti. Knut e il loro capo, Antoine, litigano: Antoine voleva sapere prima che rischiavano la sua squadra. Poi Antoine ti porge la mano: «Per quanto non mi faccia piacere sapere di essere stato usato non nego che avrei fatto lo stesso.» Amelia ti abbraccia, commossa: «Sono felice di vedervi, temevo che vi fosse successo qualcosa di brutto là in mezzo.» Vi danno una piccola radio, una a testa.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_amelia_squadra"
+      }
+     ],
+     "fonte": "P2 dello schema [ICH Cap.28 r.5-14, r.25-29] (Antoine [r.8], Amelia [r.14]; la radio [r.29])"
+    },
+    {
+     "id": "H24x3",
+     "parte": "le risaie",
+     "testo": "Guardare le risaie con Anyja",
+     "riserva": "Anyja ti vede turbata e non ti lascia andare. Ti mette in mano una piccola pietra con un cerchio aperto e un punto in mezzo. «Significa che ovunque tu sarai ci sarà sempre un cerchio a proteggerti, una famiglia, ma questo cerchio sarà aperto, così che tu possa accogliere chi vuoi al suo interno.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_ciondolo"
+      },
+      {
+       "relazione": {
+        "png": "anyja",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P3 dello schema [ICH Cap.28 r.80-83] (Anyja [r.83])"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "amelia",
+     "apertura": "Amelia ha il fucile in spalla, e gli occhi lucidi.",
+     "chiusura": "Amelia torna dalla sua squadra.",
+     "riserva_libera": "«Riposate pure, ripartiremo a breve» dice Amelia ai suoi.",
+     "argomenti": [
+      {
+       "id": "H24_amelia_1",
+       "testo": "Chiedere ad Amelia dove sono diretti",
+       "riserva": "«Pensavo di essere pronta ma quello spettacolo è stato inquietante… cittadini, tribali, chiunque…» Parla delle pire. «Dobbiamo solo arrivare in cima e presto sarete liberi, cambieremo tutto» dice Bjorta guardando la montagna. «Noi siamo diretti alla montagna, a quanto pare Delos parla attraverso uno di loro là, è la sua voce.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "amelia",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H24x2"
+       ],
+       "fonte": "[ICH Cap.28 r.18-20] (Amelia [r.18, r.20], Bjorta [r.19])",
+       "scopo": "la battaglia"
+      }
+     ]
+    },
+    {
+     "png": "knut",
+     "apertura": "Knut traccia per terra la montagna, e le linee dei vostri.",
+     "chiusura": "Knut cancella i segni con il piede.",
+     "riserva_libera": "Knut alza le spalle.",
+     "argomenti": [
+      {
+       "id": "H24_knut_1",
+       "testo": "Ascoltare il piano di Knut",
+       "riserva": "«Ricordatevi che il nostro intento è distrarli e spingerli ad abbandonare la montagna, per questo un terzo dei nostri corpi di fanteria non si mostrerà al nemico… durante la prima carica useremo le nostre truppe migliori, Anyja, {nome}, Arne e io… la nostra unica priorità è allontanare i Kynjager dalla casa per poter azionare l'ordigno e ridurre il tasso di pericolo di Lucas e Draumdís.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knut",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[ICH Cap.29 r.12-14] (accorciate)",
+       "scopo": "la battaglia"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ai piedi della montagna ci sono circa millecinquecento skrykru e seicento Bhorkyn, e fra loro cinquanta Kynjager. Per dieci giorni preparate balliste e scudi. Poi, di notte, Knut dà il segnale.",
+    "fonte": "[ICH Cap.29 r.3-8]",
+    "esplora": [
+     {
+      "id": "H24x4",
+      "testo": "Tendere un'imboscata con gli Skera come esca",
+      "riserva": "Gli Skera fanno da esca al piccolo esercito che Knut aveva previsto; Bhorkyn e skrykru lo prendono di fianco, contro armi che non sono di questo mondo.",
+      "fase": "development",
+      "effetti": [
+       {
+        "nota": "L'imboscata con gli Skera come esca ha funzionato.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "L dello schema, l'imboscata [ICH Cap.27 r.59-63]; scopo: la prima prova",
+      "scopo": "la prima prova"
+     },
+     {
+      "id": "H24x5",
+      "parte": "la montagna",
+      "testo": "Parlare ai guerrieri prima della carica",
+      "riserva": "Fucilieri nascosti su un fianco, arcieri in prima linea con Arne, lancieri e spadaccini dietro. Prima della carica parli tu ai tuoi guerrieri, e loro battono le armi sugli scudi.",
+      "fase": "development",
+      "effetti": [
+       {
+        "nota": "Hai parlato tu ai guerrieri prima della carica.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "L dello schema, lo schieramento e il discorso, suo o di Knut [ICH Cap.28 r.105-107]; scopo: la voce della Hersir (testo del discorso PROPOSTA)",
+      "scopo": "la voce della Hersir"
+     },
+     {
+      "id": "H24x6",
+      "parte": "la montagna",
+      "testo": "Dare a Raven l'ordigno",
+      "riserva": "«{nome}, da' a Raven l'ordigno» ti grida Knut. Glielo metti in mano, e lei sparisce fra i corvi verso la cima. Poco dopo, sulla foresta in cima, un'esplosione di luce elettrica.",
+      "fase": "development",
+      "effetti": [
+       {
+        "relazione": {
+         "png": "raven",
+         "delta": 1
+        }
+       }
+      ],
+      "fonte": "L dello schema, l'ordigno da dare a Raven [ICH Cap.29 r.134-135] (Knut [r.134])",
+      "scopo": "la battaglia"
+     },
+     {
+      "id": "H24d1",
+      "parte": "la montagna",
+      "testo": "Lanciarti nella prima carica",
+      "riserva": "Frecce infuocate sulle barricate, le balliste, e i Kynjager che scendono verso di voi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Combatti nella prima carica sulla montagna.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 dello schema [ICH Cap.29 r.76-82]: come combattere è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H24x1",
+     "H24x2",
+     "H24x3"
+    ],
+    "risoluzione": [
+     "H24d1"
+    ]
+   },
+   "required_beats": [
+    "H24x1",
+    "H24x2",
+    "H24x3",
+    "H24d1"
+   ],
+   "optional_beats": [
+    "H24x4",
+    "H24x5",
+    "H24x6",
+    "H24_amelia_1",
+    "H24_knut_1"
+   ],
+   "riserva_libera": "Sulla montagna il vento porta l'odore del fumo.",
+   "uscita_fail_forward": "Se la scena si ferma, Knut dà comunque il segnale, e la prima carica parte nella notte."
+  },
+  "H25": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H25x1",
+     "parte": "Il mare dei caduti e il Mar Bianco",
+     "testo": "Ascoltare le voci sulla nave",
+     "riserva": "Senti voci, tante, e a una a una quelli sulla nave si avvicinano, come attratti da una fiamma: sono i Kyn. Un Kyn che beve da una sacca di pelle ti guarda: «Ti aspetto portatrice della fiamma.» Si chiama Mann. Una donna invece ti volta le spalle: «Io non starò qua a farmi dire roba da una che sta incasinando il mondo… per colpa tua io non ho più uno scopo… ma con questo lo troverò finalmente.» Ti mostra un ciondolo, quello della lupa. Si chiama Fendra.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_kyn_nave"
+      }
+     ],
+     "fonte": "P2 dello schema [ICH Cap.31 r.10-16] (Mann [r.12], Fendra [r.14, r.16])"
+    },
+    {
+     "id": "H25x2",
+     "parte": "Il mare dei caduti e il Mar Bianco",
+     "testo": "Strappare un pezzo della tua anima per chiamare i Kyn",
+     "riserva": "Strappi un pezzo della tua anima, e lo tendi come un filo verso il mare: le voci dei Kyn ti rispondono da lontano, più chiare.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Hai chiamato i Kyn con un pezzo della tua anima.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "L dello schema, strappare un pezzo della sua anima e usarlo per chiamare i Kyn [ICH Cap.31 r.4-5]; scopo: riunirli",
+     "scopo": "riunirli"
+    },
+    {
+     "id": "H25x3",
+     "parte": "Il mare dei caduti e il Mar Bianco",
+     "testo": "Attraversare il mare dei caduti",
+     "riserva": "Il mare dei caduti vi accoglie con i fulmini: gli Skera fanno togliere le armature e calare l'ancora, e un fulmine colpisce l'albero maestro. Solo Knut tiene la rotta, seguendo le radici. Dopo un mese il mare si fa calmo e luminoso, pieno di pesci colorati: il Mar Bianco. E poi Ourobera, la prima vera città che tu abbia mai visto: reverie mutilati che la ricostruiscono, insieme.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_ourobera"
+      }
+     ],
+     "fonte": "P3 e P4 dello schema [ICH Cap.31 r.31-37, r.59-60, r.81-82]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "anyja",
+     "apertura": "Anyja si sporge dal parapetto a guardare i pesci colorati.",
+     "chiusura": "Anyja ride, e ti schizza l'acqua in faccia.",
+     "riserva_libera": "Anyja alza le spalle: «Chiedilo a Dag.»",
+     "argomenti": [
+      {
+       "id": "H25_anyja_1",
+       "testo": "Parlare con Anyja, sul Mar Bianco",
+       "riserva": "«Hai mai pensato di avere dei figli?» Prima che tu risponda, aggiunge: «Non mi interessa cosa vorrà essere, l'importante è che non sia coglione o cogliona quanto Dag.» Poi guarda Knut. «Come stai?» «Sto.» «È proprio in questi momenti che mi manca Dag… nel frattempo che dici se prendo io il suo posto per una volta?» E lo butta in mare.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "anyja",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H25x3"
+       ],
+       "fonte": "L dello schema, Anyja e i figli [ICH Cap.31 r.61-69] (Anyja [r.61, r.63, r.65, r.67, r.69], Knut [r.66]); scopo: la figlia dell'epilogo",
+       "scopo": "la figlia dell'epilogo"
+      }
+     ]
+    },
+    {
+     "png": "knut",
+     "apertura": "Knut ha gli occhi rossi, e le piccole fiamme blu della palude gli ballano sul viso.",
+     "chiusura": "Knut ti tiene la mano.",
+     "riserva_libera": "Knut non dice niente.",
+     "argomenti": [
+      {
+       "id": "H25_knut_1",
+       "testo": "Baciare Knut sotto le fiamme blu",
+       "riserva": "Sopra la palude si accendono piccole fiamme blu. Lo baci, e lui ti stringe forte, come chi ha appena smesso di cadere.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knut",
+          "delta": 1
+         }
+        },
+        {
+         "nota": "Hai baciato Knut sotto le fiamme blu della palude.",
+         "categoria": "cambiamento"
+        }
+       ],
+       "richiede": [
+        "H25d1"
+       ],
+       "fonte": "L dello schema, il bacio sotto le piccole fiamme blu [ICH Cap.32 r.42-46]; conta per il finale 1 (PROPOSTA)",
+       "scopo": "Knut"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "A palazzo, la sera, vi invitano a cena: a tavola siedono insieme chi serve e chi è servito.",
+    "fonte": "[ICH Cap.32 r.3-4]",
+    "esplora": [
+     {
+      "id": "H25x4",
+      "parte": "Ourobera",
+      "testo": "Guardare gli invitati a cena",
+      "riserva": "Fra gli invitati c'è una donna dai capelli chiari. Knut la vede nello stesso momento in cui la vedi tu, e le lancia un coltello: lei lo schiva facendo volare un vassoio. «Non ti ho fatto un cazzo, sei pazzo per caso?» È Cirilla, e Knut ha già in mano un altro coltello.",
+      "fase": "development",
+      "effetti": [
+       {
+        "scopri": "hersir_fact_cirilla"
+       }
+      ],
+      "fonte": "P5 dello schema [ICH Cap.32 r.5-7] (Cirilla [r.7]); nella fonte un tiro di osservare [r.5]; i capelli chiari: la cura che le cambiò i capelli [ICH Cap.22 r.21-24] (DEDOTTO)"
+     },
+     {
+      "id": "H25x5",
+      "parte": "Ourobera",
+      "testo": "Fermare Knut",
+      "riserva": "Ti metti fra Knut e Cirilla e gli abbassi il braccio. Lui trema di rabbia, ma il secondo coltello resta in mano sua.",
+      "fase": "development",
+      "richiede": [
+       "H25x4"
+      ],
+      "effetti": [
+       {
+        "relazione": {
+         "png": "cirilla",
+         "delta": 1
+        }
+       },
+       {
+        "nota": "Hai fermato Knut contro Cirilla.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "L dello schema, fermare o no Knut contro Cirilla [ICH Cap.32 r.8-9]; scopo: Cirilla serve nella 28 (se non lo fermi Cirilla schiva il secondo colpo e cade, viva: PROPOSTA)",
+      "scopo": "Cirilla serve nella 28"
+     },
+     {
+      "id": "H25d1",
+      "parte": "Ourobera",
+      "testo": "Seguire Mann nella palude",
+      "riserva": "Mann vi dà qualcosa contro i flodz, «bestiacce capaci di succhiarti il sangue», e vi porta nella palude degli urobri, al grundfridir: «Lì si terrà il Verdafridir in onore dell'arrivo del nostro nuovo ciclo… questo è il nono giorno, il momento più bello di tutta Ourobera.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Mann vi ha portati nella palude degli urobri.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "[ICH Cap.32 r.23, r.31-32] (Mann)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H25x1",
+     "H25x3"
+    ],
+    "risoluzione": [
+     "H25x4",
+     "H25d1"
+    ]
+   },
+   "required_beats": [
+    "H25x1",
+    "H25x3",
+    "H25x4",
+    "H25d1"
+   ],
+   "optional_beats": [
+    "H25x2",
+    "H25x5",
+    "H25_anyja_1",
+    "H25_knut_1"
+   ],
+   "riserva_libera": "Sul mare la tua voce si perde fra le onde.",
+   "uscita_fail_forward": "Se la scena si ferma, la nave arriva comunque a Ourobera, e Mann vi porta nella palude."
+  },
+  "H26": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H26x1",
+     "parte": "Krakborg",
+     "testo": "Partire da Krakborg con la nave di Saoirse",
+     "riserva": "Saoirse ti dà il suo stendardo, una nave e le provviste per Bo Aesir. «Voi come me avete perso tanto, ma importa ciò che siamo realmente, non ciò che è stato scritto di noi.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "relazione": {
+        "png": "saoirse",
+        "delta": 1
+       }
+      },
+      {
+       "nota": "Saoirse vi ha dato una nave per Bo Aesir.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 dello schema [ICH Cap.33 r.5-7, r.13] (Saoirse [r.7])"
+    },
+    {
+     "id": "H26x2",
+     "parte": "Bo Aesir e la sua casa degli Asi",
+     "testo": "Ricomporre l'immagine dell'ingresso",
+     "riserva": "A Bo Aesir Knut vede nella rete un ingresso nascosto dentro un'immagine finta del luogo. Ti concentri, e i pezzi dell'immagine tornano al loro posto sotto le tue mani: l'ingresso si apre.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_bo_aesir_ingresso"
+      }
+     ],
+     "fonte": "P3 dello schema [ICH Cap.33 r.45-47] (P*: il gesto è del giocatore; se non lo fa, l'immagine la ricompone Knut seguendo la rete: PROPOSTA, la spinta qui sotto)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "anastasia",
+     "apertura": "Anastasia succhia un ghiacciolo al limone, chiusa in una stanza tutta per sé.",
+     "chiusura": "Anastasia torna a guardare le sue mani, da cui sale il gelo.",
+     "riserva_libera": "Anastasia non ti guarda: «Siate creativi.»",
+     "argomenti": [
+      {
+       "id": "H26_anastasia_1",
+       "testo": "Ascoltare Anastasia sulla creazione",
+       "riserva": "Anastasia ti spiega che tutto ciò che fate è dentro il sistema, e che il problema è l'energia: la loro fonte, fuori, può esaurirsi. Poi ti mostra il piano: ridurre la Terra a un decimo, usarne la materia e l'energia dell'anima per creare un buco bianco, un ponte nello spazio e nel tempo. «Non siamo che involucri.»",
+       "effetti": [
+        {
+         "scopri": "hersir_fact_buco_bianco"
+        }
+       ],
+       "richiede": [
+        "H26d1"
+       ],
+       "fonte": "P5 dello schema [ICH Cap.34 r.29-38] (riassunte; «non siamo che involucri» [r.38])",
+       "scopo": "il piano degli Asi"
+      },
+      {
+       "id": "H26_anastasia_2",
+       "testo": "Chiedere ad Anastasia di Runi",
+       "riserva": "«Ti piacciono i ghiaccioli? Qui c'è tutto ciò a cui mi sono ispirata per creare Vanargand.» Poi, piano: «Se dovete fermarlo il suo punto debole è la mano sinistra… obsolescenza programmata… riprendetelo con voi… dategli la famiglia che si merita, è l'unica cosa che vi chiedo.»",
+       "effetti": [
+        {
+         "nota": "Anastasia ti ha detto che il punto debole di Runi è la mano sinistra.",
+         "categoria": "indizio"
+        }
+       ],
+       "richiede": [
+        "H26d1"
+       ],
+       "fonte": "L dello schema, il punto debole di Runi [ICH Cap.35 r.14-15, r.19-20] (Anastasia); scopo: prepara la 29",
+       "scopo": "prepara la 29"
+      }
+     ]
+    },
+    {
+     "png": "fendra",
+     "apertura": "Fendra guarda le zattere accese sul mare, con le braccia strette al petto.",
+     "chiusura": "Fendra fischia, e i suoi le rispondono.",
+     "riserva_libera": "«Ne dubito…» fa Fendra.",
+     "argomenti": [
+      {
+       "id": "H26_fendra_1",
+       "testo": "Parlare con Fendra al funerale del mare",
+       "riserva": "«Sono morti per un sogno che io stessa mi sono creata per esistere, è forse questo che vuol dire essere Kyn? Scrivere un destino per gli altri?» Poi si volta. «{nome} giusto? Bene! Facciamo così: portami nella prossima casa degli Asi e fammi recuperare tutto ciò che troviamo, nel frattempo la lupa di mare e le volpi del deserto saranno liete di fare scorribande insieme a voi.» «Hai recuperato l'alcool da quella nave?» chiede Mann. «Certo! Con chi credi di parlare?»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "fendra",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H26d1"
+       ],
+       "fonte": "L dello schema, Fendra propone di unirsi [ICH Cap.35 r.62-65] (Fendra, Mann); scopo: gli alleati",
+       "scopo": "gli alleati"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nella casa degli Asi di Bo Aesir Cleyra vi mette alla prova, per vedere quanto c'è di scritto nel vostro codice.",
+    "fonte": "[ICH Cap.33 r.47-49]",
+    "esplora": [
+     {
+      "id": "H26x3",
+      "parte": "Bo Aesir e la sua casa degli Asi",
+      "testo": "Superare la prima prova",
+      "riserva": "La prima prova è di gruppo: giochi di prospettiva e di colori, un'immagine che cambia secondo il punto da cui la guardi, una porta con un oggetto che cambia dimensione. La chiave va messa alla distanza giusta, e la trovate insieme.",
+      "fase": "development",
+      "effetti": [
+       {
+        "nota": "Avete superato la prima prova di Cleyra, insieme.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 dello schema [ICH Cap.33 r.66-71]"
+     },
+     {
+      "id": "H26d1",
+      "parte": "Bo Aesir e la sua casa degli Asi",
+      "testo": "Entrare nella seconda prova",
+      "riserva": "La seconda prova la affronti da {solo|sola|sola}. Davanti a te c'è Lucas, o qualcosa che ha la sua faccia, e dentro di te qualcuno si sveglia.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nella seconda prova di Cleyra l'altra te si è svegliata.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 dello schema [ICH Cap.33 r.80-85] (la seconda prova è individuale: DEDOTTO dalla terza [r.93])"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H26x1",
+     "H26x2"
+    ],
+    "risoluzione": [
+     "H26x3",
+     "H26d1"
+    ]
+   },
+   "required_beats": [
+    "H26x1",
+    "H26x2",
+    "H26x3",
+    "H26d1"
+   ],
+   "optional_beats": [
+    "H26_anastasia_1",
+    "H26_anastasia_2",
+    "H26_fendra_1"
+   ],
+   "riserva_libera": "Nella casa degli Asi le pareti cambiano colore, e nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, Knut ricompone l'immagine seguendo la rete, e Cleyra vi apre la prima prova."
+  },
+  "H27": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H27x1",
+     "parte": "Skjoldland, una casa degli Asi in una caverna;",
+     "testo": "Entrare nella caverna della casa degli Asi",
+     "riserva": "Nella caverna ci sono ologrammi di vecchi giornali, date, citazioni di Thomas e di un filosofo antico. Poi un uomo dai capelli brizzolati: è una copia di George. «Il mio compito era quello di scrivere le prime righe, proprio come fa un padre con suo figlio, istruirlo a camminare, parlare, dargli un nido e lasciargli la libertà di spiccare il volo quando le sue ali sarebbero divenute forti.» «Non è l'approvazione di Lodur che cerco padre, né la tua, sono qui per conoscere l'uomo che mi ha creato, niente più di questo» dice Knut. «Ma io sono soltanto una copia… ma prima, da vero gentleman quale sei, permettimi di assecondare l'affetto che lui provava verso di te in un semplice e caldo abbraccio.» E lo abbraccia.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_askr"
+      },
+      {
+       "relazione": {
+        "png": "knut",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P2 dello schema [ICH Cap.36 r.25-36] (George [r.31, r.35-36], Knut [r.34]) (accorciate)"
+    },
+    {
+     "id": "H27x2",
+     "testo": "Ascoltare il piano di Lucas",
+     "riserva": "Il piano di Lucas è semplice e folle: con la luce di Fendra imitare te, il tuo segno, per far credere al nemico che le navi siano molte di più.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_luce"
+      }
+     ],
+     "fonte": "P3 dello schema [ICH Cap.36 r.44] (la rifrazione della luce di Lucas e Fendra [ICH Cap.37 r.32])"
+    },
+    {
+     "id": "H27x3",
+     "parte": "Skjoldland, una casa degli Asi in una caverna;",
+     "testo": "Uscire dalla casa fra i reverie",
+     "riserva": "Quando esci dalla casa, i reverie si voltano a guardarti, in silenzio. Knut ti stringe la mano.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "I reverie ti guardano, e aspettano che tu parli.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P4 dello schema [ICH Cap.36 r.48-50]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "dag",
+     "apertura": "Dag è arrivato con le navi di Restan, e ha le mani piene di schegge.",
+     "chiusura": "Dag ti dà un pugno leggero sulla spalla.",
+     "riserva_libera": "Dag ride, e cambia discorso.",
+     "argomenti": [
+      {
+       "id": "H27_dag_1",
+       "testo": "Parlare con Dag",
+       "riserva": "Dag ti racconta delle navi, una per una, come si parla dei propri figli. Poi guarda Anyja da lontano, e smette di ridere.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "dag",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L dello schema, parlare con Dag [ICH Cap.37 r.29] (che cosa si dicono la fonte non lo scrive: PROPOSTA)",
+       "scopo": "Dag"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Al consiglio di guerra si contano: quattromila di Skjoldland, duemilacinquecento di Bhorkyn, duemila di Ourobera e i tribali, circa sedicimilacinquecento in tutto. Lucas li battezza l'esercito delle libere scelte. «Da qui in poi dimenticate i vessilli, dimenticate le vostre divergenze e le vostre differenze, a breve ci muoveremo per combattere uniti» dice Knut.",
+    "fonte": "P5 dello schema [ICH Cap.36 r.42, r.52; Cap.37 r.29-32, r.41]; ICH.md r.53 (circa 16.500)",
+    "esplora": [
+     {
+      "id": "H27x4",
+      "testo": "Parlare a tutti i reverie per la libertà",
+      "riserva": "Parli a tutti, non ai singoli, come ti aveva chiesto Cleyra. Saoirse rafforza le tue parole: «Nel momento in cui avrete dei ripensamenti, ricordate una cosa: cosa perderemo se non agissimo ora e uniti?» «Fatevi forza l'un l'altro, finché le nostre radici sono unite sarà impossibile per loro sradicarci dal nostro mondo» aggiunge Knut.",
+      "fase": "development",
+      "effetti": [
+       {
+        "asse": {
+         "id": "trust",
+         "delta": 1
+        }
+       },
+       {
+        "nota": "Hai parlato a tutti i reverie per la libertà.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "L dello schema, parlare ai reverie per la libertà [ICH Cap.37 r.35-38] (Saoirse [r.37], Knut [r.38]); la voce che Cleyra le chiede [ICH Cap.35 r.9]",
+      "scopo": "la voce che Cleyra le chiede"
+     },
+     {
+      "id": "H27d1",
+      "parte": "la costa di Restan nord",
+      "testo": "Salire sulle navi verso Restan nord",
+      "riserva": "Le navi colpiscono le mura, e piovono detriti. La terra della costa è rosso sangue, con venature che corrodono chi cade.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "hersir_fact_coalizione"
+       }
+      ],
+      "fonte": "P6 dello schema [ICH Cap.37 r.140-144]: come combattere è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H27x1",
+     "H27x2",
+     "H27x3"
+    ],
+    "risoluzione": [
+     "H27d1"
+    ]
+   },
+   "required_beats": [
+    "H27x1",
+    "H27x2",
+    "H27x3",
+    "H27d1"
+   ],
+   "optional_beats": [
+    "H27x4",
+    "H27_dag_1"
+   ],
+   "riserva_libera": "Fra le navi il vento copre ogni voce.",
+   "uscita_fail_forward": "Se la scena si ferma, le navi partono comunque verso Restan nord, e Knut ti dice: «Ora tocca a noi.»"
+  },
+  "H28": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H28x1",
+     "testo": "Avanzare per le strade di Vorbasse",
+     "riserva": "Dai ordini, e i tuoi si riparano nelle case. Sui tetti ci sono soldati, e dai tetti piove il fuoco. Bjorta si getta contro un Kynjager: colpita, risponde con una martellata, e resta in ginocchio, fumante.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_vorbasse"
+      }
+     ],
+     "fonte": "P1 dello schema [ICH Cap.38 r.3-8, r.30-33] (Bjorta [r.30-31])"
+    },
+    {
+     "id": "H28x2",
+     "testo": "Cercare il posto di comando",
+     "riserva": "Lo capisci guardando i fulmini: partono tutti dallo stesso punto. Una cittadella con una torre, e in alto Kynjager attaccati ad antenne di metallo. È lì il loro posto di comando.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Il posto di comando di Vorbasse è la cittadella con la torre.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 dello schema [ICH Cap.38 r.23-25]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "knut",
+     "apertura": "Knut ha i cavi legati alla cintura, e l'altro capo in mano.",
+     "chiusura": "Knut ti stringe i cavi alla vita.",
+     "riserva_libera": "Knut non risponde: guarda i tetti.",
+     "argomenti": [
+      {
+       "id": "H28_knut_1",
+       "testo": "Chiedere a Knut chi portare alla casa degli Asi",
+       "riserva": "Ai Campi rossi scegliete insieme chi viene con voi alla casa degli Asi; Mann e Fendra vanno ad attaccare il centro da cui comunicano i nemici. Il nemico esce dalle mura, riposato.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "knut",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H28d1"
+       ],
+       "fonte": "L dello schema, chi portare alla casa degli Asi [ICH Cap.38 r.80-82]; scopo: la trappola",
+       "scopo": "la trappola"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Dalla cittadella i fulmini corrono fra i palazzi. «Urla, e guidali» ti dice Knut.",
+    "fonte": "[ICH Cap.38 r.37-41, r.54]",
+    "esplora": [
+     {
+      "id": "H28x3",
+      "testo": "Andare verso i Campi rossi",
+      "riserva": "Oltre Vorbasse ci sono i Campi rossi, e in mezzo la casa degli Asi che avete conquistato. Ma prima c'è un vicolo.",
+      "fase": "development",
+      "effetti": [
+       {
+        "scopri": "hersir_fact_campi_rossi"
+       }
+      ],
+      "fonte": "P5 dello schema [ICH Cap.38 r.80-90, r.103]"
+     },
+     {
+      "id": "H28d1",
+      "testo": "Infilarti nel vicolo",
+      "riserva": "Un edificio salta in aria dietro di te.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Il vicolo di Vorbasse si è chiuso alle tue spalle.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 dello schema [ICH Cap.38 r.35]: come combattere è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H28x1",
+     "H28x2"
+    ],
+    "risoluzione": [
+     "H28x3",
+     "H28d1"
+    ]
+   },
+   "required_beats": [
+    "H28x1",
+    "H28x2",
+    "H28x3",
+    "H28d1"
+   ],
+   "optional_beats": [
+    "H28_knut_1"
+   ],
+   "riserva_libera": "A Vorbasse il rumore dei fulmini copre ogni voce.",
+   "uscita_fail_forward": "Se la scena si ferma, l'edificio salta comunque in aria, e i bambini escono dall'ombra."
+  },
+  "H29": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H29x1",
+     "parte": "Dentro la tua mente;",
+     "testo": "Guardare chi c'è nel tuo labirinto",
+     "riserva": "Ti avvicini alle figure del tuo labirinto, una per una. Knut si volta, ti prende di mano il quadrifoglio e lo tiene per te.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "hersir_fact_mente"
+      },
+      {
+       "relazione": {
+        "png": "knut",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P1 dello schema [ICH Cap.39 r.3-5]"
+    },
+    {
+     "id": "H29x2",
+     "parte": "Dentro la tua mente;",
+     "testo": "Ascoltare l'altra te",
+     "riserva": "L'altra te ti dice di non fidarti di nessuno, nemmeno di lei. Poi, piano: «Forse il nostro errore è stato quello di affermare la nostra esistenza combattendo… ora il nostro mondo sta crollando, più utenze crollano e più si riverseranno su altri server, così facendo a poco a poco il crash continuerà a catena, fino a che non esisterà più nulla.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "L'altra te ti ha detto che il mondo sta crollando a catena.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 dello schema [ICH Cap.39 r.7-13] (l'altra sé [r.13]); L, rispondere all'altra sé: conta per il finale 2 (con lo scontro qui sotto)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "raven",
+     "apertura": "Raven ha la lama sporca, e lo sguardo stanco.",
+     "chiusura": "Raven si inginocchia accanto all'albero.",
+     "riserva_libera": "Raven non risponde.",
+     "argomenti": [
+      {
+       "id": "H29_raven_1",
+       "testo": "Chiedere a Raven di Evan",
+       "riserva": "«Evan è morta.» Raven pulisce la lama. «Anche lei ha pregato… che le loro anime possano essere libere dai tuoi errori: questo le ho detto.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "raven",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H29d1"
+       ],
+       "fonte": "P1 della 30 dello schema [ICH Cap.40 r.155, r.161, r.163-178] (Raven; accorciate)",
+       "scopo": "la fine di Evan"
+      }
+     ]
+    },
+    {
+     "png": "knut",
+     "apertura": "Knut ti raggiunge al Kynhjarta, coperto di sangue non suo.",
+     "chiusura": "Knut ti stringe la mano sull'albero.",
+     "riserva_libera": "Knut ti guarda soltanto.",
+     "argomenti": [
+      {
+       "id": "H29_knut_1",
+       "testo": "Parlare a tutti i reverie, con Knut accanto",
+       "riserva": "Davanti al Kynhjarta parli a tutti i reverie, quelli che ti sentono e quelli che non ti sentiranno mai: di un mondo comune, dove nessuno decide per gli altri. Knut ti tiene la mano.",
+       "effetti": [
+        {
+         "asse": {
+          "id": "trust",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "H29d1"
+       ],
+       "fonte": "L della 30 dello schema, il discorso a tutti i reverie per un mondo comune [ICH Cap.40 r.165] (testo PROPOSTA)",
+       "scopo": "la voce"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Evan ti stimola, ti tenta, ti chiama. Vuole che tu ti attivi, per forzare il tuo codice.",
+    "fonte": "P3 dello schema [ICH Cap.39 r.7-8, r.77-79]",
+    "esplora": [
+     {
+      "id": "H29d1",
+      "parte": "Dentro la tua mente;",
+      "testo": "Affrontare Evan nella tua mente",
+      "riserva": "Evan è davanti a te, dentro di te.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Affronti Evan dentro la tua mente.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 dello schema [ICH Cap.39 r.77-79]: come combattere è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H29x1",
+     "H29x2"
+    ],
+    "risoluzione": [
+     "H29d1"
+    ]
+   },
+   "required_beats": [
+    "H29x1",
+    "H29x2",
+    "H29d1"
+   ],
+   "optional_beats": [
+    "H29_raven_1",
+    "H29_knut_1"
+   ],
+   "riserva_libera": "Dentro la tua mente l'eco ti restituisce solo la tua voce.",
+   "uscita_fail_forward": "Se la scena si ferma, la lupa ti strappa comunque i cavi di dosso, e la fuga comincia."
+  },
+  "H30": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "H30x1",
+     "testo": "Osservare l’ultima immagine",
+     "riserva": "Nello spazio, dentro la capsula, Gaia ti porge la mano. «In mezzo al buio vi sono tante luci, non resta che accenderle.»",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "apertura uguale per tutti i finali [ICH Cap.40 r.195-200] (Gaia [r.200]); schema «L'Hersir dei nodi», scena 30 (finale): i finali si raccontano qui, con le varianti del contratto del finale (ending_contract), scelte dalla risposta a Gaia nella 29 (come «Il filo di cenere», C30). (1) il nuovo mondo [ICH Cap.40 r.195-206, r.249-262]; (2) l'altra e (3) il sacrificio: PROPOSTA (ICH.md r.62; nessuna riga della fonte li racconta). Con `finale` il motore chiude la partita all'ingresso: la L «tornare più tardi da Anyja e Dag, che però non la ricorderanno» [r.208-216] è nel testo del finale (1). R nessuna verità nuova: tutte le verità sono già dette."
+    }
+   ],
+   "sviluppo": {
+    "testo": "Gaia tiene la mano tesa nella capsula. La risposta che hai già dato sul mondo rimane quella: ora puoi dare parole al congedo, senza un’altra voce che le scelga per te.",
+    "esplora": [],
+    "effetti": [],
+    "fonte": "apertura uguale per tutti i finali [ICH Cap.40 r.195-200] (Gaia [r.200]); schema «L'Hersir dei nodi», scena 30 (finale): i finali si raccontano qui, con le varianti del contratto del finale (ending_contract), scelte dalla risposta a Gaia nella 29 (come «Il filo di cenere», C30). (1) il nuovo mondo [ICH Cap.40 r.195-206, r.249-262]; (2) l'altra e (3) il sacrificio: PROPOSTA (ICH.md r.62; nessuna riga della fonte li racconta). Con `finale` il motore chiude la partita all'ingresso: la L «tornare più tardi da Anyja e Dag, che però non la ricorderanno» [r.208-216] è nel testo del finale (1). R nessuna verità nuova: tutte le verità sono già dette."
+   },
+   "sblocco": {
+    "sviluppo": [
+     "H30x1"
+    ],
+    "risoluzione": []
+   },
+   "required_beats": [
+    "H30x1"
+   ],
+   "optional_beats": []
+  }
+ }
+}

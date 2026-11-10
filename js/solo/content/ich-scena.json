@@ -1,0 +1,552 @@
+{
+ "formato": "rm-solo-scena/1",
+ "storia": "ich",
+ "stato": "proposta scritta in autonomia (2026-10-17), rivedibile in docs/single-player/DECISIONI_DA_RIVEDERE.md",
+ "schede": {
+  "png": {
+   "ragn": {
+    "aspetto": "Vǫluspá dai capelli chiari e dagli occhi stanchi; porta tavolette di rune appese alla cintura e dorme poco."
+   },
+   "halvek": {
+    "aspetto": "Hersir di Hrafnvik: uomo massiccio dalla barba grigia e dalla voce bassa, con un mantello di lana azzurra."
+   },
+   "elska": {
+    "aspetto": "Bannsith con una ciocca bianca fra i capelli scuri; porta fili colorati legati ai polsi."
+   },
+   "eiran": {
+    "aspetto": "Guida del Kynwird in mantello vegetale verde e blu, con le mani nodose e i piedi nudi sul sentiero."
+   },
+   "soren": {
+    "aspetto": "Skéra dagli occhi di un colore che cambia con la luce; lavora il legno e parla poco."
+   },
+   "liva": {
+    "aspetto": "Spettro dai contorni incerti: una donna che sembra una persona diversa ogni volta che la guardi."
+   },
+   "mjol": {
+    "aspetto": "Abitante di Hrafnvik di mezza età, con una lanterna sempre accesa e un anello che gira di continuo al dito."
+   }
+  }
+ },
+ "scene": {
+  "H01": {
+   "protagonista": {
+    "posizione": "Sei in piedi nella sala dell'Hersir, vicino al focolare",
+    "attivita": "ascolti presentarti la comunità"
+   },
+   "png": {
+    "halvek": {
+     "posizione": "sul seggio basso, a capo della sala",
+     "attivita": "ascolta chi gli parla e batte le dita sul bracciolo"
+    },
+    "ragn": {
+     "posizione": "accanto alla finestra, con una tavoletta di rune",
+     "attivita": "legge i segni che le ha lasciato il sogno della notte"
+    },
+    "elska": {
+     "posizione": "in fondo, vicino alla porta",
+     "attivita": "intreccia un filo fra le dita senza guardarlo"
+    },
+    "eiran": {
+     "posizione": "sulla soglia, con il mantello bagnato di bosco",
+     "attivita": "aspetta che qualcuno gli chieda notizie del sentiero"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H01_p1",
+     "tratto": "Percezione",
+     "nc": 12,
+     "testo": "Al centro della sala c'è un posto a tavola apparecchiato, e nessuno lo guarda."
+    },
+    {
+     "id": "H01_p2",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Quando si nomina chi è sparito, tutti abbassano la voce nello stesso momento."
+    }
+   ]
+  },
+  "H02": {
+   "protagonista": {
+    "posizione": "Sei nella casa di Mjol, vicino al tavolo",
+    "attivita": "ascolti Mjol parlare di suo fratello"
+   },
+   "png": {
+    "mjol": {
+     "posizione": "seduto al tavolo, con le mani intrecciate",
+     "attivita": "toglie e rimette un anello dal dito"
+    },
+    "halvek": {
+     "posizione": "alla porta, a braccia incrociate",
+     "attivita": "ascolta ma non entra"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H02_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Sulla parete c'è una fila di chiodi: uno, senza nulla appeso, è più lucido degli altri."
+    },
+    {
+     "id": "H02_p2",
+     "tratto": "Intuito Olfattivo",
+     "nc": 12,
+     "testo": "Nella stanza c'è odore di pane, ma il forno è spento da giorni."
+    }
+   ]
+  },
+  "H03": {
+   "protagonista": {
+    "posizione": "Sei nella casa fredda, a un passo dalla soglia",
+    "attivita": "guardi la stanza vuota senza muoverti"
+   },
+   "png": {
+    "liva": {
+     "posizione": "in un angolo, quasi trasparente",
+     "attivita": "sembra aspettare qualcuno"
+    },
+    "elska": {
+     "posizione": "in mezzo alla stanza, con un filo teso fra le mani",
+     "attivita": "guarda dove nessun altro guarda"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H03_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Il freddo non viene dalle finestre ma dal pavimento, in un punto preciso."
+    },
+    {
+     "id": "H03_p2",
+     "tratto": "Ascoltare",
+     "nc": 14,
+     "testo": "Si sente un suono come di un cucchiaio che gira in una tazza, e la tazza non c'è."
+    }
+   ]
+  },
+  "H04": {
+   "protagonista": {
+    "posizione": "Sei sul margine del bosco, dove comincia il sentiero",
+    "attivita": "guardi gli alberi bianchi"
+   },
+   "png": {
+    "eiran": {
+     "posizione": "pochi passi avanti, in ginocchio sul sentiero",
+     "attivita": "tocca la corteccia con il palmo e ascolta"
+    },
+    "mjol": {
+     "posizione": "dietro di te, con la lanterna in mano",
+     "attivita": "tiene la luce bassa per non spaventare nessuno"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H04_p1",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Il rumore dei tuoi passi si spegne dopo due metri, come inghiottito."
+    },
+    {
+     "id": "H04_p2",
+     "tratto": "Seguire Tracce",
+     "nc": 14,
+     "testo": "Sul sentiero ci sono impronte che vanno in avanti, e nessuna che torna indietro."
+    }
+   ]
+  },
+  "H05": {
+   "protagonista": {
+    "posizione": "Sei nella radura, accanto al cerchio di pietre",
+    "attivita": "aspetti l'inizio del rito"
+   },
+   "png": {
+    "halvek": {
+     "posizione": "al centro del cerchio, con la mano alzata",
+     "attivita": "chiama tutti al silenzio"
+    },
+    "ragn": {
+     "posizione": "a sinistra, con la tavoletta di rune",
+     "attivita": "ripete a mezza voce i segni"
+    },
+    "elska": {
+     "posizione": "a destra, con i fili in mano",
+     "attivita": "li tende fra le pietre"
+    },
+    "mjol": {
+     "posizione": "ai margini, con la lanterna",
+     "attivita": "guarda gli alberi, non il cerchio"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H05_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Una pietra del cerchio è stata spostata da poco: l'erba sotto è ancora schiacciata."
+    },
+    {
+     "id": "H05_p2",
+     "tratto": "Ascoltare",
+     "nc": 12,
+     "testo": "Il vento si è fermato appena il rito è cominciato."
+    }
+   ]
+  },
+  "H06": {
+   "protagonista": {
+    "posizione": "Sei nella torre, davanti alla finestra dei presagi",
+    "attivita": "guardi le tavolette sul tavolo"
+   },
+   "png": {
+    "ragn": {
+     "posizione": "seduta sul pavimento, con le tavolette intorno",
+     "attivita": "ripassa con il dito un segno inciso poco fa"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H06_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Fra le tavolette ce n'è una con la data di domani."
+    },
+    {
+     "id": "H06_p2",
+     "tratto": "Ascoltare",
+     "nc": 12,
+     "testo": "In alto, fra le travi, c'è un battito d'ali che si ferma quando parli."
+    }
+   ]
+  },
+  "H07": {
+   "protagonista": {
+    "posizione": "Sei nella casa degli spettri, al centro della stanza",
+    "attivita": "ascolti tre voci che dicono lo stesso nome"
+   },
+   "png": {
+    "liva": {
+     "posizione": "in tre punti diversi della stanza",
+     "attivita": "ripete la stessa frase con tre voci"
+    },
+    "elska": {
+     "posizione": "accanto alla porta, con un filo in mano",
+     "attivita": "aspetta che sia tu a scegliere a chi rispondere"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H07_p1",
+     "tratto": "Percezione",
+     "nc": 14,
+     "testo": "Le tre figure non proiettano la stessa ombra."
+    },
+    {
+     "id": "H07_p2",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Le tre voci si interrompono nello stesso istante, anche quando parlano a tempi diversi."
+    }
+   ]
+  },
+  "H08": {
+   "protagonista": {
+    "posizione": "Sei nella bottega, fra gli attrezzi appesi",
+    "attivita": "guardi gli oggetti che Soren ha costruito"
+   },
+   "png": {
+    "soren": {
+     "posizione": "al banco, con un pezzo di legno in mano",
+     "attivita": "lo gira e lo rigira senza lavorarlo"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H08_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Alcuni attrezzi sono troppo ben fatti per un artigiano di una Stad minore."
+    },
+    {
+     "id": "H08_p2",
+     "tratto": "Ascoltare",
+     "nc": 12,
+     "testo": "Ogni tanto Soren mormora parole in una lingua che qui nessuno parla."
+    }
+   ]
+  },
+  "H09": {
+   "protagonista": {
+    "posizione": "Sei davanti al primo albero, a mani vuote",
+    "attivita": "ascolti il bosco rispondere a ciò che senti"
+   },
+   "png": {
+    "eiran": {
+     "posizione": "con il palmo sul tronco",
+     "attivita": "chiude gli occhi e respira piano"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H09_p1",
+     "tratto": "Percezione",
+     "nc": 12,
+     "testo": "Le radici ai tuoi piedi si sono spostate da quando {sei arrivato|sei arrivata|sei qui}."
+    },
+    {
+     "id": "H09_p2",
+     "tratto": "Intuito Olfattivo",
+     "nc": 13,
+     "testo": "L'aria sa di pioggia, anche se il cielo è limpido."
+    }
+   ]
+  },
+  "H10": {
+   "protagonista": {
+    "posizione": "Sei nel magazzino dei fili, fra le matasse appese",
+    "attivita": "guardi dove i fili si incrociano"
+   },
+   "png": {
+    "elska": {
+     "posizione": "ferma in mezzo ai fili, con le dita tese",
+     "attivita": "cerca il filo che si è sciolto"
+    },
+    "liva": {
+     "posizione": "appoggiata a uno scaffale",
+     "attivita": "segue i fili con lo sguardo, uno per uno"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H10_p1",
+     "tratto": "Percezione",
+     "nc": 14,
+     "testo": "Un filo non è legato a nulla ma è teso come se lo fosse."
+    },
+    {
+     "id": "H10_p2",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "I fili vibrano tutti insieme quando Elska parla."
+    }
+   ]
+  },
+  "H11": {
+   "protagonista": {
+    "posizione": "Sei sul colle, davanti al cielo che si piega",
+    "attivita": "guardi la piega insieme agli altri"
+   },
+   "png": {
+    "ragn": {
+     "posizione": "in piedi sul bordo, con le tavolette strette al petto",
+     "attivita": "legge i segni nel cielo"
+    },
+    "elska": {
+     "posizione": "accanto a te, con i fili in mano",
+     "attivita": "li tiene fermi, perché non vibrino"
+    },
+    "soren": {
+     "posizione": "un passo indietro, con le mani nelle tasche",
+     "attivita": "guarda il cielo come se lo conoscesse"
+    },
+    "eiran": {
+     "posizione": "più in basso, sul sentiero",
+     "attivita": "tiene una mano sulla corteccia di un albero"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H11_p1",
+     "tratto": "Percezione",
+     "nc": 14,
+     "testo": "Gli uccelli volano tutti nella stessa direzione, lontano dalla piega."
+    },
+    {
+     "id": "H11_p2",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Il suono arriva con un attimo di ritardo, come in una grotta."
+    }
+   ]
+  },
+  "H12": {
+   "protagonista": {
+    "posizione": "Sei al margine del nodo, davanti alla fessura",
+    "attivita": "ascolti qualcuno che soffre in silenzio"
+   },
+   "png": {
+    "soren": {
+     "posizione": "accanto alla fessura, con una mano appoggiata",
+     "attivita": "non ha il coraggio di entrare"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H12_p1",
+     "tratto": "Ascoltare",
+     "nc": 14,
+     "testo": "Dalla fessura viene un respiro lento che segue il tuo."
+    },
+    {
+     "id": "H12_p2",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Le pareti della fessura sono lisce come se qualcuno le avesse accarezzate per anni."
+    }
+   ]
+  },
+  "H13": {
+   "protagonista": {
+    "posizione": "Sei di nuovo davanti al primo albero, ora con le foglie in movimento",
+    "attivita": "guardi il bosco svegliarsi"
+   },
+   "png": {
+    "eiran": {
+     "posizione": "inginocchiato davanti all'albero",
+     "attivita": "sussurra, e non è chiaro a chi"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H13_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Le radici formano un disegno che somiglia ai fili del magazzino."
+    },
+    {
+     "id": "H13_p2",
+     "tratto": "Ascoltare",
+     "nc": 12,
+     "testo": "Ogni foglia, muovendosi, produce un tono diverso."
+    }
+   ]
+  },
+  "H14": {
+   "protagonista": {
+    "posizione": "Sei sul margine del nodo, dove l'aria si fa immobile",
+    "attivita": "aspetti chi sta per arrivare"
+   },
+   "png": {
+    "elska": {
+     "posizione": "avanti, con i fili tesi davanti a sé",
+     "attivita": "guarda i custodi che si avvicinano"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H14_p1",
+     "tratto": "Percezione",
+     "nc": 14,
+     "testo": "I custodi non lasciano orme."
+    },
+    {
+     "id": "H14_p2",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Il loro avanzare non fa alcun rumore, ma il bosco tace al loro passaggio."
+    }
+   ]
+  },
+  "H15": {
+   "protagonista": {
+    "posizione": "Sei a Hrafnvik, nella piazza dove si decide",
+    "attivita": "ascolti che cosa chiede ciascuno"
+   },
+   "png": {
+    "halvek": {
+     "posizione": "al centro, in piedi",
+     "attivita": "tiene le mani aperte, in segno di ascolto"
+    },
+    "ragn": {
+     "posizione": "a sinistra, con le tavolette",
+     "attivita": "aspetta che tu parli per leggere"
+    },
+    "mjol": {
+     "posizione": "fra la folla",
+     "attivita": "guarda il posto vuoto a tavola"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H15_p1",
+     "tratto": "Percezione",
+     "nc": 12,
+     "testo": "Qualcuno ha apparecchiato un posto in più, davanti a tutti."
+    },
+    {
+     "id": "H15_p2",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Quando parla Halvek, la folla respira insieme."
+    }
+   ]
+  },
+  "H16": {
+   "protagonista": {
+    "posizione": "Sei nella radura, dentro il cerchio di pietre",
+    "attivita": "aspetti di decidere la forma della libertà"
+   },
+   "png": {
+    "halvek": {
+     "posizione": "al centro del cerchio",
+     "attivita": "non alza la voce"
+    },
+    "ragn": {
+     "posizione": "accanto alle pietre",
+     "attivita": "legge un segno che non ha mai visto"
+    },
+    "elska": {
+     "posizione": "vicino al bordo",
+     "attivita": "ha tagliato i fili"
+    },
+    "eiran": {
+     "posizione": "più in là, ai margini del bosco",
+     "attivita": "ascolta le radici"
+    },
+    "soren": {
+     "posizione": "accanto al fuoco",
+     "attivita": "si guarda le mani"
+    },
+    "liva": {
+     "posizione": "fra due pietre",
+     "attivita": "è una sola, per la prima volta"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H16_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Il cerchio di pietre è più largo di come lo ricordavi."
+    },
+    {
+     "id": "H16_p2",
+     "tratto": "Ascoltare",
+     "nc": 12,
+     "testo": "Per un attimo tutti respirano insieme."
+    }
+   ]
+  },
+  "H17": {
+   "protagonista": {
+    "posizione": "Sei a Hrafnvik, a una mattina di distanza dal rito",
+    "attivita": "guardi come è cambiata la Stad"
+   },
+   "png": {
+    "ragn": {
+     "posizione": "alla finestra della torre",
+     "attivita": "ripone una tavoletta"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "H17_p1",
+     "tratto": "Percezione",
+     "nc": 12,
+     "testo": "Alcune case hanno aperto le imposte, altre le tengono ancora chiuse."
+    }
+   ]
+  }
+ }
+}

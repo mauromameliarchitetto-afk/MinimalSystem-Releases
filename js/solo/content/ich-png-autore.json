@@ -1,0 +1,892 @@
+{
+ "formato": "rm-solo-png-autore/1",
+ "storia": "ich",
+ "stato": "proposta (2026-10-18): distillato dagli script e dalle giocate dell'autore; non caricato dal motore; da approvare",
+ "avviso": "I campi pubblici non contengono nulla di riservato (scripts/solo-riservato.js); il riservato sta in `riservato` con la condizione di rivelazione. I personaggi dei giocatori (scripts/solo-pg-autore.js) non sono PNG e nelle trame sono anonimi («[PG]»); `trama` indica la fonte (le tre giocate di Eidos restano separate).",
+ "fonti": {
+  "documenti": 48,
+  "script_e_giocate": [
+   "script"
+  ]
+ },
+ "png": [
+  {
+   "nome": "Knut",
+   "righe": 170,
+   "file": 29,
+   "arco": {
+    "dal": 0.04,
+    "al": 0.87
+   },
+   "obiettivo": {
+    "testo": "Restare accanto a [PG] e capire che cosa cercano coloro che li incalzano",
+    "certezza": "esplicita",
+    "fonte": [
+     "9 - Cutting edge",
+     "6 - Memories"
+    ]
+   },
+   "paura": {
+    "testo": "Che il legame con [PG] si spezzi",
+    "certezza": "esplicita",
+    "fonte": [
+     "9 - Cutting edge",
+     "6 - Memories"
+    ]
+   },
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 20.2,
+    "brevi": 0.16,
+    "domande": 0.29,
+    "puntini": 0.01,
+    "esclamazioni": 0.04,
+    "paroleRicorrenti": [
+     "continua",
+     "sento",
+     "frida",
+     "skera",
+     "hersir",
+     "restan"
+    ]
+   },
+   "relazioni": [
+    "Anyja",
+    "Dag",
+    "Arne",
+    "Lucas"
+   ],
+   "trame": [
+    "Ich"
+   ],
+   "riservato": [
+    {
+     "tema": "riservato",
+     "testo": "Knut lo fa perché è quello che vogliono gli Hersir ma dal suo canto vuole capire cosa cercano, perché cercavano la casa degli Asi e chiederà loro se hanno una di queste dimore.",
+     "rivela_se": "mai (canone riservato dell'autore)",
+     "fonte": "9 - Cutting edge.docx"
+    },
+    {
+     "tema": "segreto",
+     "testo": "parleranno [PG] o Knut, non mostreranno il foglio di carta alla guardia, in realtà quel foglio deve conservare il sigillo fino dal capitano",
+     "rivela_se": "condizione non indicata negli script: a cura dell'autore",
+     "fonte": "14 - Data mining.docx"
+    },
+    {
+     "tema": "riservato",
+     "testo": "Knut darà una spiegazione di cosa è successo e dirà che probabilmente stava tracciando i Kyn come specie e stava mandando il messaggio a tutti loro, mentre Arne si è fatta rilevare per via del fatto…",
+     "rivela_se": "ich_truth_therapy",
+     "fonte": "24 - Welcome to home.docx"
+    },
+    {
+     "tema": "riservato",
+     "testo": "Knut sarà l'unico in grado di fargli tenere la rotta seguendo le radici che portano sino alla casa degli Asi.",
+     "rivela_se": "mai (canone riservato dell'autore)",
+     "fonte": "31 - Betrayal.docx"
+    },
+    {
+     "tema": "riservato",
+     "testo": "Knut chiederà a Lucas di hackerare le mura, lui scocciato e impaurito proporrà una sua versione del piano di Knut, lui inizia a strapparsi qualcosa che sembra rimanere incollata come se cucita da dei…",
+     "rivela_se": "ich_truth_therapy",
+     "fonte": "37 - The voice of freedom.docx"
+    }
+   ],
+   "ruolo": "guerriero, compagno e confidente di [PG]"
+  },
+  {
+   "nome": "Saoirse",
+   "righe": 109,
+   "file": 22,
+   "arco": {
+    "dal": 0.06,
+    "al": 0.87
+   },
+   "obiettivo": {
+    "testo": "Convincere il regno di Skjioldland ad appoggiare Brynden",
+    "certezza": "esplicita",
+    "fonte": [
+     "11 - Ghosts",
+     "28 - Figth for your skin"
+    ]
+   },
+   "paura": null,
+   "bisogno": {
+    "testo": "Appoggio politico per Brynden",
+    "certezza": "esplicita",
+    "fonte": [
+     "11 - Ghosts",
+     "28 - Figth for your skin"
+    ]
+   },
+   "voce": {
+    "paroleMedie": 27.3,
+    "brevi": 0.04,
+    "domande": 0.21,
+    "puntini": 0.01,
+    "esclamazioni": 0.0,
+    "paroleRicorrenti": [
+     "saoirse",
+     "onore",
+     "siate",
+     "mastro",
+     "avrete",
+     "palazzo"
+    ]
+   },
+   "relazioni": [
+    "Brynden",
+    "Runi",
+    "Bjorta",
+    "Ecbert"
+   ],
+   "trame": [
+    "Ich"
+   ],
+   "riservato": [],
+   "ruolo": "donna di potere a palazzo, alleata politica di Brynden"
+  },
+  {
+   "nome": "Runi",
+   "righe": 103,
+   "file": 17,
+   "arco": {
+    "dal": 0.04,
+    "al": 0.87
+   },
+   "obiettivo": {
+    "testo": "Dare a sé e ad [PG] un nuovo inizio, il simbolo di Dagaz",
+    "certezza": "dedotta",
+    "fonte": [
+     "16 - Crossroads - pt2",
+     "10 - Fog connections"
+    ]
+   },
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 20.3,
+    "brevi": 0.1,
+    "domande": 0.34,
+    "puntini": 0.0,
+    "esclamazioni": 0.0,
+    "paroleRicorrenti": [
+     "occhi",
+     "cercando",
+     "piedi",
+     "morire",
+     "volte"
+    ]
+   },
+   "relazioni": [
+    "Saoirse",
+    "Ulfrida",
+    "Bjorta",
+    "Amèlie"
+   ],
+   "trame": [
+    "Ich"
+   ],
+   "riservato": [
+    {
+     "tema": "riservato",
+     "testo": "Runi ha una sorta di virus al suo interno o parte di un programma che non dovrebbe avere - Bannsith.",
+     "rivela_se": "ich_truth_therapy",
+     "fonte": "10 - Fog connections.docx"
+    }
+   ],
+   "ruolo": "compagno impulsivo di [PG], corre nelle relazioni come nei movimenti"
+  },
+  {
+   "nome": "Thomas",
+   "righe": 63,
+   "file": 9,
+   "arco": {
+    "dal": 0.11,
+    "al": 0.57
+   },
+   "obiettivo": {
+    "testo": "Aiutare coloro che sono il futuro a diventare reali",
+    "certezza": "esplicita",
+    "fonte": [
+     "17 - Wyrd of Erdegis"
+    ]
+   },
+   "paura": {
+    "testo": "Perdere ancora, dopo quanto ha già perso",
+    "certezza": "esplicita",
+    "fonte": [
+     "17 - Wyrd of Erdegis"
+    ]
+   },
+   "bisogno": {
+    "testo": "Il perdono di [PG], per gli errori da padre",
+    "certezza": "dedotta",
+    "fonte": [
+     "17 - Wyrd of Erdegis"
+    ]
+   },
+   "voce": {
+    "paroleMedie": 23.1,
+    "brevi": 0.11,
+    "domande": 0.19,
+    "puntini": 0.0,
+    "esclamazioni": 0.0,
+    "paroleRicorrenti": [
+     "thomas",
+     "speranza",
+     "ognuno",
+     "giorno",
+     "corpo",
+     "nostro"
+    ]
+   },
+   "relazioni": [
+    "George",
+    "Anastasia",
+    "Alikea",
+    "Knut"
+   ],
+   "trame": [
+    "Ich"
+   ],
+   "riservato": [],
+   "ruolo": "padre di [PG], voce del labirinto"
+  },
+  {
+   "nome": "Anyja",
+   "righe": 46,
+   "file": 15,
+   "arco": {
+    "dal": 0.04,
+    "al": 1.0
+   },
+   "obiettivo": {
+    "testo": "Difendere la propria terra e il clan dagli intrusi",
+    "certezza": "esplicita",
+    "fonte": [
+     "1 - When the lights go out",
+     "13 - Unravel the skein"
+    ]
+   },
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 16.9,
+    "brevi": 0.04,
+    "domande": 0.33,
+    "puntini": 0.0,
+    "esclamazioni": 0.02,
+    "paroleRicorrenti": [
+     "anyja",
+     "osserva"
+    ]
+   },
+   "relazioni": [
+    "Dag",
+    "Knut",
+    "Egil",
+    "Bjorta"
+   ],
+   "trame": [
+    "Ich"
+   ],
+   "riservato": [],
+   "ruolo": "cacciatrice del clan, schietta e protettiva"
+  },
+  {
+   "nome": "Evan",
+   "righe": 42,
+   "file": 9,
+   "arco": {
+    "dal": 0.15,
+    "al": 0.87
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 22.7,
+    "brevi": 0.07,
+    "domande": 0.26,
+    "puntini": 0.02,
+    "esclamazioni": 0.0,
+    "paroleRicorrenti": [
+     "mondo"
+    ]
+   },
+   "relazioni": [
+    "Bernard",
+    "Esprit",
+    "Raven",
+    "Scott"
+   ],
+   "trame": [
+    "Ich"
+   ],
+   "riservato": [],
+   "ruolo": "figura politica ambiziosa, sicura di sé"
+  },
+  {
+   "nome": "Lucas",
+   "righe": 40,
+   "file": 11,
+   "arco": {
+    "dal": 0.45,
+    "al": 1.0
+   },
+   "obiettivo": {
+    "testo": "Recuperare i dati e aiutare gli altri a tornare indietro",
+    "certezza": "esplicita",
+    "fonte": [
+     "20 - How to, who to be",
+     "29 - Fight for your skin"
+    ]
+   },
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 19.1,
+    "brevi": 0.1,
+    "domande": 0.35,
+    "puntini": 0.03,
+    "esclamazioni": 0.05,
+    "paroleRicorrenti": [
+     "lucas",
+     "altri",
+     "tempo"
+    ]
+   },
+   "relazioni": [
+    "Knut",
+    "Ava",
+    "Dawn",
+    "Arne"
+   ],
+   "trame": [
+    "Ich"
+   ],
+   "riservato": [
+    {
+     "tema": "riservato",
+     "testo": "Lucas inizia la procedura di modifica dei Reverie e del collegamento diretto al core.",
+     "rivela_se": "ich_truth_therapy",
+     "fonte": "29 - Fight for your sky pt2.docx"
+    }
+   ],
+   "ruolo": "tecnico del gruppo, esperto di dati"
+  },
+  {
+   "nome": "Gaia",
+   "righe": 39,
+   "file": 6,
+   "arco": {
+    "dal": 0.0,
+    "al": 0.87
+   },
+   "obiettivo": {
+    "testo": "Riportare al sicuro il gruppo e ciò che ha recuperato",
+    "certezza": "esplicita",
+    "fonte": [
+     "18 - The heart of the world"
+    ]
+   },
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 24.8,
+    "brevi": 0.05,
+    "domande": 0.38,
+    "puntini": 0.0,
+    "esclamazioni": 0.0,
+    "paroleRicorrenti": [
+     "comunque",
+     "dentro",
+     "mondo",
+     "siamo"
+    ]
+   },
+   "relazioni": [
+    "Sam",
+    "Amelia",
+    "Knut",
+    "Picchietta"
+   ],
+   "trame": [
+    "Ich"
+   ],
+   "riservato": [],
+   "ruolo": "ricercatrice che guida il gruppo nelle missioni"
+  },
+  {
+   "nome": "Bjorta",
+   "righe": 39,
+   "file": 14,
+   "arco": {
+    "dal": 0.21,
+    "al": 0.85
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 24.3,
+    "brevi": 0.0,
+    "domande": 0.23,
+    "puntini": 0.03,
+    "esclamazioni": 0.1,
+    "paroleRicorrenti": [
+     "bjorta",
+     "dello",
+     "padre",
+     "uomini",
+     "bhorkyn",
+     "città"
+    ]
+   },
+   "relazioni": [
+    "Knut",
+    "Egil",
+    "Saoirse",
+    "Dag"
+   ],
+   "trame": [
+    "Ich"
+   ],
+   "riservato": [],
+   "ruolo": null
+  },
+  {
+   "nome": "Brynden",
+   "righe": 37,
+   "file": 11,
+   "arco": {
+    "dal": 0.49,
+    "al": 0.87
+   },
+   "obiettivo": {
+    "testo": "Inseguire i nemici e spingersi a ovest",
+    "certezza": "esplicita",
+    "fonte": [
+     "38 - Plan b",
+     "40 - Existence"
+    ]
+   },
+   "paura": null,
+   "bisogno": {
+    "testo": "Appoggio politico",
+    "certezza": "esplicita",
+    "fonte": [
+     "38 - Plan b",
+     "40 - Existence"
+    ]
+   },
+   "voce": {
+    "paroleMedie": 27.4,
+    "brevi": 0.08,
+    "domande": 0.19,
+    "puntini": 0.0,
+    "esclamazioni": 0.11,
+    "paroleRicorrenti": [
+     "brynden",
+     "fratello",
+     "nemico",
+     "spada",
+     "nostra",
+     "nostro"
+    ]
+   },
+   "relazioni": [
+    "Saoirse",
+    "Ecbert",
+    "Rend",
+    "Vodrick"
+   ],
+   "trame": [
+    "Ich"
+   ],
+   "riservato": [],
+   "ruolo": "comandante, fratello di un oratore, bisognoso di appoggi politici"
+  },
+  {
+   "nome": "Amelia",
+   "righe": 34,
+   "file": 9,
+   "arco": {
+    "dal": 0.06,
+    "al": 0.87
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 20.6,
+    "brevi": 0.03,
+    "domande": 0.15,
+    "puntini": 0.03,
+    "esclamazioni": 0.09,
+    "paroleRicorrenti": [
+     "amelia"
+    ]
+   },
+   "relazioni": [
+    "Antoine",
+    "Gaia",
+    "Runi",
+    "L’uomo"
+   ],
+   "trame": [
+    "Ich"
+   ],
+   "riservato": [
+    {
+     "tema": "riservato",
+     "testo": "Amelia poi racconterà delle pire dei nove giorni e Bjorta sentendo la cosa le chiederà quanti di loro erano scalzi, da questo comprenderà quanti reverie dei Bhorkyn sono morti nelle pire.",
+     "rivela_se": "ich_truth_therapy",
+     "fonte": "28 - Figth for your sky.docx"
+    },
+    {
+     "tema": "riservato",
+     "testo": "Amelia andrà ad hackerare prima [PG] e poi [PG].",
+     "rivela_se": "ich_truth_therapy",
+     "fonte": "31 - Betrayal.docx"
+    },
+    {
+     "tema": "riservato",
+     "testo": "Amelia sarà però intenta a studiare il codice dei Kynjager e trovare un sistema per schermare o impedire a questi di uccidere qualsiasi Reverie con un semplice tocco.",
+     "rivela_se": "ich_truth_therapy",
+     "fonte": "33 - Psychological tests.docx"
+    },
+    {
+     "tema": "riservato",
+     "testo": "Amelia è con lei, ma vedono reverie sia di Ourobera che di Skjioldland che di Bhorkyn etc.",
+     "rivela_se": "ich_truth_therapy",
+     "fonte": "40 - Existence.docx"
+    }
+   ],
+   "ruolo": null
+  },
+  {
+   "nome": "Raven",
+   "righe": 31,
+   "file": 8,
+   "arco": {
+    "dal": 0.06,
+    "al": 0.87
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 18.9,
+    "brevi": 0.13,
+    "domande": 0.03,
+    "puntini": 0.03,
+    "esclamazioni": 0.0,
+    "paroleRicorrenti": [
+     "raven",
+     "giustizia",
+     "corvi"
+    ]
+   },
+   "relazioni": [
+    "Knut",
+    "Evan",
+    "Skera",
+    "Anyja"
+   ],
+   "trame": [
+    "Ich"
+   ],
+   "riservato": [],
+   "ruolo": null
+  },
+  {
+   "nome": "Dawn",
+   "righe": 30,
+   "file": 6,
+   "arco": {
+    "dal": 0.4,
+    "al": 0.64
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 22.0,
+    "brevi": 0.03,
+    "domande": 0.07,
+    "puntini": 0.0,
+    "esclamazioni": 0.0,
+    "paroleRicorrenti": [
+     "george",
+     "siete"
+    ]
+   },
+   "relazioni": [
+    "Knut",
+    "Gyda",
+    "Lucas",
+    "Antoine"
+   ],
+   "trame": [
+    "Ich"
+   ],
+   "riservato": [
+    {
+     "tema": "riservato",
+     "testo": "Dawn accende il ciondolo, utilizzando il tablet sembra aver avviato nuovamente qualcosa, mentre [PG] vede i reverie trasformarsi in alberi, in fiori, in piante etc vede Dawn piangere stringendo a…",
+     "rivela_se": "ich_truth_therapy",
+     "fonte": "19 - First day of reality.docx"
+    }
+   ],
+   "ruolo": null
+  },
+  {
+   "nome": "Arne",
+   "righe": 27,
+   "file": 15,
+   "arco": {
+    "dal": 0.11,
+    "al": 0.87
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 14.9,
+    "brevi": 0.19,
+    "domande": 0.26,
+    "puntini": 0.0,
+    "esclamazioni": 0.07,
+    "paroleRicorrenti": []
+   },
+   "relazioni": [
+    "Knut",
+    "Lucas",
+    "Iska",
+    "Hersir Icharn Piumargentea"
+   ],
+   "trame": [
+    "Ich"
+   ],
+   "riservato": [
+    {
+     "tema": "riservato",
+     "testo": "Arne poi mostrerà profondo rispetto verso la morte dei reverie vicini a chi li ha aiutati.",
+     "rivela_se": "ich_truth_therapy",
+     "fonte": "20 - How to, who to be.docx"
+    },
+    {
+     "tema": "riservato",
+     "testo": "Arne sostanzialmente resuscita bruciando ed espandendo le sue fiamme sulla carne di Cirilla e altri reverie loro alleati.",
+     "rivela_se": "ich_truth_therapy",
+     "fonte": "40 - Existence.docx"
+    }
+   ],
+   "ruolo": null
+  }
+ ],
+ "ramificazioni": [
+  {
+   "testo": "Se prova: tiro di fortuna -> se il tiro è buono falle vivere un flash della terra.",
+   "fonte": "1 - When the lights go out.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Se lo raccoglie - dei flash oltrepassano la sua mente, una donna dai capelli folti e i vestiti richiamanti i colori della vegetazione le appare davanti.",
+   "fonte": "1 - When the lights go out.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Se c’è Egil lui chiederà del compito – “un’aquila si leverà in volo quest’oggi, ma il suo manto sarà quello di un orso”",
+   "fonte": "7 - Script.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Se non lo fa – “Frida, posso prendere in prestito la tua lancia?”",
+   "fonte": "7 - Script.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Se serve portali a baciarsi e poi Knut la ferma – “no, torna sana e salva, questo non è un addio… ti do un motivo in più per tornare da me”",
+   "fonte": "10 - Fog connections.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Se continua lui le chiede – “perché vuoi tornare a casa?” e lei “perché è da li che vengo, voglio tornare a casa”",
+   "fonte": "15 - Crossroads.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Se [PG] lo medica – “avrei preferito fosse stato il petto”",
+   "fonte": "29 - Fight for your sky pt2.docx",
+   "trama": "Ich"
+  }
+ ],
+ "colpiDiScena": [
+  {
+   "testo": "Un altro colpo, ma la sua mano sembra bloccarsi all’improvviso.",
+   "fonte": "3 - Identity .docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "La donna inizia ad avanzare contro l’hersir che spostandosi all’improvviso fa impalare una zanna lì presente.",
+   "fonte": "8 - Sun-rise.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Dopo un po' nota che Arne crolla per la stanchezza e anche se cerca di resistere pure lei si addormenta.",
+   "fonte": "10 - Fog connections.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "All’improvviso una scarica passa sulla sua mente, sente una serie di voci che viaggiano rapide dentro la sua testa, come se il mondo stesso pulsasse all’interno della sua mente e il suo corpo.",
+   "fonte": "18 - The heart of the world.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Durante il viaggio, mentre sono di sosta, nota che uno dei due cavalli è morto improvvisamente, sono costrette a continuare con uno solo che sembra non stare bene, ogni tanto fuoriesce della bava nera dalla bocca.",
+   "fonte": "23 - Lies and truth, violence and justice.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Arne le si avvicina le sue piume iniziano a bruciare e Evan sembra voltarsi improvvisamente verso di lei.",
+   "fonte": "24 - Welcome to home.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Grossi ammassi di detriti crollano sulla costa.",
+   "fonte": "37 - The voice of freedom.docx",
+   "trama": "Ich"
+  }
+ ],
+ "conseguenze": [
+  {
+   "testo": "[PG] nel villaggio di sosta ha modo di conoscere la famiglia che li ospiterà in questa parte di viaggio, la donna si chiama Sarker, non ha figli e per questo si impegna ad ospitare i voluspà intenti a viaggiare verso il monte sacro.",
+   "fonte": "2 - Raven.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Se non le va male avrà la situazione in vista.",
+   "fonte": "3 - Identity .docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Troverà una pagina scritta: Mira aspettami dentro, se non mi vedi presto trova una backdoor e portami da te.",
+   "fonte": "3 - Identity .docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "La scelta se non vorrà parlare sarà quella di lasciarlo del tempo con la gamba marcia di fronte alla scogliera, mostrando che nemmeno i corvi si avvicinano più alla sua carne, come se fossero in attesa della sua anima, non del suo corpo.",
+   "fonte": "5 - Aesir.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Da li in poi parlerà dei trattati con gli an Kraken e di conseguenza con i Foa Vanar, non sa molto di più perché lui conosce solo fatti dal punto di vista militare.",
+   "fonte": "5 - Aesir.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Sopra le mura se non lo ha ucciso trova il generale e lo può uccidere.",
+   "fonte": "9 - Cutting edge.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "“beata ignoranza dissero, dovevi proprio scomodarmi per questo Thomas?”",
+   "fonte": "12 - Where is my mind.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "[PG] si muove tra la nebbia, si sveglia vedendo Amèlie accanto a lei che la tiene con la testa sollevata sulle sue ginocchia e un uomo che sembra assicurarsi che lei stia bene, prendendo coscienza capisce di essere su un carro, anche se non comprende bene…",
+   "fonte": "12 - Where is my mind.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "[PG] potrà osservare quanti sono e per questo potrà ascoltare le loro conversazioni e capire se dicono il nome del capo delle guardie (Capitano Hoffmann).",
+   "fonte": "14 - Data mining.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Se non è con lei va da lei e le porge l’altro capo della corda con cui erano legati.",
+   "fonte": "16 - Crossroads - pt2.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Se si nasconde sentirà degli scontri, se non si nasconde vedrà dei lupi che si gettano contro il nemico.",
+   "fonte": "24 - Welcome to home.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Se non la colpiscono vedrà i suoi a terra oltre la nube di fumo e i tribali che le intimano di abbandonare l’arma mentre tengono una lama puntata al collo dei suoi compagni.",
+   "fonte": "29 - Fight for your sky pt2.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "L’intento di Saoirse è quello di mostrare le ferite di chi ha combattuto, per questo [PG] andrà senza elmo e con le fasciature.",
+   "fonte": "31 - Betrayal.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "In questa scena [PG] riprende coscienza dentro la stanza bianca, nota che lo spazio che la circonda è molto stretto, dopodiché nota che il cavo stavolta è collegato alla sua testa, sente dolore al ginocchio anche se non vede ferite.",
+   "fonte": "37 - The voice of freedom.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Il fiordaliso fiorirà, che sia in questo o nel nuovo mondo non ha importanza, so che le nostre idee hanno forza e valore, ed è per questo che vi ho scelta come mio cavaliere [PG].",
+   "fonte": "40 - Existence.docx",
+   "trama": "Ich"
+  }
+ ],
+ "fronti": [
+  {
+   "testo": "Tutto questo sotto minaccia, le dirà che ha bisogno di figure valide come lei, accanto a lui una donna vestita di rosso non sembra emettere una parola, ascolta solamente.",
+   "fonte": "1 - When the lights go out.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Tra i presenti i Kyn si attivano per combattere la minaccia, tra i kynwird alcuni di essi sembrano muoversi in totale armonia con l’ambiente, esso stesso diviene una propagazione della loro mente.",
+   "fonte": "19 - First day of reality.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Dopodiché lascerà l’oggetto a [PG] e inizierà ad osservare la terra sotto i suoi piedi, si allontana leggermente da loro accarezzando un Klover senza strapparlo, fa giusto in tempo ad allontanarsi prima che una lancia la colpisca, finendo per strappare il…",
+   "fonte": "24 - Welcome to home.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Proverà a mettersi in contatto con lei ma dovrà guadagnarsi la sua fiducia prima che lei le risponda.",
+   "fonte": "26 - A new world order.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Osserva un conto alla rovescia che scade in tutta rapidità.",
+   "fonte": "29 - Fight for your sky pt2.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Lucas osserva preoccupato lo scadere del tempo, trovando e scavalcando mille procedure di limitazione.",
+   "fonte": "29 - Fight for your sky pt2.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Detto questo la preoccupazione di Brynden sarà quella di capire quante navi gli sono rimaste per il rientro e Knut farà emergere che è probabile che lascino l’isola piuttosto che venire uccisi, se scappano non devono farlo con le altre navi o loro potrebbero…",
+   "fonte": "38 - Plan b.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Piano piano il sistema torna al suo stadio prima che i kyn lo rendessero reale.",
+   "fonte": "40 - Existence.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Cirilla si avvicina alla sua sedia e lo folgora ancora prima che lui stringa il ciondolo sul collo",
+   "fonte": "40 - Existence.docx",
+   "trama": "Ich"
+  },
+  {
+   "testo": "Lascia a loro le ultime mosse, dovranno raggiungere il Kynhjarta e iniziare la procedura prima che Gaia si spenga.",
+   "fonte": "40 - Existence.docx",
+   "trama": "Ich"
+  }
+ ]
+}

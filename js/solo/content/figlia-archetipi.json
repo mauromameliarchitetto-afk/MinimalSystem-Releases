@@ -1,0 +1,254 @@
+{
+ "formato": "rm-solo-archetipi/1",
+ "storia": "eidos",
+ "versione": "0.1.0",
+ "avviso": "Trama «La figlia prediletta». Il nome della protagonista è approvato; classe e valori meccanici sono proposti: da approvare.",
+ "archetipi": [
+  {
+   "id": "alkmene",
+   "versione": "0.1.0",
+   "stato_editoriale": "bozza",
+   "fixture_interna": false,
+   "fonte": "docs/single-player/trame/SCHEMA_LA_FIGLIA_PREDILETTA.md (schema approvato il 30/10); EIDOS.md §4.4 r.243-280",
+   "nome": "Alkmene",
+   "genere": "femminile",
+   "popolazione": "Epizi",
+   "citta": "Menessa",
+   "mansione": "Soldata epizia della squadra di Teersa",
+   "ritratto": "img/solo/ritratti/eidos-neris.webp",
+   "ritratto_alt": "Volto di Alkmene, soldata epizia",
+   "build": "guerriero",
+   "background": "La figlia maggiore di Anastasios Katastasis, il mecenate di Menessa. Soldata epizia: fa da scorta al padre fino a Ione, e lì entra nella squadra di recupero della sergente Teersa.",
+   "obiettivo": "Scoprire chi sei davvero.",
+   "missione_iniziale": "Fare da scorta a tuo padre fino a Ione e poi a Gorgis.",
+   "capitolo": "figlia-trama",
+   "primary": {
+    "hp": 8,
+    "mp": 2,
+    "for": 6,
+    "mira": 4,
+    "vel": 4,
+    "fmen": 2,
+    "dex": 5,
+    "dif": 6,
+    "dmen": 3
+   },
+   "tertiary": {
+    "stile": 2,
+    "fortuna": 1,
+    "carisma": 2
+   },
+   "traits": {
+    "conoscenze": {
+     "Politica": 2,
+     "Sopravvivenza": 2,
+     "Flora": 1
+    },
+    "capacitaNormali": {
+     "Percezione": 2,
+     "Intimidire": 2,
+     "Ascoltare": 1
+    },
+    "capacitaCombattive": {
+     "Arte Combattiva": 2,
+     "Resistenza": 2,
+     "Tattica Militare": 1
+    }
+   },
+   "tecniche": [
+    {
+     "id": "epizi.affondo_assistito",
+     "nome": "Affondo assistito",
+     "categoria": "tecnica",
+     "tipoAzione": "attacco",
+     "bersaglio": "singolo nemico",
+     "dannoBase": 8,
+     "effetto": "Attacco fisico: danno base 8 + Forza",
+     "costoMP": 0,
+     "risorsaSpeciale": null,
+     "costoRisorsaSpeciale": 0,
+     "forzatura": {
+      "consentita": false,
+      "costoVitalita": null
+     },
+     "utilizziMassimi": "utilizziLimitFor",
+     "durataTurni": 0,
+     "condizioniUso": [],
+     "bonus": [],
+     "malus": [],
+     "livelloRichiesto": 1,
+     "slotRichiesti": 1,
+     "tipo": "danno",
+     "lv": 1,
+     "stat": "for",
+     "descrizione": "Attacco fisico spinto dalla corazza.",
+     "content_status": "approved",
+     "approvazione": {
+      "decisione": "autore-2026-11-07",
+      "ambito": "scelta della tecnica (DECISIONI_AUTORE §15 J.5)"
+     },
+     "fonte": "Approvata dall'autore (7/11/2026, DECISIONI_AUTORE §15 I.4h e J): dal catalogo di Eidos (epizi, guerriero), fonte del catalogo: V4 (Neris). Motivo: soldata epizia: l'arma è parte della corazza (premessa di Eidos), l'attacco è spinto dalla corazza connessa."
+    },
+    {
+     "id": "epizi.assetto_di_tenuta",
+     "nome": "Assetto di tenuta",
+     "categoria": "tecnica",
+     "tipoAzione": "supporto",
+     "bersaglio": "sé",
+     "dannoBase": 0,
+     "effetto": "+2 Difesa, −1 Velocità per 1 turno",
+     "costoMP": 0,
+     "risorsaSpeciale": null,
+     "costoRisorsaSpeciale": 0,
+     "forzatura": {
+      "consentita": false,
+      "costoVitalita": null
+     },
+     "utilizziMassimi": "utilizziLimitFor",
+     "durataTurni": 1,
+     "condizioniUso": [],
+     "bonus": [],
+     "malus": [],
+     "livelloRichiesto": 1,
+     "slotRichiesti": 1,
+     "tipo": "supporto",
+     "lv": 1,
+     "stat": null,
+     "descrizione": "La corazza si irrigidisce: più difesa, meno scatto.",
+     "bonusStat": {
+      "dif": 2,
+      "vel": -1
+     },
+     "content_status": "approved",
+     "approvazione": {
+      "decisione": "autore-2026-11-07",
+      "ambito": "scelta della tecnica (DECISIONI_AUTORE §15 J.5)"
+     },
+     "fonte": "Approvata dall'autore (7/11/2026, DECISIONI_AUTORE §15 I.4h e J): dal catalogo di Eidos (epizi, guerriero), fonte del catalogo: V4 (Neris). Motivo: scorta del padre fino a Ione e squadra di recupero della sergente Teersa (EIDOS.md §4.4, [V2 Cap.1-2]): tenere la linea con la corazza."
+    }
+   ],
+   "abilita": [],
+   "equip": [
+    {
+     "id": "arma_integrata",
+     "tipo": "arma",
+     "nome": "Arma integrata corta",
+     "taglia": "corte",
+     "qualita": "media",
+     "atk": 12,
+     "dif": 14,
+     "durabilita": 120,
+     "resistenza": null,
+     "descrizione": "Arma corta fusa con la corazza: la tecnologia epizia la rende più precisa.",
+     "fonteCanone": "EP p.11; EImm eidos-epizi-finale (armi parte dell'armatura); per Alkmene PROPOSTA, da approvare: si allena con un bastone lungo [V2 Cap.4 r.5-12] e la tuta nuova ha «una coda sul braccio destro» [V2 Cap.4 r.84-86]",
+     "base": "arma_corta_media",
+     "content_status": "proposed"
+    },
+    {
+     "id": "corazza",
+     "tipo": "armatura",
+     "nome": "Corazza connessa",
+     "taglia": "medie",
+     "qualita": "media",
+     "atk": 8,
+     "dif": 15,
+     "durabilita": 180,
+     "resistenza": null,
+     "descrizione": "Armatura d'essenza di Tèras, comandata con i sensori sul volto: la vera forza dell'Epizio.",
+     "fonteCanone": "EP p.11; EImm eidos-epizi-finale; per Alkmene PROPOSTA, da approvare: la tuta epizia che si rigenera [V2 Cap.3 r.68-71]",
+     "base": "corazza_media_media",
+     "content_status": "proposed"
+    }
+   ],
+   "legami_iniziali": [
+    {
+     "png": "anastasios",
+     "natura": "il padre, a cui fa da scorta fino a Ione e poi a Gorgis [V2 Cap.1 r.35]"
+    }
+   ],
+   "conoscenze": [],
+   "segreti_narratore": [
+    "Porta dentro l'eco di una dei cinque Sopiti (riservato fino alla scena 21; EIDOS.md r.254, r.258)."
+   ],
+   "occasioni_sviluppo": [
+    {
+     "atto": 1,
+     "possibilita": "Il peso del nome di famiglia e la fiducia di Teersa."
+    },
+    {
+     "atto": 2,
+     "possibilita": "Il legame con Dimitri e il prezzo di Lechta."
+    },
+    {
+     "atto": 3,
+     "possibilita": "Scoprire chi è davvero, e proteggere il bambino."
+    }
+   ],
+   "campaign_id": "figlia-trama",
+   "content_status": "proposed",
+   "act": [
+    1,
+    2,
+    3
+   ],
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "docs/single-player/trame/SCHEMA_LA_FIGLIA_PREDILETTA.md (schema approvato il 30/10); EIDOS.md §4.4 r.243-280: nome approvato (EIDOS.md r.407); classe Guerriero (EIDOS.md r.274: «Eclettico o Guerriero», PROPOSTA) e valori meccanici dal preset epizio più vicino, con i tratti del mestiere: da approvare; nessun tratto Arkè (r.276); gli slot delle tecniche restano vuoti in attesa dell'autore",
+   "ontologia": {
+    "entityType": "personaggio_giocabile",
+    "peopleId": "epizi",
+    "factionId": "epizi",
+    "cultureId": null,
+    "regionId": "menessa",
+    "roleId": "soldata_epizia",
+    "creatureFamilyId": null,
+    "socialClassId": null,
+    "corporationId": null,
+    "playable": true,
+    "playerVisible": true,
+    "narratorOnly": [],
+    "statoAffiliazione": "confermata",
+    "fonti": {
+     "factionId": "trama: EIDOS.md r.57 (popolo: Epizi)",
+     "peopleId": "trama: EIDOS.md r.57 e r.273",
+     "regionId": "trama: Menessa, città del mecenate Anastasios [V2 Cap.2 r.24]; EIDOS.md r.15"
+    },
+    "dubbi": []
+   },
+   "approvazioneMeccanica": {
+    "id": "da-approvare",
+    "stato": "da approvare (protagonista di trama)",
+    "fonte": "docs/DECISIONI_AUTORE.md §2: l'approvazione dei preset del 2026-10-01 riguarda i personaggi delle avventure di prova ed è superata; i protagonisti delle trame si approvano uno per uno.",
+    "ambito": "Valori meccanici proposti (dal preset epizio più vicino, con i tratti del mestiere): da approvare."
+   },
+   "inventarioIniziale": [
+    {
+     "id": "eidos_razione_da_campo",
+     "qty": 1
+    }
+   ],
+   "approvazioneDotazioni": {
+    "id": "da-approvare",
+    "stato": "da approvare (protagonista di trama)",
+    "fonte": "docs/DECISIONI_AUTORE.md §2: l'approvazione dei preset del 2026-10-01 riguarda i personaggi delle avventure di prova ed è superata; i protagonisti delle trame si approvano uno per uno.",
+    "ambito": "Arma e corazza epizie del catalogo (PROPOSTA) e zaino iniziale: da approvare."
+   },
+   "slotVacanti": []
+  }
+ ],
+ "formato_capacita": "rm-solo-capacita/1",
+ "legenda_fonti": {
+  "R": "regolamento dell'app",
+  "D": "documento Campagne e 15 archetipi V1",
+  "A": "regola approvata dall'autore (revisione gemme)",
+  "P": "proposta da approvare"
+ }
+}

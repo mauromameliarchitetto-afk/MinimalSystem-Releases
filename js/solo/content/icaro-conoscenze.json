@@ -1,0 +1,125 @@
+{
+ "formato": "conoscenze-v1",
+ "storia": "icaro",
+ "statoApprovazione": "contenuto di prova (pilota tecnico): solo testi già presenti nella scena I01, nessun fatto nuovo. Le voci vere le prepara il consulente dalle trame approvate (docs/single-player/trame/), con la fonte accanto a ogni voce, e l'autore approva in blocco. Gli approcci alternativi (Intimidire) e le loro difficoltà sono valori di prova.",
+ "png": {
+  "jax": {
+   "schede": [
+    {
+     "id": "jax_otto_minuti",
+     "scene": [
+      "I01"
+     ],
+     "argomenti": [
+      "otto minuti",
+      "linea straordinaria",
+      "durata",
+      "chi ha deciso",
+      "fusione"
+     ],
+     "fatto": "dettaglio_locale",
+     "sensibile": false,
+     "livelli": {
+      "minimo": [
+       {
+        "testo": "«È quanto regge la linea straordinaria senza fondere.»",
+        "fonte": "scene.I01.dialoghi.jax.argomenti.I01_jax_2.riserva"
+       }
+      ],
+      "pieno": [
+       {
+        "testo": "Jax batte la mano sul pannello. «Otto minuti ogni tanto. Ogni volta dobbiamo scegliere dove mandarli.»",
+        "fonte": "scene.I01.dialoghi.jax.argomenti.I01_jax_2.riserva"
+       }
+      ],
+      "critico": [
+       {
+        "testo": "Jax fa una smorfia.",
+        "fonte": "scene.I01.dialoghi.jax.argomenti.I01_jax_3.riserva"
+       },
+       {
+        "testo": "«Da allora gli otto minuti si dividono per tre invece che per due.»",
+        "fonte": "scene.I01.dialoghi.jax.argomenti.I01_jax_3.riserva"
+       }
+      ]
+     },
+     "difficolta": {
+      "tratto": "Persuasione",
+      "nc": 12
+     },
+     "devia": {
+      "testo": "«Non ho tempo per le presentazioni. Ho tempo per le domande utili. Fanne una.»",
+      "fonte": "scene.I01.dialoghi.jax.apertura"
+     },
+     "tipi": [
+      "cosa",
+      "perche",
+      "come"
+     ],
+     "approcci": [
+      {
+       "tratto": "Intimidire",
+       "nc": 14
+      }
+     ],
+     "nonSa": {
+      "testo": "«Non è roba mia.»",
+      "fonte": "scene.I01.dialoghi.jax.argomenti.I01_jax_3.riserva"
+     }
+    },
+    {
+     "id": "jax_calore_dissipatori",
+     "scene": [
+      "I01"
+     ],
+     "argomenti": [
+      "calore",
+      "dissipatori",
+      "tecnici",
+      "fabbriche",
+      "fascia bassa"
+     ],
+     "fatto": "dettaglio_locale",
+     "sensibile": false,
+     "livelli": {
+      "minimo": [
+       {
+        "testo": "«Le case della fascia bassa perdono calore in un'ora. Poi l'acqua ghiaccia nei tubi, poi la gente.»",
+        "fonte": "scene.I01.dialoghi.jax.argomenti.I01_jax_1.riserva"
+       }
+      ],
+      "pieno": [
+       {
+        "testo": "Jax non alza la voce. «In quest'ordine.»",
+        "fonte": "scene.I01.dialoghi.jax.argomenti.I01_jax_1.riserva"
+       }
+      ],
+      "critico": [
+       {
+        "testo": "Rossa per le case: temperatura in calo. Gialla per l'ossigeno: riserva al limite.",
+        "fonte": "scene.I01.sviluppo.esplora.I01d1.riserva"
+       }
+      ]
+     },
+     "difficolta": {
+      "tratto": "Persuasione",
+      "nc": 11
+     },
+     "devia": {
+      "testo": "Jax torna ai manometri. «Hai la chiave. Io non la voglio. Scegli tu, così la colpa è tua.»",
+      "fonte": "scene.I01.dialoghi.jax.chiusura"
+     },
+     "tipi": [
+      "cosa"
+     ],
+     "approcci": [
+      {
+       "tratto": "Intimidire",
+       "nc": 13
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

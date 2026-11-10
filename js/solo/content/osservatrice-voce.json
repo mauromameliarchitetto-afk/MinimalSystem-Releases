@@ -1,0 +1,76 @@
+{
+ "formato": "rm-solo-voce/1",
+ "id": "osservatrice_voice_v1",
+ "storia": "osservatrice",
+ "campaign_id": "osservatrice-trama",
+ "versione": "0.1.0",
+ "content_status": "proposed",
+ "source_note": "voce di Ich riferita alla trama «L'osservatrice dei fili»: da approvare",
+ "narrative_voice": {
+  "id": "osservatrice_voice_v1",
+  "tone": [
+   "mythic",
+   "intimate",
+   "uncanny"
+  ],
+  "lexicon": [
+   "bosco",
+   "cenere",
+   "sangue",
+   "fiore",
+   "piuma",
+   "sogno",
+   "filo",
+   "radice",
+   "spettro",
+   "cielo"
+  ],
+  "lexicon_tecnico": {
+   "parole": [
+    "ciclo",
+    "errore",
+    "procedura",
+    "configurazione",
+    "ripristino",
+    "archivio",
+    "estrazione"
+   ],
+   "dal_fatto": "ich_truth_therapy",
+   "nota": "Il lessico tecnico entra nel prompt solo quando il protagonista può comprenderlo; le parole esplicite (bot, hacker, programma…) restano bloccate dal lessico riservato della campagna."
+  },
+  "dialogue_mode": "warm_rough_daily_fragmented_visions_cold_control",
+  "act_modifiers": {
+   "1": "myth_with_small_cracks",
+   "2": "overlap",
+   "3": "awareness_and_choice"
+  },
+  "forbidden": [
+   "omniscient_spoiler",
+   "npc_unknown_fact",
+   "protagonist_thoughts",
+   "theme_lecture",
+   "historical_hero_solution",
+   "explicit_virtual_before_unlock",
+   "glitch_explains_all"
+  ],
+  "eroi_storici": [],
+  "pov": "second_perceptive",
+  "pov_ammessi": [
+   "second_perceptive",
+   "third_limited"
+  ],
+  "nota_pov": "La scheda ammette terza persona limitata o seconda persona percettiva \"secondo l'impostazione dell'interfaccia\": oggi l'interfaccia e i testi di riserva usano la seconda persona.",
+  "scene_pattern": [
+   "consequence",
+   "world_detail",
+   "npc_reaction",
+   "action_opening"
+  ]
+ },
+ "guida": {
+  "esempio": "«è giunto il momento che i fili del wird si congiungano, il vostro destino è legato… il futuro vi attende.»",
+  "esempio_fonte": "[ICH Cap.1 r.220] (la donna fiore)"
+ },
+ "voce_autore": "voce_autore_v1",
+ "timbro": "ich-contesto.json#timbro"
+}

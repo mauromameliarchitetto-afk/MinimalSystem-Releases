@@ -1,0 +1,4623 @@
+{
+ "formato": "rm-solo-interazioni/1",
+ "campaign_id": "incubo-trama",
+ "stato": "bozza",
+ "content_status": "proposed",
+ "nota": "«L'incubo»: docs/single-player/trame/SCHEMA_L_INCUBO.md (schema approvato il 30/10); EIDOS.md §4.2 r.180-211. Ogni frase riprende un fatto o una battuta degli script Eidos V2 (dalle note di lettura; nomi dei personaggi giocanti sostituiti da quelli della trama); nessun fatto nuovo se non segnato PROPOSTA.",
+ "regole": {},
+ "scene": {
+  "N01": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N01x0",
+     "testo": "Guardare il mare con gli amici",
+     "riserva": "Dopo il tramonto ci sono delle luci nell'acqua. «{Sei completamente sporco di terra!|Sei completamente sporca di terra!|Hai terra dappertutto!}» ti dice uno dei due amici. Thado guarda il mare con te: «Non c'è niente oltre il mare, questo non lo sai perché tua madre non commercia i vasi come la mia.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Thado dice che oltre il mare non c'è niente.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 Incipit r.8-17]"
+    },
+    {
+     "id": "N01x1",
+     "testo": "Guardare chi arriva da sud",
+     "riserva": "Da sud arriva un gruppo di uomini, e gli uomini del villaggio prendono le armi. Tuo padre vi incrocia per strada: «Sta' vicino alla mamma, nascondetevi e non fate rumore.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Uomini armati arrivano da sud verso Memno.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [V2 Incipit r.21-27]"
+    },
+    {
+     "id": "N01x2",
+     "testo": "Stringere il ciondolo che porti al collo",
+     "riserva": "Al collo porti il ciondolo di una bestia a quattro zampe. «Sì, come no! Se a te sembra un lupo quello che porti al collo, sono certo che nessuno ti comprerà mai niente» ride l'altro amico.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "[V2 Incipit r.18, r.34]",
+     "scopo": "il ciondolo del lupo: prepara il dono a Eleanor nella 26 [V2 Cap.44 r.42]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "thado",
+     "apertura": "Thado guarda il mare accanto a te.",
+     "chiusura": "Thado torna a guardare le luci nell'acqua.",
+     "riserva_libera": "Thado si stringe nelle spalle.",
+     "argomenti": [
+      {
+       "id": "N01_thado_1",
+       "testo": "Chiedere delle luci nell'acqua",
+       "riserva": "«Probabilmente sono dei fuochi per chi può vivere sott'acqua, oppure le stelle che cadono e continuano a brillare» dice l'altro amico. «Vengo qui per imparare bene dove immergermi quando sarò grande.»",
+       "effetti": [],
+       "fonte": "[V2 Incipit r.15] (battuta di «un bambino», accorciata all'inizio)",
+       "scopo": "il mare che torna (la promessa dell'oceano a Suna, scena 13)"
+      }
+     ]
+    },
+    {
+     "png": "madre",
+     "apertura": "Tua madre ti guarda dal basso.",
+     "chiusura": "Tua madre si volta verso sud.",
+     "riserva_libera": "Tua madre non risponde: guarda verso sud.",
+     "argomenti": [
+      {
+       "id": "N01_madre_1",
+       "testo": "Chiedere a tua madre chi sono quegli uomini",
+       "riserva": "Tua madre non ti risponde. Guarda verso sud, e capisce che non c'è più tempo per fuggire.",
+       "effetti": [],
+       "richiede": [
+        "N01x1"
+       ],
+       "fonte": "[V2 Incipit r.22, r.29] («mamma, chi sono?» è la battuta del bambino: le parole sono del giocatore)",
+       "scopo": "la paura prima dell'attacco"
+      }
+     ]
+    },
+    {
+     "png": "padre",
+     "apertura": "Tuo padre ha già un'arma in mano.",
+     "chiusura": "Tuo padre corre con gli altri uomini verso sud.",
+     "riserva_libera": "Tuo padre non risponde.",
+     "argomenti": [
+      {
+       "id": "N01_padre_1",
+       "testo": "Dire a tuo padre che vuoi restare con lui",
+       "riserva": "«Sta' vicino alla mamma» ripete tuo padre, e corre con gli altri uomini verso sud.",
+       "effetti": [],
+       "richiede": [
+        "N01x1"
+       ],
+       "fonte": "[V2 Incipit r.27] (la battuta, ripetuta); P* le parole sono del giocatore",
+       "scopo": "l'ultimo sguardo al padre"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Tua madre ti porta in una tenda e ti copre con una coperta: «È solo un incubo, {tranquillo|tranquilla|non aver paura}, adesso ci sveglieremo e passerà tutto.» Poi esce, con un pugnale d'osso in mano.",
+    "fonte": "P3 [V2 Incipit r.29-32] (la battuta senza il nome)",
+    "esplora": [
+     {
+      "id": "N01d1",
+      "testo": "Uscire da sotto la coperta",
+      "riserva": "Fuori, nel buio, figure nere combattono fra le case. Il tuo migliore amico cade, e non si rialza; tua madre ti vede e ti urla di scappare.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Le figure nere sono entrate a Memno: il tuo migliore amico è morto.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 [V2 Incipit r.39-46] (appunti di regia); chi siano le figure nere si dice nella 20"
+     },
+     {
+      "id": "N01d2",
+      "testo": "Restare sotto la coperta e stringere il ciondolo",
+      "riserva": "Sotto la coperta stringi il ciondolo, e la luce dei tuoi occhi ti illumina le mani. Fuori comincia a piovere: una pioggia che sa di bruciato e di ferro.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "[V2 Incipit r.33-38]",
+      "scopo": "la pioggia di bruciato e di ferro: l'immagine che torna nella 12 [V2 Cap.14]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N01x0",
+     "N01x1"
+    ],
+    "risoluzione": [
+     "N01d1"
+    ]
+   },
+   "required_beats": [
+    "N01x0",
+    "N01x1",
+    "N01d1"
+   ],
+   "optional_beats": [
+    "N01x2",
+    "N01_thado_1",
+    "N01_madre_1",
+    "N01_padre_1",
+    "N01d2"
+   ],
+   "riserva_libera": "Fra le case di terra la gente corre, e nessuno ti ascolta.",
+   "uscita_fail_forward": "Se la scena si ferma, le figure nere arrivano comunque fra le case, e tua madre ti urla di scappare."
+  },
+  "N02": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N02x0",
+     "testo": "Ascoltare Suna in mensa",
+     "riserva": "«Ah scusami! Mi chiamo Suna, e lui è il mio compagno di stanza» dice Suna a Pyrrhos, e ti indica. «A noi ci hanno trasferiti qualche piano più su da poco, ma prima eravamo a Eutifer.» Poi torna a raccontare dei morti all'esterno.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "P1 [V2 Cap.1 r.110-113]"
+    },
+    {
+     "id": "N02x1",
+     "testo": "Scendere dalla tipa che spaccia",
+     "riserva": "La mano ti trema. {Uscito|Uscita|Appena fuori} dall'ascensore vai dalla tipa che spaccia; nell'androne, poco più in là, qualcuno si scambia qualcosa.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Ti trema la mano, e vai dalla tipa che spaccia.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.1 r.118, r.123] (che cosa siano le pastiglie si dice nella 19)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "suna",
+     "apertura": "Suna ti fa posto accanto a sé.",
+     "chiusura": "Suna torna al suo piatto.",
+     "riserva_libera": "Suna si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "N02_suna_1",
+       "testo": "Chiedere a Suna di smettere di parlare dei morti",
+       "riserva": "Suna si interrompe. Al tavolo vicino una ragazza ti guarda la mano, che trema.",
+       "effetti": [
+        {
+         "nota": "Una ragazza ti ha visto tremare.",
+         "categoria": "indizio"
+        }
+       ],
+       "richiede": [
+        "N02x0"
+       ],
+       "fonte": "[V2 Cap.1 r.108-118] (P*: le parole sono del giocatore; nella fonte «possiamo evitare di parlarne? GRAZIE!»)",
+       "scopo": "la paura che nasconde"
+      },
+      {
+       "id": "N02_suna_2",
+       "testo": "Chiedere a Suna della chiave",
+       "riserva": "«Sai, da un lato ringrazio di essere nato per fare il soldato, da un altro non sento questa propensione a uccidere» dice Suna. «Se solo trovassimo la chiave…»",
+       "effetti": [],
+       "fonte": "[V2 Cap.1 r.120] (non attribuita nella fonte: DEDOTTO Suna, come nelle note)",
+       "scopo": "la chiave che i Chorisfos cercano, e il legame con Suna"
+      }
+     ]
+    },
+    {
+     "png": "pyrrhos",
+     "apertura": "Pyrrhos ascolta Suna senza dire molto.",
+     "chiusura": "Pyrrhos torna a mangiare.",
+     "riserva_libera": "Pyrrhos non risponde.",
+     "argomenti": [
+      {
+       "id": "N02_pyrrhos_1",
+       "testo": "Chiedere a Pyrrhos da dove viene",
+       "riserva": "Pyrrhos si stringe nelle spalle e lascia parlare Suna.",
+       "effetti": [],
+       "fonte": "[V2 Cap.1 r.110]; un gesto e nessuna battuta: Pyrrhos è un PG dell'autore (PNG_EIDOS_DA_APPROVARE.md, Pyrrhos)",
+       "scopo": "far esistere Pyrrhos prima delle rovine"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nella base scatta l'allarme: serve una squadra per il recupero di «un soggetto particolare», e tu ci sei dentro.",
+    "fonte": "P3 [V2 Cap.1 r.123-124]; EIDOS.md r.186",
+    "esplora": [
+     {
+      "id": "N02d1",
+      "testo": "Raggiungere la squadra del recupero",
+      "riserva": "La squadra si raduna al mezzo: ci sono Suna, Pyrrhos e Nil, il medico, e la guida il tenente Thillion. «Tu alla guida» ti dice Thillion.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Sei nella squadra del tenente Thillion per il recupero, alla guida del mezzo.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [V2 Cap.1 r.124]; [V2 Cap.2 r.76-77, r.99] (la squadra sul mezzo); EIDOS.md r.186"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N02x0",
+     "N02x1"
+    ],
+    "risoluzione": [
+     "N02d1"
+    ]
+   },
+   "required_beats": [
+    "N02x0",
+    "N02x1",
+    "N02d1"
+   ],
+   "optional_beats": [
+    "N02_suna_1",
+    "N02_suna_2",
+    "N02_pyrrhos_1"
+   ],
+   "riserva_libera": "In mensa si parla a voce bassa, e nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, l'allarme suona comunque, e la squadra parte per il recupero."
+  },
+  "N03": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N03x1",
+     "testo": "Controllare la spada",
+     "riserva": "Porti una spada pesante, simile a una claymore, senza filo sul lato sinistro, usurata e senza punta. Era di Reiki: lo chiamavano Dímios, e ti ha insegnato a spezzare gli arti agli azzannatori per poi finirli.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "P2 [V2 Cap.2 r.89-95] (i fatti della spada, senza le battute di Fobos); EIDOS.md r.186"
+    },
+    {
+     "id": "N03x2",
+     "testo": "Leggere le tracce lungo la strada",
+     "riserva": "Pyrrhos trova tracce di spazzini. Più avanti si sentono urla, e Alida chiama via radio: «Tenente, la situazione non è delle migliori, dobbiamo provare a contattarli.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Sulla strada per le rovine ci sono tracce di spazzini.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "[V2 Cap.2 r.112-132]",
+     "scopo": "il soppressore che conosce i theras (il consiglio sugli spazzini giovani [r.119] è del giocatore)"
+    },
+    {
+     "id": "N03x3",
+     "testo": "Avvicinarsi alle rovine da ovest",
+     "riserva": "Coperti dalle macerie, arrivate da ovest. Sidd è ferito alla gamba e scorta un uomo con un casco epizio attaccato alla pelle; con lui ci sono due soldate, Foeh e Nephele. Due epizi corazzati vi stanno addosso, e un cecchino vi tiene sotto tiro.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Fra le rovine ci sono Sidd, Foeh e Nephele, sotto il tiro di due epizi corazzati.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P3 [V2 Cap.2 r.186-198]; [V2 Cap.3 r.10-20]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "thillion",
+     "apertura": "Thillion ti squadra.",
+     "chiusura": "Thillion torna a guardare la strada.",
+     "riserva_libera": "Thillion non ti risponde: tiene gli occhi sulla strada.",
+     "argomenti": [
+      {
+       "id": "N03_thillion_1",
+       "testo": "Dire a Thillion nome e matricola",
+       "riserva": "Thillion ascolta la tua matricola, Xenos 31506, e passa oltre. «Est, sud-est: le ultime informazioni sulla posizione sembrano riferirsi ai piedi della città di Antarsia, nell'area periferica» dice alla squadra.",
+       "effetti": [
+        {
+         "nota": "Per Thillion sei lo Xenos 31506.",
+         "categoria": "indizio"
+        }
+       ],
+       "fonte": "P1 (P*: le parole sono del giocatore) [V2 Cap.2 r.77-80, r.85]"
+      }
+     ]
+    },
+    {
+     "png": "nil",
+     "apertura": "Nil segna qualcosa su un taccuino.",
+     "chiusura": "Nil torna al suo taccuino.",
+     "riserva_libera": "Nil si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "N03_nil_1",
+       "testo": "Chiedere a Nil che cosa sta segnando",
+       "riserva": "«Sto segnando il calendario delle dosi, servirà in caso venga ferito o ucciso: ho segnato date e tempo di iniezione» dice Nil. «La chiave? Per me è la cura, non può essere altrimenti.»",
+       "effetti": [],
+       "fonte": "[V2 Cap.2 r.99, r.104] (nella fonte lo dice a Pyrrhos)",
+       "scopo": "Nil, che muore nella 04, e le dosi della squadra"
+      }
+     ]
+    },
+    {
+     "png": "sidd",
+     "apertura": "Sidd si tiene la gamba ferita.",
+     "chiusura": "Sidd torna a guardare l'uomo con il casco.",
+     "riserva_libera": "Sidd si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "N03_sidd_1",
+       "testo": "Chiedere a Sidd degli epizi",
+       "riserva": "Sidd non risponde a te ma a Thillion: «Thillion, non mi frega un cazzo se vuoi dimostrare qualcosa al consiglio, ma quegli epizi non li ammazziamo, gli devo assolutamente parlare!»",
+       "effetti": [],
+       "richiede": [
+        "N03x3"
+       ],
+       "prima_di": [
+        "N03d1"
+       ],
+       "fonte": "[V2 Cap.2 r.194]; [V2 Cap.3 r.25]",
+       "scopo": "il contrasto fra Sidd e Thillion, prima che Thillion prenda il comando"
+      },
+      {
+       "id": "N03_sidd_2",
+       "testo": "Chiedere a Sidd chi può guidare, se serve",
+       "riserva": "«Nephele, ma le è stato revocato il diritto di stare alla guida per via di alcuni inconvenienti psicologici» dice Sidd, davanti a tutti.",
+       "effetti": [
+        {
+         "nota": "A Nephele è stato revocato il diritto di guida per alcuni inconvenienti psicologici.",
+         "categoria": "indizio"
+        }
+       ],
+       "richiede": [
+        "N03x3"
+       ],
+       "fonte": "[V2 Cap.3 r.116-117] (nella fonte lo dice a Thillion, dopo la divisione della squadra: spostato qui, PROPOSTA dello schema, scena 03)",
+       "scopo": "preparare il sogno del bambino (04)"
+      }
+     ]
+    },
+    {
+     "png": "nephele",
+     "apertura": "Nephele tiene l'arco puntato verso le macerie.",
+     "chiusura": "Nephele torna a guardare il cecchino.",
+     "riserva_libera": "Nephele non risponde: tiene d'occhio il cecchino.",
+     "argomenti": [
+      {
+       "id": "N03_nephele_1",
+       "testo": "Chiedere nome e matricola alle due soldate",
+       "riserva": "«K 30714 Foeh» risponde Foeh, e Nephele dà la sua. «Foeh ha ferite di bruciatura al braccio sinistro, non abbiamo più gemme di cura con noi» dice Sidd.",
+       "effetti": [],
+       "richiede": [
+        "N03x3"
+       ],
+       "fonte": "[V2 Cap.2 r.198]; [V2 Cap.3 r.29-30] (la domanda è di Thillion nella fonte)",
+       "scopo": "il primo incontro con Nephele"
+      }
+     ]
+    },
+    {
+     "png": "foeh",
+     "apertura": "Foeh si tiene il braccio sinistro bruciato.",
+     "chiusura": "Foeh torna a guardare gli epizi.",
+     "riserva_libera": "Foeh sbuffa e non risponde.",
+     "argomenti": [
+      {
+       "id": "N03_foeh_1",
+       "testo": "Chiedere a Foeh se può combattere",
+       "riserva": "«Io non ho gemme, ma posso comunque attaccare a media distanza, se il medico può soccorrermi dopo lo scontro» dice Foeh.",
+       "effetti": [],
+       "richiede": [
+        "N03x3"
+       ],
+       "prima_di": [
+        "N03d1"
+       ],
+       "fonte": "[V2 Cap.2 r.203]",
+       "scopo": "Foeh, che resta con te nel rifugio (04)"
+      }
+     ]
+    },
+    {
+     "png": "astrapios",
+     "apertura": "Astrapios guarda fuori dal mezzo, verso le rovine.",
+     "chiusura": "Astrapios torna a guardare fuori.",
+     "riserva_libera": "Astrapios si stringe nelle spalle.",
+     "argomenti": [
+      {
+       "id": "N03_astrapios_1",
+       "testo": "Chiedere ad Astrapios se ha visto molto, là fuori",
+       "riserva": "Astrapios ti guarda e si stringe nelle spalle; poi torna a guardare le rovine.",
+       "effetti": [],
+       "fonte": "[V2 Cap.2 r.88] (la domanda è di Fobos: le parole sono del giocatore); un gesto e nessuna battuta: Astrapios è un PG dell'autore (PNG_EIDOS_DA_APPROVARE.md, Astrapios)",
+       "scopo": "il mondo esterno, e il primo legame con Astrapios"
+      }
+     ]
+    },
+    {
+     "png": "pyrrhos",
+     "apertura": "Pyrrhos stringe la lancia.",
+     "chiusura": "Pyrrhos torna a guardare le macerie.",
+     "riserva_libera": "Pyrrhos non risponde.",
+     "argomenti": [
+      {
+       "id": "N03_pyrrhos_1",
+       "testo": "Chiedere a Pyrrhos se è pronto",
+       "riserva": "Pyrrhos annuisce e stringe la lancia.",
+       "effetti": [],
+       "richiede": [
+        "N03x3"
+       ],
+       "fonte": "[V2 Cap.3 r.36] (Thillion lo manda all'attacco con te); un gesto e nessuna battuta: Pyrrhos è un PG dell'autore",
+       "scopo": "il compagno dell'attacco diretto"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "«A me basta e avanza riportare te e la tua squadra a Critto» dice Thillion a Sidd. «Da ora prenderò io il comando dell'intera squadra, tu mi farai da vice.» Poi dà gli ordini: lui e Nephele faranno fuoco di copertura; tu e Pyrrhos vi muoverete per un attacco diretto a tutti e due gli epizi, e Foeh vi farà da supporto.",
+    "fonte": "P3 e P4 [V2 Cap.2 r.195]; [V2 Cap.3 r.26, r.36] (gli ordini in forma indiretta, come la C01 di «Il filo di cenere» li dice dal punto di vista di Nephele)",
+    "esplora": [
+     {
+      "id": "N03d1",
+      "testo": "Attaccare l'epizio corazzato",
+      "riserva": "Ti lanci sull'epizio corazzato insieme a Pyrrhos; l'uomo con il casco si trasforma in una belva e sbrana l'altro epizio. L'epizio grosso è ancora in piedi, davanti a te.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Hai attaccato l'epizio corazzato.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 (P*: lo scontro è del giocatore) [V2 Cap.2 r.211-222]; [V2 Cap.3 r.36-58] (nella fonte lo attacca a mani nude: come attacca è del giocatore)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N03x3",
+     "N03_thillion_1"
+    ],
+    "risoluzione": [
+     "N03d1"
+    ]
+   },
+   "required_beats": [
+    "N03_thillion_1",
+    "N03x3",
+    "N03d1"
+   ],
+   "optional_beats": [
+    "N03x1",
+    "N03x2",
+    "N03_nil_1",
+    "N03_sidd_1",
+    "N03_sidd_2",
+    "N03_nephele_1",
+    "N03_foeh_1",
+    "N03_astrapios_1",
+    "N03_pyrrhos_1"
+   ],
+   "riserva_libera": "Fra le macerie nessuno alza la testa: il cecchino vi tiene sotto tiro.",
+   "uscita_fail_forward": "Se la scena si ferma, gli epizi vi raggiungono comunque."
+  },
+  "N04": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N04x1",
+     "parte": "Una struttura fra le rovine di Antarsia",
+     "testo": "Organizzare il riposo e i turni di guardia",
+     "riserva": "L'antidoto l'avete preso all'alba, come sempre: restano circa otto ore per ritrovare gli altri. Si fanno turni di mezz'ora ciascuno, poi ci si rimette in cammino; Foeh resta a riposo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "L'antidoto finisce fra circa otto ore: turni di mezz'ora, poi in cammino.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 (P*: come prendere il comando è del giocatore; i turni e l'antidoto accadono comunque) [V2 Cap.3 r.169-175]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "foeh",
+     "apertura": "Foeh si tiene il braccio bruciato.",
+     "chiusura": "Foeh si appoggia al muro e chiude gli occhi.",
+     "riserva_libera": "Foeh sbuffa e non risponde.",
+     "argomenti": [
+      {
+       "id": "N04_foeh_1",
+       "testo": "Dire a Foeh di riposare",
+       "riserva": "«Ti ringrazio, ma non sono ancora una vecchia rimbambita, perciò non farmi sentire una misera invalida!» dice Foeh. Poi ti guarda meglio: «Ah! Mi sembra di sentir parlare mio fratello!»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "foeh",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "N04x1"
+       ],
+       "fonte": "[V2 Cap.3 r.174-176] (le tue parole sono del giocatore)",
+       "scopo": "la squadra lo vede come un capo"
+      }
+     ]
+    },
+    {
+     "png": "nephele",
+     "apertura": "Nephele controlla le bende di Foeh.",
+     "chiusura": "Nephele torna a guardare la porta.",
+     "riserva_libera": "Nephele non risponde: guarda la porta.",
+     "argomenti": [
+      {
+       "id": "N04_nephele_1",
+       "testo": "Chiedere a Nephele quando avete preso l'antidoto",
+       "riserva": "«All'alba, come sempre» risponde Nephele.",
+       "effetti": [],
+       "fonte": "[V2 Cap.3 r.171-172] (la domanda è di Fobos nella fonte: le parole sono del giocatore)",
+       "scopo": "il tempo che resta"
+      }
+     ]
+    },
+    {
+     "png": "alida",
+     "apertura": "Alida ascolta fuori dalla porta.",
+     "chiusura": "Alida torna a guardare fuori.",
+     "riserva_libera": "Alida si stringe nelle spalle.",
+     "argomenti": [
+      {
+       "id": "N04_alida_1",
+       "testo": "Chiedere ad Alida degli spazzini",
+       "riserva": "«Se vuoi un consiglio, gli azzannatori sono ciechi di giorno» dice Alida. «Ho avuto fortuna a trovare la via per allontanarli quanto ho potuto.»",
+       "effetti": [],
+       "fonte": "[V2 Cap.4 r.150] (nella fonte lo dice ad Astrapios, al rifugio)",
+       "scopo": "il legame con Alida, che muore nella 10"
+      }
+     ]
+    },
+    {
+     "png": "nil",
+     "apertura": "Nil è a terra sulle scale, e respira a fatica.",
+     "chiusura": "Nil chiude gli occhi.",
+     "riserva_libera": "Nil non riesce a rispondere.",
+     "argomenti": [
+      {
+       "id": "N04_nil_1",
+       "testo": "Fermarti accanto a Nil",
+       "riserva": "Nil ti guarda, ma non riesce a parlare. Gli spazzini salgono le scale dietro di voi.",
+       "effetti": [],
+       "richiede": [
+        "N04d3"
+       ],
+       "fonte": "[V2 Cap.4 r.79, r.118]",
+       "scopo": "la morte di Nil, il medico che segnava le dosi"
+      }
+     ]
+    },
+    {
+     "png": "thillion",
+     "apertura": "Thillion vi aspetta in cima alle scale.",
+     "chiusura": "Thillion torna dentro il rifugio.",
+     "riserva_libera": "Thillion non ti risponde.",
+     "argomenti": [
+      {
+       "id": "N04_thillion_1",
+       "testo": "Fare rapporto a Thillion",
+       "riserva": "Thillion ascolta, poi manda Astrapios a fare una ronda: «Fatti una ronda, circoscrivi il palazzo ed elimina altre potenziali cimici, ti do un quarto d'ora, perciò muovi il culo, Xenos.»",
+       "effetti": [],
+       "richiede": [
+        "N04d3"
+       ],
+       "fonte": "[V2 Cap.4 r.160]",
+       "scopo": "Thillion chiama Xenos anche Astrapios"
+      }
+     ]
+    },
+    {
+     "png": "pyrrhos",
+     "apertura": "Pyrrhos è seduto contro il muro, stremato.",
+     "chiusura": "Pyrrhos chiude gli occhi.",
+     "riserva_libera": "Pyrrhos non risponde.",
+     "argomenti": [
+      {
+       "id": "N04_pyrrhos_1",
+       "testo": "Chiedere a Pyrrhos come sta",
+       "riserva": "Pyrrhos alza una mano e la lascia ricadere: è stremato, come Foeh.",
+       "effetti": [],
+       "fonte": "[V2 Cap.3 r.169]; un gesto e nessuna battuta: Pyrrhos è un PG dell'autore",
+       "scopo": "chi è stremato nel gruppo"
+      }
+     ]
+    },
+    {
+     "png": "astrapios",
+     "apertura": "Astrapios vi raggiunge fra le rovine.",
+     "chiusura": "Astrapios torna a guardare la strada.",
+     "riserva_libera": "Astrapios si stringe nelle spalle.",
+     "argomenti": [
+      {
+       "id": "N04_astrapios_1",
+       "testo": "Chiedere ad Astrapios come vi ha trovati",
+       "riserva": "Astrapios ti indica Nephele: ha visto un'immagine, una ragazza bionda che diceva «qui».",
+       "effetti": [],
+       "richiede": [
+        "N04d2"
+       ],
+       "fonte": "[V2 Cap.4 r.58-59] (l'immagine vista da Astrapios; che sia Nephele: DEDOTTO dalle note)",
+       "scopo": "il segnale di Nephele"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Comincia il tuo turno di guardia. Poi non ricordi più niente: quando torni in te sei fuori dal rifugio, fra il fumo e la polvere, e Pyrrhos ti sta caricando sulle spalle. Nell'armatura non hai più gemme.",
+    "fonte": "P2 e P3 [V2 Cap.3 r.177-180]; [V2 Cap.4 r.38-45] (dal punto di vista di Fobos: la fonte non dice che cosa ricordi; «non ricordi più niente» è DEDOTTO dal «disorientato» [r.44])",
+    "esplora": [
+     {
+      "id": "N04d1",
+      "testo": "Chiedere che cosa ci fanno fuori",
+      "riserva": "Nephele ti dice che ha fatto un sogno di merda: c'era un bambino che piangeva in una pozza di sangue. Tu non le avevi dato il cambio, la porta era aperta, e fra le rovine si muoveva una figura d'ombra. Gli spazzini ululano, vicini.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nephele ha sognato un bambino che piangeva in una pozza di sangue; la porta era aperta, e fuori si muoveva una figura d'ombra.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 [V2 Cap.3 r.178-180]; [V2 Cap.4 r.46] (la domanda «che cosa ci fate qua fuori?» è di Fobos: le parole sono del giocatore)"
+     },
+     {
+      "id": "N04d2",
+      "testo": "Chiedere a Nephele di lanciare un segnale ad Alida e agli altri",
+      "riserva": "Nephele lancia il segnale, e poco dopo vi raggiunge Astrapios: vi cercava. «Astrapios, ci cercavi?» gli dice Alida. «Abbiamo provato a metterci in contatto, ma non riusciamo a stabilire una comunicazione con voi.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "relazione": {
+         "png": "nephele",
+         "delta": 1
+        }
+       }
+      ],
+      "fonte": "[V2 Cap.4 r.49-65] (la domanda di Alida [r.65], accorciata)",
+      "scopo": "il primo legame con Nephele"
+     },
+     {
+      "id": "N04d4",
+      "testo": "Usare chi sta in alto come richiamo per gli spazzini",
+      "riserva": "Alida e Astrapios salgono sugli edifici e fanno da richiamo: gli spazzini si dividono, e fra le rovine si apre un varco fino al rifugio.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "[V2 Cap.4 r.63-70] (il piano è di Fobos: come proporlo è del giocatore; come nella C02x1 di «Il filo di cenere»)",
+      "scopo": "il soppressore che pensa"
+     },
+     {
+      "id": "N04d3",
+      "parte": "il rifugio del gruppo di Thillion",
+      "testo": "Correre al rifugio con gli spazzini alle calcagna",
+      "riserva": "Correte fino al rifugio con gli spazzini alle calcagna. Sulle scale Nil è ferito a morte, e non ce la fa.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nil è ferito a morte sulle scale del rifugio.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 [V2 Cap.4 r.72-79, r.118]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N04x1"
+    ],
+    "risoluzione": [
+     "N04d1",
+     "N04d3"
+    ]
+   },
+   "required_beats": [
+    "N04x1",
+    "N04d1",
+    "N04d3"
+   ],
+   "optional_beats": [
+    "N04_foeh_1",
+    "N04_nephele_1",
+    "N04_alida_1",
+    "N04_nil_1",
+    "N04_thillion_1",
+    "N04_pyrrhos_1",
+    "N04_astrapios_1",
+    "N04d2",
+    "N04d4"
+   ],
+   "riserva_libera": "Nella struttura nessuno parla ad alta voce: il mostro vi cerca ancora.",
+   "uscita_fail_forward": "Se la scena si ferma, gli spazzini vi trovano comunque, e correte verso il rifugio degli altri."
+  },
+  "N05": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N05x1",
+     "parte": "Il rifugio fra le rovine, all'alba;",
+     "testo": "Raccogliere un pugno di terra",
+     "riserva": "Ti chini, raccogli un pugno di terra e te lo infili in una scarpa.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "[V2 Cap.5 r.28-30] (le parole, «Un souvenir per la famiglia», sono del giocatore)",
+     "scopo": "il legame con Memno"
+    },
+    {
+     "id": "N05x2",
+     "parte": "Il rifugio fra le rovine, all'alba;",
+     "testo": "Salire sul mezzo per il rientro",
+     "riserva": "Sidd ha messo davanti al volante del bus il guanto di Nil, con dei cavi e un trasformatore, e Astrapios fa partire il motore con la gemma d'attacco. Thillion chiede le gemme per il pilota: le tue sono tutte scariche.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Le tue gemme sono tutte scariche.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "[V2 Cap.5 r.17, r.21-33] (la risposta, «Le avrò consumate in battaglia», è del giocatore)",
+     "scopo": "il segno dell'ombra della 04"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "suna",
+     "apertura": "Suna ti si siede accanto.",
+     "chiusura": "Suna abbassa lo sguardo.",
+     "riserva_libera": "Suna si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "N05_suna_1",
+       "testo": "Dire a Suna che passerà",
+       "riserva": "Suna non è convinto, ma lascia perdere. La spalla, però, non passa: non hai più cure, e credi che sia lussata.",
+       "effetti": [],
+       "fonte": "[V2 Cap.5 r.4-8] (P*: «Passerà» è del giocatore)",
+       "scopo": "dare il motivo della cura, prima della cura"
+      },
+      {
+       "id": "N05_suna_2",
+       "testo": "Parlare a bassa voce con Suna, dopo l'arena",
+       "riserva": "Suna ti guarda preoccupato e arrabbiato; parlate a bassa voce, e alla fine ti porge un palmo chiuso.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "suna",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "N05d1"
+       ],
+       "fonte": "[V2 Cap.6 r.69-70] (che cosa fai poi è del giocatore)",
+       "scopo": "il legame con Suna (obiettivo, EIDOS.md r.204)"
+      }
+     ]
+    },
+    {
+     "png": "nephele",
+     "apertura": "Nephele sistema le sue bende.",
+     "chiusura": "Nephele si allontana, senza voltarsi.",
+     "riserva_libera": "Nephele non risponde.",
+     "argomenti": [
+      {
+       "id": "N05_nephele_1",
+       "testo": "Chiedere a Nephele di sistemarti la spalla",
+       "riserva": "Nephele ti rimette a posto la spalla. Nel contatto si irrigidisce, come se vedesse qualcosa; poi si stacca, e non dice niente.",
+       "effetti": [
+        {
+         "scopri": "incubo_fact_cura"
+        },
+        {
+         "relazione": {
+          "png": "nephele",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P1 [V2 Cap.5 r.8-10] (la richiesta è del giocatore; Fobos non vede la visione: ciò che lei ha visto lo dice nella 07)"
+      }
+     ]
+    },
+    {
+     "png": "sidd",
+     "apertura": "Sidd beve da una fiaschetta.",
+     "chiusura": "Sidd rimette via la fiaschetta.",
+     "riserva_libera": "Sidd si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "N05_sidd_1",
+       "testo": "Chiedere a Sidd della fiaschetta",
+       "riserva": "«L'unica cosa di vero che mi è rimasta dopo tutti questi anni» dice Sidd. «Sono solo spettri del passato che di tanto in tanto tornano a bussare.»",
+       "effetti": [],
+       "fonte": "[V2 Cap.5 r.13-14] (nella fonte lo dice a Pyrrhos)",
+       "scopo": "Sidd e il suo passato (che cosa sia resta riservato)"
+      }
+     ]
+    },
+    {
+     "png": "foeh",
+     "apertura": "Foeh si soffia sul guanto ancora caldo.",
+     "chiusura": "Foeh torna da suo fratello.",
+     "riserva_libera": "Foeh sbuffa e non risponde.",
+     "argomenti": [
+      {
+       "id": "N05_foeh_1",
+       "testo": "Ascoltare Foeh, dopo l'arena",
+       "riserva": "«Se non lo avessi notato, io ho salvato il culo allo Xenos» dice Foeh a Ligo. «Certo che è invasato quando ci si mette, quello.»",
+       "effetti": [],
+       "richiede": [
+        "N05d1"
+       ],
+       "fonte": "[V2 Cap.6 r.77]",
+       "scopo": "come la squadra vede lo Xenos"
+      }
+     ]
+    },
+    {
+     "png": "ligo",
+     "apertura": "Ligo medica Pyrrhos.",
+     "chiusura": "Ligo torna al suo lavoro.",
+     "riserva_libera": "Ligo non risponde: ha da fare.",
+     "argomenti": [
+      {
+       "id": "N05_ligo_1",
+       "testo": "Chiedere a Ligo di Pyrrhos",
+       "riserva": "«Fa' attenzione la prossima volta, non seguire l'atteggiamento sconsiderato di mia sorella» dice Ligo a Pyrrhos, mentre gli guarda la ferita.",
+       "effetti": [],
+       "richiede": [
+        "N05d1"
+       ],
+       "fonte": "[V2 Cap.6 r.73-75]",
+       "scopo": "Ligo, il secondo medico della Delta 15"
+      }
+     ]
+    },
+    {
+     "png": "astrapios",
+     "apertura": "Astrapios ti guarda storto, dopo l'arena.",
+     "chiusura": "Astrapios se ne va.",
+     "riserva_libera": "Astrapios non risponde.",
+     "argomenti": [
+      {
+       "id": "N05_astrapios_1",
+       "testo": "Rispondere ad Astrapios che ti rimprovera",
+       "riserva": "Astrapios ti rimprovera il cattivo esempio che hai dato nell'arena, e il soldato rimasto ferito; poi aspetta che sia tu a rispondere.",
+       "effetti": [],
+       "richiede": [
+        "N05d1"
+       ],
+       "fonte": "[V2 Cap.6 r.84-89] (il rimprovero dalle note; le tue risposte della fonte, «agisco e uccido, come una macchina», sono del giocatore)",
+       "scopo": "la guerra come mestiere (EIDOS.md r.199)"
+      }
+     ]
+    },
+    {
+     "png": "pyrrhos",
+     "apertura": "Pyrrhos si tiene il fianco, in ascensore.",
+     "chiusura": "Pyrrhos annuisce, senza dire niente.",
+     "riserva_libera": "Pyrrhos non risponde.",
+     "argomenti": [
+      {
+       "id": "N05_pyrrhos_1",
+       "testo": "Dire a Pyrrhos che non bisogna agire in modo avventato",
+       "riserva": "Pyrrhos ti ascolta in silenzio, e annuisce.",
+       "effetti": [],
+       "richiede": [
+        "N05d1"
+       ],
+       "fonte": "[V2 Cap.7 r.24-29] (le parole sono del giocatore; nella fonte «A me piace spingermi verso la morte, è l'unica scelta che ho davvero»); un gesto e nessuna battuta: Pyrrhos è un PG dell'autore",
+       "scopo": "come si vede"
+      }
+     ]
+    },
+    {
+     "png": "thillion",
+     "apertura": "Thillion si sistema l'arco sulla spalla.",
+     "chiusura": "Thillion guarda altrove.",
+     "riserva_libera": "Thillion non ti risponde.",
+     "argomenti": [
+      {
+       "id": "N05_thillion_1",
+       "testo": "Chiedere a Thillion delle gemme",
+       "riserva": "«Tu ne farai a meno delle gemme, come per quel cane che hai riportato» dice Thillion ad Astrapios, e non guarda te.",
+       "effetti": [],
+       "richiede": [
+        "N05x2"
+       ],
+       "fonte": "[V2 Cap.5 r.182]",
+       "scopo": "il disprezzo di Thillion per gli Xenos"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Rientrati a Critto, vi richiamano nell'arena. «Soldati, siete stati richiamati quest'oggi per dimostrare ai giovani del Periphto cosa vuol dire essere degli eroi» dice il maggiore. Le gabbie si aprono: theras sedati che si svegliano, cinque spazzini e due titanotteri.",
+    "fonte": "[V2 Cap.5 r.177, r.186-190] (il maggiore resta senza nome: schema, scena 06)",
+    "esplora": [
+     {
+      "id": "N05d1",
+      "parte": "Critto, l'arena dei theras",
+      "testo": "Dare gli ordini alla squadra nell'arena",
+      "riserva": "Foeh e Ligo prendono gli spazzini, e Foeh tiene Pyrrhos vicino a sé e a suo fratello; tu e Suna andate sui titanotteri, che sono difficili da abbattere.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nell'arena Foeh e Ligo sono sugli spazzini, tu e Suna sui titanotteri.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 (P*: come dare gli ordini è del giocatore; nella fonte «Foeh, Ligo riuscite a gestire gli spazzini?») [V2 Cap.5 r.191-196]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N05_nephele_1"
+    ],
+    "risoluzione": [
+     "N05d1"
+    ]
+   },
+   "required_beats": [
+    "N05_nephele_1",
+    "N05d1"
+   ],
+   "optional_beats": [
+    "N05x1",
+    "N05x2",
+    "N05_suna_1",
+    "N05_suna_2",
+    "N05_sidd_1",
+    "N05_foeh_1",
+    "N05_ligo_1",
+    "N05_astrapios_1",
+    "N05_pyrrhos_1",
+    "N05_thillion_1"
+   ],
+   "riserva_libera": "Fra le rovine, all'alba, ognuno pensa ai fatti suoi.",
+   "uscita_fail_forward": "Se la scena si ferma, rientrate comunque a Critto, e le gabbie dell'arena si aprono."
+  },
+  "N06": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N06x1",
+     "testo": "Ascoltare il maggiore",
+     "riserva": "«Le squadre d'élite sono pensate per lavorare in maniera molto mista, in cui un componente di voi può dirigere un intero compito» dice il maggiore. La vostra prende il nome di una squadra annientata, quella di Dimios: Delta 15.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "La vostra squadra d'élite si chiama Delta 15, come la squadra annientata di Dimios.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.7 r.35, r.45]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "maggiore",
+     "apertura": "Il maggiore vi guarda uno per uno.",
+     "chiusura": "Il maggiore torna alla sua lista.",
+     "riserva_libera": "Il maggiore non ti risponde: legge la lista delle squadre.",
+     "argomenti": [
+      {
+       "id": "N06_maggiore_1",
+       "testo": "Chiedere al maggiore se l'unità di prima è sciolta",
+       "riserva": "«Dopo la morte di Reiki il generale ha chiesto che venisse formata una nuova squadra, che avrebbe preso il posto della precedente» dice il maggiore.",
+       "effetti": [
+        {
+         "nota": "La squadra di Reiki non c'è più: la Delta 15 ne prende il posto.",
+         "categoria": "indizio"
+        }
+       ],
+       "richiede": [
+        "N06x1"
+       ],
+       "fonte": "P2 (P*: la domanda e la risposta, «rendere omaggio a quella squadra», sono del giocatore) [V2 Cap.7 r.47-49] (il nome del generale si tace fino alla 10)"
+      }
+     ]
+    },
+    {
+     "png": "thillion",
+     "apertura": "Thillion ti squadra dall'alto in basso.",
+     "chiusura": "Thillion ti volta le spalle.",
+     "riserva_libera": "Thillion non ti risponde.",
+     "argomenti": [
+      {
+       "id": "N06_thillion_1",
+       "testo": "Chiedere a Thillion i compiti della squadra",
+       "riserva": "«Ragazzina! Tu guiderai le esplorazioni esterne, ma farai continuo rapporto a me» dice Thillion ad Alida. «Nephele, tu scambierai il ruolo di medico di continuo con Ligo: ho chiesto che ci fossero due medici, in caso muoia uno di voi due.»",
+       "effetti": [],
+       "richiede": [
+        "N06d1"
+       ],
+       "fonte": "[V2 Cap.7 r.98-100]",
+       "scopo": "i compiti nella squadra prima della partenza"
+      },
+      {
+       "id": "N06_thillion_2",
+       "testo": "Chiedere a Thillion delle forniture",
+       "riserva": "«Ho chiesto che ci venisse data altra fornitura, ma il generale che ha preso il controllo ha deciso di limitare gli sprechi dei soldati all'esterno» dice Thillion.",
+       "effetti": [
+        {
+         "nota": "Il generale che ha preso il controllo di Critto limita le forniture dei soldati all'esterno.",
+         "categoria": "indizio"
+        }
+       ],
+       "richiede": [
+        "N06d1"
+       ],
+       "fonte": "[V2 Cap.7 r.113] (il nome del generale si tace fino alla 10)",
+       "scopo": "le cure che mancano, prima della spedizione"
+      }
+     ]
+    },
+    {
+     "png": "nephele",
+     "apertura": "Nephele siede sul mezzo, accanto a te.",
+     "chiusura": "Nephele guarda fuori.",
+     "riserva_libera": "Nephele non risponde.",
+     "argomenti": [
+      {
+       "id": "N06_nephele_1",
+       "testo": "Parlare con Nephele sul mezzo",
+       "riserva": "Sul mezzo Thillion si china verso Nephele: «Stanotte, se hai voglia di compagnia, puoi passare a cercarmi.» Nephele lo guarda andare via, poi guarda te.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "nephele",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "N06d1"
+       ],
+       "fonte": "[V2 Cap.7 r.120-125] (le tue risposte della fonte, «Quantomeno è diretto», sono del giocatore)",
+       "scopo": "il legame con Nephele prima della spedizione"
+      }
+     ]
+    },
+    {
+     "png": "foeh",
+     "apertura": "Dal guanto di Foeh sale un filo di fumo.",
+     "chiusura": "Foeh si gira verso Pyrrhos.",
+     "riserva_libera": "Foeh sbuffa e non risponde.",
+     "argomenti": [
+      {
+       "id": "N06_foeh_1",
+       "testo": "Chiedere a Foeh che cosa dice a Thillion",
+       "riserva": "«Mi volevo solo congratulare per la sua promozione, e dirle che sono felice di averla di nuovo al comando della mia squadra» dice Foeh a Thillion, con un filo di fumo che le sale dal guanto. Poi si volta verso Pyrrhos: «Ragazzino, stammi vicino là fuori, sei troppo carino per morire come un coglione!»",
+       "effetti": [],
+       "richiede": [
+        "N06d1"
+       ],
+       "fonte": "[V2 Cap.7 r.104, r.127]",
+       "scopo": "Foeh e Pyrrhos, prima della spedizione"
+      }
+     ]
+    },
+    {
+     "png": "ligo",
+     "apertura": "Ligo controlla le gemme di cura.",
+     "chiusura": "Ligo torna alle sue gemme.",
+     "riserva_libera": "Ligo non risponde: ha da fare.",
+     "argomenti": [
+      {
+       "id": "N06_ligo_1",
+       "testo": "Chiedere a Ligo di Foeh",
+       "riserva": "«Sono in debito con voi per mia sorella» dice Ligo, «come probabilmente lo sono anche con il tenente.»",
+       "effetti": [],
+       "fonte": "[V2 Cap.5 r.66] (come la C04 di «Il filo di cenere»)",
+       "scopo": "Ligo, sergente della Delta 15"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il maggiore legge i gradi della Delta 15: capitano Thillion; sergenti Nephele e Ligo; caporali tu e Alida; soldati Astrapios, Pyrrhos, Aris, Foeh e Suna.",
+    "fonte": "P3 [V2 Cap.7 r.36, r.50-54]; EIDOS.md r.187",
+    "esplora": [
+     {
+      "id": "N06d1",
+      "testo": "Prendere il grado di caporale",
+      "riserva": "Sei caporale della Delta 15, nella soppressione. In armeria la squadra ritira le armi per la spedizione.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Sei caporale della Delta 15, nella soppressione.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [V2 Cap.7 r.53]; l'armeria [r.94]; EIDOS.md r.187"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N06x1",
+     "N06_maggiore_1"
+    ],
+    "risoluzione": [
+     "N06d1"
+    ]
+   },
+   "required_beats": [
+    "N06x1",
+    "N06_maggiore_1",
+    "N06d1"
+   ],
+   "optional_beats": [
+    "N06_thillion_1",
+    "N06_thillion_2",
+    "N06_nephele_1",
+    "N06_foeh_1",
+    "N06_ligo_1"
+   ],
+   "riserva_libera": "Al settimo piano si parla solo quando il maggiore lo permette.",
+   "uscita_fail_forward": "Se la scena si ferma, il maggiore congeda comunque le squadre, e la Delta 15 sale sul mezzo."
+  },
+  "N07": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N07x1",
+     "parte": "L'armeria di Critto, il bunker vicino a Eutifer",
+     "testo": "Restare fuori dal bunker con Astrapios",
+     "riserva": "Al bunker vicino a Eutifer Thillion lascia fuori te e Astrapios, senza cibo. La dose non arriva: i medici restano dentro.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Thillion vi ha lasciati fuori dal bunker senza cibo.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "[V2 Cap.7 r.232-240] (le tue parole ad Astrapios, «qui al massimo gira qualche Ruktis», sono del giocatore)",
+     "scopo": "la punizione di Thillion"
+    },
+    {
+     "id": "N07x2",
+     "parte": "le strade verso la città degli scout",
+     "testo": "Ascoltare la radio, in marcia verso la città",
+     "riserva": "Alida chiama via radio: «Capitano, siamo bloccati, chiediamo il supporto della squadra di soppressione.» «Non se ne parla, mantenete la posizione e barricatevi, prima o poi smetteranno di aspettare che usciate» risponde Thillion. «Nephele, cerca tu la torre; Suna, tu la aprirai.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Gli scout sono bloccati in città, e Thillion rifiuta di soccorrerli.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.8 r.76-77]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "nephele",
+     "apertura": "Nephele ti guarda giocare con la terra.",
+     "chiusura": "Nephele si alza e se ne va.",
+     "riserva_libera": "Nephele non risponde.",
+     "argomenti": [
+      {
+       "id": "N07_nephele_1",
+       "testo": "Rispondere a Nephele, che ti chiede che cosa stai facendo",
+       "riserva": "«Pyrrhos ti ha raccontato dello strano theras che abbiamo visto la notte in cui siamo stati lontani dal gruppo?» chiede Nephele. Poi: «Che cosa sai fare? Qual è il tuo contatto con l'Arkè? Tutte le persone che hanno origini dall'esterno ne hanno uno, tutti quanti. Quindi, qual è la tua particolarità?»",
+       "effetti": [],
+       "fonte": "[V2 Cap.7 r.157-169] (al bunker; le tue risposte, «A parte uccidere non so fare nient'altro», sono del giocatore)",
+       "scopo": "il primo filo verso Memno"
+      },
+      {
+       "id": "N07_nephele_2",
+       "testo": "Chiedere a Nephele perché le interessa tanto",
+       "riserva": "«Ho visto una connessione tra te e il theras fatto di fumo» dice Nephele. «Ho visto un bambino in un villaggio con case fatte di terra, poi ho visto te e lui. Sei tu quel bambino, non è vero? È il posto da cui provieni, quello che ho visto?»",
+       "effetti": [
+        {
+         "scopri": "incubo_fact_bambino_terra"
+        },
+        {
+         "relazione": {
+          "png": "nephele",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "N07_nephele_1"
+       ],
+       "fonte": "[V2 Cap.7 r.170-174] (ciò che ha visto curandoti la spalla nella 05: R della 05; le tue risposte, «Sono un Chorisfos ora», sono del giocatore)",
+       "scopo": "il primo filo verso Memno"
+      }
+     ]
+    },
+    {
+     "png": "thillion",
+     "apertura": "Thillion non ti guarda mai in faccia.",
+     "chiusura": "Thillion ti volta le spalle.",
+     "riserva_libera": "«Hai qualcosa da ridire?» chiede Thillion, e non aspetta la risposta.",
+     "argomenti": [
+      {
+       "id": "N07_thillion_1",
+       "testo": "Rispondere a Thillion",
+       "riserva": "Thillion si volta verso la squadra e assegna i compiti, come se tu non avessi parlato.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "thillion",
+          "delta": -1
+         }
+        }
+       ],
+       "fonte": "[V2 Cap.7 r.97-100] (nella fonte «Agli ordini signore»: le parole sono del giocatore; poi i ruoli)",
+       "scopo": "il razzismo verso gli Xenos (EIDOS.md r.199 e r.21)"
+      }
+     ]
+    },
+    {
+     "png": "astrapios",
+     "apertura": "Astrapios si stringe nella giacca, fuori dal bunker.",
+     "chiusura": "Astrapios guarda il buio.",
+     "riserva_libera": "Astrapios si stringe nelle spalle.",
+     "argomenti": [
+      {
+       "id": "N07_astrapios_1",
+       "testo": "Dire ad Astrapios di rilassarsi",
+       "riserva": "Astrapios ha tutta la visuale scoperta, e lo sa; si stringe nelle spalle, e resta di guardia con te.",
+       "effetti": [],
+       "richiede": [
+        "N07x1"
+       ],
+       "fonte": "[V2 Cap.7 r.236-237] (le parole sono del giocatore); un gesto e nessuna battuta: Astrapios è un PG dell'autore",
+       "scopo": "la punizione condivisa"
+      }
+     ]
+    },
+    {
+     "png": "suna",
+     "apertura": "Suna ti cammina accanto.",
+     "chiusura": "Suna torna al suo posto nella fila.",
+     "riserva_libera": "Suna si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "N07_suna_1",
+       "testo": "Chiedere a Suna che cosa pensa degli scout",
+       "riserva": "Suna guarda Thillion, poi te, e non dice niente: la torre tocca a lui.",
+       "effetti": [],
+       "richiede": [
+        "N07x2"
+       ],
+       "fonte": "[V2 Cap.8 r.77] («Suna tu la aprirai»)",
+       "scopo": "il legame con Suna prima di Protopolis"
+      }
+     ]
+    },
+    {
+     "png": "foeh",
+     "apertura": "Foeh si gratta le bende del braccio.",
+     "chiusura": "Foeh torna a guardare la strada.",
+     "riserva_libera": "Foeh sbuffa e non risponde.",
+     "argomenti": [
+      {
+       "id": "N07_foeh_1",
+       "testo": "Chiedere a Foeh di stare vicino a Pyrrhos",
+       "riserva": "«Ragazzino, stammi vicino là fuori, sei troppo carino per morire come un coglione!» dice Foeh a Pyrrhos.",
+       "effetti": [],
+       "fonte": "[V2 Cap.7 r.127]",
+       "scopo": "la squadra prima della città"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Thillion non si muove: gli scout restano bloccati, e lui manda la squadra verso la torre.",
+    "fonte": "P2 [V2 Cap.8 r.77]",
+    "esplora": [
+     {
+      "id": "N07d1",
+      "parte": "le strade verso la città degli scout",
+      "testo": "Chiedere di poter intervenire per un soccorso",
+      "riserva": "«Ho bisogno di uomini qui con me, non di ragazzini che corrono spaventati per la città» dice Thillion.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Thillion rifiuta il soccorso agli scout.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 (P*: le parole sono del giocatore; nella fonte «Chiedo di poter intervenire per un soccorso» [V2 Cap.8 r.79]) e P4 [r.80]"
+     },
+     {
+      "id": "N07d2",
+      "parte": "le strade verso la città degli scout",
+      "testo": "Insistere con Thillion",
+      "riserva": "«Fai un altro passo e la tua famiglia non mangerà per una settimana al mio rientro, come anche quella degli scout!» grida Thillion. «Non è della loro vita che mi preoccupo ora: la chiave ha una priorità.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Thillion minaccia di lasciare senza cibo la tua famiglia e quelle degli scout.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P5 [V2 Cap.8 r.83, r.86] (la tua risposta, «voi e la squadra siete la mia famiglia, capitano», P6, è del giocatore)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N07x2"
+    ],
+    "risoluzione": [
+     "N07d1",
+     "N07d2"
+    ]
+   },
+   "required_beats": [
+    "N07x2",
+    "N07d1",
+    "N07d2"
+   ],
+   "optional_beats": [
+    "N07x1",
+    "N07_nephele_1",
+    "N07_nephele_2",
+    "N07_thillion_1",
+    "N07_astrapios_1",
+    "N07_suna_1",
+    "N07_foeh_1"
+   ],
+   "riserva_libera": "In marcia nessuno parla: Thillion è in testa, e non si volta.",
+   "uscita_fail_forward": "Se la scena si ferma, le grida degli scout arrivano comunque dalla radio, e tu vai."
+  },
+  "N08": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N08x1",
+     "testo": "Avanzare da solo fra le strade di Protopolis",
+     "riserva": "Vai da solo, e il drone ti guida fra le strade: Alida e Astrapios sono i tuoi occhi, dalla radio.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Vai da solo a Protopolis, guidato dal drone degli scout.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 (P*: come andare è del giocatore; nella fonte «Astrapios, Alida mi guiderete voi, sarete i miei occhi») [V2 Cap.8 r.103-104]"
+    },
+    {
+     "id": "N08x2",
+     "testo": "Appendere i gusci ai cavi sopra i tetti",
+     "riserva": "Appendi i gusci ai cavi sopra i tetti, e il rumore che fai verso le strade rimbomba fra le case: i theras si voltano da quella parte.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "[V2 Cap.8 r.108-110] (il piano dei «gusci» di Fobos; l'effetto sui theras è PROPOSTA: la fonte dice solo il piano)",
+     "scopo": "il soppressore"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "suna",
+     "apertura": "Suna tiene il casco contro il tuo.",
+     "chiusura": "Suna torna con la squadra.",
+     "riserva_libera": "Suna non risponde: ti guarda andare.",
+     "argomenti": [
+      {
+       "id": "N08_suna_1",
+       "testo": "Promettere a Suna che tornerai",
+       "riserva": "Suna annuisce, casco contro casco, e torna con la squadra verso la torre.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "suna",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[V2 Cap.8 r.92-93] (la promessa della fonte, «un giorno lo vedremo, non morirò stanotte!», è del giocatore)",
+       "scopo": "la promessa a Suna"
+      }
+     ]
+    },
+    {
+     "png": "alida",
+     "apertura": "La voce di Alida arriva dalla radio.",
+     "chiusura": "La radio di Alida tace.",
+     "riserva_libera": "Alla radio si sente solo il respiro di Alida.",
+     "argomenti": [
+      {
+       "id": "N08_alida_1",
+       "testo": "Chiedere ad Alida come stanno",
+       "riserva": "«Ho la stessa sensazione dell'altra volta, quella paura» dice Alida alla radio. «Forse mi sto svegliando solamente ora che il vento ha acceso le fiamme.»",
+       "effetti": [],
+       "richiede": [
+        "N08x1"
+       ],
+       "fonte": "[V2 Cap.8 r.168]",
+       "scopo": "il legame con Alida, che muore nella 10"
+      },
+      {
+       "id": "N08_alida_2",
+       "testo": "Ascoltare Alida dopo il fumo",
+       "riserva": "«Una cosa fatta di macerie si dirige verso la piazza e sta uccidendo gli altri theras: noi ci muoviamo verso la torre, cerchiamo un contatto a metà strada» dice Alida alla radio.",
+       "effetti": [
+        {
+         "nota": "Una creatura di polvere e macerie uccide i theras vicino ad Alida.",
+         "categoria": "indizio"
+        }
+       ],
+       "richiede": [
+        "N08d2"
+       ],
+       "fonte": "[V2 Cap.9 r.119-124]",
+       "scopo": "un altro segno dell'ombra"
+      }
+     ]
+    },
+    {
+     "png": "astrapios",
+     "apertura": "Astrapios guida il drone dall'edificio.",
+     "chiusura": "Il drone torna sopra le strade.",
+     "riserva_libera": "Astrapios non risponde.",
+     "argomenti": [
+      {
+       "id": "N08_astrapios_1",
+       "testo": "Dare un ordine ad Astrapios",
+       "riserva": "Il drone si sposta dove gli hai detto: Astrapios esegue, senza discutere.",
+       "effetti": [],
+       "richiede": [
+        "N08x1"
+       ],
+       "fonte": "[V2 Cap.8 r.104-106] (le parole, «ricordati che sono un tuo superiore», sono del giocatore); un gesto e nessuna battuta: Astrapios è un PG dell'autore",
+       "scopo": "il caporale e i suoi uomini"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Gli scout sono chiusi in un edificio, e un azzannatore lo sta scalando: Alida si sporge con l'arco.",
+    "fonte": "[V2 Cap.8 r.169-172]",
+    "esplora": [
+     {
+      "id": "N08d1",
+      "testo": "Guidare Alida via radio contro gli azzannatori",
+      "riserva": "«Non riesco ancora a capire se è istinto suicida il tuo o se speri che la fortuna sia dalla tua» ti dice Alida, mentre tira. L'azzannatore cade dall'edificio.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Hai guidato Alida via radio contro gli azzannatori.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 (P*: i consigli, «mira sempre a quello bianco», sono del giocatore) [V2 Cap.8 r.174-181]; l'azzannatore buttato giù [r.170]"
+     },
+     {
+      "id": "N08d2",
+      "testo": "Guardare che cosa si muove nella piazza",
+      "riserva": "Un mostro di fumo nero si getta sui theras della piazza e li dilania, uno dopo l'altro. «Quell'affare non deve vederci» dice Alida alla radio.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Un mostro di fumo nero ha dilaniato i theras della piazza.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 [V2 Cap.8 r.189-207] (nella fonte è una scena da guardare: nessun tiro)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N08x1"
+    ],
+    "risoluzione": [
+     "N08d1",
+     "N08d2"
+    ]
+   },
+   "required_beats": [
+    "N08x1",
+    "N08d1",
+    "N08d2"
+   ],
+   "optional_beats": [
+    "N08x2",
+    "N08_suna_1",
+    "N08_alida_1",
+    "N08_alida_2",
+    "N08_astrapios_1"
+   ],
+   "riserva_libera": "Fra le strade di Protopolis si sentono solo i theras.",
+   "uscita_fail_forward": "Se la scena si ferma, il fumo nero arriva comunque nella piazza, e poi il buio."
+  },
+  "N09": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N09x1",
+     "testo": "Ascoltare chi ti ha steso",
+     "riserva": "«Dunque ce l'hai la lingua?» dice l'uomo. Più tardi, in marcia, si presenta ad Alida: «Il mio nome è Er, attuale generale di Kaledos, e lei è il mio attendente Adrasteia. Sono vent'anni che non vi fate vedere così a nord, e vent'anni che noi non ci spingevamo così a sud.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "incubo_fact_kaledos"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.9 r.147, r.280, r.289]; EIDOS.md r.152 (senza «gli araldi di Delfi»: le parole su chi cercano restano fuori fino alla 18)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "er",
+     "apertura": "Er cammina in testa, con il tuo casco sotto il braccio.",
+     "chiusura": "Er torna in testa alla marcia.",
+     "riserva_libera": "«Ora non è tempo» dice Er.",
+     "argomenti": [
+      {
+       "id": "N09_er_1",
+       "testo": "Chiedere a Er delle torri",
+       "riserva": "«Le torri non possono più essere aperte» dice Er.",
+       "effetti": [],
+       "richiede": [
+        "N09x1"
+       ],
+       "fonte": "[V2 Cap.9 r.274] (nella fonte lo dice ad Alida)",
+       "scopo": "la torre che la squadra cercava"
+      }
+     ]
+    },
+    {
+     "png": "adrasteia",
+     "apertura": "Adrasteia vi tiene d'occhio, il fucile in spalla.",
+     "chiusura": "Adrasteia torna accanto a Er.",
+     "riserva_libera": "Adrasteia non risponde.",
+     "argomenti": [
+      {
+       "id": "N09_adrasteia_1",
+       "testo": "Chiedere ad Adrasteia che cosa cercate",
+       "riserva": "Adrasteia guarda Er, e non risponde a te: parlano sottovoce fra loro, di una porta e di un lago.",
+       "effetti": [],
+       "richiede": [
+        "N09x1"
+       ],
+       "fonte": "[V2 Cap.11 r.32-34] (le battute sottovoce restano fuori: toccano chi cercano, verità della 12)",
+       "scopo": "il primo accenno al portale e al lago della 12"
+      }
+     ]
+    },
+    {
+     "png": "astrapios",
+     "apertura": "Astrapios cammina con le mani vuote, senza l'arco.",
+     "chiusura": "Astrapios guarda altrove.",
+     "riserva_libera": "Astrapios non risponde.",
+     "argomenti": [
+      {
+       "id": "N09_astrapios_1",
+       "testo": "Rimproverare Astrapios per quello che ha detto davanti a loro",
+       "riserva": "Astrapios incassa a denti stretti: con le sue parole davanti agli uomini di Er ha messo in pericolo sua sorella, e lo sa.",
+       "effetti": [],
+       "richiede": [
+        "N09x1"
+       ],
+       "fonte": "[V2 Cap.9 r.153-159] (nella fonte a Protopolis, fra gli uomini di Er: L della 08 spostato qui, PROPOSTA; le tue parole, «tu non possiedi nessuno», sono del giocatore)",
+       "scopo": "la squadra come famiglia"
+      }
+     ]
+    },
+    {
+     "png": "alida",
+     "apertura": "Alida cammina accanto ad Astrapios.",
+     "chiusura": "Alida torna a parlare con Astrapios.",
+     "riserva_libera": "Alida si stringe nelle spalle.",
+     "argomenti": [
+      {
+       "id": "N09_alida_1",
+       "testo": "Chiedere ad Alida che cosa pensa di Nephele",
+       "riserva": "«Non so come fate a credere a quella ragazza» dice Alida, a voce bassa. «Se fosse vero, e hai bisogno di parlarne, sai che ci sono.»",
+       "effetti": [],
+       "richiede": [
+        "N09d1"
+       ],
+       "fonte": "[V2 Cap.11 r.42] (nella fonte lo dice ad Astrapios)",
+       "scopo": "il legame con Alida prima della torre"
+      }
+     ]
+    },
+    {
+     "png": "suna",
+     "apertura": "Suna ti si avvicina, durante la marcia.",
+     "chiusura": "Suna torna al suo cavallo.",
+     "riserva_libera": "Suna si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "N09_suna_1",
+       "testo": "Stare un po' con Suna",
+       "riserva": "Suna ti cammina accanto per un tratto; poi tocca agli altri, uno alla volta, per tenerli lucidi.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "suna",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "N09d1"
+       ],
+       "fonte": "[V2 Cap.11 r.132]",
+       "scopo": "il caporale che tiene lucidi i compagni"
+      }
+     ]
+    },
+    {
+     "png": "nephele",
+     "apertura": "Nephele è davanti a te, a cavallo, ancora turbata.",
+     "chiusura": "Nephele chiude gli occhi.",
+     "riserva_libera": "Nephele non risponde: è ancora turbata.",
+     "argomenti": [
+      {
+       "id": "N09_nephele_1",
+       "testo": "Raccontare a Nephele il suo crollo",
+       "riserva": "Nephele ti ascolta, semi-cosciente. Poi ti parla nella mente, e piange; gli altri, con il casco, la sentono.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "nephele",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "N09d1"
+       ],
+       "fonte": "P5 (P*: le parole sono del giocatore; nella fonte «Hai avuto un crollo, i tuoi occhi brillavano e hai detto che Critto è stata distrutta…» [V2 Cap.11 r.50]) [r.47-50]",
+       "scopo": "il legame con Nephele dopo il crollo"
+      }
+     ]
+    },
+    {
+     "png": "thillion",
+     "apertura": "Thillion guarda Er senza fidarsi.",
+     "chiusura": "Thillion torna a guardare la strada a sud.",
+     "riserva_libera": "Thillion non ti risponde.",
+     "argomenti": [
+      {
+       "id": "N09_thillion_1",
+       "testo": "Chiedere a Thillion che cosa vuole fare",
+       "riserva": "Thillion chiede di essere scortati a sud, e per questo continuerà a rispettare il patto di Crio. Astrapios si offre di correre avanti, ma Er gli fa capire che non arriverebbe prima di loro.",
+       "effetti": [],
+       "richiede": [
+        "N09d1"
+       ],
+       "fonte": "P3 [V2 Cap.11 r.31, r.35-36] (come la C07 di «Il filo di cenere»)",
+       "scopo": "la scorta a sud"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "A Kaledos Nephele crolla. Adrasteia la gira su un fianco e le tiene la testa sollevata, come per un attacco di epilessia; gli occhi di Nephele brillano, e dice che Critto è stata distrutta.",
+    "fonte": "P2 [V2 Cap.11 r.27-30, r.50] (che cosa vede lei non lo vedi tu)",
+    "esplora": [
+     {
+      "id": "N09d1",
+      "parte": "la marcia verso sud",
+      "testo": "Prendere Nephele con te, a cavallo",
+      "riserva": "In marcia verso sud, a cavallo, tieni Nephele davanti a te, legata perché non cada. Tutti avete il casco, e quello che dite lo sentono anche gli altri. Thillion vuole essere scortato a sud.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "incubo_fact_crollo"
+       }
+      ],
+      "fonte": "P3 [V2 Cap.11 r.31, r.40-47] (L: proteggerla)"
+     },
+     {
+      "id": "N09d2",
+      "parte": "la marcia verso sud",
+      "testo": "Tenere lontani i theras dal campo",
+      "riserva": "Alcuni theras sembrano seguirvi e studiarvi. Di notte degli spazzini si avvicinano troppo al campo, e con Aris e Pyrrhos li abbattete.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "[V2 Cap.11 r.132]",
+      "scopo": "il caporale"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N09x1"
+    ],
+    "risoluzione": [
+     "N09d1"
+    ]
+   },
+   "required_beats": [
+    "N09x1",
+    "N09d1"
+   ],
+   "optional_beats": [
+    "N09_er_1",
+    "N09_adrasteia_1",
+    "N09_astrapios_1",
+    "N09_alida_1",
+    "N09_suna_1",
+    "N09_nephele_1",
+    "N09_thillion_1",
+    "N09d2"
+   ],
+   "riserva_libera": "A Kaledos nessuno vi risponde volentieri: siete ospiti, e disarmati.",
+   "uscita_fail_forward": "Se la scena si ferma, la squadra parte comunque verso sud con la scorta."
+  },
+  "N10": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N10x4",
+     "testo": "Fare la prima ronda con Alida",
+     "riserva": "Organizzi le ronde e porti Alida con te al primo giro; lei esita, poi ti segue. Dall'alto avvistate numerose squadre di terra epizie e una fila di theras di metallo, gli elicotteri, che si dirigono verso di voi con un rombo fortissimo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Con Alida hai avvistato le squadre epizie e gli elicotteri.",
+       "categoria": "indizio"
+      }
+     ],
+     "prima_di": [
+      "N10x1"
+     ],
+     "fonte": "L [V2 Cap.11 r.198-200, r.205-206]",
+     "scopo": "il legame con Alida e la difesa"
+    },
+    {
+     "id": "N10x1",
+     "testo": "Ascoltare gli ordini di Thillion",
+     "riserva": "Thillion coprirà dall'alto, e ordina a tutti di nascondersi nella torre. Poi si volta verso di te: «Affido a te la difesa dell'ingresso.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Thillion ti ha affidato la difesa dell'ingresso.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.12 r.24-27]"
+    },
+    {
+     "id": "N10x2",
+     "testo": "Guardare Sidd e Astrapios all'hub",
+     "riserva": "Sidd chiama Suna, quello con la catena, perché assorba l'elettricità in eccesso di Astrapios e la scarichi in un cavo: «Non fargli superare i 120 volt.» Poi mostra l'hub ad Astrapios: «L'antenna dovrebbe essere già posizionata per incontrare il satellite Amos, metti la mano qua e quando arrivi al satellite dai un solo input: Critto.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Astrapios deve raggiungere Critto attraverso il satellite Amos.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P3 [V2 Cap.12 r.28-37] (come la C09)"
+    },
+    {
+     "id": "N10x3",
+     "testo": "Schierare la squadra per la difesa",
+     "riserva": "Raduni i soppressori all'ingresso e mandi su i bombardieri; Alida e Nephele le vuoi a difendere dall'alto. Thillion corregge l'ordine: «No! Voi non salirete, state appena sopra ai soppressori per sfruttare l'altezza e colpirli dall'alto in caso entrino.» La priorità è avvisare Eutifer o Apologeti di un possibile secondo attacco.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "I soppressori sono all'ingresso; Alida e Nephele appena sopra di loro.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "richiede": [
+      "N10x1"
+     ],
+     "fonte": "P4 (P*: gli ordini sono del giocatore; nella fonte «Alida tu e [Nephele] difenderete dall'alto» [V2 Cap.12 r.46]) [r.43-48]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "sidd",
+     "apertura": "Sidd è chino sull'hub, accanto ad Astrapios.",
+     "chiusura": "Sidd torna all'hub.",
+     "riserva_libera": "«Ora pensate a fare il vostro compito» dice Sidd.",
+     "argomenti": [
+      {
+       "id": "N10_sidd_1",
+       "testo": "Chiedere a Sidd che cosa deve fare Astrapios",
+       "riserva": "«Ragazzo, tu hai un compito fondamentale» dice Sidd ad Astrapios. «Trovata la banca dati della città, entra nel sistema centrale e manometti il protocollo Undo of the Eidos, mi segui?» Thillion non sa di che cosa parli.",
+       "effetti": [],
+       "richiede": [
+        "N10x2"
+       ],
+       "prima_di": [
+        "N10d1"
+       ],
+       "fonte": "[V2 Cap.12 r.35-41] (come la C09; senza la frase sul generale, riservata fino all'ultimo pilastro)",
+       "scopo": "il protocollo, prima dell'attacco"
+      }
+     ]
+    },
+    {
+     "png": "alida",
+     "apertura": "Alida controlla le frecce, vicino ad Astrapios.",
+     "chiusura": "Alida torna al suo posto, appena sopra i soppressori.",
+     "riserva_libera": "Alida si stringe nelle spalle.",
+     "argomenti": [
+      {
+       "id": "N10_alida_1",
+       "testo": "Chiedere ad Alida se è pronta",
+       "riserva": "Alida si volta verso Astrapios: «Fai funzionare quella torre, dobbiamo avvertirli subito.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "alida",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "N10x1"
+       ],
+       "prima_di": [
+        "N10d1"
+       ],
+       "fonte": "L gli ordini e Alida [V2 Cap.12 r.53-54] (come la C09; senza il soprannome del PG)",
+       "scopo": "la squadra prima dell'attacco"
+      }
+     ]
+    },
+    {
+     "png": "thillion",
+     "apertura": "Thillion controlla l'arco, pronto a salire sul tetto.",
+     "chiusura": "Thillion sale verso il tetto.",
+     "riserva_libera": "«Non è il momento» dice Thillion.",
+     "argomenti": [
+      {
+       "id": "N10_thillion_1",
+       "testo": "Chiedere a Thillion di ridistribuire le gemme",
+       "riserva": "Thillion ti dà il permesso con un cenno, e ridistribuisci le gemme fra la squadra, una per una.",
+       "effetti": [],
+       "richiede": [
+        "N10x1"
+       ],
+       "prima_di": [
+        "N10d1"
+       ],
+       "fonte": "L [V2 Cap.12 r.60] (le tue parole sono del giocatore)",
+       "scopo": "preparare la difesa"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Due mezzi si avvicinano alla torre, uno simile a un container. Ne scende una squadra epizia, e i lancieri corrono verso l'ingresso. Poi il portellone del secondo container salta: escono una ventina di azzannatori dal pelo bianchissimo, intorno a una ragazza dai capelli bianchi. «Uscite bastardi, ho fame!» grida Hidra.",
+    "fonte": "P5 [V2 Cap.12 r.149-159] (come la C09)",
+    "esplora": [
+     {
+      "id": "N10d1",
+      "testo": "Tenere l'ingresso con i soppressori",
+      "riserva": "Ti pianti sull'ingresso con i soppressori, mentre i lancieri epizi vi arrivano addosso.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "I lancieri epizi sono all'ingresso della torre.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 e P5 (P*) [V2 Cap.12 r.27, r.159]: lo scontro parte con la risoluzione"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N10x1",
+     "N10x2",
+     "N10x3"
+    ],
+    "risoluzione": [
+     "N10d1"
+    ]
+   },
+   "required_beats": [
+    "N10x1",
+    "N10x2",
+    "N10x3",
+    "N10d1"
+   ],
+   "optional_beats": [
+    "N10x4",
+    "N10_sidd_1",
+    "N10_alida_1",
+    "N10_thillion_1"
+   ],
+   "riserva_libera": "Resti alla torre radio di Protopolis, con la squadra.",
+   "uscita_fail_forward": "Se la scena si ferma, Undo of the Eidos accade comunque."
+  },
+  "N11": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N11x1",
+     "parte": "Protopolis, le macerie della torre radio;",
+     "testo": "Riprendere in mano la squadra",
+     "riserva": "Mandi Ligo a cercare Loke, Suna e Sidd, e chiedi a Nephele di cercare Astrapios sotto le macerie e dentro la torre: non lo trova. Sidd stabilizza Loke con una siringa di sangue; Suna non è lucido, e non può guidare il mezzo. Le cure le aveva Thillion dentro la torre, e probabilmente sono andate.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "incubo_fact_cure"
+      }
+     ],
+     "fonte": "P1 (P*: gli ordini e le parole sono del giocatore; nella fonte «Ok, dobbiamo fare i conti con il tempo ora, non abbiamo cure con noi…» [V2 Cap.13 r.62]) [r.58-63] (gli stessi ordini della C11)"
+    },
+    {
+     "id": "N11x2",
+     "parte": "Protopolis, le macerie della torre radio;",
+     "testo": "Guardare le macerie della torre",
+     "riserva": "La torre è crollata: Astrapios era lassù, all'hub, ed è finito fra le macerie.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "[V2 Cap.12 r.332-334] (come la C10)",
+     "scopo": "chi hai perso"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "aris",
+     "apertura": "Aris guarda Nephele, poi te.",
+     "chiusura": "Aris torna a guardare la strada verso Critto.",
+     "riserva_libera": "Aris scuote la testa: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "N11_aris_1",
+       "testo": "Chiedere ad Aris se viene con voi",
+       "riserva": "«io non verrò con voi, ho deciso di andare a Critto, vi attenderò lì e una volta arrivati partirò verso nord, sono morti in troppi, è tempo che io mi dedichi a ricostruire» dice Aris. Poi ti saluta, guardando Nephele: «Certo Maredudd, tu ascolta i tuoi occhi, lei è l'unica capace di tenerti in questo mondo.»",
+       "effetti": [
+        {
+         "scopri": "incubo_fact_aris"
+        }
+       ],
+       "richiede": [
+        "N11x1"
+       ],
+       "fonte": "P2 [V2 Cap.13 r.80-82] (EIDOS.md r.188; come la C11)"
+      },
+      {
+       "id": "N11_aris_2",
+       "testo": "Salutare Aris",
+       "riserva": "Gli porgi la mano, e Aris la stringe.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "aris",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "N11_aris_1"
+       ],
+       "fonte": "L [V2 Cap.13 r.81] («[Fobos] lo osserva e poi gli porge la mano»; le tue parole, «Sta attento», sono del giocatore)",
+       "scopo": "il commiato"
+      }
+     ]
+    },
+    {
+     "png": "sidd",
+     "apertura": "Sidd sta stabilizzando Loke con una siringa di sangue.",
+     "chiusura": "Sidd torna al mezzo.",
+     "riserva_libera": "«Ora pensate a fare il vostro compito» dice Sidd.",
+     "argomenti": [
+      {
+       "id": "N11_sidd_1",
+       "testo": "Chiedere a Sidd che cosa sta succedendo",
+       "riserva": "«Da quanto prendete il siero?» chiede Sidd. «La soluzione potrebbe essere portare a ovest chi di voi non ha subito mutazioni definitive. Siete stati vicini ad un varco di colore ciano?»",
+       "effetti": [],
+       "richiede": [
+        "N11x1"
+       ],
+       "prima_di": [
+        "N11d1"
+       ],
+       "fonte": "[V2 Cap.13 r.66-69] (come la C11)",
+       "scopo": "chi li ha usati"
+      },
+      {
+       "id": "N11_sidd_2",
+       "testo": "Accusare Sidd del protocollo",
+       "riserva": "«Ho fatto un errore, il secondo più grave dopo molti anni forse…» dice Sidd. «Ero convinto che mantenervi all'oscuro di tutto avrebbe aiutato a mantenere il controllo della popolazione, non ci sarebbero stati più uomini talmente potenti da innalzarsi a divinità come in passato.»",
+       "effetti": [],
+       "richiede": [
+        "N11_sidd_1"
+       ],
+       "prima_di": [
+        "N11d1"
+       ],
+       "fonte": "L [V2 Cap.13 r.73-76] (le tue parole, «…se sapevi del protocollo perché non lo hai fermato tu stesso?», sono del giocatore)",
+       "scopo": "la rabbia verso chi li ha usati"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Sul mezzo collegano Ligo al sistema elettrico con una mascherina, e a guidare è Sidd. Foeh fruga nel borsone di Sidd e trova un taccuino.",
+    "fonte": "P3 [V2 Cap.13 r.84-85, r.180] (come la C11)",
+    "esplora": [
+     {
+      "id": "N11d1",
+      "parte": "il mezzo dei superstiti",
+      "testo": "Ascoltare Sidd sul mezzo",
+      "riserva": "Sidd strappa il taccuino di mano a Foeh: «Lei non sono affari tuoi.» Quando gli chiedete quanti anni abbia, risponde: «167 per l'esattezza, ho la data del mio compleanno sul taccuino con gli auguri di mia figlia a ricordarmelo ancora.» Poi vi parla del siero: «La vostra è una versione sporca, piuttosto blanda… serviva perché voi non aveste autonomia di muovervi all'esterno, per controllarvi.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "incubo_fact_siero"
+       }
+      ],
+      "fonte": "P3 [V2 Cap.13 r.181-202] (la domanda su Robert Epos diventa una domanda sull'età: PROPOSTA, il nome resta fuori, D6)"
+     },
+     {
+      "id": "N11d2",
+      "parte": "il mezzo dei superstiti",
+      "testo": "Dire a Sidd di fermare il mezzo",
+      "riserva": "«No» risponde Sidd. Ti si accendono gli occhi di ciano, e si sente il ferro del mezzo che comincia a incrinarsi; Pyrrhos sente lo stesso rumore della notte dell'aratare ad Antarsia, e il mezzo si ferma di colpo. Nephele ti si mette davanti, anche lei con gli occhi ciano, e ti calma.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Sul mezzo ti si sono accesi gli occhi di ciano, e il ferro si è incrinato; Nephele ti ha calmato.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "N11d1"
+      ],
+      "fonte": "P4 (P*: le parole sono del giocatore; nella fonte «Ferma il mezzo» [V2 Cap.13 r.203]) [r.203-207]"
+     },
+     {
+      "id": "N11d3",
+      "parte": "il mezzo dei superstiti",
+      "testo": "Dare un pugno a Sidd",
+      "riserva": "Ti avvicini a Sidd e gli dai un pugno in faccia. Sidd si tocca la bocca, e non dice niente.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "relazione": {
+         "png": "sidd",
+         "delta": -1
+        }
+       }
+      ],
+      "richiede": [
+       "N11d2"
+      ],
+      "fonte": "P5 (P*: il gesto è del giocatore) [V2 Cap.13 r.209]; EIDOS.md r.188; «e non dice niente» è PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N11x1",
+     "N11_aris_1"
+    ],
+    "risoluzione": [
+     "N11d1",
+     "N11d2"
+    ]
+   },
+   "required_beats": [
+    "N11x1",
+    "N11_aris_1",
+    "N11d1",
+    "N11d2"
+   ],
+   "optional_beats": [
+    "N11x2",
+    "N11_aris_2",
+    "N11_sidd_1",
+    "N11_sidd_2",
+    "N11d3"
+   ],
+   "riserva_libera": "La squadra resta in silenzio, e nessuno alza la voce.",
+   "uscita_fail_forward": "Se la scena si ferma, il mezzo arriva comunque verso est, fino al portale."
+  },
+  "N12": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N12x1",
+     "testo": "Avvicinarti alla luce del portale",
+     "riserva": "Ti avvicini alla luce ciano, e il lago sparisce.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "[V2 Cap.13 r.216]; [V2 Cap.14 r.94] (tutti hanno una visione: la tua è oltre il portale)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "ligo",
+     "apertura": "Ligo arde, e non sembra bruciare.",
+     "chiusura": "Ligo guarda la nube.",
+     "riserva_libera": "Ligo scuote la testa.",
+     "argomenti": [
+      {
+       "id": "N12_ligo_1",
+       "testo": "Chiedere a Ligo del fuoco",
+       "riserva": "«Il fuoco di necessità, è necessario a noi quanto agli altri, si accende nel momento del bisogno e funge da guida per i più deboli… noi compresi» dice Ligo.",
+       "effetti": [],
+       "prima_di": [
+        "N12d1"
+       ],
+       "fonte": "P1 [V2 Cap.13 r.216] (come la C11)",
+       "scopo": "il fuoco di necessità"
+      }
+     ]
+    },
+    {
+     "png": "pyrrhos",
+     "apertura": "Pyrrhos è avvolto dalle fiamme, gli occhi persi nella nube.",
+     "chiusura": "Pyrrhos torna a guardare la nube.",
+     "riserva_libera": "Pyrrhos non risponde.",
+     "argomenti": [
+      {
+       "id": "N12_pyrrhos_1",
+       "testo": "Guardare Pyrrhos che arde",
+       "riserva": "Pyrrhos ha gli occhi persi nella nube, come se vedesse qualcosa che voi non vedete.",
+       "effetti": [],
+       "prima_di": [
+        "N12d1"
+       ],
+       "fonte": "[V2 Cap.13 r.216-…] (le visioni di Pyrrhos restano fuori: Arkè che plasma la materia, 26; un gesto e nessuna battuta: Pyrrhos è un PG dell'autore)",
+       "scopo": "la visione degli altri"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ti ritrovi a vagare in uno spazio quasi metafisico, con le mani sporche di sangue, e non trovi l'uscita.",
+    "fonte": "[V2 Cap.14 r.5] («Imprinting»; la tua battuta, «Non riesco ad uscire… li ho uccisi tutti?», è del giocatore)",
+    "esplora": [
+     {
+      "id": "N12d1",
+      "testo": "Andare incontro al ragazzo che si avvicina",
+      "riserva": "Nello spazio senza uscita un ragazzo ti viene incontro.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Oltre il portale un ragazzo ti è venuto incontro.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P2 [V2 Cap.14 r.6]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N12x1"
+    ],
+    "risoluzione": [
+     "N12d1"
+    ]
+   },
+   "required_beats": [
+    "N12x1",
+    "N12d1"
+   ],
+   "optional_beats": [
+    "N12_ligo_1",
+    "N12_pyrrhos_1"
+   ],
+   "riserva_libera": "Sulla riva del lago la squadra resta in silenzio.",
+   "uscita_fail_forward": "Se la scena si ferma, cadi comunque nel lago, e la squadra passa la notte sulla riva."
+  },
+  "N13": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N13x1",
+     "testo": "Guardare chi guida i soccorsi",
+     "riserva": "Molti dei soccorsi sono guidati da Aris e Loke; con loro c'è un gruppo di persone senza armatura, con gli occhi illuminati di ciano, e un altro gruppo in tenuta militare nera.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "P1 [V2 Cap.14 r.199] (come la C12x1; che tu corra ad aiutare i feriti [r.199] è del giocatore)"
+    },
+    {
+     "id": "N13x2",
+     "testo": "Cercare Sidd fra le rovine",
+     "riserva": "«Sidd dov'è? Non era con voi?» chiede Loke. Sidd non c'è: nessuno l'ha visto andare via.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "incubo_fact_sidd_sparito"
+      }
+     ],
+     "fonte": "P2 (P*: la tua risposta, «…sarà scappato?» [V2 Cap.15 r.42], è del giocatore) [r.41-42]; «nessuno l'ha visto andare via»: PROPOSTA"
+    },
+    {
+     "id": "N13x3",
+     "testo": "Guardare il bracciale di Astrapios",
+     "riserva": "Al polso porti ancora il bracciale di Astrapios, con i nomi dei compagni.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "L [V2 Cap.15 r.112] (il bracciale che non hai abbandonato); i nomi incisi: [V2 0/1 r.165-219] (DEDOTTO)",
+     "scopo": "chi ha perso"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "aris",
+     "apertura": "Aris si asciuga le mani sporche di cenere.",
+     "chiusura": "Aris torna fra i feriti.",
+     "riserva_libera": "Aris scuote la testa: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "N13_aris_1",
+       "testo": "Chiedere ad Aris da quanto siete qui",
+       "riserva": "«noi ci abbiamo messo un mese ad arrivare qua, infatti le persone sono accampate da un po' e i soccorsi stanno arrivando» dice Aris.",
+       "effetti": [],
+       "fonte": "[V2 Cap.15 r.38-40] (come la C12)",
+       "scopo": "il tempo passato oltre il portale"
+      }
+     ]
+    },
+    {
+     "png": "suna",
+     "apertura": "Suna è di nuovo lucido, seduto fra i feriti.",
+     "chiusura": "Suna guarda l'ingresso distrutto.",
+     "riserva_libera": "Suna si stringe nelle spalle.",
+     "argomenti": [
+      {
+       "id": "N13_suna_1",
+       "testo": "Stare un po' con Suna",
+       "riserva": "Suna ti dice che a tenerlo in vita, quando non era lucido, è stato sentirti parlare.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "suna",
+          "delta": 1
+         }
+        }
+       ],
+       "prima_di": [
+        "N13d1"
+       ],
+       "fonte": "L della 12, «Suna che si risveglia» [V2 Cap.14] (spostato qui, PROPOSTA)",
+       "scopo": "il legame con Suna"
+      },
+      {
+       "id": "N13_suna_2",
+       "testo": "Dire a Suna dove vuoi andare",
+       "riserva": "«Mi avevi promesso che avremmo visto l'oceano!» dice Suna. «Maledizione, ascolta cosa ha da dire.»",
+       "effetti": [],
+       "richiede": [
+        "N13d1"
+       ],
+       "fonte": "L [V2 Cap.15 r.99] (la battuta senza il nome; le tue parole sono del giocatore)",
+       "scopo": "l'obiettivo «proteggere Suna» (EIDOS.md r.204)"
+      }
+     ]
+    },
+    {
+     "png": "foeh",
+     "apertura": "Foeh tiene d'occhio gli uomini di Hermes.",
+     "chiusura": "Foeh torna accanto a suo fratello.",
+     "riserva_libera": "Foeh sbuffa e non risponde.",
+     "argomenti": [
+      {
+       "id": "N13_foeh_1",
+       "testo": "Dire alla squadra che non sei adatto a guidarla",
+       "riserva": "«Ha ragione mio fratello, sei il nostro capitano… non hai mai voluto esserlo ma lo sei» dice Foeh.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "foeh",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "N13d1"
+       ],
+       "fonte": "L [V2 Cap.15 r.102] (le tue parole, «Non sono adatto a guidarvi…», sono del giocatore); la risposta di Foeh [V2 Cap.15]",
+       "scopo": "la squadra senza capo"
+      }
+     ]
+    },
+    {
+     "png": "hermes",
+     "apertura": "Hermes ti studia, con la mano ricostruita sul fianco.",
+     "chiusura": "Hermes torna dai suoi uomini.",
+     "riserva_libera": "«Non sono affari tuoi» dice Hermes.",
+     "argomenti": [
+      {
+       "id": "N13_hermes_1",
+       "testo": "Chiedere a Hermes perché cerca Nephele",
+       "riserva": "«A breve ci sarà un incontro a Lechta, e lei mi ha chiesto di rapire la figlia di Crio per evitare che lui vada lì: se andasse potrebbe venire ucciso» dice Hermes.",
+       "effetti": [],
+       "fonte": "[V2 Cap.15 r.68] (come la C12; nella fonte lo dice a Pyrrhos)",
+       "scopo": "che cosa vogliono i Dexia"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Arriva Hermes con i suoi uomini: è un chorisfos con una mano ricostruita e una gamba di metallo, e vuole portare Nephele alla base dei Dexia.",
+    "fonte": "P3 [V2 Cap.15; Cap.14 r.200] (come la C12; «la base dei Dexia», D7)",
+    "esplora": [
+     {
+      "id": "N13d1",
+      "testo": "Metterti davanti a Nephele",
+      "riserva": "Ti si accendono gli occhi, e ti metti davanti a Nephele. Hermes insiste: con lei alla base, Crio non andrà a Lechta. «…se andrà lì probabilmente morirà e così facendo non avremo nessuno con un cervello sano a cui far affidamento per concedervi la libertà.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Davanti a Nephele, contro Hermes, ci sei tu.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "L (P*: le parole sono del giocatore; nella fonte «io e lei andremo a nord, tu non sei nessuno per dare ordini» [V2 Cap.15 r.87]) [r.85-89]"
+     },
+     {
+      "id": "N13d2",
+      "testo": "Guardare gli uomini di Hermes",
+      "riserva": "«Mi costringi alle maniere forti» dice Hermes, e i suoi uomini vi puntano addosso le armi da fuoco. Dietro di loro si sente un boato: le persone volano in aria, e si alza un polverone di terra.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Un boato ha scaraventato in aria gli uomini di Hermes.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "N13d1"
+      ],
+      "fonte": "P4 [V2 Cap.15 r.92-95] (come la C12d2; che il boato sia tuo si vede, si spiega nella 26)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N13x1",
+     "N13x2"
+    ],
+    "risoluzione": [
+     "N13d1",
+     "N13d2"
+    ]
+   },
+   "required_beats": [
+    "N13x1",
+    "N13x2",
+    "N13d1",
+    "N13d2"
+   ],
+   "optional_beats": [
+    "N13x3",
+    "N13_aris_1",
+    "N13_suna_1",
+    "N13_suna_2",
+    "N13_foeh_1",
+    "N13_hermes_1"
+   ],
+   "riserva_libera": "Fra le macerie di Critto nessuno ha tempo di risponderti.",
+   "uscita_fail_forward": "Se la scena si ferma, Hermes torna comunque indietro, e voi partite verso nord."
+  },
+  "N14": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N14x1",
+     "parte": "La strada a nord; un edificio diroccato a ovest di Protopolis;",
+     "testo": "Chiedere ad Aris che cosa vuol dire il nome con cui ti chiama",
+     "riserva": "Aris ti guarda, e per ora non te lo dice. «Il tuo simbolo è duplice, dentro la torre mi apparve Hagalaz, la distruzione incontrollata, la forza indomabile, ma ho visto anche Ansuz ovvero il simbolo del Maredudd.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Aris vede in te due simboli, Hagalaz e Ansuz.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 (P*: la domanda è del giocatore; nella fonte «Cosa vuol dire quel termine con cui mi chiami sempre?» [V2 Cap.16 r.95]) [r.95-99]: la risposta, «Demiurgo» [r.96], si tace fino alla 18 (PROPOSTA dello schema)"
+    },
+    {
+     "id": "N14x2",
+     "parte": "La strada a nord; un edificio diroccato a ovest di Protopolis;",
+     "testo": "Fermarvi a riposare dentro Protopolis",
+     "riserva": "Vi fermate dentro Protopolis: mangiate dei theras e dormite in un edificio diroccato a ovest della città.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "N14x1"
+     ],
+     "fonte": "[V2 Cap.16] (come la C13)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "aris",
+     "apertura": "Aris controlla la strada, voltandosi spesso.",
+     "chiusura": "Aris torna a guardare la strada.",
+     "riserva_libera": "Aris scuote la testa: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "N14_aris_1",
+       "testo": "Chiedere ad Aris del suo clan",
+       "riserva": "Aris si è unito ai Chorisfos perché voleva vendetta contro gli epizi; poi ha saputo che, oltre a lui e a Ferem, altri sono sopravvissuti al massacro di Lacedemona. «E dentro la mia mente quei nomi ora sono solo motivo di gioia, perché da oggi io rifonderò il mio clan e ricostruiremo Lacedemona, e se servirà combatteremo di nuovo insieme a voi o a Er contro chi verrà da noi solo per distruggere, questa è la mia promessa.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "aris",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "L [V2 Cap.16 r.101-102] (come la C13)",
+       "scopo": "altri villaggi distrutti"
+      },
+      {
+       "id": "N14_aris_2",
+       "testo": "Dire ad Aris chi credi di essere",
+       "riserva": "«Quella notte non ti ha reso chi sei, se vuoi scoprire di più e vuoi conoscere la verità va bene, ma non essere riduttivo, tu non sei solo un'arma, un buon soldato o un collega, perciò lava via quei pensieri e rendi questo mondo un posto migliore» dice Aris.",
+       "effetti": [],
+       "richiede": [
+        "N14x1"
+       ],
+       "fonte": "L [V2 Cap.16 r.100-103] (le tue parole, «…deciderò chi essere» e «l'incubo degli incubi», sono del giocatore; la risposta di Aris)",
+       "scopo": "l'obiettivo «capire chi è» (EIDOS.md r.204)"
+      },
+      {
+       "id": "N14_aris_3",
+       "testo": "Chiedere ad Aris se è preoccupato per Rea",
+       "riserva": "«Sì, la pioggia inoltre non aiuta a coprire le nostre tracce, e non possiamo sempre contare sul tuo potere, non se vuoi cercare di non ucciderli» dice Aris.",
+       "effetti": [],
+       "richiede": [
+        "N14d3"
+       ],
+       "fonte": "[V2 Cap.20 «The black» r.58-59] (la battuta senza il nome)",
+       "scopo": "chi vi insegue"
+      }
+     ]
+    },
+    {
+     "png": "nephele",
+     "apertura": "Nephele cammina accanto a te.",
+     "chiusura": "Nephele torna a guardare la strada.",
+     "riserva_libera": "Nephele non risponde.",
+     "argomenti": [
+      {
+       "id": "N14_nephele_1",
+       "testo": "Ringraziare Nephele per aver provato a fermarti",
+       "riserva": "Nephele ti fa chiudere gli occhi. Prima vengono immagini crude, lampi di urla e di sangue; poi lei ti fa pensare all'oceano di cui parlava Suna, e ti torna in mente il mare visto dal tetto di casa. Ti calmi.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "nephele",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "N14x2"
+       ],
+       "fonte": "[V2 Cap.16] (le tue parole, «Ho sentito che hai provato a fermarmi… Ti ringrazio», e il ricordo del mare sono del giocatore; l'esercizio di Nephele)",
+       "scopo": "il legame con Nephele"
+      },
+      {
+       "id": "N14_nephele_2",
+       "testo": "Parlare a Nephele di Suna",
+       "riserva": "Nephele ti ascolta, e non ti dice di tornare indietro.",
+       "effetti": [],
+       "fonte": "L [V2 Cap.16 r.108] (le tue parole, «Sono preoccupato per Suna, ma ho paura di ferirlo…», sono del giocatore); la risposta di Nephele: PROPOSTA",
+       "scopo": "il legame con Suna"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La strada è lunga, e il cibo e l'acqua si cercano strada facendo.",
+    "fonte": "[V2 Cap.16] («Il viaggio è lungo, dovremmo continuare a cercare del cibo strada facendo e dell'acqua»: la battuta è di Fobos, qui solo il fatto)",
+    "esplora": [
+     {
+      "id": "N14d1",
+      "parte": "La strada a nord; un edificio diroccato a ovest di Protopolis;",
+      "testo": "Chiedere le gemme a Nephele e ad Aris",
+      "riserva": "Nephele e Aris ti danno le loro gemme: dentro senti la loro energia, del calore, della vita. Cerchi un pezzo di terra su cui posarle; mentre le usi sembra colarti del sangue dalle mani, e quando le sollevi cresce un kyanos con delle venature rosse.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Dalle gemme è nato un kyanos con delle venature rosse.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 (P*: le parole e la promessa di non usarle più per combattere sono del giocatore; nella fonte «Proverò a fare ciò che mi chiedi e questa è la mia promessa» [V2 Cap.16 r.125]) [r.123-127]; EIDOS.md r.189"
+     },
+     {
+      "id": "N14d2",
+      "parte": "un mezzo chorisfos malandato e un riparo nei pressi di Protopolis",
+      "testo": "Stare accanto a Nephele alla guida del mezzo",
+      "riserva": "Più avanti viaggiate su un mezzo chorisfos in cattive condizioni, e guida Nephele; Aris controlla spesso i dintorni dalle fessure. A un tratto lei solleva la mano come per salutare; le stringi la spalla, e torna in sé. «Sì, posso farcela, mantienimi concentrata su dove siamo ora, se mi vedi accendere gli occhi toglimi dai comandi e fai come ti ho spiegato» dice.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Alla guida Nephele ha avuto un'assenza.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "N14d1"
+      ],
+      "fonte": "P5 «The black» [V2 Cap.20 r.48-52] (la tua risposta, «Potrei distruggere il mezzo» [r.53], è del giocatore; EIDOS.md r.189)"
+     },
+     {
+      "id": "N14d3",
+      "parte": "un mezzo chorisfos malandato e un riparo nei pressi di Protopolis",
+      "testo": "Proseguire a piedi",
+      "riserva": "Il consumo delle gemme ferma il mezzo. Proseguite a piedi per qualche giorno, stanchi e affamati, e vi fermate nei pressi di Protopolis in cerca di riparo. «I theras sembrano essere scomparsi, se sono fuggiti a nord Er e i suoi saranno in pericolo» dice Aris. Nephele propone i turni di guardia, e Aris prende il primo.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "N14d2"
+      ],
+      "fonte": "P6 [V2 Cap.20 r.56-64] (come la C13d4)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N14x1",
+     "N14x2"
+    ],
+    "risoluzione": [
+     "N14d1",
+     "N14d2",
+     "N14d3"
+    ]
+   },
+   "required_beats": [
+    "N14x1",
+    "N14x2",
+    "N14d1",
+    "N14d2",
+    "N14d3"
+   ],
+   "optional_beats": [
+    "N14_aris_1",
+    "N14_aris_2",
+    "N14_aris_3",
+    "N14_nephele_1",
+    "N14_nephele_2"
+   ],
+   "riserva_libera": "Lungo la strada a nord il vento copre le parole.",
+   "uscita_fail_forward": "Se la scena si ferma, la notte arriva comunque, e con lei chi vi cerca."
+  },
+  "N15": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N15x1",
+     "testo": "Salire sui mezzi di Kaledos",
+     "riserva": "Vi aspettano tre giorni di viaggio verso nord, una trentina di persone su mezzi fatti di rottami, guidati con l'arkè; tu, Nephele, Aris, Er e Adrasteia siete sullo stesso mezzo. «Ciò che mio padre aveva, ciò che noi avevamo. Non possiamo sempre affidarci alle armi di theras» dice Adrasteia. «Dobbiamo fare attenzione, il nord ora è invaso dai theras.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Con Er e Adrasteia andate a nord, verso Kaledos.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [V2 0/1 r.12-29] (come la C14x2)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "er",
+     "apertura": "Er guarda la strada, con il fucile sulle ginocchia.",
+     "chiusura": "Er torna a guardare la strada.",
+     "riserva_libera": "«Ora non è tempo» dice Er.",
+     "argomenti": [
+      {
+       "id": "N15_er_1",
+       "testo": "Chiedere a Er che cosa è successo al nord",
+       "riserva": "Er ti risponde a poche parole: le munizioni sono finite, Rea li ha aiutati a forgiare armi, e al nord hanno perso giovani, anziani e soldati.",
+       "effetti": [],
+       "fonte": "[V2 0/1 r.12-23] (raccontato nella fonte, qui detto da Er: PROPOSTA)",
+       "scopo": "il prezzo di Critto"
+      }
+     ]
+    },
+    {
+     "png": "adrasteia",
+     "apertura": "Adrasteia ti guarda, poi guarda Nephele.",
+     "chiusura": "Adrasteia torna a guardare la strada.",
+     "riserva_libera": "Adrasteia non risponde.",
+     "argomenti": [
+      {
+       "id": "N15_adrasteia_1",
+       "testo": "Dire ad Adrasteia che è colpa tua",
+       "riserva": "«Lachesì mi diceva sempre questo: a volte il destino si compie, prima che noi possiamo fare qualcosa. È una magra consolazione» dice Adrasteia.",
+       "effetti": [],
+       "richiede": [
+        "N15x1"
+       ],
+       "fonte": "[V2 0/1 r.23-27] (le tue parole sono del giocatore: nella fonte Fobos si dà la colpa)",
+       "scopo": "la colpa di Critto"
+      },
+      {
+       "id": "N15_adrasteia_2",
+       "testo": "Ascoltare Adrasteia, che ti guarda",
+       "riserva": "Adrasteia ti guarda e recita l'ultimo canto di Lachesì: «Bianco e nero cercano un equilibrio. Prima di intraprendere il suo viaggio il lupo vedrà i due mondi, prima di intraprendere il sentiero dei giusti sarà necessario compiere un sacrificio di sangue. Solo il canto di cenere potrà guidare i tuoi passi da est a ovest, dall'apeiron all'eidos.»",
+       "effetti": [
+        {
+         "nota": "Adrasteia ti ha recitato l'ultimo canto di Lachesì: il lupo vedrà i due mondi.",
+         "categoria": "indizio"
+        }
+       ],
+       "richiede": [
+        "N15x1"
+       ],
+       "fonte": "L [V2 0/1 r.52-55] (come la C14x4)",
+       "scopo": "la profezia del lupo"
+      }
+     ]
+    },
+    {
+     "png": "nephele",
+     "apertura": "Nephele siede accanto a te, sulla riva.",
+     "chiusura": "Nephele guarda lo squarcio nel cielo.",
+     "riserva_libera": "Nephele non risponde.",
+     "argomenti": [
+      {
+       "id": "N15_nephele_1",
+       "testo": "Parlare a Nephele di Protopolis e di Suna",
+       "riserva": "Nephele ti ascolta fino in fondo. Poi ti dice che Astrapios forse è vivo: l'ha visto vicino allo squarcio.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "nephele",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "N15d4"
+       ],
+       "fonte": "L [V2 0/1 r.165-219] (le tue parole, la scelta di salvare solo Suna, sono del giocatore; come la C14d5-d6)",
+       "scopo": "il lutto e il legame con Nephele"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Da nord i theras attaccano i due mezzi davanti: uno spazzino e molti azzannatori.",
+    "fonte": "P2 [V2 0/1 r.86] (come la C14)",
+    "esplora": [
+     {
+      "id": "N15d1",
+      "testo": "Scendere a combattere i theras",
+      "riserva": "Combatti con la terra, come un theras, e non ascolti nessuno. Poi Nephele ti mostra l'immagine di Suna: la terra intorno a voi cade subito. Ti cerchi addosso sangue e ferite, e non ricordi bene che cosa hai fatto.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Contro i theras hai perso il controllo; Nephele ti ha fermato con l'immagine di Suna.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 [V2 0/1 r.86-111] (come la C14d1-d2; «Devo ucciderli» è di Fobos: qui solo il fatto)"
+     },
+     {
+      "id": "N15d2",
+      "testo": "Guardarti il braccio",
+      "riserva": "Ti stacchi dal braccio un pezzo di cristallo: sotto, la carne viva si consuma. Adrasteia ti sbriciola dei cristalli sulla carne e ti prepara un antibiotico.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "incubo_fact_cristallo"
+       }
+      ],
+      "richiede": [
+       "N15d1"
+      ],
+      "fonte": "P2 [V2 0/1 r.108-111] (come la C14d3)"
+     },
+     {
+      "id": "N15d3",
+      "testo": "Arrivare a Kaledos",
+      "riserva": "Due giorni dopo superate il fiume, e la mattina seguente arrivate al villaggio di Er: barricate, una recinzione di metallo, l'aspetto di un accampamento militare; si intagliano ossa per lame e archi. Er tratta Nephele con riverenza, e le stringe la mano come a una figlia.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "N15d2"
+      ],
+      "fonte": "P1 [V2 0/1 r.122-134] (come la C14d4)"
+     },
+     {
+      "id": "N15d4",
+      "testo": "Andare al lago dei cristalli con Nephele",
+      "riserva": "La riva è piena di ghiaietta di cristalli, fra rocce e cristalli enormi, e dal lago si vede bene lo squarcio nel cielo. Nephele ha paura dell'acqua: in missione stava per annegare, e l'ha salvata Thillion.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "N15d3"
+      ],
+      "fonte": "[V2 0/1 r.165-180] (come la C14d5)"
+     },
+     {
+      "id": "N15d5",
+      "testo": "Cancellare dal bracciale i nomi dei compagni morti",
+      "riserva": "Sulla riva cancelli dal bracciale di Astrapios, uno dopo l'altro, i nomi dei compagni morti.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "N15d4"
+      ],
+      "fonte": "L [V2 0/1 r.165-219] (come la C14d5)",
+      "scopo": "il lutto"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N15x1"
+    ],
+    "risoluzione": [
+     "N15d1",
+     "N15d2",
+     "N15d3",
+     "N15d4"
+    ]
+   },
+   "required_beats": [
+    "N15x1",
+    "N15d1",
+    "N15d2",
+    "N15d3",
+    "N15d4"
+   ],
+   "optional_beats": [
+    "N15_er_1",
+    "N15_adrasteia_1",
+    "N15_adrasteia_2",
+    "N15_nephele_1",
+    "N15d5"
+   ],
+   "riserva_libera": "A Kaledos tutti sono indaffarati: siete ospiti, e il nord è invaso dai theras.",
+   "uscita_fail_forward": "Se la scena si ferma, arrivate comunque a Kaledos, e al lago."
+  },
+  "N16": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N16x1",
+     "testo": "Restare con Nephele nella tenda",
+     "riserva": "Restate nella tenda, tu e Nephele, mentre fuori Kaledos si prepara per la notte.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "[V2 0/1 r.338]"
+    },
+    {
+     "id": "N16x2",
+     "testo": "Baciare Nephele",
+     "riserva": "La baci. Nephele trasale per un attimo, come se avesse visto qualcosa, poi ti stringe.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "flag": {
+        "incubo_bacio": true
+       }
+      },
+      {
+       "relazione": {
+        "png": "nephele",
+        "delta": 1
+       }
+      }
+     ],
+     "richiede": [
+      "N16x1"
+     ],
+     "prima_di": [
+      "N16d1"
+     ],
+     "fonte": "L il bacio e la visione della pioggia [V2 0/1 r.338-344] (il gesto è del giocatore; la visione la vede lei: lui combatte sotto la pioggia uccidendo dei Chorisfos, qui solo il suo trasalire, PROPOSTA); conta per il finale (PROPOSTA dello schema)",
+     "scopo": "il legame con Nephele"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "aris",
+     "apertura": "Aris guarda Kaledos, sereno.",
+     "chiusura": "Aris torna fra la gente di Kaledos.",
+     "riserva_libera": "Aris scuote la testa: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "N16_aris_1",
+       "testo": "Chiedere ad Aris se resta a Kaledos",
+       "riserva": "«Quanto meno so che a nord ora ho qualcuno. Un po' alleggerisce quel peso» dice Aris.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "aris",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "[V2 0/1 r.121]",
+       "scopo": "il commiato da Aris"
+      }
+     ]
+    },
+    {
+     "png": "adrasteia",
+     "apertura": "Adrasteia vi guarda, ferma.",
+     "chiusura": "Adrasteia guarda gli elicotteri.",
+     "riserva_libera": "Adrasteia non risponde.",
+     "argomenti": [
+      {
+       "id": "N16_adrasteia_1",
+       "testo": "Chiedere ad Adrasteia perché vi ferma",
+       "riserva": "«Lui è cieco, ma prima o poi ti ascolterà» dice Adrasteia a Nephele, guardando te.",
+       "effetti": [],
+       "richiede": [
+        "N16d1"
+       ],
+       "fonte": "[V2 0/1 r.275] (nella fonte lo dice a Nephele, di Fobos)",
+       "scopo": "perché vi ferma"
+      }
+     ]
+    },
+    {
+     "png": "rika",
+     "apertura": "Il pilota vi guarda dall'elicottero, con le mani in tasca.",
+     "chiusura": "Rika torna all'elicottero.",
+     "riserva_libera": "«Dobbiamo mostrarvi qualcosa, poi parleremo» dice Rika.",
+     "argomenti": [
+      {
+       "id": "N16_rika_1",
+       "testo": "Chiedere a Rika che cosa volete",
+       "riserva": "«Dobbiamo mostrarvi qualcosa, poi parleremo» dice Rika.",
+       "effetti": [],
+       "richiede": [
+        "N16d1"
+       ],
+       "fonte": "[V2 Cap.22 r.69] (le tue parole, «Non mi interessano i vostri nomi, cosa volete?», sono del giocatore)",
+       "scopo": "la squadra dei Dexia"
+      }
+     ]
+    },
+    {
+     "png": "sebastian",
+     "apertura": "Sebastian guarda i vostri vestiti di pelle.",
+     "chiusura": "Sebastian torna accanto a Rika.",
+     "riserva_libera": "Sebastian sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "N16_sebastian_1",
+       "testo": "Rispondere a Sebastian",
+       "riserva": "«Dove sono le vostre armature?» chiede Sebastian.",
+       "effetti": [],
+       "richiede": [
+        "N16d2"
+       ],
+       "fonte": "[V2 Cap.22 r.72]",
+       "scopo": "chi siete diventati"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Si sente un rumore di elicotteri: sono quelli venuti a cercarvi a Critto.",
+    "fonte": "P1 [V2 0/1 r.344-348] (come la C14d9; che tu voglia scappare è del giocatore)",
+    "esplora": [
+     {
+      "id": "N16d1",
+      "testo": "Prepararti a fuggire con Nephele",
+      "riserva": "Adrasteia vi ferma prima che fuggiate. «Se vuoi che quello sia il tuo cammino dovete ascoltare il loro messaggio, è meglio che si ripari qualcosa prima che si spezzi non credi?» dice a Nephele.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Adrasteia vi ha fermati prima che fuggiste.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 [V2 Cap.22 r.66] (le tue parole, «è meglio se andiamo ora!», sono del giocatore)"
+     },
+     {
+      "id": "N16d2",
+      "testo": "Ascoltare il messaggio",
+      "riserva": "«Io sono Rika e loro sono Althea e Sebastian» dice il pilota. Vi danno un casco: dentro c'è una registrazione di Foeh, per Nephele. «Hey bionda, come va? Quei due sono ancora interi? In questi giorni mi chiedevo come stessi. Sono in un posto all'aperto, c'è un bel clima. Il loro generale mi ha detto che la tua presenza qui potrebbe essere utile a risolvere un po' di casini come quello successo a Critto, forse dovresti quantomeno sentire cosa hanno da dire qua che dici? Comunque… vedi di muovere quel culetto sodo e di tornare da noi, ci manchi!»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nel casco c'era un messaggio di Foeh per Nephele.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "N16d1"
+      ],
+      "fonte": "P2 [V2 Cap.22 r.68-70] (come la C14d10, senza il nome di Nephele in fondo)"
+     },
+     {
+      "id": "N16d3",
+      "testo": "Dire dove siete diretti",
+      "riserva": "«Qui nessuno ha intenzione di uccidere nessuno, dove siete diretti?» chiede Sebastian. Sentita la vostra meta, Althea vi propone: «Vi accompagniamo, e una volta visitati quei luoghi verrete con noi, probabilmente non rimane molto perciò se volete scoprire la verità noi la possediamo.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "La squadra di Rika vi offre una scorta fino a Istros e a Memno.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "N16d2"
+      ],
+      "fonte": "P3 (P*: le parole sono del giocatore; nella fonte «Prima a Istros, la sua città natale e poi a Memno a est da qui» [V2 Cap.22 r.74]) [r.73-75]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N16x1"
+    ],
+    "risoluzione": [
+     "N16d1",
+     "N16d2",
+     "N16d3"
+    ]
+   },
+   "required_beats": [
+    "N16x1",
+    "N16d1",
+    "N16d2",
+    "N16d3"
+   ],
+   "optional_beats": [
+    "N16x2",
+    "N16_aris_1",
+    "N16_adrasteia_1",
+    "N16_rika_1",
+    "N16_sebastian_1"
+   ],
+   "riserva_libera": "A Kaledos la notte è piena del rumore degli elicotteri.",
+   "uscita_fail_forward": "Se la scena si ferma, la scorta parte comunque con voi verso Istros."
+  },
+  "N17": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N17x1",
+     "parte": "L'elicottero della squadra di Rika, in volo;",
+     "testo": "Ascoltare Rika e Nephele in volo",
+     "riserva": "Nephele spiega a Rika perché andate a Istros, la sua città natale, e perché poi a Memno: tu vuoi capire che cosa è successo al tuo villaggio. «Credi che vedere quel luogo definisca la sua persona? Non potrebbe scegliere lui chi è?» dice Rika.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "In volo: Istros per Nephele, Memno per te.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 0/2 r.109-126] (la battuta di Rika r.119)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "rika",
+     "apertura": "Rika pilota con una mano sola, le cuffie in testa.",
+     "chiusura": "Rika torna a guardare avanti.",
+     "riserva_libera": "«Preferisco manuale» dice Rika, e ride.",
+     "argomenti": [
+      {
+       "id": "N17_rika_1",
+       "testo": "Chiedere a Rika perché vi aiutano",
+       "riserva": "«Per salvare qualcuno. È il nostro motto: salva una persona e salverai il mondo» dice Rika.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "rika",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "N17x1"
+       ],
+       "fonte": "L il motto di Rika [V2 0/2 r.146] (nella fonte lo dice a Nephele)",
+       "scopo": "il tema di Nephele (EIDOS.md r.165)"
+      },
+      {
+       "id": "N17_rika_2",
+       "testo": "Chiedere a Rika di Astrapios",
+       "riserva": "Rika te lo conferma: Astrapios è vivo, alla base dei Dexia, con un nome nuovo.",
+       "effetti": [],
+       "richiede": [
+        "N17x1"
+       ],
+       "fonte": "[V2 0/2 r.151-175] (nella fonte lo chiede Nephele)",
+       "scopo": "chi si è salvato"
+      }
+     ]
+    },
+    {
+     "png": "althea",
+     "apertura": "Althea controlla le cinture, scocciata.",
+     "chiusura": "Althea torna al suo posto.",
+     "riserva_libera": "«Altro che sbobba. Mangia, fidati» dice Althea, e ti allunga una barretta.",
+     "argomenti": [
+      {
+       "id": "N17_althea_1",
+       "testo": "Chiedere ad Althea che cosa volete da Crio",
+       "riserva": "«È inutile che ti dia queste informazioni se poi le userai contro di noi» dice Althea. «Quanto avete intenzione di seguirci dopo? Realmente?»",
+       "effetti": [],
+       "fonte": "[V2 0/2 r.241-244] (nella fonte a Nephele)",
+       "scopo": "la diffidenza"
+      }
+     ]
+    },
+    {
+     "png": "sebastian",
+     "apertura": "Sebastian guarda fuori dal finestrino.",
+     "chiusura": "Sebastian torna a guardare fuori.",
+     "riserva_libera": "Sebastian sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "N17_sebastian_1",
+       "testo": "Chiedere a Sebastian da quanto è con loro",
+       "riserva": "«Da circa sei anni. Ero un ammantato prima. Vivevo ad Antarsia» dice Sebastian.",
+       "effetti": [],
+       "fonte": "[V2 0/2 r.300] (nella fonte a Nephele)",
+       "scopo": "la squadra dei Dexia"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Atterrate di notte fuori Istros, per evitare ostilità. La radio non prende.",
+    "fonte": "[V2 0/2 r.206-215]",
+    "esplora": [
+     {
+      "id": "N17d1",
+      "parte": "l'accampamento fuori Istros, di notte",
+      "testo": "Aspettare Nephele, che è fuori con Sebastian",
+      "riserva": "Nephele resta fuori a lungo con Sebastian. Quando rientra ha pianto: per Thillion, ti dice.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "[V2 0/2 r.273-405] (che pianga per Thillion [r.390-405])"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N17x1"
+    ],
+    "risoluzione": [
+     "N17d1"
+    ]
+   },
+   "required_beats": [
+    "N17x1",
+    "N17d1"
+   ],
+   "optional_beats": [
+    "N17_rika_1",
+    "N17_rika_2",
+    "N17_althea_1",
+    "N17_sebastian_1"
+   ],
+   "riserva_libera": "Il rumore delle pale copre ogni parola.",
+   "uscita_fail_forward": "Se la scena si ferma, la notte fuori Istros passa comunque, e Nephele ti mostra il ricordo."
+  },
+  "N18": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N18x0",
+     "testo": "Rispondere a Rika, che guarda l'arco senza corda",
+     "riserva": "«A ognuno le sue scelte, però.. con questo è più sicuro uccidere qualcuno o non ucciderlo, se sei abbastanza bravo» dice Rika, e per un po' non guarda più l'arco.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "relazione": {
+        "png": "rika",
+        "delta": -1
+       }
+      }
+     ],
+     "prima_di": [
+      "N18x1"
+     ],
+     "fonte": "L [V2 0/2 r.490-494] (il gesto, la spada alla nuca di Rika con «Anche con questa», è del giocatore; spostato dalla 17, PROPOSTA)",
+     "scopo": "la diffidenza"
+    },
+    {
+     "id": "N18x1",
+     "testo": "Entrare a Istros",
+     "riserva": "All'ingresso vi fermano. Un uomo guarda Nephele: «Tu sei una figlia di cenere?» Poi vi fa passare: «Abbiamo conservato la vostra dimora, sorella. Ora che entrambe le sorelle guardiane sono tornate lo squarcio si chiuderà.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Istros riconosce Nephele come una figlia di cenere.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "[V2 0/2 r.496-510]"
+    },
+    {
+     "id": "N18x2",
+     "testo": "Tenere Nephele per mano",
+     "riserva": "Camminando per Istros Nephele ha dei lampi dei ricordi di sua madre; la tieni per mano, e la riporti qui. La guida vi guarda: «Non è usuale che una donna di cenere cammini per mano insieme ad un altro uomo. Sì, di solito le donne di cenere hanno la loro unione con i loro guardiani.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "relazione": {
+        "png": "nephele",
+        "delta": 1
+       }
+      }
+     ],
+     "richiede": [
+      "N18x1"
+     ],
+     "fonte": "L [V2 0/2 r.525-533] (il gesto è del giocatore; le due battute della guida unite)",
+     "scopo": "proteggerla"
+    },
+    {
+     "id": "N18x3",
+     "testo": "Dire alla guida che sei un araldo, nominato da Er",
+     "riserva": "La guida ti guarda a lungo, e annuisce: per ora ti crede.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "N18x2"
+     ],
+     "fonte": "L [V2 0/2 r.535-540] (la bugia è del giocatore; che la guida gli creda per ora: PROPOSTA)",
+     "scopo": "proteggerla"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "kidemos",
+     "apertura": "Kidemos vi guarda, con le mani giunte.",
+     "chiusura": "Kidemos torna a guardare il monte.",
+     "riserva_libera": "«Non temete, è il mio compito» dice Kidemos.",
+     "argomenti": [
+      {
+       "id": "N18_kidemos_1",
+       "testo": "Chiedere a Kidemos perché vi ha aspettati",
+       "riserva": "«Avete sentito la mia anima?» chiede Kidemos a Nephele, che l'ha appena toccato.",
+       "effetti": [],
+       "richiede": [
+        "N18d1"
+       ],
+       "fonte": "[V2 0/2 r.545]",
+       "scopo": "il guardiano di Istros"
+      }
+     ]
+    },
+    {
+     "png": "rika",
+     "apertura": "Rika vi segue a qualche passo, guardandosi intorno.",
+     "chiusura": "Rika resta indietro, vicino all'elicottero.",
+     "riserva_libera": "Rika si stringe nelle spalle.",
+     "argomenti": [
+      {
+       "id": "N18_rika_1",
+       "testo": "Chiedere a Rika di aspettarvi fuori",
+       "riserva": "«A ognuno le sue scelte» dice Rika, e resta vicino all'elicottero.",
+       "effetti": [],
+       "richiede": [
+        "N18x1"
+       ],
+       "fonte": "[V2 0/2 r.493] (la prima parte della battuta)",
+       "scopo": "la scorta"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Alla scogliera vi aspetta Kidemos, il guardiano del villaggio. «Bentornata» dice a Nephele, e si inchina.",
+    "fonte": "[V2 0/2 r.542]",
+    "esplora": [
+     {
+      "id": "N18d1",
+      "testo": "Seguire Kidemos lungo il ponte, fino al monte",
+      "riserva": "Lungo un ponte, per più di un'ora, Kidemos cammina con voi verso il monte. «Abbiamo bisogno di chiuderlo, o lui tornerà» dice dello squarcio. Ai piedi del monte la sua mano diventa roccia, e si offre a Nephele come guardiano.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Kidemos si è offerto a Nephele come guardiano.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "[V2 0/2 r.548-576] (la battuta r.551; il dio rosso e il Chaos restano fuori)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N18x1"
+    ],
+    "risoluzione": [
+     "N18d1"
+    ]
+   },
+   "required_beats": [
+    "N18x1",
+    "N18d1"
+   ],
+   "optional_beats": [
+    "N18x0",
+    "N18x2",
+    "N18x3",
+    "N18_kidemos_1",
+    "N18_rika_1"
+   ],
+   "riserva_libera": "A Istros ti guardano tutti, e nessuno ti parla.",
+   "uscita_fail_forward": "Se la scena si ferma, Kidemos riconosce comunque Nephele, e lei entra nel tempio."
+  },
+  "N19": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N19x1",
+     "testo": "Dire a Nephele perché ti trema la mano",
+     "riserva": "«Da quando ho smesso di prendere le mie medicine…» Ti trema parecchio la mano. «Sto cercando di sfogarlo.» Sotto il poncho hai conservato una placca metallica, con scritto «Delta 15».",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Hai smesso le medicine, e tremi.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [V2 0/3 r.43-61] (le battute come nella C17x2)"
+    },
+    {
+     "id": "N19x2",
+     "testo": "Dire a Nephele che cosa farai a chi ha distrutto Memno",
+     "riserva": "Pensi a Memno, e lo dici ad alta voce: «Chiunque li ha uccisi li ucciderò.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "N19x1"
+     ],
+     "fonte": "L [V2 0/3 r.78-135]",
+     "scopo": "la vendetta che porta a Memno"
+    },
+    {
+     "id": "N19x3",
+     "testo": "Insegnare a Nephele a nuotare",
+     "riserva": "Sulla costa non c'è sabbia, solo ghiaia. Tieni Nephele sotto la schiena, poi la lasci. «Guarda che ti ho già mollato.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "relazione": {
+        "png": "nephele",
+        "delta": 1
+       }
+      }
+     ],
+     "richiede": [
+      "N19x1"
+     ],
+     "fonte": "L [V2 0/3 r.539-556] (la battuta come nella C17); conta per il finale (PROPOSTA dello schema)",
+     "scopo": "la promessa dell'oceano"
+    },
+    {
+     "id": "N19x4",
+     "testo": "Riparare il ciondolo di Eleanor, la figlia di Elek",
+     "riserva": "Eleanor, la figlia di Elek, porta un ciondolo uguale a quello di Nephele, con una crepa. Accendi gli occhi e gliela richiudi; lei vi invita a cena nella casa di pietra di suo padre.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "relazione": {
+        "png": "eleanor",
+        "delta": 1
+       }
+      }
+     ],
+     "richiede": [
+      "N19d1"
+     ],
+     "fonte": "L [V2 0/3 r.559-723] (la crepa riparata con l'arkè e la cena, dalle note)",
+     "scopo": "preparare il ciondolo del lupo della 26"
+    },
+    {
+     "id": "N19x5",
+     "testo": "Parlare alla radio con la tua squadra",
+     "riserva": "Sebastian ha di nuovo le comunicazioni con la base, e alla radio c'è la tua squadra. «Parlare così non mi piace, a breve vi raggiungiamo» dici. «io sto partendo con loro, sono stufa di stare ferma ad aspettare e voglio aiutarli… perciò quando tornerai vedi di muovere il culo a scendere in battaglia con noi» risponde Foeh, e ti viene da sorridere. «A presto Foeh, salutami la delta.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Foeh parte con i Dexia, e vi aspetta in battaglia.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "N19d1"
+     ],
+     "fonte": "L [V2 Cap.24 «False promises»] (qui come nel piano del pilota, DEDOTTO; le battute come nella C17; il nome di Fobos nella battuta di Foeh resta fuori)",
+     "scopo": "la squadra lontana"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "althea",
+     "apertura": "Althea ti guarda le mani, con l'occhio del medico.",
+     "chiusura": "Althea torna alla sua tenda.",
+     "riserva_libera": "«E' un mese di.. terapia. A me ha fatto bene» dice Althea.",
+     "argomenti": [
+      {
+       "id": "N19_althea_1",
+       "testo": "Chiedere ad Althea che cosa c'era nelle tue pastiglie",
+       "riserva": "Le pastiglie erano tranquillanti per cavalli, dice Althea: spengono l'arkè. Ti consiglia di sfogarti con la creatività.",
+       "effetti": [],
+       "richiede": [
+        "N19x1"
+       ],
+       "fonte": "L [V2 0/3 r.1092-1094]",
+       "scopo": "perché trema"
+      }
+     ]
+    },
+    {
+     "png": "rika",
+     "apertura": "Rika è vicino all'elicottero, e guarda il cielo.",
+     "chiusura": "Rika torna a controllare i motori.",
+     "riserva_libera": "Rika si stringe nelle spalle.",
+     "argomenti": [
+      {
+       "id": "N19_rika_1",
+       "testo": "Chiedere a Rika quando si riparte",
+       "riserva": "«Più tempo passa e più… potremmo mettere nei casini le cose» dice Rika.",
+       "effetti": [],
+       "richiede": [
+        "N19x1"
+       ],
+       "fonte": "[V2 0/3] (la battuta di Rika come nella C17)",
+       "scopo": "la scorta"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Arriva a Istros un gruppo armato, numeroso. Lo guida Elek, il fratello della madre di Nephele: piange, quando la vede.",
+    "fonte": "[V2 0/3 r.160-232] (come la C17)",
+    "esplora": [
+     {
+      "id": "N19d1",
+      "testo": "Guardare che cosa porta Elek a Nephele",
+      "riserva": "Elek mette fra le mani di Nephele un cubo di una forma pura, senza imperfezioni: a toccarlo sembra telonio. È di Ananke, la nonna di Nephele. «Lei mi ha detto che con te avrebbe parlato.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Elek ha dato a Nephele il cubo di Ananke.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "[V2 0/3 r.233-242] (la battuta come nella C17d2)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N19x1"
+    ],
+    "risoluzione": [
+     "N19d1"
+    ]
+   },
+   "required_beats": [
+    "N19x1",
+    "N19d1"
+   ],
+   "optional_beats": [
+    "N19x2",
+    "N19x3",
+    "N19x4",
+    "N19x5",
+    "N19_althea_1",
+    "N19_rika_1"
+   ],
+   "riserva_libera": "A Istros la gente ti guarda tremare, e nessuno ti chiede niente.",
+   "uscita_fail_forward": "Se la scena si ferma, Althea vi toglie comunque i chip, e il rito degli araldi si fa nella piazza circolare."
+  },
+  "N20": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N20x1",
+     "testo": "Dire a Rika di far atterrare l'elicottero",
+     "riserva": "«Fai atterrare questa cosa.» Rika fa un cenno con il capo. Prima di scendere dice: «Non guardate dentro quella roba, Sebastian registra tutto.»",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "P1 (P*: la battuta è del giocatore) [V2 Cap.26 r.30]; L Rika fa registrare tutto a Sebastian [V2 Cap.26] (come la C18x1)",
+     "scopo": "un testimone"
+    },
+    {
+     "id": "N20x2",
+     "testo": "Guidare la marcia verso la luce",
+     "riserva": "Con gli occhi accesi guidi la marcia per le strade, e la terra accanto a te si muove vorticosamente. «Inizio a ricordare qualcosa.» Guardi un edificio a est, e sopra compaiono due bambini di polvere. «Da lì osservavamo l'oceano.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "A Memno la terra ti si muove intorno, e ricordi.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "richiede": [
+      "N20x1"
+     ],
+     "fonte": "P2 (P*) [V2 Cap.26 r.38-40] (come la C18x2)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "sebastian",
+     "apertura": "Sebastian registra tutto, in silenzio.",
+     "chiusura": "Sebastian torna a registrare.",
+     "riserva_libera": "Sebastian non stacca gli occhi dalle figure.",
+     "argomenti": [
+      {
+       "id": "N20_sebastian_1",
+       "testo": "Chiedere a Sebastian che cosa sta registrando",
+       "riserva": "«Sta ricostruendo gli eventi di quel massacro» dice Sebastian, e Rika lo zittisce.",
+       "effetti": [],
+       "richiede": [
+        "N20x2"
+       ],
+       "fonte": "[V2 Cap.26] (la battuta come nello sviluppo della C18)",
+       "scopo": "un testimone"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Le strade si popolano di figure di polvere: bambini, artigiani, una figura femminile. Poi la gente comincia a scappare e cade a terra come polvere; altri li uccidono figure in armatura.",
+    "fonte": "[V2 Cap.26 r.41-44] (come lo sviluppo della C18)",
+    "esplora": [
+     {
+      "id": "N20d1",
+      "testo": "Seguire la figura femminile fra le case",
+      "riserva": "La figura femminile ha le mani sporche di terra cruda, come quelle di chi lavora al tornio. Corre verso una casa, e tu la segui.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "[V2 Cap.26 r.41-45]; il tornio [V2 Incipit r.18] (PROPOSTA: il passo verso la madre)"
+     },
+     {
+      "id": "N20d2",
+      "testo": "Avvicinarti allo squarcio",
+      "riserva": "Ormai quasi davanti allo squarcio Rika vi tiene dietro di sé. Gli edifici si tramutano in polvere e generano degli aratare; si susseguono scene di questi theras contro il gruppo armato, che viene decimato. In mezzo alle figure di fumo c'è un bambino in piedi che sembra urlare al cielo.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Gli edifici di Memno si fanno polvere, e generano aratare.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "N20d1"
+      ],
+      "fonte": "P4 [V2 Cap.26 r.48-49] (come la C18d2)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N20x2"
+    ],
+    "risoluzione": [
+     "N20d1",
+     "N20d2"
+    ]
+   },
+   "required_beats": [
+    "N20x1",
+    "N20x2",
+    "N20d1",
+    "N20d2"
+   ],
+   "optional_beats": [
+    "N20_sebastian_1"
+   ],
+   "riserva_libera": "A Memno non c'è nessuno, solo la polvere che si muove.",
+   "uscita_fail_forward": "Se la scena si ferma, le figure di polvere rifanno comunque quella notte, e lo squarcio ti aspetta al centro del villaggio."
+  },
+  "N21": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N21x1",
+     "testo": "Guardare la scorta di Kenra fra gli alberi",
+     "riserva": "Davanti alla scorta, fra gli alberi, ci sono due occhi ciano. «generale Kenra ordini d'ingaggio?» chiede un soldato. «prendetelo ma state attenti, potrebbe essere una trappola» dice Kenra.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Nel bosco ci sono due occhi ciano.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.31 r.19-23]"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "La terra si muove, gli alberi si sradicano, e fra i tronchi compaiono mostri di fumo. I soldati gridano «aratare».",
+    "fonte": "P2 [V2 Cap.31 r.24-25]",
+    "esplora": [
+     {
+      "id": "N21d1",
+      "testo": "Restare in piedi in mezzo al fumo",
+      "riserva": "Intorno a te i soldati della scorta cadono uno dopo l'altro. Il fumo non ti tocca.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "La scorta di Kenra è massacrata.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 [V2 Cap.31 r.24-27]; «Il fumo non ti tocca»: PROPOSTA, vero con tutte e due le strade"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N21x1"
+    ],
+    "risoluzione": [
+     "N21d1"
+    ]
+   },
+   "required_beats": [
+    "N21x1",
+    "N21d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Nel bosco c'è solo il fumo, e le urla.",
+   "uscita_fail_forward": "Se la scena si ferma, la ragazza dai capelli bianchi ti trova comunque, e i theras ti portano a nord."
+  },
+  "N22": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N22x1",
+     "testo": "Dire che quello non è il tuo nome",
+     "riserva": "«non sono io, non è quello il mio nome.» Ti guardi le mani. «Chi sono, cosa sono…»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Davanti allo squarcio ti chiedi chi sei.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 (P*: la battuta è del giocatore) [V2 Cap.31 r.179-180]; EIDOS.md r.204"
+    },
+    {
+     "id": "N22x2",
+     "testo": "Guardare Suna, in ginocchio fra i feriti",
+     "riserva": "Suna è fra i feriti, sporco di fango e di sangue. Ti guarda, e non dice niente.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "N22x1"
+     ],
+     "fonte": "[V2 Cap.31 r.185-186] (Suna davanti allo squarcio); che non dica niente: PROPOSTA",
+     "scopo": "il legame con Suna"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Un uomo con gli occhi accesi ti viene davanti. Accanto a lui c’è un’altra figura.",
+    "fonte": "[V2 Cap.31 r.181, r.194] (Snit e Zoe davanti allo squarcio)",
+    "esplora": [
+     {
+      "id": "N22d1",
+      "testo": "Ascoltare che cosa ti sussurra Snit",
+      "riserva": "Snit ti sussurra qualcosa all'orecchio. «Non mi chiamo… chi sono? Quelle urla, il sangue...»",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "[V2 Cap.31 r.182-183]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N22x1"
+    ],
+    "risoluzione": [
+     "N22d1"
+    ]
+   },
+   "required_beats": [
+    "N22x1",
+    "N22d1"
+   ],
+   "optional_beats": [
+    "N22x2"
+   ],
+   "riserva_libera": "Davanti allo squarcio nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, Snit ti tocca comunque, e Zoe ti getta nello squarcio."
+  },
+  "N23": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N23x1",
+     "testo": "Chiedere a Nephele quanto tempo è passato",
+     "riserva": "Le chiedi quanto tempo è passato. Per te sembra essere passato parecchio più tempo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Dentro lo squarcio il tempo è passato più che fuori.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 (P*: la domanda è del giocatore) [V2 Cap.36 r.68-69] (come la C24d4)"
+    },
+    {
+     "id": "N23x2",
+     "testo": "Dirle perché non hai bevuto",
+     "riserva": "«volevo punirmi, non ho bevuto perché volevo punirmi per quello che ho fatto.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "N23x1"
+     ],
+     "fonte": "L [V2 Cap.36 r.70] (come la C24d4)",
+     "scopo": "la colpa per Suna"
+    },
+    {
+     "id": "N23x3",
+     "testo": "Dirle perché non hai fatto ritorno",
+     "riserva": "«non sapevo se tu eri viva, è passato troppo tempo, ho smesso di crederci e poi ho semplicemente avuto paura di tornare… tornare lì senza di voi, senza qualcuno da cui tornare quel mondo non mi apparteneva più.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "N23x1"
+     ],
+     "fonte": "L [V2 Cap.36 r.71] (come la C24x5)",
+     "scopo": "perché non è tornato"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "La voce di Nephele resta lì, fuori dallo squarcio, e non se ne va.",
+    "fonte": "[V2 Cap.36 r.68-72] (PROPOSTA: il passaggio verso il canto)",
+    "esplora": [
+     {
+      "id": "N23d1",
+      "testo": "Chiedere a Nephele di cantare",
+      "riserva": "Le chiedi di cantare.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P2 (P*: la richiesta è del giocatore) [V2 Cap.36 r.72]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N23x1"
+    ],
+    "risoluzione": [
+     "N23d1"
+    ]
+   },
+   "required_beats": [
+    "N23x1",
+    "N23d1"
+   ],
+   "optional_beats": [
+    "N23x2",
+    "N23x3"
+   ],
+   "riserva_libera": "Dentro lo squarcio le parole si perdono.",
+   "uscita_fail_forward": "Se la scena si ferma, Nephele canta comunque, e alla fine ti tira fuori."
+  },
+  "N24": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N24x1",
+     "parte": "Un mezzo in viaggio, la cabina di pilotaggio;",
+     "testo": "Andare a cercare Nephele in cabina",
+     "riserva": "Vai a cercare Nephele nella cabina di pilotaggio, e mandi via Thomas, non troppo in malo modo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "relazione": {
+        "png": "thomas",
+        "delta": -1
+       }
+      }
+     ],
+     "fonte": "P1 (P*: il gesto è del giocatore) [V2 Cap.39 r.8-11] (come la C25)"
+    },
+    {
+     "id": "N24x2",
+     "parte": "Un mezzo in viaggio, la cabina di pilotaggio;",
+     "testo": "Dire a Nephele dove saresti senza di lei",
+     "riserva": "«mi chiedo dove sarei arrivato se non mi avessero fermato per incasinare il mondo, avrei ucciso tuo padre probabilmente e ora non starei qui ad osservare i tuoi capelli per capire se ricresceranno o meno.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "N24x1"
+     ],
+     "fonte": "L [V2 Cap.41 r.12] (come la C25x2)",
+     "scopo": "chi sarebbe senza di lei"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "pyrrhos",
+     "apertura": "Pyrrhos si guarda la mano fasciata.",
+     "chiusura": "Pyrrhos torna dal medico.",
+     "riserva_libera": "Pyrrhos annuisce, e non dice niente.",
+     "argomenti": [
+      {
+       "id": "N24_pyrrhos_1",
+       "testo": "Consigliare a Pyrrhos di farsi montare un dito protesico",
+       "riserva": "Gli dici di fidarsi: che si faccia montare quell'affare, e se non gli piace ci farete delle modifiche.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "pyrrhos",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "N24d1"
+       ],
+       "fonte": "L [V2 Cap.41 r.64] (riassunta; Pyrrhos è senza battute: è un PG dell'autore)",
+       "scopo": "il commiato"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il mezzo arriva a Newport.",
+    "fonte": "[V2 Cap.41 r.61]",
+    "esplora": [
+     {
+      "id": "N24d1",
+      "parte": "Newport",
+      "testo": "Scendere a Newport",
+      "riserva": "Scendete al porto di Newport. Fra i feriti c'è Pyrrhos.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "[V2 Cap.41 r.61-63]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N24x1"
+    ],
+    "risoluzione": [
+     "N24d1"
+    ]
+   },
+   "required_beats": [
+    "N24x1",
+    "N24d1"
+   ],
+   "optional_beats": [
+    "N24x2",
+    "N24_pyrrhos_1"
+   ],
+   "riserva_libera": "Sul mezzo il motore copre le voci.",
+   "uscita_fail_forward": "Se la scena si ferma, il mezzo arriva comunque a Newport."
+  },
+  "N25": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N25x1",
+     "testo": "Chiedere ad Alkmene di far parlare fra loro gli echi",
+     "riserva": "«Senti, ho bisogno che lui smetta di farmi provare interesse nei tuoi confronti, perciò vorrei che questi echi parlino tra di loro e che finalmente smettano di condizionarci…»",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "P1 (P*: la richiesta è del giocatore) [V2 Cap.43 r.42]"
+    },
+    {
+     "id": "N25x2",
+     "testo": "Spiegarle il piano di Alexander",
+     "riserva": "Le spieghi il piano di Alexander: cancellare il mondo, aprendo molti squarci.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Alexander vuole cancellare il mondo aprendo molti squarci.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "N25x1"
+     ],
+     "fonte": "P2 (P*) [V2 Cap.43 r.45] (il piano [V2 Cap.36 r.49-56]; come lo sappia non è scritto, DEDOTTO: dallo squarcio)"
+    },
+    {
+     "id": "N25x3",
+     "testo": "Chiarire con Alkmene come stanno le cose",
+     "riserva": "«Per la cronaca, ho una compagna…»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "N25x1"
+     ],
+     "fonte": "L [V2 Cap.43 r.44]",
+     "scopo": "chiarire con Alkmene"
+    },
+    {
+     "id": "N25x4",
+     "testo": "Dirle dove saresti senza Nephele",
+     "riserva": "«Se non avessi Nephele ora probabilmente sarei accanto ad Alexander…»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "N25x1"
+     ],
+     "fonte": "L [V2 Cap.43 r.47]",
+     "scopo": "il tema e il legame"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Smerte parla per bocca di Alkmene, e ti guarda: «lo so Leo».",
+    "fonte": "P3 [V2 Cap.43 r.52] (la prima battuta della riga è di Smerte)",
+    "esplora": [
+     {
+      "id": "N25d1",
+      "testo": "Rispondere all'eco che ti chiama Leo",
+      "riserva": "La osservi. «Leo, e io… forse in questo caso a parlare siamo entrambi.»",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P3 (P*: la battuta è del giocatore) [V2 Cap.43 r.52] (il nome di Fobos sostituito: PROPOSTA)"
+     },
+     {
+      "id": "N25d2",
+      "testo": "Avvicinarti allo squarcio con Alkmene",
+      "riserva": "Allo squarcio gli echi si fanno più forti: dentro di te, e dentro di lei.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "N25d1"
+      ],
+      "fonte": "P4 [V2 Cap.43 r.54] (PROPOSTA: il passo verso lo squarcio)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N25x2"
+    ],
+    "risoluzione": [
+     "N25d1",
+     "N25d2"
+    ]
+   },
+   "required_beats": [
+    "N25x1",
+    "N25x2",
+    "N25d1",
+    "N25d2"
+   ],
+   "optional_beats": [
+    "N25x3",
+    "N25x4"
+   ],
+   "riserva_libera": "Allo squarcio le voci si confondono.",
+   "uscita_fail_forward": "Se la scena si ferma, gli echi parlano comunque fra loro, e Kryno prende forma dal fumo."
+  },
+  "N26": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N26x1",
+     "testo": "Preparare la difesa di Istros",
+     "riserva": "Passa circa un mese e mezzo. Prepari barricate e un piano di fuga, e gli appostamenti a nord riducono il pericolo dal mare. La montagna fa da difesa naturale: Elek guida gli arcieri lassù; tu guidi i guerrieri più abili nella difesa via terra, e fai preparare armi d'osso per tutti, contro le armature nemiche e i theras. Aris difende il confine con i cavalli arrivati da Lacedemona. Il campo d'arrivo è minato con mine fatte imprimendo l'arkè nel metallo, e sul versante nord aspettano le navi, pronte a portare via la gente in caso di ritirata.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Istros è pronta: barricate, armi d'osso, mine e navi per la ritirata.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 e P2 (P*: i preparativi sono del giocatore) [V2 Cap.44 r.32-36]; L le mine [r.36] (EIDOS.md r.193) (come la C26x1; le navi senza il nome della città)",
+     "scopo": "preparare la difesa"
+    },
+    {
+     "id": "N26x2",
+     "testo": "Chiedere ad Adrasteia che cosa sente del destino",
+     "riserva": "Adrasteia è vicino al campo, pronta a curare i feriti. «I fili? No, sento il destino, è complicato a volte. E per quanto noi possiamo intuire il suo corso non sempre si avvera.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "N26x1"
+     ],
+     "fonte": "[V2 Cap.44] (come la C26x3)",
+     "scopo": "il destino"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Arrivano gli Epizi, con mezzi da battaglia.",
+    "fonte": "P3 [V2 Cap.44 r.37]",
+    "esplora": [
+     {
+      "id": "N26d1",
+      "testo": "Dare gli ordini con Nephele",
+      "riserva": "Tu e Nephele restate a sostenere gli altri e a dare ordini. Arriva Skia, con dei mezzi chorisfos, e racconta come sta andando a ovest.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P3 (P*) [V2 Cap.44 r.37] (come la C26d1-d2)"
+     },
+     {
+      "id": "N26d2",
+      "testo": "Tenere d'occhio il campo",
+      "riserva": "Zoe uccide Adrasteia per rubarle l'anima e metterla nel proprio corpo. Poi da uno squarcio arrivano degli adranès: uno di loro sembra trascinare gli altri con dei fili che gli escono dal corpo, e una volta fuori quel soldato si cristallizza; gli altri cominciano a combattere.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Zoe ha ucciso Adrasteia; dallo squarcio escono adranès.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "N26d1"
+      ],
+      "fonte": "P4 [V2 Cap.44 r.38] (come la C26d3)"
+     },
+     {
+      "id": "N26d3",
+      "testo": "Andare da Eleanor, prima di avanzare fino all'ingresso",
+      "riserva": "Eleanor, la figlia di Elek, è impaurita accanto a sua madre. «Eleanor devi farti forza anche per tua madre, sii coraggiosa… so che hai paura, conosco perfettamente la sensazione.» Ti togli il ciondolo e glielo leghi al collo: «è un lupo di memno, stringilo e ti darà il coraggio per affrontare i tuoi incubi.» «Grazie…» «Ora va e sta vicino a tua madre, domani tutto questo sarà soltanto un incubo da dimenticare.» Chiedi le gemme ai soldati in coda e le infili in un guanto da capitano chorisfos. Accendi gli occhi e guardi Nephele: «se le cose si mettono male riportami a quel giorno, io farò il resto…» Poi avanzi fino all'ingresso, lasciandoti alle spalle i civili.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "relazione": {
+         "png": "eleanor",
+         "delta": 1
+        }
+       }
+      ],
+      "richiede": [
+       "N26d2"
+      ],
+      "fonte": "P5 (P*: il gesto è del giocatore) [V2 Cap.44 r.42]; L [r.46] (come la C26d4); EIDOS.md r.193"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N26x1"
+    ],
+    "risoluzione": [
+     "N26d1",
+     "N26d2",
+     "N26d3"
+    ]
+   },
+   "required_beats": [
+    "N26x1",
+    "N26d1",
+    "N26d2",
+    "N26d3"
+   ],
+   "optional_beats": [
+    "N26x2"
+   ],
+   "riserva_libera": "Intorno a te Istros si prepara alla battaglia.",
+   "uscita_fail_forward": "Se la scena si ferma, gli adranès arrivano comunque all'ingresso, e lo squarcio si apre dentro il campo di battaglia."
+  },
+  "N27": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N27x1",
+     "parte": "Sotto il cielo che diventa nero",
+     "testo": "Dire a Crio che possono vincere",
+     "riserva": "«generale, non possono durare a lungo, stanno consumando ogni cosa, presto non avranno più la stessa forza per combattere… possiamo vincere.»",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "P1 (P*: la battuta è del giocatore) [V2 Cap.46 r.84] (come l'apertura della C27)"
+    },
+    {
+     "id": "N27x2",
+     "parte": "Sotto il cielo che diventa nero",
+     "testo": "Ascoltare gli ordini di Crio",
+     "riserva": "«Nephele, sta con gli arcieri… Xenos tu tieni a mente Memno.» Quella parola ti disgusta: accendi gli occhi, e davanti a te vedi la formazione richiamata. Poi davanti a voi compaiono luci color ciano, e dalle tenebre arriva un ronzio.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "relazione": {
+        "png": "crio",
+        "delta": -1
+       }
+      }
+     ],
+     "richiede": [
+      "N27x1"
+     ],
+     "fonte": "P2 [V2 Cap.46 r.85-88] (come la C27x1-x2)"
+    },
+    {
+     "id": "N27x3",
+     "parte": "Critto",
+     "testo": "Dire a Pyrrhos perché combatti adesso",
+     "riserva": "«stavolta stiamo davvero combattendo per un motivo giusto.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "N27d1"
+     ],
+     "fonte": "L [V2 Cap.47 r.53]",
+     "scopo": "perché combatte adesso"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "crio",
+     "apertura": "Crio ti guarda, con le mani dietro la schiena.",
+     "chiusura": "Crio torna a guardare il fronte.",
+     "riserva_libera": "«non è affar tuo, ma grazie» dice Crio.",
+     "argomenti": [
+      {
+       "id": "N27_crio_1",
+       "testo": "Dire a Crio che Nephele non verrà",
+       "riserva": "«Ha già detto che ti seguirà e non posso fare molto per evitarlo, credo che arrivati ad una certa età si comprende che ci si deve affidare ai più giovani per risolvere certi problemi» dice Crio.",
+       "effetti": [],
+       "richiede": [
+        "N27x2"
+       ],
+       "fonte": "L [V2 Cap.47 r.56-57]",
+       "scopo": "proteggerla"
+      },
+      {
+       "id": "N27_crio_2",
+       "testo": "Dire a Crio di ascoltare la figlia su Pagonia",
+       "riserva": "«parla di cambiamento… perché non chiude con il passato e si decide ad ascoltare sua figlia in merito al generale Pagonia.» «non è affar tuo, ma grazie» dice Crio. E tu: «ci meritiamo tutti un po' d'affetto prima della fine.»",
+       "effetti": [],
+       "richiede": [
+        "N27x2"
+       ],
+       "fonte": "L [V2 Cap.47 r.66-68]",
+       "scopo": "Crio e Pagonia"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "I caschi dei comandanti vengono collegati fra loro, perché possiate parlarvi durante lo scontro. Poi raggiungete Critto.",
+    "fonte": "[V2 Cap.47 r.25] (come lo sviluppo della C27)",
+    "esplora": [
+     {
+      "id": "N27d1",
+      "parte": "Critto",
+      "testo": "Sistemare con Nephele il braccio di Hermes",
+      "riserva": "Mentre tu e Nephele sistemate il braccio di Hermes, arriva Foeh e vi abbraccia tutti e due. «mi sei mancata bionda» dice a Nephele. Poi guardi Foeh, e Pyrrhos dietro di lei.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "relazione": {
+         "png": "foeh",
+         "delta": 1
+        }
+       }
+      ],
+      "fonte": "P3 [V2 Cap.47 r.49-51] (come la C27d1)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N27x2"
+    ],
+    "risoluzione": [
+     "N27d1"
+    ]
+   },
+   "required_beats": [
+    "N27x1",
+    "N27x2",
+    "N27d1"
+   ],
+   "optional_beats": [
+    "N27x3",
+    "N27_crio_1",
+    "N27_crio_2"
+   ],
+   "riserva_libera": "Sotto il cielo nero tutti aspettano gli ordini.",
+   "uscita_fail_forward": "Se la scena si ferma, Crio ti manda comunque nel cuore dello scontro, e l'esercito muove verso il fronte."
+  },
+  "N28": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N28x1",
+     "testo": "Arringare i soldati prima della carica",
+     "riserva": "Estrai la spada: «soldati, davanti a noi abbiamo il nemico, nessuno conosce chi siete, da dove venite, solo voi conoscete la vostra storia, combatteremo per mantenerla viva.» «Noi oggi non abbiamo paura… perché gli incubi non temono il nemico.» Accanto a te, Crio: «Eidos è la nostra casa, difendiamola a tutti i costi, ora guardate avanti e combattete.» Ordini la carica.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "La carica è partita.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 (P*: l'arringa è del giocatore) [V2 Cap.47 r.77-80] (come la C28x1); L «Noi oggi non abbiamo paura…» della 27 [r.78]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "alexander",
+     "apertura": "Alexander ti guarda da lontano, oltre la pioggia.",
+     "chiusura": "Alexander sorride, e non si muove.",
+     "riserva_libera": "«tranquillo, ti darò modo di vivere in eterno» dice Alexander.",
+     "argomenti": [
+      {
+       "id": "N28_alexander_1",
+       "testo": "Dire ad Alexander che non ti ha portato via tutto",
+       "riserva": "«credi di avermi portato via tutto? Ti sbagli… tutto ciò che dobbiamo fare è solamente ciò che vogliamo davvero… vivere.» «tranquillo, ti darò modo di vivere in eterno» dice Alexander.",
+       "effetti": [],
+       "richiede": [
+        "N28d3"
+       ],
+       "fonte": "L [V2 Cap.47 r.199-200]",
+       "scopo": "la sfida ad Alexander"
+      },
+      {
+       "id": "N28_alexander_2",
+       "testo": "Dire ad Alexander che non sei Leo",
+       "riserva": "«io non sono Leo, ti cancellerò dall'esistenza.»",
+       "effetti": [],
+       "richiede": [
+        "N28d3"
+       ],
+       "fonte": "L [V2 Cap.47 r.202] (l'insulto finale resta fuori: PROPOSTA)",
+       "scopo": "chiudere «chi sono» (EIDOS.md r.204)"
+      }
+     ]
+    },
+    {
+     "png": "alkmene",
+     "apertura": "Nel casco senti il respiro di Alkmene.",
+     "chiusura": "Alkmene chiude il collegamento.",
+     "riserva_libera": "Alkmene non risponde.",
+     "argomenti": [
+      {
+       "id": "N28_alkmene_1",
+       "testo": "Dire ad Alkmene nel casco che devi trovare Alexander",
+       "riserva": "«Critto è sotto attacco ho bisogno di trovare quel figlio di puttana ora.»",
+       "effetti": [],
+       "richiede": [
+        "N28d3"
+       ],
+       "fonte": "L [V2 Cap.47 r.165]",
+       "scopo": "la caccia ad Alexander"
+      }
+     ]
+    },
+    {
+     "png": "matthaios",
+     "apertura": "Matthaios grida ordini ai fucilieri.",
+     "chiusura": "Matthaios torna alla sua linea.",
+     "riserva_libera": "«sparate in mezzo alle luci!» grida Matthaios.",
+     "argomenti": [
+      {
+       "id": "N28_matthaios_1",
+       "testo": "Chiedere a Matthaios perché ci sono epizi contro di voi",
+       "riserva": "«sparate in mezzo alle luci!» grida Matthaios ai suoi, e non ti risponde.",
+       "effetti": [],
+       "richiede": [
+        "N28d1"
+       ],
+       "fonte": "L [V2 Cap.47 r.96] (la domanda); la risposta non è scritta: la sua battuta [r.91] (PROPOSTA)",
+       "scopo": "capire chi hanno contro"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Al centro lasci avanzare il nemico, e usi i Chorisfos come muro di difesa per fargli consumare il terreno sotto i piedi.",
+    "fonte": "P1 [V2 Cap.47 r.87] (come lo sviluppo della C28)",
+    "esplora": [
+     {
+      "id": "N28d1",
+      "testo": "Ordinare di amputare, non di uccidere",
+      "riserva": "Il cielo si oscura del tutto, e nelle tenebre ci sono luci ciano; molti soldati muoiono sotto i colpi degli adranès. Le urla sono raccapriccianti, e molti chiedono di essere fermati. Non sembrano adranès, ma carne da macello: ordini di amputare gambe o braccia, ma di non uccidere.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Hai ordinato di amputare, non di uccidere.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P2 (P*: l'ordine è del giocatore) [V2 Cap.47 r.90-96] (come la C28d1)"
+     },
+     {
+      "id": "N28d2",
+      "testo": "Dare il segnale verso nord",
+      "riserva": "Attiri molti nemici, e guardi verso nord, in attesa. «su con le luci!» I Chorisfos con il fothià si accendono, le fiamme bruciano i cadaveri e illuminano il nemico, e da nord carica Hermes con Leaina, con i popoli tribali e i Chorisfos.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Da nord è arrivata la carica di Hermes.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "N28d1"
+      ],
+      "fonte": "P3 (P*) [V2 Cap.47 r.117-120] (come la C28d2)"
+     },
+     {
+      "id": "N28d3",
+      "testo": "Parlare nel casco a Nephele e ad Astrapios",
+      "riserva": "Quasi non usi l'arkè. Nel casco dici a Nephele: «tu e Astrapios non potete consumarvi, smetti di usare l'arkè.» Poi chiami Astrapios: «Astrapios, ho bisogno di te qui, ora! Non pensare a quello che stiamo perdendo… ho un'idea e ho bisogno che tu sia vivo.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Hai un'idea, e hai bisogno che Astrapios sia vivo.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "N28d2"
+      ],
+      "fonte": "P4 (P*) [V2 Cap.47 r.121-122, r.142, r.155-156] (come la C28d3-d4)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N28x1"
+    ],
+    "risoluzione": [
+     "N28d1",
+     "N28d2",
+     "N28d3"
+    ]
+   },
+   "required_beats": [
+    "N28x1",
+    "N28d1",
+    "N28d2",
+    "N28d3"
+   ],
+   "optional_beats": [
+    "N28_alexander_1",
+    "N28_alexander_2",
+    "N28_alkmene_1",
+    "N28_matthaios_1"
+   ],
+   "riserva_libera": "Intorno a te la battaglia non si ferma.",
+   "uscita_fail_forward": "Se la scena si ferma, i tre adranès ti arrivano comunque addosso, e la pioggia di sangue comincia."
+  },
+  "N29": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N29x1",
+     "testo": "Guardare la ferita di Nephele",
+     "riserva": "La ferita all'addome è profonda, e Nephele soffre. Al tuo polso il filo vibra.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "[V2 Cap.47 r.275] (lei soffre); il filo che vibra: PROPOSTA"
+    },
+    {
+     "id": "N29x2",
+     "testo": "Dirle che cosa hai visto grazie a lei",
+     "riserva": "«Grazie a te ho visto il buono che questo mondo aveva da offrire e da raccontare.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "relazione": {
+        "png": "nephele",
+        "delta": 1
+       }
+      }
+     ],
+     "richiede": [
+      "N29x1"
+     ],
+     "fonte": "L [V2 Cap.47 r.277] (come la C29x1); conta per il finale (schema)",
+     "scopo": "ciò che lo tiene nel mondo"
+    },
+    {
+     "id": "N29x3",
+     "testo": "Dirle che non rinunci",
+     "riserva": "«Non rinuncio a te, non rinuncio a tutti voi e nemmeno al nostro mondo.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "N29x1"
+     ],
+     "fonte": "[V2 Cap.47 r.278] (come la C29x2)",
+     "scopo": "il legame"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Intorno a voi scorre un fiume di anime disorientate.",
+    "fonte": "[V2 Cap.47 r.281-292] (come lo sviluppo della C29)",
+    "esplora": [
+     {
+      "id": "N29d1",
+      "testo": "Chiedere a Skia di resistere e cercare Astrapios",
+      "riserva": "«Ti avevo promesso che avremmo ricostruito, beh è giunta l'ora di farlo.» Poi, verso Skia: «Skia… mi serve ancora tempo, resisti ti prego.» E a Nephele: «riesci a camminare?» Si alza, e andate a cercare Astrapios. Lui vede un filo collegarsi a sé, lo segue e vi trova.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Avete ritrovato Astrapios nell'oltre.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 (P*) [V2 Cap.47 r.279-292] (come la C29d1)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N29x1"
+    ],
+    "risoluzione": [
+     "N29d1"
+    ]
+   },
+   "required_beats": [
+    "N29x1",
+    "N29d1"
+   ],
+   "optional_beats": [
+    "N29x2",
+    "N29x3"
+   ],
+   "riserva_libera": "Nell'oltre le voci arrivano da lontano.",
+   "uscita_fail_forward": "Se la scena si ferma, Astrapios vi trova comunque, seguendo il filo."
+  },
+  "N30": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "N30x1",
+     "testo": "Osservare l’ultima immagine",
+     "riserva": "Appare una luce diversa dal ciano, ed Eidos riprende forma. Chi era in marcia, in cerca di un luogo dove tornare, si ritrova vicino a una persona cara.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "apertura uguale per tutti e due i finali [V2 Cap.47 r.309-312; End r.324] (come la C30 di «Il filo di cenere»); schema «L'incubo», scena 30 (finale): i finali si raccontano qui, con le varianti del contratto del finale (ending_contract), scelte dalla scelta della 29 e dallo scontro della 28. (1) torna con Nephele [V2 Cap.47 End r.344-372] (DECISIONI_AUTORE.md §10), se nella 29 tiene i fili con lei e Astrapios (flag incubo_torna_con_nephele); (2) resta nell'oltre a tenere i fili, il ripiego: testo PROPOSTA (nessuna riga lo racconta). Con `finale` il motore chiude la partita all'ingresso: la L «l'unica cosa che rimane è costruirci un futuro insieme» [End r.346] è nel testo del finale (1). Coerenza con «Il filo di cenere»: il finale (1) è il suo «La prima pietra» (e anche «La Moira cede il filo», dove tornano tutti e due); il finale (2) non dice se Nephele resta con lui, come in «La cenere resta», o se torna. R nessuna verità nuova. Luoghi: un lago in un boschetto e una costa (non specificato nelle trame); il tavolo delle trattative è a Lechta (DEDOTTO; regno: EIDOS.md r.19 e r.363)"
+    }
+   ],
+   "sviluppo": {
+    "testo": "Gli squarci si chiudono. Le persone che tornano cercano chi è legato al loro destino; il filo che hai scelto di tenere resta la conseguenza della tua decisione, non del risultato di un nuovo tiro.",
+    "esplora": [],
+    "effetti": [],
+    "fonte": "apertura uguale per tutti e due i finali [V2 Cap.47 r.309-312; End r.324] (come la C30 di «Il filo di cenere»); schema «L'incubo», scena 30 (finale): i finali si raccontano qui, con le varianti del contratto del finale (ending_contract), scelte dalla scelta della 29 e dallo scontro della 28. (1) torna con Nephele [V2 Cap.47 End r.344-372] (DECISIONI_AUTORE.md §10), se nella 29 tiene i fili con lei e Astrapios (flag incubo_torna_con_nephele); (2) resta nell'oltre a tenere i fili, il ripiego: testo PROPOSTA (nessuna riga lo racconta). Con `finale` il motore chiude la partita all'ingresso: la L «l'unica cosa che rimane è costruirci un futuro insieme» [End r.346] è nel testo del finale (1). Coerenza con «Il filo di cenere»: il finale (1) è il suo «La prima pietra» (e anche «La Moira cede il filo», dove tornano tutti e due); il finale (2) non dice se Nephele resta con lui, come in «La cenere resta», o se torna. R nessuna verità nuova. Luoghi: un lago in un boschetto e una costa (non specificato nelle trame); il tavolo delle trattative è a Lechta (DEDOTTO; regno: EIDOS.md r.19 e r.363)"
+   },
+   "sblocco": {
+    "sviluppo": [
+     "N30x1"
+    ],
+    "risoluzione": []
+   },
+   "required_beats": [
+    "N30x1"
+   ],
+   "optional_beats": []
+  }
+ }
+}

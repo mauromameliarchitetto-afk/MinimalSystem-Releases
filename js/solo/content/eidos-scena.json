@@ -1,0 +1,523 @@
+{
+ "formato": "rm-solo-scena/1",
+ "storia": "eidos",
+ "stato": "proposta scritta in autonomia (2026-10-17), rivedibile in docs/single-player/DECISIONI_DA_RIVEDERE.md",
+ "schede": {
+  "png": {
+   "ada": {
+    "aspetto": "Donna anziana dal passo lento, con le mani macchiate d'inchiostro e un mazzo di chiavi alla cintura; parla piano e guarda a lungo prima di rispondere."
+   },
+   "mirea": {
+    "aspetto": "Donna robusta dallo sguardo svelto, con un grembiule da magazziniera pieno di tasche e un quaderno sempre in mano."
+   },
+   "cassian": {
+    "aspetto": "Ufficiale epizio alto e dritto, in corazza connessa con l'elmo rosso sotto il braccio; scrive appunti sul polso con uno stilo."
+   },
+   "reik": {
+    "aspetto": "Caporale chorisfos dal volto segnato, in armatura bianca su tessuto viola, con la visiera gialla alzata e la spada sulla schiena."
+   },
+   "yara": {
+    "aspetto": "Giovane esploratrice antarsa in poncho arancio e spallaccio chiaro, con l'arco d'osso a tracolla e due pugnali d'osso alla cintura."
+   },
+   "tal": {
+    "aspetto": "Intermediario eporiano in veste leggera e turbante; sorride volentieri e ha sempre un contratto sotto mano."
+   }
+  }
+ },
+ "scene": {
+  "E01": {
+   "protagonista": {
+    "posizione": "{Sei appena entrato|Sei appena entrata|Stai entrando} nella sala delle pompe, davanti alla porta",
+    "attivita": "guardi le pompe ferme e aspetti che qualcuno ti noti"
+   },
+   "png": {
+    "ada": {
+     "posizione": "accanto al quadro delle pompe",
+     "attivita": "controlla una lancetta e annota qualcosa"
+    },
+    "mirea": {
+     "posizione": "vicino al tavolo dei registri, in fondo alla sala",
+     "attivita": "conta casse di ricambi senza alzare lo sguardo"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E01_p1",
+     "tratto": "Percezione",
+     "nc": 12,
+     "testo": "Nessuno porta simboli di popolazione: dove ci sarebbero, restano pezze di stoffa più chiare."
+    },
+    {
+     "id": "E01_p2",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Sotto il ronzio delle pompe c'è un secondo rumore, più lento, che viene da molto in basso."
+    }
+   ]
+  },
+  "E02": {
+   "protagonista": {
+    "posizione": "Sei nella galleria, a pochi passi dal primo carro",
+    "attivita": "esamini ciò che resta dei carri"
+   },
+   "png": {
+    "mirea": {
+     "posizione": "ferma accanto all'ultimo carro, con le braccia incrociate",
+     "attivita": "ti osserva mentre guardi, senza dire nulla"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E02_p1",
+     "tratto": "Seguire Tracce",
+     "nc": 13,
+     "testo": "Le impronte intorno ai carri vanno tutte nella stessa direzione: verso l'uscita, non verso la frana."
+    },
+    {
+     "id": "E02_p2",
+     "tratto": "Percezione",
+     "nc": 14,
+     "testo": "Alcune casse sono state aperte con cura, non scassinate."
+    }
+   ]
+  },
+  "E03": {
+   "protagonista": {
+    "posizione": "{Sei entrato|Sei entrata|Entri} nella camera sigillata, sotto la stazione",
+    "attivita": "ti guardi intorno fra registrazioni e disegni"
+   },
+   "png": {
+    "ada": {
+     "posizione": "seduta accanto a una pila di nastri",
+     "attivita": "riordina con cura i disegni dei fondatori"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E03_p1",
+     "tratto": "Percezione",
+     "nc": 12,
+     "testo": "Sui disegni più vecchi ci sono quattro firme diverse, accanto a quattro simboli che qui nessuno porta."
+    },
+    {
+     "id": "E03_p2",
+     "tratto": "Ascoltare",
+     "nc": 14,
+     "testo": "Da uno dei nastri esce un fruscio che somiglia a un respiro."
+    }
+   ]
+  },
+  "E04": {
+   "protagonista": {
+    "posizione": "Sei nella sala comune, al centro, fra i quattro ospiti",
+    "attivita": "ascolti chi parla per primo"
+   },
+   "png": {
+    "cassian": {
+     "posizione": "in piedi vicino alla porta, con l'elmo sotto il braccio",
+     "attivita": "scrive sul polso con uno stilo"
+    },
+    "reik": {
+     "posizione": "sul lato opposto, con la schiena al muro",
+     "attivita": "tiene d'occhio l'ingresso e la mano destra del vicino"
+    },
+    "tal": {
+     "posizione": "seduto al tavolo, con un contratto davanti",
+     "attivita": "versa acqua in due bicchieri"
+    },
+    "yara": {
+     "posizione": "accovacciata vicino alla finestra",
+     "attivita": "pulisce una freccia d'osso senza guardare nessuno"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E04_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Nessuno dei quattro ha detto il proprio nome per intero."
+    },
+    {
+     "id": "E04_p2",
+     "tratto": "Intuito Olfattivo",
+     "nc": 14,
+     "testo": "Da uno dei mantelli viene un odore di fumo vecchio, uguale a quello delle rovine rosse."
+    }
+   ]
+  },
+  "E05": {
+   "protagonista": {
+    "posizione": "Sei in piazza, accanto alla pompa più grande",
+    "attivita": "aspetti con gli abitanti che qualcuno parli"
+   },
+   "png": {
+    "ada": {
+     "posizione": "sui gradini della pompa",
+     "attivita": "tiene in mano un foglio piegato, ancora chiuso"
+    },
+    "cassian": {
+     "posizione": "a un lato della piazza, con due soldati dietro",
+     "attivita": "controlla l'orologio del polso"
+    },
+    "reik": {
+     "posizione": "sul lato opposto, con la squadra schierata",
+     "attivita": "non toglie lo sguardo da Cassian"
+    },
+    "tal": {
+     "posizione": "ai margini, vicino a una cassa",
+     "attivita": "fa un cenno a qualcuno fra la folla"
+    },
+    "yara": {
+     "posizione": "in alto, sul bordo di un tetto",
+     "attivita": "scruta la piazza e il cielo"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E05_p1",
+     "tratto": "Percezione",
+     "nc": 14,
+     "testo": "Il foglio in mano a chi parla ha il margine bruciato: non è nuovo."
+    },
+    {
+     "id": "E05_p2",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Il silenzio della piazza ha un ritmo: ogni tanto qualcuno trattiene il fiato nello stesso momento."
+    }
+   ]
+  },
+  "E06": {
+   "protagonista": {
+    "posizione": "Sei al centro del magazzino, fra le casse e la sala filtri",
+    "attivita": "guardi i tre problemi uno dopo l'altro"
+   },
+   "png": {
+    "mirea": {
+     "posizione": "davanti alla porta della sala filtri",
+     "attivita": "conta con le dita quanti ricambi servono"
+    },
+    "ada": {
+     "posizione": "vicino al tavolo delle mappe",
+     "attivita": "segna le vie di fuga con un carboncino"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E06_p1",
+     "tratto": "Meccanica",
+     "nc": 13,
+     "testo": "Il filtro principale ha una guarnizione sostituita da poco, con un pezzo che non è dello stesso lotto."
+    },
+    {
+     "id": "E06_p2",
+     "tratto": "Percezione",
+     "nc": 12,
+     "testo": "Sul tavolo delle mappe un percorso è stato cancellato e ridisegnato."
+    }
+   ]
+  },
+  "E07": {
+   "protagonista": {
+    "posizione": "Sei in cima alla scala, nel posto di ascolto",
+    "attivita": "ascolti le due radio dei rispettivi comandi"
+   },
+   "png": {
+    "cassian": {
+     "posizione": "a sinistra, accanto alla radio epizia",
+     "attivita": "annota coordinate su una tavoletta"
+    },
+    "reik": {
+     "posizione": "a destra, accanto alla radio chorisfos",
+     "attivita": "ripete a mezza voce una frequenza"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E07_p1",
+     "tratto": "Ascoltare",
+     "nc": 14,
+     "testo": "Le due radio ripetono lo stesso numero, alternato, a pochi secondi di distanza."
+    },
+    {
+     "id": "E07_p2",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Entrambi i comandi hanno scelto lo stesso punto sulla carta."
+    }
+   ]
+  },
+  "E08": {
+   "protagonista": {
+    "posizione": "Sei sulla banchina nascosta, vicino all'acqua",
+    "attivita": "aspetti che l'intermediario ti porga il contratto"
+   },
+   "png": {
+    "tal": {
+     "posizione": "seduto su una cassa, con il contratto sul ginocchio",
+     "attivita": "sorride e lascia che sia tu a parlare per primo"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E08_p1",
+     "tratto": "Percezione",
+     "nc": 14,
+     "testo": "L'ultima pagina del contratto è più fitta delle altre, con caratteri piccolissimi."
+    },
+    {
+     "id": "E08_p2",
+     "tratto": "Navigare",
+     "nc": 13,
+     "testo": "Le barche legate alla banchina hanno le vele ammainate in modo da poter salpare in pochi istanti."
+    }
+   ]
+  },
+  "E09": {
+   "protagonista": {
+    "posizione": "Sei nei condotti, a pochi passi dalla prima carica",
+    "attivita": "avanzi con la luce bassa"
+   },
+   "png": {
+    "yara": {
+     "posizione": "accovacciata accanto alla seconda carica",
+     "attivita": "controlla un innesco con le dita"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E09_p1",
+     "tratto": "Seguire Tracce",
+     "nc": 13,
+     "testo": "Le cariche sono posate in fila, ma una sola ha il filo teso fino a un punto lontano."
+    },
+    {
+     "id": "E09_p2",
+     "tratto": "Intuito Olfattivo",
+     "nc": 14,
+     "testo": "C'è odore di resina, non di polvere da sparo."
+    }
+   ]
+  },
+  "E10": {
+   "protagonista": {
+    "posizione": "Sei nel magazzino, davanti al banco dei registri",
+    "attivita": "guardi i registri aperti sul banco"
+   },
+   "png": {
+    "mirea": {
+     "posizione": "dietro il banco, con una mano su un registro",
+     "attivita": "chiude un quaderno prima che tu lo veda"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E10_p1",
+     "tratto": "Percezione",
+     "nc": 14,
+     "testo": "Una colonna di date è stata cancellata e riscritta con un inchiostro più nuovo."
+    },
+    {
+     "id": "E10_p2",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Fuori dal magazzino qualcuno ha smesso di camminare proprio davanti alla porta."
+    }
+   ]
+  },
+  "E11": {
+   "protagonista": {
+    "posizione": "Sei accanto al ripetitore, nella sala della Casa",
+    "attivita": "guardi i nastri che aspettano di essere trasmessi"
+   },
+   "png": {
+    "ada": {
+     "posizione": "di fronte al ripetitore",
+     "attivita": "sceglie un nastro, lo rimette a posto, ne sceglie un altro"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E11_p1",
+     "tratto": "Meccanica",
+     "nc": 13,
+     "testo": "Il ripetitore ha una spia gialla che lampeggia a ritmo regolare: segna quanto resta prima del limite."
+    },
+    {
+     "id": "E11_p2",
+     "tratto": "Percezione",
+     "nc": 12,
+     "testo": "Sugli scaffali ci sono più nastri senza etichetta di quanti Ada ne abbia nominati."
+    }
+   ]
+  },
+  "E12": {
+   "protagonista": {
+    "posizione": "Sei sulla soglia della stazione, dietro la porta chiusa",
+    "attivita": "ascolti le voci che vengono da fuori"
+   },
+   "png": {
+    "cassian": {
+     "posizione": "fuori, davanti alla porta, con l'elmo sotto il braccio",
+     "attivita": "alza una mano per chiedere silenzio"
+    },
+    "reik": {
+     "posizione": "fuori, un passo indietro, con la squadra in fila",
+     "attivita": "tiene la mano sull'elsa"
+    },
+    "ada": {
+     "posizione": "accanto a te, appena dentro la porta",
+     "attivita": "trattiene il fiato e aspetta che sia tu a decidere"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E12_p1",
+     "tratto": "Percezione",
+     "nc": 14,
+     "testo": "Le due squadre non si guardano ma si muovono in sincronia, come se avessero provato."
+    },
+    {
+     "id": "E12_p2",
+     "tratto": "Ascoltare",
+     "nc": 13,
+     "testo": "Dietro i soldati c'è un rumore di motori fermi, più numerosi di quanti ne dichiari chi parla."
+    }
+   ]
+  },
+  "E13": {
+   "protagonista": {
+    "posizione": "Sei dentro la sala filtri, fra i tubi che sibilano",
+    "attivita": "ti chini a guardare dove perde il filtro"
+   },
+   "png": {
+    "mirea": {
+     "posizione": "accanto a un tubo spezzato",
+     "attivita": "cerca di chiudere una valvola con entrambe le mani"
+    },
+    "ada": {
+     "posizione": "alla porta, con un panno sulla bocca",
+     "attivita": "chiama gli abitanti verso l'uscita laterale"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E13_p1",
+     "tratto": "Meccanica",
+     "nc": 14,
+     "testo": "La rottura è cominciata da una guarnizione già allentata, non dal colpo dell'assedio."
+    },
+    {
+     "id": "E13_p2",
+     "tratto": "Percezione",
+     "nc": 12,
+     "testo": "L'aria ha un sapore metallico, più forte vicino al pavimento."
+    }
+   ]
+  },
+  "E14": {
+   "protagonista": {
+    "posizione": "Sei davanti all'ingresso della Casa, nella sala delle voci",
+    "attivita": "aspetti che qualcuno ti chieda di decidere"
+   },
+   "png": {
+    "ada": {
+     "posizione": "accanto alla porta della Casa",
+     "attivita": "tocca lo stipite con il palmo, come per salutare"
+    },
+    "cassian": {
+     "posizione": "a sinistra, con una tavoletta in mano",
+     "attivita": "aspetta il tuo cenno per leggere"
+    },
+    "reik": {
+     "posizione": "a destra, con la mano sull'elsa",
+     "attivita": "guarda le registrazioni sugli scaffali"
+    },
+    "tal": {
+     "posizione": "in fondo, vicino all'uscita",
+     "attivita": "ha già pronta una seconda copia del contratto"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E14_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Sugli scaffali ci sono segni di polvere dove prima c'erano dei nastri."
+    },
+    {
+     "id": "E14_p2",
+     "tratto": "Ascoltare",
+     "nc": 14,
+     "testo": "Dalla Casa viene un brusio basso: sono le voci registrate, tutte insieme."
+    }
+   ]
+  },
+  "E15": {
+   "protagonista": {
+    "posizione": "Sei al centro della piazza, davanti a tutti",
+    "attivita": "aspetti di dire chi è Soglia"
+   },
+   "png": {
+    "ada": {
+     "posizione": "sui gradini della pompa",
+     "attivita": "tiene una mano sul petto"
+    },
+    "mirea": {
+     "posizione": "fra la folla, con le braccia incrociate",
+     "attivita": "evita il tuo sguardo e poi lo cerca"
+    },
+    "cassian": {
+     "posizione": "a un lato, con i suoi",
+     "attivita": "ha spento la radio"
+    },
+    "reik": {
+     "posizione": "sul lato opposto, con la squadra",
+     "attivita": "non ha più la mano sull'elsa"
+    },
+    "yara": {
+     "posizione": "sul bordo di un tetto",
+     "attivita": "tiene l'arco abbassato"
+    },
+    "tal": {
+     "posizione": "vicino alla cassa dei contratti",
+     "attivita": "ha messo via il suo"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E15_p1",
+     "tratto": "Percezione",
+     "nc": 13,
+     "testo": "Per la prima volta nessuno ha un'arma sguainata."
+    },
+    {
+     "id": "E15_p2",
+     "tratto": "Ascoltare",
+     "nc": 12,
+     "testo": "La piazza è silenziosa: si sente solo il respiro di centinaia di persone."
+    }
+   ]
+  },
+  "E16": {
+   "protagonista": {
+    "posizione": "Sei a Soglia, in un nuovo giorno",
+    "attivita": "guardi ciò che resta e ciò che è cambiato"
+   },
+   "png": {
+    "ada": {
+     "posizione": "sui gradini della pompa",
+     "attivita": "saluta chi passa"
+    }
+   },
+   "percepibili": [
+    {
+     "id": "E16_p1",
+     "tratto": "Percezione",
+     "nc": 12,
+     "testo": "Qualcuno ha cominciato a riscrivere sui muri il nome del posto."
+    }
+   ]
+  }
+ }
+}

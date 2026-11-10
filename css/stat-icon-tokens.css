@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Role Makers — Token cromatici delle icone statistiche del Tomo
+   (character_tome_v1, checkpoint T1.2)
+
+   Adattamento di assets/masters/rolemakers-tome-icons-v1/stat-icon-tokens.css
+   (sorgente originale conservata lì, invariata — vedi anche README.md e
+   prompt-claude.md nello stesso pacchetto per licenza/provenienza: forme
+   SVG originali realizzate per Role Makers, nessun set commerciale o
+   marchio esterno). Selettori rinominati per aderire alla nomenclatura già
+   in uso in css/style.css (.tome-stat-*, non il BEM a doppio underscore
+   del file sorgente) — stessi identici valori colore, come richiesto.
+   ========================================================================== */
+:root{
+  --rm-stat-offense:#FF7A33;
+  --rm-stat-defense:#33D6E8;
+  --rm-stat-action:#63D471;
+  --rm-stat-mental:#B38CFF;
+  --rm-stat-identity:#F4C95D;
+}
+
+/* Il colore per famiglia va solo su icona+sigla (.tome-stat-head), mai sul
+   riquadro intero né sul valore (T1.2 punto 4: "nessuna informazione
+   affidata soltanto al colore" — sigla e aria-label restano sempre
+   presenti, il valore resta a contrasto neutro). */
+.tome-stat--offense{color:var(--rm-stat-offense);}
+.tome-stat--defense{color:var(--rm-stat-defense);}
+.tome-stat--action{color:var(--rm-stat-action);}
+.tome-stat--mental{color:var(--rm-stat-mental);}
+.tome-stat--identity{color:var(--rm-stat-identity);}

@@ -1,0 +1,75 @@
+{
+  "formato": "rm-solo-voce/1",
+  "id": "ich_voice_v1",
+  "storia": "ich",
+  "campaign_id": "ich-filo-senza-padrone",
+  "versione": "0.5.0",
+  "content_status": "proposed",
+  "source_note": "Role_Makers_Voci_Narratore_Analisi_Giocate_V1.md (pacchetto V5): proposta da approvare",
+  "narrative_voice": {
+    "id": "ich_voice_v1",
+    "tone": [
+      "mythic",
+      "intimate",
+      "uncanny"
+    ],
+    "lexicon": [
+      "bosco",
+      "cenere",
+      "sangue",
+      "fiore",
+      "piuma",
+      "sogno",
+      "filo",
+      "radice",
+      "spettro",
+      "cielo"
+    ],
+    "lexicon_tecnico": {
+      "parole": [
+        "ciclo",
+        "errore",
+        "procedura",
+        "configurazione",
+        "ripristino",
+        "archivio",
+        "estrazione"
+      ],
+      "dal_fatto": "ich_truth_therapy",
+      "nota": "Il lessico tecnico entra nel prompt solo quando il protagonista può comprenderlo; le parole esplicite (bot, hacker, programma…) restano bloccate dal lessico riservato della campagna."
+    },
+    "dialogue_mode": "warm_rough_daily_fragmented_visions_cold_control",
+    "act_modifiers": {
+      "1": "myth_with_small_cracks",
+      "2": "overlap",
+      "3": "awareness_and_choice"
+    },
+    "forbidden": [
+      "omniscient_spoiler",
+      "npc_unknown_fact",
+      "protagonist_thoughts",
+      "theme_lecture",
+      "historical_hero_solution",
+      "explicit_virtual_before_unlock",
+      "glitch_explains_all"
+    ],
+    "eroi_storici": [],
+    "pov": "second_perceptive",
+    "pov_ammessi": [
+      "second_perceptive",
+      "third_limited"
+    ],
+    "nota_pov": "La scheda ammette terza persona limitata o seconda persona percettiva \"secondo l'impostazione dell'interfaccia\": oggi l'interfaccia e i testi di riserva usano la seconda persona.",
+    "scene_pattern": [
+      "consequence",
+      "world_detail",
+      "npc_reaction",
+      "action_opening"
+    ]
+  },
+  "guida": {
+    "esempio": "Alva trova il fiore sotto la neve, nello stesso punto in cui lo aveva raccolto tre giorni prima. Il gambo porta ancora il taglio obliquo lasciato dal suo coltello. Quando lo sfiora, il villaggio tace per la durata di un respiro. [...] Sulla neve resta una seconda serie di impronte, identica alla sua, che conduce verso il bosco."
+  },
+  "voce_autore": "voce_autore_v1",
+  "timbro": "ich-contesto.json#timbro"
+}

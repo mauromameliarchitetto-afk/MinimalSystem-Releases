@@ -1,0 +1,2957 @@
+{
+ "formato": "rm-solo-interazioni/1",
+ "campaign_id": "cubo-trama",
+ "stato": "bozza",
+ "content_status": "proposed",
+ "nota": "«La chiave del cubo»: docs/single-player/trame/SCHEMA_LA_CHIAVE_DEL_CUBO.md (schema approvato il 30/10); EIDOS.md §3.1 r.65-99. L'Atto I viene solo dalla scheda dell'autore (EIDOS.md r.72-75); ogni frase riprende un fatto della scheda o una battuta della fonte; nessun fatto nuovo se non segnato PROPOSTA.",
+ "regole": {},
+ "scene": {
+  "K01": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K01x1",
+     "testo": "Guardare le altre navi della flotta",
+     "riserva": "Le vele della flotta tagliano il mare aperto, una dietro l'altra, verso Besidd, la città del legno.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "La flotta naviga verso Besidd, la città del legno.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 EIDOS.md r.72, r.65"
+    },
+    {
+     "id": "K01x3",
+     "testo": "Guardare l'orizzonte",
+     "riserva": "All'orizzonte il cielo si fa scuro, e il vento gira: il mare comincia a gonfiarsi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "All'orizzonte il cielo si fa scuro: arriva una tempesta.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "PROPOSTA: annuncia la tempesta della 02 (EIDOS.md r.72)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "soldato_flotta",
+     "apertura": "Il soldato tiene una mano sulla cima e gli occhi sull'orizzonte.",
+     "chiusura": "Il soldato torna a guardare l'orizzonte.",
+     "riserva_libera": "Il soldato si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "K01_soldato_1",
+       "testo": "Chiedere al soldato dove siete diretti",
+       "riserva": "«A Besidd, la città del legno» dice il soldato. «Se il mare ci lascia arrivare.»",
+       "effetti": [],
+       "fonte": "EIDOS.md r.72, r.65 (la meta); la seconda frase è PROPOSTA",
+       "scopo": "la meta della flotta (perché ci andate: VUOTO, non si dice)"
+      },
+      {
+       "id": "K01_soldato_2",
+       "testo": "Chiedere al soldato del cielo che si fa scuro",
+       "riserva": "«Tempesta» dice il soldato, senza staccare gli occhi dall'orizzonte. «Tieniti forte, quando arriva.»",
+       "effetti": [],
+       "richiede": [
+        "K01x3"
+       ],
+       "fonte": "PROPOSTA: annuncia la 02 (EIDOS.md r.72)",
+       "scopo": "la tempesta che separa le navi"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il vento gira all'improvviso, e il mare comincia a gonfiarsi: sul ponte i soldati legano quello che si può legare.",
+    "fonte": "PROPOSTA: l'arrivo della tempesta della 02 (EIDOS.md r.72)",
+    "esplora": [
+     {
+      "id": "K01d1",
+      "testo": "Prepararti alla tempesta",
+      "riserva": "Ti aggrappi al parapetto. Le prime onde sbattono contro lo scafo, e le vele vicine si piegano sotto il vento.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "La tempesta sta arrivando sulla flotta.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "PROPOSTA: EIDOS.md r.72 (la tempesta)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K01x1",
+     "K01_soldato_1"
+    ],
+    "risoluzione": [
+     "K01d1"
+    ]
+   },
+   "required_beats": [
+    "K01x1",
+    "K01_soldato_1",
+    "K01d1"
+   ],
+   "optional_beats": [
+    "K01x3",
+    "K01_soldato_2"
+   ],
+   "riserva_libera": "Sul ponte i soldati badano alle vele, e nessuno ti ascolta.",
+   "uscita_fail_forward": "Se la scena si ferma, il cielo si fa scuro comunque, e il vento gira."
+  },
+  "K02": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K02x1",
+     "testo": "Cercare le altre navi della flotta",
+     "riserva": "Le vele vicine spariscono nella pioggia: la tempesta separa le navi, e intorno a voi resta solo il mare.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "La tempesta ha separato le navi della flotta.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 EIDOS.md r.72"
+    },
+    {
+     "id": "K02x2",
+     "testo": "Tenerti al parapetto e guardare il mare",
+     "riserva": "Il mare sale e scende come una montagna che respira; l'acqua ti arriva fino alla cintura e poi se ne va.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: la tempesta (EIDOS.md r.72)",
+     "scopo": "la prima scelta del giocatore nella tempesta (L dello schema)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "soldato_flotta",
+     "apertura": "Il soldato è aggrappato alla stessa cima, con l'acqua che gli scorre in faccia.",
+     "chiusura": "Il soldato stringe la cima e non dice altro.",
+     "riserva_libera": "Il soldato non ti sente: il vento si porta via le parole.",
+     "argomenti": [
+      {
+       "id": "K02_soldato_1",
+       "testo": "Gridare al soldato di tenersi forte",
+       "riserva": "Il soldato si aggrappa alla cima accanto a te e non lascia la presa.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "soldato_flotta",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "PROPOSTA: un gesto, nessun fatto nuovo; le parole sono del giocatore",
+       "scopo": "chi è a bordo con te prima che la nave esploda (03)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Sopra le nubi il cielo si apre: uno squarcio, una ferita di luce nel buio della tempesta. Poi lo squarcio si divide in tre frammenti, che cadono verso il mare.",
+    "fonte": "P2 EIDOS.md r.72 (fatto del mondo: accade comunque)",
+    "esplora": [
+     {
+      "id": "K02d1",
+      "testo": "Seguire con lo sguardo i tre frammenti",
+      "riserva": "Tre luci attraversano la pioggia. Una scende verso di voi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Lo squarcio nel cielo si è diviso in tre frammenti.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 EIDOS.md r.72; quella che scende verso la nave: P1 della 03 (EIDOS.md r.72)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K02x1"
+    ],
+    "risoluzione": [
+     "K02d1"
+    ]
+   },
+   "required_beats": [
+    "K02x1",
+    "K02d1"
+   ],
+   "optional_beats": [
+    "K02x2",
+    "K02_soldato_1"
+   ],
+   "riserva_libera": "Nella tempesta nessuno ti sente: il vento si porta via le parole.",
+   "uscita_fail_forward": "Se la scena si ferma, lo squarcio si apre comunque nel cielo, e un frammento scende verso la nave."
+  },
+  "K03": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K03x1",
+     "testo": "Guardare la nave che brucia",
+     "riserva": "Della nave resta un rogo che affonda; intorno galleggiano rottami e pezzi di vela.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "La tua nave è esplosa.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 EIDOS.md r.72 (la nave esplode); i rottami: PROPOSTA"
+    },
+    {
+     "id": "K03x2",
+     "testo": "Guardare la luce nell'acqua",
+     "riserva": "Il frammento galleggia a pochi bracci da te e pulsa, come se respirasse.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Il frammento galleggia accanto a te, nell'acqua.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 EIDOS.md r.72; l'immagine è PROPOSTA"
+    }
+   ],
+   "dialoghi": [],
+   "sblocco": {
+    "sviluppo": [
+     "K03x2"
+    ]
+   },
+   "required_beats": [
+    "K03x2"
+   ],
+   "optional_beats": [
+    "K03x1"
+   ],
+   "riserva_libera": "Nell'acqua nessuno ti risponde: c'è solo il mare.",
+   "uscita_fail_forward": "Se la scena si ferma, il frammento ti raggiunge comunque, e il mare ti porta via."
+  },
+  "K04": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K04x1",
+     "testo": "Guardare il ragazzo che ti ha tirato fuori",
+     "riserva": "È fradicio quanto te; alla cintura porta due lame, e ti guarda come si guarda un pesce strano, con un sorriso beffardo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Il ragazzo che ti ha salvato porta due lame alla cintura.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "EIDOS.md r.72-73 (combatte con entrambe le mani); il sorriso beffardo: file dei PNG, Athres"
+    },
+    {
+     "id": "K04x2",
+     "testo": "Guardare la riva e il mare",
+     "riserva": "Sabbia, scogli, e il mare che porta a terra i rottami della tua nave. Della flotta, nessuna vela all'orizzonte.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: la riva non è descritta nelle trame; la nave esplosa e la flotta separata (EIDOS.md r.72)",
+     "scopo": "il naufragio dietro le spalle"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "athres",
+     "apertura": "Il ragazzo si siede sulla sabbia accanto a te e si strizza i capelli.",
+     "chiusura": "Athres torna a guardare il mare.",
+     "riserva_libera": "Athres ride e non risponde.",
+     "argomenti": [
+      {
+       "id": "K04_athres_1",
+       "testo": "Chiedere al ragazzo come si chiama",
+       "riserva": "«Athres» dice lui, e ti guarda dalla testa ai piedi. «E tu sei {quello che|quella che|ciò che} il mare ha sputato fuori.»",
+       "effetti": [
+        {
+         "nota": "Il ragazzo che ti ha salvato si chiama Athres.",
+         "categoria": "indizio"
+        }
+       ],
+       "fonte": "EIDOS.md r.72 (il nome); la seconda frase è PROPOSTA (le sue provocazioni: file dei PNG)",
+       "scopo": "il primo incontro con Athres"
+      },
+      {
+       "id": "K04_athres_2",
+       "testo": "Chiedere ad Athres perché ti ha salvato",
+       "riserva": "Athres si stringe nelle spalle: «Eri in acqua. E brillavi.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "athres",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "K04_athres_1"
+       ],
+       "fonte": "PROPOSTA: la luce del frammento che porta in sé (EIDOS.md r.72, r.85); le parole del protagonista sono del giocatore",
+       "scopo": "il primo legame con Athres (L dello schema)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Athres ti parla, e tu capisci ogni parola: la sua lingua ti entra nelle orecchie come se l'avessi sempre saputa.",
+    "fonte": "P2 EIDOS.md r.73 (capisce la lingua di lui; il salto temporale non si dice: PROPOSTA dello schema)",
+    "esplora": [
+     {
+      "id": "K04d1",
+      "testo": "Ascoltare le parole di Athres",
+      "riserva": "Ti chiede chi sei e da dove arrivi. Capisci ogni parola, e lui aspetta la tua risposta.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Capisci la lingua di Athres.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P2 EIDOS.md r.73"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K04x1",
+     "K04_athres_1"
+    ],
+    "risoluzione": [
+     "K04d1"
+    ]
+   },
+   "required_beats": [
+    "K04x1",
+    "K04_athres_1",
+    "K04d1"
+   ],
+   "optional_beats": [
+    "K04x2",
+    "K04_athres_2"
+   ],
+   "riserva_libera": "Sulla riva c'è solo il rumore del mare.",
+   "uscita_fail_forward": "Se la scena si ferma, Athres ti tira in piedi comunque, e ti porta via dalla riva."
+  },
+  "K05": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K05x1",
+     "testo": "Seguire Athres lontano dalla riva",
+     "riserva": "Athres cammina davanti a te fra le rocce, verso l'interno; tiene le mani vicine alle lame.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: il viaggio dalla riva (EIDOS.md r.73)",
+     "scopo": "il cammino prima del rapimento"
+    },
+    {
+     "id": "K05x2",
+     "testo": "Guardare le alture",
+     "riserva": "Fra le rocce si muovono delle ombre: guerrieri dei clan del nord vi stanno circondando.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "I guerrieri dei clan del nord vi stanno circondando.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 EIDOS.md r.73"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "athres",
+     "apertura": "Athres si volta appena, senza fermarsi.",
+     "chiusura": "Athres torna a guardare le alture.",
+     "riserva_libera": "Athres non risponde: guarda le alture.",
+     "argomenti": [
+      {
+       "id": "K05_athres_1",
+       "testo": "Chiedere ad Athres dove state andando",
+       "riserva": "«Via da questa riva» dice Athres. «Prima che qualcuno ci trovi.»",
+       "effetti": [],
+       "fonte": "PROPOSTA: dove li portano e che cosa vogliono i rapitori è VUOTO fino alla 07 (schema)",
+       "scopo": "la paura prima del rapimento"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "I guerrieri dei clan del nord escono dalle rocce e vi sono addosso. Athres sfila le lame e combatte con entrambe le mani.",
+    "fonte": "P1 e P2 EIDOS.md r.73",
+    "esplora": [
+     {
+      "id": "K05d1",
+      "testo": "Combattere accanto ad Athres",
+      "riserva": "Ti metti spalla a spalla con Athres; un guerriero dei clan del nord ti si lancia contro.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Combatti accanto ad Athres contro i guerrieri dei clan del nord.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 P* (EIDOS.md r.73): come combattere, fuggire o arrendersi è del giocatore, con le regole dello scontro"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K05x2"
+    ],
+    "risoluzione": [
+     "K05d1"
+    ]
+   },
+   "required_beats": [
+    "K05x2",
+    "K05d1"
+   ],
+   "optional_beats": [
+    "K05x1",
+    "K05_athres_1"
+   ],
+   "riserva_libera": "Fra le rocce nessuno ti risponde: c'è solo il vento.",
+   "uscita_fail_forward": "Se la scena si ferma, i guerrieri dei clan del nord vi raggiungono comunque."
+  },
+  "K06": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K06x1",
+     "testo": "Toccarti il collo dove ti ha colpito il dardo",
+     "riserva": "Il dardo ti ha lasciato un buco caldo sotto l'orecchio; da lì il veleno ti scende nelle braccia come acqua pesante.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Ti hanno drogato con un dardo.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 EIDOS.md r.73; l'immagine è PROPOSTA"
+    },
+    {
+     "id": "K06x2",
+     "testo": "Guardare i guerrieri dei clan del nord",
+     "riserva": "Vi tengono in mezzo, con le armi in mano; non parlano con voi, e fra loro poco.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: che cosa vogliono i rapitori è VUOTO fino alla 07 (schema)",
+     "scopo": "i rapitori, senza dire dove vi portano"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "athres",
+     "apertura": "Athres cammina legato poco davanti a te, a testa alta.",
+     "chiusura": "Athres torna a guardare avanti.",
+     "riserva_libera": "Athres scuote appena la testa: non è il momento.",
+     "argomenti": [
+      {
+       "id": "K06_athres_1",
+       "testo": "Chiedere sottovoce ad Athres se sta bene",
+       "riserva": "«Meglio di te» dice Athres, a mezza voce. «Tu brilli ancora, sai? Cerca di non farlo vedere.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "athres",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "PROPOSTA: la luce del frammento che porta in sé (EIDOS.md r.72, r.85); le parole del protagonista sono del giocatore",
+       "scopo": "il primo legame con Athres e il prezzo del frammento"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il veleno sale: le gambe pesano come pietre. Dentro di te, però, il frammento pulsa ancora, e sotto la pelle senti la sua energia che aspetta.",
+    "fonte": "P1 e P2 EIDOS.md r.73 (il dardo; l'energia del frammento); l'immagine è PROPOSTA",
+    "esplora": [
+     {
+      "id": "K06d1",
+      "testo": "Sentire l'energia del frammento sotto la pelle",
+      "riserva": "L'energia del frammento ti risponde: basterebbe chiamarla. Ma sai che ha un prezzo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P2 EIDOS.md r.73 (perde HP quando la richiama)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K06x1"
+    ],
+    "risoluzione": [
+     "K06d1"
+    ]
+   },
+   "required_beats": [
+    "K06x1",
+    "K06d1"
+   ],
+   "optional_beats": [
+    "K06x2",
+    "K06_athres_1"
+   ],
+   "riserva_libera": "I guerrieri non vi parlano, e il viaggio va avanti.",
+   "uscita_fail_forward": "Se la scena si ferma, il viaggio va avanti comunque, verso le terre dei clan del nord."
+  },
+  "K07": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K07x1",
+     "testo": "Guardare la gente di Ederna",
+     "riserva": "Uomini e donne dei clan vi guardano passare: qualcuno sputa per terra, qualcuno si volta dall'altra parte.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "La gente di Ederna vi guarda con ostilità.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "PROPOSTA: la descrizione di Ederna non c'è nelle trame (schema, scena 07)",
+     "scopo": "l'arrivo a Ederna e l'ostilità dei clan"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "athres",
+     "apertura": "Athres cammina accanto a te, con i polsi legati e gli occhi bassi.",
+     "chiusura": "Athres torna a guardare per terra.",
+     "riserva_libera": "Athres stringe le labbra: non qui.",
+     "argomenti": [
+      {
+       "id": "K07_athres_1",
+       "testo": "Chiedere ad Athres dove vi hanno portato",
+       "riserva": "«Ederna» dice Athres a mezza voce. «Ulfer, Urobri e Bhorkyn tutti insieme: tre clan in uno, e nessuno che si fidi dell'altro.»",
+       "effetti": [
+        {
+         "nota": "Siete a Ederna: un clan misto di Ulfer, Urobri e Bhorkyn.",
+         "categoria": "indizio"
+        }
+       ],
+       "fonte": "P1 EIDOS.md r.74 (Ederna, clan misto di Ulfer, Urobri e Bhorkyn); «nessuno che si fidi dell'altro» è PROPOSTA (l'odio fra i clan, r.74)",
+       "scopo": "dove siete"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La folla si stringe intorno a voi, e le voci si alzano. Athres ti guarda negli occhi, un momento solo: «Fidati di me» dice piano.",
+    "fonte": "PROPOSTA: il momento prima del pestaggio (EIDOS.md r.74); da che cosa vi salvi: VUOTO, non si dice",
+    "esplora": [
+     {
+      "id": "K07d1",
+      "testo": "Guardare Athres negli occhi",
+      "riserva": "Negli occhi di Athres non c'è rabbia: c'è un'idea, e non ha tempo di spiegartela.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "PROPOSTA: P2 (EIDOS.md r.74)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K07_athres_1"
+    ],
+    "risoluzione": [
+     "K07d1"
+    ]
+   },
+   "required_beats": [
+    "K07_athres_1",
+    "K07d1"
+   ],
+   "optional_beats": [
+    "K07x1"
+   ],
+   "riserva_libera": "La gente di Ederna non ti risponde: ti guarda e basta.",
+   "uscita_fail_forward": "Se la scena si ferma, Athres ti colpisce comunque, finché il buio ti prende."
+  },
+  "K08": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K08x1",
+     "testo": "Guardare la cella",
+     "riserva": "Pietra, paglia sporca e una grata in alto, da cui entra la luce dei fuochi. Fuori, le voci di Ederna.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: la cella non è descritta nelle trame",
+     "scopo": "il luogo del primo legame"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "athres",
+     "apertura": "Athres si stira contro il muro e ti guarda, con un mezzo sorriso.",
+     "chiusura": "Athres appoggia la testa al muro e chiude gli occhi.",
+     "riserva_libera": "Athres ride piano: «Questo non lo so nemmeno io.»",
+     "argomenti": [
+      {
+       "id": "K08_athres_1",
+       "testo": "Chiedere ad Athres che posto è Ederna",
+       "riserva": "«La terra dei primi» dice Athres. «E i clan si odiano da così tanto che non si ricordano più perché.»",
+       "effetti": [
+        {
+         "nota": "Ederna è la terra dei primi, e fra i clan c'è odio.",
+         "categoria": "indizio"
+        }
+       ],
+       "fonte": "P1 e P2 EIDOS.md r.74 (chi lo dice: Athres, PROPOSTA dello schema); «non si ricordano più perché» è PROPOSTA"
+      },
+      {
+       "id": "K08_athres_2",
+       "testo": "Chiedere ad Athres perché ti ha colpito",
+       "riserva": "«Era l'unico modo per uscirne vivi tutti e due» dice Athres, e non aggiunge altro.",
+       "effetti": [],
+       "richiede": [
+        "K08_athres_1"
+       ],
+       "fonte": "EIDOS.md r.74 (lo pesta e così salva tutti e due); da che cosa: VUOTO, non lo dice",
+       "scopo": "la fiducia della 07"
+      },
+      {
+       "id": "K08_athres_3",
+       "testo": "Chiedere ad Athres in che cosa crede",
+       "riserva": "Athres guarda verso la grata, da dove arriva l'odore del mare. «L'oceano unisce le terre, tutte loro sono immerse nella stessa acqua. Non vedo perché noi non dovremmo condividere lo stesso tipo di pensiero.»",
+       "effetti": [
+        {
+         "nota": "Athres crede nella marea del cambiamento.",
+         "categoria": "indizio"
+        }
+       ],
+       "richiede": [
+        "K08_athres_1"
+       ],
+       "fonte": "P3 EIDOS.md r.74 (la marea del cambiamento); la battuta alla lettera [RW Ep.2 r.9] (file dei PNG, Athres)",
+       "scopo": "la marea del cambiamento"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Athres si volta verso la grata, e la luce dei fuochi gli scopre la nuca: dietro il collo ha un segno.",
+    "fonte": "P4 EIDOS.md r.74 (il simbolo Uruz dietro il collo di Athres); il modo è PROPOSTA, senza tiri (schema)",
+    "esplora": [
+     {
+      "id": "K08d1",
+      "testo": "Guardare il segno dietro il collo di Athres",
+      "riserva": "È Uruz: lo stesso simbolo che ti è bruciato davanti agli occhi quando hai toccato il frammento.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Dietro il collo di Athres c'è il simbolo Uruz, lo stesso delle tue visioni.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P4 EIDOS.md r.74; le visioni della 03 (r.72)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K08_athres_1"
+    ],
+    "risoluzione": [
+     "K08d1"
+    ]
+   },
+   "required_beats": [
+    "K08_athres_1",
+    "K08d1"
+   ],
+   "optional_beats": [
+    "K08x1",
+    "K08_athres_2",
+    "K08_athres_3"
+   ],
+   "riserva_libera": "Fuori dalla cella nessuno ti risponde: si sentono solo le voci di Ederna.",
+   "uscita_fail_forward": "Se la scena si ferma, vengono comunque a prendervi per portarvi al cerchio."
+  },
+  "K09": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K09x1",
+     "testo": "Guardare la folla dei clan",
+     "riserva": "Ulfer, Urobri e Bhorkyn urlano, divisi anche qui: ognuno per il suo campione.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: il clan misto di Ederna e l'odio fra i clan (EIDOS.md r.74)",
+     "scopo": "l'odio fra i clan che Athres unirà nella 10"
+    },
+    {
+     "id": "K09x2",
+     "testo": "Guardare Nyx",
+     "riserva": "Nyx si muove leggero sulla sabbia e ti studia senza fretta, come chi ha già visto molti cerchi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Nel cerchio ti aspetta un guerriero che i clan chiamano Nyx.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 EIDOS.md r.75; il modo è PROPOSTA (la scheda non dice come combatte Nyx: file dei PNG)",
+     "scopo": "preparare la verità (a), senza dirla"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "imran",
+     "apertura": "Nyx ti gira intorno sulla sabbia, senza staccarti gli occhi di dosso.",
+     "chiusura": "Nyx non risponde: aspetta la tua mossa.",
+     "riserva_libera": "Nyx non risponde: ti studia.",
+     "argomenti": [
+      {
+       "id": "K09_nyx_1",
+       "testo": "Chiedere a Nyx chi è",
+       "riserva": "Nyx ti guarda un momento più a lungo, come se la domanda lo divertisse. Poi alza la guardia, e non risponde.",
+       "effetti": [],
+       "fonte": "L P* dello schema (PROPOSTA): parlare con Nyx durante lo scontro, scopo: preparare la verità (a); la risposta resta per la 10",
+       "scopo": "preparare la verità (a)"
+      }
+     ]
+    },
+    {
+     "png": "athres",
+     "apertura": "Athres stringe le sbarre della gabbia, con le nocche bianche.",
+     "chiusura": "Athres torna a fissare il capoguerra.",
+     "riserva_libera": "Athres non ti sente: la folla urla troppo.",
+     "argomenti": [
+      {
+       "id": "K09_athres_1",
+       "testo": "Gridare ad Athres attraverso le sbarre",
+       "riserva": "«Guardalo nei piedi, non nelle mani!» ti grida Athres. «E non morire, che poi mi tocca uscire.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "athres",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "PROPOSTA: le provocazioni di Athres (file dei PNG); le parole del protagonista sono del giocatore",
+       "scopo": "il legame con Athres prima della 10"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il capoguerra alza la mano, e il carceriere ti spinge in mezzo al cerchio. Nyx ti aspetta. Sotto la pelle senti il Keravnos che preme: puoi chiamarlo nelle mani, o tenerlo chiuso dentro.",
+    "fonte": "P1 EIDOS.md r.75 (il cerchio; il carceriere e il capoguerra: figure del cerchio senza scheda); P2 (r.75, r.96): la scelta del Keravnos si annuncia qui, prima che lo scontro cominci (PROPOSTA)",
+    "esplora": [
+     {
+      "id": "K09d1",
+      "testo": "Entrare nel cerchio contro Nyx",
+      "riserva": "Fai un passo sulla sabbia. Nyx alza la guardia.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Combatti contro Nyx nel cerchio di Ederna.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P1 P* (EIDOS.md r.75): come combattere è del giocatore"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K09x2"
+    ],
+    "risoluzione": [
+     "K09d1"
+    ]
+   },
+   "required_beats": [
+    "K09x2",
+    "K09d1"
+   ],
+   "optional_beats": [
+    "K09x1",
+    "K09_nyx_1",
+    "K09_athres_1"
+   ],
+   "riserva_libera": "Nel cerchio la folla urla, e nessuno ti ascolta.",
+   "uscita_fail_forward": "Se la scena si ferma, il carceriere ti spinge comunque nel cerchio, contro Nyx."
+  },
+  "K10": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K10x1",
+     "testo": "Guardare Athres contro il capoguerra",
+     "riserva": "Athres combatte con entrambe le mani, beffardo anche adesso; ma il capoguerra è grosso e paziente, e aspetta il suo errore.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Athres sfida il capoguerra nel cerchio di Ederna.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "EIDOS.md r.73 (combatte con entrambe le mani), r.75 (sfida il capoguerra); il modo è PROPOSTA (file dei PNG: arrogante e beffardo)",
+     "scopo": "la sfida al capoguerra"
+    },
+    {
+     "id": "K10x2",
+     "testo": "Guardare Nyx nel ghiaccio",
+     "riserva": "Nyx è chiuso nel ghiaccio fino al petto, ma gli occhi si muovono: ti seguono.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: Nyx ghiacciato da Athres nella 09 (EIDOS.md r.75)",
+     "scopo": "preparare la verità (a)"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "athres",
+     "apertura": "Athres gira intorno al capoguerra, con le lame basse.",
+     "chiusura": "Athres torna a guardare il capoguerra.",
+     "riserva_libera": "Athres non ti sente: è tutto nel cerchio.",
+     "argomenti": [
+      {
+       "id": "K10_athres_1",
+       "testo": "Gridare ad Athres di stare attento",
+       "riserva": "Athres ride, senza staccare gli occhi dal capoguerra: «Attento lo dici a lui.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "athres",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "PROPOSTA: le provocazioni di Athres (file dei PNG); le parole del protagonista sono del giocatore",
+       "scopo": "il legame con Athres"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il capoguerra colpisce, e Athres barcolla. Dentro di te il frammento si accende: una scarica ti corre sotto la pelle e cerca una via d'uscita.",
+    "fonte": "PROPOSTA: il momento prima della scarica (EIDOS.md r.75: tocca il frammento e la scarica si assorbe nelle mani di Athres)",
+    "esplora": [
+     {
+      "id": "K10d1",
+      "testo": "Guardare la scarica passare nelle mani di Athres",
+      "riserva": "La scarica corre verso Athres e si assorbe nelle sue mani: le lame si illuminano di una luce bianca, e la folla tace.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "La scarica del frammento è passata nelle mani di Athres.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P1 FISSO (EIDOS.md r.75, r.88): fatto del mondo; la luce bianca è PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K10x1"
+    ],
+    "risoluzione": [
+     "K10d1"
+    ]
+   },
+   "required_beats": [
+    "K10x1",
+    "K10d1"
+   ],
+   "optional_beats": [
+    "K10x2",
+    "K10_athres_1"
+   ],
+   "riserva_libera": "Nel cerchio la folla urla il nome del suo campione, e nessuno ti ascolta.",
+   "uscita_fail_forward": "Se la scena si ferma, la scarica passa comunque nelle mani di Athres, e il capoguerra cade."
+  },
+  "K11": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K11x1",
+     "testo": "Guardare chi si avvicina ad Athres",
+     "riserva": "Una ragazza e un uomo anziano si fanno largo fra la gente dei clan e vanno dritti verso Athres. L'anziano gli porge una spada.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Una ragazza e un uomo anziano vanno verso Athres; l'anziano gli porge una spada.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [RW Ep.3 r.11] (la spada: file dei PNG, §7)",
+     "scopo": "chi guida i clan verso Athres"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "aska",
+     "apertura": "La ragazza fissa Athres, poi te, con disprezzo.",
+     "chiusura": "La ragazza torna a fissare Athres.",
+     "riserva_libera": "La ragazza non ti risponde: parla solo con Athres.",
+     "argomenti": [
+      {
+       "id": "K11_aska_1",
+       "testo": "Ascoltare la ragazza",
+       "riserva": "«E vorresti che noi ti accettassimo come nostro capo guerra? Tu sei l'aratare che proviene da Phlegethia, noi siamo nemici, non servirò mai un capo proveniente da quella terra, neppure voi dovreste!»",
+       "effetti": [
+        {
+         "nota": "La ragazza non accetta un capo che viene da Phlegethia.",
+         "categoria": "indizio"
+        }
+       ],
+       "fonte": "P2, la battuta alla lettera [RW Ep.3 r.12] (file dei PNG, Aska; Phlegethia: dei clan del nord, EIDOS.md r.65)"
+      }
+     ]
+    },
+    {
+     "png": "imran",
+     "apertura": "Imran resta seduto accanto a te, con le mani ancora intorpidite dal ghiaccio.",
+     "chiusura": "Imran torna a guardare la folla.",
+     "riserva_libera": "Imran scuote la testa: «Non qui.»",
+     "argomenti": [
+      {
+       "id": "K11_imran_1",
+       "testo": "Chiedere a Imran perché si faceva chiamare Nyx",
+       "riserva": "Imran ti guarda di traverso. «Non qui» dice piano. «Qui sono ancora Nyx, per tutti tranne che per te.»",
+       "effetti": [],
+       "fonte": "PROPOSTA: perché Imran sia in incognito non lo dice la scheda (EIDOS.md r.75: VUOTO); la risposta resta chiusa",
+       "scopo": "la verità (a), dopo la 10"
+      }
+     ]
+    },
+    {
+     "png": "athres",
+     "apertura": "Athres stringe la spada che gli ha dato l'anziano.",
+     "chiusura": "Athres torna a parlare ai clan.",
+     "riserva_libera": "Athres ti fa cenno di aspettare.",
+     "argomenti": [
+      {
+       "id": "K11_athres_1",
+       "testo": "Chiedere ad Athres che cosa vuole dai clan",
+       "riserva": "«Un esercito» dice Athres. «Da est verrà qualcuno, prima o poi. E i clan da soli non reggono.»",
+       "effetti": [],
+       "richiede": [
+        "K11d1"
+       ],
+       "fonte": "P4 [RW Ep.3 r.14] (chi verrà da est); «i clan da soli non reggono» è PROPOSTA",
+       "scopo": "che cosa vuole Athres"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La ragazza sfodera la lama e si getta contro Athres.",
+    "fonte": "P3 [RW Ep.3 r.13]",
+    "esplora": [
+     {
+      "id": "K11d1",
+      "testo": "Guardare la ragazza che attacca",
+      "riserva": "«Aska! No.» grida qualcuno dalla folla, ma lei non si ferma.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "La ragazza si chiama Aska, e ha attaccato Athres.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [RW Ep.3 r.13] («Aska! No.»; chi lo grida è PROPOSTA)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K11_aska_1"
+    ],
+    "risoluzione": [
+     "K11d1"
+    ]
+   },
+   "required_beats": [
+    "K11_aska_1",
+    "K11d1"
+   ],
+   "optional_beats": [
+    "K11x1",
+    "K11_imran_1",
+    "K11_athres_1"
+   ],
+   "riserva_libera": "Intorno al cerchio i clan discutono fra loro, e nessuno ti dà retta.",
+   "uscita_fail_forward": "Se la scena si ferma, Aska attacca comunque, e Athres le congela la lama alla mano."
+  },
+  "K12": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K12x1",
+     "testo": "Guardare Phlegethia",
+     "riserva": "Case basse, fuochi davanti alle porte, bambini che corrono dietro ai guerrieri tornati con Athres. Qui nessuno ti guarda come a Ederna.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: la descrizione di Phlegethia non c'è (VUOTO, schema, scena 12)",
+     "scopo": "il luogo dove vive Athres"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "gente_phlegethia",
+     "apertura": "La gente si raccoglie intorno al fuoco.",
+     "chiusura": "Le voci tornano al fuoco.",
+     "riserva_libera": "Nessuno aggiunge una risposta.",
+     "argomenti": [
+      {
+       "id": "K12_eunoe_1",
+       "testo": "Ascoltare chi viene nominato a Phlegethia",
+       "riserva": "Fra i nomi delle persone del posto senti quello di Eunoe. Non la incontri.",
+       "effetti": [
+        {
+         "nota": "Hai sentito nominare Eunoe a Phlegethia.",
+         "categoria": "indizio"
+        }
+       ],
+       "fonte": "RW Ep.3 r.24: riferimento, non incontro; prepara il riconoscimento nello squarcio",
+       "scopo": "preparare Eunoe"
+      },
+      {
+       "id": "K12_eunoe_2",
+       "testo": "Ascoltare la domanda sul legame con Athres",
+       "riserva": "Ti chiedono quale rapporto hai con Athres: la risposta resta tua.",
+       "effetti": [],
+       "richiede": [
+        "K12_eunoe_1"
+       ],
+       "fonte": "P2 [RW Ep.3 r.25]: gli parlano di Athres e gli chiedono che rapporto ha con lui; «il nostro capo»: Phlegethia, capo Athres (EIDOS.md r.65); le parole sono PROPOSTA",
+       "scopo": "la domanda sul rapporto con Athres"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Intorno al fuoco la gente parla di Athres, e qualcuno ti guarda in attesa: vogliono sapere che cosa sei per lui.",
+    "fonte": "P2 [RW Ep.3 r.25]",
+    "esplora": [
+     {
+      "id": "K12d1",
+      "testo": "Restare al fuoco con la gente di Phlegethia",
+      "riserva": "Resti al fuoco. Le voci si fanno più basse, e qualcuno ti passa una ciotola calda.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P1 [RW Ep.3 r.24-25] (vivere Phlegethia); la ciotola è PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K12_eunoe_1"
+    ],
+    "risoluzione": [
+     "K12d1"
+    ]
+   },
+   "required_beats": [
+    "K12_eunoe_1",
+    "K12d1"
+   ],
+   "optional_beats": [
+    "K12x1",
+    "K12_eunoe_2"
+   ],
+   "riserva_libera": "Intorno al fuoco nessuno ti risponde: parlano fra loro, di Athres.",
+   "uscita_fail_forward": "Se la scena si ferma, la notte scende comunque su Phlegethia, e Athres ti manda a chiamare."
+  },
+  "K13": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K13x1",
+     "testo": "Guardare le pareti incise",
+     "riserva": "Le pareti sono coperte di segni, in molte lingue diverse: alcune le riconosci, altre no. I segni continuano sulle pareti: riconoscerne alcuni non basta a leggere gli altri.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Le pareti della casa delle matriarche sono incise in molte lingue diverse.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [RW Ep.3 r.26]; che le capisca tutte è PROPOSTA, come la lingua di Athres della 04 (EIDOS.md r.73)",
+     "scopo": "la casa delle matriarche"
+    },
+    {
+     "id": "K13x2",
+     "testo": "Avvicinarti ad Athres",
+     "riserva": "Athres ti si ferma vicino, così vicino che ne senti il respiro. Poi fa un passo indietro, come se si fosse ricordato di qualcosa, e guarda l'altare.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "relazione": {
+        "png": "athres",
+        "delta": 1
+       }
+      }
+     ],
+     "fonte": "P2 [RW Ep.3 r.27]: un momento di vicinanza e di distanza; il modo è PROPOSTA, con il tono romantico (DECISIONI_AUTORE.md §10)",
+     "scopo": "il legame con Athres"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "athres",
+     "apertura": "Athres resta in piedi accanto all'altare, con la luce del fuoco sul viso.",
+     "chiusura": "Athres torna a guardare le incisioni.",
+     "riserva_libera": "Athres sorride appena: «Questo chiedilo alle matriarche.»",
+     "argomenti": [
+      {
+       "id": "K13_athres_1",
+       "testo": "Chiedere ad Athres della prima matriarca",
+       "riserva": "«La prima matriarca raccontava di due lupi che scappavano da un destino comune…» dice Athres. Poi si ferma, e la storia resta lì, a metà, come se il resto toccasse a voi due.",
+       "effetti": [
+        {
+         "nota": "La prima matriarca raccontava di due lupi che scappavano da un destino comune.",
+         "categoria": "indizio"
+        }
+       ],
+       "fonte": "P4 [RW Ep.3 r.28] (la riga che lo schema riporta); che la storia resti a metà è PROPOSTA",
+       "scopo": "il racconto della prima matriarca"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Athres tende la mano verso di te: «Il frammento. Dammelo, lo metto sull'altare.»",
+    "fonte": "P3 [RW Ep.3 r.27]; la battuta è PROPOSTA",
+    "esplora": [
+     {
+      "id": "K13d1",
+      "testo": "Guardare gli occhi di Athres",
+      "riserva": "Gli occhi di Athres si accendono, e il frammento risponde: una luce gli corre dentro, come un battito.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Il frammento si è svegliato quando Athres ha acceso gli occhi.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P5 [RW Ep.3 r.29]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K13x1"
+    ],
+    "risoluzione": [
+     "K13d1"
+    ]
+   },
+   "required_beats": [
+    "K13x1",
+    "K13d1"
+   ],
+   "optional_beats": [
+    "K13x2",
+    "K13_athres_1"
+   ],
+   "riserva_libera": "Nella casa delle matriarche c'è solo silenzio, e il crepitio del fuoco.",
+   "uscita_fail_forward": "Se la scena si ferma, il frammento si sveglia comunque quando Athres accende gli occhi, e ti trascina altrove."
+  },
+  "K14": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K14x1",
+     "testo": "Guardare il ragazzo con gli occhi accesi",
+     "riserva": "Davanti a una folla c'è un ragazzo che sembra eporiano come te, con gli occhi accesi e il naso che sanguina. «Vi sto offrendo la vostra occasione per guadagnarci il nostro diritto alla vita su questo mondo. Loro ci temono, perché non capiscono quanto in realtà siamo grandi. Vogliono zittirci, sterminarci, privarci della nostra libertà. Venite con me, affrontiamo il nostro destino e vinciamo questa lotta di razze.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Nella visione un ragazzo con gli occhi accesi chiama alla lotta di razze.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [RW Ep.3 r.33-34], la battuta alla lettera (file dei PNG, Alexander); «eporiano come te» è DEDOTTO («della sua stessa nazionalità probabilmente»); il nome non si dice (R (b))"
+    },
+    {
+     "id": "K14x2",
+     "testo": "Guardare chi segue il ragazzo",
+     "riserva": "Fra chi lo segue riconosci Athres. Accanto a lui c'è un uomo che non hai mai visto, e qualcuno lo chiama Korkas. Dalla folla una voce grida: «Alla fine della guerra, rimarranno soltanto gli Dei!»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Nella visione, fra chi segue il ragazzo, ci sono Athres e un uomo che chiamano Korkas.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "K14x1"
+     ],
+     "fonte": "P3 [RW Ep.3 r.34] (la battuta alla lettera); il prologo è tolto, quindi Korkas lo sente chiamare per nome (PROPOSTA); chi grida: PROPOSTA"
+    }
+   ],
+   "sviluppo": {
+    "testo": "Dalla folla esce qualcuno con il tuo viso: un'altra versione di te, che ti si getta contro gridando: «No! Non è così che deve andare! Tu devi cambiare le cose! Per cosa credi che sia {morto|morta|senza vita}? Perché tutto avvenisse come deve?!»",
+    "fonte": "P4 [RW Ep.3 r.34], la battuta alla lettera (file dei PNG, l'altra versione di sé), al maschile con la forma di genere",
+    "esplora": [
+     {
+      "id": "K14d1",
+      "testo": "Cercare la voce del frammento",
+      "riserva": "Sotto le urla dell'altra versione di te, la voce del frammento torna, più vicina, come se ti parlasse da dentro.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P1 [RW Ep.3 r.31] (la voce); il modo è PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K14x1"
+    ],
+    "risoluzione": [
+     "K14d1"
+    ]
+   },
+   "required_beats": [
+    "K14x1",
+    "K14d1"
+   ],
+   "optional_beats": [
+    "K14x2"
+   ],
+   "riserva_libera": "Nella visione nessuno ti risponde: solo la voce del frammento, e le urla della folla.",
+   "uscita_fail_forward": "Se la scena si ferma, la voce di Athres ti raggiunge comunque: «Sono qui, apri gli occhi.»"
+  },
+  "K15": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K15x1",
+     "testo": "Guardare la stanza",
+     "riserva": "La stanza è di Eunoe, il nome sentito a Phlegethia. Athres è seduto accanto al letto con la lama; non la incontri qui.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "[RW Ep.4 r.8]: la stanza è di una delle due persone della 12 (DEDOTTO dallo schema: Eunoe); la descrizione è PROPOSTA",
+     "scopo": "dove ti risvegli"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "athres",
+     "apertura": "Athres si sporge verso di te, con la lama ancora sulle ginocchia.",
+     "chiusura": "Athres si appoggia allo schienale e ti guarda.",
+     "riserva_libera": "Athres scuote la testa: «Di questo non so niente.»",
+     "argomenti": [
+      {
+       "id": "K15_athres_1",
+       "testo": "Raccontare ad Athres la visione",
+       "riserva": "Glielo racconti: la voce, il ragazzo con gli occhi accesi, la folla. Quando arrivi a lui stesso, fra chi seguiva il ragazzo, Athres stringe la lama e non dice niente. Poi: «Era una visione. Io sono qui.»",
+       "effetti": [
+        {
+         "nota": "Hai raccontato la visione ad Athres.",
+         "categoria": "appunto"
+        }
+       ],
+       "fonte": "P2 P* [RW Ep.4 r.9]: raccontargli la visione (il giocatore può anche non farlo); la reazione di Athres è PROPOSTA",
+       "scopo": "raccontare o tacere la visione"
+      },
+      {
+       "id": "K15_athres_2",
+       "testo": "Chiedere ad Athres perché tiene la lama in mano",
+       "riserva": "«Perché quando ti ho preso, eri freddo come il mare» dice Athres. «E non mi fido di niente, stanotte.»",
+       "effetti": [],
+       "fonte": "P1 [RW Ep.4 r.8] (la lama in mano); la battuta è PROPOSTA (file dei PNG: protettivo)",
+       "scopo": "il legame con Athres"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La porta si apre di colpo: è Imran, con il fiato corto.",
+    "fonte": "P4 [RW Ep.4 r.13]",
+    "esplora": [
+     {
+      "id": "K15d1",
+      "testo": "Ascoltare Imran",
+      "riserva": "«Corvi di perlustrazione» dice Imran. «Volano verso sud, e non sono nostri.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Imran ha visto corvi di perlustrazione volare verso sud.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 [RW Ep.4 r.13] (i corvi verso sud); «non sono nostri» è PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K15x1"
+    ],
+    "risoluzione": [
+     "K15d1"
+    ]
+   },
+   "required_beats": [
+    "K15x1",
+    "K15d1"
+   ],
+   "optional_beats": [
+    "K15_athres_1",
+    "K15_athres_2"
+   ],
+   "riserva_libera": "Nella stanza nessuno ti risponde: Athres guarda la porta.",
+   "uscita_fail_forward": "Se la scena si ferma, Imran entra comunque con la notizia dei corvi, e Athres ti chiede che cosa vuoi fare."
+  },
+  "K16": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K16x1",
+     "testo": "Guardare i preparativi al molo",
+     "riserva": "I guerrieri dei clan caricano casse e armi; qualcuno parla del congresso, delle nazioni che si riuniranno, di quello che chiederanno.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "A Phlegethia si preparano a partire per il congresso.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [RW Ep.4 r.13]; il congresso (EIDOS.md r.77, r.65); i discorsi sono PROPOSTA",
+     "scopo": "la partenza per il congresso"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "athres",
+     "apertura": "Athres si ferma un momento accanto a te, con una cassa sulla spalla.",
+     "chiusura": "Athres torna alle casse.",
+     "riserva_libera": "Athres scuote la testa: «Lo vedremo là.»",
+     "argomenti": [
+      {
+       "id": "K16_athres_1",
+       "testo": "Chiedere ad Athres dove va l'imbarcazione",
+       "riserva": "«Ad Apologeti» dice Athres. «Gael Skjold ha convocato un congresso, e ci saranno tutte le nazioni. Se i clan non sono a quel tavolo, decideranno per noi.»",
+       "effetti": [
+        {
+         "nota": "Gael Skjold ha convocato un congresso ad Apologeti.",
+         "categoria": "indizio"
+        }
+       ],
+       "fonte": "P2 (EIDOS.md r.65: Apologeti, congresso di Gael Skjold; r.77); «decideranno per noi» è PROPOSTA",
+       "scopo": "dove si va"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il gruppo ha deciso: si parte per il congresso. Al molo restano le ultime casse, e il vento è buono.",
+    "fonte": "P2 (EIDOS.md r.77); il vento è PROPOSTA",
+    "esplora": [
+     {
+      "id": "K16d1",
+      "testo": "Salire a bordo per le ultime casse",
+      "riserva": "Salti a bordo: il legno ti si muove sotto i piedi, e per un attimo è come essere di nuovo sulla nave della flotta.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "PROPOSTA: la nave della flotta della 01 (EIDOS.md r.72)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K16x1"
+    ],
+    "risoluzione": [
+     "K16d1"
+    ]
+   },
+   "required_beats": [
+    "K16x1",
+    "K16d1"
+   ],
+   "optional_beats": [
+    "K16_athres_1"
+   ],
+   "riserva_libera": "Al molo tutti hanno da fare, e nessuno ti risponde.",
+   "uscita_fail_forward": "Se la scena si ferma, l'imbarcazione parte comunque, e Athres ti chiede di restare."
+  },
+  "K17": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K17x1",
+     "testo": "Guardare le tende lungo la via",
+     "riserva": "Guardie di molti popoli, ognuna davanti alla sua tenda: si guardano fra loro senza fidarsi, come i clan a Ederna.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Ad Apologeti le guardie di molti popoli sono accampate nelle tende lungo la via.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [RW Ep.7 r.14]; «come i clan a Ederna» è PROPOSTA (l'odio fra i clan, EIDOS.md r.74)",
+     "scopo": "Apologeti prima del congresso"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "aska",
+     "apertura": "Aska incrocia le braccia davanti alla tenda.",
+     "chiusura": "Aska torna a fissare Athres.",
+     "riserva_libera": "Aska non ti risponde: è con Athres che ce l'ha.",
+     "argomenti": [
+      {
+       "id": "K17_aska_1",
+       "testo": "Ascoltare Aska",
+       "riserva": "«Hai abbandonato la tua gente» dice Aska ad Athres, davanti a tutti. «E adesso vuoi che ti seguiamo fin qui? Il clan si divide di nuovo, aratare: io non ti seguo più.»",
+       "effetti": [
+        {
+         "nota": "Aska accusa Athres di aver abbandonato la sua gente, e vuole dividere il clan.",
+         "categoria": "indizio"
+        }
+       ],
+       "fonte": "P2 [RW Ep.7 r.14] (l'accusa e la divisione del clan); le parole sono PROPOSTA (file dei PNG, Aska)"
+      }
+     ]
+    },
+    {
+     "png": "athres",
+     "apertura": "Athres resta fermo davanti ad Aska, con le mani lontane dalle lame.",
+     "chiusura": "Athres torna a guardare Aska.",
+     "riserva_libera": "Athres scuote la testa: non è il momento.",
+     "argomenti": [
+      {
+       "id": "K17_athres_1",
+       "testo": "Chiedere ad Athres che cosa vuole fare",
+       "riserva": "«Niente» dice Athres a mezza voce. «Se vuole il nord, che se lo prenda. Non combatto contro la mia gente.»",
+       "effetti": [],
+       "richiede": [
+        "K17_aska_1"
+       ],
+       "fonte": "PROPOSTA: P3 [RW Ep.7 r.14] (lascia Phlegethia ad Athres e tiene il nord); la battuta è PROPOSTA",
+       "scopo": "come la prende Athres"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Intorno a voi si fa cerchio: la gente dei clan e le guardie degli altri popoli aspettano di vedere chi cede.",
+    "fonte": "PROPOSTA: P2 [RW Ep.7 r.14]",
+    "esplora": [
+     {
+      "id": "K17d1",
+      "testo": "Guardare chi guarda Aska",
+      "riserva": "Ti accorgi che la gente dei clan guarda Aska con rispetto, quasi con timore: come si guarda chi viene dopo una matriarca.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "La gente dei clan guarda Aska come l'erede della prima matriarca.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P3 [RW Ep.7 r.14] (è vista come l'erede della prima matriarca); il modo è PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K17_aska_1"
+    ],
+    "risoluzione": [
+     "K17d1"
+    ]
+   },
+   "required_beats": [
+    "K17_aska_1",
+    "K17d1"
+   ],
+   "optional_beats": [
+    "K17x1",
+    "K17_athres_1"
+   ],
+   "riserva_libera": "Fra le tende nessuno ti risponde: tutti guardano Aska e Athres.",
+   "uscita_fail_forward": "Se la scena si ferma, Aska decide comunque: lascia Phlegethia ad Athres e si tiene il nord."
+  },
+  "K18": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K18x1",
+     "testo": "Ascoltare le richieste delle nazioni",
+     "riserva": "Una dopo l'altra, le nazioni portano al tavolo le loro richieste. Ognuna parla per sé, e nessuna ascolta le altre.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Al congresso ogni nazione porta le sue richieste.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [RW Ep.7 r.17]; l'elenco delle richieste non c'è (VUOTO): «nessuna ascolta le altre» è PROPOSTA",
+     "scopo": "il congresso"
+    },
+    {
+     "id": "K18x2",
+     "testo": "Prendere la parola sull'arkè",
+     "riserva": "Ti alzi e parli dell'arkè come la conosci tu: una cosa che ti è caduta dentro dal cielo, che fa male a chi la usa, e che nessuno a questo tavolo ha mai portato. Per un momento la sala ti ascolta.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "relazione": {
+        "png": "gael_skjold",
+        "delta": 1
+       }
+      }
+     ],
+     "richiede": [
+      "K18x1"
+     ],
+     "fonte": "L P* dello schema: parlare al congresso, scopo: la voce dell'Eporiano sull'arkè; il frammento (EIDOS.md r.72), emicrania e sangue (r.75); le parole sono del giocatore, il testo è PROPOSTA",
+     "scopo": "la voce dell'Eporiano sull'arkè"
+    },
+    {
+     "id": "K18x3",
+     "testo": "Guardare chi siede accanto ad Athres",
+     "riserva": "Accanto ad Athres siede una ragazza che chiamano Hestia: ascolta tutto e non dice niente. Più in là c'è una donna, Zoe, che non smette di guardare il cubo.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: Hestia al congresso (file dei PNG: scene 18-20, senza battute); Zoe al congresso [RW Ep.7 r.21] (file dei PNG: sprezzante; che guardi il cubo è DEDOTTO dalla 20)",
+     "scopo": "chi c'è al congresso"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "gael_skjold",
+     "apertura": "Gael Skjold ti osserva dall'alto della sua postura militare.",
+     "chiusura": "Gael Skjold torna al tavolo.",
+     "riserva_libera": "Gael Skjold non risponde: aspetta il suo turno.",
+     "argomenti": [
+      {
+       "id": "K18_gael_1",
+       "testo": "Chiedere a Gael Skjold perché ha convocato il congresso",
+       "riserva": "«Perché le nazioni si fanno la guerra per cose che non capiscono» dice Gael Skjold. «L'arkè per prima. Voglio un'alleanza, e voglio capire.»",
+       "effetti": [],
+       "fonte": "PROPOSTA: un'alleanza fra le nazioni e capire l'arkè [RW Ep.7 r.15, r.19] (file dei PNG, Gael: la fonte non gli dà battute)",
+       "scopo": "che cosa vuole Gael"
+      }
+     ]
+    },
+    {
+     "png": "imran",
+     "apertura": "Imran siede fra i delegati, come uno di loro.",
+     "chiusura": "Imran torna a parlare con i delegati.",
+     "riserva_libera": "Imran sorride appena: «Non qui.»",
+     "argomenti": [
+      {
+       "id": "K18_imran_1",
+       "testo": "Chiedere a Imran che cosa vuole da Athres",
+       "riserva": "«Un fronte comune» dice Imran. «Contro chi usa l'arkè per fare la guerra. Athres ha i clan, io ho gli uomini. Insieme, nessuno ci tocca.»",
+       "effetti": [],
+       "richiede": [
+        "K18d1"
+       ],
+       "fonte": "P4 [RW Ep.7 r.21] (Imran chiede ad Athres un fronte comune; PROPOSTA dello schema: non nella scheda); «contro chi usa l'arkè da radicale» (file dei PNG); le parole sono PROPOSTA",
+       "scopo": "il fronte comune"
+      }
+     ]
+    },
+    {
+     "png": "zoe_rw",
+     "apertura": "Zoe ti squadra dall'altro capo del tavolo.",
+     "chiusura": "Zoe torna a guardare il cubo.",
+     "riserva_libera": "Zoe ride piano, e non ti risponde.",
+     "argomenti": [
+      {
+       "id": "K18_zoe_1",
+       "testo": "Chiedere a Zoe chi rappresenta",
+       "riserva": "«Chi non è seduto a questo tavolo» dice Zoe, e sorride. «Ma lo sarà.»",
+       "effetti": [],
+       "fonte": "PROPOSTA: Zoe al congresso [RW Ep.7 r.21] (file dei PNG: scherno, minacce; chi rappresenti non si dice: DEDOTTO dalla 20)",
+       "scopo": "preparare la 20"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Gael Skjold fa portare il cubo al centro del tavolo: le nazioni vogliono capire l'arkè, e vogliono cominciare da lì. Zoe si alza e lascia il tavolo; poco dopo anche Athres si alza, e Imran lo segue.",
+    "fonte": "P3 [RW Ep.7 r.19] (capire l'arkè partendo dal cubo) e P4 [r.21] (Zoe e Athres lasciano il tavolo); che Imran lo segua per chiedergli il fronte comune è PROPOSTA dello schema",
+    "esplora": [
+     {
+      "id": "K18d1",
+      "testo": "Guardare il cubo sul tavolo",
+      "riserva": "Il cubo sta in mezzo al tavolo, scuro e liscio. Il frammento che porti con te si scalda, come se lo riconoscesse.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Il cubo è sul tavolo del congresso, e il frammento lo sente.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [RW Ep.7 r.19]; che il frammento si scaldi è PROPOSTA (la chiave è lui: verità (c), già detta nella 14)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K18x1"
+    ],
+    "risoluzione": [
+     "K18d1"
+    ]
+   },
+   "required_beats": [
+    "K18x1",
+    "K18d1"
+   ],
+   "optional_beats": [
+    "K18x2",
+    "K18x3",
+    "K18_gael_1",
+    "K18_imran_1",
+    "K18_zoe_1"
+   ],
+   "riserva_libera": "Al congresso nessuno ti risponde: le nazioni parlano fra loro.",
+   "uscita_fail_forward": "Se la scena si ferma, Athres accetta comunque, sotto minaccia: sarai tu ad aprire il cubo."
+  },
+  "K19": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K19x1",
+     "testo": "Cercare Athres prima dell'apertura",
+     "riserva": "Lo trovi fuori dalla sua tenda, in mezzo ai suoi. Ti guarda, poi guarda il suo clan. «Stanotte il mio posto è qui» dice, e rientra nella tenda.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cubo_fact_popolo"
+      },
+      {
+       "nota": "Per la prima volta Athres sceglie il suo popolo invece di te.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [RW Ep.7 r.25-26] (EIDOS.md r.78); la battuta è PROPOSTA",
+     "scopo": "Athres sceglie il suo popolo"
+    },
+    {
+     "id": "K19x2",
+     "testo": "Guardare il cubo da vicino",
+     "riserva": "Il cubo è scuro e liscio, e non ha né serrature né fessure. Il frammento che porti con te si scalda appena gli sei accanto.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: il cubo (EIDOS.md r.65) e il frammento che lo sente, come nella K18; la chiave è lui: verità (c), già detta nella 14",
+     "scopo": "prima dell'apertura"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "athres",
+     "apertura": "Athres si ferma sulla soglia della tenda, senza voltarsi del tutto.",
+     "chiusura": "Athres rientra fra i suoi.",
+     "riserva_libera": "Athres non risponde: i suoi lo stanno chiamando.",
+     "argomenti": [
+      {
+       "id": "K19_athres_1",
+       "testo": "Chiedere ad Athres di restare con te stanotte",
+       "riserva": "«Non posso» dice Athres. «Mi hanno minacciato davanti a tutti, e il mio clan l'ha visto. Se stanotte non sto con loro, domani non avrò più nessuno da guidare.»",
+       "effetti": [],
+       "richiede": [
+        "K19x1"
+       ],
+       "fonte": "PROPOSTA: P1 [RW Ep.7 r.25-26]; la minaccia del congresso [RW Ep.7 r.22] (K18); le parole sono PROPOSTA",
+       "scopo": "perché Athres sceglie il suo popolo"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Le guardie ti lasciano solo con il cubo. Quando lo tocchi si apre, e dentro qualcosa ti afferra: ha il tuo viso, ed è l'altra versione di te. Vuole il tuo corpo, e prova a spingerti dentro il cubo al suo posto.",
+    "fonte": "P2 [RW Ep.7 r.23] (EIDOS.md r.77: la controparte vuole il corpo); il modo dell'apertura è PROPOSTA; che cosa cerchi nel cubo si dice nella 30",
+    "esplora": [
+     {
+      "id": "K19d1",
+      "testo": "Aprire il cubo",
+      "riserva": "Metti le mani sul cubo. Il frammento risponde, e il cubo si apre.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "cubo_fact_apertura"
+       },
+       {
+        "nota": "Apri il cubo, e l'altra versione di te prova a prenderti il corpo.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 P* [RW Ep.7 r.23]: l'apertura è il fatto del mondo (l'accordo della 18); lo scontro è del giocatore"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K19x1"
+    ],
+    "risoluzione": [
+     "K19d1"
+    ]
+   },
+   "required_beats": [
+    "K19x1",
+    "K19d1"
+   ],
+   "optional_beats": [
+    "K19x2",
+    "K19_athres_1"
+   ],
+   "riserva_libera": "Nella sala del cubo nessuno ti risponde: le guardie guardano altrove.",
+   "uscita_fail_forward": "Se la scena si ferma, il cubo si apre comunque sotto le tue mani, e l'altra versione di te ti afferra."
+  },
+  "K20": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K20x1",
+     "testo": "Guardare l'esercito riunito nel palazzo",
+     "riserva": "Le nazioni che al congresso non si ascoltavano ora stanno in fila: un solo esercito, sotto un solo capo. È Imran.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cubo_fact_imran_capo"
+      },
+      {
+       "nota": "L'esercito si riunisce sotto un solo capo, Imran.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [RW Ep.7 r.30] (EIDOS.md r.78); «che al congresso non si ascoltavano» riprende la K18 (PROPOSTA)",
+     "scopo": "Imran capo dell'esercito"
+    },
+    {
+     "id": "K20x2",
+     "testo": "Cercare Gael Skjold fra i delegati",
+     "riserva": "Gael Skjold è al centro della sala, con Ilarco accanto. Parlano piano, e ogni tanto guardano il cubo che hai fra le mani.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: Gael Skjold [RW Ep.7 r.15] e Ilarco (EIDOS.md r.78), che proveranno a fermare Korkas [r.30]",
+     "scopo": "preparare il fisso"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "imran",
+     "apertura": "Imran ti guarda come si guarda una cosa preziosa.",
+     "chiusura": "Imran torna ai suoi uomini.",
+     "riserva_libera": "Imran non risponde: ha un esercito da guidare.",
+     "argomenti": [
+      {
+       "id": "K20_imran_1",
+       "testo": "Chiedere a Imran che cosa farà ora il suo esercito",
+       "riserva": "«Quello che l'alleanza non ha mai saputo fare» dice Imran. «Difendere tutti. Anche quelli come te.»",
+       "effetti": [],
+       "fonte": "PROPOSTA: proteggere anche chi ha l'arkè [RW Ep.8 r.23] (file dei PNG, che cosa vuole Imran); le parole sono PROPOSTA",
+       "scopo": "Imran capo"
+      }
+     ]
+    },
+    {
+     "png": "gael_skjold",
+     "apertura": "Gael Skjold ti fa un cenno, come a un alleato.",
+     "chiusura": "Gael Skjold torna a parlare con Ilarco.",
+     "riserva_libera": "Gael Skjold non risponde: guarda il cubo.",
+     "argomenti": [
+      {
+       "id": "K20_gael_1",
+       "testo": "Chiedere a Gael Skjold che cosa ha visto nel cubo",
+       "riserva": "«Niente che capisca» dice Gael Skjold. «Ma stanotte qualcuno ha provato a uccidere per lui. Tienilo stretto.»",
+       "effetti": [],
+       "fonte": "PROPOSTA: Gael vuole capire l'arkè dal cubo [RW Ep.7 r.19]; l'attentato della 19 [r.27] (la fonte non gli dà battute: file dei PNG)",
+       "scopo": "l'ultima parola di Gael"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Un uomo ti passa accanto come un'ombra, e quando te ne accorgi hai le mani vuote: è Korkas, e ha il cubo. Gael Skjold e Ilarco provano a fermarlo, e lui li uccide, uno dopo l'altro.",
+    "fonte": "P2 FISSO [RW Ep.7 r.30] (EIDOS.md r.78, r.89): il fatto del mondo accade comunque; Korkas è quello della visione della 14 (EIDOS.md r.76)",
+    "esplora": [
+     {
+      "id": "K20d1",
+      "testo": "Guardare Korkas con il cubo in mano",
+      "riserva": "Korkas ha il cubo sotto il braccio e la lama ancora sporca. È lo stesso uomo che hai visto nella visione, fra chi seguiva il ragazzo con gli occhi accesi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Korkas ti ruba il cubo e uccide Gael Skjold e Ilarco.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 [RW Ep.7 r.30]; Korkas nella visione (EIDOS.md r.76; K14)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K20x1"
+    ],
+    "risoluzione": [
+     "K20d1"
+    ]
+   },
+   "required_beats": [
+    "K20x1",
+    "K20d1"
+   ],
+   "optional_beats": [
+    "K20x2",
+    "K20_imran_1",
+    "K20_gael_1"
+   ],
+   "riserva_libera": "Nel palazzo nessuno ti ascolta: tutti guardano Imran.",
+   "uscita_fail_forward": "Se la scena si ferma, Korkas ti ruba comunque il cubo, uccide Gael Skjold e Ilarco e fugge."
+  },
+  "K21": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K21x1",
+     "testo": "Ascoltare la voce che viene da fuori",
+     "riserva": "Da fuori arriva la voce di Imran, alta sopra le guardie: «Voi che siete all'interno, avete agito contro le regole dell'alleanza. Se vi ritenete innocenti, uscite disarmati e siate aperti al dialogo.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cubo_fact_bouleterion"
+      },
+      {
+       "nota": "Imran chiede ai clan di uscire disarmati dal Bouleterion.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [RW Ep.8 r.3] e P2 [r.5] (la battuta, accorciata, nel file dei PNG; EIDOS.md r.79)",
+     "scopo": "il primo confronto con Imran come capo"
+    },
+    {
+     "id": "K21x2",
+     "testo": "Guardare i clan chiusi nella sala",
+     "riserva": "Nella sala principale i due clan stanno ai lati opposti, come a Ederna. Ma questa volta hanno lo stesso nemico, fuori dalle porte.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "PROPOSTA: i clan di Aska e di Athres [RW Ep.8 r.3]; la divisione del clan (K17) e l'odio fra i clan (EIDOS.md r.74)",
+     "scopo": "i clan nel Bouleterion"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "athres",
+     "apertura": "Athres ti tiene un braccio intorno alle spalle, come se potessi cadere da un momento all'altro.",
+     "chiusura": "Athres torna a guardare le porte.",
+     "riserva_libera": "Athres non risponde: ascolta le guardie.",
+     "argomenti": [
+      {
+       "id": "K21_athres_1",
+       "testo": "Chiedere ad Athres che cosa succede adesso",
+       "riserva": "«Adesso mi arrestano» dice Athres. «E tu stai in piedi, e non dici niente finché non hai ripreso le forze. Al resto ci penso io.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "athres",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "PROPOSTA: P3 [RW Ep.8 r.6-7] (Athres arrestato tiene stretto il protagonista); ordini da capoguerra (file dei PNG); le parole sono PROPOSTA",
+       "scopo": "il legame con Athres prima dell'arresto"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Le porte si aprono quanto basta perché entrino le guardie. Cercano Athres: è lui che vogliono.",
+    "fonte": "P3 [RW Ep.8 r.6]: Athres è arrestato (EIDOS.md r.79); il modo è PROPOSTA",
+    "esplora": [
+     {
+      "id": "K21d1",
+      "testo": "Guardare le guardie che entrano",
+      "riserva": "Le guardie entrano in fila, con le lance basse, e si fermano davanti ad Athres.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Le guardie entrano nel Bouleterion per arrestare Athres.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [RW Ep.8 r.6]; il modo è PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K21x1"
+    ],
+    "risoluzione": [
+     "K21d1"
+    ]
+   },
+   "required_beats": [
+    "K21x1",
+    "K21d1"
+   ],
+   "optional_beats": [
+    "K21x2",
+    "K21_athres_1"
+   ],
+   "riserva_libera": "Nel Bouleterion nessuno ti risponde: tutti guardano le porte.",
+   "uscita_fail_forward": "Se la scena si ferma, le guardie arrestano comunque Athres, e Imran ti aspetta fuori per le spiegazioni."
+  },
+  "K22": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K22x1",
+     "testo": "Aiutare chi chiede asilo",
+     "riserva": "Alle porte del campo si presenta gente con l'arkè: famiglie intere, che altrove sono braccate dalle guardie e qui chiedono asilo. Hestia è già fra loro. Tu porti acqua e coperte, e ascolti da dove vengono.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cubo_fact_asilo"
+      },
+      {
+       "nota": "Gente con l'arkè chiede asilo ad Apologeti.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [RW Ep.8 r.11-12] (PROPOSTA dello schema); chi ha l'arkè è braccato dalle guardie [RW Ep.7 r.3] (EIDOS.md r.87); Hestia aiuta chi chiede asilo (file dei PNG); le famiglie, l'acqua e le coperte sono PROPOSTA",
+     "scopo": "il tema di chi ha l'arkè"
+    },
+    {
+     "id": "K22x2",
+     "testo": "Chiedere ad Athres di lasciarti dare una mano",
+     "riserva": "«Sei ancora debole» dice Athres, e non ti lascia finire. «Quando avrai smesso di tremare, ne riparliamo. Fino ad allora stai lontano da tutto questo.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cubo_fact_allontana"
+      }
+     ],
+     "fonte": "P1 [RW Ep.8 r.10] (EIDOS.md r.79); la battuta è PROPOSTA",
+     "scopo": "Athres ti allontana"
+    },
+    {
+     "id": "K22x3",
+     "testo": "Guardare Petra che prova le macchine",
+     "riserva": "In un cortile Petra prova le macchine con l'arkè: prototipi da guerra, che si muovono quando lei li tocca. Robert Epos la guarda lavorare, a braccia conserte.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cubo_fact_macchine"
+      }
+     ],
+     "fonte": "P6 [RW Ep.8 r.17] (EIDOS.md r.79: i prototipi vanno con l'arkè di Petra); il cortile è PROPOSTA",
+     "scopo": "le macchine da guerra"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "robert_epos_rw",
+     "apertura": "Robert Epos ti saluta con un cenno, senza staccare gli occhi dalle macchine.",
+     "chiusura": "Robert Epos torna a guardare il cortile.",
+     "riserva_libera": "Robert Epos scuote la testa: non lo sa.",
+     "argomenti": [
+      {
+       "id": "K22_epos_1",
+       "testo": "Chiedere a Robert Epos perché aiuta il gruppo",
+       "riserva": "«Perché dell'arkè so più di chiunque altro» dice Robert Epos. «E chi sa, aiuta. Nessuno me l'ha chiesto due volte.»",
+       "effetti": [
+        {
+         "scopri": "cubo_fact_epos"
+        }
+       ],
+       "fonte": "P4 [RW Ep.8 r.14] (EIDOS.md r.79): «il massimo esperto» dell'arkè (file dei PNG); aiuta senza costrizione (decisione dell'autore); le parole sono PROPOSTA (la scheda non gli dà battute)",
+       "scopo": "Robert Epos aiuta il gruppo"
+      },
+      {
+       "id": "K22_epos_2",
+       "testo": "Chiedere a Robert Epos a che cosa serviranno le macchine",
+       "riserva": "«A quello per cui sono fatte» dice Robert Epos. «Se arriva la guerra, le useremo.»",
+       "effetti": [],
+       "richiede": [
+        "K22x3"
+       ],
+       "fonte": "P6 [RW Ep.8 r.19] (Epos: in guerra si useranno); le parole sono PROPOSTA",
+       "scopo": "il prezzo delle macchine"
+      }
+     ]
+    },
+    {
+     "png": "petra",
+     "apertura": "Petra si pulisce le mani su uno straccio e ti studia.",
+     "chiusura": "Petra torna alle sue macchine.",
+     "riserva_libera": "Petra non risponde: ha già la testa nella macchina.",
+     "argomenti": [
+      {
+       "id": "K22_petra_1",
+       "testo": "Chiedere a Petra come si muovono le macchine",
+       "riserva": "«Con l'arkè» dice Petra. «La mia. Una macchina non ha volontà: fa quello che vuole chi la tocca.»",
+       "effetti": [],
+       "richiede": [
+        "K22x3"
+       ],
+       "fonte": "PROPOSTA: i prototipi vanno con l'arkè di Petra (EIDOS.md r.79); sentenze, spiegazioni da studiosa (file dei PNG: nessuna battuta alla lettera)",
+       "scopo": "preparare la macchina della 23"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Una sera le tue spie cominciano a tornare, una alla volta, con quello che hanno visto e sentito per le strade.",
+    "fonte": "P5 [RW Ep.8 r.16] (il gruppo di spie del protagonista); il modo è PROPOSTA",
+    "esplora": [
+     {
+      "id": "K22d1",
+      "testo": "Ricevere le tue spie",
+      "riserva": "La prima spia si siede davanti a te, ancora coperta di polvere, e comincia a parlare.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Le tue spie tornano con le tracce del cubo.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P5 [RW Ep.8 r.16]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K22x2"
+    ],
+    "risoluzione": [
+     "K22d1"
+    ]
+   },
+   "required_beats": [
+    "K22x2",
+    "K22d1"
+   ],
+   "optional_beats": [
+    "K22x1",
+    "K22x3",
+    "K22_epos_1",
+    "K22_epos_2",
+    "K22_petra_1"
+   ],
+   "riserva_libera": "Ad Apologeti nessuno ti risponde: ognuno ha i suoi da cercare.",
+   "uscita_fail_forward": "Se la scena si ferma, le tue spie tornano comunque con le tracce del cubo e con il nome che si è dato il ragazzo della visione."
+  },
+  "K23": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K23x1",
+     "testo": "Guardare Imran in mezzo alla gente",
+     "riserva": "Imran non si ripara: sta davanti a tutti, con la gente alle spalle. Chi scappava si ferma, e lo guarda come si guarda un faro.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cubo_fact_faro"
+      },
+      {
+       "nota": "Imran si espone per difendere la gente, e diventa il faro da seguire.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [RW Ep.8 r.20] (EIDOS.md r.79)",
+     "scopo": "Imran diventa il faro"
+    },
+    {
+     "id": "K23x2",
+     "testo": "Provare a usare una delle macchine",
+     "riserva": "Ti arrampichi su una delle macchine ferme e provi a farla muovere. Non risponde: non è fatta per te. Quando scendi, un'altra macchina si è già messa in moto, e non è dalla vostra parte.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "P4 P* [RW Ep.8 r.21]: prova a usare una macchina e fallisce (il fallimento è della fonte); il testo è PROPOSTA",
+     "scopo": "il prezzo delle macchine"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "snit_rw",
+     "apertura": "Snit ti guarda dall'alto della macchina, con la testa piegata.",
+     "chiusura": "Snit torna ai comandi.",
+     "riserva_libera": "Snit sorride, e non ti risponde.",
+     "argomenti": [
+      {
+       "id": "K23_snit_1",
+       "testo": "Chiedere a Snit per chi combatte",
+       "riserva": "«Per la mia famiglia» sussurra Snit. «Per i miei legami. Tu per chi combatti?»",
+       "effetti": [],
+       "fonte": "PROPOSTA: Snit combatte «per difendere la sua famiglia, i suoi legami» [RW Ep.8 r.10] (file dei PNG); sussurri (file dei PNG); la domanda finale è PROPOSTA",
+       "scopo": "la lezione sui legami"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Una macchina da guerra si mette in moto fra le case, e chi la guida non è dei vostri: è Snit, e la spinge contro di voi.",
+    "fonte": "P4 [RW Ep.8 r.21]: Snit usa la macchina contro di loro (EIDOS.md r.79); il modo è PROPOSTA",
+    "esplora": [
+     {
+      "id": "K23d1",
+      "testo": "Andare incontro alla macchina",
+      "riserva": "La macchina viene avanti, e tu le vai incontro.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Snit usa una macchina da guerra contro di voi.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 P* [RW Ep.8 r.21]: come combattere è del giocatore"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K23x1"
+    ],
+    "risoluzione": [
+     "K23d1"
+    ]
+   },
+   "required_beats": [
+    "K23x1",
+    "K23d1"
+   ],
+   "optional_beats": [
+    "K23x2",
+    "K23_snit_1"
+   ],
+   "riserva_libera": "Nello scontro nessuno ti sente: il rumore della macchina copre tutto.",
+   "uscita_fail_forward": "Se la scena si ferma, la macchina di Snit vi viene addosso comunque."
+  },
+  "K24": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K24x1",
+     "testo": "Guardare quello che resta di Apologeti",
+     "riserva": "Del palazzo del congresso resta la scalinata, e nient'altro. Il Bouleterion è un mucchio di travi. Fra il fumo, la gente si cerca chiamandosi per nome.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Apologeti è stata rasa al suolo nello scontro.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [RW Ep.8 r.23] (EIDOS.md r.79); la scalinata (K18) e il Bouleterion (K21); il resto è PROPOSTA",
+     "scopo": "Apologeti rasa al suolo"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "imran",
+     "apertura": "Imran ha il viso nero di fumo e le mani ancora accese.",
+     "chiusura": "Imran torna fra la gente.",
+     "riserva_libera": "Imran non risponde: c'è troppa gente da salvare.",
+     "argomenti": [
+      {
+       "id": "K24_imran_1",
+       "testo": "Chiedere a Imran chi proteggerà adesso",
+       "riserva": "«Tutti» dice Imran. «Chi ha l'arkè e chi non l'ha. Quelli che nessuno ha mai protetto per primi.»",
+       "effetti": [],
+       "fonte": "PROPOSTA: P2 [RW Ep.8 r.23] (la fazione di Imran protegge anche chi ha l'arkè); proclami solenni (file dei PNG); le parole sono PROPOSTA",
+       "scopo": "il protettore dei senza luce"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Da sotto le pietre, da più parti, arrivano voci. Non puoi correre da tutte.",
+    "fonte": "L dello schema: chi salvare fra le macerie (P*); il modo è PROPOSTA",
+    "esplora": [
+     {
+      "id": "K24d1",
+      "testo": "Ascoltare le voci sotto le pietre",
+      "riserva": "Una voce chiama da sinistra, dove erano i compagni; un'altra, più debole, da un muro crollato lì davanti.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Fra le macerie devi scegliere chi salvare.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "L P* dello schema; il testo è PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K24x1"
+    ],
+    "risoluzione": [
+     "K24d1"
+    ]
+   },
+   "required_beats": [
+    "K24x1",
+    "K24d1"
+   ],
+   "optional_beats": [
+    "K24_imran_1"
+   ],
+   "riserva_libera": "Fra le macerie nessuno ti risponde: tutti cercano qualcuno.",
+   "uscita_fail_forward": "Se la scena si ferma, porti comunque fuori qualcuno dalle macerie, mentre Imran si proclama protettore dei senza luce."
+  },
+  "K25": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K25x1",
+     "parte": "Una corsa attraverso il tempo;",
+     "testo": "Lasciarti portare dalla corsa",
+     "riserva": "Corri oltre tutto, fino a una voce lontana, in un mondo neutro e vuoto, dove non c'è niente da toccare. Poi qualcosa ti tira indietro, e sei di nuovo nel tuo tempo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cubo_fact_corsa"
+      },
+      {
+       "nota": "Hai corso attraverso il tempo, oltre una voce lontana, e poi di nuovo nel tuo tempo.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [RW Ep.9 r.2] (EIDOS.md r.80); «qualcosa ti tira indietro»: PROPOSTA",
+     "scopo": "la corsa attraverso il tempo"
+    },
+    {
+     "id": "K25x2",
+     "parte": "i palazzi sul mare di sangue",
+     "testo": "Correre sui palazzi sopra il mare di sangue",
+     "riserva": "Sotto di te le strade sono un mare di sangue. Corri da un tetto all'altro, finché davanti a te non c'è Korkas, con Snit e Zoe ai fianchi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cubo_fact_mare"
+      }
+     ],
+     "fonte": "P2 [RW Ep.9 r.3-4] (il mare di sangue di Alexander: DEDOTTO dello schema e del file dei PNG)",
+     "scopo": "arrivare a Korkas"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "korkas",
+     "apertura": "Korkas ti guarda senza alzare la lama.",
+     "chiusura": "Korkas non aggiunge altro.",
+     "riserva_libera": "Korkas scuote la testa: non è il momento.",
+     "argomenti": [
+      {
+       "id": "K25_korkas_1",
+       "testo": "Chiedere a Korkas dov'è il cubo",
+       "riserva": "«Dove deve stare» dice Korkas. «Per un mondo giusto.» Ha le mani vuote, e non ti spiega altro.",
+       "effetti": [],
+       "fonte": "PROPOSTA: «per un mondo giusto» [RW Ep.7 r.36] (file dei PNG, che cosa vuole Korkas); perché non abbia il cubo in mano: VUOTO [RW Ep.9 r.9]",
+       "scopo": "il cubo che non c'è"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Korkas, Snit e Zoe ti sbarrano la strada sul tetto. Hai corso fin qui, e non ti resta quasi più niente.",
+    "fonte": "P2 [RW Ep.9 r.3-4]: lo fermano; il modo è PROPOSTA",
+    "esplora": [
+     {
+      "id": "K25d1",
+      "parte": "i palazzi sul mare di sangue",
+      "testo": "Fermarti davanti a Korkas",
+      "riserva": "Ti fermi sul bordo del tetto, con il fiato rotto. Korkas fa un passo verso di te.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Korkas, Snit e Zoe ti fermano sui palazzi.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P2 [RW Ep.9 r.4]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K25x2"
+    ],
+    "risoluzione": [
+     "K25d1"
+    ]
+   },
+   "required_beats": [
+    "K25x2",
+    "K25d1"
+   ],
+   "optional_beats": [
+    "K25x1",
+    "K25_korkas_1"
+   ],
+   "riserva_libera": "Sui tetti nessuno ti risponde: c'è solo il vento, e il sangue sotto.",
+   "uscita_fail_forward": "Se la scena si ferma, Korkas ti salva comunque, e Snit ti fa dormire con una parola."
+  },
+  "K26": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K26x1",
+     "testo": "Ascoltare i soldati rianimati che accusano Imran",
+     "riserva": "Un soldato chorisfos alza la voce contro Imran: li ha riportati in vita, sì, ma li ha resi mostri. Imran lo guarda a lungo. «Mi sarei aspettato dei ringraziamenti da parte vostra…»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cubo_fact_rianimati"
+      },
+      {
+       "nota": "I soldati rianimati accusano Imran di averli resi mostri.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [RW Ep.9 r.11] e P2 [r.12] (EIDOS.md r.80)",
+     "scopo": "i rianimati e Imran"
+    },
+    {
+     "id": "K26x2",
+     "testo": "Parlare con uno dei soldati rianimati",
+     "riserva": "Il soldato si guarda le mani come se non fossero sue. «Ero morto» ti dice. «Adesso che cosa sono? Uno di quelli che temevamo?» Non hai una risposta, ma resti ad ascoltarlo.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "L dello schema: parlare con i soldati rianimati, scopo: la paura di chi ha l'arkè (EIDOS.md r.87); le parole sono PROPOSTA",
+     "scopo": "la paura di chi ha l'arkè"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "athres",
+     "apertura": "Athres si accorge che hai aperto gli occhi e ti viene incontro, con il passo di chi non ha dormito.",
+     "chiusura": "Athres torna fra i soldati.",
+     "riserva_libera": "Athres non risponde: ha un campo da tenere in piedi.",
+     "argomenti": [
+      {
+       "id": "K26_athres_1",
+       "testo": "Chiedere ad Athres che cosa farà dei rianimati",
+       "riserva": "«Li prendo con me» dice Athres. «Sono morti una volta. Io non vi permetterò di morire di nuovo così facilmente: gliel'ho promesso.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "athres",
+          "delta": 1
+         }
+        }
+       ],
+       "fonte": "P3 [RW Ep.9 r.15] (la battuta, dentro una risposta al protagonista: PROPOSTA)",
+       "scopo": "Athres prende i rianimati sotto il suo comando"
+      }
+     ]
+    },
+    {
+     "png": "imran",
+     "apertura": "Imran si siede da solo, lontano dalle tende.",
+     "chiusura": "Imran torna a guardare il campo.",
+     "riserva_libera": "Imran non risponde: è stanco.",
+     "argomenti": [
+      {
+       "id": "K26_imran_1",
+       "testo": "Chiedere a Imran perché li ha riportati in vita",
+       "riserva": "«Perché potevo» dice Imran. «E perché nessun altro l'avrebbe fatto. Pensavano che li avrei lasciati sotto le pietre?»",
+       "effetti": [],
+       "fonte": "PROPOSTA: P1-P2 [RW Ep.9 r.11-12] (ferito nell'orgoglio quando i rianimati lo accusano: file dei PNG); le parole sono PROPOSTA",
+       "scopo": "Imran e il prezzo dell'arkè"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Athres si mette in mezzo ai rianimati e alza la voce perché lo sentano tutti: da adesso sono sotto il suo comando.",
+    "fonte": "P3 [RW Ep.9 r.15] (EIDOS.md r.80: Athres li prende sotto il suo comando)",
+    "esplora": [
+     {
+      "id": "K26d1",
+      "testo": "Ascoltare Athres che parla ai rianimati",
+      "riserva": "«…io non vi permetterò di morire di nuovo così facilmente…» dice Athres, e i rianimati lo guardano in silenzio.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Athres prende i rianimati sotto il suo comando.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [RW Ep.9 r.15]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K26x1"
+    ],
+    "risoluzione": [
+     "K26d1"
+    ]
+   },
+   "required_beats": [
+    "K26x1",
+    "K26d1"
+   ],
+   "optional_beats": [
+    "K26x2",
+    "K26_athres_1",
+    "K26_imran_1"
+   ],
+   "riserva_libera": "Nel campo nessuno ti risponde: i rianimati non sanno ancora che cosa dire.",
+   "uscita_fail_forward": "Se la scena si ferma, Athres prende comunque i rianimati sotto il suo comando, e l'alleanza si prepara a trovare i ribelli."
+  },
+  "K27": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K27x1",
+     "testo": "Guardare Athres che si allena",
+     "riserva": "I soldati gli vanno addosso uno alla volta, poi due insieme. Athres li sente arrivare nella pioggia, e li manda giù senza aprire gli occhi.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "P1 [RW Ep.11 r.3]; Elusione: si allena a occhi chiusi e quasi nessuno lo colpisce (file dei PNG)",
+     "scopo": "l'invito a provare"
+    },
+    {
+     "id": "K27x2",
+     "testo": "Ascoltare le notizie dalle città",
+     "riserva": "Le notizie arrivano a pezzi: le città sono nel caos, ci sono scioperi, e alcune si svuotano da un giorno all'altro.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Le città sono nel caos: scioperi, e città che si svuotano.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P3 [RW Ep.11 r.9]",
+     "scopo": "il mondo intorno al campo"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "athres",
+     "apertura": "Athres si scosta i capelli bagnati dagli occhi e ti guarda.",
+     "chiusura": "Athres torna a guardare la pioggia.",
+     "riserva_libera": "Athres non risponde: ascolta la pioggia.",
+     "argomenti": [
+      {
+       "id": "K27_athres_1",
+       "testo": "Chiedere ad Athres che cosa vuole da te in battaglia",
+       "riserva": "«Ti voglio lontano» dice Athres. «Temo di non riuscire ad essere lucido con te accanto… Ti occuperai di spionaggio e di scambio di informazioni. E manderai un messaggio con i tuoi corvi, ad Apologeti o a Icenia.»",
+       "effetti": [
+        {
+         "scopri": "cubo_fact_ruolo"
+        }
+       ],
+       "richiede": [
+        "K27d1"
+       ],
+       "fonte": "P5 [RW Ep.11 r.12-13] e P4 [r.11]; Icenia: non specificato nelle trame",
+       "scopo": "il ruolo che Athres ti affida"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Athres abbassa le lame e si volta verso di te, ancora a occhi chiusi: tocca a te.",
+    "fonte": "P1 [RW Ep.11 r.4]: lo invita a provare",
+    "esplora": [
+     {
+      "id": "K27d1",
+      "testo": "Entrare nel fango contro Athres",
+      "riserva": "Fai un passo nel fango. Athres sorride, con gli occhi chiusi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Sotto la pioggia, Athres ti invita a batterlo.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P1 P* [RW Ep.11 r.4]: come provarci è del giocatore"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K27x1"
+    ],
+    "risoluzione": [
+     "K27d1"
+    ]
+   },
+   "required_beats": [
+    "K27x1",
+    "K27d1"
+   ],
+   "optional_beats": [
+    "K27x2",
+    "K27_athres_1"
+   ],
+   "riserva_libera": "Sotto la pioggia nessuno ti risponde: si sente solo l'acqua.",
+   "uscita_fail_forward": "Se la scena si ferma, Athres ti tende comunque la mano sotto la pioggia, e le notizie della trappola arrivano lo stesso."
+  },
+  "K28": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K28x1",
+     "testo": "Guardare le rotte con Athres",
+     "riserva": "Athres segue le rotte con il dito, e si fa scuro in viso. «Vogliono dividerci» dice. «{L'altro te|L'altra te|L'altra versione di te}, sa come vincere…» Qualcuno li sta aiutando, e ha la tua faccia.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "scopri": "cubo_fact_dividerli"
+      },
+      {
+       "nota": "L'altra versione di te aiuta i nemici a dividervi.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [RW Ep.11 r.37] (al maschile, con le forme di genere; EIDOS.md r.81)",
+     "scopo": "l'altra versione aiuta i nemici"
+    },
+    {
+     "id": "K28x2",
+     "testo": "Chiedere che fine hanno fatto le macchine dell'alleanza",
+     "riserva": "Te lo dicono a voce bassa: le macchine dell'alleanza non ci sono più. Le ha rubate Snit, una notte, e adesso le guida contro chi le ha costruite.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "L dello schema: il furto delle macchine da parte di Snit (EIDOS.md r.81), scopo: il prezzo delle scelte dell'alleanza; il testo è PROPOSTA",
+     "scopo": "il prezzo delle scelte dell'alleanza"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "athres",
+     "apertura": "Athres non stacca gli occhi dal porto.",
+     "chiusura": "Athres torna a guardare il molo.",
+     "riserva_libera": "Athres non risponde: aspetta il segnale.",
+     "argomenti": [
+      {
+       "id": "K28_athres_1",
+       "testo": "Chiedere ad Athres perché abbatte le navi",
+       "riserva": "«Perché non scappi» dice Athres. «Se lascia il porto, lo perdiamo per sempre. Così, prima o poi, dovrà affrontarci.»",
+       "effetti": [],
+       "fonte": "PROPOSTA: P1 [RW Ep.11 r.36] (impedirgli la fuga); le parole sono PROPOSTA",
+       "scopo": "le navi di Alexander"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il silenzio del porto si rompe tutto insieme: dalle case e dai tetti cominciano a sparare. È una trappola, ed è di Zoe.",
+    "fonte": "P3 [RW Ep.11 r.38] (al porto sparano); la trappola è di Zoe (EIDOS.md r.81)",
+    "esplora": [
+     {
+      "id": "K28d1",
+      "testo": "Correre al riparo sotto i colpi",
+      "riserva": "I colpi spaccano le pietre del molo intorno a te.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Al porto vi sparano addosso: è la trappola di Zoe.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 [RW Ep.11 r.38]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K28x1"
+    ],
+    "risoluzione": [
+     "K28d1"
+    ]
+   },
+   "required_beats": [
+    "K28x1",
+    "K28d1"
+   ],
+   "optional_beats": [
+    "K28x2",
+    "K28_athres_1"
+   ],
+   "riserva_libera": "Al porto nessuno ti risponde: si sente solo il fuoco.",
+   "uscita_fail_forward": "Se la scena si ferma, la macchina si volta comunque contro di te, Snit muore sotto le frecce, e Athres ti fa chiamare per l'attacco su tre fronti."
+  },
+  "K29": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K29x1",
+     "testo": "Prendere la mano di Athres",
+     "riserva": "Dal vapore prende forma Athres, e ti porge la mano. «Solo io posso prendermi l'onore di metterti al tappetto…» dice. La prendi, e salite insieme.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Athres ti raggiunge sulla montagna.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P2 [RW Ep.12 r.23-24]",
+     "scopo": "tu e Athres insieme contro Korkas"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "korkas",
+     "apertura": "Korkas vi aspetta più in alto, con il cubo fra le mani.",
+     "chiusura": "Korkas solleva il cubo.",
+     "riserva_libera": "Korkas non risponde: il cubo parla per lui.",
+     "argomenti": [
+      {
+       "id": "K29_korkas_1",
+       "testo": "Chiedere a Korkas di fermarsi",
+       "riserva": "«Non posso» dice Korkas. «Ti ho già salvato una volta. Questa volta il mondo giusto viene prima di te.»",
+       "effetti": [],
+       "richiede": [
+        "K29x1"
+       ],
+       "fonte": "PROPOSTA: Korkas salva il protagonista nella 25 (EIDOS.md r.80); «per un mondo giusto» [RW Ep.7 r.36]; le parole sono PROPOSTA",
+       "scopo": "l'ultima parola di Korkas"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Korkas alza il cubo, e il cubo si accende fra le sue mani di un potere che non hai mai visto.",
+    "fonte": "P3 [RW Ep.12 r.34-35] (Korkas controlla il cubo con un potere mai visto)",
+    "esplora": [
+     {
+      "id": "K29d1",
+      "testo": "Andare contro Korkas con Athres",
+      "riserva": "Tu e Athres vi guardate un istante, poi andate contro Korkas.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Tu e Athres affrontate Korkas, che controlla il cubo.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 P* [RW Ep.12 r.34-35]: come combattere è del giocatore"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K29x1"
+    ],
+    "risoluzione": [
+     "K29d1"
+    ]
+   },
+   "required_beats": [
+    "K29x1",
+    "K29d1"
+   ],
+   "optional_beats": [
+    "K29_korkas_1"
+   ],
+   "riserva_libera": "Sulla montagna nessuno ti risponde: c'è solo il vento dello squarcio.",
+   "uscita_fail_forward": "Se la scena si ferma, Korkas ti ferisce comunque con il cubo, Athres cade per proteggerti, e il tuo corpo corre da solo verso lo squarcio."
+  },
+  "K30": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "K30x1",
+     "testo": "Ascoltare l'altra versione di te",
+     "riserva": "«{Noi non siamo fatti per cambiare|Noi non siamo fatte per cambiare|Cambiare non è per noi}» dice l'altra versione di te, con la tua voce. «Abbiamo l'arkè, e ora abbiamo tutto il potere che ci serve. Potremmo anche riscrivere questo mondo, se solo volessimo.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Dentro lo squarcio l'altra versione di te vuole il diritto alla vita.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [RW Ep.12 r.51] (al maschile, dal file dei PNG)",
+     "scopo": "il diritto alla vita"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "eunoe",
+     "apertura": "Una donna ti guarda da dentro lo squarcio, senza giudizio: è Eunoe, quella di cui ti parlava Athres.",
+     "chiusura": "Eunoe aspetta.",
+     "riserva_libera": "Eunoe sorride, e non risponde.",
+     "argomenti": [
+      {
+       "id": "K30_eunoe_1",
+       "testo": "Chiedere a Eunoe come si esce da qui",
+       "riserva": "«Accettando sé stessi per come si è» dice Eunoe. «Senza cercare di essere troppo buoni. Il resto lo sai già.»",
+       "effetti": [],
+       "fonte": "PROPOSTA: P2 [RW Ep.12 r.53] (la battuta, accorciata; file dei PNG: frasi semplici, un po' ruvide)",
+       "scopo": "accettare sé stessi"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "L'altra versione di te ti viene incontro. Qui dentro non si combatte per un corpo, ma per il diritto alla vita: uno solo di voi due uscirà da qui.",
+    "fonte": "P1 [RW Ep.12 r.49] (combatte l'altra versione per il diritto alla vita)",
+    "esplora": [
+     {
+      "id": "K30d1",
+      "testo": "Affrontare l'altra versione di te",
+      "riserva": "Le vai incontro. Ha il tuo viso, e lo sguardo di chi non ha mai dubitato di niente.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Dentro lo squarcio combatti l'altra versione di te per il diritto alla vita.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P1 P* [RW Ep.12 r.49-50]: le parole e il modo sono del giocatore"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "K30x1"
+    ],
+    "risoluzione": [
+     "K30d1"
+    ]
+   },
+   "required_beats": [
+    "K30x1",
+    "K30d1"
+   ],
+   "optional_beats": [
+    "K30_eunoe_1"
+   ],
+   "riserva_libera": "Dentro lo squarcio nessuno ti risponde: c'è solo la tua voce, due volte.",
+   "uscita_fail_forward": "Se la scena si ferma, l'altra versione di te ti viene incontro comunque, e lo scontro per il diritto alla vita comincia."
+  }
+ }
+}

@@ -1,0 +1,1690 @@
+{
+ "formato": "rm-solo-interazioni/1",
+ "storia": "nome-che-vendono",
+ "scene": {
+  "B01": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B01x1",
+     "testo": "Osservare quindici anni",
+     "riserva": "Quindici anni di vita a testa: è il compenso scritto nel contratto. Il termine è di dodici ore. Roxanne vuole i dati e impone due limiti, non aprirli e tenere fuori i Patrioti. Il loro valore esiste già prima che qualcuno sappia che cosa contengono.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Dalla parata arriva il discorso di Richard Philips: «Quale significato date alla vita?» La domanda pubblica accompagna un incarico che promette anni come compenso. La rete e le immagini delle telecamere conducono a Koga. Rabbit, Tommen e Lucas propongono copertura per la parata: vogliono la sua routine.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B01d1",
+      "testo": "Affrontare quindici anni",
+      "riserva": "Il contratto resta nelle mani del gruppo, insieme alla scelta di fidarsi dell’offerta. L’arrivo dei Patrioti interrompe la ricerca; il cargo del gruppo dei trasporti offre un’uscita dalla città.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B01x1"
+    ],
+    "risoluzione": [
+     "B01d1"
+    ]
+   },
+   "required_beats": [
+    "B01x1",
+    "B01d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Quindici anni di vita a testa: è il compenso scritto nel contratto. Il termine è di dodici ore. Roxanne vuole i dati e impone due limiti, non aprirli e tenere fuori i Patrioti. Il loro valore esiste già prima che qualcuno sappia che cosa contengono.",
+   "uscita_fail_forward": ""
+  },
+  "B02": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B02x1",
+     "testo": "Osservare venti giorni",
+     "riserva": "Il messaggio congela i fondi. Tu hai venti giorni: gli anni che avevi li hai donati al fratello per la malattia.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "grid",
+     "argomenti": [
+      {
+       "id": "B02_dialogo",
+       "testo": "Chiedere come raggiungere C6",
+       "riserva": "Grid chiede cellule energetiche e non commercia anni di vita. Nine-Nine conosce il passaggio attraverso la città fantasma.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il treno porta le persone alle quali hai venduto i biglietti. L’assalto degli Scavenger raggiunge i passeggeri mentre il Protocollo Zero tiene congelati i fondi.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B02d1",
+      "testo": "Affrontare venti giorni",
+      "riserva": "Grid e Nine-Nine chiedono cellule energetiche, non anni di vita, per guidare il gruppo a C6 attraverso la città fantasma. I venti giorni restano una scadenza tua, distinta dalle richieste dei briganti.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B02x1"
+    ],
+    "risoluzione": [
+     "B02d1"
+    ]
+   },
+   "required_beats": [
+    "B02x1",
+    "B02d1"
+   ],
+   "optional_beats": [
+    "B02_dialogo"
+   ],
+   "riserva_libera": "Il messaggio congela i fondi. Tu hai venti giorni: gli anni che avevi li hai donati al fratello per la malattia.",
+   "uscita_fail_forward": ""
+  },
+  "B03": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B03x1",
+     "testo": "Osservare la doppia parete",
+     "riserva": "Tommen cerca un momento in privato nella sala di manutenzione. Suo padre lavorava alla Crypto Memory; teme che il gruppo possa essere venduto.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "tommen",
+     "argomenti": [
+      {
+       "id": "B03_dialogo",
+       "testo": "Chiedere che cosa teme",
+       "riserva": "Tommen teme che il gruppo venga venduto. Suo padre lavorava alla Crypto Memory; i dati del contratto sono dentro Ferra.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Tommen cerca una conversazione appartata nella sala di manutenzione. Suo padre lavorava alla Crypto Memory; a C9 esiste un programma per recuperare persone come Ferra.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B03d1",
+      "testo": "Affrontare la doppia parete",
+      "riserva": "La paura è che qualcuno del gruppo le venda. Dietro la doppia parete del covo, Tommen indica a Kestrel dove sono i dati: dentro l’automa. La promessa del contratto incontra così una persona che può essere consegnata o protetta.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B03x1"
+    ],
+    "risoluzione": [
+     "B03d1"
+    ]
+   },
+   "required_beats": [
+    "B03x1",
+    "B03d1"
+   ],
+   "optional_beats": [
+    "B03_dialogo"
+   ],
+   "riserva_libera": "Tommen cerca un momento in privato nella sala di manutenzione. Suo padre lavorava alla Crypto Memory; teme che il gruppo possa essere venduto.",
+   "uscita_fail_forward": ""
+  },
+  "B04": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B04x1",
+     "testo": "Osservare le cariche",
+     "riserva": "Il covo si svuota. Koga resta con i ragazzi, mentre a te affidano cariche e un disturbatore da portare sul petto.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "rabbit",
+     "argomenti": [
+      {
+       "id": "B04_dialogo",
+       "testo": "Discutere il contatto con Dotcom",
+       "riserva": "Rabbit vuole raggiungere Dotcom e può cercare un’altra via se non ti colleghi con i cavi.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il covo viene svuotato e Koga resta con i ragazzi. Le cariche e il disturbatore appartengono all’incarico imposto dal gruppo, non a un’esplosione già avvenuta.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B04d1",
+      "testo": "Affrontare le cariche",
+      "riserva": "Dalle telecamere passa Vigilia diretta al Core. Rabbit vuole raggiungere Dotcom: nella sala giochi i cavi offrono una connessione, mentre la Black Tower rimane il rifugio possibile.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B04x1"
+    ],
+    "risoluzione": [
+     "B04d1"
+    ]
+   },
+   "required_beats": [
+    "B04x1",
+    "B04d1"
+   ],
+   "optional_beats": [
+    "B04_dialogo"
+   ],
+   "riserva_libera": "Il covo si svuota. Koga resta con i ragazzi, mentre a te affidano cariche e un disturbatore da portare sul petto.",
+   "uscita_fail_forward": ""
+  },
+  "B05": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B05x1",
+     "testo": "Osservare il contratto non vale",
+     "riserva": "Un Patriota vi ferma fuori da C6. Dotcom lo richiama e apre un varco alla fuga; la scadenza del tuo periodo di luce non aspetta il raduno.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "lucas",
+     "argomenti": [
+      {
+       "id": "B05_dialogo",
+       "testo": "Chiedere di Tommen",
+       "riserva": "Lucas cerca suo fratello. La notizia lo colloca probabilmente con Hammond a C2, non al sicuro.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Dotcom richiama il Patriota che ostacola la fuga. L’avviso della scadenza compare prima del raduno: il passaggio aperto nel muro non è una nuova riserva di vita.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B05d1",
+      "testo": "Affrontare il contratto non vale",
+      "riserva": "A The cove i gruppi scambiano informazioni. Il contratto Bernard non è valido; la White Hell Cup offre un’altra possibilità. Lucas cerca Tommen, indicato probabilmente con Hammond a C2.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B05x1"
+    ],
+    "risoluzione": [
+     "B05d1"
+    ]
+   },
+   "required_beats": [
+    "B05x1",
+    "B05d1"
+   ],
+   "optional_beats": [
+    "B05_dialogo"
+   ],
+   "riserva_libera": "Un Patriota vi ferma fuori da C6. Dotcom lo richiama e apre un varco alla fuga; la scadenza del tuo periodo di luce non aspetta il raduno.",
+   "uscita_fail_forward": ""
+  },
+  "B06": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B06x1",
+     "testo": "Osservare il blu",
+     "riserva": "Tuo fratello propone di fermarvi a C4: un lavoro e un posto, senza continuare a puntare più in alto.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Tuo fratello propone C4, un lavoro e un posto, senza continuare a salire. Alla coppa Ferra viene segnalata come Cromo anomalo; Rabbit interviene sulla backdoor anche se non lo fai tu.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B06d1",
+      "testo": "Affrontare il blu",
+      "riserva": "Il giudizio assegna il Blu alla Grey Hell Cup, fra aspiranti e dilettanti. L’appuntamento al Colosseo rimane davanti al gruppo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B06x1"
+    ],
+    "risoluzione": [
+     "B06d1"
+    ]
+   },
+   "required_beats": [
+    "B06x1",
+    "B06d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Tuo fratello propone di fermarvi a C4: un lavoro e un posto, senza continuare a puntare più in alto.",
+   "uscita_fail_forward": ""
+  },
+  "B07": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B07x1",
+     "testo": "Osservare la selezione",
+     "riserva": "Il freddo del puzzle impone di rallentare. Seguono leve, scacchiera e una capsula buia: ogni prova offre più di un modo di leggere il problema.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il puzzle al freddo, le leve, la scacchiera e la capsula al buio chiedono modi diversi di osservare lo stesso problema. Delos segue i finalisti come investimenti.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B07d1",
+      "testo": "Affrontare la selezione",
+      "riserva": "La prova tribale porta il confronto in reverie, dove Mann usa il veleno. Il risultato dell’incontro può cambiare l’accoglienza, ma non cancella l’interesse dello sponsor.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B07x1"
+    ],
+    "risoluzione": [
+     "B07d1"
+    ]
+   },
+   "required_beats": [
+    "B07x1",
+    "B07d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Il freddo del puzzle impone di rallentare. Seguono leve, scacchiera e una capsula buia: ogni prova offre più di un modo di leggere il problema.",
+   "uscita_fail_forward": ""
+  },
+  "B08": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B08x1",
+     "testo": "Osservare il pub",
+     "riserva": "La Fate company offre una sponsorizzazione: trenta a te, settanta alla compagnia. Hai un'ora per rispondere. Poi arriva il messaggio del fratello: la strada si è spenta.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "fate",
+     "argomenti": [
+      {
+       "id": "B08_dialogo",
+       "testo": "Chiedere le condizioni della sponsorizzazione",
+       "riserva": "La proposta assegna trenta a te e settanta alla compagnia, con un’ora per rispondere.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La Fate company propone trenta per cento a te e settanta alla compagnia, con un’ora per rispondere. Poi arriva il messaggio di tuo fratello.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B08d1",
+      "testo": "Affrontare il pub",
+      "riserva": "Al pub il ghiaccio ricopre il pavimento fra i corpi del gruppo di Kestrel. Niklaus non è lì: è con Lucas e la polizia che ha chiamato. La tua presenza armata ti espone all’accusa, senza rivelare chi abbia compiuto la strage.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B08x1"
+    ],
+    "risoluzione": [
+     "B08d1"
+    ]
+   },
+   "required_beats": [
+    "B08x1",
+    "B08d1"
+   ],
+   "optional_beats": [
+    "B08_dialogo"
+   ],
+   "riserva_libera": "La Fate company offre una sponsorizzazione: trenta a te, settanta alla compagnia. Hai un'ora per rispondere. Poi arriva il messaggio del fratello: la strada si è spenta.",
+   "uscita_fail_forward": ""
+  },
+  "B09": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B09x1",
+     "testo": "Osservare fate trade",
+     "riserva": "La receptionist ti aspettava e chiede del fratello. Il sangue sulle maniche non sorprende nessuno; l'alloggio contiene un acquario di serpenti elettrici.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "fate",
+     "argomenti": [
+      {
+       "id": "B09_dialogo",
+       "testo": "Chiedere perché mi aspettassero",
+       "riserva": "Fate dice che serve sapere dove guardare. La receptionist ti aspettava e aveva già chiesto di tuo fratello.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La receptionist ti aspettava e chiede di Niklaus. All’interno il sangue secco non sorprende nessuno; nell’alloggio si muovono serpenti elettrici dietro il vetro dell’acquario.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B09d1",
+      "testo": "Affrontare fate trade",
+      "riserva": "Fate offre un dado olografico destinato a una trasmissione. Sugli schermi passano informazioni che possono essere diffuse dalla compagnia anche se rifiuti di farlo tu. Il fratello ha visto, ma non ha ancora dato a te una spiegazione del suo sguardo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B09x1"
+    ],
+    "risoluzione": [
+     "B09d1"
+    ]
+   },
+   "required_beats": [
+    "B09x1",
+    "B09d1"
+   ],
+   "optional_beats": [
+    "B09_dialogo"
+   ],
+   "riserva_libera": "La receptionist ti aspettava e chiede del fratello. Il sangue sulle maniche non sorprende nessuno; l'alloggio contiene un acquario di serpenti elettrici.",
+   "uscita_fail_forward": ""
+  },
+  "B10": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B10x1",
+     "testo": "Osservare humble",
+     "riserva": "Fate risponde per tuo fratello: è disorientato, e viene mandato nella stanza vicina. Il briefing riduce vite e sponsor a percentuali di sopravvivenza.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il briefing lega sopravvivenza, sponsor e prove. Nei ricordi di Prism emerge Philips come artefice dell’arresto di Ilysia. Fate dice di averti capita da subito e tende la mano.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B10d1",
+      "testo": "Affrontare humble",
+      "riserva": "Niklaus chiede di non essere seguito e parte con Lucas; se tenti di trattenerlo, la partenza viene rinviata. I fotografi chiamano Humble il volto che stanno riprendendo. Passano tre anni: l’immagine pubblica è cambiata, mentre la ricerca del fratello continua.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B10x1"
+    ],
+    "risoluzione": [
+     "B10d1"
+    ]
+   },
+   "required_beats": [
+    "B10x1",
+    "B10d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Fate risponde per tuo fratello: è disorientato, e viene mandato nella stanza vicina. Il briefing riduce vite e sponsor a percentuali di sopravvivenza.",
+   "uscita_fail_forward": ""
+  },
+  "B11": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B11x1",
+     "testo": "Osservare combat debug",
+     "riserva": "Entri mascherata nell'arena: gli stessi che provavano disgusto ora ammirano Humble. Ogni colpo apre una finestra nel sistema avversario.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Nell’arena Combat Debug il pubblico ammira la maschera che prima respingeva. Ogni colpo apre una finestra nel sistema avversario; lo scontro non esaurisce ciò che puoi cercare fuori dall’arena.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B11d1",
+      "testo": "Affrontare combat debug",
+      "riserva": "Harvey e il gruppo dei trasporti restano collegamenti per Yara Sen e per la pista dei non schedati. Una risata ti accusa di essere un virus: è ostilità, non una prova su Niklaus.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B11x1"
+    ],
+    "risoluzione": [
+     "B11d1"
+    ]
+   },
+   "required_beats": [
+    "B11x1",
+    "B11d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Entri mascherata nell'arena: gli stessi che provavano disgusto ora ammirano Humble. Ogni colpo apre una finestra nel sistema avversario.",
+   "uscita_fail_forward": ""
+  },
+  "B12": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B12x1",
+     "testo": "Osservare harvey",
+     "riserva": "Harvey dice che Yara è morta e ti chiede di diffidare dell'Icaro. Ha venduto come Fall-trip i dati affidatigli da tuo padre.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "harvey",
+     "argomenti": [
+      {
+       "id": "B12_dialogo",
+       "testo": "Chiedere dei dati di mio padre",
+       "riserva": "Harvey ammette di aver venduto i dati come Fall-trip e indica la discoteca clandestina di C5.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Harvey dice che Yara è morta e invita a diffidare dell’Icaro. Ammette di aver venduto come Fall-trip i dati affidatigli da tuo padre e indica la discoteca abusiva di C5.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B12d1",
+      "testo": "Affrontare harvey",
+      "riserva": "Dentro, Niklaus e Lucas cercano di portare via Prism. Arriva la squadra di Vigilia: parlare, fermare il trasferimento o combattere sono modi diversi di affrontare l’incontro.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B12x1"
+    ],
+    "risoluzione": [
+     "B12d1"
+    ]
+   },
+   "required_beats": [
+    "B12x1",
+    "B12d1"
+   ],
+   "optional_beats": [
+    "B12_dialogo"
+   ],
+   "riserva_libera": "Harvey dice che Yara è morta e ti chiede di diffidare dell'Icaro. Ha venduto come Fall-trip i dati affidatigli da tuo padre.",
+   "uscita_fail_forward": ""
+  },
+  "B13": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B13x1",
+     "testo": "Osservare l'investimento",
+     "riserva": "La squadra è in lutto per Nyx. Fate chiama: ha ricevuto un avviso sui tuoi segni vitali e vuole preservare il proprio investimento.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "La squadra di Vigilia porta il lutto per Nyx. Fate chiama dopo l’avviso sui tuoi segni vitali e vuole riportare l’investimento alla torre.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B13d1",
+      "testo": "Affrontare l'investimento",
+      "riserva": "Nel Mercato delle Cento Voci la ricerca può proseguire fra informazioni vendute. Rabbit reagisce al contatto con un counter-hacking che ti lascia immobile e vieta di avvicinarti alla sua gente. La vista torna solo gradualmente.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B13x1"
+    ],
+    "risoluzione": [
+     "B13d1"
+    ]
+   },
+   "required_beats": [
+    "B13x1",
+    "B13d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "La squadra è in lutto per Nyx. Fate chiama: ha ricevuto un avviso sui tuoi segni vitali e vuole preservare il proprio investimento.",
+   "uscita_fail_forward": ""
+  },
+  "B14": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B14x1",
+     "testo": "Osservare senza vista",
+     "riserva": "Nel laboratorio dei cloni distingui prima il buio, poi lentamente le forme. Il volto a terra è quello di Hammond; la squadra ha già combattuto.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Nel laboratorio la vista distingue lentamente le sagome. Il volto a terra è quello di un clone di Hammond; i dati erano già stati duplicati sui server di Fate.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B14d1",
+      "testo": "Affrontare senza vista",
+      "riserva": "Mentre l’acqua gela e sigilla il luogo, Fate parla di CYP26B, stazioni da manomettere e sponsor. Le sue versioni su Bernard e Philips rimangono attribuite a lui, non diventano una sola verità provata.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B14x1"
+    ],
+    "risoluzione": [
+     "B14d1"
+    ]
+   },
+   "required_beats": [
+    "B14x1",
+    "B14d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Nel laboratorio dei cloni distingui prima il buio, poi lentamente le forme. Il volto a terra è quello di Hammond; la squadra ha già combattuto.",
+   "uscita_fail_forward": ""
+  },
+  "B15": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B15x1",
+     "testo": "Osservare la parte bassa",
+     "riserva": "Nel posto indicato da Antoine ci sono soltanto rottami. Al mercato i ragazzi comprano stimolanti e patch anti-collasso.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il posto indicato da Antoine offre soltanto rottami. Nella parte bassa i ragazzi comprano stimolanti, celle e patch anti-collasso; la loro filosofia ricorda Rabbit.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B15d1",
+      "testo": "Affrontare la parte bassa",
+      "riserva": "La pista può correre tra dispositivi pubblici oppure a piedi fra le persone. Una conversazione nomina Chunk e Bolt diretti a C3: sono nomi da inseguire, non identità già riconosciute.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B15x1"
+    ],
+    "risoluzione": [
+     "B15d1"
+    ]
+   },
+   "required_beats": [
+    "B15x1",
+    "B15d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Nel posto indicato da Antoine ci sono soltanto rottami. Al mercato i ragazzi comprano stimolanti e patch anti-collasso.",
+   "uscita_fail_forward": ""
+  },
+  "B16": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B16x1",
+     "testo": "Osservare la smaterializzazione",
+     "riserva": "Il covo contiene adolescenti, rottami, tre accessi e droni. Candor apre un collegamento protetto; Vigilia è davanti all'accampamento con te.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "marek",
+     "argomenti": [
+      {
+       "id": "B16_dialogo",
+       "testo": "Chiedere chi abbia ordinato la strage",
+       "riserva": "Marek attribuisce allo Spettro Bianco l’ordine di uccidere tutti al pub.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Il covo dei Bunny-Hoppers ha tre accessi, due droni e molti adolescenti. Candor apre una linea protetta mentre sei con Vigilia davanti all’accampamento.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B16d1",
+      "testo": "Affrontare la smaterializzazione",
+      "riserva": "Marek atterra Rhett, risponde sul fratello e spara. Il proiettile attraversa il corpo che si smaterializza in elettricità e Cromo. Rhett ferisce Marek al collo; vivo, indica Rabbit diretta a C3 e accusa lo Spettro Bianco di aver ordinato la strage.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B16x1"
+    ],
+    "risoluzione": [
+     "B16d1"
+    ]
+   },
+   "required_beats": [
+    "B16x1",
+    "B16d1"
+   ],
+   "optional_beats": [
+    "B16_dialogo"
+   ],
+   "riserva_libera": "Il covo contiene adolescenti, rottami, tre accessi e droni. Candor apre un collegamento protetto; Vigilia è davanti all'accampamento con te.",
+   "uscita_fail_forward": ""
+  },
+  "B17": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B17x1",
+     "testo": "Osservare il sospetto",
+     "riserva": "Nel furgone Marek tiene il collo fasciato. La vista restituisce ancora sagome; le sue parole sono più nette delle prove che porta.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "marek",
+     "argomenti": [
+      {
+       "id": "B17_dialogo",
+       "testo": "Distinguere accuse e prove",
+       "riserva": "Marek elenca assenza, sopravvivenza e sponsorizzazione. Non porta una prova che tu abbia tradito il pub.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Marek è ferito nel furgone e la vista restituisce ancora sagome. Collega Hammond allo Spettro e Gaia a un programma in cui cerca la sorella. Sul pub parla di un reionizzato minacciato e di una vecchia conoscenza.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B17d1",
+      "testo": "Affrontare il sospetto",
+      "riserva": "Poi ti accusa: assente alla strage, sopravvissuta, favorita da Fate. Le coincidenze che elenca non dimostrano un tradimento. La pista di Chunk e Bolt porta a C3 mentre Vigilia raggiunge C5.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B17x1"
+    ],
+    "risoluzione": [
+     "B17d1"
+    ]
+   },
+   "required_beats": [
+    "B17x1",
+    "B17d1"
+   ],
+   "optional_beats": [
+    "B17_dialogo"
+   ],
+   "riserva_libera": "Nel furgone Marek tiene il collo fasciato. La vista restituisce ancora sagome; le sue parole sono più nette delle prove che porta.",
+   "uscita_fail_forward": ""
+  },
+  "B18": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B18x1",
+     "testo": "Osservare il palazzo",
+     "riserva": "A C3 la gente riconosce Humble, ma il palazzo di famiglia non c'è più. Al suo posto si vendono protesi.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "C3 riconosce Humble, ma il vecchio palazzo di famiglia non c’è più: al suo posto si vendono protesi. Harvey parla di collezionisti con cappucci a orecchie da coniglio.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B18d1",
+      "testo": "Affrontare il palazzo",
+      "riserva": "Nell’appartamento sotterraneo compaiono studi sul salto e i tag Chunk e Bolt. Fate si trasferisce a C2; mantenere il contratto o scioglierlo può essere discusso senza ricostruire il palazzo perduto.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B18x1"
+    ],
+    "risoluzione": [
+     "B18d1"
+    ]
+   },
+   "required_beats": [
+    "B18x1",
+    "B18d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "A C3 la gente riconosce Humble, ma il palazzo di famiglia non c'è più. Al suo posto si vendono protesi.",
+   "uscita_fail_forward": ""
+  },
+  "B19": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B19x1",
+     "testo": "Osservare chunk e bolt",
+     "riserva": "Alla Bernard Tower un corpo cade dall'alto. I piani sono occupati da guardie e hacker; il passaggio fino a Niklaus resta da scegliere.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "niklaus",
+     "argomenti": [
+      {
+       "id": "B19_dialogo",
+       "testo": "Chiedere che cosa abbia scoperto",
+       "riserva": "Niklaus dice che {non sei stato tu|non sei stata tu|la colpa non è tua} e di avere le prove. Non viene mostrato un filmato o un documento di contenuto non noto.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Dalla Bernard Tower cade un corpo. Tra guardie e hacker il passaggio verso i piani alti rimane da scegliere.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B19d1",
+      "testo": "Affrontare chunk e bolt",
+      "riserva": "Chunk e Bolt sono Niklaus e Lucas; Tommen li aiuta a fuggire e muore per salvare il fratello. Niklaus ti abbraccia e dice di avere prove che {non sei stato tu|non sei stata tu|la colpa non è tua}. Alle intimazioni dei soldati Lucas risponde usando il chip: il corpo di Tommen si muove e apre la fuga verso l’ascensore magnetico.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B19x1"
+    ],
+    "risoluzione": [
+     "B19d1"
+    ]
+   },
+   "required_beats": [
+    "B19x1",
+    "B19d1"
+   ],
+   "optional_beats": [
+    "B19_dialogo"
+   ],
+   "riserva_libera": "Alla Bernard Tower un corpo cade dall'alto. I piani sono occupati da guardie e hacker; il passaggio fino a Niklaus resta da scegliere.",
+   "uscita_fail_forward": ""
+  },
+  "B20": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B20x1",
+     "testo": "Osservare florant",
+     "riserva": "Florant Esprit prende il controllo della Repubblica. Il volto di un Icaro diventa quello del nuovo potere.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Florant Esprit assume il controllo della Repubblica. Dopo il nuovo Icaro, la flotta marziana si mostra.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B20d1",
+      "testo": "Affrontare florant",
+      "riserva": "Humble è un volto che può attirare attenzione proprio mentre Niklaus e Lucas hanno bisogno di un riparo. La scelta di esporsi o nascondersi riguarda il modo di proteggere i ragazzi, non la facoltà di cancellare il cambio di potere.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B20x1"
+    ],
+    "risoluzione": [
+     "B20d1"
+    ]
+   },
+   "required_beats": [
+    "B20x1",
+    "B20d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Florant Esprit prende il controllo della Repubblica. Il volto di un Icaro diventa quello del nuovo potere.",
+   "uscita_fail_forward": ""
+  },
+  "B21": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B21x1",
+     "testo": "Osservare le prove mancanti",
+     "riserva": "Niklaus vuole mostrarti che non sei responsabile della strage. Lucas deve fare i conti con la morte di Tommen.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "niklaus",
+     "argomenti": [
+      {
+       "id": "B21_dialogo",
+       "testo": "Parlare del nome emerso",
+       "riserva": "Nella ricostruzione della strage emerge Kato. Lucas porta ancora il lutto di Tommen.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Niklaus vuole distinguere la tua assenza dalla responsabilità della strage. Nella sua ricostruzione compare il nome di Kato.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B21d1",
+      "testo": "Affrontare le prove mancanti",
+      "riserva": "Lucas porta il lutto di Tommen. Tenere i ragazzi vicini e lasciarli decidere come collaborare rimangono due modi diversi di rispondere alla loro autonomia.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B21x1"
+    ],
+    "risoluzione": [
+     "B21d1"
+    ]
+   },
+   "required_beats": [
+    "B21x1",
+    "B21d1"
+   ],
+   "optional_beats": [
+    "B21_dialogo"
+   ],
+   "riserva_libera": "Niklaus vuole mostrarti che non sei responsabile della strage. Lucas deve fare i conti con la morte di Tommen.",
+   "uscita_fail_forward": ""
+  },
+  "B22": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B22x1",
+     "testo": "Osservare il vecchio core",
+     "riserva": "A C5 le colture sono grigie; i lavoratori sputano sangue con vetro e metallo. Le spiegazioni ufficiali sul blackout non bastano.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Le colture di C5 sono grigie; il sangue dei lavoratori contiene vetro e metallo. Il vecchio core offre un collegamento fra Echo-Tel e Ares 1.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B22d1",
+      "testo": "Affrontare il vecchio core",
+      "riserva": "Entrarvi con i cavi permette di affrontare la rete come luogo di accesso, oltre che come arma. Niklaus e Lucas possono essere coinvolti nel lavoro, senza conoscere automaticamente tutte le informazioni che hai raccolto.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B22x1"
+    ],
+    "risoluzione": [
+     "B22d1"
+    ]
+   },
+   "required_beats": [
+    "B22x1",
+    "B22d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "A C5 le colture sono grigie; i lavoratori sputano sangue con vetro e metallo. Le spiegazioni ufficiali sul blackout non bastano.",
+   "uscita_fail_forward": ""
+  },
+  "B23": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B23x1",
+     "testo": "Osservare vendere il nome",
+     "riserva": "Le trattative con gli invasori si aprono prima della battaglia finale. Il bisogno di telonio non è una promessa di pace.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "fate",
+     "argomenti": [
+      {
+       "id": "B23_dialogo",
+       "testo": "Discutere l’immagine di Humble",
+       "riserva": "Fate propone Humble come simbolo della resistenza. L’uso dell’immagine resta oggetto di una scelta.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Le trattative precedono il conflitto finale. Gli invasori chiedono telonio e accusano i terrestri dello spegnimento del Sole.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B23d1",
+      "testo": "Affrontare vendere il nome",
+      "riserva": "Shapira porta l’accusa dentro la trattativa. «La stazione sul Sole vi aveva avvertiti. Da terra avete imposto di completare il ciclo di estrazione. Per il profitto di quell’energia avete provocato uno strappo nelle onde di oscillazione del Cromo e spento il Sole. La figlia di Epos è sopravvissuta lassù. È diventata un’entità ricolma di Cromo: è lei che ci guida contro la Terra.» La rabbia che la muove conserva, nel subconscio, l’ordine ricevuto e il sacrificio imposto dai terrestri. Fate presenta un’offerta differente: fare di Humble il simbolo della resistenza. L’immagine può essere ceduta oppure trattenuta mentre il tavolo tenta ancora di evitare la guerra.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "icaro_sole_estrazione"
+       }
+      ],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA. DECISIONI_AUTORE.md §11, risposta dell’autore del 1 novembre 2026 sullo spegnimento del Sole."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B23x1"
+    ],
+    "risoluzione": [
+     "B23d1"
+    ]
+   },
+   "required_beats": [
+    "B23x1",
+    "B23d1"
+   ],
+   "optional_beats": [
+    "B23_dialogo"
+   ],
+   "riserva_libera": "Le trattative con gli invasori si aprono prima della battaglia finale. Il bisogno di telonio non è una promessa di pace.",
+   "uscita_fail_forward": ""
+  },
+  "B24": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B24x1",
+     "testo": "Osservare il core",
+     "riserva": "Zephir avanza nutrendosi di telonio. Nel vecchio core la rete degli invasori e quella di C5 si toccano.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Zephir consuma il telonio del vecchio core.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B24d1",
+      "testo": "Affrontare il core",
+      "riserva": "Il collegamento con C5 rende il sabotaggio una scelta che espone anche la città, mentre usare il sistema come trappola conserva una struttura da difendere. Entrambe le vie si svolgono prima che i civili abbiano completato l’evacuazione.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B24x1"
+    ],
+    "risoluzione": [
+     "B24d1"
+    ]
+   },
+   "required_beats": [
+    "B24x1",
+    "B24d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Zephir avanza nutrendosi di telonio. Nel vecchio core la rete degli invasori e quella di C5 si toccano.",
+   "uscita_fail_forward": ""
+  },
+  "B25": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B25x1",
+     "testo": "Osservare gaia epos",
+     "riserva": "La Terra collassa perché Gaia Epos consuma il pianeta per creare un buco bianco. La rivelazione non riguarda la Gaia di un altro mondo.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Gaia Epos consuma la Terra per creare un buco bianco. Il nome del programma della Crypto Memories è Ich: un mondo scritto in cui vengono portate persone a vivere.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B25d1",
+      "testo": "Affrontare gaia epos",
+      "riserva": "La rete serve adesso a cercare strade verso le navi. Niklaus può ricevere una spiegazione da te; non la possiede soltanto perché è tuo fratello.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B25x1"
+    ],
+    "risoluzione": [
+     "B25d1"
+    ]
+   },
+   "required_beats": [
+    "B25x1",
+    "B25d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "La Terra collassa perché Gaia Epos consuma il pianeta per creare un buco bianco. La rivelazione non riguarda la Gaia di un altro mondo.",
+   "uscita_fail_forward": ""
+  },
+  "B26": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B26x1",
+     "testo": "Osservare le porte delle navi",
+     "riserva": "Il conflitto si sposta sulle astronavi. Ogni accesso aperto alla rete può diventare un ingresso per persone ancora a terra.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il conflitto prosegue sulle astronavi.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B26d1",
+      "testo": "Affrontare le porte delle navi",
+      "riserva": "Un’apertura nei sistemi può diventare una porta per chi è ancora a terra. La squadra di Vigilia combatte sulla stessa evacuazione; agire insieme o da sola cambia la coordinazione, senza cambiare il collasso che incombe.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B26x1"
+    ],
+    "risoluzione": [
+     "B26d1"
+    ]
+   },
+   "required_beats": [
+    "B26x1",
+    "B26d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Il conflitto si sposta sulle astronavi. Ogni accesso aperto alla rete può diventare un ingresso per persone ancora a terra.",
+   "uscita_fail_forward": ""
+  },
+  "B27": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B27x1",
+     "testo": "Osservare ares 1",
+     "riserva": "Il collegamento fra Echo-Tel e Ares 1 resta attivo mentre le navi combattono. La stessa connessione permette di ascoltare e di essere trovati.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il collegamento fra Echo-Tel e Ares 1 funziona mentre le navi combattono. Reciderlo riduce la rete degli invasori, ma rinuncia anche a ciò che permetteva di ascoltare.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B27d1",
+      "testo": "Affrontare ares 1",
+      "riserva": "Conservarlo offre informazioni e mantiene una via attraverso cui essere trovati. Il potere elettrico resta quello emerso nel covo, senza una capacità ulteriore regalata dalla connessione.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B27x1"
+    ],
+    "risoluzione": [
+     "B27d1"
+    ]
+   },
+   "required_beats": [
+    "B27x1",
+    "B27d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Il collegamento fra Echo-Tel e Ares 1 resta attivo mentre le navi combattono. La stessa connessione permette di ascoltare e di essere trovati.",
+   "uscita_fail_forward": ""
+  },
+  "B28": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B28x1",
+     "testo": "Osservare l'astronave madre",
+     "riserva": "Lo scontro raggiunge l'astronave madre. Florant è ancora parte del conflitto, non soltanto il nome di un comunicato.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Nell’astronave madre si trova l’Icaro che ha preso la Repubblica.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B28d1",
+      "testo": "Affrontare l'astronave madre",
+      "riserva": "Florant partecipa al conflitto; la rete necessaria alle navi resta esposta mentre il confronto lo raggiunge. Puoi cercare giustizia per il pub oppure concentrare l’azione sulla difesa del passaggio.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B28x1"
+    ],
+    "risoluzione": [
+     "B28d1"
+    ]
+   },
+   "required_beats": [
+    "B28x1",
+    "B28d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Lo scontro raggiunge l'astronave madre. Florant è ancora parte del conflitto, non soltanto il nome di un comunicato.",
+   "uscita_fail_forward": ""
+  },
+  "B29": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B29x1",
+     "testo": "Osservare la scintilla",
+     "riserva": "Il nodo dedicato all’evacuazione mantiene aperta la via alle ultime navi. La Terra che collassa non lascia tempo per recuperare ogni collegamento.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il nodo tiene aperta una via per le ultime navi mentre la Terra collassa.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B29d1",
+      "testo": "Affrontare la scintilla",
+      "riserva": "Rimanere significa sostenere il collegamento con il proprio potere; staccarsi permette di cercare la partenza insieme ai ragazzi. La scelta riguarda il corpo e la vita di chi la compie, non un costo imposto da una prova fallita.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B29x1"
+    ],
+    "risoluzione": [
+     "B29d1"
+    ]
+   },
+   "required_beats": [
+    "B29x1",
+    "B29d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Il nodo dedicato all’evacuazione mantiene aperta la via alle ultime navi. La Terra che collassa non lascia tempo per recuperare ogni collegamento.",
+   "uscita_fail_forward": ""
+  },
+  "B30": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "B30x1",
+     "testo": "Osservare il nome che resta",
+     "riserva": "Le navi lasciano la Terra perduta. Humble può essere un'immagine sullo schermo, ma Niklaus continua a conoscere tua sorella, non un marchio.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Le navi portano via chi ha lasciato la Terra.",
+    "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "B30d1",
+      "testo": "Affrontare il nome che resta",
+      "riserva": "Humble rimane un nome visto sugli schermi; Niklaus conosce sua sorella oltre quell’immagine. Il legame con lui e l’ultima immagine pubblica possono diventare il centro del congedo, secondo le scelte che hanno condotto fin qui.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_IL_NOME_CHE_VENDONO.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "B30x1"
+    ],
+    "risoluzione": [
+     "B30d1"
+    ]
+   },
+   "required_beats": [
+    "B30x1",
+    "B30d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Le navi lasciano la Terra perduta. Humble può essere un'immagine sullo schermo, ma Niklaus continua a conoscere tua sorella, non un marchio.",
+   "uscita_fail_forward": ""
+  }
+ }
+}

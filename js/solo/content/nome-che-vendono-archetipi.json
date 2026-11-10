@@ -1,0 +1,196 @@
+{
+ "formato": "rm-solo-archetipi/1",
+ "storia": "icaro",
+ "archetipi": [
+  {
+   "id": "nome-che-vendono-pronto",
+   "versione": "0.1.0",
+   "stato_editoriale": "bozza",
+   "nome": "Felia Moreau",
+   "ritratto": "img/solo/ritratti/icaro-nia.webp",
+   "ritratto_alt": "Volto di Felia Moreau, runner di famiglia operaia",
+   "genere": "femminile",
+   "popolazione": "",
+   "citta": "C3",
+   "mansione": "Runner di famiglia operaia",
+   "build": "eclettico",
+   "background": "Ha donato anni di vita al fratello e cerca un futuro nei giochi e nelle reti.",
+   "obiettivo": "Ritrovare il fratello senza perdere la famiglia.",
+   "capitolo": "nome-che-vendono-trama",
+   "primary": {
+    "hp": 5,
+    "mp": 5,
+    "for": 2,
+    "mira": 3,
+    "vel": 6,
+    "fmen": 6,
+    "dex": 6,
+    "dif": 3,
+    "dmen": 4
+   },
+   "tertiary": {
+    "stile": 1,
+    "fortuna": 2,
+    "carisma": 2
+   },
+   "traits": {
+    "conoscenze": {
+     "Bassifondi": 2,
+     "Meccanica": 2,
+     "Orientamento": 1
+    },
+    "capacitaNormali": {
+     "Hacking": 2,
+     "Percezione": 2,
+     "Furtività": 1
+    },
+    "capacitaCombattive": {
+     "Arte Combattiva": 2,
+     "Elusione": 2,
+     "Resistenza": 1
+    }
+   },
+   "tecniche": [
+    {
+     "id": "colpo_ravvicinato",
+     "nome": "Colpo ravvicinato",
+     "categoria": "tecnica",
+     "tipoAzione": "attacco",
+     "bersaglio": "singolo nemico",
+     "dannoBase": 5,
+     "costoMP": 0,
+     "risorsaSpeciale": null,
+     "costoRisorsaSpeciale": 0,
+     "utilizziMassimi": "utilizziLimitFor",
+     "durataTurni": 0,
+     "condizioniUso": [],
+     "bonus": [],
+     "malus": [],
+     "livelloRichiesto": 1,
+     "slotRichiesti": 1,
+     "tipo": "danno",
+     "lv": 1,
+     "stat": "for",
+     "descrizione": "Un colpo ravvicinato diretto contro un solo avversario.",
+     "content_status": "proposed",
+     "daApprovare": [
+      "nome",
+      "valori",
+      "coerenza con il personaggio"
+     ],
+     "fonte": "PROPOSTA tecnica: formula di attacco esistente e danno sotto il tetto Lv1; nessun effetto aggiuntivo."
+    }
+   ],
+   "abilita": [
+    {
+     "id": "attenzione_al_materiale",
+     "nome": "Attenzione al materiale",
+     "categoria": "magia",
+     "tipoAzione": "supporto",
+     "bersaglio": "sé",
+     "dannoBase": 0,
+     "costoMP": 4,
+     "risorsaSpeciale": null,
+     "costoRisorsaSpeciale": 0,
+     "utilizziMassimi": "utilizziLimitFor",
+     "durataTurni": 2,
+     "condizioniUso": [],
+     "bonus": [],
+     "malus": [],
+     "livelloRichiesto": 1,
+     "slotRichiesti": 1,
+     "tipo": "supporto",
+     "lv": 1,
+     "stat": null,
+     "bonusTratto": [
+      {
+       "tratto": "Percezione",
+       "valore": 2
+      }
+     ],
+     "descrizione": "L’attenzione si concentra sulle tracce nei materiali e nei sistemi.",
+     "content_status": "proposed",
+     "daApprovare": [
+      "nome",
+      "bonus",
+      "costo",
+      "durata"
+     ],
+     "fonte": "Interfaccia bonusTratto già esistente, schema: percezione del materiale e della rete. Valori proposti, non attribuiti alle fonti."
+    }
+   ],
+   "slotVacanti": [],
+   "equip": [
+    {
+     "id": "cavi_telonio",
+     "nome": "Cavi di telonio",
+     "tipo": "descrittivo",
+     "descrizione": "Cavi di telonio per collegarsi ai sistemi."
+    }
+   ],
+   "inventarioIniziale": [],
+   "conoscenze": [],
+   "legami_iniziali": [],
+   "occasioni_sviluppo": [
+    {
+     "atto": 1,
+     "possibilita": "Affrontare i legami e le conseguenze del proprio percorso."
+    },
+    {
+     "atto": 2,
+     "possibilita": "Affrontare i legami e le conseguenze del proprio percorso."
+    },
+    {
+     "atto": 3,
+     "possibilita": "Affrontare i legami e le conseguenze del proprio percorso."
+    }
+   ],
+   "ontologia": {
+    "entityType": "personaggio_giocabile",
+    "peopleId": null,
+    "factionId": null,
+    "cultureId": null,
+    "regionId": null,
+    "roleId": null,
+    "creatureFamilyId": null,
+    "socialClassId": "blu",
+    "corporationId": null,
+    "cityId": "c3",
+    "politicalGroupId": null,
+    "playable": true,
+    "playerVisible": true,
+    "narratorOnly": [],
+    "fonti": {
+     "peopleId": "autore: nessun popolo documentato",
+     "socialClassId": "SCHEMA_IL_NOME_CHE_VENDONO.md"
+    }
+   },
+   "approvazioneMeccanica": {
+    "id": "PROPOSTA",
+    "stato": "da approvare",
+    "fonte": "Distribuzione proposta di punti entro le regole esistenti; non numeri originali certificati.",
+    "ambito": "PROPOSTA: 40 primarie, terziarie, tratti e capacità compilati nel formato esistente. Nessuna approvazione per produzione."
+   },
+   "approvazioneDotazioni": {
+    "id": "PROPOSTA",
+    "stato": "da approvare",
+    "fonte": "Nessuna dotazione numerica di fantasia."
+   },
+   "campaign_id": "nome-che-vendono-trama",
+   "content_status": "proposed",
+   "act": 1,
+   "level_band": [
+    1,
+    30
+   ],
+   "difficulty_tags": [
+    "esplorativa",
+    "bilanciata",
+    "permadeath"
+   ],
+   "visibility_rule": "pubblica",
+   "source_note": "SCHEMA_IL_NOME_CHE_VENDONO.md approvato, DECISIONI §9.7 e §10. Raccordi e valori nuovi: PROPOSTA."
+  }
+ ],
+ "avviso": "PROPOSTA: valori e capacità non approvati per produzione."
+}

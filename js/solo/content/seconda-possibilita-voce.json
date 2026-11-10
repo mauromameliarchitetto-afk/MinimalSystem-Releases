@@ -1,0 +1,122 @@
+{
+ "formato": "rm-solo-voce/1",
+ "id": "seconda-possibilita_voice_proposta",
+ "storia": "icaro",
+ "campaign_id": "seconda-possibilita-trama",
+ "versione": "0.5.0",
+ "content_status": "proposed",
+ "source_note": "PROPOSTA: timbro comune da icaro-voce.json e dati pubblici/deducibili di icaro-contesto.json; atti secondo schema e DECISIONI §9.7. Nessun modello eseguito.",
+ "narrative_voice": {
+  "id": "seconda-possibilita_voice_proposta",
+  "tone": [
+   "cinematic_cyberpunk",
+   "physical",
+   "moral_without_moralism"
+  ],
+  "lexicon": [
+   "ghiaccio",
+   "neon",
+   "condensa",
+   "cromo",
+   "sangue",
+   "circuito",
+   "respiro",
+   "credito",
+   "contratto",
+   "peso",
+   "rumore",
+   "luce"
+  ],
+  "dialogue_mode": "dry_personal_ironic_debt_subtext",
+  "act_modifiers": {
+   "1": "survival_and_market",
+   "2": "responsibility_and_replication",
+   "3": "living_beyond_function"
+  },
+  "forbidden": [
+   "omniscient_spoiler",
+   "npc_unknown_fact",
+   "protagonist_thoughts",
+   "theme_lecture",
+   "historical_hero_solution",
+   "free_or_omnipotent_tech",
+   "painless_violence"
+  ],
+  "tecnologia_con_costo": {
+   "tecnologia": [
+    "protesi",
+    "impianto",
+    "interfaccia",
+    "emettitore",
+    "nodo",
+    "relè",
+    "rele",
+    "deviatore",
+    "trasmettitore",
+    "tuta",
+    "cella",
+    "capsula",
+    "neurale"
+   ],
+   "costo": [
+    "cost",
+    "prezzo",
+    "credit",
+    "debito",
+    "consum",
+    "bruci",
+    "surriscald",
+    "sovraccaric",
+    "dolore",
+    "trem",
+    "latenz",
+    "peso",
+    "riserva",
+    "minuti",
+    "secondi",
+    "scarica",
+    "dipend",
+    "contratto",
+    "paga",
+    "ferit",
+    "al freddo"
+   ]
+  },
+  "pov": "second_perceptive",
+  "pov_ammessi": [
+   "second_perceptive",
+   "third_limited"
+  ],
+  "nota_pov": "La scheda ammette terza persona limitata o seconda persona percettiva \"secondo l'impostazione dell'interfaccia\": oggi l'interfaccia e i testi di riserva usano la seconda persona.",
+  "scene_pattern": [
+   "consequence",
+   "world_detail",
+   "npc_reaction",
+   "action_opening"
+  ]
+ },
+ "guida": {
+  "tono": "Cinematografico, fisico e morale senza moralismo: città verticali, corpi riparati e vite con un prezzo.",
+  "distanza": "Apri dall'ambiente o dal corpo, poi stringi sul protagonista; le informazioni arrivano da schermi, dati e voci.",
+  "immagini": "Materiali sterili contro corpi vulnerabili; la tecnologia produce sensazioni e costi.",
+  "dialoghi": "Secchi, personali, spesso ironici; il sottotesto nasce da debiti, colpa e controllo.",
+  "regole": [
+   "L'esterno è gelo senza aria respirabile: chi esce indossa tuta, casco sigillato e respiratore; mai il volto scoperto.",
+   "Ogni tecnologia ha un proprietario e un costo (anni di vita, debiti, dolore).",
+   "Il potere parla attraverso comunicati pubblici; ogni comunicato ha una contro-narrazione.",
+   "Dopo uno scontro: chi è ferito, che cosa si è rotto, chi paga.",
+   "Le scelte passate pesano sulle presenti."
+  ],
+  "evitare": [
+   "tecnologia gratuita o onnipotente",
+   "personaggi all'esterno senza protezione",
+   "inventare la seconda metà, l'Atto III o il finale della campagna originale"
+  ],
+  "atti": {
+   "1": "Vivere nella Repubblica e affrontare il crollo di C9.",
+   "2": "Conseguenze del programma e presa del potere di Florant.",
+   "3": "Invasione, conflitto sulle navi ed evacuazione prima del collasso della Terra."
+  }
+ },
+ "voce_autore": "voce_autore_v1"
+}

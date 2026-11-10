@@ -1,0 +1,64 @@
+{
+ "formato": "rm-solo-voce/1",
+ "id": "figlia_voice_v1",
+ "storia": "figlia",
+ "campaign_id": "figlia-trama",
+ "versione": "0.1.0",
+ "content_status": "proposed",
+ "source_note": "voce di Eidos riferita alla trama «La figlia prediletta»: da approvare",
+ "narrative_voice": {
+  "id": "figlia_voice_v1",
+  "tone": [
+   "epic_concrete",
+   "political",
+   "personal"
+  ],
+  "lexicon": [
+   "materia",
+   "fiamma",
+   "nebbia",
+   "vetro",
+   "osso",
+   "metallo",
+   "respiro",
+   "idea",
+   "scelta",
+   "forma",
+   "radice",
+   "luce"
+  ],
+  "dialogue_mode": "position_plus_personal_stake",
+  "act_modifiers": {
+   "1": "discovery_and_belonging",
+   "2": "contradiction_and_responsibility",
+   "3": "choice_and_transformation"
+  },
+  "forbidden": [
+   "omniscient_spoiler",
+   "npc_unknown_fact",
+   "protagonist_thoughts",
+   "theme_lecture",
+   "historical_hero_solution"
+  ],
+  "eroi_storici": [],
+  "conflitto_di_valori": true,
+  "pov": "second_perceptive",
+  "pov_ammessi": [
+   "second_perceptive",
+   "third_limited"
+  ],
+  "nota_pov": "La scheda ammette terza persona limitata o seconda persona percettiva \"secondo l'impostazione dell'interfaccia\": oggi l'interfaccia e i testi di riserva usano la seconda persona.",
+  "scene_pattern": [
+   "consequence",
+   "world_detail",
+   "npc_reaction",
+   "action_opening"
+  ]
+ },
+ "guida": {
+  "esempio": "«Mi farai da scorta fino a Ione e poi a Gorgis» dice tuo padre. «Gli altri della sfera politica andranno invece verso i confini settentrionali della regione.»",
+  "esempio_fonte": "[V2 Cap.1 r.35]"
+ },
+ "voce_autore": "voce_autore_v1",
+ "timbro": "eidos-contesto.json#timbro"
+}

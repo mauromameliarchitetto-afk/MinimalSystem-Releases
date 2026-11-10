@@ -1,0 +1,290 @@
+{
+ "formato": "rm-solo-imprevisti/1",
+ "storia": "icaro",
+ "stato": "proposta scritta in autonomia (2026-10-17), rivedibile in docs/single-player/DECISIONI_DA_RIVEDERE.md",
+ "imprevisti": [
+  {
+   "id": "ica_nodo",
+   "filo": "orologio:spegnimento",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "complica",
+   "orologio": 1,
+   "testo": "Un indicatore del nodo scende di una tacca prima del previsto."
+  },
+  {
+   "id": "ica_nodo2",
+   "filo": "orologio:spegnimento",
+   "atti": [
+    2,
+    3
+   ],
+   "effetto": "complica",
+   "orologio": 1,
+   "testo": "Dai condotti viene un fruscio di aria più fredda: il calore se ne va più in fretta."
+  },
+  {
+   "id": "ica_jax",
+   "filo": "png:jax",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "avanza",
+   "testo": "Jax ti fa cenno di avvicinarti al pannello, poi abbassa la voce: «Dopo»."
+  },
+  {
+   "id": "ica_jax_chiude",
+   "filo": "png:jax",
+   "atti": [
+    2,
+    3
+   ],
+   "effetto": "chiude",
+   "testo": "Jax ti consegna ciò che aveva promesso: una chiave, un conto, un nome. Per ora, il filo è chiuso."
+  },
+  {
+   "id": "ica_anja",
+   "filo": "png:anja",
+   "atti": [
+    2,
+    3
+   ],
+   "effetto": "avanza",
+   "testo": "Anja sfoglia una cartella e ne richiude un'altra, senza dire perché."
+  },
+  {
+   "id": "ica_seline",
+   "filo": "png:seline",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "avanza",
+   "testo": "Seline controlla un numero sul tablet e lo cancella, poi lo riscrive."
+  },
+  {
+   "id": "ica_oko",
+   "filo": "png:oko",
+   "atti": [
+    2,
+    3
+   ],
+   "effetto": "avanza",
+   "testo": "Oko ti mostra con un gesto un punto sulla mappa e poi lo copre con la mano."
+  },
+  {
+   "id": "ica_kade",
+   "filo": "png:kade",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "avanza",
+   "testo": "Kade tiene le mani ben in vista e aspetta, senza chiedere nulla."
+  },
+  {
+   "id": "ica_promessa",
+   "filo": "promessa",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "complica",
+   "testo": "Qualcuno ti ferma e ti ricorda ciò che hai promesso, senza accusarti."
+  },
+  {
+   "id": "ica_luci",
+   "filo": "generico",
+   "atti": [
+    1,
+    2,
+    3
+   ],
+   "effetto": "avanza",
+   "testo": "Le luci del corridoio si abbassano per un istante e poi tornano."
+  }
+ ],
+ "regia": {
+  "fonte": "training/scripts/distilla_regia.py (aggregati; nessun testo dell'autore)",
+  "documenti": 16,
+  "ritmo": {
+   "classi": {
+    "tensione": [
+     "COMBATTIMENTO",
+     "RIVELAZIONE"
+    ],
+    "respiro": [
+     "AFTERMATH",
+     "CHIUSURA",
+     "ESPLORAZIONE",
+     "VIAGGIO"
+    ],
+    "sociale": [
+     "APERTURA",
+     "DIALOGO",
+     "DOMANDA_LIBERA"
+    ]
+   },
+   "apertura": {
+    "APERTURA": 0.312,
+    "DIALOGO": 0.188,
+    "COMBATTIMENTO": 0.188,
+    "ESPLORAZIONE": 0.188,
+    "AFTERMATH": 0.062,
+    "CHIUSURA": 0.062
+   },
+   "chiusura": {
+    "APERTURA": 0.312,
+    "DIALOGO": 0.25,
+    "ESPLORAZIONE": 0.188,
+    "AFTERMATH": 0.062,
+    "CHIUSURA": 0.062,
+    "VIAGGIO": 0.062,
+    "COMBATTIMENTO": 0.062
+   },
+   "transizioni": {
+    "AFTERMATH": {
+     "DIALOGO": 0.222,
+     "APERTURA": 0.222,
+     "ALTRO": 0.222,
+     "ESPLORAZIONE": 0.111,
+     "DOMANDA_LIBERA": 0.111,
+     "CHIUSURA": 0.111
+    },
+    "ALTRO": {
+     "DIALOGO": 0.238,
+     "ESPLORAZIONE": 0.19,
+     "VIAGGIO": 0.143,
+     "COMBATTIMENTO": 0.143,
+     "APERTURA": 0.095,
+     "AFTERMATH": 0.095,
+     "ALTRO": 0.095
+    },
+    "APERTURA": {
+     "APERTURA": 0.3,
+     "ESPLORAZIONE": 0.18,
+     "DIALOGO": 0.14,
+     "COMBATTIMENTO": 0.12,
+     "RIVELAZIONE": 0.1,
+     "CHIUSURA": 0.06,
+     "AFTERMATH": 0.04,
+     "ALTRO": 0.04,
+     "VIAGGIO": 0.02
+    },
+    "CHIUSURA": {
+     "ESPLORAZIONE": 0.273,
+     "APERTURA": 0.182,
+     "COMBATTIMENTO": 0.182,
+     "CHIUSURA": 0.182,
+     "VIAGGIO": 0.091,
+     "DIALOGO": 0.091
+    },
+    "COMBATTIMENTO": {
+     "COMBATTIMENTO": 0.281,
+     "ESPLORAZIONE": 0.228,
+     "DIALOGO": 0.211,
+     "APERTURA": 0.123,
+     "ALTRO": 0.07,
+     "VIAGGIO": 0.07,
+     "AFTERMATH": 0.018
+    },
+    "DIALOGO": {
+     "DIALOGO": 0.514,
+     "ESPLORAZIONE": 0.18,
+     "COMBATTIMENTO": 0.099,
+     "APERTURA": 0.081,
+     "VIAGGIO": 0.063,
+     "ALTRO": 0.027,
+     "RIVELAZIONE": 0.018,
+     "CHIUSURA": 0.009,
+     "DOMANDA_LIBERA": 0.009
+    },
+    "DOMANDA_LIBERA": {
+     "DIALOGO": 0.5,
+     "CHIUSURA": 0.5
+    },
+    "ESPLORAZIONE": {
+     "ESPLORAZIONE": 0.348,
+     "VIAGGIO": 0.146,
+     "DIALOGO": 0.146,
+     "COMBATTIMENTO": 0.09,
+     "APERTURA": 0.09,
+     "ALTRO": 0.067,
+     "RIVELAZIONE": 0.056,
+     "AFTERMATH": 0.034,
+     "CHIUSURA": 0.022
+    },
+    "RIVELAZIONE": {
+     "DIALOGO": 0.25,
+     "COMBATTIMENTO": 0.188,
+     "ESPLORAZIONE": 0.188,
+     "APERTURA": 0.188,
+     "RIVELAZIONE": 0.125,
+     "VIAGGIO": 0.062
+    },
+    "VIAGGIO": {
+     "DIALOGO": 0.303,
+     "COMBATTIMENTO": 0.182,
+     "ESPLORAZIONE": 0.152,
+     "VIAGGIO": 0.121,
+     "RIVELAZIONE": 0.061,
+     "APERTURA": 0.061,
+     "ALTRO": 0.061,
+     "AFTERMATH": 0.03,
+     "CHIUSURA": 0.03
+    }
+   },
+   "serieTensione": {
+    "media": 1.4,
+    "max": 3,
+    "dopo": {
+     "sociale": 0.538,
+     "respiro": 0.462
+    }
+   },
+   "serieRespiro": {
+    "media": 1.95,
+    "max": 6
+   },
+   "fasi": {
+    "1": {
+     "respiro": 0.426,
+     "sociale": 0.382,
+     "tensione": 0.191
+    },
+    "2": {
+     "sociale": 0.409,
+     "respiro": 0.402,
+     "tensione": 0.189
+    },
+    "3": {
+     "sociale": 0.524,
+     "respiro": 0.294,
+     "tensione": 0.183
+    }
+   }
+  },
+  "voce": {
+   "quotaBattute": 0.303,
+   "quotaDescrizione": 0.582,
+   "paroleBattuta": {
+    "media": 20.31,
+    "brevi": 0.208,
+    "lunghe": 0.287
+   },
+   "registro": {
+    "puntini": 0.005,
+    "domande": 0.227,
+    "esclamazioni": 0.044
+   }
+  }
+ }
+}

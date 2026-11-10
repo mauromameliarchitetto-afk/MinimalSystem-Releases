@@ -1,0 +1,64 @@
+{
+ "formato": "rm-solo-voce/1",
+ "id": "incubo_voice_v1",
+ "storia": "incubo",
+ "campaign_id": "incubo-trama",
+ "versione": "0.1.0",
+ "content_status": "proposed",
+ "source_note": "voce di Eidos riferita alla trama «L'incubo»: da approvare",
+ "narrative_voice": {
+  "id": "incubo_voice_v1",
+  "tone": [
+   "epic_concrete",
+   "political",
+   "personal"
+  ],
+  "lexicon": [
+   "materia",
+   "fiamma",
+   "nebbia",
+   "vetro",
+   "osso",
+   "metallo",
+   "respiro",
+   "idea",
+   "scelta",
+   "forma",
+   "radice",
+   "luce"
+  ],
+  "dialogue_mode": "position_plus_personal_stake",
+  "act_modifiers": {
+   "1": "discovery_and_belonging",
+   "2": "contradiction_and_responsibility",
+   "3": "choice_and_transformation"
+  },
+  "forbidden": [
+   "omniscient_spoiler",
+   "npc_unknown_fact",
+   "protagonist_thoughts",
+   "theme_lecture",
+   "historical_hero_solution"
+  ],
+  "eroi_storici": [],
+  "conflitto_di_valori": true,
+  "pov": "second_perceptive",
+  "pov_ammessi": [
+   "second_perceptive",
+   "third_limited"
+  ],
+  "nota_pov": "La scheda ammette terza persona limitata o seconda persona percettiva \"secondo l'impostazione dell'interfaccia\": oggi l'interfaccia e i testi di riserva usano la seconda persona.",
+  "scene_pattern": [
+   "consequence",
+   "world_detail",
+   "npc_reaction",
+   "action_opening"
+  ]
+ },
+ "guida": {
+  "esempio": "Tua madre ti copre con una coperta: «È solo un incubo, {tranquillo|tranquilla|non aver paura}, adesso ci sveglieremo e passerà tutto.»",
+  "esempio_fonte": "[V2 Incipit r.29-31]"
+ },
+ "voce_autore": "voce_autore_v1",
+ "timbro": "eidos-contesto.json#timbro"
+}

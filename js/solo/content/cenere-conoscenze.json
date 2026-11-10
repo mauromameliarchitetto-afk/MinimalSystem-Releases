@@ -1,0 +1,572 @@
+{
+ "formato": "conoscenze-v1",
+ "storia": "cenere",
+ "statoApprovazione": "voci preparate dal consulente dai testi della trama e dagli script Eidos V2 Cap.1-12, da approvare in blocco (docs/single-player/trame/CENERE_VOCI_DA_APPROVARE.md). Gli approcci alternativi (Intimidire) e le difficoltà sono valori di prova.",
+ "png": {
+  "thillion": {
+   "schede": [
+    {
+     "id": "thillion_ruoli",
+     "scene": [
+      "C04"
+     ],
+     "argomenti": [
+      "medico",
+      "medici",
+      "Ligo",
+      "ruolo",
+      "ruoli",
+      "sergente"
+     ],
+     "tipi": [
+      "cosa",
+      "perche",
+      "chi"
+     ],
+     "fatto": "dettaglio_locale",
+     "sensibile": false,
+     "livelli": {
+      "minimo": [
+       {
+        "testo": "«Nephele, tu scambierai il ruolo di medico di continuo con Ligo» dice Thillion.",
+        "fonte": "scene.C04.dialoghi.thillion.argomenti.C04_thillion_1.riserva"
+       }
+      ],
+      "pieno": [
+       {
+        "testo": "«Ho chiesto che ci fossero due medici in caso muoia uno di voi due.»",
+        "fonte": "scene.C04.dialoghi.thillion.argomenti.C04_thillion_1.riserva"
+       }
+      ],
+      "critico": []
+     },
+     "difficolta": {
+      "tratto": "Persuasione",
+      "nc": 10
+     },
+     "approcci": [
+      {
+       "tratto": "Intimidire",
+       "nc": 12
+      }
+     ],
+     "fonteTrama": "script Eidos V2 Cap.7",
+     "richiede": [
+      "C04d1"
+     ],
+     "devia": {
+      "testo": "«Ricordatevi che là fuori non è un gioco» dice Thillion. «Noi siamo macchine da guerra, e come tali dovremmo comportarci!»",
+      "fonte": "scene.C04.dialoghi.thillion.chiusura"
+     },
+     "nonSa": {
+      "testo": "«Hai qualcosa da ridire?» chiede Thillion, e non aggiunge altro.",
+      "fonte": "scene.C04.dialoghi.thillion.riserva_libera"
+     }
+    },
+    {
+     "id": "thillion_guida",
+     "scene": [
+      "C03"
+     ],
+     "argomenti": [
+      "diritto di guida",
+      "guida",
+      "revocato",
+      "guidare",
+      "inconvenienti"
+     ],
+     "tipi": [
+      "cosa",
+      "perche"
+     ],
+     "fatto": "dettaglio_locale",
+     "sensibile": false,
+     "livelli": {
+      "minimo": [
+       {
+        "testo": "Il diritto di guida ti è stato revocato per via di alcuni inconvenienti psicologici",
+        "fonte": "scene.C03.dialoghi.thillion.argomenti.C03_thillion_1.riserva"
+       }
+      ],
+      "pieno": [
+       {
+        "testo": "come ha detto Sidd davanti a tutti.",
+        "fonte": "scene.C03.dialoghi.thillion.argomenti.C03_thillion_1.riserva"
+       }
+      ],
+      "critico": []
+     },
+     "difficolta": {
+      "tratto": "Persuasione",
+      "nc": 12
+     },
+     "approcci": [
+      {
+       "tratto": "Intimidire",
+       "nc": 14
+      }
+     ],
+     "fonteTrama": "script Eidos V2 Cap.3",
+     "devia": {
+      "testo": "«Bene, muoviamoci» dice Thillion.",
+      "fonte": "scene.C03.dialoghi.thillion.chiusura"
+     },
+     "nonSa": {
+      "testo": "«Hai qualcosa da ridire?» chiede Thillion, e non aggiunge altro.",
+      "fonte": "scene.C03.dialoghi.thillion.riserva_libera"
+     }
+    },
+    {
+     "id": "thillion_scout",
+     "scene": [
+      "C05"
+     ],
+     "argomenti": [
+      "scout",
+      "esploratori",
+      "città",
+      "ragazzini"
+     ],
+     "tipi": [
+      "cosa",
+      "perche"
+     ],
+     "fatto": "dettaglio_locale",
+     "sensibile": false,
+     "livelli": {
+      "minimo": [
+       {
+        "testo": "«Ho bisogno di uomini qui con me, non di ragazzini che corrono spaventati per la città» dice Thillion.",
+        "fonte": "scene.C05.dialoghi.thillion.argomenti.C05_thillion_1.riserva"
+       }
+      ],
+      "pieno": [],
+      "critico": []
+     },
+     "difficolta": {
+      "tratto": "Persuasione",
+      "nc": 12
+     },
+     "approcci": [
+      {
+       "tratto": "Intimidire",
+       "nc": 14
+      }
+     ],
+     "fonteTrama": "[V2 Cap.7 r.315]",
+     "devia": {
+      "testo": "«Ricordatevi che là fuori non è un gioco» dice Thillion. «Noi siamo macchine da guerra, e come tali dovremmo comportarci!»",
+      "fonte": "scene.C05.dialoghi.thillion.chiusura"
+     },
+     "nonSa": {
+      "testo": "«Hai qualcosa da ridire?» chiede Thillion, e non aggiunge altro.",
+      "fonte": "scene.C05.dialoghi.thillion.riserva_libera"
+     }
+    },
+    {
+     "id": "thillion_xenos",
+     "scene": [
+      "C05"
+     ],
+     "argomenti": [
+      "Xenos",
+      "Fobos",
+      "grado",
+      "ordini",
+      "chorisfos"
+     ],
+     "tipi": [
+      "cosa",
+      "perche",
+      "chi"
+     ],
+     "fatto": "dettaglio_locale",
+     "sensibile": false,
+     "livelli": {
+      "minimo": [
+       {
+        "testo": "«Uno Xenos non darà mai ordini a un chorisfos» dice Thillion, e non aggiunge altro.",
+        "fonte": "scene.C05.dialoghi.thillion.argomenti.C05_thillion_2.riserva"
+       }
+      ],
+      "pieno": [],
+      "critico": []
+     },
+     "difficolta": {
+      "tratto": "Persuasione",
+      "nc": 12
+     },
+     "approcci": [
+      {
+       "tratto": "Intimidire",
+       "nc": 14
+      }
+     ],
+     "fonteTrama": "script Eidos V2 Cap.7; trama [V2 Cap.7]",
+     "devia": {
+      "testo": "«Ricordatevi che là fuori non è un gioco» dice Thillion. «Noi siamo macchine da guerra, e come tali dovremmo comportarci!»",
+      "fonte": "scene.C05.dialoghi.thillion.chiusura"
+     },
+     "nonSa": {
+      "testo": "«Hai qualcosa da ridire?» chiede Thillion, e non aggiunge altro.",
+      "fonte": "scene.C05.dialoghi.thillion.riserva_libera"
+     }
+    }
+   ]
+  },
+  "fobos": {
+   "schede": [
+    {
+     "id": "fobos_spalla",
+     "scene": [
+      "C03"
+     ],
+     "argomenti": [
+      "spalla",
+      "lussata",
+      "polso",
+      "dolore",
+      "cure"
+     ],
+     "tipi": [
+      "cosa",
+      "come"
+     ],
+     "fatto": "dettaglio_locale",
+     "sensibile": false,
+     "livelli": {
+      "minimo": [
+       {
+        "testo": "«Passerà» dice Fobos, ma non toglie la mano dalla spalla.",
+        "fonte": "scene.C03.dialoghi.fobos.argomenti.C03_fobos_1.riserva"
+       }
+      ],
+      "pieno": [],
+      "critico": []
+     },
+     "difficolta": {
+      "tratto": "Persuasione",
+      "nc": 10
+     },
+     "approcci": [
+      {
+       "tratto": "Intimidire",
+       "nc": 12
+      }
+     ],
+     "fonteTrama": "script Eidos V2 Cap.5",
+     "devia": {
+      "testo": "Fobos fa un cenno con la mano e non aggiunge altro.",
+      "fonte": "scene.C03.dialoghi.fobos.chiusura"
+     },
+     "nonSa": {
+      "testo": "«Possiamo evitare di parlarne? Grazie!» dice Fobos.",
+      "fonte": "scene.C03.dialoghi.fobos.riserva_libera"
+     }
+    },
+    {
+     "id": "fobos_terra",
+     "scene": [
+      "C03"
+     ],
+     "argomenti": [
+      "terra",
+      "scarpa",
+      "souvenir",
+      "famiglia"
+     ],
+     "tipi": [
+      "cosa",
+      "perche"
+     ],
+     "fatto": "dettaglio_locale",
+     "sensibile": false,
+     "livelli": {
+      "minimo": [
+       {
+        "testo": "Fobos si china, raccoglie un pugno di terra e se lo infila in una scarpa. «Un souvenir per la famiglia» dice.",
+        "fonte": "scene.C03.dialoghi.fobos.argomenti.C03_fobos_2.riserva"
+       }
+      ],
+      "pieno": [],
+      "critico": []
+     },
+     "difficolta": {
+      "tratto": "Persuasione",
+      "nc": 12
+     },
+     "approcci": [
+      {
+       "tratto": "Intimidire",
+       "nc": 14
+      }
+     ],
+     "fonteTrama": "script Eidos V2 Cap.5",
+     "devia": {
+      "testo": "Fobos fa un cenno con la mano e non aggiunge altro.",
+      "fonte": "scene.C03.dialoghi.fobos.chiusura"
+     },
+     "nonSa": {
+      "testo": "«Possiamo evitare di parlarne? Grazie!» dice Fobos.",
+      "fonte": "scene.C03.dialoghi.fobos.riserva_libera"
+     }
+    },
+    {
+     "id": "fobos_famiglia",
+     "scene": [
+      "C05"
+     ],
+     "argomenti": [
+      "soccorso",
+      "squadra",
+      "scout",
+      "capitano"
+     ],
+     "tipi": [
+      "cosa",
+      "perche",
+      "chi"
+     ],
+     "fatto": "dettaglio_locale",
+     "sensibile": false,
+     "livelli": {
+      "minimo": [
+       {
+        "testo": "Fobos non ti risponde. Si volta verso Thillion: «Chiedo di poter intervenire per un soccorso.»",
+        "fonte": "scene.C05.dialoghi.fobos.argomenti.C05_fobos_1.riserva"
+       }
+      ],
+      "pieno": [],
+      "critico": []
+     },
+     "difficolta": {
+      "tratto": "Persuasione",
+      "nc": 12
+     },
+     "approcci": [
+      {
+       "tratto": "Intimidire",
+       "nc": 14
+      }
+     ],
+     "fonteTrama": "[V2 Cap.8 r.79; Cap.7 r.314] (prima della minaccia di Thillion)",
+     "devia": {
+      "testo": "Fobos fa un cenno con la mano e non aggiunge altro.",
+      "fonte": "scene.C05.dialoghi.fobos.chiusura"
+     },
+     "nonSa": {
+      "testo": "«Possiamo evitare di parlarne? Grazie!» dice Fobos.",
+      "fonte": "scene.C05.dialoghi.fobos.riserva_libera"
+     }
+    }
+   ]
+  },
+  "er": {
+   "schede": [
+    {
+     "id": "er_kaledos",
+     "scene": [
+      "C07"
+     ],
+     "argomenti": [
+      "Kaledos",
+      "squarcio",
+      "intercettati",
+      "mandati"
+     ],
+     "tipi": [
+      "dove",
+      "perche",
+      "cosa"
+     ],
+     "fatto": "dettaglio_locale",
+     "sensibile": false,
+     "livelli": {
+      "minimo": [
+       {
+        "testo": "Er e Adrasteia vi hanno intercettati e mandati a Kaledos, dove c'è uno squarcio.",
+        "fonte": "scene.C07.dialoghi.er.argomenti.C07_er_1.riserva"
+       }
+      ],
+      "pieno": [],
+      "critico": []
+     },
+     "difficolta": {
+      "tratto": "Persuasione",
+      "nc": 10
+     },
+     "approcci": [
+      {
+       "tratto": "Intimidire",
+       "nc": 12
+      }
+     ],
+     "fonteTrama": "trama: Squarcio e Kaledos (EIDOS.md r.152); [V2 Cap.11]; Kaledos: di chi sia non è specificato nelle trame (villaggio a guardia di uno squarcio, EIDOS.md r.19); Er si presenta come «attuale generale di Kaledos» e Adrasteia come sua attendente [V2 Cap.9 r.280]; nei Cap.10-11 il nome non c'è: l'arrivo della squadra a Kaledos è DEDOTTO",
+     "devia": {
+      "testo": "Er si volta verso lo squarcio.",
+      "fonte": "scene.C07.dialoghi.er.chiusura"
+     },
+     "nonSa": {
+      "testo": "Er guarda lo squarcio invece di risponderti.",
+      "fonte": "scene.C07.dialoghi.er.riserva_libera"
+     }
+    }
+   ]
+  },
+  "adrasteia": {
+   "schede": [
+    {
+     "id": "adrasteia_squarcio",
+     "scene": [
+      "C07"
+     ],
+     "argomenti": [
+      "squarcio",
+      "Kaledos"
+     ],
+     "tipi": [
+      "cosa",
+      "dove"
+     ],
+     "fatto": "dettaglio_locale",
+     "sensibile": false,
+     "livelli": {
+      "minimo": [
+       {
+        "testo": "Lo squarcio si apre vicino a Kaledos: è lì che vi hanno mandati.",
+        "fonte": "scene.C07.dialoghi.adrasteia.argomenti.C07_adrasteia_1.riserva"
+       }
+      ],
+      "pieno": [],
+      "critico": []
+     },
+     "difficolta": {
+      "tratto": "Persuasione",
+      "nc": 10
+     },
+     "approcci": [
+      {
+       "tratto": "Intimidire",
+       "nc": 12
+      }
+     ],
+     "fonteTrama": "trama: Squarcio e Kaledos (EIDOS.md r.152); [V2 Cap.11]; Kaledos: di chi sia non è specificato nelle trame (villaggio a guardia di uno squarcio, EIDOS.md r.19); Er si presenta come «attuale generale di Kaledos» e Adrasteia come sua attendente [V2 Cap.9 r.280]; nei Cap.10-11 il nome non c'è: l'arrivo della squadra a Kaledos è DEDOTTO",
+     "devia": {
+      "testo": "Adrasteia torna a guardare lo squarcio.",
+      "fonte": "scene.C07.dialoghi.adrasteia.chiusura"
+     },
+     "nonSa": {
+      "testo": "Adrasteia non stacca gli occhi dalla fenditura: su questo non ha risposte.",
+      "fonte": "scene.C07.dialoghi.adrasteia.riserva_libera"
+     }
+    }
+   ]
+  },
+  "astrapios": {
+   "schede": [
+    {
+     "id": "astrapios_gemme",
+     "scene": [
+      "C04"
+     ],
+     "argomenti": [
+      "gemme",
+      "gemma",
+      "consumato",
+      "come stai"
+     ],
+     "tipi": [
+      "cosa",
+      "come"
+     ],
+     "fatto": "dettaglio_locale",
+     "sensibile": false,
+     "livelli": {
+      "minimo": [
+       {
+        "testo": "Astrapios ha ancora le gemme che non ha consumato.",
+        "fonte": "scene.C04.dialoghi.astrapios.argomenti.C04_astrapios_1.riserva"
+       }
+      ],
+      "pieno": [],
+      "critico": []
+     },
+     "difficolta": {
+      "tratto": "Persuasione",
+      "nc": 10
+     },
+     "approcci": [
+      {
+       "tratto": "Intimidire",
+       "nc": 12
+      }
+     ],
+     "fonteTrama": "[V2 Cap.5 r.183]; ruolo [V2 Cap.7 r.54]",
+     "devia": {
+      "testo": "Astrapios torna alle sue gemme.",
+      "fonte": "scene.C04.dialoghi.astrapios.chiusura"
+     },
+     "nonSa": {
+      "testo": "Astrapios si stringe nelle spalle: su questo non sa niente.",
+      "fonte": "scene.C04.dialoghi.astrapios.riserva_libera"
+     }
+    }
+   ]
+  },
+  "sidd": {
+   "schede": [
+    {
+     "id": "sidd_protocollo",
+     "scene": [
+      "C09"
+     ],
+     "argomenti": [
+      "banca dati",
+      "sistema centrale",
+      "protocollo",
+      "Undo",
+      "manometti",
+      "satellite",
+      "Amos",
+      "hub"
+     ],
+     "tipi": [
+      "cosa",
+      "come"
+     ],
+     "fatto": "dettaglio_locale",
+     "sensibile": false,
+     "livelli": {
+      "minimo": [
+       {
+        "testo": "«Ragazzo, tu hai un compito fondamentale» dice Sidd ad Astrapios. «Trovata la banca dati della città, entra nel sistema centrale e manometti il protocollo Undo of the Eidos, mi segui?»",
+        "fonte": "scene.C09.dialoghi.sidd.argomenti.C09_sidd_1.riserva"
+       }
+      ],
+      "pieno": [],
+      "critico": []
+     },
+     "difficolta": {
+      "tratto": "Persuasione",
+      "nc": 10
+     },
+     "approcci": [
+      {
+       "tratto": "Intimidire",
+       "nc": 12
+      }
+     ],
+     "fonteTrama": "[V2 Cap.12 r.35-38] (Sidd lo dice ad Astrapios)",
+     "devia": {
+      "testo": "Sidd torna all'hub.",
+      "fonte": "scene.C09.dialoghi.sidd.chiusura"
+     },
+     "nonSa": {
+      "testo": "«Ora pensate a fare il vostro compito» dice Sidd.",
+      "fonte": "scene.C09.dialoghi.sidd.riserva_libera"
+     }
+    }
+   ]
+  }
+ }
+}

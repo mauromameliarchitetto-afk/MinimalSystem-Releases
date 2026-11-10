@@ -1,0 +1,376 @@
+{
+ "formato": "rm-solo-percorsi/1",
+ "storia": "eidos",
+ "stato": "proposta scritta in autonomia (2026-10-17), rivedibile in docs/single-player/DECISIONI_DA_RIVEDERE.md",
+ "obiettivi": {
+  "ritrovare_chi_e_stato_cancellato": {
+   "nome": "Ritrovare chi è stato cancellato",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "E03",
+     "titolo": "Una voce che ricorda",
+     "indizio": "Ciò che i registri hanno cancellato lascia ancora un vuoto che si può misurare.",
+     "beat": "Fra le registrazioni della Casa potresti trovare un segno di chi è stato cancellato.",
+     "tratti": [
+      "Percezione",
+      "Ascoltare"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Fra i nastri una voce pronuncia un nome che nessun registro ricorda: ora sai dove cercare.",
+      "parziale": "Un nome a metà, una sillaba soltanto: basta per non smettere di cercare.",
+      "mancato": "I nastri restano muti, stavolta; ma il vuoto che hai misurato è ancora lì."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "E11",
+     "titolo": "La copia incompleta",
+     "indizio": "Una traccia salvata a metà: dice abbastanza da far male, troppo poco per bastare.",
+     "beat": "La copia incompleta potrebbe conservare ciò che manca: bisogna capire quale parte non si è salvata.",
+     "tratti": [
+      "Meccanica",
+      "Percezione"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Riconosci il tratto che il ripetitore taglia: ciò che manca è proprio la parte che ti riguarda, e la tieni da parte.",
+      "parziale": "Capisci dove la copia si spezza, ma non ciò che c'era prima del taglio.",
+      "mancato": "La copia si spegne prima che tu capisca che cosa non trasmette."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "E15",
+     "titolo": "Il nome ritrovato",
+     "indizio": "Alla fine un nome torna a essere pronunciato, o resta per sempre muto.",
+     "beat": "Davanti a tutti, un nome può tornare a essere pronunciato.",
+     "tratti": [
+      "Persuasione",
+      "Politica"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Il nome viene detto ad alta voce e nessuno lo contraddice: da oggi esiste di nuovo.",
+      "parziale": "Il nome viene detto, ma qualcuno lo accoglie con un silenzio imbarazzato.",
+      "mancato": "Il nome resta in gola: per ora nessuno lo sentirà."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "Il nome è tornato, e con esso un pezzo di Soglia: chi era stato cancellato ha di nuovo un posto fra le voci.",
+    "parziale": "Qualcosa è stato ritrovato, qualcosa no: il vuoto è più piccolo, ma c'è ancora.",
+    "mancato": "Il nome non è tornato. Resta il posto vuoto, e la scelta di continuare a cercarlo."
+   }
+  },
+  "smascherare_una_menzogna": {
+   "nome": "Smascherare una menzogna",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "E02",
+     "titolo": "Il racconto che non regge",
+     "indizio": "La versione ufficiale ha una crepa, e qualcuno l'ha già notata.",
+     "beat": "Il racconto ufficiale ha una crepa: si può far notare davanti a chi ascolta.",
+     "tratti": [
+      "Percezione",
+      "Persuasione"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Indichi il dettaglio che non torna e qualcuno comincia a guardare altrove: la crepa si allarga.",
+      "parziale": "Fai notare la crepa, ma c'è chi la copre con una spiegazione plausibile.",
+      "mancato": "La versione ufficiale regge, stavolta; tu hai però guardato dove nessuno guardava."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "E07",
+     "titolo": "Due metà dello stesso ordine",
+     "indizio": "Per capire chi mente servono due testimoni che non si parlano.",
+     "beat": "Per capire chi mente servono due testimoni che non si parlano.",
+     "tratti": [
+      "Intuito Olfattivo",
+      "Ascoltare"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Confronti le due versioni e le loro pause: coincidono dove non dovrebbero, e questo basta a farti capire chi sa.",
+      "parziale": "Le due versioni sfiorano la stessa bugia, senza mostrarla del tutto.",
+      "mancato": "Le due versioni sembrano diverse e te le lasciano così."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "E14",
+     "titolo": "Dire ciò che si è visto",
+     "indizio": "Vedere chiaro costa: chi sa non può più fingere di non sapere.",
+     "beat": "Vedere chiaro costa: dire ciò che si è visto davanti a chi non vuole sentirlo.",
+     "tratti": [
+      "Persuasione",
+      "Politica"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Parli e le parole reggono: chi ascolta non può più fingere di non sapere.",
+      "parziale": "Parli, e una parte della sala ti crede mentre l'altra si volta.",
+      "mancato": "Non trovi le parole nel momento giusto: la bugia resta in piedi un giorno ancora."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "La menzogna è caduta e chi ascoltava ora risponde di ciò che sa, come te.",
+    "parziale": "La menzogna è stata scalfita, non abbattuta: qualcuno ora guarda più a fondo.",
+    "mancato": "La menzogna regge ancora, ma hai scelto di non crederle: è già qualcosa."
+   }
+  },
+  "riscattarsi_da_una_colpa": {
+   "nome": "Riscattarsi da una colpa attribuita",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "E04",
+     "titolo": "Una prima occasione",
+     "indizio": "Qualcuno è disposto a darti fiducia, per i suoi motivi.",
+     "beat": "Qualcuno è disposto a darti fiducia, per i suoi motivi: puoi mostrare che se la merita.",
+     "tratti": [
+      "Persuasione",
+      "Spirito"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Mantieni la parola data subito e chi ti ha offerto fiducia la vede crescere.",
+      "parziale": "Mostri buona volontà, ma c'è ancora un conto in sospeso.",
+      "mancato": "La fiducia offerta vacilla: serve ancora una prova."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "E09",
+     "titolo": "Il prezzo da pagare",
+     "indizio": "Per essere perdonati bisogna prima fare qualcosa che costa.",
+     "beat": "Per essere perdonati bisogna fare qualcosa che costa.",
+     "tratti": [
+      "Resistenza",
+      "Spirito"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Paghi il prezzo fino in fondo e ciò che hai fatto comincia a pesare di meno.",
+      "parziale": "Paghi una parte del prezzo; il resto è rimandato.",
+      "mancato": "Il prezzo è troppo alto, stavolta: lo rimandi, e lo sai."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "E13",
+     "titolo": "Quando conta davvero",
+     "indizio": "Una crisi in cui ciò che hai fatto si mette sulla bilancia.",
+     "beat": "Una crisi mette ciò che hai fatto sulla bilancia: puoi agire quando conta.",
+     "tratti": [
+      "Resistenza",
+      "Guardia",
+      "Spirito"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Agisci quando serve e chi ti guarda capisce che {sei cambiato|sei cambiata|qualcosa in te è cambiato}.",
+      "parziale": "Agisci, ma in ritardo: qualcosa si salva, qualcosa no.",
+      "mancato": "Non riesci a fare abbastanza: la colpa resta, e anche la possibilità di rimediare."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "La colpa è stata pagata: chi ti accusava ora ti stringe la mano.",
+    "parziale": "Hai rimediato in parte: il debito è più leggero, ma qualcuno lo ricorda ancora.",
+    "mancato": "La colpa non è stata riscattata. Resta la strada per farlo, se vorrai."
+   }
+  },
+  "proteggere_qualcuno": {
+   "nome": "Proteggere qualcuno",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "E05",
+     "titolo": "Una promessa davanti a tutti",
+     "indizio": "Proteggere significa schierarsi, e farlo in pubblico.",
+     "beat": "Proteggere significa schierarsi, e farlo in pubblico.",
+     "tratti": [
+      "Persuasione",
+      "Spirito"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Ti metti davanti a chi proteggi e nessuno osa avvicinarsi: la scelta è fatta.",
+      "parziale": "Ti schieri, ma qualcuno ti sfida a dimostrarlo.",
+      "mancato": "Esiti un attimo di troppo: c'è chi se ne accorge."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "E08",
+     "titolo": "Un debito da onorare",
+     "indizio": "Chi ti ha aiutato in passato ti chiederà conto, prima o poi.",
+     "beat": "Chi ti ha aiutato in passato ti chiederà conto: puoi tutelare chi dipende da te.",
+     "tratti": [
+      "Contrattazione",
+      "Persuasione"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Onori il debito senza consegnare chi proteggi: il conto è saldato, e nessuno è sacrificato.",
+      "parziale": "Onori il debito a metà: chi proteggi è al sicuro, a un prezzo.",
+      "mancato": "Il conto resta aperto e chi proteggi ne sente il peso."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "E12",
+     "titolo": "Mettersi in mezzo",
+     "indizio": "Un momento in cui la sola cosa possibile è farsi scudo.",
+     "beat": "Un momento in cui l'unica cosa possibile è farsi scudo.",
+     "tratti": [
+      "Guardia",
+      "Resistenza",
+      "Elusione"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Ti metti in mezzo e regge: chi proteggi passa illeso.",
+      "parziale": "Ti metti in mezzo e prendi il colpo al suo posto.",
+      "mancato": "Non arrivi in tempo: chi proteggi è in pericolo."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "Chi hai protetto è al sicuro, e sa a chi deve il fatto di esserlo.",
+    "parziale": "Chi hai protetto è salvo, ma a un prezzo che porterete insieme.",
+    "mancato": "{Non sei riuscito a|Non sei riuscita a|Non ti è riuscito di} proteggere come volevi. Resta l'impegno di non lasciarlo solo."
+   }
+  },
+  "obbedire": {
+   "nome": "Obbedire (fino a dover scegliere)",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "E01",
+     "titolo": "Un ordine chiaro",
+     "indizio": "Il compito è semplice finché nessuno chiede se sia giusto.",
+     "beat": "Il compito è semplice finché nessuno chiede se sia giusto.",
+     "tratti": [
+      "Tattica Militare",
+      "Spirito"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Esegui l'ordine con precisione: nessuno ha nulla da ridire, e tu vedi chiaro che cosa stai facendo.",
+      "parziale": "Esegui l'ordine, ma un dettaglio ti sfugge.",
+      "mancato": "L'ordine viene eseguito male: qualcuno lo nota."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "E10",
+     "titolo": "Il peso di un comando",
+     "indizio": "Un confronto in cui l'obbedienza ha un volto.",
+     "beat": "Un confronto in cui l'obbedienza ha un volto.",
+     "tratti": [
+      "Politica",
+      "Persuasione"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Sostieni lo sguardo di chi comanda e l'ordine resta ordine, senza che ti schiacci.",
+      "parziale": "Sostieni lo sguardo a metà: l'ordine pesa più di prima.",
+      "mancato": "Abbassi lo sguardo per primo: l'ordine ti sembra più grande di te."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "E14",
+     "titolo": "Fino a dover scegliere",
+     "indizio": "Arriva il momento in cui obbedire e scegliere non coincidono più.",
+     "beat": "Arriva il momento in cui obbedire e scegliere non coincidono più.",
+     "tratti": [
+      "Spirito",
+      "Difesa Mentale"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Scegli con chiarezza se obbedire o no, e rispondi della scelta.",
+      "parziale": "Scegli, ma con un dubbio che non si spegne.",
+      "mancato": "La scelta ti viene presa dagli eventi: obbedisci per inerzia."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "Hai obbedito sapendo perché, o hai disobbedito sapendo a chi: la scelta è stata tua.",
+    "parziale": "Hai obbedito a metà e disobbedito a metà: il dubbio resta, con la tua firma.",
+    "mancato": "Hai obbedito per abitudine. Resta da capire a chi tocca rispondere."
+   }
+  },
+  "porre_fine_alla_guerra": {
+   "nome": "Porre fine alla guerra",
+   "traguardi": [
+    {
+     "atto": 1,
+     "scena": "E04",
+     "titolo": "Chi parla di pace",
+     "indizio": "Tutti dicono di volerla; pochi sanno a quale prezzo.",
+     "beat": "Tutti dicono di volere la pace: puoi capire chi la vuole davvero.",
+     "tratti": [
+      "Politica",
+      "Persuasione"
+     ],
+     "nc": 12,
+     "esiti": {
+      "pieno": "Distingui chi parla di pace da chi la prepara: ora sai con chi si può trattare.",
+      "parziale": "Capisci una parte di chi vuole la pace, ma non chi la vuole davvero.",
+      "mancato": "Le parole di pace si confondono con quelle di guerra."
+     }
+    },
+    {
+     "atto": 2,
+     "scena": "E08",
+     "titolo": "Un terzo che ascolta",
+     "indizio": "Per fermare due eserciti serve qualcuno che nessuno dei due controlla.",
+     "beat": "Per fermare due eserciti serve qualcuno che nessuno dei due controlla.",
+     "tratti": [
+      "Contrattazione",
+      "Politica"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "Trovi il punto in cui il terzo può parlare a entrambi: ora c'è un tavolo.",
+      "parziale": "Trovi un modo per far parlare il terzo, ma uno dei due lo guarda con sospetto.",
+      "mancato": "Il terzo resta in disparte: nessuno lo ascolta."
+     }
+    },
+    {
+     "atto": 3,
+     "scena": "E12",
+     "titolo": "Assedio o parola",
+     "indizio": "Una porta che si può forzare o aprire con una trattativa.",
+     "beat": "Una porta può essere forzata o aperta con una trattativa.",
+     "tratti": [
+      "Persuasione",
+      "Intimidire",
+      "Tattica Militare"
+     ],
+     "nc": 13,
+     "esiti": {
+      "pieno": "La trattativa regge: nessuno spara, e la porta si apre.",
+      "parziale": "La trattativa regge a metà: un'ora di tregua, poi si vedrà.",
+      "mancato": "La trattativa si rompe: la porta resta chiusa e le armi si alzano."
+     }
+    }
+   ],
+   "epilogo": {
+    "raggiunto": "Un tavolo c'è, e intorno a quel tavolo siedono quelli che non si parlavano: la guerra, a Soglia, è finita.",
+    "parziale": "Una tregua tiene, per ora: la guerra è meno certa di prima.",
+    "mancato": "La guerra continua. Resta una porta che hai provato ad aprire."
+   }
+  }
+ }
+}

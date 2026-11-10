@@ -1,0 +1,531 @@
+{
+ "formato": "rm-solo-png-autore/1",
+ "storia": "icaro",
+ "stato": "proposta (2026-10-18): distillato dagli script e dalle giocate dell'autore; non caricato dal motore; da approvare",
+ "avviso": "I campi pubblici non contengono nulla di riservato (scripts/solo-riservato.js); il riservato sta in `riservato` con la condizione di rivelazione. I personaggi dei giocatori (scripts/solo-pg-autore.js) non sono PNG e nelle trame sono anonimi («[PG]»); `trama` indica la fonte (le tre giocate di Eidos restano separate).",
+ "fonti": {
+  "documenti": 16,
+  "script_e_giocate": [
+   "script",
+   "trascrizione"
+  ]
+ },
+ "png": [
+  {
+   "nome": "Fate",
+   "righe": 100,
+   "file": 7,
+   "arco": {
+    "dal": 0.13,
+    "al": 0.93
+   },
+   "obiettivo": {
+    "testo": "Controllare le masse con dati, quote e stime di rischio",
+    "certezza": "dedotta",
+    "fonte": [
+     "Ep 1",
+     "Ep 10 - Finale 1° Atto"
+    ]
+   },
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 24.8,
+    "brevi": 0.09,
+    "domande": 0.17,
+    "puntini": 0.0,
+    "esclamazioni": 0.0,
+    "paroleRicorrenti": [
+     "giochi",
+     "sponsor",
+     "colpire",
+     "punto",
+     "spazio",
+     "vincere"
+    ]
+   },
+   "relazioni": [
+    "Esprit",
+    "Per",
+    "Addetta",
+    "Prima"
+   ],
+   "trame": [
+    "Icaro"
+   ],
+   "riservato": [],
+   "ruolo": "dirigente votato al controllo delle masse"
+  },
+  {
+   "nome": "Alikea",
+   "righe": 65,
+   "file": 6,
+   "arco": {
+    "dal": 0.6,
+    "al": 1.0
+   },
+   "obiettivo": {
+    "testo": "Mantenere l'ordine e impedire che la sala precipiti nel caos",
+    "certezza": "esplicita",
+    "fonte": [
+     "Ep. 03 — Falsa luce",
+     "Ep. 04"
+    ]
+   },
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 20.7,
+    "brevi": 0.15,
+    "domande": 0.11,
+    "puntini": 0.0,
+    "esclamazioni": 0.05,
+    "paroleRicorrenti": [
+     "alikea",
+     "raven",
+     "possibilità",
+     "signore",
+     "qualcosa",
+     "sistema"
+    ]
+   },
+   "relazioni": [
+    "Hammond",
+    "Philips",
+    "Koga",
+    "Ilysia"
+   ],
+   "trame": [
+    "Icaro"
+   ],
+   "riservato": [],
+   "ruolo": "agente di sicurezza, figlia di Ilisya Rodano"
+  },
+  {
+   "nome": "Rabbit",
+   "righe": 34,
+   "file": 7,
+   "arco": {
+    "dal": 0.2,
+    "al": 0.87
+   },
+   "obiettivo": {
+    "testo": "Entrare nei sistemi senza essere vista",
+    "certezza": "esplicita",
+    "fonte": [
+     "Ep 4",
+     "Ep 10 - Finale 1° Atto"
+    ]
+   },
+   "paura": null,
+   "bisogno": {
+    "testo": "Un accesso non rintracciabile",
+    "certezza": "esplicita",
+    "fonte": [
+     "Ep 4",
+     "Ep 10 - Finale 1° Atto"
+    ]
+   },
+   "voce": {
+    "paroleMedie": 15.9,
+    "brevi": 0.21,
+    "domande": 0.21,
+    "puntini": 0.0,
+    "esclamazioni": 0.0,
+    "paroleRicorrenti": [
+     "rabbit"
+    ]
+   },
+   "relazioni": [
+    "Dawn",
+    "Cleyra",
+    "Kestrel",
+    "Osserva"
+   ],
+   "trame": [
+    "Icaro"
+   ],
+   "riservato": [],
+   "ruolo": "infiltrata nei sistemi, in contatto con Dotcom"
+  },
+  {
+   "nome": "Bob",
+   "righe": 33,
+   "file": 5,
+   "arco": {
+    "dal": 0.73,
+    "al": 1.0
+   },
+   "obiettivo": {
+    "testo": "Riportare [PG] alla realtà",
+    "certezza": "esplicita",
+    "fonte": [
+     "Ep 2",
+     "Ep. 03 — Falsa luce"
+    ]
+   },
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 14.5,
+    "brevi": 0.33,
+    "domande": 0.3,
+    "puntini": 0.0,
+    "esclamazioni": 0.09,
+    "paroleRicorrenti": []
+   },
+   "relazioni": [
+    "Marek",
+    "Rehtt",
+    "Mara",
+    "Alikea"
+   ],
+   "trame": [
+    "Icaro"
+   ],
+   "riservato": [],
+   "ruolo": "collega poliziotto di [PG], arrestato per favoreggiamento"
+  },
+  {
+   "nome": "Hammond",
+   "righe": 30,
+   "file": 4,
+   "arco": {
+    "dal": 0.6,
+    "al": 0.93
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 14.5,
+    "brevi": 0.23,
+    "domande": 0.03,
+    "puntini": 0.0,
+    "esclamazioni": 0.03,
+    "paroleRicorrenti": [
+     "hammond"
+    ]
+   },
+   "relazioni": [
+    "Alikea",
+    "Philips",
+    "Sistema",
+    "Makoto"
+   ],
+   "trame": [
+    "Icaro"
+   ],
+   "riservato": [],
+   "ruolo": "funzionario che abbassa i parametri emotivi degli agenti"
+  },
+  {
+   "nome": "Rhett",
+   "righe": 29,
+   "file": 3,
+   "arco": {
+    "dal": 0.6,
+    "al": 0.73
+   },
+   "obiettivo": {
+    "testo": "Evadere con il gruppo",
+    "certezza": "dedotta",
+    "fonte": [
+     "Ep 9",
+     "Ep 10 - Finale 1° Atto"
+    ]
+   },
+   "paura": {
+    "testo": "Che qualcuno ascolti anche il pensiero",
+    "certezza": "dedotta",
+    "fonte": [
+     "Ep 9",
+     "Ep 10 - Finale 1° Atto"
+    ]
+   },
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 20.1,
+    "brevi": 0.21,
+    "domande": 0.28,
+    "puntini": 0.0,
+    "esclamazioni": 0.0,
+    "paroleRicorrenti": [
+     "rhett",
+     "turno",
+     "dicono",
+     "mentre"
+    ]
+   },
+   "relazioni": [
+    "Mara",
+    "Nyx",
+    "Makoto",
+    "Allinea"
+   ],
+   "trame": [
+    "Icaro"
+   ],
+   "riservato": [],
+   "ruolo": "ingegnosa del gruppo d'evasione, costruisce con quel che trova"
+  },
+  {
+   "nome": "Marek",
+   "righe": 26,
+   "file": 3,
+   "arco": {
+    "dal": 0.33,
+    "al": 1.0
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 29.1,
+    "brevi": 0.15,
+    "domande": 0.38,
+    "puntini": 0.0,
+    "esclamazioni": 0.04,
+    "paroleRicorrenti": [
+     "marek",
+     "bunny",
+     "hoppers",
+     "detto",
+     "cercando"
+    ]
+   },
+   "relazioni": [
+    "Bob",
+    "Mara",
+    "Rehtt",
+    "Kestrel"
+   ],
+   "trame": [
+    "Icaro"
+   ],
+   "riservato": [],
+   "ruolo": null
+  },
+  {
+   "nome": "Mara",
+   "righe": 25,
+   "file": 5,
+   "arco": {
+    "dal": 0.6,
+    "al": 1.0
+   },
+   "obiettivo": null,
+   "paura": null,
+   "bisogno": null,
+   "voce": {
+    "paroleMedie": 14.0,
+    "brevi": 0.28,
+    "domande": 0.2,
+    "puntini": 0.0,
+    "esclamazioni": 0.12,
+    "paroleRicorrenti": [
+     "basta"
+    ]
+   },
+   "relazioni": [
+    "Rhett",
+    "Nyx",
+    "Marek",
+    "Makoto"
+   ],
+   "trame": [
+    "Icaro"
+   ],
+   "riservato": [],
+   "ruolo": null
+  }
+ ],
+ "ramificazioni": [
+  {
+   "testo": "Se falliscono → lo scanner li rileva: invia un ping di segnalazione al settore.",
+   "fonte": "Ep 3.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Se [PG] controbatte Nick la guarderà con uno sguardo di disprezzo – “Se resto, continuerai ad usare me come motivo per quello che fai.”",
+   "fonte": "Ep 10 - Finale 1° Atto.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Se nessuno risponde interviene Kusanagi – “Ilysia Rodano, il suo arresto”",
+   "fonte": "Ep. 03 — Falsa luce.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Se [PG] risponde - Hammond – “È entrata illegalmente in una struttura istituzionale durante un attacco.”",
+   "fonte": "Ep. 03 — Falsa luce.docx",
+   "trama": "Icaro"
+  }
+ ],
+ "colpiDiScena": [
+  {
+   "testo": "Il gruppo scopre che i crediti guadagnati sono bloccati dalla compagnia Bernard.",
+   "fonte": "Ep 2.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "In ogni caso, la tensione esplode.",
+   "fonte": "Ep 3.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Lui le chiederà qualcosa e se vuole ascoltare scopre che lui chiede a Rodano di indagare su dei dissidenti di natura religiosa.",
+   "fonte": "Ep 4.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Raggiunto il vecchio laboratorio di Thomas Epos [PG] scopre che Crypto memories sta già scandagliando la struttura, è possibile che alcune informazioni siano già state violate.",
+   "fonte": "Ep 8.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Il lanciafiamme esplode in una lingua di fuoco.",
+   "fonte": "Ep 8.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Le protagoniste sono improvvisamente circondate.",
+   "fonte": "Ep 8.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "È proprio lì che il sistema si scopre più fragile, quando è convinto di avere tutto sotto controllo.",
+   "fonte": "Ep 9 - giocata.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Il concorrente entra in possesso dell’obiettivo, il punteggio sale, il nodo esplode in una scarica di ritorno e Baby Blue prende il punto mentre lui cade.",
+   "fonte": "Ep 10 - Finale 1° Atto.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "C9 sta stringendo i livelli interni uno dopo l’altro, da alcune notizie online si scopre che alcuni patrioti hanno fermato dei terroristi intenti ad impedire alcuni accessi alle capsule.",
+   "fonte": "Ep 10 - Finale 1° Atto.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Il brodo sintetico esplode sul pavimento, scivola sotto gli stivali di una guardia e la manda contro un tavolo.",
+   "fonte": "Ep 10 - Finale 1° Atto.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "In un battibaleno esplode il caos, le guardietaglialo sono già pronte ad agire.",
+   "fonte": "Ep 10 - Finale 1° Atto.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Dietro di loro, le luci della città si fanno sempre più fioche o lontane, [PG] crolla.",
+   "fonte": "Ep 10 - Finale 1° Atto.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Capisce cosa vuole insieme ad un gruppo di Bot, uno di questi li tradisce e lei scopre che alcuni bot sono stati manipolati per assaltare le città, ha il dubbio possa essere stata Frida ma ferma uno di loro che sa degli ingressi dal Core perché lo ha scoperto…",
+   "fonte": "Ep 01.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Ture aumenta improvvisamente la forza.",
+   "fonte": "Ep. 03 — Falsa luce.docx",
+   "trama": "Icaro"
+  }
+ ],
+ "conseguenze": [
+  {
+   "testo": "capisce che i suoi genitori, se non redditivizzati dal programma sperimentale, avrebbero la stessa fine.",
+   "fonte": "Ep 2.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Prima di uscire gli faranno impiantare un disturbatore sul petto per disturbare il segnale di rilevamento, anche se non è un dispositivo infallibile.",
+   "fonte": "Ep 4.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "[PG] verrà identificata come cromo anomalo, questo porterà poi in seguito a creargli dei problemi perché verrà nuovamente rilevata dopo essere stati a C6.",
+   "fonte": "Ep 7.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Dice che ricorda di aver voluto qualcosa, anche se non sa più cosa fosse.",
+   "fonte": "Ep 9.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Dotcom manipola il campo da gioco rendendo legale tutta una serie di illegalità, ed è per questo che ora si pensa di rendere sempre più stringenti le regole dei giochi.",
+   "fonte": "Ep 01.docx",
+   "trama": "Icaro"
+  }
+ ],
+ "fronti": [
+  {
+   "testo": "I personaggi alla risposta del contratto scoprono che un altro gruppo ha accettato l’ingaggio e che hanno tempo 12 ore per trovare i dati e riportarli al tetto del Red Mill – un importante palazzo dedito allo svago, all’alcol e festeggiamenti, il pagamento…",
+   "fonte": "One Shot - Icaro EP. 0.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Arrivano mal conci all’incontro prima dello scadere del tempo.",
+   "fonte": "One Shot - Icaro EP. 0.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "A scilla compare un avviso di scadenza del suo periodo di luce.",
+   "fonte": "Ep 5.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Non è una minaccia, ma una scelta deliberata di invadere lo spazio politico.",
+   "fonte": "Ep 6.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Attendiamo risposta entro 1 ora”",
+   "fonte": "Ep 8.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Su una delle strutture trasparenti, leggermente arretrata rispetto al movimento principale, Fate resta appoggiato con il corpo inclinato in avanti, lo sguardo rivolto verso la sala mentre tra le dita fa scorrere dei dadi, lasciandoli rotolare sui polpastrelli…",
+   "fonte": "Ep 9 - giocata.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Attraversa la sala sotto gli occhi di mezzo blocco e si ferma davanti a lei prima che una guardia possa intervenire.",
+   "fonte": "Ep 9 - giocata.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Cleyra lo capisce quasi prima che glielo dica.",
+   "fonte": "Ep 9.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "[PG] fa un passo verso di lui, ma Fate le porge il tablet prima che lei decida se fermarlo.",
+   "fonte": "Ep 10 - Finale 1° Atto.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "È il gesto più importante: interviene prima che [PG] debba scegliere tra controllo e violenza.",
+   "fonte": "Ep 01.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Gli sta chiedendo di intervenire prima che Alikea possa assumere il controllo pubblico della crisi.",
+   "fonte": "Ep. 03 — Falsa luce.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "Alikea si sveglia, sta controllando dei dati di ricerca sugli avvistamenti di Koga e del calcolo della potenziale minaccia.",
+   "fonte": "Ep. 04.docx",
+   "trama": "Icaro"
+  },
+  {
+   "testo": "In un dispositivo di registrazione vede la sagoma di una figura incappucciata con dei lembi di stoffa a penzoloni entrare di soppiato all’interno di una stanza, in un comunicato apparso tra le news di C3 viene detto “pericolo alla Bernard, un gruppo di…",
+   "fonte": "Ep. 04.docx",
+   "trama": "Icaro"
+  }
+ ]
+}

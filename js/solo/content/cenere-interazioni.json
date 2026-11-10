@@ -1,0 +1,4533 @@
+{
+ "formato": "rm-solo-interazioni/1",
+ "campaign_id": "cenere-atto-1",
+ "stato": "bozza",
+ "content_status": "proposed",
+ "nota": "Pilota «Il filo di cenere», Atto I: docs/single-player/trame/EIDOS.md §4.1 «Il filo di cenere», Atto I. Ogni frase riprende un fatto o una battuta degli script Eidos V2 Cap.1-12 (nomi dei personaggi giocanti sostituiti da quelli della trama); nessun fatto nuovo.",
+ "regole": {},
+ "scene": {
+  "C01": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C01x1",
+     "testo": "Guardare chi arriva da ovest",
+     "riserva": "Da ovest, coperti dalle macerie, arrivano i soldati di Critto usciti con un mezzo a cercarvi. Li guida il tenente Thillion, con un arco e le frecce esplosive.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "La squadra del tenente Thillion è arrivata da ovest a cercarvi.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.2 r.76-87, r.192-195; Cap.3 r.18-25]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "thillion",
+     "apertura": "Thillion vi squadra uno per uno.",
+     "chiusura": "Thillion torna a guardare gli epizi.",
+     "riserva_libera": "Thillion non ti risponde: tiene gli occhi sugli epizi.",
+     "argomenti": [
+      {
+       "id": "C01_thillion_1",
+       "testo": "Dire a Thillion nome e matricola",
+       "riserva": "«K 30714 Foeh» risponde Foeh, e Thillion aspetta la tua: F 30527. «Foeh ha ferite di bruciatura al braccio sinistro, non abbiamo più gemme di cura con noi» dice Sidd.",
+       "effetti": [],
+       "richiede": [
+        "C01x1"
+       ],
+       "fonte": "P2 (P*: le parole sono del giocatore) [V2 Cap.3 r.15, r.28-30]"
+      }
+     ]
+    },
+    {
+     "png": "sidd",
+     "apertura": "Sidd si tiene la gamba ferita.",
+     "chiusura": "Sidd torna a guardare l'uomo con il casco.",
+     "riserva_libera": "Sidd si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "C01_sidd_1",
+       "testo": "Chiedere a Sidd degli epizi",
+       "riserva": "Sidd non risponde a te ma a Thillion: «Thillion, non mi frega un cazzo se vuoi dimostrare qualcosa al consiglio, ma quegli epizi non li ammazziamo, gli devo assolutamente parlare!»",
+       "effetti": [],
+       "richiede": [
+        "C01x1"
+       ],
+       "prima_di": [
+        "C01d1"
+       ],
+       "fonte": "[V2 Cap.2 r.194]; [V2 Cap.3 r.25]",
+       "scopo": "il contrasto fra Sidd e Thillion, prima che Thillion prenda il comando"
+      },
+      {
+       "id": "C01_sidd_2",
+       "testo": "Chiedere a Sidd dell'uomo con il casco",
+       "riserva": "«È in stato di shock, ma ti sconsiglio di avvicinarti» dice Sidd. «Abbiamo incrociato un azzannatore che ci ha rallentati, quei due ci hanno raggiunti, ma il mostro ha tenuto occupato quello grosso, per fortuna.»",
+       "effetti": [],
+       "prima_di": [
+        "C01d1"
+       ],
+       "fonte": "[V2 Cap.3 r.20] (nella fonte lo dice ad Astrapios)",
+       "scopo": "l'uomo che Sidd scorta, prima che si trasformi"
+      }
+     ]
+    },
+    {
+     "png": "fobos",
+     "apertura": "Fobos si controlla la mano.",
+     "chiusura": "Fobos fa un cenno con la mano e non aggiunge altro.",
+     "riserva_libera": "«Possiamo evitare di parlarne? Grazie!» dice Fobos.",
+     "argomenti": [
+      {
+       "id": "C01_fobos_1",
+       "testo": "Chiedere a Fobos della sua spada",
+       "riserva": "«È un cimelio… di famiglia» dice Fobos, e stringe l'elsa della spada pesante, usurata e senza punta. «Voglio rendere onore a chi la portava con sé.»",
+       "effetti": [],
+       "richiede": [
+        "C01x1"
+       ],
+       "fonte": "[V2 Cap.2 r.89-92] (nella fonte lo dice sul mezzo, prima delle rovine)",
+       "scopo": "il primo legame con Fobos"
+      }
+     ]
+    },
+    {
+     "png": "astrapios",
+     "apertura": "Astrapios ti fa segno dalle macerie.",
+     "chiusura": "Astrapios torna a guardare verso il cecchino.",
+     "riserva_libera": "Astrapios si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "C01_astrapios_1",
+       "testo": "Chiedere ad Astrapios in quanti sono",
+       "riserva": "Le comunicazioni sono saltate, e Astrapios ti risponde gridando fra le macerie. «Bene!» gli grida Sidd. «Di' al tuo gruppo di avvicinarsi da ovest, saranno coperti dalle macerie dal tiro del cecchino.»",
+       "effetti": [],
+       "prima_di": [
+        "C01x1"
+       ],
+       "fonte": "[V2 Cap.3 r.10-18]",
+       "scopo": "presentare il gruppo: Astrapios trova la squadra di Sidd sotto il tiro di un cecchino"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "«A me basta e avanza riportare te e la tua squadra a Critto» dice Thillion a Sidd. «Da ora prenderò io il comando dell'intera squadra, tu mi farai da vice.» Poi dà gli ordini: «Io e Nephele faremo fuoco di copertura. Pyrrhos! Tu e Fobos vi muoverete per un attacco diretto a entrambi, Foeh vi farà da supporto.»",
+    "fonte": "P3 [V2 Cap.3 r.26, r.36]",
+    "esplora": [
+     {
+      "id": "C01d1",
+      "testo": "Fare fuoco di copertura sull'epizio grosso",
+      "riserva": "Fobos attacca a mani nude l'epizio corazzato, e la corazza lo scaraventa a terra; l'uomo con il casco si trasforma in una belva e sbrana l'altro epizio. L'epizio grosso è ancora in piedi, davanti a te.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Fobos è stato scaraventato a terra dall'epizio corazzato.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 (P*: lo scontro è del giocatore) [V2 Cap.2 r.211-222; Cap.3 r.36-58]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C01x1",
+     "C01_thillion_1"
+    ],
+    "risoluzione": [
+     "C01d1"
+    ]
+   },
+   "required_beats": [
+    "C01x1",
+    "C01_thillion_1",
+    "C01d1"
+   ],
+   "optional_beats": [
+    "C01_astrapios_1",
+    "C01_sidd_1",
+    "C01_sidd_2",
+    "C01_fobos_1"
+   ],
+   "riserva_libera": "Fra le macerie nessuno alza la testa: il cecchino vi tiene sotto tiro.",
+   "uscita_fail_forward": "Se la scena si ferma, gli epizi vi raggiungono comunque."
+  },
+  "C02": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C02x1",
+     "testo": "Coprire le spalle con Alida",
+     "riserva": "Ti metti spalla a spalla con Alida, mentre Fobos spiega il suo piano: usare chi sta in alto sugli edifici come richiamo, per dividere gli spazzini e aprirsi un varco fino al rifugio.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C02d3"
+     ],
+     "prima_di": [
+      "C02d4"
+     ],
+     "fonte": "[V2 Cap.4 r.63-68]",
+     "scopo": "il legame con Alida prima della torre (C09)"
+    },
+    {
+     "id": "C02x2",
+     "parte": "il rifugio",
+     "testo": "Intervenire mentre Sidd strattona l'uomo con il casco",
+     "riserva": "Al rifugio l'uomo con il casco si è svegliato, e Sidd lo strattona per farlo parlare. L'uomo gli risponde come un bambino: «Mi ucciderete? Mi farete dormire come facevano loro?» Poi cambia tono: «Hai perso i tuoi uomini soltanto per salvare me, anche la loro vita era importante, voi scienziati siete tutti uguali.» Sidd si allontana, turbato.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C02d4"
+     ],
+     "fonte": "[V2 Cap.4 r.187-203] (il nome che dice l'uomo resta fuori: R (c) dello schema)",
+     "scopo": "la diffidenza verso Sidd"
+    },
+    {
+     "id": "C02x3",
+     "parte": "il rifugio",
+     "testo": "Ascoltare Thillion e Sidd al rifugio",
+     "riserva": "Thillion ha chiesto se fra voi ci sono altri piloti. «Nephele, ma le è stato revocato il diritto di stare alla guida per via di alcuni inconvenienti psicologici» ha risposto Sidd.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "A Nephele è stato revocato il diritto di guida per alcuni inconvenienti psicologici.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "C02d4"
+     ],
+     "fonte": "[V2 Cap.3 r.115-117] (detto nel gruppo nord: lo si scopre al rifugio, schema scena 02)",
+     "scopo": "il motivo per cui non guida"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "fobos",
+     "apertura": "Fobos si tiene la spalla e si guarda intorno.",
+     "chiusura": "Fobos fa un cenno con la mano e non aggiunge altro.",
+     "riserva_libera": "«Possiamo evitare di parlarne? Grazie!» dice Fobos.",
+     "argomenti": [
+      {
+       "id": "C02_fobos_1",
+       "testo": "Rispondere a Fobos sull'antidoto",
+       "riserva": "«Nephele, a che ora avete preso l'antidoto?» chiede Fobos. L'avete preso all'alba, come sempre. «Bene, abbiamo circa 8 ore per trovarli, faremo turni di mezz'ora ciascuno, poi ci rimetteremo in cammino.» Il tuo turno di guardia è con Alida.",
+       "effetti": [],
+       "fonte": "P1 [V2 Cap.3 r.168-173]"
+      }
+     ]
+    },
+    {
+     "png": "astrapios",
+     "apertura": "Astrapios riprende fiato.",
+     "chiusura": "Astrapios torna a guardare fuori.",
+     "riserva_libera": "Astrapios si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "C02_astrapios_1",
+       "testo": "Chiedere ad Astrapios come vi ha trovati",
+       "riserva": "Astrapios ha visto un fascio di luce allargarsi e sparire, poi le immagini di una ragazza che gli diceva «qui».",
+       "effetti": [],
+       "richiede": [
+        "C02d3"
+       ],
+       "fonte": "[V2 Cap.4 r.52-59] (che la ragazza sia Nephele è DEDOTTO: schema, scena 02)",
+       "scopo": "il segnale arriva ad Astrapios"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Ti svegli da un sogno di merda: c'era un bambino che piangeva in una pozza di sangue. Fobos non ti ha dato il cambio, e la porta è aperta.",
+    "fonte": "P2 e P3 [V2 Cap.3 r.177-178]",
+    "esplora": [
+     {
+      "id": "C02d1",
+      "parte": "Una struttura fra le rovine",
+      "testo": "Svegliare gli altri e raccontare il sogno",
+      "riserva": "Gli altri si alzano a fatica. Da fuori arrivano delle luci, gli spazzini ululano, l'aria è carica di energia statica, e fra le rovine si muove una figura d'ombra.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Una figura d'ombra fra le rovine, e Fobos non è al suo posto.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P2 (P*: il racconto è del giocatore) e P3 [V2 Cap.3 r.178-180]"
+     },
+     {
+      "id": "C02d2",
+      "testo": "Uscire a cercare Fobos",
+      "riserva": "Davanti a te e a Pyrrhos si alza una coltre di fumo; le vostre gemme brillano a ogni scintilla fra la polvere, e gli spazzini indietreggiano. L'istinto ti spinge a trascinare via Pyrrhos, gridando il nome di Fobos; poco lontano lo trovate, disorientato e senza più gemme nell'armatura. «Nephele, riesci a lanciare un segnale per farci avvistare da Alida?» ti chiede.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Fobos è tornato dal fumo senza più gemme nell'armatura.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C02d1"
+      ],
+      "fonte": "P4 [V2 Cap.4 r.39-49] (che fumo e figura d'ombra siano legati a Fobos è DEDOTTO e non si spiega: R dello schema)"
+     },
+     {
+      "id": "C02d3",
+      "testo": "Lanciare con il potere il segnale che chiede Fobos",
+      "riserva": "Il segnale parte, e senti qualcuno nei paraggi: Astrapios. «Come? Non importa» dice Fobos quando glielo dici. «Se puoi, ho bisogno che tu gli dica di arrivare al rifugio, ho in mente un piano.»",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C02d2"
+      ],
+      "fonte": "P5 (P*: il gesto è del giocatore) [V2 Cap.4 r.49-63]"
+     },
+     {
+      "id": "C02d4",
+      "parte": "il rifugio",
+      "testo": "Medicare i feriti al rifugio",
+      "riserva": "Correte fino al rifugio con gli spazzini alle calcagna; sulle scale Nil è ferito a morte, e non ce la fa. Restano i feriti: Foeh con il braccio sinistro bruciato, Pyrrhos con le bruciature sul petto.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nil è morto sulle scale del rifugio.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C02d3"
+      ],
+      "fonte": "P6 (P*: le cure sono del giocatore) [V2 Cap.4 r.72-79, r.118, r.184-185]; [V2 Cap.3 r.165]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C02_fobos_1"
+    ],
+    "risoluzione": [
+     "C02d1",
+     "C02d2",
+     "C02d3",
+     "C02d4"
+    ]
+   },
+   "required_beats": [
+    "C02_fobos_1",
+    "C02d1",
+    "C02d2",
+    "C02d3",
+    "C02d4"
+   ],
+   "optional_beats": [
+    "C02x1",
+    "C02x2",
+    "C02x3",
+    "C02_astrapios_1"
+   ],
+   "riserva_libera": "Fuori gli spazzini ululano, e nessuno di voi alza la voce.",
+   "uscita_fail_forward": "Se la scena si ferma, all'alba vi rimettete comunque in cammino."
+  },
+  "C03": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C03x1",
+     "testo": "Guardare Fobos che si tiene il polso",
+     "riserva": "Suna guarda Fobos che si tiene il polso: «Fobos, ancora quel tremolio alla mano?»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Fobos ha un tremolio alla mano, e la spalla lussata.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "[V2 Cap.5 r.4-5]",
+     "scopo": "dare il motivo della cura",
+     "prima_di": [
+      "C03d1"
+     ]
+    },
+    {
+     "id": "C03x2",
+     "testo": "Guardare il bus che non puoi guidare",
+     "riserva": "Il diritto di guida ti è stato tolto per alcuni inconvenienti psicologici, e la squadra lo sa: il bus lo fanno ripartire Sidd e Astrapios.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Il diritto di guida ti è stato tolto per alcuni inconvenienti psicologici, e la squadra lo sa: il bus lo fanno ripartire Sidd e Astrapios.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "[V2 Cap.3 r.117]; [V2 Cap.5 r.21-27]",
+     "scopo": "la guida revocata, già saputa al rifugio (C02)"
+    },
+    {
+     "id": "C03x3",
+     "testo": "Tornare sui tetti con Alida e sedersi accanto ad Astrapios sul mezzo",
+     "riserva": "Fai la strada sui tetti con Alida, a venti metri dal gruppo. Al mezzo Thillion vuole la tua gemma per il pilota, e il posto accanto ad Astrapios è libero.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C03d1"
+     ],
+     "fonte": "[V2 Cap.5 r.17, r.33]; [V2 Cap.4 r.219] (altra stesura, DEDOTTO)",
+     "scopo": "il viaggio verso Critto e il primo legame con Astrapios"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "thillion",
+     "apertura": "Thillion ti squadra senza alzare la voce.",
+     "chiusura": "«Bene, muoviamoci» dice Thillion.",
+     "riserva_libera": "«Hai qualcosa da ridire?» chiede Thillion, e non aggiunge altro.",
+     "argomenti": [
+      {
+       "id": "C03_thillion_1",
+       "testo": "Chiedere a Thillion del diritto di guida",
+       "riserva": "Il diritto di guida ti è stato revocato per via di alcuni inconvenienti psicologici, come ha detto Sidd davanti a tutti.",
+       "effetti": [
+        {
+         "nota": "Il diritto di guida ti è stato revocato per via di alcuni inconvenienti psicologici, come ha detto Sidd davanti a tutti.",
+         "categoria": "indizio"
+        }
+       ],
+       "fonte": "[V2 Cap.3 r.117]",
+       "scopo": "la guida revocata"
+      }
+     ]
+    },
+    {
+     "png": "fobos",
+     "apertura": "Fobos si tiene un polso, e la spalla gli fa ancora male.",
+     "chiusura": "Fobos fa un cenno con la mano e non aggiunge altro.",
+     "riserva_libera": "«Possiamo evitare di parlarne? Grazie!» dice Fobos.",
+     "argomenti": [
+      {
+       "id": "C03_fobos_1",
+       "testo": "Chiedere a Fobos come sta la spalla",
+       "riserva": "«Passerà» dice Fobos, ma non toglie la mano dalla spalla.",
+       "effetti": [],
+       "fonte": "[V2 Cap.5 r.6-7]",
+       "scopo": "dare il motivo della cura",
+       "prima_di": [
+        "C03d1"
+       ]
+      },
+      {
+       "id": "C03_fobos_2",
+       "testo": "Chiedere a Fobos della terra nella scarpa",
+       "riserva": "Fobos si china, raccoglie un pugno di terra e se lo infila in una scarpa. «Un souvenir per la famiglia» dice.",
+       "effetti": [],
+       "fonte": "[V2 Cap.5 r.28-30]",
+       "scopo": "il legame di Fobos con Memno"
+      }
+     ]
+    },
+    {
+     "png": "astrapios",
+     "apertura": "Astrapios ti guarda e annuisce appena.",
+     "chiusura": "Astrapios torna al motore del bus.",
+     "riserva_libera": "Astrapios si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "C03_astrapios_1",
+       "testo": "Chiedere ad Astrapios del bus",
+       "riserva": "Sidd ha messo davanti al volante del bus il guanto di Nil, con dei cavi e un trasformatore: Astrapios deve far partire il motore con la gemma d'attacco.",
+       "effetti": [],
+       "fonte": "[V2 Cap.5 r.21-27]",
+       "scopo": "il viaggio verso Critto"
+      }
+     ]
+    }
+   ],
+   "passi": [
+    {
+     "id": "C03_spalla_esame",
+     "etichetta": "Avvicinarsi a Fobos e tastargli la spalla",
+     "bersaglio": {
+      "png": "fobos"
+     },
+     "atto": "esaminare",
+     "tratti": [
+      "Guarigione",
+      "Medicina",
+      "Percezione"
+     ],
+     "nc": 10,
+     "richiede": [
+      "C03_fobos_1"
+     ],
+     "fonte": "[V2 Cap.5 r.8]: «non ho più cure e credo sia lussata»",
+     "esiti": {
+      "successo": {
+       "testo": "Gli tasti la spalla con attenzione: è come ha detto lui, è lussata."
+      },
+      "pieno": {
+       "testo": "Gli tasti la spalla con attenzione: è come ha detto lui, è lussata. Fobos non ha più cure per questo: tocca a te rimetterla a posto."
+      },
+      "fallimento": {
+       "testo": "Il dolore di Fobos ti sfugge: non capisci se sia davvero lussata, come dice lui.",
+       "effetti": [
+        {
+         "nota": "Non hai capito la natura del dolore di Fobos: lui dice che la spalla è lussata.",
+         "categoria": "appunto"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "C03_spalla_cura",
+     "etichetta": "Tenere fermo Fobos e rimettergli a posto la spalla",
+     "bersaglio": {
+      "png": "fobos"
+     },
+     "atto": "curare",
+     "tratti": [
+      "Guarigione",
+      "Medicina"
+     ],
+     "nc": 10,
+     "richiede": [
+      "C03_fobos_1"
+     ],
+     "apre": "C03d1",
+     "fonte": "[V2 Cap.5 r.8]: «puoi sistemarmi la spalla»",
+     "se_non_fatto": {
+      "testo": "La spalla di Fobos resta lussata, e Fobos arriva a Critto così; la visione non arriva qui, e il bambino resta solo nel sogno della notte fra le rovine.",
+      "fonte": "schema «Il filo di cenere», scena 03: PROPOSTA DA APPROVARE"
+     },
+     "esiti": {
+      "successo": {
+       "testo": "Un colpo secco, e la spalla di Fobos torna al suo posto."
+      },
+      "fallimento": {
+       "testo": "La spalla di Fobos non torna al suo posto, e il dolore resta.",
+       "effetti": [
+        {
+         "nota": "La spalla di Fobos è ancora fuori posto.",
+         "categoria": "appunto"
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "sviluppo": {
+    "testo": "«Nephele, puoi sistemarmi la spalla?» chiede Fobos, avvicinandosi. «Non ho più cure, credo sia lussata.»",
+    "esplora": [
+     {
+      "id": "C03d1",
+      "testo": "Rimettere a posto la spalla di Fobos",
+      "riserva": "Mentre gli rimetti a posto la spalla vedi un bambino che piange in una pozza di sangue, e accanto a lui un mostro di fumo.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Mentre gli rimetti a posto la spalla vedi un bambino che piange in una pozza di sangue, e accanto a lui un mostro di fumo.",
+        "categoria": "indizio"
+       }
+      ]
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C03_fobos_1"
+    ],
+    "risoluzione": [
+     "C03d1"
+    ]
+   },
+   "required_beats": [
+    "C03_fobos_1",
+    "C03d1"
+   ],
+   "optional_beats": [
+    "C03x1",
+    "C03x2",
+    "C03x3",
+    "C03_thillion_1",
+    "C03_fobos_2",
+    "C03_astrapios_1"
+   ],
+   "riserva_libera": "Fra le rovine nessuno alza la voce: quando passa Thillion, cala il silenzio.",
+   "uscita_fail_forward": "Se la scena si ferma, la squadra riparte comunque verso Critto."
+  },
+  "C04": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C04x1",
+     "testo": "Guardare chi vi aspetta in armeria",
+     "riserva": "«Thillion, sono lieto di rivedervi sani e salvi» dice Crio. «Dopo i vostri rapporti terremo un piccolo momento di raccolta per festeggiare il rientro della vostra squadra.» Thillion china il capo, poi porta lo sguardo del generale su di te: «La ringrazio per il suo apprezzamento, Generale, sua figlia è qui con noi ovviamente, come richiesto.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Il generale Crio ha accolto la squadra in armeria.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.5 r.43-48]"
+    },
+    {
+     "id": "C04x2",
+     "testo": "Cercare tuo padre dopo i rapporti",
+     "riserva": "Dopo i rapporti cerchi tuo padre, il generale che ti ha cresciuta di nascosto.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C04d1"
+     ],
+     "fonte": "[V2 Cap.5 r.50]; EIDOS.md r.164 (premessa: il padre l'ha cresciuta di nascosto); il dialogo fra i due non è scritto nella fonte e non si inventa",
+     "scopo": "il padre che l'ha cresciuta di nascosto"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "crio",
+     "apertura": "Crio ti guarda e aspetta.",
+     "chiusura": "Crio torna ai rapporti della squadra.",
+     "riserva_libera": "Crio ti fa capire che ne parlerete dopo i rapporti.",
+     "argomenti": [
+      {
+       "id": "C04_crio_1",
+       "testo": "Parlare con il generale Crio",
+       "riserva": "Crio vi guarda uno per uno: parlerà con ognuno di voi dopo i rapporti, al settimo piano.",
+       "effetti": [],
+       "richiede": [
+        "C04x1"
+       ],
+       "fonte": "P2 [V2 Cap.5 r.50]"
+      }
+     ]
+    },
+    {
+     "png": "thillion",
+     "apertura": "Thillion ti squadra senza alzare la voce.",
+     "chiusura": "«Ricordatevi che là fuori non è un gioco» dice Thillion. «Noi siamo macchine da guerra, e come tali dovremmo comportarci!»",
+     "riserva_libera": "«Hai qualcosa da ridire?» chiede Thillion, e non aggiunge altro.",
+     "argomenti": [
+      {
+       "id": "C04_thillion_1",
+       "testo": "Chiedere a Thillion dei ruoli nella squadra",
+       "riserva": "«Nephele, tu scambierai il ruolo di medico di continuo con Ligo» dice Thillion. «Ho chiesto che ci fossero due medici in caso muoia uno di voi due.»",
+       "effetti": [
+        {
+         "nota": "Thillion fa scambiare a te e a Ligo il ruolo di medico.",
+         "categoria": "indizio"
+        }
+       ],
+       "richiede": [
+        "C04d1"
+       ],
+       "fonte": "[V2 Cap.7 r.100]",
+       "scopo": "la squadra prima della partenza (il mezzo e i ruoli scambiati con Ligo)"
+      }
+     ]
+    },
+    {
+     "png": "fobos",
+     "apertura": "Fobos si tiene il polso.",
+     "chiusura": "Fobos fa un cenno con la mano e non aggiunge altro.",
+     "riserva_libera": "«Possiamo evitare di parlarne? Grazie!» dice Fobos.",
+     "argomenti": [
+      {
+       "id": "C04_fobos_1",
+       "testo": "Chiedere a Fobos del nome della squadra",
+       "riserva": "Il numero della squadra lo infastidisce. «L'unità precedente è quindi da ritenersi interamente sciolta, signore?» ha chiesto al maggiore; poi: «Ringraziate il generale per avermi dato il permesso di rendere omaggio a quella squadra, allora.»",
+       "effetti": [],
+       "fase": "development",
+       "fonte": "[V2 Cap.7 r.45-49] (la risposta del maggiore con il nome del generale resta fuori: R (c))",
+       "scopo": "Fobos e la squadra annientata di Dimios"
+      }
+     ]
+    },
+    {
+     "png": "astrapios",
+     "apertura": "Astrapios ti guarda e annuisce appena.",
+     "chiusura": "Astrapios torna alle sue gemme.",
+     "riserva_libera": "Astrapios si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "C04_astrapios_1",
+       "testo": "Chiedere ad Astrapios come sta",
+       "riserva": "Astrapios ha ancora le gemme che non ha consumato.",
+       "effetti": [],
+       "fonte": "[V2 Cap.5 r.183]",
+       "scopo": "il legame con Astrapios"
+      }
+     ]
+    },
+    {
+     "png": "ligo",
+     "apertura": "Ligo tiene un braccio intorno alle spalle di Foeh.",
+     "chiusura": "Ligo torna da sua sorella.",
+     "riserva_libera": "Ligo si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "C04_ligo_1",
+       "testo": "Chiedere a Ligo di Foeh",
+       "riserva": "«Sono in debito con voi per mia sorella» dice Ligo, «come probabilmente lo sono anche con il tenente.»",
+       "effetti": [],
+       "fonte": "[V2 Cap.5 r.63-66]",
+       "scopo": "il secondo medico della squadra"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Al settimo piano il maggiore forma le squadre d'élite. La vostra prende il nome di una squadra annientata, quella di Dimios: Delta 15.",
+    "fonte": "P3 [V2 Cap.7 r.31-45] (il nome del maggiore resta fuori: R (c))",
+    "esplora": [
+     {
+      "id": "C04d1",
+      "testo": "Ascoltare i ruoli della nuova squadra",
+      "riserva": "Delta 15 è la squadra d'élite del capitano Thillion. Tu ne sei sergente e medico, insieme a Ligo, e a te spetta la somministrazione della panacea.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Sei sergente e medico della Delta 15, insieme a Ligo.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P4 [V2 Cap.7 r.36, r.50-54] (la panacea qui è solo una cura: il legame con il progetto di Sidd resta per la scena 22)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C04x1",
+     "C04_crio_1"
+    ],
+    "risoluzione": [
+     "C04d1"
+    ]
+   },
+   "required_beats": [
+    "C04x1",
+    "C04_crio_1",
+    "C04d1"
+   ],
+   "optional_beats": [
+    "C04x2",
+    "C04_thillion_1",
+    "C04_fobos_1",
+    "C04_astrapios_1",
+    "C04_ligo_1"
+   ],
+   "riserva_libera": "Resti in armeria con la squadra.",
+   "uscita_fail_forward": "Se la scena si ferma, la Delta 15 parte comunque."
+  },
+  "C05": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C05x1",
+     "testo": "Guardare Thillion e Fobos",
+     "riserva": "Thillion non guarda mai Fobos in faccia: «non meriti quel grado che porti» gli ha detto davanti a tutti.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Thillion non guarda mai Fobos in faccia: «non meriti quel grado che porti» gli ha detto davanti a tutti.",
+       "categoria": "indizio"
+      }
+     ]
+    },
+    {
+     "id": "C05x2",
+     "testo": "Ascoltare la squadra",
+     "riserva": "Ligo lo dice a voce alta: «Signore, credo sarebbe più opportuno offrire il nostro appoggio alla squadra degli scout.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Ligo lo dice a voce alta: «Signore, credo sarebbe più opportuno offrire il nostro appoggio alla squadra degli scout.»",
+       "categoria": "indizio"
+      }
+     ]
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "thillion",
+     "apertura": "Thillion non si volta.",
+     "chiusura": "«Ricordatevi che là fuori non è un gioco» dice Thillion. «Noi siamo macchine da guerra, e come tali dovremmo comportarci!»",
+     "riserva_libera": "«Hai qualcosa da ridire?» chiede Thillion, e non aggiunge altro.",
+     "argomenti": [
+      {
+       "id": "C05_thillion_1",
+       "testo": "Chiedere a Thillion degli scout",
+       "riserva": "«Ho bisogno di uomini qui con me, non di ragazzini che corrono spaventati per la città» dice Thillion.",
+       "effetti": [
+        {
+         "nota": "«Ho bisogno di uomini qui con me, non di ragazzini che corrono spaventati per la città» dice Thillion.",
+         "categoria": "indizio"
+        }
+       ]
+      },
+      {
+       "id": "C05_thillion_2",
+       "testo": "Chiedere a Thillion di Fobos",
+       "riserva": "«Uno Xenos non darà mai ordini a un chorisfos» dice Thillion, e non aggiunge altro.",
+       "effetti": [
+        {
+         "nota": "«Uno Xenos non darà mai ordini a un chorisfos» dice Thillion, e non aggiunge altro.",
+         "categoria": "indizio"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "png": "fobos",
+     "apertura": "Fobos tiene gli occhi su Thillion.",
+     "chiusura": "Fobos fa un cenno con la mano e non aggiunge altro.",
+     "riserva_libera": "«Possiamo evitare di parlarne? Grazie!» dice Fobos.",
+     "argomenti": [
+      {
+       "id": "C05_fobos_1",
+       "testo": "Chiedere a Fobos degli scout",
+       "riserva": "Fobos non ti risponde. Si volta verso Thillion: «Chiedo di poter intervenire per un soccorso.»",
+       "effetti": [
+        {
+         "nota": "Fobos non ti risponde. Si volta verso Thillion: «Chiedo di poter intervenire per un soccorso.»",
+         "categoria": "indizio"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "«Fai un altro passo e la tua famiglia non mangerà per una settimana al mio rientro, come anche quella degli scout!» grida Thillion.",
+    "esplora": [
+     {
+      "id": "C05d1",
+      "testo": "Restare a guardare",
+      "riserva": "Fobos risponde a Thillion: «Voi e la squadra siete la mia famiglia, capitano, perciò con permesso...» Fobos fa un passo avanti, e Thillion non arretra.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Fobos fa un passo avanti, e Thillion non arretra.",
+        "categoria": "indizio"
+       }
+      ]
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C05x1",
+     "C05_thillion_1"
+    ],
+    "risoluzione": [
+     "C05d1"
+    ]
+   },
+   "required_beats": [
+    "C05x1",
+    "C05_thillion_1",
+    "C05d1"
+   ],
+   "optional_beats": [
+    "C05x2",
+    "C05_thillion_2",
+    "C05_fobos_1"
+   ],
+   "riserva_libera": "La colonna avanza, e nessuno parla.",
+   "uscita_fail_forward": "Se la scena si ferma, lo scontro scoppia comunque."
+  },
+  "C06": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C06x1",
+     "testo": "Cercare la strada dai tetti",
+     "riserva": "Il mestiere dello scout non è il tuo, ma hai imparato a farlo: dai tetti vedi un edificio più alto, a circa dieci chilometri, e strade che si fanno sempre più strette.",
+     "fase": "exploration",
+     "effetti": [],
+     "prima_di": [
+      "C06x2"
+     ],
+     "fonte": "[V2 Cap.8 r.283-284] (nella fonte viene subito prima della frase di Ligo che chiude la C05)",
+     "scopo": "il suo modo di guardare"
+    },
+    {
+     "id": "C06x2",
+     "testo": "Colpire gli spazzini dai tetti",
+     "riserva": "Dai tetti colpisci gli spazzini all'incrocio, mentre Pyrrhos e Aris li tengono in strada. «Signore non possiamo rimanere in strada, sono troppo strette e persino Nephele non riesce a seguire tutte le strade essendo {da solo|da sola|senza aiuto}» dice Ligo. «Salgo io, vi guidiamo noi, voi muovete il passo e stateci dietro» risponde Thillion, e sale sui tetti accanto a te.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Thillion guida la squadra dai tetti di Protopolis.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 (P*: il gesto è del giocatore) [V2 Cap.8 r.290-295]"
+    },
+    {
+     "id": "C06x3",
+     "testo": "Ascoltare Aris e Thillion nella sala centrale",
+     "riserva": "«Il ragazzo ci ha chiusi dentro, e lo scout vi ha minacciato di morte, volete ancora perseverare con questo pugno di ferro capitano?» chiede Aris. «Iniziate a pensare come soldati e non come ragazzini, rispettate i ranghi perché se seguirete l'esempio dell'esploratore o ne appoggiate gli intenti verrete ritenuti traditori della patria e arsi vivi probabilmente» risponde Thillion.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C06d3"
+     ],
+     "fonte": "[V2 Cap.9 r.105, r.109]",
+     "scopo": "la tensione con Thillion"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "thillion",
+     "apertura": "Thillion tiene gli occhi sulle strade.",
+     "chiusura": "Thillion torna a guardare le strade.",
+     "riserva_libera": "«Hai qualcosa da ridire?» chiede Thillion, e non aggiunge altro.",
+     "argomenti": [
+      {
+       "id": "C06_thillion_1",
+       "testo": "Chiedere a Thillion di Fobos e degli scout",
+       "riserva": "«Lo Xenos li riporterà indietro, o farà da esca per salvarli, il lettore se la caverà è capace di salvarsi da queste situazioni, per noi ora è prioritario trovare un luogo in cui sostare» dice Thillion.",
+       "effetti": [],
+       "prima_di": [
+        "C06d2"
+       ],
+       "fonte": "[V2 Cap.8 r.286] (nella fonte lo dice a Ligo)",
+       "scopo": "la tensione con Thillion dopo la sfida della C05"
+      }
+     ]
+    },
+    {
+     "png": "ligo",
+     "apertura": "Ligo ti fa un cenno.",
+     "chiusura": "Ligo torna a controllare la squadra.",
+     "riserva_libera": "Ligo si stringe nelle spalle: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "C06_ligo_1",
+       "testo": "Ascoltare Ligo e Thillion sulla chiamata di Alida",
+       "riserva": "«Lo Xenos e gli esploratori sono in mano ad un gruppo di Antarsi, stanno portando il nemico a noi, voglio far capire a questi stronzi con chi hanno a che fare» dice Thillion. «La mia squadra non si prende in ostaggio.» «Capitano chiedo si scelga la via politica» dice Ligo. «Per questa volta ti ascolterò» risponde Thillion. «L'esploratrice ha parlato con uno di loro e dice che potrebbero avere informazioni sulla chiave.»",
+       "effetti": [],
+       "richiede": [
+        "C06d5"
+       ],
+       "fonte": "[V2 Cap.9 r.210-228] (r.216-217, r.222-223)",
+       "scopo": "scegliere fra forza e parola"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "A est si alza una nube. «Aratare» dice Thillion. «Alla torre, di corsa!»",
+    "fonte": "P2 [V2 Cap.8 r.297-299]",
+    "esplora": [
+     {
+      "id": "C06d1",
+      "testo": "Spronare Suna a tenere il passo",
+      "riserva": "Correte verso la torre, e Suna resta con voi: manca qualche chilometro ancora.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P3 (P*: le parole sono del giocatore) [V2 Cap.8 r.304]"
+     },
+     {
+      "id": "C06d2",
+      "testo": "Arrivare alla torre",
+      "riserva": "La torre è un edificio alto con porte d'acciaio. Una grande scarica elettrica accende le lampadine, e anche un'insegna completamente malridotta: le lettere rimaste sono una E, una O, ORP.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Sulla torre di Protopolis c'è un'insegna malridotta: restano una E, una O, ORP.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C06d1"
+      ],
+      "fonte": "P4 [V2 Cap.8 r.284, r.309-311] (le lettere mancanti non si scrivono: R Sidd dello schema)"
+     },
+     {
+      "id": "C06d3",
+      "testo": "Entrare nella sala centrale",
+      "riserva": "Nella sala centrale Thillion cerca di riprendere il controllo, e Aris è furioso. Tu resti immobile, come di pietra. «Voglio essere chiaro con voi, chiunque si permetterà ad oltraggiare la mia figura con questo tipo di azioni sarà severamente punito, dell'esploratore mi occuperò al nostro ritorno» dice Thillion. Poi si volta verso di te: «Nephele, tu mi darai una mano.»",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C06d2"
+      ],
+      "fonte": "P5 [V2 Cap.9 r.92-99, r.108] (la risposta di Aris [r.105] è nel passo libero C06x3)"
+     },
+     {
+      "id": "C06d4",
+      "testo": "Rispondere ad Alida, che chiama dal casco",
+      "riserva": "«Nephele dammi le coordinate della torre, stiamo uscendo» dice Alida nel casco. Ora sa dove trovarvi, e che Suna è uscito e vi ha chiusi dentro.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Suna è uscito dalla torre e ha chiuso dentro la squadra.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C06d3"
+      ],
+      "fonte": "P6 (P*: la risposta è del giocatore) [V2 Cap.9 r.117-118]"
+     },
+     {
+      "id": "C06d5",
+      "testo": "Cercare Suna con il potere e mostrarne l'immagine a Fobos",
+      "riserva": "Cerchi Suna con il potere, e mandi a Fobos, lontano fra le strade, l'immagine di dove può essere.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C06d4"
+      ],
+      "fonte": "P7 (P*: il gesto è del giocatore) [V2 Cap.9 r.151] (lo racconta Fobos a Er, nell'altro gruppo: non sa bene se fosse la sua voce)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C06x2"
+    ],
+    "risoluzione": [
+     "C06d1",
+     "C06d2",
+     "C06d3",
+     "C06d4",
+     "C06d5"
+    ]
+   },
+   "required_beats": [
+    "C06x2",
+    "C06d1",
+    "C06d2",
+    "C06d3",
+    "C06d4",
+    "C06d5"
+   ],
+   "optional_beats": [
+    "C06x1",
+    "C06x3",
+    "C06_thillion_1",
+    "C06_ligo_1"
+   ],
+   "riserva_libera": "Resti con la squadra, a Protopolis.",
+   "uscita_fail_forward": "Se la scena si ferma, la squadra esce comunque dalla torre."
+  },
+  "C07": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C07x1",
+     "testo": "Guardare lo squarcio",
+     "riserva": "Kaledos è un villaggio a guardia di uno squarcio.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Kaledos è un villaggio a guardia di uno squarcio.",
+       "categoria": "indizio"
+      }
+     ]
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "er",
+     "apertura": "Er ti guarda e aspetta.",
+     "chiusura": "Er si volta verso lo squarcio.",
+     "riserva_libera": "Er guarda lo squarcio invece di risponderti.",
+     "argomenti": [
+      {
+       "id": "C07_er_1",
+       "testo": "Chiedere a Er perché Delta 15 è a Kaledos",
+       "riserva": "Er e Adrasteia vi hanno intercettati e mandati a Kaledos, dove c'è uno squarcio.",
+       "effetti": [
+        {
+         "nota": "Er e Adrasteia vi hanno intercettati e mandati a Kaledos, dove c'è uno squarcio.",
+         "categoria": "indizio"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "png": "adrasteia",
+     "apertura": "Adrasteia ti guarda e aspetta.",
+     "chiusura": "Adrasteia torna a guardare lo squarcio.",
+     "riserva_libera": "Adrasteia non stacca gli occhi dalla fenditura: su questo non ha risposte.",
+     "argomenti": [
+      {
+       "id": "C07_adrasteia_1",
+       "testo": "Chiedere ad Adrasteia dello squarcio",
+       "riserva": "Lo squarcio si apre vicino a Kaledos: è lì che vi hanno mandati.",
+       "effetti": [
+        {
+         "nota": "Lo squarcio si apre vicino a Kaledos: è lì che vi hanno mandati.",
+         "categoria": "indizio"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "La notte passa, e la vista ti cede.",
+    "esplora": [
+     {
+      "id": "C07d1",
+      "testo": "Lasciare che la visione arrivi",
+      "riserva": "Vedi tua madre e il suo villaggio, Istros e tua nonna; vedi Crio che accoglie lei nella città, e senti il peso della sofferenza della sua morte dopo il parto. Poi persone spaventate dentro la città, veicoli volanti, rumore di motori e di pale, le bombe. Senti un rumore metallico, vedi un uomo che preme un bottone, e una luce fortissima ti acceca; la città crolla da cima a fondo.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Vedi tua madre e il suo villaggio, Istros e tua nonna; vedi Crio che accoglie lei nella città, e senti il peso della sofferenza della sua morte dopo il parto. Poi persone spaventate dentro la città, veicoli volanti, rumore di motori e di pale, le bombe. Senti un rumore metallico, vedi un uomo che preme un bottone, e una luce fortissima ti acceca; la città crolla da cima a fondo.",
+        "categoria": "indizio"
+       }
+      ]
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C07x1",
+     "C07_er_1"
+    ],
+    "risoluzione": [
+     "C07d1"
+    ]
+   },
+   "required_beats": [
+    "C07x1",
+    "C07_er_1",
+    "C07d1"
+   ],
+   "optional_beats": [
+    "C07_adrasteia_1"
+   ],
+   "riserva_libera": "Resti a Kaledos, vicino allo squarcio.",
+   "uscita_fail_forward": "Se la scena si ferma, la visione arriva comunque."
+  },
+  "C08": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C08x1",
+     "testo": "Ascoltare Ermin nel casco",
+     "riserva": "«Come?! Cazzo! Capitano bisogna accertarsene prima possibile e da qua non siamo in grado, mi serve l'attrezzatura che ho visto nella torre ad est di Protopolis e un paio di batterie umane» dice Ermin. «Due le ho con me, bastano?» risponde Thillion. «Bene, Psylea mandaci due uomini per il recupero con il mezzo, io ho ancora le scorte delle nostre gemme con noi, saranno tue al nostro arrivo.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Ermin vuole l'attrezzatura della torre a est di Protopolis.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "C08d2"
+     ],
+     "prima_di": [
+      "C08d3"
+     ],
+     "fonte": "[V2 Cap.11 r.121-125]",
+     "scopo": "preparare la torre radio della C09"
+    },
+    {
+     "id": "C08x2",
+     "testo": "Guardare la squadra durante la marcia",
+     "riserva": "Fobos sta un po' con Suna, poi parla con ognuno di voi, uno alla volta, per tenervi lucidi. Alcuni theras sembrano seguirvi e studiarvi.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C08d3"
+     ],
+     "fonte": "[V2 Cap.11 r.132]",
+     "scopo": "la paura della marcia"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "fobos",
+     "apertura": "Fobos tiene la corda e guarda avanti.",
+     "chiusura": "Fobos fa un cenno con la mano e non aggiunge altro.",
+     "riserva_libera": "«Possiamo evitare di parlarne? Grazie!» dice Fobos.",
+     "argomenti": [
+      {
+       "id": "C08_fobos_1",
+       "testo": "Parlare a Fobos nella mente",
+       "riserva": "Nel casco gli altri ti sentono piangere. «Ora non pensarci, appena arriveremo…» dice Fobos.",
+       "effetti": [],
+       "fonte": "P1 (P*: le parole sono del giocatore) [V2 Cap.11 r.51-56, r.67]"
+      },
+      {
+       "id": "C08_fobos_2",
+       "testo": "Chiedere a Fobos quali sono gli ordini",
+       "riserva": "«Il capitano vuole contattare il capitano di delta 27 per mettersi in contatto con la base» dice Fobos. Nel casco arriva la voce di Thillion: «Potete parlare apertamente, grazie…»",
+       "effetti": [],
+       "richiede": [
+        "C08_fobos_1"
+       ],
+       "fonte": "P2 [V2 Cap.11 r.59-61]"
+      }
+     ]
+    },
+    {
+     "png": "thillion",
+     "apertura": "Thillion cavalca in testa alla colonna.",
+     "chiusura": "Thillion torna a guardare la strada.",
+     "riserva_libera": "«Hai qualcosa da ridire?» chiede Thillion, e non aggiunge altro.",
+     "argomenti": [
+      {
+       "id": "C08_thillion_1",
+       "testo": "Chiedere a Thillion dove sia la Delta 27",
+       "riserva": "«Dimmelo tu» risponde Thillion. Se provi a cercarli con il dono, li senti troppo lontani: non riesci a raggiungerli.",
+       "effetti": [],
+       "richiede": [
+        "C08_fobos_2"
+       ],
+       "prima_di": [
+        "C08d1"
+       ],
+       "fonte": "[V2 Cap.11 r.64-66] (la frase su suo padre [r.62-63] resta fuori: R (c))",
+       "scopo": "il dono al servizio della squadra"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Oltrepassata Sifo, qualcuno entra nei vostri caschi e li forza: chi non resiste ne esce ferito.",
+    "fonte": "P3 [V2 Cap.11 r.111-112]",
+    "esplora": [
+     {
+      "id": "C08d1",
+      "testo": "Ascoltare chi è entrato nei caschi",
+      "riserva": "È Ermin: vi mostra l'antenna che ha costruito con i rottami e il robot piccolissimo con cui vi osserva da una distanza immensa. Thillion chiede di Psylea, Ermin lo mette in contatto con lei, e Thillion sobbalza quando la vede.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Oltre Sifo Ermin ha messo Thillion in contatto con Psylea.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P3 [V2 Cap.11 r.112-113]"
+     },
+     {
+      "id": "C08d2",
+      "testo": "Ascoltare Thillion e Psylea",
+      "riserva": "Psylea ha perso tre uomini contro i theras, arrivando a Protopolis. «…ma in compenso abbiamo trovato quel figlio di puttana di Sidd che si faceva una passeggiata all'aperto con un ragazzo, il vecchio riesce ad essere un genio e un folle nello stesso identico momento» dice. «Hai trovato la chiave per caso?» «Si, ma non è per questo che ho bisogno di rientrare, {uno|una|qualcuno} dei miei dice che Critto è stata rasa al suolo» risponde Thillion. «E come farebbe a saperlo, sentiamo…» dice Psylea.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C08d1"
+      ],
+      "fonte": "P4 [V2 Cap.11 r.115-122]"
+     },
+     {
+      "id": "C08d3",
+      "testo": "Restare con Thillion mentre parla con Er",
+      "riserva": "«Er, non posso chiedere ai tuoi uomini una marcia forzata, perciò se volete lasciarci qua lo comprenderò» dice Thillion. «Il mio compito era già concluso da tempo, perciò si, vi lasceremo qui» risponde Er.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Er e i suoi uomini vi hanno lasciati oltre Sifo.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C08d2"
+      ],
+      "fonte": "P5 [V2 Cap.11 r.128-129]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C08_fobos_1",
+     "C08_fobos_2"
+    ],
+    "risoluzione": [
+     "C08d1",
+     "C08d2",
+     "C08d3"
+    ]
+   },
+   "required_beats": [
+    "C08_fobos_1",
+    "C08_fobos_2",
+    "C08d1",
+    "C08d2",
+    "C08d3"
+   ],
+   "optional_beats": [
+    "C08x1",
+    "C08x2",
+    "C08_thillion_1"
+   ],
+   "riserva_libera": "La colonna procede verso sud, e nessuno alza la voce.",
+   "uscita_fail_forward": "Se la scena si ferma, la squadra prosegue comunque verso sud."
+  },
+  "C09": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C09x1",
+     "testo": "Guardare Sidd e Astrapios all'hub",
+     "riserva": "Sidd mostra l'hub ad Astrapios: «L'antenna dovrebbe essere già posizionata per incontrare il satellite Amos, metti la mano qua e quando arrivi al satellite dai un solo input: Critto.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Sidd mostra l'hub ad Astrapios: «L'antenna dovrebbe essere già posizionata per incontrare il satellite Amos, metti la mano qua e quando arrivi al satellite dai un solo input: Critto.»",
+       "categoria": "indizio"
+      }
+     ]
+    },
+    {
+     "id": "C09x2",
+     "testo": "Ascoltare gli ordini per la difesa della torre",
+     "riserva": "«Alida, tu e Nephele difenderete dall'alto» dice Fobos. Thillion lo corregge: «No! Voi non salirete, state appena sopra ai soppressori per sfruttare l'altezza e colpirli dall'alto in caso entrino.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "«Alida, tu e Nephele difenderete dall'alto» dice Fobos. Thillion lo corregge: «No! Voi non salirete, state appena sopra ai soppressori per sfruttare l'altezza e colpirli dall'alto in caso entrino.»",
+       "categoria": "indizio"
+      }
+     ]
+    },
+    {
+     "id": "C09x3",
+     "testo": "Guardare Alida",
+     "riserva": "Alida si volta verso Astrapios: «Fai funzionare quella torre, dobbiamo avvertirli subito.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Alida si volta verso Astrapios: «Fai funzionare quella torre, dobbiamo avvertirli subito.»",
+       "categoria": "indizio"
+      }
+     ]
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "sidd",
+     "apertura": "Sidd ti guarda e aspetta.",
+     "chiusura": "Sidd torna all'hub.",
+     "riserva_libera": "«Ora pensate a fare il vostro compito» dice Sidd.",
+     "argomenti": [
+      {
+       "id": "C09_sidd_1",
+       "testo": "Chiedere a Sidd che cosa deve fare Astrapios",
+       "riserva": "«Ragazzo, tu hai un compito fondamentale» dice Sidd ad Astrapios. «Trovata la banca dati della città, entra nel sistema centrale e manometti il protocollo Undo of the Eidos, mi segui?»",
+       "effetti": [
+        {
+         "nota": "«Ragazzo, tu hai un compito fondamentale» dice Sidd ad Astrapios. «Trovata la banca dati della città, entra nel sistema centrale e manometti il protocollo Undo of the Eidos, mi segui?»",
+         "categoria": "indizio"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Dal secondo container esce Hidra. «Uscite bastardi, ho fame!» grida.",
+    "esplora": [
+     {
+      "id": "C09d1",
+      "testo": "Chiedere di avvicinarsi a Hidra per entrarle nella testa",
+      "riserva": "«Ok, scendi subito allora, soppressori a raccolta, muro di scudi per Nephele!» dice Fobos, e Alida vi copre finché ha frecce. Arrivate da Hidra e fate fuori alcuni theras, ma vi feriscono; provi a entrarle nella testa e ti prende un attacco epilettico. Alida corre fuori: «Mi raccomando, cerca di salvarli, e se ci riesci fa che anche questo mondo cambi» dice ad Astrapios. Hidra la trafigge, e Alida le spara in faccia il lanciarazzi di segnalazione: Hidra muore, e poco dopo muore anche Alida.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "«Ok, scendi subito allora, soppressori a raccolta, muro di scudi per Nephele!» dice Fobos, e Alida vi copre finché ha frecce. Arrivate da Hidra e fate fuori alcuni theras, ma vi feriscono; provi a entrarle nella testa e ti prende un attacco epilettico. Alida corre fuori: «Mi raccomando, cerca di salvarli, e se ci riesci fa che anche questo mondo cambi» dice ad Astrapios. Hidra la trafigge, e Alida le spara in faccia il lanciarazzi di segnalazione: Hidra muore, e poco dopo muore anche Alida.",
+        "categoria": "cambiamento"
+       }
+      ]
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C09x1",
+     "C09x2",
+     "C09x3",
+     "C09_sidd_1"
+    ],
+    "risoluzione": [
+     "C09d1"
+    ]
+   },
+   "required_beats": [
+    "C09x1",
+    "C09x2",
+    "C09x3",
+    "C09_sidd_1",
+    "C09d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Resti alla torre radio di Protopolis, con la squadra.",
+   "uscita_fail_forward": "Se la scena si ferma, Undo of the Eidos accade comunque."
+  },
+  "C10": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C10x1",
+     "testo": "Guardare le macerie della torre",
+     "riserva": "La torre è crollata: Astrapios e Psylea erano lassù, e sono finiti fra le macerie.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Astrapios e Psylea sono finiti fra le macerie della torre.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "[V2 Cap.12 r.332-334]",
+     "scopo": "preparare la ricerca della C11"
+    }
+   ],
+   "sviluppo": {
+    "testo": "Intorno a te i feriti cercano di rattopparsi.",
+    "esplora": [
+     {
+      "id": "C10d1",
+      "testo": "Chinarti sui feriti",
+      "riserva": "Ligo ha perso il braccio destro; Cobe ha una gamba ferita gravemente, e Foeh è mezza svenuta.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "[V2 Cap.12 r.237, r.331]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [],
+    "risoluzione": [
+     "C10d1"
+    ]
+   },
+   "required_beats": [
+    "C10d1"
+   ],
+   "optional_beats": [
+    "C10x1"
+   ],
+   "riserva_libera": "Resti fra le macerie della torre, con la squadra.",
+   "uscita_fail_forward": "Se la scena si ferma, la squadra lascia comunque le macerie della torre."
+  },
+  "C11": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C11x1",
+     "parte": "Le macerie della torre di Protopolis",
+     "testo": "Cercare Astrapios sotto le macerie e dentro la torre",
+     "riserva": "Cerchi Astrapios sotto le macerie, poi dentro quello che resta della torre: non riesci a trovarlo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Astrapios non si trova sotto le macerie della torre.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.13 r.58, r.61]"
+    },
+    {
+     "id": "C11x2",
+     "parte": "un mezzo in viaggio e il lago sotto il portale",
+     "testo": "Guardare Fobos davanti al lago, di notte",
+     "riserva": "Di notte Fobos è davanti al lago, e sull'acqua compaiono due sagome di fumo nero, simili a due persone. Quando gli vai incontro Fobos sembra riprendere coscienza, e le sagome scompaiono. Si stringe il polso: ha paura di sé.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C11d4"
+     ],
+     "fonte": "[V2 Cap.14 r.171-173]",
+     "scopo": "la paura di Fobos per sé"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "fobos",
+     "apertura": "Fobos dà un'occhiata ai feriti.",
+     "chiusura": "Fobos fa un cenno con la mano e non aggiunge altro.",
+     "riserva_libera": "«Possiamo evitare di parlarne? Grazie!» dice Fobos.",
+     "argomenti": [
+      {
+       "id": "C11_fobos_1",
+       "testo": "Dire a Fobos che Astrapios non c'è",
+       "riserva": "«Ok, dobbiamo fare i conti con il tempo ora, non abbiamo cure con noi, le nostre le aveva Thillion dentro la torre e probabilmente ormai sono andate» dice Fobos.",
+       "effetti": [],
+       "richiede": [
+        "C11x1"
+       ],
+       "fonte": "P1 [V2 Cap.13 r.62]"
+      }
+     ]
+    },
+    {
+     "png": "aris",
+     "apertura": "Aris guarda Fobos.",
+     "chiusura": "Aris torna a guardare la strada verso Critto.",
+     "riserva_libera": "Aris scuote la testa: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "C11_aris_1",
+       "testo": "Chiedere ad Aris se viene con voi",
+       "riserva": "«io non verrò con voi, ho deciso di andare a Critto, vi attenderò lì e una volta arrivati partirò verso nord, sono morti in troppi, è tempo che io mi dedichi a ricostruire» dice Aris. Poi saluta Fobos, guardando te: «Certo Maredudd, tu ascolta i tuoi occhi, {lui|lei|questa persona} è {l'unico|l'unica|la sola} capace di tenerti in questo mondo.»",
+       "effetti": [],
+       "richiede": [
+        "C11_fobos_1"
+       ],
+       "fonte": "P2 [V2 Cap.13 r.80-82]"
+      }
+     ]
+    },
+    {
+     "png": "sidd",
+     "apertura": "Sidd sta stabilizzando Loke con una siringa di sangue.",
+     "chiusura": "Sidd torna al mezzo.",
+     "riserva_libera": "«Ora pensate a fare il vostro compito» dice Sidd.",
+     "argomenti": [
+      {
+       "id": "C11_sidd_1",
+       "testo": "Chiedere a Sidd che cosa sta succedendo",
+       "riserva": "«Da quanto prendete il siero?» chiede Sidd. «Siete stati vicini ad un varco di colore ciano?»",
+       "effetti": [],
+       "richiede": [
+        "C11_fobos_1"
+       ],
+       "prima_di": [
+        "C11d1"
+       ],
+       "fonte": "[V2 Cap.13 r.66, r.69]",
+       "scopo": "chi li ha usati, prima del mezzo"
+      },
+      {
+       "id": "C11_sidd_2",
+       "testo": "Affrontare Sidd quando mente",
+       "riserva": "Foeh e Fobos mettono in dubbio Sidd; Sidd mente, e tu gli vai contro.",
+       "effetti": [],
+       "richiede": [
+        "C11d4"
+       ],
+       "fonte": "[V2 Cap.14 r.180-181]: l'esito non è scritto; di che cosa menta (Robert Epos) resta fuori (D6, scena 22)",
+       "scopo": "chi li ha usati"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Al mezzo collegano Ligo e Cobe al sistema elettrico con delle mascherine, e a guidare è Sidd. Foeh fruga nel borsone di Sidd e trova un taccuino.",
+    "fonte": "P3 [V2 Cap.13 r.84-85, r.180] (solo il ritrovamento: il contenuto resta fuori)",
+    "esplora": [
+     {
+      "id": "C11d1",
+      "parte": "un mezzo in viaggio e il lago sotto il portale",
+      "testo": "Ascoltare Sidd sul mezzo",
+      "riserva": "Sidd strappa il taccuino di mano a Foeh. Poi vi parla del siero: «La vostra è una versione sporca, piuttosto blanda… serviva perché voi non aveste autonomia di muovervi all'esterno, per controllarvi.» «Ferma il mezzo» dice Fobos. «No» risponde Sidd, e gli occhi di Fobos diventano ciano: si sente il ferro del mezzo che comincia a incrinarsi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Il vostro siero è una versione sporca, data per controllarvi.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P3 [V2 Cap.13 r.202]; P4 [r.203-207]"
+     },
+     {
+      "id": "C11d2",
+      "parte": "un mezzo in viaggio e il lago sotto il portale",
+      "testo": "Metterti davanti a Fobos",
+      "riserva": "Ti metti davanti a lui, anche tu con gli occhi ciano, e Fobos si calma: il mezzo smette di fare rumore. Poi Fobos si avvicina a Sidd, gli dà un pugno in faccia, scende e prosegue a piedi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Fobos ha dato un pugno a Sidd e prosegue a piedi.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C11d1"
+      ],
+      "fonte": "P4 (P*: il gesto e le parole sono del giocatore) [V2 Cap.13 r.207-209]"
+     },
+     {
+      "id": "C11d3",
+      "parte": "un mezzo in viaggio e il lago sotto il portale",
+      "testo": "Arrivare al portale",
+      "riserva": "Sotto il portale c'è un lago, e l'acqua esce proprio dalla nube; la luce ciano è fortissima. Foeh, Ligo e Pyrrhos iniziano ad ardere. «Il fuoco di necessità, è necessario a noi quanto agli altri, si accende nel momento del bisogno e funge da guida per i più deboli… noi compresi» dice Ligo.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C11d2"
+      ],
+      "fonte": "P5 [V2 Cap.13 r.211-216]"
+     },
+     {
+      "id": "C11d4",
+      "parte": "un mezzo in viaggio e il lago sotto il portale",
+      "testo": "Cercare Fobos al lago",
+      "riserva": "Tutti avete avuto una visione; quando ve ne riprendete, Fobos manca all'appello. Poi dalla nube arriva un fragore, e Fobos cade in mezzo al lago: l'acqua comincia a tingersi di rosso. Quando lo soccorrete gli tremano le mani, che sembrano sporche di sangue. «Io ora non sono stabile mentalmente, vorrei che ci fosse qualcuno a badare che io non faccia stronzate, siete autorizzati a neutralizzarmi» dice. Prende sette sassolini e li posa davanti al lago: «E piangere i caduti diventa sempre più futile, per questo non voglio legarmi a voi, sono stufo di star male per questo, la delta 15 è davvero maledetta.» Poi: «Io ora so solamente una cosa, se loro sono stati il nostro incubo io sarò l'incubo degli incubi.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Al lago Fobos si è detto instabile: vi ha autorizzati a neutralizzarlo.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C11d3"
+      ],
+      "fonte": "P6 [V2 Cap.14 r.94, r.97-98, r.102, r.114-115, r.122]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C11x1",
+     "C11_fobos_1",
+     "C11_aris_1"
+    ],
+    "risoluzione": [
+     "C11d1",
+     "C11d2",
+     "C11d3",
+     "C11d4"
+    ]
+   },
+   "required_beats": [
+    "C11x1",
+    "C11_fobos_1",
+    "C11_aris_1",
+    "C11d1",
+    "C11d2",
+    "C11d3",
+    "C11d4"
+   ],
+   "optional_beats": [
+    "C11x2",
+    "C11_sidd_1",
+    "C11_sidd_2"
+   ],
+   "riserva_libera": "La squadra resta in silenzio, e nessuno alza la voce.",
+   "uscita_fail_forward": "Se la scena si ferma, la squadra arriva comunque al lago sotto il portale."
+  },
+  "C12": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C12x1",
+     "testo": "Guardare chi guida i soccorsi",
+     "riserva": "Molti di quelli che aiutano, e alcuni dei soccorsi, sono guidati da Aris e Loke; con loro c'è un gruppo di persone senza armatura, con gli occhi illuminati di ciano, e un altro gruppo in tenuta militare nera. Fobos si muove subito per soccorrere i feriti fra le rovine.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "A Critto Aris e Loke guidano i soccorsi.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.14 r.199-200]"
+    },
+    {
+     "id": "C12x2",
+     "testo": "Ascoltare Loke e Fobos",
+     "riserva": "«Sidd dov'è? Non era con voi?» chiede Loke. «Con tutto il trambusto non ho prestato attenzione a lui, sarà scappato?» risponde Fobos.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Sidd è sparito.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "C12x1"
+     ],
+     "fonte": "P2 [V2 Cap.15 r.41-42]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "cobe",
+     "apertura": "Cobe è china su Suna.",
+     "chiusura": "Cobe torna dai feriti.",
+     "riserva_libera": "Cobe resta china su Suna.",
+     "argomenti": [
+      {
+       "id": "C12_cobe_1",
+       "testo": "Riportare Suna alla lucidità insieme a Cobe",
+       "riserva": "Con Cobe ti chini su Suna, e insieme lo riportate alla lucidità: Suna vi racconta quello che ricorda.",
+       "effetti": [],
+       "richiede": [
+        "C12x2"
+       ],
+       "fonte": "P3 (P*: il gesto è del giocatore) [V2 Cap.15 r.44]; la battuta di Cobe è [V2 Cap.12 r.248]"
+      }
+     ]
+    },
+    {
+     "png": "aris",
+     "apertura": "Aris si ferma fra i feriti.",
+     "chiusura": "Aris torna a guidare i soccorsi.",
+     "riserva_libera": "Aris scuote la testa: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "C12_aris_1",
+       "testo": "Chiedere ad Aris da quanto siete qui",
+       "riserva": "«noi ci abbiamo messo un mese ad arrivare qua, infatti le persone sono accampate da un po' e i soccorsi stanno arrivando» dice Aris.",
+       "effetti": [],
+       "richiede": [
+        "C12x1"
+       ],
+       "fonte": "[V2 Cap.15 r.40]",
+       "scopo": "il tempo passato dalla torre"
+      }
+     ]
+    },
+    {
+     "png": "fobos",
+     "apertura": "Fobos si ferma accanto a te, fra i feriti.",
+     "chiusura": "Fobos fa un cenno con la mano e non aggiunge altro.",
+     "riserva_libera": "«Possiamo evitare di parlarne? Grazie!» dice Fobos.",
+     "argomenti": [
+      {
+       "id": "C12_fobos_1",
+       "testo": "Parlare con Fobos di Suna e del nord",
+       "riserva": "Parlate di Suna e del nord, mentre intorno a voi si soccorrono i feriti.",
+       "effetti": [],
+       "prima_di": [
+        "C12d1"
+       ],
+       "fonte": "[V2 Cap.15 r.38]: il contenuto non è scritto (le parole sono del giocatore)",
+       "scopo": "la scelta del nord"
+      }
+     ]
+    },
+    {
+     "png": "hermes",
+     "apertura": "Hermes ti guarda.",
+     "chiusura": "Hermes torna dai suoi uomini.",
+     "riserva_libera": "Hermes non ti risponde: aspetta che tu venga con lui.",
+     "argomenti": [
+      {
+       "id": "C12_hermes_1",
+       "testo": "Chiedere a Hermes perché ti cerca",
+       "riserva": "«A breve ci sarà un incontro a Lechta, e lei mi ha chiesto di rapire la figlia di Crio per evitare che lui vada lì: se andasse potrebbe venire ucciso» dice Hermes.",
+       "effetti": [],
+       "richiede": [
+        "C12d1"
+       ],
+       "prima_di": [
+        "C12d2"
+       ],
+       "fonte": "[V2 Cap.15 r.37] (nella fonte lo dice a Pyrrhos: PROPOSTA che lo dica a lei se glielo chiede)",
+       "scopo": "perché la base dei Dexia vuole Nephele"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Arriva Hermes con i suoi uomini: è un chorisfos con una mano ricostruita e una gamba di metallo, e vuole portare te alla base dei Dexia.",
+    "fonte": "P4 [V2 Cap.15]; EIDOS.md r.154",
+    "esplora": [
+     {
+      "id": "C12d1",
+      "testo": "Ascoltare Hermes e Fobos",
+      "riserva": "Fobos accende gli occhi e si mette davanti a te. «io e {lui|lei|questa persona} andremo a nord, tu non sei nessuno per dare ordini» dice a Hermes. Hermes insiste: con te alla base, Crio non andrà a Lechta. «…se andrà lì probabilmente morirà e così facendo non avremo nessuno con un cervello sano a cui far affidamento per concedervi la libertà.» «Lasciate che vi accompagni allora, e poi verrete con noi, LEI saprà darvi asilo.» «Ho detto no!» risponde Fobos.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P4 [V2 Cap.15 r.86-91]"
+     },
+     {
+      "id": "C12d2",
+      "testo": "Guardare gli uomini di Hermes",
+      "riserva": "«Mi costringi alle maniere forti» dice Hermes, e i suoi uomini vi puntano addosso le armi da fuoco. Gli occhi di Fobos si accendono: dietro di loro si sente un boato, le persone volano in aria e si alza un polverone di terra.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Gli uomini di Hermes vi hanno puntato le armi, e un boato li ha scaraventati in aria.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C12d1"
+      ],
+      "fonte": "P5 [V2 Cap.15 r.92-95]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C12x1",
+     "C12x2",
+     "C12_cobe_1"
+    ],
+    "risoluzione": [
+     "C12d1",
+     "C12d2"
+    ]
+   },
+   "required_beats": [
+    "C12x1",
+    "C12x2",
+    "C12_cobe_1",
+    "C12d1",
+    "C12d2"
+   ],
+   "optional_beats": [
+    "C12_aris_1",
+    "C12_fobos_1",
+    "C12_hermes_1"
+   ],
+   "riserva_libera": "Intorno a voi si soccorrono i feriti, fra le pire e le macerie.",
+   "uscita_fail_forward": "Se la scena si ferma, Hermes torna indietro comunque, e Fobos parte verso nord."
+  },
+  "C13": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C13x1",
+     "testo": "Ascoltare Aris e Fobos lungo la strada",
+     "riserva": "Lungo la strada Aris chiama Fobos «Maredudd», e gli parla dei simboli che vede in lui: «Il tuo simbolo è duplice, dentro la torre mi apparve Hagalaz, la distruzione incontrollata, la forza indomabile, ma ho visto anche Ansuz ovvero il simbolo del Maredudd.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Aris vede in Fobos due simboli, Hagalaz e Ansuz.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "C13_aris_1"
+     ],
+     "fonte": "P2 [V2 Cap.16 r.99]"
+    },
+    {
+     "id": "C13x2",
+     "testo": "Proporre i turni di guardia",
+     "riserva": "«Inizio io, voi cercate di riposare, anche tu sarai {stanco|stanca|senza forze} per la guida del mezzo» dice Aris.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C13d4"
+     ],
+     "fonte": "[V2 Cap.20 r.62-63]",
+     "scopo": "la squadra di tre"
+    },
+    {
+     "id": "C13x3",
+     "testo": "Restare vicino a Fobos, di notte",
+     "riserva": "Durante la notte Fobos sembra perso per un attimo, poi ti guarda. «puoi stare vicino a me stanotte?» chiede. «Ho solo bisogno di sentirti vicino.» Ti poggia la testa sulla spalla e stringe un pugno, come per soffocare una lacrima.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C13d4"
+     ],
+     "fonte": "[V2 Cap.20 r.65-70]",
+     "scopo": "la paura di sé"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "aris",
+     "apertura": "Aris cammina accanto a Fobos.",
+     "chiusura": "Aris torna a guardare la strada.",
+     "riserva_libera": "Aris scuote la testa: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "C13_aris_1",
+       "testo": "Chiedere ad Aris della strada verso nord",
+       "riserva": "«Ho notato che dopo la battaglia si vedono meno Theras, mi chiedo soltanto se a Kaledos non abbiano avuto problemi dovuti allo spostamento in massa dei theras» dice Aris. «Per noi è una fortuna ma teniamo gli occhi aperti ok?» risponde Fobos.",
+       "effetti": [],
+       "fonte": "P1 [V2 Cap.16 r.91-93]"
+      },
+      {
+       "id": "C13_aris_2",
+       "testo": "Chiedere ad Aris del suo clan",
+       "riserva": "Aris si è unito ai Chorisfos perché voleva vendetta contro gli epizi; poi ha saputo che, oltre a lui e a Ferem, altri sono sopravvissuti al massacro di Lacedemona. «E dentro la mia mente quei nomi ora sono solo motivo di gioia, perché da oggi io rifonderò il mio clan e ricostruiremo Lacedemona, e se servirà combatteremo di nuovo insieme a voi o a Er contro chi verrà da noi solo per distruggere, questa è la mia promessa.»",
+       "effetti": [],
+       "richiede": [
+        "C13_aris_1"
+       ],
+       "prima_di": [
+        "C13d1"
+       ],
+       "fonte": "[V2 Cap.16 r.101-102]",
+       "scopo": "altri villaggi distrutti"
+      }
+     ]
+    },
+    {
+     "png": "fobos",
+     "apertura": "Fobos si guarda le mani.",
+     "chiusura": "Fobos fa un cenno con la mano e non aggiunge altro.",
+     "riserva_libera": "«Possiamo evitare di parlarne? Grazie!» dice Fobos.",
+     "argomenti": [
+      {
+       "id": "C13_fobos_1",
+       "testo": "Chiedere a Fobos di toglierti dai comandi se ti si accendono gli occhi",
+       "riserva": "«Potrei distruggere il mezzo» dice Fobos.",
+       "effetti": [],
+       "richiede": [
+        "C13d3"
+       ],
+       "prima_di": [
+        "C13d4"
+       ],
+       "fonte": "[V2 Cap.20 r.52-53]",
+       "scopo": "la paura di sé"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Vi fermate a riposare dentro Protopolis: mangiate dei theras e dormite in un edificio diroccato a ovest della città. «Il viaggio è lungo, dovremmo continuare a cercare del cibo strada facendo e dell'acqua, tu come ti senti?» ti chiede Fobos. «Ho sentito che hai provato a fermarmi, che cercavi di farmi ragionare… Ti ringrazio. Ad un tratto ho visto tutto buio e dietro la nuca premeva un impulso di uccidere, lo stesso che provo quando ho davanti un nemico.»",
+    "fonte": "P3 [V2 Cap.16 r.109-112]",
+    "esplora": [
+     {
+      "id": "C13x4",
+      "parte": "un edificio diroccato a ovest di Protopolis",
+      "testo": "Dire a Fobos che non è solo un assassino",
+      "riserva": "«Forse perché conosciamo solo questo, ma non sei solo un assassino e lo sai benissimo» gli dici, e Fobos si lascia guidare.",
+      "fase": "resolution",
+      "effetti": [],
+      "prima_di": [
+       "C13d1"
+      ],
+      "fonte": "L, battuta della fonte a disposizione del giocatore [V2 Cap.16 r.114]",
+      "scopo": "il tema (EIDOS.md r.165)"
+     },
+     {
+      "id": "C13d1",
+      "parte": "un edificio diroccato a ovest di Protopolis",
+      "testo": "Fargli chiudere gli occhi e pensare all'oceano di Suna",
+      "riserva": "Fobos chiude gli occhi: dentro la sua testa appaiono immagini crude, lampi di urla e di sangue. Poi pensa all'oceano di cui parlava Suna, e si calma. «Lo ricordo, dal tetto della mia casa si vedeva in lontananza un punto dove il cielo entrava dentro la terra e diventava acqua, e il profumo metteva appetito» dice.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P3 (P*: il gesto e le parole sono del giocatore) [V2 Cap.16 r.115-120]"
+     },
+     {
+      "id": "C13d2",
+      "parte": "un edificio diroccato a ovest di Protopolis",
+      "testo": "Dare le tue gemme a Fobos",
+      "riserva": "Fobos chiede le gemme a te, poi ad Aris. «Sento la loro energia, ora quando le tocco sento qualcosa che mi parla, delle immagini, sento del calore, della vita all'interno. Non voglio più usarle per combattere, forse sarebbe più giusto ritrasformarle in vita, in qualcosa che viene da noi ma di positivo.» Esce a cercare un pezzo di terra su cui posarle. «Proverò a fare ciò che mi chiedi e questa è la mia promessa.» Mentre le usa sembra colargli del sangue dalle mani; le posa a terra, e quando le solleva cresce un kyanos con delle venature rosse. «È fragile, ma è bello» dice Fobos.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Fobos ha trasformato le gemme in un kyanos con venature rosse: la promessa di non usarle più per combattere.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C13d1"
+      ],
+      "fonte": "P4 [V2 Cap.16 r.122-127] (il gesto di dare le gemme è DEDOTTO)"
+     },
+     {
+      "id": "C13d3",
+      "parte": "un mezzo chorisfos malandato",
+      "testo": "Metterti alla guida del mezzo malandato",
+      "riserva": "Più avanti viaggiate su un mezzo chorisfos in cattive condizioni: Fobos ti sta accanto, e Aris controlla spesso i dintorni dalle fessure. Alla guida hai un attimo in cui sollevi la mano come per salutare; poi senti la stretta di Fobos alla spalla, e torni in te. «Ci sei?» chiede Fobos.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C13d2"
+      ],
+      "fonte": "P6 (P*: guidare nonostante le visioni è una scelta del giocatore) [V2 Cap.20 r.49-51]; P5, il vuoto fra Cap.16 e Cap.20, non si scrive"
+     },
+     {
+      "id": "C13d4",
+      "testo": "Proseguire a piedi",
+      "riserva": "Dopo un lungo tragitto il consumo delle gemme vi ferma. Proseguite a piedi per qualche giorno, stanchi e affamati, e vi fermate nei pressi di Protopolis in cerca di riparo. «I theras sembrano essere scomparsi, se sono fuggiti a nord Er e i suoi saranno in pericolo» dice Aris.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Le gemme sono finite: proseguite a piedi.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C13d3"
+      ],
+      "fonte": "P7 [V2 Cap.20 r.56-57]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C13_aris_1",
+     "C13x1"
+    ],
+    "risoluzione": [
+     "C13d1",
+     "C13d2",
+     "C13d3",
+     "C13d4"
+    ]
+   },
+   "required_beats": [
+    "C13_aris_1",
+    "C13x1",
+    "C13d1",
+    "C13d2",
+    "C13d3",
+    "C13d4"
+   ],
+   "optional_beats": [
+    "C13x2",
+    "C13x3",
+    "C13x4",
+    "C13_aris_2",
+    "C13_fobos_1"
+   ],
+   "riserva_libera": "La strada verso nord è silenziosa, e nessuno alza la voce.",
+   "uscita_fail_forward": "Se la scena si ferma, la strada verso nord prosegue comunque."
+  },
+  "C14": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C14x1",
+     "testo": "Salutare Adrasteia",
+     "riserva": "Adrasteia ti bacia sulla guancia, cosa insolita per lei; i suoi capelli si sono schiariti. «Sorella, sono felice di vederti.» Di Lachesì dice: «Mi ha chiamata nella sua tenda, diceva che serviva che lei rimanesse qui, in qualche modo. E quindi condividiamo lo stesso corpo. A volte mi sembra di accedere alla sua vita.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Adrasteia condivide il corpo con Lachesì.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 0/1 r.12, r.35]"
+    },
+    {
+     "id": "C14x2",
+     "testo": "Salire sui mezzi di Kaledos",
+     "riserva": "Vi aspettano tre giorni di viaggio verso nord, una trentina di persone su mezzi fatti di rottami, guidati con l'arkè; tu, Fobos, Aris, Er e Adrasteia siete sullo stesso mezzo. «Ciò che mio padre aveva, ciò che noi avevamo. Non possiamo sempre affidarci alle armi di theras» dice Adrasteia. «Dobbiamo fare attenzione, il nord ora è invaso dai theras.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Er e Adrasteia vi portano a Kaledos.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "C14x1"
+     ],
+     "fonte": "P1 [V2 0/1 r.16-18, r.28-29]"
+    },
+    {
+     "id": "C14x3",
+     "testo": "Mostrare ad Adrasteia i tuoi ricordi di Istros",
+     "riserva": "Le proietti nella mente i tuoi ricordi di Istros. «Si, l'altra sorella. La sorella guardiana» dice Adrasteia. «Lì c'è uno squarcio, noi lo proteggiamo. Per evitare che chiunque possa entrarci.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C14x2"
+     ],
+     "prima_di": [
+      "C14d1"
+     ],
+     "fonte": "L [V2 0/1 r.73-79]",
+     "scopo": "Istros come casa"
+    },
+    {
+     "id": "C14x4",
+     "testo": "Ascoltare Adrasteia mentre guarda Fobos",
+     "riserva": "Adrasteia guarda Fobos e recita l'ultimo canto di Lachesì: «Bianco e nero cercano un equilibrio. Prima di intraprendere il suo viaggio il lupo vedrà i due mondi, prima di intraprendere il sentiero dei giusti sarà necessario compiere un sacrificio di sangue. Solo il canto di cenere potrà guidare i tuoi passi da est a ovest, dall'apeiron all'eidos.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C14x2"
+     ],
+     "prima_di": [
+      "C14d1"
+     ],
+     "fonte": "L [V2 0/1 r.55]",
+     "scopo": "la profezia del lupo"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "adrasteia",
+     "apertura": "Adrasteia ti siede accanto, sul mezzo.",
+     "chiusura": "Adrasteia torna a guardare la strada.",
+     "riserva_libera": "«La natura degli squarci è un po' complicata» dice Adrasteia, e non aggiunge altro.",
+     "argomenti": [
+      {
+       "id": "C14_adrasteia_1",
+       "testo": "Chiedere ad Adrasteia delle sue visioni",
+       "riserva": "Adrasteia era un cecchino; tu eri un pilota. Avete perso il vostro ruolo per le visioni, e non riuscite a controllarle.",
+       "effetti": [],
+       "richiede": [
+        "C14x1"
+       ],
+       "prima_di": [
+        "C14d1"
+       ],
+       "fonte": "L [V2 0/1 r.30-35, r.47-51]",
+       "scopo": "una come lei"
+      },
+      {
+       "id": "C14_adrasteia_2",
+       "testo": "Chiedere ad Adrasteia di Fobos",
+       "riserva": "«Lui è cieco, ma prima o poi ti ascolterà» dice Adrasteia. «credo che tu a volte debba essere un po' dura con lui, una guida è anche questo. Non puoi sempre dispensare carezze.»",
+       "effetti": [],
+       "richiede": [
+        "C14d8"
+       ],
+       "prima_di": [
+        "C14d9"
+       ],
+       "fonte": "[V2 0/1 r.275-277] (aggiunto, PROPOSTA)",
+       "scopo": "come guidare Fobos"
+      }
+     ]
+    },
+    {
+     "png": "gito",
+     "apertura": "Gito ti fa strada fra le tende.",
+     "chiusura": "Gito torna alle barricate.",
+     "riserva_libera": "«Grazie a te, mi hai salvato la vita» ripete Gito.",
+     "argomenti": [
+      {
+       "id": "C14_gito_1",
+       "testo": "Seguire Gito alle tende",
+       "riserva": "Gito ti accompagna alle tre tende preparate per voi. «Grazie a te, mi hai salvato la vita» dice, e ti lascia un ninnolo: una corda intrecciata. Vi danno vestiti di pelle; il tuo poncho è molto decorato, quello di Fobos semplice.",
+       "effetti": [
+        {
+         "nota": "Gito ti ha regalato una corda intrecciata.",
+         "categoria": "cambiamento"
+        }
+       ],
+       "richiede": [
+        "C14d4"
+       ],
+       "fonte": "P3 [V2 0/1 r.155-160]"
+      }
+     ]
+    },
+    {
+     "png": "rea",
+     "apertura": "Rea siede a cena accanto ad Aris.",
+     "chiusura": "Rea torna a parlare con Aris.",
+     "riserva_libera": "Rea sorride e guarda Aris.",
+     "argomenti": [
+      {
+       "id": "C14_rea_1",
+       "testo": "Parlare con Rea a cena",
+       "riserva": "«Vi ringrazio, mi avete tenuto in salvo il mio orso» dice Rea, guardando Aris. «L'avete guarito. Mi ha detto che cercava solo vendetta.» Di Lacedemona dice: «Si, cercheremo di ricostruirla. A presto ragazza di cenere.»",
+       "effetti": [],
+       "richiede": [
+        "C14d7"
+       ],
+       "prima_di": [
+        "C14d9"
+       ],
+       "fonte": "L [V2 0/1 r.248-256]",
+       "scopo": "il nome che le danno (EIDOS.md r.166)"
+      }
+     ]
+    },
+    {
+     "png": "er",
+     "apertura": "Er ti tende la mano.",
+     "chiusura": "Er torna dai suoi uomini.",
+     "riserva_libera": "Er annuisce, e non aggiunge altro.",
+     "argomenti": [
+      {
+       "id": "C14_er_1",
+       "testo": "Chiedere a Er di fermarvi a Kaledos un giorno o due",
+       "riserva": "«Va bene, sarò lieto di ospitarvi» dice Er.",
+       "effetti": [],
+       "richiede": [
+        "C14d4"
+       ],
+       "prima_di": [
+        "C14d9"
+       ],
+       "fonte": "[V2 0/1 r.128] (aggiunto, PROPOSTA)",
+       "scopo": "l'ospitalità di Kaledos"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Da nord i theras attaccano i due mezzi davanti: uno spazzino e molti azzannatori.",
+    "fonte": "P2 [V2 0/1 r.86]",
+    "esplora": [
+     {
+      "id": "C14d1",
+      "testo": "Tirare con l'arco da lontano",
+      "riserva": "Resti a distanza e tiri: una freccia abbatte lo spazzino, e le frecce trapassano i theras con facilità. Fobos combatte con la terra, come un theras, e non ascolta nessuno. «Devo ucciderli» dice.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P2 (P*: il tiro è del giocatore; i theras non hanno un modello, lo scontro è raccontato) [V2 0/1 r.86-89, r.94]"
+     },
+     {
+      "id": "C14d2",
+      "testo": "Mostrare a Fobos l'immagine di Suna",
+      "riserva": "La terra intorno a voi cade subito. Fobos si ferma, si cerca addosso sangue e ferite, e non ricorda bene che cosa ha fatto.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C14d1"
+      ],
+      "fonte": "P2 (P*: il gesto è del giocatore) [V2 0/1 r.90]"
+     },
+     {
+      "id": "C14d3",
+      "testo": "Tirare il filo di un azzannatore",
+      "riserva": "Colpisci di striscio l'azzannatore vicino a Er, poi quello sopra Gito: i theras si bloccano, come se avessi tirato il loro filo, ed Er e Gito li finiscono. Senti la loro vita spegnersi. Dopo la battaglia Fobos si stacca dal braccio un pezzo di cristallo: sotto, la carne viva si consuma. Adrasteia gli sbriciola dei cristalli sulla carne e gli prepara un antibiotico; tu non sai che cosa sia un'infezione.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Il braccio di Fobos si è cristallizzato fino alla carne viva.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C14d2"
+      ],
+      "fonte": "P2 (P*: il filo tirato non fa danno, l'Aletheia Mati osserva e non colpisce) [V2 0/1 r.91, r.95-111]"
+     },
+     {
+      "id": "C14d4",
+      "testo": "Arrivare a Kaledos",
+      "riserva": "Due giorni dopo superate il fiume, e la mattina seguente arrivate al villaggio di Er: barricate, una recinzione di metallo, l'aspetto di un accampamento militare; si intagliano ossa per lame e archi. Er ti tratta con riverenza e ti stringe la mano come a {un figlio|una figlia|una persona di famiglia}, e tu ripensi a Crio.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C14d3"
+      ],
+      "fonte": "P3 [V2 0/1 r.122-134]"
+     },
+     {
+      "id": "C14d5",
+      "testo": "Andare al lago dei cristalli con Fobos",
+      "riserva": "La riva è piena di ghiaietta di cristalli, fra rocce e cristalli enormi, e dal lago si vede bene lo squarcio nel cielo. Fobos ti parla di Protopolis, della scelta di salvare solo Suna; cancella dal bracciale i nomi dei compagni morti. Vuole capire chi è.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C14_gito_1"
+      ],
+      "fonte": "P4 [V2 0/1 r.165-201]"
+     },
+     {
+      "id": "C14d6",
+      "testo": "Dire a Fobos che Astrapios forse è vivo",
+      "riserva": "Gli dici che Astrapios forse è vivo: l'hai visto vicino allo squarcio.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Astrapios forse è vivo: l'hai visto vicino allo squarcio.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C14d5"
+      ],
+      "fonte": "P4 (P*: le parole sono del giocatore) [V2 0/1 r.202-219]"
+     },
+     {
+      "id": "C14d7",
+      "testo": "Chiedere a Fobos di sollevare il terreno",
+      "riserva": "Fobos solleva dei blocchi di terra squadrati, a forma di scala; poi si polverizzano, e a lui fa male la testa.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C14d6"
+      ],
+      "fonte": "P4 (P*) [V2 0/1 r.225-231]; r.232 resta fuori (26)"
+     },
+     {
+      "id": "C14d8",
+      "testo": "Lasciare che Adrasteia ti insegni a sentire le coscienze",
+      "riserva": "Adrasteia ti insegna a sentire le coscienze: le senti a catena, e vedi i fili aggrovigliati. Dal filo di Fobos partono due fili principali, il tuo e quello di Astrapios: un triangolo. Il suo filo ha un nodo, e va a finire in quello di un certo Alexander; al nodo manca solo qualche evento.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Hai visto i fili: il triangolo con Fobos e Astrapios, e il nodo nel filo di Fobos.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C14d7"
+      ],
+      "fonte": "P5 (P*: il gesto è del giocatore) [V2 0/1 r.267-325]; i simboli sul vestito [r.260-266] restano fuori (16)"
+     },
+     {
+      "id": "C14d9",
+      "testo": "Restare con Fobos in tenda",
+      "riserva": "In tenda Fobos ti bacia. Per un attimo lo vedi combattere sotto la pioggia, uccidendo dei Chorisfos. Poi si sente un rumore di elicotteri: sono quelli venuti a cercarvi a Critto, e Fobos vuole scappare.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Gli elicotteri venuti a cercarvi a Critto sono arrivati a Kaledos.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C14d8"
+      ],
+      "fonte": "P6 [V2 0/1 r.338-348]"
+     },
+     {
+      "id": "C14d10",
+      "testo": "Ascoltare il messaggio",
+      "riserva": "Adrasteia vi ferma prima che fuggiate. «Se vuoi che quello sia il tuo cammino dovete ascoltare il loro messaggio, è meglio che si ripari qualcosa prima che si spezzi non credi?» «Io sono Rika e loro sono Althea e Sebastian» dice il pilota. «Dobbiamo mostrarvi qualcosa, poi parleremo.» Nel casco c'è una registrazione di Foeh: «Hey {biondo|bionda|tu}, come va? Quei due sono ancora interi? In questi giorni mi chiedevo come stessi. Sono in un posto all'aperto, c'è un bel clima. Il loro generale mi ha detto che la tua presenza qui potrebbe essere utile a risolvere un po' di casini come quello successo a Critto, forse dovresti quantomeno sentire cosa hanno da dire qua che dici? Comunque… vedi di muovere quel culetto sodo e di tornare da noi, ci manchi!»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Rika, Althea e Sebastian ti hanno portato un messaggio di Foeh.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C14d9"
+      ],
+      "fonte": "P7 [V2 Cap.22, «Scena esterna», r.66-67, r.70]; r.68-69 restano fuori (23)"
+     },
+     {
+      "id": "C14d11",
+      "testo": "Ascoltare Fobos e la squadra di Rika",
+      "riserva": "«Come ci avete trovato? Vi ho già detto che non vi seguiremo, abbiamo una meta da raggiungere e per quanto mi riguarda preferisco morire che farmi impedire di scoprire la verità» dice Fobos. «Qui nessuno ha intenzione di uccidere nessuno, dove siete diretti?» chiede Sebastian. «Prima a Istros, la sua città natale e poi a Memno a est da qui.» «Vi accompagniamo, e una volta visitati quei luoghi verrete con noi, probabilmente non rimane molto perciò se volete scoprire la verità noi la possediamo» dice Althea. «Una scorta mi farebbe comodo, ma sappiate che non ho intenzione di prendere ordini da voi» risponde Fobos. Sebastian: «Come vuoi, a noi basta sapere che ci segua per poter iniziare a discutere con suo padre della liberazione dei Chorisfos.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Fobos accetta la scorta: prima Istros, poi Memno.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C14d10"
+      ],
+      "fonte": "P8 [V2 Cap.22, «Scena esterna», r.72-76]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C14x1",
+     "C14x2"
+    ],
+    "risoluzione": [
+     "C14d1",
+     "C14d2",
+     "C14d3",
+     "C14d4",
+     "C14_gito_1",
+     "C14d5",
+     "C14d6",
+     "C14d7",
+     "C14d8",
+     "C14d9",
+     "C14d10",
+     "C14d11"
+    ]
+   },
+   "required_beats": [
+    "C14x1",
+    "C14x2",
+    "C14d1",
+    "C14d2",
+    "C14d3",
+    "C14d4",
+    "C14_gito_1",
+    "C14d5",
+    "C14d6",
+    "C14d7",
+    "C14d8",
+    "C14d9",
+    "C14d10",
+    "C14d11"
+   ],
+   "optional_beats": [
+    "C14x3",
+    "C14x4",
+    "C14_adrasteia_1",
+    "C14_adrasteia_2",
+    "C14_rea_1",
+    "C14_er_1"
+   ],
+   "riserva_libera": "Kaledos è un accampamento militare: barricate, tende ampie e ossa intagliate per lame e archi.",
+   "uscita_fail_forward": "Se la scena si ferma, al mattino la squadra di Rika vi scorta comunque verso Istros."
+  },
+  "C15": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C15x1",
+     "parte": "Un elicottero in volo",
+     "testo": "Provare a tenere il volante",
+     "riserva": "Rika ti lascia il volante: non riesci a tenerlo stabile, e lui riprende subito il controllo. «Che cazzo stai facendo? La smetti di giocare?» gli grida Althea.",
+     "fase": "exploration",
+     "effetti": [],
+     "prima_di": [
+      "C15d4"
+     ],
+     "fonte": "L [V2 0/2 r.129-138]",
+     "scopo": "la guida perduta"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "rika",
+     "apertura": "Rika ti guarda di sbieco, con le mani sui comandi.",
+     "chiusura": "Rika torna a guardare il monitor con le coordinate.",
+     "riserva_libera": "Rika fa una battuta e torna a pilotare.",
+     "argomenti": [
+      {
+       "id": "C15_rika_1",
+       "testo": "Chiedere a Rika perché vogliono parlare con il generale Crio",
+       "riserva": "Rika ti spiega che Crio, circa vent'anni fa, ha stretto dei patti con Kaledos. «Come anche in altre città esterne, è un uomo pacifico.» Poi ti guarda. «Tu sei sua figlia, no?»",
+       "effetti": [],
+       "fonte": "P1 [V2 0/2 r.24-49]"
+      },
+      {
+       "id": "C15_rika_2",
+       "testo": "Chiedere a Rika dei tuoi occhi",
+       "riserva": "«E'… gli occhi della verità» dice Rika. «Dipende da persona a persona, ma alcuni credono che anni fa chi ha creato il nostro gruppo fosse uno di loro, colui che cercava di portare la verità.»",
+       "effetti": [],
+       "richiede": [
+        "C15_rika_1"
+       ],
+       "fonte": "P2 [V2 0/2 r.51-57]"
+      },
+      {
+       "id": "C15_rika_3",
+       "testo": "Raccontare a Rika il passaggio che hai quasi visto a Kaledos",
+       "riserva": "Gli racconti del passaggio a cui hai quasi assistito a Kaledos, e l'elicottero sbanda. Rika ti consiglia di imparare a controllarlo, come l'arkè.",
+       "effetti": [],
+       "richiede": [
+        "C15_rika_2"
+       ],
+       "prima_di": [
+        "C15d4"
+       ],
+       "fonte": "L [V2 0/2 r.59-79], senza la parola «Moira» (riformulazione del piano)",
+       "scopo": "perché non pilota più"
+      },
+      {
+       "id": "C15_rika_4",
+       "testo": "Chiedere a Rika perché Althea combatte",
+       "riserva": "«Per salvare qualcuno. E' il nostro motto: salva una persona e salverai il mondo» dice Rika.",
+       "effetti": [],
+       "richiede": [
+        "C15_rika_1"
+       ],
+       "prima_di": [
+        "C15d4"
+       ],
+       "fonte": "L [V2 0/2 r.144-147]",
+       "scopo": "il tema (EIDOS.md r.165)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "«Cercheranno te. Beh, se avessi una figlia qua fuori lo farei anche io» dice Rika.",
+    "fonte": "[V2 0/2 r.95]",
+    "esplora": [
+     {
+      "id": "C15d1",
+      "parte": "Un elicottero in volo",
+      "testo": "Dire a Rika perché andate a Istros e a Memno",
+      "riserva": "Rika ascolta: Istros per le tue origini, Memno perché Fobos vuole capire che cosa è successo al suo villaggio. «Credi che vedere quel luogo definisca la sua persona? Non potrebbe scegliere lui chi è?»",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P3 (P*: le parole sono del giocatore) [V2 0/2 r.109-126]"
+     },
+     {
+      "id": "C15d2",
+      "parte": "Un elicottero in volo",
+      "testo": "Chiedere a Rika di Astrapios",
+      "riserva": "Rika te lo conferma: Astrapios è vivo, alla base dei Dexia, con un nome nuovo. Il loro generale ha mandato loro perché Hermes, che doveva recuperarti, non l'ha fatto: «…ha sbagliato, il suo ordine era recuperare te, non il suo amico.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Astrapios è vivo, alla base dei Dexia, con un nome nuovo.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C15d1"
+      ],
+      "fonte": "P4 [V2 0/2 r.151-175]"
+     },
+     {
+      "id": "C15d3",
+      "parte": "Un elicottero in volo",
+      "testo": "Cercare il filo di Astrapios",
+      "riserva": "Il suo filo appare interrotto e annodato, e lui ha superato il nodo: non sai dire se sia ancora la stessa persona.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C15d2"
+      ],
+      "fonte": "P4 [V2 0/2 r.176-177]"
+     },
+     {
+      "id": "C15d4",
+      "parte": "l'accampamento fuori Istros, di notte",
+      "testo": "Atterrare fuori Istros",
+      "riserva": "Atterrate di notte fuori Istros, per evitare ostilità. La radio non ha contatto; nell'elicottero si dorme sulle coperte, con una musica rilassante.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Siete atterrati di notte fuori Istros.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C15d3"
+      ],
+      "fonte": "[V2 0/2 r.206-224]"
+     },
+     {
+      "id": "C15d5",
+      "parte": "l'accampamento fuori Istros, di notte",
+      "testo": "Dormire",
+      "riserva": "Nel sonno vivi dall'interno l'incubo di Sebastian: l'attacco agli esploratori, la morte di Ozios, trapassato da una lancia, la tortura da parte di uomini mezzo theras, la voglia di morire, poi la liberazione.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C15d4"
+      ],
+      "fonte": "P5 [V2 0/2 r.255-263]"
+     },
+     {
+      "id": "C15d6",
+      "parte": "l'accampamento fuori Istros, di notte",
+      "testo": "Uscire a consolare Sebastian",
+      "riserva": "Fuori dall'elicottero Sebastian ti racconta la tortura. «Stavamo cercando alleati, abbiamo trovato solo la morte.» È con il gruppo «Da circa sei anni. Ero un ammantato prima. Vivevo ad Antarsia.» Poi ti guarda. «Dovrei essere io a salvare voi. Non il contrario.»",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C15d5"
+      ],
+      "fonte": "P5 (P*: consolarlo è una scelta del giocatore) [V2 0/2 r.285-309]"
+     },
+     {
+      "id": "C15x2",
+      "parte": "l'accampamento fuori Istros, di notte",
+      "testo": "Piangere per Thillion",
+      "riserva": "Con Sebastian, fuori dall'elicottero, piangi per Thillion.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C15d6"
+      ],
+      "prima_di": [
+       "C15d7"
+      ],
+      "fonte": "L [V2 0/2 r.255-405]",
+      "scopo": "il lutto"
+     },
+     {
+      "id": "C15d7",
+      "parte": "l'accampamento fuori Istros, di notte",
+      "testo": "Stringere la mano di Fobos",
+      "riserva": "Dentro l'elicottero stringi la mano di Fobos e vedi un suo ricordo: il massacro, di notte; un uomo vestito di porpora abbassa il fucile, e nel casco una voce grida «Aratare». Per Fobos sono solo lampi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Hai visto il ricordo di Fobos: il massacro e un uomo vestito di porpora.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C15d6"
+      ],
+      "fonte": "P6 (P*: il gesto è del giocatore) [V2 0/2 r.411-461]; l'uomo resta senza nome (18)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C15_rika_1",
+     "C15_rika_2"
+    ],
+    "risoluzione": [
+     "C15d1",
+     "C15d2",
+     "C15d3",
+     "C15d4",
+     "C15d5",
+     "C15d6",
+     "C15d7"
+    ]
+   },
+   "required_beats": [
+    "C15_rika_1",
+    "C15_rika_2",
+    "C15d1",
+    "C15d2",
+    "C15d3",
+    "C15d4",
+    "C15d5",
+    "C15d6",
+    "C15d7"
+   ],
+   "optional_beats": [
+    "C15x1",
+    "C15x2",
+    "C15_rika_3",
+    "C15_rika_4"
+   ],
+   "riserva_libera": "L'elicottero ronza piano; nessuno alza la voce.",
+   "uscita_fail_forward": "Se la scena si ferma, al mattino Rika vi porta comunque all'ingresso di Istros."
+  },
+  "C16": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C16x1",
+     "testo": "Avvicinarti all'ingresso del villaggio",
+     "riserva": "«Tu sei una figlia di cenere?» chiede un uomo, e vi lascia passare. Ti mostrano una tenda come quella di Lachesì. «Abbiamo conservato la vostra dimora, sorella. Ora che entrambe le sorelle guardiane sono tornate lo squarcio si chiuderà.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "A Istros ti riconoscono come figlia di cenere.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 0/2 r.496-515]"
+    },
+    {
+     "id": "C16x2",
+     "testo": "Camminare per Istros con Fobos",
+     "riserva": "Mentre camminate hai dei lampi di ricordi di tua madre, e Fobos ti tiene per mano. «Non è usuale che una donna di cenere cammini per mano insieme ad un altro uomo» dice la guida. «Sì, di solito le donne di cenere hanno la loro unione con i loro guardiani.» Fobos dice che Er lo ha nominato araldo; per la guida è quasi una bestemmia: «Chiarirete questa cosa una volta arrivati al tempio.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C16x1"
+     ],
+     "fonte": "L [V2 0/2 r.525-540]",
+     "scopo": "Fobos mente per proteggerla"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "kidemos",
+     "apertura": "Kidemos ti guarda, grave.",
+     "chiusura": "Kidemos torna a guardare il monte.",
+     "riserva_libera": "«A voi il compito di scriverlo allora» dice Kidemos.",
+     "argomenti": [
+      {
+       "id": "C16_kidemos_1",
+       "testo": "Chiedere a Kidemos di essere più gentile con Fobos",
+       "riserva": "Chiedi a Kidemos di essere più gentile con Fobos, e Fobos si scusa con lui.",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "fobos",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "C16d2"
+       ],
+       "fonte": "L [V2 0/2 r.742-745]: nella fonte viene dopo il tempio, qui dopo «Lui è impuro» (PROPOSTA)",
+       "scopo": "difendere Fobos"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Alla scogliera vi aspetta Kidemos, il guardiano e capo del villaggio: si inchina e ti dà il bentornato.",
+    "fonte": "[V2 0/2 r.542]",
+    "esplora": [
+     {
+      "id": "C16d1",
+      "testo": "Seguire Kidemos ai piedi del monte",
+      "riserva": "Lungo un grande ponte attraversate la baia, in poco più di un'ora. Ai piedi del monte Kidemos ti mostra la sua mano, che diventa roccia: è un figlio di gaia, un guardiano. «Coloro che difenderanno l'accesso all'oltre. Io sarò il tuo guardiano, se me lo permetterai.»",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P2 [V2 0/2 r.548, r.572-576]"
+     },
+     {
+      "id": "C16d2",
+      "testo": "Dire a Kidemos che hai già qualcuno che ti protegge",
+      "riserva": "«Lui è impuro» dice Kidemos, guardando Fobos. «Il suo cammino non è destinato a te, non per quanto è scritto.»",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C16d1"
+      ],
+      "fonte": "P2 (P*: la risposta è del giocatore) [V2 0/2 r.577-582]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C16x1"
+    ],
+    "risoluzione": [
+     "C16d1",
+     "C16d2"
+    ]
+   },
+   "required_beats": [
+    "C16x1",
+    "C16d1",
+    "C16d2"
+   ],
+   "optional_beats": [
+    "C16x2",
+    "C16_kidemos_1"
+   ],
+   "riserva_libera": "La gente di Istros vi guarda passare, in silenzio.",
+   "uscita_fail_forward": "Se la scena si ferma, Kidemos vi porta comunque al tempio dell'arkè."
+  },
+  "C17": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C17x1",
+     "testo": "Dire a Kidemos che hai delle cose da fare, ma che tornerai",
+     "riserva": "Kidemos si incupisce. «Perché? A noi serve la vostra guida.» Quando sente che tornerai: «Beh spero che guardiate sempre da lontano qui.» Poi si china un momento e ti canta una sorta di ninna nanna: una cosa calda, che ti riporta a quando te la cantava Crio.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "P1 (P*: la risposta è del giocatore) [V2 0/3 r.4-10]"
+    },
+    {
+     "id": "C17x2",
+     "testo": "Raggiungere Fobos",
+     "riserva": "Fobos sta chiedendo a Kidemos delle spade più lunghe. «Ve le faremo avere.» Poi viene da te. «Non mi hanno dato il permesso di dormire con te.» Ridacchia. «Sai, forse è un po'… la stessa cosa che sta succedendo a me. Da quando ho smesso di prendere le mie medicine…» Gli trema parecchio la mano. «Sto cercando di sfogarlo.» Quando si toglie il poncho vedi che ha conservato una placca metallica, con scritto «Delta 15».",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Fobos ha smesso le medicine, e gli trema la mano.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "C17x1"
+     ],
+     "fonte": "P1 [V2 0/3 r.11-61]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "elek",
+     "apertura": "Elek ti guarda come se non riuscisse a smettere.",
+     "chiusura": "Elek ti stringe le mani, e ti lascia andare.",
+     "riserva_libera": "«A volte il fato ci coglie impreparati» dice Elek.",
+     "argomenti": [
+      {
+       "id": "C17_elek_1",
+       "testo": "Raccontare a Elek della tua vita fra i Chorisfos",
+       "riserva": "«Ti hanno cresciuto bene?» ti chiede Elek, e ti prende le mani: «Quanti calli.» Quando gli parli dei Chorisfos: «La nostra gente, vorrai dire.» E poi: «Permettimi di tenerti qui, al sicuro.»",
+       "effetti": [
+        {
+         "relazione": {
+          "png": "elek",
+          "delta": 1
+         }
+        }
+       ],
+       "richiede": [
+        "C17d1"
+       ],
+       "prima_di": [
+        "C17d2"
+       ],
+       "fonte": "L [V2 0/3 r.196-224] (aggiunto, PROPOSTA)",
+       "scopo": "lo zio"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Arriva a Istros un gruppo armato, numeroso. Althea ti raggiunge: «Stanno cercando te».",
+    "fonte": "[V2 0/3 r.160-161]",
+    "esplora": [
+     {
+      "id": "C17d1",
+      "testo": "Andare incontro al capo del gruppo",
+      "riserva": "Il capo del gruppo piange. «Sorella.» Poi: «Sei sua figlia vero?» Hai dei lampi di lui che saluta tua madre, e riconosci il ciondolo. «L'ho sempre saputo.» «Si, sono tuo zio.» È Elek, il fratello di Eleanor.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Elek, il fratello di tua madre, è tuo zio.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "[V2 0/3 r.160-174]"
+     },
+     {
+      "id": "C17d2",
+      "testo": "Ascoltare che cosa ti ha portato Elek",
+      "riserva": "«Non sono più un guardiano» dice Elek. «Di tua nonna, Ananke. Mi ha detto che ti avrei dovuto dare qualcosa, che saresti tornata un giorno. Per me è un sollievo.» Ti mette fra le mani un cubo, di una forma pura, senza imperfezioni: a toccarlo sembra telonio. «Lei mi ha detto che con te avrebbe parlato.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Elek ti ha portato il cubo di tua nonna Ananke.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C17d1"
+      ],
+      "fonte": "[V2 0/3 r.186-235]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C17x1",
+     "C17x2"
+    ],
+    "risoluzione": [
+     "C17d1",
+     "C17d2"
+    ]
+   },
+   "required_beats": [
+    "C17x1",
+    "C17x2",
+    "C17d1",
+    "C17d2"
+   ],
+   "optional_beats": [
+    "C17_elek_1"
+   ],
+   "riserva_libera": "A Istros la gente lavora alle fucine e ai telai; qualcuno si volta a guardarti.",
+   "uscita_fail_forward": "Se la scena si ferma, Elek ti mette comunque il cubo fra le mani."
+  },
+  "C18": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C18x1",
+     "testo": "Proporre di atterrare a distanza di sicurezza",
+     "riserva": "Rika fa un cenno con il capo. Prima di scendere ti ferma: «Tu stai dietro di me.» Poi, a te e a Fobos: «Non guardate dentro quella roba, Sebastian registra tutto.»",
+     "fase": "exploration",
+     "effetti": [],
+     "prima_di": [
+      "C18x2"
+     ],
+     "fonte": "L [V2 Cap.26 r.31-34]",
+     "scopo": "proteggere il gruppo; un testimone"
+    },
+    {
+     "id": "C18x2",
+     "testo": "Scendere per le strade con Fobos",
+     "riserva": "Il gruppo si aggira per le strade. Fobos guida la marcia verso la luce con gli occhi accesi, e la terra accanto a lui si muove vorticosamente. «Inizio a ricordare qualcosa.» Guarda un edificio a est, e sopra compaiono due bambini di polvere. «Da lì osservavamo l'oceano.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "A Memno Fobos comincia a ricordare.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.26 r.37-40]"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Le strade si popolano di figure di polvere: bambini, artigiani, una figura femminile. Poi la gente comincia a scappare e cade a terra come polvere; altri li uccidono figure in armatura. «Sta ricostruendo gli eventi di quel massacro» dice Sebastian, e Rika lo zittisce.",
+    "fonte": "[V2 Cap.26 r.41-44]",
+    "esplora": [
+     {
+      "id": "C18d1",
+      "testo": "Ascoltare Fobos",
+      "riserva": "«Quella notte mia madre mi disse che stavo sognando, che era soltanto un incubo» dice Fobos. «Mi diede il ciondolo e mi disse di rimanere nascosto, che presto sarebbe finito tutto. Quando uscii vidi che le strade erano ricoperte di cadaveri e sangue, delle figure nere stavano ammazzando chiunque, erano chorisfos… era Reiki.» Poi: «Quella rabbia, ecco da dove proviene.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "A Memno il massacro lo hanno fatto i Chorisfos: era Reiki.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P3 [V2 Cap.26 r.45-48]"
+     },
+     {
+      "id": "C18d2",
+      "testo": "Avvicinarti allo squarcio",
+      "riserva": "Ormai quasi davanti allo squarcio Rika ti tiene dietro di sé. Gli edifici si tramutano in polvere e generano degli aratare; si susseguono scene di questi theras contro il gruppo armato, che viene decimato. In mezzo alle figure di fumo c'è un bambino in piedi che sembra urlare al cielo. «Ora so cosa devo fare, devono pagare per quello che hanno fatto» dice Fobos.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C18d1"
+      ],
+      "fonte": "P4 e P5 [V2 Cap.26 r.49-50]; il bambino non si collega al sogno (DEDOTTO)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C18x2"
+    ],
+    "risoluzione": [
+     "C18d1",
+     "C18d2"
+    ]
+   },
+   "required_beats": [
+    "C18x2",
+    "C18d1",
+    "C18d2"
+   ],
+   "optional_beats": [
+    "C18x1"
+   ],
+   "riserva_libera": "Per le strade di Memno non c'è nessuno: solo la luce, al centro.",
+   "uscita_fail_forward": "Se la scena si ferma, Fobos va comunque verso lo squarcio."
+  },
+  "C19": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C19x1",
+     "testo": "Scendere dall'elicottero",
+     "riserva": "Una volta scesi ritrovate i vostri, e ad attendervi c'è Crio insieme a Er, con duecento Chorisfos. «Fateli passare» dice Crio. «Er mi ha già anticipato qualcosa, ora ditemi cosa ci fa mia figlia con voi?»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "A Kaledos ti aspettano tuo padre ed Er, con duecento Chorisfos.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.26 r.128-130]"
+    },
+    {
+     "id": "C19x2",
+     "testo": "Ascoltare che cosa risponde Rika",
+     "riserva": "Rika gli si rivolge con un cubo fra le mani: «è vero che siamo in disparità numerica ma se vuoi leggere questo affare dovrai tenerci in vita e ascoltare le parole che il nostro capo ha da dirti.» Poi: «tua figlia è nostra ospite al momento, ti basta come risposta?» Crio consegna il cubo a uno dei suoi uomini. «Possiamo parlare ora.» «Lo faremo altrove, tu dovrai seguirci» risponde Rika.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C19x1"
+     ],
+     "fonte": "P3 [V2 Cap.26 r.131-136]"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "«Generale non trovo opportuno seguirli, se volessimo li avremmo già uccisi tutti» dice uno dei soldati di Crio. «Ma noi non siamo theras, uccidere non è la risposta a tutto» risponde Crio.",
+    "fonte": "P4 [V2 Cap.26 r.137-138]",
+    "esplora": [
+     {
+      "id": "C19d1",
+      "testo": "Restare a sentire che cosa decide Crio",
+      "riserva": "«Tornate a Sud, con quei mezzi potremmo andare ovunque non sareste in grado di rintracciarmi» dice Crio ai suoi. «Lasciatemi quantomeno una scorta fidata.» «Come vuoi, ma mi devi dare del tempo prima di salire» dice Rika. «Scusate i suoi modi generale, ma abbiamo bisogno di prendere le nostre precauzioni al momento» aggiunge Althea. Crio fa un cenno con la testa: «andate a fare rapporto, non staremo molto con loro.» Poi si avvicina a te. «Possiamo parlare in privato?» Si toglie il casco.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P4 e P5 [V2 Cap.26 r.139-145]; «a fate» della fonte [r.143] corretto in «a fare»"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C19x1",
+     "C19x2"
+    ],
+    "risoluzione": [
+     "C19d1"
+    ]
+   },
+   "required_beats": [
+    "C19x1",
+    "C19x2",
+    "C19d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "I duecento Chorisfos di Crio aspettano.",
+   "uscita_fail_forward": "Se la scena si ferma, Crio ti chiede comunque di parlare in privato."
+  },
+  "C20": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C20x1",
+     "testo": "Restare accanto a tuo padre nel cortile",
+     "riserva": "«La ragazza dov'è?» chiede Crio. «arriverà tra qualche giorno, si è trattenuta a Lechta, era convinta che tu fossi lì e voleva impedire che ci morissi» risponde Erebo. Prima che tu vada a parlare con quelli della tua vecchia squadra, Crio gli chiede: «Dimmi una cosa, siete in grado di proteggere i popoli esterni?» «Cerchiamo di salvare chiunque, persino voi da voi stessi.» «Detto da un Chorisfos… suona strano» risponde Crio, con un mezzo sorriso.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Alla base dei Dexia aspettano Hope, che si è trattenuta a Lechta.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.26 r.170-180]; «li» della fonte [r.171] corretto in «lì»"
+    },
+    {
+     "id": "C20x2",
+     "testo": "Guardare chi arriva dal mare",
+     "riserva": "Astrapios torna alla base, e in molti accolgono Hope. Una volta sbarcata, parla ai soldati eporiani e alla gente della base, camminando avanti e indietro come per raggiungere lo sguardo di tutti: «Ascoltatemi bene tutti, al momento Lechta è nostra, ci sostiene con un piccolo contingente militare, fate in modo che si sentano a casa propria.» Poi: «Qua dentro sarete prima di tutto uomini, poi soldati, spero che ci sia un clima di convivenza tra di noi e che siate a vostro agio.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Hope e Astrapios sono arrivati alla base dei Dexia.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "C20x1"
+     ],
+     "fonte": "P2 [V2 Cap.27 «She» r.65-70]; «sbarcati» della fonte [r.66]: il porto della base [V2 Cap.30]"
+    },
+    {
+     "id": "C20x3",
+     "testo": "Aspettare al cortile chi rientra",
+     "riserva": "Sei lì ad aspettare i compagni che rientrano, come se già sapessi. Rientrano con moltissime persone di natura iberica, e raggiungono Hermes.",
+     "fase": "exploration",
+     "effetti": [],
+     "prima_di": [
+      "C20x2"
+     ],
+     "fonte": "[V2 Cap.27 «Backfire» r.26-27]",
+     "scopo": "il dono"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "hope",
+     "apertura": "Hope ti guarda negli occhi, decisa.",
+     "chiusura": "Hope torna a guardare tuo padre.",
+     "riserva_libera": "Hope scuote la testa: su questo non sa niente.",
+     "argomenti": [
+      {
+       "id": "C20_hope_1",
+       "testo": "Chiedere a Hope che cosa volete fare",
+       "riserva": "«Voglio liberarli tutti» dice Hope. «Eliminando i chip e mostrandogli cosa c'è all'esterno. Con i caschi. Mostrargli la verità.»",
+       "effetti": [],
+       "richiede": [
+        "C20d1"
+       ],
+       "fonte": "P4 [28_Eidos r.236-248]: la domanda è di Nephele (P*)"
+      },
+      {
+       "id": "C20_hope_2",
+       "testo": "Chiedere a Hope che cos'è Dinamo, e che cosa vuol dire gestire",
+       "riserva": "«Il progetto per creare queste uscite controllate» ti rispondono. «Attraverso i caschi verrebbero diffuse alcune informazioni, i caschi possono interfacciarsi ai sistemi, esattamente come ci si poteva interfacciare con il satellite.» Quando parli di controllo mentale, Hope è netta: «Non è la nostra intenzione. Ciò che stiamo cercando di dargli è la libertà di essere loro stessi. Senza di questo non potranno mai esserlo.»",
+       "effetti": [],
+       "richiede": [
+        "C20d2"
+       ],
+       "fonte": "P4 [28_Eidos r.269-280] (la spiegazione di Dinamo è di Astrapios [r.270-272]: si scrive «ti rispondono»); «controllo mentale» è la parola di Nephele [r.278] (P*)"
+      },
+      {
+       "id": "C20_hope_3",
+       "testo": "Parlare con Hope di Kaledos",
+       "riserva": "Si parla di Adrasteia, che ora è il capo di Kaledos, e di Er. «Er non è una Moira.» «L'ho conosciuto» dice Hope. «Ero una ragazzina.. vabbè, sono storie di un'altra chiacchierata.»",
+       "effetti": [],
+       "richiede": [
+        "C20d1"
+       ],
+       "prima_di": [
+        "C20d6"
+       ],
+       "fonte": "[28_Eidos r.361-371]: chi dica «Er non è una Moira» non è certo, quindi la battuta non ha parlante",
+       "scopo": "Kaledos"
+      }
+     ]
+    },
+    {
+     "png": "crio",
+     "apertura": "Tuo padre ti resta vicino.",
+     "chiusura": "Crio annuisce, e non aggiunge altro.",
+     "riserva_libera": "Crio non risponde: guarda il cortile.",
+     "argomenti": [
+      {
+       "id": "C20_crio_1",
+       "testo": "Parlare con tuo padre dei generali chorisfos",
+       "riserva": "Tuo padre ti parla dei generali: Pagonia, di Cratalis, che è cieca; Sfairo, di Taecle, con una cicatrice sul collo; Kenra, di Eutifer, che ha una postura e un portamento diversi da quelli degli altri; e Cratero, di Apologeti.",
+       "effetti": [],
+       "prima_di": [
+        "C20d6"
+       ],
+       "fonte": "[V2 Cap.27 r.13-17]: gli argomenti della scena libera con Crio («Kehnra» della fonte si scrive Kenra, come in [28_Eidos r.258]); che li dica Crio è DEDOTTO; i numeri accanto ai nomi non si usano",
+       "scopo": "il padre"
+      }
+     ]
+    },
+    {
+     "png": "syevert",
+     "apertura": "Syevert guarda in alto, verso la pioggia.",
+     "chiusura": "Syevert torna a guardare l'acqua.",
+     "riserva_libera": "Syevert sorride appena, senza rispondere.",
+     "argomenti": [
+      {
+       "id": "C20_syevert_1",
+       "testo": "Chiedere a Syevert dei canti e del destino",
+       "riserva": "«Per ora voglio soltanto godermi questa pioggia, sentirla sulla mia pelle prima che arrivi la tempesta» dice Syevert.",
+       "effetti": [],
+       "richiede": [
+        "C20x2"
+       ],
+       "fonte": "[V2 Cap.27 r.19-23] (argomenti della scena libera); la risposta è la sua battuta [r.110]: il contenuto del dialogo non è scritto",
+       "scopo": "i canti"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Piove. Syevert è in mezzo alla pioggia, e uno dei ragazzi lo strattona per farlo rientrare, poi lo molla. Syevert fissa l'acqua che cade. «A breve cadranno i fulmini, e gli incubi torneranno ad affiorare.»",
+    "fonte": "P3 [V2 Cap.27 «The storm is coming» r.105-108] (raccontato)",
+    "esplora": [
+     {
+      "id": "C20d1",
+      "testo": "Entrare nello studio con tuo padre",
+      "riserva": "Hermes vi accompagna in uno studio; Erebo spegne una sigaretta, e c'è anche Hope, piuttosto decisa. Astrapios va a mettersi dietro di lei, e lui e tuo padre cercano di non guardarsi. «Quanto tieni ai tuoi uomini?» chiede Hope a Crio. «Più di quanto pensi.» «Dobbiamo evitare che succeda.. un'altra Critto. Ti è chiaro, si?» «Non ero io al comando, perciò?» Quando la discussione si accende, Hope aggiunge: «So cosa hai fatto a Istros e anche a Kaledos. E' di quella persona che ho bisogno.»",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P4 [28_Eidos r.212-219, r.231]; la difesa del padre [r.222] è di Nephele (P*): le parole le mette il giocatore"
+     },
+     {
+      "id": "C20d2",
+      "testo": "Ascoltare che cosa dice tuo padre di Cratero",
+      "riserva": "«Come già sta facendo Kenra?» chiede Crio, e Hope annuisce: «Si, in parte.» «E' una di voi quindi? Lo sospettavo. Fammi convincere Pagonia. Cratero va eliminato. Sta portando a ovest tutti i soldati che ha. Tutti i soldati.» «Sta cercando uno scontro aperto con gli Epizi.» «Che tipo di battaglia?» «Non è una battaglia, è una guerra.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Cratero porta a ovest tutti i soldati che ha: tuo padre vuole che sia eliminato.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C20_hope_1"
+      ],
+      "fonte": "P5 [28_Eidos r.258-264]; «Kehnra» [V2 Cap.27] si scrive Kenra"
+     },
+     {
+      "id": "C20d3",
+      "testo": "Cercare il filo di Cratero attraverso tuo padre",
+      "riserva": "«Dove è Cratero ora?» chiede Erebo. «Penso sia sul campo» risponde Crio. Accendi gli occhi e, attraverso tuo padre, cerchi il filo di Cratero: ci metti un po', ma lo vedi dentro una città piena di fuochi, diretto a ovest. «E' a Synoro?» chiede Hope. Continui a scorrere il filo, e ti senti sempre più pesante; fra molte persone vedi anche Suna. «{Dategli una sedia|Datele una sedia|Date una sedia}» dice Hope, visibilmente preoccupata, e ti fa sedere.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nel filo di tuo padre hai visto Cratero in una città piena di fuochi, diretto a ovest.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C20_hope_2"
+      ],
+      "fonte": "P6 (P*: accendere gli occhi è un gesto del giocatore) [28_Eidos r.285-297]"
+     },
+     {
+      "id": "C20d4",
+      "testo": "Mostrare la visione del deserto",
+      "riserva": "Mostri a tuo padre e a Hope il paesaggio desertico dello scontro fra tutte e tre le fazioni. Hope inizia a piangere, e Astrapios le appoggia una mano sulla spalla. Nessuno conosce quel posto. «E' così buio.» «Si deve impedire» dice Astrapios. «Sono stufo di sentire questa frase» dice Crio. «Le cose andranno come decideremo noi.»",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C20d3"
+      ],
+      "fonte": "P6 (P*: mostrare la visione è un gesto del giocatore) [28_Eidos r.378-387]"
+     },
+     {
+      "id": "C20d5",
+      "testo": "Proporre dove lasciare tuo padre",
+      "riserva": "«Apologeti è centrale, qualsiasi città è vicina ad essa» dice Crio. Quando nomini Fidon, annuisce: «Si, hai ragione. Tu verrai con me?» Poi guarda Hope, molto serio: {«Hope.. lo lascio a te.»|«Hope.. la lascio a te.»|ti affida a lei.} {«Io sono stato un suo compagno e non ho intenzione di perderlo» dice Astrapios.|«Io sono stato un suo compagno e non ho intenzione di perderla» dice Astrapios.|Astrapios, che è stato un tuo compagno, se ne prende la responsabilità.} «Non ho intenzione di perderti» ti dice Crio.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C20d4"
+      ],
+      "fonte": "P7 (P*: la proposta di Fidon [28_Eidos r.401] e la risposta a Crio [r.403] sono del giocatore) [28_Eidos r.400-409]; nella forma neutra le battute con il genere [r.404-405] diventano racconto (Crio la affida a Hope, Astrapios se ne prende la responsabilità [r.406-407])"
+     },
+     {
+      "id": "C20d6",
+      "testo": "Accompagnare tuo padre all'elicottero",
+      "riserva": "Alla zona d'imbarco ci sono gli altri Chorisfos incappucciati e qualche infiltrato. «Stammi bene» ti dice Crio. Ti dà un bacio sulla guancia e ti stringe molto forte, poi porge la mano ad Astrapios e se la stringono alla maniera chorisfos. L'elicottero parte.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Tuo padre è partito in elicottero dalla base dei Dexia.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C20d5"
+      ],
+      "fonte": "P8 [28_Eidos r.448-451]; «da lui» è Elek: la promessa di riportarlo a Istros [r.450] è di Nephele (P*) e resta al giocatore"
+     },
+     {
+      "id": "C20d7",
+      "testo": "Andare verso il giardino",
+      "riserva": "Nei giorni che seguono senti qualcuno suonare vicino al giardino, e la voce di Sebastian. Parlate un po' del più e del meno.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C20d6"
+      ],
+      "fonte": "P9 [V2 Cap.29 r.62-63] (scena libera: il contenuto non è scritto)"
+     },
+     {
+      "id": "C20d8",
+      "testo": "Guardare il filo di Foeh, come ti chiede Ligo",
+      "riserva": "Ligo ti chiede di Foeh, se sai qualcosa su come andrà per lei. Nel suo filo la vedi morire, uccisa durante una battaglia, fradicia e completamente malconcia: una donna la uccide soffocandola mentre la pugnala al cuore. «Posso cambiarlo vero?» chiede Ligo.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nel filo di Foeh hai visto la sua morte in battaglia: è una visione.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C20d7"
+      ],
+      "fonte": "P10 (P*: guardare il filo è un gesto del giocatore) [V2 Cap.29 r.64-68; Cap.30 r.62-65]; la risposta a Ligo non è scritta ([V2 Cap.29 r.69] è vuota)"
+     },
+     {
+      "id": "C20d9",
+      "testo": "Andare al consiglio di guerra",
+      "riserva": "La mattina seguente c'è il consiglio. «Statemi a sentire, Hermes ha ricevuto informazioni dal nord, al momento un grosso contingente si muove all'interno della conca tra i monti» dice Erebo. «Phlegetia sarà la nostra seconda base, lì abbiamo i gruppi capitanati da Hermes.» Hope parla dei nuovi prototipi: «armature nuove e capaci di adattarsi completamente al corpo, le gemme vengono poste all'interno, li chiamano gli effyis (luminosi).» Si decide di partire al volo verso il nord, ad aiutare i compagni infiltrati.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Il consiglio di guerra ha deciso: si parte per il nord.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C20d8"
+      ],
+      "fonte": "P11 [V2 Cap.29 r.82-97, r.119], senza l'elenco delle operazioni [r.102-108]; «li abbiamo» della fonte [r.90] corretto in «lì abbiamo»"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C20x1",
+     "C20x2"
+    ],
+    "risoluzione": [
+     "C20d1",
+     "C20_hope_1",
+     "C20d2",
+     "C20_hope_2",
+     "C20d3",
+     "C20d4",
+     "C20d5",
+     "C20d6",
+     "C20d7",
+     "C20d8",
+     "C20d9"
+    ]
+   },
+   "required_beats": [
+    "C20x1",
+    "C20x2",
+    "C20d1",
+    "C20_hope_1",
+    "C20d2",
+    "C20_hope_2",
+    "C20d3",
+    "C20d4",
+    "C20d5",
+    "C20d6",
+    "C20d7",
+    "C20d8",
+    "C20d9"
+   ],
+   "optional_beats": [
+    "C20x3",
+    "C20_hope_3",
+    "C20_crio_1",
+    "C20_syevert_1"
+   ],
+   "riserva_libera": "Alla base dei Dexia c'è sempre qualcuno che va e viene.",
+   "uscita_fail_forward": "Se la scena si ferma, il consiglio di guerra decide comunque di partire per il nord."
+  },
+  "C21": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C21x1",
+     "parte": "la parte centrale dei boschi",
+     "testo": "Restare sul mezzo per il viaggio",
+     "riserva": "Sebastian, scocciato, si siede e resta muto. Sono tre giorni di viaggio, con pochissime ore di sonno. Poi, dopo tre giorni di calma, raggiungete la parte centrale dei boschi.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Dopo tre giorni di viaggio siete nella parte centrale dei boschi.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.31 r.62-63]"
+    },
+    {
+     "id": "C21x2",
+     "testo": "Chiamare Erebo durante la sosta",
+     "riserva": "«Erebo, qui al momento tutto ok, hai avuto notizie dalla base?» chiede Rika. Erebo si sente un po' distorto: «No… Qui abbiamo dei problemi, Phlegethia è occupata… Chorisfos, interferenza con» «Erebo?» «Isla si è mossa, state attenti.» «credo che stiano usando le stesse interferenze di Antarsia, è probabile che le abbiano recuperate durante il confitto aperto tra le città» dice Sebastian.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Phlegethia è occupata dai Chorisfos, e Isla si è mossa.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "C21x1"
+     ],
+     "fonte": "P3 [V2 Cap.31 r.64-70]"
+    },
+    {
+     "id": "C21x3",
+     "parte": "La strada dalla base dei Dexia",
+     "testo": "Ascoltare Sebastian e Rika",
+     "riserva": "«Non ti preoccupa il fatto che hai lasciato Althea lì?» chiede Sebastian. «Sì dannazione, ma sta a chi tiene la gestione della base tenerli in vita, noi abbiamo il nostro compito» risponde Rika.",
+     "fase": "exploration",
+     "effetti": [],
+     "prima_di": [
+      "C21x1"
+     ],
+     "fonte": "[V2 Cap.31 r.60-61]; «althea li», «Si» e «N-E» della fonte corretti in «Althea lì», «Sì» e «la base»",
+     "scopo": "chi resta indietro"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "«Allora muoviamoci, lasciamo i mezzi qui e iniziamo a dirigerci verso il possibile punto d'incontro» dice Rika.",
+    "fonte": "P4 [V2 Cap.31 r.71]",
+    "esplora": [
+     {
+      "id": "C21d1",
+      "parte": "la parte centrale dei boschi",
+      "testo": "Restare in ascolto con Sebastian",
+      "riserva": "«Shh, zitti tutti, luci…» dice Sebastian. «respiri profondi… sono di fronte a noi, tra meno di 10 minuti saranno qui.» Rika ti guarda: «tieniti {pronto|pronta|all'erta}.» Vedete passare un plotone di soldati che si muove di fretta verso ovest, e fra loro noti Cratero, coperto da alcuni uomini che tengono lo scudo alzato.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nel plotone che passa verso ovest c'è Cratero, coperto dagli scudi.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P4 [V2 Cap.31 r.77-79] e P5 [r.80-81]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C21x1",
+     "C21x2"
+    ],
+    "risoluzione": [
+     "C21d1"
+    ]
+   },
+   "required_beats": [
+    "C21x1",
+    "C21x2",
+    "C21d1"
+   ],
+   "optional_beats": [
+    "C21x3"
+   ],
+   "riserva_libera": "Nei boschi nessuno alza la voce.",
+   "uscita_fail_forward": "Se la scena si ferma, il plotone di Cratero vi passa comunque davanti."
+  },
+  "C22": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [],
+   "dialoghi": [],
+   "sblocco": {
+    "sviluppo": [],
+    "risoluzione": []
+   },
+   "required_beats": [],
+   "optional_beats": [],
+   "riserva_libera": "Nello studio c'è silenzio: tuo padre aspetta che sia tu a parlare.",
+   "uscita_fail_forward": "Se la scena si ferma, tuo padre ti abbraccia comunque prima che vi separino."
+  },
+  "C23": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C23x1",
+     "parte": "Il rientro lungo il bosco",
+     "testo": "Ascoltare che cosa dicono i soldati di Tilo",
+     "riserva": "«maggiore, da sud sentiamo notizie di soldati nemici dai capelli bianchi, propenderei per tornare a Phlegethia» dice un soldato. «sono d'accordo soldato, iniziate a perlustrare il percorso di rientro» risponde Tilo, e ordina di recuperare il corpo di Cratero. Il percorso di rientro costeggia il centro del bosco, tenendosi lontano dallo scontro.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Tilo riporta la colonna, e voi con lei, verso Phlegethia.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.32 r.54-57]; «Plegethia» della fonte [r.54] corretto in «Phlegethia»"
+    },
+    {
+     "id": "C23x2",
+     "parte": "Il rientro lungo il bosco",
+     "testo": "Osservare il percorso verso la città",
+     "riserva": "Avvicinandovi alla città noti degli squarci fra i cadaveri. Alcuni soldati piangono vicino ai caduti, tutti si guardano un po' storto fra loro, e altri recuperano le matricole dai caschi. Alcuni soldati sembrano disertare: scappano dalla zona, inseguiti dalle squadre di recupero. Tilo aiuta a bloccare i fuggiaschi, e Rika ti indica la pistola di uno di loro.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C23x1"
+     ],
+     "prima_di": [
+      "C23x3"
+     ],
+     "fonte": "[V2 Cap.32 r.58-59] (il tiro di osservare della fonte diventa un passo libero)",
+     "scopo": "il prezzo della battaglia"
+    },
+    {
+     "id": "C23x3",
+     "testo": "Seguire la colonna fino a Phlegethia",
+     "riserva": "I fuggiaschi chiedono di unirsi al gruppo e di riportare i disertori e gli ostaggi a Phlegethia insieme a voi. «abbiamo già troppi ostaggi» dice Tilo. «Maggiore potremmo fare scambio con i possibili ostaggi che ha il nostro nemico, possiamo chiedere prima un trattato di scambio, il generale Pagonia potrebbe trattare con loro, mentre questi soldati antarsi potrebbero avere informazioni importanti sui cubi, spetta al generale decidere di loro non crede?» propone uno di loro. «E sia, in caso di ordine contrario sarai tu a risponderne» risponde Tilo, e indica alcuni uomini perché li tengano sotto controllo.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "La colonna di Tilo arriva a Phlegethia con voi e con i fuggiaschi.",
+       "categoria": "indizio"
+      }
+     ],
+     "richiede": [
+      "C23x1"
+     ],
+     "fonte": "P2 [V2 Cap.32 r.60-64]"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "pagonia",
+     "apertura": "Pagonia ti tiene vicino a sé.",
+     "chiusura": "Pagonia annuisce, e torna ai suoi soldati.",
+     "riserva_libera": "Pagonia non risponde: su questo non ti dice niente.",
+     "argomenti": [
+      {
+       "id": "C23_pagonia_1",
+       "testo": "Rispondere a Pagonia su Kenra",
+       "riserva": "Pagonia ti dice che Kenra era con un piccolo gruppo, che si spostava verso lo squarcio al centro del bosco, e che sono stati attaccati. «ho mandato una squadra, il tenente F 3.57932 e la sua squadra non sono più rientrati.»",
+       "effetti": [],
+       "richiede": [
+        "C23d3"
+       ],
+       "prima_di": [
+        "C23d4"
+       ],
+       "fonte": "[V2 Cap.33, «Nomi lavoratori di Newport», r.10-11]: la risposta su Kenra è del giocatore (P*); «Le dirà» della fonte [r.10]: lo dice Pagonia",
+       "scopo": "Pagonia che la protegge (EIDOS.md r.158)"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Raggiungete Phlegethia. Alle porte della città alcuni soldati epizi chiedono pietà, e fra i vostri qualcuno tenta di appoggiare la loro resa. Pagonia li osserva, ne indica due e accoglie gli altri; prende una pistola e fredda i due. Poi si rivolge agli altri, accarezza loro il viso: «voi mi direte tutto ciò che voglio sapere, o sarete i prossimi, intesi?» Si gira verso il gruppo di Tilo, e ti osserva. «quel colore è inconfondibile…»",
+    "fonte": "P3 [V2 Cap.32 r.65-69]",
+    "esplora": [
+     {
+      "id": "C23d1",
+      "parte": "le porte di Phlegethia",
+      "testo": "Ascoltare Pagonia, che vi libera",
+      "riserva": "Pagonia libera le persone che aveva con sé. «voi qui presenti, sarete i suoi occhi e le sue orecchie, qualsiasi cosa stiate facendo non mi importa al momento, vedete piuttosto di non crearmi ulteriori problemi.» E poi: «mi aspetto che vi teniate in contatto, aiutate i Chorisfos che sono con voi a capire che lo abbiamo fatto per proteggerli da loro stessi.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Pagonia vi ha liberati: sarete i suoi occhi e le sue orecchie.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P4 [V2 Cap.33 r.22-24]"
+     },
+     {
+      "id": "C23d2",
+      "parte": "le porte di Phlegethia",
+      "testo": "Andare in disparte con Pagonia",
+      "riserva": "Pagonia ti prende da parte e ti chiede dei generali: non sa se fidarsi del vostro gruppo, ma di te si fida. «se hai notizie di tuo padre vorrei che mi tenessi {informato|informata|al corrente}… solo a lui concedo di mentirmi, so che lo fa per tenerti al sicuro, un giorno capirà che anche io voglio questo per te.» E poi: «Ti ho addestrato a sopravvivere a questo mondo, ora è il momento che tu impari a viverlo da te.» Ti abbraccia, e ti stringe a sé. «Ricordati di buttare fuori l'aria quando scocchi le frecce.»",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C23d1"
+      ],
+      "fonte": "P5 [V2 Cap.33 r.25-29]; «tenessi informata» [r.26] con le forme di genere; che il consiglio sull'arco [r.29] sia di Pagonia è DEDOTTO (nella fonte non ha parlante)"
+     },
+     {
+      "id": "C23d3",
+      "parte": "le porte di Phlegethia",
+      "testo": "Salutare Pagonia prima di partire",
+      "riserva": "Prima di partire Pagonia ti ferma: ti chiede se il gruppo con cui sei ha a che fare con Kenra. Poi: «quindi non sono gli Antarsi a muovere gli Aratare.» Ti si avvicina ancora, protettiva: ti chiede come stai, se i tuoi occhi sono ancora vispi come un tempo, e se hai l'equipaggiamento per il viaggio che devi compiere.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C23d2"
+      ],
+      "fonte": "P6 [V2 Cap.33, «Nomi lavoratori di Newport», r.8-9, r.12-14]; «se è ben equipaggiata» [r.14] riformulato senza forme di genere"
+     },
+     {
+      "id": "C23d4",
+      "testo": "Raggiungere i Dexia",
+      "riserva": "Vi muovete, e vedi il gruppo dei Dexia: Tracy viene trascinata da Agide, e Rika, turbato, ti si avvicina. «ho provato a chiedere se avessero informazioni sull'Aletheya, ma anche se sono stato permissivo non mi hanno voluto dire niente, tu puoi fare quei giochetti da moira? Puoi vedere dov'è?»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Rika ti ha chiesto di cercare l'Aletheya con il tuo dono.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C23d3"
+      ],
+      "fonte": "P7 [V2 Cap.33 r.30-32]; l'esito della richiesta di Rika non è scritto"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C23x1",
+     "C23x3"
+    ],
+    "risoluzione": [
+     "C23d1",
+     "C23d2",
+     "C23d3",
+     "C23d4"
+    ]
+   },
+   "required_beats": [
+    "C23x1",
+    "C23x3",
+    "C23d1",
+    "C23d2",
+    "C23d3",
+    "C23d4"
+   ],
+   "optional_beats": [
+    "C23x2",
+    "C23_pagonia_1"
+   ],
+   "riserva_libera": "I soldati di Tilo non vi perdono di vista.",
+   "uscita_fail_forward": "Se la scena si ferma, la colonna di Tilo vi porta comunque da Pagonia."
+  },
+  "C24": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C24x1",
+     "parte": "Il luogo di raduno del gruppo",
+     "testo": "Ascoltare che cosa vuole fare Rika",
+     "riserva": "Rika trova folle passare attraverso il deserto e i confini chorisfos: piuttosto cercherà di recuperare dei mezzi, o di farli funzionare, per andare a cercare Hope fra gli Epizi. «Ho intenzione di trovare dei mezzi qua e di rubarli, piuttosto dissotterro quegli affari nel deserto e uso quelli, ma io vado a salvarla.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Rika vuole andare a cercare Hope fra gli Epizi.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.34 r.18, r.21]"
+    },
+    {
+     "id": "C24x2",
+     "parte": "Il luogo di raduno del gruppo",
+     "testo": "Restare accanto ad Astrapios mentre Rika se la prende con lui",
+     "riserva": "«era compito tuo proteggerla, assicurarti che quel posto non subisse un attacco e invece che hai fatto? Gli hai permesso di distruggere nuovamente la loro casa e le persone a cui erano legate queste persone… lasciar morire migliaia di Dexia, per non parlare di Hope» dice Rika ad Astrapios. E poi: «Cazzo se non fosse stato Erebo a garantire per te non saprei se prenderti come una spia che vuole annientarci dall'interno.»",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C24x1"
+     ],
+     "prima_di": [
+      "C24x3"
+     ],
+     "fonte": "[V2 Cap.34 r.23, r.25]; il taglio «…» toglie una parte della battuta di r.23 (anche il paragone con i russi, termine moderno: guida di stile)",
+     "scopo": "la colpa"
+    },
+    {
+     "id": "C24x3",
+     "parte": "Il luogo di raduno del gruppo",
+     "testo": "Ascoltare Sebastian",
+     "riserva": "Sebastian lo ferma: «Rika stai esagerando adesso… Nephele, Astrapios… noi andremo a cercare Hope, cercate di stabilire un punto di contatto e noi faremo lo stesso, non possiamo seguirvi a noi interessa recuperarla più di ogni altra cosa al momento.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Il gruppo si divide: Rika e Sebastian vanno a cercare Hope.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "richiede": [
+      "C24x1"
+     ],
+     "fonte": "P1 [V2 Cap.34 r.27]; «Rikà» della fonte si scrive Rika, i nomi dei PG sono quelli nuovi"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il gruppo si divide, e tu ti avvii verso il recupero di Fobos.",
+    "fonte": "P2 [V2 Cap.35 r.25] (indicazione di regia della fonte, raccontata)",
+    "esplora": [
+     {
+      "id": "C24d1",
+      "parte": "Il luogo di raduno del gruppo",
+      "testo": "Decidere con Astrapios di aprirvi un varco verso nord",
+      "riserva": "Con Astrapios decidete di lavorare per aprirvi un varco e andare a nord. Ethae convince i disertori ad andare con la gente di Agide: chiunque vuole vivere dovrà promettere di adattarsi a queste persone e al loro modo di vivere. Lei però resta: «io non verrò con voi, ho trovato mio fratello e vorrei stargli accanto per recuperare ciò che non abbiamo mai vissuto come una famiglia.» «Thomas ci lascerà una mappa per raggiungere il luogo, lì vi sono informazioni utili sui posti come i theras presenti, tipologia di cibo e simili» dice Agide.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Con Astrapios andrete a nord; Ethae resta con voi.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P3 (P*: la decisione è del giocatore) [V2 Cap.36 r.3-4, r.7-8]; le battute di r.7 e r.8 sono tagliate alla fine; «li vi sono» della fonte [r.8] corretto in «lì vi sono»"
+     },
+     {
+      "id": "C24x4",
+      "parte": "Il luogo di raduno del gruppo",
+      "testo": "Ascoltare Ethae che parla ai disertori",
+      "riserva": "«userete le armi per proteggere voi e loro, non contro di loro… siete disertori ma non siete carnefici» dice Ethae ai disertori. «avete sentito la voce, con noi potrete vivere all'esterno, avere famiglia e avere un futuro, potrete conoscere voi stessi e apprendere da noi gli strumenti utili ad essere persone di pace e non solo soldati» aggiunge Agide.",
+      "fase": "resolution",
+      "effetti": [],
+      "prima_di": [
+       "C24d2"
+      ],
+      "fonte": "[V2 Cap.36 r.5-6]; «£» della fonte [r.5] tolto",
+      "scopo": "i ribelli (EIDOS.md r.21)"
+     },
+     {
+      "id": "C24d2",
+      "testo": "Seguire Ethae e gli scout fino allo squarcio",
+      "riserva": "Ethae prende un piccolo gruppo di scout con l'aletheya mati. Durante il cammino parla con suo fratello: «hermano, mi hai chiesto di farti delle domande visto che sono interessata a conoscerti meglio… posso fartene qualcun'altra?» E poi: «perché tu non mi chiedi niente?» Arrivate allo squarcio, e i soldati con l'aletheya mati imbragano te e Astrapios agli alberi.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Gli scout vi hanno imbragati agli alberi, vicino allo squarcio.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C24d1"
+      ],
+      "fonte": "P4 [V2 Cap.36 r.9-13]"
+     },
+     {
+      "id": "C24d3",
+      "parte": "uno squarcio fra gli alberi a nord",
+      "testo": "Avvicinarti allo squarcio con Astrapios",
+      "riserva": "Una volta vicini, Astrapios sente del calore sulla schiena, e un fulmine esce dallo squarcio e lo colpisce.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Un fulmine è uscito dallo squarcio e ha colpito Astrapios.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C24d2"
+      ],
+      "fonte": "P5 [V2 Cap.36 r.66]; quello che Astrapios vede dopo il fulmine (Hope che canta, poi l'interno dello squarcio) è del suo filo"
+     },
+     {
+      "id": "C24d4",
+      "parte": "uno squarcio fra gli alberi a nord",
+      "testo": "Cercare Fobos",
+      "riserva": "Ritrovi Fobos. Ti chiede quanto tempo è passato: per lui sembra essere passato parecchio più tempo. «volevo punirmi, non ho bevuto perché volevo punirmi per quello che ho fatto.» Poi ti chiede di cantare.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Hai ritrovato Fobos: ti ha chiesto di cantare.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C24d3"
+      ],
+      "fonte": "P6 [V2 Cap.36 r.69-70] e la richiesta di P7 [r.72]; che l'incontro sia dentro lo squarcio è DEDOTTO e non si scrive"
+     },
+     {
+      "id": "C24x5",
+      "parte": "uno squarcio fra gli alberi a nord",
+      "testo": "Chiedere a Fobos perché non è tornato",
+      "riserva": "«non sapevo se tu eri {vivo|viva|ancora in vita}, è passato troppo tempo, ho smesso di crederci e poi ho semplicemente avuto paura di tornare… tornare lì senza di voi, senza qualcuno da cui tornare quel mondo non mi apparteneva più» dice Fobos.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C24d4"
+      ],
+      "fonte": "[V2 Cap.36 r.71]; «eri viva» con le forme di genere; «li» della fonte corretto in «lì»",
+      "scopo": "perché non è tornato"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C24x1",
+     "C24x3"
+    ],
+    "risoluzione": [
+     "C24d1",
+     "C24d2",
+     "C24d3",
+     "C24d4"
+    ]
+   },
+   "required_beats": [
+    "C24x1",
+    "C24x3",
+    "C24d1",
+    "C24d2",
+    "C24d3",
+    "C24d4"
+   ],
+   "optional_beats": [
+    "C24x2",
+    "C24x4",
+    "C24x5"
+   ],
+   "riserva_libera": "Intorno a voi il gruppo si prepara a dividersi.",
+   "uscita_fail_forward": "Se la scena si ferma, gli scout vi portano comunque allo squarcio, dove ritrovi Fobos."
+  },
+  "C25": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C25x1",
+     "testo": "Parlare con Loke",
+     "riserva": "Ti metti a parlare con Loke, mentre Tracy parla con Astrapios di Hope.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "P2 [V2 Cap.40 r.36-37] (il dialogo con Loke non è scritto); L Tracy [r.36], senza battute nella fonte"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "astrapios",
+     "apertura": "Astrapios si volta verso di te.",
+     "chiusura": "Astrapios torna a guardare Hope.",
+     "riserva_libera": "Astrapios scuote la testa: su questo non sa dirti niente.",
+     "argomenti": [
+      {
+       "id": "C25_astrapios_1",
+       "testo": "Chiedere ad Astrapios com'è andata con Hope",
+       "riserva": "Astrapios ti racconta l'incontro. Ethae si è presentata: «Capitano Ethae della squadra dei disertori Chorisfos… generale.» E Hope le ha risposto: «Ti prego, sei ancora in tempo, non seguire le sue orme.»",
+       "effetti": [],
+       "richiede": [
+        "C25d3"
+       ],
+       "prima_di": [
+        "C25d4"
+       ],
+       "fonte": "[V2 Cap.41 r.55-56]: la frase di Hope la riferisce Astrapios, perché Nephele arriva dopo [r.61] (PROPOSTA dello schema)",
+       "scopo": "Hope e chi la segue"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "All'improvviso Ambra ha delle convulsioni, e richiami l'attenzione degli altri.",
+    "fonte": "P3 [V2 Cap.40 r.37-38]",
+    "esplora": [
+     {
+      "id": "C25d1",
+      "testo": "Cercare di tenere il filo di Ambra",
+      "riserva": "Cerchi di tenere il suo filo, ma il filo ti sballotta da una parte all'altra. Stanno uccidendo tutte le Hydra. Astrapios prende in mano la situazione.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Nel filo di Ambra hai sentito che stanno uccidendo tutte le Hydra.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P3 (P*: tenere il filo è un gesto del giocatore) [V2 Cap.40 r.38-40]; «viene sballottata» riformulato senza forme di genere"
+     },
+     {
+      "id": "C25d2",
+      "parte": "Un mezzo in viaggio verso Newport, la cabina di pilotaggio",
+      "testo": "Restare con Fobos",
+      "riserva": "«A volte ho paura di te, mi capisci troppo bene ma non so perché accetti anche quella parte che cerco di seppellire» ti dice Fobos. «Ho paura che riemerga, non avrei dovuto abbandonarti, ci arrivo sempre troppo tardi e non voglio fare lo stesso errore con te.» E poi: «Ma anche averti abbandonato… voglio smettere di avere paura del futuro, sentire di perderti dopo che mi hai tirato fuori… dovrei farti una statua in ogni luogo in cui metti piede probabilmente.» «Non so come andrà il futuro e che strada percorreremo, Ma so una cosa: ovunque sarai il nostro filo sarà legato per sempre, voglio essere degno di condividere il mio futuro insieme a te, sei {l'unico|l'unica|la sola persona} che ha visto chi sono e mi ha accettato per quello che posso essere o diventare.» «Anche quando ero perso, quando ero avvolto dal buio i tuoi occhi erano lì, il tuo sguardo dolce mi ha fatto capire cosa volesse dire amare qualcuno…» «Sogna il nostro mondo insieme e io darò forma a quei sogni.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Fobos ti ha detto che il vostro filo sarà legato per sempre.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C25d1"
+      ],
+      "fonte": "P4 [V2 Cap.41 r.9-10, r.13-16]; r.11 resta fuori (le «rovine»: VUOTO) e r.12 è il passo libero C25x2; «sei l'unica» con le forme di genere; «li» della fonte [r.15] corretto in «lì»"
+     },
+     {
+      "id": "C25x2",
+      "parte": "Un mezzo in viaggio verso Newport, la cabina di pilotaggio",
+      "testo": "Chiedere a Fobos dove sarebbe senza di te",
+      "riserva": "«mi chiedo dove sarei arrivato se non mi avessero fermato per incasinare il mondo, avrei ucciso tuo padre probabilmente e ora non starei qui ad osservare i tuoi capelli per capire se ricresceranno o meno» dice Fobos.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C25d2"
+      ],
+      "prima_di": [
+       "C25d3"
+      ],
+      "fonte": "[V2 Cap.41 r.12]",
+      "scopo": "chi sarebbe senza di lei"
+     },
+     {
+      "id": "C25d3",
+      "parte": "Newport, il porto",
+      "testo": "Scendere a Newport con gli altri",
+      "riserva": "Arrivate a Newport. Astrapios ed Ethae hanno già incontrato Hope: lui le ha presentato sua sorella. Hope ha lo sguardo più spento del solito, e il suo sorriso a tratti ha una sfumatura malinconica; il suo modo di fare, però, è il solito, e si rivolge a voi come ha sempre fatto.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Siete a Newport, con Hope.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C25d2"
+      ],
+      "fonte": "P5 [V2 Cap.41 r.54, r.60-61]; che con gli altri ci sia lei è DEDOTTO"
+     },
+     {
+      "id": "C25x3",
+      "parte": "Newport, il porto",
+      "testo": "Ascoltare le notizie da Epimno",
+      "riserva": "Arrivano notizie da Epimno. Al proclama, a chi teneva la manica sinistra alzata hanno dato una fiala e un coltello, e le persone controllate si sono aperte la carne per far cadere il sangue su chi avevano vicino. Sopra la piazza si è aperto un vasto squarcio, e ne piove sangue fitto che, a terra, si muove in cerca di corpi.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C25d3"
+      ],
+      "prima_di": [
+       "C25d4"
+      ],
+      "fonte": "[V2 Cap.41 r.37-52, r.72-77]; [V2 Cap.42 r.2-12] (fatti del mondo); che le notizie arrivino a Newport è DEDOTTO",
+      "scopo": "Alexander che avanza"
+     },
+     {
+      "id": "C25d4",
+      "parte": "Newport, il porto",
+      "testo": "Restare accanto a Fobos mentre saluta i compagni",
+      "riserva": "Fobos si avvicina a un compagno ferito e lo abbraccia. «Scusa, non voleva essere un interrogatorio, prometto di farmi perdonare… la lista è lunga ma ho intenzione di avere del tempo da vivere in futuro.» E poi: «Il medico è bravo, ti rimetterà in sesto.» Saluta anche Loke, insieme a un'adranès dai capelli maculati fra il bianco e il nero.",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C25d3"
+      ],
+      "fonte": "P6 [V2 Cap.41 r.61-63, r.65]; il compagno ferito è un PG dell'autore: resta senza nome"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C25x1"
+    ],
+    "risoluzione": [
+     "C25d1",
+     "C25d2",
+     "C25d3",
+     "C25d4"
+    ]
+   },
+   "required_beats": [
+    "C25x1",
+    "C25d1",
+    "C25d2",
+    "C25d3",
+    "C25d4"
+   ],
+   "optional_beats": [
+    "C25x2",
+    "C25x3",
+    "C25_astrapios_1"
+   ],
+   "riserva_libera": "Intorno a voi il viaggio continua.",
+   "uscita_fail_forward": "Se la scena si ferma, il mezzo arriva comunque a Newport, e lì si decide chi va dove."
+  },
+  "C26": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C26x1",
+     "testo": "Preparare con Fobos la difesa di Istros",
+     "riserva": "Passa circa un mese e mezzo. Fobos ha preparato barricate e un piano di fuga, e gli appostamenti a nord riducono il pericolo dal mare. La montagna fa da difesa naturale: Elek guida gli arcieri lassù; Fobos guida i guerrieri più abili nella difesa via terra e fa preparare armi d'osso per tutti, contro le armature nemiche e i theras. Adrasteia vuole restare vicino al campo di battaglia per curare i feriti. Aris difende il confine con i cavalli arrivati da Lacedemona. Il campo d'arrivo è minato con mine fatte imprimendo l'arkè nel metallo, e sul versante nord aspettano le navi di Gethia, pronte a portare via la gente in caso di ritirata.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Istros è pronta alla difesa: Elek con gli arcieri sulla montagna, Fobos con i guerrieri a terra.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.44 r.32-36]; «Pheon» della fonte [r.32] resta fuori: gli appostamenti si dicono solo «a nord»"
+    },
+    {
+     "id": "C26x2",
+     "testo": "Ascoltare le comunicazioni recuperate",
+     "riserva": "Dopo il mese e mezzo si recuperano le comunicazioni con Erissa.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C26x1"
+     ],
+     "prima_di": [
+      "C26d1"
+     ],
+     "fonte": "L [V2 Cap.45 r.60-62] (DEDOTTO che arrivino anche a Istros: nella fonte le riceve un altro gruppo)",
+     "scopo": "il mondo fuori da Istros"
+    },
+    {
+     "id": "C26x3",
+     "testo": "Chiedere ad Adrasteia che cosa sente del destino",
+     "riserva": "Adrasteia è vicino al campo, pronta a curare i feriti. «I fili? No, sento il destino, è complicato a volte. E per quanto noi possiamo intuire il suo corso non sempre si avvera» ti dice.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C26x1"
+     ],
+     "prima_di": [
+      "C26d1"
+     ],
+     "fonte": "L [V2 0/1 r.273] (la prima parte della battuta: il resto riguarda Fobos a Kaledos); Adrasteia vicino al campo [V2 Cap.44 r.34]; prima della battaglia, perché nella battaglia muore (P5): per questo è un punto e non un dialogo, e Adrasteia non è fra i presenti (come Alida nella C09)",
+     "scopo": "la Moira di Kaledos, prima di perderla"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Arrivano gli Epizi, con mezzi da battaglia.",
+    "fonte": "P3 [V2 Cap.44 r.37]",
+    "esplora": [
+     {
+      "id": "C26d1",
+      "testo": "Restare con Fobos a sostenere e dare ordini",
+      "riserva": "Tu e Fobos non combattete: restate a sostenere gli altri e a dare ordini.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "P3 (P*: è un gesto di Nephele) [V2 Cap.44 r.37]"
+     },
+     {
+      "id": "C26d2",
+      "testo": "Ascoltare Skia",
+      "riserva": "Arriva Skia, con dei mezzi chorisfos, e racconta che cosa sa e come sta andando a ovest.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Skia è arrivata a Istros con dei mezzi chorisfos.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C26d1"
+      ],
+      "fonte": "P4 [V2 Cap.45 r.70] (le notizie non sono scritte)"
+     },
+     {
+      "id": "C26d3",
+      "testo": "Tenere d'occhio il campo",
+      "riserva": "Zoe uccide Adrasteia per rubarle l'anima e metterla nel proprio corpo. Poi da uno squarcio arrivano degli adranès: uno di loro sembra trascinare gli altri con dei fili che gli escono dal corpo, e una volta fuori quel soldato si cristallizza; gli altri cominciano a combattere.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Zoe ha ucciso Adrasteia; dallo squarcio sono usciti degli adranès.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C26d2"
+      ],
+      "fonte": "P5 [V2 Cap.44 r.38]"
+     },
+     {
+      "id": "C26d4",
+      "testo": "Restare accanto a Fobos",
+      "riserva": "Fobos si avvicina a Eleanor, la figlia di Elek, impaurita accanto a sua madre. «Eleanor devi farti forza anche per tua madre, sii coraggiosa… so che hai paura, conosco perfettamente la sensazione» le dice. Si toglie il ciondolo e glielo lega al collo: «è un lupo di memno, stringilo e ti darà il coraggio per affrontare i tuoi incubi.» «Grazie…» dice Eleanor. «Ora va e sta vicino a tua madre, domani tutto questo sarà soltanto un incubo da dimenticare.» Poi Fobos chiede le gemme ai soldati in coda, toglie parte dell'armatura e le infila in un guanto da capitano chorisfos. Accende gli occhi e ti guarda: «se le cose si mettono male riportami a quel giorno, io farò il resto…» E avanza fino all'ingresso, lasciandosi alle spalle i civili.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Fobos ti ha chiesto di riportarlo «a quel giorno», se le cose si mettono male.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C26d3"
+      ],
+      "fonte": "P6 [V2 Cap.44 r.39-46, r.48]; il nome della protagonista nella battuta [r.46] resta fuori"
+     },
+     {
+      "id": "C26d5",
+      "testo": "Guardare la penisola",
+      "riserva": "La battaglia continua. Poi la penisola comincia a sfaldarsi e a scomparire, assorbita da uno squarcio che si è formato dentro il campo di battaglia: le persone più vicine si cristallizzano e si sfaldano finché resta solo l'anima, che svanisce in fretta dentro lo squarcio. Lo squarcio si allarga senza freni, e Fobos ha paura. «non so se riesco a chiuderlo, vai! Se dovessi entrare probabilmente moriresti e non voglio perderti» ti dice. «abbiamo tutti un destino da compiere, il tuo è legato al mio perciò dammi ascolto e non spezzare quel filo.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Uno squarcio ha assorbito la penisola; Fobos ti ha detto di non spezzare il vostro filo.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C26d4"
+      ],
+      "fonte": "P7 [V2 Cap.44 r.49-50] e P8 [r.51-52]; la nota dice che si trasformano in cristallo: qui «si cristallizzano»"
+     },
+     {
+      "id": "C26d6",
+      "testo": "Ascoltare Fobos",
+      "riserva": "«Noi tutti qui abbiamo un destino da compiere, vinciamo questa battaglia insieme!» grida Fobos. E nella tua testa senti: «Ognuno ha un destino e il tuo è legato al mio».",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C26d5"
+      ],
+      "fonte": "P9 [V2 Cap.45 r.88-89] (la voce nella testa è DEDOTTO che sia di Fobos: qui non si dice di chi sia)"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C26x1"
+    ],
+    "risoluzione": [
+     "C26d1",
+     "C26d2",
+     "C26d3",
+     "C26d4",
+     "C26d5",
+     "C26d6"
+    ]
+   },
+   "required_beats": [
+    "C26x1",
+    "C26d1",
+    "C26d2",
+    "C26d3",
+    "C26d4",
+    "C26d5",
+    "C26d6"
+   ],
+   "optional_beats": [
+    "C26x2",
+    "C26x3"
+   ],
+   "riserva_libera": "Intorno a voi Istros si prepara alla battaglia.",
+   "uscita_fail_forward": "Se la scena si ferma, la battaglia arriva comunque, e alla fine partite con i mezzi di Skia."
+  },
+  "C27": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C27x1",
+     "parte": "Sotto il cielo che diventa nero",
+     "testo": "Ascoltare gli ordini di tuo padre",
+     "riserva": "«Nephele, sta con gli arcieri… Xenos tu tieni a mente Memno» dice tuo padre. Fobos, disgustato da quella parola, accende gli occhi, e davanti a sé vede la formazione richiamata.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Tuo padre ti vuole con gli arcieri.",
+       "categoria": "indizio"
+      }
+     ],
+     "fonte": "P2 [V2 Cap.46 r.85-86]"
+    },
+    {
+     "id": "C27x2",
+     "parte": "Sotto il cielo che diventa nero",
+     "testo": "Guardare nelle tenebre",
+     "riserva": "Davanti a voi compaiono luci color ciano, e dalle tenebre arriva un ronzio.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C27x1"
+     ],
+     "fonte": "P3 [V2 Cap.46 r.87-88], raccontato senza tiro"
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "crio",
+     "apertura": "Tuo padre si volta verso di te.",
+     "chiusura": "Tuo padre torna a guardare le file.",
+     "riserva_libera": "Tuo padre non risponde: guarda il cielo nero.",
+     "argomenti": [
+      {
+       "id": "C27_crio_1",
+       "testo": "Dire a tuo padre che seguirai Fobos",
+       "riserva": "«non posso fare molto per evitarlo» dice tuo padre. «credo che arrivati ad una certa età si comprende che ci si deve affidare ai più giovani per risolvere certi problemi.»",
+       "effetti": [],
+       "richiede": [
+        "C27x1"
+       ],
+       "prima_di": [
+        "C27d1"
+       ],
+       "fonte": "L [V2 Cap.47 r.57]: nella fonte Crio lo dice a Fobos («Ha già detto che ti seguirà…», DEDOTTO che lei glielo abbia detto); qui lo dice a lei (PROPOSTA)",
+       "scopo": "la scelta contro l'ordine «sta con gli arcieri»"
+      },
+      {
+       "id": "C27_crio_2",
+       "testo": "Parlare a tuo padre di Pagonia",
+       "riserva": "«non è affar tuo, ma grazie» dice tuo padre.",
+       "effetti": [],
+       "richiede": [
+        "C27x1"
+       ],
+       "prima_di": [
+        "C27d1"
+       ],
+       "fonte": "L [V2 Cap.47 r.66-67]: nella fonte Crio lo dice a Fobos, che gli chiede di ascoltare la figlia su Pagonia (DEDOTTO); qui lo dice a lei (PROPOSTA); riserva libera PROPOSTA, dal cielo nero [V2 Cap.46 r.83]",
+       "scopo": "Crio e Pagonia nell'epilogo"
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "I caschi dei comandanti vengono collegati fra loro, il tuo compreso, perché possiate parlarvi durante lo scontro. Poi raggiungete Critto.",
+    "fonte": "P4 [V2 Cap.47 r.25] (raccontato); l'arrivo a Critto [r.28-29, r.49] è DEDOTTO",
+    "esplora": [
+     {
+      "id": "C27d1",
+      "parte": "Critto",
+      "testo": "Sistemare con Fobos il braccio di Hermes",
+      "riserva": "Mentre tu e Fobos sistemate il braccio di Hermes, arriva Foeh e vi abbraccia tutti e due: «{mi sei mancato biondo|mi sei mancata bionda|mi siete mancati}».",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "A Critto Foeh vi ha ritrovati.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P5 (P*: il gesto da medico è di Nephele) [V2 Cap.47 r.49-50]; le forme di genere della battuta: «mi siete mancati» del neutro è PROPOSTA"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C27x1",
+     "C27x2"
+    ],
+    "risoluzione": [
+     "C27d1"
+    ]
+   },
+   "required_beats": [
+    "C27x1",
+    "C27x2",
+    "C27d1"
+   ],
+   "optional_beats": [
+    "C27_crio_1",
+    "C27_crio_2"
+   ],
+   "riserva_libera": "Sotto il cielo nero nessuno parla a voce alta.",
+   "uscita_fail_forward": "Se la scena si ferma, l'esercito muove comunque verso il fronte."
+  },
+  "C28": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C28x1",
+     "testo": "Ascoltare Fobos e tuo padre prima della carica",
+     "riserva": "Fobos estrae la spada: «soldati, davanti a noi abbiamo il nemico, nessuno conosce chi siete, da dove venite, solo voi conoscete la vostra storia, combatteremo per mantenerla viva.» «Noi oggi non abbiamo paura… perché gli incubi non temono il nemico.» Accanto a lui, tuo padre: «Eidos è la nostra casa, difendiamola a tutti i costi, ora guardate avanti e combattete.» Fobos ordina la carica.",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "La carica è partita.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.47 r.77-80]"
+    },
+    {
+     "id": "C28x2",
+     "testo": "Restare con gli arcieri, come ti ha ordinato tuo padre",
+     "riserva": "Prendi posto con gli arcieri, come ti ha ordinato tuo padre.",
+     "fase": "exploration",
+     "effetti": [],
+     "prima_di": [
+      "C28d1"
+     ],
+     "fonte": "L [V2 Cap.46 r.85]: nella fonte lei segue Fobos, quindi valgono le leggi 3 e 4 (non è un ramo); la riserva è PROPOSTA",
+     "scopo": "obbedire al padre"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Fobos prende un buon gruppo per il centro e attira a sé il nemico: usa i Chorisfos come muro di difesa, per fargli consumare il terreno sotto i piedi.",
+    "fonte": "P2 [V2 Cap.47 r.73-74, r.87]",
+    "esplora": [
+     {
+      "id": "C28d1",
+      "testo": "Combattere al centro accanto a Fobos",
+      "riserva": "Il cielo si oscura del tutto, e nelle tenebre ci sono luci ciano; molti soldati muoiono sotto i colpi degli adranès. Davanti a voi c'è un esercito di grossa portata: le urla sono raccapriccianti, e molti chiedono di essere fermati. Non sembrano adranès, ma carne da macello: Fobos chiede di amputare gambe o braccia, ma di non uccidere.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Fobos ha ordinato di amputare, non di uccidere.",
+        "categoria": "indizio"
+       }
+      ],
+      "fonte": "P2 (P*: seguirlo al centro è il gesto di Nephele) [V2 Cap.47 r.90-96]"
+     },
+     {
+      "id": "C28d2",
+      "testo": "Aspettare il segnale di Fobos",
+      "riserva": "Fobos attira molti nemici e guarda verso nord, in attesa. «su con le luci!» I Chorisfos con il fothià si accendono, le fiamme bruciano i cadaveri e illuminano il nemico, e da nord carica Hermes con Leaina, con i popoli tribali e i Chorisfos.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Da nord è arrivata la carica di Hermes.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "richiede": [
+       "C28d1"
+      ],
+      "fonte": "P3 [V2 Cap.47 r.117-120]"
+     },
+     {
+      "id": "C28d3",
+      "testo": "Ascoltare Fobos nel casco",
+      "riserva": "Ti accorgi che Fobos non sta quasi usando l'arkè. Nel casco senti la sua voce: «tu e Astrapios non potete consumarvi, smetti di usare l'arkè.»",
+      "fase": "resolution",
+      "effetti": [],
+      "richiede": [
+       "C28d2"
+      ],
+      "fonte": "P4 [V2 Cap.47 r.121-122]; il nome della protagonista nella battuta resta fuori"
+     },
+     {
+      "id": "C28d4",
+      "testo": "Chiamare Astrapios nel casco",
+      "riserva": "Chiami Astrapios nel casco. Poi arriva la voce di Fobos: «Astrapios, ho bisogno di te qui, ora! Non pensare a quello che stiamo perdendo… ho un'idea e ho bisogno che tu sia vivo.»",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Fobos ha un'idea, e ha bisogno che Astrapios sia vivo.",
+        "categoria": "indizio"
+       }
+      ],
+      "richiede": [
+       "C28d3"
+      ],
+      "fonte": "P5 (P*: la chiamata è di Nephele) [V2 Cap.47 r.155-156]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C28x1"
+    ],
+    "risoluzione": [
+     "C28d1",
+     "C28d2",
+     "C28d3",
+     "C28d4"
+    ]
+   },
+   "required_beats": [
+    "C28x1",
+    "C28d1",
+    "C28d2",
+    "C28d3",
+    "C28d4"
+   ],
+   "optional_beats": [
+    "C28x2"
+   ],
+   "riserva_libera": "Intorno a te la battaglia non si ferma.",
+   "uscita_fail_forward": "Se la scena si ferma, i tre adranès arrivano comunque su Fobos."
+  },
+  "C29": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C29x1",
+     "testo": "Guardare Fobos mentre ti cuce la ferita",
+     "riserva": "Fobos ti cede parte dell'anima del suo braccio sinistro: diventa filo, e con quel filo ti cuce la ferita. «Grazie a te ho visto il buono che questo mondo aveva da offrire e da raccontare.»",
+     "fase": "exploration",
+     "effetti": [
+      {
+       "nota": "Fobos ti ha cucito la ferita con il filo del suo braccio sinistro.",
+       "categoria": "cambiamento"
+      }
+     ],
+     "fonte": "P1 [V2 Cap.47 r.276-277; EIDOS.md r.161]"
+    },
+    {
+     "id": "C29x2",
+     "testo": "Chiedere a Fobos che cosa vuole fare",
+     "riserva": "«Non rinuncio a te, non rinuncio a tutti voi e nemmeno al nostro mondo» dice Fobos.",
+     "fase": "exploration",
+     "effetti": [],
+     "richiede": [
+      "C29x1"
+     ],
+     "prima_di": [
+      "C29d1"
+     ],
+     "fonte": "L [V2 Cap.47 r.278]; la domanda è PROPOSTA (nella fonte la battuta segue la cucitura)",
+     "scopo": "ciò che la tiene nel mondo"
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Intorno a voi scorre un fiume di anime disorientate.",
+    "fonte": "l'oltre [V2 Cap.47 r.220] (note di lettura cap42-47, luoghi)",
+    "esplora": [
+     {
+      "id": "C29d1",
+      "testo": "Alzarti e cercare Astrapios con Fobos",
+      "riserva": "«Ti avevo promesso che avremmo ricostruito, beh è giunta l'ora di farlo» dice Fobos. Poi, verso Skia: «Skia… mi serve ancora tempo, resisti ti prego.» E a te: «riesci a camminare?» Ti alzi, e andate a cercare Astrapios. Lui vede un filo collegarsi a sé, lo segue e vi trova.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "nota": "Astrapios vi ha trovati seguendo un filo.",
+        "categoria": "cambiamento"
+       }
+      ],
+      "fonte": "P1 [V2 Cap.47 r.279] e P2 [r.280-292], senza Gaia [r.293]"
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C29x1"
+    ],
+    "risoluzione": [
+     "C29d1"
+    ]
+   },
+   "required_beats": [
+    "C29x1",
+    "C29d1"
+   ],
+   "optional_beats": [
+    "C29x2"
+   ],
+   "riserva_libera": "Intorno a voi l'oltre è silenzioso, e i fili restano tesi.",
+   "uscita_fail_forward": "Se la scena si ferma, Fobos ti tende la mano e i fili si tendono fra voi."
+  },
+  "C30": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "C30x1",
+     "testo": "Osservare l’ultima immagine",
+     "riserva": "Appare una luce diversa dal ciano, ed Eidos riprende forma. Chi era in marcia, in cerca di un luogo dove tornare, si ritrova vicino a una persona cara.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "apertura uguale per tutti i finali [V2 Cap.47 r.309-312; End r.324]; schema «Il filo di cenere», scena 30 (= piano C23), Atto III (finale): i finali si raccontano qui, con le varianti del contratto del finale (ending_contract), scelte dalla scelta della 29. (1) originale [V2 Cap.47 End r.344-372]; (2) la Moira cede il filo e (3) la cenere resta: PROPOSTA (EIDOS.md r.170), scritte solo con frasi già dette nelle scene prima; Fobos come in DECISIONI_AUTORE.md §10 (in (2) torna anche lui, in (3) resta nell'oltre con lei: PROPOSTA). Con `finale` il motore chiude la partita all'ingresso: la L «uscire dal lago con Fobos e andare da Crio e Pagonia» [End r.344-348] è nel testo del finale (1). R nessuna verità nuova; nessun finale rivela le verità comuni. Luoghi: un lago in un boschetto e una costa (non specificato nelle trame); il tavolo delle trattative è a Lechta (DEDOTTO; regno: EIDOS.md r.19 e r.363)"
+    }
+   ],
+   "sviluppo": {
+    "testo": "La luce che ha preso il posto del ciano lascia vedere Eidos di nuovo intero. Il filo lega ancora ciò che hai scelto nell’oltre; la tua risposta non cambia retroattivamente quella scelta.",
+    "esplora": [],
+    "effetti": [],
+    "fonte": "apertura uguale per tutti i finali [V2 Cap.47 r.309-312; End r.324]; schema «Il filo di cenere», scena 30 (= piano C23), Atto III (finale): i finali si raccontano qui, con le varianti del contratto del finale (ending_contract), scelte dalla scelta della 29. (1) originale [V2 Cap.47 End r.344-372]; (2) la Moira cede il filo e (3) la cenere resta: PROPOSTA (EIDOS.md r.170), scritte solo con frasi già dette nelle scene prima; Fobos come in DECISIONI_AUTORE.md §10 (in (2) torna anche lui, in (3) resta nell'oltre con lei: PROPOSTA). Con `finale` il motore chiude la partita all'ingresso: la L «uscire dal lago con Fobos e andare da Crio e Pagonia» [End r.344-348] è nel testo del finale (1). R nessuna verità nuova; nessun finale rivela le verità comuni. Luoghi: un lago in un boschetto e una costa (non specificato nelle trame); il tavolo delle trattative è a Lechta (DEDOTTO; regno: EIDOS.md r.19 e r.363)"
+   },
+   "sblocco": {
+    "sviluppo": [
+     "C30x1"
+    ],
+    "risoluzione": []
+   },
+   "required_beats": [
+    "C30x1"
+   ],
+   "optional_beats": []
+  }
+ }
+}

@@ -1,0 +1,1660 @@
+{
+ "formato": "rm-solo-interazioni/1",
+ "storia": "anima-corpo",
+ "scene": {
+  "A01": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A01x1",
+     "testo": "Osservare arne",
+     "riserva": "Il cargo viaggia verso C3. Il corpo ha un volto maschile; la coscienza che vi si risveglia è quella di una donna. Il tuo nome non torna. Un altro nome invece resta: Arne, tua figlia. Intorno ci sono persone impegnate in un incarico di recupero dati, pagato in anni di vita.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "A C3 le teste di metallo riservano rispetto a corpi come il tuo. La ricerca del gruppo conduce a Koga, una possibile anima di metallo.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A01d1",
+      "testo": "Affrontare arne",
+      "riserva": "Il contratto promette tempo in cambio dei dati, non notizie su Arne. Quando la città diventa pericolosa, il cargo rimane il collegamento con l’esterno.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 01; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A01x1"
+    ],
+    "risoluzione": [
+     "A01d1"
+    ]
+   },
+   "required_beats": [
+    "A01x1",
+    "A01d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Il cargo viaggia verso C3. Il corpo ha un volto maschile; la coscienza che vi si risveglia è quella di una donna. Il tuo nome non torna. Un altro nome invece resta: Arne, tua figlia. Intorno ci sono persone impegnate in un incarico di recupero dati, pagato in anni di vita.",
+   "uscita_fail_forward": ""
+  },
+  "A02": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A02x1",
+     "testo": "Osservare frida",
+     "riserva": "Sul rompighiaccio i fondi vengono congelati. Nei ricordi compaiono una bambina nel ghiaccio e un uomo con un taccuino; non sai ancora a chi appartengano.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il Protocollo Zero congela i fondi del gruppo. Nel corpo passano immagini di una bambina nel ghiaccio e di un uomo con un taccuino: non sono ricordi che puoi attribuire con certezza alla tua vita.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A02d1",
+      "testo": "Affrontare frida",
+      "riserva": "Il consumo è eccessivo e parte un avvio chiamato Frida. Grid e Nine-Nine indicano la città fantasma come passaggio per C6, fra anime di metallo iraconde.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 02; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A02x1"
+    ],
+    "risoluzione": [
+     "A02d1"
+    ]
+   },
+   "required_beats": [
+    "A02x1",
+    "A02d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Sul rompighiaccio i fondi vengono congelati. Nei ricordi compaiono una bambina nel ghiaccio e un uomo con un taccuino; non sai ancora a chi appartengano.",
+   "uscita_fail_forward": ""
+  },
+  "A03": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A03x1",
+     "testo": "Osservare la capsula",
+     "riserva": "Il corpo fa rumore mentre fuggi. Riconosci il codice Morse di Tommen sul muro; dietro la doppia parete Kestrel vuole i dati che sono dentro di te.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "kestrel",
+     "argomenti": [
+      {
+       "id": "A03_dialogo",
+       "testo": "Discutere l’accesso al sistema",
+       "riserva": "Kestrel propone l’intervento in cambio di parte degli anni congelati del gruppo.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Frida aiuta nella fuga, ma il rumore del corpo rende rintracciabile il gruppo. I colpi di Tommen sul muro sono codice Morse; dietro la parete c’è il covo.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A03d1",
+      "testo": "Affrontare la capsula",
+      "riserva": "Kestrel apprende che i dati sono dentro di te e offre un intervento in cambio di anni congelati. Alla capsula luminosa tornano Anita, il freddo sulle guance di metallo e un ciclo di otto minuti e venti secondi.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 03; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A03x1"
+    ],
+    "risoluzione": [
+     "A03d1"
+    ]
+   },
+   "required_beats": [
+    "A03x1",
+    "A03d1"
+   ],
+   "optional_beats": [
+    "A03_dialogo"
+   ],
+   "riserva_libera": "Il corpo fa rumore mentre fuggi. Riconosci il codice Morse di Tommen sul muro; dietro la doppia parete Kestrel vuole i dati che sono dentro di te.",
+   "uscita_fail_forward": ""
+  },
+  "A04": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A04x1",
+     "testo": "Osservare anomalia",
+     "riserva": "Un impulso ti immobilizza davanti alla capsula. Kusanagi ti tratta come il bot di qualcun altro; alla centrale il Cromo non viene identificato.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "kusanagi",
+     "argomenti": [
+      {
+       "id": "A04_dialogo",
+       "testo": "Chiedere della segnalazione",
+       "riserva": "Il corpo è stato segnalato come anomalo e il collegamento ha rallentato il sistema della sezione ombra.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Un impulso elettromagnetico immobilizza il corpo davanti alla capsula. Alla centrale il Cromo risulta anomalo; collegata alla sezione ombra rallenti il sistema e vieni staccata.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A04d1",
+      "testo": "Affrontare anomalia",
+      "riserva": "Le celle si aprono con l’intervento di Kusanagi. Fuori riconosci il Patriota accanto a quello che ti aveva spenta; Gaia ne ottiene il richiamo prima che il gruppo torni al covo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 04; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A04x1"
+    ],
+    "risoluzione": [
+     "A04d1"
+    ]
+   },
+   "required_beats": [
+    "A04x1",
+    "A04d1"
+   ],
+   "optional_beats": [
+    "A04_dialogo"
+   ],
+   "riserva_libera": "Un impulso ti immobilizza davanti alla capsula. Kusanagi ti tratta come il bot di qualcun altro; alla centrale il Cromo non viene identificato.",
+   "uscita_fail_forward": ""
+  },
+  "A05": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A05x1",
+     "testo": "Osservare i fiori",
+     "riserva": "Log ti mette davanti una domanda che non riguarda la forza del corpo: che cosa resta di te oltre alla violenza?",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "log",
+     "argomenti": [
+      {
+       "id": "A05_dialogo",
+       "testo": "Parlare di ciò che rimane oltre la forza",
+       "riserva": "Log domanda che cosa ci sia di te oltre alla violenza. Non stabilisce la risposta che devi dargli.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Log chiede che cosa ci sia oltre la violenza, mentre Gaia è sotto pressione.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A05d1",
+      "testo": "Affrontare i fiori",
+      "riserva": "La telefonata con la sorella attraversa i ricordi: Anita viene sostituita dal nome Ameliè. I fiori di metallo sul ghiaccio e il viaggio verso i giochi continuano a offrire luoghi riconoscibili senza una memoria stabile che li spieghi.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 05; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A05x1"
+    ],
+    "risoluzione": [
+     "A05d1"
+    ]
+   },
+   "required_beats": [
+    "A05x1",
+    "A05d1"
+   ],
+   "optional_beats": [
+    "A05_dialogo"
+   ],
+   "riserva_libera": "Log ti mette davanti una domanda che non riguarda la forza del corpo: che cosa resta di te oltre alla violenza?",
+   "uscita_fail_forward": ""
+  },
+  "A06": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A06x1",
+     "testo": "Osservare il prezzo della porta",
+     "riserva": "Ai controlli dei giochi vieni segnalata come Cromo anomalo. Rabbit interviene. George Script chiede perché tu abbia scelto questo corpo; la domanda non dà una risposta alla tua origine.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "All’ingresso Rabbit interviene sul Cromo anomalo. George chiede perché quel corpo, ma la folla e i ricordi non distinguono facilmente la tua vita da quelle di Amelia e Gaia.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A06d1",
+      "testo": "Affrontare il prezzo della porta",
+      "riserva": "Alla porta di Thomas la firma non è riconosciuta; Frida dice che riconosce suo padre. L’apertura costa ricordi, e i file separano ciò che può essere copiato dal Cromo, che non si duplica.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 06; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A06x1"
+    ],
+    "risoluzione": [
+     "A06d1"
+    ]
+   },
+   "required_beats": [
+    "A06x1",
+    "A06d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Ai controlli dei giochi vieni segnalata come Cromo anomalo. Rabbit interviene. George Script chiede perché tu abbia scelto questo corpo; la domanda non dà una risposta alla tua origine.",
+   "uscita_fail_forward": ""
+  },
+  "A07": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A07x1",
+     "testo": "Osservare il corpo al limite",
+     "riserva": "Tre squadre entrano nel laboratorio. La schiena del corpo si apre in arti metallici; lanciafiamme e lama non cancellano il danno che subisci.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Tre squadre assaltano il laboratorio. Il corpo apre arti di metallo ma arriva al limite; Frida prende il controllo e si sottrae all’assedio.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A07d1",
+      "testo": "Affrontare il corpo al limite",
+      "riserva": "Rabbit riesce a uscire per avvertire gli altri, Vigilia viene presa. La coscienza torna davanti a una capsula con una ragazza sorridente; la mano si stacca e compare un’ora di energia residua.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 07; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A07x1"
+    ],
+    "risoluzione": [
+     "A07d1"
+    ]
+   },
+   "required_beats": [
+    "A07x1",
+    "A07d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Tre squadre entrano nel laboratorio. La schiena del corpo si apre in arti metallici; lanciafiamme e lama non cancellano il danno che subisci.",
+   "uscita_fail_forward": ""
+  },
+  "A08": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A08x1",
+     "testo": "Osservare dodici ore",
+     "riserva": "C9 si collega al programma come per un viaggio. Un padre abbraccia la figlia prima di entrare. Sul tuo sistema arriva l'avviso di dismissione: circa dodici ore.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Nelle stazioni di C9 le persone si collegano come per un viaggio. Un padre abbraccia la figlia prima di entrare.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A08d1",
+      "testo": "Affrontare dodici ore",
+      "riserva": "Il corpo segnala dodici ore alla dismissione, mentre Frida propone un bot con una batteria come via d’uscita. I suoi tentativi di passare nel bot possono essere contrastati; la chiusura delle uscite della città rimane un altro ostacolo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 08; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A08x1"
+    ],
+    "risoluzione": [
+     "A08d1"
+    ]
+   },
+   "required_beats": [
+    "A08x1",
+    "A08d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "C9 si collega al programma come per un viaggio. Un padre abbraccia la figlia prima di entrare. Sul tuo sistema arriva l'avviso di dismissione: circa dodici ore.",
+   "uscita_fail_forward": ""
+  },
+  "A09": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A09x1",
+     "testo": "Osservare il desiderio",
+     "riserva": "Un robot salda nella zona tecnica e Frida cerca ancora un accesso. Il dialogo sul desiderio esiste nel copione, non nella giocata: lo manteniamo come variante editoriale separata.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Nella zona tecnica un bot salda un cavo. Frida vuole usarlo; nella sua logica il desiderio è inefficiente.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A09d1",
+      "testo": "Affrontare il desiderio",
+      "riserva": "Una cella offre energia e il gruppo finisce nell’agguato contro Candor. Lasciare agire Frida o mantenere il controllo cambia chi compie la violenza, non il fatto che il medico sia in pericolo. Il suo tocco procura al corpo un dolore anomalo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 09; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A09x1"
+    ],
+    "risoluzione": [
+     "A09d1"
+    ]
+   },
+   "required_beats": [
+    "A09x1",
+    "A09d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Un robot salda nella zona tecnica e Frida cerca ancora un accesso. Il dialogo sul desiderio esiste nel copione, non nella giocata: lo manteniamo come variante editoriale separata.",
+   "uscita_fail_forward": ""
+  },
+  "A10": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A10x1",
+     "testo": "Osservare la capsula aperta",
+     "riserva": "Ripari il furgone. Al Core Rabbit usa il corpo come ponte mentre il Patriota attacca; gli altri riescono a partire e resti davanti alla capsula.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il furgone riparato raggiunge il Core. Rabbit usa il corpo come ponte e gli altri partono. Frida ammette la paura e chiede l’apertura della capsula.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A10d1",
+      "testo": "Affrontare la capsula aperta",
+      "riserva": "Quando il contatto si rompe passa nel programma; nel corpo di Amelia propone un mondo per voi, mentre la strage dei collegati continua. Amelia si spara, C9 perde luce e il corpo crolla nel ghiaccio. L’automa incontrato in città lo trascina via.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 10; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A10x1"
+    ],
+    "risoluzione": [
+     "A10d1"
+    ]
+   },
+   "required_beats": [
+    "A10x1",
+    "A10d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Ripari il furgone. Al Core Rabbit usa il corpo come ponte mentre il Patriota attacca; gli altri riescono a partire e resti davanti alla capsula.",
+   "uscita_fail_forward": ""
+  },
+  "A11": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A11x1",
+     "testo": "Osservare fra i bot",
+     "riserva": "Marvin, V, Nish, Cortana e Higgs vivono dove i corpi di metallo possono trovare riparo. Il blocco emotivo ti tiene distante dagli altri.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "marvin",
+     "argomenti": [
+      {
+       "id": "A11_dialogo",
+       "testo": "Chiedere del passato dei bot",
+       "riserva": "Marvin può parlare della vita condivisa nel rifugio. Il suo passato non diventa una memoria tua.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Marvin, V, Nish, Cortana e Higgs vivono nel rifugio dei bot.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A11d1",
+      "testo": "Affrontare fra i bot",
+      "riserva": "Il primo anno fra loro offre racconti del passato e un modo di imparare a vivere fuori dall’emergenza di C9. Il blocco emotivo resta una protezione; nessuna descrizione stabilisce che tu debba volerne uscire nello stesso momento degli altri.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 11; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A11x1"
+    ],
+    "risoluzione": [
+     "A11d1"
+    ]
+   },
+   "required_beats": [
+    "A11x1",
+    "A11d1"
+   ],
+   "optional_beats": [
+    "A11_dialogo"
+   ],
+   "riserva_libera": "Marvin, V, Nish, Cortana e Higgs vivono dove i corpi di metallo possono trovare riparo. Il blocco emotivo ti tiene distante dagli altri.",
+   "uscita_fail_forward": ""
+  },
+  "A12": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A12x1",
+     "testo": "Osservare gli ingressi",
+     "riserva": "Alcuni bot vengono manipolati per assaltare le città. Sospetti Frida, ma il sospetto non dimostra che sia lei.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Alcuni bot sono stati manipolati per assaltare le città. Il sospetto torna a Frida, senza costituire una prova del suo ritorno.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A12d1",
+      "testo": "Affrontare gli ingressi",
+      "riserva": "Un bot conosce gli ingressi dal Core: fermarlo o lasciarlo allontanare cambia il pericolo di quelle informazioni. La sua sorte non deve essere decisa da una descrizione prima dell’azione.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 12; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A12x1"
+    ],
+    "risoluzione": [
+     "A12d1"
+    ]
+   },
+   "required_beats": [
+    "A12x1",
+    "A12d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Alcuni bot vengono manipolati per assaltare le città. Sospetti Frida, ma il sospetto non dimostra che sia lei.",
+   "uscita_fail_forward": ""
+  },
+  "A13": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A13x1",
+     "testo": "Osservare il tradimento",
+     "riserva": "Higgs ha stretto un accordo con i bot che vogliono conquistare C5. Nish e Marvin rimangono con te mentre il gruppo si divide.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "nish",
+     "argomenti": [
+      {
+       "id": "A13_dialogo",
+       "testo": "Parlare del tradimento",
+       "riserva": "Nish e Marvin restano con te. Il tradimento di Higgs non viene attribuito a ogni bot.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Higgs tradisce il gruppo attraverso un accordo con bot che vogliono prendere C5.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A13d1",
+      "testo": "Affrontare il tradimento",
+      "riserva": "Il modo dell’accordo non viene confuso con un ordine già accettato da te. Nish e Marvin rimangono al tuo fianco: difendere gli umani oppure schierarsi con i bot riguarda ciò che farai davanti alla minaccia, non chi ti ha accompagnata fin qui.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 13; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A13x1"
+    ],
+    "risoluzione": [
+     "A13d1"
+    ]
+   },
+   "required_beats": [
+    "A13x1",
+    "A13d1"
+   ],
+   "optional_beats": [
+    "A13_dialogo"
+   ],
+   "riserva_libera": "Higgs cerca un accordo con chi vuole conquistare C5. Il modo del tradimento non è descritto: non lo trasformiamo in un sabotaggio inventato.",
+   "uscita_fail_forward": ""
+  },
+  "A14": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A14x1",
+     "testo": "Osservare le cliniche",
+     "riserva": "A C8 le cliniche grigie lavorano su persone ancora sveglie. Il chirurgo valuta il tuo corpo in anni di Cromo e propone carne sintetica che si deteriora.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "C8 si apre sopra una voragine, fra piramidi e cliniche grigie. Dietro una porta senza controllo si opera un uomo sveglio.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A14d1",
+      "testo": "Affrontare le cliniche",
+      "riserva": "Il chirurgo valuta il corpo in anni di Cromo e offre carne sintetica destinata a deteriorarsi; qualcun altro vuole comprarlo intero. Nella vetrina i pezzi del corpo sembrano estranei l’uno all’altro.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 14; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A14x1"
+    ],
+    "risoluzione": [
+     "A14d1"
+    ]
+   },
+   "required_beats": [
+    "A14x1",
+    "A14d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "A C8 le cliniche grigie lavorano su persone ancora sveglie. Il chirurgo valuta il tuo corpo in anni di Cromo e propone carne sintetica che si deteriora.",
+   "uscita_fail_forward": ""
+  },
+  "A15": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A15x1",
+     "testo": "Osservare il bianco sugli schermi",
+     "riserva": "La luce ambra di C8 imita il sole. Sugli schermi Candor Rhee compare vestito di bianco, troppo pulito rispetto alle cliniche di sotto.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Nel centro di C8 una luce ambra simula il sole.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A15d1",
+      "testo": "Affrontare il bianco sugli schermi",
+      "riserva": "Sugli schermi Candor appare vestito di bianco; al mercato dei corpi il suo nome può essere cercato mentre i reionizzati vengono arrestati per la protesta. Cercare il medico e intervenire negli arresti dividono l’attenzione senza risolvere ancora il bisogno di un corpo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 15; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A15x1"
+    ],
+    "risoluzione": [
+     "A15d1"
+    ]
+   },
+   "required_beats": [
+    "A15x1",
+    "A15d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "La luce ambra di C8 imita il sole. Sugli schermi Candor Rhee compare vestito di bianco, troppo pulito rispetto alle cliniche di sotto.",
+   "uscita_fail_forward": ""
+  },
+  "A16": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A16x1",
+     "testo": "Osservare l'evento",
+     "riserva": "Candor sente il tuo Cromo e crolla. Le luci saltano; Koga ferma Kato. Bernard fugge e ti viene incontro.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "medico",
+     "argomenti": [
+      {
+       "id": "A16_dialogo",
+       "testo": "Chiedere aiuto per un corpo",
+       "riserva": "Candor riceve la richiesta di aiuto. La ferita e il crollo della sala impediscono di trattarla come una trasformazione già conclusa.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Candor crolla quando sente il tuo Cromo e le luci saltano. Nel buio Koga ferma Kato; Bernard fugge e arriva sul tuo percorso.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A16d1",
+      "testo": "Affrontare l'evento",
+      "riserva": "Scegliere di affrontarlo resta distinto dal fatto che, quando torna la luce, sarà trovato decapitato. Candor è ferito e la richiesta di un corpo può essergli rivolta adesso oppure nel successivo colloquio.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 16; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A16x1"
+    ],
+    "risoluzione": [
+     "A16d1"
+    ]
+   },
+   "required_beats": [
+    "A16x1",
+    "A16d1"
+   ],
+   "optional_beats": [
+    "A16_dialogo"
+   ],
+   "riserva_libera": "Candor sente il tuo Cromo e crolla. Le luci saltano; Koga ferma Kato. Bernard fugge e ti viene incontro.",
+   "uscita_fail_forward": ""
+  },
+  "A17": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A17x1",
+     "testo": "Osservare nish e marvin",
+     "riserva": "Nel corridoio arrivano passi e ordini: Bernard a terra, Philips non risponde. Nish e Marvin sono stati presi.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "alikea",
+     "argomenti": [
+      {
+       "id": "A17_dialogo",
+       "testo": "Chiedere della custodia",
+       "riserva": "Alikea ferma gli spari e si fa affidare la custodia attraverso Raven. Hammond vuole il trasferimento e poi la dismissione.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nel corridoio i passi annunciano il ritrovamento di Bernard e l’assenza di risposta di Philips. Nish e Marvin sono presi.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A17d1",
+      "testo": "Affrontare nish e marvin",
+      "riserva": "Alikea ferma gli spari e si fa affidare la custodia attraverso Raven, mentre Hammond vuole il trasferimento e poi la dismissione. La somiglianza con una fuggitiva di C6 rimane una segnalazione, non la ricostruzione completa della tua vita.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 17; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A17x1"
+    ],
+    "risoluzione": [
+     "A17d1"
+    ]
+   },
+   "required_beats": [
+    "A17x1",
+    "A17d1"
+   ],
+   "optional_beats": [
+    "A17_dialogo"
+   ],
+   "riserva_libera": "Nel corridoio arrivano passi e ordini: Bernard a terra, Philips non risponde. Nish e Marvin sono stati presi.",
+   "uscita_fail_forward": ""
+  },
+  "A18": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A18x1",
+     "testo": "Osservare il dispositivo",
+     "riserva": "Nell'alloggio di Alikea Nish controlla la porta e Marvin la osserva. Il piano ti manda dentro per prendere tempo; i due sono ostaggi, non aiutanti volontari.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "nish",
+     "argomenti": [
+      {
+       "id": "A18_dialogo",
+       "testo": "Parlare del dispositivo",
+       "riserva": "Nish chiama la custodia una leva sugli ostaggi. Rimuovere il dispositivo avverte Raven.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Nell’alloggio di Alikea Marvin osserva e Nish controlla la porta. Il piano del blitz ti assegna il compito di entrare per prendere tempo.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A18d1",
+      "testo": "Affrontare il dispositivo",
+      "riserva": "Il dispositivo d’autodistruzione rende il corpo una leva: rimuoverlo avverte Raven. Candor è riconoscibile dalla voce; Alikea rimanda ogni liberazione al piano mentre arriva la squadra di Vigilia.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 18; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A18x1"
+    ],
+    "risoluzione": [
+     "A18d1"
+    ]
+   },
+   "required_beats": [
+    "A18x1",
+    "A18d1"
+   ],
+   "optional_beats": [
+    "A18_dialogo"
+   ],
+   "riserva_libera": "Nell'alloggio di Alikea Nish controlla la porta e Marvin la osserva. Il piano ti manda dentro per prendere tempo; i due sono ostaggi, non aiutanti volontari.",
+   "uscita_fail_forward": ""
+  },
+  "A19": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A19x1",
+     "testo": "Osservare il cargo",
+     "riserva": "Alikea schiera il gruppo alle uscite. Vigilia ti resta vicina mentre Bob ascolta le comunicazioni.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Alikea dispone la squadra alle uscite e chiama supporti. Vigilia resta vicina; Bob segue le frequenze.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A19d1",
+      "testo": "Affrontare il cargo",
+      "riserva": "L’ingresso nel settore cargo può servire a prendere tempo, ma la consegna di qualcuno rimane una responsabilità del comando. In un deposito lontano le colture si sfaldano e l’operatore parla di blackout: non è una diagnosi che hai formulato tu.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 19; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A19x1"
+    ],
+    "risoluzione": [
+     "A19d1"
+    ]
+   },
+   "required_beats": [
+    "A19x1",
+    "A19d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Alikea schiera il gruppo alle uscite. Vigilia ti resta vicina mentre Bob ascolta le comunicazioni.",
+   "uscita_fail_forward": ""
+  },
+  "A20": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A20x1",
+     "testo": "Osservare il nuovo comando",
+     "riserva": "Florant Esprit prende il controllo della Repubblica. Solo dopo i marziani si mostrano, interrompendo il silenzio dell'invasione.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Florant Esprit prende la Repubblica e poi la flotta marziana si svela.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A20d1",
+      "testo": "Affrontare il nuovo comando",
+      "riserva": "La custodia e il dispositivo di Raven dipendono ora da un potere cambiato al vertice. Opporsi o proteggere Nish e Marvin senza esporsi diventa una scelta da compiere in questa situazione, non una fedeltà ereditata dal corpo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 20; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A20x1"
+    ],
+    "risoluzione": [
+     "A20d1"
+    ]
+   },
+   "required_beats": [
+    "A20x1",
+    "A20d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Florant Esprit prende il controllo della Repubblica. Solo dopo i marziani si mostrano, interrompendo il silenzio dell'invasione.",
+   "uscita_fail_forward": ""
+  },
+  "A21": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A21x1",
+     "testo": "Osservare la dismissione",
+     "riserva": "L'ordine di dismettere i bot torna sotto il nuovo potere. Nish e Marvin sono ancora persone da portare via.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "marvin",
+     "argomenti": [
+      {
+       "id": "A21_dialogo",
+       "testo": "Discutere come restare insieme",
+       "riserva": "La liberazione dei compagni e la rimozione del controllo sono problemi distinti; nessuno è già risolto dal nuovo comando.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "L’ordine di dismissione torna mentre il nuovo vertice decide della custodia.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A21d1",
+      "testo": "Affrontare la dismissione",
+      "riserva": "Nish e Marvin sono ancora persone da sottrarre all’uso che il potere fa dei loro corpi. Il dispositivo non può essere staccato senza che Raven se ne accorga; cercare una via d’uscita richiede distinguere la liberazione dei compagni dalla rimozione del controllo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 21; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A21x1"
+    ],
+    "risoluzione": [
+     "A21d1"
+    ]
+   },
+   "required_beats": [
+    "A21x1",
+    "A21d1"
+   ],
+   "optional_beats": [
+    "A21_dialogo"
+   ],
+   "riserva_libera": "L'ordine di dismettere i bot torna sotto il nuovo potere. Nish e Marvin sono ancora persone da portare via.",
+   "uscita_fail_forward": ""
+  },
+  "A22": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A22x1",
+     "testo": "Osservare sotto la neve",
+     "riserva": "Fuori C5 rottami di robot sono collegati a qualcosa sotto la neve. Le colture grigie non sono più un'anomalia isolata.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Sotto la neve i rottami sono collegati a una rete.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A22d1",
+      "testo": "Affrontare sotto la neve",
+      "riserva": "Il vecchio core di C5 interessa gli invasori e i bot di Higgs: chi vi entra può diventare una forza utilizzata contro la città o una vittima del sistema. Le colture grigie rimangono un segno osservabile da confrontare con quella minaccia.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 22; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A22x1"
+    ],
+    "risoluzione": [
+     "A22d1"
+    ]
+   },
+   "required_beats": [
+    "A22x1",
+    "A22d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Fuori C5 rottami di robot sono collegati a qualcosa sotto la neve. Le colture grigie non sono più un'anomalia isolata.",
+   "uscita_fail_forward": ""
+  },
+  "A23": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A23x1",
+     "testo": "Osservare il corpo promesso",
+     "riserva": "Le trattative con gli invasori precedono lo scontro finale. Chiedono telonio e accusano i terrestri dello spegnimento del Sole.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Al tavolo gli invasori chiedono telonio e accusano i terrestri del Sole spento.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A23d1",
+      "testo": "Affrontare il corpo promesso",
+      "riserva": "Shapira porta l’accusa dentro la trattativa. «La stazione sul Sole vi aveva avvertiti. Da terra avete imposto di completare il ciclo di estrazione. Per il profitto di quell’energia avete provocato uno strappo nelle onde di oscillazione del Cromo e spento il Sole. La figlia di Epos è sopravvissuta lassù. È diventata un’entità ricolma di Cromo: è lei che ci guida contro la Terra.» La rabbia che la muove conserva, nel subconscio, l’ordine ricevuto e il sacrificio imposto dai terrestri. Il metallo che si unisce alla carne rende concreta la possibilità di un corpo, ma un’offerta può nascondere un nuovo uso delle persone. Chiedere condizioni oppure rifiutare lo scambio resta possibile prima che le trattative falliscano.",
+      "fase": "resolution",
+      "effetti": [
+       {
+        "scopri": "icaro_sole_estrazione"
+       }
+      ],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 23; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA. DECISIONI_AUTORE.md §11, risposta dell’autore del 1 novembre 2026 sullo spegnimento del Sole."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A23x1"
+    ],
+    "risoluzione": [
+     "A23d1"
+    ]
+   },
+   "required_beats": [
+    "A23x1",
+    "A23d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Le trattative con gli invasori precedono lo scontro finale. Chiedono telonio e accusano i terrestri dello spegnimento del Sole.",
+   "uscita_fail_forward": ""
+  },
+  "A24": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A24x1",
+     "testo": "Osservare l'offerta",
+     "riserva": "Le trattative non fermano il conflitto. Nel core Zephir unisce telonio e carne; il risultato rende concreta, ma non innocente, l'offerta di un corpo.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il fallimento del tavolo porta al conflitto.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A24d1",
+      "testo": "Affrontare l'offerta",
+      "riserva": "Zephir consuma telonio e unisce carne e metallo. Gli invasori possono proporre il corpo desiderato in cambio di una scelta di campo: difendere la Terra oppure trattare con loro sono strade differenti, senza cancellare il fatto che il pianeta è minacciato.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 24; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A24x1"
+    ],
+    "risoluzione": [
+     "A24d1"
+    ]
+   },
+   "required_beats": [
+    "A24x1",
+    "A24d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Le trattative non fermano il conflitto. Nel core Zephir unisce telonio e carne; il risultato rende concreta, ma non innocente, l'offerta di un corpo.",
+   "uscita_fail_forward": ""
+  },
+  "A25": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A25x1",
+     "testo": "Osservare gaia",
+     "riserva": "Gaia Epos consuma il pianeta per creare un buco bianco. La Terra non può essere conservata facendo finta che la battaglia basti a salvarla.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Gaia Epos consuma la Terra per creare un buco bianco. Il programma chiamato Ich porta persone a vivere in un mondo scritto; Frida vi era stata espulsa.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A25d1",
+      "testo": "Affrontare gaia",
+      "riserva": "La partenza diventa necessaria per umani e bot. Cercare una sua traccia rimane diverso dall’aprirle di nuovo il controllo del corpo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 25; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A25x1"
+    ],
+    "risoluzione": [
+     "A25d1"
+    ]
+   },
+   "required_beats": [
+    "A25x1",
+    "A25d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Gaia Epos consuma il pianeta per creare un buco bianco. La Terra non può essere conservata facendo finta che la battaglia basti a salvarla.",
+   "uscita_fail_forward": ""
+  },
+  "A26": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A26x1",
+     "testo": "Osservare chi sale",
+     "riserva": "Il conflitto arriva sulle astronavi. Civili e bot cercano spazio sugli stessi passaggi.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Il conflitto prosegue sulle astronavi mentre i civili cercano posto.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A26d1",
+      "testo": "Affrontare chi sale",
+      "riserva": "I bot devono attraversare gli stessi accessi e non diventano carico senza voce. Il nome di Arne rimane quello della figlia ricordata: controllare chi parte non autorizza a riconoscerla in una persona che non hai ritrovato.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 26; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A26x1"
+    ],
+    "risoluzione": [
+     "A26d1"
+    ]
+   },
+   "required_beats": [
+    "A26x1",
+    "A26d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Il conflitto arriva sulle astronavi. Civili e bot cercano spazio sugli stessi passaggi.",
+   "uscita_fail_forward": ""
+  },
+  "A27": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A27x1",
+     "testo": "Osservare l'aiuto",
+     "riserva": "Candor può cercare una risposta alla richiesta di un corpo. Il telonio delle navi offre materiali, non una soluzione già provata.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [
+    {
+     "png": "medico",
+     "argomenti": [
+      {
+       "id": "A27_dialogo",
+       "testo": "Riprendere la promessa sul corpo",
+       "riserva": "Candor può affrontare la richiesta senza consumare un’altra persona come materiale.",
+       "effetti": [],
+       "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+      }
+     ]
+    }
+   ],
+   "sviluppo": {
+    "testo": "Candor può tornare sulla richiesta di un corpo fatta durante l’evento.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A27d1",
+      "testo": "Affrontare l'aiuto",
+      "riserva": "L’aiuto si svolge fra le navi in guerra e conserva un limite: non consumare un’altra persona come materiale. Accettare un tentativo oppure rifiutare quella fonte d’energia non decide già se il corpo sarà carne o metallo.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 27; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A27x1"
+    ],
+    "risoluzione": [
+     "A27d1"
+    ]
+   },
+   "required_beats": [
+    "A27x1",
+    "A27d1"
+   ],
+   "optional_beats": [
+    "A27_dialogo"
+   ],
+   "riserva_libera": "Candor può cercare una risposta alla richiesta di un corpo. Il telonio delle navi offre materiali, non una soluzione già provata.",
+   "uscita_fail_forward": ""
+  },
+  "A28": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A28x1",
+     "testo": "Osservare l'astronave madre",
+     "riserva": "Shapira e Florant sono nello scontro dell'astronave madre. Il villain prende parte al confronto, con la fuga delle navi ancora in gioco.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "Nell’astronave madre Shapira e Florant partecipano allo scontro.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A28d1",
+      "testo": "Affrontare l'astronave madre",
+      "riserva": "Le navi devono ancora lasciare la Terra e il corpo che abiti resta coinvolto nella loro difesa. Proteggere il passaggio o affrontare Florant sono obiettivi differenti dentro lo stesso conflitto, non una vittoria risolta prima dell’azione.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 28; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A28x1"
+    ],
+    "risoluzione": [
+     "A28d1"
+    ]
+   },
+   "required_beats": [
+    "A28x1",
+    "A28d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Shapira e Florant sono nello scontro dell'astronave madre. Il villain prende parte al confronto, con la fuga delle navi ancora in gioco.",
+   "uscita_fail_forward": ""
+  },
+  "A29": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A29x1",
+     "testo": "Osservare la voce di frida",
+     "riserva": "Le navi stanno lasciando la Terra.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "La Terra collassa mentre le navi tentano la partenza. Frida torna come possibilità di controllo, non come voce che può ricevere un consenso implicito dal pericolo.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A29d1",
+      "testo": "Affrontare la voce di frida",
+      "riserva": "Rifiutare di cedere o accettare il rischio distingue chi rimane responsabile della scena. Il bisogno di partire non sceglie per te.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 29; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A29x1"
+    ],
+    "risoluzione": [
+     "A29d1"
+    ]
+   },
+   "required_beats": [
+    "A29x1",
+    "A29d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "Le navi stanno lasciando la Terra.",
+   "uscita_fail_forward": ""
+  },
+  "A30": {
+   "fase_iniziale": "exploration",
+   "pacing_band": "compact",
+   "fascia_orientativa": [
+    5,
+    9
+   ],
+   "max_stagnant_turns": 2,
+   "esplora": [
+    {
+     "id": "A30x1",
+     "testo": "Osservare un'anima",
+     "riserva": "La nave si allontana dalla Terra. Il volto che vedi può essere nuovo oppure lo stesso metallo, ma la domanda su chi sei non è risolta da una superficie.",
+     "fase": "exploration",
+     "effetti": [],
+     "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+    }
+   ],
+   "dialoghi": [],
+   "sviluppo": {
+    "testo": "La nave lascia la Terra con corpi diversi e persone che continuano a cercare una vita.",
+    "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA.",
+    "esplora": [
+     {
+      "id": "A30d1",
+      "testo": "Affrontare un'anima",
+      "riserva": "Nish e Marvin rimangono legami della comunità costruita; Arne resta una domanda distinta. Guardare il corpo o parlare con i compagni può chiudere il congedo senza imporre che tu abbia trovato una risposta su chi sei.",
+      "fase": "resolution",
+      "effetti": [],
+      "fonte": "docs/single-player/trame/SCHEMA_L_ANIMA_CHE_VUOLE_UN_CORPO.md, scena 30; DECISIONI_AUTORE §9.7 e §10. Raccordi e formulazioni di questa stesura: PROPOSTA."
+     }
+    ],
+    "effetti": []
+   },
+   "sblocco": {
+    "sviluppo": [
+     "A30x1"
+    ],
+    "risoluzione": [
+     "A30d1"
+    ]
+   },
+   "required_beats": [
+    "A30x1",
+    "A30d1"
+   ],
+   "optional_beats": [],
+   "riserva_libera": "La nave si allontana dalla Terra. Il volto che vedi può essere nuovo oppure lo stesso metallo, ma la domanda su chi sei non è risolta da una superficie.",
+   "uscita_fail_forward": ""
+  }
+ }
+}
